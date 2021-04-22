@@ -1,0 +1,126 @@
+# ActiveCampaign
+
+## 🏃‍♂️Getting Started
+
+In this guide, we will show you how to connect your ActiveCampaign instance to [Census](https://www.getcensus.com/) and create your first sync.
+
+### Prerequisites
+
+* [Create a Free Trial Census Account](https://app.getcensus.com/)
+* Have your ActiveCampaign account ready
+* Have the credential to access your warehouse. See our articles for each data warehouse
+  * [Redshift](/source-warehouse/redshift)        
+  * [Snowflake](/source-warehouse/snowflake)
+  * [Google BigQuery](/source-warehouse/google-bigquery)
+  * [Databricks](/source-warehouse/databricks)    
+  * [Postgres](/source-warehouse/postgres)
+
+### 1. Get ActiveCampaign API Key
+
+1. Within ActiveCampaign, visit **Settings** then **Developer** page.
+2. Copy the API key and the URL to provide to Census
+
+![](../.gitbook/assets/screely-1617902398277.png)
+
+### 2. Connect ActiveCampaign
+
+* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
+* Click the **Add Service** button
+* Select ActiveCampaign in the dropdown list
+
+![](../.gitbook/assets/screely-1617902052429.png)
+
+* When prompted for your API Credentials, enter your ActiveCampaign API URL and API Key
+
+![](../.gitbook/assets/screely-1617902449109.png)
+
+### 3. Connect to your Data Warehouse
+
+Please follow one of our short guides depending on your data warehouse technology
+
+* [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
+* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)    
+* [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
+* [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
+
+### 4. Create your first Model
+
+Now navigate to the [Model section of our Dashboard](https://app.getcensus.com/models)
+
+Here you will have to write SQL queries to select the data you want to see in ActiveCampaign. Here are some ideas of data you should select
+
+* the Lifetime Value of a customer and add it to a contact or companies
+* The end of their trial
+* The date they became active in your product
+* The number of key activities a user did in your app in the last 7/30 days
+
+Once you have created your model, click save.
+
+### 5. Create your first Sync
+
+Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
+
+In the " **What data do you want to sync?"** section
+
+* For the **Connection**, select the data warehouse you connected in step 2
+* For the **Source,** select the model you created in step 3 
+
+Next up is the **"Where do you want to sync data to?"** section
+
+* Pick ActiveCampaign as **the Connection** 
+* For Object, pick the one you want to sync data to; Contact or Account.
+
+For the " **How should changes to the source be synced?"** section
+
+* Select **Update or Create**
+* Pick the right mapping key, it could be Email for Contacts, Account Name for Accounts.
+
+Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section
+
+* Here simply map the field from your ActiveCampaign instance to the column from your model.
+
+The end result should look something like this
+
+![](../.gitbook/assets/screely-1617904096010.png)
+
+Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
+
+### 6. Confirm the data is in ActiveCampaign
+
+Now go back to your ActiveCampaign and go view a record type \(Contact or Account\) that should have been updated. If everything went well, you should see your data in ActiveCampaign.
+
+![](../.gitbook/assets/screely-1617904230319.png)
+
+That's it! In 6 steps, you connected Census to ActiveCampaign and started syncing customer & account data from your warehouse to ActiveCampaign 🎉
+
+## 🏎 Sync Speed
+
+ActiveCampaign is syncing data at approximately 37,000 contact records per hour.
+
+Due to limitations of the ActiveCampaign API, Account records will sync significantly slower.
+
+## 🗄 Supported Objects
+
+| Object Name | Supported? | Identifiers |
+| :--- | :---: | :--- |
+| Contact | ✅ | Email |
+| Account | ✅ | Account Name |
+| Campaigns | 🔜 |  |
+| Deals | 🔜 |  |
+| Lists | 🔜 |  |
+
+## 🔄 Supported Sync Behaviors
+
+{% hint style="info" %}
+Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+{% endhint %}
+
+| **Behaviors** | **Supported?** | **Objects?** |
+| ---: | :---: | :---: |
+| **Update or Create** | ✅ | All |
+| **Update Only** | 🔜 |  |
+
+## 🚑 Need help connecting to ActiveCampaign?
+
+Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+
