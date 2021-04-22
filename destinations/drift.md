@@ -4,7 +4,25 @@ description: This page describes how to use Census with Drift.
 
 # Drift
 
-{% hint style="info" %}
-This part of our documentation is still under construction! If you have any questions, please don't hesitate to [contact us](mailto:support@getcensus.com).
-{% endhint %}
+## 🏃‍♂️ Getting Started
+
+### 1. Connect Census to Drift
+
+In the **Connections** page in Census, click the **Add Service** button under the **Service Connections** section, and select Drift.
+
+You will be redirected to a page to log in to Drift to authorize your account to Census. You will be prompted to enter your email and then your password. Once you click the **Sign In** button, you'll see a page like the image below, confirming you want to authorize Census.
+
+![](../.gitbook/assets/screen-shot-2021-04-22-at-4.02.13-pm.png)
+
+Once you've authorized Census, you'll be redirected back to the **Connections** page in Census and you should see your Drift connection there. 
+
+If you want to see your integrations in Drift in the future, simply navigate to the **Settings** page, and click on **Integrations** in the left side navigation \(close to the bottom, right above **Help**\).
+
+## 🔄 Supported Sync Behaviors
+
+Currently, Census supports syncing your data to the **Contact** object in Drift. 
+
+## 🚑 Need help connecting to Drift?
+
+Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
 
