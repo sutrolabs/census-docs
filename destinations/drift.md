@@ -18,9 +18,21 @@ Once you've authorized Census, you'll be redirected back to the **Connections** 
 
 If you want to see your integrations in Drift in the future, simply navigate to the **Settings** page, and click on **Integrations** in the left side navigation \(close to the bottom, right above **Help**\).
 
+## 🗄 Supported Objects
+
+| **Object Name** | **Supported?** | Identifiers |
+| ---: | :---: | :--- |
+| Contact | ✅ | Object ID, any Text/Number  |
+
 ## 🔄 Supported Sync Behaviors
 
-Currently, Census supports syncing your data to the **Contact** object in Drift. 
+{% hint style="info" %}
+Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+{% endhint %}
+
+| **Behaviors** | **Supported?** | **Objects?** |
+| ---: | :---: | :---: |
+| **Update or Create** | ✅ | All |
 
 ## 🚑 Need help connecting to Drift?
 
