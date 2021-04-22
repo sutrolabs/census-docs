@@ -18,10 +18,6 @@ Once you've authorized Census, you'll be redirected back to the Connections page
 
 If you want to see your connections in Mailchimp in the future, simply navigate to the **Profile** page, and scroll down to the **Connections and notifications** section.
 
-## 🔄 Supported Sync Behaviors
-
-Currently, Census supports syncing your data to the **Audience** object in Mailchimp. 
-
 ## 💡 Mailchimp Field Quirks
 
 There are two mandatory fields for the Mailchimp connection: **email** and **status**.
@@ -29,6 +25,22 @@ There are two mandatory fields for the Mailchimp connection: **email** and **sta
 Please note that the mandatory status field only accepts the following values: `"subscribed"`, `"unsubscribed"`, `"cleaned"`, or `"pending"`.
 
 For more details, take a look at Mailchimp's [API documentation](https://mailchimp.com/developer/marketing/api/list-members/update-list-member/).
+
+## 🗄 Supported Objects
+
+| **Object Name** | **Supported?** | Identifiers |
+| ---: | :---: | :--- |
+| Audience | ✅ | Object ID, any Text/Number  |
+
+## 🔄 Supported Sync Behaviors
+
+{% hint style="info" %}
+Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+{% endhint %}
+
+| **Behaviors** | **Supported?** | **Objects?** |
+| ---: | :---: | :---: |
+| **Update or Create** | ✅ | All |
 
 ## 🚑 Need help connecting to Mailchimp?
 
