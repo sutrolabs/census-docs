@@ -83,20 +83,23 @@ Because your Custom API URL can contain secrets, it is considered to be sensitiv
 
 ## Writing Your Custom API
 
-### Sending and Receiving JSON-RPC messages
+### Basic Request-Reply Message Format
 
-All communications between Census and your Custom API are JSON-RPC method invocations. JSON-RPC is a simple protocol for request-reply conversations between a client \(Census\) and a server \(your Custom API\). While there are several libraries that can help you implement JSON-RPC, you may find it simpler to "roll your own".
+Your Custom API will use an [RPC-style protocol](https://www.jsonrpc.org/specification) to communicate with Census. Every message from Census will be an HTTP POST whose body is a JSON object that includes these elements:
 
-Census follows the [JSON-RPC 2.0 specification](https://www.jsonrpc.org/specification) with a few additional restrictions to simplify things even more:
+* `method`: The name of the method Census is calling on your API. Methods are included in request bodies \(instead of as a RESTful-style URL component\) so that you can give Census a single URL as the integration point.
+* `params`: A JSON object \(possibly empty\) containing parameters for the method
+* `id`: A unique ID for the request. You must return this same ID in the response
+* `jsonrpc`: This will always be the string `"2.0"`
 
-* `params` \(in the request\) and `result` \(in the response\) will always be JSON objects, not arrays.
-* `params` will never be omitted - if a method has no params, an empty object \(`{}`\) will be sent as the value for `params`.
-* JSON-RPC notifications \(requests without an `id` that do not require a response\) are not used in this protocol.
-* JSON-RPC batching is not used - all HTTP sessions will contain exactly one request. Census will attempt to use HTTP Keep-Alive to reuse the connection for subsequent requests, but support for Keep-Alive is optional.
+Your response to every call must be a JSON object with these elements:
 
-The JSON-RPC specification does not specify a transport layer. Census uses HTTPS as the transport layer, with all messages sent as the body of an HTTP POST to a single URL that your custom connector defines. The `Content-Type` of both the HTTP request and response must be `application/json`.
+* `result`: A JSON object that is the value you are returning from the method call. Can be empty, depending on the method
+* `error` : Optional - allows you to return [error information](https://www.jsonrpc.org/specification#error_object) to Census in the event of a problem invoking your API. The `error` property must not be present if there is a `result`
+* `id`: The same `id` that was passed in to the request
+* `jsonrpc`: This will always be the string `"2.0"`
 
-Here's an example of a valid invocation of the `test_connection` method, assuming your Custom API is located at `https://example.com/census`
+Here's an example of what a request and reply look like in Census, assuming your Custom API is located at `https://example.com/census`
 
 #### HTTP Request
 
@@ -149,7 +152,7 @@ Do not be surprised if Census tries to sync the same record to your destination 
 
 Census provides three "channels" for your Custom API to return errors:
 
-* If you Custom API fails to return a well-formed JSON-RPC payload, Census will fail with an "unknown error". If you have enabled the Custom API debugger \(see below\), the error will be captured for later troubleshooting
+* If you Custom API fails to return an object with the correct keys, Census will fail with an "unknown error". If you have enabled the Custom API debugger \(see below\), the error will be captured for later troubleshooting
 * Your Custom API may return a structured error message and code in the error property of the JSON-RPC response object. This error code and message will be displayed in the Census UI.
 * Two methods, `test_connection` and `sync_batch`, provide the ability to return application-level error messages. For `test_connection`, you can return a high-level error messsage helping the user debug why your Custom API may not be working. `sync_batch` requires your Custom API to indicate a success or failure status for each record in the batch - error messages associated with record-level failures will be displayed in the Census Sync History UI
 
