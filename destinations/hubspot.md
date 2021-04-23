@@ -144,6 +144,10 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for HubSpot.
 
+## 🔑 Require Permissions
+
+Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects. If you have limited permissions and still want to connect Census to HubSpot, contact the [contact the Census support team](mailto:support@getcensus.com).
+
 ## 🚑 Need help connecting to HubSpot?
 
 Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
