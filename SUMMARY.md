@@ -29,7 +29,7 @@
 * [Front](destinations/front.md)
 * [HubSpot](destinations/hubspot.md)
 * [Intercom](destinations/intercom.md)
-* [Iterable](destinations/untitled-3.md)
+* [Iterable](destinations/iterable.md)
 * [Klaviyo](destinations/klaviyo.md)
 * [Mailchimp](destinations/mailchimp.md)
 * [Marketo](destinations/marketo.md)
