@@ -122,6 +122,8 @@ Please be aware that with custom object, we need to do extra call due to the lim
 | Event | 🔜 |  |
 | Deal | 🔜 |  |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for HubSpot.
+
 {% hint style="success" %}
 If possible, try to use HubSpot Object IDs as your Sync Identifier. Using them will provide a dramatic sync performance boost!
 {% endhint %}
@@ -139,6 +141,8 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 | **Update or Create** | ✅ | All |
 | **Update Only** | ✅ | All |
 | **Mirror** | 🔜 | All |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for HubSpot.
 
 ## 🚑 Need help connecting to HubSpot?
 
