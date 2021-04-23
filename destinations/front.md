@@ -4,8 +4,6 @@ description: This page describes how to use Census with Front.
 
 # Front
 
-Our Front is currently available in **General Avaibility** and supports the core Contact Object.
-
 ## 🏃‍♂️ Getting Started
 
 In this guide, we will show you how to connect your Front instance to [Census](https://www.getcensus.com/) and create your first sync.
