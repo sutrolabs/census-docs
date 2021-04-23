@@ -76,8 +76,6 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 
 ‌ 🔋 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
-## 💡 Things to know about the Amplitude connector
-
 
 
 ‌
