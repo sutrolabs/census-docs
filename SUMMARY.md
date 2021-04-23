@@ -27,6 +27,7 @@
 * [Drift](destinations/drift.md)
 * [Facebook Ads Audiences](destinations/facebook-ads-audiences.md)
 * [Front](destinations/front.md)
+* [Google Ads](destinations/google-ads.md)
 * [HubSpot](destinations/hubspot.md)
 * [Intercom](destinations/intercom.md)
 * [Iterable](destinations/iterable.md)

@@ -4,8 +4,6 @@ description: This page describes how to use Census with HubSpot.
 
 # HubSpot
 
-Want to see which objects are supported? [jump here 👉](hubspot.md#supported-objects)
-
 ## 🏃‍♂️ Getting Started
 
 In this guide, we will show you how to connect your HubSpot instance to [Census](https://www.getcensus.com/) and create your first sync.
