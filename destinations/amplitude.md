@@ -50,6 +50,46 @@ Now that we have the API Key from Amplitude, we can now set up Amplitude as a De
 3. Provide the copied API Key from Amplitude.
 4. Save.
 
+### 4. Create your first Model
+
+Now navigate to the [Model section of our Dashboard](https://app.getcensus.com/models)
+
+Here you will have to write SQL queries to select the data you want to see in Amplitude. Here are some ideas of data you should select
+
+* The Lifetime Value of a customer
+* The end date of a user's trial
+* The date a user became active in your product
+* The number of key activities a user did in your app in the last 7/30 days
+
+Once you have created your model, click save. 
+
+![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
+
+### 5. Create your first Sync
+
+Now head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sync button
+
+In the "What data do you want to sync?" section.
+
+* For the Connection, select the data warehouse you've already connected \(See Prerequisites\).
+* For the Source, select the model you created in step 4.
+
+Next up is the "Where do you want to sync data to?" section.
+
+* Pick the Amplitude connection you created in step 3.
+* For Object, Select Device or User. If Devices can be associated with Users, then select Device. If no Device information is collected, select User.
+
+For the "How should changes to the source be synced?" section. 
+
+* Select Update Or Create
+* Pick the right mapping key; Amplitude only supports Distinct ID.
+
+Finally, select the fields you want to update in the Mapper in the "Which Fields should be updated?" section. Here simply map the field from your Amplitude instance to the column from your model.
+
+![](../.gitbook/assets/screenshot-2021-04-23-at-1.17.38-pm.png)
+
+Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
+
 ## 🗄️ Supported Objects
 
 | Object Name | Supported? | Identifiers |
@@ -59,7 +99,7 @@ Now that we have the API Key from Amplitude, we can now set up Amplitude as a De
 | Groups | 🔜 | Group ID |
 | Events | 🔜 | User ID |
 
-Both User and Device objects will resolve to a single User Profile in Amplitude, if mappings for the other identifier are also provided in the sync.‌ 
+Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User. 
 
 🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
 
