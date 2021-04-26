@@ -89,7 +89,7 @@ That's it! In 5 steps, you connect Census to Mixpanel and started syncing custom
 
 ## 🗄 Supported Objects
 
-Census currently supports syncing to the following Intercom objects.
+Census currently supports syncing to the following Mixpanel objects.
 
 | **Object Name** | **Supported?** | Identifiers |
 | ---: | :---: | :--- |
