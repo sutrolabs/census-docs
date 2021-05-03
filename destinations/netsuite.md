@@ -60,7 +60,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 
 ![](../.gitbook/assets/netsuite_step5.png)
 
-8. Under  **Permissions &gt; Setup**, Give your Role the appropriate permissions for the NetSuite Custom Fields you'll need access to. For example, to if you're syncing Customers \(an Entity\), you'll want to give this role the Custom Entity Fields \(Full\) permission. If your syncing a Transaction \(i.e. Cash Sales\), give this role access to Custom Body Fields and Custom Column Fields \(Full\) permissions. \(See screenshot below\)
+8. Under  **Permissions &gt; Setup**, Give your Role the Custom Fields permission and the appropriate permissions for the specific NetSuite Custom Fields you'll need access to. For example, to if you're syncing Customers \(an Entity\), you'll want to give this role the Custom Entity Fields \(Full\) permission. If your syncing a Transaction \(i.e. Cash Sales\), give this role access to Custom Body Fields and Custom Column Fields \(Full\) permissions. \(See screenshot below\)
 
 ![](../.gitbook/assets/image-2021-05-03-at-4.42.55-pm.jpg)
 
