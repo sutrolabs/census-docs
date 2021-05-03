@@ -50,21 +50,22 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 4. Check **DO NOT RESTRICT EMPLOYEE FIELDS**
 5. For multi-subsidiary NetSuite users**,** check **ALL** under **ACCESSIBLE SUBSIDIARIES**
 6. Under **Permissions &gt; Setup**, add the following permissions:
-   * User Access Token: **Full**
    * Access Token Management: **Full**
+   * Custom Body Fields: **Full**
+   * Custom Column Fields: **Full**
+   * Custom Entity Fields: **Full**
+   * Custom Fields: **Full**
+   * Custom Item Fields: **Full**
    * SOAP Web Services: **Full**
+   * User Access Token: **Full**
 
-![](../.gitbook/assets/netsuite_step4.png)
-
-7. Under  **Permissions &gt; Lists**, Give your Role the appropriate permissions for the NetSuite objects you'll be updating. For example, to update Customers, you'll want to give this role the Lists &gt; Customers \(Full\) permission. \(See screenshot below\)
-
-![](../.gitbook/assets/netsuite_step5.png)
-
-8. Under  **Permissions &gt; Setup**, Give your Role the Custom Fields permission and the appropriate permissions for the specific NetSuite Custom Fields you'll need access to. For example, to if you're syncing Customers \(an Entity\), you'll want to give this role the Custom Entity Fields \(Full\) permission. If your syncing a Transaction \(i.e. Cash Sales\), give this role access to Custom Body Fields and Custom Column Fields \(Full\) permissions. \(See screenshot below\)
+![](../.gitbook/assets/netsuite_step4%20%281%29.png)
 
 ![](../.gitbook/assets/image-2021-05-03-at-4.42.55-pm.jpg)
 
+7. Under  **Permissions &gt; Lists**, Give your Role the appropriate permissions for the NetSuite objects you'll be updating. For example, to update Customers, you'll want to give this role the Lists &gt; Customers \(Full\) permission.
 
+![](../.gitbook/assets/netsuite_step5.png)
 
 ### 4. Add Token Management Permissions
 
