@@ -42,5 +42,5 @@ If you’re using dbt, you likely already have a dbt runner so Census doesn’t 
 
 ## dbt Version Supported
 
-Our native dbt integration currently supports version [0.18](https://github.com/fishtown-analytics/dbt/releases/tag/v0.18.0). We also post version support in our [changelog](https://whatsnew.getcensus.com/).
+Our native dbt integration currently supports version [0.19.1](https://github.com/fishtown-analytics/dbt/releases/tag/v0.19.1). We also post version support in our [changelog](https://whatsnew.getcensus.com/).
 
