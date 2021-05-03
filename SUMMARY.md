@@ -35,7 +35,7 @@
 * [Mailchimp](destinations/mailchimp.md)
 * [Marketo](destinations/marketo.md)
 * [Mixpanel](destinations/mixpanel.md)
-* [Netsuite](destinations/netsuite.md)
+* [NetSuite](destinations/netsuite.md)
 * [Outreach](destinations/outreach.md)
 * [Pipedrive](destinations/pipedrive.md)
 * [Salesforce](destinations/salesforce.md)
