@@ -2,6 +2,10 @@
 
 ## 🏃‍♂️Getting Started
 
+{% embed url="https://youtu.be/lTc7u8rV7i4" %}
+
+
+
 In this guide, we will show you how to connect your ActiveCampaign instance to [Census](https://www.getcensus.com/) and create your first sync.
 
 ### Prerequisites

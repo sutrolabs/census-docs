@@ -14,6 +14,7 @@ If you are new here, you should check out:
   * [Facebook Ads](https://www.youtube.com/watch?v=0_jr7dv-FWE)
   * [Customer.io](https://www.youtube.com/watch?v=sRYnagj_gIE)
   * [Outreach](https://www.loom.com/share/c55ef1006cfc4d5eb310c7151861c978)
+  * [ActiveCampaign](https://youtu.be/lTc7u8rV7i4)
   * [Braze](https://www.youtube.com/watch?v=qwa2BEuxEBs)
   * [Klaviyo](https://youtu.be/U8q7E2SZJkI)
   * [Iterable](https://www.loom.com/share/27415b2fa0a3404cb2107f2ad2fcb98b)
