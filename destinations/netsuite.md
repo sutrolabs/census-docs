@@ -84,6 +84,8 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 
 ![](../.gitbook/assets/netsuite_step7.png)
 
+> **Note:** Netsuite permission changes to a role or user **do not occur immediately**. These changes typically take anywhere from a few minutes to a few hours, and they can even take up to 24 hours to go into effect. If you are confident that you have given Census the correct permissions above and experience an error setting up the connection, we recommend waiting for these changes to go into effect before testing the connection again.
+
 ### **6. One more thing:** NetSuite **Account ID**
 
 The last bit of information you’ll need is your NetSuite Account ID:
@@ -105,9 +107,7 @@ The last bit of information you’ll need is your NetSuite Account ID:
 
 You're ready to start using Census to load data from your warehouse to NetSuite! If you have any trouble with these steps, please don't hesitate to reach out to: support@getcensus.com and we'll help get this setup.
 
-> Netsuite permission changes to a role or user do not occur immediately. These changes typically take anywhere from a few minutes to a few hours, and they can even take up to 24 hours to go into effect. If you are confident that you've given Census all the correct permissions, we recommend waiting for these changes to go into effect and trying again.
 >
-> Nonetheless, we are always happy to help via support@getcensus.com or via our [in-app](https://app.getcensus.com) chat.
 
 ## 🏎 Sync Speed
 
