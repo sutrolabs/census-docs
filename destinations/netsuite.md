@@ -105,6 +105,10 @@ The last bit of information you’ll need is your NetSuite Account ID:
 
 You're ready to start using Census to load data from your warehouse to NetSuite! If you have any trouble with these steps, please don't hesitate to reach out to: support@getcensus.com and we'll help get this setup.
 
+> Netsuite permission changes to a role or user do not occur immediately. These changes typically take anywhere from a few minutes to a few hours, and they can even take up to 24 hours to go into effect. If you are confident that you've given Census all the correct permissions, we recommend waiting for these changes to go into effect and trying again.
+>
+> Nonetheless, we are always happy to help via support@getcensus.com or via our [in-app](https://app.getcensus.com) chat.
+
 ## 🏎 Sync Speed
 
 NetSuite's API speed and rate limitation are complex and are tied to the plan you are on but you can expect a speed of ~500 records sync / minute on their base plan,
