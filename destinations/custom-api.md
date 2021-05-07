@@ -18,7 +18,7 @@ Custom APIs are a beta feature in Census. Please contact your account representa
 * A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS, so if you're testing your code on a development machine, we recommend you use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL
 * A destination to which you want to integrate. Generally speaking your Custom API will act as a proxy that passes data from Census to some destination system, which can be any data store.
 * A plan for testing you connection. You can use a Census model to "hard code" a small data set in your warehouse as a source for testing. You should initially point your API to a non-production destination while you test syncs to ensure you don't alter or overwrite any critical data. Once you have verified the correctness of your Custom API, you can start using it to sync production data
-* The sample code contained in this repository can be a useful starting point for a Javascript or TypeScript integration - it takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs.
+* The sample code contained in [this repository](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal) can be a useful starting point for a Javascript or TypeScript integration - it takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs.
 
 ### How It Works
 
