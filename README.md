@@ -18,6 +18,7 @@ If you are new here, you should check out:
   * [Braze](https://www.youtube.com/watch?v=qwa2BEuxEBs)
   * [Klaviyo](https://youtu.be/U8q7E2SZJkI)
   * [Iterable](https://www.loom.com/share/27415b2fa0a3404cb2107f2ad2fcb98b)
+  * [Pipedrive](https://youtu.be/s3pCULG8Zkg)
   * [Netsuite](https://www.youtube.com/watch?v=ITZzrwtCf7M)
   * [Mixpanel](https://www.youtube.com/watch?v=q-JxGTsORfE)
 
