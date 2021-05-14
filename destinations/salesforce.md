@@ -8,13 +8,11 @@ description: This page describes how to use Census with Salesforce.
 
 {% embed url="https://www.youtube.com/watch?v=K-qmPOweyUU" %}
 
-## Salesforce required permissions
+## 🔑 Required permissions
 
-The objects and fields accessible to Census are all determined by the user account you use when connecting Census to your Salesforce instance. Census will have the same access as the user, so if fields are read-only or hidden for that user, they will be to Census.
+Census connects to your Salesforce instance through a standard OAuth connection to an individual user account. We recommend using a stand-alone account specifically for Census \(often called a Service Account\) so you can see Census updates in your audit history. 
 
-In general, you should give Census read and write access to all the objects and fields you may want to update. If you are only using Salesforce as an ingest source, then we will only need read access. 
-
-If you have extra Salesforce seat licenses, we recommend using a stand-alone account for Census so you can see Census updates in your audit history. But this does come at an additional cost.
+The objects and fields accessible to Census are all determined by the user account you use when connecting Census to your Salesforce instance. Census will have the same access as the user, so if fields are read-only or hidden for that user, they will be to Census. In general, you should give Census read and write access to all the objects and fields you may want to update.
 
 In addition, Salesforce currently requires that the user account have the "View Setup and Configuration" permission \(As of July 2019, this is a [known Salesforce issue](https://success.salesforce.com/issues_view?id=a1p3A000000BMPFQA4)\). Ensure this permission is set on the Profile assigned to this user under the "Administrative Permissions" heading of their profile.
 
