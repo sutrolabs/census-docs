@@ -100,11 +100,10 @@ That's it! In 5 steps, you connected your data warehouse to Google Ads and built
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | Identifiers |
-| ---: | :---: | :--- |
-| Customer Match: User Details | ✅ | User ID, Mobile ID, Email, Phone Number |
-| Customer Match: User Lists | ✅ | Name |
-| Offline Conversions | 🔜 |  |
+| Service | **Object Name** | **Supported?** | Identifiers |
+| :--- | ---: | :---: | :--- |
+| Customer Match | Customer | ✅ | User ID, Mobile ID, Email,  Phone Number |
+| Offline Conversions | Click, Call | ✅ | Click ID, Caller ID |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for support more additional Google Ads objects.
 
@@ -116,8 +115,7 @@ Census automatically takes care of this hashing step for you.
 
 | **Behaviors** | **Supported?** | **Objects?** |
 | ---: | :---: | :---: |
-| **Update or Create** | ✅ | User Data, User Lists |
-| **Update Only** | ✅ | User Lists |
+| **Update or Create** | ✅ | All |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for support more additional Sync Behaviors!
 
