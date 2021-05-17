@@ -94,9 +94,15 @@ Schedules let you specify a time and frequency that Census can use to run your s
 
 **Trigger via API**
 
-Each sync can also be triggered via API. On the configuration page, you can access the trigger API endpoint for the sync. An HTTP POST call to this endpoint will trigger the sync. You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
+Each sync can also be triggered via API. On the configuration page, you can access the trigger API endpoint for the sync. 
 
 ![](../.gitbook/assets/screely-1621265332761.png)
+
+An empty HTTP POST call to this endpoint will trigger the sync \(no need to provide any data in the body\). You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
+
+```text
+curl -X POST https://bearer:secret-token:1234567890ABCDEFGHIJKLMNOP@app.getcensus.com/api/v1/syncs/0000/trigger
+```
 
 Either method you choose, you don't have to worry about us eating up your destination quota. Each sync run is only looking for changes and sending those over. If nothing's changed, we won't even talk to the destination. 
 
