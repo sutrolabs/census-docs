@@ -79,11 +79,26 @@ Once you've defined _how_ data is related between your source and destination, t
 
 For some destinations, such as Customer.io, Iterable, or Klaviyo, you can create new fields directly from the Census app. This means the next time a sync runs, Census will create new properties or attributes for that object in the destination. This is useful if you want to automatically create new fields based on the columns in your source data.
 
-### ⏱ Scheduling a Sync
+### ⏱ Running Syncs: Schedules and API
 
-You can happily run a sync manually, but that's not all that useful. The real power of Census is having your syncs scheduled. Once you've got your sync up and running, you can configure how frequently you'd like it to run. You can choose options from weekly all the way to Continuous, which means Census checks your source roughly every minute for new changes.   
-  
-And don't worry, we won't chew up your destination quota. Each sync run is only looking for changes and sending those over. If nothing's changed, we won't even talk to the destination. 
+You can happily run a sync manually, but that's not all that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in two ways:
+
+* Schedules
+* Programmatically via API
+
+#### Schedules
+
+Schedules let you specify a time and frequency that Census can use to run your sync automatically. You can choose options from weekly all the way to Continuous, which means Census checks your source roughly every minute for new changes. 
+
+![](../.gitbook/assets/screely-1621265385900.png)
+
+**Trigger via API**
+
+Each sync can also be triggered via API. On the configuration page, you can access the trigger API endpoint for the sync. An HTTP POST call to this endpoint will trigger the sync. You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
+
+![](../.gitbook/assets/screely-1621265332761.png)
+
+Either method you choose, you don't have to worry about us eating up your destination quota. Each sync run is only looking for changes and sending those over. If nothing's changed, we won't even talk to the destination. 
 
 
 
