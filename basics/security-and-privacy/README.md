@@ -14,7 +14,7 @@ Our architecture is always evolving to support higher performance publishing to 
 
 We are compliant with SOC 2 Type 1, GDPR, CCPA and, Privacy Shield.
 
-![](../../.gitbook/assets/cleanshot-2021-03-06-at-23.27.03-2x.png)
+![](../../.gitbook/assets/image.png)
 
 In addition to these certifications:
 
