@@ -106,6 +106,8 @@ curl -X POST https://bearer:secret-token:1234567890ABCDEFGHIJKLMNOP@app.getcensu
 
 Either method you choose, you don't have to worry about us eating up your destination quota. Each sync run is only looking for changes and sending those over. If nothing's changed, we won't even talk to the destination. 
 
+{% embed url="https://www.loom.com/share/fa2e1c1120c346a785aff318bf615cda" %}
+
 
 
 ## Wrapping things up
