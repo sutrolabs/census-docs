@@ -50,10 +50,29 @@ Because permissions are a bit unique on BigQuery so the process of creating a ne
 
 BigQuery supports [External Tables](https://cloud.google.com/bigquery/external-data-drive) which allows Google Sheets and tabular data in Google Drive to appear as tables in BigQuery. In order for Census to access these resources, it must be given explicit access to the Google Sheet or Google Drive document.
 
-1. First, you'll need Census service account's email address for your specific connection. You can see that in the [Connections Tab](https://app.getcensus.com/connections). It's of the form census-\[LONG ID\]@sutrolabs-giza-production.iam.gserviceaccount.com
+1. First, you'll need the Census service account's email address for your specific connection. You can see that in the [Connections Tab](https://app.getcensus.com/connections). It's of the form census-\[LONG ID\]@sutrolabs-giza-production.iam.gserviceaccount.com
 2. Next, in Google Drive, click Share and give that email address permission to View the contents of the document.
 
 If Census does not have view access to the document, you will see an error indicating that Census does not have permission to access the underlying data for that table.
+
+## **🗃**Accessing views that depend on other projects in BigQuery
+
+It's possible to create views in a BigQuery project that reference the tables and views present in other BigQuery projects. In order for Census to access these types of views within your project, it must also be granted permissions in the other projects that contain the referenced tables and views. If you are using the default IAM policies that Census recommends, you may run the following commands in your **Google Cloud Shell** in the Google Cloud Console, where:
+
+* **\[new-project\]** is the name of the project where the referenced tables and views exist.
+* **\[service-account-user\]** is the Census service account's email address for the specific connection that contains the view you're trying to access. You can see that in the [Connections Tab](https://app.getcensus.com/connections). It's of the form census-\[LONG ID\]@sutrolabs-giza-production.iam.gserviceaccount.com
+
+```text
+gcloud projects add-iam-policy-binding [new-project] \
+  --member serviceAccount:[service-account-user] \
+  --role roles/bigquery.dataViewer
+  
+gcloud projects add-iam-policy-binding [new-project] \
+  --member serviceAccount:[service-account-user] \
+  --role roles/bigquery.user
+```
+
+Google BigQuery permissions are recursive. If the referenced view in the new project _also references_ tables and views in other projects, you may need to repeat the above steps for those other projects until Census has the ability to access the ultimate source of a given view.
 
 ## 💡 Notes
 

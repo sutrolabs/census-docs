@@ -21,6 +21,7 @@ If you are new here, you should check out:
   * [Pipedrive](https://youtu.be/s3pCULG8Zkg)
   * [Netsuite](https://www.youtube.com/watch?v=ITZzrwtCf7M)
   * [Mixpanel](https://www.youtube.com/watch?v=q-JxGTsORfE)
+  * [Mailchimp](https://youtu.be/tu3hr3BV6Sg)
 
 ## 🎊 Product Changelog
 
