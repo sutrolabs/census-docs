@@ -22,7 +22,7 @@ Then select **API Credentials**
 
 ![](../.gitbook/assets/cio_step2.png)
 
-### **3. Create a new set of credentials for Census**
+### **3. Create a new set of Tracking API credentials for Census**
 
 Click the **Create New API Credentials** button in the top right.![](../.gitbook/assets/cio_step3.png)
 
