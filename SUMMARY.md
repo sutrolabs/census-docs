@@ -7,7 +7,7 @@
 * [Core Concepts](basics/core-concept.md)
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
-* [Native dbt Integration](basics/native-dbt-integration.md)
+* [dbt and dbt Cloud Integration](basics/native-dbt-integration.md)
 
 ## ⤵️ Data Sources \(Warehouse\) <a id="source-warehouse"></a>
 
