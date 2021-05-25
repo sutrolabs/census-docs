@@ -32,7 +32,11 @@ Once you’ve configured your project repository, Census will analyze your proje
 
 ## Integrating with dbt Cloud
 
-If you're using dbt Cloud to run your dbt project, our integration goes even father. You can configure Census to automatically run syncs whenever your models have been rebuilt. 
+If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt. 
+
+{% embed url="https://www.loom.com/share/ae05a6dad7364972a06352b6c2599590" %}
+
+
 
 To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key. 
 
