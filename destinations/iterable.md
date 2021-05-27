@@ -54,3 +54,25 @@ You can map data fields into your existing Iterable audience schema \(including 
 
 ![](../.gitbook/assets/iterable_setup6.png)
 
+{% hint style="info" %}
+**Nested Objects in Iterable**
+
+Iterable supports nested objects and fields on its User object. If you would like to send JSON, Arrays, or JSON Arrays to a field in Iterable, you may.
+
+For most data warehouses, there are specific datatypes for these types of values. However, Amazon Redshift does not natively support JSON, so you will want to store this type of data as a string value. Provided that the values are valid JSON, Census will ensure that it is nested as expected when sending the data to Iterable. 
+
+As an example, valid JSON for a field named "subscription" could have the following value:
+
+```text
+{
+  "plan": "Premium",
+  "products": [
+      "unlimited_users",
+      "24_hr_support_sla"
+    ]
+}
+```
+
+We recommend testing your JSON fields in Redshift by using Redshift's [IS\_VALID\_JSON](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON.html) and [IS\_VALID\_JSON\_ARRAY](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON_ARRAY.html) functions, especially before creating new fields in Iterable via Census's field mapper.
+{% endhint %}
+
