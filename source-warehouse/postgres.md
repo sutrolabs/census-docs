@@ -79,11 +79,15 @@ Census optionally allows connecting to Postgres warehouses that are only accessi
 
 ![](../.gitbook/assets/redshift_pg_1.png)
 
-1. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page. Copy the public key to the clipboard from there and add it to the SSH authorized keys file on the SSH host for the user created in the first step.  \(If, for example, this user is named 'census', the file will be at **/home/census/.ssh/authorized\_keys**. You may need to create this file if it doesn't exist yet.\)
+3. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page. 
+
+To install the kepair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step.  If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
+
+Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
 
 ![](../.gitbook/assets/redshift_pg_2.png)
 
-1. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allow list.
+4. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allow list.
 
 With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
 
