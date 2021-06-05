@@ -1,4 +1,4 @@
-# Custom API \[Beta\]
+# Custom Destination API \[Beta\]
 
 Census provides fast and reliable data synchronization from your data warehouse to dozens of SaaS applications, via our SaaS connector library. Although we are adding new connectors quickly, we realize that there may be some destinations that we may never be able to support – internal systems, niche applications, or applications with private APIs.
 
