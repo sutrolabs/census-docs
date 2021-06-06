@@ -1,26 +1,72 @@
+---
+description: >-
+  This page guides you on how to use the Custom Destination API to create a
+  connection to any destination service you like.
+---
+
 # Custom Destination API \[Beta\]
 
-Census provides fast and reliable data synchronization from your data warehouse to dozens of SaaS applications, via our SaaS connector library. Although we are adding new connectors quickly, we realize that there may be some destinations that we may never be able to support – internal systems, niche applications, or applications with private APIs.
+Custom Destination API allow you to "bring your own" SaaS connector to Census. A custom destination is a few simple API endpoints that teach Census about the type of data your connector can process, the operations allowed on that data, and how to actually load that data. You can deploy your implement to any service you like, as long as Census can reach the URL over the internet.
 
-Custom APIs allow you to "bring your own" SaaS connector to Census for use in these types of integrations. In order to write a connector, you'll need to implement a few simple APIs that teach Census about the type of data your connector can process, the operations allowed on that data, and how to actually load that data. You'll deploy this code to a URL on the Internet that Census can reach, then configure Census to discover your connector using that URL.
-
-Custom APIs cannot be shared across Census accounts, and there is currently no plan for community-owned connectors or a connector marketplace. There are a number of core Census features that are not currently available to Custom APIs, and the Census product team is committed to building high-quality first-party connectors for as many SaaS applications as we can. Please contact us if Census is missing a SaaS connector that you believe would be useful to our customer community!
-
-This guide documents the protocol that your Custom API will use to communicate with Census, and provides tips on connector design, debugging, and troubleshooting.
-
-Custom APIs are a beta feature in Census. Please contact your account representative if you'd like access to this feature and we'll get you set up!
+This guide walks you through setting up an example implementation, how to build your own from scratch, and covers all the technical details of how it operates. The Custom Destination API is currently in beta and [we'd love to hear your feedback](mailto:support@getcensus.com)!
 
 ## Getting Started
 
-### What You'll Need
+To start, let's walk through the steps to deploy the[ sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). This will give you a good overview of everything involved in building a custom destination implementation.
 
-* A Census account. If you don't have one, you can sign up for a free trial [here](https://app.getcensus.com/)
-* A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS, so if you're testing your code on a development machine, we recommend you use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL
-* A destination to which you want to integrate. Generally speaking your Custom API will act as a proxy that passes data from Census to some destination system, which can be any data store.
-* A plan for testing you connection. You can use a Census model to "hard code" a small data set in your warehouse as a source for testing. You should initially point your API to a non-production destination while you test syncs to ensure you don't alter or overwrite any critical data. Once you have verified the correctness of your Custom API, you can start using it to sync production data
-* The sample code contained in [this repository](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal) can be a useful starting point for a Javascript or TypeScript integration - it takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs.
+### Prerequisites
 
-### How It Works
+* A Census account. If you don't have one, you can sign up for a free trial [here](https://app.getcensus.com/).
+* A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS. For this demo, we'll use [Netlify Functions](https://www.netlify.com/products/functions/) \(you can sign up for a free account\) . If you'd prefer to test locally, you can also use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL.
+* Your own copy of this [sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). It takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs. 
+
+Generally speaking, your Custom API will act as a proxy that passes data from Census to some destination service. For now, we're just going to log the data once it reaches our code. 
+
+Once you've got your Census, Netlify, and GitHub accounts ready, let's get started!
+
+### Fork the Sample
+
+To deploy to Netlify, you'll need a git repo with a copy of the sample implementation that Netlify can connect to directly. The easiest way to do this is by [forking the GitHub repository](https://github.com/sutrolabs/census-custom-api-docs/fork). Otherwise, you can clone the repo and then push it to a new repo on GitHub, Gitlab, or Bitbucket. 
+
+![](../.gitbook/assets/screely-1622959750961.png)
+
+### Deploy the Function
+
+Now head over to Netlify. Create a new "Site" and point Netlify at your newly forked or cloned repo. 
+
+![](../.gitbook/assets/screely-1622959803057.png)
+
+The example code is set up to work exactly to Netlify's default site specifications. You should be able to click past the Site Settings page as is. Once you've completed the three steps, you'll press the final Deploy Site button. You'll see your new site building and then eventually deployed.  
+  
+Once deployed, select Functions from the top menu. You'll see a list that contains the new **minimal** function we created. Click on it to see the URL of this new end point. That's the public URL for our newly created function. Click the handy copy button to the right and keep that handy, we'll give it to Census next. BUT! Leave this page open in a tab. It has a handy live log view that we'll return to at the very end. 
+
+![](../.gitbook/assets/screely-1622959663028.png)
+
+### Set up the Connection
+
+Now head to Census, specifically the [Connections page](https://app.getcensus.com/connections). From the **Add Services** menu, select **Custom Destination API**. You can give your new connection any name you'll remember, and the URL will be the value you copied from Netlify a moment ago. Save your new connection and you should see Census testing your new connection is responding correctly. You should see ✅in just a minute.
+
+![](../.gitbook/assets/screely-1622959628337.png)
+
+### Create a Sync
+
+The last step is to create a test sync. The sample implementation expects records with Email and Name properties, but you can sync whatever table, view, or model you have handy in your data warehouse for now, though you only need a few rows to test. 
+
+In Census on the [Syncs page](https://app.getcensus.com/syncs), click the **Add Sync** button. Select your test model and your new Custom Destination. You can provide matching email and name fields, or use any other available fields, the data won't be sent anywhere other than Netlify's logs. 
+
+Your sync should look like this at the end. Save it and run it!
+
+![](../.gitbook/assets/screely-1622959495991.png)
+
+### The Results
+
+After your sync is complete, head back to your Netlify tab. You should see the logs for the calls Census made to your connector, including the final sync data. 
+
+![](../.gitbook/assets/screely-1622959458809.png)
+
+Congratulations! You've got your first Custom Destination running! There's a lot of details we've skipped over to get here so read on to learn more about how Custom Destination API works and how you can extend it to work for your specific destinations.
+
+## Concepts
 
 Your Custom API is a bridge between Census and your destination SaaS or other system. Census syncs are divided into two phases, each of which will call different methods on your API: planning and execution.
 
@@ -600,7 +646,13 @@ Census employs a hierarchical retry strategy - syncs are retried at the record l
 
 ## Debugging Your Custom API
 
-Census provides a "debugger" for all Custom API connections that shows a full log of all requests and responses to the connection and any errors encoutered during processing. The debugger is disabled by default. To enable it, click the "Debug" button on your Custom API in the Connections view and then click the record button.
+Census provides a "debugger" for all Custom API connections that shows a full log of all requests and responses to the connection and any errors encountered during processing. The debugger is disabled by default. To enable it, click the "Debug" button on your Custom API in the Connections view and then click the record button.
 
 Census will record as many as 100 requests to your API. You can replay specific requests repeatedly in order to test fixes. Recorded requests are encrypted by Census, but we still advise you to use the debugger to clear out any potentially sensitive requests once your troubleshooting has completed.
+
+ You can also use a Census model to "hard code" a small data set in your warehouse as a source for testing. You should initially point your API to a non-production destination while you test syncs to ensure you don't alter or overwrite any critical data. Once you have verified the correctness of your Custom API, you can start using it to sync production data.
+
+## Other Details
+
+Custom APIs cannot be shared across Census accounts, and there is currently no plan for community-owned connectors or a connector marketplace. There are a number of core Census features that are not currently available to Custom APIs, and the Census product team is committed to building high-quality first-party connectors for as many SaaS applications as we can. Please contact us if Census is missing a SaaS connector that you believe would be useful to our customer community!
 
