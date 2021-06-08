@@ -10,7 +10,7 @@ description: This page describes how to use Census with Salesforce.
 
 ## 🔑 Required permissions
 
-Census connects to your Salesforce instance through a standard OAuth connection to an individual user account. We recommend using a stand-alone account specifically for Census \(often called a Service Account\) so you can see Census updates in your audit history. 
+Census connects to your Salesforce instance through a standard OAuth connection to an individual user account. We recommend using a stand-alone account specifically for Census \(often called a Service Account\) so you can see Census updates in your audit history. Census primarily uses the [Salesforce Bulk API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm) to sync data to Salesforce in the most API quota-efficient way possible. 
 
 The objects and fields accessible to Census are all determined by the user account you use when connecting Census to your Salesforce instance. Census will have the same access as the user, so if fields are read-only or hidden for that user, they will be to Census. In general, you should give Census read and write access to all the objects and fields you may want to update.
 
@@ -18,11 +18,7 @@ In addition, Salesforce currently requires that the user account have the "View 
 
 ![](../.gitbook/assets/sfdc_setup1.png)
 
-## Salesforce API access
-
-Census uses a number of Salesforce APIs to request metadata about the objects, fields, and permissions configured in Salesforce. We primarily use the [Salesforce Bulk API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm) to sync data to Salesforce in the most API quota-efficient way possible. 
-
-## Using a Salesforce Sandbox
+### Using a Salesforce Sandbox
 
 Census supports Salesforce Sandbox instances as well. Note that Sandboxes have their own set of user accounts and you may need to create a new account for Census to replicate permissions. Any time a sandbox is refreshed from production, the account will need to be recreated and the Census link re-authorized.
 
@@ -78,7 +74,7 @@ If this sounds like your situation, you have a couple of options. You may choose
 * Create a separate ID population sync in Census. This sync would be **Update Only** and typically requires creating a Census model that uses SQL to do some fuzzy matching on other properties such as the name of Salesforce records to fill the ID field. 
 * Create your new sync anyway and let it create duplicates in Salesforce. Then use Salesforce's deduplication workflow to merge the duplicated objects together, making sure to keep the new ID value.
 
-## Common Salesforce Errors
+## 🆘 Common Errors
 
 The is a running list of Salesforce errors that frequently cause skipped records on when syncing data to Salesforce.   
   
@@ -121,4 +117,8 @@ This error happens when Census is installed in Salesforce, but needs to be unblo
 This error occurs with highly automated or frequently changing Salesforce deployments. When Census is updating, it submits a batch of records to Salesforce. Salesforce splits up this batch into smaller sub batches and attempts to update them in a transaction. In this case, Salesforce was unable to create a transaction to update the specified records. 
 
 Typically, this is a transient issue and the next run of the sync won't have the same problem. However, if it persists, please contact your Census representative. In some cases, we can help control batch sizes being passed to Census.
+
+## 🚑 Need Help?
+
+Contact us via [support@getcensus.com](mailto:support@getcensus.com) or start a conversion via the [in-app](https://app.getcensus.com) chat.
 

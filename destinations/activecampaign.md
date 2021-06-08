@@ -124,7 +124,13 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 | **Update or Create** | ✅ | All |
 | **Update Only** | 🔜 |  |
 
-## 🚑 Need help connecting to ActiveCampaign?
+## 🆘 Common Errors
 
-Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+Sometimes error messages can be a little cryptic. Here's some ActiveCampaign errors that pop up on occasion and what they mean.
+
+* `Row skipped - It is on exclusion list` The record you're attempting to update appears on [ActiveCampaign's Exclusion List](https://help.activecampaign.com/hc/en-us/articles/207362110-How-to-add-contacts-to-the-Exclusion-List)  and can't be updated. 
+
+## 🚑 Need Help?
+
+Contact us via [support@getcensus.com](mailto:support@getcensus.com) or start a conversion via the [in-app](https://app.getcensus.com) chat.
 
