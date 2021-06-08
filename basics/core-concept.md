@@ -81,32 +81,13 @@ For some destinations, such as Customer.io, Iterable, or Klaviyo, you can create
 
 ### ⏱ Running Syncs: Schedules and API
 
-You can happily run a sync manually, but that's not all that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in two ways:
+You can happily run a sync manually, but that's not all that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in three ways:
 
-* Schedules
-* Programmatically via API
+* [Schedules](triggering-syncs.md#schedule)
+* [Programmatically via API or Orchestration tool](triggering-syncs.md)
+* [Automatically with dbt Cloud](native-dbt-integration.md#integrating-with-dbt-cloud)
 
-#### Schedules
-
-Schedules let you specify a time and frequency that Census can use to run your sync automatically. You can choose options from weekly all the way to Continuous, which means Census checks your source roughly every minute for new changes. 
-
-![](../.gitbook/assets/screely-1621265385900.png)
-
-**Trigger via API**
-
-Each sync can also be triggered via API. On the configuration page, you can access the trigger API endpoint for the sync. 
-
-![](../.gitbook/assets/screely-1621265332761.png)
-
-An empty HTTP POST call to this endpoint will trigger the sync \(no need to provide any data in the body\). You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
-
-```text
-curl -X POST https://bearer:secret-token:1234567890ABCDEFGHIJKLMNOP@app.getcensus.com/api/v1/syncs/0000/trigger
-```
-
-Either method you choose, you don't have to worry about us eating up your destination quota. Each sync run is only looking for changes and sending those over. If nothing's changed, we won't even talk to the destination. 
-
-{% embed url="https://www.loom.com/share/fa2e1c1120c346a785aff318bf615cda" %}
+Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 
 
 
