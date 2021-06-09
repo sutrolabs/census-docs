@@ -527,7 +527,7 @@ Census employs a hierarchical retry strategy - syncs are retried at the record l
 ```javascript
 {
   "jsonrpc": "2.0",
-  "method": "get_sync_speed",
+  "method": "sync_batch",
   "id": "5da3749ace39c7d47791dcf3b10f9842",
   "params": {
     "sync_plan": {
