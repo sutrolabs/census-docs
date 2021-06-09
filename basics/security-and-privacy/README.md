@@ -12,7 +12,7 @@ Our architecture is always evolving to support higher performance publishing to 
 
 ## 📛 Compliance
 
-We are compliant with SOC 2 Type 1, GDPR, CCPA and, Privacy Shield.
+We are compliant with SOC 2 Type 2, GDPR, CCPA and, Privacy Shield.
 
 ![](../../.gitbook/assets/image.png)
 
@@ -21,7 +21,7 @@ In addition to these certifications:
 * We have regular third-party penetration testing \([contact us](mailto:support@getcensus.com) for the latest report\)
 * Have automated vulnerability scanning in our platform
 
-### SOC2 Type 1 Audit Report
+### SOC2 Type 2 Audit Report
 
 If you are an existing Census customer, contact your Customer Success Manager or ping us in your dedicated Slack channel and we are more than happy to give you our SOC 2 audit report. If you are currently trialing Census, your point of contact can provide you the SOC 2 audit report under NDA.
 
