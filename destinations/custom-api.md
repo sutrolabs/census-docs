@@ -20,25 +20,25 @@ To start, let's walk through the steps to deploy the[ sample implementation](htt
 * A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS. For this demo, we'll use [Netlify Functions](https://www.netlify.com/products/functions/) \(you can sign up for a free account\) . If you'd prefer to test locally, you can also use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL.
 * Your own copy of this [sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). It takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs. 
 
-Generally speaking, your Custom API will act as a proxy that passes data from Census to some destination service. For now, we're just going to log the data once it reaches our code. 
+Generally speaking, your Custom API will act as a proxy that passes data from Census to some destination service. For now, we're just going to log the data once it reaches our code.
 
 Once you've got your Census, Netlify, and GitHub accounts ready, let's get started!
 
 ### Fork the Sample
 
-To deploy to Netlify, you'll need a git repo with a copy of the sample implementation that Netlify can connect to directly. The easiest way to do this is by [forking the GitHub repository](https://github.com/sutrolabs/census-custom-api-docs/fork). Otherwise, you can clone the repo and then push it to a new repo on GitHub, Gitlab, or Bitbucket. 
+To deploy to Netlify, you'll need a git repo with a copy of the sample implementation that Netlify can connect to directly. The easiest way to do this is by [forking the GitHub repository](https://github.com/sutrolabs/census-custom-api-docs/fork). Otherwise, you can clone the repo and then push it to a new repo on GitHub, Gitlab, or Bitbucket.
 
 ![](../.gitbook/assets/screely-1622959750961.png)
 
 ### Deploy the Function
 
-Now head over to Netlify. Create a new "Site" and point Netlify at your newly forked or cloned repo. 
+Now head over to Netlify. Create a new "Site" and point Netlify at your newly forked or cloned repo.
 
 ![](../.gitbook/assets/screely-1622959803057.png)
 
-The example code is set up to work exactly to Netlify's default site specifications. You should be able to click past the Site Settings page as is. Once you've completed the three steps, you'll press the final Deploy Site button. You'll see your new site building and then eventually deployed.  
-  
-Once deployed, select Functions from the top menu. You'll see a list that contains the new **minimal** function we created. Click on it to see the URL of this new end point. That's the public URL for our newly created function. Click the handy copy button to the right and keep that handy, we'll give it to Census next. BUT! Leave this page open in a tab. It has a handy live log view that we'll return to at the very end. 
+The example code is set up to work exactly to Netlify's default site specifications. You should be able to click past the Site Settings page as is. Once you've completed the three steps, you'll press the final Deploy Site button. You'll see your new site building and then eventually deployed.
+
+Once deployed, select Functions from the top menu. You'll see a list that contains the new **minimal** function we created. Click on it to see the URL of this new end point. That's the public URL for our newly created function. Click the handy copy button to the right and keep that handy, we'll give it to Census next. BUT! Leave this page open in a tab. It has a handy live log view that we'll return to at the very end.
 
 ![](../.gitbook/assets/screely-1622959663028.png)
 
@@ -50,9 +50,9 @@ Now head to Census, specifically the [Connections page](https://app.getcensus.co
 
 ### Create a Sync
 
-The last step is to create a test sync. The sample implementation expects records with Email and Name properties, but you can sync whatever table, view, or model you have handy in your data warehouse for now, though you only need a few rows to test. 
+The last step is to create a test sync. The sample implementation expects records with Email and Name properties, but you can sync whatever table, view, or model you have handy in your data warehouse for now, though you only need a few rows to test.
 
-In Census on the [Syncs page](https://app.getcensus.com/syncs), click the **Add Sync** button. Select your test model and your new Custom Destination. You can provide matching email and name fields, or use any other available fields, the data won't be sent anywhere other than Netlify's logs. 
+In Census on the [Syncs page](https://app.getcensus.com/syncs), click the **Add Sync** button. Select your test model and your new Custom Destination. You can provide matching email and name fields, or use any other available fields, the data won't be sent anywhere other than Netlify's logs.
 
 Your sync should look like this at the end. Save it and run it!
 
@@ -60,7 +60,7 @@ Your sync should look like this at the end. Save it and run it!
 
 ### The Results
 
-After your sync is complete, head back to your Netlify tab. You should see the logs for the calls Census made to your connector, including the final sync data. 
+After your sync is complete, head back to your Netlify tab. You should see the logs for the calls Census made to your connector, including the final sync data.
 
 ![](../.gitbook/assets/screely-1622959458809.png)
 
@@ -650,7 +650,7 @@ Census provides a "debugger" for all Custom API connections that shows a full lo
 
 Census will record as many as 100 requests to your API. You can replay specific requests repeatedly in order to test fixes. Recorded requests are encrypted by Census, but we still advise you to use the debugger to clear out any potentially sensitive requests once your troubleshooting has completed.
 
- You can also use a Census model to "hard code" a small data set in your warehouse as a source for testing. You should initially point your API to a non-production destination while you test syncs to ensure you don't alter or overwrite any critical data. Once you have verified the correctness of your Custom API, you can start using it to sync production data.
+You can also use a Census model to "hard code" a small data set in your warehouse as a source for testing. You should initially point your API to a non-production destination while you test syncs to ensure you don't alter or overwrite any critical data. Once you have verified the correctness of your Custom API, you can start using it to sync production data.
 
 ## Other Details
 

@@ -96,8 +96,8 @@ Click the Next button to see the final preview, which will have a recap of what 
 | :--- | :---: | :--- |
 | Devices | ✅ | Device ID |
 | Users | ✅ | User ID |
-| Groups | 🔜 | Group ID |
-| Events | 🔜 | User ID |
+| Groups | ✅ | Group Value |
+| Events | ✅ | Insert ID |
 
 Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User. 
 
@@ -111,8 +111,8 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 
 | **Behaviors** | **Supported?** | **Objects?** |
 | ---: | :---: | :---: |
-| **Update or Create** | ✅ | Device, User |
-| **Create Only** | 🔜 | Event |
+| **Update or Create** | ✅ | Device, User, Group |
+| **Create Only** | ✅ | Event |
 
 ‌ 🔋 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
