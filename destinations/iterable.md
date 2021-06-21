@@ -76,3 +76,30 @@ As an example, valid JSON for a field named "subscription" could have the follow
 We recommend testing your JSON fields in Redshift by using Redshift's [IS\_VALID\_JSON](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON.html) and [IS\_VALID\_JSON\_ARRAY](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON_ARRAY.html) functions, especially before creating new fields in Iterable via Census's field mapper.
 {% endhint %}
 
+## 🗄 Supported Objects
+
+| **Object Name** | **Supported?** | Identifiers |
+| ---: | :---: | :--- |
+| User | ✅ | User ID, Email |
+| Event | ✅ | Event ID |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
+
+## 🔄 Supported Sync Behaviors
+
+{% hint style="info" %}
+Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+{% endhint %}
+
+| **Behaviors** | **Supported?** | **Objects?** |
+| ---: | :---: | :---: |
+| **Update or Create** | ✅ | User |
+| **Update Only** | ✅ | User |
+| **Append** | ✅ | Event |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Iterable.
+
+## 🚑 Need help connecting to Iterable?
+
+Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+
