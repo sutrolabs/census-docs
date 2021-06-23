@@ -74,7 +74,12 @@ gcloud projects add-iam-policy-binding [new-project] \
 
 Google BigQuery permissions are recursive. If the referenced view in the new project _also references_ tables and views in other projects, you may need to repeat the above steps for those other projects until Census has the ability to access the ultimate source of a given view.
 
-## 💡 Notes
+## 🚦 Allowed IP Addresses
 
-BigQuery does things a bit differently from other data warehouses. Unfortunately, as of this moment, BigQuery does not support limiting access to specific IP addresses.
+Census will always connect to your data warehouse from of these static IP addresses:
+
+* 34.216.163.241
+* 54.212.243.205
+
+While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access.  
 
