@@ -6,7 +6,9 @@ description: This page describes how to use Census with Stripe.
 
 ## Introduction
 
-In this guide, we will show you how to connect your Stripe instance to [Census](https://www.getcensus.com/) and create your first sync.Prerequisites
+In this guide, we will show you how to connect your Stripe instance to [Census](https://www.getcensus.com/) and create your first sync.
+
+## Prerequisites
 
 * [Create a Free Trial Census Account](https://app.getcensus.com/)
 * Have your Stripe account ready

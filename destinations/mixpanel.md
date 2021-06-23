@@ -8,7 +8,7 @@ description: This page describes how to use Census with Mixpanel.
 
 {% embed url="https://www.youtube.com/watch?v=q-JxGTsORfE" %}
 
-### 0. Prerequisites
+### Prerequisites
 
 * [Create a Free Trial Census Account](https://app.getcensus.com/)
 * Have your Mixpanel Project Token and API Secret ready as we will be using those to connect Census to Mixpanel
