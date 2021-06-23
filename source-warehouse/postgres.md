@@ -8,7 +8,7 @@ description: >-
 
 ## 🔐 Required Permissions
 
-{% hint style="danger" %}
+{% hint style="info" %}
 These instructions are well tested to connect Census to Postgres. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions. 
 {% endhint %}
 
@@ -52,6 +52,10 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO
 ```
 
 ## 💡 Notes
+
+{% hint style="danger" %}
+We **strongly recommend against** connecting Census a production Postgres database. Census queries are often very analytical in nature and do not always play nicely with production environments. Unfortunately, Postgres doesn't give you much ability to control performance impacts across users so to avoid issues, please use Census with databases set up for analytic workloads only!
+{% endhint %}
 
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "&lt;your schema&gt;" for each of them
 * In older versions of PostgreSQL, if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata. In later versions of PostgreSQL this extra read access is not required.
