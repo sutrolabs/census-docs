@@ -39,6 +39,7 @@
 * [Mixpanel](destinations/mixpanel.md)
 * [NetSuite](destinations/netsuite.md)
 * [Outreach](destinations/outreach.md)
+* [Pendo](destinations/pendo.md)
 * [Pipedrive](destinations/pipedrive.md)
 * [Salesforce](destinations/salesforce.md)
 * [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
