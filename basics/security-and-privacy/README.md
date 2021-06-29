@@ -62,7 +62,7 @@ The temporary credentials we provide to your warehouse that are used to copy dat
 
 The cloud storage buckets used by Census are configured with two additional security measures, managed by AWS and Google Cloud.
 
-* **Items in these buckets are automatically removed after 7 days.** This is a fallback if our platform and doesn't remove this temporary data as soon as it is processed bt a sync 
+* **Items in these buckets are automatically removed after 7 days.** This is a fallback if our platform doesn't remove this temporary data as soon as it is processed by a sync. 
 * Data in these buckets are encrypted using the cloud providers’ **server-side encryption**, protecting your data from some classes of attacks on the cloud providers themselves.
 
 ### Step 3: Prepare Data for Loading into SaaS Applications
