@@ -31,7 +31,7 @@ If you are an existing Census customer, contact your Customer Success Manager or
 
 ![](../../.gitbook/assets/census-security-architecture-2x.png)
 
-As part of onboarding, you’ll create a `Census` schema within your data warehouse. This is a bookkeeping area used by the platform to keep track of what changes have occurred to your data and what still needs to be synced. 
+As part of onboarding, you’ll create a `Census` schema within your data warehouse. This is a bookkeeping area used by the platform to keep track of what changes have occurred to your data and what still needs to be synced.
 
 Instead of storing this data in our platform, we keep it in your data warehouse for two reasons.
 
