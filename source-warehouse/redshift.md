@@ -51,13 +51,19 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO
 ```
 
 {% hint style="warning" %}
-**Using dbt? Make sure Census retains access after each dbt run**
-
-dbt \(data build tool\) often requires permissions to be re-granted on objects after it rebuilds models. Census customers frequently extend permissions management on their dbt models in two ways:  
-  
-1. **Fine-grained permissions.** By adding [post-hooks](https://docs.getdbt.com/reference/resource-configs/pre-hook-post-hook#grant-privileges-on-a-directory-of-models) in a dbt project, Census customers immediately grant access to the Census database user after each desired model builds.  
-2. **Access to all dbt tables and views.** Census customers [change the default permissions](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_DEFAULT_PRIVILEGES.html) of the database user for their production dbt runs so that any tables and views created are accessible to the Census database user, with the same permissions listed in the script above. The ALTER DEFAULT PRIVILEGES command must be run by a Redshift superuser.
+**Using dbt? Make sure Census retains access after each dbt run!**
 {% endhint %}
+
+dbt \(data build tool\) often requires permissions to be re-granted on objects after it rebuilds models. Census customers frequently extend permissions management on their dbt models in two ways:
+
+1.  **Fine-grained permissions** – By adding [post-hooks](https://docs.getdbt.com/reference/resource-configs/pre-hook-post-hook#grant-privileges-on-a-directory-of-models) in a dbt project, Census customers immediately grant access to the Census database user after each desired model builds.
+2. **Access to all dbt tables and views \(Recommended\)** – Census customers change the default permissions of the database user for their production dbt runs so that any tables and views created by that users are accessible to the Census database user. In this case, we extend the `ALTER DEFAULT PRIVILEGES` to specifically indicate the defaults of the dbt production run user. 
+
+```text
+ALTER DEFAULT PRIVILEGES FOR USER "<dbt run user> IN SCHEMA "<dbt target schema>" GRANT SELECT ON TABLES TO CENSUS;
+```
+
+Because this is altering the default behavior of another user, this command must be run by a Redshift superuser.
 
 ## 💡 Notes
 
