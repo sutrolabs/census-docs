@@ -60,7 +60,7 @@ dbt \(data build tool\) often requires permissions to be re-granted on objects a
 2. **Access to all dbt tables and views \(Recommended\)** – Census customers change the default permissions of the database user for their production dbt runs so that any tables and views created by that users are accessible to the Census database user. In this case, we extend the `ALTER DEFAULT PRIVILEGES` to specifically indicate the defaults of the dbt production run user. 
 
 ```text
-ALTER DEFAULT PRIVILEGES FOR USER "<dbt run user> IN SCHEMA "<dbt target schema>" GRANT SELECT ON TABLES TO CENSUS;
+ALTER DEFAULT PRIVILEGES FOR USER "<your dbt run user> IN SCHEMA "<your dbt target schema>" GRANT SELECT ON TABLES TO CENSUS;
 ```
 
 Because this is altering the default behavior of another user, this command must be run by a Redshift superuser.
