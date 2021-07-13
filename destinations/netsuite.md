@@ -128,13 +128,20 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 | **Object Name** | **Supported?** |
 | ---: | :---: |
 | Account | ✅ |
+| Cash Sale | ✅ |
 | Contact | ✅ |
+| Credit Memo | ✅ |
 | Currency | ✅ |
 | Customer | ✅ |
 | Customer Status | ✅ |
 | Employee | ✅ |
 | Invoice | ✅ |
+| Journal Entry | ✅ |
+| Partner | ✅ |
+| Purchase Order | ✅ |
+| Sales Order | ✅ |
 | Subsidiary | ✅ |
+| Vendor | ✅ |
 
 {% hint style="info" %}
 Please note that NetSuite doesn't support the [creation of fields](../basics/core-concept.md#field-creation) via Census and currently we don't support [add all fields ](../basics/core-concept.md#add-all-fields)feature for NetSuite
