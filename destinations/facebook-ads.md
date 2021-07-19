@@ -1,12 +1,16 @@
 ---
-description: This page describes how to use Census with Facebook Ads Audiences.
+description: >-
+  This page describes how to use Census with Facebook Ads (Audiences and
+  Conversions).
 ---
 
-# Facebook Ads Audiences
+# Facebook Ads
 
 ## 🏃‍♂️ Getting Started
 
 {% embed url="https://www.youtube.com/watch?v=0\_jr7dv-FWE" %}
+
+## Audiences
 
 ### 1. Collect the Facebook Audience ID
 
@@ -62,19 +66,79 @@ Let Census know which column should be used to assign users to their audience. S
 
 You can then map any user identifying fields that are present in your source data \(e.g. phone number, email, first name, last name, etc\).
 
+## Conversions
+
+Send web events directly to Facebook from your warehouse, exactly as if they were pixel events using the Facebook Conversions API. 
+
+### 1. Choose or create a conversion event in Facebook, Collect the Pixel ID
+
+To view all your Facebook Ads accounts' Pixel IDs go to the [Events Manager](https://www.facebook.com/business/help/898185560232180): [https://business.facebook.com/events\_manager2/list/](https://business.facebook.com/events_manager2/list/). 
+
+Be sure to select the specific ads account you want to work on. You can switch ad accounts in the navigation bar on the left side of the screen.
+
+In the events manager, you can view all your ad account's pixels and view or create conversion events.
+
+### 2. Create a sync
+
+In your SQL model, dbt model, or table -- ensure that you have all required fields for your conversion sync, and any user identifiers so that Facebook can perform ad attribution. Facebook Conversion syncs require the following fields:
+
+#### A. Event ID
+
+Census requires the model to have a column that stores a unique identifier for each row so that Census never sends any duplicate records. We'll call this unique identifier column "Event ID". If you have an identifier that you are already passing via your pixel on the website for online versions of this conversion event, use this identifier. Some common examples include `user_id`, `lead_id`, and `order_id`.  
+
+#### B. Minimum Event Parameters
+
+The Facebook Conversions API requires 4 fields for every event:
+
+* Pixel ID - see above to find.
+* [Action Source](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event#action-source) - This field allows you to specify where your conversions occurred. It accepts one of the following values: "email", "website", "phone\_call", "chat", "physical\_store",  "system\_generated", and "other".
+* [Event Name](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event#event-name) - A Facebook pixel [Standard Event](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events) or [Custom Event](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#custom-events) name.
+* [Event Time](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event#event-time) - can be up to 7 days before you send an event to Facebook. This date must be sent in GMT timezone.
+
+#### C. Customer Information Parameters
+
+Facebook attributes conversions back to ad campaigns by identifying the users that saw or interacted with ad content. To do so, they accept the following user identifiers and will attempt to match each conversion to a facebook user. **Sending more identifiers will improve match rates**.
+
+For a more complete description of each identifier, please see [Facebook's API documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters). When Facebook requires a field's value to be hashed, you may choose to use a pre-hashed value \(if you have one\), or for Census to perform the hashing for you.
+
+* Email
+* Phone
+* Gender
+* Date of Birth
+* Last Name
+* First Name
+* City
+* State
+* Zip
+* Country
+* External ID
+* Client IP address
+* Client user agent
+* Click ID
+* Browser ID
+* Subscription ID
+* Facebook Login ID
+* Lead ID
+
+#### Putting it all together...
+
+Your final sync configuration will look like the following!
+
+![](../.gitbook/assets/screely-1626208532062.png)
+
 ## 🗄 Supported Objects
 
 | **Object Name** | **Supported?** | Identifiers |
 | ---: | :---: | :--- |
 | Customer | ✅ | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/) |
-| Offline Conversions | 🔜 |  |
+| Conversions | ✅ | Any unique ID |
 | Product Catalog | 🔜 |  |
 
 Please [contact us](mailto:support@getcensus.com) if there are additional Facebook Ads objects you'd like us to support.
 
 #### Data Normalization
 
-Facebook Audiences are a bit unique from other services. We do not upload the data you provide directly. Instead, it's "matched" to Facebook's audience. To do this, both sides "hash" their data so users can be compared without revealing the actual personally identifiable information. 
+Facebook Audiences and Conversions are a bit unique from other services. We do not upload the data you provide directly. Instead, it's "matched" to Facebook's audience. To do this, both sides "hash" their data so users can be compared without revealing the actual personally identifiable information. 
 
 Census automatically takes care of this hashing step for you. 
 

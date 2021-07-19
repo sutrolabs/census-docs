@@ -26,7 +26,7 @@
 * [Customer.io](destinations/customer.io.md)
 * [Custom Destination API \[Beta\]](destinations/custom-api.md)
 * [Drift](destinations/drift.md)
-* [Facebook Ads Audiences](destinations/facebook-ads-audiences.md)
+* [Facebook Ads](destinations/facebook-ads.md)
 * [Front](destinations/front.md)
 * [Google Ads](destinations/google-ads.md)
 * [Google Sheets](destinations/google-sheets.md)
