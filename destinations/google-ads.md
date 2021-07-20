@@ -120,8 +120,9 @@ We recommend you do not use Google's Customer Match expiration setting. Census-s
 | **Behaviors** | **Supported?** | **Objects?** |
 | ---: | :---: | :---: |
 | **Update or Create** | ✅ | All |
+| **Mirror** | ✅ | All |
 
-[Contact us](mailto:support@getcensus.com) if you're looking for support more additional Sync Behaviors!
+[Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
 
 Note: If you're reusing an existing Customer Match Lists, Census will not remove any users already added to those lists through other means. 
 
