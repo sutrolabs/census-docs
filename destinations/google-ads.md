@@ -111,7 +111,7 @@ That's it! In 5 steps, you connected your data warehouse to Google Ads and built
 
 **Google Customer Match behavior**
 
-Google Customer Match, as its name implies, is a matching service rather than the usual direct upload. In order to protect user data, we do not upload the data you provide directly. Instead, records are "matched" against Google's existing user base. To do this, both sides perform a "hash" or consistent, but irreversible conversion of data so users can be compared without revealing the actual personally identifiable information. Census automatically takes care of this hashing step for you. 
+Google Customer Match, as its name implies, is a matching service rather than the usual direct upload. In order to protect user data, we do not upload the data you provide directly. Instead, records are "matched" against Google's existing user base. To do this, both sides perform a "hash" -- or consistent, but irreversible conversion -- of data so users can be compared without revealing the actual personally identifiable information. Census automatically takes care of this hashing step for you. 
 
 We recommend you do not use Google's Customer Match expiration setting. Census-synced records are subject to the same expiration and will not be re-uploaded unless they are changed in your source data. 
 
