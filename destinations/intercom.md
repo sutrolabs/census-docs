@@ -107,6 +107,10 @@ Census currently supports syncing to the following Intercom objects.
 | Lead | ✅ | Email, Intercom ID, External ID |
 | User | ✅ | Email, Intercom ID, External ID |
 
+{% hint style="info" %}
+If you're finding Companies missing in Intercom after a sync, make sure the company also has users associated with them. By default, Intercom hides companies with no associated users.
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Intercom.
 
 ## 🔄 Supported Sync Behaviors
