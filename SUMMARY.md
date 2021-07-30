@@ -7,6 +7,7 @@
 * [Core Concepts](basics/core-concept.md)
 * [Triggering Syncs](basics/triggering-syncs.md)
 * [dbt and dbt Cloud Integration](basics/native-dbt-integration.md)
+* [Alerts](basics/alerts.md)
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 
