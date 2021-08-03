@@ -118,9 +118,11 @@ Please be aware that with custom object, we need to do extra call due to the lim
 | ---: | :---: | :--- |
 | Company | ✅ | Object ID, any Text/Number  |
 | Contact | ✅ | Object ID, any Text/Number |
+| Deal | ✅ | Object ID, any Text/Number |
+| Product | ✅ | Object ID, any Text/Number |
+| Line Item | ✅ | Object ID, any Text/Number |
 | Any Custom Object | ✅ | Object ID, any searchableProperty |
 | Event | 🔜 |  |
-| Deal | 🔜 |  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for HubSpot.
 
@@ -140,7 +142,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 | ---: | :---: | :---: |
 | **Update or Create** | ✅ | All |
 | **Update Only** | ✅ | All |
-| **Mirror** | 🔜 | All |
+| **Mirror** | ✅ | All |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for HubSpot.
 
