@@ -447,56 +447,7 @@ _Known Issue_: Currently these “speed limits” are enforced at the sync level
   "jsonrpc": "2.0",
   "method": "get_sync_speed",
   "id": "fca4af985ea367a22bec9cb6fc31676f",
-  "params": {
-    "sync_plan": {
-      "object": {
-        "object_api_name": "restaurant",
-        "label": "Restaurants"
-      },
-      "operation": "upsert",
-      "schema": {
-        "name": {
-          "active_identifier": true,
-          "field": {
-            "field_api_name": "name",
-            "label": "Name",
-            "identifier": true,
-            "required": true,
-            "createable": true,
-            "updateable": true,
-            "type": "string",
-            "array": false,
-          }
-        },
-        "zip": {
-          "active_identifier": false,
-          "field": {
-            "field_api_name": "zip",
-            "label": "ZIP Code",
-            "identifier": false,
-            "required": false,
-            "createable": true,
-            "updateable": true,
-            "type": "decimal",
-            "array": false,
-          },
-        },
-        "tag_list": {
-          "active_identifier": false,
-          "field": {
-            "field_api_name": "tag_list",
-            "label": "Tags",
-            "identifier": false,
-            "required": true,
-            "createable": true,
-            "updateable": true,
-            "type": "string",
-            "array": true,
-          }
-        }
-      }
-    }
-  }
+  "params": {}
 }
 ```
 
