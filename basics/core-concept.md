@@ -50,6 +50,10 @@ Syncs are also what makes Census so unique. Unlike most integration tools that a
 
 ### 🔀 Sync Behaviors
 
+{% hint style="success" %}
+All of our syncs are incremental, which means we only sync records that are new or have their data changed since the previous sync.
+{% endhint %}
+
 Sync Behaviors tell Census the types of change it should apply to your data when a sync finds a matching \(or not\) record in a source and a destination. We support a few different sync behaviors:
 
 |                                  |      |
