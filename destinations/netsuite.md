@@ -129,14 +129,17 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 | ---: | :---: |
 | Account | ✅ |
 | Cash Sale | ✅ |
+| Class | ✅ |
 | Contact | ✅ |
 | Credit Memo | ✅ |
 | Currency | ✅ |
 | Customer | ✅ |
 | Customer Status | ✅ |
+| Department | ✅ |
 | Employee | ✅ |
 | Invoice | ✅ |
 | Journal Entry | ✅ |
+| Location | ✅ |
 | Partner | ✅ |
 | Purchase Order | ✅ |
 | Sales Order | ✅ |
