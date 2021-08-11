@@ -135,6 +135,7 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 | Currency | ✅ |
 | Customer | ✅ |
 | Customer Status | ✅ |
+| Custom Record | 🔜 |
 | Department | ✅ |
 | Employee | ✅ |
 | Invoice | ✅ |
