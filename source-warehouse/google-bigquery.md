@@ -24,7 +24,15 @@ Census reads data from one or more tables \(possibly across different schemata\)
 BigQuery manages these permissions through their IAM Policy mechanism. Specifically, Census uses two BigQuery policies by default:
 
 * `bigquery.dataViewer` - Allows Census read-only access to list the datasets and tables in the BigQuery instance, and to get data from the tables.
-* `bigquery.user` - Allows Census to create new datasets which we use to create the `census` dataset. This then grants Census the `bigquery.dataOwner`  role on the contents of this dataset.
+* `bigquery.user` - Allows Census to create new datasets which we use to create the `CENSUS` dataset. This then grants Census the `bigquery.dataOwner`  role on this dataset.
+
+#### Advanced Permissions
+
+We definitely recommend you use the two permissions we specify when creating a new BigQuery connection. If you cannot grant these permissions at the project level, you can grant them finer grain. These are the specific permissions the Census service account needs:
+
+* `bigquery.dataViewer` access on the dataset or specific table you'd like Census to read from.
+* You can manually create a `CENSUS` dataset. The Census service account will then need the `bigquery.dataOwner`  role on this dataset.
+* Finally, Census service account needs project-level access with the `bigquery.JobUser` role or specifically the `bigquery.jobs.create` permission \(via a custom role\).
 
 ## 🔩 Configuring a new BigQuery connection
 
