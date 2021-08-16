@@ -131,6 +131,10 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[SYNC_RUN_ID]
 
 {% embed url="https://www.loom.com/share/3437c30c24fb44c09aa0d81f79cf99e6" %}
 
+{% hint style="info" %}
+Heads up: Unlike Airflow 2, Airflow 1 doesn't show any non-"core" providers \(i.e. Census!\) in the connections UI. If you're using Airflow 1, Census should be configured as an "HTTP" Conn Type, [as documented here](https://github.com/sutrolabs/airflow-provider-census#configuration-in-airflow-110).
+{% endhint %}
+
 Whether you're using [Astronomer](https://astronomer.io) or self-hosting your own instance, you can use Census's   Airflow Provider to trigger and monitor Census syncs.
 
 Visit the [Census Airflow Provider GitHub repository](https://github.com/sutrolabs/airflow-provider-census) for more details on how to use it for your project. 
