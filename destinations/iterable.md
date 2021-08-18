@@ -82,6 +82,7 @@ We recommend testing your JSON fields in Redshift by using Redshift's [IS\_VALID
 | ---: | :---: | :--- |
 | User | ✅ | User ID, Email |
 | Event | ✅ | Event ID |
+| Product Catalogs | ✅ | Item ID |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
 
@@ -93,9 +94,10 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 
 | **Behaviors** | **Supported?** | **Objects?** |
 | ---: | :---: | :---: |
-| **Update or Create** | ✅ | User |
+| **Update or Create** | ✅ | User, Catalog |
 | **Update Only** | ✅ | User |
 | **Append** | ✅ | Event |
+| **Mirror** | ✅ | Catalog |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Iterable.
 
