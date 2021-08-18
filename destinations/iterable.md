@@ -54,8 +54,17 @@ You can map data fields into your existing Iterable audience schema \(including 
 
 ![](../.gitbook/assets/iterable_setup6.png)
 
-{% hint style="info" %}
-**Nested Objects in Iterable**
+## 🗄 Supported Objects
+
+| **Object Name** | **Supported?** | Identifiers |
+| ---: | :---: | :--- |
+| User | ✅ | User ID, Email |
+| Event | ✅ | Event ID |
+| Catalogs | ✅ | Key |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
+
+### Handling Nested Objects
 
 Iterable supports nested objects and fields on its User object. If you would like to send JSON, Arrays, or JSON Arrays to a field in Iterable, you may.
 
@@ -73,18 +82,16 @@ As an example, valid JSON for a field named "subscription" could have the follow
 }
 ```
 
-We recommend testing your JSON fields in Redshift by using Redshift's [IS\_VALID\_JSON](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON.html) and [IS\_VALID\_JSON\_ARRAY](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON_ARRAY.html) functions, especially before creating new fields in Iterable via Census's field mapper.
-{% endhint %}
+We recommend testing your JSON fields in Redshift by using Redshift's [`IS_VALID_JSON`](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON.html) and [`IS_VALID_JSON_ARRAY`](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON_ARRAY.html) functions, especially before creating new fields in Iterable via Census's field mapper.
 
-## 🗄 Supported Objects
+### Syncing to Catalogs
 
-| **Object Name** | **Supported?** | Identifiers |
-| ---: | :---: | :--- |
-| User | ✅ | User ID, Email |
-| Event | ✅ | Event ID |
-| Product Catalogs | ✅ | Item ID |
+Iterable Catalogs let you create custom objects within Iterable that can be associated with users. Here's a few tips when using Catalogs to make sure your sync is successful.
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
+* Census will rely on the schema you've defined inside Iterable. We don't currently allow you to create fields from Census. 
+* We strongly recommend that you specify the type of each catalog field through the Iterable UI before using Census to sync items. Untyped fields are not searchable by collections. And andy catalog item uploaded _before_ a field is typed will not have searchable by that field. If we see an untyped field in Census, we will send string values to that field because we don't know what type it should be.
+* In practice, even if a field is typed, Iterable will accept and update field values of different types. For instance, if the `age` field is typed as a Long, but we send a value of "25", Iterable will accept and update records to use the string "25" as age. 
+* Iterable can take a while to process new Catalog items. In some cases, we see Iterable take as long as 20 minutes before the record appears. 
 
 ## 🔄 Supported Sync Behaviors
 
