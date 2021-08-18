@@ -126,7 +126,7 @@ Please be aware that with custom object, we need to do extra call due to the lim
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for HubSpot.
 
-{% hint style="success" %}
+{% hint style="warning" %}
 If possible when doing Update Only syncs, use HubSpot Object IDs as your Sync Identifier. Using them will provide a dramatic sync performance boost!
 {% endhint %}
 
