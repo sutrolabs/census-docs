@@ -14,7 +14,9 @@ Census connects to your Salesforce instance through a standard OAuth connection 
 
 The objects and fields accessible to Census are all determined by the user account you use when connecting Census to your Salesforce instance. Census will have the same access as the user, so if fields are read-only or hidden for that user, they will be to Census. In general, you should give Census read and write access to all the objects and fields you may want to update.
 
-In addition, Salesforce currently requires that the user account have the "View Setup and Configuration" permission \(As of July 2019, this is a [known Salesforce issue](https://success.salesforce.com/issues_view?id=a1p3A000000BMPFQA4)\). Ensure this permission is set on the Profile assigned to this user under the "Administrative Permissions" heading of their profile.
+In addition, [Salesforce blocks some API access](https://help.salesforce.com/s/articleView?id=sf.security_require_2fa_api.htm&type=5) when the **High Assurance on Session security level required at login** setting is used on user Profiles. This will prevent Census from accessing your Salesforce instance. [See Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.security_require_two-factor_authentication.htm&type=5) on how to disable this for your Profile \(Strangely, this can be enabled/disabled per user and seems to have no effect on the API. Only the profile level setting causes issues\).
+
+Finally, Salesforce currently requires that the user account have the "View Setup and Configuration" permission \(As of July 2019, this is a [known Salesforce issue](https://success.salesforce.com/issues_view?id=a1p3A000000BMPFQA4)\). Ensure this permission is set on the Profile assigned to this user under the "Administrative Permissions" heading of their profile.
 
 ![](../.gitbook/assets/sfdc_setup1.png)
 
