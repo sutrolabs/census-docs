@@ -22,6 +22,7 @@
 ## 🛫 Destinations \(app\) <a id="destinations"></a>
 
 * [ActiveCampaign](destinations/activecampaign.md)
+* [Airtable](destinations/airtable.md)
 * [Amplitude](destinations/amplitude.md)
 * [Braze](destinations/braze.md)
 * [Customer.io](destinations/customer.io.md)
