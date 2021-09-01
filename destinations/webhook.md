@@ -29,7 +29,7 @@ In this guide, we will show you how to use webhooks to send data to any endpoint
 ![](../.gitbook/assets/screely-1630450119455.png)
 
 {% hint style="success" %}
-Your webhook destination will automatically be tested as we send a `OST` request and waiting for a `200 OK`to confirm it works.
+Your webhook destination will automatically be tested as we send a`POST` request and waiting for a`200 OK`to confirm it works.
 {% endhint %}
 
 ### 2. Connect your Data Warehouse
@@ -102,11 +102,11 @@ That's it, in 5 steps, you connected Census to any endpoints or services by usin
 
 ## 🏎 Sync Speed
 
-With Webhook, the speed is subject to any rate limit enforced by the endpoint you are sending data to.
+Webhook destination speeds are subject to any rate limit enforced by the endpoint you are sending data to.
 
 ## 🗄 Webhook Schema
 
-No Object is required with Webhook. We simply send a JSON payload for every row in your sync. Our JSON schema is as follows:
+Each webhook `POST` contains both the data you mapped as well as metadata about the Census sync itself. The JSON schema of our request is as follows:
 
 ```javascript
 {
@@ -151,7 +151,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 | **Append** | ✅ | All |
 | **Mirror** | ✅ | All |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for a Webhook.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors from our webhooks.
 
 ## 🚑 Need help connecting to a Webhook Endpoint?
 
