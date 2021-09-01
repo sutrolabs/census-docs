@@ -167,7 +167,7 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 
 ## 🚑 Need help connecting to NetSuite?
 
-Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 
 
 

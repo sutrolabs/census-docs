@@ -67,9 +67,9 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 | ---: | :---: | :---: |
 | **Update or Create** | ✅ | All |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Zendesk.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Zendesk.
 
 ## 🚑 Need help connecting to Zendesk?
 
-Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

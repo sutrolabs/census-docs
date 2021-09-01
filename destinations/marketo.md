@@ -97,5 +97,5 @@ Please be aware that Update Only and Mirror make use of less efficient Marketo A
 
 ## 🚑 Need help connecting to Marketo?
 
-Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

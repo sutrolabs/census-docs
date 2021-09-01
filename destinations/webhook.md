@@ -151,9 +151,9 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 | **Append** | ✅ | All |
 | **Mirror** | ✅ | All |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors from our webhooks.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for webhooks.
 
-## 🚑 Need help connecting to a Webhook Endpoint?
+## 🚑 Need help connecting to a Webhook?
 
-Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

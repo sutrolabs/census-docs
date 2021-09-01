@@ -8,7 +8,7 @@ description: This page describes how to use Census with Salesforce Marketing Clo
 
 Census can publish your tables and models to Salesforce Marketing Cloud. Here's how to get connected:
 
-### 0. Prerequisites
+### Prerequisites
 
 You'll need a Census account as well as a Salesforce Marketing Cloud account with the Administrator role. This process involves several steps - please set aside 15-30 minutes to complete it. Note that you may be on an older or newer version of Marketing Cloud which has slightly different screens than the ones pictured below. Marketing Cloud configuration can be complex, so if you have any questions please reach out to [support@getcensus.com](mailto:mailto:support@getcensus.com) and we'll help you tailor these instructions to your needs.
 
@@ -124,7 +124,7 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 | ---: | :---: |
 | Any Custom Data Extension | ✅ |
 
-🎒[Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for Salesforce Marketing Cloud.
 
 ## 🔄 Supported Sync Behaviors
 
@@ -137,9 +137,9 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 | **Update or Create** | ✅ | All |
 | **Update Only** | 🔜 | All |
 
-🔋[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Salesforce Marketing Cloud.
 
 ## 🚑 Need help connecting to Salesforce Marketing Cloud?
 
-Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

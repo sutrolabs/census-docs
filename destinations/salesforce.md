@@ -120,7 +120,7 @@ This error occurs with highly automated or frequently changing Salesforce deploy
 
 Typically, this is a transient issue and the next run of the sync won't have the same problem. However, if it persists, please contact your Census representative. In some cases, we can help control batch sizes being passed to Census.
 
-## 🚑 Need Help?
+## 🚑 Need help connecting to Salesforce?
 
-Contact us via [support@getcensus.com](mailto:support@getcensus.com) or start a conversion via the [in-app](https://app.getcensus.com) chat.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 
