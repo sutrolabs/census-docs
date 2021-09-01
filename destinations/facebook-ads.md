@@ -161,5 +161,5 @@ Learn more about our sync behaviors on our [Core Concept page](../basics/core-co
 
 ## 🚑 Need help connecting to Facebook?
 
-Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

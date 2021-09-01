@@ -122,9 +122,5 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 
 ## 🚑 Need help connecting to Amplitude?
 
-‌ Contact us via [support@getcensus.com](mailto:support@getcensus.com) or start a conversion via the [in-app](https://app.getcensus.com/) chat.
-
-{% hint style="info" %}
-This part of our documentation is still under construction! If you have any questions, please don't hesitate to [contact us](mailto:support@getcensus.com).
-{% endhint %}
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

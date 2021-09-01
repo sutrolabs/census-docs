@@ -89,5 +89,9 @@ Census will always connect to your data warehouse from of these static IP addres
 * 34.216.163.241
 * 54.212.243.205
 
-While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access.  
+While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access. 
+
+## 🚑 Need help connecting to BigQuery?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat. 
 

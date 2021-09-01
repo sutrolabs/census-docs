@@ -110,7 +110,7 @@ Census will always connect to your Snowflake data warehouse from one of these st
 
 If you're using Allowed IPs network policy, you'll need to add these Census IP addresses to your list. Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
 
-## 🚑 Need Help Connecting your Snowflake instance?
+## 🚑 Need help connecting to Snowflake?
 
-Contact us via support@getcensus.com or start a conversation via chat in the application.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

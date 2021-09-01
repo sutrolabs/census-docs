@@ -95,3 +95,7 @@ Note that the keypair is unique for each Census Warehouse connection. Even if yo
 
 With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
 
+## 🚑 Need help connecting to Postgres?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+

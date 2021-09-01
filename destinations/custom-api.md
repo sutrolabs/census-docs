@@ -607,3 +607,7 @@ You can also use a Census model to "hard code" a small data set in your warehous
 
 Custom APIs cannot be shared across Census accounts, and there is currently no plan for community-owned connectors or a connector marketplace. There are a number of core Census features that are not currently available to Custom APIs, and the Census product team is committed to building high-quality first-party connectors for as many SaaS applications as we can. Please contact us if Census is missing a SaaS connector that you believe would be useful to our customer community!
 
+## 🚑 Need help connecting to a Custom Destination?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+
