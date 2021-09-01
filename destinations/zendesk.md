@@ -44,3 +44,28 @@ lower(replace(column_name, ' ', '_'))
 
 If you have any questions, don't hesitate to contact us via live chat [in the dashboard](https://app.getcensus.com/) or emailing us at [support@getcensus.com](mailto:mailto:support@getcensus.com).
 
+## 🗄 Supported Objects
+
+Census currently supports syncing to the following Zendesk objects:
+
+| **Object Name** | **Supported?** | Identifiers |
+| ---: | :---: | :--- |
+| End User | ✅ | External ID, Email |
+| Organization | ✅ | External ID, Name |
+| Ticket | ✅ | External ID |
+| Custom Objects | ✅ | External ID |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Zendesk.
+
+## 🔄 Supported Sync Behaviors
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
+{% endhint %}
+
+| **Behaviors** | **Supported?** | **Objects?** |
+| ---: | :---: | :---: |
+| **Update or Create** | ✅ | All |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Zendesk.
+
