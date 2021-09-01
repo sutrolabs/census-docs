@@ -152,5 +152,5 @@ Census requires that the connecting HubSpot user have Super Admin permissions in
 
 ## 🚑 Need help connecting to HubSpot?
 
-Contact us via support@getcensus.com or start a conversion via the [in-app](https://app.getcensus.com) chat.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 
