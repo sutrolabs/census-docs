@@ -47,5 +47,6 @@
 * [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
 * [Stripe](destinations/stripe.md)
 * [Vitally](destinations/vitally.md)
+* [Webhook](destinations/webhook.md)
 * [Zendesk](destinations/zendesk.md)
 
