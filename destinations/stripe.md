@@ -4,17 +4,17 @@ description: This page describes how to use Census with Stripe.
 
 # Stripe
 
-## Introduction
+## 🏃‍♂️ Getting Started
 
 In this guide, we will show you how to connect your Stripe instance to [Census](https://www.getcensus.com/) and create your first sync.
 
-## Prerequisites
+### Prerequisites
 
 * [Create a Free Trial Census Account](https://app.getcensus.com/)
 * Have your Stripe account ready
 * Have the credential to access to your Warehouse. See our articles for each data warehouse here \([Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access), [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access), [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access), [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)\)
 
-## 1. Connect Stripe
+### 1. Connect Stripe
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
 * Click the Add Service button
@@ -26,7 +26,7 @@ Follow Stripe OAuth flow to connect Stripe. Your end state should look something
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5fbc451b4cedfd00165b33cf/file-jxnqNJwf5C.png)
 
-## 2. Connect your Data Warehouse
+### 2. Connect your Data Warehouse
 
 Please follow one of our short guides depending on your data warehouse technology
 
@@ -35,7 +35,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
-## 3. Create your first Model
+### 3. Create your first Model
 
 Now navigate to the [Model section of our Dashboard](https://app.getcensus.com/models)
 
@@ -49,7 +49,7 @@ Once you have created your model, click save.
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
-## 4. Create your first Sync
+### 4. Create your first Sync
 
 No head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sync button
 
@@ -78,7 +78,7 @@ The end result should look something like this
 
 Click the Next button to see the final preview which will have a recap of what will happen when you start the sync
 
-## 5. Confirm the data is in Stripe
+### 5. Confirm the data is in Stripe
 
 Now go back to your Stripe and go view a Customer Profile that should have been updated. If everything well well, you should see your data in Stripe
 
@@ -87,4 +87,29 @@ Now go back to your Stripe and go view a Customer Profile that should have been 
 That's it, in 5 steps, you connect Census to Stripe and started syncing customer & product data from your warehouse to Stripe 🎉
 
 If you have any question or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or send us an email at support@getcensus.com
+
+## 🗄 Supported Objects
+
+Census currently supports syncing to the following Stripe objects:
+
+| **Object Name** | **Supported?** | Identifiers |
+| ---: | :---: | :--- |
+| Customer | ✅ | Email |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Stripe.
+
+## 🔄 Supported Sync Behaviors
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
+{% endhint %}
+
+| **Behaviors** | **Supported?** | **Objects?** |
+| ---: | :---: | :---: |
+| **Update or Create** | ✅ | All |
+| **Update Only** | ✅ | All |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Stripe.
+
+## 
 
