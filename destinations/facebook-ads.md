@@ -148,8 +148,9 @@ Census automatically takes care of this hashing step for you.
 
 | **Behaviors** | **Supported?** | **Objects?** |
 | ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Mirror** | ✅ | All |
+| **Update or Create** | ✅ | Audiences |
+| **Mirror** | ✅ | Audiences |
+| **Append** | ✅ | Conversions |
 
 Update or Create will add or update users to the audience, but will never remove users. Mirror will also remove users that have been removed from the source.   
   
