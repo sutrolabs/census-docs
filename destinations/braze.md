@@ -67,7 +67,7 @@ Census currently supports syncing to the following Braze objects.
 | **Object Name** | **Supported?** | Identifiers |
 | ---: | :---: | :--- |
 | User | ✅ | External User ID |
-| Events | ✅ | Event ID |
+| Event | ✅ | Event ID |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Braze.
 
@@ -80,6 +80,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 | **Behaviors** | **Supported?** | **Objects?** |
 | ---: | :---: | :---: |
 | **Update or Create** | ✅ | User |
+| **Append** | ✅ | Event |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Braze.
 
