@@ -15,7 +15,7 @@ In this guide, we'll show you how to connect Census to Braze.
 To set up your first Braze sync, you'll need three things:
 
 * A Census Account – If you don't have one already, [create a Free Trial Census Account](https://app.getcensus.com/).
-* Access to your data warehouse. For details on how to create credentials, see our articles for [Redshift](../source-warehouse/redshift.md), [Snowflake](../source-warehouse/snowflake.md), [Google BigQuery](../source-warehouse/google-bigquery.md), [Databricks](../source-warehouse/databricks.md), and [Postgres](../source-warehouse/postgres.md).
+* Access to your data warehouse. For details on how to create credentials, see our articles for [Redshift](../sources/redshift.md), [Snowflake](../sources/snowflake.md), [Google BigQuery](../sources/google-bigquery.md), [Databricks](../sources/databricks.md), and [Postgres](../sources/postgres.md).
 * A Braze account with access to create a Braze API Key. 
 
 ### 1. Create a Braze API key

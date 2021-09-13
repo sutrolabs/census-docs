@@ -42,7 +42,7 @@ If you don't already have a data warehouse connected, follow one of our short gu
 * [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
-* [Databricks](../source-warehouse/databricks.md)
+* [Databricks](../sources/databricks.md)
 
 You should now have a connection to Airtable and to your data warehouse! Let's start syncing data. 
 

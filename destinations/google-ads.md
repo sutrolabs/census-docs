@@ -15,7 +15,7 @@ To set up a Google Ads sync, you'll need three things:
 * A Census Account – If you don't have one already, [create a Free Trial Census Account](https://app.getcensus.com/)
 * A Google Ads Account.
   * To create Customer Match syncs, your Google Ads Account will need access to the Customer Match feature. See [Google's Customer Match policy](https://support.google.com/adspolicy/answer/6299717?hl=en) for more details.
-* Access to your data warehouse. For details on how to create credentials, see our articles for [Redshift](../source-warehouse/redshift.md), [Snowflake](../source-warehouse/snowflake.md), [Google BigQuery](../source-warehouse/google-bigquery.md), [Databricks](../source-warehouse/databricks.md), and [Postgres](../source-warehouse/postgres.md).
+* Access to your data warehouse. For details on how to create credentials, see our articles for [Redshift](../sources/redshift.md), [Snowflake](../sources/snowflake.md), [Google BigQuery](../sources/google-bigquery.md), [Databricks](../sources/databricks.md), and [Postgres](../sources/postgres.md).
 
 ### 1. Connect Google Ads
 
@@ -41,7 +41,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
-* [Databricks](../source-warehouse/databricks.md)
+* [Databricks](../sources/databricks.md)
 
 After setting up your warehouse, your Census Connections Page should look like this:
 

@@ -13,11 +13,11 @@ You'll need a few different things to get started syncing data to Vitally.
 * [Create a free trial Census account](https://app.getcensus.com/)
 * Have your Vitally account ready 
 * Have the access to your data warehouse. See our articles for each data warehouse
-  * [Redshift](../source-warehouse/redshift.md)
-  * [Snowflake](../source-warehouse/snowflake.md)
-  * [Google BigQuery](../source-warehouse/google-bigquery.md)
-  * [Databricks](../source-warehouse/databricks.md)
-  * [Postgres](../source-warehouse/postgres.md)
+  * [Redshift](../sources/redshift.md)
+  * [Snowflake](../sources/snowflake.md)
+  * [Google BigQuery](../sources/google-bigquery.md)
+  * [Databricks](../sources/databricks.md)
+  * [Postgres](../sources/postgres.md)
 
 ### 1. Copy your Vitally API Key
 

@@ -13,11 +13,11 @@ In this guide, we will show you how to use webhooks to send data to any endpoint
 * [Create a Free Trial Census Account](https://app.getcensus.com/)
 * Have an endpoint that accepts `POST` requests. You can use the free service [https://webhook.site](https://webhook.site/c9ce13dd-c04e-4b82-b861-1b2b51a56e40) for testing purposes.
 * Have the credential to access your warehouse. See our articles for each data warehouse
-  * [Redshift](../source-warehouse/redshift.md)
-  * [Snowflake](../source-warehouse/snowflake.md)
-  * [Google BigQuery](../source-warehouse/google-bigquery.md)
-  * [Databricks](../source-warehouse/databricks.md)
-  * [Postgres](../source-warehouse/postgres.md)
+  * [Redshift](../sources/redshift.md)
+  * [Snowflake](../sources/snowflake.md)
+  * [Google BigQuery](../sources/google-bigquery.md)
+  * [Databricks](../sources/databricks.md)
+  * [Postgres](../sources/postgres.md)
 
 ### 1. Create a Webhook Destination in Census
 
