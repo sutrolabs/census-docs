@@ -4,7 +4,7 @@ description: This page describes how to use Census with Front.
 
 # Front
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 {% embed url="https://www.loom.com/share/20857381085a40fbb707bb43b522ff9d" %}
 

@@ -8,7 +8,7 @@ description: This page describes how to use Census with Iterable.
 Please note that for larger syncs, it might take ~10 minutes for you to see the new data in Iterable's UI.
 {% endhint %}
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 ### 1. Create a new Iterable API key
 

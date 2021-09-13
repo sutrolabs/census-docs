@@ -10,7 +10,7 @@ Custom Destination API allow you to "bring your own" SaaS connector to Census. A
 
 This guide walks you through setting up an example implementation, how to build your own from scratch, and covers all the technical details of how it operates. The Custom Destination API is currently in beta and [we'd love to hear your feedback](mailto:support@getcensus.com)!
 
-## Getting Started
+## 🏃‍♀️ Getting Started
 
 To start, let's walk through the steps to deploy the[ sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). This will give you a good overview of everything involved in building a custom destination implementation.
 

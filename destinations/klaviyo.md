@@ -4,7 +4,7 @@ description: This page describes how to use Census with Klaviyo.
 
 # Klaviyo
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 {% embed url="https://youtu.be/U8q7E2SZJkI" %}
 

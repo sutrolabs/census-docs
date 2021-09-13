@@ -6,7 +6,7 @@ description: >-
 
 # Facebook Ads
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 {% embed url="https://www.youtube.com/watch?v=0\_jr7dv-FWE" %}
 

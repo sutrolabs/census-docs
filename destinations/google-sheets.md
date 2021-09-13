@@ -4,7 +4,7 @@ description: This page describes how to use Census with Google Sheets.
 
 # Google Sheets
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 In this guide, we will show you how to connect Google Sheets to [Census](https://www.getcensus.com/) and create your first sync.
 

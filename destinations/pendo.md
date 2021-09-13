@@ -4,7 +4,7 @@ description: This page describes how to use Census with Pendo.
 
 # Pendo
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 In this guide, we'll show you how to connect Census to Pendo. 
 

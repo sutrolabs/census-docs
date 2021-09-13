@@ -12,7 +12,14 @@ description: This page describes how to use Census with Slack.
 
 * [Create a Free Trial Census Account](https://app.getcensus.com/)
 * Have your Slack account ready
-* Have the credential to access to your Warehouse. See our articles for each data warehouse here \([Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access), [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access), [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access), [Snowflake](https://docs.getcensus.com/source-warehouse/snowflake), [Databricks](https://docs.getcensus.com/source-warehouse/databricks)\)
+* Have the proper credentials to access to your data source. See our docs for each support data source here:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### 1. Connect Census to Slack <a id="1-connect-census-to-braze"></a>
 

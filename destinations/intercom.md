@@ -4,7 +4,7 @@ description: This page describes how to use Census with Intercom.
 
 # Intercom
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 In this guide, we will show you how to connect your Intercom instance to [Census](https://www.getcensus.com/) and create your first sync.
 

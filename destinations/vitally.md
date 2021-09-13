@@ -4,7 +4,7 @@ description: This page describes how to use Census with Vitally.
 
 # Vitally
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 ### **Prerequisites**
 

@@ -4,7 +4,7 @@ description: This page describes how to use Census with Salesforce Marketing Clo
 
 # Salesforce Marketing Cloud
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 Census can publish your tables and models to Salesforce Marketing Cloud. Here's how to get connected:
 

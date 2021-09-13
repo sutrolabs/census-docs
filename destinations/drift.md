@@ -4,7 +4,7 @@ description: This page describes how to use Census with Drift.
 
 # Drift
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 ### 1. Connect Census to Drift
 

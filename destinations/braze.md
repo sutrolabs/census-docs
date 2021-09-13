@@ -4,7 +4,7 @@ description: This page describes how to use Census with Braze.
 
 # Braze
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 In this guide, we'll show you how to connect Census to Braze. 
 

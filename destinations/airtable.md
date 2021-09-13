@@ -4,7 +4,7 @@ description: This page describes how to use Census with Airtable.
 
 # Airtable
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 {% embed url="https://www.youtube.com/watch?v=-NRDgN65rrg" %}
 

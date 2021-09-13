@@ -4,7 +4,7 @@ description: This page describes how to use Census with Mailchimp.
 
 # Mailchimp
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 {% embed url="https://youtu.be/tu3hr3BV6Sg" %}
 

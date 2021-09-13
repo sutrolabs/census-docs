@@ -4,7 +4,7 @@ description: This page describes how to use Census with webhooks.
 
 # Webhooks
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♀️ Getting Started
 
 In this guide, we will show you how to use webhooks to send data to any endpoints or services.
 

@@ -4,24 +4,24 @@ description: This page describes how to use Census with ActiveCampaign.
 
 # ActiveCampaign
 
-## 🏃‍♂️Getting Started
+## 🏃‍♀️ Getting Started
+
+‌In this guide, we will show you how to connect your ActiveCampaign instance to Census and create your first sync.
 
 {% embed url="https://youtu.be/lTc7u8rV7i4" %}
-
-
-
-In this guide, we will show you how to connect your ActiveCampaign instance to [Census](https://www.getcensus.com/) and create your first sync.
 
 ### Prerequisites
 
 * [Create a Free Trial Census Account](https://app.getcensus.com/)
 * Have your ActiveCampaign account ready
-* Have the credential to access your warehouse. See our articles for each data warehouse
-  * [Redshift](/source-warehouse/redshift)        
-  * [Snowflake](/source-warehouse/snowflake)
-  * [Google BigQuery](/source-warehouse/google-bigquery)
-  * [Databricks](/source-warehouse/databricks)    
-  * [Postgres](/source-warehouse/postgres)
+* Have the proper credentials to access to your data source. See our docs for each support data source here:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### 1. Get ActiveCampaign API Key
 
