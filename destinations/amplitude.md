@@ -8,17 +8,18 @@ description: This page describes how to use Census with Amplitude.
 
 ‌In this guide, we will show you how to connect Amplitude to Census and create your first sync.
 
-### **Prerequisites**
+### Prerequisites
 
-* [Create a Free Trial Census Account](https://app.getcensus.com/)
-* Have the credential to access your warehouse. See our articles for each data warehouse
-  * [Redshift](../sources/redshift.md)
-  * [Snowflake](../sources/snowflake.md)
-  * [Google BigQuery](../sources/google-bigquery.md)
-  * [Databricks](../sources/databricks.md)
-  * [Postgres](../sources/postgres.md)
-
-
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Amplitude account ready.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### **1. Get API key from Amplitude**
 

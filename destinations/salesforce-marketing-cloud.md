@@ -10,7 +10,21 @@ In this guide, we will show you how to connect Salesforce Marketing Cloud to Cen
 
 ### Prerequisites
 
-You'll need a Census account as well as a Salesforce Marketing Cloud account with the Administrator role. This process involves several steps - please set aside 15-30 minutes to complete it. Note that you may be on an older or newer version of Marketing Cloud which has slightly different screens than the ones pictured below. Marketing Cloud configuration can be complex, so if you have any questions please reach out to [support@getcensus.com](mailto:mailto:support@getcensus.com) and we'll help you tailor these instructions to your needs.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Salesforce Marketing Cloud account ready, with the Administrator role.
+
+{% hint style="warning" %}
+This process involves several steps - please set aside 15-30 minutes to complete it. Note that you may be on an older or newer version of Marketing Cloud which has slightly different screens than the ones pictured below. Marketing Cloud configuration can be complex, so if you have any questions please [contact us](mailto:support@getcensus.com) via support@getcensus.com and we'll help you tailor these instructions to your needs.
+{% endhint %}
+
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### 1. Create and Configure a Server-to-Server Installed Package
 

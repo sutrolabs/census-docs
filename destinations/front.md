@@ -10,11 +10,18 @@ In this guide, we will show you how to connect Front to Census and create your f
 
 {% embed url="https://www.loom.com/share/20857381085a40fbb707bb43b522ff9d" %}
 
-### 0. Prerequisites
+### Prerequisites
 
-* [Create a Free Trial Census Account](https://app.getcensus.com/)
-* Have your Front account ready as we will be connecting Census to Front via OAuth
-* Have the credential to access your warehouse. You can find our guides for each data warehouse here: [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access), [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access), [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access), [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access).
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Front account ready.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### 1. Connect Front
 

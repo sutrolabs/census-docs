@@ -8,6 +8,19 @@ description: This page describes how to use Census with Drift.
 
 In this guide, we will show you how to connect Drift to Census and create your first sync.
 
+### Prerequisites
+
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Drift account ready.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+
 ### 1. Connect Census to Drift
 
 In the **Connections** page in Census, click the **Add Service** button under the **Service Connections** section, and select Drift.

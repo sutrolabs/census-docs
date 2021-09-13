@@ -10,6 +10,19 @@ In this guide, we will show you how to connect Salesforce to Census and create y
 
 {% embed url="https://www.youtube.com/watch?v=K-qmPOweyUU" %}
 
+### Prerequisites
+
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Salesforce account ready.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+
 ## 🔑 Required permissions
 
 Census connects to your Salesforce instance through a standard OAuth connection to an individual user account. We recommend using a stand-alone account specifically for Census \(often called a Service Account\) so you can see Census updates in your audit history. Census primarily uses the [Salesforce Bulk API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm) to sync data to Salesforce in the most API quota-efficient way possible. 

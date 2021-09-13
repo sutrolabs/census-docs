@@ -8,18 +8,18 @@ description: This page describes how to use Census with Vitally.
 
 In this guide, we will show you how to connect Vitally to Census and create your first sync.
 
-### **Prerequisites**
+### Prerequisites
 
-You'll need a few different things to get started syncing data to Vitally.
-
-* [Create a free trial Census account](https://app.getcensus.com/)
-* Have your Vitally account ready 
-* Have the access to your data warehouse. See our articles for each data warehouse
-  * [Redshift](../sources/redshift.md)
-  * [Snowflake](../sources/snowflake.md)
-  * [Google BigQuery](../sources/google-bigquery.md)
-  * [Databricks](../sources/databricks.md)
-  * [Postgres](../sources/postgres.md)
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Vitally account ready.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### 1. Copy your Vitally API Key
 

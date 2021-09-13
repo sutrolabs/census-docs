@@ -8,11 +8,11 @@ description: This page describes how to use Census with Slack.
 
 ‌In this guide, we will show you how to connect Slack to Census and create your first sync.
 
-### Prerequisites
+### 📋 Prerequisites
 
-* [Create a Free Trial Census Account](https://app.getcensus.com/)
-* Have your Slack account ready
-* Have the proper credentials to access to your data source. See our docs for each support data source here:
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Slack account ready.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
@@ -21,7 +21,7 @@ description: This page describes how to use Census with Slack.
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
-### 1. Connect Census to Slack <a id="1-connect-census-to-braze"></a>
+## 1️⃣ Connect Census to Slack
 
 In the **Connections** page in Census, click the **Add Service** button under the **Service Connections** section, and select Slack.
 
@@ -31,91 +31,115 @@ If you are not already logged in to Slack, you will be redirected to a page to l
 
 Once you've authorized Census, you'll be redirected back to the Connections page in Census and you should see your Slack connection there.
 
-### 2. Connect your Data Warehouse
+## 2️⃣ Connect Census to your data source
 
-Please follow one of our short guides depending on your data warehouse technology:
+See our docs for each supported data source for further information:
 
-* [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
-* [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
+* [Databricks](https://docs.getcensus.com/sources/databricks)
+* [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+* [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+* [Postgres](https://docs.getcensus.com/sources/postgres)
+* [Redshift](https://docs.getcensus.com/sources/redshift)
+* [Rockset](https://docs.getcensus.com/sources/rockset)
+* [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
-### 3. Create your first Model
+## 3️⃣ Create your first Census model
 
-Now navigate to the [Model section of our Dashboard](https://app.getcensus.com/models)
+Navigate to the **Models** page in Census and click the **Add Model** button.
 
-Here you will have to write SQL queries to select the data you want to see in Slack. Here are some ideas of data you should select
+Here you can a write SQL query to select the data you want to send to Slack. 
 
-* The type of customer
-* The attribution of the customer
-* Order form data to generate an invoice
+Once you have created your model, give it a useful name, and click **Save Model**. 
 
-Once you have created your model, click save. 
+## 4️⃣ Create your first Census sync
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
+Navigate to the **Syncs** page in Census and click the **Add Sync** button.
 
-### 4. Create your first Sync
+Follow the instructions below as you go through each section:
 
-No head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sync button
+### 📄 What data do you want to sync?
 
-In the " What data do you want to sync?" section
+* For **Connection**, select the data warehouse you connected in step 2.
+* For **Source**, select the model you created in step 3.
 
-* For the Connection, select the data warehouse you connected in step 2
-* For the Source,  select the model you created in step 3
+### 📄 **Where do you want to sync data to?**
 
-Next up is the "Where do you want to sync data to?" section
+* For **Connection**, select Slack.
+* For **Object**, select the Slack channel you would like to sync data to.
 
-* Pick Stripe as the Connection
-* For Object, pick **Customer**
+### 📄 **How should changes to the source be synced?**
 
-For the " How should changes to the source be synced?" section 
+{% hint style="info" %}
+Note, **Append** is the only option available for Slack, so it will be automatically selected.
+{% endhint %}
 
-* Select Update or Create
-* Pick the right mapping key, it can be Email or any other external id for Customer
+### 📄 **How are source records identified?**
 
-Finally, select the fields you want to update in the Mapper in the "Which Fields should be updated?" section
+* Pick the column that uniquely identifies each record in your data source. Census will use this to identify new records that need to be synced to Slack.
 
-* Here simply map the field from your Stripe instance to the column from your model.
+![](../.gitbook/assets/screen-shot-2021-09-13-at-10.44.08-am.png)
 
-The end result should look something like this
+### 📄 **Which fields should be updated?**
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5fbc4804cff47e0017d34b6d/file-drmWJMVTz9.png)
+* Select the additional fields you want to sync to Slack using **Add Mapping**.
+* If you want to quickly select all the fields whose names match the fields from your model in step 3, click on the **Multiple** dropdown and select **All Matching**.
+* If you want to quickly select all the fields from your model in step 3, click on the **Multiple** dropdown and select **All From Source**.
 
-Click the Next button to see the final preview which will have a recap of what will happen when you start the sync
+![](../.gitbook/assets/screen-shot-2021-09-13-at-10.44.24-am.png)
 
-### 5. Confirm the data is in Stripe
+### 📄 Should existing data be synced?
 
-Now go back to your Stripe and go view a Customer Profile that should have been updated. If everything well well, you should see your data in Stripe
+* Since **Append** is the only sync behavior option available for Slack, you can decide if existing records in source should be sent to destination.
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5fbc4ae846e0fb0017fcee63/file-mYnHg4FN41.png)
+{% hint style="info" %}
+**Backfill All Records** will be selected by default. Census will send records to a Slack channel one at a time, so if you have a high data volume that might clutter your Slack channel, consider changing the selection to **Skip Current Records**.
+{% endhint %}
 
-That's it, in 5 steps, you connect Census to Stripe and started syncing customer & product data from your warehouse to Stripe 🎉
+![](../.gitbook/assets/screen-shot-2021-09-13-at-10.44.42-am.png)
 
-If you have any question or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or send us an email at support@getcensus.com
+### 📄 Would you like to test your sync?
 
-## 💡 Slack Field Quirks
+* Click the **Run Test** button to test whether your sync successfully sends a single record from your data source to Slack.
 
-There are two mandatory fields for the Mailchimp connection: **email** and **status**.
+### ☑️ Finishing touches
 
-Please note that the mandatory status field only accepts the following values: `"subscribed"`, `"unsubscribed"`, `"cleaned"`, or `"pending"`.
+* Click the **Next** button to see the final preview of the sync settings. If you selected **Skip Current Records** in the **Should existing data be synced?** section, it should look something like this:
 
-For more details, take a look at Mailchimp's [API documentation](https://mailchimp.com/developer/marketing/api/list-members/update-list-member/).
+![](../.gitbook/assets/screen-shot-2021-09-13-at-12.52.53-pm.png)
+
+* To run the sync now, select the **Run a sync now?** checkbox and click the **Create Sync** button. Your sync is in now progress! 
+
+## 5. Confirm the data is in Slack
+
+In Slack, go to the channel that you set up the sync to.
+
+If everything well well, you should see your data there:
+
+![](../.gitbook/assets/screen-shot-2021-09-13-at-1.10.51-pm.png)
+
+{% hint style="info" %}
+Reminder: Census will send records to a Slack channel one at a time.
+{% endhint %}
 
 ## 🗄️ Supported Objects
 
 | Object Name | Supported? | Identifiers |
 | :--- | :---: | :--- |
-| \[channel name\] | ✅ | \[field name\] |
+| Channel | ✅ | any unique field |
 
-In your Slack workspace, Census can send data to **all** public channels and any private channels that Census has been explicitly invited to \(e.g. `/invite @census`\).
+{% hint style="info" %}
+Census can send data to **all** public channels and any private channels that Census has been explicitly invited to \(e.g. `/invite @census`\).
+{% endhint %}
 
 ## 🔄 Supported Sync Behaviors
 
 | **Behaviors** | **Supported?** | **Objects?** |
 | ---: | :---: | :---: |
-| **Append** | ✅ | \[channel name\] |
+| **Append** | ✅ | channel |
 
-In your Slack workspace, Census will only write new records to a specific channel when new records appear in your data warehouse.
+{% hint style="info" %}
+Census will only write new records to a specific channel when new records appear in your data warehouse.
+{% endhint %}
 
 ## 🚑 Need help connecting to Slack?
 

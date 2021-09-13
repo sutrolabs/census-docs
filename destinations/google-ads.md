@@ -8,14 +8,19 @@ description: This page describes how to use Census with Google Ads.
 
 In this guide, we will show you how to connect Google Ads to Census and create your first sync.
 
-### **Prerequisites**
+### Prerequisites
 
-To set up a Google Ads sync, you'll need three things:
-
-* A Census Account – If you don't have one already, [create a Free Trial Census Account](https://app.getcensus.com/)
-* A Google Ads Account.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Google Ads account ready.
   * To create Customer Match syncs, your Google Ads Account will need access to the Customer Match feature. See [Google's Customer Match policy](https://support.google.com/adspolicy/answer/6299717?hl=en) for more details.
-* Access to your data warehouse. For details on how to create credentials, see our articles for [Redshift](../sources/redshift.md), [Snowflake](../sources/snowflake.md), [Google BigQuery](../sources/google-bigquery.md), [Databricks](../sources/databricks.md), and [Postgres](../sources/postgres.md).
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### 1. Connect Google Ads
 

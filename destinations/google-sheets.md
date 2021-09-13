@@ -8,13 +8,18 @@ description: This page describes how to use Census with Google Sheets.
 
 In this guide, we will show you how to connect Google Sheets to Census and create your first sync.
 
-### Prerequisites <a id="0-prerequisites"></a>
+### Prerequisites
 
-To get started, you'll need three things:
-
-1. A Census account​. If you need one, [create a Free Trial Census account](https://app.getcensus.com/)​ now.
-2. The Google account with access to your target Google Sheets 
-3. Credential to access your data warehouse. 
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Google account ready, with write access to your target Google Sheets.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### 1. Create a Google Sheets connection
 

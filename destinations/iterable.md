@@ -12,6 +12,19 @@ Please note that for larger syncs, it might take ~10 minutes for you to see the 
 
 In this guide, we will show you how to connect Iterable to Census and create your first sync.
 
+### Prerequisites
+
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Iterable account ready.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+
 ### 1. Create a new Iterable API key
 
 To connect Census to your Iterable, you'll need to provide Census with an API key so that we can talk to it directly. 
