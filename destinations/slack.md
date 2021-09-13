@@ -82,7 +82,6 @@ Note, **Append** is the only option available for Slack, so it will be automatic
 ### 📄 **Which fields should be updated?**
 
 * Select the additional fields you want to sync to Slack using **Add Mapping**.
-* If you want to quickly select all the fields whose names match the fields from your model in step 3, click on the **Multiple** dropdown and select **All Matching**.
 * If you want to quickly select all the fields from your model in step 3, click on the **Multiple** dropdown and select **All From Source**.
 
 ![](../.gitbook/assets/screen-shot-2021-09-13-at-10.44.24-am.png)
