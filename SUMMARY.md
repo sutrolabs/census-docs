@@ -11,15 +11,15 @@
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 
-## ⤵️ Data Sources <a id="sources"></a>
+## ⤵️ Data Sources <a id="source-warehouse"></a>
 
-* [Databricks](sources/databricks.md)
-* [Google BigQuery](sources/google-bigquery.md)
-* [Google Sheets](sources/google-sheets.md)
-* [Postgres](sources/postgres.md)
-* [Redshift](sources/redshift.md)
-* [Rockset](sources/rockset.md)
-* [Snowflake](sources/snowflake.md)
+* [Databricks](source-warehouse/databricks.md)
+* [Google BigQuery](source-warehouse/google-bigquery.md)
+* [Google Sheets](source-warehouse/google-sheets.md)
+* [Postgres](source-warehouse/postgres.md)
+* [Redshift](source-warehouse/redshift.md)
+* [Rockset](source-warehouse/rockset.md)
+* [Snowflake](source-warehouse/snowflake.md)
 
 ## 🛫 Destinations \(app\) <a id="destinations"></a>
 

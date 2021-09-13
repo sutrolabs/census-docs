@@ -46,7 +46,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
-* [Databricks](../sources/databricks.md)
+* [Databricks](../source-warehouse/databricks.md)
 
 After setting up your warehouse, your Census Connections Page should look like this:
 

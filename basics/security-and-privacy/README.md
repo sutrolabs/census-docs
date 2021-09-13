@@ -41,7 +41,7 @@ Instead of storing this data in our platform, we keep it in your data warehouse 
 In addition, Census will access your data warehouse through a dedicated gateway, which always uses an encrypted connection and originates from a set of well-known static IP addresses that you can add to the allowlist for your warehouse for additional control.
 
 {% hint style="info" %}
-The Census user account that accesses your warehouse is not a `superuser` - it is a least-privilege account that can only read from the schemas that you choose and can only write to the `Census` bookkeeping schema. Read more [in our data sources documentation](../../sources/snowflake.md#required-permissions).
+The Census user account that accesses your warehouse is not a `superuser` - it is a least-privilege account that can only read from the schemas that you choose and can only write to the `Census` bookkeeping schema. Read more [in our data sources documentation](../../source-warehouse/snowflake.md#required-permissions).
 {% endhint %}
 
 It’s impossible for Census to read data from your warehouse that you don’t explicitly opt-in, and if you choose you can even set up fine-grained table-level access for the Census user. When a new sync starts, Census looks for rows of data that have been added or changed since the last sync, and records a temporary snapshot of those rows in the `Census` schema.
