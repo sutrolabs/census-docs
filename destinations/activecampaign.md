@@ -1,3 +1,7 @@
+---
+description: This page describes how to use Census with ActiveCampaign.
+---
+
 # ActiveCampaign
 
 ## 🏃‍♂️Getting Started

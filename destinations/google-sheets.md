@@ -1,5 +1,5 @@
 ---
-description: This page describes how to use Census to send your data to Google Sheets.
+description: This page describes how to use Census with Google Sheets.
 ---
 
 # Google Sheets

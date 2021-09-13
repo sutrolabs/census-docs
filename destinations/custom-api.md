@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page guides you on how to use the Custom Destination API to create a
-  connection to any destination service you like.
+  This page describes how to use Census with the Custom Destination API to
+  create a connection to any destination service of your choice.
 ---
 
 # Custom Destination API \[Beta\]

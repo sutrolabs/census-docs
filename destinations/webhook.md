@@ -2,7 +2,7 @@
 description: This page describes how to use Census with webhooks.
 ---
 
-# Webhook
+# Webhooks
 
 ## 🏃‍♂️ Getting Started
 
@@ -153,7 +153,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for webhooks.
 
-## 🚑 Need help connecting to a Webhook?
+## 🚑 Need help connecting to Webhooks?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

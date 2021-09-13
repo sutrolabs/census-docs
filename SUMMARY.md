@@ -47,8 +47,9 @@
 * [Pipedrive](destinations/pipedrive.md)
 * [Salesforce](destinations/salesforce.md)
 * [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
+* [Slack](destinations/slack.md)
 * [Stripe](destinations/stripe.md)
 * [Vitally](destinations/vitally.md)
-* [Webhook](destinations/webhook.md)
+* [Webhooks](destinations/webhook.md)
 * [Zendesk](destinations/zendesk.md)
 

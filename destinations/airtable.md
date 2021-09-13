@@ -1,5 +1,5 @@
 ---
-description: This page describes how to use Census to send your data to Airtable.
+description: This page describes how to use Census with Airtable.
 ---
 
 # Airtable

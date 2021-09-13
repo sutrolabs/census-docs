@@ -1,5 +1,5 @@
 ---
-description: This page describes how to use Census with Google Ads services.
+description: This page describes how to use Census with Google Ads.
 ---
 
 # Google Ads
