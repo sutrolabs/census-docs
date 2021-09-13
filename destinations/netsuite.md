@@ -6,6 +6,8 @@ description: This page describes how to use Census with NetSuite.
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect NetSuite to Census and create your first sync.
+
 {% embed url="https://www.youtube.com/watch?v=ITZzrwtCf7M" %}
 
 In addition to may other destinations, Census can sync your data warehouse data into NetSuite objects such as Customer, Invoice, and more. In this article, we'll walk you through the process of setting up a new NetSuite connection in Census.

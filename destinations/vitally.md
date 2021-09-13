@@ -6,6 +6,8 @@ description: This page describes how to use Census with Vitally.
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Vitally to Census and create your first sync.
+
 ### **Prerequisites**
 
 You'll need a few different things to get started syncing data to Vitally.

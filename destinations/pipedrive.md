@@ -6,6 +6,8 @@ description: This page describes how to use Census with Pipedrive.
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Pipedrive to Census and create your first sync.
+
 {% embed url="https://youtu.be/s3pCULG8Zkg" %}
 
 

@@ -4,6 +4,10 @@ description: This page describes how to use Census with Zendesk.
 
 # Zendesk
 
+## 🏃‍♀️ Getting Started
+
+In this guide, we will show you how to connect Zendesk to Census and create your first sync.
+
 ## Zendesk data quirks
 
 Zendesk does things a little differently so heads up that there are a few gotchas with this integration.

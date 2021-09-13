@@ -6,6 +6,8 @@ description: This page describes how to use Census with Mailchimp.
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Mailchimp to Census and create your first sync.
+
 {% embed url="https://youtu.be/tu3hr3BV6Sg" %}
 
 ### 1. Connect Census to Mailchimp <a id="1-connect-census-to-braze"></a>

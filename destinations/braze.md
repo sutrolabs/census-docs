@@ -6,7 +6,7 @@ description: This page describes how to use Census with Braze.
 
 ## 🏃‍♀️ Getting Started
 
-In this guide, we'll show you how to connect Census to Braze. 
+In this guide, we will show you how to connect Braze to Census and create your first sync.
 
 {% embed url="https://youtu.be/qwa2BEuxEBs" %}
 

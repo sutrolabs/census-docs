@@ -6,7 +6,7 @@ description: This page describes how to use Census with webhooks.
 
 ## 🏃‍♀️ Getting Started
 
-In this guide, we will show you how to use webhooks to send data to any endpoints or services.
+In this guide, we will show you how to connect webhooks to Census and create your first sync.
 
 ### **Prerequisites**
 

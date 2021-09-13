@@ -6,7 +6,7 @@ description: This page describes how to use Census with Amplitude.
 
 ## 🏃‍♀️ Getting Started
 
-‌In this guide, we will show you how to connect your Amplitude project to [Census](https://www.getcensus.com/) and create your first sync.
+‌In this guide, we will show you how to connect Amplitude to Census and create your first sync.
 
 ### **Prerequisites**
 

@@ -6,6 +6,8 @@ description: This page describes how to use Census with Customer.io.
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Customer.io to Census and create your first sync.
+
 {% embed url="https://www.youtube.com/watch?v=sRYnagj\_gIE" %}
 
 ### 1. Collecting Customer.io API Credentials

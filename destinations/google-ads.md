@@ -6,7 +6,7 @@ description: This page describes how to use Census with Google Ads.
 
 ## 🏃‍♀️ Getting Started
 
-In this guide, we will show you how to connect your Google Ads account to [Census](https://www.getcensus.com/) and create your first sync.
+In this guide, we will show you how to connect Google Ads to Census and create your first sync.
 
 ### **Prerequisites**
 

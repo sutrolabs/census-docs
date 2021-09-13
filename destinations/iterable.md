@@ -10,6 +10,8 @@ Please note that for larger syncs, it might take ~10 minutes for you to see the 
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Iterable to Census and create your first sync.
+
 ### 1. Create a new Iterable API key
 
 To connect Census to your Iterable, you'll need to provide Census with an API key so that we can talk to it directly. 

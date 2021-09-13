@@ -8,6 +8,8 @@ description: >-
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Facebook Ads to Census and create your first sync.
+
 {% embed url="https://www.youtube.com/watch?v=0\_jr7dv-FWE" %}
 
 ## Audiences

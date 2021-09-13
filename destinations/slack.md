@@ -6,7 +6,7 @@ description: This page describes how to use Census with Slack.
 
 ## 🏃‍♀️ Getting Started
 
-‌In this guide, we will show you how to connect your Slack workspace to Census and create your first sync.
+‌In this guide, we will show you how to connect Slack to Census and create your first sync.
 
 ### Prerequisites
 

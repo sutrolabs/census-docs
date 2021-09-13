@@ -6,9 +6,9 @@ description: This page describes how to use Census with Airtable.
 
 ## 🏃‍♀️ Getting Started
 
-{% embed url="https://www.youtube.com/watch?v=-NRDgN65rrg" %}
+In this guide, we will show you how to connect Airtable to Census and create your first sync.
 
-In this guide, we will show you how to connect Airtable to [Census](https://www.getcensus.com/) and create your first sync.
+{% embed url="https://www.youtube.com/watch?v=-NRDgN65rrg" %}
 
 ### Prerequisites <a id="0-prerequisites"></a>
 

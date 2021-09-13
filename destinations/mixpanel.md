@@ -6,6 +6,8 @@ description: This page describes how to use Census with Mixpanel.
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Mixpanel to Census and create your first sync.
+
 {% embed url="https://www.youtube.com/watch?v=q-JxGTsORfE" %}
 
 ### Prerequisites

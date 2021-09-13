@@ -6,7 +6,7 @@ description: This page describes how to use Census with Marketo.
 
 ## 🏃‍♀️ Getting Started
 
-In this guide, we'll show you how to connect Census to Marketo.
+In this guide, we will show you how to connect Marketo to Census and create your first sync.
 
 ### **Prerequisites**
 

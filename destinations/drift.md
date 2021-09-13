@@ -6,6 +6,8 @@ description: This page describes how to use Census with Drift.
 
 ## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Drift to Census and create your first sync.
+
 ### 1. Connect Census to Drift
 
 In the **Connections** page in Census, click the **Add Service** button under the **Service Connections** section, and select Drift.
