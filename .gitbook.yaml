@@ -5,4 +5,10 @@ root: ./
     summary: SUMMARY.md​
     
 redirects:  
+    source-warehouse/databricks: ./sources/databricks.md
+    source-warehouse/google-bigquery: ./sources/google-bigquery.md
+    source-warehouse/google-sheets: ./sources/google-sheets.md
+    source-warehouse/postgres: ./sources/postgres.md
     source-warehouse/redshift: ./sources/redshift.md
+    source-warehouse/rockset: ./sources/rockset.md
+    source-warehouse/snowflake: ./sources/snowflake.md
