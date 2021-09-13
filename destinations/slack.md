@@ -125,7 +125,7 @@ Reminder: Census will send records to a Slack channel one at a time.
 
 | Object Name | Supported? | Identifiers |
 | :--- | :---: | :--- |
-| Channel | ✅ | any unique field |
+| channel | ✅ | any unique field |
 
 {% hint style="info" %}
 Census can send data to **all** public channels and any private channels that Census has been explicitly invited to \(e.g. `/invite @census`\).
