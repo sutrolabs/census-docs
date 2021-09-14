@@ -112,7 +112,7 @@ Note, **Append** is the only option available for Slack, so it will be automatic
 
 In Slack, go to the channel that you set up the sync to.
 
-If everything well well, you should see your data there:
+If everything went well, you should see your data there:
 
 ![](../.gitbook/assets/screen-shot-2021-09-13-at-1.10.51-pm.png)
 
