@@ -70,7 +70,7 @@ The sync will move data from your warehouse to Outreach. In this step, you'll de
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose Outreach as the **Connection** and an **Object** in Outreach. \(See [Supported Objects](outreach.md#supported-objects).\)
 4. Under **How should changes to the source be synced?**, choose **Update or Create**. \(See [Supported Sync Behaviors](outreach.md#supported-sync-behaviors).\)
-5. Under **How are source and destination records matched?**, select a mapping key. We recommend using an internal ID when possible. \(See [Supported Objects](outreach.md#supported-objects) for details.\)
+5. Under **How are source and destination records matched?**, select a mapping key. \(See [Supported Objects](outreach.md#supported-objects) for details.\)
 6. Under **Which fields should be updated?**, select the fields you want to update by mapping a field in Outreach to a column in your model.
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
