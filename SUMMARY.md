@@ -47,6 +47,7 @@
 * [Outreach](destinations/outreach.md)
 * [Pendo](destinations/pendo.md)
 * [Pipedrive](destinations/pipedrive.md)
+* [S3](destinations/s3.md)
 * [Salesforce](destinations/salesforce.md)
 * [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
 * [Segment](destinations/segment.md)
