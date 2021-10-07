@@ -13,8 +13,7 @@ This guide shows you how to use Census to connect your Outreach account to your 
 Before you begin, you'll need the following:
 
 * **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
-* **Outreach account**: We recommend using a dedicated service account with Admin user profile privileges.
-  * At minimum, the Outreach account user will need permissions to view, create, and edit all records for the Outreach objects you'd like to create or edit \(e.g. Accounts, Prospects\).
+* **Outreach account**: We recommend using a dedicated service account with Admin user profile privileges. \(See [Required Permissions](outreach.md#required-permissions).\)
 * **Credentials for your data warehouse**: For details, see the guide for your specific technology.
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -33,7 +32,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this. 👇
 
-![Connections page with Outreach](../.gitbook/assets/202109_service_connection_outreach%20%281%29.png)
+![Connections page with Outreach](../.gitbook/assets/202109_service_connection_outreach%20%281%29%20%281%29.png)
 
 ### Step 2: Connect your data warehouse
 
@@ -49,7 +48,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After connecting your warehouse, your **Connections** page will look something like this: 👇
 
-![Connections page with data warehouse and Outreach](../.gitbook/assets/202109_connections_outreach%20%281%29.png)
+![Connections page with data warehouse and Outreach](../.gitbook/assets/202109_connections_outreach%20%282%29%20%281%29.png)
 
 ### Step 3: Create your model
 
@@ -79,6 +78,12 @@ The sync will move data from your warehouse to Outreach. In this step, you'll de
 When configuring your sync, the page should look something like this: 👇
 
 ![Sync setup for Outreach](../.gitbook/assets/202109_sync_details%20%281%29.png)
+
+#### Custom Fields in Outreach
+
+Although the sync can update custom fields in Outreach, these fields will show up as _Custom\#_ rather than using the custom field name. You may need to visit the custom field configuration in Outreach settings to check the field number.
+
+![Sync setup displays custom fields without the custom field name](../.gitbook/assets/202110_custom_fields_outreach.png)
 
 ### Step 5: Confirm the synced data in Outreach
 
@@ -121,7 +126,9 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept.
 
 ## 🔑 Required Permissions
 
-We recommend authenticating your Outreach connection with an Outreach user that has an Admin user profile. At minimum, this user will need to have permissions to view, create, and edit all records in the objects you are syncing \(e.g. Account, Prospect\). Finer grained permissions for an Outreach user may be granted or changed in the Outreach governance settings.
+We recommend authenticating your Outreach connection with an Outreach user that has the standard Admin governance profile. 
+
+If using another profile, the profile must include permissions to view, create, and edit all records for the synced objects. See [Outreach Support](https://support.outreach.io/hc/en-us/articles/219027188-Creating-and-Assigning-Governance-Profiles) for details on user governance settings.
 
 ## 🚑 Need Help Connecting to Outreach?
 
