@@ -2,26 +2,38 @@
 
 ## 👋 Welcome to Census! 
 
-Census is a data integration platform that enables you to sync your customer & product data from cloud data warehouses like Redshift, Snowflake, BigQuery, Postgres, or Databricks to the apps your sales & marketing teams use.
+Census is a data integration platform that enables you to sync your customer and product data from cloud data warehouses like Redshift, Snowflake, and Databricks to the apps your sales and marketing teams use. 
 
-If you are new here, you should check out:
+If you're new here, you can get started by finding the quick start guide for the app you want to connect:
 
-* Our Quick Start Guide 🤓 
-* Watch some of our short 5min demo videos 📺
-  * [Salesforce](https://www.youtube.com/watch?v=K-qmPOweyUU)
-  * [Intercom](https://www.youtube.com/watch?v=RCKO3w-qw9g)
-  * [Hubspot](https://www.youtube.com/watch?v=pkbmg-TmTiY)
-  * [Facebook Ads](https://www.youtube.com/watch?v=0_jr7dv-FWE)
-  * [Customer.io](https://www.youtube.com/watch?v=sRYnagj_gIE)
-  * [Outreach](https://www.loom.com/share/c55ef1006cfc4d5eb310c7151861c978)
-  * [ActiveCampaign](https://youtu.be/lTc7u8rV7i4)
-  * [Braze](https://www.youtube.com/watch?v=qwa2BEuxEBs)
-  * [Klaviyo](https://youtu.be/U8q7E2SZJkI)
-  * [Iterable](https://www.loom.com/share/27415b2fa0a3404cb2107f2ad2fcb98b)
-  * [Pipedrive](https://youtu.be/s3pCULG8Zkg)
-  * [Netsuite](https://www.youtube.com/watch?v=ITZzrwtCf7M)
-  * [Mixpanel](https://www.youtube.com/watch?v=q-JxGTsORfE)
-  * [Mailchimp](https://youtu.be/tu3hr3BV6Sg)
+* [ActiveCampaign](destinations/activecampaign.md)
+* [Airtable](destinations/airtable.md)
+* [Amplitude](destinations/amplitude.md)
+* [Braze](destinations/braze.md)
+* [Customer.io](destinations/customer.io.md)
+* [Drift](destinations/drift.md)
+* [Facebook Ads](destinations/facebook-ads.md)
+* [Front](destinations/front.md)
+* [Google Ads](destinations/google-ads/)
+* [Google Sheets](sources/google-sheets.md)
+* [HubSpot](destinations/hubspot.md)
+* [Intercom](destinations/intercom.md)
+* [Iterable](destinations/iterable.md)
+* [Klaviyo](destinations/klaviyo.md)
+* [Mailchimp](destinations/mailchimp.md)
+* [Marketo](destinations/marketo.md)
+* [Mixpanel](destinations/mixpanel.md)
+* [Netsuite](destinations/netsuite.md)
+* [Outreach](destinations/outreach.md)
+* [Pendo](destinations/pendo.md)
+* [Pipedrive](destinations/pipedrive.md)
+* [Salesforce](destinations/salesforce.md)
+* [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
+* [Segment](destinations/segment.md)
+* [Slack](destinations/slack.md)
+* [Stripe](destinations/stripe.md)
+* [Vitally](destinations/vitally.md)
+* [Zendesk](destinations/zendesk.md)
 
 ## 🎊 Product Changelog
 
