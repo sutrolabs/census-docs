@@ -2,7 +2,7 @@
 description: Maintain audience lists in Google Ads to retarget and re-engage your users.
 ---
 
-# Customer Match Lists \(Audiences\)
+# Customer Match Lists (Audiences)
 
 ## Connect your Google Ads Account
 
@@ -10,7 +10,7 @@ Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/g
 
 ## Sync a Customer Match List with Census
 
-### 1. Create your Google Ads Customer Match Model <a id="3-create-your-first-model"></a>
+### 1. Create your Google Ads Customer Match Model <a href="3-create-your-first-model" id="3-create-your-first-model"></a>
 
 Navigate to the [Models](https://app.getcensus.com/models) page.​
 
@@ -28,10 +28,10 @@ Once you have created your model, click save.
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the " **What data do you want to sync?"** section
+In the " **What data do you want to sync?" **section
 
 * For the **Connection**, select the data warehouse you connected in the Prerequisites Step 2
-* For the **Source,** select the model you created in step 1 of this section
+* For the **Source, **select the model you created in step 1 of this section
 
 Next up is the **"Where do you want to sync data to?"** section
 
@@ -49,7 +49,7 @@ The end result should look something like this
 
 ![](../../.gitbook/assets/screely-1619138106154.png)
 
-Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync.
+Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync.
 
 ### 3. Confirm the data is in your Customer Match List
 
@@ -67,10 +67,10 @@ We recommend you do not use Google's Customer Match expiration setting. Census-s
 
 ## 🔄 Supported Sync Behaviors
 
-| **Behaviors** | **Supported?** |
-| ---: | :---: |
-| **Update or Create** | ✅ |
-| **Mirror** | ✅ |
+|        **Behaviors** | **Supported?** |
+| -------------------: | :------------: |
+| **Update or Create** |        ✅       |
+|           **Mirror** |        ✅       |
 
 _**Identifiers**: User ID, Mobile ID, Email, Phone Number_
 
@@ -81,4 +81,3 @@ Note: If you're reusing an existing Customer Match List, Census will not remove 
 {% hint style="info" %}
 Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
-

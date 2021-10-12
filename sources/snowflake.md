@@ -14,14 +14,14 @@ description: >-
 These instructions are well tested to connect Census to Snowflake. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
 {% endhint %}
 
-Census reads data from one or more tables \(possibly across different schemata\) in your data warehouse and publishes it to the corresponding objects in destinations such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a number of tables in the `CENSUS` schema. In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
+Census reads data from one or more tables (possibly across different schemata) in your data warehouse and publishes it to the corresponding objects in destinations such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a number of tables in the `CENSUS` schema. In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
 
 * Full access to the `CENSUS` database and the `CENSUS` schema in that database
 * Read-only access to any tables and views in any schemata from which you want Census to publish
 
 Snowflake permissions are complex and there are many ways to configure access for Census. The script below is known to work correctly and follows [Snowflake's best practices](https://docs.snowflake.com/en/user-guide/security-access-control-configure.html#creating-read-only-roles) for creating read-only roles in a role hierarchy:
 
-```text
+```
 -- Create a role for the census user
 CREATE ROLE CENSUS_ROLE;
 
@@ -89,12 +89,12 @@ GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO R
 
 ## 💸 Managing Snowflake Warehouse Costs
 
-The script above creates a new virtual data warehouse \(execution environment\) for Census. This allows you to monitor and tune Census queries for the best balance of performance and speed.
+The script above creates a new virtual data warehouse (execution environment) for Census. This allows you to monitor and tune Census queries for the best balance of performance and speed.
 
-The script above creates the smallest available virtual warehouse \("X-Small"\) and configures it to aggressively auto-suspend if not in use, which makes the best use of your Snowflake account credits. However, some Census jobs \(especially involving lots of data or complex models\) will benefit from a larger warehouse. You can use Snowflake's [ALTER WAREHOUSE](https://docs.snowflake.com/en/sql-reference/sql/alter-warehouse.html) command to adjust the size of the CENSUS warehouse and tune it for your workload.  
-  
-Alternatively, if cost concerns are an issue, you can also share a warehouse with other batch processing systems \(for example Segment, Fivetran, dbt, etc\).   
-  
+The script above creates the smallest available virtual warehouse ("X-Small") and configures it to aggressively auto-suspend if not in use, which makes the best use of your Snowflake account credits. However, some Census jobs (especially involving lots of data or complex models) will benefit from a larger warehouse. You can use Snowflake's [ALTER WAREHOUSE](https://docs.snowflake.com/en/sql-reference/sql/alter-warehouse.html) command to adjust the size of the CENSUS warehouse and tune it for your workload.\
+\
+Alternatively, if cost concerns are an issue, you can also share a warehouse with other batch processing systems (for example Segment, Fivetran, dbt, etc). \
+\
 You may also want to [adjust the schedules](../basics/core-concept.md#scheduling-a-sync) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
 
 ## 🔗 Using Snowflake on AWS VPS, PrivateLink, and Azure
@@ -113,4 +113,3 @@ If you're using Allowed IPs network policy, you'll need to add these Census IP a
 ## 🚑 Need help connecting to Snowflake?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

@@ -12,7 +12,7 @@ In this guide, we will show you how to connect Intercom to Census and create you
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Intercom account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -26,7 +26,7 @@ In this guide, we will show you how to connect Intercom to Census and create you
 ### 1. Connect Intercom
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Click the **Add Service **button
 * Select **Intercom** in the dropdown list
 
 ![](../.gitbook/assets/screely-1618112961265.png)
@@ -65,10 +65,10 @@ Once you have created your model, click save.
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the " **What data do you want to sync?"** section
+In the " **What data do you want to sync?" **section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,**  select the model you created in step 3
+* For the **Source,  **select the model you created in step 3
 
 Next up is the **"Where do you want to sync data to?"** section
 
@@ -88,11 +88,11 @@ The end result should look something like this
 
 ![](../.gitbook/assets/screely-1618113035239.png)
 
-Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
+Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync
 
 ### 5. Confirm the data is in Intercom
 
-Now go back to your Intercom and go view a record type \(Contact or Company\) that should have been updated. If everything went well, you should see your data in Intercom
+Now go back to your Intercom and go view a record type (Contact or Company) that should have been updated. If everything went well, you should see your data in Intercom
 
 ![](../.gitbook/assets/screely-1618113503713.png)
 
@@ -102,12 +102,12 @@ That's it! In 5 steps, you've connected Intercom and started syncing customer & 
 
 Census currently supports syncing to the following Intercom objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| ---: | :---: | :--- |
-| Company | ✅ | Company ID |
-| Contact \(Lead or User\)  | ✅ | Email, Intercom ID, External ID |
-| Lead | ✅ | Email, Intercom ID, External ID |
-| User | ✅ | Email, Intercom ID, External ID |
+|         **Object Name** | **Supported?** | Identifiers                     |
+| ----------------------: | :------------: | ------------------------------- |
+|                 Company |        ✅       | Company ID                      |
+| Contact (Lead or User)  |        ✅       | Email, Intercom ID, External ID |
+|                    Lead |        ✅       | Email, Intercom ID, External ID |
+|                    User |        ✅       | Email, Intercom ID, External ID |
 
 {% hint style="info" %}
 If you're finding Companies missing in Intercom after a sync, make sure the company also has users associated with them. By default, Intercom hides companies with no associated users.
@@ -121,15 +121,14 @@ If you're finding Companies missing in Intercom after a sync, make sure the comp
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Update Only** | ✅ | Contact, Lead, User |
-| **Delete** | ✅ | Contact, Lead, User |
+|        **Behaviors** | **Supported?** |     **Objects?**    |
+| -------------------: | :------------: | :-----------------: |
+| **Update or Create** |        ✅       |         All         |
+|      **Update Only** |        ✅       | Contact, Lead, User |
+|           **Delete** |        ✅       | Contact, Lead, User |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Intercom.
 
 ## 🚑 Need help connecting to Intercom?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

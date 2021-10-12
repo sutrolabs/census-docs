@@ -19,8 +19,8 @@ Google Ads has extensive documentation on [creating offline conversion events](h
 3. Select **Other data sources or CRMs**.
 4. Select **Track conversions from clicks** or **Track conversions from calls**.
 5. Enter a name for the conversion action that you're creating. Hold onto this name exactly as entered -- spelling and capitalization will be important when syncing these conversions via Census!
-6. Choose your [counting option](https://support.google.com/google-ads/answer/3438531?hl=en-GB) for the conversion action, either **One conversion** or **Every conversion**. Many offline conversions occur only once \(e.g. "Reached onboarding milestone X"\). In this case, select the counting option **One conversion** to protect yourself from accidentally syncing duplicate conversions.
-7. Complete the set-up for this conversion event, selecting your desired conversion window \(we recommend using the maximum 90-days\) and ads attribution model.
+6. Choose your [counting option](https://support.google.com/google-ads/answer/3438531?hl=en-GB) for the conversion action, either **One conversion** or **Every conversion**. Many offline conversions occur only once (e.g. "Reached onboarding milestone X"). In this case, select the counting option **One conversion** to protect yourself from accidentally syncing duplicate conversions.
+7. Complete the set-up for this conversion event, selecting your desired conversion window (we recommend using the maximum 90-days) and ads attribution model.
 
 {% hint style="danger" %}
 **Important**: After creating a new conversion action, Google recommends waiting 6 hours before syncing conversions for that conversion action. If you sync conversions during the first 6 hours, it can take two days for those conversions to appear on your reports.
@@ -34,14 +34,14 @@ Here you can write SQL queries that contain the conversion action you want to se
 
 Google Ads Offline Click and Call Conversions require a specific set of properties. We'll want a model that has the following three required fields:
 
-* The **Google Click ID** \(also often known as the `gclid`\)
+* The **Google Click ID** (also often known as the `gclid`)
 * The **Conversion Name**, spelled exactly as it is found in Google Ads
-* The **Conversion Timestamp**, __with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string \(e.g. '2021-03-04 09:23:57+0000'\).
+* The **Conversion Timestamp**,_ _with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
 
 Optional properties include:
 
-* Conversion Value, in [microunits](https://developers.google.com/adwords/api/docs/reference/v201809/BudgetService.Money#microamount) for the currency \(e.g. 1 USD = 1,000,000\)
-* Currency Code, the[ ISO 4217 3-character currency code](https://developers.google.com/adwords/api/docs/appendix/codes-formats#expandable-18) \(e.g. 'USD'\)
+* Conversion Value, in [microunits](https://developers.google.com/adwords/api/docs/reference/v201809/BudgetService.Money#microamount) for the currency (e.g. 1 USD = 1,000,000)
+* Currency Code, the[ ISO 4217 3-character currency code](https://developers.google.com/adwords/api/docs/appendix/codes-formats#expandable-18) (e.g. 'USD')
 * External Attribution Credit and Model, calculated outside Google Ads
 
 Once you have created your model, click save.
@@ -50,28 +50,28 @@ Once you have created your model, click save.
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the "**What data do you want to sync?"** section
+In the "**What data do you want to sync?" **section
 
 * For the **Connection**, select the data warehouse you connected in the Prerequisites Step 2
-* For the **Source,** select the model you created in step 2 of this section
+* For the **Source, **select the model you created in step 2 of this section
 
 Next up is the **"Where do you want to sync data to?"** section
 
 * Pick **Google Ads** as the Connection
-* For Object, pick **Click Conversion** or **Call Conversion**
+* For Object, pick **Click Conversion **or **Call Conversion**
 
 For the "**How should changes to the source be synced?"** section 
 
 * **Append** will be selected by default
-* Pick the right mapping key, the **Google Click ID** in your model
+* Pick the right mapping key, the **Google Click ID **in your model
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the fields from your model to the properties of the Click or Call Conversion. 
 
 The end result should look something like this:
 
-![](../../.gitbook/assets/screely-1631098088943%20%281%29.png)
+![](<../../.gitbook/assets/screely-1631098088943 (1).png>)
 
-Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync.
+Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync.
 
 ### 4. Confirm the conversions are now in Google Ads
 
@@ -79,15 +79,14 @@ It may take around 3 hours for synced offline conversions to show up in your Goo
 
 ## 🔄 Supported Sync Behaviors
 
-| **Behaviors** | **Supported?** |
-| ---: | :---: |
-| **Update or Create** | ✅ |
+|        **Behaviors** | **Supported?** |
+| -------------------: | :------------: |
+| **Update or Create** |        ✅       |
 
-_**Identifier**: Google Click ID \("gclid"\)_
+_**Identifier**: Google Click ID ("gclid")_
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors! 
 
 {% hint style="info" %}
 Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
-

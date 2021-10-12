@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Google Sheets to Census and creat
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Google account ready, with write access to your target Google Sheets.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -31,7 +31,7 @@ Our Google Sheets connector behaves a little differently than other Census conne
 
 ![](../.gitbook/assets/screely-1622879441941.png)
 
-Your new Google Sheets connection will include your Google Identity email. Click the copy button \(![](../.gitbook/assets/copy-solid.svg)\) to save it to your clipboard, will use it in a minute.
+Your new Google Sheets connection will include your Google Identity email. Click the copy button (![](../.gitbook/assets/copy-solid.svg)) to save it to your clipboard, will use it in a minute.
 
 ### 2. Share your target Google Sheet
 
@@ -67,10 +67,10 @@ Here you will have to write SQL queries to select the data you want to send to y
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the " **What data do you want to sync?"** section
+In the " **What data do you want to sync?" **section
 
 * For the **Connection**, select the data warehouse you connected in step 3
-* For the **Source,**  select the model you created in step 4
+* For the **Source,  **select the model you created in step 4
 
 Next up is the **"Where do you want to sync data to?"** section
 
@@ -79,7 +79,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the " **How should changes to the source be synced?"** section 
 
-* **Mirror** will be preselected
+* **Mirror **will be preselected
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section
 
@@ -90,7 +90,7 @@ The end result should look something like this:
 
 ![](../.gitbook/assets/screely-1622879533777.png)
 
-Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync. We're off to the races.
+Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync. We're off to the races.
 
 ### 6. Confirm the data is in Google Sheets
 
@@ -105,8 +105,8 @@ That's it! In 6 steps, you've connected Google Sheets and started syncing data f
 Google Sheets support is pretty straight forward!
 
 | **Object Name** | **Supported?** |
-| ---: | :---: |
-| Sheet Tabs | ✅ |
+| --------------: | :------------: |
+|      Sheet Tabs |        ✅       |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Sheets functionality.
 
@@ -117,12 +117,11 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 {% endhint %}
 
 | **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Mirror** | ✅ | Sheet Tabs |
+| ------------: | :------------: | :----------: |
+|    **Mirror** |        ✅       |  Sheet Tabs  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Google Sheets.
 
 ## 🚑 Need help connecting to Google Sheets?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

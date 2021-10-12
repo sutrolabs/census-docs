@@ -10,7 +10,7 @@ In this guide, we will show you how to connect webhooks to Census and create you
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have an endpoint that accepts `POST` requests ready. You can use the free service [https://webhook.site](https://webhook.site/c9ce13dd-c04e-4b82-b861-1b2b51a56e40) for testing purposes.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -24,9 +24,9 @@ In this guide, we will show you how to connect webhooks to Census and create you
 ### 1. Create a Webhook Destination in Census
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Click the **Add Service **button
 * Select **Webhook** in the dropdown list
-* Name your Destination \(for example, `webhooksite test`\) and Input the URL of your endpoint  👇
+* Name your Destination (for example, `webhooksite test`) and Input the URL of your endpoint  👇
 
 ![](../.gitbook/assets/screely-1630450119455.png)
 
@@ -65,14 +65,14 @@ Once you have created your model, click save.
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the " **What data do you want to sync?"** section
+In the " **What data do you want to sync?" **section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,**  select the model you created in step 3
+* For the **Source,  **select the model you created in step 3
 
 Next up is the **"Where do you want to sync data to?"** section
 
-* Pick your Webhook destination \(for us it is `Webhook Test`\) as **the Connection**
+* Pick your Webhook destination (for us it is `Webhook Test`) as **the Connection**
 * ⚠️ If you are familiar with Census, you will notice that there is no Object to select.
 
 For the " **How should changes to the source be synced?"** section 
@@ -92,7 +92,7 @@ The end result should look something like this:
 If you want, to can test the sync at the bottom which will sync one record to your destination
 {% endhint %}
 
-Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
+Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync
 
 ### 5. Confirm the data was sent to your Webhook Endpoint
 
@@ -147,15 +147,14 @@ Each webhook `POST` contains both the data you mapped as well as metadata about 
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Append** | ✅ | All |
-| **Mirror** | ✅ | All |
+|        **Behaviors** | **Supported?** | **Objects?** |
+| -------------------: | :------------: | :----------: |
+| **Update or Create** |        ✅       |      All     |
+|           **Append** |        ✅       |      All     |
+|           **Mirror** |        ✅       |      All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for webhooks.
 
 ## 🚑 Need help connecting to Webhooks?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

@@ -8,11 +8,11 @@ description: This page describes how to use Census with Customer.io.
 
 In this guide, we will show you how to connect Customer.io to Census and create your first sync.
 
-{% embed url="https://www.youtube.com/watch?v=sRYnagj\_gIE" %}
+{% embed url="https://www.youtube.com/watch?v=sRYnagj_gIE" %}
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Customer.io account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -67,18 +67,18 @@ Customer.io will now appear as a new destination for Census syncs.  🎉
 Customer.io is a destination with a fast API that can burst all the way to 600 api calls per second but usually we set a conservative **150 calls per second.**
 
 | **Service** | Public API rate limit | **Records sync / Minute** |
-| :--- | :--- | :--- |
-| Customer.io | 150 / sec | 7,000 |
+| ----------- | --------------------- | ------------------------- |
+| Customer.io | 150 / sec             | 7,000                     |
 
 ## 🗄️ Supported Objects
 
 We currently support all objects of [Customer.io's core API. ](https://customer.io/docs/api/#section/Overview)
 
 | **Object Name** | **Supported?** | Create Fields? |
-| ---: | :---: | :---: |
-| Person | ✅ | ✅ |
-| Device | ✅ | ✅ |
-| Event | ✅ | ✅ |
+| --------------: | :------------: | :------------: |
+|          Person |        ✅       |        ✅       |
+|          Device |        ✅       |        ✅       |
+|           Event |        ✅       |        ✅       |
 
 ## 🔄 Supported Sync Behaviors
 
@@ -86,11 +86,11 @@ We currently support all objects of [Customer.io's core API. ](https://customer.
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Update Only** | 🔜 | All |
-| **Append** | ✅ | Event Only |
+|        **Behaviors** | **Supported?** | **Objects?** |
+| -------------------: | :------------: | :----------: |
+| **Update or Create** |        ✅       |      All     |
+|      **Update Only** |       🔜       |      All     |
+|           **Append** |        ✅       |  Event Only  |
 
 🔋[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
@@ -99,11 +99,10 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 There are a few unique features available when syncing to a Customer.io instance.
 
 * **People** are very standard Census syncs. Customer.io only allows the ID field to be used as the identifier for a Person record and recommends using your internal ID when possible, though email may be used to refer to prospective users if needed. ⚠️ This is a configuration done at the Project level of your instance. You can read more about [Customer.io's identifier guidelines here](https://customer.io/docs/data-mapping-guide#describing-users-with-customer-attributes).
-* **Events** are unique \(literally!\). Census will only send new database rows to Customer.io and so Events only support the **Append Only** behavior for syncs. In order to make sure an event is only ever published once, each row in your events source needs a globally unique ID.
+* **Events** are unique (literally!). Census will only send new database rows to Customer.io and so Events only support the **Append Only** behavior for syncs. In order to make sure an event is only ever published once, each row in your events source needs a globally unique ID.
 
 Both objects support arbitrary custom fields. You can directly map to a new custom field by clicking the **+ Add Custom Field** button when creating or editing a mapping.
 
 ## 🚑 Need help connecting to Customer.io?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

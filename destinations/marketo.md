@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Marketo to Census and create your
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Marketo account ready, with admin access to create API-only users and API credentials.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -29,9 +29,9 @@ Before setting up API credentials for Census, you'll first need a Marketo Role w
 
 None of the default Marketo Roles have API access so if this is your first API integration, you'll first need to create an API access role. [Marketo's documentation walks through creating a new API Access role](https://developers.marketo.com/rest-api/custom-services/) as well as your first user.
 
-Whether you're using an existing role or creating a new one, please make sure it has at least the following permissions: **Read-Write People** and **Read-Write Named Accounts**. To use Custom Objects, we'll also need **Read-Write Custom Object** and **Read-Write Custom Object Type**.
+Whether you're using an existing role or creating a new one, please make sure it has at least the following permissions:** Read-Write People** and **Read-Write Named Accounts**. To use Custom Objects, we'll also need **Read-Write Custom Object** and **Read-Write Custom Object Type**.
 
-You can view/edit role permissions in **Admin, Users & Roles**, then clicking the **Roles** tab.
+You can view/edit role permissions in **Admin, Users & Roles**, then clicking the** Roles **tab.
 
 #### API Only User
 
@@ -45,18 +45,18 @@ To connect Census to Marketo, you'll need to collect three pieces of information
 * Client ID
 * Client Secret
 
-Back in **Admin**, expand the **Integrations** menu on the left and select the **Web Services** option. Scroll down to the **REST API** section. Copy and paste the **Endpoint URL** \(you can excluding the `/rest` part\).
+Back in **Admin**, expand the **Integrations** menu on the left and select the **Web Services** option. Scroll down to the **REST API** section. Copy and paste the **Endpoint URL** (you can excluding the `/rest` part).
 
 ![](../.gitbook/assets/screely-1618889215086.png)
 
-Next we'll create a new LaunchPoint Service. Click on **LaunchPoint** and select **New** &gt; **New Service.**
+Next we'll create a new LaunchPoint Service. Click on **LaunchPoint** and select **New** > **New Service.**
 
 Your new service should have the following properties:
 
 * Display Name: Census
 * Service: **Custom**
 * Description: Census Data Integration
-* API Only User: _\[The user you created in step 1\]_
+* API Only User: _\[The user you created in step 1]_
 
 Once created, you'll see your new service in the list of services. Click on **View Details**. You will need to copy the **Client ID** and **Client Secret** here.
 
@@ -72,13 +72,13 @@ With all three pieces of information, return to Census and visit the **Connectio
 
 Census currently supports syncing to the following Marketo objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| ---: | :---: | :--- |
-| Lead | ✅ | Object ID, any Text/Number  |
-| Named Account | ✅ | Object ID, any Text/Number |
-| Custom Objects | ✅ | Object ID, any Text/Number |
-| Static Lists | \(via Lead\) |  |
-| Custom Activities | 🔜 |  |
+|   **Object Name** | **Supported?** | Identifiers                 |
+| ----------------: | :------------: | --------------------------- |
+|              Lead |        ✅       | Object ID, any Text/Number  |
+|     Named Account |        ✅       | Object ID, any Text/Number  |
+|    Custom Objects |        ✅       | Object ID, any Text/Number  |
+|      Static Lists |   (via Lead)   |                             |
+| Custom Activities |       🔜       |                             |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Marketo.
 
@@ -88,11 +88,11 @@ Census currently supports syncing to the following Marketo objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Update Only** | ✅ | Lead, Named Account |
-| **Mirror** | ✅ | Lead |
+|        **Behaviors** | **Supported?** |     **Objects?**    |
+| -------------------: | :------------: | :-----------------: |
+| **Update or Create** |        ✅       |         All         |
+|      **Update Only** |        ✅       | Lead, Named Account |
+|           **Mirror** |        ✅       |         Lead        |
 
 {% hint style="warning" %}
 Please be aware that Update Only and Mirror make use of less efficient Marketo APIs and will result in more API usage for the same number of records. 
@@ -103,4 +103,3 @@ Please be aware that Update Only and Mirror make use of less efficient Marketo A
 ## 🚑 Need help connecting to Marketo?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

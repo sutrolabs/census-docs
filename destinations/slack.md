@@ -10,7 +10,7 @@ description: This page describes how to use Census with Slack.
 
 ### 📋 Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Slack account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -53,7 +53,7 @@ Once you have created your model, give it a useful name, and click **Save Model*
 
 ## 4️⃣ Create your first Census sync
 
-Navigate to the **Syncs** page in Census and click the **Add Sync** button.
+Navigate to the **Syncs** page in Census and click the **Add Sync **button.
 
 Follow the instructions below as you go through each section:
 
@@ -98,11 +98,11 @@ Note, **Append** is the only option available for Slack, so it will be automatic
 
 ### 📄 Would you like to test your sync?
 
-* Click the **Run Test** button to test whether your sync successfully sends a single record from your data source to Slack.
+* Click the **Run Test **button to test whether your sync successfully sends a single record from your data source to Slack.
 
 ### ☑️ Finishing touches
 
-* Click the **Next** button to see the final preview of the sync settings. If you selected **Skip Current Records** in the **Should existing data be synced?** section, it should look something like this:
+* Click the **Next** button to see the final preview of the sync settings. If you selected **Skip Current Records **in the **Should existing data be synced? **section, it should look something like this:
 
 ![](../.gitbook/assets/screen-shot-2021-09-13-at-12.52.53-pm.png)
 
@@ -122,19 +122,19 @@ Reminder: Census will send records to a Slack channel one at a time.
 
 ## 🗄️ Supported Objects
 
-| Object Name | Supported? | Identifiers |
-| :--- | :---: | :--- |
-| channel | ✅ | any unique field |
+| Object Name | Supported? | Identifiers      |
+| ----------- | :--------: | ---------------- |
+| channel     |      ✅     | any unique field |
 
 {% hint style="info" %}
-Census can send data to **all** public channels and any private channels that Census has been explicitly invited to \(e.g. `/invite @census`\).
+Census can send data to **all** public channels and any private channels that Census has been explicitly invited to (e.g. `/invite @census`).
 {% endhint %}
 
 ## 🔄 Supported Sync Behaviors
 
 | **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Append** | ✅ | channel |
+| ------------: | :------------: | :----------: |
+|    **Append** |        ✅       |    channel   |
 
 {% hint style="info" %}
 Census will only write new records to a specific channel when new records appear in your data warehouse.
@@ -143,4 +143,3 @@ Census will only write new records to a specific channel when new records appear
 ## 🚑 Need help connecting to Slack?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

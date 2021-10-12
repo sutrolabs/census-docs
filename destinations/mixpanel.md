@@ -12,7 +12,7 @@ In this guide, we will show you how to connect Mixpanel to Census and create you
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Mixpanel account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -31,7 +31,7 @@ In this guide, we will show you how to connect Mixpanel to Census and create you
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603f083b24d2d21e45edbf32/file-gTS0HytG3A.png)
 
-* Copy your Mixpanel's **Project Token** and **API secret** that you can find in your Mixpanel Project Settings. your end state should look something like this 👇
+* Copy your Mixpanel's **Project Token** and **API secret **that you can find in your Mixpanel Project Settings. your end state should look something like this 👇
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603f08e0661b720174a72af8/file-KkhC5ZcfGo.png)
 
@@ -101,10 +101,10 @@ That's it! In 5 steps, you connect Census to Mixpanel and started syncing custom
 Census currently supports syncing to the following Mixpanel objects.
 
 | **Object Name** | **Supported?** | Identifiers |
-| ---: | :---: | :--- |
-| Event | ✅ | Insert ID |
-| User Profile  | ✅ | Distinct ID |
-| Group Profile | ✅ | Group ID |
+| --------------: | :------------: | ----------- |
+|           Event |        ✅       | Insert ID   |
+|   User Profile  |        ✅       | Distinct ID |
+|   Group Profile |        ✅       | Group ID    |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Mixpanel.
 
@@ -118,15 +118,14 @@ Depending on which plan your Mixpanel is on, you may have limited ability to vie
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | User Profile, Group Profile |
-| **Create Only** | ✅ | Event |
-| **Append** | ✅ | Event |
+|        **Behaviors** | **Supported?** |         **Objects?**        |
+| -------------------: | :------------: | :-------------------------: |
+| **Update or Create** |        ✅       | User Profile, Group Profile |
+|      **Create Only** |        ✅       |            Event            |
+|           **Append** |        ✅       |            Event            |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Mixpanel.
 
 ## 🚑 Need help connecting to Mixpanel?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

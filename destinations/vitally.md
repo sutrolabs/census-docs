@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Vitally to Census and create your
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Vitally account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -34,7 +34,7 @@ Census uses your Vitally API key to send data. Before we can connect Census to V
 ### 2. Connect Vitally
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Click the **Add Service **button
 * Select **Vitally** in the list
 * Paste your API Key into the **API Token** field
 * Optionally name your new connection and then click **Save**
@@ -45,12 +45,12 @@ Census uses your Vitally API key to send data. Before we can connect Census to V
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | Matching Keys | Create Fields |
-| ---: | :---: | :---: | :---: |
-| Users | ✅ | User ID only | ✅ |
-| Accounts | ✅ | Account ID only | ✅ |
-| Event | 🔜 |  |  |
-| NPS | 🔜 |  |  |
+| **Object Name** | **Supported?** |  Matching Keys  | Create Fields |
+| --------------: | :------------: | :-------------: | :-----------: |
+|           Users |        ✅       |   User ID only  |       ✅       |
+|        Accounts |        ✅       | Account ID only |       ✅       |
+|           Event |       🔜       |                 |               |
+|             NPS |       🔜       |                 |               |
 
 Vitally defines User ID and Account ID as the unique ID for these objects in your system. You are free to use whatever ID you like, but it needs to be unique. 
 
@@ -67,10 +67,10 @@ Vitally defines User ID and Account ID as the unique ID for these objects in you
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Update Only** | 🔜 | All |
+|        **Behaviors** | **Supported?** | **Objects** |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     All     |
+|      **Update Only** |       🔜       |     All     |
 
 Contact us if you want Census to support more Sync Behaviors for Vitally
 
@@ -81,4 +81,3 @@ Contact us if you want Census to support more Sync Behaviors for Vitally
 ## 🚑 Need help connecting to Vitally?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

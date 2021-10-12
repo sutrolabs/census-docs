@@ -15,7 +15,7 @@ Census compiles your models on the fly whenever a sync is scheduled so your data
 Before you can create models on a new data warehouse connection, you’ll be asked to decide whether you’d like to store your models with Census or use an existing dbt project as a source of models. Here are the instructions for connecting a dbt project.
 
 1. Connect to your GitHub repository. We currently only support dbt projects stored in GitHub. If you’d prefer to use a different service, please let us know!
-2. Select the branch \(if any\) you’d like Census to use. Census will refresh the project on a regular basis and detect any changes to your models. You can force a refresh at any point from the models' page.
+2. Select the branch (if any) you’d like Census to use. Census will refresh the project on a regular basis and detect any changes to your models. You can force a refresh at any point from the models' page.
 3. Customize the Census model selector. Any model exposed to Census becomes available as a source for syncing your data to external tools. By default, Census looks for models with the `census` tag but you can customize the filter.
 
 **Example Selectors**
@@ -41,12 +41,14 @@ If you're using dbt Cloud to run your dbt project, our integration goes even fur
 To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key. 
 
 * You may use both User API keys and Service Account tokens. We strongly recommend you use Service Account tokens.
-* As of May 2021, according to dbt Cloud, tokens may only be created or modified by users with Account Admin \(Enterprise plan\) or Owner \(Team plan\) permissions on an account.
+* As of May 2021, according to dbt Cloud, tokens may only be created or modified by users with Account Admin (Enterprise plan) or Owner (Team plan) permissions on an account.
 
 With your token in hand, you can now connect dbt Cloud to your dbt project. 
 
-1. Configure your existing dbt project by clicking the ⚙️icon next to the git repo description.  ![](../.gitbook/assets/screely-1621909661599.png) 
-2. Then copy your dbt Cloud API key. This will load your dbt Cloud Projects.   ![](../.gitbook/assets/screely-1621909671396.png) 
+1. Configure your existing dbt project by clicking the ⚙️icon next to the git repo description.\
+    ![](../.gitbook/assets/screely-1621909661599.png) 
+2. Then copy your dbt Cloud API key. This will load your dbt Cloud Projects. \
+    ![](../.gitbook/assets/screely-1621909671396.png) 
 3. Select the dbt Cloud Project that matches you code repo / project. Yes, "project" annoyingly means two different things here, the trick here is to get them to match. The dbt Cloud Project should point to the exact same git repo and branch that you've configured for Census. 
 4. Finally hit save!
 
@@ -70,5 +72,4 @@ As a result, there's several dbt features that Census does not make use of. Thes
 * Pre and post hooks
 * Non-public packages
 
-Our dbt integration currently supports version [0.19.1](https://github.com/fishtown-analytics/dbt/releases/tag/v0.19.1). We also post version support in our [changelog](https://whatsnew.getcensus.com/).
-
+Our dbt integration currently supports version [0.19.1](https://github.com/fishtown-analytics/dbt/releases/tag/v0.19.1). We also post version support in our [changelog](https://whatsnew.getcensus.com).
