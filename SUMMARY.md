@@ -2,7 +2,7 @@
 
 * [🏡 Introduction](README.md)
 
-## 🧰 The Basics <a id="basics"></a>
+## 🧰 The Basics <a href="basics" id="basics"></a>
 
 * [Core Concepts](basics/core-concept.md)
 * [Triggering Syncs](basics/triggering-syncs.md)
@@ -11,7 +11,7 @@
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 
-## ⤵️ Data Sources <a id="sources"></a>
+## ⤵️ Data Sources <a href="sources" id="sources"></a>
 
 * [Databricks](sources/databricks.md)
 * [Google BigQuery](sources/google-bigquery.md)
@@ -21,7 +21,7 @@
 * [Rockset](sources/rockset.md)
 * [Snowflake](sources/snowflake.md)
 
-## 🛫 Destinations \(app\) <a id="destinations"></a>
+## 🛫 Destinations (app) <a href="destinations" id="destinations"></a>
 
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Airtable](destinations/airtable.md)
@@ -33,7 +33,7 @@
 * [Facebook Ads](destinations/facebook-ads.md)
 * [Front](destinations/front.md)
 * [Google Ads](destinations/google-ads/README.md)
-  * [Customer Match Lists \(Audiences\)](destinations/google-ads/customer-match-audiences.md)
+  * [Customer Match Lists (Audiences)](destinations/google-ads/customer-match-audiences.md)
   * [Offline Conversions](destinations/google-ads/offline-conversions.md)
 * [Google Sheets](destinations/google-sheets.md)
 * [HubSpot](destinations/hubspot.md)
@@ -51,9 +51,9 @@
 * [Salesforce](destinations/salesforce.md)
 * [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
 * [Segment](destinations/segment.md)
+* [SFTP](destinations/sftp.md)
 * [Slack](destinations/slack.md)
 * [Stripe](destinations/stripe.md)
 * [Vitally](destinations/vitally.md)
 * [Webhooks](destinations/webhook.md)
 * [Zendesk](destinations/zendesk.md)
-

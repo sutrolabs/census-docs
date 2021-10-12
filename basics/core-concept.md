@@ -11,8 +11,14 @@ Source data for all Census Syncs come from your Data Warehouse. Historically, a 
 Census can use anything you grant access to in your data warehouse as a sync source, whether that is a table, a view, a SQL query, or a dbt model. We'll cover the process of building models in the next section.
 
 {% hint style="info" %}
-For more details on connecting your data warehouse, take a look at the Data Sources section on the left. 
+For instructions on connecting your specific data source, take a look at the Data Sources section on the left. 
 {% endhint %}
+
+#### Data Source Permissions and Read-only Access
+
+Census provides a powerful and customizable sync engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema. 
+
+If you don't have credentials with write access available, warehouses like Postgres and Redshift support connecting in Read-only mode. Read-only Mode lets you connect to a warehouse quickly with credentials that only have read access to a warehouse. This can get you started quickly but some of the features described below such as Incremental Syncs, Mirror Syncs, and others are not available. 
 
 ### Destination Services
 
