@@ -8,6 +8,8 @@ description: This page describes how to use Census with Google Ads.
 
 In this guide, we will show you how to connect Google Ads to Census.
 
+{% embed url="https://youtu.be/COk7s0axxVw" %}
+
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
@@ -30,7 +32,7 @@ In this guide, we will show you how to connect Google Ads to Census.
 
 ![](../../.gitbook/assets/screely-1619113580005.png)
 
-Follow Google OAuth flow to connect your Google Ads account. 
+Follow Google OAuth flow to connect your Google Ads account.&#x20;
 
 ![](../../.gitbook/assets/screely-1619118724964.png)
 
