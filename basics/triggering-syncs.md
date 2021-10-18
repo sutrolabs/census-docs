@@ -9,13 +9,24 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 ## ⏱ Schedule
 
-Schedules let you specify a time and frequency that Census can use to run your sync automatically. You can choose options from weekly all the way to Continuous, which means Census checks your source roughly every minute for new changes. 
+Schedules let you specify a time and frequency that Census can use to run your sync automatically. You can choose options from weekly all the way to Continuous, which means Census checks your source roughly every minute for new changes.&#x20;
 
 ![](../.gitbook/assets/screely-1621265385900.png)
 
+### Using Cron for custom schedules
+
+The last scheduling option is Cron. Cron lets you schedule syncs on arbitrary schedules such as every 3 hours, or only week days. Census accepts standard Cron definitions up to minute granularity (second-level granularity cron definitions are not supported). A Cron schedule is specified by a series five values separated by spaces. In order, the values are Minute-of-hour, hours-of-day, Days-of-month, Months-of-year, and Day-of-week. The timezone is UTC.&#x20;
+
+Here's a few examples of common Cron schedules:
+
+* Once an hour, on the hour, every four hours: `0 */4 * * *`
+* Hourly during weekdays: `0 * * * 1-5`
+
+To experiment with more complex Cron definitions, we like using this handy tool called [Crontab Guru](https://crontab.guru).
+
 ## **🏎 Sync Trigger API**
 
-Each sync can also be triggered via API. On the configuration page, you can access the trigger API endpoint for the sync. 
+Each sync can also be triggered via API. On the configuration page, you can access the trigger API endpoint for the sync.&#x20;
 
 ![](../.gitbook/assets/screely-1621265332761.png)
 
@@ -23,7 +34,7 @@ Here's a quick video of how to find and use it
 
 {% embed url="https://www.loom.com/share/fa2e1c1120c346a785aff318bf615cda" %}
 
-An empty HTTP POST call to this endpoint will trigger the sync \(no need to provide any data in the body\). You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
+An empty HTTP POST call to this endpoint will trigger the sync (no need to provide any data in the body). You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
 
 ### `POST /syncs/[ID]/trigger`
 
@@ -35,7 +46,7 @@ curl -X POST https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[SYNC_ID]
 {% endtab %}
 
 {% tab title="Response" %}
-```text
+```
 {
     "status": "success",
     "data": {
@@ -46,11 +57,11 @@ curl -X POST https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[SYNC_ID]
 {% endtab %}
 {% endtabs %}
 
-| Response Property | Description |
-| :--- | :--- |
-| status | `success` or `error` indicating whether the sync was triggered. |
-| data | Present if successful. An object containing the `sync_run_id` |
-| message | Present if error. Contains message describing the error.  |
+| Response Property | Description                                                     |
+| ----------------- | --------------------------------------------------------------- |
+| status            | `success` or `error` indicating whether the sync was triggered. |
+| data              | Present if successful. An object containing the `sync_run_id`   |
+| message           | Present if error. Contains message describing the error.        |
 
 ### `GET /sync_runs/[ID]`
 
@@ -64,7 +75,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[SYNC_RUN_ID]
 {% endtab %}
 
 {% tab title="Response" %}
-```text
+```
 {
     "status": "success",
     "data": {
@@ -80,50 +91,15 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[SYNC_RUN_ID]
 {% endtab %}
 {% endtabs %}
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Response Property</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">status</td>
-      <td style="text-align:left"><code>success</code> if sync_run was found</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">data</td>
-      <td style="text-align:left">Present if successful. Contains the following properties:</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">status</td>
-      <td style="text-align:left">
-        <ul>
-          <li><code>working</code> if the sync is currently executing</li>
-          <li><code>completed</code> if the sync finished successfully</li>
-          <li><code>failed</code> if the sync failed during execution</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">records_processed</td>
-      <td style="text-align:left">Number of new or updated records retrieved from the source</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">records_updated</td>
-      <td style="text-align:left">Number of records successfully sent to the destination</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">records_invalid</td>
-      <td style="text-align:left">Number of records skipped by Census because of data quality issues.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">records_failed</td>
-      <td style="text-align:left">Number of records rejected by the destination.</td>
-    </tr>
-  </tbody>
-</table>
+| Response Property  | Description                                                                                                                                                                                                |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| status             | `success` if sync\_run was found                                                                                                                                                                           |
+| data               | Present if successful. Contains the following properties:                                                                                                                                                  |
+| status             | <ul><li><code>working</code> if the sync is currently executing</li><li><code>completed</code> if the sync finished successfully</li><li><code>failed</code> if the sync failed during execution</li></ul> |
+| records\_processed | Number of new or updated records retrieved from the source                                                                                                                                                 |
+| records\_updated   | Number of records successfully sent to the destination                                                                                                                                                     |
+| records\_invalid   | Number of records skipped by Census because of data quality issues.                                                                                                                                        |
+| records\_failed    | Number of records rejected by the destination.                                                                                                                                                             |
 
 
 
@@ -132,18 +108,16 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[SYNC_RUN_ID]
 {% embed url="https://www.loom.com/share/3437c30c24fb44c09aa0d81f79cf99e6" %}
 
 {% hint style="info" %}
-Heads up: Unlike Airflow 2, Airflow 1 doesn't show any non-"core" providers \(i.e. Census!\) in the connections UI. If you're using Airflow 1, Census should be configured as an "HTTP" Conn Type, [as documented here](https://github.com/sutrolabs/airflow-provider-census#configuration-in-airflow-110).
+Heads up: Unlike Airflow 2, Airflow 1 doesn't show any non-"core" providers (i.e. Census!) in the connections UI. If you're using Airflow 1, Census should be configured as an "HTTP" Conn Type, [as documented here](https://github.com/sutrolabs/airflow-provider-census#configuration-in-airflow-110).
 {% endhint %}
 
 Whether you're using [Astronomer](https://astronomer.io) or self-hosting your own instance, you can use Census's   Airflow Provider to trigger and monitor Census syncs.
 
-Visit the [Census Airflow Provider GitHub repository](https://github.com/sutrolabs/airflow-provider-census) for more details on how to use it for your project. 
+Visit the [Census Airflow Provider GitHub repository](https://github.com/sutrolabs/airflow-provider-census) for more details on how to use it for your project.&#x20;
 
 ## 🔌 dbt Cloud Integration
 
-If you're using dbt Cloud to run your dbt project, you can configure Census to automatically run syncs whenever your models have been rebuilt. 
+If you're using dbt Cloud to run your dbt project, you can configure Census to automatically run syncs whenever your models have been rebuilt.&#x20;
 
 Read more to learn how to [configure Cenus's dbt Cloud integration](native-dbt-integration.md#setting-it-up).
-
-
 
