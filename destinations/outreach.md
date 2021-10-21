@@ -4,7 +4,7 @@ description: This page describes how to use Census with Outreach.
 
 # Outreach
 
-## 🏃‍♀️ Getting Started
+## 🏃‍♀️ Getting started
 
 This guide shows you how to use Census to connect your Outreach account to your data warehouse and create your first sync.
 
@@ -12,8 +12,8 @@ This guide shows you how to use Census to connect your Outreach account to your 
 
 Before you begin, you'll need the following:
 
-* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
-* **Outreach account**: We recommend using a dedicated service account with Admin user profile privileges. \(See [Required Permissions](outreach.md#required-permissions).\)
+* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com).
+* **Outreach account**: We recommend using a dedicated service account with Admin user profile privileges. (See [Required Permissions](outreach.md#required-permissions).)
 * **Credentials for your data warehouse**: For details, see the guide for your specific technology.
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -32,7 +32,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this. 👇
 
-![Connections page with Outreach](../.gitbook/assets/202109_service_connection_outreach%20%281%29%20%281%29.png)
+![Connections page with Outreach](<../.gitbook/assets/202109\_service\_connection\_outreach (1) (1).png>)
 
 ### Step 2: Connect your data warehouse
 
@@ -48,7 +48,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After connecting your warehouse, your **Connections** page will look something like this: 👇
 
-![Connections page with data warehouse and Outreach](../.gitbook/assets/202109_connections_outreach%20%282%29%20%281%29.png)
+![Connections page with data warehouse and Outreach](<../.gitbook/assets/202109\_connections\_outreach (2) (1).png>)
 
 ### Step 3: Create your model
 
@@ -57,33 +57,33 @@ When defining models, you'll write SQL queries to select the data you want to se
 1. From inside your Census account, navigate to the [**Models**](https://app.getcensus.com/models) page.
 2. Enter a name for your model. You'll use this to select the model later.
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
-4. Click **Save**.
+4. Click **Save Model**.
 
-![Basic SQL query for a new model](../.gitbook/assets/202109_outreach_basic_model.png)
+![Basic SQL query for a new model](../.gitbook/assets/202109\_outreach\_basic\_model.png)
 
-### Step 4: Create your first sync <a id="step-4-create-your-first-sync"></a>
+### Step 4: Create your first sync <a href="step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
 The sync will move data from your warehouse to Outreach. In this step, you'll define how that will work.
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
-3. Under **Where do you want to sync data to?**, choose Outreach as the **Connection** and an **Object** in Outreach. \(See [Supported Objects](outreach.md#supported-objects).\)
-4. Under **How should changes to the source be synced?**, choose **Update or Create**. \(See [Supported Sync Behaviors](outreach.md#supported-sync-behaviors).\)
-5. Under **How are source and destination records matched?**, select a mapping key. \(See [Supported Objects](outreach.md#supported-objects) for details.\)
-6. Under **Which fields should be updated?**, select the fields you want to update by mapping a field in Outreach to a column in your model.
+3. Under **Where do you want to sync data to?**, choose Outreach as the **Connection** and an **Object** in Outreach. (See [Supported Objects](outreach.md#supported-objects).)
+4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See [Supported Sync Behaviors](outreach.md#supported-sync-behaviors).)
+5. Under **How are source and destination records matched?**, select a mapping key. (See [Supported Objects](outreach.md#supported-objects) for details.)
+6. Under **Which properties should be updated?**, select the fields you want to update by mapping a field in Outreach to a column in your model.
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
 9. Click **Create Sync**.
 
 When configuring your sync, the page should look something like this: 👇
 
-![Sync setup for Outreach](../.gitbook/assets/202109_sync_details%20%281%29.png)
+![Sync setup for Outreach](<../.gitbook/assets/202109\_sync\_details (1).png>)
 
 #### Custom Fields in Outreach
 
-Although the sync can update custom fields in Outreach, these fields will show up as _Custom\#_ rather than using the custom field name. You may need to visit the custom field configuration in Outreach settings to check the field number.
+Although the sync can update custom fields in Outreach, these fields will show up as _Custom#_ rather than using the custom field name. You may need to visit the custom field configuration in Outreach settings to check the field number.
 
-![Sync setup displays custom fields without the custom field name](../.gitbook/assets/202110_custom_fields_outreach.png)
+![Sync setup displays custom fields without the custom field name](../.gitbook/assets/202110\_custom\_fields\_outreach.png)
 
 ### Step 5: Confirm the synced data in Outreach
 
@@ -93,44 +93,43 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🏎 Sync Speed
+## 🏎 Sync speed
 
-Sync speeds can be affected by API rate limiting from the destination app. Outreach allows an API call rate of up to 10,000 calls per hour, per user. \(See [Outreach API Documentation](https://api.outreach.io/api/v2/docs) for details.\)
+Sync speeds can be affected by API rate limiting from the destination app. Outreach allows an API call rate of up to 10,000 calls per hour, per user. (See [Outreach API Documentation](https://api.outreach.io/api/v2/docs) for details.)
 
 In most cases, you won't run into any issue with sync speed based on rate limiting unless:
 
 * You're running an initial sync action that will update many records in Outreach.
 * You have another integration or service that's making API calls to Outreach and using the same user account.
 
-## 🗄 Supported Objects
+## 🗄 Supported objects
 
-| **Object Name** | **Supported** | **Identifiers** |
-| ---: | :---: | :--- |
-| Account | ✅ | any Text field |
-| Prospect | ✅ | Email \(recommended\), any Text field |
-| User | ✅ | Email \(recommended\), any Text field |
+| **Object Name** | **Supported** | **Identifiers**                     |
+| --------------: | :-----------: | ----------------------------------- |
+|         Account |       ✅       | any Text field                      |
+|        Prospect |       ✅       | Email (recommended), any Text field |
+|            User |       ✅       | Email (recommended), any Text field |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Outreach.
 
-## 🔄 Supported Sync Behaviors
+## 🔄 Supported sync behaviors
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept.md#sync-behaviors).
 {% endhint %}
 
-| **Behavior** | **Supported** | **Objects** |
-| ---: | :---: | :--- |
-| Update or Create | ✅ | All |
+|     **Behavior** | **Supported** | **Objects** |
+| ---------------: | :-----------: | ----------- |
+| Update or Create |       ✅       | All         |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Outreach.
 
-## 🔑 Required Permissions
+## 🔑 Required permissions
 
-We recommend authenticating your Outreach connection with an Outreach user that has the standard Admin governance profile. 
+We recommend authenticating your Outreach connection with an Outreach user that has the standard Admin governance profile.&#x20;
 
 If using another profile, the profile must include permissions to view, create, and edit all records for the synced objects. See [Outreach Support](https://support.outreach.io/hc/en-us/articles/219027188-Creating-and-Assigning-Governance-Profiles) for details on user governance settings.
 
-## 🚑 Need Help Connecting to Outreach?
+## 🚑 Need help connecting to Outreach?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
-
