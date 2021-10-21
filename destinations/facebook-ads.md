@@ -29,7 +29,7 @@ In this guide, we will show you how to connect Facebook Ads to Census and create
 
 ### 1. Collect the Facebook Audience ID
 
-The first step is finding the audience you'd like to sync data into. You can do that by visiting the [Audiences section of Facebook's Ads Manager](https://business.facebook.com/adsmanager/audiences). Make a note of the ID (name will work too) of the audience you want to sync to from Census. 
+The first step is finding the audience you'd like to sync data into. You can do that by visiting the [Audiences section of Facebook's Ads Manager](https://business.facebook.com/adsmanager/audiences). Make a note of the ID (name will work too) of the audience you want to sync to from Census.&#x20;
 
 If you'd like to use a new Facebook Audience with Census, go ahead and create it now. Facebook Audiences makes it a bit confusing to create a new empty audience for Census. You'll need to create a new Customer List Custom Audience and then upload a CSV with the columns that you'll be using.
 
@@ -37,7 +37,7 @@ If you'd like to use a new Facebook Audience with Census, go ahead and create it
 
 The results of the View, Table, or Census Model should contain a row per user. Each row will have three or more columns:
 
-1. A unique identifier for the user, Facebook calls this the External ID. This is usually a unique ID from your application database, but could be email as well if that also uniquely identifies each row. 
+1. A unique identifier for the user, Facebook calls this the External ID. This is usually a unique ID from your application database, but could be email as well if that also uniquely identifies each row.&#x20;
 2. A column indicating what Facebook Audience the user should be synced to (can be the audience name or audience ID).
 3. Any other identifying fields that Facebook can use to match your audience. Facebook requires these fields to be formatted in a certain way. For example, email must be lower-case. You can read more about each of the formatting requirements in the[ Facebook Documentation](https://developers.facebook.com/docs/marketing-api/audiences/guides/custom-audiences/#hash).
 
@@ -53,29 +53,29 @@ FROM user_activity_table;
 
 ### 3. Create a sync
 
-Now that your data is prepared and in the correct format, we're ready to start syncing users to Facebook. 
+Now that your data is prepared and in the correct format, we're ready to start syncing users to Facebook.&#x20;
 
 #### **A. Select your model from above as a data source and Facebook Audiences as a destination.**
 
-![](../.gitbook/assets/fb_setup1.png)
+![](../.gitbook/assets/fb\_setup1.png)
 
 #### **B. Choose the appropriate sync behavior**
 
 Update or Create will add or update users to the audience, but will never remove users. Mirror will also remove users that have disappeared from the source. Note: If you're reusing an existing Facebook Audience, Census will not remove any users already added to that audience through other means. Census only removes users that it created initially.
 
-![](../.gitbook/assets/fb_setup2.png)
+![](../.gitbook/assets/fb\_setup2.png)
 
 #### **C. Select an external identifier to match rows uniquely in Facebook**
 
 This should be the user id or other external ID you selected when you created the model.
 
-![](../.gitbook/assets/fb_setup3.png)
+![](../.gitbook/assets/fb\_setup3.png)
 
 #### **D. Associate users with the Audience**
 
 Let Census know which column should be used to assign users to their audience. Select the Audience's ID or Name to correspond to the type of identifier you're providing with your model.
 
-![](../.gitbook/assets/fb_setup4.png)
+![](../.gitbook/assets/fb\_setup4.png)
 
 #### **E. Map the remaining identifying fields**
 
@@ -83,11 +83,11 @@ You can then map any user identifying fields that are present in your source dat
 
 ## Conversions
 
-Send web events directly to Facebook from your warehouse, exactly as if they were pixel events using the Facebook Conversions API. 
+Send web events directly to Facebook from your warehouse, exactly as if they were pixel events using the Facebook Conversions API.&#x20;
 
 ### 1. Choose or create a conversion event in Facebook, Collect the Pixel ID
 
-To view all your Facebook Ads accounts' Pixel IDs go to the [Events Manager](https://www.facebook.com/business/help/898185560232180): [https://business.facebook.com/events_manager2/list/](https://business.facebook.com/events_manager2/list/). 
+To view all your Facebook Ads accounts' Pixel IDs go to the [Events Manager](https://www.facebook.com/business/help/898185560232180): [https://business.facebook.com/events\_manager2/list/](https://business.facebook.com/events\_manager2/list/).&#x20;
 
 Be sure to select the specific ads account you want to work on. You can switch ad accounts in the navigation bar on the left side of the screen.
 
@@ -99,14 +99,14 @@ In your SQL model, dbt model, or table -- ensure that you have all required fiel
 
 #### A. Event ID
 
-Census requires the model to have a column that stores a unique identifier for each row so that Census never sends any duplicate records. We'll call this unique identifier column "Event ID". If you have an identifier that you are already passing via your pixel on the website for online versions of this conversion event, use this identifier. Some common examples include `user_id`, `lead_id`, and `order_id`.  
+Census requires the model to have a column that stores a unique identifier for each row so that Census never sends any duplicate records. We'll call this unique identifier column "Event ID". If you have an identifier that you are already passing via your pixel on the website for online versions of this conversion event, use this identifier. Some common examples include `user_id`, `lead_id`, and `order_id`. &#x20;
 
 #### B. Minimum Event Parameters
 
 The Facebook Conversions API requires 4 fields for every event:
 
 * Pixel ID - see above to find.
-* [Action Source](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event#action-source) - This field allows you to specify where your conversions occurred. It accepts one of the following values: "email", "website", "phone_call", "chat", "physical_store",  "system_generated", and "other".
+* [Action Source](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event#action-source) - This field allows you to specify where your conversions occurred. It accepts one of the following values: "email", "website", "phone\_call", "chat", "physical\_store",  "system\_generated", and "other".
 * [Event Name](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event#event-name) - A Facebook pixel [Standard Event](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events) or [Custom Event](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#custom-events) name.
 * [Event Time](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event#event-time) - can be up to 7 days before you send an event to Facebook. This date must be sent in GMT timezone.
 
@@ -153,11 +153,18 @@ Please [contact us](mailto:support@getcensus.com) if there are additional Facebo
 
 #### Data Normalization
 
-Facebook Audiences and Conversions are a bit unique from other services. We do not upload the data you provide directly. Instead, it's "matched" to Facebook's audience. To do this, both sides "hash" their data so users can be compared without revealing the actual personally identifiable information. 
+Facebook Audiences and Conversions are a bit unique from other services. We do not upload the data you provide directly. Instead, it's "matched" to Facebook's audience. To do this, both sides "hash" their data so users can be compared without revealing the actual personally identifiable information.&#x20;
 
-Census automatically takes care of this hashing step for you. 
+Census automatically takes care of this hashing step for you.&#x20;
 
 **However, all values provided to Census must be lowercase**. You can use this standard SQL function `LOWER()`that works across all data warehouses.
+
+Additionally, there is specific behavior for certain fields in Facebook, check out [this link](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters) to their docs, but you also need to remove white spaces on certain Customer Information parameters.&#x20;
+
+#### Examples:
+
+* City changing from 'San Antonio' => 'sanantonio' using `replace(  ,' ','')`
+* Date of birth changing from '1983-12-24' => '19831224' using `replace(  ,'-','')`
 
 ## 🔄 Supported Sync Behaviors
 
