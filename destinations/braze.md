@@ -4,6 +4,10 @@ description: This page describes how to use Census with Braze.
 
 # Braze
 
+### Note on Braze API Costs
+
+Census's sync engine sends updated or changed data by row, meaning that this includes all values of the sync, even if they have not changed. This works well with the majority of services but does cause additional usage for Braze. Please be aware that large data sets, particularly with  full syncs, can rapidly increase your Braze API usage.&#x20;
+
 ## 🏃‍♀️ Getting Started
 
 In this guide, we will show you how to connect Braze to Census and create your first sync.
@@ -35,9 +39,9 @@ Then, inside the **API Settings** tab, under **Rest API Keys**, click **+ Create
 
 Provide a name you'll recognize ("Census" is a good choice) and select the following permissions:
 
-* All User Data permissions, except for `users.delete` 
+* All User Data permissions, except for `users.delete`&#x20;
 * `segments.list`
-* This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update these permissions in the future. 
+* This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update these permissions in the future.&#x20;
 
 Scroll down and click **Save API Key**.
 
@@ -53,10 +57,10 @@ For example, if your Braze URL is https://dashboard-**03**.braze.com/, then your
 
 ### 3. Create the Census Connection
 
-Great! Now let's pull it all together. 
+Great! Now let's pull it all together.&#x20;
 
 1. In the **Settings** tab, Create a new Braze Service Connection in Census.\
-    ![](../.gitbook/assets/screely-1619749986549.png) 
+   &#x20;![](../.gitbook/assets/screely-1619749986549.png)&#x20;
 2. You can provide whatever name you like.
 3. Provide the appropriate Braze Endpoint URL.
 4.  Copy and paste your new Braze API key.\
