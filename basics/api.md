@@ -73,7 +73,7 @@ This endpoint lists information on a specific source.
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID or SLUG]
+curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]
 ```
 {% endtab %}
 
