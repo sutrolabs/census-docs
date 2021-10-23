@@ -96,7 +96,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 Braze's Mirror behavior optionally supports a choice of two actions when a records is removed from the source. This can be configured when setting up the sync initially:
 
 * **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze.&#x20;
-* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the syn
+* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced will be removed from the destination record (b
 
 
 
