@@ -2,7 +2,7 @@
 
 ## 🔌 Sources and Destinations
 
-Census at its core is about connecting and coordinating across your business's software stack. And so, one of the very first steps to using Census will be connecting your Data Warehouse Sources and Destination Services. 
+Census at its core is about connecting and coordinating across your business's software stack. And so, one of the very first steps to using Census will be connecting your Data Warehouse Sources and Destination Services.&#x20;
 
 ### Data Warehouse Sources
 
@@ -11,18 +11,18 @@ Source data for all Census Syncs come from your Data Warehouse. Historically, a 
 Census can use anything you grant access to in your data warehouse as a sync source, whether that is a table, a view, a SQL query, or a dbt model. We'll cover the process of building models in the next section.
 
 {% hint style="info" %}
-For instructions on connecting your specific data source, take a look at the Data Sources section on the left. 
+For instructions on connecting your specific data source, take a look at the Data Sources section on the left.&#x20;
 {% endhint %}
 
 #### Data Source Permissions and Read-only Access
 
-Census provides a powerful and customizable sync engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema. 
+Census provides a powerful and customizable sync engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema.&#x20;
 
-If you don't have credentials with write access available, warehouses like Postgres and Redshift support connecting in Read-only mode. Read-only Mode lets you connect to a warehouse quickly with credentials that only have read access to a warehouse. This can get you started quickly but some of the features described below such as Incremental Syncs, Mirror Syncs, and others are not available. 
+If you don't have credentials with write access available, warehouses like Postgres and Redshift support connecting in Read-only mode. Read-only Mode lets you connect to a warehouse quickly with credentials that only have read access to a warehouse. This can get you started quickly but some of the features described below such as Incremental Syncs, Mirror Syncs, and others are not available.&#x20;
 
 ### Destination Services
 
-Census helps you keep your data in sync across all the business apps you use to engage with your customers, from advertising and marketing, through sales, all the way to finance. The goal is to keep all of those apps in sync, powered by the exact same set of data. 
+Census helps you keep your data in sync across all the business apps you use to engage with your customers, from advertising and marketing, through sales, all the way to finance. The goal is to keep all of those apps in sync, powered by the exact same set of data.&#x20;
 
 The process of connecting a service is a little different for each. Sometimes, it's as simple as an OAuth confirmation flow or a straightforward API key. Other times, a few more steps are required.
 
@@ -44,13 +44,13 @@ Models can come in a variety of forms:
 * Models built with data transform tools like [dbt](https://www.getdbt.com). – We're big fans of dbt here at Census. It's why we have a built in [dbt integration](native-dbt-integration.md). These tools make it easy to build and maintain sophisticated data transforms that keep your models up to date.
 * SQL queries – Yes, even a SQL query can work as a model. It's a handy way to start when you're just getting going. Just plan to eventually evolve to data transform tools like dbt as you create more models!
 
-A model is a table in a data warehouse that looks an awful lot like a spreadsheet. The rows are individual records of that model, and all rows have the same set of columns. Typically, if you look at the columns, you'll have one or two unique identifier columns, and then a bunch of details for each of the records, things like name, last event date, or number of actions they took. 
+A model is a table in a data warehouse that looks an awful lot like a spreadsheet. The rows are individual records of that model, and all rows have the same set of columns. Typically, if you look at the columns, you'll have one or two unique identifier columns, and then a bunch of details for each of the records, things like name, last event date, or number of actions they took.&#x20;
 
 The actual set of properties/columns your model have can be anything. The only important thing is that they're the properties that matter to you and your business. The benefit of building models is that you can define them one time, The Right Way™ and then use that as the authoritative source for all of your apps.
 
 ## 🧮 Creating Syncs
 
-The most important action in Census is defining Syncs. A Sync defines the rules of how data should be synced, from your selected source to your destination. 
+The most important action in Census is defining Syncs. A Sync defines the rules of how data should be synced, from your selected source to your destination.&#x20;
 
 Syncs are also what makes Census so unique. Unlike most integration tools that are event-based, Census works to keep your source and destination "in sync" (just like Dropbox or other cloud storage service). The benefit is that you don't have to worry about dropped events or backfills anymore. If you change your data in the model, Census just syncs it, easy as that!
 
@@ -79,7 +79,7 @@ Please note that some of these behaviors are only available for certain destinat
 
 Matching Identifiers let Census know how to associate data in the source with the destination. Both the source and destination need to provide a single, unique per record, identifying field. Census uses the identifiers to look for matches. When a match is found, or not found, it then can use your selected Sync Behavior to decide what to do. \
 \
-For example, if Census sees your source and destination both have records with the identifier ABCD1234, it knows that it should update that record with data from the source when you've got an Update Only, Update or Create, or Mirror Sync Behavior configured.  
+For example, if Census sees your source and destination both have records with the identifier ABCD1234, it knows that it should update that record with data from the source when you've got an Update Only, Update or Create, or Mirror Sync Behavior configured. &#x20;
 
 ### 🖇 Field Mappings
 
@@ -89,17 +89,35 @@ Once you've defined _how_ data is related between your source and destination, t
 
 For some destinations, such as Customer.io, Iterable, or Klaviyo, you can create new fields directly from the Census app. This means the next time a sync runs, Census will create new properties or attributes for that object in the destination. This is useful if you want to automatically create new fields based on the columns in your source data.
 
-### ⏱ Running Syncs: Schedules and API
+## Running Syncs&#x20;
+
+Once syncs are created, you'll probably want to run them! That's where the real magic happens. There's a few things you should know about running and maintaining syncs though including how frequently they should run and what sync history tells you about the health of your sync.
+
+### ⏱ Schedules and API
 
 You can happily run a sync manually, but that's not all that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in three ways:
 
-* [Schedules](triggering-syncs.md#schedule)
+* [Schedules](triggering-syncs.md#schedule) including with Cron
 * [Programmatically via API or Orchestration tool](triggering-syncs.md)
 * [Automatically with dbt Cloud](native-dbt-integration.md#integrating-with-dbt-cloud)
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 
+### Understanding Sync history
 
+You can dive deeper into why syncs failed, or what records were invalid from the source, or rejected by the destination, under the **Sync History** tab.
+
+**Failed Syncs**\
+****Hover over the status label to see a detailed error.
+
+![](../.gitbook/assets/census\_sync\_history\_failed\_sync.png)
+
+**Invalid or rejected records**\
+****Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
+
+![](../.gitbook/assets/census\_sync\_invalid\_rejected\_records.png)
+
+![Output of invalid records diagnostic log](../.gitbook/assets/census\_invalid\_records.png)
 
 ## Wrapping things up
 
