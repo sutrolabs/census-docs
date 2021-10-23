@@ -87,12 +87,17 @@ Census currently supports syncing to the following Braze objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |     User     |
-|           **Append** |        ✅       |     Event    |
+|        **Behaviors** |                       **Supported?**                      | **Objects?** |
+| -------------------: | :-------------------------------------------------------: | :----------: |
+| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |     User     |
+|             Mirror\* |                             ✅                             |     User     |
+|           **Append** |                             ✅                             |     Event    |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Braze.
+Braze's Mirror behavior optionally supports a choice of two actions when a field is removed. This can be configu
+
+
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Braze.
 
 ## 🚑 Need help connecting to Braze?
 
