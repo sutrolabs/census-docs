@@ -90,10 +90,13 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 |        **Behaviors** |                       **Supported?**                      | **Objects?** |
 | -------------------: | :-------------------------------------------------------: | :----------: |
 | **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |     User     |
-|             Mirror\* |                             ✅                             |     User     |
+|           **Mirror** |                             ✅                             |     User     |
 |           **Append** |                             ✅                             |     Event    |
 
-Braze's Mirror behavior optionally supports a choice of two actions when a field is removed. This can be configu
+Braze's Mirror behavior optionally supports a choice of two actions when a records is removed from the source. This can be configured when setting up the sync initially:
+
+* **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze.&#x20;
+* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the syn
 
 
 
