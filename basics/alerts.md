@@ -7,7 +7,7 @@ Our goal is to keep all the data flowing smoothly, but sometimes things don't go
 Each Census sync has its own set of potential alerts and you can configure each of them to match your needs. There are two types of alerts available and both are turned on by default for each new sync:
 
 1. **Sync Failures** - Alerts when a sync completely fails, usually because the source or destination connection is broken.
-2. **Records Rejected or Invalid** - Alerts when a sync ran successfully but some of the records were invalid or rejected. In this case, you can configure the threshold that should generate alerts. By default, it's 75% of records, but that can be lowered all the way down to alert you if any record is invalid or rejected.  [Learn more about invalid and rejected records](core-concept.md#understanding-invalid-or-rejected-records).
+2. **Records Rejected or Invalid** - Alerts when a sync ran successfully but some of the records were invalid or rejected. In this case, you can configure the threshold that should generate alerts. By default, it's 75% of records, but that can be lowered all the way down to alert you if any record is invalid or rejected. [Learn more about invalid and rejected records](core-concept.md#understanding-sync-history).
 
 To configure, visit to the **Alerts** tab in your Sync to configure which alerts are enabled per sync.
 
