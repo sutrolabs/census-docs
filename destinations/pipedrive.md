@@ -36,9 +36,7 @@ This part of our documentation is still under construction! If you have any ques
 |            Deal |        ✅       | Object ID, title              |
 |            Note |        ✅       | Unique ID                     |
 
-{% hint style="info" %}
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pipedrive.
-{% endhint %}
 
 ## 🔄 Supported Sync Behaviors
 
