@@ -4,7 +4,7 @@ description: This page describes how to use Census with Zendesk.
 
 # Zendesk
 
-## 🏃‍♀️ Getting Started
+## 🏃‍♀️ Getting started
 
 In this guide, we will show you how to connect Zendesk to Census and create your first sync.
 
@@ -12,7 +12,7 @@ In this guide, we will show you how to connect Zendesk to Census and create your
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Zendesk account ready.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+* Have the proper credentials to access your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
@@ -21,71 +21,146 @@ In this guide, we will show you how to connect Zendesk to Census and create your
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
-## Zendesk data quirks
+### Step 1: Connect Zendesk
 
-Zendesk does things a little differently so heads up that there are a few gotchas with this integration.
+1. Log into Census and navigate to the [**Connections**](https://app.getcensus.com/connections) page.
+2. Click **Add Service**.
+3. Select **Zendesk** from the dropdown list.
+4. Follow the Zendesk authentication flow.
 
-#### Setting multiple organizations on a user
+Your end state should look something like this: 👇
 
-Zendesk optionally allows users to be members of multiple organizations. (You can find it under: Admin > Customers > Allow users to belong to multiple organizations).\
-\
-When creating a User sync in Census, you can provide either a single External ID for the Organization, or a list of External IDs. If providing a list, you'll need to format them as a JSON array of strings, for example:
+![Connections page with Zendesk](../.gitbook/assets/202110\_Service\_Connection\_Zendesk.png)
+
+### Step 2: Connect your data warehouse
+
+The steps for connecting your data warehouse will depend on your technology. See the following guides:
+
+* [Databricks](../sources/databricks.md)
+* [Google BigQuery](../sources/google-bigquery.md)
+* [Google Sheets](google-sheets.md)
+* [Postgres](../sources/postgres.md)
+* [Redshift](../sources/redshift.md)
+* [Snowflake](../sources/snowflake.md)
+
+After setting up your warehouse, your **Connections** page should look something like this: 👇
+
+![Connections page with data warehouse](../.gitbook/assets/202110\_Connections\_Generic.png)
+
+### Step 3: Create your model&#x20;
+
+When defining models, you'll write SQL queries to select the data you want to see in Zendesk. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.&#x20;
+
+1. From inside your Census account, navigate to the **Models** page.&#x20;
+2. Enter a name for your model. You'll use this to select the model later.&#x20;
+3. Enter your SQL query. If you want to test the query, use the **Preview** button.&#x20;
+4. Click **Save Model**.
+
+![Basic SQL query for a new model](<../.gitbook/assets/202109\_outreach\_basic\_model (1).png>)
+
+### Step 4: Create your first sync
+
+The sync will move data from your warehouse to Zendesk. In this step, you'll define how that will work.
+
+1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page.
+2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
+3. Under **Where do you want to sync data to?**, choose **Zendesk** as the **Connection** and an **Object** in Zendesk. (See [Supported Objects](zendesk.md#supported-objects).)
+4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See [Supported Sync Behaviors](zendesk.md#supported-sync-behaviors).
+5. Under **How are source and destination records matched?**, select a mapping key. We recommend mapping an internal ID property in your database to the **External ID** field in Zendesk. (See [Supported Objects](zendesk.md#supported-objects).)
+6.  Under **Which properties should be updated?**, select the fields you want to update by mapping a field in Zendesk to a column in your model. Choose a mapping setting:
+
+    * **Set** overrides the existing value in Zendesk if the field is already populated.&#x20;
+    * **Only If Empty** does not set the value if the field is already populated.
+    * For any properties that accept lists of values such as the Organization or Tags property, instead you'll see** Replace**. Replace mappings override any existing values or relationships for the property.
+
+    Note that there are some gotchas with updating Zendesk data. Check out [Things to know about the Zendesk connector](zendesk.md#things-to-know-about-the-zendesk-connector) .
+7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
+8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
+9. Click **Create Sync**.
+
+When configuring your sync, the page should look something like this: 👇
+
+![Sync setup for Zendesk](../.gitbook/assets/202110\_Zendesk\_Sync.png)
+
+### Step 5: Confirm the synced data in Zendesk
+
+Once your sync is complete, it's time to check your data. Open Zendesk and check that the records updated correctly.
+
+If everything went well, that's it! You've started syncing data from your warehouse to Zendesk! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F)
+
+And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
+
+## 💡 Things to know about the Zendesk connector
+
+The way that Zendesk updates certain properties is complex.
+
+### Setting Organizations on the End User object
+
+In Zendesk, users (records in the **End User** object) can belong to multiple **Organizations**. When syncing the **End User** object, you can provide either a single **External ID** value or a list of values.
+
+{% hint style="info" %}
+Support for multiple organization relationships is an optional setting in Zendesk. See the [Zendesk documentation](https://support.zendesk.com/hc/en-us/articles/204281436-Enabling-multiple-organizations-for-users) for details.
+{% endhint %}
+
+To link a user to multiple organizations, you'll need to format the list of **External ID** values as a JSON array of strings, for example:
 
 ```
-["123", "example.com"]
+["Team A", "Team B", "Team C"]
 ```
 
-Census will overwrite any existing organization relationships with the provided value. To maintain a user's existing Organization relationships, make sure that the existing relationships' External IDs appear in your array.
+When syncing the **Organizations** property, Census will overwrite any existing relationships with the provided value. To maintain existing relationships, make sure that the corresponding External ID values are included in the array.
 
-#### Working with tags
+### Setting the Tags property
 
-Zendesk's tags behave a little differently than other tools in that a ticket may "collect" tags over the course of its life. Users and Organizations are allowed to have tags. A ticket will automatically pick up the tags of a particular user and their org when the ticket is created.\
-\
-Additionally, when creating new custom dropdown fields or checkboxes, they can be configured to automatically add a tag to the Organization, User, or Ticket. \
-\
-Because tags are so flexible, we generally suggest you use dropdowns and checkboxes for most Census data sync designs.
+{% hint style="info" %}
+Because of the way tags work in Zendesk, we don't recommend them for syncs. When possible, use dropdown and checkbox properties instead.
+{% endhint %}
 
-However, if you're confident updating Tags directly is the right design for your use case, there's a couple of things to keep in mind:
+In Zendesk, the **Ticket**, **End User**, and **Organization** objects all include a **Tags** property. Tickets automatically pick up tags from related users and organizations. When configuring custom dropdown and checkbox fields in Zendesk, you can also configure those fields to add specific tags.
 
-* Tag names cannot contain spaces, they're treated as separators. 
-* Zendesk and Census will work together to create a list of tags from the string you provide. You can pass a JSON array, or a space or comma separated list.
-* The tag values you provide will **replace** any existing tags on the object. To maintain existing tags, make sure they appear in the list of tags you provide to Zendesk.
+If you need to update the Tags property directly, keep these details in mind:
 
-#### Updating a Dropdown or Tagger field
+* Tag names cannot contain spaces. Zendesk will treat spaces as separators between tags.
+* You can update the **Tags** property with multiple values by providing a JSON array, a space-separated list, or comma-separated list.
+* Syncing the **Tags** property will replace any existing tags on the records. To maintain existing tags, you'll need to make sure they appear in the list of tags you provide from your data source.&#x20;
 
-To update a Dropdown in Census, the Zendesk API requires that you provide the API name of the dropdown option value rather than the user-visible label. By default, Zendesk automatically converts any field value to lowercase AND snake_case, though this can be overridden. This means the value **Paid User **becomes **paid_user** and the latter is what you'd provide to a Census sync to update the value of a Dropdown. This is an easy way to transform the value in SQL:
+### Updating a dropdown property
+
+To update a dropdown property, the Zendesk API requires that you provide the API name of the dropdown option rather than the user-visible label.&#x20;
+
+By default, the API name is the user-visible label, but converted to lowercase and snake\_case, for example, **Paid User** becomes **paid\_user**. To update a dropdown property in this example, you'd provide the value **paid\_user**.
+
+If the Zendesk API names have not been modified, you can transform the label values using the following SQL:
 
 ```
 lower(replace(column_name, ' ', '_'))
 ```
 
-If you have any questions, don't hesitate to contact us via live chat [in the dashboard](https://app.getcensus.com) or emailing us at [support@getcensus.com](mailto:mailto:support@getcensus.com).
-
 ## 🗄 Supported Objects
 
 Census currently supports syncing to the following Zendesk objects:
 
-| **Object Name** | **Supported?** | Identifiers        |
-| --------------: | :------------: | ------------------ |
-|        End User |        ✅       | External ID, Email |
-|    Organization |        ✅       | External ID, Name  |
-|          Ticket |        ✅       | External ID        |
-|  Custom Objects |        ✅       | External ID        |
+| **Object Name** | **Supported** | **Identifiers**                  |
+| --------------: | :-----------: | -------------------------------- |
+|        End User |       ✅       | External ID (recommended), Email |
+|    Organization |       ✅       | External ID (recommended), Name  |
+|          Ticket |       ✅       | External ID                      |
+|  Custom Objects |       ✅       | External ID                      |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Zendesk.
+[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Zendesk.
 
 ## 🔄 Supported Sync Behaviors
+
+|     **Behavior** | **Supported** | **Objects** |
+| ---------------: | :-----------: | ----------- |
+| Update or Create |       ✅       | All         |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Zendesk.
+[Let us know](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Zendesk.
 
 ## 🚑 Need help connecting to Zendesk?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
