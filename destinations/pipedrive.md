@@ -12,7 +12,7 @@ In this guide, we will show you how to connect Pipedrive to Census and create yo
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Pipedrive account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -27,7 +27,29 @@ In this guide, we will show you how to connect Pipedrive to Census and create yo
 This part of our documentation is still under construction! If you have any questions, please don't hesitate to [contact us](mailto:support@getcensus.com).
 {% endhint %}
 
+## 🗄 Supported Objects <a href="supported-objects" id="supported-objects"></a>
+
+| **Object Name** | **Supported?** | Identifiers                   |
+| --------------: | :------------: | ----------------------------- |
+|    Organization |        ✅       | Object ID, name               |
+|          Person |        ✅       | Object ID, name, email, phone |
+|            Deal |        ✅       | Object ID, title              |
+|            Note |        ✅       | Unique ID                     |
+
+{% hint style="info" %}
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pipedrive.
+{% endhint %}
+
+## 🔄 Supported Sync Behaviors
+
+|        **Behaviors** | **Supported?** |        **Objects?**        |
+| -------------------: | :------------: | :------------------------: |
+| **Update or Create** |        ✅       | Organization, Person, Deal |
+|      **Update Only** |        ✅       | Organization, Person, Deal |
+|           **Append** |        ✅       |            Note            |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pipedrive.
+
 ## 🚑 Need help connecting to Pipedrive?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-
