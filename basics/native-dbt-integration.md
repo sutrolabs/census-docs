@@ -72,4 +72,4 @@ As a result, there's several dbt features that Census does not make use of. Thes
 * Pre and post hooks
 * Non-public packages
 
-Our dbt integration currently supports version [0.20.2](https://github.com/dbt-labs/dbt-core/releases/tag/v0.20.2). We also post version support in our [changelog](https://whatsnew.getcensus.com).
+Our dbt integration currently supports version [0.19.1](https://github.com/fishtown-analytics/dbt/releases/tag/v0.19.1). We also post version support in our [changelog](https://whatsnew.getcensus.com).
