@@ -40,7 +40,7 @@ Google Ads Offline Click and Call Conversions require a specific set of properti
 
 Optional properties include:
 
-* Conversion Value, in [microunits](https://developers.google.com/adwords/api/docs/reference/v201809/BudgetService.Money#microamount) for the currency (e.g. 1 USD = 1,000,000)
+* Conversion Value, decimal values accepted (e.g. 1.00 USD = 1.00)
 * Currency Code, the[ ISO 4217 3-character currency code](https://developers.google.com/adwords/api/docs/appendix/codes-formats#expandable-18) (e.g. 'USD')
 * External Attribution Credit and Model, calculated outside Google Ads
 
@@ -60,12 +60,12 @@ Next up is the **"Where do you want to sync data to?"** section
 * Pick **Google Ads** as the Connection
 * For Object, pick **Click Conversion **or **Call Conversion**
 
-For the "**How should changes to the source be synced?"** section 
+For the "**How should changes to the source be synced?"** section&#x20;
 
 * **Append** will be selected by default
 * Pick the right mapping key, the **Google Click ID **in your model
 
-Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the fields from your model to the properties of the Click or Call Conversion. 
+Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the fields from your model to the properties of the Click or Call Conversion.&#x20;
 
 The end result should look something like this:
 
@@ -85,7 +85,7 @@ It may take around 3 hours for synced offline conversions to show up in your Goo
 
 _**Identifier**: Google Click ID ("gclid")_
 
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors! 
+[Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!&#x20;
 
 {% hint style="info" %}
 Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept.md#the-different-sync-behaviors).

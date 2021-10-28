@@ -6,6 +6,10 @@ description: This page describes how to use Census with Google Ads.
 
 ## 🏃‍♀️ Getting Started
 
+{% hint style="success" %}
+Just a heads up: We use the new [Google Ads API](https://developers.google.com/google-ads/api/docs/start) as opposed to the older AdWords API.
+{% endhint %}
+
 In this guide, we will show you how to connect Google Ads to Census.
 
 {% embed url="https://youtu.be/COk7s0axxVw" %}
