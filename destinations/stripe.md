@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Stripe to Census and create your 
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Stripe account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -26,12 +26,13 @@ In this guide, we will show you how to connect Stripe to Census and create your 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
 * Click the Add Service button
 * Select Stripe in the dropdown list
+* Add your API key
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5fbc4462cff47e00160bcde2/file-tKjZxmKj6C.png)
 
-Follow Stripe OAuth flow to connect Stripe. Your end state should look something like this 👇
+In Stripe, go to [Developers > API Keys](https://dashboard.stripe.com/apikeys) and create an API key that has Write permissions into Customers (and Read permission to Balances for testing our connection).
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5fbc451b4cedfd00165b33cf/file-jxnqNJwf5C.png)
+![](<../.gitbook/assets/Screen Shot 2021-10-28 at 5.03.59 PM (1).png>)
 
 ### 2. Connect your Data Warehouse
 
@@ -52,7 +53,7 @@ Here you will have to write SQL queries to select the data you want to see in St
 * The attribution of the customer
 * Order form data to generate an invoice
 
-Once you have created your model, click save. 
+Once you have created your model, click save.&#x20;
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -70,7 +71,7 @@ Next up is the "Where do you want to sync data to?" section
 * Pick Stripe as the Connection
 * For Object, pick **Customer**
 
-For the " How should changes to the source be synced?" section 
+For the " How should changes to the source be synced?" section&#x20;
 
 * Select Update or Create
 * Pick the right mapping key, it can be Email or any other external id for Customer
@@ -100,8 +101,8 @@ If you have any question or if you have any issues getting started, please conta
 Census currently supports syncing to the following Stripe objects:
 
 | **Object Name** | **Supported?** | Identifiers |
-| ---: | :---: | :--- |
-| Customer | ✅ | Email |
+| --------------: | :------------: | ----------- |
+|        Customer |        ✅       | Email       |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Stripe.
 
@@ -111,14 +112,13 @@ Census currently supports syncing to the following Stripe objects:
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Update Only** | ✅ | All |
+|        **Behaviors** | **Supported?** | **Objects?** |
+| -------------------: | :------------: | :----------: |
+| **Update or Create** |        ✅       |      All     |
+|      **Update Only** |        ✅       |      All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Stripe.
 
 ## 🚑 Need help connecting to Stripe?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-
