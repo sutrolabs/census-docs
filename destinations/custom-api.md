@@ -6,7 +6,7 @@ description: >-
 
 # Custom API
 
-Custom Destination API allow you to "bring your own" SaaS connector to Census. A custom destination is a few simple API endpoints that teach Census about the type of data your connector can process, the operations allowed on that data, and how to actually load that data. You can deploy your implement to any service you like, as long as Census can reach the URL over the internet.
+Custom Destination API allow you to "bring your own" SaaS connector to Census. A custom destination is a few simple API endpoints that teach Census about the type of data your connector can process, the operations allowed on that data, and how to actually load that data. You can deploy your implementation to any service you like, as long as Census can reach the URL over the internet.
 
 This guide walks you through setting up an example implementation, how to build your own from scratch, and covers all the technical details of how it operates. The Custom Destination API is currently in beta and [we'd love to hear your feedback](mailto:support@getcensus.com)!
 
@@ -16,9 +16,9 @@ To start, let's walk through the steps to deploy the[ sample implementation](htt
 
 ### Prerequisites
 
-* A Census account. If you don't have one, you can sign up for a free trial [here](https://app.getcensus.com/).
-* A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS. For this demo, we'll use [Netlify Functions](https://www.netlify.com/products/functions/) \(you can sign up for a free account\) . If you'd prefer to test locally, you can also use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL.
-* Your own copy of this [sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). It takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs. 
+* A Census account. If you don't have one, you can sign up for a free trial [here](https://app.getcensus.com).
+* A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS. For this demo, we'll use [Netlify Functions](https://www.netlify.com/products/functions/) (you can sign up for a free account) . If you'd prefer to test locally, you can also use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL.
+* Your own copy of this [sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). It takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs.&#x20;
 
 Generally speaking, your Custom API will act as a proxy that passes data from Census to some destination service. For now, we're just going to log the data once it reaches our code.
 
@@ -84,16 +84,16 @@ In the planning phase, Census will ask your API what kinds of data it manages an
 
 ![](../.gitbook/assets/execute.png)
 
-Once the sync has been planned by the user \(utilizing metadata from your API and your data warehouse\) it can be executed. At execution time, Census will call two methods on your API:
+Once the sync has been planned by the user (utilizing metadata from your API and your data warehouse) it can be executed. At execution time, Census will call two methods on your API:
 
 * `get_sync_speed` - How quickly should Census send data to your API?
 * `sync_batch` - Sync one batch of records to your destination, reporting success and failure for each record.
 
 ### Objects and Fields
 
-Every Census connector has a schema, which is made up of _Objects_ and _Fields_. Objects are roughly analogous to tables in a database, whereas fields are like columns. Your Custom API connector will tell Census what its schema is as part of the planning process \(via the `list_objects` and `list_fields` methods\). Census will use this information to populate its mapping API, and guide the users of your Custom API to map tables and columns in their data warehouse to your destination.
+Every Census connector has a schema, which is made up of _Objects_ and _Fields_. Objects are roughly analogous to tables in a database, whereas fields are like columns. Your Custom API connector will tell Census what its schema is as part of the planning process (via the `list_objects` and `list_fields` methods). Census will use this information to populate its mapping API, and guide the users of your Custom API to map tables and columns in their data warehouse to your destination.
 
-Every SaaS application has a different data surface it exposes to the world, and there is some art in deciding how to model SaaS data APIs as objects and fields. This also depends on the operations the SaaS application gives you \(see below\).
+Every SaaS application has a different data surface it exposes to the world, and there is some art in deciding how to model SaaS data APIs as objects and fields. This also depends on the operations the SaaS application gives you (see below).
 
 Many SaaS applications / destinations do not provide APIs to discover objects and fields. In this case, your Custom API should return a hard-coded list of objects and fields and return those to Census.
 
@@ -101,15 +101,15 @@ Many SaaS applications / destinations do not provide APIs to discover objects an
 
 Destination systems may also have rules about what can be done with new and existing data. Census currently allows Custom APIs to choose from three operations for each object:
 
-* `upsert` \(most common\) - records in the destination can be created or modified
+* `upsert` (most common) - records in the destination can be created or modified
 * `insert` - records can only be created in the destination, they cannot be modified
 * `update` - records can only be modified in the destination, they cannot be created
 
-Census does not know whether a record already exists in your destination when using a Custom API, so it is up to you to enforce the semantics of the operation\(s\) you have chosen to support. For example, if Census has been configured to `update` records in the destination but not `insert` them, your Custom API must first check the destination to see if a matching record exists, and tell Census to skip it if it does not exist. Some destination systems may provide APIs like this for you \(create this record only if it does not exist\) if they have strong enforcement of uniqueness on identifiers.
+Census does not know whether a record already exists in your destination when using a Custom API, so it is up to you to enforce the semantics of the operation(s) you have chosen to support. For example, if Census has been configured to `update` records in the destination but not `insert` them, your Custom API must first check the destination to see if a matching record exists, and tell Census to skip it if it does not exist. Some destination systems may provide APIs like this for you (create this record only if it does not exist) if they have strong enforcement of uniqueness on identifiers.
 
 ### Matching Source and Destination Data
 
-Every sync plan created by Census for an `insert`, `update`, or `upsert` sync will include a field that should be used as the identifier for matching source and destination records. This field must be unique and required in both systems \(the source data warehouse and the destination SaaS\), and it will be provided for every record. Your Custom API will tell Census \(via the `list_fields` method\) which fields can be legally used as identifiers.
+Every sync plan created by Census for an `insert`, `update`, or `upsert` sync will include a field that should be used as the identifier for matching source and destination records. This field must be unique and required in both systems (the source data warehouse and the destination SaaS), and it will be provided for every record. Your Custom API will tell Census (via the `list_fields` method) which fields can be legally used as identifiers.
 
 ### Security Considerations
 
@@ -133,15 +133,15 @@ Because your Custom API URL can contain secrets, it is considered to be sensitiv
 
 Your Custom API will use an [RPC-style protocol](https://www.jsonrpc.org/specification) to communicate with Census. Every message from Census will be an HTTP POST whose body is a JSON object that includes these elements:
 
-* `method`: The name of the method Census is calling on your API. Methods are included in request bodies \(instead of as a RESTful-style URL component\) so that you can give Census a single URL as the integration point.
-* `params`: A JSON object \(possibly empty\) containing parameters for the method
+* `method`: The name of the method Census is calling on your API. Methods are included in request bodies (instead of as a RESTful-style URL component) so that you can give Census a single URL as the integration point.
+* `params`: A JSON object (possibly empty) containing parameters for the method
 * `id`: A unique ID for the request. You must return this same ID in the response
 * `jsonrpc`: This will always be the string `"2.0"`
 
 Your response to every call must be a JSON object with these elements:
 
 * `result`: A JSON object that is the value you are returning from the method call. Can be empty, depending on the method
-* `error` : Optional - allows you to return [error information](https://www.jsonrpc.org/specification#error_object) to Census in the event of a problem invoking your API. The `error` property must not be present if there is a `result`
+* `error` : Optional - allows you to return [error information](https://www.jsonrpc.org/specification#error\_object) to Census in the event of a problem invoking your API. The `error` property must not be present if there is a `result`
 * `id`: The same `id` that was passed in to the request
 * `jsonrpc`: This will always be the string `"2.0"`
 
@@ -176,7 +176,7 @@ Connection: keep-alive
 {"jsonrpc":"2.0","id":"d33ded2672b7877ff833c317892d748c","result":{"success":true}}
 ```
 
-Every request currently requires a synchronous response. Census will time out requests that take a long time to complete; if your connector is unable to complete its work \(particularly the `sync_data` method\) within this time, you can use the `get_sync_speed` method to tell Census to send data more slowly until you are able to complete within this timeout.
+Every request currently requires a synchronous response. Census will time out requests that take a long time to complete; if your connector is unable to complete its work (particularly the `sync_data` method) within this time, you can use the `get_sync_speed` method to tell Census to send data more slowly until you are able to complete within this timeout.
 
 ### Versioning
 
@@ -187,7 +187,7 @@ During the beta phase this API is unversioned. Backwards-incompatible changes ma
 The Custom API protocol is designed to allow you to implement your API in a completely stateless manner. Specifically:
 
 * Don't cache data or metadata. Census will perform caching of your objects, fields, supported operations, etc. automatically, with policies to refresh stale data and controls for users to force invalidation. Adding additional caching may make your Custom API behave unusually in the Census UI.
-* Don't store any other durable state, especially service data, unless your Custom API is "part of" the destination system. Try to ensure that calls to `sync_batch` result in the data being actually persisted to the destination system - once you tell Census a record has been synced, Census may never send that record again \(if it doesn't change in the source\) and Census has know way to know that it was "lost" from the destination system
+* Don't store any other durable state, especially service data, unless your Custom API is "part of" the destination system. Try to ensure that calls to `sync_batch` result in the data being actually persisted to the destination system - once you tell Census a record has been synced, Census may never send that record again (if it doesn't change in the source) and Census has know way to know that it was "lost" from the destination system
 * Expect Census to send multiple requests to your Custom API in parallel. For performance, Census will retrieve / update schemas in parallel, and will sync data in parallel. You can control the degree of parallelism for syncs via the `get_sync_speed` method.
 
 ### Error Handling
@@ -198,7 +198,7 @@ Do not be surprised if Census tries to sync the same record to your destination 
 
 Census provides three "channels" for your Custom API to return errors:
 
-* If you Custom API fails to return an object with the correct keys, Census will fail with an "unknown error". If you have enabled the Custom API debugger \(see below\), the error will be captured for later troubleshooting
+* If you Custom API fails to return an object with the correct keys, Census will fail with an "unknown error". If you have enabled the Custom API debugger (see below), the error will be captured for later troubleshooting
 * Your Custom API may return a structured error message and code in the error property of the JSON-RPC response object. This error code and message will be displayed in the Census UI.
 * Two methods, `test_connection` and `sync_batch`, provide the ability to return application-level error messages. For `test_connection`, you can return a high-level error messsage helping the user debug why your Custom API may not be working. `sync_batch` requires your Custom API to indicate a success or failure status for each record in the batch - error messages associated with record-level failures will be displayed in the Census Sync History UI
 
@@ -254,9 +254,9 @@ If an error occurs performing the connection test, respond with:
 
 #### list\_objects : List all the objects supported by the custom connection
 
-Census calls this method periodically \(in response to UI interaction as well as proactively in the background to warm its caches\) to get the list of objects your connector supports as sync destinations. Your connector will be useless unless you respond with at least one object.
+Census calls this method periodically (in response to UI interaction as well as proactively in the background to warm its caches) to get the list of objects your connector supports as sync destinations. Your connector will be useless unless you respond with at least one object.
 
-Objects have both labels \(for humans\) and API names. These may be the same value, but they do not have to be. The API name is an identifier chosen by you that acts as the primary key for an object; an object’s label may change over time, but its API name must not. You should choose API names that correspond with long-lived identifiers in your destination SaaS.
+Objects have both labels (for humans) and API names. These may be the same value, but they do not have to be. The API name is an identifier chosen by you that acts as the primary key for an object; an object’s label may change over time, but its API name must not. You should choose API names that correspond with long-lived identifiers in your destination SaaS.
 
 **Request**
 
@@ -299,27 +299,27 @@ Census calls this method periodically to get the list of fields for a supported 
 
 A field’s description consists of these required properties:
 
-* `field_api_name` \(string\): A unique, unchanging identifier for this field
-* `label` \(string\): A human-friendly name for the field
-* `identifer` \(boolean\): If true, this field can act as a shared identifier in a Census sync. In order to be used an an identifier, a field must fulfill a few constraints:
+* `field_api_name` (string): A unique, unchanging identifier for this field
+* `label` (string): A human-friendly name for the field
+* `identifer` (boolean): If true, this field can act as a shared identifier in a Census sync. In order to be used an an identifier, a field must fulfill a few constraints:
   * It must be unique
   * It must be required
   * It should be easy to create or update records in the destination SaaS by this value
-* `required` \(boolean\): If true, a record cannot be created unless a values is specified for this field. Census will enforce this by requiring a mapping from a data warehouse column to this field before a sync can be performed.
-* `createable` \(boolean\): If true, this field can be populated on record creation in the destination SaaS. This will be true for most fields. An example of a non-creatable field would be something like an auto-populated “Created At” timestamp that you’re not able to write to using the SaaS API.
-* `updateable` \(boolean\): Similar to `createable` - if true, this field can be populated when updating an existing record. Generally speaking, if a field is neither `createable` nor `updateable`, you might consider omitting it entirely from the `list_fields` response, as it won’t be usable by Census for any syncs.
-* `type` \(string\): The data type for this field. Census uses this to plan any “type casts” required to translate data from your data warehouse to your SaaS, to warn of invalid or lossy type casts, and will format the data on the wire to your custom connector using this type information. If `identifier` is `true`, the type must be `string` or `integer`. See the table below for the full list of types.
-* `array` \(boolean\): If true, this field accepts an array of values instead of a single value. Any type can be used as an `array` type, but `array` types cannot be `identifier`s. Census will require array fields to have a matching array field in the mapped data warehouse column.
+* `required` (boolean): If true, a record cannot be created unless a values is specified for this field. Census will enforce this by requiring a mapping from a data warehouse column to this field before a sync can be performed.
+* `createable` (boolean): If true, this field can be populated on record creation in the destination SaaS. This will be true for most fields. An example of a non-creatable field would be something like an auto-populated “Created At” timestamp that you’re not able to write to using the SaaS API.
+* `updateable` (boolean): Similar to `createable` - if true, this field can be populated when updating an existing record. Generally speaking, if a field is neither `createable` nor `updateable`, you might consider omitting it entirely from the `list_fields` response, as it won’t be usable by Census for any syncs.
+* `type` (string): The data type for this field. Census uses this to plan any “type casts” required to translate data from your data warehouse to your SaaS, to warn of invalid or lossy type casts, and will format the data on the wire to your custom connector using this type information. If `identifier` is `true`, the type must be `string` or `integer`. See the table below for the full list of types.
+* `array` (boolean): If true, this field accepts an array of values instead of a single value. Any type can be used as an `array` type, but `array` types cannot be `identifier`s. Census will require array fields to have a matching array field in the mapped data warehouse column.
 
-| Census Type | Can Be Identifier | JSON Wire Type | JSON Wire Example | Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| `boolean` | No | `boolean` | `true` |  |
-| `decimal` | No | `string` | `"1234.1234"` | Fixed-point decimal numbers are sent as strings to avoid loss of precision |
-| `float` | No | `number` | `42.42` | Consider the decimal type instead for `numeric` data warehouse columns |
-| `integer` | Yes | `number` | `4242` |  |
-| `date` | No | `string` | `"2021-03-29"` | JSON does not have a date type, so dates are ISO 8601 strings |
-| `date_time` | No | `string` | `"2021-03-29T16:32:23Z"` | JSON does not have a datetime or time type, so date times are ISO 8601 strings. All date\_time values will be expressed in UTC |
-| `string` | Yes | `string` | `"pepperoni"` | String encoding follows the JSON standard |
+| Census Type | Can Be Identifier | JSON Wire Type | JSON Wire Example        | Notes                                                                                                                          |
+| ----------- | ----------------- | -------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `boolean`   | No                | `boolean`      | `true`                   |                                                                                                                                |
+| `decimal`   | No                | `string`       | `"1234.1234"`            | Fixed-point decimal numbers are sent as strings to avoid loss of precision                                                     |
+| `float`     | No                | `number`       | `42.42`                  | Consider the decimal type instead for `numeric` data warehouse columns                                                         |
+| `integer`   | Yes               | `number`       | `4242`                   |                                                                                                                                |
+| `date`      | No                | `string`       | `"2021-03-29"`           | JSON does not have a date type, so dates are ISO 8601 strings                                                                  |
+| `date_time` | No                | `string`       | `"2021-03-29T16:32:23Z"` | JSON does not have a datetime or time type, so date times are ISO 8601 strings. All date\_time values will be expressed in UTC |
+| `string`    | Yes               | `string`       | `"pepperoni"`            | String encoding follows the JSON standard                                                                                      |
 
 **Request**
 
@@ -434,9 +434,9 @@ Census will call this method just before a sync is starting to determine how qui
 
 Your response should include these three values:
 
-* `maximum_batch_size`: How many records Census should include in each call to `sync_batch` \(see below\). Census may send smaller batches than this, but it will never send larger batches. If your SaaS API has a batch API, you should strongly consider setting this value to match you SaaS’s maximum batch size. If your SaaS does not have a batch import API, we recommend setting this to a relatively low value \(under 100\) then testing the performance of your custom connector with different batch sizes and increasing the value if needed for increased throughput.
-* `maximum_parallel_batches`: How many simultaneous invocations of `sync_batch` Census will perform. It’s generally safe to set this to a large number and control your sync speed using the other two variables, but if your underlying infrastructure \(web server or function-as-a-service provider\) limits the number of parallel calls to your function, you should use this parameter to stay under that limit and avoid queueing at the network layer.
-* `maximum_records_per_second`: How many records \(not batches\) Census will send to you custom connector per second, across all invocations. This should be matched to your SaaS API’s maximum records per secord, possibly with some buffer to allow for measurement error. The actual records per second may be less than this value, depending on `maximum_batch_size`, `maximum_parallel_batches`, and the average time it takes for your connector to complete one batch.
+* `maximum_batch_size`: How many records Census should include in each call to `sync_batch` (see below). Census may send smaller batches than this, but it will never send larger batches. If your SaaS API has a batch API, you should strongly consider setting this value to match you SaaS’s maximum batch size. If your SaaS does not have a batch import API, we recommend setting this to a relatively low value (under 100) then testing the performance of your custom connector with different batch sizes and increasing the value if needed for increased throughput.
+* `maximum_parallel_batches`: How many simultaneous invocations of `sync_batch` Census will perform. It’s generally safe to set this to a large number and control your sync speed using the other two variables, but if your underlying infrastructure (web server or function-as-a-service provider) limits the number of parallel calls to your function, you should use this parameter to stay under that limit and avoid queueing at the network layer.
+* `maximum_records_per_second`: How many records (not batches) Census will send to you custom connector per second, across all invocations. This should be matched to your SaaS API’s maximum records per secord, possibly with some buffer to allow for measurement error. The actual records per second may be less than this value, depending on `maximum_batch_size`, `maximum_parallel_batches`, and the average time it takes for your connector to complete one batch.
 
 _Known Issue_: Currently these “speed limits” are enforced at the sync level, not across the entire connector, so two simultaneous syncs to different objects on the same connector can cause these limits to be exceeded.
 
@@ -469,7 +469,7 @@ _Known Issue_: Currently these “speed limits” are enforced at the sync level
 
 This is the actual “data transfer” method in the API - once configuration is performed and a sync plan is made, Census will call this method repeatedly with batches of data from your warehouse that are ready to load.
 
-This API should attempt to load all of the records in the batch, and must return a success or failure message to Census for each attempted record. It is extremely important that you only tell Census that a record succeeded if you are certain of it - once Census records that a record has been successfully synced, that record may never be copied again \(if it never changes\). Census assumes that all records that are not explicitly reported as successes have failed, and should be retried, but providing an explicit failure message can be helpful to the users of your custom connector so they can fix any data issues.
+This API should attempt to load all of the records in the batch, and must return a success or failure message to Census for each attempted record. It is extremely important that you only tell Census that a record succeeded if you are certain of it - once Census records that a record has been successfully synced, that record may never be copied again (if it never changes). Census assumes that all records that are not explicitly reported as successes have failed, and should be retried, but providing an explicit failure message can be helpful to the users of your custom connector so they can fix any data issues.
 
 Census employs a hierarchical retry strategy - syncs are retried at the record level, at the batch level, and at the sync level, so if you are unsure if a record or batch has succeeded, we encourage you to fail fast and rely on Census to retry as the best way to avoid data integrity issues.
 
@@ -610,4 +610,3 @@ Custom APIs cannot be shared across Census accounts, and there is currently no p
 ## 🚑 Need help connecting to a Custom Destination?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-
