@@ -31,7 +31,7 @@ In this guide, we will show you how to connect Mixpanel to Census and create you
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603f083b24d2d21e45edbf32/file-gTS0HytG3A.png)
 
-* Copy your Mixpanel's **Project Token** and **API secret **that you can find in your Mixpanel Project Settings. your end state should look something like this 👇
+* Copy your Mixpanel Projects's **Project Token** and **API secret**, which you can find in your Mixpanel **Project Settings** (for more details on where these values are located, check out [Mixpanel's official documentation](https://help.mixpanel.com/hc/en-us/articles/115004502806-Find-Project-Token-)). Your end state should look something like this 👇
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603f08e0661b720174a72af8/file-KkhC5ZcfGo.png)
 
@@ -59,7 +59,7 @@ Here you will have to write SQL queries to select the data you want to see in Mi
 * The date they became active in your product.
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save. 
+Once you have created your model, click save.&#x20;
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -77,7 +77,7 @@ Next up is the "Where do you want to sync data to?" section.
 * Pick Mixpanel as the Connection
 * For Object, Select Events or User Profile. We will be using User Profile in this guide.
 
-For the " How should changes to the source be synced?" section. 
+For the " How should changes to the source be synced?" section.&#x20;
 
 * Select Update Or Create
 * Pick the right mapping key; Mixpanel only supports Distinct ID.
