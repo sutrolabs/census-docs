@@ -4,7 +4,28 @@ description: This page describes how to use Census with Google Cloud Storage.
 
 # Google Cloud Storage
 
-## Supported sync behaviors
+If you need any help configuring GCS, contact the [Census support team](mailto:support@getcensus.com) to get some help.
+
+## File path variables
+
+When defining the **File Path** for an GCS sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files in the GCS bucket that reflect the date and time of the sync.
+
+| **Variable** | **Description**              | **Example Values** |
+| ------------ | ---------------------------- | ------------------ |
+| `%Y`         | 4-digit year                 | 1997               |
+| `%y`         | 2-digit year                 | 97                 |
+| `%m`         | month with zero padding      | 07, 12             |
+| `%-m`        | month without zero padding   | 7, 12              |
+| `%d`         | day with zero padding        | 03, 23             |
+| `%-d`        | day without zero padding     | 3, 23              |
+| `%H`         | 24 hour with zero padding    | 08, 18             |
+| `%k`         | 24 hour without zero padding | 8, 18              |
+| `%I`         | 12 hour with zero padding    | 08, 12             |
+| `%l`         | 12 hour without zero padding | 8, 12              |
+| `%M`         | minute with zero padding     | 04, 56             |
+| `%S`         | second with zero padding     | 06, 54             |
+
+## 🔄 Supported sync behaviors
 
 | **Behavior** | **Supported** | **Objects** |
 | -----------: | :-----------: | :---------: |

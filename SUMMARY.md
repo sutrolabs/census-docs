@@ -15,6 +15,7 @@
 ## ⤵️ Data Sources <a href="sources" id="sources"></a>
 
 * [Databricks](sources/databricks.md)
+* [Elasticsearch](sources/elasticsearch.md)
 * [Google BigQuery](sources/google-bigquery.md)
 * [Google Sheets](sources/google-sheets.md)
 * [Postgres](sources/postgres.md)

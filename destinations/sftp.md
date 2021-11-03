@@ -82,7 +82,7 @@ When configuring your sync, the page should look something like this: 👇
 
 ![Setting up a sync to an SFTP server](<../.gitbook/assets/Screen Shot 2021-10-11 at 6.18.52 PM.png>)
 
-### Step 5: Confirm the synched data
+### Step 5: Confirm the synced data
 
 Once your sync is complete, it's time to check your data. Go to the specified path on your SFTP server and check that the file updated correctly.
 
@@ -92,22 +92,22 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## File path variables
 
-When defining the **File Path** for an SFTP sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files on the SFTP server that reflect the date and time of the sync.
+When defining the **File Path** for an S3 sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files in the S3 bucket that reflect the date and time of the sync.
 
 | **Variable** | **Description**              | **Example Values** |
 | ------------ | ---------------------------- | ------------------ |
-| %Y           | 4-digit year                 | 1997               |
-| %y           | 2-digit year                 | 97                 |
-| %m           | month with zero padding      | 07, 12             |
-| %-m          | month without zero padding   | 7, 12              |
-| %d           | day wtih zero padding        | 03, 23             |
-| %-d          | day without zero padding     | 3, 23              |
-| %H           | 24 hour with zero padding    | 08, 18             |
-| %k           | 24 hour without zero padding | 8, 18              |
-| %I           | 12 hour with zero padding    | 08, 12             |
-| %l           | 12 hour without zero padding | 8, 12              |
-| %M           | minute with zero padding     | 04, 56             |
-| %S           | second with zero padding     | 06, 54             |
+| `%Y`         | 4-digit year                 | 1997               |
+| `%y`         | 2-digit year                 | 97                 |
+| `%m`         | month with zero padding      | 07, 12             |
+| `%-m`        | month without zero padding   | 7, 12              |
+| `%d`         | day with zero padding        | 03, 23             |
+| `%-d`        | day without zero padding     | 3, 23              |
+| `%H`         | 24 hour with zero padding    | 08, 18             |
+| `%k`         | 24 hour without zero padding | 8, 18              |
+| `%I`         | 12 hour with zero padding    | 08, 12             |
+| `%l`         | 12 hour without zero padding | 8, 12              |
+| `%M`         | minute with zero padding     | 04, 56             |
+| `%S`         | second with zero padding     | 06, 54             |
 
 ## 🔄 Supported sync behaviors
 
