@@ -87,7 +87,17 @@ Once you've defined _how_ data is related between your source and destination, t
 
 #### Creating new fields on your destination object
 
-For some destinations, such as Customer.io, Iterable, or Klaviyo, you can create new fields directly from the Census app. This means the next time a sync runs, Census will create new properties or attributes for that object in the destination. This is useful if you want to automatically create new fields based on the columns in your source data.
+For some destinations, such as Braze, Customer.io or Iterable (see full list below), you can create new fields directly from the Census app. This means the next time a sync runs, Census will create new properties or attributes for that object in the destination. This is useful if you want to automatically create new fields based on the columns in your source data.
+
+Simply select **"Sync All Properties"** when setting up a sync.
+
+![Simply select "Sync All Properties"](../.gitbook/assets/sync\_all\_fields.png)
+
+{% hint style="info" %}
+The following destinations currently support automatically adding new properties:&#x20;
+
+Braze, Customer.io, Google Cloud Storage, Google Sheets, Iterable, Klaviyo, Mixpanel, S3, Salesforce Marketing Cloud, Segment, SFTP, Slack, Vitally, Webhook
+{% endhint %}
 
 ## Running Syncs&#x20;
 
