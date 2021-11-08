@@ -24,27 +24,26 @@ Our Google Cloud connector behaves a little differently than other Census connec
 
 * In Census, navigate to [Connections](https://app.getcensus.com/connections)
 * Click the Add Service button, and select Google Cloud Storage
+* Paste the name of the GCS bucket, name the connection, and click the Save Connection button
 
 ![](<../.gitbook/assets/Screen Shot 2021-11-03 at 1.46.43 PM.png>)
 
-* Paste the name of the GCS bucket, name the connection, and click the Save Connection button
-
-![](<../.gitbook/assets/Screen Shot 2021-11-03 at 1.47.05 PM.png>)
-
 * Don't be discouraged by this initial "Test Connection" failing! This is expected.
+
+![](<../.gitbook/assets/Cloud Failing Connection.png>)
+
 * Your new Google Cloud Storage connection will include a GCP service account for that specific Census connection. Click the copy button (![](../.gitbook/assets/copy-solid.svg)) to save it to your clipboard.
 
 ### Step 2: Grant Access to GCS
 
 * Now head to the Google Cloud Storage bucket that you want to sync to, and click into that bucket's details.
+* Click the Permissions tab on the Bucket, then click "Add Permissions".
 
 ![](<../.gitbook/assets/Screen Shot 2021-11-03 at 2.02.14 PM.png>)
 
-* Click the Permissions tab on the Bucket, then click "Add Permissions".
-
-![](<../.gitbook/assets/Screen Shot 2021-11-03 at 2.04.30 PM.png>)
-
 * Paste the credentials in the New Principals portion and select "Storage Object Admin."&#x20;
+
+![](<../.gitbook/assets/GCS Add.png>)
 
 {% hint style="info" %}
 You **will** be able to send a successful sync if the file path variables are unique per sync run by only granting this service account "Storage Object Creator", but the Test Connection in the next step will fail.
@@ -53,7 +52,7 @@ You **will** be able to send a successful sync if the file path variables are un
 * Click save to save the permission.&#x20;
 * Then navigate back to the [Connections](https://app.getcensus.com/connections) page and click "Test" on the service.
 
-![Test connection passed](<../.gitbook/assets/Screen Shot 2021-11-03 at 2.07.32 PM.png>)
+![You are good to go!](<../.gitbook/assets/Cloud Successful Connection.png>)
 
 ### Step 3: Create your first sync
 

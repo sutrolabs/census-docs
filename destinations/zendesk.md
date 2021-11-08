@@ -64,16 +64,16 @@ The sync will move data from your warehouse to Zendesk. In this step, you'll def
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
-3. Under **Where do you want to sync data to?**, choose **Zendesk** as the **Connection** and an **Object** in Zendesk. (See [Supported Objects](zendesk.md#supported-objects).)
-4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See [Supported Sync Behaviors](zendesk.md#supported-sync-behaviors).
-5. Under **How are source and destination records matched?**, select a mapping key. We recommend mapping an internal ID property in your database to the **External ID** field in Zendesk. (See [Supported Objects](zendesk.md#supported-objects).)
+3. Under **Where do you want to sync data to?**, choose **Zendesk** as the **Connection** and an **Object** in Zendesk. (See [Supported objects](zendesk.md#supported-objects).)
+4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See [Supported sync behaviors](zendesk.md#supported-sync-behaviors).)
+5. Under **How are source and destination records matched?**, select a mapping key. We recommend mapping an internal ID property in your database to the **External ID** field in Zendesk. (See [Supported objects](zendesk.md#supported-objects).)
 6.  Under **Which properties should be updated?**, select the fields you want to update by mapping a field in Zendesk to a column in your model. Choose a mapping setting:
 
     * **Set** overrides the existing value in Zendesk if the field is already populated.&#x20;
     * **Only If Empty** does not set the value if the field is already populated.
     * For any properties that accept lists of values such as the Organization or Tags property, instead you'll see** Replace**. Replace mappings override any existing values or relationships for the property.
 
-    Note that there are some gotchas with updating Zendesk data. Check out [Things to know about the Zendesk connector](zendesk.md#things-to-know-about-the-zendesk-connector) .
+    Note that there are some gotchas with updating Zendesk data. Check out [Things to know about the Zendesk connector](zendesk.md#things-to-know-about-the-zendesk-connector).
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
 9. Click **Create Sync**.
@@ -136,7 +136,7 @@ If the Zendesk API names have not been modified, you can transform the label val
 lower(replace(column_name, ' ', '_'))
 ```
 
-## 🗄 Supported Objects
+## 🗄 Supported objects
 
 Census currently supports syncing to the following Zendesk objects:
 
@@ -149,7 +149,7 @@ Census currently supports syncing to the following Zendesk objects:
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Zendesk.
 
-## 🔄 Supported Sync Behaviors
+## 🔄 Supported sync behaviors
 
 |     **Behavior** | **Supported** | **Objects** |
 | ---------------: | :-----------: | ----------- |
