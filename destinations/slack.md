@@ -8,6 +8,8 @@ description: This page describes how to use Census with Slack.
 
 ‌In this guide, we will show you how to connect Slack to Census and create your first sync.
 
+{% embed url="https://www.youtube.com/watch?v=dj-WWejw1yI" %}
+
 ### 📋 Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
@@ -47,9 +49,9 @@ See our docs for each supported data source for further information:
 
 Navigate to the **Models** page in Census and click the **Add Model** button.
 
-Here you can a write SQL query to select the data you want to send to Slack. 
+Here you can a write SQL query to select the data you want to send to Slack.&#x20;
 
-Once you have created your model, give it a useful name, and click **Save Model**. 
+Once you have created your model, give it a useful name, and click **Save Model**.&#x20;
 
 ## 4️⃣ Create your first Census sync
 
@@ -106,7 +108,7 @@ Note, **Append** is the only option available for Slack, so it will be automatic
 
 ![](../.gitbook/assets/screen-shot-2021-09-13-at-12.52.53-pm.png)
 
-* To run the sync now, select the **Run a sync now?** checkbox and click the **Create Sync** button. Your sync is in now progress! 
+* To run the sync now, select the **Run a sync now?** checkbox and click the **Create Sync** button. Your sync is in now progress!&#x20;
 
 ## 5. Confirm the data is in Slack
 
