@@ -96,7 +96,7 @@ Simply select **"Sync All Properties"** when setting up a sync.
 {% hint style="info" %}
 The following destinations currently support automatically adding new properties:&#x20;
 
-Braze, Customer.io, Google Cloud Storage, Google Sheets, Iterable, Klaviyo, Mixpanel, S3, Salesforce Marketing Cloud, Segment, SFTP, Slack, Vitally, Webhook
+Braze, Custom API, Customer.io, Google Cloud Storage, Google Sheets, Iterable, Klaviyo, Mixpanel, S3, Salesforce Marketing Cloud, Segment, SFTP, Slack, Vitally, Webhook
 {% endhint %}
 
 ## Running Syncs&#x20;

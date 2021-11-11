@@ -258,8 +258,6 @@ Census calls this method periodically (in response to UI interaction as well as 
 
 Objects have both labels (for humans) and API names. These may be the same value, but they do not have to be. The API name is an identifier chosen by you that acts as the primary key for an object; an object’s label may change over time, but its API name must not. You should choose API names that correspond with long-lived identifiers in your destination SaaS.
 
-Objects can support creating new fields if the `can_create_fields` property is set to `on_write`. This is useful for objects which can have arbitrary properties, like events. Census allows you to map new fields in the Sync creation UI but it's on your API implementation to support ingesting and creating these new fields when they are received. Being able to create new fields is a requisite for an object supporting [Sync All Properties](https://docs.getcensus.com/basics/core-concept#creating-new-fields-on-your-destination-object).
-
 **Request**
 
 This method has no parameters - the request will always be an empty JSON object
@@ -289,11 +287,6 @@ This method has no parameters - the request will always be an empty JSON object
       {
         "object_api_name": "venue", 
         "label": "Concert Venues"
-      },
-      {
-        "object_api_name": "reservation", 
-        "label": "Reservation",
-        "can_create_fields": "on_write"
       },
     ]
   }
