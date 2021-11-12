@@ -995,6 +995,7 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 | trigger\_on\_dbt\_cloud\_rebuild _(optional)_ | Whether or not this sync should trigger on a DBT cloud rebuild.                                                                                                                                                                                                                                                                                         |
 | field\_behavior _(optional)_                  | Specify `sync_all_properties` to configure this to automatically update mappings when the source changes.                                                                                                                                                                                                                                               |
 | field\_normalization _(optional)_             | <p>If <code>sync_all_properties</code> is specified, specify how you would like automatic mappings to be named. Valid options are:</p><ul><li><code>start_case</code></li><li><code>lower_case</code></li><li><code>upper_case</code></li><li><code>camel_case</code></li><li><code>snake_case</code></li><li><code>match_source_names</code></li></ul> |
+| high\_water\_mark\_attributes _(optional)_    | Attributes used to identify the sync type. Only valid for `append` operation and source warehouse `Snowflake`The specific properties are described below.                                                                                                                                                                                               |
 
 
 
@@ -1030,7 +1031,11 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 | lookup\_object (optional)                                                                              | For a reference field, the full name of the object it refers to                                                                                                                                                                                                                                    |
 | lookup\_field (optional)                                                                               | For a reference field, the field to lookup the referenced object by                                                                                                                                                                                                                                |
 
-
+| HighWaterMark Attribute            | Description                                                                                                                             |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **HighWaterMark Attribute**        | **Description**                                                                                                                         |
+| use\_high\_water\_mark\_diff\_type | `true` or `false` to indicate use of high water mark diff type sync. Only valid for `append` operation and source warehouse `Snowflake` |
+| column\_name                       | The name of the column in the source                                                                                                    |
 
 | **Response Property** | **Description**                                                 |
 | --------------------- | --------------------------------------------------------------- |
