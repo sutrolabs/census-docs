@@ -22,6 +22,7 @@
 * [Redshift](sources/redshift.md)
 * [Rockset](sources/rockset.md)
 * [Snowflake](sources/snowflake.md)
+* [SQL Server](sources/sql-server.md)
 
 ## 🛫 Destinations (app) <a href="destinations" id="destinations"></a>
 
