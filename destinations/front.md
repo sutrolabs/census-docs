@@ -12,10 +12,11 @@ In this guide, we will show you how to connect Front to Census and create your f
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Front account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Elasticsearch](../sources/elasticsearch.md)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
@@ -29,11 +30,11 @@ In this guide, we will show you how to connect Front to Census and create your f
 * Click the Add Service button
 * Select Front in the dropdown list
 
-![](../.gitbook/assets/front_step1.png)
+![](../.gitbook/assets/front\_step1.png)
 
 Follow the OAuth flow to connect Front. Your end state should look something like this 👇
 
-![](../.gitbook/assets/front_step2.png)
+![](../.gitbook/assets/front\_step2.png)
 
 ### 2. Connect your Data Warehouse
 
@@ -46,7 +47,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 
 After setting up your warehouse, your Census Connections page should look like this:
 
-![](../.gitbook/assets/front_step3.png)
+![](../.gitbook/assets/front\_step3.png)
 
 ### 3. Create your first Model
 
@@ -59,9 +60,9 @@ Here you can write SQL queries or select dbt models that contain the data you wa
 * The date they became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save. 
+Once you have created your model, click save.&#x20;
 
-![](../.gitbook/assets/front_step4.png)
+![](../.gitbook/assets/front\_step4.png)
 
 ### 4. Create your first Sync
 
@@ -77,7 +78,7 @@ Next up is the "Where do you want to sync data to?" section
 * Pick Front as the Connection
 * Pick Contact as the Object
 
-For the "How should changes to the source be synced?" section 
+For the "How should changes to the source be synced?" section&#x20;
 
 * Select **Update Or Create**
 * Pick the appropriate mapping key, it could be email or a custom unique ID
@@ -86,7 +87,7 @@ Finally, select the fields you want to update in the mapper in the "Which Fields
 
 * For each field in your Front instance, you can choose a column from your model.
 
-![](../.gitbook/assets/front_step5.png)
+![](../.gitbook/assets/front\_step5.png)
 
 Click the Next button to see a preview of what will happen when you start the sync. You can check the "Run Sync Now" checkbox to kick off an initial sync and pick a schedule afterwards.
 
@@ -96,21 +97,21 @@ Now go back to Front and go view a Contact that should have been updated. If eve
 
 That's it, in 5 steps, you connected Census to Front and started syncing customer & product data from your warehouse to Front 🎉
 
-![](../.gitbook/assets/front_step6.png)
+![](../.gitbook/assets/front\_step6.png)
 
 If you have any questions or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or send us an email at support@getcensus.com
 
 ## 🏎 Sync Speed
 
-The Front API is pretty slow with a [default rate limit of 10 calls / minute](https://dev.frontapp.com/docs/core-api-getting-started#limitations). If you are on the Enterprise plan, this can be boosted to 200 calls / minute. 
+The Front API is pretty slow with a [default rate limit of 10 calls / minute](https://dev.frontapp.com/docs/core-api-getting-started#limitations). If you are on the Enterprise plan, this can be boosted to 200 calls / minute.&#x20;
 
-Rest assured that Census will manage that API rate limit for you and ensure that all your syncs are successful. 
+Rest assured that Census will manage that API rate limit for you and ensure that all your syncs are successful.&#x20;
 
-| **Service** | Public API rate limit | **Records sync / Minute** |
-| :--- | :--- | :--- |
-| This Service \(Front\) | 100 calls / minute | ~40 |
-| Front Enterprise | 200 calls / minute | ~80 |
-| Salesforce \(as a reference\) | 20,000 \(default\) | 10,000 |
+| **Service**                 | Public API rate limit | **Records sync / Minute** |
+| --------------------------- | --------------------- | ------------------------- |
+| This Service (Front)        | 100 calls / minute    | \~40                      |
+| Front Enterprise            | 200 calls / minute    | \~80                      |
+| Salesforce (as a reference) | 20,000 (default)      | 10,000                    |
 
 {% hint style="info" %}
 Please note that you can contact your Front Customer Success Manager to increase your API rate limit temporarly which will increase the number of records we can sync per minute.
@@ -121,11 +122,11 @@ Please note that you can contact your Front Customer Success Manager to increase
 Front has [many objects available via their API](https://dev.frontapp.com/reference/introduction), from Contacts, Conversations to Tags.  These are the objects we currently support in Census.
 
 | **Object Name** | **Supported?** |
-| ---: | :---: |
-| Contact | ✅ |
-| Conversations | 🔜 |
-| Tags | 🔜 |
-| Teams | 🔜 |
+| --------------: | :------------: |
+|         Contact |        ✅       |
+|   Conversations |       🔜       |
+|            Tags |       🔜       |
+|           Teams |       🔜       |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Front
 
@@ -135,10 +136,10 @@ Front has [many objects available via their API](https://dev.frontapp.com/refere
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | Contact Only |
-| **Update Only** | 🔜 |  |
+|        **Behaviors** | **Supported?** | **Objects?** |
+| -------------------: | :------------: | :----------: |
+| **Update or Create** |        ✅       | Contact Only |
+|      **Update Only** |       🔜       |              |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Front
 
@@ -150,4 +151,3 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 ## 🚑 Need help connecting to Front?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-
