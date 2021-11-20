@@ -44,7 +44,7 @@ In this guide, we will show you how to connect Chargify to Census and create you
 
 ![](../.gitbook/assets/screely-1637377540126.png)
 
-### 2. Connect your Data Warehouse
+### 3. Connect your Data Warehouse
 
 Please follow one of our short guides depending on your data warehouse technology.
 
@@ -57,7 +57,7 @@ After setting up your warehouse, your Census Connections Page should look like t
 
 ![](../.gitbook/assets/screely-1637377853269.png)
 
-### 3. Create your first model
+### 4. Create your first model
 
 Next we'll define the data you'll send to Chargify. Navigate to the [Models](https://app.getcensus.com/models) page.
 
@@ -71,17 +71,13 @@ For your model, let's select some events you want to tie to billing in Chargify.
 
 Once you have created your model, click **Save**.&#x20;
 
-### 4. Create your first Sync
-
-
+### 5. Create your first Sync
 
 For our sample sync, we're going to be syncing to Chargify's Billable Events. In this case, we'll also need one more piece of information, the target Billable Event Stream's API Name. To get that, visit Chargify, click **Events** in the left navigation, and then **Streams**. You'll have to first create a stream if you don't have one. Once you've created it, copy and paste the stream API name.&#x20;
 
 ![](../.gitbook/assets/screely-1637378899558.png)
 
-
-
-Now head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sync button
+Head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sync button
 
 In the " What data do you want to sync?" section
 
@@ -98,21 +94,21 @@ For the " How should changes to the source be synced?" section.&#x20;
 * Select Append
 * Pick a unique identifier for the billable events.&#x20;
 
-Now we'll start mapping fields. By default, Chargify needs the stream API name we captured earlier as well as a timestamp for the event.&#x20;
+Now we'll start mapping fields. Chargify requires two fields to be mapped, the target Stream API Handle which we retrieved earlier as well as a timestamp for the event.&#x20;
 
-Af
+From there, you can add any fields you like. We'll use the "Sync All Properties" setting to automatically send every other column from our data source to the destination.
 
-![](../.gitbook/assets/screely-1618952371780.png)
+![](../.gitbook/assets/screely-1637380021286.png)
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-### 5. Confirm the data is in Mixpanel
+### 6. Confirm the data is in Chargify
 
-Now go back to your Mixpanel Instance and view a Contact that should have been updated. If everything well well, you should see your data in Mixpanel.
+Now go back to Chargify, visit Events, Streams, and click on the stream you targeted. If everything well well, you should see your data!
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603fe75524d2d21e45edc500/file-teawU1LIfG.png)
+![](../.gitbook/assets/screely-1637380254724.png)
 
-That's it! In 5 steps, you connect Census to Mixpanel and started syncing customer & product data from your warehouse to Mixpanel 🎉
+That's it! In 6 steps, you've connected Census and started syncing product data from your warehouse to Chargify 🎉
 
 ## 🗄 Supported Objects
 
