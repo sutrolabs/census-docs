@@ -67,6 +67,22 @@ After setting up your warehouse, your Census Connections Page should look like t
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
 
+## :question:Did my sync work? It says completed but it isn't showing the updated timestamp I expect.
+
+The standard place where bulk files uploading update status doesn't actually update when using Census. Instead, you've gotta hover on a specific card.&#x20;
+
+Steps to get there:
+
+1. Open your google ads account
+2. Navigate to Tools & Settings > Audience Manager
+3. Hover over the name of your desired audience in the list.
+4. Expand the section labeled `Customers based on email, phone, and/or mailing address uploads`
+5. Within that, you'll see a `Last upload` label.
+
+![](<../../.gitbook/assets/Screen Shot 2021-11-16 at 10.34.57 AM.png>)
+
+If that date isn't the same time as the most recent sync completed, please reach out via our in-app chat and we will investigate it with you.
+
 ## 🚑 Need help connecting to Google Ads?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

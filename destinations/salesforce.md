@@ -92,6 +92,30 @@ If this sounds like your situation, you have a couple of options. You may choose
 * Create a separate ID population sync in Census. This sync would be **Update Only** and typically requires creating a Census model that uses SQL to do some fuzzy matching on other properties such as the name of Salesforce records to fill the ID field.&#x20;
 * Create your new sync anyway and let it create duplicates in Salesforce. Then use Salesforce's deduplication workflow to merge the duplicated objects together, making sure to keep the new ID value.
 
+## 🗄 Supported Objects
+
+Salesforce support is pretty straight forward!
+
+|           **Object Name**          | **Supported?** |
+| :--------------------------------: | :------------: |
+|   All Standard and Custom Objects  |        ✅       |
+| Multi-Destination: Lead or Contact |        ✅       |
+| Multi-Destination: Lead or Account |        ✅       |
+
+**Column Gotcha's**
+
+| **Salesforce Field Types** | **Source SQL Types**                                                                                              |
+| :------------------------: | ----------------------------------------------------------------------------------------------------------------- |
+|     Picklist (Multiple)    | String separated by a `;` In Snowflake, this is best done via a `listagg(val, ';')`                               |
+|           Lookup           | On the object you are syncing to, the field you are looking up needs to be exposed as a unique and an external Id |
+|          The Rest          | <p>Census will give an informative error</p><p>message if rejected by Salesforce 😀</p>                           |
+
+[Contact us](mailto:support@getcensus.com) if you have any questions about Salesforce.
+
+## :question:Why is my Salesforce sync so slow
+
+Census utilizes the bulk API to write data into Salesforce. If a sync is taking a while, check to see if there are any automations, process builders, or Apex triggers on those specific objects. If so, Census must wait to upload/update the service. Our recommendation is to pause automations on that object for full syncs in the interest of speed.
+
 ## 🆘 Common Errors
 
 The is a running list of Salesforce errors that frequently cause skipped records on when syncing data to Salesforce. \
