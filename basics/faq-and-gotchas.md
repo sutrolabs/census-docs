@@ -24,6 +24,18 @@ When setting up a sync for the first time, clicking on the Refresh Fields will c
 
 ![Try clicking these buttons to pull available fields from the service and source](<../.gitbook/assets/Refresh Fields.png>)
 
+## Census permissions on dbt schemas/tables
+
+> Why does Census not have permissions to my dbt schema/table. I know I ran the SQL permissions script properly...
+
+We sometimes see permissions being overwritten when running dbt, which rebuilds the table (and sometimes the schema) in the data warehouse. A great way to make sure this does not happen is via [dbt post-hooks](https://docs.getdbt.com/reference/resource-configs/pre-hook-post-hook). Here is some example code that might go in the post hook:
+
+`grant select on {{ this }} to user census`
+
+Or for Snowflake :snowflake:
+
+`GRANT SELECT {{ this }} TO ROLE CENSUS_ROLE`
+
 ## `400` or `500` errors on a sync
 
 In general, Census should take care of these as much as possible so feel free to reach out to support at any point.
