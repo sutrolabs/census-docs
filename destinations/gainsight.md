@@ -125,6 +125,7 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 |        **Behaviors** | **Supported?** | **Objects?** |
 | -------------------: | :------------: | :----------: |
 | **Update or Create** |        ✅       |      All     |
+|      **Update Only** |        ✅       |    Company   |
 
 ## 🚑 Need help connecting to Gainsight?
 
