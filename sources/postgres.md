@@ -9,7 +9,7 @@ description: >-
 ## 🔐 Required Permissions
 
 {% hint style="info" %}
-These instructions are well tested to connect Census to Postgres. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions. 
+These instructions are well tested to connect Census to Postgres. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.&#x20;
 {% endhint %}
 
 Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in external systems such as Salesforce. To limit the load on your database as well as to other apps' APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a set of tables to a private bookkeeping schema (2 or 3 tables for each sync job configured).
@@ -54,7 +54,7 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO
 ## 💡 Notes
 
 {% hint style="danger" %}
-We **strongly recommend against **connecting Census a production Postgres database. Census queries are often very analytical in nature and do not always play nicely with production environments. Unfortunately, Postgres doesn't give you much ability to control performance impacts across users so to avoid issues, please use Census with databases set up for analytic workloads only!
+We **strongly recommend against** connecting Census a production Postgres database. Census queries are often very analytical in nature and do not always play nicely with production environments. Unfortunately, Postgres doesn't give you much ability to control performance impacts across users so to avoid issues, please use Census with databases set up for analytic workloads only!
 {% endhint %}
 
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
@@ -81,15 +81,15 @@ Census optionally allows connecting to Postgres warehouses that are only accessi
 1. Create a new user account for Census on the SSH host. (This account is separate from the database user account and can have a different username.)
 2. On the Census connections page, create a new connection to a Postgres warehouse, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below.  Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
 
-![](../.gitbook/assets/redshift_pg\_1.png)
+![](../.gitbook/assets/redshift\_pg\_1.png)
 
-3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page. 
+3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page.&#x20;
 
 To install the kepair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step.  If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
 
 Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
 
-![](../.gitbook/assets/redshift_pg\_2.png)
+![](../.gitbook/assets/redshift\_pg\_2.png)
 
 4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allow list.
 

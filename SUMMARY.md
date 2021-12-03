@@ -2,7 +2,7 @@
 
 * [🏡 Introduction](README.md)
 
-## 🧰 The Basics <a href="basics" id="basics"></a>
+## 🧰 The Basics <a href="#basics" id="basics"></a>
 
 * [Core Concepts](basics/core-concept.md)
 * [Triggering Syncs](basics/triggering-syncs.md)
@@ -13,7 +13,7 @@
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
 
-## ⤵️ Data Sources <a href="sources" id="sources"></a>
+## ⤵️ Data Sources <a href="#sources" id="sources"></a>
 
 * [Databricks](sources/databricks.md)
 * [Elasticsearch](sources/elasticsearch.md)
@@ -25,9 +25,10 @@
 * [Snowflake](sources/snowflake.md)
 * [SQL Server](sources/sql-server.md)
 
-## 🛫 Destinations (app) <a href="destinations" id="destinations"></a>
+## 🛫 Destinations (app) <a href="#destinations" id="destinations"></a>
 
 * [ActiveCampaign](destinations/activecampaign.md)
+* [Sync-a-Swag](destinations/sync-a-swag.md)
 * [Airtable](destinations/airtable.md)
 * [Amplitude](destinations/amplitude.md)
 * [Braze](destinations/braze.md)

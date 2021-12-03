@@ -24,7 +24,7 @@ In this guide, we will show you how to connect webhooks to Census and create you
 ### 1. Create a Webhook Destination in Census
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service **button
+* Click the **Add Service** button
 * Select **Webhook** in the dropdown list
 * Name your Destination (for example, `webhooksite test`) and Input the URL of your endpoint  👇
 
@@ -57,7 +57,7 @@ Here you will have to write SQL queries to select the data you want to send to y
 * Accounts that have reached a specific Lead scoring
 * list of users who haven't finished their product onboarding
 
-Once you have created your model, click save. 
+Once you have created your model, click save.&#x20;
 
 ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -65,17 +65,17 @@ Once you have created your model, click save.
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the " **What data do you want to sync?" **section
+In the " **What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,  **select the model you created in step 3
+* For the **Source,**  select the model you created in step 3
 
 Next up is the **"Where do you want to sync data to?"** section
 
 * Pick your Webhook destination (for us it is `Webhook Test`) as **the Connection**
 * ⚠️ If you are familiar with Census, you will notice that there is no Object to select.
 
-For the " **How should changes to the source be synced?"** section 
+For the " **How should changes to the source be synced?"** section&#x20;
 
 * Select **Update or Create**
 * Pick a **unique ID.** this is the key we will use to make sure we only sync new records or records with new values. We recommend using an internal id and if not, email/domain.
@@ -92,7 +92,7 @@ The end result should look something like this:
 If you want, to can test the sync at the bottom which will sync one record to your destination
 {% endhint %}
 
-Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync
+Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
 
 ### 5. Confirm the data was sent to your Webhook Endpoint
 

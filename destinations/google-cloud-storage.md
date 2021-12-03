@@ -59,14 +59,14 @@ You **will** be able to send a successful sync if the file path variables are un
 The sync will move data from your warehouse to your GCS bucket. In this step, you'll define how that will work.
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
-2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your **source: **either a Model from the Census Models tab or a database table.
+2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your **source:** either a Model from the Census Models tab or a database table.
 3.  Under **Where do you want to sync data to?**, choose the name you assigned in Step 1 (we used GCS) as the **Connection**. Enter the **File Path** for the CSV file where data will sync. The path can accept variables that will populate when the sync runs. See [File Path Variables](google-cloud-storage.md#file-path-variables). Confirm the file path in the **Template Preview** field.&#x20;
 
     __:bulb: _If the service account only has "Storage Object Creator" permissions, this file path needs to be unique per sync run_
-4. Under **How should changes to the source be synced?**, **Mirror **will be automatically selected. This is the only supported sync behavior for GCS.&#x20;
+4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for GCS.&#x20;
 5. Under **Which properties should be updated?**, choose whether to sync only **Selected Properties** or **Sync All Properties**. Syncing all properties will automatically add new properties to the sync if the model or database table changes.
-6. To test your sync without actually syncing data, click **Run Test **and verify the results.
-7. Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync.
+6. To test your sync without actually syncing data, click **Run Test** and verify the results.
+7. Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync.
 8. Confirm the data arrives in the GCS bucket!
 
 If you need any help configuring GCS, contact the [Census support team](mailto:support@getcensus.com) to get some help.

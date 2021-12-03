@@ -26,7 +26,7 @@ In this guide, we will show you how to connect Intercom to Census and create you
 ### 1. Connect Intercom
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service **button
+* Click the **Add Service** button
 * Select **Intercom** in the dropdown list
 
 ![](../.gitbook/assets/screely-1618112961265.png)
@@ -59,23 +59,23 @@ Here you will have to write SQL queries to select the data you want to see in In
 * The date they became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save. 
+Once you have created your model, click save.&#x20;
 
 ### 4. Create your first Sync
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the " **What data do you want to sync?" **section
+In the " **What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,  **select the model you created in step 3
+* For the **Source,**  select the model you created in step 3
 
 Next up is the **"Where do you want to sync data to?"** section
 
 * Pick Intercom as **the Connection**
 * For Object, pick the one you want to sync data to.
 
-For the " **How should changes to the source be synced?"** section 
+For the " **How should changes to the source be synced?"** section&#x20;
 
 * Select your preferred behavior. **Update only** is a great place to start!
 * Pick the right mapping key, it could be Email for Contacts, Company ID for Companies but we recommend you use your own database id if possible
@@ -88,7 +88,7 @@ The end result should look something like this
 
 ![](../.gitbook/assets/screely-1618113035239.png)
 
-Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync
+Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
 
 ### 5. Confirm the data is in Intercom
 

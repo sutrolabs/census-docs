@@ -71,7 +71,7 @@ The sync will move data from your warehouse to Zendesk. In this step, you'll def
 
     * **Set** overrides the existing value in Zendesk if the field is already populated.&#x20;
     * **Only If Empty** does not set the value if the field is already populated.
-    * For any properties that accept lists of values such as the Organization or Tags property, instead you'll see** Replace**. Replace mappings override any existing values or relationships for the property.
+    * For any properties that accept lists of values such as the Organization or Tags property, instead you'll see **Replace**. Replace mappings override any existing values or relationships for the property.
 
     Note that there are some gotchas with updating Zendesk data. Check out [Things to know about the Zendesk connector](zendesk.md#things-to-know-about-the-zendesk-connector).
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.

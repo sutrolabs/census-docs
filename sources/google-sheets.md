@@ -6,30 +6,30 @@ description: This page describes how to add Google Sheets as a source to Census.
 
 Census lets you select a Google Sheet to treat as a source for your syncs.
 
-In order to sync data from a Google Sheet, Census creates a special service account email address for each Google Sheets connection. You can then "share" your Google sheet with that unique Census email, just like you'd share your sheet with anyone. 
+In order to sync data from a Google Sheet, Census creates a special service account email address for each Google Sheets connection. You can then "share" your Google sheet with that unique Census email, just like you'd share your sheet with anyone.&#x20;
 
 This will walk you through creating a new Google Sheets source.
 
 ### Create a Google Sheets connection
 
-First, you'll need to create a connection to your Google Sheets account. 
+First, you'll need to create a connection to your Google Sheets account.&#x20;
 
-1. In Census, go to **Connections **or click [here to go to the app](https://app.getcensus.com/connections)
-2. Under Data Sources, click **Add Data Source **and select **Google Sheets**
+1. In Census, go to **Connections** or click [here to go to the app](https://app.getcensus.com/connections)
+2. Under Data Sources, click **Add Data Source** and select **Google Sheets**
 
 ![](<../.gitbook/assets/image (3).png>)
 
-3\. **If you're already signed in with Google single sign-on** - A new service account email will automatically be created for Google Sheets. Scroll down to the bottom of your list of data sources if you can't see it. 
+3\. **If you're already signed in with Google single sign-on** - A new service account email will automatically be created for Google Sheets. Scroll down to the bottom of your list of data sources if you can't see it.&#x20;
 
-4\. **If you're not already signed in with Google**, you will need to authorize your Google account. Once you've done that, a new service account email will automatically be created for Google Sheets. Scroll down to the bottom of your list of data sources if you can't see it. 
+4\. **If you're not already signed in with Google**, you will need to authorize your Google account. Once you've done that, a new service account email will automatically be created for Google Sheets. Scroll down to the bottom of your list of data sources if you can't see it.&#x20;
 
 5\. Give your Google sheets connection a unique name by clicking **Edit** and adding a label
 
-![Name your Google Sheets source by clicking Edit](../.gitbook/assets/name_google_sheets_source.png)
+![Name your Google Sheets source by clicking Edit](../.gitbook/assets/name\_google\_sheets\_source.png)
 
 ### Connect a Google Sheet
 
-We will now use this service account email to "share" the Google sheet you want to connect to Census. 
+We will now use this service account email to "share" the Google sheet you want to connect to Census.&#x20;
 
 1. Go over to your Google Sheets account
 2. Select the sheet you wish to connect to Census
@@ -49,19 +49,19 @@ We will now use this service account email to "share" the Google sheet you want 
 
 You can now go on to create a sync from your Google Sheet to a destination app.
 
-1. In Census, click on **Syncs **in the left menu
+1. In Census, click on **Syncs** in the left menu
 2. Click on **Add Sync**
 3. Under connection select the name of your Google Sheets connection
-4. **Important: **If this is your first time connecting a Google Sheet, it won't show up under the 'Spreadsheets' dropdown. You will need to click **Refresh** in order to load the Google Sheets that you shared with this connection (from the previous section).
-5. Once you've refreshed and loaded the Spreadsheets, you can select the Spreadsheet and Sheet tab you wish to sync from. 
+4. **Important:** If this is your first time connecting a Google Sheet, it won't show up under the 'Spreadsheets' dropdown. You will need to click **Refresh** in order to load the Google Sheets that you shared with this connection (from the previous section).
+5. Once you've refreshed and loaded the Spreadsheets, you can select the Spreadsheet and Sheet tab you wish to sync from.&#x20;
 
-![You have to click Refresh to load a newly shared Spreadsheet](../.gitbook/assets/refresh_google_sheets.png)
+![You have to click Refresh to load a newly shared Spreadsheet](../.gitbook/assets/refresh\_google\_sheets.png)
 
 For more detailed instructions on how to configure your sync, please read the docs page for the destination app you want to sync data to.
 
 ## 💡Notes
 
-* Since Google Sheets is not a database, **every sync will be a full sync**. 
+* Since Google Sheets is not a database, **every sync will be a full sync**.&#x20;
 * You cannot create SQL Models on Google Sheets data
 
 ## 🚑 Need help connecting to Google Sheets?

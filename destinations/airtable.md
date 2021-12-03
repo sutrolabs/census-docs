@@ -35,7 +35,7 @@ Note: Census's permissions will be the same as this Airtable user. If you think 
 ### 2. Add an Airtable Connection
 
 1. Now back to Census! Navigate to the [Connections page](https://app.getcensus.com/connections).
-2. Click the **Add Service **button.
+2. Click the **Add Service** button.
 3. Select **Airtable** from the list.\
    ![](../.gitbook/assets/screely-1629998477683.png)&#x20;
 4. Add your API key to the modal and give your connection a memorable name. Save once you've got both!\
@@ -55,7 +55,7 @@ If you don't already have a data warehouse connected, follow one of our short gu
 
 You should now have a connection to Airtable and to your data warehouse! Let's start syncing data.&#x20;
 
-### 4. Create your first Model <a href="3-create-your-first-model" id="3-create-your-first-model"></a>
+### 4. Create your first Model <a href="#3-create-your-first-model" id="3-create-your-first-model"></a>
 
 Now navigate to the [Model section of our Dashboard](https://app.getcensus.com/models).​‌
 
@@ -67,7 +67,7 @@ Here you will have to write SQL queries to select the data you want to see in Ai
 
 Once you have created your model, click **Save**.‌
 
-### 5. Create your first Sync <a href="4-create-your-first-sync" id="4-create-your-first-sync"></a>
+### 5. Create your first Sync <a href="#4-create-your-first-sync" id="4-create-your-first-sync"></a>
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button‌.
 
@@ -83,7 +83,7 @@ Next up is the **"Where do you want to sync data to?"** section‌
 
 For the " **How should changes to the source be synced?"** section‌
 
-* Select your preferred behavior. **Update only** is a great place to start if you have data in Airtable! **Update or Create **is great for sending data from the warehouse into Airtable.
+* Select your preferred behavior. **Update only** is a great place to start if you have data in Airtable! **Update or Create** is great for sending data from the warehouse into Airtable.
 * Pick the right mapping key, Airtable only allows a text type from their tables. We recommend you use your own unique id from the database if possible.
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section‌.
@@ -98,7 +98,7 @@ The end result should look something like this​:
 
 Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync‌.
 
-### 6. Confirm the data is in Airtable <a href="5-confirm-the-data-is-in-intercom" id="5-confirm-the-data-is-in-intercom"></a>
+### 6. Confirm the data is in Airtable <a href="#5-confirm-the-data-is-in-intercom" id="5-confirm-the-data-is-in-intercom"></a>
 
 Now go back to your Airtable and go view the table object that should have been updated. If everything went well, you should see your data in the table​
 

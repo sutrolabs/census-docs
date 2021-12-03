@@ -21,7 +21,7 @@ By default, all members of your team will receive all email notifications. You c
 
 ### Send emails notifications to aliases and mailing lists
 
-You can also send email notifications to any non-user email address such as an email alias or mailing list. Simply go to **Census** > **Settings **and add the desired email address under **Email notifications** > **Additional email addresses**
+You can also send email notifications to any non-user email address such as an email alias or mailing list. Simply go to **Census** > **Settings** and add the desired email address under **Email notifications** > **Additional email addresses**
 
 ### Slack notifications
 
@@ -31,7 +31,7 @@ You can send Slack alerts to your selected channels via Slack's channel email fe
 
 ![](../.gitbook/assets/get\_slack\_channel\_email.png)
 
-2\. Once you have the email address, go to **Census** > **Settings **and paste that channel's email address under **General** > **Slack Notifications**
+2\. Once you have the email address, go to **Census** > **Settings** and paste that channel's email address under **General** > **Slack Notifications**
 
 ![](<../.gitbook/assets/Screen Shot 2021-10-23 at 9.47.52 AM.png>)
 

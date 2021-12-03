@@ -32,17 +32,17 @@ Sign in to Salesforce Marketing Cloud and enter "Setup"
 
 Navigate to "Apps > Installed Packages". Click "New" to create a new package. Create an app called "Census" and provide an optional description, then click "Save"
 
-![](../.gitbook/assets/sfmc_step1.png)
+![](../.gitbook/assets/sfmc\_step1.png)
 
-![](../.gitbook/assets/sfmc_step2.png)
+![](../.gitbook/assets/sfmc\_step2.png)
 
 Click "Add Component" and choose "API Integration"
 
-![](../.gitbook/assets/sfmc_step3.png)
+![](../.gitbook/assets/sfmc\_step3.png)
 
 Choose "Server-to-Server" as the OAuth Integration Type
 
-![](../.gitbook/assets/sfmc_step4.png)
+![](../.gitbook/assets/sfmc\_step4.png)
 
 In "Set Server-to-Server Properties", given the new component the following permissions by checking the appropriate boxes:
 
@@ -54,7 +54,7 @@ In "Set Server-to-Server Properties", given the new component the following perm
 
 Click "Save" to continue. You should see a new Component in your package - verify that it has the correct permissions (in the Scope section) by comparing to the image below.
 
-![](../.gitbook/assets/sfmc_step5.png)
+![](../.gitbook/assets/sfmc\_step5.png)
 
 Copy the **Client Id**, **Client Secret**, and **Authentication Base URI** from this page - you will need to provide these values to Census in Step 3.
 
@@ -64,34 +64,34 @@ Census uses the ExactTarget Enhanced FTP server to upload large data files to yo
 
 Still in Salesforce Marketing Cloud Setup, navigate to "Data Management > FTP Accounts" and click "Add FTP User".
 
-![](../.gitbook/assets/sfmc_step6.png)
+![](../.gitbook/assets/sfmc\_step6.png)
 
 For the email address, type in "support@getcensus.com" and give the user a strong, random password. You do not need to write down or memorize this password - Census does not require it, and in step 4 we will replace it with an SSH key. Make sure to give the Census user "Full" access, and do not specify any IPs in the "Allowlist IPs" list. Click Next.
 
-![](../.gitbook/assets/sfmc_step7.png)
+![](../.gitbook/assets/sfmc\_step7.png)
 
 There's nothing to do yet on the next screen - we'll set up SSH Keys later. Click "Save" to create the user.
 
-![](../.gitbook/assets/sfmc_step8.png)
+![](../.gitbook/assets/sfmc\_step8.png)
 
-Salesforce Marketing Cloud will create the user, which may take a few seconds. Copy the** FTP Username** that was assigned to the user, which you'll need in Step 3.
+Salesforce Marketing Cloud will create the user, which may take a few seconds. Copy the **FTP Username** that was assigned to the user, which you'll need in Step 3.
 
 ### 3. Configure Census with Your Connection Information
 
 Go to [Census Connections](https://app.getcensus.com/connections), click "Add Service" and choose "Salesforce Marketing Cloud".
 
-![](../.gitbook/assets/sfmc_step9.png)
+![](../.gitbook/assets/sfmc\_step9.png)
 
 In the dialog, fill out the data you gathered in steps 2 and 3:
 
 * Name: A descriptive name of your choosing. If you have more than one Salesforce Marketing Cloud connection, you can use this field to help you keep track them
 * Endpoint URL: Fill in the **Authentication Base URI** from Step 2
-* Client ID and Client Secret: Fill in the **Client ID** and **Client Secret **from step 2
+* Client ID and Client Secret: Fill in the **Client ID** and **Client Secret** from step 2
 * SFTP User: Fill in the **FTP Username** from Step 3
 
 Click "Save Connection".
 
-![](../.gitbook/assets/sfmc_step10.png)
+![](../.gitbook/assets/sfmc\_step10.png)
 
 Census will show your new Salesforce Marketing Cloud connection in its connections list
 
@@ -101,7 +101,7 @@ The final step is to configure Marketing Cloud to accept Census's SSH public key
 
 Return to Salesforce Marketing Cloud Setup and navigate to "Data Management" > "Key Management". Click "Create".
 
-![](../.gitbook/assets/sfmc_step11.png)
+![](../.gitbook/assets/sfmc\_step11.png)
 
 * For "Key Type", choose "SSH"
 * For "Name", type "Census Public Key"
@@ -112,13 +112,13 @@ Return to Salesforce Marketing Cloud Setup and navigate to "Data Management" > "
 
 Now we'll associate the key with the Census user. Navigate to "Data Management" > "FTP Accounts". Choose the "support@getcensus.com" user and click the small arrow next to their name (you may need to scroll to the right. Choose "SSH Keys" from the drop-down menu.
 
-![](../.gitbook/assets/sfmc_step12.png)
+![](../.gitbook/assets/sfmc\_step12.png)
 
-![](../.gitbook/assets/sfmc_step13.png)
+![](../.gitbook/assets/sfmc\_step13.png)
 
 Click in the "Search SSH Keys" box and find "Census Public Key" and select it. Change the "Authentication Options" to "SSH Key" and click "Save". In a few seconds, Salesforce Marketing Cloud will finish configuring the SSH key (you can click the refresh icon at the top right to see the activity log go from "Pending" to "Success".
 
-![](../.gitbook/assets/sfmc_step14.png)
+![](../.gitbook/assets/sfmc\_step14.png)
 
 ### 5. Starting syncing
 

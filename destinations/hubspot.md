@@ -26,7 +26,7 @@ In this guide, we will show you how to connect HubSpot to Census and create your
 ### 1. Connect HubSpot
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service **button
+* Click the **Add Service** button
 * Select HubSpot in the dropdown list
 
 ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f655f71cff47e00168f867d/file-hdCReSrdwJ.png)
@@ -59,7 +59,7 @@ Here you will have to write SQL queries to select the data you want to see in Hu
 * The date they became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save. 
+Once you have created your model, click save.&#x20;
 
 ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -67,17 +67,17 @@ Once you have created your model, click save.
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the " **What data do you want to sync?" **section
+In the " **What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,  **select the model you created in step 3
+* For the **Source,**  select the model you created in step 3
 
 Next up is the **"Where do you want to sync data to?"** section
 
 * Pick HubSpot as **the Connection**
 * For Object, pick the one you want to sync data to; Contact or Company.
 
-For the " **How should changes to the source be synced?"** section 
+For the " **How should changes to the source be synced?"** section&#x20;
 
 * Select **Update Only**
 * Pick the right mapping key, it could be Email for Contacts, Domain for Companies but we recommend you use your own internal id if possible
@@ -90,7 +90,7 @@ The end result should look something like this
 
 ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f656a5c4cedfd00173b9a55/file-iowohMcQax.png)
 
-Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync
+Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
 
 ### 5. Confirm the data is in HubSpot
 
@@ -102,7 +102,7 @@ that's it, in 5 steps, you connect Census to HubSpot and started syncing custome
 
 ## 🏎 Sync Speed
 
-With HubSpot, you have both a rate limit and a daily api call limit that is tied to the plan you have. [See HubSpot documentation here](https://legacydocs.hubspot.com/apps/api_guidelines). HubSpot doesn't have the concept of bulk API so every call is roughly a record being sync.
+With HubSpot, you have both a rate limit and a daily api call limit that is tied to the plan you have. [See HubSpot documentation here](https://legacydocs.hubspot.com/apps/api\_guidelines). HubSpot doesn't have the concept of bulk API so every call is roughly a record being sync.
 
 | **Service**                 | Public API rate limit | **Records sync / Minute** |
 | --------------------------- | --------------------- | ------------------------- |
@@ -132,7 +132,7 @@ Please be aware that with custom object, we need to do extra call due to the lim
 If possible when doing Update Only syncs, use HubSpot Object IDs as your Sync Identifier. Using them will provide a dramatic sync performance boost!
 {% endhint %}
 
-* As of March 2021, only properties in the searchableProperties set are usable as sync identifiers to HubSpot Custom Objects. This is a bit confusing as this label only appears in the HubSpot API ([Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Definitions Tab > searchableProperties). If you need a hand making one of your existing Custom Object fields as searchable, please contact Census's API Support team and we can walk you through it. 
+* As of March 2021, only properties in the searchableProperties set are usable as sync identifiers to HubSpot Custom Objects. This is a bit confusing as this label only appears in the HubSpot API ([Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Definitions Tab > searchableProperties). If you need a hand making one of your existing Custom Object fields as searchable, please contact Census's API Support team and we can walk you through it.&#x20;
 
 ## 🔄 Supported Sync Behaviors
 

@@ -74,7 +74,7 @@ Make sure you have an [identifier for Gainsight](gainsight.md#supported-objects)
 
 Once you have created your model, click **Save**.‌
 
-### Step 4: Create your first Sync <a href="4-create-your-first-sync" id="4-create-your-first-sync"></a>
+### Step 4: Create your first Sync <a href="#4-create-your-first-sync" id="4-create-your-first-sync"></a>
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button‌.
 
@@ -90,7 +90,7 @@ Next up is the **"Where do you want to sync data to?"** section‌
 
 For the " **How should changes to the source be synced?"** section‌
 
-* Select your preferred behavior. **Update only** is a great place to start if the object already exists in Gainsight. **Update or Create **is great for sending data from the warehouse into Gainsight that might not already be there (like all users from your warehouse to the Gainsight Person object).
+* Select your preferred behavior. **Update only** is a great place to start if the object already exists in Gainsight. **Update or Create** is great for sending data from the warehouse into Gainsight that might not already be there (like all users from your warehouse to the Gainsight Person object).
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section‌.
 

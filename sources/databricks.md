@@ -12,7 +12,7 @@ description: >-
 
 1\. Visit the **Connections** section on Census, and press **Add Data Warehouse Connection**, selecting **Databricks** from the list.
 
-2\. Enter the **hostname, port, and HTTP Path** for your cluster. These can be found in the Databricks UI under **Clusters** →** \[Your Cluster]** → **Advanced Options**_ _→_ _**JDBC/ODBC. **The [Databricks documentation](https://docs.databricks.com/integrations/bi/jdbc-odbc-bi.html#workspace-cluster) covers this in more detail.
+2\. Enter the **hostname, port, and HTTP Path** for your cluster. These can be found in the Databricks UI under **Clusters** → **\[Your Cluster]** → **Advanced Options** __ → __ **JDBC/ODBC.** The [Databricks documentation](https://docs.databricks.com/integrations/bi/jdbc-odbc-bi.html#workspace-cluster) covers this in more detail.
 
 ![](../.gitbook/assets/screely-1619627622845.png)
 
@@ -21,7 +21,7 @@ description: >-
 
 ![](../.gitbook/assets/screely-1619628186696.png)
 
-4\. Add the following configuration parameters to your cluster. This can be done under **Clusters** →** \[Your Cluster]** → **Advanced Options**_ → _**Spark.**
+4\. Add the following configuration parameters to your cluster. This can be done under **Clusters** → **\[Your Cluster]** → **Advanced Options** _→_ **Spark.**
 
 ```
 spark.hadoop.fs.s3n.impl.disable.cache true

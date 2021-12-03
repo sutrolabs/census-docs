@@ -34,7 +34,7 @@ Census uses your Vitally API key to send data. Before we can connect Census to V
 ### 2. Connect Vitally
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service **button
+* Click the **Add Service** button
 * Select **Vitally** in the list
 * Paste your API Key into the **API Token** field
 * Optionally name your new connection and then click **Save**
@@ -52,7 +52,7 @@ Census uses your Vitally API key to send data. Before we can connect Census to V
 |           Event |       🔜       |                 |               |
 |             NPS |       🔜       |                 |               |
 
-Vitally defines User ID and Account ID as the unique ID for these objects in your system. You are free to use whatever ID you like, but it needs to be unique. 
+Vitally defines User ID and Account ID as the unique ID for these objects in your system. You are free to use whatever ID you like, but it needs to be unique.&#x20;
 
 ### User Behavior Notes
 

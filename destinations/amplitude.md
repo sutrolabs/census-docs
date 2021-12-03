@@ -34,11 +34,11 @@ Amplitude lets you pull data from a number of different sources, including via H
 1.  Within Amplitude’s left navigation bar, scroll down to the very bottom. **Click on Sources & Destinations.**\
 
 
-    ![](https://lh6.googleusercontent.com/IldQDvHh30Q3BQTJI1tAjTdnYaoLgkALhEYU9wpXfMAbmPe0Qu8eUavNYVzRNGT3Chjpr_G-SODK6pRQluXA44WkdKpjUESz8lItwWdkWUVGE60gJfLHJdFrnEd8lJwdiD_nvvph)
+    ![](https://lh6.googleusercontent.com/IldQDvHh30Q3BQTJI1tAjTdnYaoLgkALhEYU9wpXfMAbmPe0Qu8eUavNYVzRNGT3Chjpr\_G-SODK6pRQluXA44WkdKpjUESz8lItwWdkWUVGE60gJfLHJdFrnEd8lJwdiD\_nvvph)
 2. ‌Once here, navigate to the top-right of the screen and click to **Add Data Source**.\
-   ****![](https://lh3.googleusercontent.com/Xt-bGTekukUBgNGE-d805HzLvnODAgkuC7JCO_uiW\_3gpE7-oFBID3fgEjkHfRkdlyXtEGG_wubzXWH8EBss8sJ-Ce_i9CGAnD5oy-L9F1rvn9YyQlcsxzY4ms5K8guaGWru4MlL)
-3. Select **“HTTP API”** as the type of data source, and click **Next**.![](https://lh6.googleusercontent.com/3oT5uRNYeOJCVX6v9h7I4zwmp0P6z2H0NTocMnaOTwauCi01GFLjVZNYdjoYLK_AxvmMVIxK-Ec8o9xDZGExO9YYlh-T2i055heRbi-VWU5B-0MsR1bDXwfOEaIkAmIr5jIokemj)
-4. **Copy the API Key** (it will be a long string of numbers and characters), click **Next. **
+   ****![](https://lh3.googleusercontent.com/Xt-bGTekukUBgNGE-d805HzLvnODAgkuC7JCO\_uiW\_3gpE7-oFBID3fgEjkHfRkdlyXtEGG\_wubzXWH8EBss8sJ-Ce\_i9CGAnD5oy-L9F1rvn9YyQlcsxzY4ms5K8guaGWru4MlL)
+3. Select **“HTTP API”** as the type of data source, and click **Next**.![](https://lh6.googleusercontent.com/3oT5uRNYeOJCVX6v9h7I4zwmp0P6z2H0NTocMnaOTwauCi01GFLjVZNYdjoYLK\_AxvmMVIxK-Ec8o9xDZGExO9YYlh-T2i055heRbi-VWU5B-0MsR1bDXwfOEaIkAmIr5jIokemj)
+4. **Copy the API Key** (it will be a long string of numbers and characters), click **Next.**&#x20;
 5. If you are setting up the HTTP API data source for the first time, Amplitude will require you to POST an event to their API to complete set-up. Amplitude provides instructions to send a sample event and complete set-up at this stage.
 6. When the event is received by Amplitude, click **Finish** to finish setting up this source within Amplitude.
 
@@ -47,7 +47,7 @@ Amplitude lets you pull data from a number of different sources, including via H
 Now that we have the API Key from Amplitude, we can now set up Amplitude as a Destination in Census.
 
 1. In the **Settings** tab of Census, create a new Amplitude Service Connection.\
-   ****![](https://lh5.googleusercontent.com/TYNs2uji9P65wu4JR-3bU3k\_0svIJ7dAdaS9I25gzHHY0U-kxlQ6twBRFPIwrUzsNGOnamNJT-8ygYqnyPsuGW51k2EGWhghMJGpur6Ewde5Rw5xaoevAyr6\_CkUSZ_OiY-58b7D)
+   ****![](https://lh5.googleusercontent.com/TYNs2uji9P65wu4JR-3bU3k\_0svIJ7dAdaS9I25gzHHY0U-kxlQ6twBRFPIwrUzsNGOnamNJT-8ygYqnyPsuGW51k2EGWhghMJGpur6Ewde5Rw5xaoevAyr6\_CkUSZ\_OiY-58b7D)
 2. You can provide whatever name you like.
 3. Provide the copied API Key from Amplitude.
 4. Save.
@@ -63,7 +63,7 @@ Here you will have to write SQL queries to select the data you want to see in Am
 * The date a user became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save. 
+Once you have created your model, click save.&#x20;
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -81,7 +81,7 @@ Next up is the "Where do you want to sync data to?" section.
 * Pick the Amplitude connection you created in step 3.
 * For Object, Select Device or User. If Devices can be associated with Users, then select Device. If no Device information is collected, select User.
 
-For the "How should changes to the source be synced?" section. 
+For the "How should changes to the source be synced?" section.&#x20;
 
 * Select Update Or Create
 * Pick the right mapping key; Amplitude only supports Distinct ID.
@@ -101,7 +101,7 @@ Click the Next button to see the final preview, which will have a recap of what 
 | Groups      |      ✅     | Group Value |
 | Events      |      ✅     | Insert ID   |
 
-Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User. 
+Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User.&#x20;
 
 🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
 

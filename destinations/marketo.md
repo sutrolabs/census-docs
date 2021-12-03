@@ -29,9 +29,9 @@ Before setting up API credentials for Census, you'll first need a Marketo Role w
 
 None of the default Marketo Roles have API access so if this is your first API integration, you'll first need to create an API access role. [Marketo's documentation walks through creating a new API Access role](https://developers.marketo.com/rest-api/custom-services/) as well as your first user.
 
-Whether you're using an existing role or creating a new one, please make sure it has at least the following permissions:** Read-Write People** and **Read-Write Named Accounts**. To use Custom Objects, we'll also need **Read-Write Custom Object** and **Read-Write Custom Object Type**.
+Whether you're using an existing role or creating a new one, please make sure it has at least the following permissions: **Read-Write People** and **Read-Write Named Accounts**. To use Custom Objects, we'll also need **Read-Write Custom Object** and **Read-Write Custom Object Type**.
 
-You can view/edit role permissions in **Admin, Users & Roles**, then clicking the** Roles **tab.
+You can view/edit role permissions in **Admin, Users & Roles**, then clicking the **Roles** tab.
 
 #### API Only User
 

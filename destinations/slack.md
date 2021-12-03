@@ -55,7 +55,7 @@ Once you have created your model, give it a useful name, and click **Save Model*
 
 ## 4️⃣ Create your first Census sync
 
-Navigate to the **Syncs** page in Census and click the **Add Sync **button.
+Navigate to the **Syncs** page in Census and click the **Add Sync** button.
 
 Follow the instructions below as you go through each section:
 
@@ -100,11 +100,11 @@ Note, **Append** is the only option available for Slack, so it will be automatic
 
 ### 📄 Would you like to test your sync?
 
-* Click the **Run Test **button to test whether your sync successfully sends a single record from your data source to Slack.
+* Click the **Run Test** button to test whether your sync successfully sends a single record from your data source to Slack.
 
 ### ☑️ Finishing touches
 
-* Click the **Next** button to see the final preview of the sync settings. If you selected **Skip Current Records **in the **Should existing data be synced? **section, it should look something like this:
+* Click the **Next** button to see the final preview of the sync settings. If you selected **Skip Current Records** in the **Should existing data be synced?** section, it should look something like this:
 
 ![](../.gitbook/assets/screen-shot-2021-09-13-at-12.52.53-pm.png)
 

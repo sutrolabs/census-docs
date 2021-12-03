@@ -29,7 +29,7 @@ Before you begin, you'll need the following:
 2. Click **Add Service**.
 3. Select **SFTP** from the dropdown list.
 4. Enter a **Name** for your destination. This is only for your reference – it can be anything that makes sense to you.
-5. Enter authentication details for your SFTP server. **Host **and **Username** are always required. If your server requires a password instead of an SSH key, enter the **Password**. If your server uses SSH keys, you can leave the **Password** blank.&#x20;
+5. Enter authentication details for your SFTP server. **Host** and **Username** are always required. If your server requires a password instead of an SSH key, enter the **Password**. If your server uses SSH keys, you can leave the **Password** blank.&#x20;
 6. Click **Save Connection**.
 7. Census will automatically test the connection. If your server doesn't use a password, this initial test fails and you'll see the following error: `SFTP_SSH_KEY_PERMISSION_ERROR`. To resolve this, download the **SFTP Public Key** from this screen and upload it to your server. Then, click **Test** to verify that the connection works.
 
@@ -71,9 +71,9 @@ The sync will move data from your warehouse to a new or existing CSV file on you
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose the name you assigned in Step 1 (we used **SFTP**) as the **Connection**. Enter the **File Path** for the CSV file where data will sync. The path can accept variables that will populate when the sync runs. See [File Path Variables](sftp.md#file-path-variables). Confirm the file path in the **Template Preview** field.
-4. Under **How should changes to the source be synced?**, **Mirror **will be automatically selected. This is the only supported sync behavior for SFTP.
+4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for SFTP.
 5. Under **Which properties should be updated?**, choose whether to sync only **Selected Properties** or **Sync All Properties**. Syncing all properties will add new properties to the sync if the model changes.
-6. To test your sync without actually syncing data, click **Run Test **and verify the results.
+6. To test your sync without actually syncing data, click **Run Test** and verify the results.
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
 9. Click **Create Sync**.

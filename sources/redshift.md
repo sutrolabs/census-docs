@@ -56,8 +56,8 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO
 
 dbt (data build tool) often requires permissions to be re-granted on objects after it rebuilds models. Census customers frequently extend permissions management on their dbt models in two ways:
 
-1. ** Fine-grained permissions** – By adding [post-hooks](https://docs.getdbt.com/reference/resource-configs/pre-hook-post-hook#grant-privileges-on-a-directory-of-models) in a dbt project, Census customers immediately grant access to the Census database user after each desired model builds.
-2. **Access to all dbt tables and views (Recommended)** – Census customers change the default permissions of the database user for their production dbt runs so that any tables and views created by that users are accessible to the Census database user. In this case, we extend the `ALTER DEFAULT PRIVILEGES` to specifically indicate the defaults of the dbt production run user. 
+1. &#x20;**Fine-grained permissions** – By adding [post-hooks](https://docs.getdbt.com/reference/resource-configs/pre-hook-post-hook#grant-privileges-on-a-directory-of-models) in a dbt project, Census customers immediately grant access to the Census database user after each desired model builds.
+2. **Access to all dbt tables and views (Recommended)** – Census customers change the default permissions of the database user for their production dbt runs so that any tables and views created by that users are accessible to the Census database user. In this case, we extend the `ALTER DEFAULT PRIVILEGES` to specifically indicate the defaults of the dbt production run user.&#x20;
 
 ```
 ALTER DEFAULT PRIVILEGES FOR USER "<your dbt run user> IN SCHEMA "<your dbt target schema>" GRANT SELECT ON TABLES TO CENSUS;
@@ -68,12 +68,12 @@ Because this is altering the default behavior of another user, this command must
 ## 💡 Notes
 
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
-* In Redshift if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata. 
+* In Redshift if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata.&#x20;
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 
 ## 🔑 Encryption
 
-All connections from the Census Data Warehouse Service to your database, as well as connections from your Redshift database to S3, are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). 
+All connections from the Census Data Warehouse Service to your database, as well as connections from your Redshift database to S3, are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE).&#x20;
 
 ## 🚦 Allowed IP Addresses
 
@@ -95,15 +95,15 @@ Census optionally allows connecting to Redshift that are only accessible on priv
 1. Create a new user account for Census on the SSH host. (This account is separate from the database user account and can have a different username.)
 2. On the Census connections page, create a new connection to Redshift enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below.  Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
 
-![](../.gitbook/assets/redshift_pg\_1.png)
+![](../.gitbook/assets/redshift\_pg\_1.png)
 
-3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page. 
+3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page.&#x20;
 
 To install the kepair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step.  If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
 
 Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
 
-![](../.gitbook/assets/redshift_pg\_2.png)
+![](../.gitbook/assets/redshift\_pg\_2.png)
 
 4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allow list.
 

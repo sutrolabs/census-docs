@@ -36,7 +36,7 @@ Google Ads Offline Click and Call Conversions require a specific set of properti
 
 * The **Google Click ID** (also often known as the `gclid`)
 * The **Conversion Name**, spelled exactly as it is found in Google Ads
-* The **Conversion Timestamp**,_ _with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
+* The **Conversion Timestamp**, __ with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
 
 Optional properties include:
 
@@ -50,20 +50,20 @@ Once you have created your model, click save.
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
-In the "**What data do you want to sync?" **section
+In the "**What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in the Prerequisites Step 2
-* For the **Source, **select the model you created in step 2 of this section
+* For the **Source,** select the model you created in step 2 of this section
 
 Next up is the **"Where do you want to sync data to?"** section
 
 * Pick **Google Ads** as the Connection
-* For Object, pick **Click Conversion **or **Call Conversion**
+* For Object, pick **Click Conversion** or **Call Conversion**
 
 For the "**How should changes to the source be synced?"** section&#x20;
 
 * **Append** will be selected by default
-* Pick the right mapping key, the **Google Click ID **in your model
+* Pick the right mapping key, the **Google Click ID** in your model
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the fields from your model to the properties of the Click or Call Conversion.&#x20;
 
@@ -71,7 +71,7 @@ The end result should look something like this:
 
 ![](<../../.gitbook/assets/screely-1631098088943 (1).png>)
 
-Click the **Next **button to see the final preview which will have a recap of what will happen when you start the sync.
+Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync.
 
 ### 4. Confirm the conversions are now in Google Ads
 

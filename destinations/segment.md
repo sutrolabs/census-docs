@@ -65,7 +65,7 @@ If you don't already have a data warehouse connected, follow one of our short gu
 
 You should now have a connection to Segment and to your data warehouse! Let's start syncing user data.&#x20;
 
-### 3. Create your first Model <a href="3-create-your-first-model" id="3-create-your-first-model"></a>
+### 3. Create your first Model <a href="#3-create-your-first-model" id="3-create-your-first-model"></a>
 
 Now navigate to the [Model section of our Dashboard](https://app.getcensus.com/models).​‌
 
@@ -75,7 +75,7 @@ Here you will have to write SQL queries to select the data you want to join to a
 * User with the organization they are associated to
 * User with the classification coming from a User Classification model
 
-### 4. Create your first Sync <a href="4-create-your-first-sync" id="4-create-your-first-sync"></a>
+### 4. Create your first Sync <a href="#4-create-your-first-sync" id="4-create-your-first-sync"></a>
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button‌.
 
@@ -90,7 +90,7 @@ Next up is the **"Where do you want to sync data to?"** section‌
 
 For the " **How should changes to the source be synced?"** section‌
 
-* **Update or Create **will be preselected as it is [supported](segment.md#supported-sync-behaviors)
+* **Update or Create** will be preselected as it is [supported](segment.md#supported-sync-behaviors)
 * Pick the right mapping key, we can sync based on userId from the Segment Identify call or to the device: AnonymousId
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section‌.
