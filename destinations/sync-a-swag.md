@@ -1,12 +1,16 @@
-# Sync-a-Swag
+---
+description: >-
+  In this guide, you’ll learn the necessary steps to complete sync-a-swag. Each
+  step has a companion video to assist you.
+---
+
+# Sync-a-swag
 
 Census sends custom fields (contact info, swag preferences) from a data warehouse to a marketing automation platform to automatically send swag to your doorstep. This is a hands-on, simple way to understand the functionality and benefits of Census.
 
 {% embed url="https://youtu.be/tazOopdMUm8" %}
 
 ## 🏃‍♀️ Getting Started
-
-In this guide, you’ll learn the necessary steps to complete sync-a-swag. Each step has a companion video to assist you.
 
 ### Prerequisites
 
@@ -20,7 +24,7 @@ Navigate to the [**Census quickstart page**](https://app.getcensus.com/quickstar
 
 {% embed url="https://youtu.be/YbpxSVZ4O9c" %}
 
-Next, you’ll see Census’s modeling feature where you can write SQL to create a model from the source we set up for you.
+Next, you’ll see Census’s modeling feature where you can write SQL to create a model (see below) from the source we set up for you.
 
 ## Create a model
 
@@ -44,7 +48,7 @@ Next, **create a sync** to send the Sync-a-Swag Entry Form model from the Redshi
 
 Update the following sections on the **sync page**:
 
-1. Click **syncs** on the navigation menu on the left hand side of your screen. Next, click **add** **sync** on the top right of your screen. These steps allow you to start a new sync
+1. Click **syncs** on the navigation menu on the left hand side of your screen. Next, click **add** **sync** on the top right of your screen. These steps allow you to start a new sync.
 2. Choose the data that you want to sync.
    * **Select the warehouse and modeled data you want to sync:**
      * **Connection:** Redshift - tf-redshift-demo-cluster
@@ -52,7 +56,7 @@ Update the following sections on the **sync page**:
 
 ![](<../.gitbook/assets/sync-a-swag step 3.gif>)
 
-3\. Choose where you want to sync data to
+3\. Choose where you want to sync data to.
 
 * **Select the warehouse and modeled data you want to sync:**
   * **Connection:** Sync-a-Swag
@@ -61,7 +65,7 @@ Update the following sections on the **sync page**:
 4\. Indicate how sources and destination records are matched.
 
 * Syncs require you to **match the source and destination with a unique identifier.**
-  * On the left hand side, **select ‘email’ as the identifier** for the “Sync-a-Swag Entry Form”.
+  * On the left-hand side, **select ‘email’ as the identifier** for the “Sync-a-Swag Entry Form”.
 
 ![](<../.gitbook/assets/sync-a-swag step 3.1.gif>)
 
