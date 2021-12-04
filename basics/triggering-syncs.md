@@ -111,7 +111,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[SYNC_RUN_ID]
 Heads up: Unlike Airflow 2, Airflow 1 doesn't show any non-"core" providers (i.e. Census!) in the connections UI. If you're using Airflow 1, Census should be configured as an "HTTP" Conn Type, [as documented here](https://github.com/sutrolabs/airflow-provider-census#configuration-in-airflow-110).
 {% endhint %}
 
-Whether you're using [Astronomer](https://astronomer.io) or self-hosting your own instance, you can use Census's   Airflow Provider to trigger and monitor Census syncs.
+Whether you're using [Astronomer](https://astronomer.io) or self-hosting your own instance, you can use Census' Airflow Provider to trigger and monitor Census syncs.
 
 Visit the [Census Airflow Provider GitHub repository](https://github.com/sutrolabs/airflow-provider-census) for more details on how to use it for your project.&#x20;
 
@@ -119,5 +119,5 @@ Visit the [Census Airflow Provider GitHub repository](https://github.com/sutrola
 
 If you're using dbt Cloud to run your dbt project, you can configure Census to automatically run syncs whenever your models have been rebuilt.&#x20;
 
-Read more to learn how to [configure Census's dbt Cloud integration](native-dbt-integration.md#setting-it-up).
+Read more to learn how to [configure Census' dbt Cloud integration](native-dbt-integration.md#setting-it-up).
 

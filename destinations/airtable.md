@@ -30,7 +30,7 @@ In this guide, we will show you how to connect Airtable to Census and create you
 2. Scroll to the **API** section. If this is your first time using the API, you'll need to create an API key. Once created, click the box and copy the API key. You'll need that in a minute. \
    &#x20;![](../.gitbook/assets/screely-1629998745164.png)&#x20;
 
-Note: Census's permissions will be the same as this Airtable user. If you think this Airtable user's permissions may change or the account is removed, you may want to create a special Airtable account just for Census to use.
+Note: Census' permissions will be the same as this Airtable user. If you think this Airtable user's permissions may change or the account is removed, you may want to create a special Airtable account just for Census to use.
 
 ### 2. Add an Airtable Connection
 

@@ -97,7 +97,7 @@ As an example, valid JSON for a field named "subscription" could have the follow
 }
 ```
 
-We recommend testing your JSON fields in Redshift by using Redshift's [`IS_VALID_JSON`](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON.html) and [`IS_VALID_JSON_ARRAY`](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON_ARRAY.html) functions, especially before creating new fields in Iterable via Census's field mapper.
+We recommend testing your JSON fields in Redshift by using Redshift's [`IS_VALID_JSON`](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON.html) and [`IS_VALID_JSON_ARRAY`](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON_ARRAY.html) functions, especially before creating new fields in Iterable via Census' field mapper.
 
 ### Syncing to Catalogs
 

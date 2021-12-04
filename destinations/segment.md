@@ -46,7 +46,7 @@ In this guide, we will show you how to connect Segment to Census and create your
 
 ![Don't worry if the credential here is different!](<../.gitbook/assets/Screen Shot 2021-11-12 at 11.16.53 AM.png>)
 
-Note: Census's permissions will be the same as this Segment token.
+Note: Census' permissions will be the same as this Segment token.
 
 
 

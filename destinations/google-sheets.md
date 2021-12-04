@@ -57,7 +57,7 @@ After setting up your warehouse, your Census Connections Page should look like t
 
 ### 4. Create your first Model
 
-Now navigate to the [Census's models page.](https://app.getcensus.com/models)
+Now navigate to the [Census' models page.](https://app.getcensus.com/models)
 
 Here you will have to write SQL queries to select the data you want to send to your Google Sheet. Your model can be a complex query selecting details about customers and generating metrics, or as simple as a `SELECT * FROM ...`, it's up to you. Once you have created your model, click **Save Model**.&#x20;
 

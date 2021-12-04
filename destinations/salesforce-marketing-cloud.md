@@ -95,9 +95,9 @@ Click "Save Connection".
 
 Census will show your new Salesforce Marketing Cloud connection in its connections list
 
-### 4. Upload Census's SSH Public Key to Marketing Cloud
+### 4. Upload Census' SSH Public Key to Marketing Cloud
 
-The final step is to configure Marketing Cloud to accept Census's SSH public key for FTP access, instead of using a password. Still in Census, click the button labeled "Click to Download" next to the "SFTP Public Key". This will download a file called "census.pub" to your computer - make a note of where it was saved.
+The final step is to configure Marketing Cloud to accept Census' SSH public key for FTP access, instead of using a password. Still in Census, click the button labeled "Click to Download" next to the "SFTP Public Key". This will download a file called "census.pub" to your computer - make a note of where it was saved.
 
 Return to Salesforce Marketing Cloud Setup and navigate to "Data Management" > "Key Management". Click "Create".
 
