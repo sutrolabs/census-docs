@@ -119,5 +119,5 @@ Visit the [Census Airflow Provider GitHub repository](https://github.com/sutrola
 
 If you're using dbt Cloud to run your dbt project, you can configure Census to automatically run syncs whenever your models have been rebuilt.&#x20;
 
-Read more to learn how to [configure Cenus's dbt Cloud integration](native-dbt-integration.md#setting-it-up).
+Read more to learn how to [configure Census's dbt Cloud integration](native-dbt-integration.md#setting-it-up).
 
