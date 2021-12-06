@@ -8,7 +8,7 @@ description: >-
 
 Census sends custom fields (contact info, swag preferences) from a data warehouse to a marketing automation platform to automatically send swag to your doorstep. This is a hands-on, simple way to understand the functionality and benefits of Census.
 
-{% embed url="https://youtu.be/tazOopdMUm8" %}
+{% embed url="https://youtu.be/S_J6ExHAA5Y" %}
 
 ## 🏃‍♀️ Getting Started
 
