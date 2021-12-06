@@ -10,6 +10,8 @@ Census sends custom fields (contact info, swag preferences) from a data warehous
 
 {% embed url="https://youtu.be/S_J6ExHAA5Y" %}
 
+{% embed url="https://youtu.be/S_J6ExHAA5Y" %}
+
 ## 🏃‍♀️ Getting Started
 
 ### Prerequisites
@@ -40,7 +42,7 @@ Follow these steps to **create a model** called Sync-a-Swag Entry Form:
 
 3\. Click **save model**.
 
-{% embed url="https://youtu.be/vzaYVrrtBRM" %}
+{% embed url="https://youtu.be/lNh-CfjxIJQ" %}
 
 ## Create a sync
 
@@ -77,7 +79,7 @@ Update the following sections on the **sync page**:
 
 8\. You’ll see a quick confirmation that your sync was successful. 🎉
 
-{% embed url="https://youtu.be/8muLfM5DwLI" %}
+{% embed url="https://youtu.be/KJqE5d1IRak" %}
 
 ## **🚑** Need help with Sync-a-Swag?
 
