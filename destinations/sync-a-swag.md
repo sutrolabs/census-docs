@@ -10,8 +10,6 @@ Census sends custom fields (contact info, swag preferences) from a data warehous
 
 {% embed url="https://youtu.be/S_J6ExHAA5Y" %}
 
-{% embed url="https://youtu.be/S_J6ExHAA5Y" %}
-
 ## 🏃‍♀️ Getting Started
 
 ### Prerequisites
