@@ -12,7 +12,7 @@ description: This page describes how to use Census with ActiveCampaign.
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your ActiveCampaign account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -47,7 +47,7 @@ description: This page describes how to use Census with ActiveCampaign.
 Please follow one of our short guides depending on your data warehouse technology
 
 * [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)    
+* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)   &#x20;
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
@@ -71,11 +71,11 @@ Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add
 In the " **What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,** select the model you created in step 3 
+* For the **Source,** select the model you created in step 3&#x20;
 
 Next up is the **"Where do you want to sync data to?"** section
 
-* Pick ActiveCampaign as **the Connection** 
+* Pick ActiveCampaign as **the Connection**&#x20;
 * For Object, pick the one you want to sync data to; Contact or Account.
 
 For the " **How should changes to the source be synced?"** section
@@ -95,7 +95,7 @@ Click the **Next** button to see the final preview which will have a recap of wh
 
 ### 6. Confirm the data is in ActiveCampaign
 
-Now go back to your ActiveCampaign and go view a record type \(Contact or Account\) that should have been updated. If everything went well, you should see your data in ActiveCampaign.
+Now go back to your ActiveCampaign and go view a record type (Contact or Account) that should have been updated. If everything went well, you should see your data in ActiveCampaign.
 
 ![](../.gitbook/assets/screely-1617904230319.png)
 
@@ -109,13 +109,13 @@ Due to limitations of the ActiveCampaign API, Account records will sync signific
 
 ## 🗄 Supported Objects
 
-| Object Name | Supported? | Identifiers |
-| :--- | :---: | :--- |
-| Contact | ✅ | Email |
-| Account | ✅ | Account Name |
-| Campaigns | 🔜 |  |
-| Deals | 🔜 |  |
-| Lists | 🔜 |  |
+| Object Name | Supported? | Identifiers  |
+| ----------- | :--------: | ------------ |
+| Contact     |      ✅     | Email        |
+| Account     |      ✅     | Account Name |
+| Campaigns   |     🔜     |              |
+| Deals       |     🔜     |              |
+| Lists       |     🔜     |              |
 
 ## 🔄 Supported Sync Behaviors
 
@@ -123,18 +123,17 @@ Due to limitations of the ActiveCampaign API, Account records will sync signific
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Update Only** | 🔜 |  |
+|        **Behaviors** | **Supported?** | **Objects?** |
+| -------------------: | :------------: | :----------: |
+| **Update or Create** |        ✅       |      All     |
+|      **Update Only** |        ✅       |    Contact   |
 
 ## 🆘 Common Errors
 
 Sometimes error messages can be a little cryptic. Here's some ActiveCampaign errors that pop up on occasion and what they mean.
 
-* `Row skipped - It is on exclusion list` The record you're attempting to update appears on your ActiveCampaign instance's [Exclusion List](https://help.activecampaign.com/hc/en-us/articles/207362110-How-to-add-contacts-to-the-Exclusion-List) and can't be updated. 
+* `Row skipped - It is on exclusion list` The record you're attempting to update appears on your ActiveCampaign instance's [Exclusion List](https://help.activecampaign.com/hc/en-us/articles/207362110-How-to-add-contacts-to-the-Exclusion-List) and can't be updated.&#x20;
 
 ## 🚑 Need help connecting to ActiveCampaign?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-
