@@ -35,6 +35,12 @@ Finally, Salesforce currently requires that the user account have the "View Setu
 
 ![](../.gitbook/assets/sfdc\_setup1.png)
 
+{% hint style="info" %}
+**Require a connection via an API-Only user?**
+
+If you have an API-Only Salesforce user that is unable to log into the Salesforce UI, please [contact us](mailto:support@getcensus.com) via support@getcensus.com. We'd be happy to set up this connection with you.
+{% endhint %}
+
 ### Using a Salesforce Sandbox
 
 Census supports Salesforce Sandbox instances as well. Note that Sandboxes have their own set of user accounts and you may need to create a new account for Census to replicate permissions. Any time a sandbox is refreshed from production, the account will need to be recreated and the Census link re-authorized.
