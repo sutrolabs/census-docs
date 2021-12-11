@@ -13,6 +13,11 @@
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
 
+## Segments
+
+* [Overview](segments/overview.md)
+* [Getting started](segments/getting-started.md)
+
 ## ⤵️ Data Sources <a href="#sources" id="sources"></a>
 
 * [Databricks](sources/databricks.md)
