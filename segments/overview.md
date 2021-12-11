@@ -2,7 +2,7 @@
 
 Census Segments lets you visually build dynamic lists of users using attributes from your models, without needing to specify SQL. This is useful to create marketing segments or audiences for Ad platforms. You can then sync those segments to any of our destinations such as FB Ads, Google Ads etc in the regular sync workflow.
 
-![Census Visual Segment Builder](<../.gitbook/assets/2021-12-06 17.06.32 (1).gif>)
+![Census Visual Segment Builder](../.gitbook/assets/segments\_cropped.gif)
 
 Some example segments you might want to build:&#x20;
 

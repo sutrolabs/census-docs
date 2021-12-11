@@ -23,9 +23,11 @@ Access controls for you can approve models versus create segments is coming soon
 
 ### 2. Build your segment using the Visual Builder
 
-Click on **Segments** to **Add a new Segment** and use the visual builder to filter your segment.
+Click on the **Segments** tab in the left-hand menu to go to the segments page. Click **Add a new Segment** and use the visual builder to filter your segment.
 
-![](<../.gitbook/assets/2021-12-06 17.06.32.gif>)
+You can click preview to see a sampled list of users who match your segment criteria.
+
+![](<../.gitbook/assets/segments\_cropped (1).gif>)
 
 ### 3. Sync your Segment
 
