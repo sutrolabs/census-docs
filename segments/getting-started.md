@@ -1,14 +1,14 @@
 # Getting started
 
-It's really easy to get started building segments and syncing them to your tools. There are three main steps:
+It's easy to get started building segments and syncing them to your destinations. There are three main steps:
 
-1. Approve you model
+1. Approve you source model
 2. Build your segment using the Visual Builder
 3. Sync your segment
 
 ### 1. Approve your model
 
-For a model to be available to build segments on top of, it needs to be explicitly approved. This works for both Census models and dbt models. This means you have more control over making sure segments are only built on top of trustworthy data.&#x20;
+Segments can be built on any model as long as it's been approved for use by the data team. This works for any models in Census: saved query models, dbt models, as well as Looker Looks. This means you have more control over making sure segments are only built on top of trustworthy data.&#x20;
 
 To approve a model:
 
@@ -21,23 +21,28 @@ To approve a model:
 Access controls for you can approve models versus create segments is coming soon. Today all users will be able to approve models and make them available for Segments.
 {% endhint %}
 
-### 2. Build your segment using the Visual Builder
+### 2. Build your segment using the visual builder
 
-Click on the **Segments** tab in the left-hand menu to go to the segments page. Click **Add a new Segment** and use the visual builder to filter your segment.
+Once your models have been approved, you're ready to start creating segments
+
+Click on **Segments** tab in the left-hand menu to go to the segments page. Click **Add a New Segment** and use the visual builder to define your segment. At any point, you can press **Preview** to get a look at what data will be available in your segment. When you're happy with your segment conditions, give you segment a name and press **Save**.
 
 You can click preview to see a sampled list of users who match your segment criteria.
 
 ![](<../.gitbook/assets/segments\_cropped (1).gif>)
 
-### 3. Sync your Segment
+### 3. Sync your segment
 
-Once you save your segment, it will now be available to sync in the regular sync workflow. You can sync segments to all over our supported destinations such as [Facebook Ads](../destinations/facebook-ads.md), [Google Ads](../destinations/google-ads/) and [Marketo](../destinations/marketo.md). To learn more about Syncs [go here](../basics/core-concept.md) or select your desired destination for the menu on the left.
+Your newly created segment will now be available to sync in the standard Census sync workflow. You can sync segments to all over our supported destinations such as [Facebook Ads](../destinations/facebook-ads.md), [Google Ads](../destinations/google-ads/) and [Marketo](../destinations/marketo.md). \
+\
+At this point, you're good to go with Segments, but there's more to read if you need:
 
-
+* Want to learn about Syncs? Check out the [Core Concepts](../basics/core-concept.md) section
+* Need to get your favorite app connected to Census? Take a look at Destinations in the menu on the left.
 
 ### FAQs
 
-**What happens if you un-approve a model after segments have been built on top of it?**
+**What happens if you un-approve a model that's already been used to create segments and syncs?**
 
-Census won't delete the segments or syncs related to that model, but you won't be able to use that model to create new segments.&#x20;
+Census won't delete any segments or syncs related to that model, but you won't be able to use that model to create new segments.&#x20;
 
