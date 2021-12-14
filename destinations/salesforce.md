@@ -108,13 +108,19 @@ Salesforce support is pretty straight forward!
 | Multi-Destination: Lead or Contact |        ✅       |
 | Multi-Destination: Lead or Account |        ✅       |
 
-**Column Gotcha's**
+**Column gotchas**
 
 | **Salesforce Field Types** | **Source SQL Types**                                                                                              |
 | :------------------------: | ----------------------------------------------------------------------------------------------------------------- |
 |     Picklist (Multiple)    | String separated by a `;` In Snowflake, this is best done via a `listagg(val, ';')`                               |
 |           Lookup           | On the object you are syncing to, the field you are looking up needs to be exposed as a unique and an external Id |
 |          The Rest          | <p>Census will give an informative error</p><p>message if rejected by Salesforce 😀</p>                           |
+
+**Clearing fields / Syncing null values**
+
+You can clear fields in Salesforce by syncing `NULL` values from your data source. Note that the Salesforce will ignore any empty string or  `''` values from your source and make no changes.&#x20;
+
+
 
 [Contact us](mailto:support@getcensus.com) if you have any questions about Salesforce.
 
