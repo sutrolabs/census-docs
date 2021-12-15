@@ -6,19 +6,13 @@
 
 * [Core Concepts](basics/core-concept.md)
 * [Triggering Syncs](basics/triggering-syncs.md)
-* [dbt and dbt Cloud Integration](basics/native-dbt-integration.md)
 * [Alerts](basics/alerts.md)
 * [API](basics/api.md)
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
 
-## Segments
-
-* [Overview](segments/overview.md)
-* [Getting started](segments/getting-started.md)
-
-## ⤵️ Data Sources <a href="#sources" id="sources"></a>
+## 🧮 Data Sources <a href="#sources" id="sources"></a>
 
 * [Databricks](sources/databricks.md)
 * [Elasticsearch](sources/elasticsearch.md)
@@ -29,6 +23,18 @@
 * [Rockset](sources/rockset.md)
 * [Snowflake](sources/snowflake.md)
 * [SQL Server](sources/sql-server.md)
+
+## 🧊 Models
+
+* [Overview](models/overview.md)
+* [Census Models](models/census-models.md)
+* [dbt and dbt Cloud](models/native-dbt-integration.md)
+* [Looker](models/looker.md)
+
+## 📈 Segments
+
+* [Overview](segments/overview.md)
+* [Getting Started](segments/getting-started.md)
 
 ## 🛫 Destinations (app) <a href="#destinations" id="destinations"></a>
 

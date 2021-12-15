@@ -20,6 +20,10 @@ Census provides a powerful and customizable sync engine on top of your data sour
 
 If you don't have credentials with write access available, warehouses like Postgres and Redshift support connecting in Read-only mode. Read-only Mode lets you connect to a warehouse quickly with credentials that only have read access to a warehouse. This can get you started quickly but some of the features described below such as Incremental Syncs, Mirror Syncs, and others are not available.&#x20;
 
+#### Data source models and segments
+
+Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](../models/native-dbt-integration.md) and [Looker](../models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../segments/getting-started.md) of your models as well. &#x20;
+
 ### Destination Services
 
 Census helps you keep your data in sync across all the business apps you use to engage with your customers, from advertising and marketing, through sales, all the way to finance. The goal is to keep all of those apps in sync, powered by the exact same set of data.&#x20;
@@ -31,22 +35,6 @@ Once you've connected a source, we'll be able to access a set of objects that se
 All of the connection steps, the objects, and other details for each service are covered here in the docs. \
 \
 And don't forget, our library of connections grows every week! Keep an eye on our [integrations page](https://www.getcensus.com/integrations) for all of our available destinations and let us know if we're missing something you need!
-
-## 🪚 Building Models
-
-At Census, we call individual data source sets Models. Models usually represent a single type of "thing" like a person (or a lead or a contact) or a company (or an account or organization). They can also be other things like invoices, campaigns, events, or devices. \
-\
-A model is usually a list or a set of those things. It can be the full set of every person you know or it can be be a subset (often called a list or segment).
-
-Models can come in a variety of forms:
-
-* Tables or Views already in your data warehouse – This is the most common. If you've a data warehouse at your company, chances are, you've already built some tables that act as your models.
-* Models built with data transform tools like [dbt](https://www.getdbt.com). – We're big fans of dbt here at Census. It's why we have a built in [dbt integration](native-dbt-integration.md). These tools make it easy to build and maintain sophisticated data transforms that keep your models up to date.
-* SQL queries – Yes, even a SQL query can work as a model. It's a handy way to start when you're just getting going. Just plan to eventually evolve to data transform tools like dbt as you create more models!
-
-A model is a table in a data warehouse that looks an awful lot like a spreadsheet. The rows are individual records of that model, and all rows have the same set of columns. Typically, if you look at the columns, you'll have one or two unique identifier columns, and then a bunch of details for each of the records, things like name, last event date, or number of actions they took.&#x20;
-
-The actual set of properties/columns your model have can be anything. The only important thing is that they're the properties that matter to you and your business. The benefit of building models is that you can define them one time, The Right Way™ and then use that as the authoritative source for all of your apps.
 
 ## 🧮 Creating Syncs
 
@@ -109,7 +97,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 * [Schedules](triggering-syncs.md#schedule) including with Cron
 * [Programmatically via API or Orchestration tool](triggering-syncs.md)
-* [Automatically with dbt Cloud](native-dbt-integration.md#integrating-with-dbt-cloud)
+* [Automatically with dbt Cloud](../models/native-dbt-integration.md#integrating-with-dbt-cloud)
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 
@@ -132,9 +120,3 @@ You can dive deeper into why syncs failed, or what records were invalid from the
 ## Wrapping things up
 
 That's it! Now you've got everything you need to know to get the most out of Census, but don't worry, you can still get into the nitty gritty on individual data warehouses or service destinations. And we're always here to help. If you have any questions, just let us know!
-
-
-
-
-
-###

@@ -4,7 +4,7 @@ description: >-
   native dbt integration.
 ---
 
-# dbt and dbt Cloud Integration
+# dbt and dbt Cloud
 
 Census supports connecting to an existing dbt project, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.&#x20;
 
@@ -12,7 +12,7 @@ Census compiles your models on the fly whenever a sync is scheduled so your data
 
 ## Setting it up
 
-Before you can create models on a new data warehouse connection, you’ll be asked to decide whether you’d like to store your models with Census or use an existing dbt project as a source of models. Here are the instructions for connecting a dbt project.
+Here are the instructions for connecting a dbt project:
 
 1. Connect to your GitHub repository. We currently only support dbt projects stored in GitHub. If you’d prefer to use a different service, please let us know!
 2. Select the branch (if any) you’d like Census to use. Census will refresh the project on a regular basis and detect any changes to your models. You can force a refresh at any point from the models' page.
