@@ -18,6 +18,7 @@
 * [Elasticsearch](sources/elasticsearch.md)
 * [Google BigQuery](sources/google-bigquery.md)
 * [Google Sheets](sources/google-sheets.md)
+* [MySQL](sources/mysql.md)
 * [Postgres](sources/postgres.md)
 * [Redshift](sources/redshift.md)
 * [Rockset](sources/rockset.md)
