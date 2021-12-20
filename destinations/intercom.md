@@ -108,6 +108,7 @@ Census currently supports syncing to the following Intercom objects.
 | Contact (Lead or User)  |        ✅       | Email, Intercom ID, External ID |
 |                    Lead |        ✅       | Email, Intercom ID, External ID |
 |                    User |        ✅       | Email, Intercom ID, External ID |
+|                   Event |        ✅       | Event ID                        |
 
 {% hint style="info" %}
 If you're finding Companies missing in Intercom after a sync, make sure the company also has users associated with them. By default, Intercom hides companies with no associated users.
@@ -121,11 +122,12 @@ If you're finding Companies missing in Intercom after a sync, make sure the comp
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |     **Objects?**    |
-| -------------------: | :------------: | :-----------------: |
-| **Update or Create** |        ✅       |         All         |
-|      **Update Only** |        ✅       | Contact, Lead, User |
-|           **Delete** |        ✅       | Contact, Lead, User |
+|        **Behaviors** | **Supported?** |         **Objects?**         |
+| -------------------: | :------------: | :--------------------------: |
+| **Update or Create** |        ✅       | Company, Contact, Lead, User |
+|      **Update Only** |        ✅       |      Contact, Lead, User     |
+|           **Delete** |        ✅       |      Contact, Lead, User     |
+|           **Append** |        ✅       |            Events            |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Intercom.
 
