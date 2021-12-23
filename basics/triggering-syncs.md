@@ -21,6 +21,7 @@ Here's a few examples of common Cron schedules:
 
 * Once an hour, on the hour, every four hours: `0 */4 * * *`
 * Hourly during weekdays: `0 * * * 1-5`
+* Minutely on the 5th, 6th, and 7th hours of the day in UTC timezone:`0 5-7 * * *` , executes sync jobs at _9pm, 10pm and 11pm PST_ or _12am, 1am and 2am EST_
 
 ## **🏎 Sync Trigger API**
 
