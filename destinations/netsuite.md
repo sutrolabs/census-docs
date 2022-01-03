@@ -139,27 +139,29 @@ Please note that you can contact your Customer Success Manager at NetSuite to in
 
 This is is the current list of NetSuite[ objects](https://www.netsuite.com/portal/developers/resources/suitetalk-documentation.shtml) supported by our connector. There are many more and we add them on a case by case basis. If you need a different type of object, please contact us to let us know which object do you need, and we will be happy to support it.
 
-| **Object Name** | **Supported?** |
-| --------------: | :------------: |
-|         Account |        ✅       |
-|       Cash Sale |        ✅       |
-|           Class |        ✅       |
-|         Contact |        ✅       |
-|     Credit Memo |        ✅       |
-|        Currency |        ✅       |
-|        Customer |        ✅       |
-| Customer Status |        ✅       |
-|   Custom Record |       🔜       |
-|      Department |        ✅       |
-|        Employee |        ✅       |
-|         Invoice |        ✅       |
-|   Journal Entry |        ✅       |
-|        Location |        ✅       |
-|         Partner |        ✅       |
-|  Purchase Order |        ✅       |
-|     Sales Order |        ✅       |
-|      Subsidiary |        ✅       |
-|          Vendor |        ✅       |
+|  **Object Name** | **Supported?** |
+| ---------------: | :------------: |
+|          Account |        ✅       |
+|        Cash Sale |        ✅       |
+|            Class |        ✅       |
+|          Contact |        ✅       |
+|      Credit Memo |        ✅       |
+|         Currency |        ✅       |
+|         Customer |        ✅       |
+| Customer Payment |        ✅       |
+|  Customer Status |        ✅       |
+|    Custom Record |       🔜       |
+|       Department |        ✅       |
+|         Employee |        ✅       |
+|          Invoice |        ✅       |
+|   Inventory Item |        ✅       |
+|    Journal Entry |        ✅       |
+|         Location |        ✅       |
+|          Partner |        ✅       |
+|   Purchase Order |        ✅       |
+|      Sales Order |        ✅       |
+|       Subsidiary |        ✅       |
+|           Vendor |        ✅       |
 
 {% hint style="info" %}
 Please note that NetSuite doesn't support the [creation of fields](../basics/core-concept.md#field-creation) via Census and currently we don't support [add all fields ](../basics/core-concept.md#add-all-fields)feature for NetSuite
