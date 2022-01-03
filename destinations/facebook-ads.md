@@ -91,7 +91,7 @@ To view all your Facebook Ads accounts' Pixel IDs go to the [Events Manager](htt
 
 Be sure to select the specific ads account you want to work on. You can switch ad accounts in the navigation bar on the left side of the screen.
 
-In the events manager, you can view all your ad account's pixels and view or create conversion events.
+In the events manager, you can view all your ad account's pixels and existing events. If a custom event doesn't exist already, Census will create it for you.
 
 ### 2. Create a sync
 
