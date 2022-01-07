@@ -6,6 +6,8 @@ description: >-
 
 # Sync-a-swag
 
+**Disclaimer: We currently only send shirts in North America and Europe.**\
+\
 Census sends custom fields (contact info, swag preferences) from a data warehouse to a marketing automation platform to automatically send swag to your doorstep. This is a hands-on, simple way to understand the functionality and benefits of Census.
 
 {% embed url="https://youtu.be/S_J6ExHAA5Y" %}
@@ -14,8 +16,7 @@ Census sends custom fields (contact info, swag preferences) from a data warehous
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [**create a Free Trial Census account**](https://app.getcensus.com) now.
-* Have a shipping address in North America or Europe. We currently don't ship to other continents.&#x20;
+Have your Census account ready. If you need one, [**create a Free Trial Census account**](https://app.getcensus.com) now.
 
 {% embed url="https://youtu.be/dbUQ3sG_-Ao" %}
 
