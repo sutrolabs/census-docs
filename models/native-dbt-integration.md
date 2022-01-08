@@ -4,7 +4,7 @@ description: >-
   native dbt integration.
 ---
 
-# dbt and dbt Cloud
+# dbt Models
 
 Census supports connecting to an existing dbt project, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.&#x20;
 
@@ -30,33 +30,9 @@ Finally, specify where intermediate models are materialized. If the models you e
 
 Once you’ve configured your project repository, Census will analyze your project and display the models you’ve made available. You’re now ready to start using these models as part of Census syncs!
 
-## Integrating with dbt Cloud
+## Coordinating with dbt Cloud
 
-If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt.&#x20;
-
-{% embed url="https://www.loom.com/share/ae05a6dad7364972a06352b6c2599590" %}
-
-
-
-To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key.&#x20;
-
-* You may use both User API keys and Service Account tokens. We strongly recommend you use Service Account tokens.
-* As of May 2021, according to dbt Cloud, tokens may only be created or modified by users with Account Admin (Enterprise plan) or Owner (Team plan) permissions on an account, so that this token has these privileges.
-
-With your token in hand, you can now connect dbt Cloud to your dbt project.&#x20;
-
-1. Configure your existing dbt project by clicking the ⚙️icon next to the git repo description.\
-   &#x20;![](../.gitbook/assets/screely-1621909661599.png)&#x20;
-2. Then copy your dbt Cloud API key. This will load your dbt Cloud Projects. \
-   &#x20;![](../.gitbook/assets/screely-1621909671396.png)&#x20;
-3. Select the dbt Cloud Project that matches you code repo / project. Yes, "project" annoyingly means two different things here, the trick here is to get them to match. The dbt Cloud Project should point to the exact same git repo and branch that you've configured for Census.&#x20;
-4. Finally hit save!
-
-Now, when you create syncs using dbt models as sources, you'll see this brand new way of triggering syncs.&#x20;
-
-![](../.gitbook/assets/screely-1621909681693.png)
-
-With this enabled, the sync will run automatically as soon as dbt Cloud has finished rebuilding each model used in a sync. Nothing more to do!
+If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt. See our documentation on [connecting and configuring dbt Cloud](../basics/triggering-syncs.md#dbt-cloud-integration).
 
 ## Required data warehouse permissions
 

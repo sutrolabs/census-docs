@@ -29,7 +29,7 @@
 
 * [Overview](models/overview.md)
 * [Census Models](models/census-models.md)
-* [dbt and dbt Cloud](models/native-dbt-integration.md)
+* [dbt Models](models/native-dbt-integration.md)
 * [Looker](models/looker.md)
 
 ## 📈 Segments
