@@ -28,10 +28,6 @@ Our Google Cloud connector behaves a little differently than other Census connec
 
 ![](<../.gitbook/assets/Screen Shot 2021-11-03 at 1.46.43 PM.png>)
 
-* Don't be discouraged by this initial "Test Connection" failing! This is expected.
-
-![](<../.gitbook/assets/Cloud Failing Connection.png>)
-
 * Your new Google Cloud Storage connection will include a GCP service account for that specific Census connection. Click the copy button (![](../.gitbook/assets/copy-solid.svg)) to save it to your clipboard.
 
 ### Step 2: Grant Access to GCS
