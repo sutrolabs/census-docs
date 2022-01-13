@@ -40,7 +40,7 @@ Google Ads Offline Click and Call Conversions require a specific set of properti
 
 Optional properties include:
 
-* Conversion Value, decimal values accepted (e.g. 1.00 USD = 1.00)
+* Conversion Value, positive non-zero decimal values accepted (e.g. 1.00 USD = 1.00)
 * Currency Code, the[ ISO 4217 3-character currency code](https://developers.google.com/adwords/api/docs/appendix/codes-formats#expandable-18) (e.g. 'USD')
 * External Attribution Credit and Model, calculated outside Google Ads
 
