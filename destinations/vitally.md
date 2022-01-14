@@ -45,12 +45,12 @@ Census uses your Vitally API key to send data. Before we can connect Census to V
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** |  Matching Keys  | Create Fields |
-| --------------: | :------------: | :-------------: | :-----------: |
-|           Users |        ✅       |   User ID only  |       ✅       |
-|        Accounts |        ✅       | Account ID only |       ✅       |
-|           Event |       🔜       |                 |               |
-|             NPS |       🔜       |                 |               |
+| **Object Name** | **Supported?** | **Matching Keys** | **Create Fields** |
+| --------------: | :------------: | :---------------: | :---------------: |
+|           Users |        ✅       |    User ID only   |         ✅         |
+|        Accounts |        ✅       |  Account ID only  |         ✅         |
+|   "Track" Event |        ✅       |      Event ID     |         ✅         |
+|             NPS |       🔜       |                   |                   |
 
 Vitally defines User ID and Account ID as the unique ID for these objects in your system. You are free to use whatever ID you like, but it needs to be unique.&#x20;
 
