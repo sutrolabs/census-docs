@@ -4,11 +4,11 @@ description: This page describes how to use Census with Salesforce.
 
 # Salesforce
 
+{% embed url="https://www.youtube.com/watch?v=cxGYb9U9ePk" %}
+
 ## 🏃‍♀️ Getting Started
 
 In this guide, we will show you how to connect Salesforce to Census and create your first sync.
-
-{% embed url="https://www.youtube.com/watch?v=K-qmPOweyUU" %}
 
 ### Prerequisites
 
