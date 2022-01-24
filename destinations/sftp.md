@@ -31,7 +31,7 @@ Before you begin, you'll need the following:
 4. Enter a **Name** for your destination. This is only for your reference – it can be anything that makes sense to you.
 5. Enter authentication details for your SFTP server. **Host** and **Username** are always required. If your server requires a password instead of an SSH key, enter the **Password**. If your server uses SSH keys, you can leave the **Password** blank.&#x20;
 6. Click **Save Connection**.
-7. Download the **SFTP Public Key** from this screen and upload it to your server. Then, click **Test** to verify that the connection works.
+7. If you're using **SSH keys** to authenticate your server, download the **SFTP Public Key** from this screen and upload it to your server. Then, click **Test** to verify that the connection works.
 
 Your end state should look something like this: 👇
 
