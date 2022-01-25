@@ -55,8 +55,15 @@ Our dbt integration currently supports version [1.0](https://github.com/dbt-labs
 
 Thankfully, upgrading to dbt 1.0 is pretty straightforward for most projects. Here's the most common changes we see for most Census + dbt users:
 
-* Upgrade your dbt packages by updating their version in `packages.yml` and then running `dbt deps`. Most of the major ones including [`dbt_utils`](https://hub.getdbt.com/dbt-labs/dbt\_utils/0.1.7/) already have 1.0 support.&#x20;
-* In dbt-project.yml, the `source-paths` section has been renamed `model-paths` and `data-paths` had been replaced by `seed-paths` with a default value of seeds. Both of these will show up with warnings in Census. You may need to shuffle some models out of your seed path and into models path as well.
+* Upgrade your dbt packages by updating their version in `packages.yml` and then running `dbt deps`.&#x20;
+  *   The most common compatibility issue is [`dbt_utils`](https://hub.getdbt.com/dbt-labs/dbt\_utils/0.1.7/) . To fix, update your packages.yml with the following reference:\
+      \
+      &#x20; `- package: dbt-labs/dbt_utils`
+
+      &#x20;   `version: 0.7.6` \
+      ``\
+      ``(This version is also compatible with back to dbt 0.20)
+* You'll also start to get warnings renaming  `source-paths` to `model-paths` and `data-paths` to `seed-paths` with a default value of seeds. Both of these can be ignored for now and will be removed in a future version.
 
 For more information, [dbt has written up a detailed list of the changes](https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-1-0-0).
 
