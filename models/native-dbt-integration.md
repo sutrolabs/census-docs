@@ -62,7 +62,7 @@ Thankfully, upgrading to dbt 1.0 is pretty straightforward for most projects. He
 
       &#x20;   `version: 0.7.6` \
       ``\
-      ``(This version is also compatible with back to dbt 0.20)
+      ``(This version is also [compatible back to dbt 0.20](https://docs.google.com/spreadsheets/d/1RoDdC69auAtrwiqmkRsgcFdZ3MdNpeKcJrWkmEpXVIs/edit#gid=0))
 * You'll also start to get warnings renaming  `source-paths` to `model-paths` and `data-paths` to `seed-paths` with a default value of seeds. Both of these can be ignored for now and will be removed in a future version.
 
 For more information, [dbt has written up a detailed list of the changes](https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-1-0-0).
