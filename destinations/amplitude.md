@@ -84,7 +84,7 @@ Next up is the "Where do you want to sync data to?" section.
 For the "How should changes to the source be synced?" section.&#x20;
 
 * Select Update Or Create
-* Pick the right mapping key; Amplitude only supports Distinct ID.
+* Pick the right mapping key; Heap.io only supports Distinct ID.
 
 Finally, select the fields you want to update in the Mapper in the "Which Fields should be updated?" section. Here simply map the field from your Amplitude instance to the column from your model.
 

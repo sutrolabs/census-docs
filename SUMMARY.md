@@ -57,6 +57,7 @@
   * [Offline Conversions](destinations/google-ads/offline-conversions.md)
 * [Google Cloud Storage](destinations/google-cloud-storage.md)
 * [Google Sheets](destinations/google-sheets.md)
+* [Heap.io](destinations/heap.io.md)
 * [HubSpot](destinations/hubspot.md)
 * [Intercom](destinations/intercom.md)
 * [Iterable](destinations/iterable.md)
