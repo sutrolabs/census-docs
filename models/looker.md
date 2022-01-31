@@ -6,9 +6,13 @@ description: >-
 
 # Looker
 
+### :woman\_running:Getting started&#x20;
+
 Census supports connecting to an existing Looker environment, which allows you to build Looker Looks with Looker's powerful visual builder and then sync the data to any of your business apps.&#x20;
 
-Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date.
+Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date. Here's a quick video of the instructions that we've covered in the write-up below.&#x20;
+
+{% embed url="https://youtu.be/sX2oB1Y24G4" %}
 
 ## Setting it up
 
