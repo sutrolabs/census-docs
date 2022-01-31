@@ -6,7 +6,9 @@ description: This page describes how to use Census with Braze.
 
 ### Note on Braze API Costs
 
-Census's sync engine sends updated or changed data by row, meaning that this includes all values of the sync, even if they have not changed. This works well with the majority of services but does cause additional usage for Braze. Please be aware that large data sets, particularly with  full syncs, can rapidly increase your Braze API usage.&#x20;
+{% hint style="warning" %}
+Braze prices its API on a per datapoint update basis. Please be aware that large data sets can rapidly increase your Braze API usage.&#x20;
+{% endhint %}
 
 ## 🏃‍♀️ Getting Started
 
