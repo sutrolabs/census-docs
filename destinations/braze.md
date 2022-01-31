@@ -7,7 +7,7 @@ description: This page describes how to use Census with Braze.
 ### Note on Braze API Costs
 
 {% hint style="warning" %}
-Braze prices its API on a per datapoint update basis. Please be aware that large data sets can rapidly increase your Braze API usage.&#x20;
+Braze prices its API on a per datapoint update basis. Census ensures that only fields that need to be updated are sent (rather than a copy of the entire record). Please be aware that large datasets, which change often can increase your Braze API usage.&#x20;
 {% endhint %}
 
 ## 🏃‍♀️ Getting Started
