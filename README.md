@@ -1,6 +1,6 @@
 # 🏡 Introduction
 
-## 👋 Welcome to NewCensus!&#x20;
+## 👋 Welcome to Census!&#x20;
 
 Census is a data integration platform that enables you to sync your customer and product data from cloud data warehouses like Redshift, Snowflake, and Databricks to the apps your sales and marketing teams use.&#x20;
 
