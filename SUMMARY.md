@@ -11,6 +11,7 @@
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
+* [Structured Data](basics/structured-data.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
 

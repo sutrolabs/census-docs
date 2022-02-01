@@ -113,17 +113,18 @@ Airtable support is pretty straight forward!
 |           Table |        ✅       |
 
 {% hint style="info" %}
-Airtable needs a primary key that is a short text field for Census to be able to join from a source table. On the SQL side, it can be a numeric type, but this is a quirk of this integration that's worth calling out.
+Airtable needs a primary key that is a short text field for Census to be able to join from a source table (though the source can be a numerical type).&#x20;
 {% endhint %}
 
 **Column types**
 
-| **Airtable Field Types** | **Source SQL Types**                                                                  |
-| :----------------------: | ------------------------------------------------------------------------------------- |
-|        Short Text        | <p>String</p><p>Numeric</p>                                                           |
-|       Single Select      | <p>String </p><p>Numeric</p>                                                          |
-|         Checkbox         | <p>Boolean</p><p>Numeric (nonzero = checked, 0 = unchecked)</p>                       |
-|         The Rest         | <p>Census will give an informative error</p><p>message if rejected by Airtable 😀</p> |
+| **Airtable Field Types** | **Source SQL Types**                                                                                                                                                                                                                                                  |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short Text               | <p>String</p><p>Numeric</p>                                                                                                                                                                                                                                           |
+| Single Select            | <p>String </p><p>Numeric</p>                                                                                                                                                                                                                                          |
+| Checkbox                 | <p>Boolean</p><p>Numeric (nonzero = checked, 0 = unchecked)</p>                                                                                                                                                                                                       |
+| Attachments              | <p>A <a href="../basics/structured-data.md">structured column</a> of the following form:</p><p><code>[</code></p><p>  <code>{</code></p><p>    <code>"url": "http://path/to/attachment.png"</code></p><p>    <code>}</code></p><p><code>]</code><br><code></code></p> |
+| The Rest                 | <p>Census will give an informative error</p><p>message if rejected by Airtable 😀</p>                                                                                                                                                                                 |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Airtable.
 
