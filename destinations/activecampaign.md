@@ -80,7 +80,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the " **How should changes to the source be synced?"** section
 
-* Select **Update or Create**
+* Select **Update or Create** if syncing to the Account object, or select either **Update or Create** or **Update Only** if syncing to the Contact object
 * Pick the right mapping key, it could be Email for Contacts, Account Name for Accounts.
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section
