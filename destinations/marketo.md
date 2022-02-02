@@ -88,11 +88,11 @@ Census currently supports syncing to the following Marketo objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |         **Objects?**         |
-| -------------------: | :------------: | :--------------------------: |
-| **Update or Create** |        ✅       |              All             |
-|      **Update Only** |        ✅       |      Lead, Named Account     |
-|           **Mirror** |        ✅       | Lead, Static List Membership |
+|        **Behaviors** | **Supported?** |             **Objects?**            |
+| -------------------: | :------------: | :---------------------------------: |
+| **Update or Create** |        ✅       |                 All                 |
+|      **Update Only** |        ✅       | Lead, Named Account, Custom Objects |
+|           **Mirror** |        ✅       |     Lead, Static List Membership    |
 
 {% hint style="warning" %}
 Please be aware that Update Only and Mirror make use of less efficient Marketo APIs and will result in more API usage for the same number of records.&#x20;
