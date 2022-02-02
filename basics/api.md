@@ -1067,6 +1067,10 @@ curl -X POST https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]/trig
 {% endtab %}
 {% endtabs %}
 
+| URL Argument      | Description                                                                                                                                                                            |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| force\_full\_sync | \[Optional] If this trigger request should be a Full Sync, add `force_full_sync=true` to the request URL. Note that some sync configurations such as Append do not support full syncs. |
+
 | Response Property | Description                                                     |
 | ----------------- | --------------------------------------------------------------- |
 | status            | `success` or `error` indicating whether the sync was triggered. |
