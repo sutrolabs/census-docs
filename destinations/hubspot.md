@@ -79,7 +79,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the " **How should changes to the source be synced?"** section&#x20;
 
-* Select **Update Only**
+* Select your desired Sync Behavior from **Update or Create**, **Update Only, or Mirror**
 * Pick the right mapping key, it could be Email for Contacts, Domain for Companies but we recommend you use your own internal id if possible
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section
