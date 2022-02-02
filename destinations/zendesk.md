@@ -151,9 +151,10 @@ Census currently supports syncing to the following Zendesk objects:
 
 ## 🔄 Supported sync behaviors
 
-|     **Behavior** | **Supported** | **Objects** |
-| ---------------: | :-----------: | ----------- |
-| Update or Create |       ✅       | All         |
+|     **Behavior** | **Supported** | **Objects**                            |
+| ---------------: | :-----------: | -------------------------------------- |
+| Update or Create |       ✅       | All                                    |
+|      Update Only |       ✅       | End User, Organization, Custom Objects |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
