@@ -83,7 +83,10 @@ Next up is the **"Where do you want to sync data to?"** section‌
 
 For the " **How should changes to the source be synced?"** section‌
 
-* Select your preferred behavior. **Update only** is a great place to start if you have data in Airtable! **Update or Create** is great for sending data from the warehouse into Airtable.
+* Select your preferred behavior from the following:
+  * **Update only** is a great place to start if you have data in Airtable!&#x20;
+  * **Update or Create** is great for sending data from the warehouse into Airtable.
+  * **Mirror** keeps Airtable in sync with the warehouse. Update records, insert missing, and delete removed ones from Airtable
 * Pick the right mapping key, Airtable only allows a text type from their tables. We recommend you use your own unique id from the database if possible.
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section‌.
