@@ -40,7 +40,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the " **How should changes to the source be synced?"** section&#x20;
 
-* **Update or Create** will be selected by default
+* Select **Update or Create** or **Mirror**
 * Pick the right mapping key, in this case, we'll use **Email**
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the field from your model to the properties of the Customer Match List.&#x20;
