@@ -111,9 +111,10 @@ When defining the **File Path** for an S3 sync, you can use variables that will 
 
 ## 🔄 Supported sync behaviors
 
-| **Behaviors** | **Supported** | **Objects** |
-| ------------: | :-----------: | :---------: |
-|        Mirror |       ✅       |     All     |
+|    **Behaviors** | **Supported** | **Objects** |
+| ---------------: | :-----------: | :---------: |
+| Update or Create |       ✅       |     All     |
+|           Mirror |       ✅       |     All     |
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com/s/-MV3poo0VqVau1o8I79\_/basics/core-concept#sync-behaviors).
