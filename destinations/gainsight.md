@@ -112,7 +112,11 @@ That's it, in 4 steps you have connected your Data Source to Gainsight! :tada:
 |             Company |        ✅       | Name                                                                                |
 |      Company Person |        ✅       | UniqueId for Census. Company Name and Person Email are required                     |
 | Relationship Person |        ✅       | UniqueId for Census. Company Name, Person Email, and Relationship Name are required |
-|       Custom Object |       🔜       |                                                                                     |
+|     Custom Object\* |        ✅       | Available Update Keys that are not a lookup                                         |
+
+\*The Custom Object must be configured like below for Census to be able to edit it. You can access this on your Administration > Customer Data > Data Management path on the lefthand sidebar.
+
+![](<../.gitbook/assets/Screen Shot 2022-02-01 at 6.47.18 PM.png>)
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Gainsight.
 
@@ -122,10 +126,10 @@ That's it, in 4 steps you have connected your Data Source to Gainsight! :tada:
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-|      **Update Only** |        ✅       |    Company   |
+|        **Behaviors** | **Supported?** |        **Objects?**       |
+| -------------------: | :------------: | :-----------------------: |
+| **Update or Create** |        ✅       |            All            |
+|      **Update Only** |        ✅       | Company, Custom Objects\* |
 
 ## 🚑 Need help connecting to Gainsight?
 
