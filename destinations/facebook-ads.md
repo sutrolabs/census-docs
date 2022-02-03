@@ -141,6 +141,10 @@ Your final sync configuration will look like the following!
 
 ![](<../.gitbook/assets/screely-1626208532062 (1).png>)
 
+### Sample Data Requirements
+
+{% embed url="https://docs.google.com/spreadsheets/d/1jQcz52ue5ES_kh6H_hv5Kc40G2-x96auMmkaVU6G4ms/edit?usp=sharing" %}
+
 ## 🗄 Supported Objects
 
 | **Object Name** | **Supported?** | Identifiers                                                                                               |

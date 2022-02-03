@@ -40,7 +40,7 @@ Finally, copy the long code you see under **Key**. We'll use that in a minute.
 Now let's create your new Census connection to Pendo.
 
 1. In the **Settings** tab, Create a new Pendo Service Connection in Census.\
-    ![](../.gitbook/assets/screely-1624583177140.png) 
+   &#x20;![](../.gitbook/assets/screely-1624583177140.png)&#x20;
 2. You can provide whatever name you like.
 3.  Copy and paste your new Pendo Integration key.\
 
@@ -70,7 +70,13 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 |        **Behaviors** | **Supported?** |   **Objects?**  |
 | -------------------: | :------------: | :-------------: |
 |      **Update Only** |        ✅       | Account/Visitor |
-| **Update or Create** |       🔜       |                 |
+| **Update or Create** |        ✅       | Account/Visitor |
+
+{% hint style="warning" %}
+For Pendo, "Update or Create" syncs will take longer than "Update Only" syncs. This is because - for newly created accounts and visitors - Pendo processes the previous hour’s data at the top of the hour. In addition, it may take up to 15 minutes for the data to fully appear in the UI. \
+\
+Census will wait until \~15 minutes after the top of the hour to then update the newly created visitor or account with additional properties that are part of the sync.
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pendo.
 
