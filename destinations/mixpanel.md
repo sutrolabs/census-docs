@@ -105,6 +105,7 @@ Census currently supports syncing to the following Mixpanel objects.
 |           Event |        ✅       | Insert ID   |
 |   User Profile  |        ✅       | Distinct ID |
 |   Group Profile |        ✅       | Group ID    |
+|    Lookup Table |        ✅       | Join Key    |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Mixpanel.
 
