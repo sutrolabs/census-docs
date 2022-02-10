@@ -44,6 +44,7 @@
 * [Sync-a-swag](destinations/sync-a-swag.md)
 * [Airtable](destinations/airtable.md)
 * [Amplitude](destinations/amplitude.md)
+* [Autopilot](destinations/autopilot.md)
 * [Braze](destinations/braze.md)
 * [Chargify](destinations/chargify.md)
 * [Custom API](destinations/custom-api.md)

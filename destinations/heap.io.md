@@ -44,7 +44,7 @@ Now that we have the app ID from Heap.io, we can now set up Heap.io as a Destina
 
 Navigate to the [Model section of our Dashboard](https://app.getcensus.com/models)
 
-Here you will can write a SQL query to select the data you want to see in Heap.io, or you can use a model from a dbt project or a Looker Look. Here are some ideas of data you could select
+Here you can write a SQL query to select the data you want to see in Heap.io, or you can use a model from a dbt project or a Looker Look. Here are some ideas of data you could select
 
 * The Lifetime Value of a customer
 * The end date of a user's trial
