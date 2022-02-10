@@ -86,6 +86,7 @@ For the " **How should changes to the source be synced?"** section
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section
 
 * Here simply map the field from your ActiveCampaign instance to the column from your model.
+  * When mapping fields to Lists in ActiveCampaign you can associate a List to a Contact by either the List ID or the String ID.
 
 The end result should look something like this
 
