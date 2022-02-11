@@ -105,7 +105,11 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 There are a few unique features available when syncing to a Customer.io instance.
 
 * **Events** are unique (literally!). Census will only send new database rows to Customer.io and so Events only support the **Append Only** behavior for syncs. In order to make sure an event is only ever published once, each row in your events source needs a globally unique ID.
-* All objects support arbitrary custom fields. You can directly map to a new custom field by clicking the **+ Add Custom Field** button when creating or editing a mapping.
+* All objects support arbitrary custom fields.
+  * &#x20;If you are creating a sync for the first time:
+    * Go to the `Which properties should be updated?` section and click **Add Mapping** at the bottom, and then click **Create new field**. Then, type in the name of the custom field as it appears in your Customer.io instance and hit **Save**. After that, you can select the field from your source that you want to send into that the Customer.io custom field.
+  * If you are editing an existing sync's mapping:
+    * Go to the sync's Configuration tab and in the `Mapped Fields` section, click **Edit**, click **Add Mapping** at the bottom, and then click **Create new field**. Then, type in the name of the custom field as it appears in your Customer.io instance and hit **Save**. After that, you can select the field from your source that you want to send into that the Customer.io custom field.
 
 ## 🚑 Need help connecting to Customer.io?
 
