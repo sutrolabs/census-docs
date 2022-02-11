@@ -19,6 +19,7 @@ Before you begin, you'll need the following:
   * [Elasticsearch](../sources/elasticsearch.md)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [MySQL](../sources/mysql.md)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
   * [Rockset](https://docs.getcensus.com/sources/rockset)
