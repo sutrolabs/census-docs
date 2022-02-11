@@ -10,16 +10,9 @@ In this guide, we will show you how to connect Zendesk to Census and create your
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
-* Have your Zendesk account ready.
-* Have the proper credentials to access your data source. See our docs for each supported data source for further information:
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+* Census account: If you don't have this already, [start with a free trial](https://app.getcensus.com).
+* Zendesk account
+* Data warehouse credentials: For details, see the guide for your [specific data source technology](zendesk.md#step-2-connect-your-data-warehouse).
 
 ### Step 1: Connect Zendesk
 

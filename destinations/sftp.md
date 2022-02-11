@@ -14,14 +14,7 @@ Before you begin, you'll need the following:
 
 * **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com).
 * **SFTP server**: You'll need the host address, username, and password or private key.
-* **Credentials for your data warehouse**: For details, see the guide for your specific technology.
-  * [Databricks](../sources/databricks.md)
-  * [Google BigQuery](../sources/google-bigquery.md)
-  * [Google Sheets](google-sheets.md)
-  * [Postgres](../sources/postgres.md)
-  * [Redshift](../sources/redshift.md)
-  * [Rockset](../sources/rockset.md)
-  * [Snowflake](../sources/snowflake.md)
+* **Credentials for your data warehouse**: For details, see the guide for your [specific data source technology](sftp.md#step-2-connect-your-data-warehouse).
 
 ### Step 1: Connect SFTP
 

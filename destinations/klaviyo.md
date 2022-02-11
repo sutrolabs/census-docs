@@ -16,13 +16,7 @@ Before you begin, you'll need the following:
 
 * Census account: If you don't have this already, [start with a free trial](https://app.getcensus.com).
 * Klaviyo account
-* Credentials for your data warehouse: For details, see the guide for your specific technology.
-  * [Databricks](../sources/databricks.md)
-  * [Google BigQuery](../sources/google-bigquery.md)
-  * [Google Sheets](../sources/google-sheets.md)
-  * [Postgres](../sources/postgres.md)
-  * [Redshift](../sources/redshift.md)
-  * [Snowflake](../sources/snowflake.md)
+* Credentials for your data warehouse: For details, see the guide for your [specific data source technology](klaviyo.md#step-2-connect-your-data-warehouse).
 
 ### Step 1: Connect Klaviyo
 
