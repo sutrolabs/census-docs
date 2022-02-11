@@ -54,7 +54,7 @@ If you're new here, you can get started by finding the quick start guide for the
 * [Vitally](destinations/vitally.md)
 * [Webhooks](destinations/webhook.md)
 * [Zendesk](destinations/zendesk.md)
-* [Zuora](destinations/zuora.md)
+* [Zuora](destinations/zuora-1.md)
 
 ## 🎊 Product changelog
 
