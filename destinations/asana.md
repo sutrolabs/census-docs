@@ -33,7 +33,7 @@ You will be redirected to a page to log in to Asana to authorize access to your 
 
 ## 🗄️ Supported Objects <a href="#supported-objects" id="supported-objects"></a>
 
-Asana's primary objet is a Task, which we support in Census.​
+Asana's primary object is a Task, which we support in Census.​
 
 | Object Name | Supported? | Identifiers |
 | ----------- | ---------- | ----------- |
