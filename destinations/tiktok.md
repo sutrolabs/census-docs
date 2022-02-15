@@ -21,7 +21,7 @@ In this guide, we will show you how to connect Tik Tok Ads to Census and create 
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
-### 2. Connect TikTok
+### Connect TikTok
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
 * Click the **Add Service** button
