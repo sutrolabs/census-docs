@@ -1,6 +1,12 @@
 # Overview
 
+
+
 Census segments let you build dynamic lists of users using attributes from your models, without touching SQL. It makes it easy to create marketing segments or audiences, and then sync them to ad platforms, marketing automation, and more. Your segments are defined once, on your data warehouse, and can be shared with any of your Census destinations.
+
+{% embed url="https://www.youtube.com/watch?ab_channel=Census&v=8t0eIio9u2s" %}
+See how Census Segments works in 2 mins
+{% endembed %}
 
 Here are just a few examples of Census segments you can build:
 
