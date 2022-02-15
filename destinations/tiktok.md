@@ -1,15 +1,70 @@
+---
+description: This page describes how to use Census with Tik Tok Ads.
+---
+
 # TikTok
 
-This page is currently under construction ​🏗​
+## 🏃‍♀️ Getting Started
 
+In this guide, we will show you how to connect Tik Tok Ads to Census and create your first sync.
 
+### Prerequisites
 
-This destination is live and can be found [here](https://app.getcensus.com/connections), and we are working on finishing this docs page now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
+* Have your Tik Tok Ads account ready.
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
+### 2. Connect TikTok
 
+* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
+* Click the **Add Service** button
+* Select **TikTok** in the list
+* You will not need to enter credentials in Census. Just click **Connect** and you will be redirected to sign in to your TikTok for Business Account
 
-If you want to connect, please follow the prompts in the UI.&#x20;
+![](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.17.57 PM.png>)
 
+* Sign In to your TikTok for Business account and authorize the necessary permission for Census. Click **Confirm** to authorize.
 
+![Authorize the Census Connection](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.22.17 PM.png>)
 
-If run into a dead end, start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+* Back in the Census user interface select the TikTok Advertiser account to connect
+
+![Select the intended account](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.29.16 PM.png>)
+
+* The TikTok connection will be present and authorized on the Connections page and ready for a sync.
+
+## 🗄 Supported Objects
+
+| **Object Name** | **Supported?** |      **Identifiers**      |
+| --------------: | :------------: | :-----------------------: |
+| Custom Audience |        ✅       | Email, IDFA/GAID, Phone\* |
+
+\*Note: All identifiers can be provided as either the original value or a hashed value&#x20;
+
+![](<../.gitbook/assets/Screen Shot 2022-02-15 at 12.03.01 PM.png>)
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Stripe.
+
+## 🔄 Supported Sync Behaviors
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+{% endhint %}
+
+|        **Behaviors** | **Supported?** |   **Objects**   |
+| -------------------: | :------------: | :-------------: |
+| **Update or Create** |        ✅       | Custom Audience |
+|           **Mirror** |        ✅       | Custom Audience |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Stripe.
+
+## 🚑 Need help connecting to TikTok Ads?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
