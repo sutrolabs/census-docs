@@ -88,13 +88,3 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 ### 🚑 Need help connecting to Appcues?
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects or more sync behaviors for Appcues or just to start a conversation!
-
-## Appcues
-
-This page is currently under construction ​🏗​
-
-This destination is live and can be found [here](https://app.getcensus.com/connections), and we are working on finishing this docs page now.
-
-If you want to connect, please follow the prompts in the UI.
-
-If run into a dead end, start a conversation with us via the [in-app](https://app.getcensus.com) chat.
