@@ -79,5 +79,5 @@ _**Identifiers**: User ID, Mobile ID, Email, Phone Number_
 Note: If you're reusing an existing Customer Match List, Census will not remove any users already added to those lists through other means.&#x20;
 
 {% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}

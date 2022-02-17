@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 It's easy to get started building segments and syncing them to your destinations. There are three main steps:
 
@@ -37,7 +37,7 @@ Your newly created segment will now be available to sync in the standard Census 
 \
 At this point, you're good to go with Segments, but there's more to read if you need:
 
-* Want to learn about Syncs? Check out the [Core Concepts](../basics/core-concept.md) section
+* Want to learn about Syncs? Check out the [Core Concepts](../basics/core-concept/) section
 * Need to get your favorite app connected to Census? Take a look at Destinations in the menu on the left.
 
 ### FAQs

@@ -64,7 +64,7 @@ Vitally defines User ID and Account ID as the unique ID for these objects in you
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

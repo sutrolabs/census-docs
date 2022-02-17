@@ -144,7 +144,7 @@ Each webhook `POST` contains both the data you mapped as well as metadata about 
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects?** |

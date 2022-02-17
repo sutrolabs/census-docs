@@ -88,5 +88,5 @@ _**Identifier**: Google Click ID ("gclid")_
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!&#x20;
 
 {% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}

@@ -32,7 +32,7 @@ Once you’ve configured your project repository, Census will analyze your proje
 
 ## Coordinating with dbt Cloud
 
-If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt. See our documentation on [connecting and configuring dbt Cloud](../basics/triggering-syncs.md#dbt-cloud-integration).
+If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt. See our documentation on [connecting and configuring dbt Cloud](../basics/core-concept/triggering-syncs.md#dbt-cloud-integration).
 
 ## Required data warehouse permissions
 

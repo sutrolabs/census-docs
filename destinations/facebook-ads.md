@@ -183,7 +183,7 @@ Update or Create will add or update users to the audience, but will never remove
 Note: If you're reusing an existing Facebook Audience, Census will not remove any users already added to that audience through other means. Census only removes users that it created initially.
 
 {% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 ## 🚑 Need help connecting to Facebook?

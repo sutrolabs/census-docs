@@ -1,4 +1,4 @@
-# Triggering Syncs
+# Triggering & Scheduling
 
 You can happily run a sync manually, but that's not all that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in several ways:
 
@@ -11,7 +11,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 Schedules let you specify a time and frequency that Census can use to run your sync automatically. You can choose options from weekly all the way to Continuous, which means Census checks your source roughly every minute for new changes.
 
-![](../.gitbook/assets/screely-1621265385900.png)
+![](../../.gitbook/assets/screely-1621265385900.png)
 
 ### Using Cron for custom schedules
 
@@ -37,14 +37,14 @@ To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https:/
 With your token in hand, you can now connect dbt Cloud to your dbt project.&#x20;
 
 1. Visit the Settings page and select the Integrations tab\
-   &#x20;![](../.gitbook/assets/screely-1641611308263.png)\
+   &#x20;![](../../.gitbook/assets/screely-1641611308263.png)\
    &#x20;&#x20;
 2. Then copy your dbt Cloud API key, **Verify** your key is correct, and **Save** your settings. \
    &#x20;&#x20;
 
 Now, you'll be able to use a dbt Cloud job to trigger syncs. Visit the **Configuration** tab of any of your syncs.&#x20;
 
-![](../.gitbook/assets/screely-1641611574815.png)
+![](../../.gitbook/assets/screely-1641611574815.png)
 
 With this enabled, the sync will run automatically as soon as dbt Cloud has successfully finished the job you've selected. Nothing more to do!
 
@@ -52,7 +52,7 @@ With this enabled, the sync will run automatically as soon as dbt Cloud has succ
 
 Each sync can also be triggered via API. On the configuration page, you can access the trigger API endpoint for the sync.
 
-![](../.gitbook/assets/screely-1621265332761.png)
+![](../../.gitbook/assets/screely-1621265332761.png)
 
 Here's a quick video of how to find and use it
 

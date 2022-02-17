@@ -89,7 +89,7 @@ Customer.io strongly prefers the ID field to be used as the identifier for a Per
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects?** |

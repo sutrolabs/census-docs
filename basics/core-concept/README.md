@@ -1,4 +1,4 @@
-# Core Concepts
+# Creating Syncs
 
 ## 🔌 Sources and Destinations
 
@@ -22,7 +22,7 @@ If you don't have credentials with write access available, warehouses like Postg
 
 #### Data source models and segments
 
-Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](../models/native-dbt-integration.md) and [Looker](../models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../segments/getting-started.md) of your models as well. &#x20;
+Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](../../models/native-dbt-integration.md) and [Looker](../../models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../../segments/getting-started.md) of your models as well. &#x20;
 
 ### Destination Services
 
@@ -79,7 +79,7 @@ For some destinations, such as Braze, Customer.io or Iterable (see full list bel
 
 Simply select **"Sync All Properties"** when setting up a sync.
 
-![Simply select "Sync All Properties"](../.gitbook/assets/sync\_all\_fields.png)
+![Simply select "Sync All Properties"](../../.gitbook/assets/sync\_all\_fields.png)
 
 {% hint style="info" %}
 The following destinations currently support automatically adding new properties:&#x20;
@@ -97,7 +97,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 * [Schedules](triggering-syncs.md#schedule) including with Cron
 * [Programmatically via API or Orchestration tool](triggering-syncs.md)
-* [Automatically with dbt Cloud](../models/native-dbt-integration.md#integrating-with-dbt-cloud)
+* [Automatically with dbt Cloud](../../models/native-dbt-integration.md#integrating-with-dbt-cloud)
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 
@@ -108,14 +108,14 @@ You can dive deeper into why syncs failed, or what records were invalid from the
 **Failed Syncs**\
 ****Hover over the status label to see a detailed error.
 
-![](../.gitbook/assets/census\_sync\_history\_failed\_sync.png)
+![](../../.gitbook/assets/census\_sync\_history\_failed\_sync.png)
 
 **Invalid or rejected records**\
 ****Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
 
-![](../.gitbook/assets/census\_sync\_invalid\_rejected\_records.png)
+![](../../.gitbook/assets/census\_sync\_invalid\_rejected\_records.png)
 
-![Output of invalid records diagnostic log](../.gitbook/assets/census\_invalid\_records.png)
+![Output of invalid records diagnostic log](../../.gitbook/assets/census\_invalid\_records.png)
 
 ## Wrapping things up
 

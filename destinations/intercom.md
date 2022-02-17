@@ -119,7 +119,7 @@ If you're finding Companies missing in Intercom after a sync, make sure the comp
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 |        **Behaviors** | **Supported?** |         **Objects?**         |

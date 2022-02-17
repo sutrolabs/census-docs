@@ -4,9 +4,10 @@
 
 ## 🧰 The Basics <a href="#basics" id="basics"></a>
 
-* [Core Concepts](basics/core-concept.md)
-* [Triggering Syncs](basics/triggering-syncs.md)
-* [Alerts](basics/alerts.md)
+* [Creating Syncs](basics/core-concept/README.md)
+  * [Monitoring](basics/core-concept/sync-monitoring.md)
+  * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
+  * [Sync Alerts](basics/core-concept/alerts.md)
 * [API](basics/api.md)
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)

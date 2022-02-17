@@ -95,7 +95,7 @@ The script above creates the smallest available virtual warehouse ("X-Small") an
 \
 Alternatively, if cost concerns are an issue, you can also share a warehouse with other batch processing systems (for example Segment, Fivetran, dbt, etc). \
 \
-You may also want to [adjust the schedules](../basics/core-concept.md#scheduling-a-sync) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
+You may also want to [adjust the schedules](../basics/core-concept/#scheduling-a-sync) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
 
 ## 🔗 Using Snowflake on AWS VPS, PrivateLink, and Azure
 

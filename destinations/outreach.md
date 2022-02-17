@@ -61,7 +61,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 
 ![Basic SQL query for a new model](../.gitbook/assets/202109\_outreach\_basic\_model.png)
 
-### Step 4: Create your first sync <a href="step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
+### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
 The sync will move data from your warehouse to Outreach. In this step, you'll define how that will work.
 
@@ -115,7 +115,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 ## 🔄 Supported sync behaviors
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept.md#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 |     **Behavior** | **Supported** | **Objects** |

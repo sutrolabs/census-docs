@@ -109,7 +109,7 @@ That's it! In 6 steps, you connected Census to Autopilot and started syncing cus
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects?** |
