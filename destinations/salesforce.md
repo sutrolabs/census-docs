@@ -120,6 +120,7 @@ The OpportunityContactRole in Salesforce is a bit weird. It doesn't actually sup
    2. Your sync will be an [append sync](../basics/core-concept.md#sync-behaviors) meaning that Census can create OpportunityContactRole relations, but won't update or remove them.&#x20;
    3. For Primary Identifier, you'll select the column you created in Step 1. Behind the scenes, Census will use the Salesforce field you created in Step 2 to make sure we're not creating any duplicate relationships.
    4. In the sync mappings, make sure to set both the Opportunity Lookup with `opportunity_id` as well as  Contact lookup either using either Contact `contact_id` or `contact_email`. You can also map any other fields you want on the OpportunityContactRole.
+   5. Make sure you press the **Refresh Fields** button one last time to pick up all the new fields you created.&#x20;
 4. At this point, you can use the Sync Tester to verify or save and run your sync. Even if you save and run your sync, we recommend limiting your data model to no more than 10 records just to verify relationships are being created as expected.
 5. Once your test or first sync has run, sign into Salesforce and verify that the OpportunityContactRole relationships were created the way you expected!
 
