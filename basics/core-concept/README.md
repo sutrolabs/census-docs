@@ -18,7 +18,11 @@ For instructions on connecting your specific data source, take a look at the Dat
 
 Census provides a powerful and customizable sync engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema.&#x20;
 
-If you don't have credentials with write access available, warehouses like Postgres and Redshift support connecting in Read-only mode. Read-only Mode lets you connect to a warehouse quickly with credentials that only have read access to a warehouse. This can get you started quickly but some of the features described below such as Incremental Syncs, Mirror Syncs, and others are not available.&#x20;
+If you don't have credentials with write access available, warehouses like Postgres and Redshift support connecting in Read-only mode. Read-only Mode lets you connect to a warehouse quickly with credentials that only have read access to a warehouse. This can get you started quickly but some of the features described below are not available.
+
+{% hint style="warning" %}
+At this time, read-only connections do not support incremental update syncs, or Mirror or Append sync behaviors.
+{% endhint %}
 
 #### Data source models and segments
 
