@@ -38,7 +38,7 @@ Keep in mind, while Census works hard to make them all look the same, every dest
 
 ![](../../.gitbook/assets/screely-1645144592653.png)
 
-The API Inspector will connect and show you the API calls made by Census related to a specific sync configuration. All API calls, including errors will appear here. Census will cache the most recent 200 API calls for up to seven days at which point the cache will be cleared. If you need the details of a specific API call, we recommend you copy the request and save it separately outside Census.&#x20;
+The API Inspector will connect and show you the API calls made by Census related to a specific sync configuration. All API calls, including errors will appear here. Census will cache the most recent 100 API calls for up to seven days at which point the cache will be cleared. If you need the details of a specific API call, we recommend you copy the request and save it separately outside Census.&#x20;
 
 ### Supported Destinations
 
