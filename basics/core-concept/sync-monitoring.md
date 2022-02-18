@@ -36,7 +36,7 @@ Sometimes it helps to be able to look under the hood and see how the engine is r
 
 Keep in mind, while Census works hard to make them all look the same, every destination has different API capabilities. Census will use a variety of endpoints to make sure your data syncs safely and as fast as possible.
 
-![](../../.gitbook/assets/screely-1645080447989.png)
+![](../../.gitbook/assets/screely-1645144410169.png)
 
 The API Inspector will connect and show you the API calls made by Census related to a specific sync configuration. All API calls, including errors will appear here. Census will cache the most recent 200 API calls for up to seven days at which point the cache will be cleared. If you need the details of a specific API call, we recommend you copy the request and save it separately outside Census.&#x20;
 
