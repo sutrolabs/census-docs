@@ -75,6 +75,7 @@
 * [Mixpanel](destinations/mixpanel.md)
 * [NetSuite](destinations/netsuite.md)
 * [Outreach](destinations/outreach.md)
+* [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
 * [Pipedrive](destinations/pipedrive.md)
 * [S3](destinations/s3.md)
