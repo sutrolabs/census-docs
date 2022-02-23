@@ -6,6 +6,8 @@ Census is a data integration platform that enables you to sync your customer and
 
 If you're new here, you can get started by finding the quick start guide for the app you want to connect:
 
+
+
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Airtable](destinations/airtable.md)
 * [Amplitude](destinations/amplitude.md)
@@ -38,6 +40,7 @@ If you're new here, you can get started by finding the quick start guide for the
 * [Mixpanel](destinations/mixpanel.md)
 * [Netsuite](destinations/netsuite.md)
 * [Outreach](destinations/outreach.md)
+* [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
 * [Pipedrive](destinations/pipedrive.md)
 * [S3](destinations/s3.md)
