@@ -1,17 +1,17 @@
 ---
-description: This page describes how to use Census with Autopilot.
+description: This page describes how to use Census with Autopilot Journeys.
 ---
 
 # Autopilot
 
 ## 🏃‍♀️ Getting Started
 
-‌In this guide, we will show you how to connect Autopilot to Census and create your first sync.
+‌In this guide, we will show you how to connect Autopilot Journeys to Census and create your first sync.
 
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
-* Have your Autopilot account ready.
+* Have your Autopilot Journeys account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -23,16 +23,16 @@ description: This page describes how to use Census with Autopilot.
 
 ### 1. Get Autopilot API Key
 
-1. Within Autopilot, visit **Settings** then **Autopilot API** page.
+1. Within Autopilot Journeys, visit **Settings** then **Autopilot API** page.
 2. Copy the API key and provide to Census. If you have not yet generated an API key click on **Generate**.
 
 ![](<../.gitbook/assets/Screen Shot 2022-01-14 at 3.16.10 PM.png>)
 
-### 2. Connect Autopilot
+### 2. Connect Autopilot Journeys
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
 * Click the **Add Service** button
-* Select Autopilot in the dropdown list
+* Select Autopilot Journeys in the dropdown list
 
 ![Select Autopilot](<../.gitbook/assets/Screen Shot 2022-02-10 at 2.19.13 PM.png>)
 

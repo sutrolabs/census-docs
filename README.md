@@ -12,7 +12,7 @@ If you're new here, you can get started by finding the quick start guide for the
 * [Airtable](destinations/airtable.md)
 * [Amplitude](destinations/amplitude.md)
 * [Anaplan](destinations/anaplan.md)
-* [Autopilot](broken-reference)
+* [Autopilot Journeys](broken-reference)
 * [Appcues](destinations/appcues.md)
 * [Asana](destinations/asana.md)
 * [Braze](destinations/braze.md)
