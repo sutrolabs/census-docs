@@ -112,6 +112,7 @@ Segment support is pretty straight forward!
 | **Object Name** | **Supported?** |
 | :-------------: | :------------: |
 |       User      |        ✅       |
+|  Track (Event)  |        ✅       |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Segment.
 
@@ -121,9 +122,10 @@ Segment support is pretty straight forward!
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
+|        **Behaviors** | **Supported?** |  **Objects?** |
+| -------------------: | :------------: | :-----------: |
+| **Update or Create** |        ✅       |      User     |
+|           **Append** |        ✅       | Track (Event) |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Segment.
 
