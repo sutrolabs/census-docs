@@ -41,11 +41,12 @@
 
 ## 🛫 Destinations (app) <a href="#destinations" id="destinations"></a>
 
-* [ActiveCampaign](destinations/activecampaign.md)
 * [Sync-a-swag](destinations/sync-a-swag.md)
+* [ActiveCampaign](destinations/activecampaign.md)
 * [Airtable](destinations/airtable.md)
 * [Amplitude](destinations/amplitude.md)
 * [Anaplan](destinations/anaplan.md)
+* [Anaplan](destinations/anaplan-1.md)
 * [Appcues](destinations/appcues.md)
 * [Asana](destinations/asana.md)
 * [Autopilot](destinations/autopilot.md)
