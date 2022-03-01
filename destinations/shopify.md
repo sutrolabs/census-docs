@@ -51,7 +51,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Shopify.
 
-## 🚑 Need help connecting to Stripe?
+## 🚑 Need help connecting to Shopify?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 
