@@ -98,7 +98,7 @@ Census currently supports syncing to the following Pardot objects.
 
 ## 🔄 Supported Sync Behaviors
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
