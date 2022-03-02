@@ -46,7 +46,6 @@
 * [Airtable](destinations/airtable.md)
 * [Amplitude](destinations/amplitude.md)
 * [Anaplan](<destinations/anaplan (1).md>)
-* [Anaplan](destinations/anaplan.md)
 * [Appcues](destinations/appcues.md)
 * [Asana](destinations/asana.md)
 * [Autopilot](destinations/autopilot.md)
