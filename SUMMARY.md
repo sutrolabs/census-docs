@@ -48,7 +48,7 @@
 * [Anaplan](<destinations/anaplan (1).md>)
 * [Appcues](destinations/appcues.md)
 * [Asana](destinations/asana.md)
-* [Autopilot](destinations/autopilot.md)
+* [Autopilot Journeys](destinations/autopilot-journeys.md)
 * [Braze](destinations/braze.md)
 * [CampaignMonitor](destinations/campaignmonitor.md)
 * [Chargebee](destinations/chargebee.md)
