@@ -97,9 +97,9 @@ Alternatively, if cost concerns are an issue, you can also share a warehouse wit
 \
 You may also want to [adjust the schedules](../basics/core-concept/#scheduling-a-sync) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
 
-## 🔗 Using Snowflake on AWS VPS, PrivateLink, and Azure
+## 🔗 Connecting to Snowflake on AWS VPS or via PrivateLink
 
-Connecting to a Snowflake instance running on AWS VPS or PrivateLink, or on Azure, requires a modified connection configuration. Please contact your Census account manager to have this configured for you.
+Connecting to a Snowflake instance running on AWS VPS or via PrivateLink requires a modified connection configuration. Please contact your Census account manager to have this configured for you.
 
 ## 🚦 Allowed IP Addresses
 
