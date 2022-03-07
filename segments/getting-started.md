@@ -46,3 +46,11 @@ At this point, you're good to go with Segments, but there's more to read if you 
 
 Census won't delete any segments or syncs related to that model, but you won't be able to use that model to create new segments.&#x20;
 
+
+
+**Which string comparison operators are case sensitive and insensitive?**
+
+_Case sensitive:_ Census will consider the "is" and "is not" operators to be case sensitive.
+
+_Case insensitive:_ Census will consider the "contains", "does not contain", "starts with", and "ends with" operators to be case insensitive.
+
