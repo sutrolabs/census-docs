@@ -59,9 +59,9 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/objects
 {% endtab %}
 {% endtabs %}
 
-| **Data Property**    | **Description**                                                                                         |
-| -------------------- | ------------------------------------------------------------------------------------------------------- |
-| List of data sources | Tables and models associated with this connection. Properties are described in the following endpoints. |
+| **Data Property**      | **Description**                                                                                         |
+| ---------------------- | ------------------------------------------------------------------------------------------------------- |
+| List of source objects | Tables and models associated with this connection. Properties are described in the following endpoints. |
 
 
 
@@ -284,7 +284,7 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/sources/6/models/98' \
     "status": "updated",
     "data": {
     	"type": "model",
-    	"data_source_id": 101,
+    	"source_object_id": 101,
     	"id": 98,
 	"name": "API Updated Model",
 	"created_at": "2022-03-04T03:47:41.522Z",
