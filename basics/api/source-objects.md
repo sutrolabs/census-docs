@@ -314,11 +314,11 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 | description          | The description for this model.           |
 | query                | The SQL query associated with this model. |
 
-| **Response Property** | **Description**                                                |
-| --------------------- | -------------------------------------------------------------- |
-| status                | `created` or `error` indicating whether the model was created. |
-| data                  | Present if successful. An object containing the `model_id`     |
-| message               | Present if error. Contains message describing the error.       |
+| **Response Property** | **Description**                                                      |
+| --------------------- | -------------------------------------------------------------------- |
+| status                | `updated` or `error` indicating whether the model was updated.       |
+| data                  | Present if successful. Returns the same object as `GET /models/[ID]` |
+| message               | Present if error. Contains message describing the error.             |
 
 
 
