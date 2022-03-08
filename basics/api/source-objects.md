@@ -204,7 +204,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID
 
 | **Data Property**  | **Description**                                                                                                                                                                         |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type               | The type of this data source, will always be `model`.                                                                                                                                   |
+| type               | The type of this source object, will always be `model`.                                                                                                                                 |
 | id                 | The id of this model.                                                                                                                                                                   |
 | source\_object\_id | The source object id for this model.                                                                                                                                                    |
 | name               | The name of this model.                                                                                                                                                                 |
@@ -396,7 +396,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID
 
 | **Data Property** | **Description**                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type              | The type of this data source, will always be `table`.                                                                                                                                   |
+| type              | The type of this source object, will always be `table`.                                                                                                                                 |
 | id                | The id of this table.                                                                                                                                                                   |
 | table\_catalog    | The catalog associated with this table.                                                                                                                                                 |
 | table\_schema     | The schema associated with this table.                                                                                                                                                  |
