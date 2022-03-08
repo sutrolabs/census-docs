@@ -178,5 +178,3 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID
 | table\_name       | The name of this table.                                                                                                                                                                 |
 | columns           | <p>A list of columns from this table, each with two properties:</p><ul><li><code>name</code> - The name of the column</li><li><code>type</code> - The data type of the column</li></ul> |
 
-
-

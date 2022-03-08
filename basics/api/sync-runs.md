@@ -161,5 +161,3 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[ID]
 | full\_sync                 | Whether or not this was a full sync.                                                                                                                                                                       |
 | sync\_trigger\_reason      | Details on why this sync was run.                                                                                                                                                                          |
 
-
-

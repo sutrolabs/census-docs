@@ -8,7 +8,7 @@
   * [Monitoring](basics/core-concept/sync-monitoring.md)
   * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
   * [Sync Alerts](basics/core-concept/alerts.md)
-* [API](basics/api/README.md)
+* [API](basics/api.md)
   * [Syncs](basics/api/syncs.md)
   * [Sync Runs](basics/api/sync-runs.md)
   * [Destination Objects](basics/api/destination-objects.md)
