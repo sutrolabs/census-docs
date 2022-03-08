@@ -12,7 +12,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {    
     "status": "success",
     "data": [
@@ -68,7 +68,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {
     "status": "success",
     "data": {

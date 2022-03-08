@@ -269,7 +269,7 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {
     "status": "created",
     "data": {
@@ -356,7 +356,7 @@ curl -X POST https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]/trig
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {
     "status": "success",
     "data": {

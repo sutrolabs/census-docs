@@ -16,7 +16,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]/sync_runs?pa
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {
     "status": "success",
     "data": [
@@ -110,7 +110,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[ID]
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {
     "status": "success",
     "data": {
