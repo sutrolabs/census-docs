@@ -331,7 +331,7 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 | lookup\_object (optional)                                                                              | For a reference field, the full name of the object it refers to                                                                                                                                                                                                                                    |
 | lookup\_field (optional)                                                                               | For a reference field, the field to lookup the referenced object by                                                                                                                                                                                                                                |
 
-| HighWaterMark Attribute            | Description                                                                                                                             |
+| **High Water Mark Attribute**      | **Description**                                                                                                                         |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | use\_high\_water\_mark\_diff\_type | `true` or `false` to indicate use of high water mark diff type sync. Only valid for `append` operation and source warehouse `Snowflake` |
 | column\_name                       | The name of the column in the source                                                                                                    |
