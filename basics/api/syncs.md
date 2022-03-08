@@ -18,7 +18,7 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {
     "status": "success",
     "data": [
@@ -40,7 +40,7 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
             "field_normalization": null,
             "source_attributes": {
                 "connection_id": 4,
-                "data_source": {
+                "object": {
                     "type": "model",
                     "id": 15,
                     "name": "braze_test",
@@ -93,7 +93,7 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
             "field_normalization": null,
             "source_attributes": {
                 "connection_id": 4,
-                "data_source": {
+                "object": {
                     "type": "model",
                     "id": 15,
                     "name": "braze_test",
@@ -152,7 +152,7 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {
     "status": "success",
     "data": {
@@ -173,7 +173,7 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]
         "field_normalization": null,
         "source_attributes": {
             "connection_id": 4,
-            "data_source": {
+            "object": {
                 "type": "model",
                 "id": 15,
                 "name": "braze_test",
@@ -239,7 +239,7 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
     },
     "source_attributes": {
         "connection_id": 12,
-        "data_source": {
+        "object": {
             "type": "model",
             "name": "test_ads"
         }
@@ -302,7 +302,7 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 | **Source Attribute**                                                                                          | **Description**                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | connection\_id                                                                                                | The id used to identify the source connection.                                                                     |
-| data\_source                                                                                                  | Attributes of the data source. Properties are expanded on immediately below.                                       |
+| object                                                                                                        | Attributes of the data source. Properties are expanded on immediately below.                                       |
 | id _(optional if type and name **or** type and table\_name, table\_schema, and table\_catalog are specified)_ | The id of the data source.                                                                                         |
 | type _(optional if id specifie_d)                                                                             | <p>The type of your data source. Valid options:</p><ul><li><code>table</code></li><li><code>model</code></li></ul> |
 | name _(optional if id specified_)                                                                             | If type is `model`, the name of the model. Not used if type is `table.`                                            |
