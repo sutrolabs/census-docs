@@ -53,7 +53,8 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/objects
             "updated_at": "2021-10-06T21:39:32.914Z",
             "query": "select cast('test@getcensus.com' as VARCHAR(2000)) as email, array_construct(cast('audience_v1' as VARCHAR(2000))) as list_id\n"
         }
-    ]
+    ],
+    "next": "https:app.getcensus.com/api/v1/sources/6/objects"
 }
 ```
 {% endtab %}
@@ -142,7 +143,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models
             ]
         }
     ],
-    "next": "https://app.getcensus.com/sources/6/models?page=2&per_page=25"
+    "next": "https://app.getcensus.com/api/v1/sources/6/models?page=2&per_page=25"
 }
 ```
 {% endtab %}

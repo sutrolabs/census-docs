@@ -4,6 +4,12 @@
 
 This endpoint will list all of your data sources, such as your connected data warehouse. For information on models and tables associated with a source, query the endpoints for `data_sources`, `models`, and `tables` as described below.
 
+You can pass the following URL parameters to control the response:
+
+* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
+* `page` - `number`. Specifies which page of results to return. Defaults to 1.
+* `per_page` - `number`. Specifies number of results per page. Defaults to 25.
+
 {% tabs %}
 {% tab title="Request" %}
 ```
@@ -44,7 +50,8 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources
             },
             "read_only_connection": false
         }
-    ]
+    ],
+    "next": "https://app.getcensus.com/api/v1/sources"
 }
 ```
 {% endtab %}

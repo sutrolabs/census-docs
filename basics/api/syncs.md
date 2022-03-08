@@ -6,9 +6,9 @@ This endpoint returns a list of your syncs.
 
 You can pass the following URL parameters to control the response:
 
-* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time
-* `page` - What offset of results to return
-* `per_page` - How many results to return
+* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
+* `page` - `number`. Specifies which page of results to return. Defaults to 1.
+* `per_page` - `number`. Specifies number of results per page. Defaults to 25.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -128,7 +128,8 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
                 }
             ]
         }
-    ]
+    ],
+    "next": "https://app.getcensus.com/api/v1/syncs"
 }
 ```
 {% endtab %}

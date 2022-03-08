@@ -2,11 +2,13 @@
 
 ### GET /syncs/\[ID]/sync\_runs
 
-This endpoint returns info on the sync runs for a specific sync. You can pass the following URL parameters to control the response:
+This endpoint returns info on the sync runs for a specific sync.
 
-* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time
-* `page` - What offset of results to return
-* `per_page` - How many results to return
+You can pass the following URL parameters to control the response:
+
+* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
+* `page` - `number`. Specifies which page of results to return. Defaults to 1.
+* `per_page` - `number`. Specifies number of results per page. Defaults to 25.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -90,7 +92,8 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]/sync_runs?pa
                 "ui_detail": "Manually triggered by test@getcensus.com"
             }
         }
-    ]
+    ],
+    "next": "https://app.getcensus.com/api/v1/syncs/52/sync_runs"
 }
 ```
 {% endtab %}

@@ -4,6 +4,12 @@
 
 This endpoint will list all of your connected destinations. For information on objects associated with a destination, query the endpoint for a specific destination as described below.
 
+You can pass the following URL parameters to control the response:
+
+* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
+* `page` - `number`. Specifies which page of results to return. Defaults to 1.
+* `per_page` - `number`. Specifies number of results per page. Defaults to 25.
+
 {% tabs %}
 {% tab title="Request" %}
 ```
@@ -43,7 +49,8 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations
             "name": "HubSpot",
             "credentials": {}
         }
-    ]
+    ],
+    "next": "https://app.getcensus.com/api/v1/destinations?page=2&per_page=25"
 }
 ```
 {% endtab %}
