@@ -387,53 +387,67 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
 {
     "status": "updated",
     "data": {
-    	"id": 95,
-    	"label": null,
-    	"schedule_frequency": "never",
-    	"schedule_day": null,
-    	"schedule_hour": null,
-    	"schedule_minute": null,
-    	"created_at": "2021-12-20T20:24:15.801Z",
-    	"updated_at": "2022-03-08T18:28:25.224Z",
-    	"operation": "mirror",
-    	"paused": false,
-    	"status": "Up to Date",
-    	"lead_union_insert_to": null,
-    	"field_behavior": "sync_all_properties",
-    	"field_normalization": "match_source_names",
-    	"source_attributes": {
-  	    "connection_id": 6,
-  	    "data_source": {
-		"id": 45,
-		"type": "model",
-		"name": "Leeroy Jenkins",
-		"created_at": "2021-12-04T00:25:09.223Z",
-		"updated_at": "2021-12-04T00:30:43.461Z",
-		"query": "select 'he strikes again' as \"text\", 'oh no' as \"exclamation\""
-	    }
-	},
-	"destination_attributes": {
-	    "connection_id": 35,
-	    "object": "{\"spreadsheet_id\":\"1UUTS6qhDhKHYtizki4s_i1BsB2FHPdkH0S74nOqqx-s\",\"sheet_id\":691686932}"
-	},
-	"mappings": [
-	   {
-		"from": "text",
-		"to": "text",
-		"is_primary_identifier": false,
-		"generate_field": true,
-		"preserve_values": false,
-		"operation": null
-	    },
-	    {
-		"from": "exclamation",
-		"to": "exclamation",
-		"is_primary_identifier": false,
-		"generate_field": true,
-		"preserve_values": false,
-		"operation": null
-	    }
-	]
+        "id": 61,
+        "label": "Test Sync (edited via API)",
+        "schedule_frequency": "daily",
+        "schedule_day": null,
+        "schedule_hour": 0,
+        "schedule_minute": 0,
+        "created_at": "2021-10-22T00:40:11.246Z",
+        "updated_at": "2021-10-22T00:43:44.173Z",
+        "operation": "upsert",
+        "paused": false,
+        "status": "Ready",
+        "lead_union_insert_to": null,
+        "trigger_on_dbt_cloud_rebuild": false,
+        "field_behavior": "specific_properties",
+        "field_normalization": null,
+        "source_attributes": {
+            "connection_id": 4,
+            "object": {
+                "type": "model",
+                "id": 15,
+                "name": "braze_test",
+                "created_at": "2021-10-11T20:52:58.293Z",
+                "updated_at": "2021-10-14T23:15:18.508Z",
+                "query": "select cast('test@getcensus.com' as VARCHAR(2000)) as email, cast('random' as VARCHAR(2000)) as random_prop"
+            }
+        },
+        "destination_attributes": {
+            "connection_id": 15,
+            "object": "user"
+        },
+        "mappings": [
+            {
+                "from": "hashed_email",
+                "to": "user_identifier.hashed_email_PREHASHED",
+                "is_primary_identifier": true
+                "generate_field": false,
+                "preserve_values": false,
+                "operation": null
+            },
+            {
+                "from": "list_id",
+                "to": "list_id",
+                "lookup_object": "user_list",
+                "lookup_field": "name"
+                "is_primary_identifier": false,
+                "generate_field": false,
+                "preserve_values": false,
+                "operation": null
+            },
+            {
+                "from": {
+                    "value": "cohort_1",
+                    "type": "text"
+                },
+                "to": "cohort",
+                "is_primary_identifier": false,
+                "generate_field": false,
+                "preserve_values": false,
+                "operation": null
+            }
+        ]
     }
 }
 ```
