@@ -210,6 +210,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID
 | name               | The name of this model.                                                                                                                                                                 |
 | description        | The description for this model.                                                                                                                                                         |
 | query              | The SQL query associated with this model.                                                                                                                                               |
+| approved           | `boolean` denoting whether the model is approved for Census' Segments Builder.                                                                                                          |
 | created\_at        | When this model was created.                                                                                                                                                            |
 | updated\_at        | When this model was last updated.                                                                                                                                                       |
 | compiled\_query    | The compiled query associated with this model if it is built atop a DBT instance.                                                                                                       |
@@ -247,11 +248,12 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/models' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                           |
-| -------------------- | ----------------------------------------- |
-| name                 | The name of this model.                   |
-| description          | The description for this model.           |
-| query                | The SQL query associated with this model. |
+| **Request Property** | **Description**                                                                |
+| -------------------- | ------------------------------------------------------------------------------ |
+| name                 | The name of this model.                                                        |
+| description          | The description for this model.                                                |
+| query                | The SQL query associated with this model.                                      |
+| approved             | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
 | **Response Property** | **Description**                                                |
 | --------------------- | -------------------------------------------------------------- |
@@ -308,11 +310,12 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                           |
-| -------------------- | ----------------------------------------- |
-| name                 | The name of this model.                   |
-| description          | The description for this model.           |
-| query                | The SQL query associated with this model. |
+| **Request Property** | **Description**                                                                |
+| -------------------- | ------------------------------------------------------------------------------ |
+| name                 | The name of this model.                                                        |
+| description          | The description for this model.                                                |
+| query                | The SQL query associated with this model.                                      |
+| approved             | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
 | **Response Property** | **Description**                                                      |
 | --------------------- | -------------------------------------------------------------------- |
