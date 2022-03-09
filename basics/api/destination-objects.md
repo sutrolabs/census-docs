@@ -12,7 +12,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objec
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 {
     "status": "success",
     "data": {

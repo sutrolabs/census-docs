@@ -83,6 +83,7 @@
 * [Microsoft Advertising](destinations/microsoft-advertising.md)
 * [Mixpanel](destinations/mixpanel.md)
 * [NetSuite](destinations/netsuite.md)
+* [Notion](destinations/notion.md)
 * [Outreach](destinations/outreach.md)
 * [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
