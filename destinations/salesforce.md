@@ -31,10 +31,6 @@ The objects and fields accessible to Census are all determined by the user accou
 
 In addition, [Salesforce blocks some API access](https://help.salesforce.com/s/articleView?id=sf.security\_require\_2fa\_api.htm\&type=5) when the **High Assurance on Session security level required at login** setting is used on user Profiles. This will prevent Census from accessing your Salesforce instance. [See Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.security\_require\_two-factor\_authentication.htm\&type=5) on how to disable this for your Profile (Strangely, this can be enabled/disabled per user and seems to have no effect on the API. Only the profile level setting causes issues).
 
-Finally, Salesforce currently requires that the user account have the "View Setup and Configuration" permission (As of July 2019, this is a [known Salesforce issue](https://success.salesforce.com/issues\_view?id=a1p3A000000BMPFQA4)). Ensure this permission is set on the Profile assigned to this user under the "Administrative Permissions" heading of their profile.
-
-![](../.gitbook/assets/sfdc\_setup1.png)
-
 {% hint style="info" %}
 **Require a connection via an API-Only user?**
 
