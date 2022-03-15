@@ -10,6 +10,8 @@ description: >-
 
 This guide shows you how to use Census to connect your Notion account to your data warehouse and create your first sync.
 
+{% embed url="https://www.youtube.com/watch?v=xPlQip0_q6Y" %}
+
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
