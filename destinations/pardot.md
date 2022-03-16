@@ -94,7 +94,7 @@ Census currently supports syncing to the following Pardot objects.
 |        Prospect |        ✅       | Pardot ID, Email |
 
 {% hint style="info" %}
-List Membership is also supported, and this happens via a Lookup from the Prospect Object. The identifiers for the list are the list name or the List ID, and there are image examples below
+On Prospect syncs, we can Lookup from the Prospect Object to a List, which creates the list membership. The identifiers for the list are the list name or the List ID, and there are image examples below
 {% endhint %}
 
 ![Lookup by List ID](<../.gitbook/assets/Pardot List ID.png>) ![Lookup by List Name](<../.gitbook/assets/Pardot List Name.png>)
