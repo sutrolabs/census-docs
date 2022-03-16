@@ -89,10 +89,15 @@ And if anything went wrong, [contact the Census support team](mailto:support@get
 
 Census currently supports syncing to the following Pardot objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| --------------: | :------------: | ----------- |
-|        Prospect |        ✅       | Pardot ID   |
-|            List |       🔜       |             |
+| **Object Name** | **Supported?** | Identifiers      |
+| --------------: | :------------: | ---------------- |
+|        Prospect |        ✅       | Pardot ID, Email |
+
+{% hint style="info" %}
+List Membership is also supported, and this happens via a Lookup from the Prospect Object. The identifiers for the list are the list name or the List ID, and there are image examples below
+{% endhint %}
+
+![Lookup by List ID](<../.gitbook/assets/Pardot List ID.png>) ![Lookup by List Name](<../.gitbook/assets/Pardot List Name.png>)
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pardot.
 
@@ -102,9 +107,10 @@ Census currently supports syncing to the following Pardot objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|   **Behaviors** | **Supported?** | **Objects?** |
-| --------------: | :------------: | :----------: |
-| **Update Only** |        ✅       |   Prospect   |
+|        **Behaviors** | **Supported?** | **Objects?** |
+| -------------------: | :------------: | :----------: |
+|      **Update Only** |        ✅       |   Prospect   |
+| **Update or Create** |        ✅       |   Prospect   |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pardot.
 
