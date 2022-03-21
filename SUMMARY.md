@@ -99,6 +99,7 @@
 * [Snapchat](destinations/snapchat.md)
 * [Stripe](destinations/stripe.md)
 * [TikTok](destinations/tiktok.md)
+* [Totango](destinations/totango.md)
 * [Vitally](destinations/vitally.md)
 * [Webhooks](destinations/webhook.md)
 * [Zendesk](destinations/zendesk.md)
