@@ -33,7 +33,7 @@ In this guide, we will show you how to connect LinkedIn to Census.
 
 ![Click Confirm](<../.gitbook/assets/Confirm Census Connecting.png>)
 
-* You'll be taken to a Linked OAuth screen
+* You'll be taken to a LinkedIn OAuth screen
 
 ![Sign in with Email/Phone and Password](<../.gitbook/assets/LinkedIn Username and Password Oauth.png>)
 
@@ -61,8 +61,8 @@ It is required to provide a DMP Segment Id for both objects that are supported
 
 | **Object Name** | **Supported?** | **Identifiers**                                                                                |
 | --------------: | :------------: | ---------------------------------------------------------------------------------------------- |
-|         Company |        ✅       | Company Email Domain, Company Name, Company Page URL, Company Website Domain, Organization Urn |
-|            User |        ✅       | Email (unhashed, SHA256/512 hashed), Google Advertising Id, Apple Advertising Id               |
+|    Company List |        ✅       | Company Email Domain, Company Name, Company Page URL, Company Website Domain, Organization Urn |
+|       User List |        ✅       | Email (unhashed, SHA256/512 hashed), Google Advertising Id, Apple Advertising Id               |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for LinkedIn.
 
