@@ -110,3 +110,143 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]
 | connection\_details | Connection details associated with this source.                                                                         |
 | objects             | A list of objects associated with this source. The properties of an object are described in the objects endpoint below. |
 
+
+
+### POST /destinations
+
+This endpoint creates a destination with the given data.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --location --request POST 'https://app.getcensus.com/api/v1/destinations' \
+--header 'Authorization: Bearer [API_TOKEN]' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "service_connection": {
+        "name": "Example ActiveCampaign",
+        "type": "active_campaign",
+        "credentials": {
+            "api_token": "example_api_token",
+            "instance_url": "https://example.activehosted.com"
+        }
+    }
+}'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "created",
+    "data": {
+        "id": 90
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| **Request Property** | **Description**                              |
+| -------------------- | -------------------------------------------- |
+| service\_connection  | Contains the information for the connection. |
+
+| **Connection Property** | **Description**                                                                          |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| name                    | The name to assign to this destination                                                   |
+| type                    | The type of this destination (e.g. `zendesk`, `active_campaign`)                         |
+| credentials             | Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
+
+| **Response Property** | **Description**                                                  |
+| --------------------- | ---------------------------------------------------------------- |
+| status                | `created` or `error` indicating whether the model was created.   |
+| data                  | Present if successful. An object containing the `destination_id` |
+| message               | Present if error. Contains message describing the error.         |
+
+
+
+### PATCH /destinations/\[ID]
+
+This endpoint updates a destination with the given ID.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --request PATCH 'https://app.getcensus.com/api/v1/destinations/90' \
+--header 'Authorization: Bearer [API_TOKEN]' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "service_connection": {
+        "name": "ActiveCampaign (Example)",
+        "credentials": {
+            "api_token": "regenerated_api_token"
+        }
+    }
+}'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "updated",
+    "data": {
+        "id": 90,
+        "name": "ActiveCampaign (Example)",
+        "type": "active_campaign",
+        "connection_details": {
+            "instance_url": "https://example.activehosted.com"
+        },
+        "objects": [...]
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| **Request Property** | **Description**                              |
+| -------------------- | -------------------------------------------- |
+| service\_connection  | Contains the information for the connection. |
+
+| **Connection Property** | **Description**                                                                          |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| name                    | The name to assign to this destination                                                   |
+| credentials             | Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
+
+| **Response Property** | **Description**                                                      |
+| --------------------- | -------------------------------------------------------------------- |
+| status                | `updated` or `error` indicating whether the destination was created. |
+| data                  | Present if successful. An object containing the destination object.  |
+| message               | Present if error. Contains message describing the error.             |
+
+
+
+
+
+### DELETE /destinations/\[ID]
+
+This endpoint deletes a destination with the given ID.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --request DELETE 'https://app.getcensus.com/api/v1/destinations/90' \
+--header 'Authorization: Bearer [API_TOKEN]'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "deleted"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| **Response Property** | **Description**                                                        |
+| --------------------- | ---------------------------------------------------------------------- |
+| status                | `deleted` or `404` indicating whether the model was found and deleted. |
+
+
+
