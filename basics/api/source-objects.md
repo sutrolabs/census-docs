@@ -250,9 +250,9 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/models' \
 
 | **Request Property** | **Description**                                                                |
 | -------------------- | ------------------------------------------------------------------------------ |
-| name                 | The name of this model.                                                        |
+| name                 | `required`. The name of this model.                                            |
+| query                | `required`. The SQL query associated with this model.                          |
 | description          | The description for this model.                                                |
-| query                | The SQL query associated with this model.                                      |
 | approved             | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
 | **Response Property** | **Description**                                                |
