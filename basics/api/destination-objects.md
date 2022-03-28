@@ -1,5 +1,165 @@
 # Destination Objects
 
+### GET /destinations/\[ID]/objects
+
+This endpoint lists information for all objects under a given destination.
+
+
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objects
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "success",
+    "data": [
+        {
+            "label": "User",
+            "full_name": "user",
+            "allow_custom_fields": true,
+            "allow_case_sensitive_field_names": true,
+            "fields": [
+                {
+                    "label": "First Name",
+                    "full_name": "first_name",
+                    "createable": true,
+                    "updateable": true,
+                    "operations": [],
+                    "array": false,
+                    "preserve_values_supported": false,
+                    "required_for_mapping": false,
+                    "can_be_upsert_key": false,
+                    "can_be_update_key": false,
+                    "can_be_insert_key": false,
+                    "can_be_reference_key": false,
+                    "lookup_object": null,
+                    "type": "String"
+                },
+                {
+                    "label": "Last Name",
+                    "full_name": "last_name",
+                    "createable": true,
+                    "updateable": true,
+                    "operations": [],
+                    "array": false,
+                    "preserve_values_supported": false,
+                    "required_for_mapping": false,
+                    "can_be_upsert_key": false,
+                    "can_be_update_key": false,
+                    "can_be_insert_key": false,
+                    "can_be_reference_key": false,
+                    "lookup_object": null,
+                    "type": "String"
+                },
+                {
+                    "label": "Company",
+                    "full_name": "company",
+                    "createable": true,
+                    "updateable": true,
+                    "operations": [],
+                    "array": false,
+                    "preserve_values_supported": false,
+                    "required_for_mapping": false,
+                    "can_be_upsert_key": false,
+                    "can_be_update_key": false,
+                    "can_be_insert_key": false,
+                    "can_be_reference_key": false,
+                    "lookup_object": "company",
+                    "type": "String"
+                },
+                {
+                    "label": "External User ID",
+                    "full_name": "external_id",
+                    "createable": true,
+                    "updateable": true,
+                    "operations": [],
+                    "array": false,
+                    "preserve_values_supported": false,
+                    "required_for_mapping": false,
+                    "can_be_upsert_key": true,
+                    "can_be_update_key": true,
+                    "can_be_insert_key": true,
+                    "can_be_reference_key": true,
+                    "lookup_object": null,
+                    "type": "String"
+                },
+                {
+                    "label": "Email",
+                    "full_name": "email",
+                    "createable": true,
+                    "updateable": true,
+                    "operations": [],
+                    "array": false,
+                    "preserve_values_supported": false,
+                    "required_for_mapping": false,
+                    "can_be_upsert_key": false,
+                    "can_be_update_key": false,
+                    "can_be_insert_key": false,
+                    "can_be_reference_key": false,
+                    "lookup_object": null,
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "label": "Organization",
+            "full_name": "organization",
+            "allow_custom_fields": true,
+            "allow_case_sensitive_field_names": true,
+            "fields": [
+                {
+                    "label": "Name",
+                    "full_name": "name",
+                    "createable": true,
+                    "updateable": true,
+                    "operations": [],
+                    "array": false,
+                    "preserve_values_supported": false,
+                    "required_for_mapping": false,
+                    "can_be_upsert_key": false,
+                    "can_be_update_key": false,
+                    "can_be_insert_key": false,
+                    "can_be_reference_key": false,
+                    "lookup_object": null,
+                    "type": "String"
+                },
+                {
+                    "label": "Address",
+                    "full_name": "address",
+                    "createable": true,
+                    "updateable": true,
+                    "operations": [],
+                    "array": false,
+                    "preserve_values_supported": false,
+                    "required_for_mapping": false,
+                    "can_be_upsert_key": false,
+                    "can_be_update_key": false,
+                    "can_be_insert_key": false,
+                    "can_be_reference_key": false,
+                    "lookup_object": "company",
+                    "type": "String"
+                }
+            ]
+        },
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| Data Property                 | Description                                                                                                                                           |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A list of destination objects | A list of objects for the given destination. The properties of each destination object are expanded on below in the GET /destinations/\[ID] endpoint. |
+
+
+
+
+
 ### GET /destinations/\[ID]/objects/\[OBJECT\_FULL\_NAME]
 
 This endpoint lists information for a given object, including information on what fields it includes.
