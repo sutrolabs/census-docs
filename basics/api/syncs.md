@@ -55,7 +55,10 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
             },
             "mappings": [
                 {
-                    "from": "EMAIL",
+                    "from": {
+                        "type": "column",
+                        "data": "EMAIL"
+                    },
                     "to": "external_id",
                     "is_primary_identifier": true,
                     "generate_field": false,
@@ -64,8 +67,11 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
                 },
                 {
                     "from": {
-                        "value": "test",
-                        "basic_type": "text"
+                        "type": "constant_value",
+                        "data": {
+                            "value": "test",
+                            "basic_type": "text"
+                        }
                     },
                     "to": "first_name",
                     "is_primary_identifier": false,
@@ -108,7 +114,10 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
             },
             "mappings": [
                 {
-                    "from": "EMAIL",
+                    "from": {
+                        "type": "column",
+                        "data": "EMAIL"
+                    },
                     "to": "external_id",
                     "is_primary_identifier": true,
                     "generate_field": false,
@@ -117,8 +126,11 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
                 },
                 {
                     "from": {
-                        "value": "usa",
-                        "basic_type": "text"
+                        "type": "constant_value",
+                        "data": {
+                            "value": "usa",
+                            "basic_type": "text"
+                        }
                     },
                     "to": "country",
                     "is_primary_identifier": false,
@@ -138,6 +150,8 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
 | Data Property   | Description                                                                                                                                                                                                                                                                                         |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | A list of syncs | <p>A list of your syncs. The properties of a sync are expanded on below in the POST /syncs endpoint.</p><p></p><p>Along with the properties mentioned above, this endpoint returns an <code>id</code>, <code>created_at</code>, <code>updated_at</code>, and <code>status</code> for each sync.</p> |
+
+
 
 
 
@@ -189,7 +203,10 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]
         },
         "mappings": [
             {
-                "from": "EMAIL",
+                "from": {
+                    "type": "column",
+                    "data": "EMAIL"
+                },
                 "to": "external_id",
                 "is_primary_identifier": true,
                 "generate_field": false,
@@ -198,8 +215,11 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]
             },
             {
                 "from": {
-                    "value": "test",
-                    "basic_type": "text"
+                    "type": "constant_value",
+                    "data": {
+                        "value": "test",
+                        "basic_type": "text"
+                    }
                 },
                 "to": "first_name",
                 "is_primary_identifier": false,
@@ -217,6 +237,8 @@ curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]
 | Data Property | Description                                                                                                                                                                                                                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | A sync        | <p>Information on a sync. The properties of a sync are expanded on below in the POST /syncs endpoint.</p><p></p><p>Along with the properties mentioned above, this endpoint returns an <code>id</code>, <code>created_at</code>, <code>updated_at</code>, and <code>status</code> for the sync.</p> |
+
+
 
 
 
@@ -247,20 +269,29 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
     },
     "mappings": [
         {
-            "from": "hashed_email",
+            "from": {
+                "type": "column",
+                "data": "hashed_email"
+            },
             "to": "user_identifier.hashed_email_PREHASHED",
             "is_primary_identifier": true
         },
         {
-            "from": "list_id",
+            "from": {
+                "type": "column",
+                "data": "list_id"
+            },
             "to": "list_id",
             "lookup_object": "user_list",
             "lookup_field": "name"
         },
         {
             "from": {
-                "value": "cohort_1",
-                "basic_type": "text"
+                "type": "constant_value",
+                "data: {
+                    "value": "cohort_1",
+                    "basic_type": "text"
+                }
             },
             "to": "cohort"
         }
@@ -317,27 +348,35 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 | object                  | `required`. The full name of the destination object            |
 | lead\_union\_insert\_to | Where to insert a union object (for Salesforce connections)    |
 
-| Mapping Attribute       | Description                                                                                                                                                                                                                                                                                                                     |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| from                    | <p><code>required</code>. The name of the column in the source, or an object with the following properties:</p><ul><li><code>value</code> - A constant value</li><li><code>basic_type</code> - The type of this value (can be <code>boolean</code>, <code>datetime</code>, <code>number</code>, or <code>text</code>)</li></ul> |
-| to                      | `required`. The full name of the field to sync in to.                                                                                                                                                                                                                                                                           |
-| is\_primary\_identifier | `required` to be `true` for exactly one mapping. Whether or not this mapping is the primary identifier for this sync.                                                                                                                                                                                                           |
-| generate\_field         | Whether or not this mapping generates a custom field.                                                                                                                                                                                                                                                                           |
-| preserve\_values        | Whether or not an existing destination value should be overwritten.                                                                                                                                                                                                                                                             |
-| operation               | For arrays, whether Census should `merge` or `overwrite` values.                                                                                                                                                                                                                                                                |
-| lookup\_object          | For a reference field, the full name of the object it refers to.                                                                                                                                                                                                                                                                |
-| lookup\_field           | For a reference field, the field to lookup the referenced object by.                                                                                                                                                                                                                                                            |
+
+
+| Mapping Attribute       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| from                    | <p><code>required</code>. An object with a <code>type</code> and <code>data</code> for the source.</p><p></p><p>For hardcoded (i.e. constant) values:</p><ul><li><code>type</code> should be <code>constant_value</code>.</li><li><code>data</code> is an object with two keys. <br>1. <code>basic_type</code> - The type of this value (can be <code>boolean</code>, <code>datetime</code>, <code>number</code>, or <code>text</code>). <br>2. <code>value</code> should be a constant value.</li></ul><p></p><p>For columns from your model or table:</p><ul><li><code>type</code> should be <code>column</code>.</li><li><code>data</code> is the name of the column.</li></ul> |
+| to                      | `required`. The full name of the field to sync in to.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| is\_primary\_identifier | `required` to be `true` for exactly one mapping. Whether or not this mapping is the primary identifier for this sync.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| generate\_field         | Whether or not this mapping generates a custom field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| preserve\_values        | Whether or not an existing destination value should be overwritten.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| operation               | For arrays, whether Census should `merge` or `overwrite` values.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| lookup\_object          | For a reference field, the full name of the object it refers to.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| lookup\_field           | For a reference field, the field to lookup the referenced object by.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+
+
 
 | High Water Mark Attribute          | Description                                                                                                                             |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | use\_high\_water\_mark\_diff\_type | `true` or `false` to indicate use of high water mark diff type sync. Only valid for `append` operation and source warehouse `Snowflake` |
 | column\_name                       | The name of the column in the source                                                                                                    |
 
+
+
 | Response Property | Description                                                     |
 | ----------------- | --------------------------------------------------------------- |
 | status            | `created` or `error` indicating whether the sync was triggered. |
 | data              | Present if successful. An object containing the `sync_id`       |
 | message           | Present if error. Contains message describing the error.        |
+
+
 
 
 
@@ -356,20 +395,29 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
     "schedule_frequency": "daily"
     "mappings": [
         {
-            "from": "hashed_email",
+            "from": {
+                "type": "column",
+                "data": "hashed_email"
+            },
             "to": "user_identifier.hashed_email_PREHASHED",
             "is_primary_identifier": true
         },
         {
-            "from": "list_id",
+            "from": {
+                "type": "column",
+                "data": "list_id"
+            },
             "to": "list_id",
             "lookup_object": "user_list",
             "lookup_field": "name"
         },
         {
             "from": {
-                "value": "cohort_1",
-                "basic_type": "text"
+                "type": "constant_value",
+                "data": {
+                    "value": "cohort_1",
+                    "basic_type": "text"
+                }
             },
             "to": "cohort"
         }
@@ -415,7 +463,10 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
         },
         "mappings": [
             {
-                "from": "hashed_email",
+                "from": {
+                    "type": "column",
+                    "data": "hashed_email"
+                },
                 "to": "user_identifier.hashed_email_PREHASHED",
                 "is_primary_identifier": true
                 "generate_field": false,
@@ -423,7 +474,10 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
                 "operation": null
             },
             {
-                "from": "list_id",
+                "from": {
+                    "type": "column",
+                    "data": "list_id"
+                },
                 "to": "list_id",
                 "lookup_object": "user_list",
                 "lookup_field": "name"
@@ -434,8 +488,11 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
             },
             {
                 "from": {
-                    "value": "cohort_1",
-                    "type": "text"
+                    "type": "constant_value",
+                    "data": {
+                        "value": "cohort_1",
+                        "basic_type": "text"
+                    }
                 },
                 "to": "cohort",
                 "is_primary_identifier": false,
@@ -454,11 +511,15 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Sync parameters  | A list of parameters to update the sync with, similar to the request parameters for `POST /syncs`. The only parameters that cannot be updated are `source_attributes`, `destination_attributes`, and `operation`. |
 
+
+
 | Response Property | Description                                                         |
 | ----------------- | ------------------------------------------------------------------- |
 | status            | `updated` or `error` indicating whether the sync was updated.       |
 | data              | Present if successful. Returns the same object as `GET /syncs/[ID]` |
 | message           | Present if error. Contains message describing the error.            |
+
+
 
 
 
@@ -486,6 +547,8 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/syncs/96' \
 | Response Property | Description                                                           |
 | ----------------- | --------------------------------------------------------------------- |
 | status            | `deleted` or `404` indicating whether the sync was found and deleted. |
+
+
 
 
 
