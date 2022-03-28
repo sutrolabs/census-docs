@@ -151,11 +151,11 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/destinations' \
 | -------------------- | -------------------------------------------- |
 | service\_connection  | Contains the information for the connection. |
 
-| **Connection Property** | **Description**                                                                          |
-| ----------------------- | ---------------------------------------------------------------------------------------- |
-| name                    | The name to assign to this destination                                                   |
-| type                    | The type of this destination (e.g. `zendesk`, `active_campaign`)                         |
-| credentials             | Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
+| **Connection Property** | **Description**                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| name                    | The name to assign to this destination                                                               |
+| type                    | `required`. The type of this destination (e.g. `zendesk`, `active_campaign`)                         |
+| credentials             | `required`. Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
 
 | **Response Property** | **Description**                                                  |
 | --------------------- | ---------------------------------------------------------------- |

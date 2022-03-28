@@ -156,12 +156,12 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/sources' \
 | -------------------- | -------------------------------------------- |
 | connection           | Contains the information for the connection. |
 
-| **Connection Property** | **Description**                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------- |
-| label                   | The label assigned to this source.                                                    |
-| type                    | The type of this source (e.g. `redshift`, `big_query`)                                |
-| read\_only\_connection  | Whether or not Census has write permissions, for tracking sync state, on this source. |
-| credentials             | Credentials that should be associated with this source (e.g. `hostname`, `port)`      |
+| **Connection Property** | **Description**                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------- |
+| label                   | The label assigned to this source.                                                           |
+| type                    | `required`. The type of this source (e.g. `redshift`, `big_query`)                           |
+| read\_only\_connection  | Whether or not Census has write permissions, for tracking sync state, on this source.        |
+| credentials             | `required`. Credentials that should be associated with this source (e.g. `hostname`, `port)` |
 
 
 
