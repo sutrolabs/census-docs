@@ -489,7 +489,7 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/syncs/96' \
 
 | **Response Property** | **Description**                                                       |
 | --------------------- | --------------------------------------------------------------------- |
-| status                | `created` or `404` indicating whether the sync was found and deleted. |
+| status                | `deleted` or `404` indicating whether the sync was found and deleted. |
 
 
 

@@ -348,7 +348,7 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 
 | **Response Property** | **Description**                                                        |
 | --------------------- | ---------------------------------------------------------------------- |
-| status                | `created` or `404` indicating whether the model was found and deleted. |
+| status                | `deleted` or `404` indicating whether the model was found and deleted. |
 
 
 

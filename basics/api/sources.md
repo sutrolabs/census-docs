@@ -105,11 +105,152 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]
 | id                     | The id of this source.                                                                                                                 |
 | name                   | The name of this source.                                                                                                               |
 | label                  | The label assigned to this source.                                                                                                     |
-| type                   | The type of this source (e.g. `redshift` or `big_query`)                                                                               |
+| type                   | The type of this source (e.g. `redshift`, `big_query`)                                                                                 |
 | last\_test\_succeeded  | Whether or not the last connection test on this source was successful.                                                                 |
 | last\_tested\_at       | When the last connection test was ran on this source.                                                                                  |
 | connection\_details    | Connection details associated with this source.                                                                                        |
 | read\_only\_connection | Whether or not Census has write permissions, for tracking sync state, on this source.                                                  |
 | data\_sources          | A list of models and tables associated with this source. Model and table properties are described in their respective endpoints below. |
 
-&#x20;
+
+
+### POST /sources
+
+This endpoint creates a source with the given data.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --location --request POST 'https://app.getcensus.com/api/v1/sources' \
+--header 'Authorization: Bearer [API_TOKEN]' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "connection": {
+        "credentials": {
+            "hostname": "<instance>.<region>.redshift.amazonaws.com",
+            "port": "5439",
+            "user": "redshift_user",
+            "password": "redshift_password",
+            "database": "demo"
+        },
+        "label": "Example Redshift Source",
+        "type": "redshift"
+    }
+}'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "created",
+    "data": {
+        "id": 12345
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| **Request Property** | **Description**                              |
+| -------------------- | -------------------------------------------- |
+| connection           | Contains the information for the connection. |
+
+| **Connection Property** | **Description**                                                                       |
+| ----------------------- | ------------------------------------------------------------------------------------- |
+| label                   | The label assigned to this source.                                                    |
+| type                    | The type of this source (e.g. `redshift`, `big_query`)                                |
+| read\_only\_connection  | Whether or not Census has write permissions, for tracking sync state, on this source. |
+| credentials             | Credentials that should be associated with this source (e.g. `hostname`, `port)`      |
+
+
+
+### PATCH /sources/\[ID]
+
+This endpoint updates a source with the given data.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --location --request PATCH 'https://app.getcensus.com/api/v1/sources/12' \
+--header 'Authorization: Bearer [API_TOKEN]' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "connection": {
+        "credentials": {
+            "database": "demo_v2"
+        },
+        "label": "Redshift (Demo v2)"
+    }
+}'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "updated",
+    "data": {
+        "id": 6,
+        "name": "Redshift (Demo v2)",
+        "label": "Redshift (Demo v2)",
+        "last_test_succeeded": true,
+        "last_tested_at": "2022-01-01T00:00:00.000Z",
+        "type": "redshift",
+        "connection_details": {
+            "user": "redshift_user",
+            "hostname": "<instance>.<region>.redshift.amazonaws.com",
+            "port": 5439,
+            "database": "demo_v2",
+            "ssh_tunnel_enabled": null,
+            "ssh_tunnel_hostname": null,
+            "ssh_tunnel_port": null,
+            "ssh_tunnel_user": null,
+            "ssh_tunnel_public_key": null
+        },
+        "read_only_connection": false
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| **Request Property** | **Description**                              |
+| -------------------- | -------------------------------------------- |
+| connection           | Contains the information for the connection. |
+
+| **Connection Property** | **Description**                                                                       |
+| ----------------------- | ------------------------------------------------------------------------------------- |
+| label                   | The label assigned to this source.                                                    |
+| read\_only\_connection  | Whether or not Census has write permissions, for tracking sync state, on this source. |
+| credentials             | Credentials that should be associated with this source (e.g. `hostname`, `port)`      |
+
+
+
+### DELETE /sources/\[ID]
+
+This endpoint deletes a source with the given ID.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --request DELETE 'https://app.getcensus.com/api/v1/sources/6' \
+--header 'Authorization: Bearer [API_TOKEN]'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "deleted"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| **Response Property** | **Description**                                                        |
+| --------------------- | ---------------------------------------------------------------------- |
+| status                | `deleted` or `404` indicating whether the model was found and deleted. |
+
+
+
