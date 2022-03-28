@@ -62,6 +62,8 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations
 
 
 
+
+
 ### GET /destinations/\[ID]
 
 This endpoint lists information on a specific destination.
@@ -112,6 +114,8 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]
 
 
 
+
+
 ### POST /destinations
 
 This endpoint creates a destination with the given data.
@@ -151,17 +155,23 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/destinations' \
 | ------------------- | -------------------------------------------- |
 | service\_connection | Contains the information for the connection. |
 
+
+
 | Connection Property | Description                                                                                          |
 | ------------------- | ---------------------------------------------------------------------------------------------------- |
 | type                | `required`. The type of this destination (e.g. `zendesk`, `active_campaign`)                         |
 | credentials         | `required`. Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
 | name                | The name to assign to this destination                                                               |
 
+
+
 | Response Property | Description                                                      |
 | ----------------- | ---------------------------------------------------------------- |
 | status            | `created` or `error` indicating whether the model was created.   |
 | data              | Present if successful. An object containing the `destination_id` |
 | message           | Present if error. Contains message describing the error.         |
+
+
 
 
 
@@ -208,16 +218,22 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/destinations/90' \
 | ------------------- | -------------------------------------------- |
 | service\_connection | Contains the information for the connection. |
 
+
+
 | Connection Property | Description                                                                              |
 | ------------------- | ---------------------------------------------------------------------------------------- |
 | name                | The name to assign to this destination                                                   |
 | credentials         | Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
+
+
 
 | Response Property | Description                                                          |
 | ----------------- | -------------------------------------------------------------------- |
 | status            | `updated` or `error` indicating whether the destination was created. |
 | data              | Present if successful. An object containing the destination object.  |
 | message           | Present if error. Contains message describing the error.             |
+
+
 
 
 
@@ -245,6 +261,69 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/destinations/90' \
 | Response Property | Description                                                            |
 | ----------------- | ---------------------------------------------------------------------- |
 | status            | `deleted` or `404` indicating whether the model was found and deleted. |
+
+
+
+
+
+### POST /destinations/\[ID]/refresh\_objects
+
+This endpoint queues a job to refresh the list of objects for a destination.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --request POST 'http://app.getcensus.com/api/v1/destinations/90/refresh_objects' \
+--header 'Authorization: Bearer [API_TOKEN]'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "refresh_key": 1647978948
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| Response Property | Description                                             |
+| ----------------- | ------------------------------------------------------- |
+| refresh\_key      | Contains an `id` used to query the refresh objects job. |
+
+
+
+
+
+### GET /destinations/\[ID]/refresh\_objects\_status
+
+This endpoint checks whether the the job refreshing objects for a destination has completed.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/refresh_objects_status?refresh_key=1647978948
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "completed"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| Query Parameter | Description                                                                                                                 |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| refresh\_key    | `required`. An `id` provided by the `refresh_objects` endpoint, used to check whether the refresh objects job has finished. |
+
+| Response Property | Description                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| status            | Status of the job. Can be either `completed` or `processing`. |
+
+
 
 
 
