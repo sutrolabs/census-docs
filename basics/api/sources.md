@@ -26,6 +26,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources
             "id": 4,
             "name": "Snowflake - xxxxxxx.us-east-1",
             "label": null,
+            "type": "snowflake",
             "last_test_succeeded": null,
             "last_tested_at": null,
             "connection_details": {
@@ -40,6 +41,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources
             "id": 10,
             "name": "BigQuery - Development",
             "label": "BigQuery",
+            "type": "big_query",
             "last_test_succeeded": true,
             "last_tested_at": "2021-10-07T20:02:19.544Z",
             "connection_details": {
@@ -82,6 +84,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]
         "id": 4,
         "name": "Snowflake - xxxxxxx.us-east-1",
         "label": null,
+        "type": "snowflake",
         "last_test_succeeded": null,
         "last_tested_at": null,
         "connection_details": {
@@ -102,6 +105,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]
 | id                     | The id of this source.                                                                                                                 |
 | name                   | The name of this source.                                                                                                               |
 | label                  | The label assigned to this source.                                                                                                     |
+| type                   | The type of this source (e.g. `redshift` or `big_query`)                                                                               |
 | last\_test\_succeeded  | Whether or not the last connection test on this source was successful.                                                                 |
 | last\_tested\_at       | When the last connection test was ran on this source.                                                                                  |
 | connection\_details    | Connection details associated with this source.                                                                                        |
