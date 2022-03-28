@@ -56,7 +56,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations
 {% endtab %}
 {% endtabs %}
 
-| **Data Property**    | **Description**                                                                                                        |
+| Data Property        | Description                                                                                                            |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | List of destinations | A list containing information on each destination. The properties of a destination are described in the next endpoint. |
 
@@ -103,7 +103,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]
 {% endtab %}
 {% endtabs %}
 
-| **Data Property**   | **Description**                                                                                                         |
+| Data Property       | Description                                                                                                             |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | id                  | The id of this destination.                                                                                             |
 | name                | The name of this source.                                                                                                |
@@ -147,21 +147,21 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/destinations' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                              |
-| -------------------- | -------------------------------------------- |
-| service\_connection  | Contains the information for the connection. |
+| Request Property    | Description                                  |
+| ------------------- | -------------------------------------------- |
+| service\_connection | Contains the information for the connection. |
 
-| **Connection Property** | **Description**                                                                                      |
-| ----------------------- | ---------------------------------------------------------------------------------------------------- |
-| type                    | `required`. The type of this destination (e.g. `zendesk`, `active_campaign`)                         |
-| credentials             | `required`. Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
-| name                    | The name to assign to this destination                                                               |
+| Connection Property | Description                                                                                          |
+| ------------------- | ---------------------------------------------------------------------------------------------------- |
+| type                | `required`. The type of this destination (e.g. `zendesk`, `active_campaign`)                         |
+| credentials         | `required`. Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
+| name                | The name to assign to this destination                                                               |
 
-| **Response Property** | **Description**                                                  |
-| --------------------- | ---------------------------------------------------------------- |
-| status                | `created` or `error` indicating whether the model was created.   |
-| data                  | Present if successful. An object containing the `destination_id` |
-| message               | Present if error. Contains message describing the error.         |
+| Response Property | Description                                                      |
+| ----------------- | ---------------------------------------------------------------- |
+| status            | `created` or `error` indicating whether the model was created.   |
+| data              | Present if successful. An object containing the `destination_id` |
+| message           | Present if error. Contains message describing the error.         |
 
 
 
@@ -204,22 +204,20 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/destinations/90' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                              |
-| -------------------- | -------------------------------------------- |
-| service\_connection  | Contains the information for the connection. |
+| Request Property    | Description                                  |
+| ------------------- | -------------------------------------------- |
+| service\_connection | Contains the information for the connection. |
 
-| **Connection Property** | **Description**                                                                          |
-| ----------------------- | ---------------------------------------------------------------------------------------- |
-| name                    | The name to assign to this destination                                                   |
-| credentials             | Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
+| Connection Property | Description                                                                              |
+| ------------------- | ---------------------------------------------------------------------------------------- |
+| name                | The name to assign to this destination                                                   |
+| credentials         | Credentials that should be associated with this destination (e.g. `api_token`, `domain)` |
 
-| **Response Property** | **Description**                                                      |
-| --------------------- | -------------------------------------------------------------------- |
-| status                | `updated` or `error` indicating whether the destination was created. |
-| data                  | Present if successful. An object containing the destination object.  |
-| message               | Present if error. Contains message describing the error.             |
-
-
+| Response Property | Description                                                          |
+| ----------------- | -------------------------------------------------------------------- |
+| status            | `updated` or `error` indicating whether the destination was created. |
+| data              | Present if successful. An object containing the destination object.  |
+| message           | Present if error. Contains message describing the error.             |
 
 
 
@@ -244,9 +242,9 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/destinations/90' \
 {% endtab %}
 {% endtabs %}
 
-| **Response Property** | **Description**                                                        |
-| --------------------- | ---------------------------------------------------------------------- |
-| status                | `deleted` or `404` indicating whether the model was found and deleted. |
+| Response Property | Description                                                            |
+| ----------------- | ---------------------------------------------------------------------- |
+| status            | `deleted` or `404` indicating whether the model was found and deleted. |
 
 
 

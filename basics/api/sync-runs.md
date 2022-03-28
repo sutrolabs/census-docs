@@ -144,7 +144,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[ID]
 {% endtab %}
 {% endtabs %}
 
-| **Data Properties**        | **Description**                                                                                                                                                                                            |
+| Data Properties            | Description                                                                                                                                                                                                |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                         | id of this sync run.                                                                                                                                                                                       |
 | sync\_id                   | id of the parent sync.                                                                                                                                                                                     |

@@ -108,7 +108,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objec
 {% endtab %}
 {% endtabs %}
 
-| **Data Property**              | **Description**                                                                                  |
+| Data Property                  | Description                                                                                      |
 | ------------------------------ | ------------------------------------------------------------------------------------------------ |
 | label                          | The label for this object.                                                                       |
 | full\_name                     | The full name for this object. This is used to identify the object in the API.                   |
@@ -120,7 +120,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objec
 
 #### Field Properties
 
-| **Data Property**           | **Description**                                                                                                                                                                                                                                                     |
+| Data Property               | Description                                                                                                                                                                                                                                                         |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | label                       | The label for this field.                                                                                                                                                                                                                                           |
 | full\_name                  | The full name for this field. This is used to identify the field in the API.                                                                                                                                                                                        |

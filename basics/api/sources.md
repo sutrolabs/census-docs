@@ -59,9 +59,9 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources
 {% endtab %}
 {% endtabs %}
 
-| **Data Property** | **Description**                                                                                              |
-| ----------------- | ------------------------------------------------------------------------------------------------------------ |
-| List of sources   | A list containing information on each source. The properties of a source are described in the next endpoint. |
+| Data Property   | Description                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------------ |
+| List of sources | A list containing information on each source. The properties of a source are described in the next endpoint. |
 
 
 
@@ -100,7 +100,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]
 {% endtab %}
 {% endtabs %}
 
-| **Data Property**      | **Description**                                                                                                                        |
+| Data Property          | Description                                                                                                                            |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | id                     | The id of this source.                                                                                                                 |
 | name                   | The name of this source.                                                                                                               |
@@ -152,16 +152,16 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/sources' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                              |
-| -------------------- | -------------------------------------------- |
-| connection           | Contains the information for the connection. |
+| Request Property | Description                                  |
+| ---------------- | -------------------------------------------- |
+| connection       | Contains the information for the connection. |
 
-| **Connection Property** | **Description**                                                                              |
-| ----------------------- | -------------------------------------------------------------------------------------------- |
-| type                    | `required`. The type of this source (e.g. `redshift`, `big_query`)                           |
-| credentials             | `required`. Credentials that should be associated with this source (e.g. `hostname`, `port)` |
-| label                   | The label assigned to this source.                                                           |
-| read\_only\_connection  | Whether or not Census has write permissions, for tracking sync state, on this source.        |
+| Connection Property    | Description                                                                                  |
+| ---------------------- | -------------------------------------------------------------------------------------------- |
+| type                   | `required`. The type of this source (e.g. `redshift`, `big_query`)                           |
+| credentials            | `required`. Credentials that should be associated with this source (e.g. `hostname`, `port)` |
+| label                  | The label assigned to this source.                                                           |
+| read\_only\_connection | Whether or not Census has write permissions, for tracking sync state, on this source.        |
 
 
 
@@ -215,15 +215,15 @@ curl --location --request PATCH 'https://app.getcensus.com/api/v1/sources/12' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                              |
-| -------------------- | -------------------------------------------- |
-| connection           | Contains the information for the connection. |
+| Request Property | Description                                  |
+| ---------------- | -------------------------------------------- |
+| connection       | Contains the information for the connection. |
 
-| **Connection Property** | **Description**                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------- |
-| credentials             | Credentials that should be associated with this source (e.g. `hostname`, `port)`      |
-| label                   | The label assigned to this source.                                                    |
-| read\_only\_connection  | Whether or not Census has write permissions, for tracking sync state, on this source. |
+| Connection Property    | Description                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------- |
+| credentials            | Credentials that should be associated with this source (e.g. `hostname`, `port)`      |
+| label                  | The label assigned to this source.                                                    |
+| read\_only\_connection | Whether or not Census has write permissions, for tracking sync state, on this source. |
 
 
 
@@ -248,9 +248,9 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/sources/6' \
 {% endtab %}
 {% endtabs %}
 
-| **Response Property** | **Description**                                                        |
-| --------------------- | ---------------------------------------------------------------------- |
-| status                | `deleted` or `404` indicating whether the model was found and deleted. |
+| Response Property | Description                                                            |
+| ----------------- | ---------------------------------------------------------------------- |
+| status            | `deleted` or `404` indicating whether the model was found and deleted. |
 
 
 

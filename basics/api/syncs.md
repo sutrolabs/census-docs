@@ -281,7 +281,7 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property**             | **Description**                                                                                                                                                                                                                                                                                                                                         |
+| Request Property                 | Description                                                                                                                                                                                                                                                                                                                                             |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | operation                        | <p><code>required</code>. How records are synced to the destination. Valid options:</p><ul><li><code>append</code></li><li><code>insert</code></li><li><code>mirror</code></li><li><code>update</code></li><li><code>upsert</code></li></ul>                                                                                                            |
 | source\_attributes               | `required`. Attributes used to identify the data source for this sync. The specific properties are described below.                                                                                                                                                                                                                                     |
@@ -300,28 +300,24 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 
 
 
-| **Source Attribute** | **Description**                                                                                                                                                                                                                        |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| connection\_id       | The id used to identify the source connection.                                                                                                                                                                                         |
-| object               | Attributes of the data source. Properties are expanded on immediately below.                                                                                                                                                           |
-| type                 | <p><code>required</code>. The type of your data source. Valid options:</p><ul><li><code>table</code></li><li><code>model</code></li></ul>                                                                                              |
-| id                   | <p><code>required</code> unless either the following are specified:</p><ul><li><code>name</code></li><li><code>table_name</code>, <code>table_schema</code>, and <code>table_catalog</code></li></ul><p>The id of the data source.</p> |
-| name                 | `required` if the `type` is `model`, and the `id` is not specified. The name of the model.                                                                                                                                             |
-| table\_name          | `required` if the `type` is `table`, and the `id` is not specified. The name of the table.                                                                                                                                             |
-| table\_schema        | `required` if the `type` is `table`, and the `id` is not specified. The schema of the table.                                                                                                                                           |
-| table\_catalog       | `required` if the `type` is `table`, and the `id` is not specified. The catalog of the table.                                                                                                                                          |
+| Source Attribute | Description                                                                                                                                                                                                                            |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| connection\_id   | The id used to identify the source connection.                                                                                                                                                                                         |
+| object           | Attributes of the data source. Properties are expanded on immediately below.                                                                                                                                                           |
+| type             | <p><code>required</code>. The type of your data source. Valid options:</p><ul><li><code>table</code></li><li><code>model</code></li></ul>                                                                                              |
+| id               | <p><code>required</code> unless either the following are specified:</p><ul><li><code>name</code></li><li><code>table_name</code>, <code>table_schema</code>, and <code>table_catalog</code></li></ul><p>The id of the data source.</p> |
+| name             | `required` if the `type` is `model`, and the `id` is not specified. The name of the model.                                                                                                                                             |
+| table\_name      | `required` if the `type` is `table`, and the `id` is not specified. The name of the table.                                                                                                                                             |
+| table\_schema    | `required` if the `type` is `table`, and the `id` is not specified. The schema of the table.                                                                                                                                           |
+| table\_catalog   | `required` if the `type` is `table`, and the `id` is not specified. The catalog of the table.                                                                                                                                          |
 
+| Destination Attribute   | Description                                                    |
+| ----------------------- | -------------------------------------------------------------- |
+| connection\_id          | `required`. The id used to identify the destination connection |
+| object                  | `required`. The full name of the destination object            |
+| lead\_union\_insert\_to | Where to insert a union object (for Salesforce connections)    |
 
-
-| **Destination Attribute** | **Description**                                                |
-| ------------------------- | -------------------------------------------------------------- |
-| connection\_id            | `required`. The id used to identify the destination connection |
-| object                    | `required`. The full name of the destination object            |
-| lead\_union\_insert\_to   | Where to insert a union object (for Salesforce connections)    |
-
-
-
-| **Mapping Attribute**   | **Description**                                                                                                                                                                                                                                                                                                                 |
+| Mapping Attribute       | Description                                                                                                                                                                                                                                                                                                                     |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | from                    | <p><code>required</code>. The name of the column in the source, or an object with the following properties:</p><ul><li><code>value</code> - A constant value</li><li><code>basic_type</code> - The type of this value (can be <code>boolean</code>, <code>datetime</code>, <code>number</code>, or <code>text</code>)</li></ul> |
 | to                      | `required`. The full name of the field to sync in to.                                                                                                                                                                                                                                                                           |
@@ -332,16 +328,16 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 | lookup\_object          | For a reference field, the full name of the object it refers to.                                                                                                                                                                                                                                                                |
 | lookup\_field           | For a reference field, the field to lookup the referenced object by.                                                                                                                                                                                                                                                            |
 
-| **High Water Mark Attribute**      | **Description**                                                                                                                         |
+| High Water Mark Attribute          | Description                                                                                                                             |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | use\_high\_water\_mark\_diff\_type | `true` or `false` to indicate use of high water mark diff type sync. Only valid for `append` operation and source warehouse `Snowflake` |
 | column\_name                       | The name of the column in the source                                                                                                    |
 
-| **Response Property** | **Description**                                                 |
-| --------------------- | --------------------------------------------------------------- |
-| status                | `created` or `error` indicating whether the sync was triggered. |
-| data                  | Present if successful. An object containing the `sync_id`       |
-| message               | Present if error. Contains message describing the error.        |
+| Response Property | Description                                                     |
+| ----------------- | --------------------------------------------------------------- |
+| status            | `created` or `error` indicating whether the sync was triggered. |
+| data              | Present if successful. An object containing the `sync_id`       |
+| message           | Present if error. Contains message describing the error.        |
 
 
 
@@ -454,15 +450,15 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                                                                                                                                                                                                   |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Sync parameters      | A list of parameters to update the sync with, similar to the request parameters for `POST /syncs`. The only parameters that cannot be updated are `source_attributes`, `destination_attributes`, and `operation`. |
+| Request Property | Description                                                                                                                                                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sync parameters  | A list of parameters to update the sync with, similar to the request parameters for `POST /syncs`. The only parameters that cannot be updated are `source_attributes`, `destination_attributes`, and `operation`. |
 
-| **Response Property** | **Description**                                                     |
-| --------------------- | ------------------------------------------------------------------- |
-| status                | `updated` or `error` indicating whether the sync was updated.       |
-| data                  | Present if successful. Returns the same object as `GET /syncs/[ID]` |
-| message               | Present if error. Contains message describing the error.            |
+| Response Property | Description                                                         |
+| ----------------- | ------------------------------------------------------------------- |
+| status            | `updated` or `error` indicating whether the sync was updated.       |
+| data              | Present if successful. Returns the same object as `GET /syncs/[ID]` |
+| message           | Present if error. Contains message describing the error.            |
 
 
 
@@ -487,9 +483,9 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/syncs/96' \
 {% endtab %}
 {% endtabs %}
 
-| **Response Property** | **Description**                                                       |
-| --------------------- | --------------------------------------------------------------------- |
-| status                | `deleted` or `404` indicating whether the sync was found and deleted. |
+| Response Property | Description                                                           |
+| ----------------- | --------------------------------------------------------------------- |
+| status            | `deleted` or `404` indicating whether the sync was found and deleted. |
 
 
 

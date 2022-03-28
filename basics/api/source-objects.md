@@ -60,7 +60,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/objects
 {% endtab %}
 {% endtabs %}
 
-| **Data Property**      | **Description**                                                                                         |
+| Data Property          | Description                                                                                             |
 | ---------------------- | ------------------------------------------------------------------------------------------------------- |
 | List of source objects | Tables and models associated with this connection. Properties are described in the following endpoints. |
 
@@ -149,9 +149,9 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models
 {% endtab %}
 {% endtabs %}
 
-| **Data Property** | **Description**                                                                                          |
-| ----------------- | -------------------------------------------------------------------------------------------------------- |
-| A list of models  | A list of your models. The properties of a sync are expanded on below in the GET /models/\[ID] endpoint. |
+| Data Property    | Description                                                                                              |
+| ---------------- | -------------------------------------------------------------------------------------------------------- |
+| A list of models | A list of your models. The properties of a sync are expanded on below in the GET /models/\[ID] endpoint. |
 
 
 
@@ -202,7 +202,7 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID
 {% endtab %}
 {% endtabs %}
 
-| **Data Property**  | **Description**                                                                                                                                                                         |
+| Data Property      | Description                                                                                                                                                                             |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | type               | The type of this source object, will always be `model`.                                                                                                                                 |
 | id                 | The id of this model.                                                                                                                                                                   |
@@ -248,18 +248,18 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/models' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                                                                |
-| -------------------- | ------------------------------------------------------------------------------ |
-| name                 | `required`. The name of this model.                                            |
-| query                | `required`. The SQL query associated with this model.                          |
-| description          | The description for this model.                                                |
-| approved             | `boolean` denoting whether the model is approved for Census' Segments Builder. |
+| Request Property | Description                                                                    |
+| ---------------- | ------------------------------------------------------------------------------ |
+| name             | `required`. The name of this model.                                            |
+| query            | `required`. The SQL query associated with this model.                          |
+| description      | The description for this model.                                                |
+| approved         | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
-| **Response Property** | **Description**                                                |
-| --------------------- | -------------------------------------------------------------- |
-| status                | `created` or `error` indicating whether the model was created. |
-| data                  | Present if successful. An object containing the `model_id`     |
-| message               | Present if error. Contains message describing the error.       |
+| Response Property | Description                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| status            | `created` or `error` indicating whether the model was created. |
+| data              | Present if successful. An object containing the `model_id`     |
+| message           | Present if error. Contains message describing the error.       |
 
 
 
@@ -310,18 +310,18 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 {% endtab %}
 {% endtabs %}
 
-| **Request Property** | **Description**                                                                |
-| -------------------- | ------------------------------------------------------------------------------ |
-| name                 | The name of this model.                                                        |
-| description          | The description for this model.                                                |
-| query                | The SQL query associated with this model.                                      |
-| approved             | `boolean` denoting whether the model is approved for Census' Segments Builder. |
+| Request Property | Description                                                                    |
+| ---------------- | ------------------------------------------------------------------------------ |
+| name             | The name of this model.                                                        |
+| description      | The description for this model.                                                |
+| query            | The SQL query associated with this model.                                      |
+| approved         | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
-| **Response Property** | **Description**                                                      |
-| --------------------- | -------------------------------------------------------------------- |
-| status                | `updated` or `error` indicating whether the model was updated.       |
-| data                  | Present if successful. Returns the same object as `GET /models/[ID]` |
-| message               | Present if error. Contains message describing the error.             |
+| Response Property | Description                                                          |
+| ----------------- | -------------------------------------------------------------------- |
+| status            | `updated` or `error` indicating whether the model was updated.       |
+| data              | Present if successful. Returns the same object as `GET /models/[ID]` |
+| message           | Present if error. Contains message describing the error.             |
 
 
 
@@ -346,9 +346,9 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 {% endtab %}
 {% endtabs %}
 
-| **Response Property** | **Description**                                                        |
-| --------------------- | ---------------------------------------------------------------------- |
-| status                | `deleted` or `404` indicating whether the model was found and deleted. |
+| Response Property | Description                                                            |
+| ----------------- | ---------------------------------------------------------------------- |
+| status            | `deleted` or `404` indicating whether the model was found and deleted. |
 
 
 
@@ -397,12 +397,12 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID
 {% endtab %}
 {% endtabs %}
 
-| **Data Property** | **Description**                                                                                                                                                                         |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type              | The type of this source object, will always be `table`.                                                                                                                                 |
-| id                | The id of this table.                                                                                                                                                                   |
-| table\_catalog    | The catalog associated with this table.                                                                                                                                                 |
-| table\_schema     | The schema associated with this table.                                                                                                                                                  |
-| table\_name       | The name of this table.                                                                                                                                                                 |
-| columns           | <p>A list of columns from this table, each with two properties:</p><ul><li><code>name</code> - The name of the column</li><li><code>type</code> - The data type of the column</li></ul> |
+| Data Property  | Description                                                                                                                                                                             |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| type           | The type of this source object, will always be `table`.                                                                                                                                 |
+| id             | The id of this table.                                                                                                                                                                   |
+| table\_catalog | The catalog associated with this table.                                                                                                                                                 |
+| table\_schema  | The schema associated with this table.                                                                                                                                                  |
+| table\_name    | The name of this table.                                                                                                                                                                 |
+| columns        | <p>A list of columns from this table, each with two properties:</p><ul><li><code>name</code> - The name of the column</li><li><code>type</code> - The data type of the column</li></ul> |
 
