@@ -134,21 +134,17 @@ That should be it! OpportunityContactRole is one of the weirdest parts of the Sa
 
 You can clear fields in Salesforce by syncing `NULL` values from your data source. Note that the Salesforce will ignore any empty string or  `''` values from your source and make no changes.&#x20;
 
-
-
-[Contact us](mailto:support@getcensus.com) if you have any questions about Salesforce.
-
 ## :question:Why is my Salesforce sync so slow
 
 Census utilizes the bulk API to write data into Salesforce. If a sync is taking a while, check to see if there are any automations, process builders, or Apex triggers on those specific objects. If so, Census must wait to upload/update the service. Our recommendation is to pause automations on that object for full syncs in the interest of speed.
 
 ## 🆘 Common Errors
 
-The is a running list of Salesforce errors that frequently cause skipped records on when syncing data to Salesforce. \
+There's a few errors which frequently cause skipped records on when syncing data to Salesforce. \
 \
 Keep in mind, Census will always retry syncing any records that are rejected by Salesforce so it's worth the effort to understand and address the cause of the issues. Once they're fixed, Census will sync any of the changes that had been missed.
 
-**DUPLICATES\_DETECTED:Use one of these records?:--**
+**`DUPLICATES_DETECTED:Use one of these records?:--`**
 
 This error is caused when attempting to insert a new Account, Contact, or Lead record that Salesforce thinks is a duplicate of a record already in Salesforce. That "Use one of these records?" message is actually the title of a message you'd see if you were trying to do this manually in Salesforce. Unfortunately, it's not that helpful as an error message!
 
@@ -156,7 +152,7 @@ Though Leads are separate objects from Contacts and Accounts, Salesforce has pre
 \
 In extreme cases, you can choose to turn off duplicate rules either only for the Census account, or entirely for your org. This is probably a bad idea, so proceed with caution!
 
-**CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY:MyCoolTrigger: System.LimitException: SBQQ:Too many SOQL queries: 101**
+**`CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY:MyCoolTrigger: System.LimitException: SBQQ:Too many SOQL queries: 101`**
 
 Salesforce limits the number of SOQL queries that can be executed in an individual batch transaction. Because Census uploads data in batches, any triggers associated with objects directly also need to handle large batches as well.&#x20;
 
@@ -164,23 +160,23 @@ The primary cause of this problem is doing SOQL queries within a loop. The fix f
 
 In some cases though, it can be hard to avoid many SOQL queries (Salesforce CPQ is built within the Salesforce platform for example and frequently runs into this error when handling batches). In this case, you'll need to use Apex's [System.scheduleBatch()](https://developer.salesforce.com/docs/atlas.en-us.226.0.apexcode.meta/apexcode/apex\_batch\_interface.htm#apex\_batch\_scheduleBatch\_section) functionality to handle the trigger logic asynchronously. This gives you the flexibility to handle the changes in whatever batch size as appropriate to support your required number of SOQL queries.
 
-**CANNOT\_EXECUTE\_FLOW\_TRIGGER: Apex CPU time limit exceeded**
+**`CANNOT_EXECUTE_FLOW_TRIGGER: Apex CPU time limit exceeded`**
 
-**CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY: Apex heap size too large**
+**`CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY: Apex heap size too large`**
 
 This is another form of the **CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY** issue above. In this case, the validations, triggers, flows that are associated with the objects you are targeting are too computationally expensive. The cause may also be a loop, or optimized trigger code. And moving to the `scheduleBactch()` function can help with this as well.
 
 If you're still having issues, please contact your Census representative. In some cases, we can help control batch sizes being passed to Census.
 
-**INVALID\_CROSS\_REFERENCE\_KEY:INVALID CROSS REFERENCE ID**
+**`INVALID_CROSS_REFERENCE_KEY:INVALID CROSS REFERENCE ID`**
 
 This error shows up when a sync is attempting to create a relationship using a Salesforce ID that doesn't actually exist in the particular Salesforce installation. This could happen if you are accidentally using a different type of ID as a Salesforce ID, but most often, we see this when trying to use Salesforce IDs that exist in one Salesforce environment but not the destination, for example, using Salesforce IDs that exist in production but that does not exist in a Salesforce Sandbox.&#x20;
 
-**OAUTH\_APP\_BLOCKED this app is blocked by admin**
+**`OAUTH_APP_BLOCKED: this app is blocked by admin`**
 
 This error happens when Census is installed in Salesforce, but needs to be unblocked in the Connected App OAuth Usage page, under Actions. Census should also have read and write access to all the objects and fields you may want to update. Salesforce also currently requires that the user account have the "View Setup and Configuration" permission, so make sure this permission is set on the Profile assigned to this user under the "Administrative Permissions" heading of their profile.
 
-**UNABLE\_TO\_LOCK\_ROW:unable to obtain exclusive access to this record or 200 records**
+**`UNABLE_TO_LOCK_ROW: unable to obtain exclusive access to this record or 200 records`**
 
 This error occurs with highly automated or frequently changing Salesforce deployments. When Census is updating, it submits a batch of records to Salesforce. Salesforce splits up this batch into smaller sub batches and attempts to update them in a transaction. In this case, Salesforce was unable to create a transaction to update the specified records.&#x20;
 
