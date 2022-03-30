@@ -333,14 +333,16 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 
 | Source Attribute | Description                                                                                                                                                                                                                            |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| connection\_id   | The id used to identify the source connection.                                                                                                                                                                                         |
-| object           | Attributes of the data source. Properties are expanded on immediately below.                                                                                                                                                           |
+| connection\_id   | `required`. The id used to identify the source connection.                                                                                                                                                                             |
+| object           | `required`. Attributes of the data source. Properties are expanded on immediately below.                                                                                                                                               |
 | type             | <p><code>required</code>. The type of your data source. Valid options:</p><ul><li><code>table</code></li><li><code>model</code></li></ul>                                                                                              |
 | id               | <p><code>required</code> unless either the following are specified:</p><ul><li><code>name</code></li><li><code>table_name</code>, <code>table_schema</code>, and <code>table_catalog</code></li></ul><p>The id of the data source.</p> |
 | name             | `required` if the `type` is `model`, and the `id` is not specified. The name of the model.                                                                                                                                             |
 | table\_name      | `required` if the `type` is `table`, and the `id` is not specified. The name of the table.                                                                                                                                             |
 | table\_schema    | `required` if the `type` is `table`, and the `id` is not specified. The schema of the table.                                                                                                                                           |
 | table\_catalog   | `required` if the `type` is `table`, and the `id` is not specified. The catalog of the table.                                                                                                                                          |
+
+
 
 | Destination Attribute   | Description                                                    |
 | ----------------------- | -------------------------------------------------------------- |
