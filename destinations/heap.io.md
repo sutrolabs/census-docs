@@ -69,20 +69,20 @@ In the "What data do you want to sync?" section.
 Next up is the "Where do you want to sync data to?" section.
 
 * Pick the Heap.io connection you created in step 3.
-* For Object, Select Account or User.
+* For Object, Select Account, User, or Event.
 
-![Select which object you want to sync to](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.49.02 PM.png>)
+![Select which object you want to sync to](<../.gitbook/assets/Screen Shot 2022-03-31 at 11.45.23 AM.png>)
 
 For the "How should changes to the source be synced?" section.&#x20;
 
-* Select Update Or Create
+* For Account and User select Update or Create or select Append for an Event sync
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.50.51 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2022-03-31 at 11.46.19 AM.png>)
 
 For the "How are source and destination records matched?" section.&#x20;
 
-* Pick the mapping key; for syncs to the User object the identifier is Identity and for the Account object the identifier is Account Id
-* Select the field from your model you want mapped to the identifier.&#x20;
+* Pick the mapping key; for syncs to the User object the identifier is Identity, for the Account object the identifier is Account Id, and the Event object can use any unique field from your source as an identifier.
+* Select the field from your model you want as the identifier.&#x20;
 
 ![](<../.gitbook/assets/Screen Shot 2022-01-27 at 4.06.50 PM.png>)
 
@@ -98,6 +98,7 @@ Click the Next button to see the final preview, which will have a recap of what 
 | --------------- | :------------: | --------------- |
 | Account         |        ✅       | Account ID      |
 | User            |        ✅       | Identity        |
+| Event           |        ✅       | Insert ID       |
 
 🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
 
@@ -110,6 +111,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 |    **Behaviors** | **Supported?** |  **Objects?** |
 | ---------------: | :------------: | :-----------: |
 | Update or Create |        ✅       | Account, User |
+|           Append |        ✅       |     Event     |
 
 ‌ 🔋 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
