@@ -50,6 +50,7 @@
 * [Sync-a-swag](destinations/sync-a-swag.md)
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Airtable](destinations/airtable.md)
+* [Algolia](destinations/algolia.md)
 * [Amplitude](destinations/amplitude.md)
 * [Anaplan](<destinations/anaplan (1).md>)
 * [Appcues](destinations/appcues.md)
