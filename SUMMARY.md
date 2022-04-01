@@ -62,6 +62,7 @@
 * [Criteo](destinations/criteo.md)
 * [Custom API](destinations/custom-api.md)
 * [Customer.io](destinations/customer.io.md)
+* [Delighted](destinations/delighted.md)
 * [Drift](destinations/drift.md)
 * [Facebook Ads](destinations/facebook-ads.md)
 * [Freshdesk](destinations/freshdesk.md)
