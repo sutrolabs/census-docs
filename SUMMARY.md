@@ -78,6 +78,7 @@
 * [Intercom](destinations/intercom.md)
 * [Iterable](destinations/iterable.md)
 * [Klaviyo](destinations/klaviyo.md)
+* [Kustomer](destinations/kustomer.md)
 * [LinkedIn](destinations/linkedin.md)
 * [Mailchimp](destinations/mailchimp.md)
 * [Marketo](destinations/marketo.md)
