@@ -297,3 +297,66 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objec
 | lookup\_object              | What object, if any, that this field references.                                                                                                                                                                                                                    |
 | type                        | The type of this field.                                                                                                                                                                                                                                             |
 
+
+
+
+
+### POST /destinations/\[ID]/objects/\[OBJECT\_FULL\_NAME]/refresh\_fields
+
+This endpoint queues a job to refresh the list of fields for a given destination object.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --request POST 'http://app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NAME]/refresh_fields' \
+--header 'Authorization: Bearer [API_TOKEN]'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "refresh_key": 1647978948
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| Response Property | Description                                             |
+| ----------------- | ------------------------------------------------------- |
+| refresh\_key      | Contains an `id` used to query the refresh objects job. |
+
+
+
+
+
+### GET /destinations/\[ID]/objects/\[OBJECT\_FULL\_NAME]/refresh\_fields\_status
+
+This endpoint checks whether the the job refreshing fields for a given destination object has completed.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NAME]refresh_fields_status?refresh_key=1647978948
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "completed"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| Query Parameter | Description                                                                                                                 |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| refresh\_key    | `required`. An `id` provided by the `refresh_objects` endpoint, used to check whether the refresh objects job has finished. |
+
+| Response Property | Description                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| status            | Status of the job. Can be either `completed` or `processing`. |
+
+
+
