@@ -104,6 +104,10 @@ that's it, in 5 steps, you connect Census to HubSpot and started syncing custome
 
 With HubSpot, you have both a rate limit and a daily api call limit that is tied to the plan you have. [See HubSpot documentation here](https://legacydocs.hubspot.com/apps/api\_guidelines). HubSpot doesn't have the concept of bulk API so every call is roughly a record being sync.
 
+{% hint style="info" %}
+HubSpot connected apps (like Census) are not subject to your daily API limit, only to the burst limit (100 requests/10 sec). Your Census syncs will not impact your HubSpot daily API limits.
+{% endhint %}
+
 | **Service**                 | Public API rate limit | **Records sync / Minute** |
 | --------------------------- | --------------------- | ------------------------- |
 | HubSpot (Free & Start Plan) | 600 calls / min       | \~600                     |
@@ -111,7 +115,7 @@ With HubSpot, you have both a rate limit and a daily api call limit that is tied
 | API Boost Add-on            | 1,200 calls / min     | \~1,200                   |
 
 {% hint style="warning" %}
-Please be aware that with custom object, we need to do extra call due to the limiation of HubSpot' API. You can divide the records sync / minute by 3 to get a good estimation.
+Please be aware that with custom object, we need to do extra call due to the limitation of HubSpot' API. You can divide the records sync / minute by 3 to get a good estimation.
 {% endhint %}
 
 ## 🗄 Supported Objects
