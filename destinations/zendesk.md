@@ -148,6 +148,13 @@ Census currently supports syncing to the following Zendesk objects:
 | ---------------: | :-----------: | -------------------------------------- |
 | Update or Create |       ✅       | All                                    |
 |      Update Only |       ✅       | End User, Organization, Custom Objects |
+|           Delete |       ✅       | End User                               |
+
+{% hint style="warning" %}
+**Warning**
+
+**Delete** syncs can result in data loss! Census recommends you backup this data if you're concerned about accidentally deleting the wrong records.
+{% endhint %}
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
