@@ -87,6 +87,7 @@
 * [Mixpanel](destinations/mixpanel.md)
 * [NetSuite](destinations/netsuite.md)
 * [Notion](destinations/notion.md)
+* [Orbit](destinations/orbit.md)
 * [Outreach](destinations/outreach.md)
 * [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
