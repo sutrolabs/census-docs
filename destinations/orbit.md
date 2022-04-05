@@ -6,14 +6,14 @@ description: This page describes how to use Census with Orbit.
 
 ## 🏃‍♀️ Getting started
 
-This guide shows you how to use Census to connect your Outreach account to your data warehouse and create your first sync.
+This guide shows you how to use Census to connect your Orbit account to your data warehouse and create your first sync.
 
 ### Prerequisites
 
 Before you begin, you'll need the following:
 
 * **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com).
-* **Outreach account**: We recommend using a dedicated service account with Admin user profile privileges. (See [Required Permissions](outreach.md#required-permissions).)
+* **Orbit account**
 * **Credentials for your data warehouse**: For details, see the guide for your specific technology.
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -46,7 +46,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 ### Step 3: Create your model
 
-When defining models, you'll write SQL queries to select the data you want to see in Outreach. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.
+When defining models, you'll write SQL queries to select the data you want to see in Orbit. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.
 
 1. From inside your Census account, navigate to the [**Models**](https://app.getcensus.com/models) page.
 2. Enter a name for your model. You'll use this to select the model later.
@@ -57,14 +57,14 @@ When defining models, you'll write SQL queries to select the data you want to se
 
 ### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
-The sync will move data from your warehouse to Outreach. In this step, you'll define how that will work.
+The sync will move data from your warehouse to Orbit. In this step, you'll define how that will work.
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
-3. Under **Where do you want to sync data to?**, choose Outreach as the **Connection** and an **Object** in Outreach. (See [Supported Objects](outreach.md#supported-objects).)
+3. Under **Where do you want to sync data to?**, choose Orbit as the **Connection** and an **Object** in Orbit. (See [Supported Objects](outreach.md#supported-objects).)
 4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See [Supported Sync Behaviors](outreach.md#supported-sync-behaviors).)
 5. Under **How are source and destination records matched?**, select a mapping key. (See [Supported Objects](outreach.md#supported-objects) for details.)
-6. Under **Which properties should be updated?**, select the fields you want to update by mapping a field in Outreach to a column in your model.
+6. Under **Which properties should be updated?**, select the fields you want to update by mapping a field in Orbit to a column in your model.
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
 9. Click **Create Sync**.
