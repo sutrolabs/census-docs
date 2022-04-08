@@ -37,7 +37,7 @@ You can grant access to the entire workspace or specific pages only, including p
 
 ![](<../.gitbook/assets/image (8) (1).png>)
 
-“When configuring your sync, the page should look something like this 👇
+When configuring your sync, the page should look something like this 👇
 
 ![](<../.gitbook/assets/Notion sync setup (1920 × 2300 px).png>)
 

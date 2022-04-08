@@ -37,11 +37,23 @@ Then select **API Credentials**
 
 ![](../.gitbook/assets/cio\_step2.png)
 
-### **3. Create a new set of Tracking API credentials for Census**
+### **3. Create a new set of Tracking API & App API credentials for Census**
 
 Click the **Create New API Credentials** button in the top right.![](../.gitbook/assets/cio\_step3.png)
 
-Then give the new credentials a name. It can be whatever you like, but give it something memorable so you know this key is used by Census. If you're using Customer.io's workspaces feature, you'll want to specify which workspace to use. If you want to connect Census to multiple workspaces, you'll need to create credentials for each one.
+It's important to note that there are two types of API keys here: Track API Keys and App API Keys. Track API Keys are used to send behavioral tracking activity. App API Keys are used for triggering messages and broadcasts, as well as retrieving data from your workspace. For a more in-depth explanation, check out Customer.io's [docs here](https://customer.io/docs/managing-credentials/#track-api-keys-vs-app-api-keys). \
+
+
+![Tracking API Keys](<../.gitbook/assets/Screen Shot 2022-04-08 at 5.39.29 PM.png>)
+
+\
+
+
+![App API Keys](<../.gitbook/assets/Screen Shot 2022-04-08 at 5.39.15 PM.png>)
+
+
+
+Then, give the new credentials a name. It can be whatever you like, but give it something memorable so you know this key is used by Census. If you're using Customer.io's workspaces feature, you'll want to specify which workspace to use. If you want to connect Census to multiple workspaces, you'll need to create credentials for each one.
 
 When you hit save, you'll return to the list of credentials. Make a note of the **Site ID** and **API Key**. You'll need to provide them to Census.
 
@@ -56,9 +68,11 @@ When you hit save, you'll return to the list of credentials. Make a note of the 
 
 ![](../.gitbook/assets/cio\_step6.png)
 
-Finally, provide the Site ID and API Key you just created on Customer.io. You can name the connection something memorable. This is particularly useful if you're going to create multiple connections, one for each Customer.io workspace. In that case, include the Customer.io workspace name here.
+![](<../.gitbook/assets/Screen Shot 2022-04-08 at 5.50.05 PM.png>)
 
-![](../.gitbook/assets/cio\_step7.png)
+
+
+Finally, provide the Site ID and both API Keys you just created on Customer.io. You can name the connection something memorable. This is particularly useful if you're going to create multiple connections, one for each Customer.io workspace. In that case, include the Customer.io workspace name here.
 
 Customer.io will now appear as a new destination for Census syncs.  🎉
 
