@@ -19,7 +19,6 @@ Here you can write SQL queries or select dbt models that contain the data you wa
 Right now, we're going to send data to an existing Customer Match list, which requires a specific set of properties. We'll create a model that has:
 
 * The email of the Customer
-* A list of the target Customer Match lists
 * Any other properties about the Customer that can assist in the match.
 
 Once you have created your model, click save.
@@ -38,16 +37,20 @@ Next up is the **"Where do you want to sync data to?"** section
 * Pick **Google Ads** as the Connection
 * For Object, pick **Customer**
 
-For the " **How should changes to the source be synced?"** section&#x20;
+For the " **How should we identify customer list members?"** section&#x20;
 
-* Select **Update or Create** or **Mirror**
 * Pick the right mapping key, in this case, we'll use **Email**
+* You will have the option of picking an existing list to sync or creating a new list to sync
 
-Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the field from your model to the properties of the Customer Match List.&#x20;
+Finally, select the fields you want to update in the Mapper in the **"Which Properties should be updated?"** section. Here simply map the field from your model to the properties of the Customer Match List.&#x20;
 
 The end result should look something like this
 
-![](../../.gitbook/assets/screely-1619138106154.png)
+![](../../.gitbook/assets/4154e6d4-889c-460e-a3da-afbcd6a1d240.png)
+
+
+
+
 
 Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync.
 
