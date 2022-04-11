@@ -93,6 +93,7 @@
 * [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
 * [Pipedrive](destinations/pipedrive.md)
+* [Postgres](destinations/postgres.md)
 * [S3](destinations/s3.md)
 * [Sailthru](destinations/sailthru.md)
 * [Salesforce](destinations/salesforce.md)

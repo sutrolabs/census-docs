@@ -24,20 +24,15 @@ In this guide, we will show you how to connect Segment to Census and create your
 
 ## Segment Sync Setup
 
-### 1. Create or get a Segment API key
+### 1. Create or get a Segment Write key
 
-* From within Segment, navigate to Settings > Workspace Settings > Access Management > Tokens. Or click [here](https://app.segment.com/\[YOUR-PROJECT-ID-GOES-HERE]/settings/access-management/tokens) and change the URL to add your Project Id.
+{% hint style="info" %}
+Segment Documentation on Write Keys are [here](https://segment.com/docs/connections/find-writekey/).
+{% endhint %}
 
-![](<../.gitbook/assets/Screen Shot 2021-11-10 at 5.06.58 PM.png>)
-
-* Click the Create Token Button and grant access as an Admin to the sources to which you want to sync.
-
-![](<../.gitbook/assets/Screen Shot 2021-11-10 at 5.16.04 PM.png>)
-
-* Copy the Created Token.
-
-![](<../.gitbook/assets/Screen Shot 2021-11-12 at 11.15.31 AM.png>)
-
+* Create a new HTTP API Source in the Connections page of Segment (found under "Server")
+* Name your connection and optionally label it (We recommend "Census" for ease of debugging)
+* Copy your write key from the saved connection
 * Navigate to the [Connections Page](https://app.getcensus.com/connections) of Census, click on the "Add Service" button and select Segment, and past the created token in the designated field
 
 ![](<../.gitbook/assets/Screen Shot 2021-11-12 at 11.16.21 AM.png>)
