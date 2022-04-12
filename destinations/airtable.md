@@ -26,9 +26,9 @@ In this guide, we will show you how to connect Airtable to Census and create you
 ### 1. Create or get the Airtable API key
 
 1. From within Airtable, click the profile icon in the top right and select **Account**. Or click [_here_](https://airtable.com/account)_._\
-   &#x20;![](../.gitbook/assets/screely-1629998696109.png)&#x20;
+   &#x20;<img src="../.gitbook/assets/screely-1629998696109.png" alt="" data-size="original">&#x20;
 2. Scroll to the **API** section. If this is your first time using the API, you'll need to create an API key. Once created, click the box and copy the API key. You'll need that in a minute. \
-   &#x20;![](../.gitbook/assets/screely-1629998745164.png)&#x20;
+   &#x20;<img src="../.gitbook/assets/screely-1629998745164.png" alt="" data-size="original">&#x20;
 
 Note: Census's permissions will be the same as this Airtable user. If you think this Airtable user's permissions may change or the account is removed, you may want to create a special Airtable account just for Census to use.
 
@@ -37,9 +37,9 @@ Note: Census's permissions will be the same as this Airtable user. If you think 
 1. Now back to Census! Navigate to the [Connections page](https://app.getcensus.com/connections).
 2. Click the **Add Service** button.
 3. Select **Airtable** from the list.\
-   ![](../.gitbook/assets/screely-1629998477683.png)&#x20;
+   <img src="../.gitbook/assets/screely-1629998477683.png" alt="" data-size="original">&#x20;
 4. Add your API key to the modal and give your connection a memorable name. Save once you've got both!\
-   ![](../.gitbook/assets/screely-1629999170323.png)&#x20;
+   <img src="../.gitbook/assets/screely-1629999170323.png" alt="" data-size="original">&#x20;
 
 
 

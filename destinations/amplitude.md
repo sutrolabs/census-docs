@@ -36,7 +36,7 @@ Amplitude lets you pull data from a number of different sources, including via H
 
     ![](https://lh6.googleusercontent.com/IldQDvHh30Q3BQTJI1tAjTdnYaoLgkALhEYU9wpXfMAbmPe0Qu8eUavNYVzRNGT3Chjpr\_G-SODK6pRQluXA44WkdKpjUESz8lItwWdkWUVGE60gJfLHJdFrnEd8lJwdiD\_nvvph)
 2. ‌Once here, navigate to the top-right of the screen and click to **Add Data Source**.\
-   ****![](https://lh3.googleusercontent.com/Xt-bGTekukUBgNGE-d805HzLvnODAgkuC7JCO\_uiW\_3gpE7-oFBID3fgEjkHfRkdlyXtEGG\_wubzXWH8EBss8sJ-Ce\_i9CGAnD5oy-L9F1rvn9YyQlcsxzY4ms5K8guaGWru4MlL)
+   ****<img src="https://lh3.googleusercontent.com/Xt-bGTekukUBgNGE-d805HzLvnODAgkuC7JCO_uiW_3gpE7-oFBID3fgEjkHfRkdlyXtEGG_wubzXWH8EBss8sJ-Ce_i9CGAnD5oy-L9F1rvn9YyQlcsxzY4ms5K8guaGWru4MlL" alt="" data-size="original">
 3. Select **“HTTP API”** as the type of data source, and click **Next**.![](https://lh6.googleusercontent.com/3oT5uRNYeOJCVX6v9h7I4zwmp0P6z2H0NTocMnaOTwauCi01GFLjVZNYdjoYLK\_AxvmMVIxK-Ec8o9xDZGExO9YYlh-T2i055heRbi-VWU5B-0MsR1bDXwfOEaIkAmIr5jIokemj)
 4. **Copy the API Key** (it will be a long string of numbers and characters), click **Next.**&#x20;
 5. If you are setting up the HTTP API data source for the first time, Amplitude will require you to POST an event to their API to complete set-up. Amplitude provides instructions to send a sample event and complete set-up at this stage.

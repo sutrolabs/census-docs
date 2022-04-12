@@ -60,6 +60,7 @@ We **strongly recommend against** connecting Census a production Postgres databa
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 * In older versions of PostgreSQL, if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata. In later versions of PostgreSQL this extra read access is not required.
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
+* If you are using an Azure database for PostgreSQL server the the **Username** needs to be formatted as `username@hostname` . For AWS the format is `username`
 
 ## 🔑 Encryption
 

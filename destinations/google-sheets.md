@@ -31,7 +31,7 @@ Our Google Sheets connector behaves a little differently than other Census conne
 
 ![](../.gitbook/assets/screely-1622879441941.png)
 
-Your new Google Sheets connection will include your Google Identity email. Click the copy button (![](../.gitbook/assets/copy-solid.svg)) to save it to your clipboard, will use it in a minute.
+Your new Google Sheets connection will include your Google Identity email. Click the copy button (<img src="../.gitbook/assets/copy-solid.svg" alt="" data-size="line">) to save it to your clipboard, will use it in a minute.
 
 ### 2. Share your target Google Sheet
 

@@ -28,7 +28,7 @@ In this guide, we will show you how to connect Chargify to Census and create you
 1. Navigate to your target Chargify site. The URL should be `http://[SUBDOMAIN].chargify.com/dashboard`. Make note of the subdomain, you'll need that in a minute.
 2. Click on **Config** in the left navigation, then select **Integrations**. By default, **API Keys** should already be selected. Press the **New API Key** button and copy and paste the resulting API Key. You won't be able to retrieve it again. Once it's created, feel free to edit it and give it a name like Census Integration so you'll remember.&#x20;
 
-![](../.gitbook/assets/screely-1637377208093.png)
+<img src="../.gitbook/assets/screely-1637377208093.png" alt="" data-size="original">
 
 
 

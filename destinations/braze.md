@@ -62,7 +62,7 @@ For example, if your Braze URL is https://dashboard-**03**.braze.com/, then your
 Great! Now let's pull it all together.&#x20;
 
 1. In the **Settings** tab, Create a new Braze Service Connection in Census.\
-   &#x20;![](../.gitbook/assets/screely-1619749986549.png)&#x20;
+   &#x20;<img src="../.gitbook/assets/screely-1619749986549.png" alt="" data-size="original">&#x20;
 2. You can provide whatever name you like.
 3. Provide the appropriate Braze Endpoint URL.
 4.  Copy and paste your new Braze API key.\

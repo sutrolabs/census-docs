@@ -40,7 +40,7 @@ Finally, copy the long code you see under **Key**. We'll use that in a minute.
 Now let's create your new Census connection to Pendo.
 
 1. In the **Settings** tab, Create a new Pendo Service Connection in Census.\
-   &#x20;![](../.gitbook/assets/screely-1624583177140.png)&#x20;
+   &#x20;<img src="../.gitbook/assets/screely-1624583177140.png" alt="" data-size="original">&#x20;
 2. You can provide whatever name you like.
 3.  Copy and paste your new Pendo Integration key.\
 
