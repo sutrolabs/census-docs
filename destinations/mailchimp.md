@@ -45,9 +45,9 @@ For more details, take a look at Mailchimp's [API documentation](https://mailchi
 
 ## 🗄⠀Supported Objects
 
-| **Object Name** | **Supported?** | Identifiers                 |
-| --------------: | :------------: | --------------------------- |
-|        Audience |        ✅       | Object ID, any Text/Number  |
+|       **Object Name** | **Supported?** | Identifiers   |
+| --------------------: | :------------: | ------------- |
+| List/Audience Members |        ✅       | Email Address |
 
 ## 🔄⠀Supported Sync Behaviors
 
