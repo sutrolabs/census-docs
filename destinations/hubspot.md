@@ -102,10 +102,12 @@ that's it, in 5 steps, you connect Census to HubSpot and started syncing custome
 
 ## 🏎 Sync Speed
 
-With HubSpot, you have both a rate limit and a daily api call limit that is tied to the plan you have. [See HubSpot documentation here](https://legacydocs.hubspot.com/apps/api\_guidelines). HubSpot doesn't have the concept of bulk API so every call is roughly a record being sync.
+Census connects to HubSpot using their "Connected App" model, which are not subject to the daily HubSpot API call limit, only to the burst limit (100 requests/10 sec). Your Census syncs will not impact your HubSpot daily API limits or nor any other HubSpot integrations. For more information, see [HubSpot docs](https://legacydocs.hubspot.com/apps/api\_guidelines).
 
-{% hint style="info" %}
-HubSpot connected apps (like Census) are not subject to your daily API limit, only to the burst limit (100 requests/10 sec). Your Census syncs will not impact your HubSpot daily API limits.
+{% hint style="warning" %}
+The choice of your sync identifier and behavior can have _**very drastic**_** ** performance impacts to your sync.&#x20;
+
+Using a HubSpot Object ID or Contact Email as identifiers in HubSpot is fast, but using all other fields as identifiers is _**very**_ slow. That means that any syncs that create new records in HubSpot (other than Contacts by Email) will be slow. We're working with HubSpot to try and increase the speed of their APIs in order to improve our HubSpot sync speed.
 {% endhint %}
 
 | **Service**                 | Public API rate limit | **Records sync / Minute** |
@@ -114,9 +116,7 @@ HubSpot connected apps (like Census) are not subject to your daily API limit, on
 | HubSpot (Pro & Enterprise)  | 900 calls / min       | \~900                     |
 | API Boost Add-on            | 1,200 calls / min     | \~1,200                   |
 
-{% hint style="warning" %}
-Please be aware that with custom object, we need to do extra call due to the limitation of HubSpot' API. You can divide the records sync / minute by 3 to get a good estimation.
-{% endhint %}
+Please be aware that with Custom Objects require extra API calls and are even slower as a result (about 1/3 the speed).
 
 ## 🗄 Supported Objects
 
@@ -131,10 +131,6 @@ Please be aware that with custom object, we need to do extra call due to the lim
 |             Event |       🔜       |                                   |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for HubSpot.
-
-{% hint style="warning" %}
-If possible when doing Update Only syncs, use HubSpot Object IDs as your Sync Identifier. Using them will provide a dramatic sync performance boost!
-{% endhint %}
 
 * As of March 2021, only properties in the searchableProperties set are usable as sync identifiers to HubSpot Custom Objects. This is a bit confusing as this label only appears in the HubSpot API ([Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Definitions Tab > searchableProperties). If you need a hand making one of your existing Custom Object fields as searchable, please contact Census's API Support team and we can walk you through it.&#x20;
 
