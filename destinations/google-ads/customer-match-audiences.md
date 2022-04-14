@@ -77,6 +77,11 @@ We recommend you do not use Google's Customer Match expiration setting. Census-s
 
 _**Identifiers**: User ID, Mobile ID, Email, Phone Number_
 
+Please note that the above behaviors will map to what you select in the, "_**When a record is removed from source data**_" dropdown in the **Customer List sync** section. Selecting "**Do Nothing**" will map to **Update or Create(Upsert)** while "**Remove matching record from customer list**" will map to **Mirror**.\
+
+
+![Operations mapping to Sync behaviors](<../../.gitbook/assets/Screen Shot 2022-04-14 at 10.46.18 AM.png>)
+
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
 
 Note: If you're reusing an existing Customer Match List, Census will not remove any users already added to those lists through other means.&#x20;
