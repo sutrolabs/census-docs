@@ -77,6 +77,7 @@ Contact us if you want Census to support more Sync Behaviors for Vitally
 ## 🔍 Additional Service Quirks
 
 * Vitally's internal database has a delay between Census completing its upload and having those results reflected in the UI. This delay can be a couple seconds to a couple minutes in extreme cases.
+* As with all Census syncs, when you unmap a field in Census, we will stop updating those fields. We do not delete them.
 
 ## 🚑 Need help connecting to Vitally?
 
