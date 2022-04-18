@@ -41,13 +41,15 @@ There are two mandatory fields for the Mailchimp connection: **email** and **sta
 
 Please note that the mandatory status field only accepts the following values: `"subscribed"`, `"unsubscribed"`, `"cleaned"`, or `"pending"`.
 
+In addition, pre-hashed emails can be used as the record identifier for syncs with the Update behavior. The hash must be the MD5 hash of the lowercase version of the list member's email.
+
 For more details, take a look at Mailchimp's [API documentation](https://mailchimp.com/developer/marketing/api/list-members/update-list-member/).
 
 ## 🗄⠀Supported Objects
 
 |       **Object Name** | **Supported?** | Identifiers   |
 | --------------------: | :------------: | ------------- |
-| List/Audience Members |        ✅       | Email Address |
+| List/Audience Members |        ✅       | Email Address, Prehashed Email Address (update-only) |
 
 ## 🔄⠀Supported Sync Behaviors
 
@@ -58,6 +60,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 |        **Behaviors** | **Supported?** | **Objects?** |
 | -------------------: | :------------: | :----------: |
 | **Update or Create** |        ✅       |      All     |
+| **Update**           |        ✅       |      All     |
 
 ## 🚑⠀Need help connecting to Mailchimp?
 
