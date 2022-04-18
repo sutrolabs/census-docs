@@ -100,6 +100,14 @@ Once the sync has completed, return to your Google Sheet and the specific tab yo
 
 That's it! In 6 steps, you've connected Google Sheets and started syncing data from your warehouse  🎉
 
+## :question:Is It Possible to Enforce A Sort Order?
+
+Unfortunately, no. Census can not guarantee a preserved order from your model, even if your model has an `ORDER BY` statement. When we unload the records, we just use a normal SELECT, so the records can come back in any order.\
+\
+We recommend treating the Google Sheet that is receiving data as the "raw data" and doing any necessary transformations, like ordering, in a separate sheet within the file.\
+\
+The `IMPORTRANGE` function in Google Sheets can be a great solution for this use case - you can find the documentation and best practices [here](https://support.google.com/docs/answer/3093340).
+
 ## 🗄 Supported Objects
 
 Google Sheets support is pretty straight forward!
