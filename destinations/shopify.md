@@ -37,6 +37,8 @@ Census currently supports syncing to the following Shopify objects:
 |        Customer |        ✅       | Email           |
 |         Product |        ✅       | Tag ID, Handle  |
 
+Custom Metafields on Customer and Product are supported as well.
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Shopify.
 
 ## 🔄 Supported Sync Behaviors
