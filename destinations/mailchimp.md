@@ -57,9 +57,13 @@ To prehash your emails, first lowercase the email address and then apply an MD5 
 
 `SELECT MD5(LOWER('Example@company.co'))`
 
-#### Mailchimp Tags
+#### Status and Unsubscribing List Members
 
-Mailchimp Tags can be assigned by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/defining-source-data/structured-data.md) using Census.
+The Mailchimp `status` field supports one of four values: `subscribed`, `unsubscribed`, `cleaned`, or `pending`. To unsubscribe a member from a particular list, simply set the status field to `unsubscribed`.
+
+#### Tags
+
+Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/defining-source-data/structured-data.md) using Census.
 
 ## 🔄⠀Supported Sync Behaviors
 
