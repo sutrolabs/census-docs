@@ -93,6 +93,7 @@ We currently support all objects of [Customer.io's core API. ](https://customer.
 |          Person |        ✅       |        ✅       |
 |          Device |        ✅       |        ✅       |
 |           Event |        ✅       |        ✅       |
+|     Collections |        ✅       |        ✅       |
 
 {% hint style="warning" %}
 Make sure you know what identifiers are used in your Customer.io Workspace!
@@ -106,11 +107,12 @@ Customer.io strongly prefers the ID field to be used as the identifier for a Per
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-|      **Update Only** |        ✅       |    Person    |
-|           **Append** |        ✅       |  Event Only  |
+|        **Behaviors** | **Supported?** |      **Objects?**     |
+| -------------------: | :------------: | :-------------------: |
+| **Update or Create** |        ✅       | Person, Event, Device |
+|      **Update Only** |        ✅       |         Person        |
+|           **Append** |        ✅       |         Event         |
+|           **Mirror** |        ✅       |      Collections      |
 
 🔋[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
