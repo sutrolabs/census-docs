@@ -139,7 +139,7 @@ For a more complete description of each identifier, please see [Facebook's API d
 
 Your final sync configuration will look like the following!
 
-![](<../.gitbook/assets/screely-1626208532062 (1).png>)
+![](<../.gitbook/assets/screely-1626208532062 (1) (1).png>)
 
 ### Sample Data Requirements
 
@@ -147,13 +147,13 @@ Your final sync configuration will look like the following!
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | Identifiers                                                                                               |
-| --------------: | :------------: | --------------------------------------------------------------------------------------------------------- |
-|        Customer |        ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/) |
-|     Conversions |        ✅       | Any unique ID                                                                                             |
-| Product Catalog |       🔜       |                                                                                                           |
+|                                                                           **Object Name** | **Supported?** | Identifiers                                                                                               |
+| ----------------------------------------------------------------------------------------: | :------------: | --------------------------------------------------------------------------------------------------------- |
+|                                                                                  Customer |        ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/) |
+| Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |        ✅       | Any unique ID                                                                                             |
+|                                                                           Product Catalog |       🔜       |                                                                                                           |
 
-Please [contact us](mailto:support@getcensus.com) if there are additional Facebook Ads objects you'd like us to support.
+Census supports [custom fields on Conversions](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/custom-data#custom-properties), simply Create New Field when creating a Conversions sync.
 
 #### Data Normalization
 
@@ -163,12 +163,12 @@ Census automatically takes care of this hashing step for you.&#x20;
 
 **However, all values provided to Census must be lowercase**. You can use this standard SQL function `LOWER()`that works across all data warehouses.
 
-Additionally, there is specific behavior for certain fields in Facebook, check out [this link](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters) to their docs, but you also need to remove white spaces on certain Customer Information parameters.&#x20;
-
-#### Examples:
+Additionally, there is specific behavior for certain fields in Facebook, check out [this link](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters) to their docs, but you also need to remove white spaces on certain Customer Information parameters. For example:
 
 * City changing from 'San Antonio' => 'sanantonio' using `replace(  ,' ','')`
 * Date of birth changing from '1983-12-24' => '19831224' using `replace(  ,'-','')`
+
+Please [contact us](mailto:support@getcensus.com) if there are additional Facebook Ads objects you'd like us to support.
 
 ## 🔄 Supported Sync Behaviors
 

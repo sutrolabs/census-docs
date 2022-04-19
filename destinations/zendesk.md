@@ -49,7 +49,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.&#x20;
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](<../.gitbook/assets/202109\_outreach\_basic\_model (1).png>)
+![Basic SQL query for a new model](../.gitbook/assets/202109\_outreach\_basic\_model.png)
 
 ### Step 4: Create your first sync
 
@@ -144,11 +144,11 @@ Census currently supports syncing to the following Zendesk objects:
 
 ## 🔄 Supported sync behaviors
 
-|     **Behavior** | **Supported** | **Objects**                            |
-| ---------------: | :-----------: | -------------------------------------- |
-| Update or Create |       ✅       | All                                    |
-|      Update Only |       ✅       | End User, Organization, Custom Objects |
-|           Delete |       ✅       | End User                               |
+|     **Behavior** | **Supported** | **Objects** |
+| ---------------: | :-----------: | ----------- |
+| Update or Create |       ✅       | All         |
+|      Update Only |       ✅       | All         |
+|           Delete |       ✅       | End User    |
 
 {% hint style="warning" %}
 **Warning**
