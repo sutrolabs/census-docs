@@ -26,7 +26,7 @@ description: This page describes how to use Census with Appcues.
 * Once you are in Census, navigate to [Connections](https://app.getcensus.com/connections)
 * Click the **Add Service** button
 * Select **Appcues** in the dropdown list
-* Copy your Appcues **Account ID**, and your **API key & secret**, which can be created and managed in your [API Keys page on studio.appcues.com](https://studio.appcues.com/settings/keys). For more details on where these values are located, check out [Appcues' official documentation](https://docs.appcues.com/article/745-appcues-public-api).
+* Copy your Appcues **Account ID**, and your **API key & secret**, which can be created and managed in your [API Keys page on studio.appcues.com](https://studio.appcues.com/settings/keys). For more details on where these values are located, check out [Appcues' official documentation](https://docs.appcues.com/article/745-appcues-public-api). It's important to ensure that your API Key has proper permissions. If not, you may run into issues accessing certain endpoints.&#x20;
 
 #### 2. Create your first Model
 
