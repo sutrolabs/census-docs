@@ -29,7 +29,7 @@ Click on **Segments** tab in the left-hand menu to go to the segments page. Clic
 
 You can click preview to see a sampled list of users who match your segment criteria.
 
-![](<../.gitbook/assets/segments\_cropped (1).gif>)
+![](../.gitbook/assets/segments\_cropped.gif)
 
 ### 3. Sync your segment
 

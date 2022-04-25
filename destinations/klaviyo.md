@@ -27,7 +27,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this: 👇
 
-![Connections page with Klaviyo](../.gitbook/assets/202201\_Klaviyo\_Connection.png)
+![Connections page with Klaviyo](<../.gitbook/assets/202201\_Klaviyo\_Connection (1).png>)
 
 ### Step 2: Connect your data warehouse
 
