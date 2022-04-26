@@ -102,14 +102,26 @@ That's it! In 4 steps, you've connected Segment and started syncing user propert
 
 ## 🗄 Supported Objects
 
-Segment support is pretty straight forward!
+Segment support is pretty straight forward! [Let us know](mailto:support@getcensus.com) if you want Census to support more objects for Segment.
 
 | **Object Name** | **Supported?** |
 | :-------------: | :------------: |
 |       User      |        ✅       |
 |  Track (Event)  |        ✅       |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Segment.
+#### Syncing track events
+
+Like most [events.md](../basics/defining-source-data/events.md "mention"), Segment Track Events have the standard set of fields. Though the `event` type field is the only required field, you should typically set at least all the standard event fields.
+
+* `event` (required) - This is the event type field
+* `anonymousId` or `userId` (one of these required) - This indicates which user caused or triggered the event
+* `timestamp` - The time the event occurred. If not provided, Segment will use their server time when the event was received by them (which can be quite different from when it happened, particularly if you're using Census to backfill events).
+* `properties` - Acts as a Properties bundle. See[#using-the-properties-bundle](../basics/defining-source-data/events.md#using-the-properties-bundle "mention") for more information.
+* `context` and `integrations` - Optional event context and controls. See [structured-data.md](../basics/defining-source-data/structured-data.md "mention") for more information on how to create objects to map to these fields.
+
+For more information on the meaning of different Segment fields, take a look at their [documentation](https://segment.com/docs/connections/spec/track/).
+
+
 
 ## 🔄 Supported Sync Behaviors
 
