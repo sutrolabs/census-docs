@@ -57,8 +57,17 @@ Follow Snapchat OAuth flow to connect to your Snapchat account.&#x20;
 
 | Service | Object Name | Supported?           | Identifiers |
 | ------- | ----------- | -------------------- | ----------- |
-|         | Ads         | :white\_check\_mark: |             |
-|         | User        | :white\_check\_mark: |             |
+| Segment | Ads         | :white\_check\_mark: | External ID |
+| User    | User        | :white\_check\_mark: | External ID |
+
+
+
+## 🔄 Supported Sync Behaviors
+
+|     Behaviors    |      Supported?      |     Objects?    |
+| :--------------: | :------------------: | :-------------: |
+| Update or Create | :white\_check\_mark: | Segments, Users |
+|      Mirror      | :white\_check\_mark: |      Users      |
 
 
 
