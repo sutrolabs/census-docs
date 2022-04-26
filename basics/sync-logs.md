@@ -19,7 +19,7 @@ Census can provide detailed logging for all data warehouse sources:
 * Snowflake
 * BigQuery
 * Redshift
-* PostgreSQL
+* PostgreSQL (version 13 or later is required)
 
 ## 🧮 Log Data
 
