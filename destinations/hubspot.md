@@ -120,6 +120,8 @@ Please be aware that with Custom Objects require extra API calls and are even sl
 
 ## 🗄 Supported Objects
 
+[Contact us](mailto:support@getcensus.com) if you're looking for Census to support other HubSpot objects!
+
 |                 **Object Name** | **Supported?** | **Identifiers**                   |
 | ------------------------------: | :------------: | --------------------------------- |
 |                         Company |        ✅       | Object ID, any Text/Number        |
@@ -127,13 +129,19 @@ Please be aware that with Custom Objects require extra API calls and are even sl
 |                            Deal |        ✅       | Object ID, any Text/Number        |
 |                         Product |        ✅       | Object ID, any Text/Number        |
 |                       Line Item |        ✅       | Object ID, any Text/Number        |
-|               Any Custom Object |        ✅       | Object ID, any searchableProperty |
-|        Custom Behavioral Events |        ✅       | Unique Event ID                   |
+|                   Custom Object |        ✅       | Object ID, any searchableProperty |
+|         Custom Behavioral Event |        ✅       | Unique Event ID                   |
 | Engagements (Task, Call, Email) |       🔜       |                                   |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for HubSpot.
+#### Custom Objects
 
-* As of March 2021, only properties in the searchableProperties set are usable as sync identifiers to HubSpot Custom Objects. This is a bit confusing as this label only appears in the HubSpot API ([Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Definitions Tab > searchableProperties). If you need a hand making one of your existing Custom Object fields as searchable, please contact Census's API Support team and we can walk you through it.&#x20;
+As of March 2021, only properties in the searchableProperties set are usable as sync identifiers to HubSpot Custom Objects. This is a bit confusing as this label only appears in the HubSpot API ([Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Definitions Tab > searchableProperties). If you need a hand making one of your existing Custom Object fields as searchable, please contact Census's API Support team and we can walk you through it.&#x20;
+
+#### Custom Behavioral Events
+
+Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and create the Custom Behavioral Event first, see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events). You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for object, you'll need to provide that to the `Event Name` property during the Census sync.&#x20;
+
+Note: The custom fields you've added will not show inside Census, you'll need to use the `New Custom Field` option to create the matching fields on Census, make sure they're named exactly the same (keep in mind, names are case sensitive!).
 
 ## 🔄 Supported Sync Behaviors
 
