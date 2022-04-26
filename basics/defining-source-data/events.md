@@ -31,7 +31,9 @@ The Append Only event sync gives you a few special behaviors to optimize your sy
 
 When setting up an Append Only sync, Census will ask if you'd like to backfill the events already in the data source or simply sync going forward. This option lets you skip any existing data in the data source and only sync new event rows as they appear.&#x20;
 
-#### Detect new records by timestamp
+#### Using timestamp to identify new records
+
+![](../../.gitbook/assets/screely-1650991232946.png)
 
 By default, Census uses the Event ID to detect which rows are new and should be synced. This is fine for most use cases but when data sources expand beyond tens of millions or rows, it may be faster to use a timestamp if available.&#x20;
 
