@@ -120,15 +120,16 @@ Please be aware that with Custom Objects require extra API calls and are even sl
 
 ## 🗄 Supported Objects
 
-|   **Object Name** | **Supported?** | Identifiers                       |
-| ----------------: | :------------: | --------------------------------- |
-|           Company |        ✅       | Object ID, any Text/Number        |
-|           Contact |        ✅       | Object ID, any Text/Number        |
-|              Deal |        ✅       | Object ID, any Text/Number        |
-|           Product |        ✅       | Object ID, any Text/Number        |
-|         Line Item |        ✅       | Object ID, any Text/Number        |
-| Any Custom Object |        ✅       | Object ID, any searchableProperty |
-|             Event |       🔜       |                                   |
+|                 **Object Name** | **Supported?** | **Identifiers**                   |
+| ------------------------------: | :------------: | --------------------------------- |
+|                         Company |        ✅       | Object ID, any Text/Number        |
+|                         Contact |        ✅       | Object ID, any Text/Number        |
+|                            Deal |        ✅       | Object ID, any Text/Number        |
+|                         Product |        ✅       | Object ID, any Text/Number        |
+|                       Line Item |        ✅       | Object ID, any Text/Number        |
+|               Any Custom Object |        ✅       | Object ID, any searchableProperty |
+|        Custom Behavioral Events |        ✅       | Unique Event ID                   |
+| Engagements (Task, Call, Email) |       🔜       |                                   |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for HubSpot.
 
