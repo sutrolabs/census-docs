@@ -292,7 +292,7 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
         {
             "from": {
                 "type": "constant_value",
-                "data: {
+                "data": {
                     "value": "cohort_1",
                     "basic_type": "text"
                 }
