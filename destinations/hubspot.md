@@ -27,13 +27,19 @@ In this guide, we will show you how to connect HubSpot to Census and create your
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
 * Click the **Add Service** button
-* Select HubSpot in the dropdown list
+* Select HubSpot in the menu
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f655f71cff47e00168f867d/file-hdCReSrdwJ.png)
+![](../.gitbook/assets/screely-1651800460992.png)
 
-Follow HubSpot OAuth flow to connect HubSpot. Your end state should look something like this 👇
+Follow HubSpot OAuth flow to connect HubSpot. Your end state should look something like this below.&#x20;
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f655fde4cedfd00176363ed/file-X9MlVAnqC2.png)
+{% hint style="info" %}
+If you plan on using Custom Behavioral Events, you'll also need to provide a
+
+separate API Key. See [#custom-behavioral-events](hubspot.md#custom-behavioral-events "mention") section below.
+{% endhint %}
+
+![](../.gitbook/assets/screely-1651800471783.png)
 
 ### 2. Connect your Data Warehouse
 
@@ -139,7 +145,10 @@ As of March 2021, only properties in the searchableProperties set are usable as 
 
 #### Custom Behavioral Events
 
-Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and create the Custom Behavioral Event first, see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events). You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for object, you'll need to provide that to the `Event Name` property during the Census sync.&#x20;
+Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and do two steps:
+
+1. Grab your HubSpot API key (unfortunately, this type of object needs a slightly different credential than the rest of HubSpot). You can do that within the **Integrations > API Key** section of **Settings**. One twist, you'll need Super Admin privileges to access it.[ HubSpot has all the details in their docs](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key).
+2. Create the Custom Behavioral Event, see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events). You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for object, you'll need to provide that to the `Event Name` property during the Census sync.&#x20;
 
 Note: The custom fields you've added will not show inside Census, you'll need to use the `New Custom Field` option to create the matching fields on Census, make sure they're named exactly the same (keep in mind, names are case sensitive!).
 
