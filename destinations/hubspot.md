@@ -147,7 +147,8 @@ As of March 2021, only properties in the searchableProperties set are usable as 
 
 Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and do two steps:
 
-1. Grab your HubSpot API key (unfortunately, this type of object needs a slightly different credential than the rest of HubSpot). You can do that within the **Integrations > API Key** section of **Settings**. One twist, you'll need Super Admin privileges to access it.[ HubSpot has all the details in their docs](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key).
+1. Grab your HubSpot API key (unfortunately, this type of object needs a slightly different credential than the rest of HubSpot). You can do that within the **Integrations > API Key** section of **Settings**. One twist, you'll need Super Admin privileges to access it.[ HubSpot has all the details in their docs](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key). Once you have your API Key, visit [Census's Connections page](https://app.getcensus.com/connections) and use the **Edit** button on your existing HubSpot connection to store the key in Census.\
+
 2. Create the Custom Behavioral Event, see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events). You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for object, you'll need to provide that to the `Event Name` property during the Census sync.&#x20;
 
 Note: The custom fields you've added will not show inside Census, you'll need to use the `New Custom Field` option to create the matching fields on Census, make sure they're named exactly the same (keep in mind, names are case sensitive!).
