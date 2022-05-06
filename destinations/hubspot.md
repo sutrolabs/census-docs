@@ -27,7 +27,7 @@ In this guide, we will show you how to connect HubSpot to Census and create your
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
 * Click the **Add Service** button
-* Select HubSpot in the menu
+* Select HubSpot in the Add Destination menu and click **Connect**
 
 ![](../.gitbook/assets/screely-1651800460992.png)
 
