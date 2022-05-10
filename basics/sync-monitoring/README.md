@@ -4,15 +4,20 @@ description: >-
   of your syncs.
 ---
 
-# Monitoring
+# Observability
 
 Each sync you set up has several different views into its status, recent activity and overall health. This includes:
 
-* The Overview status - A high level summary of the most recent status of the sync
-* [Sync History](sync-monitoring.md#sync-history) - A detailed log of all of the sync's activity history
-* API Inspector - A view of recent API calls made to the destination service
+* The Overview status - A high level summary of the most recent status of the sync.
+* [Sync History](./#sync-history) - A detailed log of all of the sync's activity history.
+* API Inspector - A view of recent API calls made to the destination service.
 
-Additionally, you don't have to hang out looking at syncs all day to be sure they're healthy. Census also provide [Sync Alerts](alerts.md) for when things need your attention.
+Additionally, you don't have to hang out looking at syncs all day to be sure they're healthy. Census also provides several features to keep an eye on the health of your syncs:
+
+* [Sync Alerts](alerts.md) for when things need your attention.
+* [Sync Logs](sync-logs.md) for keeping track of what your syncs have done historically.
+
+Finally, if you're not ready to run your sync quite yet, you can always do a [Sync Dry Run](sync-dry-runs.md) to get a report of what changes it will make, before it makes them.&#x20;
 
 ## Sync History
 

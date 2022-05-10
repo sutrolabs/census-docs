@@ -5,12 +5,14 @@
 ## 🧰 The Basics <a href="#basics" id="basics"></a>
 
 * [Creating Syncs](basics/core-concept/README.md)
-  * [Monitoring](basics/core-concept/sync-monitoring.md)
   * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
-  * [Sync Alerts](basics/core-concept/alerts.md)
 * [Defining Source Data](basics/defining-source-data/README.md)
   * [Events](basics/defining-source-data/events.md)
   * [Structured Data](basics/defining-source-data/structured-data.md)
+* [Observability](basics/sync-monitoring/README.md)
+  * [Sync Logs](basics/sync-monitoring/sync-logs.md)
+  * [Sync Alerts](basics/sync-monitoring/alerts.md)
+  * [Sync Dry Runs](basics/sync-monitoring/sync-dry-runs.md)
 * [API](basics/api.md)
   * [Syncs](basics/api/syncs.md)
   * [Sync Runs](basics/api/sync-runs.md)
@@ -21,7 +23,6 @@
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
-* [Sync Logs](basics/sync-logs.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
 
