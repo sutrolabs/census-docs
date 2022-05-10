@@ -44,6 +44,7 @@ If you're new here, you can get started by finding the quick start guide for the
 * [Outreach](destinations/outreach.md)
 * [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
+* [Planhat](destinations/planhat.md)
 * [Pipedrive](destinations/pipedrive.md)
 * [Postgres](destinations/postgres.md)
 * [S3](destinations/s3.md)

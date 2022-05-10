@@ -95,6 +95,7 @@
 * [Outreach](destinations/outreach.md)
 * [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
+* [Planhat](destinations/planhat.md)
 * [Pipedrive](destinations/pipedrive.md)
 * [Postgres](destinations/postgres.md)
 * [S3](destinations/s3.md)
