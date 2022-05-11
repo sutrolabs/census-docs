@@ -16,40 +16,43 @@ description: >-
 These instructions are well tested to connect Census to BigQuery. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
 {% endhint %}
 
-Census reads data from one or more tables (possibly across different schemata) in your data warehouse and publishes it to the corresponding objects in external systems, such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a number of tables in the  `census` dataset ('dataset' is what Google calls their equivalent of a 'schema' in standard database terminology).In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
+Census reads data from one or more tables (possibly across different schemata) in your data warehouse and publishes it to the corresponding objects in external systems, such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a number of tables in the  `CENSUS` dataset ('dataset' is what Google calls their equivalent of a 'schema' in standard database terminology).In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
 
-* Permission to create a new `census` dataset or an existing `census` dataset, and full admin access to all schema/tables within that dataset (including creating and deleting tables, and reading and writing to all tables). 
+* Full admin access to all schema/tables within the `CENSUS` dataset (including creating and deleting tables, and reading and writing to all tables).
 * Read-only access to any tables and views in any schemata that you would like Census to publish to Salesforce.
+* Permissions to create jobs.
 
 BigQuery manages these permissions through their IAM Policy mechanism. Specifically, Census uses two BigQuery policies by default:
 
-* `bigquery.dataViewer` - Allows Census read-only access to list the datasets and tables in the BigQuery instance, and to get data from the tables.
-* `bigquery.user` - Allows Census to create new datasets which we use to create the `CENSUS` dataset. This then grants Census the `bigquery.dataOwner`  role on this dataset.
+* `bigquery.dataEditor` - Allows Census full-admin access to the tables in the project.
+* `bigquery.jobUser` - Allows Census to create new datasets which we use to create the `CENSUS` dataset. This then grants Census the `bigquery.dataOwner`  role on this dataset.
 
 #### Advanced Permissions
 
 We definitely recommend you use the two permissions we specify when creating a new BigQuery connection. If you cannot grant these permissions at the project level, you can grant them finer grain. These are the specific permissions the Census service account needs:
 
 * `bigquery.dataViewer` access on the dataset or specific table you'd like Census to read from.
-* You can manually create a `CENSUS` dataset. The Census service account will then need the `bigquery.dataOwner`  role on this dataset.
+* `bigquery.dataEditor` access on the `CENSUS` dataset OR `bigquery.dataOwner` access on the `CENSUS` dataset if you would like to additionally grant Census permissions to delete the `CENSUS` dataset
 * Finally, Census service account needs project-level access with the `bigquery.JobUser` role or specifically the `bigquery.jobs.create` permission (via a custom role).
 
 ## 🔩 Configuring a new BigQuery connection
 
 Because permissions are a bit unique on BigQuery so the process of creating a new connection to Census requires a few extra steps.
 
-1. Visit the **Connections** section on Census, and press **Add Data Warehouse Connection**, selecting **BigQuery** from the list.
+1.  Visit the **Connections** section on Census, and press **Add Data Warehouse Connection**, selecting **BigQuery** from the list.
 2.  Census will ask you to provide the **Google Cloud Project ID** that contains your BigQuery instance. You can find that on the [Google Cloud Console](https://console.cloud.google.com) in the **Project Info** section. If you have multiple Google Cloud projects, you'll need to first select the correct one with the project picker in the top right.\
 
 
     ![](../.gitbook/assets/bq_setup1.png)
-3.  Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with two copy and paste-able commands you can use to grant permissions for this account on this project. The easiest way to execute these commands is within the **Google Cloud Shell** in the Google Cloud Console.\
+3.  Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with
+  1.  two copy and paste-able commands you can use to grant permissions for this account on this project
+  2.  one command to create the `CENSUS` dataset.
+  The easiest way to execute these commands is within the **Google Cloud Shell** in the Google Cloud Console.\
 
 
-    ![](../.gitbook/assets/bq_setup2.png)
+    ![](../.gitbook/assets/bq_setup_permissions.png)
 
-
-4.  Once you've run both commands, press the **Test** button in Census. This will validate that you've granted the appropriate credentials. Once you've got a checkmark for all four steps, you're good to go!\
+4.  Once you've run all the commands, press the **Test** button in Census. This will validate that you've granted the appropriate credentials. Once you've got a checkmark for all four steps, you're good to go!\
 
 
     ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5ea7766b2c7d3a7e9aebba26/file-bagpimlYKc.png)
@@ -74,7 +77,7 @@ It's possible to create views in a BigQuery project that reference the tables an
 gcloud projects add-iam-policy-binding [new-project] \
   --member serviceAccount:[service-account-user] \
   --role roles/bigquery.dataViewer
-  
+
 gcloud projects add-iam-policy-binding [new-project] \
   --member serviceAccount:[service-account-user] \
   --role roles/bigquery.user
@@ -89,8 +92,8 @@ Census will always connect to your data warehouse from of these static IP addres
 * 34.216.163.241
 * 54.212.243.205
 
-While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access. 
+While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access.
 
 ## 🚑 Need help connecting to BigQuery?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat. 
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
