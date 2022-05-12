@@ -30,16 +30,33 @@ There is some setup that is needed to do on the Census side to setup Shopify, wh
 
 ## 🗄 Supported Objects
 
-Census currently supports syncing to the following Shopify objects:
+Census currently supports syncing to the following Shopify objects ([Contact us](mailto:support@getcensus.com) if you're looking for more!):
 
-| **Object Name** | **Supported?** | **Identifiers** |
-| --------------: | :------------: | --------------- |
-|        Customer |        ✅       | Email           |
-|         Product |        ✅       | Tag ID, Handle  |
+| **Object Name** |       **Supported?**      | **Identifiers** |
+| --------------: | :-----------------------: | --------------- |
+|        Customer |             ✅             | Email           |
+|         Product |             ✅             | Tag ID, Handle  |
+|   Product Image | <p>✅<br>(via Product)</p> |                 |
+| Product Variant |             ✅             | SKU             |
 
-Custom Metafields on Customer and Product are supported as well.
+Census also supports Shopify's Custom Metafields on Customer and Product as well.
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Shopify.
+#### Updating Product Images
+
+Census supports setting product images by passing a [structured-data.md](../basics/defining-source-data/structured-data.md "mention") Array to the `images` field on the Product. The images array needs to be a set of one more objects that contain URLs to each image you want to upload. It should look something like the following:&#x20;
+
+```
+[
+  { 
+    "position": 1, 
+    "src": "https://via.placeholder.com/300.png?text=iPod%20Nano,%208GB", 
+    "width": 640, 
+    "height": 480 
+  }
+]
+```
+
+Only the `src` field is required. `position`, `width`, and `height` are optional.
 
 ## 🔄 Supported Sync Behaviors
 
@@ -47,9 +64,10 @@ Custom Metafields on Customer and Product are supported as well.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|    **Behaviors** | **Supported?** | **Objects?** |
-| ---------------: | :------------: | :----------: |
-| Update or Create |        ✅       |      All     |
+|    **Behaviors** | **Supported?** |    **Objects?**   |
+| ---------------: | :------------: | :---------------: |
+| Update or Create |        ✅       | Customer, Product |
+|           Mirror |        ✅       |  Product Variant  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Shopify.
 
