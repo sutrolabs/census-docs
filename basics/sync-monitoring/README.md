@@ -49,4 +49,4 @@ The API Inspector will connect and show you the API calls made by Census related
 
 The vast majority of Census destinations support the API Inspector. This includes services that use JSON, XML, and CSV payloads to send your data.&#x20;
 
-As of Early 2022, the following services are not yet supported: Google Ads, Google Cloud Storage, Google Sheets, Iterable, Mailchimp, Microsoft Ads, NetSuite, and Outreach.
+As of Early 2022, the following services are not yet supported: Google Ads, Google Cloud Storage, Google Sheets, Mailchimp, Microsoft Ads, NetSuite, and Outreach.
