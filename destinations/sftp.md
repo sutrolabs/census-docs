@@ -12,7 +12,7 @@ This guide shows you how to use Census to connect your SFTP server to your data 
 
 Before you begin, you'll need the following:
 
-* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com).
+* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **SFTP server**: You'll need the host address, username, and password or private key.
 * **Credentials for your data warehouse**: For details, see the guide for your [specific data source technology](sftp.md#step-2-connect-your-data-warehouse).
 
@@ -79,7 +79,7 @@ When configuring your sync, the page should look something like this: 👇
 
 Once your sync is complete, it's time to check your data. Go to the specified path on your SFTP server and check that the file updated correctly.
 
-If everything went well, that's it! You've started syncing data from your warehouse to your SFTP server! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F)
+If everything went well, that's it! You've started syncing data from your warehouse to your SFTP server! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F?utm\_source=extlink)
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 

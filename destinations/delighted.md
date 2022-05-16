@@ -10,7 +10,7 @@ In this guide, we'll show you how to connect Delighted to Census and create your
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Delighted account ready,
 *   Have the proper credentials to access your data source. See our docs for each supported data source for further information:
 
@@ -105,4 +105,4 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 ## 🚑 Need help connecting to Delighted?
 
-Contact us via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact us via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

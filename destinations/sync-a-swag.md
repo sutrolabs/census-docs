@@ -16,7 +16,7 @@ Census sends custom fields (contact info, swag preferences) from a data warehous
 
 ### Prerequisites
 
-Have your Census account ready. If you need one, [**create a Free Trial Census account**](https://app.getcensus.com) now.
+Have your Census account ready. If you need one, [**create a Free Trial Census account**](https://app.getcensus.com/) now.
 
 {% embed url="https://youtu.be/dbUQ3sG_-Ao" %}
 

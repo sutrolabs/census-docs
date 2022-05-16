@@ -12,7 +12,7 @@ This guide shows you how to use Census to connect your Orbit account to your dat
 
 Before you begin, you'll need the following:
 
-* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com).
+* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **Orbit account**
 * **Credentials for your data warehouse**: For details, see the guide for your specific technology.
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -53,7 +53,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](<../.gitbook/assets/image (7).png>)
+![Basic SQL query for a new model](<../.gitbook/assets/image (7) (2).png>)
 
 ### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 

@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Zendesk to Census and create your
 
 ### Prerequisites
 
-* Census account: If you don't have this already, [start with a free trial](https://app.getcensus.com).
+* Census account: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * Zendesk account
 * Data warehouse credentials: For details, see the guide for your [specific data source technology](zendesk.md#step-2-connect-your-data-warehouse).
 
@@ -79,7 +79,7 @@ When configuring your sync, the page should look something like this: 👇
 
 Once your sync is complete, it's time to check your data. Open Zendesk and check that the records updated correctly.
 
-If everything went well, that's it! You've started syncing data from your warehouse to Zendesk! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F)
+If everything went well, that's it! You've started syncing data from your warehouse to Zendesk! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F?utm\_source=extlink)
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 

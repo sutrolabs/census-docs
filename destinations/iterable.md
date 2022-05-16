@@ -14,7 +14,7 @@ In this guide, we will show you how to connect Iterable to Census and create you
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Iterable account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -37,15 +37,17 @@ In the top right, click on your name, and select Account Settings
 
 **B. Create a new key for Census**
 
-Click the Create New API key button in the top left.
+Click the Create New API key button in the top right.
 
-![](../.gitbook/assets/iterable\_setup2.png)
+![](<../.gitbook/assets/image (10).png>)
 
-Select the "Standard" key type from the subsequent dropdown.&#x20;
+Select the "Server-side" key type from the subsequent dropdown.&#x20;
 
-![](../.gitbook/assets/iterable\_setup3.png)
+![](<../.gitbook/assets/image (6).png>)
 
 Copy the resulting key (a string of 32 characters) to add it to Census.
+
+![](<../.gitbook/assets/image (9).png>)
 
 **C. Create a new Iterable connection in Census**
 

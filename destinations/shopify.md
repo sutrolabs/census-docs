@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Shopify to Census.
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Shopify account ready.
 * Have your data source properly configured within Census. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)

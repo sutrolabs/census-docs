@@ -14,7 +14,7 @@ This guide shows you how to use Census to connect your Notion account to your da
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Notion account ready.
 * Have the proper credentials to access your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -35,7 +35,7 @@ You'll be redirected to a page to log in to Notion to authorize access to your a
 
 You can grant access to the entire workspace or specific pages only, including private pages.
 
-![](<../.gitbook/assets/image (8) (1).png>)
+![](<../.gitbook/assets/image (8) (1) (1).png>)
 
 When configuring your sync, the page should look something like this 👇
 

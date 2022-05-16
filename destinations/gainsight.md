@@ -12,7 +12,7 @@ This guide shows you how to use Census to connect your Gainsight account to your
 
 Before you begin, you'll need the following:
 
-* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com).
+* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **Gainsight account**: You need your Gainsight domain as well as an API Access Key for the Gainsight API
 * **Credentials for your data warehouse**: For details, see the guide for your specific technology.
   * [Databricks](https://docs.getcensus.com/sources/databricks)

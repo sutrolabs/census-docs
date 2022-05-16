@@ -12,7 +12,7 @@ This guide shows you how to use Census to connect your Outreach account to your 
 
 Before you begin, you'll need the following:
 
-* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com).
+* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **Outreach account**: We recommend using a dedicated service account with Admin user profile privileges. (See [Required Permissions](outreach.md#required-permissions).)
 * **Credentials for your data warehouse**: For details, see the guide for your specific technology.
   * [Databricks](https://docs.getcensus.com/sources/databricks)
