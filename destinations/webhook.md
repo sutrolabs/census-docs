@@ -10,8 +10,8 @@ In this guide, we will show you how to connect webhooks to Census and create you
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
-* Have an endpoint that accepts `POST` requests ready. You can use the free service [https://webhook.site](https://webhook.site/c9ce13dd-c04e-4b82-b861-1b2b51a56e40) for testing purposes.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have an endpoint that accepts `POST` requests ready. You can use the free service [https://webhook.site](https://webhook.site/c9ce13dd-c04e-4b82-b861-1b2b51a56e40) for testing purposes. Please note that we use a HEAD request to test the Webhook connection so make sure you're able to accept this as well.&#x20;
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -31,7 +31,7 @@ In this guide, we will show you how to connect webhooks to Census and create you
 ![](../.gitbook/assets/screely-1630450119455.png)
 
 {% hint style="success" %}
-Your webhook destination will automatically be tested as we send a`POST` request and waiting for a`200 OK`to confirm it works.
+Your webhook destination will automatically be tested as we send a`HEAD`request and waiting for a`200 OK`to confirm it works.
 {% endhint %}
 
 ### 2. Connect your Data Warehouse
