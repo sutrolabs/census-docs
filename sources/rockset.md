@@ -30,6 +30,21 @@ Navigate to the [connections tab](https://app.getcensus.com/connections) of your
 
 ![Click Save Configuration, and ](<../.gitbook/assets/Census Rockset Credentials.png>)
 
+Please create a workspace with the name "CENSUS" either in [console](https://rockset.com/docs/workspaces/) or [CLI](https://rockset.com/docs/rest-api/#createworkspace).
+
+```
+# Install Rockset CLI
+curl https://rockset-cli-artifacts.s3-us-west-2.amazonaws.com/install-standalone.sh | bash
+# Authenticate using api_key
+rockset auth:add 'name' 'api_key' 'hostname'
+# Create bookkeeping schema in Rockset
+cat << EOF > body.yaml
+name: CENSUS
+description: Census bookkeeping schema
+EOF
+rockset api:workspaces:createWorkspace --body body.yaml
+```
+
 Navigate to the Models tab in Census and query your Rockset collections and views in Census. Now you can sync into your operational tools using Rockset as a source.
 
 ## 🚑 Need help connecting to Rockset?
