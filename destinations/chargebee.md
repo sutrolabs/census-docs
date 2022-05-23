@@ -10,7 +10,7 @@ description: This page describes how to use Census with Chargebee
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Chargebee account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -60,4 +60,4 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Chargebee.
 
-If run into a dead end, start a conversation with us via the [in-app](https://app.getcensus.com/) chat.
+If run into a dead end, start a conversation with us via the [in-app](https://app.getcensus.com) chat.

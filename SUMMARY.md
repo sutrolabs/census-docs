@@ -13,6 +13,9 @@
   * [Sync Logs](basics/sync-monitoring/sync-logs.md)
   * [Sync Alerts](basics/sync-monitoring/alerts.md)
   * [Sync Dry Runs](basics/sync-monitoring/sync-dry-runs.md)
+* [Security & Privacy](basics/security-and-privacy/README.md)
+  * [Role-Based Access Controls](basics/security-and-privacy/role-based-access-controls.md)
+  * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [API](basics/api.md)
   * [Syncs](basics/api/syncs.md)
   * [Sync Runs](basics/api/sync-runs.md)
@@ -20,8 +23,6 @@
   * [Destination Objects](basics/api/destination-objects.md)
   * [Sources](basics/api/sources.md)
   * [Source Objects](basics/api/source-objects.md)
-* [Security & Privacy](basics/security-and-privacy/README.md)
-  * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>

@@ -10,7 +10,7 @@ description: This page describes how to use Census with CampaignMonitor.
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your CampaignMonitor account ready.
 *   Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
 

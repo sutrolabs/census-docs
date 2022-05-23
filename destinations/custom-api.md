@@ -16,7 +16,7 @@ To start, let's walk through the steps to deploy the[ sample implementation](htt
 
 ### Prerequisites
 
-* A Census account. If you don't have one, you can sign up for a free trial [here](https://app.getcensus.com/).
+* A Census account. If you don't have one, you can sign up for a free trial [here](https://app.getcensus.com).
 * A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS. For this demo, we'll use [Netlify Functions](https://www.netlify.com/products/functions/) (you can sign up for a free account) . If you'd prefer to test locally, you can also use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL.
 * Your own copy of this [sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). It takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs.&#x20;
 

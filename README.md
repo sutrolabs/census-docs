@@ -65,7 +65,7 @@ If you're new here, you can get started by finding the quick start guide for the
 
 ## 🎊 Product changelog
 
-Want to know about the latest features and bug fixes in our product? Check out our [changelog](https://whatsnew.getcensus.com/).
+Want to know about the latest features and bug fixes in our product? Check out our [changelog](https://whatsnew.getcensus.com).
 
 ## 🚑 Need help?
 

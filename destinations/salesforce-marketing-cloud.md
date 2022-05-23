@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Salesforce Marketing Cloud to Cen
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Salesforce Marketing Cloud account ready, with the Administrator role.
 
 {% hint style="warning" %}

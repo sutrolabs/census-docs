@@ -6,7 +6,7 @@ This guide shows you how to use Census to connect your Criteo account to your da
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Criteo account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -69,7 +69,7 @@ When configuring your sync, the page should look something like this: 👇
 
 Once your sync is complete, it's time to check your data. Open Criteo and check that the Static List Memberships updated correctly.
 
-If everything went well, that's it! You've started syncing data from your warehouse to Criteo! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F?utm\_source=extlink)
+If everything went well, that's it! You've started syncing data from your warehouse to Criteo! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F)
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 

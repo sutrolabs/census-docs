@@ -12,7 +12,7 @@ This guide shows you how to use Census to connect your Pardot account to your da
 
 Before you begin, you'll need the following:
 
-* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
+* **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com).
 * **Pardot account**: No free trials in Pardot land, unfortunately. You'll need your actual account here.
 * **Credentials for your data warehouse**: For details, see the guide for your specific technology.
   * [Databricks](https://docs.getcensus.com/sources/databricks)

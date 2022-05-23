@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Snapchat Ads to Census
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Snapchat Ads account ready.
 * Have the proper credentials to access your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -73,4 +73,4 @@ Follow Snapchat OAuth flow to connect to your Snapchat account.&#x20;
 
 ## 🚑  Need help connecting to Snapchat?
 
-Contact us via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.
+Contact us via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
