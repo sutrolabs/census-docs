@@ -45,5 +45,5 @@ Access Details
 | Billing & Plan          |             |                    |              | Yes                  |
 | dbt Cloud               |             |                    |              | Yes                  |
 | GitHub                  |             |                    |              | Yes                  |
-| API Keys                | View        | View               | View         | Manage               |
+| API Keys                |             |                    | View         | Manage               |
 
