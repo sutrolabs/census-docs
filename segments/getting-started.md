@@ -8,7 +8,11 @@ It's easy to get started building segments and syncing them to your destinations
 
 ### 1. Approve your model
 
-Segments can be built on any model as long as it's been approved for use by the data team. This works for any models in Census: saved query models, dbt models, as well as Looker Looks. This means you have more control over making sure segments are only built on top of trustworthy data.&#x20;
+Segments can be built on any model as long as it has been approved for use. This works for any models in Census: saved query models, dbt models, as well as Looker Looks. This means you have more control over making sure segments are only built on top of trustworthy data.&#x20;
+
+{% hint style="info" %}
+Only users with Admin or Editor role can approve models
+{% endhint %}
 
 To approve a model:
 
@@ -16,10 +20,6 @@ To approve a model:
 * Under the **Overview** tab, select **Approve**.&#x20;
 
 ![](<../.gitbook/assets/2021-12-10 17.47.22.gif>)
-
-{% hint style="info" %}
-Access controls for you can approve models versus create segments is coming soon. Today all users will be able to approve models and make them available for Segments.
-{% endhint %}
 
 ### 2. Build your segment using the visual builder
 
