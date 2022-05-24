@@ -160,6 +160,7 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 |        **Behaviors** | **Supported?** | **Objects?** |
 | -------------------: | :------------: | :----------: |
 | **Update or Create** |        ✅       |      All     |
+|           **Mirror** |        ✅       |      All     |
 |      **Update Only** |       🔜       |      All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Salesforce Marketing Cloud.
