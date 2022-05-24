@@ -16,5 +16,5 @@ If you want to connect, please follow the prompts in the UI.&#x20;
 
 
 
-If you've run into a dead-end, start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+If you've run into a dead-end, start a conversation with us via the [in-app](https://app.getcensus.com/) chat.
 

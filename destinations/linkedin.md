@@ -10,7 +10,7 @@ In this guide, we will show you how to connect LinkedIn to Census.
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your LinkedIn account (associated with your ads) ready, including the username and password.
 * Have your data source properly configured within Census. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)

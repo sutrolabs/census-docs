@@ -10,7 +10,7 @@ In this guide, we will show you how to connect Salesforce Marketing Cloud to Cen
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
+* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Salesforce Marketing Cloud account ready, with the Administrator role.
 
 {% hint style="warning" %}
@@ -60,7 +60,18 @@ Copy the **Client Id**, **Client Secret**, and **Authentication Base URI** from 
 
 ### 2. Create an SFTP Account in Salesforce Marketing Cloud
 
-Census uses the ExactTarget Enhanced FTP server to upload large data files to your Salesforce Marketing Cloud instance and prepare them for import. In this step, you'll create a new user account on your FTP server that Census can use to sign in
+Census uses the ExactTarget Enhanced FTP server to upload large data files to your Salesforce Marketing Cloud instance and prepare them for import. In this step, you'll ensure there is a File Location for Census to upload the data, and create a new user account on your FTP server that Census can use to sign in.
+
+**File Location**
+
+In Salesforce Marketing Cloud Setup, navigate to "Data Management > File Locations". If you have an Enhanced FTP location with an external key of "ExactTarget Enhanced FTP", then no action is required. If you do not see this File Location, click "Create" to generate a new location with the following configurations:
+
+* An "External Key" value of **ExactTarget Enhanced FTP**
+* A "Location Type" of **Enhanced FTP Site Import Directory**
+
+![](../.gitbook/assets/screely-1653426548785.png)
+
+**FTP User**
 
 Still in Salesforce Marketing Cloud Setup, navigate to "Data Management > FTP Accounts" and click "Add FTP User".
 
@@ -85,9 +96,9 @@ Go to [Census Connections](https://app.getcensus.com/connections), click "Add Se
 In the dialog, fill out the data you gathered in steps 2 and 3:
 
 * Name: A descriptive name of your choosing. If you have more than one Salesforce Marketing Cloud connection, you can use this field to help you keep track them
-* Endpoint URL: Fill in the **Authentication Base URI** from Step 2
-* Client ID and Client Secret: Fill in the **Client ID** and **Client Secret** from step 2
-* SFTP User: Fill in the **FTP Username** from Step 3
+* Endpoint URL: Fill in the **Authentication Base URI** from Step 1
+* Client ID and Client Secret: Fill in the **Client ID** and **Client Secret** from Step 1
+* SFTP User: Fill in the **FTP Username** from Step 2
 
 Click "Save Connection".
 
