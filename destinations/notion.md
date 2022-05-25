@@ -18,12 +18,15 @@ This guide shows you how to use Census to connect your Notion account to your da
 * Have your Notion account ready.
 * Have the proper credentials to access your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [MySQL](https://docs.getcensus.com/sources/mysql)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### Step 1: Connect Notion
 

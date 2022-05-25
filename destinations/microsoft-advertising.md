@@ -19,12 +19,15 @@ In this guide, we will show you how to connect Microsoft Ads to Census.&#x20;
   * To create Customer Match syncs, your Microsoft Ads Account will need access to the Customer Match feature. See [Microsoft's Customer Match policy](https://about.ads.microsoft.com/en-us/solutions/audience-targeting/customer-match) for more details.
 * Have the proper credentials to access your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [MySQL](https://docs.getcensus.com/sources/mysql)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### 1. Connect Microsoft Ads
 

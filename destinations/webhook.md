@@ -14,12 +14,15 @@ In this guide, we will show you how to connect webhooks to Census and create you
 * Have an endpoint that accepts `POST` requests ready. You can use the free service [https://webhook.site](https://webhook.site/c9ce13dd-c04e-4b82-b861-1b2b51a56e40) for testing purposes. Please note that we use a HEAD request to test the Webhook connection so make sure you're able to accept this as well.&#x20;
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [MySQL](https://docs.getcensus.com/sources/mysql)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### 1. Create a Webhook Destination in Census
 

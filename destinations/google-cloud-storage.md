@@ -10,13 +10,15 @@ description: This page describes how to use Census with Google Cloud Storage.
 * Have your Google Cloud Storage Account in the [Browser tab](https://console.cloud.google.com/storage/browser/) on the bucket that you want to sync to.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](../sources/elasticsearch.md)
+  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [MySQL](https://docs.getcensus.com/sources/mysql)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### Step 1: Create a Google Cloud Storage Connection
 

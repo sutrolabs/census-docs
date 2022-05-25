@@ -12,17 +12,17 @@ In this guide, we will show you how to connect Shopify to Census.
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Shopify account ready.
-* Have your data source properly configured within Census. See our docs for each supported data source for further information:
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](../sources/elasticsearch.md)
+  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](../sources/mysql.md)
+  * [MySQL](https://docs.getcensus.com/sources/mysql)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](../sources/sql-server.md)
+  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### :electric\_plug:Connecting Shopify
 
