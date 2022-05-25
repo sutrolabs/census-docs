@@ -107,7 +107,7 @@
 * [Salesforce](destinations/salesforce.md)
 * [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
 * [Segment](destinations/segment.md)
-* [Sendgrid](destinations/sendgrid.md)
+* [SendGrid](destinations/sendgrid.md)
 * [SFTP](destinations/sftp.md)
 * [Shopify](destinations/shopify.md)
 * [Slack](destinations/slack.md)
