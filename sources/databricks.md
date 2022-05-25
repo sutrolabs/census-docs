@@ -28,8 +28,12 @@ spark.hadoop.fs.s3n.impl.disable.cache true
 spark.hadoop.fs.s3.impl.disable.cache true
 spark.hadoop.fs.s3a.impl.disable.cache true
 ```
+5\. If the CENSUS schema has not been created, please create it by running the following:
+```
+CREATE SCHEMA IF NOT EXISTS CENSUS;
+```
 
-5\. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
+6\. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
 
 ![](../.gitbook/assets/screely-1619628263455.png)
 
