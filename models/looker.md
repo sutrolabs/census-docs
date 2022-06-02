@@ -29,7 +29,7 @@ Finally, you'll also need the subdomain of your Looker instance. You should be a
 
 Now back in Census, select **Models** from the left navigation bar and, if you have multiple warehouse connections, make sure the one that matches your Looker instance is currently selected in the top right. Once it is, pick the **Looker** tab just below it. You'll see a **Connect Looker** button to start the process. From here, simply provide your subdomain, the client id and client secret.&#x20;
 
-![](<../.gitbook/assets/screely-1639552721507 (1).png>)
+![](../.gitbook/assets/screely-1639552721507.png)
 
 Once saved, you should see all of your Looker Looks!
 

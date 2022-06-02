@@ -38,7 +38,7 @@ You'll be redirected to a page to log in to Notion to authorize access to your a
 
 You can grant access to the entire workspace or specific pages only, including private pages.
 
-![](<../.gitbook/assets/image (8) (1) (1).png>)
+![](<../.gitbook/assets/image (8) (2).png>)
 
 When configuring your sync, the page should look something like this 👇
 

@@ -35,7 +35,7 @@ In this guide, we will show you how to connect Stripe to Census and create your 
 
 In Stripe, go to [Developers > API Keys](https://dashboard.stripe.com/apikeys) and create an API key that has Write permissions into Customers (and Read permission to Balances for testing our connection).
 
-![](<../.gitbook/assets/Screen Shot 2021-10-28 at 5.03.59 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2021-10-28 at 5.03.59 PM (1).png>)
 
 ### 2. Connect your Data Warehouse
 
