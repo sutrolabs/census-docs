@@ -42,7 +42,7 @@ If you want to see your connections in Mailchimp in the future, simply navigate 
 
 There are two mandatory fields for the Mailchimp connection: **email** and **status**.
 
-Please note that the mandatory status field only accepts the following values: `"subscribed"`, `"unsubscribed"`, `"cleaned"`, or `"pending"`.
+Please note that the mandatory status field only accepts the following values **in lower case**: `"subscribed"`, `"unsubscribed"`, `"cleaned"`, or `"pending"`.
 
 In addition, pre-hashed emails can be used as the record identifier for syncs with the Update behavior. The hash must be the MD5 hash of the lowercase version of the list member's email.
 
