@@ -31,7 +31,7 @@ Census needs the below pieces of information to connect you to your Pendo Instan
 * **A) Pendo Integration Key**
 * **B) Track Event Shared Secret Key**
 
-### A. Create a Pendo Integration key
+### 1A. Create a Pendo Integration key
 
 Pendo lets you create a number of Integration keys. You should create a new API key for Census rather than reusing an existing one.
 
