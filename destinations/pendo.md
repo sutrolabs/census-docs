@@ -24,7 +24,14 @@ In this guide, we will show you how to connect Pendo to Census and create your f
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
   * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
-### 1. Create a Pendo Integration key
+### 1. Collect your Pendo Credentials&#x20;
+
+Census needs the below pieces of information to connect you to your Pendo Instance instance:
+
+* **A) Pendo Integration Key**
+* **B) Track Event Shared Secret Key**
+
+### A. Create a Pendo Integration key
 
 Pendo lets you create a number of Integration keys. You should create a new API key for Census rather than reusing an existing one.
 
@@ -37,6 +44,12 @@ Provide a name you'll recognize ("Census" is a good choice) and check the **Allo
 Finally, copy the long code you see under **Key**. We'll use that in a minute.
 
 ![](../.gitbook/assets/screely-1624583167649.png)
+
+### 1B. Collect the Track Event Shared Secret Key
+
+This key is  different from the subscription key that appears in your Pendo installation snippet or integration keys. A Pendo Admin can access this key in your app settings _(_[_Subscription Settings_](https://app.pendo.io/admin) _> Choose your App > App Details)_
+
+![](<../.gitbook/assets/Screen Shot 2022-06-06 at 2.22.53 PM.png>)
 
 ### 2. Create the Census Connection
 
