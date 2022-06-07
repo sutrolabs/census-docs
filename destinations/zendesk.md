@@ -153,6 +153,8 @@ Census currently supports syncing to the following Zendesk objects:
 |          Ticket |       ✅       | External ID                      |
 |  Custom Objects |       ✅       | External ID                      |
 
+Please note that Zendesk requires the `Name` property for the End User object. Feel free to check out Zendesk's documentation [here](https://developer.zendesk.com/api-reference/ticketing/users/users/#json-format).
+
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Zendesk.
 
 ## 🔄 Supported sync behaviors
