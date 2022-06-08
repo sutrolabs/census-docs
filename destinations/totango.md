@@ -48,8 +48,8 @@ For additional information on finding Totango credentials you can find instructi
 * Click the **Add Service** button
 * Select **Totango** in the list
 * Paste your API Key into the **API Token** field
-* Paste your Service Id in the Service Id field
-* Optionally name your new connection and add a Server Region then click **Connect**
+* Paste your **Service Id** in the Service Id field
+* Optionally name your new connection and add a **Server Region** then click **Connect**
 
 ![Totango Connection Example](<../.gitbook/assets/Screen Shot 2022-06-08 at 11.42.37 AM.png>)
 
@@ -60,7 +60,7 @@ For additional information on finding Totango credentials you can find instructi
 | **Object Name** | **Supported?** | Identifiers |
 | --------------: | :------------: | ----------- |
 |         Account |        ✅       | Account ID  |
-|           Users |        ✅       | User ID     |
+|            User |        ✅       | User ID     |
 
 ## 🔄 Supported Sync Behaviors
 
