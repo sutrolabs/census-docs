@@ -84,10 +84,6 @@ Census will always connect to your data warehouse from of these static IP addres
 
 Redshift by default prevents any external IP address from accessing your data warehouse so if you will need to add these IP addresses to your security groups. For more information, visit [AWS Redshift Help Center](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html).
 
-## 🌌 Deploying Redshift within an AWS VPC
-
-Advanced methods of Redshift deployment include deploying Redshift within an AWS VPC or private subnet and limiting database access to a separate, controlled database proxy which allows external IP address access. In this configuration, you'll need to separately allow Redshift to communicate directly with S3. For more information on this process, you will need to add an S3 VPC endpoint. This is definitely an obscure feature of AWS but this article does a good job of [explaining S3 VPC endpoints](https://tomgregory.com/when-to-use-an-aws-s3-vpc-endpoint/), why they're needed and how to set one up.
-
 ## 🚇 Connecting via SSH tunnel
 
 Census optionally allows connecting to Redshift that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
@@ -108,6 +104,14 @@ Note that the keypair is unique for each Census Warehouse connection. Even if yo
 4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allow list.
 
 With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
+
+## 🌌 Deploying Redshift within an AWS VPC
+
+Advanced methods of Redshift deployment include deploying Redshift within an AWS VPC or private subnet and limiting direct database access to a separate proxy (typically the SSH Tunnel method described above).&#x20;
+
+Census uses the `UNLOAD` command to bulk extract data efficiently (you can read more about our architecture in [How Census Works](https://docs.getcensus.com/basics/security-and-privacy#how-it-works)). By default, Redshift-in-VPC deployments do not allow Redshift to talk to S3. So when using this method, you'll need to separately grant permission to Redshift to communicate directly with S3 by adding an S3 VPC Endpoint.\
+\
+This is definitely an obscure feature of AWS but this article does a good job of [explaining S3 VPC endpoints](https://tomgregory.com/when-to-use-an-aws-s3-vpc-endpoint/), why they're needed and how to set one up.
 
 ## 🚑 Need help connecting to Redshift?
 
