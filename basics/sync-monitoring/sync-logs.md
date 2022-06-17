@@ -20,6 +20,7 @@ Census can provide detailed logging for all data warehouse sources:
 * BigQuery
 * Redshift
 * PostgreSQL (version 13 or later is required)
+* Databricks
 
 ## 🧮 Log Data
 
@@ -31,6 +32,7 @@ Census exposes detailed logging information in a view called `sync_log` in your 
 * **BigQuery:** `census.sync_log`
 * **Redshift:** `census.sync_log`
 * **PostgreSQL**: `census.sync_log`
+* **Databricks**: `census.sync_log`
 
 #### How much log data is stored?
 
@@ -42,16 +44,16 @@ Need data stored for longer? Please reach out at support@getcensus.com.
 
 #### What do the columns of the view mean?
 
-| column                   | column description                                                                                                                                                                                |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| log\_id                  | Unique identifier for the log                                                                                                                                                                     |
-| sync\_id                 | <p>Unique identifier for the sync configuration. You can find it in the URL of your sync configurations as follows:</p><p>https://app.getcensus.com/syncs/<strong>[sync_id]</strong>/overview</p> |
-| sync\\\_run\\\_\_\_id    | Unique identifier for the sync run. Use this value to identify a particular occasion when Census sends data as specified for a given sync configuration.                                          |
-| record\_identifier       | The value of the identifier specified in your sync configuration, identifying _which_ record in your source you are trying to send to a destination.                                              |
-| record\_payload          | The exact data that Census was attempting to send to a given destination. It is formatted as a JSON object.                                                                                       |
-| batch\\\_started\\\_at   | The time when the batch containing this data was sent to the destination.                                                                                                                         |
-| batch\\\_completed\\\_at | The time when the batch containing this data completed.                                                                                                                                           |
-| operation                | The operation performed by Census. Either: 'upsert', 'update', 'create', or 'delete'... depending on the sync behavior you specified.                                                             |
-| status                   | Either 'succeeded' or 'rejected'                                                                                                                                                                  |
-| status\_message          | If the status is 'rejected', this field will contain the reason returned by the destination's API.                                                                                                |
-| \_census\\\_logged\\\_at | When Census loaded this log record into your data warehouse.                                                                                                                                      |
+| column               | column description                                                                                                                                                                                |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| log\_id              | Unique identifier for the log                                                                                                                                                                     |
+| sync\_id             | <p>Unique identifier for the sync configuration. You can find it in the URL of your sync configurations as follows:</p><p>https://app.getcensus.com/syncs/<strong>[sync_id]</strong>/overview</p> |
+| sync\_run\_id        | Unique identifier for the sync run. Use this value to identify a particular occasion when Census sends data as specified for a given sync configuration.                                          |
+| record\_identifier   | The value of the identifier specified in your sync configuration, identifying _which_ record in your source you are trying to send to a destination.                                              |
+| record\_payload      | The exact data that Census was attempting to send to a given destination. It is formatted as a JSON object.                                                                                       |
+| batch\_started\_at   | The time when the batch containing this data was sent to the destination.                                                                                                                         |
+| batch\_completed\_at | The time when the batch containing this data completed.                                                                                                                                           |
+| operation            | The operation performed by Census. Either: 'upsert', 'update', 'create', or 'delete'... depending on the sync behavior you specified.                                                             |
+| status               | Either 'succeeded' or 'rejected'                                                                                                                                                                  |
+| status\_message      | If the status is 'rejected', this field will contain the reason returned by the destination's API.                                                                                                |
+| \_census\_logged\_at | When Census loaded this log record into your data warehouse.                                                                                                                                      |
