@@ -10,5 +10,5 @@ You can think of Census models as a fast way to write and reference a SQL query.
 
 We like to think of Census models as a shortcut. It's meant to get you started with modeling quickly. But if you have a more complex set of models in mind, take a look at our dbt or Looker model sources.
 
-![](../.gitbook/assets/screely-1639549794125.png)
+![](<../.gitbook/assets/screely-1639549794125 (1).png>)
 

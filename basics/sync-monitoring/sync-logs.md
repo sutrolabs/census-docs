@@ -22,6 +22,20 @@ Census can provide detailed logging for all data warehouse sources:
 * PostgreSQL (version 13 or later is required)
 * Databricks
 
+## 🖥️ Configuring Sync Logs
+
+To enable Sync Logs on any supported source:
+
+1. Visit the [Connections page](https://app.getcensus.com/connections).
+2. Click to "Edit" the configuration of the source where you'd like logs.
+3. Tick the box next to the option to "Write logs in this warehouse".
+
+Here is an example of this configuration enabled for a sample Bigquery connection:
+
+![](../../.gitbook/assets/screely-1655474206629.png)
+
+That's it! Logs will start populating for all syncs in this connection on their subsequent runs.
+
 ## 🧮 Log Data
 
 #### Where can I find the logs?

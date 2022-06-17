@@ -37,7 +37,7 @@ description: This page describes how to use Census with Autopilot Journeys.
 * Click the **Add Service** button
 * Select Autopilot Journeys in the dropdown list
 
-![Select Autopilot](<../.gitbook/assets/Screen Shot 2022-02-10 at 2.19.13 PM.png>)
+![Select Autopilot](<../.gitbook/assets/Screen Shot 2022-02-10 at 2.19.13 PM (1).png>)
 
 * Enter a name of your choosing that makes sense for your own reference
 * When prompted for your API Credentials, enter your Autopilot API Key
