@@ -53,3 +53,4 @@ Census will always connect to your data warehouse from of these static IP addres
 * 34.216.163.241
 * 54.212.243.205
 
+To ensure Census can connect to your Synapse data warehouse, use the Windows Azure Management Portal or run **sp\_set\_firewall\_rule** on the master database to create a firewall rule for these two IP addresses.&#x20;
