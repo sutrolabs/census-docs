@@ -27,7 +27,7 @@
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
 
-* [Azure Synapse](sources/sql-server.md)
+* [Azure Synapse](sources/azure-synapse.md)
 * [Databricks](sources/databricks.md)
 * [Elasticsearch](sources/elasticsearch.md)
 * [Google BigQuery](sources/google-bigquery.md)
@@ -37,7 +37,7 @@
 * [Redshift](sources/redshift.md)
 * [Rockset](sources/rockset.md)
 * [Snowflake](sources/snowflake.md)
-* [SQL Server](<sources/sql-server (1).md>)
+* [SQL Server](sources/sql-server.md)
 
 ## 🧊 Models
 
