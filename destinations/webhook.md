@@ -34,7 +34,11 @@ In this guide, we will show you how to connect webhooks to Census and create you
 ![](../.gitbook/assets/screely-1630450119455.png)
 
 {% hint style="success" %}
-Your webhook destination will automatically be tested as we send a`HEAD`request and waiting for a`200 OK`to confirm it works.
+Your webhook destination will automatically be tested as we send a`HEAD`request and waiting for a`200 OK`to confirm it works. If the `HEAD` request is unsuccessful we will follow up with a single `POST` request with an empty body to test the connection.
+{% endhint %}
+
+{% hint style="warning" %}
+Because we fallback to a `POST` request if the `HEAD` fails during connection testing you should account for this empty request body and perform validation so that you do not create extra, empty resources on your end.
 {% endhint %}
 
 ### 2. Connect your Data Warehouse

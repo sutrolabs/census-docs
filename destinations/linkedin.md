@@ -22,7 +22,7 @@ In this guide, we will show you how to connect LinkedIn to Census.
   * [Redshift](https://docs.getcensus.com/sources/redshift)
   * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](../sources/sql-server.md)
+  * [SQL Server](<../sources/sql-server (1).md>)
 
 ### Step 1: Connect LinkedIn
 

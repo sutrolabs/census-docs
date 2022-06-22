@@ -54,7 +54,7 @@ The steps for connecting your data source will depend on your technology. See th
 * [Redshift](../sources/redshift.md)
 * [Rockset](../sources/rockset.md)
 * [Snowflake](../sources/snowflake.md)
-* [SQL Server](../sources/sql-server.md)
+* [SQL Server](<../sources/sql-server (1).md>)
 
 ### Step 3: Create your model
 
