@@ -94,6 +94,7 @@
 * [Mailchimp](destinations/mailchimp.md)
 * [Marketo](destinations/marketo.md)
 * [Microsoft Advertising](destinations/microsoft-advertising.md)
+* [Microsoft Dynamics](destinations/microsoft-dynamics.md)
 * [Mixpanel](destinations/mixpanel.md)
 * [NetSuite](destinations/netsuite.md)
 * [Notion](destinations/notion.md)
