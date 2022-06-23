@@ -37,7 +37,7 @@
 * [Redshift](sources/redshift.md)
 * [Rockset](sources/rockset.md)
 * [Snowflake](sources/snowflake.md)
-* [SQL Server](<sources/sql-server (1).md>)
+* [SQL Server](sources/sql-server.md)
 
 ## 🧊 Models
 

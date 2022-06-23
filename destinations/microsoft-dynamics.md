@@ -69,7 +69,7 @@ When configuring your sync, the page should look something like this: 👇
 
 ### Step 5: Confirm the synced data is in Microsoft Dynamics
 
-Once your sync is complete, it's time to check your data. Open Microsoft Dynamics and check that the entities that you sent data to are updated.
+Once your sync is complete, it's time to check your data. Open Microsoft Dynamics and check that the entity that you sent data to has updated entries.
 
 If everything went well, that's it! You've started syncing data from your warehouse to Microsoft Dynamics! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F?utm\_source=extlink)
 
