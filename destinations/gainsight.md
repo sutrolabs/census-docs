@@ -15,6 +15,7 @@ Before you begin, you'll need the following:
 * **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **Gainsight account**: You need your Gainsight domain as well as an API Access Key for the Gainsight API
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)

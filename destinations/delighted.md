@@ -14,6 +14,7 @@ In this guide, we'll show you how to connect Delighted to Census and create your
 * Have your Delighted account ready,
 *   Have the proper credentials to access your data source. See our docs for each supported data source for further information:
 
+    * [Azure Synapse](../sources/azure-synapse.md)
     * [Databricks](https://docs.getcensus.com/sources/databricks)
     * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
     * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)

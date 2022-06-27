@@ -17,6 +17,7 @@ This guide shows you how to use Census to connect your Notion account to your da
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Notion account ready.
 * Have the proper credentials to access your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)

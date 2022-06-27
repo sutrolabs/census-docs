@@ -10,14 +10,13 @@ description: This page describes how to use Census with Microsoft Advertising(or
 
 In this guide, we will show you how to connect Microsoft Ads to Census.&#x20;
 
-
-
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Microsoft Ads account ready.
   * To create Customer Match syncs, your Microsoft Ads Account will need access to the Customer Match feature. See [Microsoft's Customer Match policy](https://about.ads.microsoft.com/en-us/solutions/audience-targeting/customer-match) for more details.
 * Have the proper credentials to access your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)

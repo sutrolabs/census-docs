@@ -15,6 +15,7 @@ Before you begin, you'll need the following:
 * **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **Outreach account**: We recommend using a dedicated service account with Admin user profile privileges. (See [Required Permissions](outreach.md#required-permissions).)
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)

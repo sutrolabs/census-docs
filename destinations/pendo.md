@@ -13,6 +13,7 @@ In this guide, we will show you how to connect Pendo to Census and create your f
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Pendo account ready, with create access for Pendo Integration keys.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -24,7 +25,7 @@ In this guide, we will show you how to connect Pendo to Census and create your f
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
   * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
-### 1. Collect your Pendo Credentials&#x20;
+### 1. Collect your Pendo Credentials
 
 Census needs the below pieces of information to connect you to your Pendo Instance instance:
 
@@ -49,7 +50,7 @@ Finally, copy the long code you see under **Key**. We'll use that in a minute.
 
 ### 1B. Collect the Track Event Shared Secret Key
 
-This key is  different from the subscription key that appears in your Pendo installation snippet or integration keys. A Pendo Admin can access this key in your app settings _(_[_Subscription Settings_](https://app.pendo.io/admin) _> Choose your App > App Details)_
+This key is different from the subscription key that appears in your Pendo installation snippet or integration keys. A Pendo Admin can access this key in your app settings _(_[_Subscription Settings_](https://app.pendo.io/admin) _> Choose your App > App Details)_
 
 ![](<../.gitbook/assets/Screen Shot 2022-06-06 at 2.22.53 PM.png>)
 
@@ -58,12 +59,11 @@ This key is  different from the subscription key that appears in your Pendo inst
 Now let's create your new Census connection to Pendo.
 
 1. In the **Settings** tab, Create a new Pendo Service Connection in Census.\
-   &#x20;<img src="../.gitbook/assets/screely-1624583177140.png" alt="" data-size="original">&#x20;
+   <img src="../.gitbook/assets/screely-1624583177140.png" alt="" data-size="original">
 2. You can provide whatever name you like.
-3.  Copy and paste your new Pendo Integration key.\
+3.  Copy and paste your new Pendo Integration key.\\
 
-
-    ![](../.gitbook/assets/screely-1624583188453.png)
+    <img src="../.gitbook/assets/screely-1624583188453.png" alt="" data-size="original">
 
 And you're all set and ready to get syncing! 🎉
 
@@ -91,7 +91,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 | **Update or Create** |        ✅       | Account/Visitor |
 
 {% hint style="warning" %}
-For Pendo, "Update or Create" syncs will take longer than "Update Only" syncs. This is because - for newly created accounts and visitors - Pendo processes the previous hour’s data at the top of the hour. In addition, it may take up to 15 minutes for the data to fully appear in the UI. \
+For Pendo, "Update or Create" syncs will take longer than "Update Only" syncs. This is because - for newly created accounts and visitors - Pendo processes the previous hour’s data at the top of the hour. In addition, it may take up to 15 minutes for the data to fully appear in the UI.\
 \
 Census will wait until \~15 minutes after the top of the hour to then update the newly created visitor or account with additional properties that are part of the sync.
 {% endhint %}

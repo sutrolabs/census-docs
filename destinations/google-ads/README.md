@@ -20,6 +20,7 @@ In this guide, we will show you how to connect Google Ads to Census.
 * Have your Google Ads account ready.
   * To create Customer Match syncs, your Google Ads Account will need access to the Customer Match feature. See [Google's Customer Match policy](https://support.google.com/adspolicy/answer/6299717?hl=en) for more details.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)

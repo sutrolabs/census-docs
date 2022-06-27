@@ -14,6 +14,7 @@ In this guide, we will show you how to connect Google Analytics to Census and cr
 * Have your Google Analytics account ready, with admin access to create API-only users and API credentials.
 *   Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
 
+    * [Azure Synapse](../sources/azure-synapse.md)
     * [Databricks](https://docs.getcensus.com/sources/databricks)
     * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
     * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
