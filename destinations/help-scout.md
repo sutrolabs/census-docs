@@ -52,7 +52,7 @@ Here you can write a SQL query to select the data you want to see in Help Scout,
 
 ![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
 
-### Step 3: Create your first Sync
+### Step 3: Create your Sync
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sync button
 
