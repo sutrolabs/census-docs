@@ -133,11 +133,11 @@ Only the Braze User External Id and the Subscription Group Id should be mapped f
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** |                       **Supported?**                      |        **Objects?**       |
-| -------------------: | :-------------------------------------------------------: | :-----------------------: |
-| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |            User           |
-|           **Mirror** |                             ✅                             | User, Subscription Groups |
-|           **Append** |                             ✅                             |           Event           |
+|        **Behaviors** |                       **Supported?**                      |                                     **Objects?**                                     |
+| -------------------: | :-------------------------------------------------------: | :----------------------------------------------------------------------------------: |
+| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                                         User                                         |
+|           **Mirror** |                             ✅                             | User, [Subscription Group Membership](braze.md#braze-subscription-group-memberships) |
+|           **Append** |                             ✅                             |                                         Event                                        |
 
 ### Mirror Mode Options
 
