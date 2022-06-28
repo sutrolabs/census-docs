@@ -46,6 +46,11 @@ Then, inside the **API Settings** tab, under **Rest API Keys**, click **+ Create
 Provide a name you'll recognize ("Census" is a good choice) and select the following permissions:
 
 * All User Data permissions, except for `users.delete`&#x20;
+
+{% hint style="info" %}
+You must include users.delete if you want to do the [remove option of Mirroring users](braze.md#mirror-mode-options)
+{% endhint %}
+
 * `segments.list`
 * This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update these permissions in the future.&#x20;
 
@@ -80,15 +85,45 @@ And you're all set and ready to get syncing! 🎉
 
 Census currently supports syncing to the following Braze objects.
 
-| **Object Name** | **Supported?** | Identifiers      |
-| --------------: | :------------: | ---------------- |
-|            User |        ✅       | External User ID |
-|           Event |        ✅       | Event ID         |
+|                **Object Name** | **Supported?** | Identifiers                                    |
+| -----------------------------: | :------------: | ---------------------------------------------- |
+|                           User |        ✅       | External User ID                               |
+|                          Event |        ✅       | Event ID                                       |
+| Subscription Group Memberships |        ✅       | [See Here](braze.md#braze-subscription-groups) |
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/defining-source-data/structured-data.md) to Braze:&#x20;
 
 * [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
 * &#x20;[Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported. As of April 2022, this feature is still in early access. You may need to contact your Braze account manager for access.
+
+### ✉️ Braze Subscription Group Memberships
+
+Census offers a way to manage your Braze Subscription Groups via your data hub. The current behavior is that you are to "Mirror" the subscribed users from your user base. It is required that you have, within the source:
+
+* The Subscription Group Id in Braze
+* Braze User External Id
+
+This source model should be all of your Subscribed users for their Subscription groups. If a previously-synced **subscription group / user pair** no longer appears in your data source, Census will **unsubscribe** that user from that subscription group.
+
+{% hint style="info" %}
+If you have a query that returns the external id, subscription group id, and status columns. Your source model should logically look like this:
+
+`SELECT`&#x20;
+
+`external_id, subscription_group_id`
+
+`FROM`
+
+`subscription_table`
+
+`WHERE`
+
+`status = 'subscribed'`&#x20;
+{% endhint %}
+
+Only the Braze User External Id and the Subscription Group Id should be mapped fields. This is a special unsubscribing mirror for user/group pairs that no longer appear in the data source.
+
+
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Braze.
 
@@ -98,16 +133,19 @@ Census supports custom fields on both Braze User and Event objects. Additionally
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** |                       **Supported?**                      | **Objects?** |
-| -------------------: | :-------------------------------------------------------: | :----------: |
-| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |     User     |
-|           **Mirror** |                             ✅                             |     User     |
-|           **Append** |                             ✅                             |     Event    |
+|        **Behaviors** |                       **Supported?**                      |        **Objects?**       |
+| -------------------: | :-------------------------------------------------------: | :-----------------------: |
+| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |            User           |
+|           **Mirror** |                             ✅                             | User, Subscription Groups |
+|           **Append** |                             ✅                             |           Event           |
 
-Braze's Mirror behavior optionally supports a choice of two actions when a records is removed from the source. This can be configured when setting up the sync initially:
+### Mirror Mode Options
+
+Braze's Mirror behavior optionally supports a choice of two actions when a record is removed from the source. This can be configured when setting up the sync initially:
 
 * **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze.&#x20;
 * **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced will be removed from the destination record (by setting them to Null).
+* **Subscription Group Membership** - This will unsubscribe users from the corresponding subscription group, as described [above](braze.md#braze-subscription-groups).
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Braze.
 
