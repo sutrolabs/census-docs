@@ -80,6 +80,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 * Pick Google Sheets as **the Connection**
 * For Object, pick the Google Sheet you gave permission to in step 1 and select the tab within it that you want to sync to. As a reminder, Census will replace the contents of the tab you select so we recommend you only select a tab that's empty.
+* Under **Advanced** you can toggle whether or not you want to allow Google Sheets to parse the data that gets synced. By letting Sheets parse data, each cell will be treated as if the user had manually typed that data into sheets. This means things like strings in a date format will be converted into a date object in the Sheet but also that any string that starts with an '=' symbol will be treated as a formula. If you just want your data to be preserved raw as it comes from your warehouse then toggle this feature off.
 
 For the " **How should changes to the source be synced?"** section&#x20;
 

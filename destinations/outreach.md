@@ -52,7 +52,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After connecting your warehouse, your **Connections** page will look something like this: 👇
 
-![Connections page with data warehouse and Outreach](<../.gitbook/assets/202109\_connections\_outreach (2) (1) (2).png>)
+![Connections page with data warehouse and Outreach](<../.gitbook/assets/202109\_connections\_outreach (2) (2) (1).png>)
 
 ### Step 3: Create your model
 
