@@ -30,9 +30,8 @@ In this guide, we will show you how to connect Pendo to Census and create your f
 Census needs the below pieces of information to connect you to your Pendo Instance instance:
 
 * **A) Pendo Integration Key**
-* **B) Track Event Shared Secret Key**
 
-These can be obtained by navigating to `Settings > Subscription Settings > App Details` and copying the `API Key` and `Track Event Shared Secret` values.
+These can be obtained by navigating to `Settings > Subscription Settings > App Details` and copying the `API Key` value.
 
 ### 1A. Create a Pendo Integration key
 
@@ -47,12 +46,6 @@ Provide a name you'll recognize ("Census" is a good choice) and check the **Allo
 Finally, copy the long code you see under **Key**. We'll use that in a minute.
 
 ![](../.gitbook/assets/screely-1624583167649.png)
-
-### 1B. Collect the Track Event Shared Secret Key
-
-This key is different from the subscription key that appears in your Pendo installation snippet or integration keys. A Pendo Admin can access this key in your app settings _(_[_Subscription Settings_](https://app.pendo.io/admin) _> Choose your App > App Details)_
-
-![](<../.gitbook/assets/Screen Shot 2022-06-06 at 2.22.53 PM.png>)
 
 ### 2. Create the Census Connection
 
@@ -88,13 +81,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 |        **Behaviors** | **Supported?** |   **Objects?**  |
 | -------------------: | :------------: | :-------------: |
 |      **Update Only** |        ✅       | Account/Visitor |
-| **Update or Create** |        ✅       | Account/Visitor |
-
-{% hint style="warning" %}
-For Pendo, "Update or Create" syncs will take longer than "Update Only" syncs. This is because - for newly created accounts and visitors - Pendo processes the previous hour’s data at the top of the hour. In addition, it may take up to 15 minutes for the data to fully appear in the UI.\
-\
-Census will wait until \~15 minutes after the top of the hour to then update the newly created visitor or account with additional properties that are part of the sync.
-{% endhint %}
+| **Update or Create** |       :x:      | Account/Visitor |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pendo.
 
