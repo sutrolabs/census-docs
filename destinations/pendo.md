@@ -27,11 +27,7 @@ In this guide, we will show you how to connect Pendo to Census and create your f
 
 ### 1. Collect your Pendo Credentials
 
-Census needs the below pieces of information to connect you to your Pendo Instance instance:
-
-* **A) Pendo Integration Key**
-
-These can be obtained by navigating to `Settings > Subscription Settings > App Details` and copying the `API Key` value.
+Census needs the **Pendo Integration Key** to connect to your Pendo instance. This can be obtained by navigating to `Settings > Subscription Settings > App Details` and copying the `API Key` value.
 
 ### 1A. Create a Pendo Integration key
 
@@ -78,10 +74,9 @@ Census currently supports syncing to the following Pendo objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |   **Objects?**  |
-| -------------------: | :------------: | :-------------: |
-|      **Update Only** |        ✅       | Account/Visitor |
-| **Update or Create** |       :x:      | Account/Visitor |
+|   **Behaviors** | **Supported?** |   **Objects?**  |
+| --------------: | :------------: | :-------------: |
+| **Update Only** |        ✅       | Account/Visitor |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pendo.
 
