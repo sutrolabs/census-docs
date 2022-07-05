@@ -63,7 +63,7 @@ Vitally defines User ID and Account ID as the unique ID for these objects in you
 * Users must have at least one Account in Vitally so **Accounts** is a required field when syncing to users. It's also an Array field so it you'll need to provide it an array value or JSON formatted Array.
 * Any Account ID values used when mapping to  that don't already exist in Vitally will be automatically created.
 
-![](../.gitbook/assets/screely-1615452975080.png)
+![](<../.gitbook/assets/Screen Shot 2022-06-30 at 6.50.03 PM.png>)
 
 ## 🔄 Supported Sync Behaviors
 
