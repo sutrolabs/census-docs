@@ -14,7 +14,7 @@ Here are just a few examples of Census segments you can build:
 * Trial users who haven’t used the product in the past week.&#x20;
 * Recommend a new product to customers who have purchased a similar product
 
-![Census Visual Segment Builder](<../.gitbook/assets/segments\_cropped (1).gif>)
+![Census Visual Segment Builder](../.gitbook/assets/segments\_cropped.gif)
 
 ## **When to use Census segments**
 
