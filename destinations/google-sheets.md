@@ -113,6 +113,14 @@ We recommend treating the Google Sheet that is receiving data as the "raw data" 
 \
 The `IMPORTRANGE` function in Google Sheets can be a great solution for this use case - you can find the documentation and best practices [here](https://support.google.com/docs/answer/3093340).
 
+## :question:My sync failed because it was too big?
+
+Syncs to Google Sheets as a destination are limited to 2.5M updated _cells_ to ensure the reliability of the syncs_._ A cell corresponds to a column-to-field mapping so if your source data for the sync has 100 rows and the sync uses 4 columns, that will end up being 400 cells that are updated.&#x20;
+
+If Census determines a sync will update over 2.5M cells the sync will fail with the following error: `Sheets prohibits updates of over 2.5M cells. Please try modifying your source data to limit the total cell count.`&#x20;
+
+This is a runtime error and will not be caught at the time of Sync creation.
+
 ## 🗄 Supported Objects
 
 Google Sheets support is pretty straight forward!
