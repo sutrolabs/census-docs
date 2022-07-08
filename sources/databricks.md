@@ -8,13 +8,11 @@ description: >-
 
 ## Configuring a new Databricks connection
 
+{% embed url="https://www.youtube.com/watch?v=uI9YORQ6DFs" %}
+
 {% hint style="info" %}
 Census supports Databricks LTS versions: 7.3, 9.1, and 10.4
 {% endhint %}
-
-
-
-{% embed url="https://www.youtube.com/watch?v=uI9YORQ6DFs" %}
 
 1\. Visit the **Connections** section on Census, and press **Add Data Warehouse Connection**, selecting **Databricks** from the list.
 
