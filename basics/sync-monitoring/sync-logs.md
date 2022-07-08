@@ -20,6 +20,7 @@ Census can provide detailed logging for all data warehouse sources:
 * BigQuery
 * Redshift
 * PostgreSQL (version 13 or later is required)
+* Databricks
 
 ## 🖥️ Configuring Sync Logs
 
@@ -45,6 +46,7 @@ Census exposes detailed logging information in a view called `sync_log` in your 
 * **BigQuery:** `census.sync_log`
 * **Redshift:** `census.sync_log`
 * **PostgreSQL**: `census.sync_log`
+* **Databricks**: `census.sync_log`
 
 #### How much log data is stored?
 
