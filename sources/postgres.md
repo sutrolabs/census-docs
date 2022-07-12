@@ -1,26 +1,26 @@
 ---
 description: >-
-  This page describes how to configure AlloyDB credentials for use by Census and
-  why those permissions are needed.
+  This page describes how to configure Postgres credentials for use by Census
+  and why those permissions are needed.
 ---
 
-# Google AlloyDB
+# Postgres
 
 ## 🔐 Required Permissions
 
 {% hint style="info" %}
-In order for a third party application (like Census) to query your AlloyDB, Google Cloud requires that you [set up an Auth Proxy as detailed in their documentation](https://cloud.google.com/alloydb/docs/auth-proxy/overview). If you have any questions at all setting up this auth proxy, please reach out to support@getcensus.com.&#x20;
+These instructions are well tested to connect Census to Postgres. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.&#x20;
 {% endhint %}
 
 Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in external systems such as Salesforce. To limit the load on your database as well as to other apps' APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a set of tables to a private bookkeeping schema (2 or 3 tables for each sync job configured).
 
-We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your AlloyDB database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
+We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your PostgreSQL database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
 
 * The ability to create the `CENSUS` schema and full admin access to all tables within that schema (including creating tables, deleting tables, and reading and writing to all tables).
 * Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
 * If you are using Census to load service data into your warehouse, read-write access to the schema where Census should load data (note that this is not included in the sample script below).
 
-AlloyDB permissions are complex and there are many ways to configure access for Census. The script below has been tested with AlloyDB and is known to work correctly:
+PostgreSQL permissions are complex and there are many ways to configure access for Census. The script below has been tested with recent PostgreSQL versions and is known to work correctly:
 
 ```
 -- Give the census user the ability to sign in with a password
@@ -54,15 +54,17 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO
 ## 💡 Notes
 
 {% hint style="danger" %}
-We **strongly recommend against** connecting Census to a production AlloyDB database. Census queries are often very analytical in nature and do not always play nicely with production environments.
+We **strongly recommend against** connecting Census a production Postgres database. Census queries are often very analytical in nature and do not always play nicely with production environments. Unfortunately, Postgres doesn't give you much ability to control performance impacts across users so to avoid issues, please use Census with databases set up for analytic workloads only!
 {% endhint %}
 
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
+* In older versions of PostgreSQL, if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata. In later versions of PostgreSQL this extra read access is not required.
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
+* If you are using an Azure database for PostgreSQL server the the **Username** needs to be formatted as `username@hostname` . For AWS the format is `username`
 
 ## 🔑 Encryption
 
-All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). We recommend configuring your AlloyDB instance to use TLS v1.2 or later for all connections.
+All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). We recommend configuring your PostgreSQL instance to use TLS v1.2 or later for all connections.
 
 ## 🚦Allowed IP Addresses
 
