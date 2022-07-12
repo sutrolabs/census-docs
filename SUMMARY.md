@@ -30,7 +30,7 @@
 * [Azure Synapse](sources/azure-synapse.md)
 * [Databricks](sources/databricks.md)
 * [Elasticsearch](sources/elasticsearch.md)
-* [Google AlloyDB](<sources/postgres (1).md>)
+* [Google AlloyDB](sources/alloydb.md)
 * [Google BigQuery](sources/google-bigquery.md)
 * [Google Sheets](sources/google-sheets.md)
 * [MySQL](sources/mysql.md)
