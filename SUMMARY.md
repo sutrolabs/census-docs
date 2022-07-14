@@ -64,7 +64,7 @@
 * [Asana](destinations/asana.md)
 * [Autopilot Journeys](destinations/autopilot-journeys.md)
 * [Braze](destinations/braze.md)
-* [CampaignMonitor](destinations/campaignmonitor.md)
+* [Campaign Monitor](destinations/campaignmonitor.md)
 * [Chargebee](destinations/chargebee.md)
 * [Chargify](destinations/chargify.md)
 * [ChartMogul](destinations/chartmogul.md)
