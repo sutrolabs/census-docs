@@ -27,6 +27,7 @@
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
 
+* [Amazon Athena](sources/aws-athena.md)
 * [Azure Synapse](sources/azure-synapse.md)
 * [Databricks](sources/databricks.md)
 * [Elasticsearch](sources/elasticsearch.md)
