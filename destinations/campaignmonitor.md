@@ -1,17 +1,17 @@
 ---
-description: This page describes how to use Census with CampaignMonitor.
+description: This page describes how to use Census with Campaign Monitor.
 ---
 
-# CampaignMonitor
+# Campaign Monitor
 
 ## 🏃‍♀️ Getting Started
 
-‌In this guide, we will show you how to connect CampaignMonitor to Census and create your first sync.
+‌In this guide, we will show you how to connect Campaign Monitor to Census and create your first sync.
 
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your CampaignMonitor account ready.
+* Have your Campaign Monitor account ready.
 *   Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
 
     * [Azure Synapse](../sources/azure-synapse.md)
@@ -28,20 +28,20 @@ description: This page describes how to use Census with CampaignMonitor.
 
 
 
-### 1. Get CampaignMonitor API Key
+### 1. Get Campaign Monitor API Key
 
-1. Within CampaignMonitor, visit **Settings** then **Developer** page.
+1. Within Campaign Monitor, visit **Settings** then **Developer** page.
 2. Copy the API key to provide to Census
 
-### 2. Connect CampaignMonitor
+### 2. Connect Campaign Monitor
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
 * Click the **Add Service** button
-* Select CampaignMonitor in the dropdown list
+* Select Campaign Monitor in the dropdown list
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-28 at 12.13.33 AM.png>)
 
-* When prompted for your API Credentials, enter your CampaignMonitor API Key
+* When prompted for your API Credentials, enter your Campaign Monitor API Key
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-28 at 10.52.27 AM.png>)
 
@@ -77,7 +77,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 
 ### 5. Create your first Sync
 
-The sync will move data from your warehouse to CampaignMonitor. In this step, you'll define how that will work.
+The sync will move data from your warehouse to Campaign Monitor. In this step, you'll define how that will work.
 
 1. From inside your Census account, navigate to the [Syncs](https://app.getcensus.com/syncs) page.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
@@ -97,11 +97,11 @@ When configuring your sync, the page should look something like this: 👇
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-28 at 11.14.44 AM.png>)
 
-### Step 6: Confirm the synced data in CampaignMonitor
+### Step 6: Confirm the synced data in Campaign Monitor&#x20;
 
-Once your sync is complete, it's time to check your data. Open CampaignMonitor and check that the records updated correctly.&#x20;
+Once your sync is complete, it's time to check your data. Open Campaign Monitor and check that the records are updated correctly.&#x20;
 
-If everything went well, that's it! You've started syncing data from your warehouse to CampaignMonitor!&#x20;
+If everything went well, that's it! You've started syncing data from your warehouse to Campaign Monitor!&#x20;
 
 And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
 
@@ -116,7 +116,7 @@ Census currently supports syncing to the following CampaignMonitor objects.
 | Object Name | Supported? |  Identifiers  |
 |  Subscriber |      ✅     | Email Address |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for CampaignMonitor.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Campaign Monitor.
 
 
 
@@ -131,10 +131,10 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 |       Behaviors      |      Supported?      |   Objects  |
 | **Update or Create** | :white\_check\_mark: | Subscriber |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for CampaignMonitor.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Campaign Monitor.
 
 
 
-## 🚑 Need help connecting to CampaignMonitor?
+## 🚑 Need help connecting to Campaign Monitor?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
