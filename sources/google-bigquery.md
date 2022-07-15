@@ -16,7 +16,7 @@ description: >-
 These instructions are well tested to connect Census to BigQuery. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
 {% endhint %}
 
-Census reads data from one or more tables (possibly across different schemata) in your data warehouse and publishes it to the corresponding objects in external systems, such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a number of tables in the  `CENSUS` dataset ('dataset' is what Google calls their equivalent of a 'schema' in standard database terminology).In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
+Census reads data from one or more tables (possibly across different schemata) in your data warehouse and publishes it to the corresponding objects in external systems, such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a number of tables in the `CENSUS` dataset ('dataset' is what Google calls their equivalent of a 'schema' in standard database terminology).In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
 
 * Full admin access to all schema/tables within the `CENSUS` dataset (including creating and deleting tables, and reading and writing to all tables).
 * Read-only access to any tables and views in any schemata that you would like Census to publish to Salesforce.
@@ -40,19 +40,16 @@ We definitely recommend you use the three permissions we specify when creating a
 
 Because permissions are a bit unique on BigQuery so the process of creating a new connection to Census requires a few extra steps.
 
-1.  Visit the **Connections** section on Census, and press **Add Data Warehouse Connection**, selecting **BigQuery** from the list.
+1. Visit the **Connections** section on Census, and press **Add Data Warehouse Connection**, selecting **BigQuery** from the list.
 2.  Census will ask you to provide the **Google Cloud Project ID** that contains your BigQuery instance. You can find that on the [Google Cloud Console](https://console.cloud.google.com) in the **Project Info** section. If you have multiple Google Cloud projects, you'll need to first select the correct one with the project picker in the top right.
 
-
-    ![](../.gitbook/assets/bq_setup1.png)
+    <img src="../.gitbook/assets/bq_setup1.png" alt="" data-size="original">
 3.  Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with one command to create the `CENSUS` dataset and three copy and paste-able commands you can use to grant permissions for this account on this project. The easiest way to execute these commands is within the **Google Cloud Shell** in the Google Cloud Console.
 
-    ![](../.gitbook/assets/bq_setup_dataset.png)
-    ![](../.gitbook/assets/bq_setup_permissions.png)
+    <img src="../.gitbook/assets/bq_setup_dataset.png" alt="" data-size="original"><img src="../.gitbook/assets/bq_setup_permissions.png" alt="" data-size="original">
 4.  Once you've run all the commands, press the **Test** button in Census. This will validate that you've granted the appropriate credentials. Once you've got a checkmark for all four steps, you're good to go!
 
-
-    ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5ea7766b2c7d3a7e9aebba26/file-bagpimlYKc.png)
+    <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5ea7766b2c7d3a7e9aebba26/file-bagpimlYKc.png" alt="" data-size="original">
 
 ## **🗃**Accessing Google Sheets and Google Drive tables in BigQuery
 
@@ -89,8 +86,10 @@ Census will always connect to your data warehouse from of these static IP addres
 * 34.216.163.241
 * 54.212.243.205
 
-While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access.&#x20;
+While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access.
+
+If using VPC controls, you will also need to allow exports to the Census bucket for unloads ([`gs://sutrolabs-giza-unloads-production`](gs://sutrolabs-giza-unloads-production)) in the allow list for db unloads.
 
 ## 🚑 Need help connecting to BigQuery?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.&#x20;
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
