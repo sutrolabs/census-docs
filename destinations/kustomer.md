@@ -29,7 +29,9 @@ In this guide, we will show you how to connect Kustomer to Census and create you
 
 In your Kustomer account:
 
-1. Navigate to **Settings > Security > API Key**
+1.  Navigate to **Settings > Security > API Key**
+
+    `[KUSTOMER_DOMAIN].kustomerapp.com/app/settings/api_keys`
 2. Create an **API Key** with the following permissions:
    1. `org.admin.klass.read`
    2. `org.user.kobject.read`
@@ -37,6 +39,8 @@ In your Kustomer account:
    4. `org.admin.search.read`
    5. `org.user.customer.write`
    6. `org.user.kobject.write`
+   7. `org.permission.customer`
+   8. `org.permission.company`
 3. Hold onto this API Key for the next section, you'll need it!
 
 In Kustomer, once a token is created, it will be created with those scopes and it is immutable. If there is a permission change, you will need to create a completely separate API key. Make sure to copy and store it securely once generated.
@@ -52,10 +56,10 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers** |
-| --------------: | :------------: | --------------- |
-|        Customer |        ✅       | External Id     |
-|         Company |        ✅       | External Id     |
+| **Object Name** | **Supported?** | **Identifiers**                                    |
+| --------------: | :------------: | -------------------------------------------------- |
+|        Customer |        ✅       | External Id, Default Customer Email, Custom Fields |
+|         Company |        ✅       | External Id, Custom Fields                         |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Kustomer.
 
