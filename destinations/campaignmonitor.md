@@ -11,8 +11,8 @@ description: This page describes how to use Census with Campaign Monitor.
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Campaign Monitor account ready.
-*   Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+* Have your Campaign Monitor account ready, including your List ID.
+*   Have the proper credentials to access your data source. See our docs for each supported data source for further information:
 
     * [Azure Synapse](../sources/azure-synapse.md)
     * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -30,7 +30,7 @@ description: This page describes how to use Census with Campaign Monitor.
 
 ### 1. Get Campaign Monitor API Key
 
-1. Within Campaign Monitor, visit **Settings** then **Developer** page.
+1. Within Campaign Monitor, visit **Settings** then the **Developer** page.
 2. Copy the API key to provide to Census
 
 ### 2. Connect Campaign Monitor
@@ -70,7 +70,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 
 1. From inside your Census account, navigate to the **Models** page.
 2. Enter a name for your model. You'll use this to select the model later.
-3. Enter your SQL query. If you want to test the query, use the **Preview** button.
+3. Enter your SQL query. This is a good spot to include your List ID, as it'll be needed later during the creation of your sync. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
 ![](../.gitbook/assets/screely-1645633928224.png)
@@ -84,7 +84,7 @@ The sync will move data from your warehouse to Campaign Monitor. In this step, y
 3. Under **Where do you want to sync data to?**, choose CampaignMonitor as the **Connection** and the **Subscribe Object** in CampaignMonitor. (See Supported Objects.)
 4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See Supported Sync Behaviors.)
 5. &#x20;Under **How are source and destination records matched?**, select a mapping key. (See Supported Objects for details.)&#x20;
-6. &#x20;Under **Which Properties should be updated?**, select the fields you want to update by mapping a field in CampaignMonitor to a column in your model.
+6. &#x20;Under **Which Properties should be updated?**, select the fields you want to update by mapping a field in CampaignMonitor to a column in your model. Your Campaign Monitor List ID will be needed here to map to the List field(see screenshot below).&#x20;
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, select the **Run a sync now?** checkbox.
 9. Click **Create Sync**.
