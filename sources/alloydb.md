@@ -71,14 +71,14 @@ Census will always connect to your data warehouse from of these static IP addres
 * 34.216.163.241
 * 54.212.243.205
 
-With Postgres you'll need to add these IPs in your firewall, and/or add rules to your `pg_hba.conf` file to only allow the Census user to connect to your database when using these IP addresses.
+With AlloyDB you'll need to add these IPs in your firewall, and/or add rules to your `pg_hba.conf` file to only allow the Census user to connect to your database when using these IP addresses.
 
 ## 🚇 Connecting via SSH tunnel
 
-Census optionally allows connecting to Postgres warehouses that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
+Census optionally allows connecting to AlloyDB warehouses that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
 
 1. Create a new user account for Census on the SSH host. (This account is separate from the database user account and can have a different username.)
-2. On the Census connections page, create a new connection to a Postgres warehouse, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below.  Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
+2. On the Census connections page, create a new connection to a AlloyDB warehouse, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below.  Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
 
 ![](../.gitbook/assets/redshift\_pg\_1.png)
 
@@ -94,6 +94,6 @@ Note that the keypair is unique for each Census Warehouse connection. Even if yo
 
 With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
 
-## 🚑 Need help connecting to Postgres?
+## 🚑 Need help connecting to AlloyDB?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
