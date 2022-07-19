@@ -126,7 +126,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 |        **Behaviors** | **Supported?** |         **Objects?**        |
 | -------------------: | :------------: | :-------------------------: |
 | **Update or Create** |        ✅       | User Profile, Group Profile |
-|      **Create Only** |        ✅       |            Event            |
 |           **Append** |        ✅       |            Event            |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Mixpanel.
