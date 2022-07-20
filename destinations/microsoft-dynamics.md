@@ -27,6 +27,10 @@ This guide shows you how to use Census to connect your Microsoft Dynamics accoun
 
 ### Step 1: Connect Microsoft Dynamics
 
+{% hint style="info" %}
+For Production Dynamics instances, the user to authenticate Census needs to have "Service Writer" permissions. For the [Default environment](https://docs.microsoft.com/en-us/power-platform/admin/environments-overview#the-default-environment), the user must be an Admin. Read more about this [here](https://docs.microsoft.com/en-us/power-platform/admin/database-security).
+{% endhint %}
+
 1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
 2. Click **Add Service**.
 3. Select **Microsoft Dynamics** from the menu
@@ -98,8 +102,6 @@ Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Microsoft Dynamics.
-
-
 
 ## 🚑 Need help connecting to Microsoft Dynamics?
 

@@ -55,7 +55,7 @@ Here you can write SQL queries or select dbt models that contain the data you wa
 
 Once you have created your model, click save.&#x20;
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
 
 ### 4. Create your first Sync
 

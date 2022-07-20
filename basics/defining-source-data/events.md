@@ -33,6 +33,10 @@ When setting up an Append Only sync, Census will ask if you'd like to backfill t
 
 #### Using timestamp to identify new records
 
+{% hint style="warning" %}
+This feature is meant to pick up fast-changing data, to enable syncing many events as fast as possible. If syncing to Slack, or with low volumes of data, we recommend not using this
+{% endhint %}
+
 ![](../../.gitbook/assets/screely-1650991232946.png)
 
 By default, Census uses the Event ID to detect which rows are new and should be synced. This is fine for most use cases but when data sources expand beyond tens of millions or rows, it may be faster to use a timestamp if available.&#x20;

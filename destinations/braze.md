@@ -7,7 +7,7 @@ description: This page describes how to use Census with Braze.
 ### Note on Braze API Costs
 
 {% hint style="warning" %}
-Braze prices its API on a per datapoint update basis. Census ensures that only fields that need to be updated are sent (rather than a copy of the entire record). Please be aware that large datasets, which change often can increase your Braze API usage.&#x20;
+Braze prices its API on a per data point update basis. Census ensures that only fields that need to be updated are sent (rather than a copy of the entire record). Please be aware that large datasets, which change often can increase your Braze API usage. [Read More](braze.md#supported-objects-1).
 {% endhint %}
 
 ## 🏃‍♀️ Getting Started
@@ -70,16 +70,14 @@ For example, if your Braze URL is https://dashboard-**03**.braze.com/, then your
 
 Great! Now let's pull it all together.&#x20;
 
-1. In the **Settings** tab, Create a new Braze Service Connection in Census.\
-   &#x20;<img src="../.gitbook/assets/screely-1619749986549.png" alt="" data-size="original">&#x20;
-2. You can provide whatever name you like.
-3. Provide the appropriate Braze Endpoint URL.
-4.  Copy and paste your new Braze API key.\
+1. In the [**Connections**](https://app.getcensus.com/connections) **** page, click on Add Service, and select "Braze"
+2. You can provide whatever name you like for the connection
+3. Provide the appropriate Braze Endpoint URL
+4. Copy and paste your new Braze API key
 
+![Click Connect](<../.gitbook/assets/Braze Connection.png>)
 
-    ![](../.gitbook/assets/screely-1619749992320.png)
-
-And you're all set and ready to get syncing! 🎉
+After the Connection Test is Green, you're all set and ready to get syncing! 🎉
 
 ## 🗄 Supported Objects
 
@@ -148,6 +146,21 @@ Braze's Mirror behavior optionally supports a choice of two actions when a recor
 * **Subscription Group Membership** - This will unsubscribe users from the corresponding subscription group, as described [above](braze.md#braze-subscription-groups).
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Braze.
+
+## Data Points
+
+In order to minimize your API usage with Braze to ensure that your organization is only updating the [data points](https://www.braze.com/docs/user\_guide/onboarding\_with\_braze/data\_points/) that have actually changed, Census exports the mapped fields from Braze and scans the data in your data source (including on Full Syncs). If there is a difference, Census will send that data point over from the source. If there is not, Census will not send that data point write over.
+
+{% hint style="warning" %}
+Note that certain built-in fields in Braze, such as Country and Gender, have automatically standardization that happens in Braze. IE: "United States" from SQL becomes "US" from Braze's API.
+
+
+
+So for these type of values, we recommend either:
+
+* Pre-standardize your fields to match Braze’s format (IE: "US")
+* Use Custom Attributes
+{% endhint %}
 
 ## 🚑 Need help connecting to Braze?
 

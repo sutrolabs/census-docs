@@ -143,7 +143,7 @@ For a more complete description of each identifier, please see [Facebook's API d
 
 Your final sync configuration will look like the following!
 
-![](<../.gitbook/assets/screely-1626208532062 (1) (1).png>)
+![](<../.gitbook/assets/screely-1626208532062 (1).png>)
 
 ### Sample Data Requirements
 

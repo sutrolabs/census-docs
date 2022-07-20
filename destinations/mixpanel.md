@@ -111,11 +111,11 @@ Census currently supports syncing to the following Mixpanel objects.
 |   Group Profile |        ✅       | Group ID    |
 |    Lookup Table |        ✅       | Join Key    |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Mixpanel.
-
 #### Syncing Historical Events
 
 Depending on which plan your Mixpanel is on, you may have limited ability to view historical data. For example, currently Mixpanel's Starter Free plan will only show events from the last 90 days, even though Census can successfully sync older data. If you find some of your event data missing, take a look at [Mixpanel's documentation](https://help.mixpanel.com/hc/en-us/articles/115004511246-Data-History-Access-By-Plan-Type) to understand what limits your plan may have.
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Mixpanel.
 
 ## 🔄 Supported Sync Behaviors
 

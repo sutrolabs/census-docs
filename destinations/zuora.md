@@ -56,7 +56,7 @@ Here you can write a SQL query to select the data you want to see in Zuora. You 
 
 Once you have created your model, click **Save Model**.&#x20;
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
 
 ### 4. Create your first Sync
 
@@ -104,7 +104,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 | Account         |        ✅       | Account ID, Account Number           |
 | Subscription    |        ✅       | Subscription ID, Subscription Number |
 
-🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
 
 ## 🔄 Supported Sync Behaviors
 
@@ -116,7 +116,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 | ------------: | :------------: | :-------------------: |
 |   Update Only |        ✅       | Account, Subscription |
 
-‌ 🔋 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
+‌ [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
 
 
