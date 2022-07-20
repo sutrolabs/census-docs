@@ -152,14 +152,14 @@ Braze's Mirror behavior optionally supports a choice of two actions when a recor
 In order to minimize your API usage with Braze to ensure that your organization is only updating the [data points](https://www.braze.com/docs/user\_guide/onboarding\_with\_braze/data\_points/) that have actually changed, Census exports the mapped fields from Braze and scans the data in your data source (including on Full Syncs). If there is a difference, Census will send that data point over from the source. If there is not, Census will not send that data point write over.
 
 {% hint style="warning" %}
-Note that certain built-in fields in Braze, such as Country and Gender, have automatically standardization that happens in Braze. IE: "United States" from SQL becomes "US" from Braze's API.
+Note that certain built-in fields in Braze, such as Country and Gender, have automatic standardization that happens in Braze. IE: "United States" from SQL becomes "US" from Braze's API.
 
 
 
-So for these type of values, we recommend either:
+So when using these type of values, we recommend either:
 
 * Pre-standardize your fields to match Braze’s format (IE: "US")
-* Use Custom Attributes
+* Use Custom Attributes to store them instead
 {% endhint %}
 
 ## 🚑 Need help connecting to Braze?
