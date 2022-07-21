@@ -37,13 +37,17 @@ In order for a third party application (like Census) to query your AlloyDB, Goog
 * Click the **Add Service** button
 * Select **AlloyDB** in the list
 
-You'll be prompted to put the following credentials into the Census page.
+You'll be prompted to put the following credentials into the Census page:
 
-![As listed, we need the Hostname, Port, Database, Username, and Password](<../.gitbook/assets/Postgres Module.png>)
+* Hostname
+* Port
+* Database Name
+* Username
+* Password
 
 After clicking connect, Census will test the connection that was specified.
 
-![A Green , means you are good to go](<../.gitbook/assets/Postgres Test.png>)
+![A Green , means you are good to go](<../.gitbook/assets/Screenshot 2022-07-21 at 4.12.30 PM.png>)
 
 After the connection is verified, you all tables will be exposed, but please take a look below on some of the specifics. :arrow\_down:
 
