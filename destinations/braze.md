@@ -139,11 +139,13 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 ### Mirror Mode Options
 
-Braze's Mirror behavior optionally supports a choice of two actions when a record is removed from the source. This can be configured when setting up the sync initially:
+Braze's Mirror behavior optionally supports a choice of two actions when a record is removed from the source. This can be configured when setting up the sync initially.  The first time the sync is performed, the records will be used as a basis for mirroring behaviour in future syncs:
 
-* **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze.&#x20;
-* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced will be removed from the destination record (by setting them to Null).
+* **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze. &#x20;
+* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced will be removed from the destination record (by setting them to Null).  The identifier will not be removed from the destination record. &#x20;
 * **Subscription Group Membership** - This will unsubscribe users from the corresponding subscription group, as described [above](braze.md#braze-subscription-groups).
+
+Regardless of which option is selected, mirror syncs identify deletions of each type by comparing against the data they have already sent -- not the data that might or might not already exist in Braze. This means that the first sync will be an upsert for all records, and the second and following syncs will account for deletions from the source data.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Braze.
 
@@ -152,13 +154,13 @@ Braze's Mirror behavior optionally supports a choice of two actions when a recor
 In order to minimize your API usage with Braze to ensure that your organization is only updating the [data points](https://www.braze.com/docs/user\_guide/onboarding\_with\_braze/data\_points/) that have actually changed, Census exports the mapped fields from Braze and scans the data in your data source (including on Full Syncs). If there is a difference, Census will send that data point over from the source. If there is not, Census will not send that data point write over.
 
 {% hint style="warning" %}
-Note that certain built-in fields in Braze, such as Country and Gender, have automatic standardization that happens in Braze. IE: "United States" from SQL becomes "US" from Braze's API.
+Note that certain built-in fields in Braze, such as Country and Gender, have automatic standardization that happens in Braze. i.e.: "United States" from SQL becomes "US" from Braze's API.
 
 
 
 So when using these type of values, we recommend either:
 
-* Pre-standardize your fields to match Braze’s format (IE: "US")
+* Pre-standardize your fields to match Braze’s format (i.e. "US")
 * Use Custom Attributes to store them instead
 {% endhint %}
 
