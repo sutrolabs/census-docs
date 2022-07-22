@@ -55,6 +55,10 @@ Then your test sync, or completed syncs will be good to go, like this one:
 
 ![SUCCESS!](<../.gitbook/assets/Screen Shot 2022-07-21 at 5.42.49 PM.png>)
 
+{% hint style="danger" %}
+If you do want to update the Status field, you can include that instead. However, we **highly** recommend understanding your organization's implications of potentially re-subscribing a member that has previously unsubscribed.
+{% endhint %}
+
 For more details, take a look at Mailchimp's [API documentation](https://mailchimp.com/developer/marketing/api/list-members/update-list-member/).
 
 ## 🗄⠀Supported Objects
