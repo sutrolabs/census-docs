@@ -1,12 +1,14 @@
+---
+description: We're happy you're here!
+---
+
 # 🏡 Introduction
 
 ## 👋 Welcome to Census!&#x20;
 
-Census is a data integration platform that enables you to sync your customer and product data from cloud data warehouses like Redshift, Snowflake, and Databricks to the apps your sales and marketing teams use.&#x20;
+Census is an [Operational Analytics](https://www.getcensus.com/blog/what-is-operational-analytics) platform that enables you to sync your trusted analytics data from your hub into operational tools that your business teams use on a daily basis. Learn more about how our Customers use Census [here](https://www.getcensus.com/customers).
 
-If you're new here, you can get started by finding the quick start guide for the app you want to connect:
-
-
+You can get started by finding the quick start guide for the tool you want to sync data into:
 
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Airtable](destinations/airtable.md)
@@ -20,6 +22,8 @@ If you're new here, you can get started by finding the quick start guide for the
 * [CampaignMonitor](destinations/campaignmonitor.md)
 * [Chargebee](destinations/chargebee.md)
 * [Chargify](destinations/chargify.md)
+* [ChartMogul](destinations/chartmogul.md)
+* [Criteo](destinations/criteo.md)
 * [Custom API](destinations/custom-api.md)
 * [Customer.io](destinations/customer.io.md)
 * [Drift](destinations/drift.md)
@@ -28,9 +32,11 @@ If you're new here, you can get started by finding the quick start guide for the
 * [Front](destinations/front.md)
 * [Gainsight](destinations/gainsight.md)
 * [Google Ads](destinations/google-ads/)
+* [Google Analytics](destinations/google-analytics.md)
 * [Google Cloud Storage](destinations/google-cloud-storage.md)
 * [Google Sheets](sources/google-sheets.md)
 * [Heap.io](destinations/heap.io.md)
+* [Help Scout](destinations/help-scout.md)
 * [HubSpot](destinations/hubspot.md)
 * [Intercom](destinations/intercom.md)
 * [Iterable](destinations/iterable.md)
@@ -40,8 +46,10 @@ If you're new here, you can get started by finding the quick start guide for the
 * [Mailchimp](destinations/mailchimp.md)
 * [Marketo](destinations/marketo.md)
 * [Microsoft Advertising](destinations/microsoft-advertising.md)
+* [Microsoft Dynamics](destinations/microsoft-dynamics.md)
 * [Mixpanel](destinations/mixpanel.md)
 * [Netsuite](destinations/netsuite.md)
+* [Orbit](destinations/orbit.md)
 * [Outreach](destinations/outreach.md)
 * [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
@@ -59,6 +67,9 @@ If you're new here, you can get started by finding the quick start guide for the
 * [Snapchat](destinations/snapchat.md)
 * [Stripe](destinations/stripe.md)
 * [TikTok](destinations/tiktok.md)
+* [Totango](destinations/totango.md)
+* [Twitter](destinations/twitter.md)
+* [Userflow](destinations/userflow.md)
 * [Vitally](destinations/vitally.md)
 * [Webhooks](destinations/webhook.md)
 * [Zendesk](destinations/zendesk.md)

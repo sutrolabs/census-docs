@@ -41,11 +41,19 @@ If you want to see your connections in Mailchimp in the future, simply navigate 
 
 ## 💡⠀Mailchimp Field Quirks
 
-There are two mandatory fields for the Mailchimp connection: **email** and **status**.
-
+{% hint style="info" %}
 Please note that the mandatory status field only accepts the following values **in lower case**: `"subscribed"`, `"unsubscribed"`, `"cleaned"`, or `"pending"`.
+{% endhint %}
 
-In addition, pre-hashed emails can be used as the record identifier for syncs with the Update behavior. The hash must be the MD5 hash of the lowercase version of the list member's email.
+With Mailchimp, the API endpoint needs a Status field value, so if you find yourself seeing this error:
+
+![Oh no!](<../.gitbook/assets/Screen Shot 2022-07-21 at 5.30.25 PM.png>)
+
+_But_ you don't want to overwrite existing Statuses in Mailchimp, you just need to provide a mapping to the field labelled, "**Status For New Subscriber**".
+
+Then your test sync, or completed syncs will be good to go, like this one:
+
+![SUCCESS!](<../.gitbook/assets/Screen Shot 2022-07-21 at 5.42.49 PM.png>)
 
 For more details, take a look at Mailchimp's [API documentation](https://mailchimp.com/developer/marketing/api/list-members/update-list-member/).
 
