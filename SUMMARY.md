@@ -102,6 +102,7 @@
 * [NetSuite](destinations/netsuite.md)
 * [Notion](destinations/notion.md)
 * [Orbit](destinations/orbit.md)
+* [Ortto](destinations/ortto.md)
 * [Outreach](destinations/outreach.md)
 * [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
