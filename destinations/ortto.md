@@ -32,7 +32,7 @@ Before you begin, you'll need the following:
 1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
 2. Click **Add Service**.
 3. Select **Ortto** from the dropdown list.
-4. Orbit uses API keys to authorize access to the API, so you will need to provide an **API Key** to Census.
+4. Ortto uses API keys to authorize access to the API, so you will need to provide an **API Key** to Census.
    1. You can create an API key in Ortto specifically for Census. On the left-hand menu click **More** > **Data Sources.** On the Data Sources page click the **New Data Source** button then select **Custom API (advanced).** Give the source a name of your choosing and click **Create.** The API Key will be shown on the following page. Make sure to save it somewhere secure.
    2. Copy the API key and paste it into the **API Key** field in the Ortto setup in Census.&#x20;
    3. Ortto has custom rate limiting based on what plan you're on. You can check out the limits for your specific plan [here](https://help.ortto.com/developer/latest/developer-guide/rate-limits.html). Enter the limit for the 60s interval of your plan in the **Rate limit per 60s** field. If no limit is specified we will default to the Pro plan (600 requests/min).
