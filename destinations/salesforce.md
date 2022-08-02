@@ -130,11 +130,11 @@ That should be it! OpportunityContactRole is one of the weirdest parts of the Sa
 
 ## **🗃 Supported Data Types**
 
-| **Salesforce Field Types** | **Source SQL Types**                                                                                              |
-| :------------------------: | ----------------------------------------------------------------------------------------------------------------- |
-|     Picklist (Multiple)    | String separated by a `;` In Snowflake, this is best done via a `listagg(val, ';')`                               |
-|           Lookup           | On the object you are syncing to, the field you are looking up needs to be exposed as a unique and an external Id |
-|          The Rest          | <p>Census will give an informative error</p><p>message if rejected by Salesforce 😀</p>                           |
+| **Salesforce Field Types** | **Source SQL Types**                                                                                                                                                                                  |
+| :------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     Picklist (Multiple)    | <p>String separated by a <code>;</code></p><p>In Snowflake, this is best done via <code>LISTAGG(VAL, ';')</code></p><p>In BigQuery, this can be via: <code>ARRAY_TO_STRING(VAL_ARRAY, ';')</code></p> |
+|           Lookup           | On the object you are syncing to, the field you are looking up needs to be exposed as a unique and an external Id                                                                                     |
+|          The Rest          | <p>Census will give an informative error</p><p>message if rejected by Salesforce 😀</p>                                                                                                               |
 
 **Clearing fields / Syncing null values**
 

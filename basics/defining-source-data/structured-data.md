@@ -40,7 +40,26 @@ For objects, Snowflake provides several more functions, including the matching s
 
 Finally, to parse JSON, `PARSE_JSON(json_string)` ([Snowflake docs](https://docs.snowflake.com/en/sql-reference/functions/parse\_json.html)) will take care of that for you.&#x20;
 
-In all of these cases, Snowflake will return a `VARIANT` type which is their data type for semi-structured data.&#x20;
+In all of these cases, Snowflake will return a `VARIANT` type which is their data type for semi-structured data.
+
+### BigQuery
+
+BigQuery has some interesting quirks regarding their structured object support.
+
+To create an array, BigQuery has one option, as specified in their docs [here](https://cloud.google.com/bigquery/docs/reference/standard-sql/array\_functions#array):
+
+* `ARRAY(SELECT tag FROM tags WHERE user_id = user_id)`
+* `ARRAY(SELECT '1' UNION ALL SELECT '2' UNION ALL SELECT '3')`
+
+{% hint style="info" %}
+The approach above only works with a subquery that returns one column, as per BigQuery's documentation.
+{% endhint %}
+
+For Objects, BigQuery does not support diffing across their `struct` object, so we recommend that you convert it to string via `to_json_string()`. With that caveat, there might still be times when you want to pass JSON of a `struct` for different properties during your use of Census. There are a number of ways to create a struct in BigQuery.
+
+For example, you may wish to pass the JSON `{'id': '110'}` to a destination that supports nested objects as fields. Although you might've constructed the JSON as `struct('110' as id)`, you will need to convert it to a string as follows:
+
+`to_json_string(struct('110' as id))`
 
 ### Redshift
 

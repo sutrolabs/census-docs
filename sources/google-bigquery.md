@@ -44,12 +44,22 @@ Because permissions are a bit unique on BigQuery so the process of creating a ne
 2.  Census will ask you to provide the **Google Cloud Project ID** that contains your BigQuery instance. You can find that on the [Google Cloud Console](https://console.cloud.google.com) in the **Project Info** section. If you have multiple Google Cloud projects, you'll need to first select the correct one with the project picker in the top right.
 
     <img src="../.gitbook/assets/bq_setup1.png" alt="" data-size="original">
-3.  Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with one command to create the `CENSUS` dataset and three copy and paste-able commands you can use to grant permissions for this account on this project. The easiest way to execute these commands is within the **Google Cloud Shell** in the Google Cloud Console.
+3. You will also need to specify in what location you want your Census Dataset to be stored in. This locality will be used in the 1st and 2nd command below, and this dataset is where Census will store its bookkeeping to make sure that only incremental changes are synced to your destinations.
+4. Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with one command to create the `CENSUS` dataset and three copy and paste-able commands you can use to grant permissions for this account on this project. The second command grants dataEditor on the newly created `CENSUS` dataset.&#x20;
 
-    <img src="../.gitbook/assets/bq_setup_dataset.png" alt="" data-size="original"><img src="../.gitbook/assets/bq_setup_permissions.png" alt="" data-size="original">
-4.  Once you've run all the commands, press the **Test** button in Census. This will validate that you've granted the appropriate credentials. Once you've got a checkmark for all four steps, you're good to go!
+![1st and 2nd commands](../.gitbook/assets/bq\_setup\_dataset.png)
 
-    <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5ea7766b2c7d3a7e9aebba26/file-bagpimlYKc.png" alt="" data-size="original">
+The third command grants dataViewer to the Census serviceAccount, and the fourth command grants jobUser to the Census serviceAccount. Both of these are executed at the level of the project to which you are giving access to Census to give visibility to.
+
+![3rd and 4th commands](<../.gitbook/assets/Screen Shot 2022-08-01 at 6.49.16 PM.png>)
+
+{% hint style="info" %}
+The easiest way to execute these commands is within the **Google Cloud Shell** in the Google Cloud Console, however the third block can also be managed within the BigQuery IAM permissions to grant to the exact datasets that you want to give Census access to sync data from.
+{% endhint %}
+
+5\. Once you've run all the commands, press the **Test** button in Census. This will validate that you've granted the appropriate credentials. Once you've got a checkmark for all four steps, you're good to go!
+
+<img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5ea7766b2c7d3a7e9aebba26/file-bagpimlYKc.png" alt="" data-size="original">
 
 ## **🗃**Accessing Google Sheets and Google Drive tables in BigQuery
 
