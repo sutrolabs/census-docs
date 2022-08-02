@@ -105,6 +105,15 @@ As an example, valid JSON for a field named "subscription" could have the follow
 
 We recommend testing your JSON fields in Redshift by using Redshift's [`IS_VALID_JSON`](https://docs.amazonaws.cn/en\_us/redshift/latest/dg/IS\_VALID\_JSON.html) and [`IS_VALID_JSON_ARRAY`](https://docs.amazonaws.cn/en\_us/redshift/latest/dg/IS\_VALID\_JSON\_ARRAY.html) functions, especially before creating new fields in Iterable via Census's field mapper.
 
+### Syncing to GeoLocation Fields
+
+Iterable has a field data type called [GeoLocation](https://support.iterable.com/hc/en-us/articles/208183076-Field-Data-Types#geo-location) that stores a latitude and longitude in an object. To create or sync to an existing Iterable GeoLocation field with Census there are a couple of requirements.&#x20;
+
+* The destination field name must use the suffix  `_geo_location` .  **NOTE:** The suffix is case sensitive
+* The geo\_location object data can only contain two fields, `lat` and `lon`
+  * **Example**: `{ "lat": 31, "lon": -14 }`
+  * For more information on using structured data within Census please visit our [Structured Data](https://docs.getcensus.com/basics/defining-source-data/structured-data) documentation.&#x20;
+
 ### Syncing to Catalogs
 
 Iterable Catalogs let you create custom objects within Iterable that can be associated with users. Here's a few tips when using Catalogs to make sure your sync is successful.
