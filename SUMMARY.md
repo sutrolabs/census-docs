@@ -55,7 +55,6 @@
 
 ## 🛫 Destinations (app) <a href="#destinations" id="destinations"></a>
 
-* [Sync-a-swag](destinations/sync-a-swag.md)
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Airtable](destinations/airtable.md)
 * [Algolia](destinations/algolia.md)
