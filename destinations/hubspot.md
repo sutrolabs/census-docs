@@ -143,7 +143,9 @@ Please be aware that with Custom Objects require extra API calls and are even sl
 |         Custom Behavioral Event |        ✅       | Unique Event ID                   |
 | Engagements (Task, Call, Email) |       🔜       |                                   |
 
-### Custom Objects (Available on HubSpot Enterprise plans)
+### Custom Objects
+
+Custom Objects are available on HubSpot Enterprise plans.
 
 As of March 2021, only properties in the searchableProperties set are usable as sync identifiers to HubSpot Custom Objects. This is a bit confusing as this label only appears in the HubSpot API. A searchable property can be added to a Custom Object via HubSpot's API. The calls to make this update can be found in HubSpot's [Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Schema Tab > searchableProperties.&#x20;
 
@@ -151,11 +153,29 @@ Additionally, HubSpot has some apps available in their marketplace like [Dotsqua
 
 If you need a hand making one of your existing Custom Object fields as searchable, please contact Census's Support team and we can walk you through it!&#x20;
 
-### Object Associations
+### Managing Object Associations
 
-HubSpot supports an advanced method of defining relationships between objects they call [Associations](https://knowledge.hubspot.com/crm-setup/create-and-use-association-labels).
+HubSpot supports an advanced method of defining relationships between objects they call [Associations](https://knowledge.hubspot.com/crm-setup/create-and-use-association-labels). Associations have a number of different properties:
 
+* They're supported between all HubSpot object pairs, including custom objects.
+* They can represent one-to-many and many-to-many relationships.&#x20;
+* Associations can be labeled or unlabeled. HubSpot Professional and Enterprise plans also support custom labels.
 
+Many-to-many associations can be updated in Census syncs on either side of the associations, while one-to-many associations can only be set on the child or many side.
+
+#### Labeled Associations
+
+Labels in HubSpot are a bit strange and Census provides some advanced configuration to make updating and removing labels a bit more straightforward.&#x20;
+
+When creating a labeled association between two objects in HubSpot, HubSpot will also automatically create an unlabeled association. Additionally, when creating an association from a contact to a company, HubSpot will create another association labeled Primary. That means that adding a labeled association with a Census sync may actually create up to three actual associations.&#x20;
+
+Unfortunately, HubSpot does not offer a way to remove these default associations when they're no longer necessary when removing the labeled association Census created. These associations may have actually been created intentionally so Census also cannot delete them automatically.&#x20;
+
+To navigate this, Census provides an advanced configuration for HubSpot syncs: **Automatically clean up HubSpot's default associations when this sync removes any associations**.&#x20;
+
+When this behavior is enabled and a Census sync removes a labeled association, we'll also check to see if the remaining associations are only the unlabeled and Primary labeled associations, if so, we'll automatically remove those associations as well.&#x20;
+
+By default, this feature is not enabled to avoid accidentally deleting associations that were created outside the sync and should still exist.
 
 ### Custom Behavioral Events
 
