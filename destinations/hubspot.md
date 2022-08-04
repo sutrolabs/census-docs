@@ -143,7 +143,7 @@ Please be aware that with Custom Objects require extra API calls and are even sl
 |         Custom Behavioral Event |        ✅       | Unique Event ID                   |
 | Engagements (Task, Call, Email) |       🔜       |                                   |
 
-#### Custom Objects (Available on HubSpot Enterprise plans)
+### Custom Objects (Available on HubSpot Enterprise plans)
 
 As of March 2021, only properties in the searchableProperties set are usable as sync identifiers to HubSpot Custom Objects. This is a bit confusing as this label only appears in the HubSpot API. A searchable property can be added to a Custom Object via HubSpot's API. The calls to make this update can be found in HubSpot's [Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Schema Tab > searchableProperties.&#x20;
 
@@ -151,7 +151,13 @@ Additionally, HubSpot has some apps available in their marketplace like [Dotsqua
 
 If you need a hand making one of your existing Custom Object fields as searchable, please contact Census's Support team and we can walk you through it!&#x20;
 
-#### Custom Behavioral Events
+### Object Associations
+
+HubSpot supports an advanced method of defining relationships between objects they call [Associations](https://knowledge.hubspot.com/crm-setup/create-and-use-association-labels).
+
+
+
+### Custom Behavioral Events
 
 Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and do two steps:
 
