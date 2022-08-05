@@ -37,45 +37,11 @@ In this guide, we will show you how to connect HubSpot to Census and create your
 
 Follow HubSpot OAuth flow to connect HubSpot. Your end state should look something like this below.&#x20;
 
-{% hint style="info" %}
-If you plan on using Custom Behavioral Events, you'll also need to provide a
-
-separate API Key. See [#custom-behavioral-events](hubspot.md#custom-behavioral-events "mention") section below.
-{% endhint %}
-
 ![](../.gitbook/assets/screely-1651800471783.png)
 
-### 2. Connect your Data Warehouse
+### 2. Create your first Sync
 
-Please follow one of our short guides depending on your data warehouse technology
-
-* [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
-* [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
-
-After setting up your warehouse, your Census Connections Page should look like this
-
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6560b54cedfd00173b9a47/file-rYyleZp4Li.png)
-
-### 3. Create your first Model
-
-Now navigate to the [Model section of our Dashboard](https://app.getcensus.com/models)
-
-Here you will have to write SQL queries to select the data you want to see in HubSpot. Here are some ideas of data you should select
-
-* The Lifetime Value of a customer and add it to a contact or companies
-* The end of their trial
-* The date they became active in your product
-* The number of key activities a user did in your app in the last 7/30 days
-
-Once you have created your model, click save.&#x20;
-
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
-
-### 4. Create your first Sync
-
-Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
+Before you create your first sync, you'll also need to connect your data source. Once you've done that, head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
 
 In the " **What data do you want to sync?"** section
 
@@ -98,7 +64,7 @@ Finally, select the fields you want to update in the Mapper in the **"Which Fiel
 
 The end result should look something like this
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f656a5c4cedfd00173b9a55/file-iowohMcQax.png)
+![](../.gitbook/assets/app.getcensus.com\_syncs\_new\_bookmarkModelId=42348.png)
 
 Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
 
