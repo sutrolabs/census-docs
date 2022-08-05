@@ -135,7 +135,7 @@ Please be aware that with Custom Objects require extra API calls and are even sl
 |                 **Object Name** | **Supported?** | **Identifiers**                   |
 | ------------------------------: | :------------: | --------------------------------- |
 |                         Company |        ✅       | Object ID, any Text/Number        |
-|                         Contact |        ✅       | Object ID, any Text/Number        |
+|                         Contact |        ✅       | Object ID, Email, any Text/Number |
 |                            Deal |        ✅       | Object ID, any Text/Number        |
 |                         Product |        ✅       | Object ID, any Text/Number        |
 |                       Line Item |        ✅       | Object ID, any Text/Number        |
@@ -171,7 +171,9 @@ When creating a labeled association between two objects in HubSpot, HubSpot will
 
 Unfortunately, HubSpot does not offer a way to remove these default associations when they're no longer necessary when removing the labeled association Census created. These associations may have actually been created intentionally so Census also cannot delete them automatically.&#x20;
 
-To navigate this, Census provides an advanced configuration for HubSpot syncs: **Automatically clean up HubSpot's default associations when this sync removes any associations**.&#x20;
+To navigate this, Census provides an advanced configuration for HubSpot syncs: **Automatically clean up orphaned default associations when removing any associations**.&#x20;
+
+![](../.gitbook/assets/screely-1659672959589.png)
 
 When this behavior is enabled and a Census sync removes a labeled association, we'll also check to see if the remaining associations are only the unlabeled and Primary labeled associations, if so, we'll automatically remove those associations as well.&#x20;
 
@@ -179,13 +181,9 @@ By default, this feature is not enabled to avoid accidentally deleting associati
 
 ### Custom Behavioral Events
 
-Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and do two steps:
+Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and create your Custom Behavior Event (see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events)).&#x20;
 
-**Step 1**, get your HubSpot API key (unfortunately, this type of object needs a slightly different credential than the rest of HubSpot). You can do that within the **Integrations > API Key** section of **Settings**. One twist, you'll need Super Admin privileges to access it.[ HubSpot has all the details in their docs](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key). Once you have your API Key, visit [Census's Connections page](https://app.getcensus.com/connections) and use the **Edit** button on your existing HubSpot connection to store the key in Census.
-
-![](../.gitbook/assets/screely-1651801768669.png)
-
-**Step 2**, create the Custom Behavioral Event, see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events). You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for object, you'll need to provide that to the `Event Name` property during the Census sync.&#x20;
+You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for object, you'll need to provide that to the `Event Name` property during the Census sync.&#x20;
 
 Note: The custom fields you've added will not show inside Census, you'll need to use the `New Custom Field` option to create the matching fields on Census, make sure they're named exactly the same (keep in mind, names are case sensitive!).
 
