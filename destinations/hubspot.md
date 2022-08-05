@@ -68,13 +68,13 @@ The end result should look something like this
 
 Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
 
-### 5. Confirm the data is in HubSpot
+### 3. Confirm the data is in HubSpot
 
 Now go back to your HubSpot and go view a record type (Contact or Company) that should have been updated. If everything went well, you should see your data in HubSpot
 
 ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f656c764cedfd00176363f8/file-aQC3QWxxq7.png)
 
-that's it, in 5 steps, you connect Census to HubSpot and started syncing customer & product data from your warehouse to HubSpot 🎉
+That's it, in just a few steps, you've connected Census to HubSpot and started syncing data from your warehouse to HubSpot 🎉
 
 ## 🏎 Sync Speed
 
