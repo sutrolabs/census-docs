@@ -8,7 +8,7 @@ description: >-
 
 Census supports connecting to an existing dbt project, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.&#x20;
 
-Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date. And Census is designed to work hand-in-hand with dbtCloud or any other dbt runner.
+Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date. It also means that Census can confirm that your pull requests for dbt model changes won't accidentally drop or rename a model that is currently in use. Census is designed to work hand-in-hand with dbtCloud or any other dbt runner.
 
 ## Setting it up
 
@@ -29,6 +29,22 @@ For more information on selector syntax, see [dbt’s Model Selector Syntax](htt
 Finally, specify where intermediate models are materialized. If the models you expose in Census have dependencies, we will attempt to use these materialized tables. You may need to ensure that our database connection has read access to these tables.
 
 Once you’ve configured your project repository, Census will analyze your project and display the models you’ve made available. You’re now ready to start using these models as part of Census syncs!
+
+## dbt Continuous Integration (CI) Checks
+
+For dbt models used in Census syncs, Census can check whether you are going to drop, rename, or move a model that will end up breaking an active sync in your account. When a Pull Request (or commit to a Pull Request) is created, dbt CI Checks will help ensure that your dbt development never unexpectedly breaks downstream Census syncs.
+
+To enable these CI checks, navigate to your dbt integration in Census and toggle "Enable CI/CD Tests in GitHub".&#x20;
+
+![Toggle "Enable CI/CD Tests in GitHub" to start testing your dbt Pull Requests.](https://lh4.googleusercontent.com/xOM6gFPdJL0g\_uhuv-OcDAub-Iu88VTzw8yJroV5ox\_s87p0CVDIEnRMl8NKw\_h3zzrUkTzglrnrfSdZsgDLFsoSsASeDlWXQNDVcIN3SCMO4aNejkxjPNfLxo\_0WPMV8CBcnsMEfiENdbAwVI8hZ-U)
+
+On your next Pull Request, Census will run its first check, as follows:
+
+![dbt CI Checks are running](https://lh5.googleusercontent.com/wSi0ryobX-Cvi8Jpm6mLlzd-LonA1KaUWjFiKgNlRcM9EzmdFf0H1IUY-1DnD6jUdDiq2Y1Esg5VXJCh6p662uL9HPeGADczxE339BTRlgEI3ugr44ULFiftRlNZuo\_ZuQAMNa\_UKBAvm0kv8Ta6lN0)
+
+If any tests do not pass, you'll see a report of all the potentially broken syncs, with links to investigate these syncs further in Census.
+
+![The changes in this dbt Pull Request will break several Census syncs.](https://lh5.googleusercontent.com/-P\_IzMb-tyBchOYUIypX4hhGin9j5yA74kSzlDiOKGpUbLTDNI98HuoRSxxdrEydiVG-\_BZipPi3CLeo4gi\_wpxZfbk2ptb3li8NSvwzIpcOBRW6fxot6RXYxFw81P-6j8QQCIzQRTUhJjxjNBFsL4g)
 
 ## Coordinating with dbt Cloud
 
