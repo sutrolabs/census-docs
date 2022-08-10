@@ -61,6 +61,7 @@
 * [Amplitude](destinations/amplitude.md)
 * [Anaplan](<destinations/anaplan (1).md>)
 * [Appcues](destinations/appcues.md)
+* [Apollo](destinations/apollo.md)
 * [Asana](destinations/asana.md)
 * [Autopilot Journeys](destinations/autopilot-journeys.md)
 * [Braze](destinations/braze.md)
