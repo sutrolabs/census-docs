@@ -91,6 +91,7 @@
 * [HubSpot](destinations/hubspot.md)
 * [Intercom](destinations/intercom.md)
 * [Iterable](destinations/iterable.md)
+* [Jira](destinations/jira.md)
 * [Klaviyo](destinations/klaviyo.md)
 * [Kustomer](destinations/kustomer.md)
 * [LinkedIn](destinations/linkedin.md)

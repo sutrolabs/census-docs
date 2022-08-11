@@ -34,7 +34,7 @@ Then, inside **API Management**, click **API Keys**.
 
 Next, click **Create New Key**.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (3).png>)
 
 Provide a name you'll recognize ("Census" is a good choice) and select the **Set as Master Key**.
 
