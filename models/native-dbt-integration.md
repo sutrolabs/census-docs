@@ -34,17 +34,39 @@ Once you’ve configured your project repository, Census will analyze your proje
 
 For dbt models used in Census syncs, Census can check whether you are going to drop, rename, or move a model that will end up breaking an active sync in your account. When a Pull Request (or commit to a Pull Request) is created, dbt CI Checks will help ensure that your dbt development never unexpectedly breaks downstream Census syncs.
 
-To enable these CI checks, navigate to your dbt integration in Census and toggle "Enable CI/CD Tests in GitHub".&#x20;
+### Installing Checks
 
-![Toggle "Enable CI/CD Tests in GitHub" to start testing your dbt Pull Requests.](https://lh4.googleusercontent.com/xOM6gFPdJL0g\_uhuv-OcDAub-Iu88VTzw8yJroV5ox\_s87p0CVDIEnRMl8NKw\_h3zzrUkTzglrnrfSdZsgDLFsoSsASeDlWXQNDVcIN3SCMO4aNejkxjPNfLxo\_0WPMV8CBcnsMEfiENdbAwVI8hZ-U)
+To enable these CI checks, navigate to your dbt integration in Census and click "Enable CI/CD Tests in GitHub".&#x20;
 
-On your next Pull Request, Census will run its first check, as follows:
+![You can find dbt Checks in a new section of your dbt integration, under "Automatic tests in dbt".](<../.gitbook/assets/Screen Shot 2022-08-10 at 3.43.09 PM.png>)
 
-![dbt CI Checks are running](https://lh5.googleusercontent.com/wSi0ryobX-Cvi8Jpm6mLlzd-LonA1KaUWjFiKgNlRcM9EzmdFf0H1IUY-1DnD6jUdDiq2Y1Esg5VXJCh6p662uL9HPeGADczxE339BTRlgEI3ugr44ULFiftRlNZuo\_ZuQAMNa\_UKBAvm0kv8Ta6lN0)
+Once you enable CI checks, Census will automatically run a sample check on a PR. You can then view the PR to see the results of the check.
 
-If any tests do not pass, you'll see a report of all the potentially broken syncs, with links to investigate these syncs further in Census.
+![](<../.gitbook/assets/Screen Shot 2022-08-10 at 4.38.56 PM.png>)
 
-![The changes in this dbt Pull Request will break several Census syncs.](https://lh5.googleusercontent.com/-P\_IzMb-tyBchOYUIypX4hhGin9j5yA74kSzlDiOKGpUbLTDNI98HuoRSxxdrEydiVG-\_BZipPi3CLeo4gi\_wpxZfbk2ptb3li8NSvwzIpcOBRW6fxot6RXYxFw81P-6j8QQCIzQRTUhJjxjNBFsL4g)
+### Upgrading from an existing dbt integration
+
+If you already have a dbt integration with Census, you might be asked to verify additional permissions, which Census needs to run its checks. To do so, click **Configure** on the repository you want to update permissions for:
+
+![](<../.gitbook/assets/Screen Shot 2022-08-11 at 10.58.59 AM (1).png>)
+
+Then, click **Review request**:
+
+![](<../.gitbook/assets/Screen Shot 2022-08-11 at 10.59.13 AM.png>)
+
+And accept the new permissions.
+
+![Displays the specific permissions that Census is requesting, and the reasons why.](<../.gitbook/assets/Screen Shot 2022-08-11 at 10.59.22 AM.png>)
+
+### How it works
+
+On any pull requests, Census will run its checks, which you can view directly inside your PR:
+
+![A view of checks inside your PR overview.](<../.gitbook/assets/Screen Shot 2022-08-10 at 4.39.30 PM.png>)
+
+If any tests do not pass, you can click "Details" to view more information about the results. You'll see a report of any broken models and their dependent syncs, with links to investigate these syncs further in Census.
+
+![A detailed view of the test failures.](<../.gitbook/assets/Screen Shot 2022-08-10 at 4.39.19 PM.png>)
 
 ## Coordinating with dbt Cloud
 
