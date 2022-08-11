@@ -147,7 +147,9 @@ Your final sync configuration will look like the following!
 
 ### Sample Data Requirements
 
-{% embed url="https://docs.google.com/spreadsheets/d/1jQcz52ue5ES_kh6H_hv5Kc40G2-x96auMmkaVU6G4ms/edit?usp=sharing" %}
+| event\_id | pixel\_id  | action\_source | timestamp               | event\_name   | email           | other customer information parameters                                                                                 |
+| --------- | ---------- | -------------- | ----------------------- | ------------- | --------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 1234      | 1000294785 | website        | 2022-01-01 00:00:00+000 | sample\_event | test@domain.com | [Like the ones listed above](https://docs.getcensus.com/destinations/facebook-ads#c.-customer-information-parameters) |
 
 ## 🗄 Supported Objects
 
