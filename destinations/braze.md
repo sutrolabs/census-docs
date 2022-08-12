@@ -83,16 +83,17 @@ After the Connection Test is Green, you're all set and ready to get syncing! �
 
 Census currently supports syncing to the following Braze objects.
 
-|                **Object Name** | **Supported?** | Identifiers                                    |
+|                **Object Name** | **Supported?** | **Identifiers**                                |
 | -----------------------------: | :------------: | ---------------------------------------------- |
-|                           User |        ✅       | External User ID                               |
 |                          Event |        ✅       | Event ID                                       |
 | Subscription Group Memberships |        ✅       | [See Here](braze.md#braze-subscription-groups) |
+|                           User |        ✅       | External User ID                               |
+|                     User Alias |        ✅       | Alias Name & Label                             |
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/defining-source-data/structured-data.md) to Braze:&#x20;
 
 * [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
-* &#x20;[Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported. As of April 2022, this feature is still in early access. You may need to contact your Braze account manager for access.
+* [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.&#x20;
 
 ### ✉️ Braze Subscription Group Memberships
 
