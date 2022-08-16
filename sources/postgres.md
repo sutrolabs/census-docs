@@ -68,7 +68,7 @@ All connections from the Census Data Warehouse Service to your database are prot
 
 ## 🚦Allowed IP Addresses
 
-Census will always connect to your data warehouse from of these static IP addresses located within AWS:
+Please whitelist [Census's IP Addresses](../basics/security-and-privacy/census-ip-addresses.md) in your firewall. By default, Census will connect to your data source from these static US-based IP addresses:
 
 * 34.216.163.241
 * 54.212.243.205
