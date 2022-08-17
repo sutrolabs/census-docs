@@ -139,7 +139,7 @@ Front has [many objects available via their API](https://dev.frontapp.com/refere
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
+|        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :----------: |
 | **Update or Create** |        ✅       | Contact Only |
 |      **Update Only** |       🔜       |              |

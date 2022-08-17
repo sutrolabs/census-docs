@@ -159,7 +159,7 @@ Note: The custom fields you've added will not show inside Census, you'll need to
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
+|        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :----------: |
 | **Update or Create** |        ✅       |      All     |
 |      **Update Only** |        ✅       |      All     |

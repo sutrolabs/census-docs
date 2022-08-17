@@ -178,7 +178,7 @@ Please [contact us](mailto:support@getcensus.com) if there are additional Facebo
 
 ## 🔄 Supported Sync Behaviors
 
-|        **Behaviors** | **Supported?** | **Objects?** |
+|        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :----------: |
 | **Update or Create** |        ✅       |   Audiences  |
 |           **Mirror** |        ✅       |   Audiences  |

@@ -68,7 +68,7 @@ Follow Snapchat OAuth flow to connect to your Snapchat account.&#x20;
 
 ## 🔄 Supported Sync Behaviors
 
-|     Behaviors    |      Supported?      |     Objects?    |
+|     Behaviors    |      Supported?      |     Objects    |
 | :--------------: | :------------------: | :-------------: |
 | Update or Create | :white\_check\_mark: | Segments, Users |
 |      Mirror      | :white\_check\_mark: |      Users      |

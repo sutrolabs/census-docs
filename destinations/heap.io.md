@@ -112,7 +112,7 @@ Click the Next button to see the final preview, which will have a recap of what 
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|    **Behaviors** | **Supported?** |  **Objects?** |
+|    **Behaviors** | **Supported?** |  **Objects** |
 | ---------------: | :------------: | :-----------: |
 | Update or Create |        ✅       | Account, User |
 |           Append |        ✅       |     Event     |

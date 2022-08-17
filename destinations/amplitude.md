@@ -132,7 +132,7 @@ As a result of this behavior, we often get asked "Why can't I see my user proper
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |     **Objects?**    |
+|        **Behaviors** | **Supported?** |     **Objects**    |
 | -------------------: | :------------: | :-----------------: |
 | **Update or Create** |        ✅       | Device, User, Group |
 |           **Append** |        ✅       |        Event        |

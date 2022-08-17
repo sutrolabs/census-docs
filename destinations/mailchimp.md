@@ -87,7 +87,7 @@ Mailchimp `tags` field can be set by providing an array of string values as stru
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
+|        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :----------: |
 | **Update or Create** |        ✅       |      All     |
 |      **Update Only** |        ✅       |      All     |

@@ -94,7 +94,7 @@ To use this setting, you'll also need to include a column in your database/data 
 
 ## 🗄 Supported objects
 
-|  **Object Name** | **Supported** | **Identifiers**                                                        |
+|  **Object Name** | **Supported?** | **Identifiers**                                                        |
 | ---------------: | :-----------: | ---------------------------------------------------------------------- |
 |         Audience |       ✅       | Email, Handle, Device ID                                               |
 | Conversion Event |       ✅       | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Typees} |
@@ -103,7 +103,7 @@ To use this setting, you'll also need to include a column in your database/data 
 
 ## 🔄 Supported sync behaviors
 
-| **Behavior** | **Supported** |    **Objects**   |
+| **Behavior** | **Supported?** |    **Objects**   |
 | -----------: | :-----------: | :--------------: |
 |       Append |       ✅       | Conversion Event |
 |       Mirror |       ✅       |     Audience     |

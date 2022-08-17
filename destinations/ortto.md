@@ -97,7 +97,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported** | **Identifiers**    |
+| **Object Name** | **Supported?** | **Identifiers**    |
 | --------------: | :-----------: | ------------------ |
 |    Organization |       ✅       | Name, Website      |
 |          Person |       ✅       | Email, External ID |
@@ -110,7 +110,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |     **Objects?**     |
+|        **Behaviors** | **Supported?** |     **Objects**     |
 | -------------------: | :------------: | :------------------: |
 | **Update or Create** |        ✅       | Organization, Person |
 

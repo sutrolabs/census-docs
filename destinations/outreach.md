@@ -108,7 +108,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported** | **Identifiers**                     |
+| **Object Name** | **Supported?** | **Identifiers**                     |
 | --------------: | :-----------: | ----------------------------------- |
 |         Account |       ✅       | any Text field                      |
 |        Prospect |       ✅       | Email (recommended), any Text field |
@@ -122,7 +122,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
-|     **Behavior** | **Supported** | **Objects** |
+|     **Behavior** | **Supported?** | **Objects** |
 | ---------------: | :-----------: | ----------- |
 | Update or Create |       ✅       | All         |
 

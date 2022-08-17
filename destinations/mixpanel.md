@@ -123,7 +123,7 @@ Depending on which plan your Mixpanel is on, you may have limited ability to vie
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |         **Objects?**        |
+|        **Behaviors** | **Supported?** |         **Objects**        |
 | -------------------: | :------------: | :-------------------------: |
 | **Update or Create** |        ✅       | User Profile, Group Profile |
 |           **Append** |        ✅       |            Event            |

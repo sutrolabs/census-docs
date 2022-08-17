@@ -161,7 +161,7 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
+|        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :----------: |
 | **Update or Create** |        ✅       |      All     |
 |           **Mirror** |        ✅       |      All     |

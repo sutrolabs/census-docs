@@ -115,7 +115,7 @@ When defining the **File Path** for an S3 sync, you can use variables that will 
 
 ## 🔄 Supported sync behaviors
 
-|    **Behaviors** | **Supported** | **Objects** |
+|    **Behaviors** | **Supported?** | **Objects** |
 | ---------------: | :-----------: | :---------: |
 | Update or Create |       ✅       |     All     |
 |           Mirror |       ✅       |     All     |

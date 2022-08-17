@@ -79,7 +79,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-|        **Object Name** | **Supported** | **Identifiers**                                            |
+|        **Object Name** | **Supported?** | **Identifiers**                                            |
 | ---------------------: | :-----------: | ---------------------------------------------------------- |
 | Static List Membership |       ✅       | GUM Cookie ID, Mobile Ad ID, Email, LiveRamp Identity Link |
 
@@ -87,7 +87,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🔄 Supported sync behaviors
 
-|     **Behavior** | **Supported** |       **Objects**      |
+|     **Behavior** | **Supported?** |       **Objects**      |
 | ---------------: | :-----------: | :--------------------: |
 | Update or Create |       ✅       | Static List Membership |
 |           Mirror |       ✅       | Static List Membership |
