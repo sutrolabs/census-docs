@@ -112,6 +112,7 @@
 * [Planhat](destinations/planhat.md)
 * [Pipedrive](destinations/pipedrive.md)
 * [Postgres](destinations/postgres.md)
+* [PostHog](destinations/posthog.md)
 * [S3](destinations/s3.md)
 * [Sailthru](destinations/sailthru.md)
 * [Salesforce](destinations/salesforce.md)

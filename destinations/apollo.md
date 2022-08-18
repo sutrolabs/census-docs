@@ -11,7 +11,7 @@ In this guide, we will show you how to connect Apollo to Census and create your 
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+* Have the proper credentials to access your data source. See our docs for each supported data source for further information:
   * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
@@ -55,7 +55,7 @@ Great! Now let's pull it all together.&#x20;
 
 ![](<../.gitbook/assets/screely-1660163730081 (1).png>)
 
-Census will test your API key and show a green checkmark a green checkmark :white\_check\_mark: when successful.
+Census will test your API key and show a green checkmark :white\_check\_mark: when successful.
 
 ### 3. Connect to your Data Warehouse
 
@@ -104,7 +104,7 @@ For the " **How do you want to update the destination?"** section
 
 Finally, select the properties you want to update in the Mapper in the **"Which properties should be updated?"** section
 
-* Here simply map the field from Apollo to the column from your model.
+* Here simply map the fields from Apollo to the column from your model.
 
 The end result should look something like this
 
