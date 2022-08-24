@@ -138,7 +138,7 @@ Census can send data to **all** public channels and any private channels that Ce
 
 ## 🔄 Supported Sync Behaviors
 
-| **Behaviors** | **Supported?** | **Objects?** |
+| **Behaviors** | **Supported?** | **Objects** |
 | ------------: | :------------: | :----------: |
 |    **Append** |        ✅       |    channel   |
 

@@ -65,7 +65,7 @@ Only the `src` field is required. `position`, `width`, and `height` are optional
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|    **Behaviors** | **Supported?** |    **Objects?**   |
+|    **Behaviors** | **Supported?** |    **Objects**   |
 | ---------------: | :------------: | :---------------: |
 | Update or Create |        ✅       | Customer, Product |
 |           Mirror |        ✅       |  Product Variant  |

@@ -71,7 +71,7 @@ Import Actions must have the Source Type of File in order for Census to be able 
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
+| **Behaviors** | **Supported?** | **Objects** |
 | ------------: | :------------: | :----------: |
 |    **Mirror** |        ✅       |      All     |
 

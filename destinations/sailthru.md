@@ -96,7 +96,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported** | **Identifiers** |
+| **Object Name** | **Supported?** | **Identifiers** |
 | --------------: | :-----------: | --------------- |
 |            User |       ✅       | Email           |
 |            List |       🔜      |                 |
@@ -105,7 +105,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🔄 Supported sync behaviors
 
-|     **Behavior** | **Supported** | **Objects** |
+|     **Behavior** | **Supported?** | **Objects** |
 | ---------------: | :-----------: | :---------: |
 | Update or Create |       ✅       |     User    |
 |      Update Only |      `✅`      |     User    |

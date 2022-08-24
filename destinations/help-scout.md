@@ -104,7 +104,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|    **Behaviors** | **Supported?** | **Objects?** |
+|    **Behaviors** | **Supported?** | **Objects** |
 | ---------------: | :------------: | :----------: |
 | Update or Create |        ✅       |      All     |
 |      Update Only |        ✅       |      All     |

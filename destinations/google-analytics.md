@@ -97,7 +97,7 @@ The available **Objects** for the Google Analytics destination are the data sets
 
 ## 🔄 Supported sync behaviors
 
-| **Behavior** | **Supported** | **Objects** |
+| **Behavior** | **Supported?** | **Objects** |
 | -----------: | :-----------: | :---------: |
 |       Mirror |       ✅       |     All     |
 

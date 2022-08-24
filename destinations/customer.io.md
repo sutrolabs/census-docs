@@ -111,7 +111,7 @@ Customer.io strongly prefers the ID field to be used as the identifier for a Per
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |      **Objects?**     |
+|        **Behaviors** | **Supported?** |      **Objects**     |
 | -------------------: | :------------: | :-------------------: |
 | **Update or Create** |        ✅       | Person, Event, Device |
 |      **Update Only** |        ✅       |         Person        |

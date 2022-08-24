@@ -128,7 +128,7 @@ That's it, in 4 steps you have connected your Data Source to Gainsight! :tada:
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |        **Objects?**       |
+|        **Behaviors** | **Supported?** |        **Objects**       |
 | -------------------: | :------------: | :-----------------------: |
 | **Update or Create** |        ✅       |            All            |
 |      **Update Only** |        ✅       | Company, Custom Objects\* |

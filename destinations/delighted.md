@@ -100,7 +100,7 @@ Delighted supports two objects: Autopilot and Survey&#x20;
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|                       Behaviors |      Supported?      |  Objects? |
+|                       Behaviors |      Supported?      |  Objects |
 | ------------------------------: | :------------------: | :-------: |
 |                          Append | :white\_check\_mark: |   Survey  |
 | Update Only, Upsert, and Mirror | :white\_check\_mark: | Autopilot |

@@ -44,7 +44,7 @@ This part of our documentation is still under construction! If you have any ques
 
 ## 🔄 Supported Sync Behaviors
 
-|        **Behaviors** | **Supported?** |        **Objects?**        |
+|        **Behaviors** | **Supported?** |        **Objects**        |
 | -------------------: | :------------: | :------------------------: |
 | **Update or Create** |        ✅       | Organization, Person, Deal |
 |      **Update Only** |        ✅       | Organization, Person, Deal |

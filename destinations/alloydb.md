@@ -55,7 +55,7 @@ After the connection is verified, you all tables will be exposed, but please tak
 
 We support syncing data to Tables in AlloyDB, but they must have a uniqueness constraint on a column. ​
 
-| **Object Name** | **Supported** |                   **Identifiers**                   |
+| **Object Name** | **Supported?** |                   **Identifiers**                   |
 | :-------------: | :-----------: | :-------------------------------------------------: |
 |      Table      |       ✅       | Primary Keys or Columns with Uniqueness Constraints |
 
@@ -65,7 +65,7 @@ We support syncing data to Tables in AlloyDB, but they must have a uniqueness co
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
+|        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :----------: |
 |           **Update** |        ✅       |      All     |
 | **Update or Create** |        ✅       |      All     |

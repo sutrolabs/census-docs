@@ -116,7 +116,7 @@ To update the **List** property, you'll need to provide the list **ID** or **Nam
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported** | **Identifiers**                                |
+| **Object Name** | **Supported?** | **Identifiers**                                |
 | --------------: | :-----------: | ---------------------------------------------- |
 |         Profile |       ✅       | External ID (recommended), Email, Phone Number |
 
@@ -124,7 +124,7 @@ To update the **List** property, you'll need to provide the list **ID** or **Nam
 
 ## 🔄 Supported sync behaviors
 
-|     **Behavior** | **Supported** | **Objects** |
+|     **Behavior** | **Supported?** | **Objects** |
 | ---------------: | :-----------: | :---------: |
 | Update or Create |       ✅       |     All     |
 

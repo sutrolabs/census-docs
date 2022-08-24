@@ -82,7 +82,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported** | **Identifiers**                       |
+| **Object Name** | **Supported?** | **Identifiers**                       |
 | --------------: | :-----------: | ------------------------------------- |
 |     Entity name |       ✅       | All single-column keys for the entity |
 
@@ -93,7 +93,7 @@ All Microsoft Dynamic [entities](https://docs.microsoft.com/en-us/dynamics365/cu
 
 ## 🔄 Supported sync behaviors
 
-|     **Behavior** | **Supported** | **Objects** |
+|     **Behavior** | **Supported?** | **Objects** |
 | ---------------: | :-----------: | :---------: |
 | Update or Create |       ✅       |     All     |
 

@@ -191,7 +191,7 @@ We recommend you do not use Google's Customer Match expiration setting. Census-s
 
 ## 🔄 Supported Sync Behaviors
 
-| **Behaviors** | **Supported?** | **Objects?** |
+| **Behaviors** | **Supported?** | **Objects** |
 | ---: | :---: | :---: |
 | **Update or Create** | ✅ | All |
 | **Mirror** | ✅ | Audiences |

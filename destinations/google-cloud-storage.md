@@ -91,7 +91,7 @@ When defining the **File Path** for an GCS sync, you can use variables that will
 
 ## 🔄 Supported sync behaviors
 
-| **Behavior** | **Supported** | **Objects** |
+| **Behavior** | **Supported?** | **Objects** |
 | -----------: | :-----------: | :---------: |
 |       Mirror |       ✅       |     All     |
 

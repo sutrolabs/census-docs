@@ -94,7 +94,7 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 Jira's primary object is an Issue, which we support in Census.​
 
-| **Object Name** | **Supported** | **Identifiers** |
+| **Object Name** | **Supported?** | **Identifiers** |
 | :-------------: | :-----------: | :-------------: |
 |      Ticket     |       ✅       |    Unique ID    |
 
@@ -104,7 +104,7 @@ Jira's primary object is an Issue, which we support in Census.​
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
+| **Behaviors** | **Supported?** | **Objects** |
 | ------------: | :------------: | :----------: |
 |    **Append** |        ✅       |    Ticket    |
 
