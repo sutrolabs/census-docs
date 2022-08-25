@@ -42,12 +42,12 @@ Once complete, you'll see your new connection in the **Service Connections** lis
 
 ### Step 2: Create your model
 
-When defining models, you'll write SQL queries to select the data you want to see in Microsoft Dynamics. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.&#x20;
+When defining models, you'll write SQL queries to select the data you want to see in Microsoft Dynamics. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.
 
-1. From inside your Census account, navigate to the **Models** page.&#x20;
+1. From inside your Census account, navigate to the **Models** page.
 2. Click **Add Model**.
-3. Enter a name for your model. You'll use this to select the model later.&#x20;
-4. Enter your SQL query. If you want to test the query, use the **Preview** button.&#x20;
+3. Enter a name for your model. You'll use this to select the model later.
+4. Enter your SQL query. If you want to test the query, use the **Preview** button.
 5. Click **Save Model**.
 
 ![Basic SQL query for a new model](../.gitbook/assets/202201\_Model\_Page.png)
@@ -56,7 +56,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 
 The sync will move data from your warehouse to Microsoft Dynamics. In this step, you'll define how that will work.
 
-1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.&#x20;
+1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose Microsoft Dynamics as the **Connection** and the object (aka entity in Microsoft Dynamics) that you want to sync to (see [Supported objects](microsoft-dynamics.md#supported-objects) for more detail).
 4. Under **How should changes to the source be synced?**, choose **Update or Create** (see [Supported sync behaviors](microsoft-dynamics.md#supported-sync-behaviors) for options)
@@ -83,8 +83,8 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 ## 🗄 Supported objects
 
 | **Object Name** | **Supported?** | **Identifiers**                       |
-| --------------: | :-----------: | ------------------------------------- |
-|     Entity name |       ✅       | All single-column keys for the entity |
+| --------------: | :------------: | ------------------------------------- |
+|     Entity name |        ✅       | All single-column keys for the entity |
 
 All Microsoft Dynamic [entities](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/introduction-entities?view=op-9-1) are supported as objects to sync to in Census. Here is some documentation on defining keys for entities in Microsoft Dynamics:
 
@@ -94,11 +94,11 @@ All Microsoft Dynamic [entities](https://docs.microsoft.com/en-us/dynamics365/cu
 ## 🔄 Supported sync behaviors
 
 |     **Behavior** | **Supported?** | **Objects** |
-| ---------------: | :-----------: | :---------: |
-| Update or Create |       ✅       |     All     |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com/s/-MV3poo0VqVau1o8I79\_/basics/core-concept#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Microsoft Dynamics.

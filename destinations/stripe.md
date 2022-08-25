@@ -36,7 +36,7 @@ In this guide, we will show you how to connect Stripe to Census and create your 
 
 In Stripe, go to [Developers > API Keys](https://dashboard.stripe.com/apikeys) and create an API key that has Write permissions into Customers (and Read permission to Balances for testing our connection).
 
-![](<../.gitbook/assets/Screen Shot 2021-10-28 at 5.03.59 PM (1).png>)
+![](<../.gitbook/assets/Screen Shot 2021-10-28 at 5.03.59 PM.png>)
 
 ### 2. Connect your Data Warehouse
 
@@ -57,7 +57,7 @@ Here you will have to write SQL queries to select the data you want to see in St
 * The attribution of the customer
 * Order form data to generate an invoice
 
-Once you have created your model, click save.&#x20;
+Once you have created your model, click save.
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -68,14 +68,14 @@ No head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sy
 In the " What data do you want to sync?" section
 
 * For the Connection, select the data warehouse you connected in step 2
-* For the Source,  select the model you created in step 3
+* For the Source, select the model you created in step 3
 
 Next up is the "Where do you want to sync data to?" section
 
 * Pick Stripe as the Connection
 * For Object, pick **Customer**
 
-For the " How should changes to the source be synced?" section&#x20;
+For the " How should changes to the source be synced?" section
 
 * Select Update or Create
 * Pick the right mapping key, it can be Email or any other external id for Customer
@@ -117,9 +117,9 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-|      **Update Only** |        ✅       |      All     |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     All     |
+|      **Update Only** |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Stripe.
 

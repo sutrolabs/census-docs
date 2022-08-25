@@ -53,9 +53,9 @@ Here you can write SQL queries or select dbt models that contain the data you wa
 * Products that are searchable in an E-commerce app
 * Locations that you have for a destination stay
 
-Once you have created your model, click save.&#x20;
+Once you have created your model, click save.
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM.png>)
 
 ### 4. Create your first Sync
 
@@ -75,7 +75,7 @@ Next up is the "**Where do you want to sync data to?**" section
 
 ![](<../.gitbook/assets/Screen Shot 2022-04-01 at 2.56.24 PM.png>)
 
-For the "**How should changes to the source be synced?**" section&#x20;
+For the "**How should changes to the source be synced?**" section
 
 * Select **Update Or Create**
 * Pick the appropriate mapping key, it should be a field where there is a unique value for each record
@@ -100,7 +100,7 @@ If you have any questions or if you have any issues getting started, please cont
 
 ## 🗄️ Supported Objects
 
-Algolia stores data within collections called Indices. Your Indices in Algolia can be used as objects to sync to from Census.&#x20;
+Algolia stores data within collections called Indices. Your Indices in Algolia can be used as objects to sync to from Census.
 
 | **Object Name** | **Supported?** | **Identifiers** |
 | --------------: | :------------: | :-------------: |
@@ -115,8 +115,8 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |     Index    |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |    Index    |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Algolia.
 

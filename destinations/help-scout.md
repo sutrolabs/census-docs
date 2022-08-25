@@ -51,7 +51,7 @@ Here you can write a SQL query to select the data you want to see in Help Scout,
 * The date a user became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
 
 ### Step 3: Create your Sync
 
@@ -71,16 +71,16 @@ Next up is the "**Where do you want to sync data to?**" section.
 
 ![Select which object you want to sync to](<../.gitbook/assets/Screen Shot 2022-06-25 at 8.47.31 AM.png>)
 
-For the "**How should changes to the source be synced?**" section.&#x20;
+For the "**How should changes to the source be synced?**" section.
 
 * Select either **Update or Create** or **Update Only**
 
 ![](<../.gitbook/assets/Screen Shot 2022-03-31 at 11.46.19 AM.png>)
 
-For the "**How are source and destination records matched?**" section.&#x20;
+For the "**How are source and destination records matched?**" section.
 
 * Pick the mapping key. For syncs to the Customer object the identifier is Primary Email.
-* Select the field from your model you want as the identifier.&#x20;
+* Select the field from your model you want as the identifier.
 
 ![](<../.gitbook/assets/Screen Shot 2022-06-25 at 8.50.21 AM.png>)
 
@@ -105,9 +105,9 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 {% endhint %}
 
 |    **Behaviors** | **Supported?** | **Objects** |
-| ---------------: | :------------: | :----------: |
-| Update or Create |        ✅       |      All     |
-|      Update Only |        ✅       |      All     |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |     All     |
+|      Update Only |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Help Scout.
 

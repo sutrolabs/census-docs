@@ -33,7 +33,7 @@ Before you begin, you'll need the following:
 2. Click **Add Service**.
 3. Select **SFTP** from the dropdown list.
 4. Enter a **Name** for your destination. This is only for your reference – it can be anything that makes sense to you.
-5. Enter authentication details for your SFTP server. **Host** and **Username** are always required. If your server requires a password instead of an SSH key, enter the **Password**. If your server uses SSH keys, you can leave the **Password** blank.&#x20;
+5. Enter authentication details for your SFTP server. **Host** and **Username** are always required. If your server requires a password instead of an SSH key, enter the **Password**. If your server uses SSH keys, you can leave the **Password** blank.
 6. Click **Save Connection**.
 7. If you're using **SSH keys** to authenticate your server, download the **SFTP Public Key** from this screen and upload it to your server. Then, click **Test** to verify that the connection works.
 
@@ -66,7 +66,7 @@ When defining models, you'll write SQL queries to select the data you want to sy
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](../.gitbook/assets/202109\_outreach\_basic\_model.png)
+![Basic SQL query for a new model](<../.gitbook/assets/202109\_outreach\_basic\_model (1).png>)
 
 ### Step 4: Create your first sync
 
@@ -116,12 +116,12 @@ When defining the **File Path** for an S3 sync, you can use variables that will 
 ## 🔄 Supported sync behaviors
 
 |    **Behaviors** | **Supported?** | **Objects** |
-| ---------------: | :-----------: | :---------: |
-| Update or Create |       ✅       |     All     |
-|           Mirror |       ✅       |     All     |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |     All     |
+|           Mirror |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com/s/-MV3poo0VqVau1o8I79\_/basics/core-concept#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for SFTP server connections.

@@ -12,18 +12,15 @@ In this guide, we will show you how to connect Google Analytics to Census and cr
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Google Analytics account ready, with admin access to create API-only users and API credentials.
-*   Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-
-    * [Azure Synapse](../sources/azure-synapse.md)
-    * [Databricks](https://docs.getcensus.com/sources/databricks)
-    * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-    * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-    * [Postgres](https://docs.getcensus.com/sources/postgres)
-    * [Redshift](https://docs.getcensus.com/sources/redshift)
-    * [Rockset](https://docs.getcensus.com/sources/rockset)
-    * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-
-
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### Step 1: Configure Your Google Analytics Account
 
@@ -44,7 +41,7 @@ Prior to adding Google Analytics as a Service Connection in Census you'll need t
 
 ### **1B: Create the Data Set**
 
-* Navigate to the **Data Import** tab within the **Settings** to **** view existing data sets or Create a new one.&#x20;
+* Navigate to the **Data Import** tab within the **Settings** to \*\*\*\* view existing data sets or Create a new one.
 * If creating a new Data Set start by setting the Data Set type to **User Data**
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-31 at 3.20.36 PM.png>)
@@ -59,12 +56,12 @@ Prior to adding Google Analytics as a Service Connection in Census you'll need t
 
 ### Step 2: **Create the Census Connection**
 
-* Navigate to the Census [**Connections**](https://app.getcensus.com/connections) page and click **Add Service**&#x20;
+* Navigate to the Census [**Connections**](https://app.getcensus.com/connections) page and click **Add Service**
 * Select Google Analytics from the drop down list
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-24 at 3.30.10 PM.png>)
 
-* Follow the Google OAuth flow to connect your Google Analytics account and allow Census the appropriate permissions&#x20;
+* Follow the Google OAuth flow to connect your Google Analytics account and allow Census the appropriate permissions
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-24 at 3.31.17 PM.png>)
 
@@ -78,9 +75,9 @@ The sync will move data from your warehouse to your Google Analytics account. In
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your **source:** either a Model from the Census Models tab or a database table.
-3. Under **Where do you want to sync data to?**, choose the Google Analytics account you created in Step 2 as the **Connection**.&#x20;
+3. Under **Where do you want to sync data to?**, choose the Google Analytics account you created in Step 2 as the **Connection**.
    * Under **Object** select one of the data sets you created in Step 1.
-4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for Google Analytics.&#x20;
+4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for Google Analytics.
 5. Under **Which properties should be updated?** Add the fields from your data set you'd like to send to Google Analytics
 6. Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync.
 7. Confirm the data arrives in Google Analytics!
@@ -98,11 +95,11 @@ The available **Objects** for the Google Analytics destination are the data sets
 ## 🔄 Supported sync behaviors
 
 | **Behavior** | **Supported?** | **Objects** |
-| -----------: | :-----------: | :---------: |
-|       Mirror |       ✅       |     All     |
+| -----------: | :------------: | :---------: |
+|       Mirror |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com/s/-MV3poo0VqVau1o8I79\_/basics/core-concept#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Analytics.
@@ -112,6 +109,6 @@ Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com
 * Google Analytics has limits to how frequently properties are updated per day so you may want to avoid continuous syncs, especially if you’re importing data through other mechanisms
 * For many Google Analytics reports, data imported this way will only shows up if the User ID has been used as a visitor to the property in the last **30 days**.
 * Data takes up to **24 hours** to be fully indexed by google
-* The Google Analytics destination currently uses the Universal Analytics API&#x20;
+* The Google Analytics destination currently uses the Universal Analytics API
 
 [Contact us](mailto:support@getcensus.com) if your use cases don't work with these limitations. We'd love to hear how we can make this connection better in the future!

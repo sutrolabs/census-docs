@@ -34,7 +34,7 @@ Before you begin, you'll need the following:
 3. Select **Ortto** from the dropdown list.
 4. Ortto uses API keys to authorize access to the API, so you will need to provide an **API Key** to Census.
    1. You can create an API key in Ortto specifically for Census. On the left-hand menu click **More** > **Data Sources.** On the Data Sources page click the **New Data Source** button then select **Custom API (advanced).** Give the source a name of your choosing and click **Create.** The API Key will be shown on the following page. Make sure to save it somewhere secure.
-   2. Copy the API key and paste it into the **API Key** field in the Ortto setup in Census.&#x20;
+   2. Copy the API key and paste it into the **API Key** field in the Ortto setup in Census.
    3. Ortto has custom rate limiting based on what plan you're on. You can check out the limits for your specific plan [here](https://help.ortto.com/developer/latest/developer-guide/rate-limits.html). Enter the limit for the 60s interval of your plan in the **Rate limit per 60s** field. If no limit is specified we will default to the Pro plan (600 requests/min).
 
 ### Step 2: Connect your data warehouse
@@ -58,7 +58,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](<../.gitbook/assets/image (7) (2).png>)
+![Basic SQL query for a new model](<../.gitbook/assets/image (8) (1).png>)
 
 ### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
@@ -98,9 +98,9 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 ## 🗄 Supported objects
 
 | **Object Name** | **Supported?** | **Identifiers**    |
-| --------------: | :-----------: | ------------------ |
-|    Organization |       ✅       | Name, Website      |
-|          Person |       ✅       | Email, External ID |
+| --------------: | :------------: | ------------------ |
+|    Organization |        ✅       | Name, Website      |
+|          Person |        ✅       | Email, External ID |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Ortto.
 
@@ -110,7 +110,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |     **Objects**     |
+|        **Behaviors** | **Supported?** |      **Objects**     |
 | -------------------: | :------------: | :------------------: |
 | **Update or Create** |        ✅       | Organization, Person |
 

@@ -38,7 +38,7 @@ description: This page describes how to use Census with Autopilot Journeys.
 * Click the **Add Service** button
 * Select Autopilot Journeys in the dropdown list
 
-![Select Autopilot](<../.gitbook/assets/Screen Shot 2022-02-10 at 2.19.13 PM.png>)
+![Select Autopilot](<../.gitbook/assets/Screen Shot 2022-02-10 at 2.19.13 PM (1).png>)
 
 * Enter a name of your choosing that makes sense for your own reference
 * When prompted for your API Credentials, enter your Autopilot API Key
@@ -50,7 +50,7 @@ description: This page describes how to use Census with Autopilot Journeys.
 Please follow one of our short guides depending on your data warehouse technology
 
 * [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)   &#x20;
+* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
@@ -74,11 +74,11 @@ Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add
 In the " **What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,** select the model you created in step 3&#x20;
+* For the **Source,** select the model you created in step 3
 
 Next up is the **"Where do you want to sync data to?"** section
 
-* Pick Autopilot as **the Connection**&#x20;
+* Pick Autopilot as **the Connection**
 * For Object, pick the one you want to sync data to; currently only Contact is available.
 
 For the " **How should changes to the source be synced?"** section
@@ -90,7 +90,7 @@ Finally, select the fields you want to update in the Mapper in the **"Which Fiel
 
 * Here simply map the field from your Autopilot instance to the column from your model.
 
-The end result should look something like&#x20;
+The end result should look something like
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-10 at 3.00.06 PM.png>)
 
@@ -117,7 +117,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     All     |
 
 ##

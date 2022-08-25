@@ -55,9 +55,9 @@ Here you can write a SQL query to select the data you want to see in Heap.io, or
 * The date a user became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save.&#x20;
+Once you have created your model, click save.
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM.png>)
 
 ### 4. Create your first Sync
 
@@ -77,16 +77,16 @@ Next up is the "Where do you want to sync data to?" section.
 
 ![Select which object you want to sync to](<../.gitbook/assets/Screen Shot 2022-03-31 at 11.45.23 AM.png>)
 
-For the "How should changes to the source be synced?" section.&#x20;
+For the "How should changes to the source be synced?" section.
 
 * For Account and User select Update or Create or select Append for an Event sync
 
 ![](<../.gitbook/assets/Screen Shot 2022-03-31 at 11.46.19 AM.png>)
 
-For the "How are source and destination records matched?" section.&#x20;
+For the "How are source and destination records matched?" section.
 
 * Pick the mapping key; for syncs to the User object the identifier is Identity, for the Account object the identifier is Account Id, and the Event object can use any unique field from your source as an identifier.
-* Select the field from your model you want as the identifier.&#x20;
+* Select the field from your model you want as the identifier.
 
 ![](<../.gitbook/assets/Screen Shot 2022-01-27 at 4.06.50 PM.png>)
 
@@ -112,14 +112,12 @@ Click the Next button to see the final preview, which will have a recap of what 
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|    **Behaviors** | **Supported?** |  **Objects** |
+|    **Behaviors** | **Supported?** |  **Objects**  |
 | ---------------: | :------------: | :-----------: |
 | Update or Create |        ✅       | Account, User |
 |           Append |        ✅       |     Event     |
 
 ‌ 🔋 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
-
-
 
 ## 🚑 Need help connecting to Heap.io?
 

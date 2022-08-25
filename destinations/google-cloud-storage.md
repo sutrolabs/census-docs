@@ -40,7 +40,7 @@ Our Google Cloud connector behaves a little differently than other Census connec
 
 ![](<../.gitbook/assets/Screen Shot 2021-11-03 at 2.02.14 PM.png>)
 
-* Paste the credentials in the New Principals portion and select "Storage Object Admin."&#x20;
+* Paste the credentials in the New Principals portion and select "Storage Object Admin."
 
 ![](<../.gitbook/assets/GCS Add.png>)
 
@@ -48,7 +48,7 @@ Our Google Cloud connector behaves a little differently than other Census connec
 You **will** be able to send a successful sync if the file path variables are unique per sync run by only granting this service account "Storage Object Creator", but the Test Connection in the next step will fail.
 {% endhint %}
 
-* Click save to save the permission.&#x20;
+* Click save to save the permission.
 * Then navigate back to the [Connections](https://app.getcensus.com/connections) page and click "Test" on the service.
 
 ![You are good to go!](<../.gitbook/assets/Cloud Successful Connection.png>)
@@ -59,10 +59,10 @@ The sync will move data from your warehouse to your GCS bucket. In this step, yo
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your **source:** either a Model from the Census Models tab or a database table.
-3.  Under **Where do you want to sync data to?**, choose the name you assigned in Step 1 (we used GCS) as the **Connection**. Enter the **File Path** for the CSV file where data will sync. The path can accept variables that will populate when the sync runs. See [File Path Variables](google-cloud-storage.md#file-path-variables). Confirm the file path in the **Template Preview** field.&#x20;
+3.  Under **Where do you want to sync data to?**, choose the name you assigned in Step 1 (we used GCS) as the **Connection**. Enter the **File Path** for the CSV file where data will sync. The path can accept variables that will populate when the sync runs. See [File Path Variables](google-cloud-storage.md#file-path-variables). Confirm the file path in the **Template Preview** field.
 
-    __:bulb: _If the service account only has "Storage Object Creator" permissions, this file path needs to be unique per sync run_
-4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for GCS.&#x20;
+    \_\_:bulb: _If the service account only has "Storage Object Creator" permissions, this file path needs to be unique per sync run_
+4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for GCS.
 5. Under **Which properties should be updated?**, choose whether to sync only **Selected Properties** or **Sync All Properties**. Syncing all properties will automatically add new properties to the sync if the model or database table changes.
 6. To test your sync without actually syncing data, click **Run Test** and verify the results.
 7. Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync.
@@ -92,11 +92,11 @@ When defining the **File Path** for an GCS sync, you can use variables that will
 ## 🔄 Supported sync behaviors
 
 | **Behavior** | **Supported?** | **Objects** |
-| -----------: | :-----------: | :---------: |
-|       Mirror |       ✅       |     All     |
+| -----------: | :------------: | :---------: |
+|       Mirror |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com/s/-MV3poo0VqVau1o8I79\_/basics/core-concept#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Cloud Storage.

@@ -36,7 +36,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this. 👇
 
-![Connections page with Outreach](<../.gitbook/assets/202109\_service\_connection\_outreach (1) (1).png>)
+![Connections page with Outreach](<../.gitbook/assets/202109\_service\_connection\_outreach (1).png>)
 
 ### Step 2: Connect your data warehouse
 
@@ -52,7 +52,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After connecting your warehouse, your **Connections** page will look something like this: 👇
 
-![Connections page with data warehouse and Outreach](<../.gitbook/assets/202109\_connections\_outreach (2) (1) (1) (1).png>)
+![Connections page with data warehouse and Outreach](<../.gitbook/assets/202109\_connections\_outreach (2) (1) (1).png>)
 
 ### Step 3: Create your model
 
@@ -63,7 +63,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](../.gitbook/assets/202109\_outreach\_basic\_model.png)
+![Basic SQL query for a new model](<../.gitbook/assets/202109\_outreach\_basic\_model (1).png>)
 
 ### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
@@ -81,7 +81,7 @@ The sync will move data from your warehouse to Outreach. In this step, you'll de
 
 When configuring your sync, the page should look something like this: 👇
 
-![Sync setup for Outreach](<../.gitbook/assets/202109\_sync\_details (1).png>)
+![Sync setup for Outreach](../.gitbook/assets/202109\_sync\_details.png)
 
 #### Custom Fields in Outreach
 
@@ -109,10 +109,10 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 ## 🗄 Supported objects
 
 | **Object Name** | **Supported?** | **Identifiers**                     |
-| --------------: | :-----------: | ----------------------------------- |
-|         Account |       ✅       | any Text field                      |
-|        Prospect |       ✅       | Email (recommended), any Text field |
-|            User |       ✅       | Email (recommended), any Text field |
+| --------------: | :------------: | ----------------------------------- |
+|         Account |        ✅       | any Text field                      |
+|        Prospect |        ✅       | Email (recommended), any Text field |
+|            User |        ✅       | Email (recommended), any Text field |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Outreach.
 
@@ -123,14 +123,14 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 {% endhint %}
 
 |     **Behavior** | **Supported?** | **Objects** |
-| ---------------: | :-----------: | ----------- |
-| Update or Create |       ✅       | All         |
+| ---------------: | :------------: | ----------- |
+| Update or Create |        ✅       | All         |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Outreach.
 
 ## 🔑 Required permissions
 
-We recommend authenticating your Outreach connection with an Outreach user that has the standard Admin governance profile.&#x20;
+We recommend authenticating your Outreach connection with an Outreach user that has the standard Admin governance profile.
 
 If using another profile, the profile must include permissions to view, create, and edit all records for the synced objects. See [Outreach Support](https://support.outreach.io/hc/en-us/articles/219027188-Creating-and-Assigning-Governance-Profiles) for details on user governance settings.
 

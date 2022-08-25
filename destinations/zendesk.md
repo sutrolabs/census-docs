@@ -26,7 +26,7 @@ In this guide, we will show you how to connect Zendesk to Census and create your
     * [Snowflake](https://docs.getcensus.com/sources/snowflake)
     * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
-    ****
+    ***
 
 ### Step 1: Connect Zendesk
 
@@ -54,16 +54,16 @@ After setting up your warehouse, your **Connections** page should look something
 
 ![Connections page with data warehouse](../.gitbook/assets/202110\_Connections\_Generic.png)
 
-### Step 3: Create your model&#x20;
+### Step 3: Create your model
 
-When defining models, you'll write SQL queries to select the data you want to see in Zendesk. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.&#x20;
+When defining models, you'll write SQL queries to select the data you want to see in Zendesk. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.
 
-1. From inside your Census account, navigate to the **Models** page.&#x20;
-2. Enter a name for your model. You'll use this to select the model later.&#x20;
-3. Enter your SQL query. If you want to test the query, use the **Preview** button.&#x20;
+1. From inside your Census account, navigate to the **Models** page.
+2. Enter a name for your model. You'll use this to select the model later.
+3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](<../.gitbook/assets/202109\_outreach\_basic\_model (1).png>)
+![Basic SQL query for a new model](../.gitbook/assets/202109\_outreach\_basic\_model.png)
 
 ### Step 4: Create your first sync
 
@@ -76,7 +76,7 @@ The sync will move data from your warehouse to Zendesk. In this step, you'll def
 5. Under **How are source and destination records matched?**, select a mapping key. We recommend mapping an internal ID property in your database to the **External ID** field in Zendesk. (See [Supported objects](zendesk.md#supported-objects).)
 6.  Under **Which properties should be updated?**, select the fields you want to update by mapping a field in Zendesk to a column in your model. Choose a mapping setting:
 
-    * **Set** overrides the existing value in Zendesk if the field is already populated.&#x20;
+    * **Set** overrides the existing value in Zendesk if the field is already populated.
     * **Only If Empty** does not set the value if the field is already populated.
     * For any properties that accept lists of values such as the Organization or Tags property, instead you'll see **Replace**. Replace mappings override any existing values or relationships for the property.
 
@@ -129,11 +129,11 @@ If you need to update the Tags property directly, keep these details in mind:
 
 * Tag names cannot contain spaces. Zendesk will treat spaces as separators between tags.
 * You can update the **Tags** property with multiple values by providing a JSON array, a space-separated list, or comma-separated list.
-* Syncing the **Tags** property will replace any existing tags on the records. To maintain existing tags, you'll need to make sure they appear in the list of tags you provide from your data source.&#x20;
+* Syncing the **Tags** property will replace any existing tags on the records. To maintain existing tags, you'll need to make sure they appear in the list of tags you provide from your data source.
 
 ### Updating a dropdown property
 
-To update a dropdown property, the Zendesk API requires that you provide the API name of the dropdown option rather than the user-visible label.&#x20;
+To update a dropdown property, the Zendesk API requires that you provide the API name of the dropdown option rather than the user-visible label.
 
 By default, the API name is the user-visible label, but converted to lowercase and snake\_case, for example, **Paid User** becomes **paid\_user**. To update a dropdown property in this example, you'd provide the value **paid\_user**.
 
@@ -148,11 +148,11 @@ lower(replace(column_name, ' ', '_'))
 Census currently supports syncing to the following Zendesk objects:
 
 | **Object Name** | **Supported?** | **Identifiers**                  |
-| --------------: | :-----------: | -------------------------------- |
-|        End User |       ✅       | External ID (recommended), Email |
-|    Organization |       ✅       | External ID (recommended), Name  |
-|          Ticket |       ✅       | External ID                      |
-|  Custom Objects |       ✅       | External ID                      |
+| --------------: | :------------: | -------------------------------- |
+|        End User |        ✅       | External ID (recommended), Email |
+|    Organization |        ✅       | External ID (recommended), Name  |
+|          Ticket |        ✅       | External ID                      |
+|  Custom Objects |        ✅       | External ID                      |
 
 Please note that Zendesk requires the `Name` property for the End User object. Feel free to check out Zendesk's documentation [here](https://developer.zendesk.com/api-reference/ticketing/users/users/#json-format).
 
@@ -161,10 +161,10 @@ Please note that Zendesk requires the `Name` property for the End User object. F
 ## 🔄 Supported sync behaviors
 
 |     **Behavior** | **Supported?** | **Objects** |
-| ---------------: | :-----------: | ----------- |
-| Update or Create |       ✅       | All         |
-|      Update Only |       ✅       | All         |
-|           Delete |       ✅       | End User    |
+| ---------------: | :------------: | ----------- |
+| Update or Create |        ✅       | All         |
+|      Update Only |        ✅       | All         |
+|           Delete |        ✅       | End User    |
 
 {% hint style="warning" %}
 **Warning**

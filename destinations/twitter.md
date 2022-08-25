@@ -57,12 +57,12 @@ When defining models, you'll write SQL queries to select the data you want to se
 
 The sync will move data from your warehouse to Twitter Ads. In this step, you'll define how that will work.
 
-1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.&#x20;
+1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose **Twitter** as the **Connection** and an **Object** in Twitter Ads. Based on the selected object, your sync options will vary. See [Supported Objects](twitter.md#supported-objects)
 4. (When syncing conversion events) Under **How do you want to update the destination?**, choose **Append**. See [Supported sync behaviors](twitter.md#supported-sync-behaviors).
 5. (When syncing conversion events) Under **How are source records identified?**, select a column from the model that serves as a unique ID for each record. If needed, turn on the **Use timestamp column** setting and select a property from the model. This setting allows the sync to skip records that have not changed (according to the timestamp) since the last sync.
-6. (When syncing audiences) Under **How should we identify audience members?**, specify how Census should match audience members in Twitter Ads to records in the model.&#x20;
+6. (When syncing audiences) Under **How should we identify audience members?**, specify how Census should match audience members in Twitter Ads to records in the model.
 7. (When syncing audiences) Under **Audience Sync**, select an existing Twitter Ads audience or create a new audience list in Twitter Ads. If the audience list includes members that don't have matching records in your model, Census will remove those members from the list.
 8. Under **Which properties should be updated?**, select the fields you want to update by mapping a field in Twitter Ads to a column in your model.
 9. (When syncing conversion events) Under **Should existing data be synced?**, choose whether to sync existing records (**Backfill All Records**) or only sync new records going forward (**Skip Current Records**).
@@ -84,7 +84,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🏎 Sync speed & limits
 
-Rate limits affect how many records you can sync in a specific period of itme. Twitter Ads API has a rate limit of 1,500 calls per minute. Calls to sync audience data and conversion event data share the same rate limit.&#x20;
+Rate limits affect how many records you can sync in a specific period of itme. Twitter Ads API has a rate limit of 1,500 calls per minute. Calls to sync audience data and conversion event data share the same rate limit.
 
 ### Conversion Events: Use timestamp setting
 
@@ -95,21 +95,21 @@ To use this setting, you'll also need to include a column in your database/data 
 ## 🗄 Supported objects
 
 |  **Object Name** | **Supported?** | **Identifiers**                                                        |
-| ---------------: | :-----------: | ---------------------------------------------------------------------- |
-|         Audience |       ✅       | Email, Handle, Device ID                                               |
-| Conversion Event |       ✅       | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Typees} |
+| ---------------: | :------------: | ---------------------------------------------------------------------- |
+|         Audience |        ✅       | Email, Handle, Device ID                                               |
+| Conversion Event |        ✅       | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Typees} |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Twitter Ads.
 
 ## 🔄 Supported sync behaviors
 
 | **Behavior** | **Supported?** |    **Objects**   |
-| -----------: | :-----------: | :--------------: |
-|       Append |       ✅       | Conversion Event |
-|       Mirror |       ✅       |     Audience     |
+| -----------: | :------------: | :--------------: |
+|       Append |        ✅       | Conversion Event |
+|       Mirror |        ✅       |     Audience     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com/s/-MV3poo0VqVau1o8I79\_/basics/core-concept#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Twitter Ads.

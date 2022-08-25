@@ -36,7 +36,7 @@ Census will need needs the following pieces of information to connect to your Zu
 
 Now that we have the credentials from Zuora, we can now set up Zuora as a Destination in Census.
 
-1. In the **Connections** tab of Census, go to your Service Connections and click the **Add Service** button to create a new Zuora Service Connection.&#x20;
+1. In the **Connections** tab of Census, go to your Service Connections and click the **Add Service** button to create a new Zuora Service Connection.
 2. You can provide whatever name you like.
 3. Provide your credentials collected from Zuora in Step 1.
 4. Click **Connect**
@@ -54,9 +54,9 @@ Here you can write a SQL query to select the data you want to see in Zuora. You 
 * The date a user became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click **Save Model**.&#x20;
+Once you have created your model, click **Save Model**.
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM.png>)
 
 ### 4. Create your first Sync
 
@@ -76,18 +76,18 @@ Next up is the "Where do you want to sync data to?" section.
 
 ![Select which object you want to sync to](<../.gitbook/assets/Screen Shot 2022-02-02 at 10.11.33 AM.png>)
 
-For the "How do you want to update the destination?" section.&#x20;
+For the "How do you want to update the destination?" section.
 
 * Select Update Only
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-02 at 10.13.09 AM.png>)
 
-For the "How are source and destination records matched?" section.&#x20;
+For the "How are source and destination records matched?" section.
 
-* Pick the mapping key:&#x20;
-  * For syncs to the Account object select either **Account ID** or **Account Number**&#x20;
+* Pick the mapping key:
+  * For syncs to the Account object select either **Account ID** or **Account Number**
   * For syncs to the Subscription object select either **Subscription ID** or **Subscription Number**
-* Select the field from your model you want mapped to the identifier.&#x20;
+* Select the field from your model you want mapped to the identifier.
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-02 at 10.20.58 AM.png>)
 
@@ -112,13 +112,11 @@ Click the **Next** button to see the final preview, which will have a recap of w
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** |      **Objects**     |
+| **Behaviors** | **Supported?** |      **Objects**      |
 | ------------: | :------------: | :-------------------: |
 |   Update Only |        ✅       | Account, Subscription |
 
 ‌ [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
-
-
 
 ## 🚑 Need help connecting to Zuora?
 

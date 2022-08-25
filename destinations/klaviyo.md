@@ -38,7 +38,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this: 👇
 
-![Connections page with Klaviyo](../.gitbook/assets/202201\_Klaviyo\_Connection.png)
+![Connections page with Klaviyo](<../.gitbook/assets/202201\_Klaviyo\_Connection (1).png>)
 
 ### Step 2: Connect your data warehouse
 
@@ -57,12 +57,12 @@ After setting up your warehouse, your Connections page should look something lik
 
 ### Step 3: Create your model
 
-When defining models, you'll write SQL queries to select the data you want to see in Klaviyo. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.&#x20;
+When defining models, you'll write SQL queries to select the data you want to see in Klaviyo. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.
 
-1. From inside your Census account, navigate to the **Models** page.&#x20;
+1. From inside your Census account, navigate to the **Models** page.
 2. Click **Add Model**.
-3. Enter a name for your model. You'll use this to select the model later.&#x20;
-4. Enter your SQL query. If you want to test the query, use the **Preview** button.&#x20;
+3. Enter a name for your model. You'll use this to select the model later.
+4. Enter your SQL query. If you want to test the query, use the **Preview** button.
 5. Click **Save Model**.
 
 ![Basic SQL query for a new model](../.gitbook/assets/202201\_Model\_Page.png)
@@ -71,12 +71,12 @@ When defining models, you'll write SQL queries to select the data you want to se
 
 The sync will move data from your warehouse to Klaviyo. In this step, you'll define how that will work.
 
-1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.&#x20;
+1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose Klaviyo as the **Connection** and "Profile" as the **Object**. (See [Supported objects](klaviyo.md#supported-objects).)
 4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See [Supported sync behaviors](klaviyo.md#supported-sync-behaviors).)
 5. Under **How are source and destination records matched?**, select an **Identifier** for the model and for Klaviyo. We recommend using an internal ID when possible. (See [Supported objects](klaviyo.md#supported-objects).)
-6. Under **Which properties should be updated?**, choose to update **Specific Properties** or **Sync All Properties**.&#x20;
+6. Under **Which properties should be updated?**, choose to update **Specific Properties** or **Sync All Properties**.
 7. Set up the mapping for the [List property](klaviyo.md#syncing-the-list-property) and any other properties you want to update by mapping a column in your model to a property in Klaviyo.
 8. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 9. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
@@ -98,7 +98,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ### Syncing the List property
 
-All profiles in Klaviyo belong to at least one list. All syncs must include the **List** property to ensure that profiles in Klaviyo are valid.&#x20;
+All profiles in Klaviyo belong to at least one list. All syncs must include the **List** property to ensure that profiles in Klaviyo are valid.
 
 We recommend creating a list specifically for syncing. For example, you could use a Klaviyo list called "Census Uploads" that simply includes every profile created or updated by a Census sync. Note that updating through Census sync will only add profiles to additional lists; it cannot remove a profile from a list.
 
@@ -117,24 +117,22 @@ To update the **List** property, you'll need to provide the list **ID** or **Nam
 ## 🗄 Supported objects
 
 | **Object Name** | **Supported?** | **Identifiers**                                |
-| --------------: | :-----------: | ---------------------------------------------- |
-|         Profile |       ✅       | External ID (recommended), Email, Phone Number |
+| --------------: | :------------: | ---------------------------------------------- |
+|         Profile |        ✅       | External ID (recommended), Email, Phone Number |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Klaviyo.
 
 ## 🔄 Supported sync behaviors
 
 |     **Behavior** | **Supported?** | **Objects** |
-| ---------------: | :-----------: | :---------: |
-| Update or Create |       ✅       |     All     |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com/s/-MV3poo0VqVau1o8I79\_/basics/core-concept#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Klaviyo.
-
-
 
 ## 🚑 Need help connecting to Klaviyo?
 

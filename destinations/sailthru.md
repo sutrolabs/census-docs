@@ -40,7 +40,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this: 👇
 
-![You are tested and ready to go ](<../.gitbook/assets/Sailthru Tested.png>)
+![You are tested and ready to go](<../.gitbook/assets/Sailthru Tested.png>)
 
 ### Step 2: Connect your data source
 
@@ -59,22 +59,22 @@ The steps for connecting your data source will depend on your technology. See th
 
 ### Step 3: Create your model
 
-When defining models, you'll write SQL queries to select the data you want to see in Sailthru. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.&#x20;
+When defining models, you'll write SQL queries to select the data you want to see in Sailthru. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.
 
-1. From inside your Census account, navigate to the **Models** page.&#x20;
-2. Enter a name for your model. You'll use this to select the model later.&#x20;
-3. Enter your SQL query. If you want to test the query, use the **Preview** button.&#x20;
+1. From inside your Census account, navigate to the **Models** page.
+2. Enter a name for your model. You'll use this to select the model later.
+3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
 {% hint style="info" %}
-You can also use [dbt](../models/native-dbt-integration.md), [Looker](../models/looker.md), or [Segments](broken-reference) as other source models. And you can also use a Warehouse Table/View.
+You can also use [dbt](../models/native-dbt-integration.md), [Looker](../models/looker.md), or [Segments](broken-reference/) as other source models. And you can also use a Warehouse Table/View.
 {% endhint %}
 
 ### Step 4: Create your first sync
 
 The sync will move data from your warehouse to Sailthru. In this step, you'll define how that will work.
 
-1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.&#x20;
+1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose Sailthru as the **Connection** and an **Object** from the Sailthru [Supported Objects](sailthru.md#supported-objects).
 4. Under **How should changes to the source be synced?**, choose among our [Supported Sync Behaviors](sailthru.md#supported-sync-behaviors).
@@ -97,21 +97,21 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 ## 🗄 Supported objects
 
 | **Object Name** | **Supported?** | **Identifiers** |
-| --------------: | :-----------: | --------------- |
-|            User |       ✅       | Email           |
-|            List |       🔜      |                 |
+| --------------: | :------------: | --------------- |
+|            User |        ✅       | Email           |
+|            List |       🔜       |                 |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Sailthru.
 
 ## 🔄 Supported sync behaviors
 
 |     **Behavior** | **Supported?** | **Objects** |
-| ---------------: | :-----------: | :---------: |
-| Update or Create |       ✅       |     User    |
-|      Update Only |      `✅`      |     User    |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |     User    |
+|      Update Only |       `✅`      |     User    |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](https://app.gitbook.com/s/-MV3poo0VqVau1o8I79\_/basics/core-concept#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Sailthru.

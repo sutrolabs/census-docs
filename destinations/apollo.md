@@ -46,14 +46,14 @@ Finally, copy the code you see under **API Key**. We'll use that in a minute.
 
 ### 2. Connect Census to Apollo
 
-Great! Now let's pull it all together.&#x20;
+Great! Now let's pull it all together.
 
-1. In the [**Connections**](https://app.getcensus.com/connections) **** page, click on **Add Service**, and select "Apollo"
+1. In the [**Connections**](https://app.getcensus.com/connections) \*\*\*\* page, click on **Add Service**, and select "Apollo"
 2. You can provide whatever name you like for the connection
 3. Paste your Apollo API Key
 4. Click **Connect**
 
-![](<../.gitbook/assets/screely-1660163730081 (1).png>)
+![](../.gitbook/assets/screely-1660163730081.png)
 
 Census will test your API key and show a green checkmark :white\_check\_mark: when successful.
 
@@ -62,7 +62,7 @@ Census will test your API key and show a green checkmark :white\_check\_mark: wh
 Please follow one of our short guides depending on your data warehouse technology
 
 * [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)   &#x20;
+* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
@@ -88,7 +88,7 @@ In the "**What data do you want to sync?"** section
 
 Next up is the **"Where do you want to sync data to?"** section
 
-* Pick Apollo as **the Connection**&#x20;
+* Pick Apollo as **the Connection**
 * For Object, pick the one you want to sync data to: **Account** or **Contact**
 
 For the " **How do you want to update the destination?"** section
@@ -135,12 +135,10 @@ Census currently supports syncing to the following Apollo objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** |                       **Supported?**                      |   **Objects**   |
+|        **Behaviors** |                       **Supported?**                      |    **Objects**   |
 | -------------------: | :-------------------------------------------------------: | :--------------: |
 | **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) | Account, Contact |
 |      **Update Only** |                             ✅                             | Account, Contact |
-
-
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Apollo.
 
