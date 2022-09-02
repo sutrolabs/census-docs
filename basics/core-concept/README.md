@@ -117,6 +117,11 @@ You can dive deeper into why syncs failed, or what records were invalid from the
 **Invalid or rejected records**\
 ****Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
 
+**What is the difference between Invalid and Rejected records?**
+
+* **Invalid** records are flagged and filtered by Census _prior_ to syncing to your destination. Census will check the source data for records with NULL identifiers and duplicates.
+* **Rejected** records are records that were sent to the destination, but the destination did not accept them. The sample of rejected records will provide the specified reasons received from the destination.
+
 ![](../../.gitbook/assets/census\_sync\_invalid\_rejected\_records.png)
 
 ![Output of invalid records diagnostic log](../../.gitbook/assets/census\_invalid\_records.png)
