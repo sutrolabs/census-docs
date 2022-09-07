@@ -8,7 +8,7 @@ description: >-
 
 Custom Destination API allow you to "bring your own" SaaS connector to Census. A custom destination is a few simple API endpoints that teach Census about the type of data your connector can process, the operations allowed on that data, and how to actually load that data. You can deploy your implementation to any service you like, as long as Census can reach the URL over the internet.
 
-This guide walks you through setting up an example implementation, how to build your own from scratch, and covers all the technical details of how it operates. The Custom Destination API is currently in beta and [we'd love to hear your feedback](mailto:support@getcensus.com)!
+This guide walks you through setting up an example implementation, how to build your own from scratch, and covers all the technical details of how it operates.
 
 ## 🏃‍♀️ Getting Started
 
