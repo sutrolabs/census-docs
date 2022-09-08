@@ -13,25 +13,15 @@ In this guide, we will show you how to connect PostHog to Census and create your
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have the proper credentials to access your data source. See our [docs](../sources/overview.md) for each supported data source for further information.
 
-### 1. Create a Personal PostHog API key
+### 1. Grab your PostHog Project API Key
 
-PostHog lets you create a number of API keys, each with its own set of permissions. You'll almost certainly want to create a new API key for Census rather than reusing an existing one. See [PostHog's documentation](https://posthog.com/docs/api#how-to-obtain-a-personal-api-key) for additional guidance.
+PostHog provides a write-only key.
 
-In PostHog's top navigation bar, click **your name/avatar on the top right**.
+In PostHog's left navigation bar, click **Project Settings**.
 
-Then, scroll down to **Personal API Keys**.
+Then, scroll down to **Project Variables > Project API Key**.
 
-Next, click **Create personal API key**.
-
-![](../.gitbook/assets/screely-1660764233257.png)
-
-Provide a name you'll recognize ("Census" is a good choice).
-
-Click **Create key**.
-
-Finally, copy the code you see under **API Key**. We'll use that in a minute.
-
-![](../.gitbook/assets/Snag\_e05f0e7.png)
+Copy your **Project API Key**. We'll use that in a minute
 
 ### 2. Connect Census to PostHog
 
@@ -39,11 +29,11 @@ Great! Now let's pull it all together.&#x20;
 
 1. In the [**Connections**](https://app.getcensus.com/connections) **** page, click on **Add Service**, and select "PostHog"
 2. You can provide whatever name you like for the connection
-3. Paste your PostHog Personal API Key
-4. Enter your PostHog domain. If using the hosted version, enter posthog.com. Otherwise enter your PostHog instance's custom domain.
+3. Paste your PostHog Project API Key
+4. Enter your PostHog custom domain if you're using one, otherwise leave it blank.
 5. Click **Connect**
 
-![](../.gitbook/assets/screely-1660765646651.png)
+<figure><img src="../.gitbook/assets/screely-1662667677169.png" alt=""><figcaption></figcaption></figure>
 
 Census will test your API key and show a green checkmark :white\_check\_mark: when successful.
 
