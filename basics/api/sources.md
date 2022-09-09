@@ -65,6 +65,8 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources
 
 
 
+
+
 ### GET /sources/\[ID]
 
 This endpoint lists information on a specific source.
@@ -114,6 +116,8 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]
 
 
 
+
+
 ### POST /sources
 
 This endpoint creates a source with the given data.
@@ -156,12 +160,16 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/sources' \
 | ---------------- | -------------------------------------------- |
 | connection       | Contains the information for the connection. |
 
+
+
 | Connection Property    | Description                                                                                  |
 | ---------------------- | -------------------------------------------------------------------------------------------- |
 | type                   | `required`. The type of this source (e.g. `redshift`, `big_query`)                           |
 | credentials            | `required`. Credentials that should be associated with this source (e.g. `hostname`, `port)` |
 | label                  | The label assigned to this source.                                                           |
 | read\_only\_connection | Whether or not Census has write permissions, for tracking sync state, on this source.        |
+
+
 
 
 
@@ -219,11 +227,15 @@ curl --location --request PATCH 'https://app.getcensus.com/api/v1/sources/12' \
 | ---------------- | -------------------------------------------- |
 | connection       | Contains the information for the connection. |
 
+
+
 | Connection Property    | Description                                                                           |
 | ---------------------- | ------------------------------------------------------------------------------------- |
 | credentials            | Credentials that should be associated with this source (e.g. `hostname`, `port)`      |
 | label                  | The label assigned to this source.                                                    |
 | read\_only\_connection | Whether or not Census has write permissions, for tracking sync state, on this source. |
+
+
 
 
 
@@ -251,6 +263,69 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/sources/6' \
 | Response Property | Description                                                            |
 | ----------------- | ---------------------------------------------------------------------- |
 | status            | `deleted` or `404` indicating whether the model was found and deleted. |
+
+
+
+
+
+### POST /sources/\[ID]/refresh\_tables
+
+This endpoint queues a job to refresh the list of tables for a source.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --request POST 'http://app.getcensus.com/api/v1/sources/[ID]/refresh_tables' \
+--header 'Authorization: Bearer [API_TOKEN]'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "refresh_key": 1647978948
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| Response Property | Description                                            |
+| ----------------- | ------------------------------------------------------ |
+| refresh\_key      | Contains an `id` used to query the refresh tables job. |
+
+
+
+
+
+### GET /sources/\[ID]/refresh\_tables\_status
+
+This endpoint checks whether the the job refreshing tables for a source has completed.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/refresh_tables_status?refresh_key=1647978948
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+    "status": "completed"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+| Query Parameter | Description                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| refresh\_key    | `required`. An `id` provided by the `refresh_tables` endpoint, used to check whether the refresh tables job has finished. |
+
+| Response Property | Description                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| status            | Status of the job. Can be either `completed` or `processing`. |
+
+
 
 
 

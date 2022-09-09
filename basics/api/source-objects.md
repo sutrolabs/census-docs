@@ -66,8 +66,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/objects
 
 
 
-
-
 ### GET /sources/\[ID]/models
 
 This endpoint lists information all the models for a given source, including information on what columns it includes.
@@ -157,8 +155,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models
 
 
 
-
-
 ### GET /sources/\[ID]/models/\[ID]
 
 This endpoint lists information for a given model, including information on what columns it includes.
@@ -222,8 +218,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID
 
 
 
-
-
 ### POST /sources/\[ID]/models
 
 This endpoint creates a model with the given data.
@@ -261,15 +255,11 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/models' \
 | description      | The description for this model.                                                |
 | approved         | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
-
-
 | Response Property | Description                                                    |
 | ----------------- | -------------------------------------------------------------- |
 | status            | `created` or `error` indicating whether the model was created. |
 | data              | Present if successful. An object containing the `model_id`     |
 | message           | Present if error. Contains message describing the error.       |
-
-
 
 
 
@@ -327,15 +317,11 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 | query            | The SQL query associated with this model.                                      |
 | approved         | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
-
-
 | Response Property | Description                                                          |
 | ----------------- | -------------------------------------------------------------------- |
 | status            | `updated` or `error` indicating whether the model was updated.       |
 | data              | Present if successful. Returns the same object as `GET /models/[ID]` |
 | message           | Present if error. Contains message describing the error.             |
-
-
 
 
 
@@ -363,71 +349,6 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 | Response Property | Description                                                            |
 | ----------------- | ---------------------------------------------------------------------- |
 | status            | `deleted` or `404` indicating whether the model was found and deleted. |
-
-
-
-
-
-### POST /sources/\[ID]/models/\[ID]/refresh\_columns
-
-This endpoint queues a job to refresh the list of columns for a given source model.
-
-{% tabs %}
-{% tab title="Request" %}
-```
-curl --request POST 'http://app.getcensus.com/api/v1/sources/[ID]/models/[ID]/refresh_columns' \
---header 'Authorization: Bearer [API_TOKEN]'
-```
-{% endtab %}
-
-{% tab title="Response" %}
-```json
-{
-    "refresh_key": 1647978948
-}
-```
-{% endtab %}
-{% endtabs %}
-
-| Response Property | Description                                             |
-| ----------------- | ------------------------------------------------------- |
-| refresh\_key      | Contains an `id` used to query the refresh objects job. |
-
-
-
-
-
-### GET /sources/\[ID]/models/\[ID]/refresh\_columns\_status
-
-This endpoint checks whether the the job refreshing columns for a given source model has completed.
-
-{% tabs %}
-{% tab title="Request" %}
-```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID]/refresh_columns_status?refresh_key=1647978948
-```
-{% endtab %}
-
-{% tab title="Response" %}
-```json
-{
-    "status": "completed"
-}
-```
-{% endtab %}
-{% endtabs %}
-
-| Query Parameter | Description                                                                                                                 |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| refresh\_key    | `required`. An `id` provided by the `refresh_columns` endpoint, used to check whether the refresh columns job has finished. |
-
-| Response Property | Description                                                   |
-| ----------------- | ------------------------------------------------------------- |
-| status            | Status of the job. Can be either `completed` or `processing`. |
-
-
-
-
 
 
 
@@ -484,67 +405,4 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID
 | table\_schema  | The schema associated with this table.                                                                                                                                                  |
 | table\_name    | The name of this table.                                                                                                                                                                 |
 | columns        | <p>A list of columns from this table, each with two properties:</p><ul><li><code>name</code> - The name of the column</li><li><code>type</code> - The data type of the column</li></ul> |
-
-
-
-
-
-### POST /sources/\[ID]/tables/\[ID]/refresh\_columns
-
-This endpoint queues a job to refresh the list of columns for a given source table.
-
-{% tabs %}
-{% tab title="Request" %}
-```
-curl --request POST 'http://app.getcensus.com/api/v1/sources/[ID]/tables/[ID]/refresh_columns' \
---header 'Authorization: Bearer [API_TOKEN]'
-```
-{% endtab %}
-
-{% tab title="Response" %}
-```json
-{
-    "refresh_key": 1647978948
-}
-```
-{% endtab %}
-{% endtabs %}
-
-| Response Property | Description                                             |
-| ----------------- | ------------------------------------------------------- |
-| refresh\_key      | Contains an `id` used to query the refresh objects job. |
-
-
-
-
-
-### GET /sources/\[ID]/tables/\[ID]/refresh\_columns\_status
-
-This endpoint checks whether the the job refreshing columns for a given source table has completed.
-
-{% tabs %}
-{% tab title="Request" %}
-```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID]/refresh_columns_status?refresh_key=1647978948
-```
-{% endtab %}
-
-{% tab title="Response" %}
-```json
-{
-    "status": "completed"
-}
-```
-{% endtab %}
-{% endtabs %}
-
-| Query Parameter | Description                                                                                                                 |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| refresh\_key    | `required`. An `id` provided by the `refresh_columns` endpoint, used to check whether the refresh columns job has finished. |
-
-| Response Property | Description                                                   |
-| ----------------- | ------------------------------------------------------------- |
-| status            | Status of the job. Can be either `completed` or `processing`. |
-
-
 
