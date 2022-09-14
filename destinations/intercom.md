@@ -35,9 +35,9 @@ In this guide, we will show you how to connect Intercom to Census and create you
 
 ![](../.gitbook/assets/screely-1618112961265.png)
 
-You'll see an Intercom OAuth screen describing the permissions Census needs. Note that if your account has access to multiple Intercom workspaces, you'll also have the option to select the specific workspace.
+You will be directed to a screen describing the permissions Census needs. Note that if your account has access to multiple Intercom workspaces, you'll also have the option to select the specific workspace. As well you can specify the data host region of your Intercom instance.&#x20;
 
-![](../.gitbook/assets/screely-1618112984352.png)
+![View the permissions needed, select the correct Intercom workspace, and specify the data host region](<../.gitbook/assets/Screen Shot 2022-09-14 at 3.04.00 PM.png>)
 
 ### 2. Connect your Data Warehouse
 
@@ -63,7 +63,7 @@ Here you will have to write SQL queries to select the data you want to see in In
 * The date they became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save.&#x20;
+Once you have created your model, click save.
 
 ### 4. Create your first Sync
 
@@ -72,14 +72,14 @@ Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add
 In the " **What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,**  select the model you created in step 3
+* For the **Source,** select the model you created in step 3
 
 Next up is the **"Where do you want to sync data to?"** section
 
 * Pick Intercom as **the Connection**
 * For Object, pick the one you want to sync data to.
 
-For the " **How should changes to the source be synced?"** section&#x20;
+For the " **How should changes to the source be synced?"** section
 
 * Select your preferred behavior. **Update only** is a great place to start!
 * Pick the right mapping key, it could be Email for Contacts, Company ID for Companies but we recommend you use your own database id if possible
@@ -100,19 +100,19 @@ Now go back to your Intercom and go view a record type (Contact or Company) that
 
 ![](../.gitbook/assets/screely-1618113503713.png)
 
-That's it! In 5 steps, you've connected Intercom and started syncing customer & product data from your warehouse  🎉
+That's it! In 5 steps, you've connected Intercom and started syncing customer & product data from your warehouse 🎉
 
 ## 🗄 Supported Objects
 
 Census currently supports syncing to the following Intercom objects.
 
-|         **Object Name** | **Supported?** | Identifiers                     |
-| ----------------------: | :------------: | ------------------------------- |
-|                 Company |        ✅       | Company ID                      |
-| Contact (Lead or User)  |        ✅       | Email, Intercom ID, External ID |
-|                    Lead |        ✅       | Email, Intercom ID, External ID |
-|                    User |        ✅       | Email, Intercom ID, External ID |
-|                   Event |        ✅       | Event ID                        |
+|        **Object Name** | **Supported?** | Identifiers                     |
+| ---------------------: | :------------: | ------------------------------- |
+|                Company |        ✅       | Company ID                      |
+| Contact (Lead or User) |        ✅       | Email, Intercom ID, External ID |
+|                   Lead |        ✅       | Email, Intercom ID, External ID |
+|                   User |        ✅       | Email, Intercom ID, External ID |
+|                  Event |        ✅       | Event ID                        |
 
 {% hint style="info" %}
 If you're finding Companies missing in Intercom after a sync, make sure the company also has users associated with them. By default, Intercom hides companies with no associated users.
@@ -126,7 +126,7 @@ If you're finding Companies missing in Intercom after a sync, make sure the comp
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |         **Objects**         |
+|        **Behaviors** | **Supported?** |          **Objects**         |
 | -------------------: | :------------: | :--------------------------: |
 | **Update or Create** |        ✅       | Company, Contact, Lead, User |
 |      **Update Only** |        ✅       |      Contact, Lead, User     |
