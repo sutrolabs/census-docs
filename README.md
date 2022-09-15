@@ -24,6 +24,7 @@ You can get started by finding the quick start guide for the tool you want to sy
 * [Chargify](destinations/chargify.md)
 * [ChartMogul](destinations/chartmogul.md)
 * [Criteo](destinations/criteo.md)
+* Courier
 * [Custom API](destinations/custom-api.md)
 * [Customer.io](destinations/customer.io.md)
 * [Drift](destinations/drift.md)
