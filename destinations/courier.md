@@ -6,7 +6,7 @@ description: Learn how to use Census to sync your Data Warehouse to Courier.
 
 ## 🏃‍♀️ Getting Started
 
-‌In this guide, we will show you how to connect Amplitude to Census and create your first sync.
+‌In this guide, we will show you how to connect Courier to Census and create your first sync.
 
 ### Prerequisites
 
