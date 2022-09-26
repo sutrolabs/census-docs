@@ -178,10 +178,6 @@ Connection: keep-alive
 
 Every request currently requires a synchronous response. Census will time out requests that take a long time to complete; if your connector is unable to complete its work (particularly the `sync_data` method) within this time, you can use the `get_sync_speed` method to tell Census to send data more slowly until you are able to complete within this timeout.
 
-### Versioning
-
-During the beta phase this API is unversioned. Backwards-incompatible changes may occur; Census will attempt to notify impacted customers before making those changes.
-
 ### Caching, State, and Parallel Invocations
 
 The Custom API protocol is designed to allow you to implement your API in a completely stateless manner. Specifically:
