@@ -72,6 +72,7 @@
 * [Chargebee](destinations/chargebee.md)
 * [Chargify](destinations/chargify.md)
 * [ChartMogul](destinations/chartmogul.md)
+* [ChurnZero](destinations/churnzero.md)
 * [Courier](destinations/courier.md)
 * [Criteo](destinations/criteo.md)
 * [Custom API](destinations/custom-api.md)
