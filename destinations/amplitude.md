@@ -35,14 +35,13 @@ Census needs only one piece of information to connect to your Amplitude project:
 
 Amplitude lets you pull data from a number of different sources, including via HTTP API. If you don't have this data source set up in Amplitude already, you'll need to create one. The same steps below will also allow you to find the API key for a pre-existing HTTP API data source, as Amplitude will only permit one per project.
 
-1.  Within Amplitude’s left navigation bar, scroll down to the very bottom. **Click on Sources & Destinations.**\
-
+1.  Within Amplitude’s left navigation bar, scroll down to the very bottom. **Click on Sources & Destinations.**\\
 
     ![](https://lh6.googleusercontent.com/IldQDvHh30Q3BQTJI1tAjTdnYaoLgkALhEYU9wpXfMAbmPe0Qu8eUavNYVzRNGT3Chjpr\_G-SODK6pRQluXA44WkdKpjUESz8lItwWdkWUVGE60gJfLHJdFrnEd8lJwdiD\_nvvph)
 2. ‌Once here, navigate to the top-right of the screen and click to **Add Data Source**.\
-   ****<img src="https://lh3.googleusercontent.com/Xt-bGTekukUBgNGE-d805HzLvnODAgkuC7JCO_uiW_3gpE7-oFBID3fgEjkHfRkdlyXtEGG_wubzXWH8EBss8sJ-Ce_i9CGAnD5oy-L9F1rvn9YyQlcsxzY4ms5K8guaGWru4MlL" alt="" data-size="original">
+   \*\*\*\*<img src="https://lh3.googleusercontent.com/Xt-bGTekukUBgNGE-d805HzLvnODAgkuC7JCO_uiW_3gpE7-oFBID3fgEjkHfRkdlyXtEGG_wubzXWH8EBss8sJ-Ce_i9CGAnD5oy-L9F1rvn9YyQlcsxzY4ms5K8guaGWru4MlL" alt="" data-size="original">
 3. Select **“HTTP API”** as the type of data source, and click **Next**.![](https://lh6.googleusercontent.com/3oT5uRNYeOJCVX6v9h7I4zwmp0P6z2H0NTocMnaOTwauCi01GFLjVZNYdjoYLK\_AxvmMVIxK-Ec8o9xDZGExO9YYlh-T2i055heRbi-VWU5B-0MsR1bDXwfOEaIkAmIr5jIokemj)
-4. **Copy the API Key** (it will be a long string of numbers and characters), click **Next.**&#x20;
+4. **Copy the API Key** (it will be a long string of numbers and characters), click **Next.**
 5. If you are setting up the HTTP API data source for the first time, Amplitude will require you to POST an event to their API to complete set-up. Amplitude provides instructions to send a sample event and complete set-up at this stage.
 6. When the event is received by Amplitude, click **Finish** to finish setting up this source within Amplitude.
 
@@ -51,7 +50,7 @@ Amplitude lets you pull data from a number of different sources, including via H
 Now that we have the API Key from Amplitude, we can now set up Amplitude as a Destination in Census.
 
 1. In the **Settings** tab of Census, create a new Amplitude Service Connection.\
-   ****![](https://lh5.googleusercontent.com/TYNs2uji9P65wu4JR-3bU3k\_0svIJ7dAdaS9I25gzHHY0U-kxlQ6twBRFPIwrUzsNGOnamNJT-8ygYqnyPsuGW51k2EGWhghMJGpur6Ewde5Rw5xaoevAyr6\_CkUSZ\_OiY-58b7D)
+   \*\*\*\*![](https://lh5.googleusercontent.com/TYNs2uji9P65wu4JR-3bU3k\_0svIJ7dAdaS9I25gzHHY0U-kxlQ6twBRFPIwrUzsNGOnamNJT-8ygYqnyPsuGW51k2EGWhghMJGpur6Ewde5Rw5xaoevAyr6\_CkUSZ\_OiY-58b7D)
 2. You can provide whatever name you like.
 3. Provide the copied API Key from Amplitude.
 4. Save.
@@ -67,7 +66,7 @@ Here you will have to write SQL queries to select the data you want to see in Am
 * The date a user became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save.&#x20;
+Once you have created your model, click save.
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -85,10 +84,10 @@ Next up is the "Where do you want to sync data to?" section.
 * Pick the Amplitude connection you created in step 3.
 * For Object, Select Device or User. If Devices can be associated with Users, then select Device. If no Device information is collected, select User.
 
-For the "How should changes to the source be synced?" section.&#x20;
+For the "How should changes to the source be synced?" section.
 
 * Select Update Or Create
-* Pick the right mapping key; Heap.io only supports Distinct ID.
+* Pick the right mapping key; Amplitude only supports Distinct ID.
 
 Finally, select the fields you want to update in the Mapper in the "Which Fields should be updated?" section. Here simply map the field from your Amplitude instance to the column from your model.
 
@@ -107,18 +106,18 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
 
-Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User.&#x20;
+Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User.
 
 ### Working with Amplitude's Data Model
 
-Amplitude has very well optimized data model for analyzing time series event, but this model presents some quirks and challenges for historic data updating.&#x20;
+Amplitude has very well optimized data model for analyzing time series event, but this model presents some quirks and challenges for historic data updating.
 
-Each Event record in Amplitude has a snapshot of any user and group properties that applied to it at the moment that event was ingested into Amplitude. Amplitude's analyzes this event stream so this makes querying events really efficient.&#x20;
+Each Event record in Amplitude has a snapshot of any user and group properties that applied to it at the moment that event was ingested into Amplitude. Amplitude's analyzes this event stream so this makes querying events really efficient.
 
 But these events are immutable, meaning once they're written, they're never updated again, including that snapshot of user and group properties. This introduces some quirks:
 
-* If user properties are updated by Census, those user properties will only apply to any _**future**_ _**ingested**_ events at the time of their ingestion. So if User A's properties are updated by Census today, but they never again generate an event, the Amplitude UI will never show the updated user properties because none of the previous events' snapshots can be changed to reflect the updated properties.&#x20;
-* This also means that historical event imports are limited. Historical events can be imported with  updated user and group properties, but again, those properties _**will only be reflected on events ingested after the historical sync**_ in real world time**,** not just in the future according to the timestamp of the events. This is because all events already ingested are immutable.
+* If user properties are updated by Census, those user properties will only apply to any _**future**_ _**ingested**_ events at the time of their ingestion. So if User A's properties are updated by Census today, but they never again generate an event, the Amplitude UI will never show the updated user properties because none of the previous events' snapshots can be changed to reflect the updated properties.
+* This also means that historical event imports are limited. Historical events can be imported with updated user and group properties, but again, those properties _**will only be reflected on events ingested after the historical sync**_ in real world time\*\*,\*\* not just in the future according to the timestamp of the events. This is because all events already ingested are immutable.
 
 This is Amplitude's intended design: fast, but with some inflexibility. You can read more about it in [Amplitude's documentation](https://help.amplitude.com/hc/en-us/articles/115002380567-User-properties-and-event-properties#h\_856d23e3-10ea-4398-a50d-4982a42d1f3f).
 
@@ -132,7 +131,7 @@ As a result of this behavior, we often get asked "Why can't I see my user proper
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |     **Objects**    |
+|        **Behaviors** | **Supported?** |     **Objects**     |
 | -------------------: | :------------: | :-----------------: |
 | **Update or Create** |        ✅       | Device, User, Group |
 |           **Append** |        ✅       |        Event        |
