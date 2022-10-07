@@ -183,7 +183,7 @@ Every request currently requires a synchronous response. Census will time out re
 The Custom API protocol is designed to allow you to implement your API in a completely stateless manner. Specifically:
 
 * Don't cache data or metadata. Census will perform caching of your objects, fields, supported operations, etc. automatically, with policies to refresh stale data and controls for users to force invalidation. Adding additional caching may make your Custom API behave unusually in the Census UI.
-* Don't store any other durable state, especially service data, unless your Custom API is "part of" the destination system. Try to ensure that calls to `sync_batch` result in the data being actually persisted to the destination system - once you tell Census a record has been synced, Census may never send that record again (if it doesn't change in the source) and Census has know way to know that it was "lost" from the destination system
+* Don't store any other durable state, especially service data, unless your Custom API is "part of" the destination system. Try to ensure that calls to `sync_batch` result in the data being actually persisted to the destination system - once you tell Census a record has been synced, Census may never send that record again (if it doesn't change in the source) and Census has no way to know that it was "lost" from the destination system
 * Expect Census to send multiple requests to your Custom API in parallel. For performance, Census will retrieve / update schemas in parallel, and will sync data in parallel. You can control the degree of parallelism for syncs via the `get_sync_speed` method.
 
 ### Error Handling
