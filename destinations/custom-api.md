@@ -10,11 +10,11 @@ Custom Destination API allow you to "bring your own" SaaS connector to Census. A
 
 This guide walks you through setting up an example implementation, how to build your own from scratch, and covers all the technical details of how it operates.
 
-## 🏃‍♀️ Getting Started
+## 🏃‍♀️ Setting up a demo Custom Destination
 
 To start, let's walk through the steps to deploy the[ sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). This will give you a good overview of everything involved in building a custom destination implementation.
 
-### Prerequisites
+#### Prerequisites
 
 * A Census account. If you don't have one, you can sign up for a free trial [here](https://app.getcensus.com/).
 * A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS. For this demo, we'll use [Netlify Functions](https://www.netlify.com/products/functions/) (you can sign up for a free account) . If you'd prefer to test locally, you can also use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL.
@@ -24,13 +24,13 @@ Generally speaking, your Custom API will act as a proxy that passes data from Ce
 
 Once you've got your Census, Netlify, and GitHub accounts ready, let's get started!
 
-### Fork the Sample
+#### Fork the Sample
 
 To deploy to Netlify, you'll need a git repo with a copy of the sample implementation that Netlify can connect to directly. The easiest way to do this is by [forking the GitHub repository](https://github.com/sutrolabs/census-custom-api-docs/fork). Otherwise, you can clone the repo and then push it to a new repo on GitHub, Gitlab, or Bitbucket.
 
 ![](../.gitbook/assets/screely-1622959750961.png)
 
-### Deploy the Function
+#### Deploy the Function
 
 Now head over to Netlify. Create a new "Site" and point Netlify at your newly forked or cloned repo.
 
@@ -42,13 +42,13 @@ Once deployed, select Functions from the top menu. You'll see a list that contai
 
 ![](../.gitbook/assets/screely-1622959663028.png)
 
-### Set up the Connection
+#### Set up the Connection
 
 Now head to Census, specifically the [Connections page](https://app.getcensus.com/connections). From the **Add Services** menu, select **Custom Destination API**. You can give your new connection any name you'll remember, and the URL will be the value you copied from Netlify a moment ago. Save your new connection and you should see Census testing your new connection is responding correctly. You should see ✅in just a minute.
 
 ![](../.gitbook/assets/screely-1622959628337.png)
 
-### Create a Sync
+#### Create a Sync
 
 The last step is to create a test sync. The sample implementation expects records with Email and Name properties, but you can sync whatever table, view, or model you have handy in your data warehouse for now, though you only need a few rows to test.
 
@@ -58,7 +58,7 @@ Your sync should look like this at the end. Save it and run it!
 
 ![](../.gitbook/assets/screely-1622959495991.png)
 
-### The Results
+#### The Results
 
 After your sync is complete, head back to your Netlify tab. You should see the logs for the calls Census made to your connector, including the final sync data.
 
