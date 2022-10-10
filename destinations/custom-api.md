@@ -10,7 +10,7 @@ Custom Destination API allow you to "bring your own" SaaS connector to Census. A
 
 This guide walks you through setting up an example implementation, how to build your own from scratch, and covers all the technical details of how it operates.
 
-## 🏃‍♀️ Setting up a demo Custom Destination
+## 🏃‍♀️ Demo Destination
 
 To start, let's walk through the steps to deploy the[ sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). This will give you a good overview of everything involved in building a custom destination implementation.
 
@@ -200,11 +200,13 @@ Census provides three "channels" for your Custom API to return errors:
 
 And finally, do not hesitate to fail any method calls if your Custom API encounters an unexpected error - the sync engine is designed to be safe even in the presences of transient or permanent failures. It's always safer and simpler to fail and propogate errors back to Census than to attempt your own retry logic.
 
-### RPC Details
+## RPC Details
 
 Your connector must implement all of these methods to work with Census:
 
-#### test\_connection : Verify that the custom connection is working
+### test\_connection
+
+#### Verify that the custom connection is working
 
 Census calls this method when a user presses the “Test Connection” button on your custom connection. When this is invoked, you should do something to test that the connection to your upstream SaaS application is working correctly - specifically, it’s useful to verify API keys.
 
@@ -248,7 +250,9 @@ If an error occurs performing the connection test, respond with:
 }
 ```
 
-#### list\_objects : List all the objects supported by the custom connection
+### list\_objects
+
+#### List all the objects supported by the custom connection
 
 Census calls this method periodically (in response to UI interaction as well as proactively in the background to warm its caches) to get the list of objects your connector supports as sync destinations. Your connector will be useless unless you respond with at least one object.
 
@@ -296,7 +300,9 @@ This method has no parameters - the request will always be an empty JSON object
 }
 ```
 
-#### list\_fields : List all the fields for a given object
+### list\_fields
+
+#### List all the fields for a given object
 
 Census calls this method periodically to get the list of fields for a supported object. An object must have at least one field with `identifer` set to `true`, or it cannot be the destination of a Census sync.
 
@@ -431,7 +437,9 @@ Census calls this method when a user is setting up a sync to your custom connect
 }
 ```
 
-#### get\_sync\_speed : Tell Census what batch sizes and sync speeds should be used
+### get\_sync\_speed
+
+#### Tell Census what batch sizes and sync speeds should be used
 
 Census will call this method just before a sync is starting to determine how quickly it should send data to your custom connector. In order to make your connector as easy to implement as possible, Census allows you to configure the batch sizes, maximum throughput, and maximum parallelism it should use when sending you data.
 
@@ -468,7 +476,9 @@ _Known Issue_: Currently these “speed limits” are enforced at the sync level
 }
 ```
 
-#### sync\_batch : Load one batch of data from Census to your destination application
+### sync\_batch
+
+#### Load one batch of data from Census to your destination application
 
 This is the actual “data transfer” method in the API - once configuration is performed and a sync plan is made, Census will call this method repeatedly with batches of data from your warehouse that are ready to load.
 
