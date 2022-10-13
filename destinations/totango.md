@@ -39,7 +39,7 @@ Census requires your Totango API key and Service ID to send data. Before we can 
 
 1. Click on your **User Profile** in Totango (it will be in the top right with your initials)
 2. At the bottom of the dropdown copy the Service Id which will be formatted in three parts SP-\<Service Id>-\<Instance>. For example: SP-25001-01&#x20;
-3. Copy the Service Id
+3. Copy the Service Id portion only into the Census connection (e.g. 25001 rather than the full SP-25001-01)
 
 For additional information on finding Totango credentials you can find instructions in the [Totango documentation](https://support.totango.com/hc/en-us/articles/203036939-Where-can-I-find-my-Totango-Token).
 
@@ -52,7 +52,7 @@ For additional information on finding Totango credentials you can find instructi
 * Paste your **Service Id** in the Service Id field
 * Optionally name your new connection and add a **Server Region** then click **Connect**
 
-![Totango Connection Example](<../.gitbook/assets/Screen Shot 2022-06-08 at 11.42.37 AM.png>)
+![Totango Connection Example](<../.gitbook/assets/Screen Shot 2022-10-12 at 5.31.08 PM.png>)
 
 
 
