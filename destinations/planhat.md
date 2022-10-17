@@ -45,7 +45,7 @@ In Planhat, once a token is created, it will appear once and last forever. Make 
 * Click the Add Service button.
 * Select Planhat in the dropdown list.
 * Paste your Planhat account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
-* Paste the region in the region box. If your Planhat app url is `app-us3.planhat.com`, paste **us3**.
+* Paste the region in the region box. If your Planhat app url is `app-us3.planhat.com`, paste **us3**. If your Planhat api endpoint is simply`api.planhat.com`, the value of **default** should be used here.
 
 ## 🗄 Supported Objects
 
