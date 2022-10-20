@@ -47,9 +47,9 @@ Important: all SQL Server Commands will run within the Database that is specifie
 * We based our connection protocol on SQL Server [SQL JDBC driver](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)
 * Sync behavior will be **Read Only**, meaning that every sync will be a full sync because we do not currently support tracking sync state in SQL Server. If you configured SQL Server after 10/13/2022 and communicated with a Census representative following the documentation below.
 
-## :writing\_hand: Write Support for SQL Server
+## :writing\_hand: Incremental Support for SQL Server
 
-The following commands are run to enable Write Access for SQL Server.
+The following commands enable Incremental Support for SQL Server. This mode ensures that Census only syncs new and updated records to the destination of your choice, rather than performing a full sync each time. Census performs its state tracking in a dedicated schema within your SQL Server database, allowing the Census platform to identify new and updated records without storing any of your data on Census servers. More details can be found on our [Security](../basics/security-and-privacy/) page.
 
 ```
 -- Create a private bookkeeping schema where Census can store sync state
@@ -65,7 +65,9 @@ GRANT ALTER, DELETE, EXECUTE, INSERT, REFERENCES, SELECT,
 GRANT CREATE TABLE TO CENSUS;
 ```
 
+{% hint style="info" %}
 As of 10/13/2022, after successfully running these commands, please reach out to your Census technical representative or through support, and we can help finalize configuring this functionality for you.
+{% endhint %}
 
 ## 🚦Allowed IP Addresses
 
