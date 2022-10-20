@@ -17,5 +17,5 @@ See our launch announcements for more details, but here are a few examples of th
 
 ### Getting Started
 
-Census supports creating Notifications to activate your data in To get started, with Notification head to check out the documentation on [Slack](../../destinations/slack.md) or [Microsoft Teams](../../destinations/microsoft-teams.md). If you need another destination, please request it [here](https://www.getcensus.com/request-an-integration).
+Census supports creating Notifications to activate your data in your data warehouse. To get started, with Notifications head to the documentation on [Slack](../../destinations/slack.md) or [Microsoft Teams](../../destinations/microsoft-teams.md). If you need another destination, please request it [here](https://www.getcensus.com/request-an-integration).
 
