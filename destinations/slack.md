@@ -8,7 +8,7 @@ description: This page describes how to use Census with Slack.
 
 ‌In this guide, we will show you how to connect Slack to Census and create your first Census Notification.
 
-{% embed url="https://youtu.be/Y8ygdX2lFEU" %}
+{% embed url="https://www.youtube.com/embed/Y8ygdX2lFEU" %}
 
 ### 📋 Prerequisites
 
@@ -44,7 +44,7 @@ Navigate to the [**Notifications**](https://app.getcensus.com/notifications) pag
 
 ### 🎚 Setup up your Trigger
 
-You'll need to start by specifying&#x20;
+You'll need to start by specifying how to identify entries in your data warehouse that should trigger a Notification:
 
 * For **Connection**, select the data warehouse you connected in step 2.
 * For **Source**, select the model you created in step 3.
@@ -83,7 +83,7 @@ Reminder: Census will send records to a Slack channel one at a time.
 
 | Object Name | Supported? | Identifiers              |
 | ----------- | :--------: | ------------------------ |
-| Messsage    |      ✅     | Custom message template. |
+| Message     |      ✅     | Custom message template. |
 
 {% hint style="info" %}
 Census can send data to **all** public channels and any private channels that Census has been explicitly invited to (e.g. `/invite @census`).
