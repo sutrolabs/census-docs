@@ -6,6 +6,7 @@
 
 * [Creating Syncs](basics/core-concept/README.md)
   * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
+  * [Notifications](basics/core-concept/notifications.md)
 * [Defining Source Data](basics/defining-source-data/README.md)
   * [Events](basics/defining-source-data/events.md)
   * [Structured Data](basics/defining-source-data/structured-data.md)
@@ -104,6 +105,7 @@
 * [Marketo](destinations/marketo.md)
 * [Microsoft Advertising](destinations/microsoft-advertising.md)
 * [Microsoft Dynamics](destinations/microsoft-dynamics.md)
+* [Microsoft Teams](destinations/microsoft-teams.md)
 * [Mixpanel](destinations/mixpanel.md)
 * [NetSuite](destinations/netsuite.md)
 * [Notion](destinations/notion.md)

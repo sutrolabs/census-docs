@@ -400,7 +400,9 @@ A field’s description consists of these required properties:
 }
 ```
 
-#### supported\_operations : List the operations that can be performed on an object
+### supported\_operations
+
+#### List the operations that can be performed on an object
 
 Census calls this method when a user is setting up a sync to your custom connector to determine how data should be copied to your object. You should advertise all the operations you are capable of supporting - the Census user will pick one of them from your supported list when they are configuring their sync. Currently, custom connectors support these operations:
 
