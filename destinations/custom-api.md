@@ -194,7 +194,7 @@ Do not be surprised if Census tries to sync the same record to your destination 
 
 Census provides three "channels" for your Custom API to return errors:
 
-* If you Custom API fails to return an object with the correct keys, Census will fail with an "unknown error". If you have enabled the Custom API debugger (see below), the error will be captured for later troubleshooting
+* If your Custom API fails to return an object with the correct keys, Census will fail with an "unknown error". If you have enabled the Custom API debugger (see below), the error will be captured for later troubleshooting
 * Your Custom API may return a structured error message and code in the error property of the JSON-RPC response object. This error code and message will be displayed in the Census UI.
 * Two methods, `test_connection` and `sync_batch`, provide the ability to return application-level error messages. For `test_connection`, you can return a high-level error messsage helping the user debug why your Custom API may not be working. `sync_batch` requires your Custom API to indicate a success or failure status for each record in the batch - error messages associated with record-level failures will be displayed in the Census Sync History UI
 
