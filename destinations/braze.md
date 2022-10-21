@@ -45,14 +45,14 @@ Then, inside the **API Settings** tab, under **Rest API Keys**, click **+ Create
 
 Provide a name you'll recognize ("Census" is a good choice) and select the following permissions:
 
-* All User Data permissions, except for `users.delete`&#x20;
+* All User Data permissions, except for `users.delete`
 
 {% hint style="info" %}
 You must include users.delete if you want to do the [remove option of Mirroring users](braze.md#mirror-mode-options)
 {% endhint %}
 
 * `segments.list`
-* This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update these permissions in the future.&#x20;
+* This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update these permissions in the future.
 
 Scroll down and click **Save API Key**.
 
@@ -68,9 +68,9 @@ For example, if your Braze URL is https://dashboard-**03**.braze.com/, then your
 
 ### 3. Create the Census Connection
 
-Great! Now let's pull it all together.&#x20;
+Great! Now let's pull it all together.
 
-1. In the [**Connections**](https://app.getcensus.com/connections) **** page, click on Add Service, and select "Braze"
+1. In the [**Connections**](https://app.getcensus.com/connections) \*\*\*\* page, click on Add Service, and select "Braze"
 2. You can provide whatever name you like for the connection
 3. Provide the appropriate Braze Endpoint URL
 4. Copy and paste your new Braze API key
@@ -90,10 +90,10 @@ Census currently supports syncing to the following Braze objects.
 |                           User |        ✅       | External User ID                               |
 |                     User Alias |        ✅       | Alias Name & Label                             |
 
-Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/defining-source-data/structured-data.md) to Braze:&#x20;
+Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/defining-source-data/structured-data.md) to Braze:
 
 * [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
-* [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.&#x20;
+* [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.
 
 ### ✉️ Braze Subscription Group Memberships
 
@@ -107,7 +107,7 @@ This source model should be all of your Subscribed users for their Subscription 
 {% hint style="info" %}
 If you have a query that returns the external id, subscription group id, and status columns. Your source model should logically look like this:
 
-`SELECT`&#x20;
+`SELECT`
 
 `external_id, subscription_group_id`
 
@@ -117,12 +117,10 @@ If you have a query that returns the external id, subscription group id, and sta
 
 `WHERE`
 
-`status = 'subscribed'`&#x20;
+`status = 'subscribed'`
 {% endhint %}
 
 Only the Braze User External Id and the Subscription Group Id should be mapped fields. This is a special unsubscribing mirror for user/group pairs that no longer appear in the data source.
-
-
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Braze.
 
@@ -132,7 +130,7 @@ Only the Braze User External Id and the Subscription Group Id should be mapped f
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** |                       **Supported?**                      |                                     **Objects**                                     |
+|        **Behaviors** |                       **Supported?**                      |                                      **Objects**                                     |
 | -------------------: | :-------------------------------------------------------: | :----------------------------------------------------------------------------------: |
 | **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                                         User                                         |
 |           **Mirror** |                             ✅                             | User, [Subscription Group Membership](braze.md#braze-subscription-group-memberships) |
@@ -140,10 +138,10 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 ### Mirror Mode Options
 
-Braze's Mirror behavior optionally supports a choice of two actions when a record is removed from the source. This can be configured when setting up the sync initially.  The first time the sync is performed, the records will be used as a basis for mirroring behaviour in future syncs:
+Braze's Mirror behavior optionally supports a choice of two actions when a record is removed from the source. This can be configured when setting up the sync initially. The first time the sync is performed, the records will be used as a basis for mirroring behaviour in future syncs:
 
-* **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze. &#x20;
-* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced will be removed from the destination record (by setting them to Null).  The identifier will not be removed from the destination record. &#x20;
+* **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze.
+* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced will be removed from the destination record (by setting them to Null). The identifier will not be removed from the destination record.
 * **Subscription Group Membership** - This will unsubscribe users from the corresponding subscription group, as described [above](braze.md#braze-subscription-groups).
 
 Regardless of which option is selected, mirror syncs identify deletions of each type by comparing against the data they have already sent -- not the data that might or might not already exist in Braze. This means that the first sync will be an upsert for all records, and the second and following syncs will account for deletions from the source data.
@@ -157,13 +155,25 @@ In order to minimize your API usage with Braze to ensure that your organization 
 {% hint style="warning" %}
 Note that certain built-in fields in Braze, such as Country and Gender, have automatic standardization that happens in Braze. i.e.: "United States" from SQL becomes "US" from Braze's API.
 
-
-
 So when using these type of values, we recommend either:
 
 * Pre-standardize your fields to match Braze’s format (i.e. "US")
 * Use Custom Attributes to store them instead
 {% endhint %}
+
+### Data Types in Braze
+
+With Census, you know have the ability to specify which Data Type your syncs are referring to. When you change the data type, the next Census sync will be a full sync. If the Census destination field data types match up with the Braze data types, Census will perform the Braze export and comparison with your data.
+
+{% hint style="info" %}
+Please make sure you validate the data types on Custom Attributes, that they are as you would expect in the Sync mappings.
+
+
+
+An example of this is when the Braze Custom Attribute Type that is "Automatically detect (Time)", we strongly recommend making sure that the Census Destination field type as shown below of type "DateTime" as shown below.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ## 🚑 Need help connecting to Braze?
 
