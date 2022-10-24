@@ -16,7 +16,7 @@
   * [Sync Dry Runs](basics/sync-monitoring/sync-dry-runs.md)
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Census IP Addresses](basics/security-and-privacy/census-ip-addresses.md)
-  * [Role-Based Access Controls](basics/security-and-privacy/role-based-access-controls.md)
+  * [Permissions](basics/security-and-privacy/permissions.md)
   * [Regions](basics/security-and-privacy/regions.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [API](basics/api.md)
