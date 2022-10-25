@@ -127,6 +127,14 @@ Secrets needed by your Custom API can be stored in several places:
 
 Because your Custom API URL can contain secrets, it is considered to be sensitive data by Census and encrypted within our logs and databases.
 
+#### Auth Token
+
+You can now specify a special authentication token for a Custom API connection and this token will be attached as an `Authorization` header to every request. In the connection setup screen you will see a new optional field:
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-10-25 at 11.35.56 AM.png" alt=""><figcaption><p>Custom API Connection setup card with new Auth Token field</p></figcaption></figure>
+
+Whatever you place in the _Auth Token_ field will be sent along with every request as a header in the form of `Authorization: Bearer <your string>`. This avoids the need to add any token to the url. NOTE: Once a token credential has been set it can be changed but not removed.&#x20;
+
 ## Writing Your Custom API
 
 ### Basic Request-Reply Message Format
