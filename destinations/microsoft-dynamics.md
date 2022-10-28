@@ -91,6 +91,20 @@ All Microsoft Dynamic [entities](https://docs.microsoft.com/en-us/dynamics365/cu
 * [Define keys in Microsoft Dynamics](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/customize/define-alternate-keys-reference-records?view=op-9-1)
 * [Define keys in Power Apps](https://docs.microsoft.com/en-us/power-apps/maker/data-platform/define-alternate-keys-portal) (Power Apps is the platform that Dynamics is built atop)
 
+### Lookups to other records
+
+Lookups from one Dynamics Entity to another in the same 365 workspace can be configured, and this happens via the single-column keys for the entity as such:
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The lookup by key needs to single-column keys</p></figcaption></figure>
+
+{% hint style="info" %}
+When you have a null lookup, or a reference from which you want to disassociate a record, you need to sync over null.
+
+For a string example of a column in Snowflake:
+
+`IFF(lookup_ref = '', NULL, lookup_ref) as lookup_ref`
+{% endhint %}
+
 ## 🔄 Supported sync behaviors
 
 |     **Behavior** | **Supported?** | **Objects** |
