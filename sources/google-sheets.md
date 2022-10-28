@@ -41,7 +41,7 @@ We will now use this service account email to "share" the Google sheet you want 
 
 5\. Paste the Census service account email to share that google sheet with Census
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 6\. Confirm you do want to share and you're done! You can now use that sheet create a sync using that connection.
 

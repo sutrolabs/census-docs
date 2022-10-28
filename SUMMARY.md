@@ -6,6 +6,7 @@
 
 * [Creating Syncs](basics/core-concept/README.md)
   * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
+  * [Retry Handling](basics/core-concept/retry-handling.md)
   * [Notifications](basics/core-concept/notifications.md)
 * [Defining Source Data](basics/defining-source-data/README.md)
   * [Events](basics/defining-source-data/events.md)
