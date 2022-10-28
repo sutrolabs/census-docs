@@ -206,7 +206,15 @@ Census provides three "channels" for your Custom API to return errors:
 * Your Custom API may return a structured error message and code in the error property of the JSON-RPC response object. This error code and message will be displayed in the Census UI.
 * Two methods, `test_connection` and `sync_batch`, provide the ability to return application-level error messages. For `test_connection`, you can return a high-level error messsage helping the user debug why your Custom API may not be working. `sync_batch` requires your Custom API to indicate a success or failure status for each record in the batch - error messages associated with record-level failures will be displayed in the Census Sync History UI
 
-And finally, do not hesitate to fail any method calls if your Custom API encounters an unexpected error - the sync engine is designed to be safe even in the presences of transient or permanent failures. It's always safer and simpler to fail and propogate errors back to Census than to attempt your own retry logic.
+And finally, do not hesitate to fail any method calls if your Custom API encounters an unexpected error - the sync engine is designed to be safe even in the presences of transient or permanent failures. It's always safer and simpler to fail and propagate errors back to Census than to attempt your own retry logic.
+
+### Rate Limiting
+
+By default a Custom API connection has a _connection-wide_ rate limit of 5000 requests per second. This means that if two syncs are running simultaneously against the same custom connection they will both count against that rate limit.&#x20;
+
+This limit can be overridden by returning a `X-RateLimit-Limit` header in the responses to our calls against your custom api. For example: if you want to cap requests to your custom service at 100 reqs/second then return `X-RateLimit-Limit: 100` as a header in the responses from your service. Whatever value you set here is the limit _per second._
+
+**NOTE**_:_ This is different than our operation to fetch the [sync speed](custom-api.md#get\_sync\_speed). In essence these are two rate limiting mechanisms working in tandem. `get_sync_speed` is designed to indicate how fast and parallel an individual sync can be while this `X-RateLimit_Limit` header is a connection wide limit that acts as a cap to ensure that multiple syncs running simultaneously do not overwhelm the same custom api destination.
 
 ## RPC Details
 
