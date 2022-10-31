@@ -2,25 +2,17 @@
 description: This page describes how to use Census with Google Analytics
 ---
 
-# Google Analytics
+# Google Analytics (UA)
 
 ## 🏃‍♀️ Getting Started
 
-In this guide, we will show you how to connect Google Analytics to Census and create your first sync.
+In this guide, we will show you how to connect Google Analytics to Census and create your first sync. The Google Analytics connection uses the Universal Analytics API. For support for Google Analytics 4, take a look at the separate [Google Analytics 4 Connector docs](google-analytics-4.md).
 
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Google Analytics account ready, with admin access to create API-only users and API credentials.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+* Have the proper credentials to access to your data source. See our [docs for each supported data source](../sources/overview.md) for further information.
 
 ### Step 1: Configure Your Google Analytics Account
 
@@ -109,6 +101,5 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 * Google Analytics has limits to how frequently properties are updated per day so you may want to avoid continuous syncs, especially if you’re importing data through other mechanisms
 * For many Google Analytics reports, data imported this way will only shows up if the User ID has been used as a visitor to the property in the last **30 days**.
 * Data takes up to **24 hours** to be fully indexed by google
-* The Google Analytics destination currently uses the Universal Analytics API
 
 [Contact us](mailto:support@getcensus.com) if your use cases don't work with these limitations. We'd love to hear how we can make this connection better in the future!
