@@ -23,6 +23,6 @@ The actual set of properties/columns your model have can be anything. The only i
 As such, models that you want to expose for [Segment creation](../segments/getting-started.md) must be Approved
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The model overview helps you quickly understand what your model looks like and where it's used</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>The model overview helps you quickly understand what your model looks like and where it's used</p></figcaption></figure>
 
 The following pages cover the various ways you can add or create models in Census.&#x20;
