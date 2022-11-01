@@ -6,6 +6,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 * Programmatically via API
 * Via Airflow
 * Via dbt Cloud
+* In a Sequence
 
 ## ⏱ Schedule
 
@@ -140,3 +141,13 @@ Heads up: Unlike Airflow 2, Airflow 1 doesn't show any non-"core" providers (i.e
 Whether you're using [Astronomer](https://astronomer.io) or self-hosting your own instance, you can use Census's Airflow Provider to trigger and monitor Census syncs.
 
 Visit the [Census Airflow Provider GitHub repository](https://github.com/sutrolabs/airflow-provider-census) for more details on how to use it for your project.
+
+## ⏭ Sequence
+
+If your syncs have dependencies and you'd like to organize them to run in order, you can use a Sequence. A Sequence runs a dependent sync whenever its specified parent sync completes successfully. Sequences can be found on the sync configurations page:
+
+<figure><img src="../../.gitbook/assets/CleanShot 2022-11-01 at 12.59.37@2x.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+Sequences do not currently support specifying multiple parent syncs. If you are interested in multi-parent functionality, please email [support@getcensus.com](mailto:support@getcensus.com).
+{% endhint %}
