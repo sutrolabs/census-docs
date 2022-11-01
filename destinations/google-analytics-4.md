@@ -83,6 +83,8 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 |           Event |        ✅       |               Unique Event ID              | Append           |
 | User Properties |        ✅       | <p>Client ID or </p><p>Firebase App ID</p> | Update or Create |
 
+Both Event and User Properties support sending custom properties that have already been defined in Google Analytics 4 (see below for more details on the [restrictions on custom properties](google-analytics-4.md#custom-properties-dimensions-and-metrics)). To send custom properties as part of a sync, you can add destination fields via the new Custom Field button as well as the [Properties Bundle structured object](../basics/defining-source-data/events.md#using-the-properties-bundle) which can be used to send more complex event data structures.&#x20;
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects and behaviors for Google Analytics 4.
 
 ## 💡 Understanding GA4 Identifiers and Quirks
