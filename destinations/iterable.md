@@ -31,7 +31,7 @@ In this guide, we will show you how to connect Iterable to Census and create you
 
 ### 1. Create a new Iterable API key
 
-To connect Census to your Iterable, you'll need to provide Census with an API key so that we can talk to it directly.&#x20;
+To connect Census to your Iterable, you'll need to provide Census with an API key so that we can talk to it directly.
 
 **A. Go to your Integration > API keys page**
 
@@ -45,9 +45,9 @@ Click the Create New API key button in the top right.
 
 ![](<../.gitbook/assets/image (10).png>)
 
-Select the "Server-side" key type from the subsequent dropdown.&#x20;
+Select the "Server-side" key type from the subsequent dropdown.
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (2).png>)
 
 Copy the resulting key (a string of 32 characters) to add it to Census.
 
@@ -61,13 +61,13 @@ Copy the resulting key (a string of 32 characters) to add it to Census.
 
 ![](../.gitbook/assets/iterable\_setup4.png)
 
-Iterable will now appear as a new destination for Census syncs.&#x20;
+Iterable will now appear as a new destination for Census syncs.
 
 ### 2. Syncing data into Iterable
 
 Once the service is added, you can sync users from your database into your Iterable audience (and augment existing contacts with new product data).
 
-When creating a sync in Census, you can use _email_ or _userId_ as an identifier.&#x20;
+When creating a sync in Census, you can use _email_ or _userId_ as an identifier.
 
 ![](../.gitbook/assets/iterable\_setup5.png)
 
@@ -89,7 +89,7 @@ You can map data fields into your existing Iterable audience schema (including i
 
 Iterable supports nested objects and fields on its User object. If you would like to send JSON, Arrays, or JSON Arrays to a field in Iterable, you may.
 
-For most data warehouses, there are specific datatypes for these types of values. However, Amazon Redshift does not natively support JSON, so you will want to store this type of data as a string value. Provided that the values are valid JSON, Census will ensure that it is nested as expected when sending the data to Iterable.&#x20;
+For most data warehouses, there are specific datatypes for these types of values. However, Amazon Redshift does not natively support JSON, so you will want to store this type of data as a string value. Provided that the values are valid JSON, Census will ensure that it is nested as expected when sending the data to Iterable.
 
 As an example, valid JSON for a field named "subscription" could have the following value:
 
@@ -107,21 +107,21 @@ We recommend testing your JSON fields in Redshift by using Redshift's [`IS_VALID
 
 ### Syncing to GeoLocation Fields
 
-Iterable has a field data type called [GeoLocation](https://support.iterable.com/hc/en-us/articles/208183076-Field-Data-Types#geo-location) that stores a latitude and longitude in an object. To create or sync to an existing Iterable GeoLocation field with Census there are a couple of requirements.&#x20;
+Iterable has a field data type called [GeoLocation](https://support.iterable.com/hc/en-us/articles/208183076-Field-Data-Types#geo-location) that stores a latitude and longitude in an object. To create or sync to an existing Iterable GeoLocation field with Census there are a couple of requirements.
 
-* The destination field name must use the suffix  `_geo_location` .  **NOTE:** The suffix is case sensitive
+* The destination field name must use the suffix `_geo_location` . **NOTE:** The suffix is case sensitive
 * The geo\_location object data can only contain two fields, `lat` and `lon`
   * **Example**: `{ "lat": 31, "lon": -14 }`
-  * For more information on using structured data within Census please visit our [Structured Data](https://docs.getcensus.com/basics/defining-source-data/structured-data) documentation.&#x20;
+  * For more information on using structured data within Census please visit our [Structured Data](https://docs.getcensus.com/basics/defining-source-data/structured-data) documentation.
 
 ### Syncing to Catalogs
 
 Iterable Catalogs let you create custom objects within Iterable that can be associated with users. Here's a few tips when using Catalogs to make sure your sync is successful.
 
-* Census will rely on the schema you've defined inside Iterable. We don't currently allow you to create fields from Census.&#x20;
+* Census will rely on the schema you've defined inside Iterable. We don't currently allow you to create fields from Census.
 * We strongly recommend that you specify the type of each catalog field through the Iterable UI before using Census to sync items. Untyped fields are not searchable by collections. And andy catalog item uploaded _before_ a field is typed will not have searchable by that field. If we see an untyped field in Census, we will send string values to that field because we don't know what type it should be.
-* In practice, even if a field is typed, Iterable will accept and update field values of different types. For instance, if the `age` field is typed as a Long, but we send a value of "25", Iterable will accept and update records to use the string "25" as age.&#x20;
-* Iterable can take a while to process new Catalog items. In some cases, we see Iterable take as long as 20 minutes before the record appears.&#x20;
+* In practice, even if a field is typed, Iterable will accept and update field values of different types. For instance, if the `age` field is typed as a Long, but we send a value of "25", Iterable will accept and update records to use the string "25" as age.
+* Iterable can take a while to process new Catalog items. In some cases, we see Iterable take as long as 20 minutes before the record appears.
 
 ## 🔄 Supported Sync Behaviors
 
@@ -129,7 +129,7 @@ Iterable Catalogs let you create custom objects within Iterable that can be asso
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |  **Objects** |
+|        **Behaviors** | **Supported?** |  **Objects**  |
 | -------------------: | :------------: | :-----------: |
 | **Update or Create** |        ✅       | User, Catalog |
 |      **Update Only** |        ✅       |      User     |

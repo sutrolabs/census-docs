@@ -14,13 +14,15 @@ A model is a table in a data warehouse that looks an awful lot like a spreadshee
 Models can come in a variety of forms:
 
 * Tables or Views already in your data warehouse – This is the most common. If you've a data warehouse at your company, chances are, you've already built some tables that act as your models.
-* Models built with data transform tools like [dbt](https://www.getdbt.com/). – We're big fans of dbt here at Census. It's why we have a built in [dbt integration](native-dbt-integration.md). These tools make it easy to build and maintain sophisticated data transforms that keep your models up to date.
-* SQL queries – Yes, even a SQL query can work as a model. It's a handy way to start when you're just getting going. Just plan to eventually evolve to data transform tools like dbt as you create more models!
+* Models built with data transform tools like [dbt](https://www.getdbt.com/). – We're big fans of dbt here at Census. It's why we have a built-in [dbt integration](native-dbt-integration.md) and [Looker integration](looker.md). These tools make it easy to build and maintain sophisticated data transforms that keep your models up to date. Census connects with these tools to enable singular business logic to be sent to downstream business applications.
+* [Census Models](census-models.md) – a SQL query can work as a model. It's a handy way to start, and to write SQL against your data source so you can sync some lightweight logic into your business tools.
 
 The actual set of properties/columns your model have can be anything. The only important thing is that they're the properties that matter to you and your business. The benefit of building models is that you can define them one time, The Right Way™ and then use that as the authoritative source for all of your apps.
 
-![The model overview helps you quickly understand what your model looks like and where it's used](../.gitbook/assets/screely-1639549872398.png)
+{% hint style="warning" %}
+As such, models that you want to expose for [Segment creation](../segments/getting-started.md) must be Approved
+{% endhint %}
 
-
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The model overview helps you quickly understand what your model looks like and where it's used</p></figcaption></figure>
 
 The following pages cover the various ways you can add or create models in Census.&#x20;
