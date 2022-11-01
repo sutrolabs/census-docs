@@ -26,7 +26,7 @@ On Census models, under the Activity tab you have observability into the differe
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>View of Model Activity Tracking</p></figcaption></figure>
 
-By hitting the "Restore" button, you are able to restore the state to immediately before the change on the button that you hit. This enables you to be able to restore state if a change breaks downstream processes, so that the additions/modifications can happen safely.
+Clicking the "Restore" button will restore the state of your SQL query immediately prior to the selected change. This enables you to update your models with confidence, knowing you can always revert your changes if they accidentally break something downstream.
 
 {% hint style="warning" %}
 Note that the "Restore" button will only affect the SQL code of the model. Approvals, titles, and descriptions will remain as they were before clicking "Restore."&#x20;
