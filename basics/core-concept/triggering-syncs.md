@@ -55,13 +55,9 @@ With this enabled, the sync will run automatically as soon as dbt Cloud has succ
 
 ## **🏎 Sync Trigger API**
 
-Each sync can also be triggered via API. On the configuration page, you can access the trigger API endpoint for the sync.
+Each sync can also be triggered via API. On the sync configuration page, you can access the trigger API endpoint for the sync.
 
 ![](../../.gitbook/assets/screely-1621265332761.png)
-
-Here's a quick video of how to find and use it
-
-{% embed url="https://www.loom.com/share/fa2e1c1120c346a785aff318bf615cda" %}
 
 An empty HTTP POST call to this endpoint will trigger the sync (no need to provide any data in the body). You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
 
