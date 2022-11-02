@@ -9,7 +9,7 @@ description: This page describes how to use Census with Google Analytics 4
 In this guide, we will show you how to connect Google Analytics 4 to Census and create your first sync.&#x20;
 
 {% hint style="info" %}
-GA4 has some very interesting behaviors with identifiers, custom fields, and delayed data indexing. If something is confusing, take a look at the [Understanding GA4 Identifiers and Quirks](google-analytics-4.md#things-to-know) section below.
+GA4 has some very interesting behaviors with identifiers, custom fields, and delayed data indexing. If something is confusing, take a look at the [Understanding GA4 Identifiers and Quirks](google-analytics-four.md#things-to-know) section below.
 {% endhint %}
 
 ### Prerequisites
@@ -66,7 +66,7 @@ The sync will move event data from your warehouse to your Google Analytics 4 pro
    * Under **Object** select **Event**
 4. Under **How should changes to the source be synced?**, **Append** will be automatically selected for the Events destination object.&#x20;
 5. Under How are source records identified?? Select a unique Event ID from your data source. Census needs a unique identifier for each new event to sync.&#x20;
-6. Under **Which properties should be updated?** Map the individual source columns to the destination fields. Some of those fields exist by default, but you may also want to add more custom properties. See below for [more information on how GA4 handles custom fields](google-analytics-4.md#custom-properties-dimensions-and-metrics).&#x20;
+6. Under **Which properties should be updated?** Map the individual source columns to the destination fields. Some of those fields exist by default, but you may also want to add more custom properties. See below for [more information on how GA4 handles custom fields](google-analytics-four.md#custom-properties-dimensions-and-metrics).&#x20;
 7. Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync.
 8. Confirm the data arrives in Google Analytics!
 
@@ -83,7 +83,7 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 |            Event |        ✅       |               Unique Event ID              | Append                                                                                            |
 | User Properties  |        ✅       | <p>Client ID or </p><p>App Instance ID</p> | <p>Update Only <br><em><mark style="color:orange;">(ID must already exist in GA4)</mark></em></p> |
 
-Both Event and User Properties support sending custom properties that have already been defined in Google Analytics 4 (see below for more details on the [restrictions on custom properties](google-analytics-4.md#custom-properties-dimensions-and-metrics)). To send custom properties as part of a sync, you can add destination fields via the new Custom Field button as well as the [Properties Bundle structured object](../basics/defining-source-data/events.md#using-the-properties-bundle) which can be used to send more complex event data structures.&#x20;
+Both Event and User Properties support sending custom properties that have already been defined in Google Analytics 4 (see below for more details on the [restrictions on custom properties](google-analytics-four.md#custom-properties-dimensions-and-metrics)). To send custom properties as part of a sync, you can add destination fields via the new Custom Field button as well as the [Properties Bundle structured object](../basics/defining-source-data/events.md#using-the-properties-bundle) which can be used to send more complex event data structures.&#x20;
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects and behaviors for Google Analytics 4.
 
@@ -97,7 +97,7 @@ A Property is the "container" like it was in UA, but now in GA4, the property ca
 
 A GA4 Property has one or more Data Streams which send data to the property (you'll actually be required to set one up [when creating a new property](https://support.google.com/analytics/answer/9304153#stream)). The typical gtag integration will be set up as a Data Stream. You can think of Census as piggybacking or enriching the user activity already happening in those data streams.&#x20;
 
-Census connects to your GA4 property through a data stream which is uniquely identified by a combination of two of three identifiers provided when you first set up the connection (see [Step 1](google-analytics-4.md#step-1-add-a-data-stream-to-your-google-analytics-4-property)).
+Census connects to your GA4 property through a data stream which is uniquely identified by a combination of two of three identifiers provided when you first set up the connection (see [Step 1](google-analytics-four.md#step-1-add-a-data-stream-to-your-google-analytics-4-property)).
 
 * An API **Secret Value** - This is a typical API Key. It should never be published anywhere public or user facing. Census will use it to securely talk directly to GA4's Measurement API.&#x20;
 * One of: A **Measurement ID** for web/gtag integrations (_not_ a Stream ID) or a **Firebase App ID** (_not_ an App Instance ID - See Below)

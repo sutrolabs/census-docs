@@ -6,7 +6,7 @@ description: This page describes how to use Census with Google Analytics
 
 ## 🏃‍♀️ Getting Started
 
-In this guide, we will show you how to connect Google Analytics to Census and create your first sync. The Google Analytics connection uses the Universal Analytics API. For support for Google Analytics 4, take a look at the separate [Google Analytics 4 Connector docs](google-analytics-4.md).
+In this guide, we will show you how to connect Google Analytics to Census and create your first sync. The Google Analytics connection uses the Universal Analytics API. For support for Google Analytics 4, take a look at the separate [Google Analytics 4 Connector docs](google-analytics-four.md).
 
 ### Prerequisites
 

@@ -34,7 +34,7 @@ You can get started by finding the quick start guide for the tool you want to sy
 * [Gainsight](destinations/gainsight.md)
 * [Google Ads](destinations/google-ads/)
 * [Google Analytics (Universal Analytics)](destinations/google-analytics.md)
-* [Google Analytics 4](destinations/google-analytics-4.md)
+* [Google Analytics 4](destinations/google-analytics-four.md)
 * [Google Cloud Storage](destinations/google-cloud-storage.md)
 * [Google Sheets](sources/google-sheets.md)
 * [Heap.io](destinations/heap.io.md)
