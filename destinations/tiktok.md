@@ -54,7 +54,7 @@ In this guide, we will show you how to connect Tik Tok Ads to Census and create 
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-15 at 12.03.01 PM.png>)
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Stripe.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for TikTok.
 
 ## 🔄 Supported Sync Behaviors
 
@@ -67,7 +67,7 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 | **Update or Create** |        ✅       | Custom Audience |
 |           **Mirror** |        ✅       | Custom Audience |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Stripe.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for TikTok.
 
 ## 🚑 Need help connecting to TikTok Ads?
 
