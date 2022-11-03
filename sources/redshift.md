@@ -95,7 +95,7 @@ Census optionally allows connecting to Redshift that are only accessible on priv
 
 3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page.&#x20;
 
-To install the kepair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step.  If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
+To install the keypair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step.  If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
 
 Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
 
