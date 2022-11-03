@@ -24,7 +24,9 @@ This guide shows you how to use Census to connect your Criteo account to your da
 ### Step 1: Connect Criteo
 
 {% hint style="warning" %}
-Criteo can only be authorized once to any Census instance. In order to create a second connection, you'll need to deauthorize Census first inside the Criteo UI.
+Criteo can only be authorized once to any Census instance. In order to create a second connection, you'll need to deauthorize Census first inside the Criteo UI.\
+\
+This can be done by a Criteo Admin from the page consent.criteo.com
 {% endhint %}
 
 1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
