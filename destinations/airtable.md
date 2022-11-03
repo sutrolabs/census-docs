@@ -30,9 +30,9 @@ In this guide, we will show you how to connect Airtable to Census and create you
 ### 1. Create or get the Airtable API key
 
 1. From within Airtable, click the profile icon in the top right and select **Account**. Or click [_here_](https://airtable.com/account)_._\
-   &#x20;<img src="../.gitbook/assets/screely-1629998696109.png" alt="" data-size="original">&#x20;
-2. Scroll to the **API** section. If this is your first time using the API, you'll need to create an API key. Once created, click the box and copy the API key. You'll need that in a minute. \
-   &#x20;<img src="../.gitbook/assets/screely-1629998745164.png" alt="" data-size="original">&#x20;
+   <img src="../.gitbook/assets/screely-1629998696109.png" alt="" data-size="original">
+2. Scroll to the **API** section. If this is your first time using the API, you'll need to create an API key. Once created, click the box and copy the API key. You'll need that in a minute.\
+   <img src="../.gitbook/assets/screely-1629998745164.png" alt="" data-size="original">
 
 Note: Census's permissions will be the same as this Airtable user. If you think this Airtable user's permissions may change or the account is removed, you may want to create a special Airtable account just for Census to use.
 
@@ -41,11 +41,9 @@ Note: Census's permissions will be the same as this Airtable user. If you think 
 1. Now back to Census! Navigate to the [Connections page](https://app.getcensus.com/connections).
 2. Click the **Add Service** button.
 3. Select **Airtable** from the list.\
-   <img src="../.gitbook/assets/screely-1629998477683.png" alt="" data-size="original">&#x20;
+   <img src="../.gitbook/assets/screely-1629998477683.png" alt="" data-size="original">
 4. Add your API key to the modal and give your connection a memorable name. Save once you've got both!\
-   <img src="../.gitbook/assets/screely-1629999170323.png" alt="" data-size="original">&#x20;
-
-
+   <img src="../.gitbook/assets/screely-1629999170323.png" alt="" data-size="original">
 
 ### 3. Connect your data warehouse
 
@@ -57,7 +55,7 @@ If you don't already have a data warehouse connected, follow one of our short gu
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 * [Databricks](../sources/databricks.md)
 
-You should now have a connection to Airtable and to your data warehouse! Let's start syncing data.&#x20;
+You should now have a connection to Airtable and to your data warehouse! Let's start syncing data.
 
 ### 4. Create your first Model <a href="#3-create-your-first-model" id="3-create-your-first-model"></a>
 
@@ -88,7 +86,7 @@ Next up is the **"Where do you want to sync data to?"** section‌
 For the " **How should changes to the source be synced?"** section‌
 
 * Select your preferred behavior from the following:
-  * **Update only** is a great place to start if you have data in Airtable!&#x20;
+  * **Update only** is a great place to start if you have data in Airtable!
   * **Update or Create** is great for sending data from the warehouse into Airtable.
   * **Mirror** keeps Airtable in sync with the warehouse. Update records, insert missing, and delete removed ones from Airtable
 * Pick the right mapping key, Airtable only allows a text type from their tables. We recommend you use your own unique id from the database if possible.
@@ -99,9 +97,9 @@ Finally, select the fields you want to update in the Mapper in the **"Which Fiel
 
 The end result should look something like this​:
 
-![](../.gitbook/assets/screen-shot-2021-08-27-at-11.34.46-am.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-27 at 11.34.46 AM (1).png>)
 
-![](<../.gitbook/assets/screen-shot-2021-08-27-at-11.34.57-am (1).png>)
+![](<../.gitbook/assets/Screen Shot 2021-08-27 at 11.34.57 AM.png>)
 
 Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync‌.
 
@@ -120,18 +118,18 @@ Airtable support is pretty straight forward!
 |           Table |        ✅       |
 
 {% hint style="info" %}
-Airtable needs a primary key that is a short text field for Census to be able to join from a source table (though the source can be a numerical type).&#x20;
+Airtable needs a primary key that is a short text field for Census to be able to join from a source table (though the source can be a numerical type).
 {% endhint %}
 
 **Column types**
 
-| **Airtable Field Types** | **Source SQL Types**                                                                                                                                                                                                                                                                       |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Short Text               | <p>String</p><p>Numeric</p>                                                                                                                                                                                                                                                                |
-| Single Select            | <p>String </p><p>Numeric</p>                                                                                                                                                                                                                                                               |
-| Checkbox                 | <p>Boolean</p><p>Numeric (nonzero = checked, 0 = unchecked)</p>                                                                                                                                                                                                                            |
-| Attachments              | <p>A <a href="../basics/defining-source-data/structured-data.md">structured column</a> of the following form:</p><p><code>[</code></p><p>  <code>{</code></p><p>    <code>"url": "http://path/to/attachment.png"</code></p><p>    <code>}</code></p><p><code>]</code><br><code></code></p> |
-| The Rest                 | <p>Census will give an informative error</p><p>message if rejected by Airtable 😀</p>                                                                                                                                                                                                      |
+| **Airtable Field Types** | **Source SQL Types**                                                                                                                                                                                                                                                |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short Text               | <p>String</p><p>Numeric</p>                                                                                                                                                                                                                                         |
+| Single Select            | <p>String</p><p>Numeric</p>                                                                                                                                                                                                                                         |
+| Checkbox                 | <p>Boolean</p><p>Numeric (nonzero = checked, 0 = unchecked)</p>                                                                                                                                                                                                     |
+| Attachments              | <p>A <a href="../basics/defining-source-data/structured-data.md">structured column</a> of the following form:</p><p><code>[</code></p><p><code>{</code></p><p><code>"url": "http://path/to/attachment.png"</code></p><p><code>}</code></p><p><code>]</code><br></p> |
+| The Rest                 | <p>Census will give an informative error</p><p>message if rejected by Airtable 😀</p>                                                                                                                                                                               |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Airtable.
 
@@ -142,10 +140,10 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-|      **Update Only** |        ✅       |      All     |
-|           **Mirror** |        ✅       |      All     |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     All     |
+|      **Update Only** |        ✅       |     All     |
+|           **Mirror** |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Airtable.
 

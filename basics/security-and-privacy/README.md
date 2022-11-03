@@ -29,7 +29,7 @@ If you are an existing Census customer, contact your Customer Success Manager or
 
 ### Step 1: Identify Changes in Warehouse
 
-![](../../.gitbook/assets/census-security-architecture-2x.png)
+![](<../../.gitbook/assets/Census Security Architecture@2x.png>)
 
 As part of onboarding, you’ll create a `Census` schema within your data warehouse. This is a bookkeeping area used by the platform to keep track of what changes have occurred to your data and what still needs to be synced.
 

@@ -173,7 +173,7 @@ Please make sure you validate the data types on Custom Attributes, that they are
 An example of this is when the Braze Custom Attribute Type that is "Automatically detect (Time)", we strongly recommend making sure that the Census Destination field type as shown below of type "DateTime" as shown below.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ## 🚑 Need help connecting to Braze?
 

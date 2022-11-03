@@ -34,7 +34,7 @@ In this guide, we will show you how to connect Help Scout to Census.
 
 * You'll be taken to a Help Scout OAuth screen
 
-![](<../.gitbook/assets/Screen Shot 2022-06-24 at 5.31.14 PM (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-06-24 at 5.31.14 PM.png>)
 
 * Next you'll be taken back to Census where you'll find a new Help Scout connection!
 

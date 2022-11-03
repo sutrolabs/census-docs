@@ -43,15 +43,15 @@ In the top right, click on your name, and select Account Settings
 
 Click the Create New API key button in the top right.
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (8).png>)
 
 Select the "Server-side" key type from the subsequent dropdown.
 
-![](<../.gitbook/assets/image (6) (2).png>)
+![](<../.gitbook/assets/image (1).png>)
 
 Copy the resulting key (a string of 32 characters) to add it to Census.
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (17).png>)
 
 **C. Create a new Iterable connection in Census**
 

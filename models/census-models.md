@@ -10,7 +10,7 @@ You can think of Census models as a fast way to write and reference a SQL query 
 
 Here is what a Census SQL Model looks like in the UI. For an overview of how models work, please take a look at the [Overview page](overview.md).
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Example User Mart Query</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Example User Mart Query</p></figcaption></figure>
 
 ## Activity Tab
 
@@ -24,7 +24,7 @@ On Census models, under the Activity tab you have observability into the differe
   * Approval status change
   * SQL Query change
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>View of Model Activity Tracking</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>View of Model Activity Tracking</p></figcaption></figure>
 
 Clicking the "Restore" button will restore the state of your SQL query immediately prior to the selected change. This enables you to update your models with confidence, knowing you can always revert your changes if they accidentally break something downstream.
 

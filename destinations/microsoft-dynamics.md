@@ -95,7 +95,7 @@ All Microsoft Dynamic [entities](https://docs.microsoft.com/en-us/dynamics365/cu
 
 Lookups from one Dynamics Entity to another in the same 365 workspace can be configured, and this happens via the single-column keys for the entity as such:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The lookup by key needs to single-column keys</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption><p>The lookup by key needs to single-column keys</p></figcaption></figure>
 
 {% hint style="info" %}
 When you have a null lookup, or a reference from which you want to disassociate a record, you need to sync over null.

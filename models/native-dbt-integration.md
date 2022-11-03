@@ -48,7 +48,7 @@ Once you enable CI checks, Census will automatically run a sample check on a PR.
 
 If you already have a dbt integration with Census, you might be asked to verify additional permissions, which Census needs to run its checks. To do so, click **Configure** on the repository you want to update permissions for:
 
-![](<../.gitbook/assets/Screen Shot 2022-08-11 at 10.58.59 AM (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-08-11 at 10.58.59 AM.png>)
 
 Then, click **Review request**:
 

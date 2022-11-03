@@ -66,7 +66,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 2. Name the role: **Census**
 3. Check **WEB SERVICES ONLY ROLE**
 4. Check **DO NOT RESTRICT EMPLOYEE FIELDS**
-5. For multi-subsidiary NetSuite users**,** check **ALL** under **ACCESSIBLE SUBSIDIARIES**
+5. For multi-subsidiary NetSuite users\*\*,\*\* check **ALL** under **ACCESSIBLE SUBSIDIARIES**
 6. Under **Permissions > Setup**, add the following permissions:
    * Access Token Management: **Full**
    * Custom Body Fields: **Full**
@@ -79,9 +79,9 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 
 ![](<../.gitbook/assets/netsuite\_step4 (1).png>)
 
-![](../.gitbook/assets/image-2021-05-03-at-4.42.55-pm.jpg)
+![](<../.gitbook/assets/Image 2021-05-03 at 4.42.55 PM.jpg>)
 
-7\. Under  **Permissions > Lists**, Give your Role the appropriate permissions for the NetSuite objects you'll be updating. For example, to update Customers, you'll want to give this role the Lists > Customers (Full) permission.
+7\. Under **Permissions > Lists**, Give your Role the appropriate permissions for the NetSuite objects you'll be updating. For example, to update Customers, you'll want to give this role the Lists > Customers (Full) permission.
 
 ![](../.gitbook/assets/netsuite\_step5.png)
 
@@ -108,7 +108,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 
 The last bit of information you’ll need is your NetSuite Account ID:
 
-1. Global search to **page: Company Information.**&#x20;
+1. Global search to **page: Company Information.**
 2. Your **ACCOUNT ID** will be found on that page. Copy and paste it as well.
 
 ### 7. Finally, Configure Your Census Connection
@@ -181,14 +181,13 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-|      **Update Only** |        ✅       |      All     |
-|      **Create Only** |        ✅       |      All     |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     All     |
+|      **Update Only** |        ✅       |     All     |
+|      **Create Only** |        ✅       |     All     |
 
 :mailbox: [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
 ## 🚑 Need help connecting to NetSuite?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-

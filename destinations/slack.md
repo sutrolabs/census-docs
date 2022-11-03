@@ -22,7 +22,7 @@ In the [**Connections**](https://app.getcensus.com/connections) page in Census, 
 
 If you are not already logged in to Slack, you will be redirected to a page to log in to Slack to authorize your account to use Census. Once you are logged in, you'll see a page like the image below, confirming you want to authorize Census.
 
-![](../.gitbook/assets/screen-shot-2021-09-13-at-9.39.16-am.png)
+![](<../.gitbook/assets/Screen Shot 2021-09-13 at 9.39.16 AM.png>)
 
 Once you've authorized Census, you'll be redirected back to the Connections page in Census and you should see your Slack connection there.
 
@@ -73,7 +73,7 @@ You'll need to start by specifying how to identify entries in your data warehous
 * Click the **Finish** button and you'll be taken to your new notification. You can now Schedule the sync to run on a schedule or run it manually yourself.&#x20;
 * Note that on the first run, Census will not send any Notifications but will do so on incremental runs when new rows are added to your source model.
 
-<figure><img src="../.gitbook/assets/CleanShot 2022-10-11 at 11.02.21@2x.png" alt=""><figcaption><p>Configure your new Notification to run on a set schedule or run it manually.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/CleanShot 2022-10-11 at 11.02.21@2x (1).png" alt=""><figcaption><p>Configure your new Notification to run on a set schedule or run it manually.</p></figcaption></figure>
 
 {% hint style="info" %}
 Reminder: Census will send records to a Slack channel one at a time.

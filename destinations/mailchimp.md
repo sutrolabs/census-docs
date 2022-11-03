@@ -33,7 +33,7 @@ In the **Connections** page in Census, click the **Add Service** button under th
 
 You will be redirected to a page to log in to Mailchimp to authorize your account to Census. Once you enter your credentials and click the **Log In** button, you'll see a page like the image below, confirming you want to authorize Census.
 
-![](../.gitbook/assets/screen-shot-2021-04-13-at-10.08.02-am.png)
+![](<../.gitbook/assets/Screen Shot 2021-04-13 at 10.08.02 AM.png>)
 
 Once you've authorized Census, you'll be redirected back to the Connections page in Census and you should see your Mailchimp connection there.
 
@@ -63,9 +63,9 @@ For more details, take a look at Mailchimp's [API documentation](https://mailchi
 
 ## 🗄⠀Supported Objects
 
-|       **Object Name** | **Supported?** | Identifiers                                                     |
-| --------------------: | :------------: | --------------------------------------------------------------- |
-| List/Audience Members |        ✅       | <p>Email Address, <br>Prehashed Email Address (update-only)</p> |
+|       **Object Name** | **Supported?** | Identifiers                                                    |
+| --------------------: | :------------: | -------------------------------------------------------------- |
+| List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p> |
 
 #### Prehashed Email Identifiers
 
@@ -88,9 +88,9 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-|      **Update Only** |        ✅       |      All     |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     All     |
+|      **Update Only** |        ✅       |     All     |
 
 ## 🚑⠀Need help connecting to Mailchimp?
 

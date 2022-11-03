@@ -17,7 +17,7 @@ First, you'll need to create a connection to your Google Sheets account.&#x20;
 1. In Census, go to **Connections** or click [here to go to the app](https://app.getcensus.com/connections)
 2. Under Data Sources, click **Add Data Source** and select **Google Sheets**
 
-![](<../.gitbook/assets/image (3) (1).png>)
+![](<../.gitbook/assets/image (18).png>)
 
 3\. **If you're already signed in with Google single sign-on** - A new service account email will automatically be created for Google Sheets. Scroll down to the bottom of your list of data sources if you can't see it.&#x20;
 
@@ -35,13 +35,13 @@ We will now use this service account email to "share" the Google sheet you want 
 2. Select the sheet you wish to connect to Census
 3. In Census, copy the service account email generated for Google Sheets
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (12).png>)
 
 4\. Back in your Google Sheet, click **Share** in the top right corner
 
 5\. Paste the Census service account email to share that google sheet with Census
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../.gitbook/assets/image (14).png>)
 
 6\. Confirm you do want to share and you're done! You can now use that sheet create a sync using that connection.
 
