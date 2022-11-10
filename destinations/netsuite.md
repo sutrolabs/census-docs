@@ -188,6 +188,15 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 
 :mailbox: [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
+## ❓Netsuite Quirks
+
+Netsuite is one of our most complex destinations, and some objects have behavior that is not explained in the Netsuite docs. Here are some known quirks to be aware of:
+
+#### Customer Payment
+
+* The `Account` field cannot be set on record creation; it can only be set on record update
+* In order to change a Customer Payment status to "Deposited", you must send a record update that both sets the `Undep Funds` (short for "undeposted funds") field to `false`, and sets the `Account` field to the bank account into which the funds were deposited.
+
 ## 🚑 Need help connecting to NetSuite?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
