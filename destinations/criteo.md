@@ -61,11 +61,10 @@ The sync will move data from your warehouse to Criteo. In this step, you'll defi
 3. Under **Where do you want to sync data to?**, choose Criteo as the **Connection** and "Static List Membership" as the **Object**. (See [Supported objects](criteo.md#supported-objects) for options.)
 4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See [Supported sync behaviors](criteo.md#supported-sync-behaviors) for options.)
 5. Under **How are source and destination records matched?**, select an **Identifier** for the model and for Criteo. We recommend using an internal ID when possible. (See [Supported objects](criteo.md#supported-objects).)
-6. Under **Which properties should be updated?**, choose to update **Specific Properties** or **Sync All Properties**.
-7. Set up the lookup mapping for the Static List and any other properties you want to update by mapping a column in your model to a property in Criteo.
-8. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
-9. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
-10. Click **Create Sync.**
+6. Set up the lookup mapping for the Static List and any other properties you want to update by mapping a column in your model to a property in Criteo.
+7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
+8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
+9. Click **Create Sync.**
 
 When configuring your sync, the page should look something like this: 👇
 
