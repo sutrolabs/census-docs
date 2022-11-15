@@ -530,7 +530,7 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
 
 
 
-### DELETE /sources/\[ID]/syncs/\[ID]
+### DELETE /syncs/\[ID]
 
 This endpoint deletes a sync with the given ID.
 
