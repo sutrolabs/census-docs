@@ -11,7 +11,7 @@ In this guide, we will show you how to connect webhooks to Census and create you
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have an endpoint that accepts `POST` requests ready. You can use the free service [https://webhook.site](https://webhook.site/c9ce13dd-c04e-4b82-b861-1b2b51a56e40) for testing purposes. Please note that we use a HEAD request to test the Webhook connection so make sure you're able to accept this as well.&#x20;
+* Have an endpoint that accepts `POST` requests ready. You can use the free service [https://webhook.site](https://webhook.site/c9ce13dd-c04e-4b82-b861-1b2b51a56e40) for testing purposes. Please note that we use a HEAD request to test the Webhook connection so make sure you're able to accept this as well.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
   * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
@@ -30,9 +30,10 @@ In this guide, we will show you how to connect webhooks to Census and create you
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
 * Click the **Add Service** button
 * Select **Webhook** in the dropdown list
-* Name your Destination (for example, `webhooksite test`) and Input the URL of your endpoint  👇
+* Name your Destination (for example, `webhooksite test`) and Input the URL of your endpoint 👇
+* Select whether syncs to this connection use Bulk Upload or not. For more see [#webhook-schema](webhook.md#webhook-schema "mention")
 
-![](../.gitbook/assets/screely-1630450119455.png)
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-16 at 9.03.45 PM.png" alt=""><figcaption><p>Webhook Connection Modal</p></figcaption></figure>
 
 {% hint style="success" %}
 Your webhook destination will automatically be tested as we send a`HEAD`request and waiting for a`200 OK`to confirm it works. If the `HEAD` request is unsuccessful we will follow up with a single `POST` request with an empty body to test the connection.
@@ -65,7 +66,7 @@ Here you will have to write SQL queries to select the data you want to send to y
 * Accounts that have reached a specific Lead scoring
 * list of users who haven't finished their product onboarding
 
-Once you have created your model, click save.&#x20;
+Once you have created your model, click save.
 
 ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -76,14 +77,14 @@ Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add
 In the " **What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,**  select the model you created in step 3
+* For the **Source,** select the model you created in step 3
 
 Next up is the **"Where do you want to sync data to?"** section
 
 * Pick your Webhook destination (for us it is `Webhook Test`) as **the Connection**
 * ⚠️ If you are familiar with Census, you will notice that there is no Object to select.
 
-For the " **How should changes to the source be synced?"** section&#x20;
+For the " **How should changes to the source be synced?"** section
 
 * Select **Update or Create**
 * Pick a **unique ID.** this is the key we will use to make sure we only sync new records or records with new values. We recommend using an internal id and if not, email/domain.
@@ -116,11 +117,14 @@ Webhook destination speeds are subject to any rate limit enforced by the endpoin
 
 ## 🗄 Webhook Schema
 
-Each webhook `POST` contains both the data you mapped as well as metadata about the Census sync itself. The JSON schema of our request is as follows:
+Each webhook `POST` contains both the data you mapped as well as metadata about the Census sync itself. There are two different schemas we support with webhooks: bulk upload, and individual upload. Which behavior we use is determined by what mode you select on the Webhook Connection. The default is to use bulk upload with a batch size of 1.
 
-```javascript
-{
-  "api_version": 1,
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-16 at 8.58.19 PM.png" alt=""><figcaption><p>Webhook Connector Bulk Upload Option</p></figcaption></figure>
+
+With bulk upload, the `data` object is an array of records. The size of the array is determined by the `Batch Size` configuration set on the connection. The JSON schema of our bulk request is as follows:
+
+<pre class="language-javascript"><code class="lang-javascript"><strong>{
+</strong>  "api_version": 1,
   "operation": "changed",
   "sync_run_at": "2021-08-31T23:03:29Z",
   "connection_name": "Webhook Test",
@@ -144,10 +148,40 @@ Each webhook `POST` contains both the data you mapped as well as metadata about 
       "type": "free user",
       "user_id": "090ADD7A-6DBC-BE8A-CD45-459F4F7CA082",
       "website": "http://stehrweber.biz"
-    }
+    },
+    {
+      ...
+    },
+    ...
   ]
-}
-```
+}</code></pre>
+
+To send only one record in every request you should uncheck `Use Bulk Upload` on the connection. When not using bulk upload `Batch Size` is irrelevant. The JSON schema of a request without bulk upload is as follows:
+
+<pre class="language-json"><code class="lang-json"><strong>{
+</strong>  "api_version": 1,
+  "operation": "changed",
+  "sync_run_at": "2021-08-31T23:03:29Z",
+  "connection_name": "Webhook Test",
+  "model_name": "active users",
+  "schema_name": null,
+  "table_name": null,
+  "sync_configuration_id": 1234,
+  "sync_configuration_name": null,
+  "data": {    // One object per request
+      "company": "Walsh and Sons",
+      "company_domain": "adams.co.uk",
+      "created_at": "2019-12-08 14:19:52",
+      "unique_id": "isadora@safetymail.info",
+      "first_name": "Alycia",
+      "full_name": "Alycia Adams",
+      "last_name": "Adams",
+      "role": "International Mobility Assistant",
+      "type": "free user",
+      "user_id": "090ADD7A-6DBC-BE8A-CD45-459F4F7CA082",
+      "website": "http://stehrweber.biz"
+   }
+}</code></pre>
 
 ## 🔄 Supported Sync Behaviors
 
@@ -156,10 +190,10 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-|           **Append** |        ✅       |      All     |
-|           **Mirror** |        ✅       |      All     |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     All     |
+|           **Append** |        ✅       |     All     |
+|           **Mirror** |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for webhooks.
 
