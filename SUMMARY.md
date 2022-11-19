@@ -49,7 +49,7 @@
 ## 🧊 Models
 
 * [Overview](models/overview.md)
-* [Census Models](models/census-models.md)
+* [SQL Queries](models/census-models.md)
 * [dbt Models](models/native-dbt-integration.md)
 * [Looker](models/looker.md)
 
