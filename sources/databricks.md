@@ -8,7 +8,7 @@ description: >-
 
 ## Configuring a new Databricks connection
 
-{% embed url="https://www.youtube.com/watch?v=uI9YORQ6DFs" %}
+{% embed url="https://youtu.be/RGtlCpXP-R8" %}
 
 {% hint style="info" %}
 Census supports Databricks LTS versions: 7.3, 9.1, and 10.4

@@ -39,6 +39,10 @@ You will be directed to a screen describing the permissions Census needs. Note t
 
 ![View the permissions needed, select the correct Intercom workspace, and specify the data host region](<../.gitbook/assets/Screen Shot 2022-09-14 at 3.04.00 PM.png>)
 
+Once the connection is created, make sure that the region Census uses is the same as your `Data host region` in Intercom. To do this select `edit` on your connection and then manually select your region from the dropdown.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-21 at 9.52.13 AM.png" alt=""><figcaption></figcaption></figure>
+
 ### 2. Connect your Data Warehouse
 
 Please follow one of our short guides depending on your data warehouse technology
