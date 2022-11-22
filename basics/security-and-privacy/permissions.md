@@ -54,6 +54,6 @@ Workspace members each have one of four different roles:
 
 #### Creating a Workspace
 
-To get started creating a new Workspace, hit the "Create Workspace" button from your [organization dashboard](https://app.getcensus.com/home). Then simply name your new Workspace, decide whether you wish to give access to your organization or would prefer to keep it restricted, and you're done!
+To get started creating a new Workspace, hit the "Create Workspace" button from your [organization dashboard](https://app.getcensus.com/home). Then simply name your new Workspace and you're done!
 
-<figure><img src="../../.gitbook/assets/CleanShot 2022-09-30 at 10.44.05@2x.png" alt=""><figcaption><p>Creating a new Workspace is easy.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-11-22 at 12.12.58 PM.png" alt=""><figcaption></figcaption></figure>
