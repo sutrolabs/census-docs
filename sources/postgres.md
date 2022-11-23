@@ -68,7 +68,7 @@ All connections from the Census Data Warehouse Service to your database are prot
 
 ## 🚦Allowed IP Addresses
 
-Please whitelist [Census's IP Addresses](../basics/security-and-privacy/census-ip-addresses.md) in your firewall. By default, Census will connect to your data source from these static US-based IP addresses:
+Please allowlist [Census's IP Addresses](../basics/security-and-privacy/census-ip-addresses.md) in your firewall. By default, Census will connect to your data source from these static US-based IP addresses:
 
 * 34.216.163.241
 * 54.212.243.205
@@ -92,7 +92,7 @@ Note that the keypair is unique for each Census Warehouse connection. Even if yo
 
 ![](../.gitbook/assets/redshift\_pg\_2.png)
 
-4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allow list.
+4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allowlist.
 
 With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
 

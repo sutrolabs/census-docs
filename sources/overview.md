@@ -30,9 +30,9 @@ The following pages cover the various data sources that you can connect to with 
 
 ## 🚦Allowed IP Addresses
 
-Most sources require whitelisting IP Addresses so that Census's systems can unload data from the source. [BigQuery](google-bigquery.md) and [Databricks](databricks.md) are notable exceptions, so do check the source-specific docs if you have any questions.
+Most sources require allowlisting IP Addresses so that Census's systems can unload data from the source. [BigQuery](google-bigquery.md) and [Databricks](databricks.md) are notable exceptions, so do check the source-specific docs if you have any questions.
 
-If your source is protected by a firewall, please whitelist [Census's IP Addresses](../basics/security-and-privacy/census-ip-addresses.md). By default, Census will connect to your data source from these static US-based IP addresses:
+If your source is protected by a firewall, please allowlist [Census's IP Addresses](../basics/security-and-privacy/census-ip-addresses.md). By default, Census will connect to your data source from these static US-based IP addresses:
 
 * 34.216.163.241
 * 54.212.243.205
