@@ -53,4 +53,4 @@ Please allowlist [Census's IP Addresses](../basics/security-and-privacy/census-i
 * 34.216.163.241
 * 54.212.243.205
 
-To ensure Census can connect to your Synapse data warehouse, use the Windows Azure Management Portal or run **sp\_set\_firewall\_rule** on the main database to create a firewall rule for these two IP addresses.&#x20;
+To ensure Census can connect to your Synapse data warehouse, use the Windows Azure Management Portal or run **sp\_set\_firewall\_rule** on the primary database to create a firewall rule for these two IP addresses.&#x20;
