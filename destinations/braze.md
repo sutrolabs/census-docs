@@ -66,7 +66,13 @@ Braze requires that we use a slightly different URL to access your account depen
 \
 For example, if your Braze URL is https://dashboard-**03**.braze.com/, then your API Endpoint should be https://rest.iad-**03**.braze.com.
 
-### 3. Create the Census Connection
+### 3. Add your Data Import Key (optional)
+
+When syncing to Braze Cohorts you need to provide your Data Import key. To find this key login to your instance in Braze and navigate to **Technology Partners** under **Integrations** and then select Census. You will find your **Data Import Key** and your **Rest Endpoint** here. Paste those values into the respective credential fields when setting up the connection.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 2.56.17 PM.png" alt=""><figcaption><p>Census Technology Partner page in Braze</p></figcaption></figure>
+
+### 4. Create the Census Connection
 
 Great! Now let's pull it all together.
 
@@ -89,6 +95,7 @@ Census currently supports syncing to the following Braze objects.
 | Subscription Group Memberships |        ✅       | [See Here](braze.md#braze-subscription-groups) |
 |                           User |        ✅       | External User ID                               |
 |                     User Alias |        ✅       | Alias Name & Label                             |
+|                    User Cohort |        ✅       | External User ID                               |
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/defining-source-data/structured-data.md) to Braze:
 
@@ -122,6 +129,26 @@ If you have a query that returns the external id, subscription group id, and sta
 
 Only the Braze User External Id and the Subscription Group Id should be mapped fields. This is a special unsubscribing mirror for user/group pairs that no longer appear in the data source.
 
+### Braze Cohorts
+
+Braze Cohorts allow users of Census to define and sync user cohorts between Census and Braze. To get started make sure your [data import key](braze.md#3.-add-your-data-import-key-optional) is set on the connection. Then when creating a new sync to Braze select **User & Cohort** as destination object.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.19.04 PM.png" alt=""><figcaption><p>Braze Sync Configuration for User &#x26; Cohort</p></figcaption></figure>
+
+Select the source column for identifying users that you want to add to a Cohort. Right now we can only identify Braze users for Cohorts by _External User ID._ Then select what Cohort you would like to sync to. You can select an existing Cohort from the dropdown list, define a new Cohort, or select a source column to dynamically get the Cohort name value.&#x20;
+
+If you want a user to be removed from the Cohort if they are removed from the source dataset then  select **remove matching record from cohort** from the dropdown.&#x20;
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.23.33 PM.png" alt=""><figcaption><p>Cohort Sync Editor Configuration Panel</p></figcaption></figure>
+
+Finally, add any User fields to the mapper. During a sync any fields that you map will first be synced to the User object to update what already exists in Braze and then the updated User will be added to the specified Cohort. Now you can run your sync!
+
+Once you have synced to a Braze Cohort you can take advantage of it in Braze by navigating to **Engagement > Segments** and then either create a new segment or select an existing one. In the Braze Segment builder you can then add a new filter and select **Census Cohorts** from the dropdown. The cohorts that you've created in Census will be available here and any Users in those segments will automatically have the correct filtering logic applied.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.30.40 PM.png" alt=""><figcaption><p>Census Cohorts custom filter in Braze</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.32.17 PM.png" alt=""><figcaption><p>Census Cohort custom filter in Braze</p></figcaption></figure>
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Braze.
 
 ## 🔄 Supported Sync Behaviors
@@ -130,11 +157,11 @@ Only the Braze User External Id and the Subscription Group Id should be mapped f
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** |                       **Supported?**                      |                                      **Objects**                                     |
-| -------------------: | :-------------------------------------------------------: | :----------------------------------------------------------------------------------: |
-| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                                         User                                         |
-|           **Mirror** |                             ✅                             | User, [Subscription Group Membership](braze.md#braze-subscription-group-memberships) |
-|           **Append** |                             ✅                             |                                         Event                                        |
+|        **Behaviors** |                       **Supported?**                      |                                          **Objects**                                         |
+| -------------------: | :-------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
+| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                                         User, Cohort                                         |
+|           **Mirror** |                             ✅                             | User, [Subscription Group Membership, Cohort](braze.md#braze-subscription-group-memberships) |
+|           **Append** |                             ✅                             |                                         Event, Cohort                                        |
 
 ### Mirror Mode Options
 
