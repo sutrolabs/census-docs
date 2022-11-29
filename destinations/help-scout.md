@@ -11,7 +11,7 @@ In this guide, we will show you how to connect Help Scout to Census.
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Help Scout account ready.
+* Have your Help Scout account ready. If you need one, create a [free trial with Help Scout](https://www.helpscout.com/?utm\_source=partner\&utm\_campaign=partner-integration-marketplace-listing\&utm\_content=census) now.
 * Have your data source properly configured within Census. See our docs for each supported data source for further information:
   * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
