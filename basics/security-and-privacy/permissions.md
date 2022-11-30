@@ -26,7 +26,7 @@ Census Workspaces allow you to manage permissions granularly for different teams
 Workspace members each have one of four different roles:
 
 * **Owner** – This is the default permission for [Organization Administrators](permissions.md#account-administrators) within a Census Organization. It gives the user access to everything, including managing warehouse & destination connections, API keys, and adding/removing users.&#x20;
-* **Editor** – This role grants access to most things in the workspaces including adding and removing connections, in addition to creating and editing syncs and models.&#x20;
+* **Editor** – This role grants access to most things in the workspaces including adding destination connections, in addition to creating and editing syncs and models.&#x20;
 * **Operator** – The Operator Role is a special role within Census. It fits between the Editor and Viewer permissions, allowing members with this role to create and edit syncs as long as they're associated with [Broken link](broken-reference "mention") or approved models.
 * **Viewer** - The read-only viewer on Census. They can view syncs and segments, and approved models, but cannot modify or take any action within Census.&#x20;
 
