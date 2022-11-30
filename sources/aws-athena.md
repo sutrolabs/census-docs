@@ -4,17 +4,19 @@ description: >-
   why those permissions are needed.
 ---
 
-# Aws Athena
+# Amazon Athena
 
 ## 🔐 Required Permissions
 
 Census lets you select Amazon Athena as a source for your syncs. Census needs the following permissions:
+
 1. run queries and get their results
 2. write the Athena query results to your specified Athena query results bucket location
 3. read the s3 files associated with the source tables
-4. read the source tables in AWS Glue Data Catalog  
+4. read the source tables in AWS Glue Data Catalog
 
 Please create an IAM Policy that includes the following permissions
+
 ```
 "athena:StartQueryExecution",
 "athena:GetQueryExecution",
@@ -27,19 +29,20 @@ Please create an IAM Policy that includes the following permissions
 "s3:GetObject",
 "s3:ListBucket",
 
+"glue:CreateTable",
+"glue:UpdateTable"
 "glue:GetDatabase",
 "glue:GetTables",
 "glue:GetDatabases",
-"glue:GetTable"
+"glue:GetTable",
+"glue:DeleteTable"
 ```
 
 For Athena permissions, Census needs access to the Athena workgroup where the source tables are located.
 
-For S3 permissions, Census needs to be able to list all the buckets, read/write the query results bucket,
-and read the bucket with the source table data.
+For S3 permissions, Census needs to be able to list all the buckets, read/write the query results bucket, and read the bucket with the source table data.
 
-For AWS Glue Data Catalog permissions, Census needs to be able to get the databases and tables where the
-source tables are located.
+For AWS Glue Data Catalog permissions, Census needs to be able to get the databases and tables where the source tables are located.
 
 ### Create an Amazon Athena connection
 
@@ -49,8 +52,8 @@ source tables are located.
 
 3\. Under Data Sources, click **Add Data Source** and select **Amazon Athena**
 
-![](<../.gitbook/assets/athena\_setup.png>)
+![](../.gitbook/assets/athena\_setup.png)
 
 4\. Please specify the AWS access key and secret key associated with the user Census will be impersonating, the S3 query result bucket url, S3 region, and Athena workgroup.
 
-![](<../.gitbook/assets/athena\_setup\_properties.png>)
+![](../.gitbook/assets/athena\_setup\_properties.png)
