@@ -85,6 +85,7 @@
 * [Freshdesk](destinations/freshdesk.md)
 * [Freshsales](destinations/freshsales.md)
 * [Front](destinations/front.md)
+* [FullStory](destinations/fullstory.md)
 * [Gainsight](destinations/gainsight.md)
 * [Google Ads](destinations/google-ads/README.md)
   * [Customer Match Lists (Audiences)](destinations/google-ads/customer-match-audiences.md)
