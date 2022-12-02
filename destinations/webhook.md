@@ -115,7 +115,7 @@ That's it, in 5 steps, you connected Census to any endpoints or services by usin
 
 ### Authorization
 
-You can optionally provide a token to the Webhook connection and this will be sent along with every request as an `Authorization` header. Whatever you provide as the token will be prefixed with `Bearer` so the resulting header will look like `Authorization: Bearer <your token>`.
+You can optionally provide a token to the Webhook connection and this will be sent along with every request as an `Authorization` header. Whatever you provide as the token will not be prefixed so the resulting header will look like `Authorization: <your token>`. If you wish to add a custom prefix like "Bearer" add it to the credential field manually.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-12-02 at 12.26.33 PM.png" alt=""><figcaption><p>Auth token connection credential</p></figcaption></figure>
 
