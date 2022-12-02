@@ -115,6 +115,10 @@ That's it, in 5 steps, you connected Census to any endpoints or services by usin
 
 Webhook destination speeds are subject to any rate limit enforced by the endpoint you are sending data to.
 
+By default we rate limit outgoing requests to 30 requests/second. To override this you can provide a custom limit when editing the connection.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-12-02 at 12.21.22 PM.png" alt=""><figcaption><p>Rate limit connection credential</p></figcaption></figure>
+
 ## 🗄 Webhook Schema
 
 Each webhook `POST` contains both the data you mapped as well as metadata about the Census sync itself. There are two different schemas we support with webhooks: bulk upload, and individual upload. Which behavior we use is determined by what mode you select on the Webhook Connection. The default is to use bulk upload with a batch size of 1.
@@ -154,7 +158,8 @@ With bulk upload, the `data` object is an array of records. The size of the arra
     },
     ...
   ]
-}</code></pre>
+}
+</code></pre>
 
 To send only one record in every request you should uncheck `Use Bulk Upload` on the connection. When not using bulk upload `Batch Size` is irrelevant. The JSON schema of a request without bulk upload is as follows:
 
@@ -181,7 +186,8 @@ To send only one record in every request you should uncheck `Use Bulk Upload` on
       "user_id": "090ADD7A-6DBC-BE8A-CD45-459F4F7CA082",
       "website": "http://stehrweber.biz"
    }
-}</code></pre>
+}
+</code></pre>
 
 ## 🔄 Supported Sync Behaviors
 
