@@ -32,6 +32,8 @@ In this guide, we will show you how to connect webhooks to Census and create you
 * Select **Webhook** in the dropdown list
 * Name your Destination (for example, `webhooksite test`) and Input the URL of your endpoint 👇
 * Select whether syncs to this connection use Bulk Upload or not. For more see [#webhook-schema](webhook.md#webhook-schema "mention")
+* Optionally add an authorization token. See [#authorization](webhook.md#authorization "mention")
+* Optionally customize the rate limit. See [#sync-speed](webhook.md#sync-speed "mention")
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-16 at 9.03.45 PM.png" alt=""><figcaption><p>Webhook Connection Modal</p></figcaption></figure>
 
@@ -111,7 +113,15 @@ Now go back to your destination or service, in our case we will go to [https://w
 
 That's it, in 5 steps, you connected Census to any endpoints or services by using webhooks 🎉
 
-## 🏎 Sync Speed
+### Authorization
+
+You can optionally provide a token to the Webhook connection and this will be sent along with every request as an `Authorization` header. Whatever you provide as the token will be prefixed with `Bearer` so the resulting header will look like `Authorization: Bearer <your token>`.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-12-02 at 12.26.33 PM.png" alt=""><figcaption><p>Auth token connection credential</p></figcaption></figure>
+
+
+
+### 🏎 Sync Speed
 
 Webhook destination speeds are subject to any rate limit enforced by the endpoint you are sending data to.
 
@@ -119,7 +129,7 @@ By default we rate limit outgoing requests to 30 requests/second. To override th
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-12-02 at 12.21.22 PM.png" alt=""><figcaption><p>Rate limit connection credential</p></figcaption></figure>
 
-## 🗄 Webhook Schema
+### 🗄 Webhook Schema
 
 Each webhook `POST` contains both the data you mapped as well as metadata about the Census sync itself. There are two different schemas we support with webhooks: bulk upload, and individual upload. Which behavior we use is determined by what mode you select on the Webhook Connection. The default is to use bulk upload with a batch size of 1.
 
