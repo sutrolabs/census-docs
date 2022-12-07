@@ -58,7 +58,7 @@ For Firebase (iOS/Android) applications:
 
 ### Step 3: Create your first sync
 
-The sync will move event data from your warehouse to your Google Analytics 4 property. Before continuing, you may first want to read our article on [Syncing Event Data](../basics/defining-source-data/events.md).&#x20;
+The sync will move event data from your warehouse to your Google Analytics 4 property. Before continuing, you may first want to read our article on [Syncing Event Data](../basics/data-models-and-entities/defining-source-data/events.md).&#x20;
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your **source:** either a Model from the Census Models tab or a database table.
@@ -83,7 +83,7 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 |            Event |        ✅       |               Unique Event ID              | Append                                                                                            |
 | User Properties  |        ✅       | <p>Client ID or </p><p>App Instance ID</p> | <p>Update Only <br><em><mark style="color:orange;">(ID must already exist in GA4)</mark></em></p> |
 
-Both Event and User Properties support sending custom properties that have already been defined in Google Analytics 4 (see below for more details on the [restrictions on custom properties](google-analytics-four.md#custom-properties-dimensions-and-metrics)). To send custom properties as part of a sync, you can add destination fields via the new Custom Field button as well as the [Properties Bundle structured object](../basics/defining-source-data/events.md#using-the-properties-bundle) which can be used to send more complex event data structures.&#x20;
+Both Event and User Properties support sending custom properties that have already been defined in Google Analytics 4 (see below for more details on the [restrictions on custom properties](google-analytics-four.md#custom-properties-dimensions-and-metrics)). To send custom properties as part of a sync, you can add destination fields via the new Custom Field button as well as the [Properties Bundle structured object](../basics/data-models-and-entities/defining-source-data/events.md#using-the-properties-bundle) which can be used to send more complex event data structures.&#x20;
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects and behaviors for Google Analytics 4.
 

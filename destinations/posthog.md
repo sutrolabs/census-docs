@@ -70,7 +70,7 @@ For the " **How do you want to update the destination?"** section
 * **Append** will automatically be chosen
 * Choose the **Unique ID** Column
 * Decide if you'd like to turn on **Use timestamp column to identify new data**.
-  * This can be more efficient for large or frequently changing data sets. More info can be found in this [doc](../basics/defining-source-data/events.md#using-timestamp-to-identify-new-records).
+  * This can be more efficient for large or frequently changing data sets. More info can be found in this [doc](../basics/data-models-and-entities/defining-source-data/events.md#using-timestamp-to-identify-new-records).
 
 Finally, select the properties you want to update in the Mapper in the **"Which properties should be updated?"** section
 

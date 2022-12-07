@@ -1,4 +1,4 @@
-# Creating Syncs
+# Syncs
 
 ## 🔌 Sources and Destinations
 
@@ -26,7 +26,7 @@ At this time, read-only connections do not support incremental update syncs, or 
 
 #### Data source models and segments
 
-Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](../../models/native-dbt-integration.md) and [Looker](../../models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../../segments/getting-started.md) of your models as well. &#x20;
+Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](../data-models-and-entities/models/native-dbt-integration.md) and [Looker](../data-models-and-entities/models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../segmentation/getting-started.md) of your models as well. &#x20;
 
 ### Destination Services
 
@@ -101,7 +101,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 * [Schedules](triggering-syncs.md#schedule) including with Cron
 * [Programmatically via API or Orchestration tool](triggering-syncs.md)
-* [Automatically with dbt Cloud](../../models/native-dbt-integration.md#integrating-with-dbt-cloud)
+* [Automatically with dbt Cloud](../data-models-and-entities/models/native-dbt-integration.md#integrating-with-dbt-cloud)
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 

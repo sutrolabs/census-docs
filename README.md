@@ -2,9 +2,7 @@
 description: We're happy you're here!
 ---
 
-# 🏡 Introduction
-
-## 👋 Welcome to Census!&#x20;
+# 🚀 Introduction
 
 Census is an [Operational Analytics](https://www.getcensus.com/blog/what-is-operational-analytics) platform that enables you to sync your trusted analytics data from your hub into operational tools that your business teams use on a daily basis. Learn more about how our Customers use Census [here](https://www.getcensus.com/customers).
 

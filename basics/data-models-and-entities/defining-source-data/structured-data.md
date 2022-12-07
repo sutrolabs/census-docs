@@ -1,10 +1,8 @@
 ---
-description: >-
-  This page will cover how to build define semi-structured data in your
-  datasource
+description: How to build define semi-structured data in your data source.
 ---
 
-# Structured Data
+# Arrays and Nested Objects
 
 Some services such at NetSuite, Airtable, and others require certain values to be passed as structured objects rather than single values. The specific fields that require this behavior are specified in the documentation on each connection and will cover the exact format those fields need to be. But how do you get them into the necessary format in the first place? We're here to help!
 

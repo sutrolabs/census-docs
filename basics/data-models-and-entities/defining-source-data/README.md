@@ -1,12 +1,12 @@
 ---
 description: >-
   Depending on your particular destination, the structure of your source data
-  may be quite a bit different. Here's how to think about structuring your data.
+  may be quite a bit different. Here's some tips on structuring your data.
 ---
 
-# Defining Source Data
+# Structuring Data
 
-Census supports a number of different destination object types including People, Companies, Opportunities, Events, Tasks, and Invoices. Some of these objects require data to be formatted in unique ways.&#x20;
+Census supports syncing data to a wide variety of destination object types beyond the traditional company and contact records. When dealing with events, tasks, invoices, and other objects, you may need to format your data in unique ways.
 
 Learn more about these particular data types:
 

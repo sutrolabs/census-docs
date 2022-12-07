@@ -1,26 +1,22 @@
-# Overview
+---
+description: Define subsets of your business data using Census built-in visual
+---
 
+# Segmentation
 
-
-Census segments let you build dynamic lists of users using attributes from your models, without touching SQL. It makes it easy to create marketing segments or audiences, and then sync them to ad platforms, marketing automation, and more. Your segments are defined once, on your data warehouse, and can be shared with any of your Census destinations.
-
-{% embed url="https://www.youtube.com/watch?ab_channel=Census&v=8t0eIio9u2s" %}
-See how Census Segments works in 2 mins
-{% endembed %}
+Census segments let you build dynamic lists of users, companies, and more using attributes from your data, without touching SQL. It makes it easy to create marketing segments or audiences, and then sync them to ad platforms, marketing automation, or any destination Census supports.&#x20;
 
 Here are just a few examples of Census segments you can build:
 
-* Users who haven’t engaged with the product in the last 30 days&#x20;
-* Trial users who haven’t used the product in the past week.&#x20;
+* Users who haven’t engaged with the product in the last 30 days.
+* All employees of companies that are currently on a trial
 * Recommend a new product to customers who have purchased a similar product
-
-![Census Visual Segment Builder](../.gitbook/assets/segments\_cropped.gif)
 
 ## **When to use Census segments**
 
 Some destination apps allow you to create segments from a full list of items (users, accounts, etc.). **** So, how do you know whether to set up segments in Census or in a destination app?&#x20;
 
-Census segments have one primary benefit: they stay in sync between destinations. Let’s look at an example.
+Census segments have one primary benefit: they stay in sync across all your destinations. Let’s look at an example.
 
 An eCommerce company creates segments based on customers’ past purchases. The company has a multi-channel marketing campaign for a new product but only wants to target customers who bought Product A in the last six months. Since their multi-channel campaign will use a variety of tools (an email tool and Facebook Ads, for example), they’ll need to align the segment in each system. That’s where Census comes in. When the customer segments are set up in Census, those segments can sync to each destination app.&#x20;
 

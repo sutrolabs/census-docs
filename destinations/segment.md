@@ -46,8 +46,6 @@ Segment Documentation on Write Keys are [here](https://segment.com/docs/connecti
 
 Note: Census's permissions will be the same as this Segment token.
 
-
-
 ### 2. Connect your data warehouse
 
 If you don't already have a data warehouse connected, follow one of our short guides depending on your data warehouse service:
@@ -61,7 +59,7 @@ If you don't already have a data warehouse connected, follow one of our short gu
 * [Rockset](https://docs.getcensus.com/sources/rockset)
 * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
-You should now have a connection to Segment and to your data warehouse! Let's start syncing user data.&#x20;
+You should now have a connection to Segment and to your data warehouse! Let's start syncing user data.
 
 ### 3. Create your first Model <a href="#3-create-your-first-model" id="3-create-your-first-model"></a>
 
@@ -84,7 +82,7 @@ In the " **What data do you want to sync?"** section‌
 
 Next up is the **"Where do you want to sync data to?"** section‌
 
-* Pick the name of Segment service from step 1 as **the Connection**, right now the object we can sync to is [limited to **User**](segment.md#supported-objects)****
+* Pick the name of Segment service from step 1 as **the Connection**, right now the object we can sync to is [limited to **User**](segment.md#supported-objects)\*\*\*\*
 
 For the " **How should changes to the source be synced?"** section‌
 
@@ -114,17 +112,15 @@ Segment support is pretty straight forward! [Let us know](mailto:support@getcens
 
 #### Syncing track events
 
-Like most [events.md](../basics/defining-source-data/events.md "mention"), Segment Track Events have the standard set of fields. Though the `event` type field is the only required field, you should typically set at least all the standard event fields.
+Like most [events.md](../basics/data-models-and-entities/defining-source-data/events.md "mention"), Segment Track Events have the standard set of fields. Though the `event` type field is the only required field, you should typically set at least all the standard event fields.
 
 * `event` (required) - This is the event type field
 * `anonymousId` or `userId` (one of these required) - This indicates which user caused or triggered the event
 * `timestamp` - The time the event occurred. If not provided, Segment will use their server time when the event was received by them (which can be quite different from when it happened, particularly if you're using Census to backfill events).
-* `properties` - Acts as a Properties bundle. See[#using-the-properties-bundle](../basics/defining-source-data/events.md#using-the-properties-bundle "mention") for more information.
-* `context` and `integrations` - Optional event context and controls. See [structured-data.md](../basics/defining-source-data/structured-data.md "mention") for more information on how to create objects to map to these fields.
+* `properties` - Acts as a Properties bundle. See[#using-the-properties-bundle](../basics/data-models-and-entities/defining-source-data/events.md#using-the-properties-bundle "mention") for more information.
+* `context` and `integrations` - Optional event context and controls. See [structured-data.md](../basics/data-models-and-entities/defining-source-data/structured-data.md "mention") for more information on how to create objects to map to these fields.
 
 For more information on the meaning of different Segment fields, take a look at their [documentation](https://segment.com/docs/connections/spec/track/).
-
-
 
 ## 🔄 Supported Sync Behaviors
 
@@ -132,7 +128,7 @@ For more information on the meaning of different Segment fields, take a look at 
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |  **Objects** |
+|        **Behaviors** | **Supported?** |  **Objects**  |
 | -------------------: | :------------: | :-----------: |
 | **Update or Create** |        ✅       |      User     |
 |           **Append** |        ✅       | Track (Event) |

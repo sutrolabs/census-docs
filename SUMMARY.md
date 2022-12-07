@@ -1,23 +1,31 @@
 # Table of contents
 
-* [🏡 Introduction](README.md)
+* [🚀 Introduction](README.md)
 
 ## 🧰 The Basics <a href="#basics" id="basics"></a>
 
-* [Creating Syncs](basics/core-concept/README.md)
+* [Syncs](basics/core-concept/README.md)
   * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
   * [Retry Handling](basics/core-concept/retry-handling.md)
   * [Notifications](basics/core-concept/notifications.md)
-* [Defining Source Data](basics/defining-source-data/README.md)
-  * [Events](basics/defining-source-data/events.md)
-  * [Structured Data](basics/defining-source-data/structured-data.md)
+* [Data Models and Entities](basics/data-models-and-entities/README.md)
+  * [Entities](basics/data-models-and-entities/entities.md)
+  * [Models](basics/data-models-and-entities/models/README.md)
+    * [SQL Queries](basics/data-models-and-entities/models/census-models.md)
+    * [dbt Models](basics/data-models-and-entities/models/native-dbt-integration.md)
+    * [Looker](basics/data-models-and-entities/models/looker.md)
+  * [Structuring Data](basics/data-models-and-entities/defining-source-data/README.md)
+    * [Events](basics/data-models-and-entities/defining-source-data/events.md)
+    * [Arrays and Nested Objects](basics/data-models-and-entities/defining-source-data/structured-data.md)
+* [Segmentation](basics/segmentation/README.md)
+  * [Defining Segments](basics/segmentation/getting-started.md)
 * [Observability](basics/sync-monitoring/README.md)
   * [Sync Logs](basics/sync-monitoring/sync-logs.md)
   * [Sync Alerts](basics/sync-monitoring/alerts.md)
   * [Sync Dry Runs](basics/sync-monitoring/sync-dry-runs.md)
 * [Security & Privacy](basics/security-and-privacy/README.md)
+  * [Workspaces and Access Controls](basics/security-and-privacy/workspaces-and-access-controls.md)
   * [Census IP Addresses](basics/security-and-privacy/census-ip-addresses.md)
-  * [Permissions](basics/security-and-privacy/permissions.md)
   * [Regions](basics/security-and-privacy/regions.md)
   * [Configuring Census to Use an S3 Bucket You Control](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [API](basics/api/README.md)
@@ -45,18 +53,6 @@
 * [Rockset](sources/rockset.md)
 * [Snowflake](sources/snowflake.md)
 * [SQL Server](sources/sql-server.md)
-
-## 🧊 Models
-
-* [Overview](models/overview.md)
-* [SQL Queries](models/census-models.md)
-* [dbt Models](models/native-dbt-integration.md)
-* [Looker](models/looker.md)
-
-## 📈 Segments
-
-* [Overview](segments/overview.md)
-* [Getting Started](segments/getting-started.md)
 
 ## 🛫 Destinations (app) <a href="#destinations" id="destinations"></a>
 

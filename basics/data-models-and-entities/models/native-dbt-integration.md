@@ -1,12 +1,10 @@
 ---
-description: >-
-  This page describes how to use Census with dbt and the capabilities of our
-  native dbt integration.
+description: Use Census directly with dbt through the native dbt integration.
 ---
 
 # dbt Models
 
-Census supports connecting to an existing dbt project, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.&#x20;
+Census supports connecting to an existing dbt project via GitHub, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.&#x20;
 
 Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date. It also means that Census can confirm that your pull requests for dbt model changes won't accidentally drop or rename a model that is currently in use. Census is designed to work hand-in-hand with dbtCloud or any other dbt runner.
 
@@ -38,39 +36,19 @@ For dbt models used in Census syncs, Census can check whether you are going to d
 
 To enable these CI checks, navigate to your dbt integration in Census and click "Enable CI/CD Tests in GitHub".&#x20;
 
-![You can find dbt Checks in a new section of your dbt integration, under "Automatic tests in dbt".](<../.gitbook/assets/Screen Shot 2022-08-10 at 3.43.09 PM.png>)
+![You can find dbt Checks in a new section of your dbt integration, under "Automatic tests in dbt".](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 3.43.09 PM.png>)
 
 Once you enable CI checks, Census will automatically run a sample check on a PR. You can then view the PR to see the results of the check.
 
-![](<../.gitbook/assets/Screen Shot 2022-08-10 at 4.38.56 PM.png>)
-
-### Upgrading from an existing dbt integration
-
-If you already have a dbt integration with Census, you might be asked to verify additional permissions, which Census needs to run its checks. To do so, click **Configure** on the repository you want to update permissions for:
-
-![](<../.gitbook/assets/Screen Shot 2022-08-11 at 10.58.59 AM.png>)
-
-Then, click **Review request**:
-
-![](<../.gitbook/assets/Screen Shot 2022-08-11 at 10.59.13 AM.png>)
-
-And accept the new permissions.
-
-![Displays the specific permissions that Census is requesting, and the reasons why.](<../.gitbook/assets/Screen Shot 2022-08-11 at 10.59.22 AM.png>)
-
-### How it works
-
-On any pull requests, Census will run its checks, which you can view directly inside your PR:
-
-![A view of checks inside your PR overview.](<../.gitbook/assets/Screen Shot 2022-08-10 at 4.39.30 PM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 4.38.56 PM.png>)
 
 If any tests do not pass, you can click "Details" to view more information about the results. You'll see a report of any broken models and their dependent syncs, with links to investigate these syncs further in Census.
 
-![A detailed view of the test failures.](<../.gitbook/assets/Screen Shot 2022-08-10 at 4.39.19 PM.png>)
+![A detailed view of the test failures.](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 4.39.19 PM.png>)
 
 ## Coordinating with dbt Cloud
 
-If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt. See our documentation on [connecting and configuring dbt Cloud](../basics/core-concept/triggering-syncs.md#dbt-cloud-integration).
+If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt. See our documentation on [connecting and configuring dbt Cloud](../../core-concept/triggering-syncs.md#dbt-cloud-integration).
 
 ## Required data warehouse permissions
 
@@ -88,20 +66,4 @@ As a result, there's several dbt features that Census does not make use of. Thes
 * Non-public packages
 
 Our dbt integration currently supports version [1.0,](https://github.com/dbt-labs/dbt-core/releases/tag/v1.0.0) 1.2, and 1.3. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
-
-#### Upgrading to dbt 1.0
-
-Thankfully, upgrading to dbt 1.0 is pretty straightforward for most projects. Here's the most common changes we see for most Census + dbt users:
-
-* Upgrade your dbt packages by updating their version in `packages.yml` and then running `dbt deps`.&#x20;
-  *   The most common compatibility issue is [`dbt_utils`](https://hub.getdbt.com/dbt-labs/dbt\_utils/0.1.7/) . To fix, update your packages.yml with the following reference:\
-      \
-      &#x20; `- package: dbt-labs/dbt_utils`
-
-      &#x20;   `version: 0.7.6` \
-      ``\
-      ``(This version is also [compatible back to dbt 0.20](https://docs.google.com/spreadsheets/d/1RoDdC69auAtrwiqmkRsgcFdZ3MdNpeKcJrWkmEpXVIs/edit#gid=0))
-* You'll also start to get warnings renaming  `source-paths` to `model-paths` and `data-paths` to `seed-paths` with a default value of seeds. Both of these can be ignored for now and will be removed in a future version.
-
-For more information, [dbt has written up a detailed list of the changes](https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-1-0-0).
 
