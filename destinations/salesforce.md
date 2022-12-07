@@ -55,7 +55,7 @@ Understanding identifiers on your source and destination objects is one of the m
 
 ### Default identifiers on Salesforce objects
 
-By default, every Salesforce object has an ID field. This ID is automatically generated and assigned whenever a new record is created, and can't be changed. This means the ID is completely under Salesforce's control. Census (nor anyone else really!) can set or update that ID.
+By default, every Salesforce object has an ID field. This ID is automatically generated and assigned whenever a new record is created, and can't be changed. This means the ID is completely under Salesforce's control. Census (nor anyone else really!) cannot set or update that ID.
 
 Census can use the Salesforce ID field for **Update Only** syncs, but it cannot be used for Update or Create, or Create Only syncs.
 
