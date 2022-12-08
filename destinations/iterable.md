@@ -47,7 +47,7 @@ Click the Create New API key button in the top right.
 
 Select the "Server-side" key type from the subsequent dropdown.
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (6) (2).png>)
 
 Copy the resulting key (a string of 32 characters) to add it to Census.
 

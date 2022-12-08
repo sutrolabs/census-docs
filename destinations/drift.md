@@ -31,7 +31,7 @@ In the **Connections** page in Census, click the **Add Service** button under th
 
 You will be redirected to a page to log in to Drift to authorize your account to Census. You will be prompted to enter your email and then your password. Once you click the **Sign In** button, you'll see a page like the image below, confirming you want to authorize Census.
 
-![](<../.gitbook/assets/Screen Shot 2021-04-22 at 4.02.13 PM.png>)
+![](../.gitbook/assets/screen-shot-2021-04-22-at-4.02.13-pm.png)
 
 Once you've authorized Census, you'll be redirected back to the **Connections** page in Census and you should see your Drift connection there.
 

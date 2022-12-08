@@ -33,7 +33,7 @@ In the **Connections** page in Census, click the **Add Service** button under th
 
 You will be redirected to a page to log in to Mailchimp to authorize your account to Census. Once you enter your credentials and click the **Log In** button, you'll see a page like the image below, confirming you want to authorize Census.
 
-![](<../.gitbook/assets/Screen Shot 2021-04-13 at 10.08.02 AM.png>)
+![](../.gitbook/assets/screen-shot-2021-04-13-at-10.08.02-am.png)
 
 Once you've authorized Census, you'll be redirected back to the Connections page in Census and you should see your Mailchimp connection there.
 

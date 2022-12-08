@@ -32,7 +32,7 @@ GRANT SELECT ON <your schema>.* TO CENSUS;
 
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 * All sync behavior will be **Read Only**, meaning that every sync will be a full sync because we do not currently support tracking sync state in MySQL
-* Census supports MySQL with TLSv1.1 and greater
+* Census supports MySQL with versions TLSv1.2 and greater
 
 ## 🚦Allowed IP Addresses <a href="#allowed-ip-addresses" id="allowed-ip-addresses"></a>
 
