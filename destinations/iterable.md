@@ -77,11 +77,12 @@ You can map data fields into your existing Iterable audience schema (including i
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | Identifiers    |
-| --------------: | :------------: | -------------- |
-|            User |        ✅       | User ID, Email |
-|           Event |        ✅       | Event ID       |
-|        Catalogs |        ✅       | Key            |
+| **Object Name** | **Supported?** | **Identifiers** |
+| --------------: | :------------: | --------------- |
+|            User |        ✅       | User ID, Email  |
+|           Event |        ✅       | Event ID        |
+|        Catalogs |        ✅       | Key             |
+|     Static List |        ✅       | User ID, Email  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
 
@@ -129,12 +130,12 @@ Iterable Catalogs let you create custom objects within Iterable that can be asso
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |  **Objects**  |
-| -------------------: | :------------: | :-----------: |
-| **Update or Create** |        ✅       | User, Catalog |
-|      **Update Only** |        ✅       |      User     |
-|           **Append** |        ✅       |     Event     |
-|           **Mirror** |        ✅       |    Catalog    |
+|        **Behaviors** | **Supported?** |      **Objects**     |
+| -------------------: | :------------: | :------------------: |
+| **Update or Create** |        ✅       |     User, Catalog    |
+|      **Update Only** |        ✅       |         User         |
+|           **Append** |        ✅       |         Event        |
+|           **Mirror** |        ✅       | Catalog, Static List |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Iterable.
 

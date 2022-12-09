@@ -29,7 +29,7 @@ In this guide, we will show you how to connect Customer.io to Census and create 
 
 ### 1. Collecting Customer.io API Credentials
 
-To connect Census to your Customer.io, you'll need to provide Census with a few credentials so that we can talk to it directly.&#x20;
+To connect Census to your Customer.io, you'll need to provide Census with a few credentials so that we can talk to it directly.
 
 ### **2. Go to your API Credentials page**
 
@@ -45,17 +45,13 @@ Then select **API Credentials**
 
 Click the **Create New API Credentials** button in the top right.![](../.gitbook/assets/cio\_step3.png)
 
-It's important to note that there are two types of API keys here: Track API Keys and App API Keys. Track API Keys are used to send behavioral tracking activity. App API Keys are used for triggering messages and broadcasts, as well as retrieving data from your workspace. For a more in-depth explanation, check out Customer.io's [docs here](https://customer.io/docs/managing-credentials/#track-api-keys-vs-app-api-keys). \
-
+It's important to note that there are two types of API keys here: Track API Keys and App API Keys. Track API Keys are used to send behavioral tracking activity. App API Keys are used for triggering messages and broadcasts, as well as retrieving data from your workspace. For a more in-depth explanation, check out Customer.io's [docs here](https://customer.io/docs/managing-credentials/#track-api-keys-vs-app-api-keys). \\
 
 ![Tracking API Keys](<../.gitbook/assets/Screen Shot 2022-04-08 at 5.39.29 PM.png>)
 
-\
-
+\\
 
 ![App API Keys](<../.gitbook/assets/Screen Shot 2022-04-08 at 5.39.15 PM.png>)
-
-
 
 Then, give the new credentials a name. It can be whatever you like, but give it something memorable so you know this key is used by Census. If you're using Customer.io's workspaces feature, you'll want to specify which workspace to use. If you want to connect Census to multiple workspaces, you'll need to create credentials for each one.
 
@@ -74,11 +70,9 @@ When you hit save, you'll return to the list of credentials. Make a note of the 
 
 ![](<../.gitbook/assets/Screen Shot 2022-04-08 at 5.50.05 PM.png>)
 
-
-
 Finally, provide the Site ID and both API Keys you just created on Customer.io. You can name the connection something memorable. This is particularly useful if you're going to create multiple connections, one for each Customer.io workspace. In that case, include the Customer.io workspace name here.
 
-Customer.io will now appear as a new destination for Census syncs.  🎉
+Customer.io will now appear as a new destination for Census syncs. 🎉
 
 ## 🏎 Sync Speed
 
@@ -90,14 +84,15 @@ Customer.io is a destination with a fast API that can burst all the way to 600 a
 
 ## 🗄️ Supported Objects
 
-We currently support all objects of [Customer.io's core API. ](https://customer.io/docs/api/#section/Overview)
+We currently support all objects of [Customer.io's core API.](https://customer.io/docs/api/#section/Overview)
 
-| **Object Name** | **Supported?** | Create Fields? |
-| --------------: | :------------: | :------------: |
-|          Person |        ✅       |        ✅       |
-|          Device |        ✅       |        ✅       |
-|           Event |        ✅       |        ✅       |
-|     Collections |        ✅       |        ✅       |
+| **Object Name** | **Supported?** | **Create Fields?** |
+| --------------: | :------------: | :----------------: |
+|          Person |        ✅       |          ✅         |
+|          Device |        ✅       |          ✅         |
+|           Event |        ✅       |          ✅         |
+|      Collection |        ✅       |          ✅         |
+|  Manual Segment |        ✅       |          ✅         |
 
 {% hint style="warning" %}
 Make sure you know what identifiers are used in your Customer.io Workspace!
@@ -111,22 +106,22 @@ Customer.io strongly prefers the ID field to be used as the identifier for a Per
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |      **Objects**     |
-| -------------------: | :------------: | :-------------------: |
-| **Update or Create** |        ✅       | Person, Event, Device |
-|      **Update Only** |        ✅       |         Person        |
-|           **Append** |        ✅       |         Event         |
-|           **Mirror** |        ✅       |      Collections      |
+|        **Behaviors** | **Supported?** |              **Objects**              |
+| -------------------: | :------------: | :-----------------------------------: |
+| **Update or Create** |        ✅       | Person, Event, Device, Manual Segment |
+|      **Update Only** |        ✅       |                 Person                |
+|           **Append** |        ✅       |                 Event                 |
+|           **Mirror** |        ✅       |       Collection, Manual Segment      |
 
 🔋[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
-## 💡  Things to know about Customer.io
+## 💡 Things to know about Customer.io
 
 There are a few unique features available when syncing to a Customer.io instance.
 
 * **Events** are unique (literally!). Census will only send new database rows to Customer.io and so Events only support the **Append Only** behavior for syncs. In order to make sure an event is only ever published once, each row in your events source needs a globally unique ID.
 * All objects support arbitrary custom fields.
-  * &#x20;If you are creating a sync for the first time:
+  * If you are creating a sync for the first time:
     * Go to the `Which properties should be updated?` section and click **Add Mapping** at the bottom, and then click **Create new field**. Then, type in the name of the custom field as it appears in your Customer.io instance and hit **Save**. After that, you can select the field from your source that you want to send into that the Customer.io custom field.
   * If you are editing an existing sync's mapping:
     * Go to the sync's Configuration tab and in the `Mapped Fields` section, click **Edit**, click **Add Mapping** at the bottom, and then click **Create new field**. Then, type in the name of the custom field as it appears in your Customer.io instance and hit **Save**. After that, you can select the field from your source that you want to send into that the Customer.io custom field.
