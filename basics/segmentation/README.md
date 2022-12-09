@@ -1,8 +1,10 @@
 ---
-description: Define subsets of your business data using Census built-in visual
+description: >-
+  Define subsets of your business data using Census built-in visual segment
+  builder
 ---
 
-# Segmentation
+# Segments
 
 Census segments let you build dynamic lists of users, companies, and more using attributes from your data, without touching SQL. It makes it easy to create marketing segments or audiences, and then sync them to ad platforms, marketing automation, or any destination Census supports.&#x20;
 

@@ -17,7 +17,7 @@
   * [Structuring Data](basics/data-models-and-entities/defining-source-data/README.md)
     * [Events](basics/data-models-and-entities/defining-source-data/events.md)
     * [Arrays and Nested Objects](basics/data-models-and-entities/defining-source-data/structured-data.md)
-* [Segmentation](basics/segmentation/README.md)
+* [Segments](basics/segmentation/README.md)
   * [Defining Segments](basics/segmentation/getting-started.md)
 * [Observability](basics/sync-monitoring/README.md)
   * [Sync Logs](basics/sync-monitoring/sync-logs.md)

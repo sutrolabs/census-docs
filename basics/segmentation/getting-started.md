@@ -47,7 +47,13 @@ Census supports a wide variety of operations that can be used to filter segments
 | between                    | Datetime           | Column's value is between \_\_\_ days and \_\_\_\_ days ago                                  |
 | contains any of            | Array              | Array column contains any of the provided values                                             |
 
-### Event Segmentation
+### SQL Conditions
+
+Though Census's visual segment creator is designed to be used without knowing any SQL, it works by generating SQL underneath the covers and running that against your data. You can actually view this SQL at any point by pressing the **View SQL** button.
+
+Additionally, if you're trying to create a condition that Census doesn't support, you can still add conditions to your segment by selecting the **SQL Condition** in the Attribute menu. The SQL you provide will be added as an additional condition alongside any other conditions you've added to your segment. Think of it like formulas in Excel: it's a powerful tool in your toolbelt that can let you express very complex concepts, but it can break the segment so use with care!
+
+### Event Filters
 
 When the Entity you're segmenting has a related events entity, those events have even more conditions available, powered by the schema columns defined on the event entity.
 
