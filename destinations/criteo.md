@@ -58,21 +58,21 @@ The sync will move data from your warehouse to Criteo. In this step, you'll defi
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
-3. Under **Where do you want to sync data to?**, choose Criteo as the **Connection** and "Static List Membership" as the **Object**. (See [Supported objects](criteo.md#supported-objects) for options.)
-4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See [Supported sync behaviors](criteo.md#supported-sync-behaviors) for options.)
-5. Under **How are source and destination records matched?**, select an **Identifier** for the model and for Criteo. We recommend using an internal ID when possible. (See [Supported objects](criteo.md#supported-objects).)
-6. Set up the lookup mapping for the Static List and any other properties you want to update by mapping a column in your model to a property in Criteo.
+3. Under **Where do you want to sync data to?**, choose Criteo as the **Connection** and "Audience" as the **Object**. (See [Supported objects](criteo.md#supported-objects) for options.)
+4. Under **How should we identify audience members?**, select an **Identifier** for the model and for Criteo. We recommend using an internal ID when possible. (See [Supported objects](criteo.md#supported-objects).)
+5. Under **Audience Sync**, choose the **Audience ID Name** that you want to sync to, or choose to Create New List. Also choose what to do when a record is removed from the source.
+6. Set up the Audience property mappings that you want to update by mapping a column in your model to a property in Criteo.
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
 9. Click **Create Sync.**
 
 When configuring your sync, the page should look something like this: 👇
 
-![Sync setup for Criteo](<../.gitbook/assets/Screen Shot 2022-02-23 at 6.09.55 PM.png>)
+<figure><img src="../.gitbook/assets/screely-1670609548345 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 5: Confirm the synced data is in Criteo
 
-Once your sync is complete, it's time to check your data. Open Criteo and check that the Static List Memberships updated correctly.
+Once your sync is complete, it's time to check your data. Open Criteo and check that the Audience updated correctly.
 
 If everything went well, that's it! You've started syncing data from your warehouse to Criteo! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F?utm\_source=extlink)
 
@@ -80,18 +80,18 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-|        **Object Name** | **Supported?** | **Identifiers**                                            |
-| ---------------------: | :------------: | ---------------------------------------------------------- |
-| Static List Membership |        ✅       | GUM Cookie ID, Mobile Ad ID, Email, LiveRamp Identity Link |
+| **Object Name** | **Supported?** | **Identifiers**                                            |
+| --------------: | :------------: | ---------------------------------------------------------- |
+|        Audience |        ✅       | GUM Cookie ID, Mobile Ad ID, Email, LiveRamp Identity Link |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Criteo.
 
 ## 🔄 Supported sync behaviors
 
-|     **Behavior** | **Supported?** |       **Objects**      |
-| ---------------: | :------------: | :--------------------: |
-| Update or Create |        ✅       | Static List Membership |
-|           Mirror |        ✅       | Static List Membership |
+|     **Behavior** | **Supported?** | **Objects** |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |   Audience  |
+|           Mirror |        ✅       |   Audience  |
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
