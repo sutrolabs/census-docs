@@ -81,7 +81,7 @@ You can map data fields into your existing Iterable audience schema (including i
 | --------------: | :------------: | --------------- |
 |            User |        ✅       | User ID, Email  |
 |           Event |        ✅       | Event ID        |
-|        Catalogs |        ✅       | Key             |
+|         Catalog |        ✅       | Key             |
 |     Static List |        ✅       | User ID, Email  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
