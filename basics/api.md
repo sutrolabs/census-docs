@@ -23,3 +23,4 @@ The Census API uses basic authentication to provide API credentials. When access
 | Username | `bearer`        |
 | -------- | --------------- |
 | Password | \<Your API Key> |
+  
