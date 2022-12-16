@@ -157,11 +157,12 @@ Once you have synced to a Braze Cohort you can take advantage of it in Braze by 
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** |                       **Supported?**                      |                                          **Objects**                                         |
-| -------------------: | :-------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
-| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                                         User, Cohort                                         |
-|           **Mirror** |                             ✅                             | User, [Subscription Group Membership, Cohort](braze.md#braze-subscription-group-memberships) |
-|           **Append** |                             ✅                             |                                         Event, Cohort                                        |
+|        **Behaviors** |                       **Supported?**                      |                 **Objects**                 |
+| -------------------: | :-------------------------------------------------------: | :-----------------------------------------: |
+| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                 User, Cohort                |
+|           **Append** |                             ✅                             |                Event, Cohort                |
+|           **Mirror** |                             ✅                             | User, Subscription Group Membership, Cohort |
+|           **Delete** |                             ✅                             |                     User                    |
 
 ### Mirror Mode Options
 

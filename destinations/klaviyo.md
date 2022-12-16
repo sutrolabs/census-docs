@@ -38,7 +38,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this: 👇
 
-![Connections page with Klaviyo](<../.gitbook/assets/202201\_Klaviyo\_Connection (1).png>)
+![Connections page with Klaviyo](../.gitbook/assets/202201\_Klaviyo\_Connection.png)
 
 ### Step 2: Connect your data warehouse
 
@@ -119,6 +119,7 @@ To update the **List** property, you'll need to provide the list **ID** or **Nam
 | **Object Name** | **Supported?** | **Identifiers**                                |
 | --------------: | :------------: | ---------------------------------------------- |
 |         Profile |        ✅       | External ID (recommended), Email, Phone Number |
+|  Profile & List |        ✅       | External ID (recommended), Email, Phone Number |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Klaviyo.
 

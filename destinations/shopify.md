@@ -36,6 +36,7 @@ Census currently supports syncing to the following Shopify objects ([Contact us]
 | **Object Name** |       **Supported?**      | **Identifiers** |
 | --------------: | :-----------------------: | --------------- |
 |        Customer |             ✅             | Email           |
+|     Fulfillment |             ✅             |                 |
 | Inventory Level |             ✅             |                 |
 |           Order |             ✅             | Source ID       |
 |         Product |             ✅             | Tag ID, Handle  |
@@ -71,6 +72,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 | ---------------: | :------------: | :---------------------------------------: |
 | Update or Create |        ✅       | Customer, Inventory Level, Order, Product |
 |      Update Only |        ✅       |                   Order                   |
+|           Append |        ✅       |                Fulfillment                |
 |           Mirror |        ✅       |              Product Variant              |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Shopify.
