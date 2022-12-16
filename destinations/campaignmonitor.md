@@ -111,10 +111,10 @@ And if anything went wrong, [contact the Census support team](mailto:support@get
 
 Census currently supports syncing to the following CampaignMonitor objects.
 
-|             |            |               |
-| :---------: | :--------: | :-----------: |
-| Object Name | Supported? |  Identifiers  |
-|  Subscriber |      ✅     | Email Address |
+|                 |                |                 |
+| :-------------: | :------------: | :-------------: |
+| **Object Name** | **Supported?** | **Identifiers** |
+|    Subscriber   |        ✅       |  Email Address  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Campaign Monitor.
 
@@ -126,10 +126,11 @@ Census currently supports syncing to the following CampaignMonitor objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|                      |                      |            |
-| :------------------: | :------------------: | :--------: |
-|       Behaviors      |      Supported?      |   Objects  |
-| **Update or Create** | :white\_check\_mark: | Subscriber |
+|                      |                      |             |
+| :------------------: | :------------------: | :---------: |
+|     **Behaviors**    |    **Supported?**    | **Objects** |
+| **Update or Create** | :white\_check\_mark: |  Subscriber |
+|      **Mirror**      |           ✅          |  Subscriber |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Campaign Monitor.
 
