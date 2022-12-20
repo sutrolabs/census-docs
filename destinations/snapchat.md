@@ -25,8 +25,6 @@ In this guide, we will show you how to connect Snapchat Ads to Census
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
   * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
-
-
 ### 1. Connect Snapchat Ads
 
 * Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections).
@@ -35,46 +33,27 @@ In this guide, we will show you how to connect Snapchat Ads to Census
 
 ![](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.22.56 PM.png>)
 
-
-
-Follow Snapchat OAuth flow to connect to your Snapchat account.&#x20;
+Follow Snapchat OAuth flow to connect to your Snapchat account.
 
 ![](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.23.12 PM.png>)
 
 ![](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.23.34 PM.png>)
 
+## 🗄 Supported Objects
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 🗄 Supported Objects&#x20;
-
-| Service | Object Name | Supported?           | Identifiers |
-| ------- | ----------- | -------------------- | ----------- |
-| Segment | Ads         | :white\_check\_mark: | External ID |
-| User    | User        | :white\_check\_mark: | External ID |
-
-
+| Object Name      |      Supported?      | Identifiers                |
+| ---------------- | :------------------: | -------------------------- |
+| Conversion Event | :white\_check\_mark: | External ID                |
+| Customer List    | :white\_check\_mark: | Mobile Ad ID, Email, Phone |
 
 ## 🔄 Supported Sync Behaviors
 
-|     Behaviors    |      Supported?      |     Objects    |
-| :--------------: | :------------------: | :-------------: |
-| Update or Create | :white\_check\_mark: | Segments, Users |
-|      Mirror      | :white\_check\_mark: |      Users      |
+|     Behaviors    |      Supported?      |      Objects     |
+| :--------------: | :------------------: | :--------------: |
+| Update or Create | :white\_check\_mark: |   Customer List  |
+|      Append      | :white\_check\_mark: | Conversion Event |
+|      Mirror      | :white\_check\_mark: |   Customer List  |
 
-
-
-## 🚑  Need help connecting to Snapchat?
+## 🚑 Need help connecting to Snapchat?
 
 Contact us via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.
