@@ -27,7 +27,22 @@ In this guide, we will show you how to connect Shopify to Census.
 
 ### :electric\_plug:Connecting Shopify
 
-There is some setup that is needed to do on the Census side to setup Shopify, while this process is under construction :construction\_site:, please [contact us](mailto:support@getcensus.com) via email or start a conversation with us via the [in-app](https://app.getcensus.com) chat with the topic: "Shopify Setup". In your communication please provide your Shopify Store URL so we can get started on your set up!
+{% hint style="info" %}
+Note: Census will only query Shopify based on the syncs/objects that you configure
+{% endhint %}
+
+1.  Census connects via OAuth, so you need a Shopify user that can login to the instance with the following permission scopes:
+
+    | write\_products                               | read\_products                               |
+    | --------------------------------------------- | -------------------------------------------- |
+    | write\_customers                              | read\_customers                              |
+    | write\_orders                                 | read\_orders                                 |
+    | write\_inventory                              | read\_inventory                              |
+    | write\_fulfillments                           | read\_fulfillments                           |
+    | write\_assigned\_fulfillment\_orders          | read\_assigned\_fulfillment\_orders          |
+    | write\_merchant\_managed\_fulfillment\_orders | read\_merchant\_managed\_fulfillment\_orders |
+    | write\_third\_party\_fulfillment\_orders      | read\_third\_party\_fulfillment\_orders      |
+2. There is some setup that is needed to do on the Census side to setup Shopify, while this process is under construction :construction\_site:, please [contact us](mailto:support@getcensus.com) via email or start a conversation with us via the [in-app](https://app.getcensus.com) chat with the topic: "Shopify Setup". In your communication please provide your Shopify Store URL so we can get started on your set up!
 
 ## 🗄 Supported Objects
 
