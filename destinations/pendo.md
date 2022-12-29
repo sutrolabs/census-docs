@@ -29,6 +29,8 @@ In this guide, we will show you how to connect Pendo to Census and create your f
 
 Census needs the **Pendo Integration Key** to connect to your Pendo instance. This can be obtained by navigating to `Settings > Subscription Settings > App Details` and copying the `API Key` value.
 
+If you plan to sync Track Events, Census also needs your **Track Event Shared Secret.** This can be obtained by navigating to `Settings > Subscription Settings > App Details` , clicking `Show` next to `Track Event Shared Secret` and then copying the value.
+
 ### 1A. Create a Pendo Integration key
 
 Pendo lets you create a number of Integration keys. You should create a new API key for Census rather than reusing an existing one.
@@ -48,11 +50,16 @@ Finally, copy the long code you see under **Key**. We'll use that in a minute.
 Now let's create your new Census connection to Pendo.
 
 1. In the **Settings** tab, Create a new Pendo Service Connection in Census.\
-   <img src="../.gitbook/assets/screely-1624583177140.png" alt="" data-size="original">
-2. You can provide whatever name you like.
-3.  Copy and paste your new Pendo Integration key.\\
 
-    <img src="../.gitbook/assets/screely-1624583188453.png" alt="" data-size="original">
+
+<figure><img src="../.gitbook/assets/CleanShot 2022-12-28 at 15.48.26@2x.png" alt=""><figcaption></figcaption></figure>
+
+1. You can provide whatever name you like.
+2.  Copy and paste your new Pendo Integration Key, and optionally, your Track Event Shared Secret.
+
+
+
+    <figure><img src="../.gitbook/assets/CleanShot 2022-12-28 at 15.50.30@2x.png" alt=""><figcaption></figcaption></figure>
 
 And you're all set and ready to get syncing! 🎉
 
@@ -60,11 +67,11 @@ And you're all set and ready to get syncing! 🎉
 
 Census currently supports syncing to the following Pendo objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| --------------: | :------------: | ----------- |
-|         Account |        ✅       | Account ID  |
-|         Visitor |        ✅       | Visitor ID  |
-|           Event |       🔜       |             |
+| **Object Name** | **Supported?** | **Identifiers**                        |
+| --------------: | :------------: | -------------------------------------- |
+|         Account |        ✅       | Account ID                             |
+|         Visitor |        ✅       | Visitor ID                             |
+|     Track Event |        ✅       | N/A (only supports _Append_ operation) |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pendo.
 
@@ -74,9 +81,10 @@ Census currently supports syncing to the following Pendo objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|   **Behaviors** | **Supported?** |   **Objects**  |
+|   **Behaviors** | **Supported?** |   **Objects**   |
 | --------------: | :------------: | :-------------: |
 | **Update Only** |        ✅       | Account/Visitor |
+|      **Append** |        ✅       |   Track Event   |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pendo.
 
