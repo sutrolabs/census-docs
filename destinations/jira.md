@@ -49,13 +49,13 @@ Navigate to the [Models page in Census](https://app.getcensus.com/models)
 
 Here you can write a SQL query to select the data you want to see in Jira, or you can use a model from a dbt project or a Looker Look. Your data will require the following at minimum to populate a new Jira task:
 
-* Id&#x20;
+* Id
 * Task Type
 * Summary
 
 Once you have created your model, click Save.
 
-### 3. Create your Sync&#x20;
+### 3. Create your Sync
 
 Now head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sync button
 
@@ -69,7 +69,7 @@ In the "What data do you want to sync?" section.
 Next up is the "Where do you want to sync data to?" section.
 
 * Pick the Jira connection you created in step 1.
-* For Object, Select Ticket within the correct Jira project in your connection.
+* For Object, select Issue within the correct Jira project in your connection.
 
 ![Select which object you want to sync to](../.gitbook/assets/screely-1660216997483.png)
 
@@ -80,7 +80,7 @@ For the "How are source records identified?" section, there are two options:
 * Unique ID column: The column that uniquely identifies each record. Census uses this to identify new records that need to be synced.
 * Timestamp: Using a timestamp to detect new data is more efficient for large or frequently changing data sets.
 
-The Unique ID is always required; select the field from your model you want to map to that the identifier.&#x20;
+The Unique ID is always required; select the field from your model you want to map to that the identifier.
 
 ![](../.gitbook/assets/screely-1660217043313.png)
 
@@ -95,8 +95,8 @@ Click the Next button to see the final preview, which will have a recap of what 
 Jira's primary object is an Issue, which we support in Census.​
 
 | **Object Name** | **Supported?** | **Identifiers** |
-| :-------------: | :-----------: | :-------------: |
-|      Ticket     |       ✅       |    Unique ID    |
+| :-------------: | :------------: | :-------------: |
+|      Issue      |        ✅       |    Unique ID    |
 
 ## 🔄 Supported Sync Behaviors
 
@@ -105,8 +105,8 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 {% endhint %}
 
 | **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :----------: |
-|    **Append** |        ✅       |    Ticket    |
+| ------------: | :------------: | :---------: |
+|    **Append** |        ✅       |    Issue    |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Jira.
 
