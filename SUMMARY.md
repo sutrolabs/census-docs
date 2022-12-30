@@ -130,6 +130,7 @@
 * [Snapchat](destinations/snapchat.md)
 * [Stripe](destinations/stripe.md)
 * [TikTok](destinations/tiktok.md)
+* [Trade Desk](destinations/pinterest-1.md)
 * [Twitter](destinations/twitter.md)
 * [Totango](destinations/totango.md)
 * [Userflow](destinations/userflow.md)
