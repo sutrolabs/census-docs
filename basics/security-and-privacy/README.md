@@ -14,7 +14,7 @@ Our architecture is always evolving to support higher performance publishing to 
 
 We are compliant with SOC 2 Type 2, HIPAA, GDPR, CCPA and, Privacy Shield.
 
-![](<../../.gitbook/assets/CleanShot 2021-10-22 at 11.37.35.png>)
+![](<../../.gitbook/assets/security logos.png>)
 
 In addition to these certifications:
 
@@ -29,7 +29,7 @@ If you are an existing Census customer, contact your Customer Success Manager or
 
 ### Step 1: Identify Changes in Warehouse
 
-![](../../.gitbook/assets/census-security-architecture-2x.png)
+![](<../../.gitbook/assets/Census Security Architecture@2x.png>)
 
 As part of onboarding, you’ll create a `Census` schema within your data warehouse. This is a bookkeeping area used by the platform to keep track of what changes have occurred to your data and what still needs to be synced.
 
@@ -62,7 +62,7 @@ The temporary credentials we provide to your warehouse that are used to copy dat
 
 The cloud storage buckets used by Census are configured with two additional security measures, managed by AWS and Google Cloud.
 
-* **Items in these buckets are automatically removed after 7 days.** This is a fallback if our platform doesn't remove this temporary data as soon as it is processed by a sync.&#x20;
+* **Items in these buckets are automatically removed after 7 days.** This is a fallback if our platform doesn't remove this temporary data as soon as it is processed by a sync.
 * Data in these buckets are encrypted using the cloud providers’ **server-side encryption**, protecting your data from some classes of attacks on the cloud providers themselves.
 
 ### Step 3: Prepare Data for Loading into SaaS Applications

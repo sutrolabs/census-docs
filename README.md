@@ -12,7 +12,7 @@ You can get started by finding the quick start guide for the tool you want to sy
 * [Airtable](destinations/airtable.md)
 * [Algolia](destinations/algolia.md)
 * [Amplitude](destinations/amplitude.md)
-* [Anaplan](destinations/anaplan-1.md)
+* [Anaplan](destinations/anaplan.md)
 * [Autopilot Journeys](destinations/autopilot-journeys.md)
 * [Appcues](destinations/appcues.md)
 * [Asana](destinations/asana.md)
