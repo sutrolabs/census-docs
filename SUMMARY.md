@@ -60,7 +60,7 @@
 * [Airtable](destinations/airtable.md)
 * [Algolia](destinations/algolia.md)
 * [Amplitude](destinations/amplitude.md)
-* [Anaplan](destinations/anaplan-1.md)
+* [Anaplan](destinations/anaplan.md)
 * [Appcues](destinations/appcues.md)
 * [Apollo](destinations/apollo.md)
 * [Asana](destinations/asana.md)
