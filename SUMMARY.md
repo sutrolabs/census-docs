@@ -134,7 +134,7 @@
 * [Twitter](destinations/twitter.md)
 * [Totango](destinations/totango.md)
 * [Userflow](destinations/userflow.md)
-* [Vero](destinations/trade-desk-1.md)
+* [Vero](destinations/vero.md)
 * [Vitally](destinations/vitally.md)
 * [Webhooks](destinations/webhook.md)
 * [Zendesk](destinations/zendesk.md)
