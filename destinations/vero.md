@@ -25,10 +25,10 @@ description: This page describes how to use Census with Vero.
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**            | **Behaviors**    |
-| --------------: | :------------: | -------------------------- | ---------------- |
-|           Event |        ✅       | N/A (only supports append) | Append           |
-|            User |        ✅       | Email                      | Update or Create |
+| **Object Name** | **Supported?** | **Identifiers**     | **Behaviors**    |
+| --------------: | :------------: | ------------------- | ---------------- |
+|           Event |        ✅       | Event ID (optional) | Append           |
+|            User |        ✅       | Email               | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Vero objects and/or behaviors.
 

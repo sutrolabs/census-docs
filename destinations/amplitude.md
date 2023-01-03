@@ -91,7 +91,7 @@ For the "How should changes to the source be synced?" section.
 
 Finally, select the fields you want to update in the Mapper in the "Which Fields should be updated?" section. Here simply map the field from your Amplitude instance to the column from your model.
 
-![](<../.gitbook/assets/Screenshot 2021-04-23 at 1.17.38 PM.png>)
+![](../.gitbook/assets/screenshot-2021-04-23-at-1.17.38-pm.png)
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
