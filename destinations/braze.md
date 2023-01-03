@@ -89,14 +89,14 @@ After the Connection Test is Green, you're all set and ready to get syncing! �
 
 Census currently supports syncing to the following Braze objects.
 
-|               **Object Name** | **Supported?** | **Identifiers**                                |
-| ----------------------------: | :------------: | ---------------------------------------------- |
-|                         Event |        ✅       | Event ID                                       |
-| Subscription Group Membership |        ✅       | [See Here](braze.md#braze-subscription-groups) |
-|                          User |        ✅       | External User ID                               |
-|                    User Alias |        ✅       | Alias Name & Label                             |
-|                   User Cohort |        ✅       | External User ID                               |
-|                       Catalog |        ✅       | Catalog ID                                     |
+|               **Object Name** | **Supported?** | **Identifiers**                                                                                |
+| ----------------------------: | :------------: | ---------------------------------------------------------------------------------------------- |
+|                         Event |        ✅       | Event ID                                                                                       |
+| Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |
+|                          User |        ✅       | External User ID                                                                               |
+|                    User Alias |        ✅       | Alias Name & Label                                                                             |
+|                   User Cohort |        ✅       | External User ID                                                                               |
+|                       Catalog |        ✅       | Catalog ID                                                                                     |
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-models-and-entities/defining-source-data/structured-data.md) to Braze:
 
