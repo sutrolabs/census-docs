@@ -97,9 +97,9 @@ Finally, select the fields you want to update in the Mapper in the **"Which Fiel
 
 The end result should look something like this​:
 
-![](../.gitbook/assets/screen-shot-2021-08-27-at-11.34.46-am.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-27 at 11.34.46 AM (1).png>)
 
-![](<../.gitbook/assets/screen-shot-2021-08-27-at-11.34.57-am (1).png>)
+![](<../.gitbook/assets/Screen Shot 2021-08-27 at 11.34.57 AM.png>)
 
 Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync‌.
 

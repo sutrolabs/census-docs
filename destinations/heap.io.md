@@ -57,7 +57,7 @@ Here you can write a SQL query to select the data you want to see in Heap.io, or
 
 Once you have created your model, click save.
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM.png>)
 
 ### 4. Create your first Sync
 

@@ -79,7 +79,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 
 ![](<../.gitbook/assets/netsuite\_step4 (1).png>)
 
-![](../.gitbook/assets/image-2021-05-03-at-4.42.55-pm.jpg)
+![](<../.gitbook/assets/Image 2021-05-03 at 4.42.55 PM.jpg>)
 
 7\. Under **Permissions > Lists**, Give your Role the appropriate permissions for the NetSuite objects you'll be updating. For example, to update Customers, you'll want to give this role the Lists > Customers (Full) permission.
 
