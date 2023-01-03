@@ -89,13 +89,14 @@ After the Connection Test is Green, you're all set and ready to get syncing! �
 
 Census currently supports syncing to the following Braze objects.
 
-|                **Object Name** | **Supported?** | **Identifiers**                                |
-| -----------------------------: | :------------: | ---------------------------------------------- |
-|                          Event |        ✅       | Event ID                                       |
-| Subscription Group Memberships |        ✅       | [See Here](braze.md#braze-subscription-groups) |
-|                           User |        ✅       | External User ID                               |
-|                     User Alias |        ✅       | Alias Name & Label                             |
-|                    User Cohort |        ✅       | External User ID                               |
+|               **Object Name** | **Supported?** | **Identifiers**                                |
+| ----------------------------: | :------------: | ---------------------------------------------- |
+|                         Event |        ✅       | Event ID                                       |
+| Subscription Group Membership |        ✅       | [See Here](braze.md#braze-subscription-groups) |
+|                          User |        ✅       | External User ID                               |
+|                    User Alias |        ✅       | Alias Name & Label                             |
+|                   User Cohort |        ✅       | External User ID                               |
+|                       Catalog |        ✅       | Catalog ID                                     |
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-models-and-entities/defining-source-data/structured-data.md) to Braze:
 
@@ -159,7 +160,8 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 |        **Behaviors** |                       **Supported?**                      |                 **Objects**                 |
 | -------------------: | :-------------------------------------------------------: | :-----------------------------------------: |
-| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                 User, Cohort                |
+| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |            User, Cohort, Catalog            |
+|           **Update** |                             ✅                             |                   Catalog                   |
 |           **Append** |                             ✅                             |                Event, Cohort                |
 |           **Mirror** |                             ✅                             | User, Subscription Group Membership, Cohort |
 |           **Delete** |                             ✅                             |                     User                    |
