@@ -65,7 +65,7 @@ As a result, there's several dbt features that Census does not make use of. Thes
 * Pre and post hooks
 * Non-public packages
 
-Our dbt integration currently supports version [1.0.4,](https://github.com/dbt-labs/dbt-core/releases/tag/v1.0.0) 1.2.0, and 1.3.1. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
+Our dbt integration currently supports version 1.0.4, 1.2.0, and 1.3.1. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
 
 ### [`require-dbt-version`](https://docs.getdbt.com/reference/project-configs/require-dbt-version) in `dbt_project.yml`
 Census will try to match a dbt version based on the `require-dbt-version` field, if specified, in your project's `dbt_project.yml`. 
