@@ -24,12 +24,12 @@ Finally, if you're not ready to run your sync quite yet, you can always do a [Sy
 You can dive deeper into why syncs failed, or what records were invalid from the source, or rejected by the destination, under the **Sync History** tab.
 
 **Failed Syncs**\
-****Hover over the status label to see a detailed error.
+Hover over the status label to see a detailed error.
 
 ![](../../.gitbook/assets/screely-1645080534122.png)
 
 **Invalid or rejected records**\
-****Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
+Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
 
 ![View Invalid Records by clicking on the number ](../../.gitbook/assets/screely-1645080511587.png)
 

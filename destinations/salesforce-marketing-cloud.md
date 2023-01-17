@@ -154,8 +154,6 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 
 ## 🗄️ Supported Objects
 
-***
-
 |           **Object Name** | **Supported?** |
 | ------------------------: | :------------: |
 | Any Custom Data Extension |        ✅       |
