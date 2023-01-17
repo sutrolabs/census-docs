@@ -16,7 +16,7 @@ Here are just a few examples of Census segments you can build:
 
 ## **When to use Census segments**
 
-Some destination apps allow you to create segments from a full list of items (users, accounts, etc.). **** So, how do you know whether to set up segments in Census or in a destination app?&#x20;
+Some destination apps allow you to create segments from a full list of items (users, accounts, etc.). So, how do you know whether to set up segments in Census or in a destination app?&#x20;
 
 Census segments have one primary benefit: they stay in sync across all your destinations. Let’s look at an example.
 

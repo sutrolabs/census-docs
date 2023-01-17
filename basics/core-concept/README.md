@@ -110,12 +110,12 @@ Pick the sync execution trigger that makes for your connection and Census will k
 You can dive deeper into why syncs failed, or what records were invalid from the source, or rejected by the destination, under the **Sync History** tab.
 
 **Failed Syncs**\
-****Hover over the status label to see a detailed error.
+Hover over the status label to see a detailed error.
 
 ![](../../.gitbook/assets/census\_sync\_history\_failed\_sync.png)
 
 **Invalid or rejected records**\
-****Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
+Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
 
 **What is the difference between Invalid and Rejected records?**
 

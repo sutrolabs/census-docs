@@ -90,8 +90,6 @@ At this point, you're good to go with Segments, but there's more to read if you 
 
 ## FAQs
 
-****
-
 **Which string comparison operators are case sensitive and insensitive?**
 
 _Case sensitive:_ Census will consider the "is" and "is not" operators to be case sensitive.

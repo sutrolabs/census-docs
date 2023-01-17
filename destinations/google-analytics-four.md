@@ -36,8 +36,6 @@ For a Web App:
 
 <figure><img src="../.gitbook/assets/screely-1667231393306.png" alt=""><figcaption></figcaption></figure>
 
-****
-
 For Firebase (iOS/Android) applications:
 
 * First create a new stream or choose an existing one in **Admin** > **Data Streams**. If creating a new one, specify iOS or Android types.
