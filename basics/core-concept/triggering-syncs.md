@@ -15,7 +15,7 @@ Schedules let you specify a time and frequency that Census can use to run your s
 ![](../../.gitbook/assets/screely-1621265385900.png)
 
 {% hint style="info" %}
-To remove a schedule from a sync, click the edit icon and select **Manual** from the drop down list.&#x20;
+To remove a schedule from a sync, click the edit icon and select **Manual** from the drop down list.
 {% endhint %}
 
 ### Using Cron for custom schedules
@@ -30,24 +30,24 @@ Here's a few examples of common Cron schedules:
 
 ## 🔌 dbt Cloud Integration
 
-If you're using dbt Cloud to run your dbt project, you can configure Census to automatically run syncs whenever your models have been rebuilt. Note that using dbt Cloud to trigger syncs is complementary to using [dbt Models](https://docs.getcensus.com/models/native-dbt-integration) but is not required.&#x20;
+If you're using dbt Cloud to run your dbt project, you can configure Census to automatically run syncs whenever your models have been rebuilt. Note that using dbt Cloud to trigger syncs is complementary to using [dbt Models](https://docs.getcensus.com/models/native-dbt-integration) but is not required.
 
 ### Setting up dbt Cloud
 
-To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key.&#x20;
+To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key.
 
 * You may use both User API keys and Service Account tokens. We strongly recommend you use Service Account tokens.
 * As of May 2021, according to dbt Cloud, tokens may only be created or modified by users with Account Admin (Enterprise plan) or Owner (Team plan) permissions on an account, so that this token has these privileges.
 
-With your token in hand, you can now connect dbt Cloud to your dbt project.&#x20;
+With your token in hand, you can now connect dbt Cloud to your dbt project.
 
 1. Visit the Settings page and select the Integrations tab\
-   &#x20;![](../../.gitbook/assets/screely-1641611308263.png)\
-   &#x20;&#x20;
-2. Then copy your dbt Cloud API key, **Verify** your key is correct, and **Save** your settings. \
-   &#x20;&#x20;
+   ![](../../.gitbook/assets/screely-1641611308263.png)\
 
-Now, you'll be able to use a dbt Cloud job to trigger syncs. Visit the **Configuration** tab of any of your syncs.&#x20;
+2. Then copy your dbt Cloud API key, **Verify** your key is correct, and **Save** your settings.\
+
+
+Now, you'll be able to use a dbt Cloud job to trigger syncs. Visit the **Configuration** tab of any of your syncs.
 
 ![](../../.gitbook/assets/screely-1641611574815.png)
 

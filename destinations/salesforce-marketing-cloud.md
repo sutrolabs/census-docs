@@ -95,7 +95,7 @@ Salesforce Marketing Cloud will create the user, which may take a few seconds. C
 
 Go to [Census Connections](https://app.getcensus.com/connections), click "Add Service" and choose "Salesforce Marketing Cloud".
 
-![](../.gitbook/assets/sfmc\_step9.png)
+<figure><img src="../.gitbook/assets/CleanShot 2023-01-03 at 10.41.25@2x.png" alt=""><figcaption></figcaption></figure>
 
 In the dialog, fill out the data you gathered in steps 2 and 3:
 
@@ -103,10 +103,17 @@ In the dialog, fill out the data you gathered in steps 2 and 3:
 * Endpoint URL: Fill in the **Authentication Base URI** from Step 1
 * Client ID and Client Secret: Fill in the **Client ID** and **Client Secret** from Step 1
 * SFTP User: Fill in the **FTP Username** from Step 2
+* (Optional) **Business Unit MID**: If you would like to create a connection for a business unit other than your primary SFMC account, you can provide a Business Unit MID. This can be found in the SFMC top navigation menu:
+  *
+
+      ![](../.gitbook/assets/mid.png)
+  *   In order to enable Census support for business units, you will also need to turn on business unit app integration in your SFMC instance under `Setup` > `Apps` > `Installed Packages` > `Census` > `Access` > `Enable Integration` :
+
+      <figure><img src="../.gitbook/assets/CleanShot 2023-01-03 at 11.12.41@2x.png" alt=""><figcaption></figcaption></figure>
 
 Click "Save Connection".
 
-![](../.gitbook/assets/sfmc\_step10.png)
+<figure><img src="../.gitbook/assets/sfmc credentials.png" alt=""><figcaption></figcaption></figure>
 
 Census will show your new Salesforce Marketing Cloud connection in its connections list
 
@@ -160,10 +167,10 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |      All     |
-|           **Mirror** |        ✅       |      All     |
-|      **Update Only** |       🔜       |      All     |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     All     |
+|           **Mirror** |        ✅       |     All     |
+|      **Update Only** |       🔜       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Salesforce Marketing Cloud.
 

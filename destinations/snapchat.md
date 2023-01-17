@@ -6,13 +6,11 @@ description: This page describes how to use Census with Snapchat Ads.
 
 ## ​🏃‍♀️ Getting Started
 
-In this guide, we will show you how to connect Snapchat Ads to Census
-
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Snapchat Ads account ready.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+* Have the proper credentials to access your data source. See our docs for each supported data source for further information:
   * [Azure Synapse](../sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
@@ -25,19 +23,13 @@ In this guide, we will show you how to connect Snapchat Ads to Census
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
   * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
-### 1. Connect Snapchat Ads
+### Connect Snapchat Ads
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections).
-* Click the **Add Service** button
-* Select Snapchat in the dropdown list.
+1. In Census, click **Add Service**.
+2. Select **Snapchat** from the menu.
+3. Follow the OAuth flow to connect to your Snapchat account.
 
-![](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.22.56 PM.png>)
-
-Follow Snapchat OAuth flow to connect to your Snapchat account.
-
-![](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.23.12 PM.png>)
-
-![](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.23.34 PM.png>)
+![Enter your Snapchat credentials to complete the OAuth flow.](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.23.34 PM.png>)
 
 ## 🗄 Supported Objects
 
@@ -46,6 +38,8 @@ Follow Snapchat OAuth flow to connect to your Snapchat account.
 | Conversion Event | :white\_check\_mark: | External ID                |
 | Customer List    | :white\_check\_mark: | Mobile Ad ID, Email, Phone |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Snapchat objects.
+
 ## 🔄 Supported Sync Behaviors
 
 |     Behaviors    |      Supported?      |      Objects     |
@@ -53,6 +47,8 @@ Follow Snapchat OAuth flow to connect to your Snapchat account.
 | Update or Create | :white\_check\_mark: |   Customer List  |
 |      Append      | :white\_check\_mark: | Conversion Event |
 |      Mirror      | :white\_check\_mark: |   Customer List  |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors.
 
 ## 🚑 Need help connecting to Snapchat?
 
