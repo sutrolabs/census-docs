@@ -63,7 +63,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](<../.gitbook/assets/202109\_outreach\_basic\_model (1).png>)
+![Basic SQL query for a new model](../.gitbook/assets/202109\_Outreach\_Basic\_Model.png)
 
 ### Step 4: Create your first sync
 
