@@ -1,5 +1,5 @@
 ---
-description: Learn how to use Census to sync your Data Warehouse to Courier.
+description: This page describes how to use Census with Courier.
 ---
 
 # Courier
@@ -12,11 +12,11 @@ description: Learn how to use Census to sync your Data Warehouse to Courier.
 
 * Have your Courier account ready.
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have the proper credentials to access to your data source. See our [Data Sources Overview](../sources/overview.md) for  more information.
+* Have the proper credentials to access to your data source. See our [Data Sources Overview](../sources/overview.md) for more information.
 
 ### **1. Get API key from Courier**
 
-Census only needs an API key for Courier to get started.&#x20;
+Census only needs an API key for Courier to get started.
 
 To access your API keys, visit the **Settings** by clicking the **⚙ icon** in the top right and choosing **API Keys** from the menu. Depending on your Courier plan, you can generate a new key or reuse the existing keys provided to you. If generating new keys, you can optionally choose which Courier environment or routing you want to use for your key if you'd like to test the integrations first before sending notifications. See [Courier's API Key documentation](https://help.courier.com/en/articles/4677510-using-environments-api-keys-and-migrating-assets#api-keys-and-environments) to understand the ins-and-outs for your API configuration.
 
@@ -26,7 +26,7 @@ To access your API keys, visit the **Settings** by clicking the **⚙ icon** in 
 
 Now that we have your API Key from Courier, we can set up Courier as a Destination Connection.
 
-1.  Inside Census, click on **Connections** in the left navigation, click **Add Service** and then find Courier in the menu.&#x20;
+1.  Inside Census, click on **Connections** in the left navigation, click **Add Service** and then find Courier in the menu.
 
     <figure><img src="../.gitbook/assets/screely-1663203741963.png" alt=""><figcaption></figcaption></figure>
 2. You can provide whatever name you like. This is helpful if you're using a test environment to start and want to label your connection to indicate that.
@@ -37,7 +37,7 @@ And that's it! If this is your very first sync with Census, jump back to our gui
 
 ## Use Cases
 
-Courier is a service that lets you design, send, and manage notifications to your users across many different channels including email, SMS, push, in-app, chat, and more.&#x20;
+Courier is a service that lets you design, send, and manage notifications to your users across many different channels including email, SMS, push, in-app, chat, and more.
 
 Using Census, you can sync your user data and give Courier super powers. For example:
 
@@ -63,9 +63,10 @@ Looking for another Courier feature? [Contact us](mailto:support@getcensus.com) 
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :---------: |
-| **Update or Create** |        ✅       |     All     |
+|        **Behaviors** | **Supported?** |    **Objects**    |
+| -------------------: | :------------: | :---------------: |
+| **Update or Create** |        ✅       |        All        |
+|           **Mirror** |        ✅       | Profile with List |
 
 ‌Not seeing what you're looking for? [Contact us](mailto:support@getcensus.com) about supporting alternative sync behaviors for this destination.
 
