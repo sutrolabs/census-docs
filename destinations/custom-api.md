@@ -18,7 +18,7 @@ To start, let's walk through the steps to deploy the[ sample implementation](htt
 
 * A Census account. If you don't have one, you can sign up for a free trial [here](https://app.getcensus.com/).
 * A place to run your Custom API code. Custom APIs have to be accessible via a public endpoint over HTTPS. For this demo, we'll use [Netlify Functions](https://www.netlify.com/products/functions/) (you can sign up for a free account) . If you'd prefer to test locally, you can also use [ngrok](https://ngrok.com) or a similar tool to expose your local endpoint to a temporary public URL.
-* Your own copy of this [sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). It takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs.&#x20;
+* Your own copy of this [sample implementation](https://github.com/sutrolabs/census-custom-api-docs/tree/main/samples/minimal). It takes care of the JSON-RPC protocol and provides stub implementations of some methods for simple Custom APIs.
 
 Generally speaking, your Custom API will act as a proxy that passes data from Census to some destination service. For now, we're just going to log the data once it reaches our code.
 
@@ -99,13 +99,16 @@ Many SaaS applications / destinations do not provide APIs to discover objects an
 
 ### Operations
 
-Destination systems may also have rules about what can be done with new and existing data. Census currently allows Custom APIs to choose from three operations for each object:
+Destination systems may also have rules about what can be done with new and existing data. Census will send an `operation` field in the [sync\_batch](custom-api.md#sync\_batch) call to indicate how the records should be processed. Census currently allows Custom APIs to choose from four operations for each object:
 
 * `upsert` (most common) - records in the destination can be created or modified
 * `insert` - records can only be created in the destination, they cannot be modified
 * `update` - records can only be modified in the destination, they cannot be created
+* `mirror` - records will be created and deleted in the destination as they are added and deleted from the dataset
 
 Census does not know whether a record already exists in your destination when using a Custom API, so it is up to you to enforce the semantics of the operation(s) you have chosen to support. For example, if Census has been configured to `update` records in the destination but not `insert` them, your Custom API must first check the destination to see if a matching record exists, and tell Census to skip it if it does not exist. Some destination systems may provide APIs like this for you (create this record only if it does not exist) if they have strong enforcement of uniqueness on identifiers.
+
+When it comes to `mirror` syncs Census will send separate batches of records. For records that should be created and updated the batch will indicate an operation of `upsert` and for records that should be deleted from the destination the operation will be  `delete` .
 
 ### Matching Source and Destination Data
 
@@ -133,7 +136,7 @@ You can now specify a special authentication token for a Custom API connection a
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-10-25 at 11.35.56 AM.png" alt=""><figcaption><p>Custom API Connection setup card with new Auth Token field</p></figcaption></figure>
 
-Whatever you place in the _Auth Token_ field will be sent along with every request as a header in the form of `Authorization: Bearer <your string>`. This avoids the need to add any token to the url. NOTE: Once a token credential has been set it can be changed but not removed.&#x20;
+Whatever you place in the _Auth Token_ field will be sent along with every request as a header in the form of `Authorization: Bearer <your string>`. This avoids the need to add any token to the url. NOTE: Once a token credential has been set it can be changed but not removed.
 
 ## Writing Your Custom API
 
@@ -210,7 +213,7 @@ And finally, do not hesitate to fail any method calls if your Custom API encount
 
 ### Rate Limiting
 
-By default a Custom API connection has a _connection-wide_ rate limit of 5000 requests per second. This means that if two syncs are running simultaneously against the same custom connection they will both count against that rate limit.&#x20;
+By default a Custom API connection has a _connection-wide_ rate limit of 5000 requests per second. This means that if two syncs are running simultaneously against the same custom connection they will both count against that rate limit.
 
 This limit can be overridden by returning a `X-RateLimit-Limit` header in the responses to our calls against your custom api. For example: if you want to cap requests to your custom service at 100 reqs/second then return `X-RateLimit-Limit: 100` as a header in the responses from your service. Whatever value you set here is the limit _per second._
 
