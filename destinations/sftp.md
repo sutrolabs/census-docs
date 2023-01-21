@@ -94,7 +94,9 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
-## File path variables
+## File Path
+
+### Variables
 
 When defining the **File Path** for an S3 sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files in the S3 bucket that reflect the date and time of the sync.
 
@@ -112,6 +114,10 @@ When defining the **File Path** for an S3 sync, you can use variables that will 
 | `%l`         | 12 hour without zero padding | 8, 12              |
 | `%M`         | minute with zero padding     | 04, 56             |
 | `%S`         | second with zero padding     | 06, 54             |
+
+### Update or Create Syncs
+
+Update or Create syncs upload your whole dataset on the first run and only new changes on subsequent runs. Each sync run saves to a different file. The first run saves with "full" at the end of the file name. For example, `filename_12_12_23_full.csv` if it runs on 12/12/2023. Later syncs save with a timestamp at the end, like `filename_12_12_23_1702426195.csv`, so you can see how your data changes over time.
 
 ## 🔄 Supported sync behaviors
 
