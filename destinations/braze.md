@@ -136,9 +136,9 @@ Braze Cohorts allow users of Census to define and sync user cohorts between Cens
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.19.04 PM.png" alt=""><figcaption><p>Braze Sync Configuration for User &#x26; Cohort</p></figcaption></figure>
 
-Select the source column for identifying users that you want to add to a Cohort. Right now we can only identify Braze users for Cohorts by _External User ID._ Then select what Cohort you would like to sync to. You can select an existing Cohort from the dropdown list, define a new Cohort, or select a source column to dynamically get the Cohort name value.&#x20;
+Select the source column for identifying users that you want to add to a Cohort. Right now we can only identify Braze users for Cohorts by _External User ID._ Then select what Cohort you would like to sync to. You can select an existing Cohort from the dropdown list, define a new Cohort, or select a source column to dynamically get the Cohort name value.
 
-If you want a user to be removed from the Cohort if they are removed from the source dataset then  select **remove matching record from cohort** from the dropdown.&#x20;
+If you want a user to be removed from the Cohort if they are removed from the source dataset then select **remove matching record from cohort** from the dropdown.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.23.33 PM.png" alt=""><figcaption><p>Cohort Sync Editor Configuration Panel</p></figcaption></figure>
 
@@ -149,6 +149,14 @@ Once you have synced to a Braze Cohort you can take advantage of it in Braze by 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.30.40 PM.png" alt=""><figcaption><p>Census Cohorts custom filter in Braze</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.32.17 PM.png" alt=""><figcaption><p>Census Cohort custom filter in Braze</p></figcaption></figure>
+
+### Braze Catalogs
+
+You may need to generate a new API key in Braze that provides write access to catalogs (if you didn’t include this permission when previously connecting Braze to Census). See the screenshot below for what that looks like in the Braze Developer Console:
+
+![](<../.gitbook/assets/image (4).png>)
+
+Also, you will need to create a catalog before it shows as an option in Census
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Braze.
 
@@ -197,8 +205,6 @@ With Census, you know have the ability to specify which Data Type your syncs are
 
 {% hint style="info" %}
 Please make sure you validate the data types on Custom Attributes, that they are as you would expect in the Sync mappings.
-
-
 
 An example of this is when the Braze Custom Attribute Type that is "Automatically detect (Time)", we strongly recommend making sure that the Census Destination field type as shown below of type "DateTime" as shown below.
 {% endhint %}
