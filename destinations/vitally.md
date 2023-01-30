@@ -45,23 +45,21 @@ Census uses your Vitally API key to send data. Before we can connect Census to V
 
 ![](../.gitbook/assets/screely-1615452326736.png)
 
-
-
 ## 🗄 Supported Objects
 
 | **Object Name** | **Supported?** | **Matching Keys** | **Create Fields** |
 | --------------: | :------------: | :---------------: | :---------------: |
-|           Users |        ✅       |    User ID only   |         ✅         |
-|        Accounts |        ✅       |  Account ID only  |         ✅         |
-|   "Track" Event |        ✅       |      Event ID     |         ✅         |
+|            User |        ✅       |    User ID only   |         ✅         |
+|         Account |        ✅       |  Account ID only  |         ✅         |
+|     Track Event |        ✅       |      Event ID     |         ✅         |
 |             NPS |       🔜       |                   |                   |
 
-Vitally defines User ID and Account ID as the unique ID for these objects in your system. You are free to use whatever ID you like, but it needs to be unique.&#x20;
+Vitally defines User ID and Account ID as the unique ID for these objects in your system. You are free to use whatever ID you like, but it needs to be unique.
 
 ### User Behavior Notes
 
 * Users must have at least one Account in Vitally so **Accounts** is a required field when syncing to users. It's also an Array field so it you'll need to provide it an array value or JSON formatted Array.
-* Any Account ID values used when mapping to  that don't already exist in Vitally will be automatically created.
+* Any Account ID values used when mapping to that don't already exist in Vitally will be automatically created.
 
 ![](<../.gitbook/assets/Screen Shot 2022-06-30 at 6.50.03 PM.png>)
 
@@ -74,7 +72,8 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 |        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :---------: |
 | **Update or Create** |        ✅       |     All     |
-|      **Update Only** |       🔜       |     All     |
+|      **Update Only** |        ✅       |     User    |
+|           **Append** |        ✅       | Track Event |
 
 Contact us if you want Census to support more Sync Behaviors for Vitally
 
