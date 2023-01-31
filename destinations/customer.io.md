@@ -106,12 +106,12 @@ Customer.io strongly prefers the ID field to be used as the identifier for a Per
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |              **Objects**              |
-| -------------------: | :------------: | :-----------------------------------: |
-| **Update or Create** |        ✅       | Person, Event, Device, Manual Segment |
-|      **Update Only** |        ✅       |                 Person                |
-|           **Append** |        ✅       |                 Event                 |
-|           **Mirror** |        ✅       |       Collection, Manual Segment      |
+|        **Behaviors** | **Supported?** |           **Objects**          |
+| -------------------: | :------------: | :----------------------------: |
+| **Update or Create** |        ✅       | Person, Device, Manual Segment |
+|      **Update Only** |        ✅       |             Person             |
+|           **Append** |        ✅       |              Event             |
+|           **Mirror** |        ✅       |   Collection, Manual Segment   |
 
 🔋[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
