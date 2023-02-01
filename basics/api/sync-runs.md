@@ -6,7 +6,7 @@ This endpoint returns info on the sync runs for a specific sync.
 
 You can pass the following URL parameters to control the response:
 
-* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
+* `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
 * `page` - `number`. Specifies which page of results to return. Defaults to 1.
 * `per_page` - `number`. Specifies number of results per page. Defaults to 25.
 
@@ -99,8 +99,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]/sync_runs?pa
 {% endtab %}
 {% endtabs %}
 
-
-
 ### GET /sync\_runs/\[ID]
 
 This endpoint returns information on a specific sync run.
@@ -163,4 +161,3 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[ID]
 | canceled                   | Whether or not this sync run was canceled.                                                                                                                                                                 |
 | full\_sync                 | Whether or not this was a full sync.                                                                                                                                                                       |
 | sync\_trigger\_reason      | Details on why this sync was run.                                                                                                                                                                          |
-

@@ -2,7 +2,11 @@
 
 ### GET /destinations/\[ID]/objects
 
-This endpoint lists information for all objects under a given destination.
+This endpoint lists information for all objects under a given destination. You can pass the following URL parameters to control the response:
+
+* `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
+* `page` - `number`. Specifies which page of results to return. Defaults to 1.
+* `per_page` - `number`. Specifies number of results per page. Defaults to 25.
 
 
 
@@ -156,10 +160,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objec
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | A list of destination objects | A list of objects for the given destination. The properties of each destination object are expanded on below in the GET /destinations/\[ID] endpoint. |
 
-
-
-
-
 ### GET /destinations/\[ID]/objects/\[OBJECT\_FULL\_NAME]
 
 This endpoint lists information for a given object, including information on what fields it includes.
@@ -276,8 +276,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objec
 | allow\_case\_sensitive\_fields | Whether or not field names and labels are case sensitive on this object.                         |
 | fields                         | A list of fields associated with this source. Field properties are described in the table below. |
 
-
-
 #### Field Properties
 
 | Data Property               | Description                                                                                                                                                                                                                                                         |
@@ -296,10 +294,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objec
 | can\_be\_reference\_key     | Whether or not this field can be the identifier for a lookup on its containing object.                                                                                                                                                                              |
 | lookup\_object              | What object, if any, that this field references.                                                                                                                                                                                                                    |
 | type                        | The type of this field.                                                                                                                                                                                                                                             |
-
-
-
-
 
 ### POST /destinations/\[ID]/objects/\[OBJECT\_FULL\_NAME]/refresh\_fields
 
@@ -325,10 +319,6 @@ curl --request POST 'http://app.getcensus.com/api/v1/destinations/[ID]/objects/[
 | Response Property | Description                                             |
 | ----------------- | ------------------------------------------------------- |
 | refresh\_key      | Contains an `id` used to query the refresh objects job. |
-
-
-
-
 
 ### GET /destinations/\[ID]/objects/\[OBJECT\_FULL\_NAME]/refresh\_fields\_status
 
@@ -357,6 +347,3 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objec
 | Response Property | Description                                                   |
 | ----------------- | ------------------------------------------------------------- |
 | status            | Status of the job. Can be either `completed` or `processing`. |
-
-
-

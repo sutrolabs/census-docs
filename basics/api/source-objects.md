@@ -2,11 +2,11 @@
 
 ### GET /sources/\[ID]/objects
 
-This endpoint returns a list of all the source objects (i.e. tables and models) that this source connection contains.&#x20;
+This endpoint returns a list of all the source objects (i.e. tables and models) that this source connection contains.
 
 You can pass the following URL parameters to control the response:
 
-* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
+* `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
 * `page` - `number`. Specifies which page of results to return. Defaults to 1.
 * `per_page` - `number`. Specifies number of results per page. Defaults to 25.
 
@@ -63,10 +63,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/objects
 | Data Property          | Description                                                                                             |
 | ---------------------- | ------------------------------------------------------------------------------------------------------- |
 | List of source objects | Tables and models associated with this connection. Properties are described in the following endpoints. |
-
-
-
-
 
 ### GET /sources/\[ID]/models
 
@@ -155,10 +151,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models
 | ---------------- | -------------------------------------------------------------------------------------------------------- |
 | A list of models | A list of your models. The properties of a sync are expanded on below in the GET /models/\[ID] endpoint. |
 
-
-
-
-
 ### GET /sources/\[ID]/models/\[ID]
 
 This endpoint lists information for a given model, including information on what columns it includes.
@@ -220,10 +212,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID
 | compiled\_query    | The compiled query associated with this model if it is built atop a DBT instance.                                                                                                       |
 | columns            | <p>A list of columns from this model, each with two properties:</p><ul><li><code>name</code> - The name of the column</li><li><code>type</code> - The data type of the column</li></ul> |
 
-
-
-
-
 ### POST /sources/\[ID]/models
 
 This endpoint creates a model with the given data.
@@ -261,17 +249,11 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/models' \
 | description      | The description for this model.                                                |
 | approved         | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
-
-
 | Response Property | Description                                                    |
 | ----------------- | -------------------------------------------------------------- |
 | status            | `created` or `error` indicating whether the model was created. |
 | data              | Present if successful. An object containing the `model_id`     |
 | message           | Present if error. Contains message describing the error.       |
-
-
-
-
 
 ### PATCH /sources/\[ID]/models/\[ID]
 
@@ -327,17 +309,11 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 | query            | The SQL query associated with this model.                                      |
 | approved         | `boolean` denoting whether the model is approved for Census' Segments Builder. |
 
-
-
 | Response Property | Description                                                          |
 | ----------------- | -------------------------------------------------------------------- |
 | status            | `updated` or `error` indicating whether the model was updated.       |
 | data              | Present if successful. Returns the same object as `GET /models/[ID]` |
 | message           | Present if error. Contains message describing the error.             |
-
-
-
-
 
 ### DELETE /sources/\[ID]/models/\[ID]
 
@@ -364,10 +340,6 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/sources/6/models/98' \
 | ----------------- | ---------------------------------------------------------------------- |
 | status            | `deleted` or `404` indicating whether the model was found and deleted. |
 
-
-
-
-
 ### POST /sources/\[ID]/models/\[ID]/refresh\_columns
 
 This endpoint queues a job to refresh the list of columns for a given source model.
@@ -392,10 +364,6 @@ curl --request POST 'http://app.getcensus.com/api/v1/sources/[ID]/models/[ID]/re
 | Response Property | Description                                             |
 | ----------------- | ------------------------------------------------------- |
 | refresh\_key      | Contains an `id` used to query the refresh objects job. |
-
-
-
-
 
 ### GET /sources/\[ID]/models/\[ID]/refresh\_columns\_status
 
@@ -424,12 +392,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID
 | Response Property | Description                                                   |
 | ----------------- | ------------------------------------------------------------- |
 | status            | Status of the job. Can be either `completed` or `processing`. |
-
-
-
-
-
-
 
 ### GET /sources/\[ID]/tables/\[ID]
 
@@ -485,10 +447,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID
 | table\_name    | The name of this table.                                                                                                                                                                 |
 | columns        | <p>A list of columns from this table, each with two properties:</p><ul><li><code>name</code> - The name of the column</li><li><code>type</code> - The data type of the column</li></ul> |
 
-
-
-
-
 ### POST /sources/\[ID]/tables/\[ID]/refresh\_columns
 
 This endpoint queues a job to refresh the list of columns for a given source table.
@@ -513,10 +471,6 @@ curl --request POST 'http://app.getcensus.com/api/v1/sources/[ID]/tables/[ID]/re
 | Response Property | Description                                             |
 | ----------------- | ------------------------------------------------------- |
 | refresh\_key      | Contains an `id` used to query the refresh objects job. |
-
-
-
-
 
 ### GET /sources/\[ID]/tables/\[ID]/refresh\_columns\_status
 
@@ -545,6 +499,3 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID
 | Response Property | Description                                                   |
 | ----------------- | ------------------------------------------------------------- |
 | status            | Status of the job. Can be either `completed` or `processing`. |
-
-
-

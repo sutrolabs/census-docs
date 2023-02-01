@@ -6,7 +6,7 @@ This endpoint will list all of your data sources, such as your connected data wa
 
 You can pass the following URL parameters to control the response:
 
-* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
+* `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
 * `page` - `number`. Specifies which page of results to return. Defaults to 1.
 * `per_page` - `number`. Specifies number of results per page. Defaults to 25.
 
@@ -63,10 +63,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources
 | --------------- | ------------------------------------------------------------------------------------------------------------ |
 | List of sources | A list containing information on each source. The properties of a source are described in the next endpoint. |
 
-
-
-
-
 ### GET /sources/\[ID]
 
 This endpoint lists information on a specific source.
@@ -114,10 +110,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]
 | read\_only\_connection | Whether or not Census has write permissions, for tracking sync state, on this source.                                                  |
 | data\_sources          | A list of models and tables associated with this source. Model and table properties are described in their respective endpoints below. |
 
-
-
-
-
 ### POST /sources
 
 This endpoint creates a source with the given data.
@@ -160,18 +152,12 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/sources' \
 | ---------------- | -------------------------------------------- |
 | connection       | Contains the information for the connection. |
 
-
-
 | Connection Property    | Description                                                                                  |
 | ---------------------- | -------------------------------------------------------------------------------------------- |
 | type                   | `required`. The type of this source (e.g. `redshift`, `big_query`)                           |
 | credentials            | `required`. Credentials that should be associated with this source (e.g. `hostname`, `port)` |
 | label                  | The label assigned to this source.                                                           |
 | read\_only\_connection | Whether or not Census has write permissions, for tracking sync state, on this source.        |
-
-
-
-
 
 ### PATCH /sources/\[ID]
 
@@ -227,17 +213,11 @@ curl --location --request PATCH 'https://app.getcensus.com/api/v1/sources/12' \
 | ---------------- | -------------------------------------------- |
 | connection       | Contains the information for the connection. |
 
-
-
 | Connection Property    | Description                                                                           |
 | ---------------------- | ------------------------------------------------------------------------------------- |
 | credentials            | Credentials that should be associated with this source (e.g. `hostname`, `port)`      |
 | label                  | The label assigned to this source.                                                    |
 | read\_only\_connection | Whether or not Census has write permissions, for tracking sync state, on this source. |
-
-
-
-
 
 ### DELETE /sources/\[ID]
 
@@ -264,10 +244,6 @@ curl --request DELETE 'https://app.getcensus.com/api/v1/sources/6' \
 | ----------------- | ---------------------------------------------------------------------- |
 | status            | `deleted` or `404` indicating whether the model was found and deleted. |
 
-
-
-
-
 ### POST /sources/\[ID]/refresh\_tables
 
 This endpoint queues a job to refresh the list of tables for a source.
@@ -292,10 +268,6 @@ curl --request POST 'http://app.getcensus.com/api/v1/sources/[ID]/refresh_tables
 | Response Property | Description                                            |
 | ----------------- | ------------------------------------------------------ |
 | refresh\_key      | Contains an `id` used to query the refresh tables job. |
-
-
-
-
 
 ### GET /sources/\[ID]/refresh\_tables\_status
 
@@ -324,8 +296,3 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/refresh_ta
 | Response Property | Description                                                   |
 | ----------------- | ------------------------------------------------------------- |
 | status            | Status of the job. Can be either `completed` or `processing`. |
-
-
-
-
-
