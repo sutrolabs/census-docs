@@ -9,18 +9,20 @@ description: >-
 ## 🔐 Required Permissions
 
 Census lets you select Amazon Athena as a source for your syncs. The following resources need to be available:
+
 1. Athena Workgroup: The default workgroup is "primary". Feel free to specify another workgroup and confirm that it exists.
 2. Census database in your AWS Glue Data Catalog: This database stores all Census bookkeeping tables. Please create this database by running the following query
+
 ```
 CREATE DATABASE census
 ```
-3. s3 query results bucket: This can be any bucket in your AWS account. Please check the following a) that the query results bucket exists in s3 and b) the query result location of your workgroup is set to the query results bucket 
 
+1. s3 query results bucket: This can be any bucket in your AWS account. Please check the following a) that the query results bucket exists in s3 and b) the query result location of your workgroup is set to the query results bucket
 
 Additionally, Census needs the following permissions:
 
 1. For Athena Permissions, Census needs to be able to run queries and get their results in the Athena workgroup.
-2. For S3 permissions, Census needs to be able to read/write the Athena query results to your specified Athena query results bucket location. It also needs to be able to list all the buckets and read the bucket with the source table data. 
+2. For S3 permissions, Census needs to be able to read/write the Athena query results to your specified Athena query results bucket location. It also needs to be able to list all the buckets and read the bucket with the source table data.
 3. For AWS Glue Data Cataglo permissions, Census needs to be able to get the databases and tables where the source tables are located.
 
 Please create an IAM Policy that includes the following permissions
@@ -47,6 +49,7 @@ Please create an IAM Policy that includes the following permissions
 ```
 
 Here is a sample IAM policy that specifies the resources:
+
 ```
 {
     "Version": "2012-10-17",

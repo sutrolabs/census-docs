@@ -104,12 +104,12 @@ In the dialog, fill out the data you gathered in steps 2 and 3:
 * Client ID and Client Secret: Fill in the **Client ID** and **Client Secret** from Step 1
 * SFTP User: Fill in the **FTP Username** from Step 2
 * (Optional) **Business Unit MID**: If you would like to create a connection for a business unit other than your primary SFMC account, you can provide a Business Unit MID. This can be found in the SFMC top navigation menu:
-  *
 
-      ![](../.gitbook/assets/mid.png)
-  *   In order to enable Census support for business units, you will also need to turn on business unit app integration in your SFMC instance under `Setup` > `Apps` > `Installed Packages` > `Census` > `Access` > `Enable Integration` :
+<figure><img src="../.gitbook/assets/CleanShot 2023-02-02 at 10.01.34@2x.png" alt=""><figcaption></figcaption></figure>
 
-      <figure><img src="../.gitbook/assets/CleanShot 2023-01-03 at 11.12.41@2x.png" alt=""><figcaption></figcaption></figure>
+*   In order to enable Census support for business units, you will also need to turn on business unit app integration in your SFMC instance under `Setup` > `Apps` > `Installed Packages` > `Census` > `Access` > `Enable Integration` :
+
+    <figure><img src="../.gitbook/assets/CleanShot 2023-01-03 at 11.12.41@2x.png" alt=""><figcaption></figcaption></figure>
 
 Click "Save Connection".
 
