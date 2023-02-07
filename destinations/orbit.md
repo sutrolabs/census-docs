@@ -113,7 +113,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 |        **Behaviors** | **Supported?** |            **Objects**            |
 | -------------------: | :------------: | :-------------------------------: |
 | **Update or Create** |        ✅       |               Member              |
-|      **Append Only** |        ✅       | Content Activity, Custom Activity |
+|           **Append** |        ✅       | Content Activity, Custom Activity |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Orbit.
 
