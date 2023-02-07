@@ -68,6 +68,7 @@
 * [Autopilot Journeys](destinations/autopilot-journeys.md)
 * [Braze](destinations/braze.md)
 * [Campaign Monitor](destinations/campaignmonitor.md)
+* [Canny](destinations/canny.md)
 * [Chargebee](destinations/chargebee.md)
 * [Chargify](destinations/chargify.md)
 * [ChartMogul](destinations/chartmogul.md)
