@@ -130,6 +130,7 @@
 * [Shopify](destinations/shopify.md)
 * [Slack](destinations/slack.md)
 * [Snapchat](destinations/snapchat.md)
+* [Sprig](destinations/sprig.md)
 * [Stripe](destinations/stripe.md)
 * [TikTok](destinations/tiktok.md)
 * [Trade Desk](destinations/trade-desk.md)
