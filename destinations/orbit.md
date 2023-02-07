@@ -96,9 +96,11 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers**              |
-| --------------: | :------------: | ---------------------------- |
-|          Member |        ✅       | Name, Email, Github, Twitter |
+|  **Object Name** | **Supported?** | **Identifiers**              |
+| ---------------: | :------------: | ---------------------------- |
+|           Member |        ✅       | Name, Email, Github, Twitter |
+| Content Activity |        ✅       | N/A                          |
+|  Custom Activity |        ✅       | Activity Key                 |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Orbit.
 
@@ -108,9 +110,10 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :---------: |
-| **Update or Create** |        ✅       |    Member   |
+|        **Behaviors** | **Supported?** |            **Objects**            |
+| -------------------: | :------------: | :-------------------------------: |
+| **Update or Create** |        ✅       |               Member              |
+|      **Append Only** |        ✅       | Content Activity, Custom Activity |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Orbit.
 
