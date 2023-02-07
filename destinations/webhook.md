@@ -115,11 +115,9 @@ That's it, in 5 steps, you connected Census to any endpoints or services by usin
 
 ### Authorization
 
-You can optionally provide a token to the Webhook connection and this will be sent along with every request as an `Authorization` header. Whatever you provide as the token will not be prefixed so the resulting header will look like `Authorization: <your token>`. If you wish to add a custom prefix like "Bearer" add it to the credential field manually.
+You can optionally provide a token to the Webhook connection and this will be sent along with every request. By default it is sent as an `Authorization` header but you can override the header name by specifying an `Auth Token Header`. Whatever you provide as the token will not be prefixed so the resulting header will look like `Authorization: <your token>`. If you wish to add a custom prefix like "Bearer" add it to the credential field manually. If no token is specified the header will not be added to the request.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-12-02 at 12.26.33 PM.png" alt=""><figcaption><p>Auth token connection credential</p></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/webhook_auth_options.png" alt=""><figcaption><p>Auth token connection credential</p></figcaption></figure>
 
 ### 🏎 Sync Speed
 
@@ -129,16 +127,21 @@ By default we rate limit outgoing requests to 30 requests/second. To override th
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-12-02 at 12.21.22 PM.png" alt=""><figcaption><p>Rate limit connection credential</p></figcaption></figure>
 
+### :fax: HTTP Method
+
+By default every Webhook connection will send `POST` requests but this behavior can be modified by choosing the desired method in the connection credentials modal. The allowed methods at this time are `POST`, `PUT`, and `PATCH`.
+
+<figure><img src="../.gitbook/assets/webhook_method.png" alt=""><figcaption><p>Webhook method selection</p></figcaption></figure>
+
 ### 🗄 Webhook Schema
 
-Each webhook `POST` contains both the data you mapped as well as metadata about the Census sync itself. There are two different schemas we support with webhooks: bulk upload, and individual upload. Which behavior we use is determined by what mode you select on the Webhook Connection. The default is to use bulk upload with a batch size of 1.
+Each Webhook request contains both the data you mapped as well as metadata about the Census sync itself. If you want to just send the raw data object without any sync metadata then be sure to uncheck `Wrap Data Objects` in the connection credentials. When unchecked, requests will simply contain the fields you have mapped to without any sync metadata.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-11-16 at 8.58.19 PM.png" alt=""><figcaption><p>Webhook Connector Bulk Upload Option</p></figcaption></figure>
+A request with data "wrapped" in metadata (default):
 
-With bulk upload, the `data` object is an array of records. The size of the array is determined by the `Batch Size` configuration set on the connection. The JSON schema of our bulk request is as follows:
-
-<pre class="language-javascript"><code class="lang-javascript"><strong>{
-</strong>  "api_version": 1,
+```json
+{
+  "api_version": 1,
   "operation": "changed",
   "sync_run_at": "2021-08-31T23:03:29Z",
   "connection_name": "Webhook Test",
@@ -169,7 +172,79 @@ With bulk upload, the `data` object is an array of records. The size of the arra
     ...
   ]
 }
-</code></pre>
+```
+
+vs an "unwrapped" data object:
+
+```json
+// Just the records you are sending
+[
+    {
+      "company": "Walsh and Sons",
+      "company_domain": "adams.co.uk",
+      "created_at": "2019-12-08 14:19:52",
+      "unique_id": "isadora@safetymail.info",
+      "first_name": "Alycia",
+      "full_name": "Alycia Adams",
+      "last_name": "Adams",
+      "role": "International Mobility Assistant",
+      "type": "free user",
+      "user_id": "090ADD7A-6DBC-BE8A-CD45-459F4F7CA082",
+      "website": "http://stehrweber.biz"
+    },
+    {
+      ...
+    },
+    ...
+]
+```
+
+{% hint style="info" %}
+If you do not use bulk uploads the unwrapped object will be a Hash instead of an Array. See more below
+{% endhint %}
+
+### Bulk vs Single Record
+
+Webhook connectors support bulk upload and individual upload. Which behavior we use is determined by what mode you select on the Webhook Connection. The default is to use bulk upload with a batch size of 1.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-16 at 8.58.19 PM.png" alt=""><figcaption><p>Webhook Connector Bulk Upload Option</p></figcaption></figure>
+
+With bulk upload, the `data` object is an array of records. The size of the array is determined by the `Batch Size` configuration set on the connection. The JSON schema of our bulk request is as follows:
+
+```json
+{
+  "api_version": 1,
+  "operation": "changed",
+  "sync_run_at": "2021-08-31T23:03:29Z",
+  "connection_name": "Webhook Test",
+  "model_name": "active users",
+  "schema_name": null,
+  "table_name": null,
+  "sync_configuration_id": 1234,
+  "sync_configuration_name": null,
+  "data": [
+  // This is an object representing the fields
+  //  you mapped for that sync
+    {
+      "company": "Walsh and Sons",
+      "company_domain": "adams.co.uk",
+      "created_at": "2019-12-08 14:19:52",
+      "unique_id": "isadora@safetymail.info",
+      "first_name": "Alycia",
+      "full_name": "Alycia Adams",
+      "last_name": "Adams",
+      "role": "International Mobility Assistant",
+      "type": "free user",
+      "user_id": "090ADD7A-6DBC-BE8A-CD45-459F4F7CA082",
+      "website": "http://stehrweber.biz"
+    },
+    {
+      ...
+    },
+    ...
+  ]
+}
+```
 
 To send only one record in every request you should uncheck `Use Bulk Upload` on the connection. When not using bulk upload `Batch Size` is irrelevant. The JSON schema of a request without bulk upload is as follows:
 
