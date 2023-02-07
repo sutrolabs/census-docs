@@ -57,7 +57,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](<../.gitbook/assets/image (13).png>)
+![Basic SQL query for a new model](<../.gitbook/assets/image (22).png>)
 
 ### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
@@ -85,7 +85,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🏎 Sync Speed
+## 🐎 Sync Speed
 
 Sync speeds can be affected by API rate limiting from the destination app. Orbit allows an API call rate of up to 120 calls per minute, per IP. (See [Orbit API Documentation](https://docs.orbit.love/reference/rate-limiting) for details.)
 
@@ -94,7 +94,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 * You're running an initial sync action that will update many records in Orbit.
 * You have another integration or service that's making API calls to Orbit and using the same API Token.
 
-## 🗄 Supported objects
+## 📚 Supported Objects
 
 |  **Object Name** | **Supported?** | **Identifiers**              |
 | ---------------: | :------------: | ---------------------------- |
