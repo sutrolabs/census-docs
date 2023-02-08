@@ -79,6 +79,7 @@
 * [Custom API](destinations/custom-api.md)
 * [Customer.io](destinations/customer.io.md)
 * [Delighted](destinations/delighted.md)
+* [Discord](destinations/discord.md)
 * [Drift](destinations/drift.md)
 * [Facebook Ads](destinations/facebook-ads.md)
 * [Freshdesk](destinations/freshdesk.md)
