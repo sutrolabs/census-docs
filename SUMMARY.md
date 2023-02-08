@@ -113,6 +113,7 @@
 * [Microsoft Dynamics](destinations/microsoft-dynamics.md)
 * [Microsoft Teams](destinations/microsoft-teams.md)
 * [Mixpanel](destinations/mixpanel.md)
+* [MySQL](destinations/mysql.md)
 * [NetSuite](destinations/netsuite.md)
 * [Notion](destinations/notion.md)
 * [Orbit](destinations/orbit.md)
