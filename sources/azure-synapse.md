@@ -48,9 +48,4 @@ GRANT SELECT, VIEW DEFINITION ON SCHEMA::<your schema> TO CENSUS;
 
 ## 🚦Allowed IP Addresses
 
-Please allowlist [Census's IP Addresses](../basics/security-and-privacy/census-ip-addresses.md) in your firewall. By default, Census will connect to your data source from these static US-based IP addresses:
-
-* 34.216.163.241
-* 54.212.243.205
-
-To ensure Census can connect to your Synapse data warehouse, use the Windows Azure Management Portal or run **sp\_set\_firewall\_rule** on the primary database to create a firewall rule for these two IP addresses.&#x20;
+To ensure Census can connect to your Synapse data warehouse, use the Windows Azure Management Portal or run **sp\_set\_firewall\_rule** on the primary database to create a firewall rule to allow access to Census's IP addresses. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).

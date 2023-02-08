@@ -68,12 +68,9 @@ All connections from the Census Data Warehouse Service to your database are prot
 
 ## 🚦Allowed IP Addresses
 
-Please allowlist [Census's IP Addresses](../basics/security-and-privacy/census-ip-addresses.md) in your firewall. By default, Census will connect to your data source from these static US-based IP addresses:
+With Postgres, you'll need to add Census's IP addresses in your firewall, and/or add rules to your `pg_hba.conf` file to only allow the Census user to connect to your database.
 
-* 34.216.163.241
-* 54.212.243.205
-
-With Postgres you'll need to add these IPs in your firewall, and/or add rules to your `pg_hba.conf` file to only allow the Census user to connect to your database when using these IP addresses.
+You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
 
 ## 🚇 Connecting via SSH tunnel
 

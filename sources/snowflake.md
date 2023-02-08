@@ -103,12 +103,7 @@ Connecting to a Snowflake instance running on AWS VPS or via PrivateLink require
 
 ## 🚦 Allowed IP Addresses
 
-Please allow [Census's IP Addresses](../basics/security-and-privacy/census-ip-addresses.md) in your firewall. By default, Census will connect to your data source from these static US-based IP addresses:
-
-* 34.216.163.241
-* 54.212.243.205
-
-If you're using Allowed IPs network policy, you'll need to add these Census IP addresses to your list. Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
+If you're using Snowflake's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
 
 ## 🚑 Need help connecting to Snowflake?
 
