@@ -4,7 +4,7 @@ description: >-
   create a connection to any destination service of your choice.
 ---
 
-# Custom API
+# Custom Destination API
 
 Custom Destination API allow you to "bring your own" SaaS connector to Census. A custom destination is a few simple API endpoints that teach Census about the type of data your connector can process, the operations allowed on that data, and how to actually load that data. You can deploy your implementation to any service you like, as long as Census can reach the URL over the internet.
 
@@ -28,25 +28,25 @@ Once you've got your Census, Netlify, and GitHub accounts ready, let's get start
 
 To deploy to Netlify, you'll need a git repo with a copy of the sample implementation that Netlify can connect to directly. The easiest way to do this is by [forking the GitHub repository](https://github.com/sutrolabs/census-custom-api-docs/fork). Otherwise, you can clone the repo and then push it to a new repo on GitHub, Gitlab, or Bitbucket.
 
-![](../.gitbook/assets/screely-1622959750961.png)
+![](../../.gitbook/assets/screely-1622959750961.png)
 
 #### Deploy the Function
 
 Now head over to Netlify. Create a new "Site" and point Netlify at your newly forked or cloned repo.
 
-![](../.gitbook/assets/screely-1622959803057.png)
+![](../../.gitbook/assets/screely-1622959803057.png)
 
 The example code is set up to work exactly to Netlify's default site specifications. You should be able to click past the Site Settings page as is. Once you've completed the three steps, you'll press the final Deploy Site button. You'll see your new site building and then eventually deployed.
 
 Once deployed, select Functions from the top menu. You'll see a list that contains the new **minimal** function we created. Click on it to see the URL of this new end point. That's the public URL for our newly created function. Click the handy copy button to the right and keep that handy, we'll give it to Census next. BUT! Leave this page open in a tab. It has a handy live log view that we'll return to at the very end.
 
-![](../.gitbook/assets/screely-1622959663028.png)
+![](../../.gitbook/assets/screely-1622959663028.png)
 
 #### Set up the Connection
 
 Now head to Census, specifically the [Connections page](https://app.getcensus.com/connections). From the **Add Services** menu, select **Custom Destination API**. You can give your new connection any name you'll remember, and the URL will be the value you copied from Netlify a moment ago. Save your new connection and you should see Census testing your new connection is responding correctly. You should see ✅in just a minute.
 
-![](../.gitbook/assets/screely-1622959628337.png)
+![](../../.gitbook/assets/screely-1622959628337.png)
 
 #### Create a Sync
 
@@ -56,13 +56,13 @@ In Census on the [Syncs page](https://app.getcensus.com/syncs), click the **Add 
 
 Your sync should look like this at the end. Save it and run it!
 
-![](../.gitbook/assets/screely-1622959495991.png)
+![](../../.gitbook/assets/screely-1622959495991.png)
 
 #### The Results
 
 After your sync is complete, head back to your Netlify tab. You should see the logs for the calls Census made to your connector, including the final sync data.
 
-![](../.gitbook/assets/screely-1622959458809.png)
+![](../../.gitbook/assets/screely-1622959458809.png)
 
 Congratulations! You've got your first Custom Destination running! There's a lot of details we've skipped over to get here so read on to learn more about how Custom Destination API works and how you can extend it to work for your specific destinations.
 
@@ -72,7 +72,7 @@ Your Custom API is a bridge between Census and your destination SaaS or other sy
 
 #### Sync Planning
 
-![](../.gitbook/assets/plan.png)
+![](../../.gitbook/assets/plan.png)
 
 In the planning phase, Census will ask your API what kinds of data it manages and what operations are available on that data. This phase is broken into three API methods:
 
@@ -82,7 +82,7 @@ In the planning phase, Census will ask your API what kinds of data it manages an
 
 #### Sync Execution
 
-![](../.gitbook/assets/execute.png)
+![](../../.gitbook/assets/execute.png)
 
 Once the sync has been planned by the user (utilizing metadata from your API and your data warehouse) it can be executed. At execution time, Census will call two methods on your API:
 
@@ -134,7 +134,7 @@ Because your Custom API URL can contain secrets, it is considered to be sensitiv
 
 You can now specify a special authentication token for a Custom API connection and this token will be attached as an `Authorization` header to every request. In the connection setup screen you will see a new optional field:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-10-25 at 11.35.56 AM.png" alt=""><figcaption><p>Custom API Connection setup card with new Auth Token field</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-10-25 at 11.35.56 AM.png" alt=""><figcaption><p>Custom API Connection setup card with new Auth Token field</p></figcaption></figure>
 
 Whatever you place in the _Auth Token_ field will be sent along with every request as a header in the form of `Authorization: Bearer <your string>`. This avoids the need to add any token to the url. NOTE: Once a token credential has been set it can be changed but not removed.
 
