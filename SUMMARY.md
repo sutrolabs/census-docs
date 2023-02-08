@@ -71,6 +71,7 @@
 * [Braze](destinations/braze.md)
 * [Campaign Monitor](destinations/campaignmonitor.md)
 * [Canny](destinations/canny.md)
+* [Channable](destinations/channable.md)
 * [Chargebee](destinations/chargebee.md)
 * [Chargify](destinations/chargify.md)
 * [ChartMogul](destinations/chartmogul.md)
