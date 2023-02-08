@@ -35,7 +35,7 @@ In this guide, we will show you how to connect Intercom to Census and create you
 
 ![](../.gitbook/assets/screely-1618112961265.png)
 
-You will be directed to a screen describing the permissions Census needs. Note that if your account has access to multiple Intercom workspaces, you'll also have the option to select the specific workspace. As well you can specify the data host region of your Intercom instance.&#x20;
+You will be directed to a screen describing the permissions Census needs. Note that if your account has access to multiple Intercom workspaces, you'll also have the option to select the specific workspace. As well you can specify the data host region of your Intercom instance.
 
 ![View the permissions needed, select the correct Intercom workspace, and specify the data host region](<../.gitbook/assets/Screen Shot 2022-09-14 at 3.04.00 PM.png>)
 
@@ -105,6 +105,10 @@ Now go back to your Intercom and go view a record type (Contact or Company) that
 ![](../.gitbook/assets/screely-1618113503713.png)
 
 That's it! In 5 steps, you've connected Intercom and started syncing customer & product data from your warehouse 🎉
+
+### :x: Deleting Objects
+
+When creating a `delete` sync in Intercom the default mode is to use Intercom's soft delete functionality. This will mark any deleted records as Archived and there may be additional steps to take on Intercom's end to permanently delete those records. If you choose the advanced configuration object to use hard deletes instead we will immediately and permanently delete records in the sync. This could lead to irreversible data loss and is not recommended unless you are confident you do not need those records again.
 
 ## 🗄 Supported Objects
 
