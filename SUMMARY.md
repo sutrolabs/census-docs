@@ -68,6 +68,7 @@
 * [Apollo](destinations/apollo.md)
 * [Asana](destinations/asana.md)
 * [Autopilot Journeys](destinations/autopilot-journeys.md)
+* [Azure Blob Storage](destinations/azure-blob-storage.md)
 * [Braze](destinations/braze.md)
 * [Campaign Monitor](destinations/campaignmonitor.md)
 * [Canny](destinations/canny.md)
