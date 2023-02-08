@@ -122,6 +122,7 @@
 * [Outreach](destinations/outreach.md)
 * [Pardot](destinations/pardot.md)
 * [Pendo](destinations/pendo.md)
+* [Pinpoint](destinations/pinpoint.md)
 * [Pinterest](destinations/pinterest.md)
 * [Pipedrive](destinations/pipedrive.md)
 * [Planhat](destinations/planhat.md)
