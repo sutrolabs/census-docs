@@ -2,13 +2,13 @@
 
 ## 🏣 Intro
 
-Unlike other data platforms you may have used, the Census synchronization and publishing pipeline is designed around the core principle of storing and handling as little of your sensitive data as possible. Using the powerful capabilities of cloud data warehouses and SaaS applications, Census is able to perform most of the “logic” for determining what records need to be synced and how to match those records to your existing data **within your own warehouse**.
+The Census synchronization and publishing pipeline is designed around the core principle of storing and handling as little of your sensitive data as possible. By default, Census is able to determine what records need to be synced within your own data warehouse.
 
-When your customer data is handled by Census’ application servers, we use ephemeral workers that **do not store your data**, and practice data defense-in-depth with multiple layers of data scrubbers (managed by our platform and our cloud computing partners) to ensure that none of your sensitive data is mistakenly left behind on our servers or in our cloud storage.
+When your customer data is handled by Census’ application servers, we use ephemeral workers that do not store your data, and practice data defense-in-depth with multiple layers of data scrubbers (managed by our platform and our cloud computing partners) to ensure that none of your sensitive data is mistakenly left behind on our servers or in our cloud storage.
 
 This page describes how Census syncs work, in which cases Census will handle or store your sensitive data, and the various techniques the Census platform employs to minimize the risk of a data breach.
 
-Our architecture is always evolving to support higher performance publishing to more destinations, but our commitment to handling your data securely remains our north star, and we believe the best way to ask for your trust is to **store as little of it as possible**.
+Our architecture is always evolving to support higher performance publishing to more destinations, but our commitment to handling your data securely remains our north star, and we believe the best way to ask for your trust is to store as little of it as possible.
 
 ## 📛 Compliance
 
@@ -84,6 +84,19 @@ Mappers use separate temporary credentials that are only capable of reading data
 When a mapper finishes its work, it has two lists of records - those that were successfully loaded to the SaaS application, and those that failed, either because of validation issues in the data or transient errors (SaaS outages or errors, networking issues, etc).
 
 The list of records that failed is written directly back to the Census schema in your data warehouse, and a small sample of those failures (no more than 100) are captured and sent to the Census platform. These diagnostic samples are the only customer data that will ever be stored in Census, and their storage is limited to 7 days.
+
+## Exceptions to Census's temporary data storage policy
+
+As described above, Census's architecture is built from the ground up to handle your data with care and, by default, not to store any of your data on our infrastructure.&#x20;
+
+However, we do provide some optional additional functionality that rely on storing data in Census-managed infrastructure longterm. Please note that all of the features listed below must be explicitly enabled inside Census before any data is stored on your behalf.&#x20;
+
+These features include:
+
+* Using Google Sheets as a data source (this does not apply to Google Sheets destinations)
+* Enabling the Entity API&#x20;
+
+Census will remove any of the data stored on your behalf after 14 days of disabling the feature.&#x20;
 
 ## 🤔 Have more questions?
 
