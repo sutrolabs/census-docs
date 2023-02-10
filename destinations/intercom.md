@@ -106,10 +106,6 @@ Now go back to your Intercom and go view a record type (Contact or Company) that
 
 That's it! In 5 steps, you've connected Intercom and started syncing customer & product data from your warehouse 🎉
 
-### :x: Deleting Objects
-
-When creating a `delete` sync in Intercom the default mode is to use Intercom's soft delete functionality. This will mark any deleted records as Archived and there may be additional steps to take on Intercom's end to permanently delete those records. If you choose the advanced configuration object to use hard deletes instead we will immediately and permanently delete records in the sync. This could lead to irreversible data loss and is not recommended unless you are confident you do not need those records again.
-
 ## 🗄 Supported Objects
 
 Census currently supports syncing to the following Intercom objects.
@@ -138,8 +134,12 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 | -------------------: | :------------: | :--------------------------: |
 | **Update or Create** |        ✅       | Company, Contact, Lead, User |
 |      **Update Only** |        ✅       |      Contact, Lead, User     |
-|           **Delete** |        ✅       |      Contact, Lead, User     |
+|           **Delete** |        ✅       | Contact, Lead, User, Company |
 |           **Append** |        ✅       |            Events            |
+
+### :x: Deleting Objects
+
+When deleting objects in Intercom, Census's default mode is to archive those objects (except in the case of Companies, which don't allow archiving). Intercom will permanently delete those objects 30 days after they've been archived. In some instances, you may opt to have Census permanently delete objects. This could lead to irreversible data loss and is not recommended unless you are confident you don't need those records.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Intercom.
 
