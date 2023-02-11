@@ -144,6 +144,7 @@
 * [Trade Desk](destinations/trade-desk.md)
 * [OneSignal](destinations/one-signal.md)
 * [Qualtrics](destinations/qualtrics.md)
+* [Snowflake](destinations/snowflake.md)
 * [Twitter](destinations/twitter.md)
 * [Totango](destinations/totango.md)
 * [Userflow](destinations/userflow.md)
