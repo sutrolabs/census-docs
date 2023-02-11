@@ -59,9 +59,8 @@ You can now go on to create a sync from your Google Sheet to a destination app.
 
 For more detailed instructions on how to configure your sync, please read the docs page for the destination app you want to sync data to.
 
-## 💡Notes
+## 💡Note
 
-* Since Google Sheets is not a database, **every sync will be a full sync**.
 * You cannot create SQL Models on Google Sheets data
 
 ## 🚑 Need help connecting to Google Sheets?
