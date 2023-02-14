@@ -121,6 +121,7 @@
 * [Ortto](destinations/ortto.md)
 * [Outreach](destinations/outreach.md)
 * [Pardot](destinations/pardot.md)
+* [Partnerstack](destinations/partnerstack.md)
 * [Pendo](destinations/pendo.md)
 * [Pinpoint](destinations/pinpoint.md)
 * [Pinterest](destinations/pinterest.md)
