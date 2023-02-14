@@ -127,7 +127,7 @@ Here is a sample IAM policy that specifies the resources:
 
 As an alternative to using keys you may opt to grant Census access to a role in your AWS account. This won't provide any additional functionality from Census, but may be preferable for your AWS configuration. This is a multi-step process with parts happening in Census and inside your AWS console.
 
-Step 1: When configuring the S3 destination click the "Use role" checkbox. Provide your region, S3 output location, and workgroup, but leave access and secret key blank. Click Connect:
+Step 1: When configuring the Athena source click the "Use role" checkbox. Provide your region, S3 output location, and workgroup, but leave access and secret key blank. Click Connect:
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-02-14 at 14.13.06@2x.png" alt=""><figcaption></figcaption></figure>
 
@@ -143,5 +143,5 @@ Step 4: Open your AWS Console in a separate tab and browse to the IAM service. C
 * Ask your Census account representative for the Census AWS account to use.
 * Check the 'Require external ID' checkbox and enter the External ID string from Step 3.
 * Finish setting up your Role. Note that it should have the [required permissions](aws-athena.md#required-permissions) to access the Athena instance and associated S3 buckets you are using as your Census source!
-* When done, click on your role and copy its ARN. Go back to the tab where you're editing the Census S3 Destination and enter the role ARN.
+* When done, click on your role and copy its ARN. Go back to the tab where you're editing the Census Athena source and enter the role ARN.
 * Click 'Connect'. The tester should re-run and succeed.
