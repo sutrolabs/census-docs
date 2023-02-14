@@ -122,3 +122,26 @@ Here is a sample IAM policy that specifies the resources:
 4\. Please specify the AWS access key and secret key associated with the user Census will be impersonating, the S3 query result bucket url, S3 region, and Athena workgroup.
 
 ![](../.gitbook/assets/athena\_setup\_properties.png)
+
+### Using Role-Based Permissions
+
+As an alternative to using keys you may opt to grant Census access to a role in your AWS account. This won't provide any additional functionality from Census, but may be preferable for your AWS configuration. This is a multi-step process with parts happening in Census and inside your AWS console.
+
+Step 1: When configuring the S3 destination click the "Use role" checkbox. Provide your region, S3 output location, and workgroup, but leave access and secret key blank. Click Connect:
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-02-14 at 14.13.06@2x.png" alt=""><figcaption></figcaption></figure>
+
+Step 2: The automated connection check will run at this point and fail, this is expected.
+
+Step 3: Click the 'Back' button to return to editing the destination. You should now see an 'External ID' input box with a string in it. You will use this string in the following step.
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-02-14 at 14.15.14@2x.png" alt=""><figcaption></figcaption></figure>
+
+Step 4: Open your AWS Console in a separate tab and browse to the IAM service. Click 'Roles' and 'Create role'.
+
+* When creating the role choose 'AWS Account' for Trusted Entity Type and the 'Another AWS Account' radio button.
+* Ask your Census account representative for the Census AWS account to use.
+* Check the 'Require external ID' checkbox and enter the External ID string from Step 3.
+* Finish setting up your Role. Note that it should have the [required permissions](aws-athena.md#required-permissions) to access the Athena instance and associated S3 buckets you are using as your Census source!
+* When done, click on your role and copy its ARN. Go back to the tab where you're editing the Census S3 Destination and enter the role ARN.
+* Click 'Connect'. The tester should re-run and succeed.

@@ -67,7 +67,7 @@ You'll need to start by specifying
 * Click the **Finish** button and you'll be taken to your new notification. You can now Schedule the sync to run on a schedule or run it manually yourself.
 * Note that on the first run, Census will not send any Notifications but will do so on incremental runs when new rows are added to your source model.
 
-<figure><img src="../.gitbook/assets/CleanShot 2022-10-11 at 11.02.21@2x.png" alt=""><figcaption><p>Configure your new Notification to run on a set schedule or run it manually.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/CleanShot 2022-10-11 at 11.02.21@2x (1).png" alt=""><figcaption><p>Configure your new Notification to run on a set schedule or run it manually.</p></figcaption></figure>
 
 {% hint style="info" %}
 Reminder: Census will send records to a Teams channel one at a time.
