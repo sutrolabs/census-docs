@@ -19,6 +19,7 @@
     * [Arrays and Nested Objects](basics/data-models-and-entities/defining-source-data/structured-data.md)
 * [Segments](basics/segmentation/README.md)
   * [Defining Segments](basics/segmentation/getting-started.md)
+* [Enrichment](basics/enrichment.md)
 * [Observability](basics/sync-monitoring/README.md)
   * [Sync Logs](basics/sync-monitoring/sync-logs.md)
   * [Sync Alerts](basics/sync-monitoring/alerts.md)
