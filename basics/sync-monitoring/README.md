@@ -17,7 +17,7 @@ Additionally, you don't have to hang out looking at syncs all day to be sure the
 * [Sync Alerts](alerts.md) for when things need your attention.
 * [Sync Logs](sync-logs.md) for keeping track of what your syncs have done historically.
 
-Finally, if you're not ready to run your sync quite yet, you can always do a [Sync Dry Run](sync-dry-runs.md) to get a report of what changes it will make, before it makes them.&#x20;
+Finally, if you're not ready to run your sync quite yet, you can always do a [Sync Dry Run](sync-dry-runs.md) to get a report of what changes it will make, before it makes them.
 
 ## Sync History
 
@@ -31,22 +31,20 @@ Hover over the status label to see a detailed error.
 **Invalid or rejected records**\
 Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
 
-![View Invalid Records by clicking on the number ](../../.gitbook/assets/screely-1645080511587.png)
+![View Invalid Records by clicking on the number](../../.gitbook/assets/screely-1645080511587.png)
 
 ![List of records that were filtered because they were invalid](../../.gitbook/assets/screely-1645080472339.png)
 
 ## API Inspector
 
-Sometimes it helps to be able to look under the hood and see how the engine is running. That's exactly what the API Inspector is for! You can use the API Inspector to understand the API calls Census is making to the destination service to sync your data, and also get low level details when things go wrong.&#x20;
+Sometimes it helps to be able to look under the hood and see how the engine is running. That's exactly what the API Inspector is for! You can use the API Inspector to understand the API calls Census is making to the destination service to sync your data, and also get low level details when things go wrong.
 
 Keep in mind, while Census works hard to make them all look the same, every destination has different API capabilities. Census will use a variety of endpoints to make sure your data syncs safely and as fast as possible.
 
 ![](../../.gitbook/assets/screely-1645144592653.png)
 
-The API Inspector will connect and show you the API calls made by Census related to a specific sync configuration. All API calls, including errors will appear here. Census will cache the most recent 100 API calls for up to seven days at which point the cache will be cleared. If you need the details of a specific API call, we recommend you copy the request and save it separately outside Census.&#x20;
+The API Inspector will connect and show you the API calls made by Census related to a specific sync configuration. All API calls, including errors will appear here. Census will cache the most recent 100 API calls for up to seven days at which point the cache will be cleared. If you need the details of a specific API call, we recommend you copy the request and save it separately outside Census.
 
 ### Supported Destinations
 
-The vast majority of Census destinations support the API Inspector. This includes services that use JSON, XML, and CSV payloads to send your data.&#x20;
-
-As of November 2022, the following services are not yet supported: Google Ads, Google Cloud Storage, Google Datastore, Google Sheets, Mailchimp, Microsoft Ads, NetSuite, and Outreach.
+The vast majority of Census destinations support the API Inspector. As of November 2022, the following services are not yet supported: Google Ads, Google Cloud Storage, Google Datastore, Google Sheets, Mailchimp, Microsoft Ads, NetSuite, and Outreach.
