@@ -1,16 +1,16 @@
 ---
-description: This page describes how to sync data to your Snowflake data warehouse.
+description: This page describes how to sync data to your Redshift data warehouse.
 ---
 
-# Snowflake
+# Redshift
 
 ## 🏃‍♀️ Getting Started
 
 1. Click **Add Service**.
-2. Select **Snowflake** from the menu.
+2. Select **Redshift** from the menu.
 3. Enter the requested database credentials.
 
-<figure><img src="../.gitbook/assets/snowflake-destination.png" alt=""><figcaption><p>Enter your Snowflake credentials to connect with Census.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/redshift-destination.png" alt=""><figcaption><p>Enter your Redshift credentials to connect with Census.</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 
@@ -18,8 +18,8 @@ description: This page describes how to sync data to your Snowflake data warehou
 | --------------: | :------------: | --------------- | -------------- |
 | Table | ✅ | Primary keys or columns with uniqueness constraints | Update or Create, Update Only, Append |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Snowflake.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Redshift objects and/or behaviors.
 
-## 🚑 Need help connecting to Snowflake?
+## 🚑 Need help connecting to Redshift?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
