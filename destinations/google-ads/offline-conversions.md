@@ -4,6 +4,8 @@ description: Optimize your ad spend to find your best leads and customers.
 
 # Offline Conversions
 
+{% embed url="https://www.youtube.com/watch?v=4zjoFp0fkNU" %}
+
 ## Connect your Google Ads Account
 
 Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/google-ads)
