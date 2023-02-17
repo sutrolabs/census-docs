@@ -23,7 +23,7 @@ Additionally, Census needs the following permissions:
 
 1. For Athena Permissions, Census needs to be able to run queries and get their results in the Athena workgroup.
 2. For S3 permissions, Census needs to be able to read/write the Athena query results to your specified Athena query results bucket location. It also needs to be able to list all the buckets and read the bucket with the source table data.
-3. For AWS Glue Data Cataglo permissions, Census needs to be able to get the databases and tables where the source tables are located.
+3. For AWS Glue Data Catagog permissions, Census needs to be able to get the databases and tables where the source tables are located.
 
 Please create an IAM Policy that includes the following permissions
 
