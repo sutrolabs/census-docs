@@ -78,6 +78,7 @@
 * [Chargify](destinations/chargify.md)
 * [ChartMogul](destinations/chartmogul.md)
 * [ChurnZero](destinations/churn-zero.md)
+* [CleverTap](destinations/clevertap.md)
 * [Courier](destinations/courier.md)
 * [Criteo](destinations/criteo.md)
 * [Customer.io](destinations/customer.io.md)
