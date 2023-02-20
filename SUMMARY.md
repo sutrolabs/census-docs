@@ -133,6 +133,7 @@
 * [PostgreSQL](destinations/postgres.md)
 * [PostHog](destinations/posthog.md)
 * [Redshift](destinations/redshift.md)
+* [RollWorks](destinations/rollworks.md)
 * [S3](destinations/s3.md)
 * [Sailthru](destinations/sailthru.md)
 * [Salesforce](destinations/salesforce.md)
