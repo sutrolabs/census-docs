@@ -100,8 +100,9 @@ Census currently supports syncing to the following PostHog objects.
 
 | **Object Name** | **Supported?** | **Identifiers** |
 | --------------: | :------------: | --------------- |
-|           Event |        ✅       | Event ID        |
-|            User |       🔜       | Distinct ID     |
+| Event | ✅ | Event ID |
+| Person | ✅ | ID, Email |
+| Page | ✅ | Distinct ID |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for PostHog.
 
@@ -111,11 +112,11 @@ Census currently supports syncing to the following PostHog objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** |                       **Supported?**                      | **Objects?** |
-| ------------: | :-------------------------------------------------------: | :----------: |
-|    **Append** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |     Event    |
-
-
+| **Behaviors** | **Supported?** | **Objects?** |
+| ------------: | :------------: | :----------: |
+| **Update or Create** | ✅ | Person |
+| **Update Only** | ✅ | Person |
+| **Append** | ✅ | Event, Page |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for PostHog.
 

@@ -164,7 +164,7 @@ Please note that Zendesk requires the `Name` property for the End User object. F
 | ---------------: | :------------: | ----------- |
 | Update or Create |        ✅       | All         |
 |      Update Only |        ✅       | All         |
-|           Delete |        ✅       | End User    |
+|           Delete |        ✅       | End User, Organization, Ticket |
 
 {% hint style="warning" %}
 **Warning**
