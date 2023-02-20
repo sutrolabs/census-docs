@@ -10,7 +10,7 @@ description: This page describes how to use Census with RollWorks.
 2. Select **RollWorks** from the menu.
 3. When prompted, log into your RollWorks/AdRoll account and authorize Census.
 
-<figure><img src="../.gitbook/assets/rollworks.png" alt=""><figcaption><p>Give Census access to your RollWorks account.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/rollworks.png" alt=""><figcaption><p>Grant access to your RollWorks/AdRoll account.</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 
