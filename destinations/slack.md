@@ -1,5 +1,8 @@
 ---
-description: This page describes how to use Census with Slack.
+description: >-
+  Turn analytics signals and insights into Slack alerts to help GTM teams
+  identify opportunities, personalize outreach, and prevent churn. All without
+  writing a single line of code.
 ---
 
 # Slack
@@ -12,7 +15,7 @@ description: This page describes how to use Census with Slack.
 
 ### 📋 Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [start a free trial now](https://app.getcensus.com/) (or take a look at our [pricing for paid plans](https://www.getcensus.com/pricing)).
 * Have your Slack account ready.
 * Have the proper credentials to access to your data source. See our [docs](broken-reference/) for each supported data source for further information.
 
@@ -102,3 +105,5 @@ Census will only write new records to a specific channel when new records appear
 ## 🚑 Need help connecting to Slack?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+
+If you have questions about our privacy policy, you can check it out [here](https://www.getcensus.com/legal/privacy-policy).
