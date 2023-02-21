@@ -89,11 +89,11 @@ The list of records that failed is written directly back to the Census schema in
 
 As described above, Census's architecture is built from the ground up to handle your data with care and, by default, not to store any of your data on our infrastructure.&#x20;
 
-However, we do provide some optional additional functionality that rely on storing data in Census-managed infrastructure longterm. Please note that all of the features listed below must be explicitly enabled inside Census before any data is stored on your behalf.&#x20;
+However, we do provide some optional additional functionality that rely on storing data in Census-managed infrastructure long term. Please note that all of the features listed below must be explicitly enabled inside Census before any data is stored on your behalf.&#x20;
 
 These features include:
 
-* Using Google Sheets as a data source (this does not apply to Google Sheets destinations)
+* Using Google Sheets or SingleStore as a data source (this does not apply to Google Sheets destinations)
 * Enabling the Entity API&#x20;
 
 Census will remove any of the data stored on your behalf after 14 days of disabling the feature.&#x20;
