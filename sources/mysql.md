@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page describes how to configure SQL Server credentials for use by Census
-  and why those permissions are needed.
+  This page describes how to configure MySQL credentials for use by Census and
+  why those permissions are needed.
 ---
 
 # MySQL
@@ -14,7 +14,7 @@ These instructions are well tested to connect Census to MySQL. If you're running
 
 Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in your destination systems.
 
-We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your SQL Server database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
+We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your MySQL database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
 
 * Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
 
