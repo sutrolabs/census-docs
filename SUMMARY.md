@@ -24,6 +24,7 @@
   * [Sync Logs](basics/sync-monitoring/sync-logs.md)
   * [Sync Alerts](basics/sync-monitoring/alerts.md)
   * [Sync Dry Runs](basics/sync-monitoring/sync-dry-runs.md)
+  * [Datadog Integration](basics/sync-monitoring/datadog-integration.md)
 * [Security & Privacy](basics/security-and-privacy/README.md)
   * [Workspaces & Access Controls](basics/security-and-privacy/workspaces-and-access-controls.md)
   * [Regions & IP Addresses](basics/security-and-privacy/regions-and-ip-addresses.md)
@@ -151,7 +152,6 @@
 * [Trade Desk](destinations/trade-desk.md)
 * [OneSignal](destinations/one-signal.md)
 * [Qualtrics](destinations/qualtrics.md)
-*
 * [Twitter](destinations/twitter.md)
 * [Totango](destinations/totango.md)
 * [Userflow](destinations/userflow.md)
