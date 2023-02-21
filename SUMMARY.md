@@ -54,6 +54,7 @@
 * [PostgreSQL](sources/postgres.md)
 * [Redshift](sources/redshift.md)
 * [Rockset](sources/rockset.md)
+* [SingleStore](sources/singlestore.md)
 * [Snowflake](sources/snowflake.md)
 * [SQL Server](sources/sql-server.md)
 
