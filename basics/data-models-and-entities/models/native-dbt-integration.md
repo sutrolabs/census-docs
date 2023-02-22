@@ -4,7 +4,7 @@ description: Use Census directly with dbt through the native dbt integration.
 
 # dbt Models
 
-Census supports connecting to an existing dbt project via GitHub, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.&#x20;
+Census supports connecting to an existing dbt project via GitHub, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.
 
 Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date. It also means that Census can confirm that your pull requests for dbt model changes won't accidentally drop or rename a model that is currently in use. Census is designed to work hand-in-hand with dbtCloud or any other dbt runner.
 
@@ -34,7 +34,7 @@ For dbt models used in Census syncs, Census can check whether you are going to d
 
 ### Installing Checks
 
-To enable these CI checks, navigate to your dbt integration in Census and click "Enable CI/CD Tests in GitHub".&#x20;
+To enable these CI checks, navigate to your dbt integration in Census and click "Enable CI/CD Tests in GitHub".
 
 ![You can find dbt Checks in a new section of your dbt integration, under "Automatic tests in dbt".](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 3.43.09 PM.png>)
 
@@ -56,7 +56,7 @@ Census doesn't necessarily require the same permissions your dbt project needs b
 
 ## dbt version and unsupported features
 
-Our dbt integration is designed to pair nicely with your existing dbt runner, whether dbt Cloud or self-hosted. We do this by using the `dbt compile` command rather than the typical `dbt run` and then make use of the compiled output only.&#x20;
+Our dbt integration is designed to pair nicely with your existing dbt runner, whether dbt Cloud or self-hosted. We do this by using the `dbt compile` command rather than the typical `dbt run` and then make use of the compiled output only.
 
 As a result, there's several dbt features that Census does not make use of. These include:
 
@@ -65,10 +65,12 @@ As a result, there's several dbt features that Census does not make use of. Thes
 * Pre and post hooks
 * Non-public packages
 
-Our dbt integration currently supports version 1.0.4, 1.2.0, and 1.3.1. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
+Our dbt integration currently supports version `1.0.4`, `1.2.0`, `1.3.1`, and `1.4.1`. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
 
 ### [`require-dbt-version`](https://docs.getdbt.com/reference/project-configs/require-dbt-version) in `dbt_project.yml`
-Census will try to match a dbt version based on the `require-dbt-version` field, if specified, in your project's `dbt_project.yml`. 
-* If this field is not specified, a default version of 1.3.1 will be used. 
-* If Census does not support a version of dbt specified by the `require-dbt-version` field, the project will not compile sucessfully. 
+
+Census will try to match a dbt version based on the `require-dbt-version` field, if specified, in your project's `dbt_project.yml`.
+
+* If this field is not specified, a default version of `1.4.1` will be used.
+* If Census does not support a version of dbt specified by the `require-dbt-version` field, the project will not compile sucessfully.
 * If Census supports multiple dbt versions that match the requirements, the latest version supported by Census will be used.
