@@ -46,7 +46,7 @@ You can immediately start using the new enrichment-powered attributes on your en
 
 ## How Census Enrichment works
 
-Once you've defined your enrichments, Census takes care of managing that data, storing it your warehouse as well as making available within Census.&#x20;
+Once you've defined your enrichments, Census takes care of managing that data, storing it in your warehouse as well as making available within Census.&#x20;
 
 Underneath the covers, Census is running a special type of Sync. This sync does a couple of things:
 
