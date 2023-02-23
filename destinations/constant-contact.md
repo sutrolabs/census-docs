@@ -18,6 +18,8 @@ description: This page describes how to use Census with Constant Contact.
 | --------------: | :------------: | --------------- | ------------- |
 | Contact | ✅ | Email | Update or Create |
 
+**Note**: when syncing contacts from Census, **List Ids** is a required field. This needs to be an array of strings, each of which is the ID (not name) of a contact list in Constant Contact.
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Constant Contact objects and/or behaviors.
 
 ## 🚑 Need help connecting to Constant Contact?
