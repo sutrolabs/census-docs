@@ -10,7 +10,7 @@ description: This page describes how to use Census with Constant Contact.
 2. Select **Constant Contact** from the menu.
 3. When prompted, log into your Constant Contact account to authorize Census.
 
-<figure><img src="../.gitbook/assets/Constant Contact.png" alt=""><figcaption><p>Log into your Constant Contact account when prompted to do so.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/constant-contact.png" alt=""><figcaption><p>Log into your Constant Contact account when prompted to do so.</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 
