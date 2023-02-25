@@ -14,7 +14,7 @@ Our architecture is always evolving to support higher performance publishing to 
 
 We are compliant with SOC 2 Type 2, HIPAA, GDPR, CCPA and, Privacy Shield.
 
-![](<../../.gitbook/assets/CleanShot 2021-10-22 at 11.37.35.png>)
+![](<../../.gitbook/assets/security logos.png>)
 
 In addition to these certifications:
 

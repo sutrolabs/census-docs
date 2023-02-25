@@ -160,6 +160,10 @@ Also, you will need to create a catalog before it shows as an option in Census
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Braze.
 
+### Braze Events
+
+Please note event properties need to be set up in the Braze preferences before they’re available for segmentation.
+
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}

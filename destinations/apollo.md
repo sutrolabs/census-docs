@@ -53,7 +53,7 @@ Great! Now let's pull it all together.
 3. Paste your Apollo API Key
 4. Click **Connect**
 
-![](<../.gitbook/assets/screely-1660163730081 (1).png>)
+![](../.gitbook/assets/screely-1660163730081.png)
 
 Census will test your API key and show a green checkmark :white\_check\_mark: when successful.
 

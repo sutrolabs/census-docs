@@ -197,6 +197,13 @@ Netsuite is one of our most complex destinations, and some objects have behavior
 * The `Account` field cannot be set on record creation; it can only be set on record update
 * In order to change a Customer Payment status to "Deposited", you must send a record update that both sets the `Undep Funds` (short for "undeposted funds") field to `false`, and sets the `Account` field to the bank account into which the funds were deposited.
 
+**Invoice**
+
+* If you're syncing to the Item List on the Invoice object your Item List data will need to be formatted in a JSON array like the following example.`[{"amount": 2.5, "item": {"internalId": "13"}, "quantity": 1}]` .&#x20;
+* For more information on the Invoice schema please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/invoice.html)
+
+For more information on all Netsuite Objects and their fields please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/account.html)
+
 ## 🚑 Need help connecting to NetSuite?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -71,7 +71,7 @@ Finally, select the fields you want to update in the Mapper in the **"Which Fiel
 
 The end result should look something like this:
 
-![](../../.gitbook/assets/screely-1631098088943.png)
+![](<../../.gitbook/assets/screely-1631098088943 (1).png>)
 
 Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync.
 
