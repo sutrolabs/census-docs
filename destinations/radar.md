@@ -8,10 +8,10 @@ description: This page describes how to use Census with Radar.
 
 1. Click **Add Service**.
 2. Select **Radar** from the menu.
-3. Open the Radar app in another window. Visit the home screen and copy your **Live Secret Key**.
-4. Return to Census and paste your **Live Secret Key**.
+3. Open the Radar app in another window. Visit the home screen and copy your **Secret Key**.
+4. Return to Census and paste your **Secret Key**.
 
-<figure><img src="../.gitbook/assets/radar.png" alt=""><figcaption><p>Get your Live Secret Key from the Radar app.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/radar.png" alt=""><figcaption><p>Get your Secret Key from the Radar app.</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 
