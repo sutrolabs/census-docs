@@ -93,7 +93,21 @@ However, we do provide some optional additional functionality that rely on stori
 
 These features include:
 
-* Using Google Sheets or SingleStore as a data source (this does not apply to Google Sheets destinations)
+* Data sources that only support read-only mode&#x20;
+  * Azure Synapse
+  * Elasticsearch
+  * Google Sheets (this does not apply to Google Sheets destinations)
+  * MySQL
+  * SingleStore&#x20;
+* Data sources when used in read-only mode (does not apply to read-write mode)
+  * Snowflake
+  * Google BigQuery
+  * Redshift
+  * PostgreSQL
+  * Databricks
+  * SQL Server
+  * Rockset
+  * Google AlloyDB
 * Enabling the Entity API&#x20;
 
 Census will remove any of the data stored on your behalf after 14 days of disabling the feature.&#x20;

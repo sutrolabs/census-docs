@@ -32,7 +32,6 @@ GRANT SELECT ON <your schema>.* TO CENSUS;
 
 * Census supports MySQL Community 5.7 or later, as well as recent versions of MariaDB
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
-* All sync behavior will be **Read Only**, meaning that every sync will be a full sync because we do not currently support tracking sync state in MySQL
 * Census supports MySQL with versions TLSv1.2 and greater
 
 ## 🚦Allowed IP Addresses <a href="#allowed-ip-addresses" id="allowed-ip-addresses"></a>

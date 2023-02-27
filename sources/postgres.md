@@ -16,7 +16,7 @@ Census reads data from one or more tables (possibly across different schemata) i
 
 We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your PostgreSQL database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
 
-* The ability to create the `CENSUS` schema and full admin access to all tables within that schema (including creating tables, deleting tables, and reading and writing to all tables).
+* Skip this step if working in read-only mode. The ability to create the `CENSUS` schema and full admin access to all tables within that schema (including creating tables, deleting tables, and reading and writing to all tables).
 * Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
 * If you are using Census to load service data into your warehouse, read-write access to the schema where Census should load data (note that this is not included in the sample script below).
 
@@ -27,12 +27,15 @@ PostgreSQL permissions are complex and there are many ways to configure access f
 CREATE USER CENSUS WITH PASSWORD '<strong, unique password>';
 
 -- Create a private bookkeeping schema where Census can store sync state
+-- Skip this step if working in read-only mode
 CREATE SCHEMA CENSUS;
 
 -- Give the census user full access to the bookkeeping schema
+-- Skip this step if working in read-only mode
 GRANT ALL ON SCHEMA CENSUS TO CENSUS;
 
 -- Ensure the census user has access to any objects that may have already existed in the bookkeeping schema
+-- Skip this step if working in read-only mode
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA CENSUS TO CENSUS;
 
 -- Let the census user see this schema

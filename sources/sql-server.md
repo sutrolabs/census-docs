@@ -9,10 +9,10 @@ description: >-
 ## Required Permissions
 
 {% hint style="info" %}
-These instructions are well tested to connect Census to SQL Server. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.&#x20;
+These instructions are well tested to connect Census to SQL Server. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
 {% endhint %}
 
-Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in destination tools.&#x20;
+Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in destination tools.
 
 We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your SQL Server database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
 
@@ -45,9 +45,8 @@ Important: all SQL Server Commands will run within the Database that is specifie
 
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 * We based our connection protocol on SQL Server [SQL JDBC driver](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)
-* Sync behavior will be **Read Only**, meaning that every sync will be a full sync because we do not currently support tracking sync state in SQL Server. If you configured SQL Server after 10/13/2022 and communicated with a Census representative following the documentation below.
 
-## :writing\_hand: Incremental Support for SQL Server
+## :writing\_hand: Incremental Support for SQL Server in warehouse
 
 The following commands enable Incremental Support for SQL Server. This mode ensures that Census only syncs new and updated records to the destination of your choice, rather than performing a full sync each time. Census performs its state tracking in a dedicated schema within your SQL Server database, allowing the Census platform to identify new and updated records without storing any of your data on Census servers. More details can be found on our [Security](../basics/security-and-privacy/) page.
 
@@ -64,10 +63,6 @@ GRANT ALTER, DELETE, EXECUTE, INSERT, REFERENCES, SELECT,
 -- permissions within the Census schema created in the previous command
 GRANT CREATE TABLE TO CENSUS;
 ```
-
-{% hint style="info" %}
-As of 10/13/2022, after successfully running these commands, please reach out to your Census technical representative or through support, and we can help finalize configuring this functionality for you.
-{% endhint %}
 
 ## 🚦Allowed IP Addresses
 

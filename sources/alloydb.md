@@ -9,7 +9,7 @@ description: >-
 ## 🔐 Required Permissions
 
 {% hint style="info" %}
-In order for a third party application (like Census) to query your AlloyDB, Google Cloud requires that you [set up an Auth proxy as detailed in their documentation](https://cloud.google.com/alloydb/docs/auth-proxy/overview). If you have any questions at all setting up this Auth proxy, please reach out to [support@getcensus.com](mailto:support@getcensus.com).&#x20;
+In order for a third party application (like Census) to query your AlloyDB, Google Cloud requires that you [set up an Auth proxy as detailed in their documentation](https://cloud.google.com/alloydb/docs/auth-proxy/overview). If you have any questions at all setting up this Auth proxy, please reach out to [support@getcensus.com](mailto:support@getcensus.com).
 {% endhint %}
 
 Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in external systems such as Salesforce. To limit the load on your database as well as to other apps' APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a set of tables to a private bookkeeping schema (2 or 3 tables for each sync job configured).
@@ -27,12 +27,15 @@ AlloyDB permissions are complex and there are many ways to configure access for 
 CREATE USER CENSUS WITH PASSWORD '<strong, unique password>';
 
 -- Create a private bookkeeping schema where Census can store sync state
+-- Skip this step if working in read-only mode
 CREATE SCHEMA CENSUS;
 
 -- Give the census user full access to the bookkeeping schema
+-- Skip this step if working in read-only mode
 GRANT ALL ON SCHEMA CENSUS TO CENSUS;
 
 -- Ensure the census user has access to any objects that may have already existed in the bookkeeping schema
+-- Skip this step if working in read-only mode
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA CENSUS TO CENSUS;
 
 -- Let the census user see this schema
@@ -75,13 +78,13 @@ You can find Census's set of IP address for your region in [Regions & IP Address
 Census optionally allows connecting to AlloyDB warehouses that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
 
 1. Create a new user account for Census on the SSH host. (This account is separate from the database user account and can have a different username.)
-2. On the Census connections page, create a new connection to a AlloyDB warehouse, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below.  Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
+2. On the Census connections page, create a new connection to a AlloyDB warehouse, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below. Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
 
 ![](../.gitbook/assets/redshift\_pg\_1.png)
 
-3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page.&#x20;
+3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page.
 
-To install the kepair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step.  If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
+To install the kepair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step. If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
 
 Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
 

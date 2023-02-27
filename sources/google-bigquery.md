@@ -16,16 +16,16 @@ description: >-
 These instructions are well tested to connect Census to BigQuery. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
 {% endhint %}
 
-Census reads data from one or more tables (possibly across different schemata) in your data warehouse and publishes it to the corresponding objects in external systems, such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a number of tables in the `CENSUS` dataset ('dataset' is what Google calls their equivalent of a 'schema' in standard database terminology).In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
+Census reads data from one or more tables (possibly across different schemata) in your data warehouse and publishes it to the corresponding objects in external systems, such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute in-warehouse diffs, Census creates and writes to a number of tables in the `CENSUS` dataset ('dataset' is what Google calls their equivalent of a 'schema' in standard database terminology).In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
 
-* Full admin access to all schema/tables within the `CENSUS` dataset (including creating and deleting tables, and reading and writing to all tables).
+* Skip this step if working in read-only mode. Full admin access to all schema/tables within the `CENSUS` dataset (including creating and deleting tables, and reading and writing to all tables).
 * Read-only access to any tables and views in any schemata that you would like Census to publish to destination applications. **Note**: Your BigQuery connection region will need to match the specific table region.
 * Permissions to create jobs in order to unload data.
 
 BigQuery manages these permissions through their IAM Policy mechanism. Specifically, Census uses three BigQuery policies by default:
 
 * `bigquery.dataViewer` - Allows Census read-only access to list the datasets and tables in the BigQuery instance, and to get data from the tables.
-* `bigquery.dataEditor` - Allows Census full-admin access to the tables in the `CENSUS` dataset.
+* `bigquery.dataEditor` - Allows Census full-admin access to the tables in the `CENSUS` dataset. Skip this step if working in read-only mode.
 * `bigquery.jobUser` - Allows Census to create jobs to unload data.
 
 #### Advanced Permissions
@@ -33,7 +33,7 @@ BigQuery manages these permissions through their IAM Policy mechanism. Specifica
 We definitely recommend you use the three permissions we specify when creating a new BigQuery connection. If you cannot grant these permissions at the project level, you can grant them finer grain. These are the specific permissions the Census service account needs:
 
 * `bigquery.dataViewer` access on the dataset or specific table you'd like Census to read from.
-* `bigquery.dataEditor` access on the `CENSUS` dataset OR `bigquery.dataOwner` access on the `CENSUS` dataset if you would like to additionally grant Census permissions to delete the `CENSUS` dataset
+* `bigquery.dataEditor` access on the `CENSUS` dataset OR `bigquery.dataOwner` access on the `CENSUS` dataset if you would like to additionally grant Census permissions to delete the `CENSUS` dataset. Skip this step if working in read-only mode.&#x20;
 * Finally, Census service account needs project-level access with the `bigquery.JobUser` role or specifically the `bigquery.jobs.create` permission (via a custom role).
 
 ## 🔩 Configuring a new BigQuery connection
@@ -45,7 +45,7 @@ Because permissions are a bit unique on BigQuery so the process of creating a ne
 
     <img src="../.gitbook/assets/bq_setup1.png" alt="" data-size="original">
 3. You will also need to specify in what location you want your Census Dataset to be stored in. This locality will be used in the 1st and 2nd command below, and this dataset is where Census will store its bookkeeping to make sure that only incremental changes are synced to your destinations.
-4. Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with one command to create the `CENSUS` dataset and three copy and paste-able commands you can use to grant permissions for this account on this project. The second command grants dataEditor on the newly created `CENSUS` dataset.
+4. Skip this step if working in read-only mode. Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with one command to create the `CENSUS` dataset and three copy and paste-able commands you can use to grant permissions for this account on this project. The second command grants dataEditor on the newly created `CENSUS` dataset.
 
 ![1st and 2nd commands](../.gitbook/assets/bq\_setup\_dataset.png)
 

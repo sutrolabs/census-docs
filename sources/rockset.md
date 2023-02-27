@@ -28,9 +28,9 @@ After creating the key, check which region your Rockset instance is deployed to 
 
 Navigate to the [connections tab](https://app.getcensus.com/connections) of your Census account. Click on the "Add Data Source" dropdown button in the top right and select Rockset. Paste your API key in the API key section and copy and paste the deployment url depending on what region you are deployed in.
 
-![Click Save Configuration, and ](<../.gitbook/assets/Census Rockset Credentials.png>)
+![Click Save Configuration, and](<../.gitbook/assets/Census Rockset Credentials.png>)
 
-Please create a workspace with the name "CENSUS" either in [console](https://rockset.com/docs/workspaces/) or [CLI](https://rockset.com/docs/rest-api/#createworkspace).
+Skip this step if working in read-only mode. Please create a workspace with the name "CENSUS" either in [console](https://rockset.com/docs/workspaces/) or [CLI](https://rockset.com/docs/rest-api/#createworkspace).
 
 ```
 # Install Rockset CLI

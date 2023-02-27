@@ -16,7 +16,7 @@ These instructions are well tested to connect Census to Snowflake. If you're run
 
 Census reads data from one or more tables (possibly across different schemata) in your data warehouse and publishes it to the corresponding objects in destinations such as Salesforce. To limit the load on your database as well as external APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a number of tables in the `CENSUS` schema. In order for the Census connection to work correctly, the account you provide to Census must have these permissions:
 
-* Full access to the `CENSUS` database and the `CENSUS` schema in that database
+* Full access to the `CENSUS` database and the `CENSUS` schema in that database. Skip this step if working in read-only mode.
 * Read-only access to any tables and views in any schemata from which you want Census to publish
 
 Snowflake permissions are complex and there are many ways to configure access for Census. The script below is known to work correctly and follows [Snowflake's best practices](https://docs.snowflake.com/en/user-guide/security-access-control-configure.html#creating-read-only-roles) for creating read-only roles in a role hierarchy:
@@ -48,18 +48,23 @@ CREATE USER CENSUS WITH DEFAULT_ROLE = CENSUS_ROLE DEFAULT_WAREHOUSE = CENSUS_WA
 GRANT ROLE CENSUS_ROLE TO USER CENSUS;
 
 -- Create a private bookkeeping database where Census can store sync state
+-- Skip this step if working in read-only mode
 CREATE DATABASE "CENSUS";
 
 -- Give the census user full access to the bookkeeping database
+-- Skip this step if working in read-only mode
 GRANT ALL PRIVILEGES ON DATABASE "CENSUS" TO ROLE CENSUS_ROLE;
 
 -- Create a private bookkeeping schema where Census can store sync state
+-- Skip this step if working in read-only mode
 CREATE SCHEMA "CENSUS"."CENSUS";
 
 -- Give the census user full access to the bookkeeping schema
+-- Skip this step if working in read-only mode
 GRANT ALL PRIVILEGES ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
 
 -- Give the census user the ability to create stages for unloading data
+-- Skip this step if working in read-only mode
 GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
 
 -- Let the census user see this database
@@ -93,7 +98,7 @@ The script above creates a new virtual data warehouse (execution environment) fo
 
 The script above creates the smallest available virtual warehouse ("X-Small") and configures it to aggressively auto-suspend if not in use, which makes the best use of your Snowflake account credits. However, some Census jobs (especially involving lots of data or complex models) will benefit from a larger warehouse. You can use Snowflake's [ALTER WAREHOUSE](https://docs.snowflake.com/en/sql-reference/sql/alter-warehouse.html) command to adjust the size of the CENSUS warehouse and tune it for your workload.\
 \
-Alternatively, if cost concerns are an issue, you can also share a warehouse with other batch processing systems (for example Segment, Fivetran, dbt, etc). \
+Alternatively, if cost concerns are an issue, you can also share a warehouse with other batch processing systems (for example Segment, Fivetran, dbt, etc).\
 \
 You may also want to [adjust the schedules](../basics/core-concept/#scheduling-a-sync) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
 

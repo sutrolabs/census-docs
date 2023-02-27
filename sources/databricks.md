@@ -33,7 +33,7 @@ spark.hadoop.fs.s3.impl.disable.cache true
 spark.hadoop.fs.s3a.impl.disable.cache true
 ```
 
-5\. If the CENSUS schema has not been created, please create it by running the following:
+5\. You can skip this step if working in read-only mode. If the CENSUS schema has not been created, please create it by running the following.
 
 ```
 CREATE SCHEMA IF NOT EXISTS CENSUS;

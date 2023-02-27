@@ -21,8 +21,6 @@ In order to sync data from Elasticsearch, Census needs your deployment url, port
 
 ![Click this button, to paste it to the clipboard](<../.gitbook/assets/Screen Shot 2021-11-02 at 3.56.57 PM.png>)
 
-
-
 * Copy and paste this in the "Server Hostname" field. Then take off the :1234 part at the end to paste those four digits in the "Server Port" field. The user and password are the same from logging into your elastic.co account. Click Save Connection.
 
 ![This is the Connection credentials setting](<../.gitbook/assets/Screen Shot 2021-11-02 at 4.58.44 PM.png>)
@@ -35,7 +33,6 @@ If you have any questions during setup, or have a use case that is not covered, 
 
 ## 💡 Notes
 
-* All sync behavior will be **Read Only**, meaning that every sync will be a full sync because there is no way to write or modify the Elasticsearch schema
 * We based our connection protocol on Elastic's [SQL JDBC driver](https://www.elastic.co/guide/en/elasticsearch/reference/current/sql-jdbc.html)
 
 ## 🚦 Allowed IP Addresses
