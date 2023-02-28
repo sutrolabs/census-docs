@@ -13,7 +13,8 @@ You can pass the following URL parameters to control the response:
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]/sync_runs?page=1&per_page=1&order=asc
+curl 'https://app.getcensus.com/api/v1/syncs/[ID]/sync_runs?page=1&per_page=1&order=asc' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -106,7 +107,8 @@ This endpoint returns information on a specific sync run.
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[ID]
+curl 'https://app.getcensus.com/api/v1/sync_runs/[ID]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 

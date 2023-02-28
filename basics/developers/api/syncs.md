@@ -13,7 +13,8 @@ You can pass the following URL parameters to control the response:
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs
+curl 'https://app.getcensus.com/api/v1/syncs' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -160,7 +161,8 @@ This endpoint returns information on a specific sync.
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl -X GET https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]
+curl 'https://app.getcensus.com/api/v1/syncs/[ID]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -534,7 +536,8 @@ This endpoint triggers a specific sync to run.
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl -X POST https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/syncs/[ID]/trigger
+curl -X POST 'https://app.getcensus.com/api/v1/syncs/[ID]/trigger' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 

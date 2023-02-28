@@ -13,7 +13,8 @@ You can pass the following URL parameters to control the response:
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/objects
+curl 'https://app.getcensus.com/api/v1/sources/[ID]/objects' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -77,7 +78,8 @@ You can pass the following URL parameters to control the response:
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models
+curl 'https://app.getcensus.com/api/v1/sources/[ID]/models' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -158,7 +160,8 @@ This endpoint lists information for a given model, including information on what
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID]
+curl 'https://app.getcensus.com/api/v1/sources/[ID]/models/[ID]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -372,7 +375,8 @@ This endpoint checks whether the the job refreshing columns for a given source m
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/models/[ID]/refresh_columns_status?refresh_key=1647978948
+curl 'https://app.getcensus.com/api/v1/sources/[ID]/models/[ID]/refresh_columns_status?refresh_key=[refresh_key]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -400,7 +404,8 @@ This endpoint lists information for a given table, including information on what
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID]
+curl 'https://app.getcensus.com/api/v1/sources/[ID]/tables/[ID]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -479,7 +484,8 @@ This endpoint checks whether the the job refreshing columns for a given source t
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sources/[ID]/tables/[ID]/refresh_columns_status?refresh_key=1647978948
+curl 'https://app.getcensus.com/api/v1/sources/[ID]/tables/[ID]/refresh_columns_status?refresh_key=[refresh_key]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 

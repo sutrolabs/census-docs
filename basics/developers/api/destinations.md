@@ -13,7 +13,8 @@ You can pass the following URL parameters to control the response:
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations
+curl 'https://app.getcensus.com/api/v1/destinations' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -67,7 +68,8 @@ This endpoint lists information on a specific destination.
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]
+curl 'https://app.getcensus.com/api/v1/destinations/[ID]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -270,7 +272,8 @@ This endpoint checks whether the the job refreshing objects for a destination ha
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/refresh_objects_status?refresh_key=1647978948
+curl 'https://app.getcensus.com/api/v1/destinations/[ID]/refresh_objects_status?refresh_key=[refresh_key]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 

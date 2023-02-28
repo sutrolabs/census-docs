@@ -13,7 +13,8 @@ This endpoint lists information for all objects under a given destination. You c
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objects
+curl 'https://app.getcensus.com/api/v1/destinations/[ID]/objects' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -167,7 +168,8 @@ This endpoint lists information for a given object, including information on wha
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NAME]
+curl 'https://app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NAME]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
@@ -327,7 +329,8 @@ This endpoint checks whether the the job refreshing fields for a given destinati
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NAME]refresh_fields_status?refresh_key=1647978948
+curl 'https://app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NAME]/refresh_fields_status?refresh_key=[refresh_key]' \
+--header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
 
