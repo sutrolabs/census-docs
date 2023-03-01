@@ -44,6 +44,7 @@
 
 * [Overview](sources/overview.md)
 * [Amazon Athena](sources/aws-athena.md)
+* [Amazon S3](sources/s3.md)
 * [Azure Synapse](sources/azure-synapse.md)
 * [Databricks](sources/databricks.md)
 * [Elasticsearch](sources/elasticsearch.md)
