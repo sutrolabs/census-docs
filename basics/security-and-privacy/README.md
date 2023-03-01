@@ -87,29 +87,31 @@ The list of records that failed is written directly back to the Census schema in
 
 ## Exceptions to Census's temporary data storage policy
 
-As described above, Census's architecture is built from the ground up to handle your data with care and, by default, not to store any of your data on our infrastructure.&#x20;
+As described above, Census's architecture is built from the ground up to handle your data with care and, by default, not to store any of your data on our infrastructure.
 
-However, we do provide some optional additional functionality that rely on storing data in Census-managed infrastructure long term. Please note that all of the features listed below must be explicitly enabled inside Census before any data is stored on your behalf.&#x20;
+However, we do provide some optional additional functionality that rely on storing data in Census-managed infrastructure long term. Please note that all of the features listed below must be explicitly enabled inside Census before any data is stored on your behalf.
 
 These features include:
 
-* Data sources that only support read-only mode&#x20;
+* Data sources that only support read-only mode
   * Amazon S3
   * Azure Synapse
   * Elasticsearch
   * Google Sheets (this does not apply to Google Sheets destinations)
   * MySQL
-  * SingleStore&#x20;
+  * SingleStore
+
 * Data sources when used in read-only mode (does not apply to read-write mode)
-  * Snowflake
-  * Google BigQuery
-  * Redshift
-  * PostgreSQL
   * Databricks
-  * SQL Server
-  * Rockset
   * Google AlloyDB
-* Enabling the Entity API&#x20;
+  * Google BigQuery
+  * Microsoft SQL Server
+  * PostgreSQL
+  * Redshift
+  * Snowflake
+  * Rockset
+
+* Enabling the Entity API
 
 Census will remove any of the data stored on your behalf after 14 days of disabling the feature.&#x20;
 
