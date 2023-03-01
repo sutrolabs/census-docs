@@ -94,6 +94,7 @@ However, we do provide some optional additional functionality that rely on stori
 These features include:
 
 * Data sources that only support read-only mode&#x20;
+  * Amazon S3
   * Azure Synapse
   * Elasticsearch
   * Google Sheets (this does not apply to Google Sheets destinations)
