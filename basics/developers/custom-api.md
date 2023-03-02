@@ -108,7 +108,7 @@ Destination systems may also have rules about what can be done with new and exis
 
 Census does not know whether a record already exists in your destination when using a Custom API, so it is up to you to enforce the semantics of the operation(s) you have chosen to support. For example, if Census has been configured to `update` records in the destination but not `insert` them, your Custom API must first check the destination to see if a matching record exists, and tell Census to skip it if it does not exist. Some destination systems may provide APIs like this for you (create this record only if it does not exist) if they have strong enforcement of uniqueness on identifiers.
 
-When it comes to `mirror` syncs Census will send separate batches of records. For records that should be created and updated the batch will indicate an operation of `upsert` and for records that should be deleted from the destination the operation will be  `delete` .
+When it comes to `mirror` syncs Census will send separate batches of records. For records that should be created and updated the batch will indicate an operation of `upsert` and for records that should be deleted from the destination the operation will be `delete` .
 
 ### Matching Source and Destination Data
 
@@ -137,6 +137,12 @@ You can specify a special authentication token for a Custom API connection and t
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-10-25 at 11.35.56 AM.png" alt=""><figcaption><p>Custom API Connection setup card with Auth Token field</p></figcaption></figure>
 
 Whatever you place in the _Auth Token_ field will be sent along with every request as a header in the form of `Authorization: Bearer <your string>`. This avoids the need to add a token to the url. NOTE: Once a token credential has been set it can be changed but not removed.
+
+### Versioning
+
+Our Custom Destination API is versioned with the current version being v1. You can adjust the version you are targeting by editing the connection credentials in the Census app for that specific connection. The versioning scheme is simple: whenever we make a breaking change to the Custom Destination API interface we will increment the version and your existing connections should remain functional.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-02 at 11.24.18 AM.png" alt=""><figcaption></figcaption></figure>
 
 ## Writing Your Custom API
 
@@ -521,6 +527,8 @@ Census employs a hierarchical retry strategy - syncs are retried at the record l
         "label": "Restaurants"
       },
       "operation": "upsert",
+      "sync_run_id": 602,
+      "sync_id": 309,
       "schema": {
         "name": {
           "active_identifier": true,
