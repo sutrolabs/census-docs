@@ -125,6 +125,7 @@
 * [NetSuite](destinations/netsuite.md)
 * [Notion](destinations/notion.md)
 * [OneSignal](destinations/one-signal.md)
+* [Optimizely](destinations/optimizely.md)
 * [Orbit](destinations/orbit.md)
 * [Ortto](destinations/ortto.md)
 * [Outreach](destinations/outreach.md)
