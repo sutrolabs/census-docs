@@ -9,7 +9,7 @@ Census can provide granular details on the data you've sent from your data wareh
 3. What is the most common reason that the destination's API rejects my data?
 
 {% hint style="warning" %}
-At this time, Sync Logs are automatically accessible for Platform Plan accounts. If you would like logging enabled and are not on the Platform Plan, please contact Census Support at support@getcensus.com.
+At this time, Sync Logs are automatically accessible for Platform Plan accounts. If you would like logging enabled and are not on the Platform Plan, please contact our team at [support@getcensus.com](mailto:support@getcensus.com).
 {% endhint %}
 
 ## :ballot\_box: Which sources support logging?
