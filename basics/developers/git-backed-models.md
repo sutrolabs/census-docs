@@ -16,11 +16,11 @@ Git-backed Models enables you to leverage best practices of production software 
 * **Bi-directional Updates**: Make changes to Census via the Census UI, or by updating the YAML configuration files in your Git repository.
 * **Git-Backed Change History:** View and rollback changes to Census SQL models not just within the Census UI, but also within Git.
 
-Creating, editing, and deleting SQL Models in the Census UI will back them up into a git repository as YAML configuration files. All changes will be represented as commits to those files.&#x20;
+Creating, editing, and deleting SQL Models in the Census UI will back them up into a Git repository as YAML configuration files. All changes will be represented as commits to those files.&#x20;
 
 <figure><img src="https://lh6.googleusercontent.com/5rHaynRLBu56UJevrOaLiD0NQ7RP-2N4zNc1L_7CjSkXjizHm1TfRL1tBGom1EswZVk0uOCIJoM5hw-Ze8fehOdtSyfO-jdwIunGx5irBZDyyhhTVCAswvq7eJ2ZhJdayHM2ZgSpAishwlicN1BwvII" alt=""><figcaption><p>A sample YAML configuration file within Git that describes a Census SQL model.</p></figcaption></figure>
 
-When you create and edit the configuration files via commits and pull requests in a git repository, Census will materialize your changes into your Census workspace.&#x20;
+When you create and edit the configuration files via commits and pull requests in a Git repository, Census will materialize your changes into your Census workspace.&#x20;
 
 <figure><img src="https://lh3.googleusercontent.com/0B2EWmcpZFfv9oX1PbRJwOqFTS7O4s-phb26iz4BUMj21cCL09htzoDTnQHV7wvI6ecD3yqOfEkMDToS0oejFJTW5RPc0vrBhesV37watjyLUPFVF0hkwvATYeGtKda4CTAeZlE1tw-j-Dd8frmQWgc" alt=""><figcaption><p>Changes will also show their source (Census or Git). And don't worry, we still think YAML is great! Woohoo!</p></figcaption></figure>
 
@@ -90,10 +90,10 @@ Every resource within Census that is backed by version control will have a link 
 
 ## Troubleshooting
 
-There are currently several limitations to the setup and usage of Git-backed Models:
+There are a few strict requirements in order to use Git-backed Models:
 
-*   Census must have direct write-access to the specified branch and repository. This may conflict with certain branches that have branch protection (i.e. `main`). To fix this, you can add the **Census Git** app to the list of actors that bypass required pull request approvals once you install the app during the [#setup](git-backed-models.md#setup "mention") flow.
+*   Because Git-backed Models keeps the state of Census and Git synchronized, Census must write to Git on each model save, and requires direct write-access to the specified branch and repository. This may conflict with certain branches that have branch protection (i.e. `main`). To fix this, you can add the **Census Git** app to the list of actors that bypass required pull request approvals once you install the app during the [#setup](git-backed-models.md#setup "mention") flow.
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 5.02.53 PM.png" alt=""><figcaption></figcaption></figure>
-* The installation directory of SQL models (by default, `census/models/*.sql`) must be entirely empty, or populated only by configuration files that Census can read. As such, if you have `.txt` files, `README.md` files, or other files that are not YAML-deserializable and correspond to a known resource configuration by Census, Git-backed Models will not work.
-* For optimal performance, each SQL model should be in its own file.
+* The governed Git-backed Model directory (by default, `census/models/*.sql`) must be entirely empty, or populated only by configuration files that Census can read. As such, if you have `.txt` files, `README.md` files, or other files that are not YAML-deserializable and correspond to a known resource configuration by Census, Git-backed Models will not work.
+* Each SQL model should be in its own file.
