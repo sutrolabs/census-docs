@@ -130,6 +130,7 @@
 * [Notion](destinations/notion.md)
 * [OneSignal](destinations/one-signal.md)
 * [Optimizely](destinations/optimizely.md)
+* [Oracle Responsys](destinations/oracle-responsys.md)
 * [Orbit](destinations/orbit.md)
 * [Ortto](destinations/ortto.md)
 * [Outreach](destinations/outreach.md)
