@@ -103,6 +103,7 @@
 * [Google AlloyDB](destinations/alloydb.md)
 * [Google Analytics (UA)](destinations/google-analytics.md)
 * [Google Analytics 4](destinations/google-analytics-four.md)
+* [Google BigQuery](destinations/big-query.md)
 * [Google Cloud Storage](destinations/google-cloud-storage.md)
 * [Google Sheets](destinations/google-sheets.md)
 * [Heap.io](destinations/heap.io.md)
