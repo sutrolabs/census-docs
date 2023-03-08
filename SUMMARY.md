@@ -83,6 +83,7 @@
 * [ChartMogul](destinations/chartmogul.md)
 * [ChurnZero](destinations/churn-zero.md)
 * [CleverTap](destinations/clevertap.md)
+* [ClickUp](destinations/clickup.md)
 * [Constant Contact](destinations/constant-contact.md)
 * [Courier](destinations/courier.md)
 * [Criteo](destinations/criteo.md)
