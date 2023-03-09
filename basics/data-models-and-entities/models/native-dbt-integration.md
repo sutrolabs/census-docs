@@ -4,15 +4,15 @@ description: Use Census directly with dbt through the native dbt integration.
 
 # dbt Models
 
-Census supports connecting to an existing dbt project via GitHub, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.
+Census supports connecting to an existing dbt project hosted in GitHub or GitLab, which allows you to select models you want to make available to sync into all your business tools. This means you can keep all your source code & transforms in a single repository.
 
-Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date. It also means that Census can confirm that your pull requests for dbt model changes won't accidentally drop or rename a model that is currently in use. Census is designed to work hand-in-hand with dbtCloud or any other dbt runner.
+Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date. It also means that Census can confirm that your pull requests for dbt model changes won't accidentally drop or rename a model that is currently in use. Census is designed to work hand-in-hand with dbt Cloud or any other dbt runner.
 
 ## Setting it up
 
 Here are the instructions for connecting a dbt project:
 
-1. Connect to your GitHub repository. We currently only support dbt projects stored in GitHub. If you’d prefer to use a different service, please let us know!
+1. Connect to your GitHub or GitLab repository. If you’d prefer to use a different service, please let us know!
 2. Select the branch (if any) you’d like Census to use. Census will refresh the project on a regular basis and detect any changes to your models. You can force a refresh at any point from the models' page.
 3. Customize the Census model selector. Any model exposed to Census becomes available as a source for syncing your data to external tools. By default, Census looks for models with the `census` tag but you can customize the filter.
 
