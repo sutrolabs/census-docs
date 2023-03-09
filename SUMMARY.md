@@ -150,6 +150,7 @@
 * [Sailthru](destinations/sailthru.md)
 * [Salesforce](destinations/salesforce.md)
 * [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
+* [Salesloft](destinations/salesloft.md)
 * [Segment](destinations/segment.md)
 * [SendGrid](destinations/sendgrid.md)
 * [SFTP](destinations/sftp.md)
