@@ -14,13 +14,13 @@ description: This page describes how to use Census with Trade Desk.
 
 ## 🔀 Supported Objects and Behaviors
 
-|          **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
-| -----------------------: | :------------: | --------------- | ------------- |
-|         Conversion Event | ✅ | Any unique identifier | Append |
-|                 Ad Group | ✅ | Any unique identifier | Append |
-|                 Campaign | ✅ | Any unique identifier | Append |
-| First-Party Data Segment | 🔜 | | |
-|         CRM Data Segment | 🔜 | | |
+|          **Object Name** | **Supported?** | **Identifiers**       | **Behaviors**       |
+| -----------------------: | :------------: | --------------------- | ------------------- |
+|         Conversion Event |        ✅       | Any unique identifier | Append              |
+|                 Ad Group |        ✅       | Any unique identifier | Update Only, Append |
+|                 Campaign |        ✅       | Any unique identifier | Update Only, Append |
+| First-Party Data Segment |       🔜       |                       |                     |
+|         CRM Data Segment |       🔜       |                       |                     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Trade Desk objects and/or behaviors.
 

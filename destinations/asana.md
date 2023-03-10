@@ -40,8 +40,8 @@ You will be redirected to a page to log in to Asana to authorize access to your 
 Asana's primary object is a Task, which we support in Census.​
 
 | **Object Name** | **Supported?** | **Identifiers** |
-| :-------------: | :-----------: | :-------------: |
-|       Task      |       ✅       |   External ID   |
+| :-------------: | :------------: | :-------------: |
+|       Task      |        ✅       |   External ID   |
 
 ## 🔄 Supported Sync Behaviors
 
@@ -50,8 +50,9 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |     Task     |
+| -------------------: | :------------: | :---------: |
+| **Update or Create** |        ✅       |     Task    |
+|           **Append** |        ✅       |     Task    |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Asana.
 
