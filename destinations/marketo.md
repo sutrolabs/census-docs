@@ -27,7 +27,7 @@ In this guide, we will show you how to connect Marketo to Census and create your
 
 ### 1. Create a Marketo API User
 
-Before setting up API credentials for Census, you'll first need a Marketo Role with API Access, as well as a user with that role.&#x20;
+Before setting up API credentials for Census, you'll first need a Marketo Role with API Access, as well as a user with that role.
 
 #### API Access Role
 
@@ -80,13 +80,13 @@ With all three pieces of information, return to Census and visit the **Connectio
 
 Census currently supports syncing to the following Marketo objects.
 
-|        **Object Name** | **Supported?** | Identifiers                 |
-| ---------------------: | :------------: | --------------------------- |
-|                   Lead |        ✅       | Object ID, any Text/Number  |
-|          Named Account |        ✅       | Object ID, any Text/Number  |
-|         Custom Objects |        ✅       | Object ID, any Text/Number  |
-| Static List Membership |        ✅       |                             |
-|      Custom Activities |       🔜       |                             |
+|        **Object Name** | **Supported?** | **Identifiers**            |
+| ---------------------: | :------------: | -------------------------- |
+|                   Lead |        ✅       | Object ID, any Text/Number |
+|          Named Account |        ✅       | Object ID, any Text/Number |
+|         Custom Objects |        ✅       | Object ID, any Text/Number |
+| Static List Membership |        ✅       |                            |
+|      Custom Activities |        ✅       |                            |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Marketo.
 
@@ -96,14 +96,15 @@ Census currently supports syncing to the following Marketo objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |             **Objects**            |
+|        **Behaviors** | **Supported?** |             **Objects**             |
 | -------------------: | :------------: | :---------------------------------: |
-| **Update or Create** |        ✅       |                 All                 |
+| **Update or Create** |        ✅       | Lead, Named Account, Custom Objects |
 |      **Update Only** |        ✅       | Lead, Named Account, Custom Objects |
+|           **Append** |        ✅       |          Custom Activities          |
 |           **Mirror** |        ✅       |     Lead, Static List Membership    |
 
 {% hint style="warning" %}
-Please be aware that Update Only and Mirror make use of less efficient Marketo APIs and will result in more API usage for the same number of records.&#x20;
+Please be aware that Update Only and Mirror make use of less efficient Marketo APIs and will result in more API usage for the same number of records.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Marketo.
