@@ -145,6 +145,7 @@
 * [PostgreSQL](destinations/postgres.md)
 * [PostHog](destinations/posthog.md)
 * [Radar](destinations/radar.md)
+* [Reddit Ads](destinations/reddit-ads.md)
 * [Redshift](destinations/redshift.md)
 * [RollWorks](destinations/rollworks.md)
 * [S3](destinations/s3.md)
