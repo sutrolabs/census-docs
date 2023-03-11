@@ -82,6 +82,7 @@
 * [Chargify](destinations/chargify.md)
 * [ChartMogul](destinations/chartmogul.md)
 * [ChurnZero](destinations/churn-zero.md)
+* [CJ Affiliate](destinations/cj-affiliate.md)
 * [CleverTap](destinations/clevertap.md)
 * [ClickUp](destinations/clickup.md)
 * [Constant Contact](destinations/constant-contact.md)
