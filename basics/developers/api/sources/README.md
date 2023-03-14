@@ -19,9 +19,8 @@ curl 'https://app.getcensus.com/api/v1/sources' \
 {% endtab %}
 
 {% tab title="Response" %}
-```json
-{    
-    "status": "success",
+<pre class="language-json"><code class="lang-json"><strong>{    
+</strong>    "status": "success",
     "data": [
         {
             "id": 4,
@@ -56,7 +55,7 @@ curl 'https://app.getcensus.com/api/v1/sources' \
     ],
     "next": "https://app.getcensus.com/api/v1/sources"
 }
-```
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
