@@ -69,6 +69,7 @@
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Adobe Target](destinations/adobe-target.md)
 * [Aha](destinations/aha.md)
+* [Airship](destinations/airship.md)
 * [Airtable](destinations/airtable.md)
 * [Algolia](destinations/algolia.md)
 * [Amplitude](destinations/amplitude.md)
