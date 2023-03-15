@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "30184be3-10cb-4373-b5cc-3d57ddc278b5",
+		"name": "Census Entity API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Entities",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{census_api_key}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://app.getcensus.com/api/v1/entities/",
+					"protocol": "http",
+					"host": [
+						"app",
+						"getcensus",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"entities",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "Bearer",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Returns the full set of Entities available in the Census workspace associated with this API Key"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity Record",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{census_api_key}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://app.getcensus.com/api/v1/entities/{{entity_id}}/record?record_id=boris@getcensus.com",
+					"protocol": "http",
+					"host": [
+						"app",
+						"getcensus",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"entities",
+						"{{entity_id}}",
+						"record"
+					],
+					"query": [
+						{
+							"key": "record_id",
+							"value": "boris@getcensus.com"
+						}
+					]
+				},
+				"description": "Returns a single instance of the entity with a primary key that matches the value provided to the `record_id` parameter. The specific entity you're querying is indicated by the id value in the URL. In this example, it's the `1`."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "census_api_key",
+			"value": "secret-token:1234",
+			"type": "default"
+		},
+		{
+			"key": "entity_id",
+			"value": "1"
+		}
+	]
+}

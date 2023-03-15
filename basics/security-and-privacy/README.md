@@ -14,7 +14,7 @@ Our architecture is always evolving to support higher performance publishing to 
 
 We are compliant with SOC 2 Type 2, HIPAA, GDPR, CCPA and, Privacy Shield.
 
-![](<../../.gitbook/assets/security logos.png>)
+![](<../../.gitbook/assets/CleanShot 2021-10-22 at 11.37.35.png>)
 
 In addition to these certifications:
 
@@ -100,7 +100,6 @@ These features include:
   * Google Sheets (this does not apply to Google Sheets destinations)
   * MySQL
   * SingleStore
-
 * Data sources when used in read-only mode (does not apply to read-write mode)
   * Databricks
   * Google AlloyDB
@@ -110,10 +109,9 @@ These features include:
   * Redshift
   * Snowflake
   * Rockset
-
 * Enabling the Entity API
 
-Census will remove any of the data stored on your behalf after 14 days of disabling the feature.&#x20;
+Census will remove any of the data stored on your behalf after 14 days of disabling the feature.
 
 ## 🤔 Have more questions?
 

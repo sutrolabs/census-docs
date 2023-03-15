@@ -43,6 +43,10 @@ The Entity API provides two endpoints:
 * List Entities - Provides the set of all entities available via the API
 * Get Entity Record - Retrieve a specific record of an entity based on its primary key.
 
+You can also access these APIs directly with our Postman collection.
+
+{% file src="../../.gitbook/assets/Census Entity API.postman_collection (1).json" %}
+
 ### List Entities
 
 The List Entities endpoint will return a list of entities that are available through the API as well as their ID which can then be used to construct a query for specific records of an entity type.
