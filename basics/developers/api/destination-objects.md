@@ -26,6 +26,7 @@ curl 'https://app.getcensus.com/api/v1/destinations/[ID]/objects' \
         {
             "label": "User",
             "full_name": "user",
+            "supported_operations": ["upsert", "delete", "mirror"],
             "allow_custom_fields": true,
             "allow_case_sensitive_field_names": true,
             "fields": [
@@ -114,6 +115,7 @@ curl 'https://app.getcensus.com/api/v1/destinations/[ID]/objects' \
         {
             "label": "Organization",
             "full_name": "organization",
+            "supported_operations": ["upsert", "mirror"],
             "allow_custom_fields": true,
             "allow_case_sensitive_field_names": true,
             "fields": [
@@ -180,6 +182,7 @@ curl 'https://app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NA
     "data": {
         "label": "User",
         "full_name": "user",
+        "supported_operations": ["upsert", "delete", "mirror"],
         "allow_custom_fields": true,
         "allow_case_sensitive_field_names": true,
         "fields": [
@@ -274,6 +277,7 @@ curl 'https://app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NA
 | ------------------------------ | ------------------------------------------------------------------------------------------------ |
 | label                          | The label for this object.                                                                       |
 | full\_name                     | The full name for this object. This is used to identify the object in the API.                   |
+| supported\_operations          | A list of the operations this object supports when being synced to.                              |
 | allow\_custom\_fields          | Whether or not you can define custom fields on this object.                                      |
 | allow\_case\_sensitive\_fields | Whether or not field names and labels are case sensitive on this object.                         |
 | fields                         | A list of fields associated with this source. Field properties are described in the table below. |
