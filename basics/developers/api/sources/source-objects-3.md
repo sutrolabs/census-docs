@@ -232,7 +232,7 @@ curl --location --request POST 'https://app.getcensus.com/api/sources/6/filter_s
 | Request Property       | Description                                             |
 | ---------------------- | ------------------------------------------------------- |
 | name\*                 | `required`. The name of this filter segment.            |
-| molecule\*             | The shape of the molecule.                              |
+| molecules\*            | The shape of the molecules.                             |
 | business\_object\_id\* | The id of the entity on which this segment is based on. |
 
 | Response Property            | Description                                                                                                                                                                                                                                                 |
@@ -283,7 +283,7 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/sources/filter_segments/9
 | Request Property | Description                      |
 | ---------------- | -------------------------------- |
 | name             | The name of this filter segment. |
-| molecule         | The shape of the molecule.       |
+| molecules        | The shape of the molecules.      |
 
 | Response Property | Description                                                                   |
 | ----------------- | ----------------------------------------------------------------------------- |
