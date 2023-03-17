@@ -17,6 +17,7 @@ description: This page describes how to use Census with Oracle Responsys.
 | **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Profile List (Recipients) | ✅ | Customer ID, Responsys ID, Email Address, Email MD5 Hash, Email SHA256 Hash, Mobile Number | Update or Create |
+| Profile Extension Table | ✅ | Customer ID, Responsys ID, Email Address, Email MD5 Hash, Email SHA256 Hash, Mobile Number | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Responsys objects and/or behaviors.
 
