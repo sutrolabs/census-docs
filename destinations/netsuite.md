@@ -75,6 +75,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
    * Custom Fields: **Full**
    * Custom Item Fields: **Full**
    * SOAP Web Services: **Full**
+   * REST Web Services: **Full**
    * User Access Token: **Full**
 
 ![](<../.gitbook/assets/netsuite\_step4 (1).png>)
