@@ -149,6 +149,7 @@
 * [Planhat](destinations/planhat.md)
 * [PostgreSQL](destinations/postgres.md)
 * [PostHog](destinations/posthog.md)
+* [Productboard](destinations/productboard.md)
 * [Radar](destinations/radar.md)
 * [Reddit Ads](destinations/reddit-ads.md)
 * [Redshift](destinations/redshift.md)
