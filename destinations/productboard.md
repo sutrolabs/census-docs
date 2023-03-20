@@ -9,7 +9,7 @@ description: This page describes how to use Census with Productboard.
 1. Click **Add Service**.
 2. Select **Productboard** from the menu.
 3. Open Productboard in another browser tab and navigate to the **Integrations** page. Scroll down to the **Public API** section and generate a new **Access Token**. (If you don't see this option, reach out to Productboard support to ensure your plan has API access.)
-3. Return to Census and enter your **API Token**. You may optionally add your **Productboard Partner ID** if you have one.
+3. Return to Census and enter your **API Token**.
 
 <figure><img src="../.gitbook/assets/productboard.png" alt=""><figcaption><p>Generate an API token from the Productboard app.</p></figcaption></figure>
 
