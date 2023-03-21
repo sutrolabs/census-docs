@@ -14,7 +14,7 @@ description: This page describes how to sync data to Azure Blob Storage.
 
 ## 🗄️ File Path Variables
 
-When defining the file path for an Azure Blob Storage sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files in the S3 bucket that reflect the date and time of the sync.
+When defining the file path for an Azure Blob Storage sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new files in the S3 bucket that reflect the date and time of the sync.
 
 | **Variable** | **Description**              | **Example Values** |
 | ------------ | ---------------------------- | ------------------ |

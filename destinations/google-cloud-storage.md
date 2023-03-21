@@ -59,7 +59,7 @@ The sync will move data from your warehouse to your GCS bucket. In this step, yo
 
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your **source:** either a Model from the Census Models tab or a database table.
-3.  Under **Where do you want to sync data to?**, choose the name you assigned in Step 1 (we used GCS) as the **Connection**. Enter the **File Path** for the CSV file where data will sync. The path can accept variables that will populate when the sync runs. See [File Path Variables](google-cloud-storage.md#file-path-variables). Confirm the file path in the **Template Preview** field.
+3.  Under **Where do you want to sync data to?**, choose the name you assigned in Step 1 (we used GCS) as the **Connection**. Enter the **File Path** for the file where data will sync. The path can accept variables that will populate when the sync runs. See [File Path Variables](google-cloud-storage.md#file-path-variables). Confirm the file path in the **Template Preview** field.
 
     \_\_:bulb: _If the service account only has "Storage Object Creator" permissions, this file path needs to be unique per sync run_
 4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for GCS.
@@ -74,7 +74,7 @@ If you need any help configuring GCS, contact the [Census support team](mailto:s
 
 ### Variables
 
-When defining the **File Path** for an GCS sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files in the GCS bucket that reflect the date and time of the sync.
+When defining the **File Path** for an GCS sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new files in the GCS bucket that reflect the date and time of the sync.
 
 | **Variable** | **Description**              | **Example Values** |
 | ------------ | ---------------------------- | ------------------ |
@@ -111,7 +111,6 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 
 * Currently, the connector only supports syncing for files up to 5GB.
 * Data arrives in one file to the designated bucket and file path.
-* Files are written as a CSV with headers.
 
 [Contact us](mailto:support@getcensus.com) if your use cases don't work with these limitations. We plan on addressing at least a few of these in the future!
 
