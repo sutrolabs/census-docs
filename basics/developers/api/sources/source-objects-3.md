@@ -176,17 +176,116 @@ curl 'https://app.getcensus.com/api/v1/sources/[ID]/filter_segments/[ID]' \
 {% endtab %}
 {% endtabs %}
 
-| Data Property                       | Description                                                                                                                                                                                                                                                                      |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                                  | The id of this filter segment.                                                                                                                                                                                                                                                   |
-| name                                | The name of this filter segment.                                                                                                                                                                                                                                                 |
-| filter\_segment\_source\_object\_id | The source object id for this model.                                                                                                                                                                                                                                             |
-| model\_id                           | The id of the model that this filter segment is related to (either directly from legacy segments or indirectly via the entity)                                                                                                                                                   |
-| query                               | The SQL query associated with this filter segment.                                                                                                                                                                                                                               |
-| record\_count                       | The cached size of the segment at that particular moment in time.                                                                                                                                                                                                                |
-| created\_at                         | When this filter segment was created.                                                                                                                                                                                                                                            |
-| updated\_at                         | When this filter segment was last updated.                                                                                                                                                                                                                                       |
-| molecules                           | <p>A JSON array composed of the conditions that describe the segment. The types of elements you can find in this array are as follows:<br>- arrays of conditions on the top level entity<br>- objects to describe conditions on related entities<br>- the enums "AND" / "OR"</p> |
+| Data Property                       | Description                                                                                                                         |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| id                                  | The id of this filter segment.                                                                                                      |
+| name                                | The name of this filter segment.                                                                                                    |
+| filter\_segment\_source\_object\_id | The source object id for this model.                                                                                                |
+| model\_id                           | The id of the model that this filter segment is related to (either directly from legacy segments or indirectly via the entity)      |
+| query                               | The SQL query associated with this filter segment.                                                                                  |
+| record\_count                       | The cached size of the segment at that particular moment in time.                                                                   |
+| created\_at                         | When this filter segment was created.                                                                                               |
+| updated\_at                         | When this filter segment was last updated.                                                                                          |
+| molecules                           | The conditions that describe the segment. The value is a JSON array of items. The specific shape of these items is described below. |
+
+#### Molecules
+
+| Molecule Item Types   | Description                                                                                                                                                                                                                                                                                         |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Atomic Molecule       | <p>A condition on an property of an entity. The property or column will belong to the entity described in the parent relationship molecule. If the basic molecule is top level, the condition is on the entity on which the segment is based on.<br>The shape of the object is described below.</p> |
+| Relationship Molecule | <p>A condition or set of conditions on a related entity.<br>The shape of the object is described below.</p>                                                                                                                                                                                         |
+| Operation Molecule    | <p>The type of operation condition to be applied across the rest of the molecules at a particular level in the molecule<br>A string of value "AND"/OR".</p>                                                                                                                                         |
+| Molecule Group        | <p>A group of Basic Molecules, Relationship Molecules, more Molecule Groups and one Operation Molecule.<br>An array containing the items described above.</p>                                                                                                                                       |
+
+_Example_
+
+```json
+{
+   attribute: 'event_name',
+   operator: 'exactly',
+   valujso: 'purchase'
+}
+```
+
+| Atomic Molecule Properties | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| -------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| attribute                  | string | Column name for attribute\_type: column, Property name for attribute\_type: property, blank for attribute\_type: sql                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| attribute\_type            | string | can be column, property (for entity properties), or sql (for sql conditions)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| operator                   | string | one of the below operators                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| value                      |        | <p>SQL string for <code>attribute_type: sql.</code> <br>Otherwise the value we’re filtering on. <br>A number for numerical operators, string for string operators, boolean for boolean operators, and an array for array operators. <br>For datetime operators, this could either be a datetime value, a number (for “morethandays” type operators), or a “between” value which is represented as a hash with the following structure <code>{ bound_one: X, bound_one: Y }</code>. <code>X</code> and <code>Y</code> are either datetime values, blank (in which case they become the current datetime on the backend), or a string with the following structure <code>"days_ago: Z"</code> where Z is a number (can be decimal).</p> |
+| moleculeIndex              |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| atomIndex                  |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+| Relationship Molecule Attributes | Type    | Description                                                                                          |
+| -------------------------------- | ------- | ---------------------------------------------------------------------------------------------------- |
+| relationship\_id                 | integer | ID for the relationship object that connects both entities                                           |
+| constraint                       | hash    | Used only for creating conditions on event entities.                                                 |
+| molecules                        | array   | A group of Basic Molecules, more Relationship Molecules, Molecule Groups and one Operation Molecule. |
+
+_Example_
+
+```json
+{
+   relationship_id: 1,
+   constraint: {
+      type: 'occurrences',
+      operator: 'greaterthan',
+      value: 1
+   },
+   molecules: [
+      {
+         attribute: 'event_name',
+         operator: 'exactly',
+         value: 'login'
+      }
+    ]
+}
+```
+
+#### Operators
+
+| Text Operator Types | Description                     |
+| ------------------- | ------------------------------- |
+| is                  | Exact match with the given text |
+| is not              | Does not match the given text   |
+| starts with         | Starts with the given text      |
+| ends with           | Ends with the given text        |
+| contains            | Contains the given text         |
+| does not contain    | Does not contain the given text |
+| is blank            | Is null or an empty string      |
+| is not blank        | Is not null or an empty string  |
+
+| Number Operator Types | Description                     |
+| --------------------- | ------------------------------- |
+| equals                | Exactly equals the given number |
+| does not equal        | Does not equal the given number |
+| less than             | Less than the given number      |
+| greater than          | Greater than the given number   |
+| is null               | Has no value (null)             |
+| is not null           | Has a value (not null)          |
+
+| Boolean Operator Types | Description            |
+| ---------------------- | ---------------------- |
+| is true                | Has a value of true    |
+| is false               | Has a value of false   |
+| is null                | Has no value (null)    |
+| is not null            | Has a value (not null) |
+
+| Datetime Operator Typs | Description                            |
+| ---------------------- | -------------------------------------- |
+| more than              | More than the given number of days ago |
+| less than              | Less than the given number of days ago |
+| exactly                | Exactly the given number of days ago   |
+| after                  | After the given date                   |
+| on                     | On the given date                      |
+| before                 | Before the given date                  |
+| is null                | Has no value (null)                    |
+| is not null            | Has a value (not null)                 |
+| between                | Between two given dates                |
+
+| Array Operator Types | Description                               |
+| -------------------- | ----------------------------------------- |
+| contains any of      | Contains at least one of the given values |
 
 ### POST /sources/\[ID]/filter\_segments
 
