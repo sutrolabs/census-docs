@@ -22,11 +22,19 @@ To remove a schedule from a sync, click the edit icon and select **Manual** from
 
 The last scheduling option is Cron. Cron lets you schedule syncs on arbitrary schedules such as every 3 hours, or only week days. Census accepts standard Cron definitions up to minute granularity (second-level granularity cron definitions are not supported). A Cron schedule is specified by a series of five values, separated by spaces. In order, the values are Minute-of-hour, hours-of-day, Days-of-month, Months-of-year, and Day-of-week. The timezone is UTC.
 
+
+
 Here's a few examples of common Cron schedules:
 
 * Once an hour, on the hour, every four hours: `0 */4 * * *`
 * Hourly during weekdays: `0 * * * 1,2,3,4,5`
 * Minutely on the 5th, 6th, and 7th hours of the day in UTC timezone:`0 5,6,7 * * *` , executes sync jobs at _9pm, 10pm and 11pm PST_ or _12am, 1am and 2am EST_
+
+**Please note:** If including a range in your CRON schedule you'll want to make sure the values in the range are in a comma separated list.
+
+**Example:**&#x20;
+
+Hourly during weekdays should be: `0 * * * 1,2,3,4,5` instead of `0 * * * 1-5`
 
 ## 🔌 dbt Cloud Integration
 
