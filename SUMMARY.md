@@ -161,6 +161,7 @@
 * [Salesloft](destinations/salesloft.md)
 * [Segment](destinations/segment.md)
 * [SendGrid](destinations/sendgrid.md)
+* [Sendinblue](destinations/sendinblue.md)
 * [SFTP](destinations/sftp.md)
 * [Shopify](destinations/shopify.md)
 * [Slack](destinations/slack.md)
