@@ -154,6 +154,7 @@
 * [Radar](destinations/radar.md)
 * [Reddit Ads](destinations/reddit-ads.md)
 * [Redshift](destinations/redshift.md)
+* [Rokt](destinations/rokt.md)
 * [RollWorks](destinations/rollworks.md)
 * [S3](destinations/s3.md)
 * [Sailthru](destinations/sailthru.md)
