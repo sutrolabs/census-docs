@@ -9,17 +9,17 @@ description: This page describes how to use Census with MoEngage.
 1. Click **Add Service**.
 2. Select **MoEngage** from the menu.
 3. Input the following credentials to connect MoEngage:
-- **Data API ID**, **Data API Key**, and **App ID**: in the MoEngage app, navigate to **Settings** > **App** > **APIs** and generate a new **Data API** key.
-- **REST Endpoint**: can be found on [this page](https://help.moengage.com/hc/en-us/articles/360057030512-Data-Centers-in-MoEngage#01G5DQVXGT2KZMXTJPF77QPJ25) based on your MoEngage URL. Enter the value exactly as shown in the **REST API Host** column.
+   * **REST Endpoint**: can be found on [this page](https://help.moengage.com/hc/en-us/articles/360057030512-Data-Centers-in-MoEngage#01G5DQVXGT2KZMXTJPF77QPJ25) based on your MoEngage URL. Enter the value exactly as shown in the **REST API Host** column.
+   * **Data API ID**, **Data API Key**, and **App ID**: in the MoEngage app, navigate to **Settings** > **App** > **APIs** and generate a new **Data API** key.
 
 <figure><img src="../.gitbook/assets/moengage.png" alt=""><figcaption><p>Generate API credentials in the MoEngage app.</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Customer | ✅ | Customer ID | Update or Create |
-| Event | ✅ | Any unique ID | Append |
+| **Object Name** | **Supported?** | **Identifiers** | **Behaviors**    |
+| --------------: | :------------: | --------------- | ---------------- |
+|        Customer |        ✅       | Customer ID     | Update or Create |
+|           Event |        ✅       | Any unique ID   | Append           |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more MoEngage objects and/or behaviors.
 
