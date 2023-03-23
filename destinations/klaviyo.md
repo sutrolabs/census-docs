@@ -114,6 +114,23 @@ To update the **List** property, you'll need to provide the list **ID** or **Nam
 ["RYkk48", "Xmpet6", "DyreR0"]
 ```
 
+## Syncing Updates to Profile
+
+To sync updates to Profiles within Klaviyo there is some set up that will need to be done on the Klaviyo side.&#x20;
+
+You'll need to set up a Segment within Klaviyo that pulls in all users in your Klaviyo instance and grab the ID of the created Segment.&#x20;
+
+### **Steps:**
+
+* Create a Segment in Klaviyo with all users. This can be accomplished by adding a condition like email is not NULL or something else like that which makes sense for your data. (Example provided [here](https://community.klaviyo.com/lists-segments-and-profiles-35/how-can-i-export-all-profiles-into-one-customer-list-464) within Klaviyo).
+* Once created grab the Segment Id from the url&#x20;
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-03-22 at 12.02.38 PM.png" alt=""><figcaption></figcaption></figure>
+
+* Add the Segment ID to the **All Profiles Segment ID** field within your Klaviyo connection in Census (screenshot).&#x20;
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-03-22 at 11.56.52 AM.png" alt=""><figcaption></figcaption></figure>
+
 ## 🗄 Supported objects
 
 | **Object Name** | **Supported?** | **Identifiers**                                |
@@ -128,6 +145,7 @@ To update the **List** property, you'll need to provide the list **ID** or **Nam
 |     **Behavior** | **Supported?** | **Objects** |
 | ---------------: | :------------: | :---------: |
 | Update or Create |        ✅       |     All     |
+|      Update Only |        ✅       |   Profile   |
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
