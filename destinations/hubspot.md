@@ -102,6 +102,7 @@ Please be aware that with Custom Objects require extra API calls and are even sl
 | ----------------------: | :------------: | --------------------------------- |
 |                 Company |        ✅       | Object ID, any Text/Number        |
 |                 Contact |        ✅       | Object ID, Email, any Text/Number |
+|   Contact & Static List |        ✅       | Email                             |
 |                    Deal |        ✅       | Object ID, any Text/Number        |
 |                 Product |        ✅       | Object ID, any Text/Number        |
 |               Line Item |        ✅       | Object ID, any Text/Number        |
