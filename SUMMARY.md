@@ -103,6 +103,7 @@
 * [Front](destinations/front.md)
 * [FullStory](destinations/fullstory.md)
 * [Gainsight](destinations/gainsight.md)
+* [GitHub](destinations/github.md)
 * [GitLab](destinations/gitlab.md)
 * [Google Ads](destinations/google-ads/README.md)
   * [Customer Match Lists (Audiences)](destinations/google-ads/customer-match-audiences.md)
