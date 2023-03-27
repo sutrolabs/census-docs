@@ -12,7 +12,7 @@ description: This page describes how to use Census with LaunchDarkly.
    1. **Service Access Token**: create a new token from **Account settings** > **Authorization**. Assign the role `Writer` and check the box next to **This is a service token**.
    2. **Client Side ID**: go to **Account settings** > **Projects** and either click on an existing project or create a new one to get this ID.
 
-<figure><img src="../.gitbook/assets/LaunchDarkly (1).png" alt=""><figcaption><p>Create a Service Access Token from the LaunchDarkly app.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LaunchDarkly.png" alt=""><figcaption><p>Create a Service Access Token from the LaunchDarkly app.</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 
