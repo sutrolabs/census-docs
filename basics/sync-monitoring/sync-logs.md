@@ -8,8 +8,8 @@ Census can provide granular details on the data you've sent from your data wareh
 2. Why did the destination's API reject records that I tried to sync?
 3. What is the most common reason that the destination's API rejects my data?
 
-{% hint style="warning" %}
-At this time, Sync Logs are automatically accessible for Platform Plan accounts. If you would like logging enabled and are not on the Platform Plan, please contact our team at [support@getcensus.com](mailto:support@getcensus.com).
+{% hint style="info" %}
+Sync Logs are available for Platform Plan accounts. If you would like logging enabled please contact our team at [support@getcensus.com](mailto:support@getcensus.com).
 {% endhint %}
 
 ## :ballot\_box: Which sources support logging?
@@ -84,8 +84,6 @@ To illustrate the value here, imagine you have a mirror sync from a segment to a
 
 ### Source Objects Table
 
-#### What
-
 Source objects are tables, models, entities, or segments. These are what you send data from during a sync. Continue reading the [schema section](sync-logs.md#schema) below for more information.
 
 #### Where
@@ -111,8 +109,6 @@ Metadata tables for source objects can be found in the following tables, by ware
 
 ### Destinations Table
 
-#### What
-
 Destinations are service connections. These are where you send data during a sync. An example is Salesforce.
 
 #### Where
@@ -134,10 +130,6 @@ Metadata tables for destinations can be found in the following tables, by wareho
 | name   | Name of the destination.                                                                                                          |
 
 ### Destination Objects Table
-
-### Destinations Table
-
-#### What
 
 Destination objects are the specific objects within a destination that you send data to during a sync. An example is a Salesforce Contact.
 
