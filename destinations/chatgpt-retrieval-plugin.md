@@ -4,13 +4,13 @@ description: This page describes how to use Census with ChatGPT's Retrieval Plug
 
 # ChatGPT Retrieval Plugin
 
-​[ChatGPT Retrieval Plugins](https://github.com/openai/chatgpt-retrieval-plugin) are an open source pattern for making data accessible to querying by ChatGPT. They require setting up a dedicated server to operate. Census communicates with this server to load the data you've synced.To configure one for your company, see our blogpost on using Census with ChatGPT Retrieval Plugins.
+​[ChatGPT Retrieval Plugins](https://github.com/openai/chatgpt-retrieval-plugin) are an open source pattern for making data accessible to querying by ChatGPT. They require setting up a dedicated server to operate. Census communicates with this server to load the data you've synced. To configure one for your company, see our blog post on using Census with ChatGPT Retrieval Plugins.
 
 ### 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
 
-1. 1.Click **Add Service**.
-2. 2.Select **ChatGPT Retrieval Plugin** from the menu.
-3. 3.Enter your **Bearer Token** and **Hostname**. These are configured when you first deploy your plugin instance.
+1. Click **Add Service**.
+2. Select **ChatGPT Retrieval Plugin** from the menu.
+3. Enter your **Bearer Token** and **Hostname**. These are configured when you first deploy your plugin instance.
 
 ### 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
 
