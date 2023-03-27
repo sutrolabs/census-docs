@@ -86,6 +86,7 @@
 * [Chargebee](destinations/chargebee.md)
 * [Chargify](destinations/chargify.md)
 * [ChartMogul](destinations/chartmogul.md)
+* [Chattermill](destinations/chattermill.md)
 * [ChurnZero](destinations/churn-zero.md)
 * [CJ Affiliate](destinations/cj-affiliate.md)
 * [CleverTap](destinations/clevertap.md)
