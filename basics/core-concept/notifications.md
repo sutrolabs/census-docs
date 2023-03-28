@@ -1,7 +1,3 @@
----
-description: Operationalize
----
-
 # Notifications
 
 ### What are Notifications?
