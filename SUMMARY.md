@@ -64,7 +64,7 @@
 * [Snowflake](sources/snowflake.md)
 * [SQL Server](sources/sql-server.md)
 
-## 🛫 Destinations <a href="#destinations" id="destinations"></a>
+## 🛫 Destinations
 
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Adobe Target](destinations/adobe-target.md)

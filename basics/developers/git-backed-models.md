@@ -75,7 +75,7 @@ Census provides a History View of all changes applied from Census to Git, and fr
 
 1.  Navigate to the **Integrations** page and click **View History**.
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 4.53.43 PM (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 4.53.43 PM (1) (1) (1) (1) (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 2.  You can see a full list of all changes, including the latest commit from the changes that were applied, the number of changes (and failures), and when the changes were applied.
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM.png" alt=""><figcaption></figcaption></figure>
