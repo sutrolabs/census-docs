@@ -129,6 +129,7 @@
 * [LaunchDarkly](destinations/launchdarkly.md)
 * [LinkedIn](destinations/linkedin.md)
 * [Mailchimp](destinations/mailchimp.md)
+* [Mailgun](destinations/mailgun.md)
 * [Marketo](destinations/marketo.md)
 * [Meilisearch](destinations/meilisearch.md)
 * [MoEngage](destinations/moengage.md)
