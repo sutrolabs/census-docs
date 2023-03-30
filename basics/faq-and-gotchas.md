@@ -54,6 +54,22 @@ This is due to a server error, generally on the destination service. Check the e
 
 We optimize for signal with our alerting on sync failures or passing the threshold, assuming that the user will immediately respond and fix the error. Thus, we only send an error alert on failed records the first time it happens, and then another message once the sync recovers. The same logic is applied to when the connection (to either the source or destination) fails.
 
+## Destination Fields for billing
+
+> What are destination fields?
+
+Destination fields are the total number of fields in downstream SaaS destinations (e.g., Intercom) which Census syncs data into for a workspace. These are measured across all syncs, not individual syncs.
+
+For example, let’s say you have a Salesforce contacts sync and a Hubspot contacts sync. For 10 fields you could sync 1 field to Salesforce and nine to Hubspot, or five to each, or anything in between. If you sync the same five fields to both Hubspot and Salesforce, that would total to 10 fields because it’s relative to the downstream destination.
+
+In the Census UI, destination fields can be found within a sync as the mapped fields and identifiers.
+
+> How are destination fields measured?
+
+Each month a workspace can sync up to the number of destination fields specified by the plan. This includes destination fields updated by Census via scheduled, triggered and/or manual syncs.
+
+Destination fields are unique per destination, so a field (e.g., active\_users\_last\_30d) synced into two different destinations will be counted twice towards the monthly allocation, however if two different syncs send data to that same field within one destination, it will only count once.
+
 ## 💡 Ideas About Other Gotchas?
 
 We are constantly building out this page :construction:
