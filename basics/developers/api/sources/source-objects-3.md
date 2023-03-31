@@ -28,6 +28,7 @@ curl 'https://app.getcensus.com/api/v1/sources/[ID]/filter_segments' \
             "name": "my segment",
             "created_at": "2023-03-10T17:32:37.459Z",
             "updated_at": "2023-03-14T16:50:31.371Z",
+            "resource_identifier": "segment:my-segment",
             "filter_segment_source_object_id": 10,
             "molecules": [
                 [
@@ -51,6 +52,7 @@ curl 'https://app.getcensus.com/api/v1/sources/[ID]/filter_segments' \
             "name": "Valid name",
             "created_at": "2023-03-09T21:32:32.190Z",
             "updated_at": "2023-03-10T17:29:34.191Z",
+            "resource_identifier": "segment:valid-name",
             "filter_segment_source_object_id": 6,
             "molecules": [
                 [
@@ -127,6 +129,7 @@ curl 'https://app.getcensus.com/api/v1/sources/[ID]/filter_segments/[ID]' \
         "name": "Valid name",
         "created_at": "2023-03-09T21:32:32.190Z",
         "updated_at": "2023-03-10T17:29:34.191Z",
+        "resource_identifier": "segment:valid-name",
         "filter_segment_source_object_id": 6,
         "molecules": [
             [
@@ -186,6 +189,7 @@ curl 'https://app.getcensus.com/api/v1/sources/[ID]/filter_segments/[ID]' \
 | record\_count                       | The cached size of the segment at that particular moment in time.                                                                   |
 | created\_at                         | When this filter segment was created.                                                                                               |
 | updated\_at                         | When this filter segment was last updated.                                                                                          |
+| resource\_identifier                | The unique identifier for this filter segment.                                                                                      |
 | molecules                           | The conditions that describe the segment. The value is a JSON array of items. The specific shape of these items is described below. |
 
 #### Molecules
@@ -367,6 +371,7 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/sources/filter_segments/9
         "name": "API Updated Filter Segments",
         "created_at": "2023-03-09T21:32:32.190Z",
         "updated_at": "2023-03-10T17:29:34.191Z",
+        "resource_identifier": "segment:api-updated-filter-segments",
         "filter_segment_source_object_id": 6,
         "molecules": [],
         "parent_source_object_id": 3,
