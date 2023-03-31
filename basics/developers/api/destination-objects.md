@@ -308,7 +308,7 @@ This endpoint queues a job to refresh the list of fields for a given destination
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl --request POST 'http://app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NAME]/refresh_fields' \
+curl --request POST 'https://app.getcensus.com/api/v1/destinations/[ID]/objects/[OBJECT_FULL_NAME]/refresh_fields' \
 --header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}

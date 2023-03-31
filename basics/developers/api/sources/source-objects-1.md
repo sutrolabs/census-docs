@@ -285,7 +285,7 @@ This endpoint queues a job to refresh the list of columns for a given source mod
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl --request POST 'http://app.getcensus.com/api/v1/sources/[ID]/models/[ID]/refresh_columns' \
+curl --request POST 'https://app.getcensus.com/api/v1/sources/[ID]/models/[ID]/refresh_columns' \
 --header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}

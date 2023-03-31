@@ -247,7 +247,7 @@ This endpoint queues a job to refresh the list of objects for a destination.
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl --request POST 'http://app.getcensus.com/api/v1/destinations/90/refresh_objects' \
+curl --request POST 'https://app.getcensus.com/api/v1/destinations/90/refresh_objects' \
 --header 'Authorization: Bearer [API_TOKEN]'
 ```
 {% endtab %}
