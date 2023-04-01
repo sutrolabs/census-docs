@@ -48,7 +48,7 @@ If your organization has strict data residency requirements, we recommend verify
 
 Census syncs data from your data sources to your destinations using a set of static IP addresses. To ensure that Census can connect successfully to your sources or any self-hosted destinations, you must allowlist the following IP addresses in your firewall.&#x20;
 
-| Region                        | IP Addresses (CIDR)                                                                                                                                                                                                                                                      |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 🇺🇸 N. Virginia (us-east-1)  | <p><code>3.214.179.234</code></p><p><code>44.208.74.117</code></p><p><code>3.220.208.67</code></p><p><code>54.89.191.115</code></p><p><code>34.216.163.241</code></p><p><code>54.212.243.205</code></p><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p> |
-| 🇪🇺 Frankfurt (eu-central-1) | <p><code>3.75.51.110</code></p><p><code>18.184.169.13</code></p><p><code>3.125.36.195</code></p><p><code>3.70.76.1</code></p><p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p>                                                                            |
+| Region                        | IP Addresses (CIDR)                                                                                                                   |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 🇺🇸 N. Virginia (us-east-1)  | <p><code>34.216.163.241</code></p><p><code>54.212.243.205</code></p><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p> |
+| 🇪🇺 Frankfurt (eu-central-1) | <p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p>                                                                      |
