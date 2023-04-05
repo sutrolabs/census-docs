@@ -1,38 +1,34 @@
 ---
-description: >-
-  Learn about using data sources to connect to the core data that matters for
-  your business.
+description: Use data sources to connect to the data that matters most for your business.
 ---
 
 # Overview
 
-Source data for all Census Syncs come from your Data Warehouse. Historically, a
-data warehouse was the end of the line, where data went to collect dust. But
-modern cloud data warehouses enable a huge variety of data sources and data
-size, as well as the flexibility to define how data should be aggregated,
-joined, and organized specifically for your business. It's this flexibility and
-scalability that make it the perfect data hub for your operations.
+Source data for all Census Syncs come from your data warehouse. Historically, a data warehouse was the end of the line, where data went to collect dust. But modern cloud data warehouses enable a huge variety of data sources and data size, as well as the flexibility to define how data should be aggregated, joined, and organized specifically for your business. It's this flexibility and scalability that make it the perfect data hub for your operations.
 
-At Census, we refer to Data Sources as exactly that - the data warehouse or database that is used as the single source of truth within your organization.
+At Census, we refer to Data Sources as exactly that—the data warehouse or database that is used as the single source of truth within your organization.
 
-The following pages cover the various data sources that you can connect to with Census.&#x20;
+The menu to the left lists all of the data sources that Census currently supports. If you don't see your data source listed, please [let us know](mailto:support@getcensus.com)!
 
-* [Amazon Athena](aws-athena.md)
-* [Amazon S3](s3.md)
-* [Azure Synapse](azure-synapse.md)
-* [Databricks](https://docs.getcensus.com/sources/databricks)
-* [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-* [Google AlloyDB](alloydb.md)
-* [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-* [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-* [MySQL](https://docs.getcensus.com/sources/mysql)
-* [Postgres](https://docs.getcensus.com/sources/postgres)
-* [Redshift](https://docs.getcensus.com/sources/redshift)
-* [Rockset](https://docs.getcensus.com/sources/rockset)
-* [Snowflake](https://docs.getcensus.com/sources/snowflake)
-* [SQL Server](https://docs.getcensus.com/sources/sql-server)
+## 🏎️ Sync Engines
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more data sources.
+Census offers two methods of connecting to your data source and keeping track of what's been synced (a.k.a. "state tracking"). We call these Sync Engines. When connecting a data source for the first time, we'll ask you to select either Basic or Advanced Sync Engine.
+
+While **your experience of the Census product will be identical either way**, there are some important differences between these two options:
+
+|                             | Basic Sync Engine                     | Advanced Sync Engine               |
+| --------------------------- | ------------------------------------- | ---------------------------------- |
+| **State tracking location** | Census infrastructure                 | Your data warehouse                |
+| **Sync performance**        | Slower                                | Faster                             |
+| **Ease of setup**           | Very easy                             | Slightly more involved             |
+| **Warehouse permissions**   | Read-only access                      | Read/write access                  |
+| **Ability to switch**       | Possible to upgrade to advanced later | Not possible to downgrade to basic |
+
+{% hint style="info" %}
+Some data sources (e.g. Google Sheets and Elasticsearch) only support Basic Sync Engine since writing state back to them is either challenging or impossible.
+{% endhint %}
+
+If you have any questions about which Sync Engine is right for you, or you need help upgrading from Basic to Advanced, please [reach out to our support team](mailto:support@getcensus.com).
 
 ## 🚦Allowed IP Addresses
 

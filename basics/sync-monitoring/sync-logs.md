@@ -151,4 +151,3 @@ Metadata tables for destinations can be found in the following tables, by wareho
 | type   | Type of the destination object. This can be any of the various destination objects we support, in the format `<Destination name>::ObjectTypes::<Destination object name>` |
 | name   | Name of the destination object.                                                                                                                                           |
 
-****
