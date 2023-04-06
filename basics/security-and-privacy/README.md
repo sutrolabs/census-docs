@@ -85,7 +85,7 @@ When a mapper finishes its work, it has two lists of records - those that were s
 
 The list of records that failed is written directly back to the Census schema in your data warehouse, and a small sample of those failures (no more than 100) are captured and sent to the Census platform. These diagnostic samples are the only customer data that will ever be stored in Census, and their storage is limited to 7 days.
 
-## Exceptions to Census's temporary data storage policy
+## Exceptions to our temporary data storage policy
 
 As described above, Census's architecture is built from the ground up to handle your data with care and, by default, not to store any of your data on our infrastructure.
 
