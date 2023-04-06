@@ -93,10 +93,11 @@ However, when setting up a new source, we do provide the option to use our [Basi
 
 Also, the following data sources _only_ support Basic Sync Engine (as of April 2023):
 
+* Amazon Athena
 * Amazon S3
 * Azure Synapse
 * Elasticsearch
-* Google Sheets (as a source, not a destination)
+* Google Sheets
 * MySQL
 * SingleStore
 
