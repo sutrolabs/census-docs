@@ -8,7 +8,7 @@ SQL Queries require nothing other than a data source connection. Once you have a
 
 SQL Queries are a fast way to write and save SQL so that it can be referenced multiple times and updated in once spot as needed. If you have the [necessary permissions](../../security-and-privacy/workspaces-and-access-controls.md), you can write a brand new query or copy-and-paste one from an existing system. Give it a name and save it, and you can immediately start using your model as a source for any of your syncs.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Here's what an example User Mart Query SQL Query looks like in Census.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Here's what an example User Mart Query SQL Query looks like in Census.</p></figcaption></figure>
 
 ## Version History and Rollback
 

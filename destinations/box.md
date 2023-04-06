@@ -1,5 +1,5 @@
 ---
-description: This page describes how to use Census with Box
+description: This page describes how to use Census with Box.
 ---
 
 # Box
@@ -10,7 +10,7 @@ description: This page describes how to use Census with Box
 2. Select **Box** from the menu.
 3. Complete the OAuth flow to grant Census access to your Box instance.
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-03-31 at 10.38.22 AM.png" alt=""><figcaption><p>Box Connection Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Grant Census access to your Box account.</p></figcaption></figure>
 
 ## 🗄️ File Path Variables
 
@@ -36,6 +36,10 @@ When defining the file path for a Box sync, you can use variables that will be s
 | **Behavior** | **Supported?** | **Objects** |
 | -----------: | :------------: | ----------- |
 |       Mirror |        ✅       | All         |
+
+{% hint style="info" %}
+Our current Box integration only supports files up to 50MB in size. If you need support for larger files, please let us know!
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Box.
 
