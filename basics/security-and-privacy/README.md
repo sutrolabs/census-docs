@@ -89,29 +89,18 @@ The list of records that failed is written directly back to the Census schema in
 
 As described above, Census's architecture is built from the ground up to handle your data with care and, by default, not to store any of your data on our infrastructure.
 
-However, we do provide some optional additional functionality that rely on storing data in Census-managed infrastructure long term. Please note that all of the features listed below must be explicitly enabled inside Census before any data is stored on your behalf.
+However, when setting up a new source, we do provide the option to use our [Basic Sync Engine](https://docs.getcensus.com/sources/overview#sync-engines), which relies on Census-managed infrastructure for storing information about past syncs and computing incremental changes.
 
-These features include:
+Also, the following data sources _only_ support Basic Sync Engine (as of April 2023):
 
-* Data sources that only support read-only mode
-  * Amazon S3
-  * Azure Synapse
-  * Elasticsearch
-  * Google Sheets (this does not apply to Google Sheets destinations)
-  * MySQL
-  * SingleStore
-* Data sources when used in read-only mode (does not apply to read-write mode)
-  * Databricks
-  * Google AlloyDB
-  * Google BigQuery
-  * Microsoft SQL Server
-  * PostgreSQL
-  * Redshift
-  * Snowflake
-  * Rockset
-* Enabling the Entity API
+* Amazon S3
+* Azure Synapse
+* Elasticsearch
+* Google Sheets (as a source, not a destination)
+* MySQL
+* SingleStore
 
-Census will remove any of the data stored on your behalf after 14 days of disabling the feature.
+Finally, enabling the Entity API requires us to store the relevant data on our own infrastructure. Census will remove any data stored on your behalf after 14 days of disabling this feature.
 
 ## 🤔 Have more questions?
 
