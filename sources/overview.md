@@ -16,19 +16,19 @@ Census offers two methods of connecting to your data source and keeping track of
 
 While **your experience of the Census product will be identical either way**, there are some important differences between these two options:
 
-|                             | Basic Sync Engine                     | Advanced Sync Engine               |
-| --------------------------- | ------------------------------------- | ---------------------------------- |
-| **State tracking location** | Census infrastructure                 | Your data warehouse                |
-| **Sync performance**        | Slower                                | Faster                             |
-| **Ease of setup**           | Very easy                             | Slightly more involved             |
-| **Warehouse permissions**   | Read-only access                      | Read/write access                  |
-| **Ability to switch**       | Possible to upgrade to advanced later | Not possible to downgrade to basic |
+|                             | Basic Sync Engine                            | Advanced Sync Engine               |
+| --------------------------- | -------------------------------------------- | ---------------------------------- |
+| **State tracking location** | Census infrastructure                        | Your data warehouse                |
+| **Sync performance**        | Slower                                       | Faster                             |
+| **Ease of setup**           | Very easy                                    | Slightly more involved             |
+| **Warehouse permissions**   | Read-only access                             | Read/write access                  |
+| **Ability to switch**       | Ability to upgrade to advanced (coming soon) | Not possible to downgrade to basic |
 
 {% hint style="info" %}
 Some data sources (e.g. Google Sheets and Elasticsearch) only support Basic Sync Engine since writing state back to them is either challenging or impossible.
 {% endhint %}
 
-If you have any questions about which Sync Engine is right for you, or you need help upgrading from Basic to Advanced, please [reach out to our support team](mailto:support@getcensus.com).
+If you have any questions about which Sync Engine is right for you, please [reach out to our support team](mailto:support@getcensus.com).
 
 ## 🚦Allowed IP Addresses
 
