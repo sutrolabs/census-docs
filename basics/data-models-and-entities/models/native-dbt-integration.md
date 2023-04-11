@@ -18,9 +18,9 @@ Here are the instructions for connecting a dbt project:
 
 **Example Selectors**
 
-- All models with a tag: `tag:census`
-- All models in a directory: `path/to/models`
-- All models: `*`
+* All models with a tag: `tag:census`
+* All models in a directory: `path/to/models`
+* All models: `*`
 
 For more information on selector syntax, see [dbt’s Model Selector Syntax](https://docs.getdbt.com/reference/model-selection-syntax/).
 
@@ -60,17 +60,17 @@ Our dbt integration is designed to pair nicely with your existing dbt runner, wh
 
 As a result, there's several dbt features that Census does not make use of. These include:
 
-- Materialization directives. Census doesn’t currently materialize your tables back to your data warehouse. Census will however use materialized tables by your dbt runner to speed up the execution
-- Changing the default schema behavior by overriding the [`generate_schema_name` macro](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-custom-schemas)
-- Pre and post hooks
-- Non-public packages
+* Materialization directives. Census doesn’t currently materialize your tables back to your data warehouse. Census will however use materialized tables by your dbt runner to speed up the execution
+* Changing the default schema behavior by overriding the [`generate_schema_name` macro](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-custom-schemas)
+* Pre and post hooks
+* Non-public packages
 
-Our dbt integration currently supports version `1.0.4`, `1.2.1`, `1.3.1`, and `1.4.1`. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
+Our dbt integration currently supports version `1.0.4`, `1.2.0`, `1.3.1`, and `1.4.1`. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
 
 ### [`require-dbt-version`](https://docs.getdbt.com/reference/project-configs/require-dbt-version) in `dbt_project.yml`
 
 Census will try to match a dbt version based on the `require-dbt-version` field, if specified, in your project's `dbt_project.yml`.
 
-- If this field is not specified, a default version of `1.4.1` will be used.
-- If Census does not support a version of dbt specified by the `require-dbt-version` field, the project will not compile sucessfully.
-- If Census supports multiple dbt versions that match the requirements, the latest version supported by Census will be used.
+* If this field is not specified, a default version of `1.4.1` will be used.
+* If Census does not support a version of dbt specified by the `require-dbt-version` field, the project will not compile sucessfully.
+* If Census supports multiple dbt versions that match the requirements, the latest version supported by Census will be used.
