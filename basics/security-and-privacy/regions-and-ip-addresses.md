@@ -51,4 +51,5 @@ Census syncs data from your data sources to your destinations using a set of sta
 | Region                        | IP Addresses (CIDR)                                                                                                                   |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | 🇺🇸 N. Virginia (us-east-1)  | <p><code>34.216.163.241</code></p><p><code>54.212.243.205</code></p><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p> |
-| 🇪🇺 Frankfurt (eu-central-1) | <p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p>                                                                      |
+| 🇪🇺 Frankfurt (eu-central-1) | <p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p>                                       |
+
