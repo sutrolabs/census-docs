@@ -14,6 +14,8 @@ The menu to the left lists all of the data sources that Census currently support
 
 Census offers two methods of connecting to your data source and keeping track of what's been synced (a.k.a. "state tracking"). We call these Sync Engines. When connecting a data source for the first time, we'll ask you to select either Basic or Advanced Sync Engine.
 
+<figure><img src="../.gitbook/assets/sync-engines.png" alt=""><figcaption><p>Select your preferred Sync Engine when connecting a data source.</p></figcaption></figure>
+
 While **your experience of the Census product will be identical either way**, there are some important differences between these two options:
 
 |                             | Basic Sync Engine                            | Advanced Sync Engine               |
