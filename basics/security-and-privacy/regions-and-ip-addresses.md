@@ -48,8 +48,9 @@ If your organization has strict data residency requirements, we recommend verify
 
 Census syncs data from your data sources to your destinations using a set of static IP addresses. To ensure that Census can connect successfully to your sources or any self-hosted destinations, you must allowlist the following IP addresses in your firewall.&#x20;
 
-| Region                        | IP Addresses (CIDR)                                                                                                                   |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 🇺🇸 N. Virginia (us-east-1)  | <p><code>34.216.163.241</code></p><p><code>54.212.243.205</code></p><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p> |
-| 🇪🇺 Frankfurt (eu-central-1) | <p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p>                                       |
+| Region                                                                                       | IP Addresses (CIDR)                                                                             |
+| -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| 🇺🇸 N. Virginia (us-east-1)                                                                 | <p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p>                               |
+| <p>🇺🇸 Oregon (us-west-2)<br><strong>Legacy IPs to be deprecated in April 2023</strong></p> | <p><code>34.216.163.241</code></p><p><code>54.212.243.205</code></p>                            |
+| 🇪🇺 Frankfurt (eu-central-1)                                                                | <p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p> |
 
