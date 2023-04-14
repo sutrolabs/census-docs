@@ -38,7 +38,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this: 👇
 
-![Connections page with Klaviyo](../.gitbook/assets/202201\_Klaviyo\_Connection.png)
+![Connections page with Klaviyo](<../.gitbook/assets/202201\_Klaviyo\_Connection (1).png>)
 
 ### Step 2: Connect your data warehouse
 
@@ -125,7 +125,7 @@ You'll need to set up a Segment within Klaviyo that pulls in all users in your K
 * Create a Segment in Klaviyo with all users. This can be accomplished by adding a condition like email is not NULL or something else like that which makes sense for your data. (Example provided [here](https://community.klaviyo.com/lists-segments-and-profiles-35/how-can-i-export-all-profiles-into-one-customer-list-464) within Klaviyo).
 * Once created grab the Segment Id from the url&#x20;
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-03-22 at 12.02.38 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-03-22 at 12.02.38 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 * Add the Segment ID to the **All Profiles Segment ID** field within your Klaviyo connection in Census (screenshot).&#x20;
 
