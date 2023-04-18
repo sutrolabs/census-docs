@@ -21,7 +21,7 @@ By default, Census will run services with US-based infrastructure. Customers who
 
 To view your workspace's current region, navigate to the [Settings > General page](https://app.getcensus.com/settings/general) in your Census account. You will find your region identified under **"Organization region"**.
 
-If your data source or self-hosted destinations are behind a firewall, you will need to allowlist [Census's IP Addresses](census-ip-addresses.md) associated with your region.
+If your data source or self-hosted destinations are behind a firewall, you will need to allowlist [Census's IP Addresses](regions-and-ip-addresses.md#ip-addresses) associated with your region.
 
 Customers who have purchased the Census Platform Plan may request to use another region by contacting [support@getcensus.com](mailto:support@getcensus.com).
 
