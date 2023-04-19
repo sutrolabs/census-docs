@@ -66,6 +66,7 @@
 
 ## 🛫 Destinations
 
+* [Accredible](destinations/accredible.md)
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Adobe Target](destinations/adobe-target.md)
 * [Aha](destinations/aha.md)
