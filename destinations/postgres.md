@@ -35,6 +35,14 @@ You'll be prompted to put the following credentials into the Census page.
 
 ![As listed, we need the Hostname, Port, Database, Username, and Password](<../.gitbook/assets/Postgres Module.png>)
 
+## Connecting via SSH tunnel
+
+Census supports SSH tunneling when connecting to Postgres as a destination. The setup instructions are the same as when using Postgres as a source.&#x20;
+
+SSH Tunneling Instructions can be found [on this page here](https://docs.getcensus.com/sources/postgres#connecting-via-ssh-tunnel)
+
+
+
 After clicking connect, Census will test the connection that was specified.
 
 ![A Green , means you are good to go](<../.gitbook/assets/Postgres Test.png>)
