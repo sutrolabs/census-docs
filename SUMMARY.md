@@ -189,6 +189,7 @@
 * [Twitter](destinations/twitter.md)
 * [Totango](destinations/totango.md)
 * [Userflow](destinations/userflow.md)
+* [Userpilot](destinations/userpilot.md)
 * [Vero](destinations/vero.md)
 * [Vitally](destinations/vitally.md)
 * [Webhooks](destinations/webhook.md)
