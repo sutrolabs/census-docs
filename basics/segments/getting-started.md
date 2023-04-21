@@ -1,26 +1,37 @@
 ---
-description: How to build segments and sync them to your destinations.
+description: How to use the Segments visual builder to create and update segments
 ---
 
-# Defining Segments
+# Creating Segments
 
-## Set up your Entities
+## Before you start
 
-Segments are built on top of [entities.md](../data-models-and-entities/entities.md "mention"), the core models set up for a data warehouse connection. Typically a member of the data team will need to first set up the entities for your warehouse connection before getting started.&#x20;
+Segments are built on top of entities, the core models set up for a data warehouse connection. Typically a member of the data team will need to first set up the entities for your warehouse connection before getting started. Take a look at [Defining Your Data Model](data-preparation.md) for details.
 
 ## Using the visual builder
 
-Click on **Segments** tab in the left-hand menu to go to the segments page. Click **Add a New Segment** and use the visual builder to define your segment.&#x20;
+To create your first segment, click on **Segments** in the left-hand navigation of Census and then click **Add a New Segment** in the top right.
 
-To start, you'll need to select the Entity you're segmenting in the top left. This will determine the records returned by your segment.&#x20;
+To start, you'll need to select the data set you're segmenting in the top left. This will determine the type of records your segment contains, the conditions you'll be able to filter on, and what data will eventually be available to sync to your destination tools.&#x20;
 
-Then start adding **conditions**. For more details on the various operations available, see below. If you are segmenting an entity that has relationships to other entities, you can also filter on those related entities by adding a new **group.**
+![Example of a segment with conditions on the User's email and their events](<../../.gitbook/assets/Example Segment (2).png>)
 
-![](../../.gitbook/assets/screely-1670199537533.png)
+At any point, you can press **Preview Results** to get a look at a sample of the data that will be available in your segment. When you're happy with your segment conditions, give you segment a name and press **Save**.
 
-At any point, you can press **Preview Results** to get a look at a sample of the data that will be available in your segment or **View SQL** to see the SQL generated to power your segment. When you're happy with your segment conditions, give you segment a name and press **Save**.
+### Conditions and Groups
 
-### Segment Operations
+The basis of any segment is adding new conditions. Clicking **Add Condition** to select an attribute or related data from the **Details List** on the right hand side. It contains all the available attributes for the selected entity, as well as any related entities or segments which can be used for additional conditions as well.
+
+On the left side, you'll see the And / Or condition combination control. You can use this to change how conditions are combined. **And** meaning all the conditions must be met; **Or** meaning any of the conditions can be met. You can also make combinations of ands and ors by adding **Condition Groups** which can have their own conditions and combination control.&#x20;
+
+### Related Entities and Related Segments
+
+In addition to creating conditions about attributes on the entity you're segmenting, you can also filter based on other data related to this entity.
+
+* **Related Entities** is the list of other entities connected to the entity you're segmenting. You can also create conditions on any related entities and your segment will only include records that are related to entities that meet those conditions. Census will take care of building the association between those data sets.
+* **Other Segment Membership** - Allows _including_ or _excluding_ members from a segment if they appear in some other segment of the same entity data. This enables creating sub segments of common shared definitions like Paid Customers, excluding segments that should never be targeted, as well as creation unions and intersections of of multiple other segments.&#x20;
+
+### Operators
 
 Census supports a wide variety of operations that can be used to filter segments. The types of operators available are dictated by the types of the data warehouse columns being filtered. Selecting a column with a different type will change the types of operators available.
 
@@ -47,17 +58,11 @@ Census supports a wide variety of operations that can be used to filter segments
 | between                    | Datetime           | Column's value is between \_\_\_ days and \_\_\_\_ days ago                                  |
 | contains any of            | Array              | Array column contains any of the provided values                                             |
 
-### SQL Conditions
-
-Though Census's visual segment creator is designed to be used without knowing any SQL, it works by generating SQL underneath the covers and running that against your data. You can actually view this SQL at any point by pressing the **View SQL** button.
-
-Additionally, if you're trying to create a condition that Census doesn't support, you can still add conditions to your segment by selecting the **SQL Condition** in the Attribute menu. The SQL you provide will be added as an additional condition alongside any other conditions you've added to your segment. Think of it like formulas in Excel: it's a powerful tool in your toolbelt that can let you express very complex concepts, but it can break the segment so use with care!
-
 ### Event Filters
 
 When the Entity you're segmenting has a related events entity, those events have even more conditions available, powered by the schema columns defined on the event entity.
 
-<figure><img src="../../.gitbook/assets/screely-1670200174286.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Example Segment (3).png" alt=""><figcaption></figcaption></figure>
 
 | Type        | Operator              | Description                                        |
 | ----------- | --------------------- | -------------------------------------------------- |
@@ -79,14 +84,11 @@ When the Entity you're segmenting has a related events entity, those events have
 |             | Before date           | Events occurred before a fixed date in time        |
 |             | Any time              | Entity has match dates regardless of time          |
 
-## Syncing your segment
+### SQL Conditions
 
-Your newly created segment will now be available to sync in the standard Census sync workflow. You can sync segments to all over our supported destinations such as [Facebook Ads](../../destinations/facebook-ads.md), [Google Ads](../../destinations/google-ads/) and [Marketo](../../destinations/marketo.md). \
-\
-At this point, you're good to go with Segments, but there's more to read if you need:
+Though Census's visual segment creator is designed to be used without knowing any SQL, it works by generating SQL underneath the covers and running that against your data. You can actually view this SQL at any point by pressing the **View SQL** button.
 
-* Want to learn about Syncs? Check out the [Core Concepts](../core-concept/) section
-* Need to get your favorite app connected to Census? Take a look at Destinations in the menu on the left.
+Additionally, if you're trying to create a condition that Census doesn't support, you can still add conditions to your segment by selecting the **SQL Condition** in the Attribute menu. The SQL you provide will be added as an additional condition alongside any other conditions you've added to your segment. Think of it like formulas in Excel: it's a powerful tool in your toolbelt that can let you express very complex concepts, but it can break the segment so use with care!
 
 ## FAQs
 
@@ -95,4 +97,3 @@ At this point, you're good to go with Segments, but there's more to read if you 
 _Case sensitive:_ Census will consider the "is" and "is not" operators to be case sensitive.
 
 _Case insensitive:_ Census will consider the "contains", "does not contain", "starts with", and "ends with" operators to be case insensitive.
-

@@ -1,15 +1,22 @@
 # Table of contents
 
-* [🚀 Introduction](README.md)
+* [🦩 Overview](README.md)
 
-## 🧰 The Basics <a href="#basics" id="basics"></a>
+## 🧰 Core Concepts <a href="#basics" id="basics"></a>
 
 * [Syncs](basics/core-concept/README.md)
   * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
   * [Retry Handling](basics/core-concept/retry-handling.md)
+  * [Audience Syncs](basics/core-concept/audience-syncs.md)
   * [Notifications](basics/core-concept/notifications.md)
+* [Segments](basics/segments/README.md)
+  * [Creating Segments](basics/segments/getting-started.md)
+  * [Syncing Segments](basics/segments/syncing-segments.md)
+  * [Analyzing Segments](basics/segments/analyzing-segments.md)
+  * [Data Preparation](basics/segments/data-preparation.md)
 * [Data Models and Entities](basics/data-models-and-entities/README.md)
   * [Entities](basics/data-models-and-entities/entities.md)
+  * [Enrichment](basics/data-models-and-entities/enrichment.md)
   * [Models](basics/data-models-and-entities/models/README.md)
     * [SQL Queries](basics/data-models-and-entities/models/census-models.md)
     * [dbt Models](basics/data-models-and-entities/models/native-dbt-integration.md)
@@ -17,9 +24,6 @@
   * [Structuring Data](basics/data-models-and-entities/defining-source-data/README.md)
     * [Events](basics/data-models-and-entities/defining-source-data/events.md)
     * [Arrays and Nested Objects](basics/data-models-and-entities/defining-source-data/structured-data.md)
-* [Segments](basics/segmentation/README.md)
-  * [Defining Segments](basics/segmentation/getting-started.md)
-* [Enrichment](basics/enrichment.md)
 * [Observability](basics/sync-monitoring/README.md)
   * [Sync Logs](basics/sync-monitoring/sync-logs.md)
   * [Sync Alerts](basics/sync-monitoring/alerts.md)

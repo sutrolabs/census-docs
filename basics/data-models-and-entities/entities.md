@@ -6,9 +6,9 @@ description: >-
 
 # Entities
 
-Entities are a core concept in Census. Entities are the most important [models](models/ "mention") in your data warehouse and typically represent a single "thing" like a person (or a lead or a contact) or a company (or an account or organization) though they can also be other things like invoices, campaigns, events, or devices.&#x20;
+Entities are a core concept in Census. Entities are the most important [models](models/ "mention") in your data warehouse and typically represent a single "thing" like a person (or a lead or a contact) or a company (or an account or organization) though they can also be other things like invoices, campaigns, events, or devices.
 
-Your entity is a list or a set of those things, ideally the full set so that others can easily use [segmentation](../segmentation/ "mention") to create interesting subsets of that thing. That means your entity should include as many columns (also called properties or fields) as possible so others can easily reuse those entities in segments or [core-concept](../core-concept/ "mention").
+Your entity is a list or a set of those things, ideally the full set so that others can easily use [segments](../segments/ "mention") to create interesting subsets of that thing. That means your entity should include as many columns (also called properties or fields) as possible so others can easily reuse those entities in segments or [core-concept](../core-concept/ "mention").
 
 Setting up entities in Census gives you the opportunity to define where the data is stored, what it is, how it's related and more, all of which will make Census much more powerful and easier to use.
 
@@ -16,7 +16,7 @@ Setting up entities in Census gives you the opportunity to define where the data
 
 ## Concepts
 
-Entities add a number of additional pieces of information on top of a regular [model](models/) that makes them much more powerful, but also requires a bit of thought during setup.&#x20;
+Entities add a number of additional pieces of information on top of a regular [model](models/) that makes them much more powerful, but also requires a bit of thought during setup.
 
 ### Data Source
 
@@ -31,11 +31,11 @@ Letting Census know what "type" of data your entity is will let Census be smarte
 | User    | Humans that engage with your business in some form. They may be subscribers or free users or email recipients depending on your business. |
 | Company | Organizations that your business engages with. Typically users are a member of these companies in some form.                              |
 | Event   | Analytical events that capture a specific type of action with a moment in time (rather than calendar events)                              |
-| Generic | Any unspecified type of data.  **If in doubt**, you can always use Generic for any of your entities.                                      |
+| Generic | Any unspecified type of data. **If in doubt**, you can always use Generic for any of your entities.                                       |
 
 ### Schema Columns
 
-Depending on the type of your entity, you can also highlight certain key columns on the entity that should have a special behavior.&#x20;
+Depending on the type of your entity, you can also highlight certain key columns on the entity that should have a special behavior.
 
 * All Entity types require a single column to act as a unique identifier for each record. If your data set doesn't already have one, you can create a column by combining values from other columns into a unique identifier.
 * Event type entities require a few additional additional fields to support event segmentation.
@@ -46,9 +46,9 @@ Depending on the type of your entity, you can also highlight certain key columns
 
 ### Relationships
 
-Though entities can exist without any relationships, almost all entities are related to another. Defining those relationships in Census unlocks the power of relationship-based Segmentation so define the relationships that exist in your data whenever possible.&#x20;
+Though entities can exist without any relationships, almost all entities are related to another. Defining those relationships in Census unlocks the power of relationship-based Segmentation so define the relationships that exist in your data whenever possible.
 
-Each entity can have many relationships defined and the relationship will appear on both related entities once defined.&#x20;
+Each entity can have many relationships defined and the relationship will appear on both related entities once defined.
 
 <figure><img src="../../.gitbook/assets/screely-1670199092950.png" alt=""><figcaption></figcaption></figure>
 
@@ -63,7 +63,7 @@ Note that Census does not check or enforce the validity of the data on either si
 
 ## How to use entities at your company
 
-The entities that matter for any given business are always unique so don't worry if your entities feel like they may be unique.&#x20;
+The entities that matter for any given business are always unique so don't worry if your entities feel like they may be unique.
 
 When setting up entities for the first time, it's easier to focus on just one or two entities and build from there. A great starting point:
 
@@ -75,9 +75,9 @@ Setting up two of these entities with a relationship that joins them will let yo
 
 ## Next steps
 
-Once your entities are configured, you can open up Census to anyone that could benefit from direct access to your data.&#x20;
+Once your entities are configured, you can open up Census to anyone that could benefit from direct access to your data.
 
-* Business Users can create meaningful subsets of data with Census's [segmentation](../segmentation/ "mention")functionality.
+* Business Users can create meaningful subsets of data with Census's [segments](../segments/ "mention")functionality.
 * Entities are easy to use directly in [core-concept](../core-concept/ "mention").
 
 Have more questions about how entities fit with your data strategy? [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat to let us know what questions we can help with!
