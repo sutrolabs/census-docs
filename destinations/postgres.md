@@ -67,6 +67,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 | -------------------: | :------------: | :---------: |
 |           **Update** |        ✅       |     All     |
 | **Update or Create** |        ✅       |     All     |
+|           **Append** |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for PostgreSQL.
 
