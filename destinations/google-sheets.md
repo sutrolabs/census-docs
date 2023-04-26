@@ -39,7 +39,7 @@ Your new Google Sheets connection will include your Google Identity email. Click
 
 ### 2. Share your target Google Sheet
 
-Now head to the Google Sheet you'd like to sync to. If you don't have one in mind, you can [create a new one](https://sheets.new). Either way, make sure your target Google Sheet has an empty tab inside it that Census can sync to, as the contents of which ever tab you select will be replaced by Census.&#x20;
+Now head to the Google Sheet you'd like to sync to. If you don't have one in mind, you can [create a new one](https://sheets.new). Either way, make sure your target Google Sheet has an empty tab inside it that Census can sync to, as the contents of which ever tab you select will be replaced by Census.
 
 To give Census access to your Google Sheet, press the Share button and then add paste the Google Identity email from Census into the share dialog and confirm.
 
@@ -47,7 +47,7 @@ To give Census access to your Google Sheet, press the Share button and then add 
 
 ### 3. Connect your data warehouse
 
-If this is your first Census sync, you'll also need to connect your data warehouse. Follow one of our short guides depending on your data warehouse&#x20;
+If this is your first Census sync, you'll also need to connect your data warehouse. Follow one of our short guides depending on your data warehouse
 
 * [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
 * [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
@@ -63,7 +63,7 @@ After setting up your warehouse, your Census Connections Page should look like t
 
 Now navigate to the [Census's models page.](https://app.getcensus.com/models)
 
-Here you will have to write SQL queries to select the data you want to send to your Google Sheet. Your model can be a complex query selecting details about customers and generating metrics, or as simple as a `SELECT * FROM ...`, it's up to you. Once you have created your model, click **Save Model**.&#x20;
+Here you will have to write SQL queries to select the data you want to send to your Google Sheet. Your model can be a complex query selecting details about customers and generating metrics, or as simple as a `SELECT * FROM ...`, it's up to you. Once you have created your model, click **Save Model**.
 
 ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -74,7 +74,7 @@ Now head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add
 In the " **What data do you want to sync?"** section
 
 * For the **Connection**, select the data warehouse you connected in step 3
-* For the **Source,**  select the model you created in step 4
+* For the **Source,** select the model you created in step 4
 
 Next up is the **"Where do you want to sync data to?"** section
 
@@ -82,13 +82,13 @@ Next up is the **"Where do you want to sync data to?"** section
 * For Object, pick the Google Sheet you gave permission to in step 1 and select the tab within it that you want to sync to. As a reminder, Census will replace the contents of the tab you select so we recommend you only select a tab that's empty.
 * Under **Advanced** you can toggle whether or not you want to allow Google Sheets to parse the data that gets synced. By letting Sheets parse data, each cell will be treated as if the user had manually typed that data into sheets. This means things like strings in a date format will be converted into a date object in the Sheet but also that any string that starts with an '=' symbol will be treated as a formula. If you just want your data to be preserved raw as it comes from your warehouse then toggle this feature off.
 
-For the " **How should changes to the source be synced?"** section&#x20;
+For the " **How should changes to the source be synced?"** section
 
 * **Mirror** will be preselected
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section
 
-* Here Census will pre-populate all the columns from your model in step 4. But you can choose to remove any of the fields you don't want.&#x20;
+* Here Census will pre-populate all the columns from your model in step 4. But you can choose to remove any of the fields you don't want.
 * If you plan to add more fields in the future, you'll need to edit this sync and return here to add them.
 
 The end result should look something like this:
@@ -103,7 +103,7 @@ Once the sync has completed, return to your Google Sheet and the specific tab yo
 
 ![](../.gitbook/assets/screely-1622879545045.png)
 
-That's it! In 6 steps, you've connected Google Sheets and started syncing data from your warehouse  🎉
+That's it! In 6 steps, you've connected Google Sheets and started syncing data from your warehouse 🎉
 
 ## :question:Is It Possible to Enforce A Sort Order?
 
@@ -115,9 +115,9 @@ The `IMPORTRANGE` function in Google Sheets can be a great solution for this use
 
 ## :question:My sync failed because it was too big?
 
-Syncs to Google Sheets as a destination are limited to 2.5M updated _cells_ to ensure the reliability of the syncs_._ A cell corresponds to a column-to-field mapping so if your source data for the sync has 100 rows and the sync uses 4 columns, that will end up being 400 cells that are updated.&#x20;
+Syncs to Google Sheets as a destination are limited to 5M updated _cells_ to ensure the reliability of the syncs\_.\_ A cell corresponds to a column-to-field mapping so if your source data for the sync has 100 rows and the sync uses 4 columns, that will end up being 400 cells that are updated.
 
-If Census determines a sync will update over 2.5M cells the sync will fail with the following error: `Sheets prohibits updates of over 2.5M cells. Please try modifying your source data to limit the total cell count.`&#x20;
+If Census determines a sync will update over 5M cells the sync will fail with the following error: `Sheets prohibits updates of over 5M cells. Please try modifying your source data to limit the total cell count.`
 
 This is a runtime error and will not be caught at the time of Sync creation.
 
@@ -138,8 +138,8 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 {% endhint %}
 
 | **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :----------: |
-|    **Mirror** |        ✅       |  Sheet Tabs  |
+| ------------: | :------------: | :---------: |
+|    **Mirror** |        ✅       |  Sheet Tabs |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Google Sheets.
 
