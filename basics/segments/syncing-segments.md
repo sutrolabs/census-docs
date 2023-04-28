@@ -26,6 +26,16 @@ Segments are available as a sync source option through the normal [sync creation
 
 <figure><img src="../../.gitbook/assets/screely-1681238384316.png" alt=""><figcaption></figcaption></figure>
 
-## Managing Audiences in Destination
+## Automatically Managing Destination Audiences
 
 Where available, Census also supports automatically creating new audiences in destinations to match your Segments. For more information on this special sync type, see [Audience Syncs](../core-concept/audience-syncs.md).
+
+
+
+## Syncing All Segment Membership Lists
+
+It's common to have many segments created from the same entity, and many of the users or other records may appear in multiple segments. In some cases, it's helpful to be able to access a list of all of the segments the record appears in so that they can be worked with in combination (for example, combining potential offers in a single email) or just-in-time decisions can be made about most important segment.
+
+In this case, the entity has a dynamic value called **Segment Membership** that will return a list of all of the segments each record is a member of. This value is available when syncing the entity rather than any individual segment, so it will include all records of the entity, even if the list of segments they are currently a member of is empty.
+
+<figure><img src="../../.gitbook/assets/Segment Memberships.png" alt=""><figcaption></figcaption></figure>
