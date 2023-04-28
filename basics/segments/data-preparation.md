@@ -16,7 +16,7 @@ Census previously allowed Segments to be built on models directly. Segments crea
 
 Entities give data teams the ability to [define the relationships](https://docs.getcensus.com/basics/data-models-and-entities/entities#relationships) that exist between your entities. When creating segments, you can also create conditions by adding any related entities and filtering based on its attributes as well.
 
-<figure><img src="../../.gitbook/assets/Related Entity (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Related Entity (1).png" alt=""><figcaption></figcaption></figure>
 
 Relationships defined in entities are one-to-many, but Segments can also take advantage of implicit many-to-many relationships and multi-step relationships automatically. Users simply need to select the related entity they care about and Census will take care of building the series of joins to associate them.
 

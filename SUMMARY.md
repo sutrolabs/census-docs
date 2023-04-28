@@ -21,6 +21,7 @@
     * [SQL Queries](basics/data-models-and-entities/models/census-models.md)
     * [dbt Models](basics/data-models-and-entities/models/native-dbt-integration.md)
     * [Looker](basics/data-models-and-entities/models/looker.md)
+    * [Python Models (Snowflake-Only)](basics/data-models-and-entities/models/python-models-snowflake-only.md)
   * [Structuring Data](basics/data-models-and-entities/defining-source-data/README.md)
     * [Events](basics/data-models-and-entities/defining-source-data/events.md)
     * [Arrays and Nested Objects](basics/data-models-and-entities/defining-source-data/structured-data.md)

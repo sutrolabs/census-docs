@@ -36,7 +36,7 @@ Census makes use of different Vitally APIs for different operations. You're welc
 * Select **Integration via HTTPS API**
 * Copy the **API Key**
 
-<figure><img src="../.gitbook/assets/vitally1 (1).png" alt=""><figcaption><p>Copy your Analytics API Key from Vitally.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/vitally1.png" alt=""><figcaption><p>Copy your Analytics API Key from Vitally.</p></figcaption></figure>
 
 #### REST API
 

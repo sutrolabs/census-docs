@@ -10,7 +10,7 @@ description: This page describes how to use Census with Box.
 2. Select **Box** from the menu.
 3. Complete the OAuth flow to grant Census access to your Box instance.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Grant Census access to your Box account.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>Grant Census access to your Box account.</p></figcaption></figure>
 
 ## 🗄️ File Path Variables
 
