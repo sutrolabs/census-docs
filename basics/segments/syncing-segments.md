@@ -36,6 +36,10 @@ Where available, Census also supports automatically creating new audiences in de
 
 It's common to have many segments created from the same entity, and many of the users or other records may appear in multiple segments. In some cases, it's helpful to be able to access a list of all of the segments the record appears in so that they can be worked with in combination (for example, combining potential offers in a single email) or just-in-time decisions can be made about most important segment.
 
-In this case, the entity has a dynamic value called **Segment Membership** that will return a list of all of the segments each record is a member of. This value is available when syncing the entity rather than any individual segment, so it will include all records of the entity, even if the list of segments they are currently a member of is empty.
+In this case, the entity has a dynamic value called **Segment Membership** that will return a list of all of the segments each record is a member of. This value is available when syncing the entity rather than any individual segment, so it will include all records of the entity, even if the list of segments they are currently a member of is empty.&#x20;
+
+You can also sync this field to make segment memberships available via the [Entity API](../developers/entity-api.md).
 
 <figure><img src="../../.gitbook/assets/Segment Memberships.png" alt=""><figcaption></figcaption></figure>
+
+Syncing Segment Memberships will recalculate segment membership across all syncs for that entity at sync time so depending on the number of segments created, this can slow down your sync.&#x20;
