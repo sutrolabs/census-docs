@@ -36,7 +36,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this. 👇
 
-![Connections page with Outreach](<../.gitbook/assets/202109\_service\_connection\_outreach (1) (1).png>)
+![Connections page with Outreach](../.gitbook/assets/202109\_Service\_Connection\_Outreach.png)
 
 ### Step 2: Connect your data warehouse
 
@@ -52,7 +52,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After connecting your warehouse, your **Connections** page will look something like this: 👇
 
-![Connections page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Connections page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ### Step 3: Create your model
 
@@ -63,7 +63,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](<../.gitbook/assets/202109\_outreach\_basic\_model (1).png>)
+![Basic SQL query for a new model](../.gitbook/assets/202109\_Outreach\_Basic\_Model.png)
 
 ### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
@@ -81,7 +81,7 @@ The sync will move data from your warehouse to Outreach. In this step, you'll de
 
 When configuring your sync, the page should look something like this: 👇
 
-![Sync setup for Outreach](../.gitbook/assets/202109\_Sync\_Details.png)
+![Sync setup for Outreach](<../.gitbook/assets/202109\_sync\_details (1).png>)
 
 #### Custom Fields in Outreach
 
