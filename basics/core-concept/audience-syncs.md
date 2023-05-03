@@ -1,6 +1,6 @@
 # Audience Syncs
 
-Audience Syncs makes managing your segments across all your destinations a snap. When a destination supports Audience Sync behavior, Census can automatically create and manage the segment/audience/list in the destination, adding and removing members to keep it in sync, and automatically create any missing user profiles if necessary. It can be used with any dataset as a source but works best with [Segments created in Audience Hub](../audience-hub/getting-started.md).&#x20;
+Audience Syncs makes managing your segments across all your destinations a snap. When a destination supports Audience Sync behavior, Census can automatically create and manage the segment/audience/list in the destination, adding and removing members to keep it in sync, and automatically create any missing user profiles if necessary. It can be used with any dataset as a source but works best with [Segments created in Audience Hub](../segments/getting-started.md).&#x20;
 
 Audience Syncs are an advanced version of a typical Census sync. They providing three additional capabilities:
 
