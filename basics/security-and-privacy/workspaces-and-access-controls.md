@@ -57,3 +57,11 @@ Workspace members each have one of four different roles:
 To get started creating a new Workspace, hit the "Create Workspace" button from your [organization dashboard](https://app.getcensus.com/home). Then simply name your new Workspace and you're done!
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-11-22 at 12.12.58 PM.png" alt=""><figcaption></figcaption></figure>
+
+## Disabling Data Previews
+
+Census provides sample data when working with models, segments, and syncs to help users understand their data sets, as well as what's being synced. Some organizations may prefer to restrict the ability to preview data to specific tools.&#x20;
+
+<figure><img src="../../.gitbook/assets/Disable Data Previews.png" alt=""><figcaption></figcaption></figure>
+
+In this case, you can choose to disable the ability to preview data in Census on a per workspace basis. To disable data previews in Census, reach out to your success manager or send an email to [Census Support](mailto:support@getcensus.com).
