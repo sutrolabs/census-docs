@@ -8,7 +8,7 @@ description: >-
 
 Entities are a core concept in Census. Entities are the most important [models](models/ "mention") in your data warehouse and typically represent a single "thing" like a person (or a lead or a contact) or a company (or an account or organization) though they can also be other things like invoices, campaigns, events, or devices.
 
-Your entity is a list or a set of those things, ideally the full set so that others can easily use [segments](../segments/ "mention") to create interesting subsets of that thing. That means your entity should include as many columns (also called properties or fields) as possible so others can easily reuse those entities in segments or [core-concept](../core-concept/ "mention").
+Your entity is a list or a set of those things, ideally the full set so that others can easily use [audience-hub](../audience-hub/ "mention") to create interesting subsets of that thing. That means your entity should include as many columns (also called properties or fields) as possible so others can easily reuse those entities in segments or [core-concept](../core-concept/ "mention").
 
 Setting up entities in Census gives you the opportunity to define where the data is stored, what it is, how it's related and more, all of which will make Census much more powerful and easier to use.
 
@@ -77,7 +77,7 @@ Setting up two of these entities with a relationship that joins them will let yo
 
 Once your entities are configured, you can open up Census to anyone that could benefit from direct access to your data.
 
-* Business Users can create meaningful subsets of data with Census's [segments](../segments/ "mention")functionality.
+* Business Users can create meaningful subsets of data with Census's [audience-hub](../audience-hub/ "mention")functionality.
 * Entities are easy to use directly in [core-concept](../core-concept/ "mention").
 
 Have more questions about how entities fit with your data strategy? [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat to let us know what questions we can help with!

@@ -27,7 +27,7 @@ Workspace members each have one of four different roles:
 
 * **Owner** – This is the default permission for [Organization Administrators](workspaces-and-access-controls.md#account-administrators) within a Census Organization. It gives the user access to everything, including managing warehouse & destination connections, API keys, and adding/removing users.
 * **Editor** – This role grants access to most things in the workspaces including adding destination connections, in addition to creating and editing syncs and models.
-* **Operator** – The Operator Role is a special role within Census. It fits between the Editor and Viewer permissions, allowing members with this role to primarily work with Segments. Operators are able to create and edit [segments](../segments/ "mention") on top of [entities.md](../data-models-and-entities/entities.md "mention"), as well as manage syncing entities and segments. They won't be able create new models, entities, or modify any existing connections details
+* **Operator** – The Operator Role is a special role within Census. It fits between the Editor and Viewer permissions, allowing members with this role to primarily work with Segments. Operators are able to create and edit [audience-hub](../audience-hub/ "mention") on top of [entities.md](../data-models-and-entities/entities.md "mention"), as well as manage syncing entities and segments. They won't be able create new models, entities, or modify any existing connections details
 * **Viewer** - The read-only viewer on Census. They can view syncs and segments, and approved models, but cannot modify or take any action within Census.
 
 **Access Details**
@@ -62,6 +62,6 @@ To get started creating a new Workspace, hit the "Create Workspace" button from 
 
 Census provides sample data when working with models, segments, and syncs to help users understand their data sets, as well as what's being synced. Some organizations may prefer to restrict the ability to preview data to specific tools.&#x20;
 
-<figure><img src="../../.gitbook/assets/Disable Data Previews.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Disable Data Previews (2).png" alt=""><figcaption></figcaption></figure>
 
 In this case, you can choose to disable the ability to preview data in Census on a per workspace basis. To disable data previews in Census, reach out to your success manager or send an email to [Census Support](mailto:support@getcensus.com).

@@ -31,6 +31,8 @@ In addition to creating conditions about attributes on the entity you're segment
 * **Related Entities** is the list of other entities connected to the entity you're segmenting. You can also create conditions on any related entities and your segment will only include records that are related to entities that meet those conditions. Census will take care of building the association between those data sets.
 * **Other Segment Membership** - Allows _including_ or _excluding_ members from a segment if they appear in some other segment of the same entity data. This enables creating sub segments of common shared definitions like Paid Customers, excluding segments that should never be targeted, as well as creation unions and intersections of of multiple other segments.&#x20;
 
+<figure><img src="../../.gitbook/assets/Related Segments.png" alt=""><figcaption></figcaption></figure>
+
 ### Operators
 
 Census supports a wide variety of operations that can be used to filter segments. The types of operators available are dictated by the types of the data warehouse columns being filtered. Selecting a column with a different type will change the types of operators available.
