@@ -28,7 +28,7 @@ Segments are available as a sync source option through the normal [sync creation
 
 ## Automatically Managing Destination Audiences
 
-Where available, Census also supports automatically creating new audiences in destinations to match your Segments. For more information on this special sync type, see [Audience Syncs](../core-concept/audience-syncs.md).
+Where available, Census also supports automatically creating new audiences in destinations to match your segments. For more information on this special sync type, see [Audience Syncs](../core-concept/audience-syncs.md).
 
 
 

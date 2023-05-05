@@ -18,7 +18,7 @@ At any point, you can also view a sample of the members of a particular segment 
 
 <figure><img src="../../.gitbook/assets/Artboard.png" alt=""><figcaption></figcaption></figure>
 
-## Comparing Segments
+## Audience Comparisons
 
 When it's easy to create new segments, you can end up in a world of too many segments and it's hard to tell if a new segment is unique, even if you can see what members look like. In this case, you can compare your segment against any other existing segment by visiting the **Overlap** tab on your segment.&#x20;
 

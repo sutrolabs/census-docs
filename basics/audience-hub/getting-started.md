@@ -10,7 +10,7 @@ Segments are built on top of entities, the core models set up for a data warehou
 
 ## Using the visual builder
 
-To create your first segment, click on **Segments** in the left-hand navigation of Census and then click **Add a New Segment** in the top right.
+To create your first segment, click on **Audience Hub** in the left-hand navigation of Census and then click **Add a New Segment** in the top right.
 
 To start, you'll need to select the data set you're segmenting in the top left. This will determine the type of records your segment contains, the conditions you'll be able to filter on, and what data will eventually be available to sync to your destination tools.&#x20;
 
@@ -29,7 +29,7 @@ On the left side, you'll see the And / Or condition combination control. You can
 In addition to creating conditions about attributes on the entity you're segmenting, you can also filter based on other data related to this entity.
 
 * **Related Entities** is the list of other entities connected to the entity you're segmenting. You can also create conditions on any related entities and your segment will only include records that are related to entities that meet those conditions. Census will take care of building the association between those data sets.
-* **Other Segment Membership** - Allows _including_ or _excluding_ members from a segment if they appear in some other segment of the same entity data. This enables creating sub segments of common shared definitions like Paid Customers, excluding segments that should never be targeted, as well as creation unions and intersections of of multiple other segments.&#x20;
+* **Inclusions and Exclusions** - Allows _including_ or _excluding_ members from a segment if they appear in some other segment of the same entity data. This enables creating sub segments of common shared definitions like Paid Customers, excluding segments that should never be targeted, as well as creation unions and intersections of of multiple other segments.&#x20;
 
 <figure><img src="../../.gitbook/assets/Related Segments.png" alt=""><figcaption></figcaption></figure>
 

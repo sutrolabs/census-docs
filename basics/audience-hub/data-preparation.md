@@ -1,15 +1,15 @@
 # Data Preparation
 
-Segments is built from the ground up to let marketing teams target effectively without having to know any SQL. But unlike other segmentation tools, Census Segments runs directly on top of a data warehouse or other data source. Marketing teams love this because it gives them access to the full world of a company's up-to-date and approved data.&#x20;
+Audience Hub is built from the ground up to let marketing teams target effectively without having to know any SQL. But unlike other segmentation tools, Census Segments runs directly on top of a data warehouse or other data source. Marketing teams love this because it gives them access to the full world of a company's up-to-date and approved data.&#x20;
 
 Working with a warehouse directly can be overwhelming. Census provides a number of tools for the data teams to make preparing their data for use with segments and easy and straightforward.
 
 ## Highlighting Datasets For Segmentation
 
-Segments are built on top of your company's [Entities](../data-models-and-entities/entities.md). You can think of entities as the approved or favorite data sets coming from your data warehouse so the first step to enabling Segments is to set up the entities that segments will be built on. Your entities should include the actual datasets that will be segmented, for example full lists of Users or Companies that will be filtered into segments. They can also include any related entities that may be provide useful conditions for filtering. Entities enable a number of powerful features within Segments.&#x20;
+Segments are built on top of your company's [Entities](../data-models-and-entities/entities.md). You can think of entities as the approved or favorite data sets coming from your data warehouse so the first step to enabling Audience Hub is to set up the entities that segments will be built on. Your entities should include the actual datasets that will be segmented, for example full lists of Users or Companies that will be filtered into segments. They can also include any related entities that may be provide useful conditions for filtering. Entities enable a number of powerful features within Segments.&#x20;
 
 {% hint style="info" %}
-Census previously allowed Segments to be built on models directly. Segments created in the past this way will appear in Census with a **Legacy** tag and cannot make use of any of the following entity features.
+Census previously allowed segments to be built on models directly. Segments created in the past this way will appear in Census with a **Legacy** tag and cannot make use of any of the following entity features.
 {% endhint %}
 
 ### Working Across Relationships
@@ -18,7 +18,7 @@ Entities give data teams the ability to [define the relationships](https://docs.
 
 <figure><img src="../../.gitbook/assets/Related Entity (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Relationships defined in entities are one-to-many, but Segments can also take advantage of implicit many-to-many relationships and multi-step relationships automatically. Users simply need to select the related entity they care about and Census will take care of building the series of joins to associate them.
+Relationships defined in entities are one-to-many, but segments can also take advantage of implicit many-to-many relationships and multi-step relationships automatically. Users simply need to select the related entity they care about and Census will take care of building the series of joins to associate them.
 
 ### Segmenting on Event Streams
 

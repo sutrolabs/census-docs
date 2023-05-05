@@ -1,18 +1,17 @@
-# Sync Logs
+# Warehouse Writeback
 
-## 🗄️ What are Sync Logs?
-
-Census can provide granular details on the data you've sent from your data warehouse to destination SaaS applications like Salesforce or Iterable. With these logs, you can answer common questions like:
+Census provides granular details on the data you've sent from your data warehouse to destination SaaS applications like Salesforce or Iterable. With these logs, you can answer common questions like:
 
 1. When was my data updated in the destination?
 2. Why did the destination's API reject records that I tried to sync?
 3. What is the most common reason that the destination's API rejects my data?
+4. Which users were a member of this segment at this time?
 
 {% hint style="info" %}
-Sync Logs are available for Platform Plan accounts. If you would like logging enabled please contact our team at [support@getcensus.com](mailto:support@getcensus.com).
+Warehouse Writeback is available for Platform Plan accounts. If you would like logging enabled please contact our team at [support@getcensus.com](mailto:support@getcensus.com).
 {% endhint %}
 
-## :ballot\_box: Which sources support logging?
+## :ballot\_box: Supported data sources
 
 Census can provide detailed logging for all data warehouse sources:
 
@@ -22,9 +21,9 @@ Census can provide detailed logging for all data warehouse sources:
 * PostgreSQL (version 13 or later is required)
 * Databricks
 
-## 🖥️ Configuring Sync Logs
+## 🖥️ Configuring Warehouse Writeback
 
-To enable Sync Logs on any supported source:
+To enable Warehouse Writeback on any supported source:
 
 1. Visit the [Connections page](https://app.getcensus.com/connections).
 2. Click to "Edit" the configuration of the source where you'd like logs.
@@ -78,9 +77,9 @@ Need data stored for longer? Please reach out at support@getcensus.com.
 
 ## Metadata Tables
 
-When you enable sync logs for a source, Census will start writing metadata about source objects and destinations involved in syncs. These tables can be joined to the sync logs table on their `id` column in order to enrich your sync logs.
+When you enable Warehouse Writeback for a source, Census will start writing metadata about source objects and destinations involved in syncs. These tables can be joined to the `sync_log` table on their `id` column in order to add additional context.
 
-To illustrate the value here, imagine you have a mirror sync from a segment to an ads destination. The sync logs table will log attempts to send new records (i.e. those that entered the segment) to the destination. It will also log attempts to delete records (i.e. those that left the segment) from the destination. If you join those logs with the source objects table (described below) you can get full insight into who is entering and leaving what segments, by name, and when.
+To illustrate the value here, imagine you have a mirror sync from a segment to an ads destination. The `sync_log` table will log attempts to send new records (i.e. those that entered the segment) to the destination. It will also log attempts to delete records (i.e. those that left the segment) from the destination. If you join those logs with the source objects table (described below) you can get full insight into who is entering and leaving what segments, by name, and when.
 
 ### Source Objects Table
 
@@ -100,7 +99,7 @@ Metadata tables for source objects can be found in the following tables, by ware
 
 | column               | column description                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | <p>Unique identifier for the source object.<br><br>This joins to the <code>source_object_id</code> column in the sync logs table.</p>                                                                                                                                                                                                                                                                                                                    |
+| id                   | <p>Unique identifier for the source object.<br><br>This joins to the <code>source_object_id</code> column in the <code>sync_log</code>  table.</p>                                                                                                                                                                                                                                                                                                       |
 | type                 | <p>Type of data set. The options with their meaning are:<br><br><code>DataWarehouse::FilterSegmentSource</code> -> A segment<br><br><code>DataWarehouse::Query</code> -> A model<br><br><code>DataWarehouse::BusinessObjectSource</code> -> An entity<br><br><code>DataWarehouse::Table</code> -> A table</p>                                                                                                                                            |
 | name                 | Name of the data set.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | model\_id            | <p>For a source object with type <code>DataWarehouse::Query</code>, this points to the SQL, Looker, or dbt model associated with it.<br><br>The model is what you see in the Census UI and is what is responsible for storing a SQL query, dbt reference, etc. The <code>DataWarehouse::Query</code> source object lives between the model and your source and is responsible for translating the model definition into rows and columns.</p>            |
@@ -123,11 +122,11 @@ Metadata tables for destinations can be found in the following tables, by wareho
 
 #### `Schema`
 
-| column | column description                                                                                                                |
-| ------ | --------------------------------------------------------------------------------------------------------------------------------- |
-| id     | <p>Unique identifier for the destination.<br><br>This joins to the <code>destination_id</code> column in the sync logs table.</p> |
-| type   | Type of the destination. This can be any of the various destinations we support, in the format `<Destination name>::Connection`   |
-| name   | Name of the destination.                                                                                                          |
+| column | column description                                                                                                                            |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| id     | <p>Unique identifier for the destination.<br><br>This joins to the <code>destination_id</code> column in the <code>sync_log</code> table.</p> |
+| type   | Type of the destination. This can be any of the various destinations we support, in the format `<Destination name>::Connection`               |
+| name   | Name of the destination.                                                                                                                      |
 
 ### Destination Objects Table
 
@@ -147,7 +146,7 @@ Metadata tables for destinations can be found in the following tables, by wareho
 
 | column | column description                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id     | <p>Unique identifier for the destination object.<br><br>This joins to the<code>destination_object_id</code> column in the sync logs table.</p>                            |
+| id     | <p>Unique identifier for the destination object.<br><br>This joins to the<code>destination_object_id</code> column in the <code>sync_log</code> table.</p>                |
 | type   | Type of the destination object. This can be any of the various destination objects we support, in the format `<Destination name>::ObjectTypes::<Destination object name>` |
 | name   | Name of the destination object.                                                                                                                                           |
 
