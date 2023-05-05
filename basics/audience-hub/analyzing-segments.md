@@ -26,6 +26,6 @@ When it's easy to create new segments, you can end up in a world of too many seg
 
 ## Analyzing Segment Performance
 
-For more detailed analysis including understanding how your segments are performing across your destinations, you can take advantage of [Warehouse Writeback](../sync-monitoring/sync-logs.md) which logs all sync activity back to your data source. You can use this data to determine when users were added and removed from segments in each of the destinations your segment is synced to or the relative conversion performance of users across cohorts.&#x20;
+For more detailed analysis including understanding how your segments are performing across your destinations, you can take advantage of [Warehouse Writeback](../sync-monitoring/warehouse-writeback.md) which logs all sync activity back to your data source. You can use this data to determine when users were added and removed from segments in each of the destinations your segment is synced to or the relative conversion performance of users across cohorts.&#x20;
 
 To take advantage of Warehouse Writeback for your analysis, make sure it is enabled on your warehouse connection.

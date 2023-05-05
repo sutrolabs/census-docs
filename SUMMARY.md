@@ -26,7 +26,7 @@
     * [Events](basics/data-models-and-entities/defining-source-data/events.md)
     * [Arrays and Nested Objects](basics/data-models-and-entities/defining-source-data/structured-data.md)
 * [Observability](basics/sync-monitoring/README.md)
-  * [Warehouse Writeback](basics/sync-monitoring/sync-logs.md)
+  * [Warehouse Writeback](basics/sync-monitoring/warehouse-writeback.md)
   * [Sync Alerts](basics/sync-monitoring/alerts.md)
   * [Sync Dry Runs](basics/sync-monitoring/sync-dry-runs.md)
   * [Datadog Integration](basics/sync-monitoring/datadog-integration.md)

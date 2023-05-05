@@ -83,7 +83,7 @@ To illustrate the value here, imagine you have a mirror sync from a segment to a
 
 ### Source Objects Table
 
-Source objects are tables, models, entities, or segments. These are what you send data from during a sync. Continue reading the [schema section](sync-logs.md#schema) below for more information.
+Source objects are tables, models, entities, or segments. These are what you send data from during a sync. Continue reading the [schema section](warehouse-writeback.md#schema) below for more information.
 
 #### Where
 
