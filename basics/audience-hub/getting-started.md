@@ -1,5 +1,5 @@
 ---
-description: How to use the Segments visual builder to create and update segments
+description: How to use the Audience Hub visual builder to create and update segments
 ---
 
 # Creating Segments
