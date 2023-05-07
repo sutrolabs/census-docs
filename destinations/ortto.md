@@ -110,9 +110,10 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |      **Objects**     |
-| -------------------: | :------------: | :------------------: |
-| **Update or Create** |        ✅       | Organization, Person |
+| **Behaviors** | **Supported?** | **Objects** |
+| ------------: | :------------: | :---------: |
+| **Update or Create** | ✅ | Organization, Person |
+| **Update Only** | ✅ | Person |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Ortto.
 

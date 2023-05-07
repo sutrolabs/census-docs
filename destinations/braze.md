@@ -175,7 +175,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 | **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |            User, Cohort, Catalog            |
 |           **Update** |                             ✅                             |                   Catalog                   |
 |           **Append** |                             ✅                             |                Event, Cohort                |
-|           **Mirror** |                             ✅                             | User, Subscription Group Membership, Cohort |
+|           **Mirror** |                             ✅                             | User, Subscription Group Membership, Cohort, Catalog |
 |           **Delete** |                             ✅                             |                     User                    |
 
 ### Mirror Mode Options

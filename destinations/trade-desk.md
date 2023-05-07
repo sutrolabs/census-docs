@@ -16,9 +16,11 @@ description: This page describes how to use Census with Trade Desk.
 
 |          **Object Name** | **Supported?** | **Identifiers**       | **Behaviors**       |
 | -----------------------: | :------------: | --------------------- | ------------------- |
-|         Conversion Event |        ✅       | Any unique identifier | Append              |
 |                 Ad Group |        ✅       | Any unique identifier | Update Only, Append |
+|               Advertiser |        ✅       | Any unique identifier | Update Only, Append |
 |                 Campaign |        ✅       | Any unique identifier | Update Only, Append |
+|         Conversion Event |        ✅       | Any unique identifier | Append              |
+|             Tracking Tag |        ✅       | Any unique identifier | Update Only, Append |
 | First-Party Data Segment |       🔜       |                       |                     |
 |         CRM Data Segment |       🔜       |                       |                     |
 

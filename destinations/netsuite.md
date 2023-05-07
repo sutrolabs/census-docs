@@ -156,12 +156,15 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 |                  Customer |        ✅       |
 |          Customer Deposit |        ✅       |
 |          Customer Payment |        ✅       |
+|           Customer Refund |        ✅       |
 |           Customer Status |        ✅       |
 |             Custom Record |        🔜       |
 |                Department |        ✅       |
 |                  Employee |        ✅       |
 |                   Invoice |        ✅       |
 |            Inventory Item |        ✅       |
+|          Item Fulfillment |        ✅       |
+|              Item Receipt |        ✅       |
 |             Journal Entry |        ✅       |
 |                  Location |        ✅       |
 |                   Partner |        ✅       |
@@ -171,6 +174,7 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 | Subscription Change Order |        ✅       |
 |                Subsidiary |        ✅       |
 |                    Vendor |        ✅       |
+|               Vendor Bill |        ✅       |
 
 {% hint style="info" %}
 Please note that NetSuite doesn't support the [creation of fields](../basics/core-concept/#field-creation) via Census and currently we don't support [add all fields ](../basics/core-concept/#add-all-fields)feature for NetSuite
