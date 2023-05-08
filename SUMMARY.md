@@ -106,6 +106,7 @@
 * [Delighted](destinations/delighted.md)
 * [Discord](destinations/discord.md)
 * [Drift](destinations/drift.md)
+* [Drip](destinations/drip.md)
 * [Facebook Ads](destinations/facebook-ads.md)
 * [Freshdesk](destinations/freshdesk.md)
 * [Freshsales](destinations/freshsales.md)
