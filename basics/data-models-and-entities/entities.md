@@ -61,6 +61,18 @@ The relationship definition includes two pieces of information:
 Note that Census does not check or enforce the validity of the data on either side of your relationship. Duplicate values on either side of the relationship can cause issues using the relationships used in segmentation so please make sure the relationship's data remains valid via tools like dbt testing.
 {% endhint %}
 
+
+
+### Categories / Picklists
+
+Often times, your data source contains columns that store categorical data, where the options in that column are limited to a small set of potential values. For example a `persona_type` attribute may have a limited set of 12 options, a `plan` attribute may only have two or three.&#x20;
+
+You can indicate which columns of your data source should be treated as categorical by adding them to the **Enumerated Value Columns** list. Census will then show picklists for these when defining segments. The Event Name attribute of Event data is always treated as a category field.
+
+<figure><img src="../../.gitbook/assets/Category Columns.png" alt=""><figcaption></figcaption></figure>
+
+
+
 ## How to use entities at your company
 
 The entities that matter for any given business are always unique so don't worry if your entities feel like they may be unique.

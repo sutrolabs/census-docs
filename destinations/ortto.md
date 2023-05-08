@@ -58,7 +58,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](<../.gitbook/assets/image (13).png>)
+![Basic SQL query for a new model](<../.gitbook/assets/image (22).png>)
 
 ### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
@@ -110,10 +110,10 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :---------: |
-| **Update or Create** | ✅ | Organization, Person |
-| **Update Only** | ✅ | Person |
+|        **Behaviors** | **Supported?** |      **Objects**     |
+| -------------------: | :------------: | :------------------: |
+| **Update or Create** |        ✅       | Organization, Person |
+|      **Update Only** |        ✅       |        Person        |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Ortto.
 
