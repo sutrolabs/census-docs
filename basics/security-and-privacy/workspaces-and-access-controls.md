@@ -34,10 +34,10 @@ Workspace members each have one of four different roles:
 
 | Action                                          | Viewer               | Operator             | Editor               | Owner                |
 | ----------------------------------------------- | -------------------- | -------------------- | -------------------- | -------------------- |
-| View Warehouse Connections                      | :white\_check\_mark: | :white\_check\_mark: | :white\_check\_mark: | :white\_check\_mark: |
+| View Warehouse Connections                      | :white\_check\_mark: |                      | :white\_check\_mark: | :white\_check\_mark: |
 | Create & Manage Warehouse Connections           |                      |                      |                      | :white\_check\_mark: |
 | Create & Manage dbt / Looker Connections        |                      |                      |                      | :white\_check\_mark: |
-| View Destination Connections                    | :white\_check\_mark: | :white\_check\_mark: | :white\_check\_mark: | :white\_check\_mark: |
+| View Destination Connections                    | :white\_check\_mark: |                      | :white\_check\_mark: | :white\_check\_mark: |
 | Create Destination Connections                  |                      |                      | :white\_check\_mark: | :white\_check\_mark: |
 | Manage Destination Connections                  |                      |                      | :white\_check\_mark: | :white\_check\_mark: |
 | Query Approved Models                           | :white\_check\_mark: | :white\_check\_mark: | :white\_check\_mark: | :white\_check\_mark: |
