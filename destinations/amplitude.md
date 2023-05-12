@@ -45,7 +45,11 @@ Now that we have the API Key from Amplitude, we can now set up Amplitude as a De
 
 1. In the **Connections** section of Census, create a new Amplitude Service Connection by clicking the Add Service button and searching for "Amplitude" in the search bar.
 
+<div align="center">
+
 <figure><img src="../.gitbook/assets/Screenshot 2023-03-17 at 13.57.14.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 2. You can provide whatever name you like.&#x20;
 3. Provide the copied API Key from Amplitude.

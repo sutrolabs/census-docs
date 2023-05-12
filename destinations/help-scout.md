@@ -51,7 +51,7 @@ Here you can write a SQL query to select the data you want to see in Help Scout,
 * The date a user became active in your product
 * The number of key activities a user did in your app in the last 7/30 days
 
-![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-27 at 3.31.32 PM (1).png>)
 
 ### Step 3: Create your Sync
 
