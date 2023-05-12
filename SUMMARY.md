@@ -102,7 +102,7 @@
 * [Constant Contact](destinations/constant-contact.md)
 * [Courier](destinations/courier.md)
 * [Criteo](destinations/criteo.md)
-* [Crowd.dev](destinations/crowd-dev.md)
+* [Crowd.dev](destinations/crowd.md)
 * [Customer.io](destinations/customer.io.md)
 * [Delighted](destinations/delighted.md)
 * [Discord](destinations/discord.md)
