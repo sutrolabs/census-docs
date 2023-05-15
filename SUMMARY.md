@@ -184,6 +184,7 @@
 * [Slack](destinations/slack.md)
 * [Snapchat](destinations/snapchat.md)
 * [Snowflake](destinations/snowflake.md)
+* [Split](destinations/split.md)
 * [Sprig](destinations/sprig.md)
 * [Stripe](destinations/stripe.md)
 * [TikTok](destinations/tiktok.md)
