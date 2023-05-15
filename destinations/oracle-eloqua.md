@@ -17,6 +17,7 @@ description: This page describes how to use Census with Oracle Eloqua.
 | **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Contact | ✅ | Email Address | Update or Create |
+| Contact List | ✅ | Email Address | Update or Create, Mirror |
 | Custom Object | ✅ | Object ID | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Oracle Eloqua objects and/or behaviors.
