@@ -1,6 +1,20 @@
-# Analyzing Segments
+# Experiments and Analysis
 
 Census makes it easy to understand the shape of the segments you're creating and how they're performing once you've synced them to your destinations.&#x20;
+
+## Setting up Split Tests
+
+Once you've created a segment, you can take advantage of split test experiments to test how your new segment performs. A split test divides the people in your segment randomly into one or more **treatments** as well as a **control** cohort, which should be used as a baseline to compare the impact of your campaign. Each cohort has a percentage size you control, letting you set the relative sizes of each size.&#x20;
+
+<figure><img src="../../.gitbook/assets/B Tests.png" alt=""><figcaption></figcaption></figure>
+
+Split testing enables a number of marketing efforts:
+
+* Create a simple treatment with control group and measure the increased conversion rate over users that received the treatment.&#x20;
+* Divide a segment into multiple treatments for different channels and compare relative conversion rates of the same segment across each.
+* Use a treatment and control group to "ramp up" a very large campaign over time. Start with 10% of segment and grow the treatment once you're confident it's performing as expected.
+
+Each cohort can be [synced to their own set of destinations](syncing-segments.md), including back to warehouse, and users appearing in each cohort are available in Warehouse Writeback (see [#analyzing-segment-performance](analyzing-segments.md#analyzing-segment-performance "mention") below).
 
 ## Tracking Segment Size
 
