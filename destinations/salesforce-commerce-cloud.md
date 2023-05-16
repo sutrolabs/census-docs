@@ -13,7 +13,7 @@ description: This page describes how to use Census with Salesforce Commerce Clou
 5. Finally, go to **Administration** >  **Site Development** >  **Salesforce Commerce API Settings** and copy your **Short Code** and **Organization ID**.
 6. Now return to Census and input the values you captured above to connect to Commerce Cloud.
 
-<figure><img src="../.gitbook/assets/salesforce-commerce-cloud.png" alt=""><figcaption><p>Creat an API Client in the Account Manager.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/salesforce-commerce-cloud.png" alt=""><figcaption><p>Enter your credentials to connect to Commerce Cloud.</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 
