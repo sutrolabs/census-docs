@@ -175,6 +175,7 @@
 * [S3](destinations/s3.md)
 * [Sailthru](destinations/sailthru.md)
 * [Salesforce](destinations/salesforce.md)
+* [Salesforce Commerce Cloud](destinations/salesforce-commerce-cloud.md)
 * [Salesforce Marketing Cloud](destinations/salesforce-marketing-cloud.md)
 * [Salesloft](destinations/salesloft.md)
 * [Segment](destinations/segment.md)
