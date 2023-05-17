@@ -18,7 +18,9 @@ description: This page describes how to use Census with Crowd.dev.
 
 | **Object Name** | **Supported?** | **Identifiers** | **Behaviors**    |
 | --------------: | :------------: | --------------- | ---------------- |
-|        Activity |        ✅       | Source ID       | Update or Create |
+| Activity | ✅ | Source ID | Update or Create |
+| Activity with Member | ✅ | Source ID | Update or Create |
+| Organization | ✅ | Any unique identifier | Update Only, Append |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Crowd.dev objects and/or behaviors.
 
