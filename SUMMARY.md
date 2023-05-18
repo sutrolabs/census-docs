@@ -110,6 +110,7 @@
 * [Drip](destinations/drip.md)
 * [Emarsys](destinations/emarsys.md)
 * [Facebook Ads](destinations/facebook-ads.md)
+* [Facebook Product Catalog](destinations/facebook-ads-1.md)
 * [Freshdesk](destinations/freshdesk.md)
 * [Freshsales](destinations/freshsales.md)
 * [Front](destinations/front.md)
