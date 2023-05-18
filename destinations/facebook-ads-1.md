@@ -68,6 +68,14 @@ This connector relies on a [Facebook System User](https://www.facebook.com/busin
 
 If you already have a system user you can use it by simply generating a new token with the correct permissions. Census needs the `business_management` and `catalog_management` scopes. Also be sure to assign the catalog asset to your system user so Census can sync to it.
 
+### Setting Up Connection
+
+You are now ready to set up a connection. Head to the Census Connections page and press **New Destination**. From the list select Facebook Product Catalog.
+
+You will need to provide the System User Token you generated earlier along with your Business Account Id and the Catalog Id you want associated with this specific connection. You can find those in your Business Settings in **Business Info** and **Data Sources > Catalogs** respectively.
+
+<figure><img src="../.gitbook/assets/FB New Connection.png" alt=""><figcaption><p>New Facebook Product Catalog connection page</p></figcaption></figure>
+
 ## 🗄 Supported Objects
 
 Each Facebook Product Catalog supports products for a specific vertical. Each vertical is a variant on the base product object within the Facebook system. Currently we support the following variants with more to come. If there's a variant you would like to sync to please [contact us](facebook-ads-1.md#need-help-connecting-to-facebook) about making it happen.
