@@ -38,13 +38,13 @@ Now head over to Netlify. Create a new "Site" and point Netlify at your newly fo
 
 The example code is set up to work exactly to Netlify's default site specifications. You should be able to click past the Site Settings page as is. Once you've completed the three steps, you'll press the final Deploy Site button. You'll see your new site building and then eventually deployed.
 
-Once deployed, select Functions from the top menu. You'll see a list that contains the new **minimal** function we created. Click on it to see the URL of this new end point. That's the public URL for our newly created function. Click the handy copy button to the right and keep that handy, we'll give it to Census next. BUT! Leave this page open in a tab. It has a handy live log view that we'll return to at the very end.
+Once deployed, select Functions from the top menu. You'll see a list that contains the new **minimal** function we created. Click on it to see the URL of this new endpoint. That's the public URL for our newly created function. Click the handy copy button to the right and keep that handy, we'll give it to Census next. BUT! Leave this page open in a tab. It has a handy live log view that we'll return to at the very end.
 
 ![](../../.gitbook/assets/screely-1622959663028.png)
 
 #### Set up the Connection
 
-Now head to Census, specifically the [Connections page](https://app.getcensus.com/connections). From the **Add Services** menu, select **Custom Destination API**. You can give your new connection any name you'll remember, and the URL will be the value you copied from Netlify a moment ago. Save your new connection and you should see Census testing your new connection is responding correctly. You should see ✅in just a minute.
+Now head to Census, specifically the [Connections page](https://app.getcensus.com/connections). Click **New Destination** and select **Custom Destination API**. You can give your new connection any name you'll remember, and the URL will be the value you copied from Netlify a moment ago. Save your new connection and you should see Census testing your new connection is responding correctly. You should see ✅ in just a minute.
 
 ![](../../.gitbook/assets/screely-1622959628337.png)
 
