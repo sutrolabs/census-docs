@@ -106,12 +106,7 @@ Customer.io strongly prefers the ID field to be used as the identifier for a Per
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |           **Objects**          |
-| -------------------: | :------------: | :----------------------------: |
-| **Update or Create** |        ✅       | Person, Device, Manual Segment |
-|      **Update Only** |        ✅       |             Person             |
-|           **Append** |        ✅       |              Event             |
-|           **Mirror** |        ✅       |   Collection, Manual Segment   |
+<table data-header-hidden><thead><tr><th width="212" align="right"></th><th width="151.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Person, Device, Manual Segment</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Person</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Event</td></tr><tr><td align="right"><strong>Mirror</strong></td><td align="center">✅</td><td align="center">Collection, Manual Segment</td></tr></tbody></table>
 
 🔋[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 

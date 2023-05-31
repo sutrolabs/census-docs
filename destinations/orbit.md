@@ -110,10 +110,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |            **Objects**            |
-| -------------------: | :------------: | :-------------------------------: |
-| **Update or Create** |        ✅       |               Member              |
-|           **Append** |        ✅       | Content Activity, Custom Activity |
+<table data-header-hidden><thead><tr><th width="224" align="right"></th><th width="174.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Member</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Content Activity, Custom Activity</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Orbit.
 

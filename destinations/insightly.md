@@ -14,9 +14,7 @@ description: This page describes how to use Census with Insightly.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**       |
-| --------------: | :------------: | ---------------- | ------------------- |
-|         Contact |        ✅       | Contact ID, Email | Update Only, Append |
+<table data-header-hidden><thead><tr><th width="156" align="right"></th><th width="153" align="center"></th><th width="195"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Contact</td><td align="center">✅</td><td>Contact ID, Email</td><td>Update Only, Append</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Insightly objects and/or behaviors.
 

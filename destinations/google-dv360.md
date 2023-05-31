@@ -30,9 +30,7 @@ If you are syncing customer info and you map to an address field (First Name, La
 
 ## 🔀 Supported Objects and Behaviors
 
-|         **Object Name** | **Supported?** | **Identifiers**       | **Behaviors**    |
-| ----------------------: | :------------: | --------------------- | ---------------- |
-| Customer Match Audience |        ✅       | Any unique identifier | Update or Create |
+<table data-header-hidden><thead><tr><th width="251" align="right"></th><th width="134" align="center"></th><th width="190"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Customer Match Audience</td><td align="center">✅</td><td>Any unique identifier</td><td>Update or Create</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more DV360 objects and/or behaviors.
 

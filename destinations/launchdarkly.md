@@ -16,10 +16,7 @@ description: This page describes how to use Census with LaunchDarkly.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors**    |
-| --------------: | :------------: | --------------- | ---------------- |
-|          Metric |        ✅       | Key             | Update or Create |
-|    Metric Event |        ✅       | N/A             | Append           |
+<table data-header-hidden><thead><tr><th align="right"></th><th width="169" align="center"></th><th width="159"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Metric</td><td align="center">✅</td><td>Key</td><td>Update or Create</td></tr><tr><td align="right">Metric Event</td><td align="center">✅</td><td>N/A</td><td>Append</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more LaunchDarkly objects and/or behaviors.
 

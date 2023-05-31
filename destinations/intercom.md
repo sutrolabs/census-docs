@@ -130,12 +130,7 @@ If you're finding Companies missing in Intercom after a sync, make sure the comp
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |          **Objects**         |
-| -------------------: | :------------: | :--------------------------: |
-| **Update or Create** |        ✅       | Company, Contact, Lead, User |
-|      **Update Only** |        ✅       |      Contact, Lead, User     |
-|           **Delete** |        ✅       | Contact, Lead, User, Company |
-|           **Append** |        ✅       |            Events            |
+<table data-header-hidden><thead><tr><th width="196.33333333333331" align="right"></th><th width="184" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Company, Contact, Lead, User</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Contact, Lead, User</td></tr><tr><td align="right"><strong>Delete</strong></td><td align="center">✅</td><td align="center">Contact, Lead, User, Company</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Events</td></tr></tbody></table>
 
 ### :x: Deleting Objects
 

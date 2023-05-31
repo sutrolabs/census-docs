@@ -35,7 +35,7 @@
   * [Regions & IP Addresses](basics/security-and-privacy/regions-and-ip-addresses.md)
   * [Using Your Own S3](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
 * [Developers](basics/developers/README.md)
-  * [Git-backed Models](basics/developers/git-backed-models.md)
+  * [GitLink](basics/developers/gitlink.md)
   * [Entity API](basics/developers/entity-api.md)
   * [Custom Destination API](basics/developers/custom-api.md)
   * [Management API](basics/developers/api/README.md)
