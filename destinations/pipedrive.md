@@ -39,6 +39,7 @@ This part of our documentation is still under construction! If you have any ques
 |          Person |        ✅       | Object ID, name, email, phone |
 |            Deal |        ✅       | Object ID, title              |
 |            Note |        ✅       | Unique ID                     |
+|        Activity |        ✅       | Unique ID                     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pipedrive.
 
@@ -48,7 +49,7 @@ This part of our documentation is still under construction! If you have any ques
 | -------------------: | :------------: | :------------------------: |
 | **Update or Create** |        ✅       | Organization, Person, Deal |
 |      **Update Only** |        ✅       | Organization, Person, Deal |
-|           **Append** |        ✅       |            Note            |
+|           **Append** |        ✅       | Note, Activity |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pipedrive.
 

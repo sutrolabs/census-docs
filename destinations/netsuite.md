@@ -158,7 +158,7 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 |          Customer Payment |        ✅       |
 |           Customer Refund |        ✅       |
 |           Customer Status |        ✅       |
-|             Custom Record |        🔜       |
+|             Custom Record |        ✅       |
 |                Department |        ✅       |
 |                  Employee |        ✅       |
 |                   Invoice |        ✅       |
