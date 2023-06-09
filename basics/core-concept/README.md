@@ -16,13 +16,11 @@ For instructions on connecting your specific data source, take a look at the Dat
 
 #### Data Source Permissions and Read-only Access
 
-Census provides a powerful and customizable sync engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema.
+Census provides a powerful and customizable Advanced Sync Engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema.
 
-If you don't have credentials with write access available, warehouses like Postgres and Redshift support connecting in Read-only mode. Read-only Mode lets you connect to a warehouse quickly with credentials that only have read access to a warehouse. This can get you started quickly but some of the features described below are not available.
+If you don't have credentials with write access available, you can connect to your warehouse using our Basic Sync Engine which instead stores this state outside the warehouse.&#x20;
 
-{% hint style="warning" %}
-At this time, read-only connections do not support incremental update syncs, or Mirror or Append sync behaviors.
-{% endhint %}
+Either option may be right for you, read more about the differences between [Basic and Advanced Sync Engines](https://docs.getcensus.com/sources/overview#sync-engines).
 
 #### Data source models and segments
 
