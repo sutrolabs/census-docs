@@ -25,7 +25,7 @@ If your data source or self-hosted destinations are behind a firewall, you will 
 
 Customers who have purchased the Census Platform Plan may request to use another region by contacting [support@getcensus.com](mailto:support@getcensus.com).
 
-![This workspace's syncs run in the EU.](../../.gitbook/assets/screely-1660744037815.png)
+![This workspace's syncs run in the EU.](<../../.gitbook/assets/screely-1660744037815 (1).png>)
 
 #### During Syncs
 
