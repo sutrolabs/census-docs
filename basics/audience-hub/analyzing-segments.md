@@ -4,9 +4,9 @@ Census makes it easy to understand the shape of the segments you're creating and
 
 ## Setting up Split Tests
 
-Once you've created a segment, you can take advantage of split test experiments to test how your new segment performs. A split test divides the people in your segment randomly into one or more **treatments** as well as a **control** cohort, which should be used as a baseline to compare the impact of your campaign. Each cohort has a percentage size you control, letting you set the relative sizes of each size.&#x20;
+Once you've created a segment, you can take advantage of split test experiments to test how your new segment performs. A split test divides the people in your segment randomly into one or more **treatments** as well as a **control** cohort, which should be used as a baseline to compare the impact of your campaign. Each cohort has a percentage size you control, letting you set the relative sizes of each size.
 
-<figure><img src="../../.gitbook/assets/B Tests.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-08 at 3.16.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 Split testing enables a number of marketing efforts:
 
