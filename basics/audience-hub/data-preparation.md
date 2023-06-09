@@ -1,6 +1,6 @@
 # Data Preparation
 
-![](file:///Users/dominic/Library/Application%20Support/CleanShot/media/media\_FSNyyc60mZ/CleanShot%202023-06-09%20at%2015.53.11.png)Audience Hub is built from the ground up to let marketing teams target effectively without having to know any SQL. But unlike other segmentation tools, Census Segments runs directly on top of a data warehouse or other data source. Marketing teams love this because it gives them access to the full world of a company's up-to-date and approved data.&#x20;
+Audience Hub is built from the ground up to let marketing teams target effectively without having to know any SQL. But unlike other segmentation tools, Census Segments runs directly on top of a data warehouse or other data source. Marketing teams love this because it gives them access to the full world of a company's up-to-date and approved data.&#x20;
 
 Working with a warehouse directly can be overwhelming. Census provides a number of tools for the data teams to make preparing their data for use with segments and easy and straightforward.
 
@@ -46,7 +46,7 @@ We currently support the following aggregations, more will be released soon.
 * Sum
 * Count
 * Most Frequent
-* Average
+* Average&#x20;
 
 
 
