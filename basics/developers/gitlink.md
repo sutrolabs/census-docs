@@ -67,6 +67,10 @@ Once GitLink is enabled, you can continue to use the Census UI as usual, with no
 
 In addition, several new features will be available to users after the feature is enabled.
 
+{% hint style="warning" %}
+Please ensure that the directory structure within your repository matches the directory structure expected within Census at all times. For example, if models are configured to be written to `census/models/` in your Census settings, moving models to a different directory or subdirectory will delete the model from Census. 
+{% endhint %}
+
 ### YAML in your Git Repository
 
 YAML files for each Census resource will be available in your Git repository. Below are sample model and sync configuration YAML files, with explanations of each parameter.
