@@ -25,7 +25,7 @@ If your data source or self-hosted destinations are behind a firewall, you will 
 
 Customers who have purchased the Census Platform Plan may request to use another region by contacting [support@getcensus.com](mailto:support@getcensus.com).
 
-![This workspace's syncs run in the EU.](<../../.gitbook/assets/screely-1660744037815 (1).png>)
+![This workspace's syncs run in the EU.](../../.gitbook/assets/screely-1660744037815.png)
 
 #### During Syncs
 
@@ -48,5 +48,5 @@ If your organization has strict data residency requirements, we recommend verify
 
 Census syncs data from your data sources to your destinations using a set of static IP addresses. To ensure that Census can connect successfully to your sources or any self-hosted destinations, you must allowlist the following IP addresses in your firewall.&#x20;
 
-<table><thead><tr><th width="412">Region</th><th>IP Addresses (CIDR)</th></tr></thead><tbody><tr><td>🇺🇸 N. Virginia (us-east-1)</td><td><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p></td></tr><tr><td>🇺🇸 Oregon (us-west-2)<br><strong>Deprecated Legacy IPs</strong></td><td><p><code>34.216.163.241</code></p><p><code>54.212.243.205</code></p></td></tr><tr><td>🇪🇺 Frankfurt (eu-central-1)</td><td><p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p></td></tr></tbody></table>
+<table><thead><tr><th width="412">Region</th><th>IP Addresses (CIDR)</th></tr></thead><tbody><tr><td>🇺🇸 N. Virginia (us-east-1)</td><td><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p></td></tr><tr><td>🇪🇺 Frankfurt (eu-central-1)</td><td><p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p></td></tr></tbody></table>
 

@@ -6,7 +6,7 @@ This endpoint lists information for all objects under a given destination. You c
 
 * `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
 * `page` - `number`. Specifies which page of results to return. Defaults to 1.
-* `per_page` - `number`. Specifies number of results per page. Defaults to 25.
+* `per_page` - `number`. Specifies number of results per page. Defaults to 25, max of 100.
 
 
 

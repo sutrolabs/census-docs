@@ -22,7 +22,7 @@ The version history of each SQL query is also tracked in Census. Under the Activ
   * Approval status change
   * SQL Query change
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>View of Model Activity Tracking</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>View of Model Activity Tracking</p></figcaption></figure>
 
 Clicking the **Restore** button will restore the state of your SQL query immediately prior to the selected change. This enables you to update your models with confidence, knowing you can always revert your changes if they accidentally break something downstream.
 

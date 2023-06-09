@@ -8,7 +8,7 @@ You can pass the following URL parameters to control the response:
 
 * `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
 * `page` - `number`. Specifies which page of results to return. Defaults to 1.
-* `per_page` - `number`. Specifies number of results per page. Defaults to 25.
+* `per_page` - `number`. Specifies number of results per page. Defaults to 25, max of 100.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -235,7 +235,8 @@ _Example_
    constraint: {
       type: 'occurrences',
       operator: 'greaterthan',
-      value: 1
+      value: 1,
+      negate: true
    },
    molecules: [
       {
