@@ -1,6 +1,6 @@
 # Data Preparation
 
-Audience Hub is built from the ground up to let marketing teams target effectively without having to know any SQL. But unlike other segmentation tools, Census Segments runs directly on top of a data warehouse or other data source. Marketing teams love this because it gives them access to the full world of a company's up-to-date and approved data.&#x20;
+![](file:///Users/dominic/Library/Application%20Support/CleanShot/media/media\_FSNyyc60mZ/CleanShot%202023-06-09%20at%2015.53.11.png)Audience Hub is built from the ground up to let marketing teams target effectively without having to know any SQL. But unlike other segmentation tools, Census Segments runs directly on top of a data warehouse or other data source. Marketing teams love this because it gives them access to the full world of a company's up-to-date and approved data.&#x20;
 
 Working with a warehouse directly can be overwhelming. Census provides a number of tools for the data teams to make preparing their data for use with segments and easy and straightforward.
 
@@ -12,6 +12,8 @@ Segments are built on top of your company's [Entities](../data-models-and-entiti
 Census previously allowed segments to be built on models directly. Segments created in the past this way will appear in Census with a **Legacy** tag and cannot make use of any of the following entity features.
 {% endhint %}
 
+###
+
 ### Working Across Relationships
 
 Entities give data teams the ability to [define the relationships](https://docs.getcensus.com/basics/data-models-and-entities/entities#relationships) that exist between your entities. When creating segments, you can also create conditions by adding any related entities and filtering based on its attributes as well.
@@ -20,11 +22,33 @@ Entities give data teams the ability to [define the relationships](https://docs.
 
 Relationships defined in entities are one-to-many, but segments can also take advantage of implicit many-to-many relationships and multi-step relationships automatically. Users simply need to select the related entity they care about and Census will take care of building the series of joins to associate them.
 
+Entities give data teams the ability to [define the relationships](https://docs.getcensus.com/basics/data-models-and-entities/entities#relationships) that exist between your entities. When creating segments, you can also create conditions by adding any related entities and filtering based on its attributes as well.
+
 ### Segmenting on Event Streams
 
 Entities also define the "type" of data stored in each individual dataset. For segmentation, one of the most powerful types is the Event type. By highlighting the entities that contain event data, marketers can create segments that filter on depth of engagement, engagement in certain time periods, specific interactions, as well as filtering on any other data point.
 
 <figure><img src="../../.gitbook/assets/Example Segment (3).png" alt=""><figcaption></figcaption></figure>
+
+### Calculated Fields
+
+Calculated fields allow marketers to create aggregations from other entities.  For instance, being able to sum a transaction table and calculate the total spend of a customer.  These generated fields can be used in segmentation building or as attributes in syncs.&#x20;
+
+<figure><img src="../../.gitbook/assets/CleanShot 2023-06-09 at 15.54.06.png" alt=""><figcaption></figcaption></figure>
+
+There are 2 ways to create calculated fields within the audience hub.&#x20;
+
+* In the Audience Hub segments page
+* Directly when creating a segment
+
+We currently support the following aggregations, more will be released soon.
+
+* Sum
+* Count
+* Most Frequent
+* Average
+
+
 
 ### Enriching Entities
 
