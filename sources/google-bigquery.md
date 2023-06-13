@@ -45,7 +45,8 @@ Because permissions are a bit unique on BigQuery so the process of creating a ne
 
     <img src="../.gitbook/assets/bq_setup1.png" alt="" data-size="original">
 3. You will also need to specify in what location you want your Census Dataset to be stored in. This locality will be used in the 1st and 2nd command below, and this dataset is where Census will store its bookkeeping to make sure that only incremental changes are synced to your destinations.
-4. Skip this step if working in read-only mode. Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with one command to create the `CENSUS` dataset and three copy and paste-able commands you can use to grant permissions for this account on this project. The second command grants dataEditor on the newly created `CENSUS` dataset.
+4. (Optional) In order to connect to your BigQuery projects, Census will create a service account and automatically manage its lifecycle and credentials - this is the recommended approach for most users. However, if you would prefer to have Census to use a service account that you own (instead of our automatically-managed account) to connect to BigQuery, you may provide its service account key JSON file here.
+5. Skip this step if working in read-only mode. Once you've provided Census with your Project ID, Census will automatically generate a new Role Account we'll use to communicate with your BigQuery and provide you with one command to create the `CENSUS` dataset and three copy and paste-able commands you can use to grant permissions for this account on this project. The second command grants dataEditor on the newly created `CENSUS` dataset.
 
 ![1st and 2nd commands](../.gitbook/assets/bq\_setup\_dataset.png)
 
