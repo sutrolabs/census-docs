@@ -154,3 +154,11 @@ Whether you're using [Astronomer](https://astronomer.io) or self-hosting your ow
 
 Visit the [Census Airflow Provider GitHub repository](https://github.com/sutrolabs/airflow-provider-census) for more details on how to use it for your project.
 
+## Dagster
+
+The Dagster team maintains our Dagster Census integration for triggering syncs. You can [read more in their documentation](https://dagster.io/integrations/dagster-census).
+
+## Prefect
+
+Similarly, Prefect maintains our Prefect Census integration for triggering syncs. You can read more about [how it works in our blog post](https://www.prefect.io/guide/blog/census-and-prefect-partnership-announcement/#PrefectCensusBettertogether).
+
