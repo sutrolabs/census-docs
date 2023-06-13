@@ -112,7 +112,7 @@ curl 'https://app.getcensus.com/api/v1/destinations/[ID]' \
 
 ### GET /destinations/authorize\_url
 
-Census now allows you to create OAuth destinations via our Management API using a two-endpoint flow. We support Salesforce, Hubspot, Zendesk, Pinterest, and LinkedIn but will be adding support for more OAuth destinations soon. Please contact support if you require support for another destination connection.
+Census now allows you to create OAuth destinations via our Management API using a two-endpoint flow. Note that support for Datadog and Outreach is coming soon. Please contact us if you require support for these destinations.
 
 First, you will direct your user to begin the authorization flow by providing them the `authorization url` for a specific destination. You will request a destination’s authorization URL via this endpoint. After the user completes authorization in the destination, we will return the user to your provided `redirect_uri` with the `code`. You will then pass the `code` as `oauth_code` to our[#post-destinations](destinations.md#post-destinations "mention") and [#patch-destinations-id](destinations.md#patch-destinations-id "mention") to create or update an OAuth destination connection.
 
