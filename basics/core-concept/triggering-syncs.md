@@ -46,8 +46,8 @@ Using dbt Cloud to trigger syncs works great with [dbt Models](https://docs.getc
 
 To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key. We use this to subscribe to webhooks for each job you specify.&#x20;
 
-* dbt strongly recommends you use a Service Account token, though User API keys with the correct permissions. Service Account tokens may only be created or modified by users with Account Admin (Enterprise plan) or Owner (Team plan) permissions.
-* The Service Token requires at least the `developer` permission (for Enterprise) or a Developer License (for Team) in order to configure new webhooks. See [dbt Cloud docs](https://docs.getdbt.com/docs/deploy/webhooks#prerequisites) for more details.
+* dbt strongly recommends you use a Service Account token, though User API keys with the correct permissions are accepted. Service Account tokens can be created by users with Account Admin (Enterprise plan) or Owner (Team plan) permissions.
+* The Service Token requires at least the `developer` permission (for Enterprise) or `Member` permission (for Team) in order to configure new webhooks. See [dbt Cloud docs](https://docs.getdbt.com/docs/deploy/webhooks#prerequisites) for more details.
 
 With your token in hand, you can now connect dbt Cloud to your dbt project.
 
