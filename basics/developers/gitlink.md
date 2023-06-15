@@ -12,11 +12,11 @@ GitLink enables you to leverage best practices of production software developmen
 * **Bi-directional Updates**: Make changes to Census via the Census UI, or by updating the YAML configuration files in your Git repository.
 * **Git-Backed Change History:** View and rollback changes to Census resources not just within the Census UI, but also within Git.
 
-Creating, editing, and deleting resources in the Census UI will all be represented as changes to your YAML configuration files stored in Git. All changes will be represented as commits to those files.&#x20;
+Creating, editing, and deleting resources in the Census UI will all be represented as changes to your YAML configuration files stored in Git. All changes will be represented as commits to those files.
 
 <figure><img src="https://lh6.googleusercontent.com/5rHaynRLBu56UJevrOaLiD0NQ7RP-2N4zNc1L_7CjSkXjizHm1TfRL1tBGom1EswZVk0uOCIJoM5hw-Ze8fehOdtSyfO-jdwIunGx5irBZDyyhhTVCAswvq7eJ2ZhJdayHM2ZgSpAishwlicN1BwvII" alt=""><figcaption><p>A sample YAML configuration file within Git that describes a Census SQL model.</p></figcaption></figure>
 
-When you create and edit the configuration files via commits and pull requests in a Git repository, Census will materialize your changes into your Census workspace.&#x20;
+When you create and edit the configuration files via commits and pull requests in a Git repository, Census will materialize your changes into your Census workspace.
 
 <figure><img src="https://lh3.googleusercontent.com/0B2EWmcpZFfv9oX1PbRJwOqFTS7O4s-phb26iz4BUMj21cCL09htzoDTnQHV7wvI6ecD3yqOfEkMDToS0oejFJTW5RPc0vrBhesV37watjyLUPFVF0hkwvATYeGtKda4CTAeZlE1tw-j-Dd8frmQWgc" alt=""><figcaption><p>Changes will also show their source (Census or Git). And don't worry, we still think YAML is great! Woohoo!</p></figcaption></figure>
 
@@ -38,7 +38,7 @@ To set up GitLink:
 2.  Click **Setup.**
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 2.55.49 PM.png" alt=""><figcaption></figcaption></figure>
-3.  You're now on the GitLink configuration page. Let's get set up by connecting to Git:&#x20;
+3.  You're now on the GitLink configuration page. Let's get set up by connecting to Git:
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 2.55.56 PM (1).png" alt=""><figcaption></figcaption></figure>
 4.  Select the repositories you would like to use for version control:
@@ -59,8 +59,6 @@ To set up GitLink:
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.02.29 PM.png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## After Setup
 
 Once GitLink is enabled, you can continue to use the Census UI as usual, with no changes to any workflows. Census will automatically commit all edits made within the UI to Git. Likewise, all changes within Git will automatically be synced to Census.
@@ -68,7 +66,7 @@ Once GitLink is enabled, you can continue to use the Census UI as usual, with no
 In addition, several new features will be available to users after the feature is enabled.
 
 {% hint style="warning" %}
-Please ensure that the directory structure within your repository matches the directory structure expected within Census at all times, for both models and syncs. For example, if models are configured to be written to `census/models/` in your Census settings, moving models to a different directory or subdirectory will delete the model from Census. 
+Please ensure that the directory structure within your repository matches the directory structure expected within Census at all times, for both models and syncs. For example, if models are configured to be written to `census/models/` in your Census settings, moving models to a different directory or subdirectory will delete the model from Census.
 {% endhint %}
 
 ### YAML in your Git Repository
@@ -89,7 +87,7 @@ model:users: ## Unchanging resource identifier for your SQL model
 
 #### Syncs
 
-There are many more sync configuration parameters than model parameters, but there are reliable components that we'll discuss below.&#x20;
+There are many more sync configuration parameters than model parameters, but there are reliable components that we'll discuss below.
 
 To discover the exact YAML that might be necessary for your use case, we recommend creating a sample sync in the UI to your desired destination, or reaching out to [support@getcensus.com](mailto:support@getcensus.com).
 
@@ -149,8 +147,6 @@ sync:hubspot-contact-sync: ## Unchanging resource identifier for your sync
         threshold_percent: 75
 ```
 
-
-
 ### History View
 
 Census provides a History View of all changes applied from Census to Git, and from Git to Census. To find the History View:
@@ -169,15 +165,15 @@ Every resource within Census that is backed by version control will have a link 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 4.59.37 PM.png" alt=""><figcaption></figcaption></figure>
 
-### Automated Continuous Integration Tests
+### GitHub - Automated Continuous Integration Tests
 
-Census will run Continuous Integration (CI) tests on every Pull Request in your GitLink repository. These tests will specify exactly which changes will occur, as well as whether there are any errors in any YAML configuration.
+When using GitHub as your GitLink repository, Census will run Continuous Integration (CI) tests on every pull request. These tests will specify exactly which changes will occur, as well as whether there are any errors in any YAML configuration.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 3.29.10 AM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Automatic YAML Spec Versions
 
-The YAML spec for GitLink-backed resources is versioned. Currently, the spec version is `0.x`.  Version updates will automatically upgrade your repository with new feature support, until `1.x`. We do not anticipate changes to any core model and sync components (like the `mappings` or `operational_settings` sync configuration blocks).
+The YAML spec for GitLink-backed resources is versioned. Currently, the spec version is `0.x`. Version updates will automatically upgrade your repository with new feature support, until `1.x`. We do not anticipate changes to any core model and sync components (like the `mappings` or `operational_settings` sync configuration blocks).
 
 YAML specs will be upgraded to enable support for new resources, and match support for model and sync configuration options. After `1.x`, you will have migration windows announced at least 2 weeks in advance, with the ability to choose exactly when upgrades occur.
 
