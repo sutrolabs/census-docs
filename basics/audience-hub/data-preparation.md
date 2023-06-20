@@ -48,7 +48,13 @@ We currently support the following aggregations, more will be released soon.
 * Most Frequent
 * Average&#x20;
 
+### Enumerated Value Columns
 
+In entities you can select the columns that have a finite list of values such as country, product type. &#x20;
+
+<figure><img src="../../.gitbook/assets/CleanShot 2023-06-20 at 21.24.52@2x.png" alt=""><figcaption></figcaption></figure>
+
+When these columns are used in segmentation they will now display a dropdown of options to choose from.  This helps to avoid issues of using the wrong casing. &#x20;
 
 ### Enriching Entities
 
