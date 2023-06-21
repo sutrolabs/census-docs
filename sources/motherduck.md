@@ -5,7 +5,7 @@ description: >-
 
 # MotherDuck
 
-## Getting Started <a href="#getting-started" id="getting-started"></a>
+## 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
 
 * If you haven’t already, [sign up for MotherDuck](https://motherduck.com/docs/getting-started/signing-up) and [start a free Census trial](https://app.getcensus.com/)
 * Go to the MotherDuck UI and [copy your service token](https://motherduck.com/docs/authenticating-to-motherduck#authentication-using-a-service-token)
