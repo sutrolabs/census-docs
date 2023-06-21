@@ -13,7 +13,7 @@ Warehouse Writeback is available for Platform Plan accounts. If you would like l
 
 ## :ballot\_box: Supported data sources
 
-Census can provide detailed logging for all data warehouse sources:
+Census can provide detailed logging for all data warehouse sources using the [Advanced Sync Engine](https://docs.getcensus.com/sources/overview#sync-engines):
 
 * Snowflake
 * BigQuery
@@ -23,15 +23,14 @@ Census can provide detailed logging for all data warehouse sources:
 
 ## 🖥️ Configuring Warehouse Writeback
 
-To enable Warehouse Writeback on any supported source:
+To enable Warehouse Writeback on a supported source connection:
 
-1. Visit the [Connections page](https://app.getcensus.com/connections).
-2. Click to "Edit" the configuration of the source where you'd like logs.
-3. Tick the box next to the option to "Write logs in this warehouse".
+1. Visit the [Sources page](https://app.getcensus.com/sources).
+2. Click **+ New Source** to create a new source connection, or click **Edit** on an existing source connection.
+3. Toggle on Warehouse Writeback
+4. Optionally, specify how long logs should be retained for (7 days by default). Census will automatically clean up logs after the specified number of days.
 
-Here is an example of this configuration enabled for a sample Bigquery connection:
-
-![](../../.gitbook/assets/screely-1655474206629.png)
+<figure><img src="../../.gitbook/assets/Warehouse Writeback.png" alt=""><figcaption></figcaption></figure>
 
 That's it! Logs will start populating for all syncs in this connection on their subsequent runs.
 
