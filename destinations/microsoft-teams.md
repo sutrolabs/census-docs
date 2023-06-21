@@ -6,7 +6,7 @@ description: This page describes how to use Census with Microsoft Teams.
 
 ## 🏃‍♀️ Getting Started
 
-‌In this guide, we will show you how to connect Microsoft Teams to Census and create your first Census Notification.
+‌In this guide, we will show you how to connect Microsoft Teams to Census.
 
 ### 📋 Prerequisites
 
@@ -32,42 +32,41 @@ Here you can a write SQL query to select the data you want to send to Teams.
 
 Once you have created your model, give it a useful name, and click **Save Model**.
 
-## 4️⃣ Create your first Census Notification
+## 4️⃣ Create a Sync
 
-Navigate to the [**Notifications**](https://app.getcensus.com/notifications) page in Census and click the **Create a Notification** button.
+Navigate to the [**Syncs**](https://app.getcensus.com/syncs) page in Census and click the **New Sync** button.
 
-### 🎚 Setup up your Trigger
+### 🎚 Setup up your Source, Destination, and Sync Key
 
-You'll need to start by specifying
+You'll need to start by specifying how to identify entries in your data warehouse that should trigger a Sync:
 
-* For **Connection**, select the data warehouse you connected in step 2.
-* For **Source**, select the model you created in step 3.
-* Next, pick the column that uniquely identifies each record in your data source. Census will use this to identify new records that need to be used to create Notifications to Teams.
+* For Source > **Connection**, select the data warehouse you connected in step 2.
+* For Source > **Source**, select the model you created in step 3.
+* For Destination > **Connection**, select Microsoft Teams
+* For Destination > **Object**, Message should be auto-selected
+* Next, pick the column that uniquely identifies each record in your data source. Census will use this to identify new records that need to be used to send messages to Microsoft.
 
-<figure><img src="../.gitbook/assets/CleanShot 2022-10-11 at 10.03.37.png" alt=""><figcaption><p>Here is an example of a configured Notification trigger.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-06-21 at 3.00.06 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### 💬 **Setup your Message**
 
-* The notification destination should be selected by default but if you have more than one valid destination for Notifications configured (eg. a Slack and a Teams accounts), ensure you have the right one selected.
-* Then decide whether you want to send your Notification to a Teams channel or a direct message and select the destination from the list.
-* New Rows will be automatically selected for now as it is the only currently supported logic for Notifications.
+* Select the Teams channel you'd like to send messages to.
 * Finally, use the text editor to customize the message that you wish to send.
   * To embed values from the trigger columns or to mention users or channels from your Teams account, use the dropdown that will appear. If the list is long, try the search function.
 
-<figure><img src="../.gitbook/assets/CleanShot 2022-10-13 at 11.19.21@2x.png" alt=""><figcaption><p>An example of a configured Notification message.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-06-21 at 3.01.08 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### 🧪 Test your Teams message
 
 * Click the Run Test button to see a single random record sent to your destination. For testing, you may want to temporarily change the destination message yourself.
 
-<figure><img src="../.gitbook/assets/CleanShot 2022-10-11 at 10.24.48@2x.png" alt=""><figcaption><p>Testing a new Notification.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-06-21 at 3.14.57 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### ☑️ Finishing touches
 
-* Click the **Finish** button and you'll be taken to your new notification. You can now Schedule the sync to run on a schedule or run it manually yourself.
-* Note that on the first run, Census will not send any Notifications but will do so on incremental runs when new rows are added to your source model.
+* Click the **Finish** button and you'll be taken to your new sync. You can now Schedule the sync to run on a schedule or run it manually yourself.
 
-<figure><img src="../.gitbook/assets/CleanShot 2022-10-11 at 11.02.21@2x.png" alt=""><figcaption><p>Configure your new Notification to run on a set schedule or run it manually.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/CleanShot 2022-10-11 at 11.02.21@2x.png" alt=""><figcaption><p>Configure your new sync to run on a set schedule or run it manually.</p></figcaption></figure>
 
 {% hint style="info" %}
 Reminder: Census will send records to a Teams channel one at a time.
