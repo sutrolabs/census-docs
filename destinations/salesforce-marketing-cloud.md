@@ -152,27 +152,15 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 | -------------------------- | ------------------------- |
 | Salesforce Marketing Cloud | \~20,000                  |
 
-## 🗄️ Supported Objects
+## 🔀 Supported Objects and Behaviors
 
-|           **Object Name** | **Supported?** |
-| ------------------------: | :------------: |
-| Any Custom Data Extension |        ✅       |
+| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| --------------: | :------------: | ---------------- | --------------|
+| Data Extension | ✅ | Unique Identifier | Update or Create, Update Only, Mirror |
+| Contact | ✅ | Contact Key | Update or Create |
+| API-Triggered Journey | ✅ | Contact Key | Update or Create, Mirror |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for Salesforce Marketing Cloud.
-
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-|        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :---------: |
-| **Update or Create** |        ✅       |     All     |
-|           **Mirror** |        ✅       |     All     |
-|      **Update Only** |       🔜       |     All     |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Salesforce Marketing Cloud.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Marketing Cloud objects and/or behaviors.
 
 ## 🚑 Need help connecting to Salesforce Marketing Cloud?
 
