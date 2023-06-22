@@ -60,6 +60,7 @@
 * [Google AlloyDB](sources/alloydb.md)
 * [Google BigQuery](sources/google-bigquery.md)
 * [Google Sheets](sources/google-sheets.md)
+* [MotherDuck](sources/motherduck.md)
 * [MySQL](sources/mysql.md)
 * [PostgreSQL](sources/postgres.md)
 * [Redshift](sources/redshift.md)
