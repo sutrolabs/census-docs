@@ -16,9 +16,9 @@ description: >-
 * You’re all set! Head over to the **Syncs** page to activate your data
   <figure><img src="../.gitbook/assets/motherduck-2.png" alt=""><figcaption><p>Create your first MotherDuck sync.</p></figcaption></figure>
 
-<!-- ## 💡 Notes <a href="#notes" id="notes"></a>
+## 💡 Notes <a href="#notes" id="notes"></a>
 
-* TODO -->
+As of June 2023, MotherDuck only supports our [Basic Sync Engine](./overview.md#🏎️-sync-engines).
 
 ## 🚑 Need help connecting to MotherDuck?
 
