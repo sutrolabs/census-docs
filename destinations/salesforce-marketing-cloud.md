@@ -55,6 +55,7 @@ In "Set Server-to-Server Properties", given the new component the following perm
 * Contacts > **List and Subscribers: Read, Write**
 * Data > **Data Extensions: Read, Write**
 * Data > **File Locations: Read, Write**
+* Journeys > **Journeys: Read, Write**
 
 Click "Save" to continue. You should see a new Component in your package - verify that it has the correct permissions (in the Scope section) by comparing to the image below.
 
