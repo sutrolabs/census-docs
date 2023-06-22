@@ -158,9 +158,9 @@ curl 'https://app.getcensus.com/api/v1/syncs' \
 {% endtab %}
 {% endtabs %}
 
-| Data Property   | Description                                                                                                                                                                                                                                                                                  |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| A list of syncs | <p>A list of your syncs. The properties of a sync are expanded on below in the POST /syncs endpoint.</p><p>Along with the properties mentioned above, this endpoint returns an <code>id</code>, <code>created_at</code>, <code>updated_at</code>, and <code>status</code> for each sync.</p> |
+| Data Property   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A list of syncs | <p>A list of your syncs. The properties of a sync are expanded on below in the POST /syncs endpoint.<br></p><p>Along with the properties mentioned above, this endpoint returns an <code>id</code>, <code>created_at</code>, <code>updated_at</code>, and <code>status</code> for each sync.<br><br>Possible values for the <code>status</code> property:<br> - "Ready": no sync history</p><p> - "Up to Date": last sync completed<br> - "Failing": last sync failed</p> |
 
 ### GET /syncs/\[ID]
 
@@ -247,9 +247,9 @@ curl 'https://app.getcensus.com/api/v1/syncs/[ID]' \
 {% endtab %}
 {% endtabs %}
 
-| Data Property | Description                                                                                                                                                                                                                                                                                  |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| A sync        | <p>Information on a sync. The properties of a sync are expanded on below in the POST /syncs endpoint.</p><p>Along with the properties mentioned above, this endpoint returns an <code>id</code>, <code>created_at</code>, <code>updated_at</code>, and <code>status</code> for the sync.</p> |
+| Data Property | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A sync        | <p>Information on a sync. The properties of a sync are expanded on below in the POST /syncs endpoint.<br></p><p>Along with the properties mentioned above, this endpoint returns an <code>id</code>, <code>created_at</code>, <code>updated_at</code>, and <code>status</code> for the sync.<br><br>Possible values for the <code>status</code> property:<br> - "Ready": no sync history</p><p> - "Up to Date": last sync completed<br> - "Failing": last sync failed</p> |
 
 ### POST /syncs
 
