@@ -147,6 +147,12 @@ sync:hubspot-contact-sync: ## Unchanging resource identifier for your sync
         threshold_percent: 75
 ```
 
+### Automatic YAML Spec Versions
+
+The YAML spec for GitLink-backed resources is versioned. Currently, the spec version is `0.x`. Version updates will automatically upgrade your repository with new feature support, until `1.x`. We do not anticipate changes to any core model and sync components (like the `mappings` or `operational_settings` sync configuration blocks).
+
+YAML specs will be upgraded to enable support for new resources, and match support for model and sync configuration options. After `1.x`, you will have migration windows announced at least 2 weeks in advance, with the ability to choose exactly when upgrades occur.
+
 ### History View
 
 Census provides a History View of all changes applied from Census to Git, and from Git to Census. To find the History View:
@@ -165,24 +171,25 @@ Every resource within Census that is backed by version control will have a link 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 4.59.37 PM.png" alt=""><figcaption></figcaption></figure>
 
-### GitHub - Automated Continuous Integration Tests
+## GitHub&#x20;
+
+GitLink offers some additional functionality when connected to GitHub repositories by automatically adding YAML configuration checks. If you are using GitHub's branch protection features, you may also need to make some changes to allow GItLink to operate smoothly.
+
+### Automated Continuous Integration Tests
 
 When using GitHub as your GitLink repository, Census will run Continuous Integration (CI) tests on every pull request. These tests will specify exactly which changes will occur, as well as whether there are any errors in any YAML configuration.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 3.29.10 AM.png" alt="" width="563"><figcaption></figcaption></figure>
 
-### Automatic YAML Spec Versions
+### Working with Branch Protection
 
-The YAML spec for GitLink-backed resources is versioned. Currently, the spec version is `0.x`. Version updates will automatically upgrade your repository with new feature support, until `1.x`. We do not anticipate changes to any core model and sync components (like the `mappings` or `operational_settings` sync configuration blocks).
+Because GitLink keeps the state of Census and Git synchronized, Census must write to Git on each resource save. This may conflict with certain branches that have branch protection (i.e. `main`). To fix this, you can add the **Census Git** app to the list of actors that bypass required pull request approvals once you install the app during the [#setup](gitlink.md#setup "mention") flow.
 
-YAML specs will be upgraded to enable support for new resources, and match support for model and sync configuration options. After `1.x`, you will have migration windows announced at least 2 weeks in advance, with the ability to choose exactly when upgrades occur.
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 5.02.53 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Troubleshooting
 
 There are a few strict requirements in order to use GitLink:
 
-*   Because GitLink keeps the state of Census and Git synchronized, Census must write to Git on each resource save. This may conflict with certain branches that have branch protection (i.e. `main`). To fix this, you can add the **Census Git** app to the list of actors that bypass required pull request approvals once you install the app during the [#setup](gitlink.md#setup "mention") flow.
-
-    <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 5.02.53 PM.png" alt=""><figcaption></figcaption></figure>
 * The governed GitLink directory (by default, `census/models/*.yml`) must be entirely empty, or populated only by configuration files that Census can read. As such, if you have `.txt` files, `README.md` files, or other files that are not YAML-deserializable and correspond to a known resource configuration by Census, GitLink will not work.
 * Each SQL model and sync configuration should be in its own file.
