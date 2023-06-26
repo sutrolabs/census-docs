@@ -15,7 +15,7 @@ description: This page describes how to use Census with Attio.
         <figure><img src="../.gitbook/assets/attio-access-token.png" alt=""><figcaption></figcaption></figure>
    3. Ensure your access token has `Read/Write` access for `Record` as well as `Read` access for `Object Configuration` under the `Scopes` section
         <figure><img src="../.gitbook/assets/attio-scopes.png" alt=""><figcaption></figcaption></figure>
-4. Return to Census and paste it under **API Token**.
+4. Return to Census and paste the access token under **API Token**.
 
 
 ## 🔀 Supported Objects and Behaviors
