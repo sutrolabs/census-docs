@@ -83,6 +83,7 @@
 * [Appcues](destinations/appcues.md)
 * [Apollo](destinations/apollo.md)
 * [Asana](destinations/asana.md)
+* [Attio](destinations/attio.md)
 * [Autopilot Journeys](destinations/autopilot-journeys.md)
 * [Azure Blob Storage](destinations/azure-blob-storage.md)
 * [Box](destinations/box.md)
