@@ -13,7 +13,7 @@ description: This page describes how to use Census with Attio.
         <figure><img src="../.gitbook/assets/attio-developers.png" alt=""><figcaption></figcaption></figure>
    2. Once the integration is created, a new access token will be available within your new integration. Copy this value.
         <figure><img src="../.gitbook/assets/attio-access-token.png" alt=""><figcaption></figcaption></figure>
-   3. Ensure your access token has `Read/Write` access for `Record` as well as `Read` access for `Object Configuration` under the `Scopes` section
+   3. Ensure your access token has `Read/Write` access for `Record` as well as `Read` access for `Object Configuration` and `Read` access for `User Management` under the `Scopes` section.
         <figure><img src="../.gitbook/assets/attio-scopes.png" alt=""><figcaption></figcaption></figure>
 4. Return to Census and paste the access token under **API Token**.
 
@@ -22,13 +22,15 @@ description: This page describes how to use Census with Attio.
 
 | **Object Name** | **Supported?** | **Identifiers**      | **Behaviors** |
 |----------------:| :------------: |----------------------|---------------|
-|         Company | ✅ | Any unique attribute | Upsert Only   |
-|          People | ✅ | Any unique attribute | Upsert Only   |
-|  Custom Objects | ✅ | Any unique attribute | Upsert Only   |
+|         Company | ✅ | Any unique attribute | Update or Create   |
+|          People | ✅ | Any unique attribute | Update or Create   |
+|  Custom Objects | ✅ | Any unique attribute | Update or Create   |
 
-### Record References
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Attio objects and/or behaviors.
 
-Fields of type `Record Reference` are taken in as an array of objects. Below is an example of the expected format
+## Record References
+
+Fields of type `Record Reference` are taken in as an array of objects. Below is an example of the expected format:
 ```
 [
     {
@@ -41,11 +43,6 @@ Fields of type `Record Reference` are taken in as an array of objects. Below is 
     }
 ],
 ```
-
-
-
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Attio objects and/or behaviors.
 
 ## 🚑 Need help connecting to Attio?
 
