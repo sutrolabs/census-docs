@@ -103,7 +103,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 
-### Understanding Sync history
+### Sync History
 
 You can dive deeper into why syncs failed, or what records were invalid from the source, or rejected by the destination, under the **Sync History** tab.
 
