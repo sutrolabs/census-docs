@@ -60,6 +60,7 @@ Census makes use of different Vitally APIs for different operations. You're welc
 | --------------: | :------------: | :-------------------: | :---------------: |
 |            User |        ✅       |        User ID        |         ✅         |
 |         Account |        ✅       |       Account ID      |         ✅         |
+|    Organization |        ✅       |    Organization ID    |         ✅         |
 |     Track Event |        ✅       | Any unique identifier |         ✅         |
 |             NPS |       🔜       |           -           |         -         |
 
@@ -78,11 +79,7 @@ Vitally defines User ID and Account ID as the unique identifier for these object
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |  **Objects**  |
-| -------------------: | :------------: | :-----------: |
-| **Update or Create** |        ✅       | Account, User |
-|      **Update Only** |        ✅       | Account, User |
-|           **Append** |        ✅       |  Track Event  |
+<table data-header-hidden><thead><tr><th align="right"></th><th width="197.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Account, User, Organization</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Account, User, Organization</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Track Event</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Vitally.
 
