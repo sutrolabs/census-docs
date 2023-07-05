@@ -26,7 +26,7 @@ In this guide, we will show you how to connect Zendesk to Census and create your
     * [Snowflake](https://docs.getcensus.com/sources/snowflake)
     * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
-    ***
+
 
 ### Step 1: Connect Zendesk
 

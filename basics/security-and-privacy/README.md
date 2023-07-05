@@ -91,13 +91,15 @@ As described above, Census's architecture is built from the ground up to handle 
 
 However, when setting up a new source, we do provide the option to use our [Basic Sync Engine](https://docs.getcensus.com/sources/overview#sync-engines), which relies on Census-managed infrastructure for storing information about past syncs and computing incremental changes.
 
-Also, the following data sources _only_ support Basic Sync Engine (as of April 2023):
+Also, the following data sources _only_ support Basic Sync Engine (as of June 2023):
 
 * Amazon Athena
 * Amazon S3
 * Azure Synapse
 * Elasticsearch
 * Google Sheets
+* Materialize
+* MotherDuck
 * MySQL
 * SingleStore
 
