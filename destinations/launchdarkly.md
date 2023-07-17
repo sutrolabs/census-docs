@@ -9,8 +9,12 @@ description: This page describes how to use Census with LaunchDarkly.
 1. Click **Add Service**.
 2. Select **LaunchDarkly** from the menu.
 3. Open the LaunchDarkly app in another window to find the following credentials:
-   1. **Service Access Token**: create a new token from **Account settings** > **Authorization**. Assign the role `Writer` and check the box next to **This is a service token**.
+   1. **Service Access Token**: create a new token from **Account settings** > **Authorization**. Assign the role `Writer` , add a custom role or policy that has the action `importEventData` , and check the box next to **This is a service token**.
    2. **Client Side ID**: go to **Account settings** > **Projects** and either click on an existing project or create a new one to get this ID.
+
+{% hint style="info" %}
+Your access token needs to have permission to perform the action `importEventData`. If your token is an admin token it will work as well but the recommended approach is to use a custom role or policy. [read more](https://docs.launchdarkly.com/home/members/role-create)
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/LaunchDarkly (1).png" alt=""><figcaption><p>Create a Service Access Token from the LaunchDarkly app.</p></figcaption></figure>
 
