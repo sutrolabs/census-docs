@@ -12,17 +12,13 @@ GitLink enables you to leverage best practices of production software developmen
 * **Bi-directional Updates**: Make changes to Census via the Census UI, or by updating the YAML configuration files in your Git repository.
 * **Git-Backed Change History:** View and rollback changes to Census resources not just within the Census UI, but also within Git.
 
-Creating, editing, and deleting resources in the Census UI will all be represented as changes to your YAML configuration files stored in Git. All changes will be represented as commits to those files.
+Creating, editing, and deleting resources in the Census UI will all be represented as changes to your YAML configuration files stored in Git. All changes will be represented as commits to those files. When you create and edit the configuration files via commits and pull requests in a Git repository, Census will materialize your changes into your Census workspace.
 
-<figure><img src="https://lh6.googleusercontent.com/5rHaynRLBu56UJevrOaLiD0NQ7RP-2N4zNc1L_7CjSkXjizHm1TfRL1tBGom1EswZVk0uOCIJoM5hw-Ze8fehOdtSyfO-jdwIunGx5irBZDyyhhTVCAswvq7eJ2ZhJdayHM2ZgSpAishwlicN1BwvII" alt=""><figcaption><p>A sample YAML configuration file within Git that describes a Census SQL model.</p></figcaption></figure>
-
-When you create and edit the configuration files via commits and pull requests in a Git repository, Census will materialize your changes into your Census workspace.
-
-<figure><img src="https://lh3.googleusercontent.com/0B2EWmcpZFfv9oX1PbRJwOqFTS7O4s-phb26iz4BUMj21cCL09htzoDTnQHV7wvI6ecD3yqOfEkMDToS0oejFJTW5RPc0vrBhesV37watjyLUPFVF0hkwvATYeGtKda4CTAeZlE1tw-j-Dd8frmQWgc" alt=""><figcaption><p>Changes will also show their source (Census or Git). And don't worry, we still think YAML is great! Woohoo!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot.png" alt=""><figcaption><p>A sample YAML configuration file within Git that describes a Census SQL model.</p></figcaption></figure>
 
 This will also enable a global History view of all resource changes across your entire Census workspace. You can isolate exactly when those changes went into effect, and the latest Git commit associated with that change.
 
-<figure><img src="https://lh3.googleusercontent.com/-AI0eDkUq-Fi1-HsPHeZq4SIqNxB0WUZ_Fxys1DRXuJ3cjBlJxplezz2nLg289tBQfnyEZqbKw8nWi6M5CBFleDQJyGVnL7AGHRxBTwNS37TLhK7d79hyIjLoESz_MatzGLnPlL99S0PoZMfToYQR_c" alt=""><figcaption><p>A sample set of changes within the new History view.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM.png" alt=""><figcaption><p>A sample set of changes within the new History view.</p></figcaption></figure>
 
 {% hint style="warning" %}
 GitLink is only accessible to Platform Plan accounts. If you would like to enable GitLink and are not on the Platform Plan, please contact us at [support@getcensus.com](mailto:support@getcensus.com).
@@ -162,7 +158,7 @@ Census provides a History View of all changes applied from Census to Git, and fr
     <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 4.53.43 PM (1) (1) (1) (1) (1) (1) (2) (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 2.  You can see a full list of all changes, including the latest commit from the changes that were applied, the number of changes (and failures), and when the changes were applied.
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM (1).png" alt=""><figcaption></figcaption></figure>
 3. You can always ask Census to perform a reconciliation between the Census UI and your git repository by clicking the **Force Reconciliation** button. Use this in the rare cases where the git repository's APIs and webhook functionality are not performing as expected.
 
 ### Linked Git Configuration
