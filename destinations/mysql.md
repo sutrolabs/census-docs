@@ -12,11 +12,23 @@ description: This page describes how to sync data to your MySQL database.
 
 <figure><img src="../.gitbook/assets/mysql.png" alt=""><figcaption><p>Enter your MySQL database credentials in Census.</p></figcaption></figure>
 
+## :key: Permissions
+
+To sync to MySql as a destination you need the following privileges on the user that you provide to Census.
+
+```
+CREATE TEMPORARY TABLES
+CREATE
+INSERT
+UPDATE
+DELETE
+```
+
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**       |
-| --------------: | :------------: | ---------------- | ------------------- |
-| Table | ✅ | Primary keys or columns with uniqueness constraints | Update or Create, Update Only |
+| **Object Name** | **Supported?** | **Identifiers**                                     | **Behaviors**                 |
+| --------------: | :------------: | --------------------------------------------------- | ----------------------------- |
+|           Table |        ✅       | Primary keys or columns with uniqueness constraints | Update or Create, Update Only |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for MySQL.
 
