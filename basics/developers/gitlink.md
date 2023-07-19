@@ -1642,26 +1642,6 @@ Behavior
   </details>
   &nbsp;
 
-  <!-- Mappings - Upsert Mapping -->
-  <details>
-  <summary><b>
-    Upsert Mapping
-  </b></summary>
-  &nbsp;
-
-  - **Description**: Duplicate key for `is_primary_identifier` [DEPRECATED]
-
-  - **Required**: `false`
-
-  - **Type**: `Boolean`
-
-  - **Key**: `upsert_mapping`
-
-  - **Possible values**: `true` or `false`
-
-  </details>
-  &nbsp;
-
   <!-- Mappings - Generate Field -->
   <details>
   <summary><b>
