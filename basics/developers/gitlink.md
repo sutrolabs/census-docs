@@ -207,11 +207,11 @@ There are a few strict requirements in order to use GitLink:
 
 Please refer to this section on the different parameters and their values a sync configuration could take up
 
-<details>
+<!-- <details>
   <summary><b>
     Sync Attributes
   </b></summary>
-&nbsp;
+&nbsp; -->
 
 <!-- PAUSED -->
 <details>
@@ -428,7 +428,7 @@ Behavior
 </b></summary>
 &nbsp;
 
-- **Description**: Demarcate how Census should handle the mapping between the source and destination
+- **Description**: Describe common properties on how Census should handle the mappings
 
 - **Required**: `false`
 
@@ -1067,7 +1067,7 @@ Behavior
 </b></summary>
 &nbsp;
 
-- **Description**:
+- **Description**: Describe the mappings between source and destination of this sync.
 
 - **Required**: `true`
 
@@ -1077,22 +1077,392 @@ Behavior
 
 - **Element**:
 
-  <!-- Mappings - From -->
+  <!-- Mappings - From Mapping -->
   <details>
   <summary><b>
-    From
+    From Mapping
   </b></summary>
   &nbsp;
 
-  - **Description**:
+  - **Description**: Describe the mapping properties in the source
 
-  - **Required**:
+  - **Required**: `true`
 
-  - **Type**:
+  - **Type**: `Object`
 
   - **Key**: `from`
 
-  - **Possible values**:
+  - **Fields**:
+
+    <!-- Mapping - From Mapping - Type -->
+    <details>
+    <summary><b>
+      Type
+    </b></summary>
+    &nbsp;
+
+    - **Description**: Type of the source object in the data source
+
+    - **Required**: `true`
+
+    - **Type**: `String`
+
+    - **Key**: `type`
+
+    - **Possible values**: `column`, `constant`, `reference`, `compound`, `segment-membership`
+
+    </details>
+    &nbsp;
+
+    <!-- Mapping - From Mapping - Data -->
+    <details>
+    <summary><b>
+      Data
+    </b></summary>
+    &nbsp;
+
+    - **Description**: Describe the data type of the record in the source
+
+    - **Required**: `false`
+
+    - **Type**: `Object`
+
+    - **Key**: `data`
+
+    - **Possible values**: Fields of any **one** of the objects below
+
+      <!-- Mapping - From Mapping - Data - Static Expression Data -->
+      <details>
+      <summary><b>
+        Static Expression Data
+      </b></summary>
+      &nbsp;
+
+      - **Description**: Mapping for a constant value to a destination
+
+      - **Required**: `false`
+
+      - **Fields**:
+
+        <!-- Mapping - From Mapping - Data - Static Expression Data - Basic Type -->
+        <details>
+        <summary><b>
+          Basic Type
+        </b></summary>
+        &nbsp;
+
+        - **Description**: Data type of the constant
+
+        - **Required**: `true`
+
+        - **Type**: `String`
+
+        - **Key**: `basic_type`
+
+        - **Possible values**: `Integer`, `String`
+
+        </details>
+        &nbsp;
+
+        <!-- Mapping - From Mapping - Data - Static Expression Data - Value -->
+        <details>
+        <summary><b>
+          Value
+        </b></summary>
+        &nbsp;
+
+        - **Description**: Value of the constant
+
+        - **Required**: `true`
+
+        - **Type**: `String`
+
+        - **Key**: `value`
+
+        - **Possible values**:
+
+        </details>
+        &nbsp;
+
+      </details>
+      &nbsp;
+
+      <!-- Mapping - From Mapping - Data - Column Expression Data -->
+      <details>
+      <summary><b>
+        Column Expression Data
+      </b></summary>
+      &nbsp;
+
+      - **Description**: Mapping for a column expression from the data source
+
+      - **Required**: `false`
+
+      - **Fields**:
+        <!-- Mapping - From Mapping - Data - Column Expression Data - Column Name -->
+        <details>
+        <summary><b>
+          Column Name
+        </b></summary>
+        &nbsp;
+
+        - **Description**: Name of the column in data source
+
+        - **Required**: `true`
+
+        - **Type**: `String`
+
+        - **Key**: `column_name`
+
+        - **Possible values**:
+
+        </details>
+        &nbsp;
+
+      </details>
+      &nbsp;
+
+      <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data -->
+      <details>
+      <summary><b>
+        Compound Upsert Key Expression Data
+      </b></summary>
+      &nbsp;
+
+      - **Description**: Properties of mappings that are composed by sub mappings
+
+      - **Required**: `false`
+
+      - **Fields**:
+        <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data - Sub-Expressions -->
+        <details>
+        <summary><b>
+          Sub-Expressions
+        </b></summary>
+        &nbsp;
+
+        - **Description**: Sub-expressions that will be composed together
+
+        - **Required**: `true`
+
+        - **Type**: `Array`
+
+        - **Key**: `subexpressions`
+
+        - **Element**:
+          <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data - Sub-expressions - Type -->
+          <details>
+          <summary><b>
+            Type
+          </b></summary>
+          &nbsp;
+
+          - **Description**: Data type of the sub-expression
+
+          - **Required**: `true`
+
+          - **Type**: `String`
+
+          - **Key**: `type`
+
+          - **Possible values**: `String`, `Integer`
+
+          </details>
+          &nbsp;
+
+          <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data - Sub-expressions - Data -->
+          <details>
+          <summary><b>
+            Data
+          </b></summary>
+          &nbsp;
+
+          - **Description**: Data expression of the mapping
+
+          - **Required**: `true`
+
+          - **Type**: `Object`
+
+          - **Key**: `data`
+
+          - **Fields**: Fields of one of the following objects
+            <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data - Sub-expressions - Data - Static Expression Data -->
+            <details>
+            <summary><b>
+              Static Expression Data
+            </b></summary>
+            &nbsp;
+
+            - **Description**: Mapping for a constant value to a destination
+
+            - **Required**: `false`
+
+            - **Fields**:
+
+              <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data - Sub-expressions - Data - Static Expression Data - Basic Type -->
+              <details>
+              <summary><b>
+                Basic Type
+              </b></summary>
+              &nbsp;
+
+              - **Description**: Data type of the constant
+
+              - **Required**: `true`
+
+              - **Type**: `String`
+
+              - **Key**: `basic_type`
+
+              - **Possible values**: `Integer`, `String`
+
+              </details>
+              &nbsp;
+
+              <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data - Sub-expressions - Data - Static Expression Data - Value -->
+              <details>
+              <summary><b>
+                Value
+              </b></summary>
+              &nbsp;
+
+              - **Description**: Value of the constant
+
+              - **Required**: `true`
+
+              - **Type**: `String`
+
+              - **Key**: `value`
+
+              - **Possible values**:
+
+              </details>
+              &nbsp;
+
+            </details>
+            &nbsp;
+
+            <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data - Sub-expressions - Data - Column Expression Data -->
+            <details>
+            <summary><b>
+              Column Expression Data
+            </b></summary>
+            &nbsp;
+
+            - **Description**: Mapping for a column expression from the data source
+
+            - **Required**: `false`
+
+            - **Fields**:
+              <!-- Mapping - From Mapping - Data - Compound Upsert Key Expression Data - Sub-expressions - Data - Column Expression Data - Column Name -->
+              <details>
+              <summary><b>
+                Column Name
+              </b></summary>
+              &nbsp;
+
+              - **Description**: Name of the column in data source
+
+              - **Required**: `true`
+
+              - **Type**: `String`
+
+              - **Key**: `column_name`
+
+              - **Possible values**:
+
+              </details>
+              &nbsp;
+
+            </details>
+            &nbsp;
+
+          </details>
+          &nbsp;
+
+        </details>
+        &nbsp;
+
+      </details>
+      &nbsp;
+
+      <!-- Mapping - From Mapping - Data - Related Entity Expression Data -->
+      <details>
+      <summary><b>
+        Related Entity Expression Data
+      </b></summary>
+      &nbsp;
+
+      - **Description**:
+
+      - **Required**: `false`
+
+      - **Fields**:
+        <!-- Mapping - From Mapping - Data - Related Entity Expression Data - Object Identifier -->
+        <details>
+        <summary><b>
+          Object Identifier
+        </b></summary>
+        &nbsp;
+
+        - **Description**:
+
+        - **Required**: `true`
+
+        - **Type**: `String`
+
+        - **Key**: `object_identifier`
+
+        - **Possible values**:
+
+        </details>
+        &nbsp;
+
+        <!-- Mapping - From Mapping - Data - Related Entity Expression Data - Referenced Column Name -->
+        <details>
+        <summary><b>
+          Referenced Column Name
+        </b></summary>
+        &nbsp;
+
+        - **Description**:
+
+        - **Required**: `true`
+
+        - **Type**: `String`
+
+        - **Key**: `referenced_column_name`
+
+        - **Possible values**:
+
+        </details>
+        &nbsp;
+
+        <!-- Mapping - From Mapping - Data - Related Entity Expression Data - Referenced Object Identifier -->
+        <details>
+        <summary><b>
+          Referenced Object Identifier
+        </b></summary>
+        &nbsp;
+
+        - **Description**:
+
+        - **Required**: `true`
+
+        - **Type**: `String`
+
+        - **Key**: `referenced_object_identifier`
+
+        - **Possible values**:
+
+        </details>
+        &nbsp;
+
+      </details>
+      &nbsp;
+
+    </details>
+    &nbsp;
 
   </details>
   &nbsp;
@@ -1100,19 +1470,99 @@ Behavior
   <!-- Mappings - To -->
   <details>
   <summary><b>
-    To
+    To Mapping
   </b></summary>
   &nbsp;
 
-  - **Description**:
+  - **Description**: Describe the mapping properties in the destination
 
-  - **Required**:
+  - **Required**: `true`
 
-  - **Type**:
+  - **Type**: `Object`
 
   - **Key**: `to`
 
-  - **Possible values**:
+  - **Fields**:
+
+    <!-- Mapping - To Mapping - Field Name -->
+    <details>
+    <summary><b>
+      Field Name
+    </b></summary>
+    &nbsp;
+
+    - **Description**: Name of the mapping in the destination
+
+    - **Required**: `true`
+
+    - **Type**: `String`
+
+    - **Key**: `field_name`
+
+    - **Possible values**:
+
+    </details>
+    &nbsp;
+
+    <!-- Mapping - To Mapping - Lookup Object -->
+    <details>
+    <summary><b>
+      Lookup Object
+    </b></summary>
+    &nbsp;
+
+    - **Description**: Object properties of the destination
+
+    - **Required**: `false`
+
+    - **Type**: `Object`
+
+    - **Key**: `lookup_object`
+
+    - **Fields**:
+
+      <!-- Mapping - To Mapping - Lookup Object - Object Identifier -->
+      <details>
+      <summary><b>
+        Object Identifier
+      </b></summary>
+      &nbsp;
+
+      - **Description**: Identifier for the destination object
+
+      - **Required**: `true`
+
+      - **Type**: `String`
+
+      - **Key**: `object_identifier`
+
+      - **Possible values**:
+
+      </details>
+      &nbsp;
+
+      <!-- Mapping - To Mapping - Lookup Object - Field to Match by -->
+      <details>
+      <summary><b>
+        Field to Match By
+      </b></summary>
+      &nbsp;
+
+      - **Description**: Field on the object to match a record with
+
+      - **Required**: `true`
+
+      - **Type**: `String`
+
+      - **Key**: `field_to_match_by`
+
+      - **Possible values**:
+
+      </details>
+      &nbsp;
+
+    </details>
+    &nbsp;
 
   </details>
   &nbsp;
@@ -1124,11 +1574,11 @@ Behavior
   </b></summary>
   &nbsp;
 
-  - **Description**:
+  - **Description**: Indicate the type of the current mapping
 
-  - **Required**:
+  - **Required**: `false`
 
-  - **Type**:
+  - **Type**: `String`
 
   - **Key**: `field_type`
 
@@ -1144,7 +1594,7 @@ Behavior
   </b></summary>
   &nbsp;
 
-  - **Description**:
+  - **Description**: Indicate if destination should conform the mapping to the same type as the source
 
   - **Required**: `false`
 
@@ -1204,33 +1654,13 @@ Behavior
   </b></summary>
   &nbsp;
 
-  - **Description**: Indicate if the mapping is an update or insert mapping
+  - **Description**: Duplicate key for `is_primary_identifier` [DEPRECATED]
 
   - **Required**: `false`
 
   - **Type**: `Boolean`
 
   - **Key**: `upsert_mapping`
-
-  - **Possible values**: `true` or `false`
-
-  </details>
-  &nbsp;
-
-  <!-- Mappings - Truncate -->
-  <details>
-  <summary><b>
-    Truncate
-  </b></summary>
-  &nbsp;
-
-  - **Description**: Indicate to Census if the mapping name must be truncated in the destination
-
-  - **Required**: `false`
-
-  - **Type**: `Boolean`
-
-  - **Key**: `truncate`
 
   - **Possible values**: `true` or `false`
 
@@ -1459,6 +1889,6 @@ Behavior
 </details>
 &nbsp;
 
-</details>
+<!-- </details> -->
 
 &nbsp;&nbsp;
