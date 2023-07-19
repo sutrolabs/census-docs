@@ -179,9 +179,21 @@ When using GitHub as your GitLink repository, Census will run Continuous Integra
 
 ### Working with Branch Protection
 
-Because GitLink keeps the state of Census and Git synchronized, Census must write to Git on each resource save. This may conflict with certain branches that have branch protection (i.e. `main`). To fix this, you can add the **Census Git** app to the list of actors that bypass required pull request approvals once you install the app during the [#setup](gitlink.md#setup "mention") flow.
+Because GitLink keeps the state of Census and Git synchronized, Census must write to Git on initial setup and when resources are updated. This may conflict with certain branches that have branch protection (i.e. `main`). To enable GitLink to write to GitHub, you'll need to bypass pull requests and status checks for the protected branch. 
+
+1. Navigate to your GitHub repo's branch protection settings, and click Edit for the branch connected to GitLink.
+
+![settings branches](https://github.com/sutrolabs/census-docs/assets/8723127/becd6685-b64f-4e9f-b039-761ec7fc61d1)
+
+2. Add the **Census Git** app to the list of actors that bypass required pull request approvals once you install the app during the [#setup](gitlink.md#setup "mention") flow.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 5.02.53 PM.png" alt=""><figcaption></figcaption></figure>
+
+3. Uncheck the "Require status checks to pass before merging" setting.
+
+![status checks setting](https://github.com/sutrolabs/census-docs/assets/8723127/9602306e-0a5b-4ed2-aa1f-b9fcf6956aee)
+
+To read more about protected branches, see the official GitHub documentation at https://docs.github.com/articles/about-protected-branches
 
 ## Troubleshooting
 
