@@ -30,6 +30,7 @@
   * [Sync Dry Runs](basics/sync-monitoring/sync-dry-runs.md)
   * [Datadog Integration](basics/sync-monitoring/datadog-integration.md)
 * [Security & Privacy](basics/security-and-privacy/README.md)
+  * [Login & SSO Settings](basics/security-and-privacy/login-and-sso-settings.md)
   * [Workspaces & Access Controls](basics/security-and-privacy/workspaces-and-access-controls.md)
   * [Regions & IP Addresses](basics/security-and-privacy/regions-and-ip-addresses.md)
   * [Using Your Own S3](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
