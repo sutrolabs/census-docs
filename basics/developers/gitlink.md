@@ -177,9 +177,11 @@ When using GitHub as your GitLink repository, Census will run Continuous Integra
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 3.29.10 AM.png" alt="" width="563"><figcaption></figcaption></figure>
 
-### Working with Branch Protection
+## Working with Branch Protection
 
-Because GitLink keeps the state of Census and Git synchronized, Census must write to Git on initial setup and when resources are updated. This may conflict with certain branches that have branch protection (i.e. `main`). To enable GitLink to write to GitHub, you'll need to bypass pull requests and status checks for the protected branch. 
+Because GitLink keeps the state of Census and Git synchronized, Census must write to Git on initial setup and when resources are updated. This may conflict with certain branches that have branch protection (i.e. `main`). To enable GitLink to write to Git, you'll need to bypass pull/merge requests (and sometimes status checks) for the protected branch. 
+
+### GitHub
 
 1. Navigate to your GitHub repo's branch protection settings, and click Edit for the branch connected to GitLink.
 
@@ -194,6 +196,14 @@ Because GitLink keeps the state of Census and Git synchronized, Census must writ
 ![status checks setting](https://github.com/sutrolabs/census-docs/assets/8723127/9602306e-0a5b-4ed2-aa1f-b9fcf6956aee)
 
 To read more about protected branches, see the official GitHub documentation at https://docs.github.com/articles/about-protected-branches
+
+### GitLab
+
+For instructions to bypass merge requests, follow GitLab's instructions at https://docs.gitlab.com/ee/user/project/protected_branches.html#allow-everyone-to-push-directly-to-a-protected-branch
+
+### Bitbucket
+
+For instructions to bypass pull requests, follow BitBucket's instructions at https://confluence.atlassian.com/bitbucketserver/using-branch-permissions-776639807.html
 
 ## Troubleshooting
 
