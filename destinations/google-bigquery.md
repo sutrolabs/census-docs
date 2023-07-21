@@ -33,7 +33,7 @@ Census creates a dedicated Google Cloud Service Account for each BigQuery destin
 
 Click the _Activate Cloud Shell_ (near top right) icon in Google Cloud and execute the following commands.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * Replace `cs-sandbox-12345` with your Project ID.
 * Replace `census-12345abcd1234512345abcdabcd@sutrolabs-giza-production.iam.gserviceaccount.com` with the service account provided in the Census UI.

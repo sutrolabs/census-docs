@@ -12,7 +12,7 @@ description: This page describes how to use Census with Google Datastore.
 
 * **Project ID** Can be found in the Google Cloud Console by clicking the project drop down next to the search bar.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Get your Project ID from the Google Cloud Console</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Get your Project ID from the Google Cloud Console</p></figcaption></figure>
 
 4. Click `Connect`, a Google service account ID will be displayed. Copy this value.
 5. Navigate to the [Google Cloud IAM Console](https://console.cloud.google.com/iam-admin/iam). Click the `+ GRANT ACCESS` button. When prompted enter the following information

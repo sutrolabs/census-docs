@@ -11,7 +11,7 @@ Take a look at documentation on our sources and destinations in the left navigat
 
 ## 🧞Is Census for me?
 
-Want to learn more about how our customers use Census in their business today. Take a look at our customer [hall of fame](https://www.getcensus.com/customers).
+Want to learn more about how our customers use Census in their business today? Take a look at our customer [hall of fame](https://www.getcensus.com/customers)!
 
 ## 🎊 Product changelog
 
