@@ -42,6 +42,7 @@ Census and Looker both maintain their own data warehouse credentials and connect
 ## Unsupported features
 #### Totals & Row Totals
 ![](../../../.gitbook/assets/looker_totals_and_row_totals.png)
+
 Looker will autogenerate additional SQL queries when `Totals` or `Row Totals` are selected. These features are not supported for syncs from Census, and therefore the related SQL will not be imported to Census.
 
 We will add the following as the last line of your SQL when this occurs.
