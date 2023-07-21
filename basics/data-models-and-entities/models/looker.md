@@ -38,3 +38,14 @@ Note: Looks that are in development mode are not shared in the Looker API so onl
 ## Required data warehouse permissions
 
 Census and Looker both maintain their own data warehouse credentials and connections which means each can have different permissions. However, Census requires the same permissions your Looker Looks use within Looker. If Census is missing some permissions that Looker has, you may see a permissions error in Census when attempting to preview the model or use it in a sync.
+
+## Unsupported features
+#### Totals & Row Totals
+![](../../../.gitbook/assets/looker_totals_and_row_totals.png)
+Looker will autogenerate additional SQL queries when `Totals` or `Row Totals` are selected. These features are not supported for syncs from Census, and therefore the related SQL will not be imported to Census.
+
+We will add the following as the last line of your SQL when this occurs.
+```
+-- sql for creating the total and/or determining pivot columns was removed by Census
+```` 
+
