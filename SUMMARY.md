@@ -138,6 +138,7 @@
 * [Heap.io](destinations/heap.io.md)
 * [Help Scout](destinations/help-scout.md)
 * [HubSpot](destinations/hubspot.md)
+* [Impact](destinations/impact.md)
 * [Insightly](destinations/insightly.md)
 * [Intercom](destinations/intercom.md)
 * [Iterable](destinations/iterable.md)
