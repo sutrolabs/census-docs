@@ -12,6 +12,7 @@
   * [Creating Segments](basics/audience-hub/getting-started.md)
   * [Syncing Segments](basics/audience-hub/syncing-segments.md)
   * [Experiments and Analysis](basics/audience-hub/analyzing-segments.md)
+  * [Segment Priorities](basics/audience-hub/segment-priorities.md)
   * [Data Preparation](basics/audience-hub/data-preparation.md)
 * [Data Models and Entities](basics/data-models-and-entities/README.md)
   * [Entities](basics/data-models-and-entities/entities.md)
