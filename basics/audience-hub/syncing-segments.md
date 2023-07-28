@@ -12,7 +12,7 @@ To publish a segment, you'll need to set up a new sync that defines how the segm
 
 #### 1. Quick Sync
 
-For any segment, you can view all of its destinations in the **Syncs** tab. You can also use **Quick Sync** to instantly setup a new sync. Quick Sync uses the most recently previously created sync from the segment's input data set and each destination as a template. Quick Sync will instantly copy the configuration from the last including schedules and field mappings. If it's an audience sync, Quick Sync will automatically pass along your segment's name to the destination as well.&#x20;
+For any segment, you can view all of its destinations in the **Syncs** tab. You can also use **Quick Sync** to instantly setup a new sync. Quick Sync uses the most recently created sync from the segment's input data set and each destination as a template. Quick Sync will instantly copy the configuration from the last including schedules and field mappings. If it's an audience sync, Quick Sync will automatically pass along your segment's name to the destination as well.&#x20;
 
 <figure><img src="../../.gitbook/assets/screely-1681238303732.png" alt=""><figcaption></figcaption></figure>
 
