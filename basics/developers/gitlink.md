@@ -167,7 +167,8 @@ Census provides a History View of all changes applied from Census to Git, and fr
 2.  You can see a full list of all changes, including the latest commit from the changes that were applied, the number of changes (and failures), and when the changes were applied.
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM (1).png" alt=""><figcaption></figcaption></figure>
-3. You can always ask Census to perform a reconciliation between the Census UI and your git repository by clicking the **Force Reconciliation** button. Use this in the rare cases where the git repository's APIs and webhook functionality are not performing as expected.
+
+3.  You can always ask Census to perform a reconciliation between the Census UI and your git repository by clicking the **Force Reconciliation** button. Use this in the rare cases where the git repository's APIs and webhook functionality are not performing as expected.
 
 ### Linked Git Configuration
 
@@ -270,7 +271,7 @@ Label
 <!-- SYNC BEHAVIOR -->
 <details><summary><b>
 Behavior
-</b></summary>
+</b>
 &nbsp;
 
 - **Description**: Describe the sync behavior to Census
@@ -413,6 +414,7 @@ Behavior
   </details>
   &nbsp;
 
+</summary>
 </details>
 &nbsp;
 
