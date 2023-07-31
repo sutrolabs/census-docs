@@ -271,7 +271,7 @@ Label
 <!-- SYNC BEHAVIOR -->
 <details><summary><b>
 Behavior
-</b>
+</b></summary>
 &nbsp;
 
 - **Description**: Describe the sync behavior to Census
@@ -414,7 +414,6 @@ Behavior
   </details>
   &nbsp;
 
-</summary>
 </details>
 &nbsp;
 
