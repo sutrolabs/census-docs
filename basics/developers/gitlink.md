@@ -203,25 +203,25 @@ There are a few strict requirements in order to use GitLink:
 
 Please refer to this section on the different parameters and their values a sync configuration could take up
 
-- `paused` - (Type: Boolean) Indicates whether the current sync is in a paused state. Setting this to false will prevent the sync from running in its cadence.
+- `paused` - (Type: Boolean) Indicates whether the current sync is in a paused state. Setting this to false will prevent the sync from running automatically based on schedule or triggers.
 
-- `label` - (Type: String) Name of the sync.
+- `label` - (Type: String) A short human readable description of the sync.
 
-- `template_sync_identifier` - (Optional, Type: String) Resource Identifier of the sync from which the current sync was created from
+- `template_sync_identifier` - (Optional, Type: String) Resource idenfier of the sync used as a template when initially creating this one. This property is used for attribution and has no effect on the configuration of the sync.
 
 - `behavior` - (Type: Object) Describe the sync behavior to Census
 
-  - `operation` - (Type: String) Indicate to Census how to deal with records that match (don't match) between the sync's source and destination. Possible values are `upsert`, `update`, `create`, `mirror`, `append` or `delete`.
+  - `operation` - (Type: String) Indicate to Census how to deal with records that match (and that don't match) between the sync's source and destination. Possible values are `upsert`, `update`, `create`, `mirror`, `append` or `delete`.
 
   - `append_properties` - (Type: Object) Describe the sync behavior for append only syncs (only applies if the `append` option was selected for sync operation)
 
     - `backfill_records` - (Type: Boolean) Indicate during append sync setup whether records in the source should be backfilled in the destination or just new records moving forward.
 
-    - `high_water_mark` - (Optional, Type: Object) Choose the column from the source to use as the primary key between source and destination records
+    - `high_water_mark` - (Optional, Type: Object) The column (almost always a timestamp) that should be used when identifying new records in an append sync. Including this will use timestamps to determine new records instead of the default Census diff engine.
 
       - `column_name` - (Type: String) The name of the column in the data source to use as the primary key
 
-  - `mirror_properties` - (Optional, Type: Object) Indicate to Census how to apply mirror syncs
+  - `mirror_properties` - (Optional, Type: Object) Properties when the mirror sync behavior is provided. Only required when mirror behavior is used and ignored otherwise.
 
     - `strategy` - (Type: String) Describe to Census how the sync should maintain the mirror between the source and destination. Possible values are `sync_updates_and_deletes` or `sync_updates_and_nulls`.
 
