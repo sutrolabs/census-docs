@@ -211,136 +211,132 @@ Please refer to this section on the different parameters and their values a sync
 
 - `behavior` - (Type: Object) Describe the sync behavior to Census
 
-  - `operation` - (Type: String) Indicate to Census how to deal with records that match (don't match) between the sync's source and destination. Possible values are <span style="color:red">upsert</span>, <span style="color:red">update</span>, <span style="color:red">create</span>, <span style="color:red">mirror</span>, <span style="color:red">append</span> or <span style="color:red">delete</span>
+  - `operation` - (Type: String) Indicate to Census how to deal with records that match (don't match) between the sync's source and destination. Possible values are `upsert`, `update`, `create`, `mirror`, `append` or `delete`.
 
-  - `append_properties`
+  - `append_properties` - (Type: Object) Describe the sync behavior for append only syncs (only applies if the `append` option was selected for sync operation)
 
-    - `backfill_records`
+    - `backfill_records` - (Type: Boolean) Indicate during append sync setup whether records in the source should be backfilled in the destination or just new records moving forward.
 
-    - `high_water_mark`
+    - `high_water_mark` - (Optional, Type: Object) Choose the column from the source to use as the primary key between source and destination records
 
-      - `column_name`
+      - `column_name` - (Type: String) The name of the column in the data source to use as the primary key
 
-  - `mirror_properties`
+  - `mirror_properties` - (Optional, Type: Object) Indicate to Census how to apply mirror syncs
 
-    - `strategy`
+    - `strategy` - (Type: String) Describe to Census how the sync should maintain the mirror between the source and destination. Possible values are `sync_updates_and_deletes` or `sync_updates_and_nulls`.
 
-- `mapping_configuration`
+- `mapping_configuration` - (Optional, Type: Object) Describe common properties on how Census should handle the mappings of the sync
 
-  - `sync_all_source_columns`
+  - `sync_all_source_columns` - (Optional, Type: Object) Indicate whether all source columns should be sent to the destination
 
-    - `enabled`
+    - `enabled` - (Type: Boolean) Denote if sync all source columns is active for this sync
 
-    - `mode`
+    - `mode` - (Type: String)
 
-  - `name_normalization`
+  - `name_normalization` - (Optional, Type: String) Indicate how the sync would map the source column names to their corresponding destination field names. Possibles values are `match_source_names`, `start_case`, `lower_case`, `upper_case`, `camel_case`, `snake_case` or `ensure_uniqueness`.
 
-  - `order_by`
+  - `order_by` - (Optional, Type: String) Indicate how the mappings between source and destination are ordered. Possible values are `alphabetical_column_name` or `mapping_order`.
 
-- `triggers`
+- `triggers` - (Type: Object) Describe upstream triggers that would trigger the current sync
 
-  - `schedule`
+  - `schedule` - (Type: Object) Describe the schedule of the sync
 
-    - `frequency`
+    - `frequency` - (Type: String) Describe the frequency of the sync trigger. Possible values are `never`, `expression`, `continuous`, `hourly`, `daily`, `weekly` or `quarter_hourly`.
 
-    - `day`
+    - `day` - (Type: String) Week of the day description of the sync schedule. Possible values are `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday` or `Sunday`.
 
-    - `hour`
+    - `hour` - (Type: Integer) Hour description of the sync schedule. Possible values are `0` - `23`.
 
-    - `minute`
+    - `minute` - (Type: Integer) Minute description of the sync. Possible values are `0` - `59`.
 
-    - `cron_expression`
+    - `cron_expression` - (Type: String) Cron expression to describe the sync's frequency. Ensure that for `frequency` above, the `expression` option is specified. Please refer to the Census [documentation](/basics/core-concept/triggering-syncs.md#cron-custom-schedules) on what CRON expressions we support.
 
-  - `on_other_sync_success`
+  - `on_other_sync_success` - (Optional, Type: String) Resource identifier of the sync that would trigger the current sync. The trigger would only be fired if the former sync succeeds.
 
-  - `dbt_cloud`
+  - `dbt_cloud` - (Optional, Type: Object) Describe the dbt cloud job that would trigger the current sync. A dbt cloud API key needs to be installed in your Census organization for this to operate correctly.
 
-    - `project_id`
+    - `project_id` - (Type: String) Project ID for the dbt cloud project
 
-    - `job_id`
+    - `job_id` - (Type: String) dbt job ID within the project triggering current sync
 
-- `enable_sync_logs`
+- `enable_sync_logs` - (Optional, Type: Boolean) Indicate whether the warehouse writeback feature is enabled for this sync.
 
-- `service_slice_size`
+- `service_slice_size` - (Optional, Type: Integer) Denote the size of the data chunks in which data will be uploaded to the destination. Possible values are `1` - `100,000`
 
-- `destination`
+- `destination` - (Type: Object) The destination to which the sync will upload the data
 
-  - `connection_identifier`
+  - `connection_identifier` - (Type: String) Resource identifier of the sync destination
 
-  - `object_identifier`
+  - `object_identifier` - (Type: String) Object identifier of the sync destination object to which the records are uploaded. Please refer to the Management API documentation on [Destination Objects](api/destination-objects.md) to find object identifiers for a given destination.
 
-  - `lead_union_default_object`
+  - `lead_union_default_object` - (Type: String) Indicate if records are uploaded to Salesforce as a 'Lead or Contact' or 'Lead or Account' object. (This field is only applicable if the current sync has a Salesforce destination). Possible values are `converted` or `lead`.
 
-  - `file_settings`
+  - `file_settings` - (Optional, Type: Object) Describe the file settings of the sync destination.
 
-    - `file_format`
+    - `file_format` - (Type: String) File format of the sync destination. Possible values are `CSV`, `TSV`, `JSON`, `NDJSON` or `Parquet`.
 
-    - `delimiter`
+    - `delimiter` - (Optional, Type: String) String character that delineates the records in the sync destination
 
-    - `include_header`
+    - `include_header` - (Optional, Type: Boolean) Indicate if the header row of the destination file should be transferred as a sync record.
 
-- `source`
+- `source` - (Type: Object) The data source from which the sync will extract records.
 
-  - `type`
+  - `type` - (Type: String) Type of the sync data source. Possible values are `table`, `segment`, `entity`, `model` or `cohort`
 
-  - `connection_identifier`
+  - `connection_identifier` - (Type: String) Resource identifier of the sync source connection.
 
-  - `object_identifier`
+  - `object_identifier` - (Type: String) Resource identifier of the sync source object. This only pertains if the source type is a `entity`, `model` or `segment`.
 
-  - `table_catalog`
+  - `table_catalog` - (Type: String) Sync source table catalog name. Only applicable, if the source type is a `table`.
 
-  - `table_schema`
+  - `table_schema` - (Type: String) Sync source schema name. Only applicable, if the source type is a `table`.
 
-  - `table_name`
+  - `table_name` - (Type: String) Sync source table name. Only applicable, if the source type is a `table`.
 
-- `mappings`
+- `mappings` - (Type: Array)
 
-  - `from`
+  - `from` - (Type: Object) Describe the mapping properties in the source.
 
-    - `type`
+    - `type` - (Type: String) Type of the source object in the data source. Possible values are `column`, `constant`, `reference`, `compound` or `segment-membership`
 
     - `data`
 
-  - `to`
+  - `to` - (Type: Object) Describe the mapping properties in the destination
 
-    - `field_name`
+    - `field_name` - (Type: String) Name of the mapped column in the destination
 
-    - `lookup_object`
+    - `lookup_object` - (Optional, Type: Object) Object properties of the destination
 
-      - `object_identifier`
+      - `object_identifier` - (Type: String) Identifier for the destination object.
 
-      - `field_to_match_by`
+      - `field_to_match_by` - (Type: String) Field on the object to match a record with.
 
-  - `field_type`
+  - `field_type` - (Optional, Type: String) Indicate the data type of the mapping.
 
-  - `follow_source_type`
+  - `follow_source_type` - (Optional, Type: Boolean) Indicate if destination should conform the mapping to the same type as the source.
 
-  - `array_field`
+  - `array_field` - (Optional, Type: Boolean) Indicate if the current field is of type `array`.
 
-  - `is_primary_identifier`
+  - `is_primary_identifier` - (Optional, Type: Boolean) Indicate if the mapping is the primary identifier for the records between the source & destination.
 
-  - `upsert_mapping`
+  - `generate_field` - (Optional, Type: Boolean) Indicate to Census if the mapping is a user-generated field.
 
-  - `truncate`
+  - `preseve_values` - (Optional, Type: Boolean) Indicate if mapping should overwrite existing values in the destination.
 
-  - `generate_field`
+  - `operation` - (Optional, Type: String) Array operation indicating how array fields should be updated in the destination. Only applies if `array_field` is set to `true`. Possible values are `overwrite` or `merge`.
 
-  - `preseve_values`
+- `advanced_configuration` - (Optional, Type: Object) Any advanced configuration that a sync requires, particularly for notification syncs.
 
-  - `operation`
+- `operational_settings` - (Type: Object) Describe the alerting and monitoring configuration for the sync.
 
-- `advanced_configuration`
+  - `alerts` - (Optional, Type: Object) Describe the alerting configuration for the sync
 
-- `operational_settings`
+    - `failed_run_notifications` - (Optional, Type: Object) Notification settings for sync failures.
 
-  - `alerts`
+      - `enabled` - (Optional, Type: Boolean) Indicate whether the sync should raise a notification when the run fails
 
-    - `failed_run_notifications`
+    - `failed_record_notifications` - (Optional, Type: Object) Notification settings for when individual records fail in the sync transfer.
 
-      - `enabled`
+      - `enabled` - (Optional, Type: Boolean) Indicate whether the sync should raise a notification when the records fail to be uploaded to the destination
 
-    - `failed_record_notifications`
-
-      - `enabled`
-
-      - `threshold_percent`
+      - `threshold_percent` - (Optional, Type: Integer) The percentage of records that need to fail to send a records failing notification. Possible values are `0` - `100`.
