@@ -130,11 +130,21 @@ HubSpot supports an advanced method of defining relationships between objects th
 
 Many-to-many associations can be updated in Census syncs on either side of the associations, while one-to-many associations can only be set on the child or many side.
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-01 at 2.54.52 PM.png" alt=""><figcaption><p>Census Company/Contact Association</p></figcaption></figure>
+
 #### Labeled Associations
 
 Labels in HubSpot are a bit strange and Census provides some advanced configuration to make updating and removing labels a bit more straightforward.
 
 When creating a labeled association between two objects in HubSpot, HubSpot will also automatically create an unlabeled association. Additionally, when creating an association from a contact to a company, HubSpot will create another association labeled Primary. That means that adding a labeled association with a Census sync may actually create up to three actual associations.
+
+
+
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Hubspot Labeled Association</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-01 at 2.39.44 PM.png" alt=""><figcaption><p>Census Labeled Association Sync Mapping</p></figcaption></figure>
+
+
 
 Unfortunately, HubSpot does not offer a way to remove these default associations when they're no longer necessary when removing the labeled association Census created. These associations may have actually been created intentionally so Census also cannot delete them automatically.
 
