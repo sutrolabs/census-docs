@@ -124,6 +124,13 @@ Iterable Catalogs let you create custom objects within Iterable that can be asso
 * In practice, even if a field is typed, Iterable will accept and update field values of different types. For instance, if the `age` field is typed as a Long, but we send a value of "25", Iterable will accept and update records to use the string "25" as age.
 * Iterable can take a while to process new Catalog items. In some cases, we see Iterable take as long as 20 minutes before the record appears.
 
+### [**Invalid Email Rejections**](#user-content-fn-1)[^1]
+
+When syncing to the User object Iterable may reject some records with the message `Invalid Email`. This is thrown for in the following cases
+
+* **Invalid Email Formatting:** When an email address is not properly formatted. For more information about the formatting guide used by Iterable please refer to Iterable's documentation [linked here](https://support.iterable.com/hc/en-us/articles/209082806-Email-Validation-in-Iterable).
+* **Forgotten/Deleted Emails**: Iterable will also send reject a record with Invalid Email when a user has been previously forgotten or deleted. For more information regarding this functionality in Iterable please refer to the Iterable documentation [linked here](https://support.iterable.com/hc/en-us/articles/360029174171-Responding-to-GDPR-Requests-#right-to-be-forgotten-requests).
+
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
@@ -142,3 +149,5 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 ## 🚑 Need help connecting to Iterable?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+
+[^1]: 
