@@ -305,7 +305,7 @@ Please refer to this section on the different parameters and their values a sync
 
       1. **Static Expressions** - Constant value to use for the mapping.
 
-         - `basic_type` - (Type: String) Data type of the constant. Possible values are `Integer` or `String`.
+         - `basic_type` - (Type: String) Data type of the constant. Possible values are `Text` or `Number`.
 
          - `value` - (Type: String) Value of the constant.
 
@@ -319,11 +319,11 @@ Please refer to this section on the different parameters and their values a sync
 
       4. **Related Entity Expressions**
 
-         - `object_identifier` - (Type: String) Identifier for the object in the source entity.
+         - `object_identifier` - (Type: String) Resource Identifier of source entity.
 
          - `referenced_column_name` - (Type: String) Column name within entity.
 
-         - `referenced_object_identifier` - (Type: String) Identifier for s
+         - `referenced_object_identifier` - (Type: String) Identifier for object within entity.
 
   - `to` - (Type: Object) Mapping properties in the destination.
 
