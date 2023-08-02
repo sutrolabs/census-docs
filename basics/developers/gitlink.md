@@ -319,11 +319,11 @@ Please refer to this section on the different parameters and their values a sync
 
       4. **Related Entity Expressions**
 
-         - `object_identifier` - (Type: String)
+         - `object_identifier` - (Type: String) Identifier for the object in the source entity.
 
-         - `referenced_column_name` - (Type: String)
+         - `referenced_column_name` - (Type: String) Column name within entity.
 
-         - `referenced_object_identifier` - (Type: String)
+         - `referenced_object_identifier` - (Type: String) Identifier for s
 
   - `to` - (Type: Object) Mapping properties in the destination.
 
