@@ -299,7 +299,31 @@ Please refer to this section on the different parameters and their values a sync
 
     - `type` - (Type: String) Type of source data. Possible values are `column`, `constant`, `reference`, `compound` or `segment-membership`.
 
-    - `data`
+    - `data` - (Optional, Type: Object) Parameters of the data in the source object.
+
+      Use **one** of the following groups of fields
+
+      1. **Static Expressions** - Constant value to use for the mapping.
+
+         - `basic_type` - (Type: String) Data type of the constant. Possible values are `Integer` or `String`.
+
+         - `value` - (Type: String) Value of the constant.
+
+      2. **Source Column** - Column in the source to be used for the mapping.
+
+         - `column_name` - (Type: String) Name of the source column.
+
+      3. **Compound Upsert Keys**
+
+         - `subexpressions` - (Type: Array) Array of expression objects. Each element should be either a `static expression` or `source column` object (defined above).
+
+      4. **Related Entity Expressions**
+
+         - `object_identifier` - (Type: String)
+
+         - `referenced_column_name` - (Type: String)
+
+         - `referenced_object_identifier` - (Type: String)
 
   - `to` - (Type: Object) Mapping properties in the destination.
 
