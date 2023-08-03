@@ -92,6 +92,18 @@ Though Census's visual segment creator is designed to be used without knowing an
 
 Additionally, if you're trying to create a condition that Census doesn't support, you can still add conditions to your segment by selecting the **SQL Condition** in the Attribute menu. The SQL you provide will be added as an additional condition alongside any other conditions you've added to your segment. Think of it like formulas in Excel: it's a powerful tool in your toolbelt that can let you express very complex concepts, but it can break the segment so use with care!
 
+### Segment Limits
+
+A limit can be placed on a segment to confine to a certain number of records. This is accessed when building a segment by clicking the ... menu item in the upper right. The process to add a limit is as follows.&#x20;
+
+* Enter the number of records to limit by
+* Select the field that will be used to order by
+* Select whether you want to order by ascending or descending. The top values will be selected so if choosing descending this will be the highest or latest records.&#x20;
+
+<figure><img src="../../.gitbook/assets/CleanShot 2023-08-03 at 11.53.50.png" alt=""><figcaption></figcaption></figure>
+
+If you want to limit randomly, consider using an ID as the field to order by.&#x20;
+
 ## FAQs
 
 **Which string comparison operators are case sensitive and insensitive?**
