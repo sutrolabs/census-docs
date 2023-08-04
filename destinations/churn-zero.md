@@ -15,7 +15,7 @@ description: Learn how to use Census to sync your Data Warehouse to ChurnZero.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Account | ✅ | AccountExternalId | Upsert |
 | Contact | ✅ | ContactExternalId | Upsert |

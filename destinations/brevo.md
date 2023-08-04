@@ -15,7 +15,7 @@ description: This page describes how to use Census with Brevo.
 
 ## 🔀 Supported Objects and Behaviors
 
-|   **Object Name** | **Supported?** | **Identifiers** | **Behaviors**    |
+|   **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
 | ----------------: | :------------: | --------------- | ---------------- |
 | Contact With List |        ✅       | Email           | Update or Create |
 

@@ -14,7 +14,7 @@ description: This page describes how to use Census with Oracle Eloqua.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Contact | ✅ | Email Address | Update or Create |
 | Contact List | ✅ | Email Address | Update or Create, Mirror |

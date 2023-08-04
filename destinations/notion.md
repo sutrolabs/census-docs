@@ -49,7 +49,7 @@ When configuring your sync, the page should look something like this 👇
 
 We support syncing data to Tables in Notion. ​
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | :-------------: | :------------: | :-------------: |
 |      Table      |        ✅       |      Title      |
 

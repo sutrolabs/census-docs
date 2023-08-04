@@ -96,7 +96,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 ## 📚 Supported Objects
 
-|  **Object Name** | **Supported?** | **Identifiers**              |
+|  **Object Name** | **Supported?** | **Sync Keys**              |
 | ---------------: | :------------: | ---------------------------- |
 |           Member |        ✅       | Name, Email, Github, Twitter |
 | Content Activity |        ✅       | N/A                          |

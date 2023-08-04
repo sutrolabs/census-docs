@@ -67,7 +67,7 @@ And you're all set and ready to get syncing! 🎉
 
 Census currently supports syncing to the following Pendo objects.
 
-| **Object Name** | **Supported?** | **Identifiers**                        |
+| **Object Name** | **Supported?** | **Sync Keys**                        |
 | --------------: | :------------: | -------------------------------------- |
 |         Account |        ✅       | Account ID                             |
 |         Visitor |        ✅       | Visitor ID                             |

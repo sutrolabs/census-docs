@@ -98,7 +98,7 @@ That's it! In 6 steps, you connected Census to PostHog and started syncing event
 
 Census currently supports syncing to the following PostHog objects.
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | --------------: | :------------: | --------------- |
 | Event | ✅ | Event ID |
 | Person | ✅ | ID, Email |

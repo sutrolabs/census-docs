@@ -89,7 +89,7 @@ After the Connection Test is Green, you're all set and ready to get syncing! �
 
 Census currently supports syncing to the following Braze objects.
 
-|               **Object Name** | **Supported?** | **Identifiers**                                                                                |
+|               **Object Name** | **Supported?** | **Sync Keys**                                                                                |
 | ----------------------------: | :------------: | ---------------------------------------------------------------------------------------------- |
 |                         Event |        ✅       | Event ID                                                                                       |
 | Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |

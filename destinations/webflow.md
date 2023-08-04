@@ -14,7 +14,7 @@ description: This page describes how to use Census with Webflow.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | --------------: | :------------: | --------------- | ------------- |
 | Collection Item | ✅ | Slug | Update or Create, Update Only, Mirror |
 

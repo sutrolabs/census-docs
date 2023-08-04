@@ -15,7 +15,7 @@ description: This page describes how to use Census with Partnerstack.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | --------------: | :------------: | --------------- | ------------- |
 | Customer | ✅ | Customer Key | Update or Create, Update Only |
 | Partnership | 🔜 | N/A | N/A |

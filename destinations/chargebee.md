@@ -47,7 +47,7 @@ Census needs only your Chargebee **API token** and **sub domain** to connect you
 
 Census currently supports syncing to the following Chargebee objects.
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | :-------------: | :------------: | :-------------: |
 |     Customer    |        ✅       |    ID, Email    |
 |   Subscription  |        ✅       |   ID, Plan ID   |

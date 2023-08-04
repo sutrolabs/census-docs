@@ -108,7 +108,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers**                     |
+| **Object Name** | **Supported?** | **Sync Keys**                     |
 | --------------: | :------------: | ----------------------------------- |
 |         Account |        ✅       | any Text field                      |
 |        Prospect |        ✅       | Email (recommended), any Text field |

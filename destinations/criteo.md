@@ -80,7 +80,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers**                                            |
+| **Object Name** | **Supported?** | **Sync Keys**                                            |
 | --------------: | :------------: | ---------------------------------------------------------- |
 |        Audience |        ✅       | GUM Cookie ID, Mobile Ad ID, Email, LiveRamp Identity Link |
 

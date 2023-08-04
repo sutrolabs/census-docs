@@ -76,7 +76,7 @@ If you need any help configuring Google Analytics, contact the [Census support t
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
-|  **Object Name** | **Supported?** |               **Identifiers**              | **Behavior**                                                                                      |
+|  **Object Name** | **Supported?** |               **Sync Keys**              | **Behavior**                                                                                      |
 | ---------------: | :------------: | :----------------------------------------: | ------------------------------------------------------------------------------------------------- |
 |            Event |        ✅       |               Unique Event ID              | Append                                                                                            |
 | User Properties  |        ✅       | <p>Client ID or </p><p>App Instance ID</p> | <p>Update Only <br><em><mark style="color:orange;">(ID must already exist in GA4)</mark></em></p> |

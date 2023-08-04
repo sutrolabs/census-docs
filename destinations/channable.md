@@ -14,7 +14,7 @@ description: This page describes how to use Census with Channable.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**       |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
 | --------------: | :------------: | ---------------- | ------------------- |
 | Order Cancellation | ✅ | Order ID | Update Only |
 | Return | ✅ | Return ID | Update Only |

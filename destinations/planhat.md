@@ -51,7 +51,7 @@ In Planhat, once a token is created, it will appear once and last forever. Make 
 
 Census currently supports syncing to the following Planhat objects.
 
-| **Object Name** | **Supported?** | **Identifiers**        |
+| **Object Name** | **Supported?** | **Sync Keys**        |
 | --------------: | :------------: | ---------------------- |
 |         Company |        ✅       | Source ID, External ID |
 |        End User |        ✅       | Source ID              |

@@ -98,7 +98,7 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 ## 🗄️ Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | --------------- | :------------: | --------------- |
 | Account         |        ✅       | Account ID      |
 | User            |        ✅       | Identity        |

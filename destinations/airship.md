@@ -15,7 +15,7 @@ description: This page describes how to use Census with Airship.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Static List | ✅ | Channel-specific ID | Mirror |
 

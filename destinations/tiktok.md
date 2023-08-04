@@ -46,7 +46,7 @@ In this guide, we will show you how to connect Tik Tok Ads to Census and create 
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** |      **Identifiers**      |
+| **Object Name** | **Supported?** |      **Sync Keys**      |
 | --------------: | :------------: | :-----------------------: |
 | Custom Audience |        ✅       | Email, IDFA/GAID, Phone\* |
 

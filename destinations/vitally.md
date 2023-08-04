@@ -56,7 +56,7 @@ Census makes use of different Vitally APIs for different operations. You're welc
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** |   **Matching Keys**   | **Create Fields** |
+| **Object Name** | **Supported?** |   **Sync Keys**   | **Create Fields** |
 | --------------: | :------------: | :-------------------: | :---------------: |
 |            User |        ✅       |        User ID        |         ✅         |
 |         Account |        ✅       |       Account ID      |         ✅         |

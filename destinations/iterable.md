@@ -77,7 +77,7 @@ You can map data fields into your existing Iterable audience schema (including i
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | --------------: | :------------: | --------------- |
 |            User |        ✅       | User ID, Email  |
 |           Event |        ✅       | Event ID        |

@@ -133,7 +133,7 @@ You'll need to set up a Segment within Klaviyo that pulls in all users in your K
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers**                                |
+| **Object Name** | **Supported?** | **Sync Keys**                                |
 | --------------: | :------------: | ---------------------------------------------- |
 |         Profile |        ✅       | External ID (recommended), Email, Phone Number |
 |  Profile & List |        ✅       | External ID (recommended), Email, Phone Number |

@@ -98,7 +98,7 @@ That's it! In 6 steps, you've connected Census and started syncing product data 
 
 Census currently supports syncing to the following ChartMogul objects.
 
-| **Object Name** | **Supported?** | **Identifiers**                                  |
+| **Object Name** | **Supported?** | **Sync Keys**                                  |
 | --------------: | :------------: | ------------------------------------------------ |
 |        Customer |        ✅       | Data Source ID + External ID (both are required) |
 |         Invoice |        ✅       | External ID                                      |

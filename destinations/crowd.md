@@ -16,7 +16,7 @@ description: This page describes how to use Census with Crowd.dev.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors**    |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
 | --------------: | :------------: | --------------- | ---------------- |
 | Activity | ✅ | Source ID | Update or Create |
 | Activity with Member | ✅ | Source ID | Update or Create |

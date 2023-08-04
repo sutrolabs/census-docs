@@ -18,7 +18,7 @@ Note: You will need admin rights in your organization's Pinterest Business Accou
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers**        |
+| **Object Name** | **Supported?** | **Sync Keys**        |
 | --------------: | :------------: | ---------------------- |
 |   Customer List |        ✅       | Email, IDFA, MAID \*\* |
 

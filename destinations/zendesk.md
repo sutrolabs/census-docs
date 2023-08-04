@@ -147,7 +147,7 @@ lower(replace(column_name, ' ', '_'))
 
 Census currently supports syncing to the following Zendesk objects:
 
-| **Object Name** | **Supported?** | **Identifiers**                  |
+| **Object Name** | **Supported?** | **Sync Keys**                  |
 | --------------: | :------------: | -------------------------------- |
 |        End User |        ✅       | External ID (recommended), Email |
 |    Organization |        ✅       | External ID (recommended), Name  |

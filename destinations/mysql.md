@@ -26,7 +26,7 @@ DELETE
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**                                     | **Behaviors**                 |
+| **Object Name** | **Supported?** | **Sync Keys**                                     | **Behaviors**                 |
 | --------------: | :------------: | --------------------------------------------------- | ----------------------------- |
 |           Table |        ✅       | Primary keys or columns with uniqueness constraints | Update or Create, Update Only |
 

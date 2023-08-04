@@ -20,7 +20,7 @@ description: This page describes how to use Census with Attio.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**      | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**      | **Behaviors** |
 |----------------:| :------------: |----------------------|---------------|
 |         Company | ✅ | Any unique attribute | Update or Create   |
 |          People | ✅ | Any unique attribute | Update or Create   |

@@ -98,7 +98,7 @@ Please be aware that with Custom Objects require extra API calls and are even sl
 
 [Contact us](mailto:support@getcensus.com) if you're looking for Census to support other HubSpot objects!
 
-|         **Object Name** | **Supported?** | **Identifiers**                   |
+|         **Object Name** | **Supported?** | **Sync Keys**                   |
 | ----------------------: | :------------: | --------------------------------- |
 |                 Company |        ✅       | Object ID, any Text/Number        |
 |                 Contact |        ✅       | Object ID, Email, any Text/Number |

@@ -56,7 +56,7 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers**                                    |
+| **Object Name** | **Supported?** | **Sync Keys**                                    |
 | --------------: | :------------: | -------------------------------------------------- |
 |        Customer |        ✅       | External Id, Default Customer Email, Custom Fields |
 |         Company |        ✅       | External Id, Custom Fields                         |

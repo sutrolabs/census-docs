@@ -71,7 +71,7 @@ We recommend you do not use Google's Customer Match expiration setting. Census-s
 | **Update or Create** |        ✅       |
 |           **Mirror** |        ✅       |
 
-_**Identifiers**: User ID, Mobile ID, Email, Phone Number_
+_**Sync Keys**: User ID, Mobile ID, Email, Phone Number_
 
 Please note that the above behaviors will map to what you select in the, "_**When a record is removed from source data**_" dropdown in the **Customer List sync** section. Selecting "**Do Nothing**" will map to **Update or Create(Upsert)** while "**Remove matching record from customer list**" will map to **Mirror**.
 

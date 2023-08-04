@@ -106,7 +106,7 @@ That's it! In 6 steps, you connected Census to Autopilot and started syncing cus
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | --------------- | :------------: | --------------- |
 | Contact         |        ✅       | Email           |
 

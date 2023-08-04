@@ -14,7 +14,7 @@ description: This page describes how to use Census with CleverTap.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | --------------: | :------------: | --------------- | ------------- |
 | Event | ✅ | N/A | Append |
 | Profile | ✅ | Facebook ID, Global Object ID, Google Plus ID, or User Identity | Update or Create |

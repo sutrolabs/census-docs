@@ -15,7 +15,7 @@ description: This page describes how to use Census with Mailgun.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | List Member | ✅ | Email Address | Update or Create |
 

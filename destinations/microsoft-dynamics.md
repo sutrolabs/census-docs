@@ -82,7 +82,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers**                       |
+| **Object Name** | **Supported?** | **Sync Keys**                       |
 | --------------: | :------------: | ------------------------------------- |
 |     Entity name |        ✅       | All single-column keys for the entity |
 

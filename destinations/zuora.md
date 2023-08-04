@@ -99,7 +99,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 
 ## 🗄️ Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers**                      |
+| **Object Name** | **Supported?** | **Sync Keys**                      |
 | --------------- | :------------: | ------------------------------------ |
 | Account         |        ✅       | Account ID, Account Number           |
 | Subscription    |        ✅       | Subscription ID, Subscription Number |

@@ -108,7 +108,7 @@ That's it, in 4 steps you have connected your Data Source to Gainsight! :tada:
 
 ## 🗄 Supported Objects
 
-|     **Object Name** | **Supported?** | **Identifiers**                                                                     |
+|     **Object Name** | **Supported?** | **Sync Keys**                                                                     |
 | ------------------: | :------------: | ----------------------------------------------------------------------------------- |
 |              Person |        ✅       | Email                                                                               |
 |             Company |        ✅       | Name                                                                                |

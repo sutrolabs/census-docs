@@ -25,7 +25,7 @@ description: This page describes how to use Census with Vero.
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**     | **Behaviors**    |
+| **Object Name** | **Supported?** | **Sync Keys**     | **Behaviors**    |
 | --------------: | :------------: | ------------------- | ---------------- |
 |           Event |        ✅       | Event ID (optional) | Append           |
 |            User |        ✅       | Email               | Update or Create |

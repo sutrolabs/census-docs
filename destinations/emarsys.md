@@ -18,7 +18,7 @@ description: This page describes how to use Census with Emarsys.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Contact | ✅ | Email | Update or Create, Update Only |
 

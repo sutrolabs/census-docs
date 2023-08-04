@@ -16,7 +16,7 @@ description: >-
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**           | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**           | **Behaviors** |
 | --------------: | :------------: | ------------------------- | ------------- |
 |          Device |        ✅       | Player ID (aka Device ID) | Update Only   |
 

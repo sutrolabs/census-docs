@@ -14,7 +14,7 @@ description: This page describes how to use Census with Canny.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**       |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
 | --------------: | :------------: | ---------------- | ------------------- |
 | User | ✅ | User ID | Update or Create |
 

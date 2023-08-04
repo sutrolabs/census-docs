@@ -102,7 +102,7 @@ If you have any questions or if you have any issues getting started, please cont
 
 Algolia stores data within collections called Indices. Your Indices in Algolia can be used as objects to sync to from Census.
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | --------------: | :------------: | :-------------: |
 |           Index |        ✅       |    Object ID    |
 

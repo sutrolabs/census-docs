@@ -14,7 +14,7 @@ description: This page describes how to use Census with Trade Desk.
 
 ## 🔀 Supported Objects and Behaviors
 
-|          **Object Name** | **Supported?** | **Identifiers**       | **Behaviors**       |
+|          **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors**       |
 | -----------------------: | :------------: | --------------------- | ------------------- |
 |                 Ad Group |        ✅       | Any unique identifier | Update Only, Append |
 |               Advertiser |        ✅       | Any unique identifier | Update Only, Append |

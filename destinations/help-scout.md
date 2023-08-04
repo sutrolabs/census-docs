@@ -92,7 +92,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | --------------: | :------------: | --------------- |
 |        Customer |        ✅       | Primary Email   |
 

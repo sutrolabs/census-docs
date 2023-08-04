@@ -64,7 +64,7 @@ Set up your staging bucket expiry policies to clean up old staging data:
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**       | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors** |
 | --------------: | :------------: | --------------------- | ------------- |
 |         Segment |        ✅       | Any unique identifier | Mirror        |
 

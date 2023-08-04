@@ -113,7 +113,7 @@ Census currently supports syncing to the following CampaignMonitor objects.
 
 |                 |                |                 |
 | :-------------: | :------------: | :-------------: |
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 |    Subscriber   |        ✅       |  Email Address  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Campaign Monitor.
