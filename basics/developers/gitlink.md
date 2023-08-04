@@ -18,7 +18,7 @@ Creating, editing, and deleting resources in the Census UI will all be represent
 
 This will also enable a global History view of all resource changes across your entire Census workspace. You can isolate exactly when those changes went into effect, and the latest Git commit associated with that change.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM (1).png" alt=""><figcaption><p>A sample set of changes within the new History view.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM.png" alt=""><figcaption><p>A sample set of changes within the new History view.</p></figcaption></figure>
 
 {% hint style="warning" %}
 GitLink is only accessible to Platform Plan accounts. If you would like to enable GitLink and are not on the Platform Plan, please contact us at [support@getcensus.com](mailto:support@getcensus.com).
@@ -158,7 +158,7 @@ Census provides a History View of all changes applied from Census to Git, and fr
     <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 4.53.43 PM (1) (1) (1) (1) (1) (1) (2) (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 2.  You can see a full list of all changes, including the latest commit from the changes that were applied, the number of changes (and failures), and when the changes were applied.
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM (1).png" alt=""><figcaption></figcaption></figure>
 3. You can always ask Census to perform a reconciliation between the Census UI and your git repository by clicking the **Force Reconcile** button. Use this in the rare cases where the git repository's APIs and webhook functionality are not performing as expected.
 
 ### Linked Git Configuration

@@ -140,7 +140,7 @@ When creating a labeled association between two objects in HubSpot, HubSpot will
 
 
 
-<figure><img src="../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>Hubspot Labeled Association</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Hubspot Labeled Association</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-08-01 at 2.39.44 PM.png" alt=""><figcaption><p>Census Labeled Association Sync Mapping</p></figcaption></figure>
 
