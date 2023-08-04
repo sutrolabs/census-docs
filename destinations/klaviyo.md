@@ -47,7 +47,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 * [Databricks](../sources/databricks.md)
 * [Google BigQuery](../sources/google-bigquery.md)
 * [Google Sheets](../sources/google-sheets.md)
-* [Postgres](../sources/postgres-1.md)
+* [Postgres](../sources/postgres.md)
 * [Redshift](../sources/redshift.md#allowed-ip-addresses)
 * [Snowflake](../sources/snowflake.md)
 

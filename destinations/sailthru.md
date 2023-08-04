@@ -51,7 +51,7 @@ The steps for connecting your data source will depend on your technology. See th
 * [Google BigQuery](../sources/google-bigquery.md)
 * [Google Sheets](google-sheets.md)
 * [MySQL](../sources/mysql.md)
-* [Postgres](../sources/postgres-1.md)
+* [Postgres](../sources/postgres.md)
 * [Redshift](../sources/redshift.md)
 * [Rockset](../sources/rockset.md)
 * [Snowflake](../sources/snowflake.md)
