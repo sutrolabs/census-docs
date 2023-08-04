@@ -4,11 +4,7 @@
 
 This endpoint will list all of your connected destinations. For information on objects associated with a destination, query the endpoint for a specific destination as described below.
 
-You can pass the following URL parameters to control the response:
-
-* `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
-* `page` - `number`. Specifies which page of results to return. Defaults to 1.
-* `per_page` - `number`. Specifies number of results per page. Defaults to 25, max of 100.
+See [Pagination](./#pagination) for standard URL parameters and response data.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -51,7 +47,15 @@ curl 'https://app.getcensus.com/api/v1/destinations' \
             "credentials": {}
         }
     ],
-    "next": "https://app.getcensus.com/api/v1/destinations?page=2&per_page=25"
+    "next": "https://app.getcensus.com/api/v1/destinations?page=2&per_page=4",
+    "pagination": {
+        "total_records": 7,
+        "per_page": 4,
+        "prev_page": null,
+        "page": 1,
+        "next_page": 2,
+        "last_page": 2
+    }
 }
 ```
 {% endtab %}

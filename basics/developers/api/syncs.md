@@ -4,11 +4,7 @@
 
 This endpoint returns a list of your syncs.
 
-You can pass the following URL parameters to control the response:
-
-* `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
-* `page` - `number`. Specifies which page of results to return. Defaults to 1.
-* `per_page` - `number`. Specifies number of results per page. Defaults to 25, max of 100.
+See [Pagination](./#pagination) for standard URL parameters and response data.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -19,14 +15,13 @@ curl 'https://app.getcensus.com/api/v1/syncs' \
 {% endtab %}
 
 {% tab title="Response" %}
-```json
-{
+<pre class="language-json"><code class="lang-json">{
     "status": "success",
-    "data": [
-        {
+<strong>    "data": [
+</strong>        {
             "id": 61,
-            "label": null,
-            "schedule_frequency": "never",
+<strong>            "label": null,
+</strong>            "schedule_frequency": "never",
             "schedule_day": null,
             "schedule_hour": null,
             "schedule_minute": null,
@@ -152,9 +147,17 @@ curl 'https://app.getcensus.com/api/v1/syncs' \
             ]
         }
     ],
-    "next": "https://app.getcensus.com/api/v1/syncs"
+    "next": "https://app.getcensus.com/api/v1/syncs?page=2&#x26;per_page=2",
+    "pagination": {
+        "total_records": 4,
+        "per_page": 2,
+        "prev_page": null,
+        "page": 1,
+        "next_page": 2,
+        "last_page": 2
+    }
 }
-```
+</code></pre>
 {% endtab %}
 {% endtabs %}
 

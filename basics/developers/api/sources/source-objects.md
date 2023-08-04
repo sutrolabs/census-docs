@@ -4,11 +4,7 @@
 
 This endpoint returns a list of ALL the source objects (i.e. tables, models, entities, filter segments) that this source connection contains.
 
-You can pass the following URL parameters to control the response:
-
-* `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
-* `page` - `number`. Specifies which page of results to return. Defaults to 1.
-* `per_page` - `number`. Specifies number of results per page. Defaults to 25, max of 100.
+See [Pagination](../#pagination) for standard URL parameters and response data.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -55,7 +51,15 @@ curl 'https://app.getcensus.com/api/v1/sources/[ID]/objects' \
             "query": "select cast('test@getcensus.com' as VARCHAR(2000)) as email, array_construct(cast('audience_v1' as VARCHAR(2000))) as list_id\n"
         }
     ],
-    "next": "https:app.getcensus.com/api/v1/sources/6/objects"
+    "next": "https:app.getcensus.com/api/v1/sources/6/objects?page=2&per_page=4",
+    "pagination": {
+        "total_records": 7,
+        "per_page": 4,
+        "prev_page": null,
+        "page": 1,
+        "next_page": 2,
+        "last_page": 2
+    }
 }
 ```
 {% endtab %}

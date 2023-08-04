@@ -4,11 +4,7 @@
 
 This endpoint lists information all the filter segments for a given source, including information on what columns it includes.
 
-You can pass the following URL parameters to control the response:
-
-* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
-* `page` - `number`. Specifies which page of results to return. Defaults to 1.
-* `per_page` - `number`. Specifies number of results per page. Defaults to 25, max of 100.
+See [Pagination](../#pagination) for standard URL parameters and response data.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -98,7 +94,15 @@ curl 'https://app.getcensus.com/api/v1/sources/[ID]/filter_segments' \
             "query": "select * from (\n  SELECT 1 AS id, 'Planet Express'::text AS company_name\n)\n as census_1d19740e93f711b22efaea201fcf3f8f\n where (\"id\" IS NOT NULL ) AND exists (select * from (\n  select 1 as user_id\n)\n as census_b547c2bb7be10ee8c44874b33a1a04f4_d1\nwhere census_1d19740e93f711b22efaea201fcf3f8f.id = user_id AND ((\"user_id\" < 3 AND (TRUE))))"
         },
     ],
-    "next": "https://app.getcensus.com/api/v1/sources/2/filter_segments?page=2&per_page=25"
+    "next": "https://app.getcensus.com/api/v1/sources/2/filter_segments?page=2&per_page=2",
+    "pagination": {
+        "total_records": 4,
+        "per_page": 2,
+        "prev_page": null,
+        "page": 1,
+        "next_page": 2,
+        "last_page": 2
+    }
 }
 ```
 {% endtab %}
