@@ -12,7 +12,7 @@ description: This page describes how to use Census with Emarsys.
 4. Once you've created the API user, click the pencil icon next to the new user to edit the permissions assigned to it. Enable all `contact` and `field` scopes, then save your changes.
 5. Return to Census and input your **User name** and **Secret**.
 
-**Note**: if your connection test fails in Census, your API user permissions may not have saved properly. Revisit step 4.
+**Note**: Permission changes do not occur immediately. There could be a delay of a few minutes before permissions take effect. If your connection test fails in Census, your API user permissions may not have saved properly. Revisit step 4.
 
 <figure><img src="../.gitbook/assets/emarsys.png" alt=""><figcaption><p>Create an API user in the Emarsys app.</p></figcaption></figure>
 

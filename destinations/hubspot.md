@@ -156,6 +156,16 @@ When this behavior is enabled and a Census sync removes a labeled association, w
 
 By default, this feature is not enabled to avoid accidentally deleting associations that were created outside the sync and should still exist.
 
+### Formatting Data for Hubspot Data Types
+
+**Object references (Associations):** will be mapped to a Hubspot Array of Reference data type. The source data should be formatted in an array.&#x20;
+
+**Example:** `["RecordID_1", "RecordID_2"]`
+
+**Multiple Checkboxes (Enumerated fields):** will be mapped to a Hubspot Array of Enumeration. The source data should also be formatted as an array. Additionally, HubSpot expects the options provided to be the Internal Value as given by Hubspot's property settings page.
+
+**Example:** `["InternalValue1", "InternalValue2", "InternalValue3"]`
+
 ### Custom Behavioral Events
 
 Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and create your Custom Behavior Event (see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events)).

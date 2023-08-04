@@ -63,6 +63,7 @@
 * [Google BigQuery](sources/google-bigquery.md)
 * [Google Cloud SQL for PostgreSQL](sources/google-cloud-sql-for-postgresql.md)
 * [Google Sheets](sources/google-sheets.md)
+* [Greenplum](sources/greenplum.md)
 * [Materialize](sources/materialize.md)
 * [MotherDuck](sources/motherduck.md)
 * [MySQL](sources/mysql.md)
@@ -75,6 +76,7 @@
 
 ## 🛫 Destinations
 
+* [Overview](destinations/overview.md)
 * [Accredible](destinations/accredible.md)
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Adobe Target](destinations/adobe-target.md)
