@@ -63,8 +63,8 @@ When you hit save, you'll return to the list of credentials. Make a note of the 
 
 ### **4. Create a new Customer.io connection in Census**
 
-* Visit the **Destinations** tab in Census
-* Then select **Customer.io** from the **New Destination** menu
+* Visit the **Destinations** tab in Census and click **New Destination**
+* Then select **Customer.io** from the menu
 
 ![](../.gitbook/assets/cio\_step6.png)
 
