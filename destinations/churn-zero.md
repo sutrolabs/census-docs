@@ -4,16 +4,25 @@ description: Learn how to use Census to sync your Data Warehouse to ChurnZero.
 
 # ChurnZero
 
-​This page is currently under construction ​🏗​
+## 🏃‍♀️ Getting Started
 
+1. Click **Add Service**.
+2. Select **ChurnZero** from the menu.
+3. Enter your **domain**, and **App Key**. You can find all of these in the ChurnZero app under the **Admin > Application Keys > New App Key**.
 
+<figure><img src="../.gitbook/assets/churnzero admin.png" alt=""><figcaption><p>Switch to Admin view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/cz_app_keys.png" alt=""><figcaption><p>Select Application Keys</p></figcaption></figure>
 
-This destination is live and can be found [here](https://app.getcensus.com/connections), and we are working on finishing this docs page now.
+## 🔀 Supported Objects and Behaviors
 
+| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| --------------: | :------------: | ---------------- | --------------|
+| Account | ✅ | AccountExternalId | Upsert |
+| Contact | ✅ | ContactExternalId | Upsert |
+| Event | ✅ | Any unique identifier | Append |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more ChurnZero objects and/or behaviors.
 
-If you want to connect, please follow the prompts in the UI.&#x20;
+## 🚑 Need help connecting to ChurnZero?
 
-
-
-If you've run into a dead-end, start a conversation with us via the [in-app](https://app.getcensus.com/) chat.
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
