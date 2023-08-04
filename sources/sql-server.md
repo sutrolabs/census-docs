@@ -6,7 +6,7 @@ description: >-
 
 # SQL Server
 
-## Required Permissions
+## 🔑 Permissions
 
 {% hint style="info" %}
 These instructions are well tested to connect Census to SQL Server. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
@@ -14,9 +14,11 @@ These instructions are well tested to connect Census to SQL Server. If you're ru
 
 Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in destination tools.
 
-We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your SQL Server database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
+We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your SQL Server database. In order for the Census connection to work correctly, the `CENSUS` account needs a number of permissions
 
-* Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
+### Required Permissions
+
+These permissions are required for both [Basic and Advanced sync engines](overview.md#sync-engines). They give Census read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.&#x20;
 
 SQL Server permissions are complex and there are many ways to configure access for Census. The script below has been tested with recent SQL Server versions and is known to work correctly:
 
@@ -32,7 +34,8 @@ GRANT CONNECT TO CENSUS;
 -- in the following command
 EXEC sp_addrolemember 'db_datareader', CENSUS;
 
--- Grant census user ability to read data from within a schema
+-- Grant census user ability to read data from within a schema. 
+-- Run this for each schema you intend Census to access.
 -- Note: this can also be granted to specific tables as well
 GRANT SELECT, VIEW DEFINITION ON SCHEMA::<schema> TO CENSUS;
 ```
@@ -41,14 +44,9 @@ GRANT SELECT, VIEW DEFINITION ON SCHEMA::<schema> TO CENSUS;
 Important: all SQL Server Commands will run within the Database that is specified when running the script
 {% endhint %}
 
-## 💡 Notes
+### Advanced Sync Engine Permissions
 
-* If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
-* We based our connection protocol on SQL Server [SQL JDBC driver](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)
-
-## :writing\_hand: Incremental Support for SQL Server in warehouse
-
-The following commands enable Incremental Support for SQL Server. This mode ensures that Census only syncs new and updated records to the destination of your choice, rather than performing a full sync each time. Census performs its state tracking in a dedicated schema within your SQL Server database, allowing the Census platform to identify new and updated records without storing any of your data on Census servers. More details can be found on our [Security](../basics/security-and-privacy/) page.
+To enable Advanced Sync engine, Census requires additional permissions to enable state tracking within your warehouse.
 
 ```
 -- Create a private bookkeeping schema where Census can store sync state
@@ -64,6 +62,6 @@ GRANT ALTER, DELETE, EXECUTE, INSERT, REFERENCES, SELECT,
 GRANT CREATE TABLE TO CENSUS;
 ```
 
-## 🚦Allowed IP Addresses
+## 🚦Advanced Network Configuration
 
-If you are restricting access by IP addresses, please add Census's IP addresses to the allowlist in your firewall. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+Census can successfully connect to SQL Server instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;

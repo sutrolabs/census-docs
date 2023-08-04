@@ -6,11 +6,9 @@ description: >-
 
 # Snowflake
 
-{% embed url="https://www.loom.com/share/7deb8e90ddba47ef87382e73d00c62ac" %}
-
 ## 🔐 Required Permissions
 
-{% hint style="danger" %}
+{% hint style="success" %}
 These instructions are well tested to connect Census to Snowflake. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
 {% endhint %}
 
