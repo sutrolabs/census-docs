@@ -9,7 +9,7 @@ description: This page describes how to sync data into your Microsoft SQL Server
 This guide will walk you through connecting to Microsoft SQL Server as a destination.&#x20;
 
 {% hint style="info" %}
-If you are trying to use Microsoft SQL Service as a data source (to query data from SQL Service and sync to elsewhere), that process is documented separately here: [Microsoft SQL Server Data Source](../sources/sql-server.md)
+If you are trying to use Microsoft SQL Service as a data source (to query data from SQL Server and sync to elsewhere), that process is documented separately here: [Microsoft SQL Server Data Source](../sources/sql-server.md)
 {% endhint %}
 
 1. Visit the [Destinations page](https://app.getcensus.com/destinations) and click **+ New Destination**.
@@ -56,7 +56,7 @@ GRANT INSERT, UPDATE ON SCHEMA::<schema> TO CENSUS;
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for SQL Server.
 
-## 🚦Advanced network configuration
+## 🚦Advanced Network Configuration
 
 Census can successfully connect to SQL Server instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
