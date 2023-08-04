@@ -63,36 +63,11 @@ We **strongly recommend against** connecting Census to a production AlloyDB data
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 
-## 🔑 Encryption
+## 🚦Advanced Network Configuration
 
-All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). We recommend configuring your AlloyDB instance to use TLS v1.2 or later for all connections.
+Census can successfully connect to AlloyDB instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
-## 🚦Allowed IP Addresses
-
-With AlloyDB, you'll need to add Census's IP addresses in your firewall, and/or add rules to your `pg_hba.conf` file to only allow the Census user to connect to your database.
-
-You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
-
-## 🚇 Connecting via SSH tunnel
-
-Census optionally allows connecting to AlloyDB warehouses that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
-
-1. Create a new user account for Census on the SSH host. (This account is separate from the database user account and can have a different username.)
-2. On the Census connections page, create a new connection to a AlloyDB warehouse, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below. Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
-
-![](../.gitbook/assets/redshift\_pg\_1.png)
-
-3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page.
-
-To install the kepair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step. If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
-
-Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
-
-![](../.gitbook/assets/redshift\_pg\_2.png)
-
-4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allowlist.
-
-With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
+We recommend configuring your AlloyDB instance to use TLS v1.2 or later for all connections.
 
 ## 🚑 Need help connecting to AlloyDB?
 

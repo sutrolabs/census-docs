@@ -74,36 +74,11 @@ Because this is altering the default behavior of another user, this command must
 * In Redshift if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata.
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 
-## 🔑 Encryption
+## 🚦Advanced Network Configuration
 
-All connections from the Census Data Warehouse Service to your database, as well as connections from your Redshift database to S3, are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE).
+Census can successfully connect to AlloyDB instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
-## 🚦 Allowed IP Addresses
-
-Redshift by default prevents any external IP address from accessing your data warehouse so you will need to add these IP addresses to your security groups. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). For more information, visit [AWS Redshift Help Center](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html).
-
-## 🚇 Connecting via SSH tunnel
-
-Census optionally allows connecting to Redshift that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
-
-1. Create a new user account for Census on the SSH host. (This account is separate from the database user account and can have a different username.)
-2. On the Census connections page, create a new connection to Redshift enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below. Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
-
-![](../.gitbook/assets/redshift\_pg\_1.png)
-
-3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page.
-
-To install the keypair, copy the public key in Census to you clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step. If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
-
-Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
-
-![](../.gitbook/assets/redshift\_pg\_2.png)
-
-4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allowlist.
-
-With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
-
-## 🌌 Deploying Redshift within an AWS VPC
+### Deploying Redshift within an AWS VPC
 
 Advanced methods of Redshift deployment include deploying Redshift within an AWS VPC or private subnet and limiting direct database access to a separate proxy (typically the SSH Tunnel method described above).
 

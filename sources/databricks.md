@@ -41,8 +41,6 @@ CREATE SCHEMA IF NOT EXISTS CENSUS;
 
 6\. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
 
-![](../.gitbook/assets/screely-1619628263455.png)
-
 ## 🚑 Need help connecting to Databricks?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

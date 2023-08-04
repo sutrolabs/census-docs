@@ -25,15 +25,21 @@ MySQL permissions are complex and there are many ways to configure access for Ce
 CREATE USER CENSUS IDENTIFIED BY '<strong, unique password>';
 
 -- GRANT read-only access to which ever schemas you'd like to give access to
+-- If you have multiple schemata that you would like Census to read from,
+-- repeat the steps for "<your schema>" for each of them
 GRANT SELECT ON <your schema>.* TO CENSUS;
 ```
 
 ## 💡 Notes <a href="#notes" id="notes"></a>
 
 * Census supports MySQL Community 5.7 or later, as well as recent versions of MariaDB
-* If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
-* Census supports MySQL with versions TLSv1.2 and greater
 
-## 🚦Allowed IP Addresses <a href="#allowed-ip-addresses" id="allowed-ip-addresses"></a>
+## 🚦Advanced Network Configuration
 
-If you are restricting access by IP addresses, please add Census's IP addresses to the allowlist in your firewall. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+Census can successfully connect to MySQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+
+Census supports MySQL with versions TLSv1.2 and greater.
+
+## 🚑 Need help connecting to MySQL?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
