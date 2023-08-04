@@ -41,7 +41,7 @@ In Planhat, once a token is created, it will appear once and last forever. Make 
 
 ### 2. Connect Planhat to Census
 
-* Head back to Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+* Head back to Census and navigate to [Destinations](https://app.getcensus.com/destinations).
 * Click the New Destination button.
 * Select Planhat in the dropdown list.
 * Paste your Planhat account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.

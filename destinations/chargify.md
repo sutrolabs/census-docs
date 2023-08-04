@@ -38,7 +38,7 @@ In this guide, we will show you how to connect Chargify to Census and create you
 
 ### 2. Connect Chargify
 
-* Head back to Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+* Head back to Census and navigate to [Destinations](https://app.getcensus.com/destinations).
 * Click the New Destination button.
 * Select Chargify in the dropdown list
 

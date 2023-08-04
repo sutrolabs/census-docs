@@ -22,7 +22,7 @@ Learn more about FullStory API Keys in their documentation [here](https://help.f
 
 ### 2. Connect FullStory to Census
 
-* Head back to Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+* Head back to Census and navigate to [Destinations](https://app.getcensus.com/destinations).
 * Click the New Destination button.
 * Select FullStory in the dropdown list.
 * Paste your FullStory account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
