@@ -33,7 +33,7 @@ In order for a third party application (like Census) to query your AlloyDB, Goog
 
 ### Step 1: Connect AlloyDB
 
-* Once you're in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you're in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Select **AlloyDB** in the list
 

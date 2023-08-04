@@ -30,7 +30,7 @@ In this guide, we will show you how to connect Microsoft Ads to Census.&#x20;
 
 ### 1. Connect Microsoft Ads
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Select Microsoft Advertising in the dropdown list.
 

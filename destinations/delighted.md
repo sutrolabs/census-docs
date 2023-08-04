@@ -27,7 +27,7 @@ In this guide, we'll show you how to connect Delighted to Census and create your
 
 ### 1. Create a Delighted connection
 
-* In Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Search for **Delighted** in the search bar
 

@@ -29,7 +29,7 @@ In this guide, we will show you how to connect Intercom to Census and create you
 
 ### 1. Connect Intercom
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Select **Intercom** in the dropdown list
 

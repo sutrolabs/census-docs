@@ -36,7 +36,7 @@ To find these credentials in Algolia confirm you are in the correct app you want
 
 ### 2. Connect Algolia in Census
 
-* In Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Select Algolia in the dropdown list
 * Enter your credentials and click **Connect**

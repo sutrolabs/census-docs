@@ -35,7 +35,7 @@ description: This page describes how to use Census with Campaign Monitor.
 
 ### 2. Connect Campaign Monitor
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Select Campaign Monitor in the dropdown list
 

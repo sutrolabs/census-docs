@@ -29,7 +29,7 @@ In this guide, we will show you how to connect Google Sheets to Census and creat
 
 Our Google Sheets connector behaves a little differently than other Census connectors. Instead of going through an OAuth connection flow, we provide you a Google Identity address you use to share the correct Google Sheets docs. This lets you be very specific about which Google Sheets you give Census access to.
 
-* In Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the New Destination button
 * Select Google Sheets in the dropdown list
 

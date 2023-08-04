@@ -29,7 +29,7 @@ In this guide, we will show you how to connect Front to Census and create your f
 
 ### 1. Connect Front
 
-* In Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the New Destination button
 * Select Front in the dropdown list
 

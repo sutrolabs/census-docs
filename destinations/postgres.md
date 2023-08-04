@@ -27,7 +27,7 @@ This guide shows you how to use Census to connect your PostgreSQL database to yo
 
 ### Step 1: Connect PostgreSQL
 
-* Once you're in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you're in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Select **PostgreSQL** in the list
 

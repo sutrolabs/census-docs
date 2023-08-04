@@ -34,7 +34,7 @@ description: This page describes how to use Census with Autopilot Journeys.
 
 ### 2. Connect Autopilot Journeys
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Select Autopilot Journeys in the dropdown list
 

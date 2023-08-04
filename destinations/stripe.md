@@ -27,7 +27,7 @@ In this guide, we will show you how to connect Stripe to Census and create your 
 
 ### 1. Connect Stripe
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the New Destination button
 * Select Stripe in the dropdown list
 * Add your API key

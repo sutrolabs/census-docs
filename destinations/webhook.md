@@ -27,7 +27,7 @@ In this guide, we will show you how to connect webhooks to Census and create you
 
 ### 1. Create a Webhook Destination in Census
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 * Select **Webhook** in the dropdown list
 * Name your Destination (for example, `webhooksite test`) and Input the URL of your endpoint 👇

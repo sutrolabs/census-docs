@@ -25,7 +25,7 @@ description: This page describes how to use Census with Google Cloud Storage.
 
 Our Google Cloud connector behaves a little differently than other Census connectors. Instead of going through an OAuth connection flow, we provide you a Google Identity address to which you grant Storage Object permissions.
 
-* In Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the New Destination button, and select Google Cloud Storage
 * Paste the name of the GCS bucket, name the connection, and click the Save Connection button
 

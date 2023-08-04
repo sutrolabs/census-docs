@@ -27,7 +27,7 @@ In this guide, we will show you how to connect LinkedIn to Census.
 
 ### Step 1: Connect LinkedIn
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the **New Destination** button
 
 ![Select LinkedIn in the dropdown list](<../.gitbook/assets/LinkedIn Connection Button.png>)

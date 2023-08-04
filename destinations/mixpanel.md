@@ -29,7 +29,7 @@ In this guide, we will show you how to connect Mixpanel to Census and create you
 
 ### 1. Connect Mixpanel
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations).
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations).
 * Click the New Destination button.
 * Select Mixpanel in the dropdown list
 

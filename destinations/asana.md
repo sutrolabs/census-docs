@@ -27,7 +27,7 @@ description: This page describes how to use Census with Asana
 
 ### 1. Connect Asana
 
-* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the New Destination button
 * Select Asana in the list
 
