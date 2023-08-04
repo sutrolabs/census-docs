@@ -12,4 +12,4 @@ redirects:
     source-warehouse/redshift: ./sources/redshift.md
     source-warehouse/rockset: ./sources/rockset.md
     source-warehouse/snowflake: ./sources/snowflake.md
-    destinations/custom-api: ./basics/developers/custom-api
+    destinations/custom-api: basics/developers/custom-api.md
