@@ -61,6 +61,7 @@
 * [Elasticsearch](sources/elasticsearch.md)
 * [Google AlloyDB](sources/alloydb.md)
 * [Google BigQuery](sources/google-bigquery.md)
+* [Google Cloud SQL for PostgreSQL](sources/google-cloud-sql-for-postgresql.md)
 * [Google Sheets](sources/google-sheets.md)
 * [Materialize](sources/materialize.md)
 * [MotherDuck](sources/motherduck.md)
