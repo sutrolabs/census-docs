@@ -4,11 +4,7 @@
 
 This endpoint lists information all the models for a given source, including information on what columns it includes.
 
-You can pass the following URL parameters to control the response:
-
-* `order` - `asc` or `desc`. Sorts the sync runs ascending or descending by creation time.
-* `page` - `number`. Specifies which page of results to return. Defaults to 1.
-* `per_page` - `number`. Specifies number of results per page. Defaults to 25, max of 100.
+See [Pagination](../#pagination) for standard URL parameters and response data.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -78,7 +74,15 @@ curl 'https://app.getcensus.com/api/v1/sources/[ID]/models' \
             ]
         }
     ],
-    "next": "https://app.getcensus.com/api/v1/sources/6/models?page=2&per_page=25"
+    "next": "https://app.getcensus.com/api/v1/sources/6/models?page=2&per_page=2",
+    "pagination": {
+        "total_records": 4,
+        "per_page": 2,
+        "prev_page": null,
+        "page": 1,
+        "next_page": 2,
+        "last_page": 2
+    }
 }
 ```
 {% endtab %}

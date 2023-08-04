@@ -4,11 +4,7 @@
 
 This endpoint returns info on the sync runs for a specific sync.
 
-You can pass the following URL parameters to control the response:
-
-* `order` - `asc` or `desc`. Sorts the results ascending or descending by creation time.
-* `page` - `number`. Specifies which page of results to return. Defaults to 1.
-* `per_page` - `number`. Specifies number of results per page. Defaults to 25, max of 100.
+See [Pagination](./#pagination) for standard URL parameters and response data.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -94,7 +90,15 @@ curl 'https://app.getcensus.com/api/v1/syncs/[ID]/sync_runs?page=1&per_page=1&or
             }
         }
     ],
-    "next": "https://app.getcensus.com/api/v1/syncs/52/sync_runs"
+    "next": "https://app.getcensus.com/api/v1/syncs/52/sync_runs?page=2&per_page=3",
+    "pagination": {
+        "total_records": 4,
+        "per_page": 3,
+        "prev_page": null,
+        "page": 1,
+        "next_page": 2,
+        "last_page": 2
+    }
 }
 ```
 {% endtab %}
