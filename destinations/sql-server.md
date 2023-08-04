@@ -20,21 +20,14 @@ If you are trying to use Microsoft SQL Service as a data source (to query data f
 
 
 
-## Required Permissions
+## 🔑 Permissions
 
-{% hint style="info" %}
-These instructions are well tested to connect Census to SQL Server. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
-{% endhint %}
-
-Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in destination tools.
-
-We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your SQL Server database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
-
-* Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
-
-SQL Server permissions are complex and there are many ways to configure access for Census. The script below has been tested with recent SQL Server versions and is known to work correctly:
+To use SQL Server as a destination, Census requires permission to write to the desired destination tables, as well as read metadata about the table and database structures.&#x20;
 
 ```
+-- Note that creating a user may be redundant if you're already configured
+-- SQL Server as a source.
+
 -- Create census user the ability to sign in with a password
 CREATE USER CENSUS WITH PASSWORD = '<strong, unique password>';
 
@@ -49,11 +42,11 @@ EXEC sp_addrolemember 'db_datareader', CENSUS;
 -- Grant census user ability to read data from within a schema
 -- Note: this can also be granted to specific tables as well
 GRANT SELECT, VIEW DEFINITION ON SCHEMA::<schema> TO CENSUS;
-```
 
-{% hint style="info" %}
-Important: all SQL Server Commands will run within the Database that is specified when running the script
-{% endhint %}
+-- Grant census user ability to write data to tables within a schema
+-- Note: this can also be granted to specific tables as well
+GRANT INSERT, UPDATE ON SCHEMA::<schema> TO CENSUS;
+```
 
 
 
@@ -67,6 +60,6 @@ Important: all SQL Server Commands will run within the Database that is specifie
 
 Census can successfully connect to SQL Server instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
-## 🚑 Need help connecting to SQLServer?
+## 🚑 Need help connecting to SQL Server?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
