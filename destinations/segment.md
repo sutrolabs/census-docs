@@ -82,7 +82,7 @@ In the " **What data do you want to sync?"** section‌
 
 Next up is the **"Where do you want to sync data to?"** section‌
 
-* Pick the name of Segment service from step 1 as **the Connection**, right now the object we can sync to is [limited to **User**](segment.md#supported-objects)\*\*\*\*
+* Pick the name of Segment service from step 1 as **the Connection**, right now the object we can sync to is [limited to **User**](segment.md#supported-objects)
 
 For the " **How should changes to the source be synced?"** section‌
 

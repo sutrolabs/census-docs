@@ -33,7 +33,7 @@ Prior to adding Google Analytics as a Destination in Census you'll need to:
 
 ### **1B: Create the Data Set**
 
-* Navigate to the **Data Import** tab within the **Settings** to \*\*\*\* view existing data sets or Create a new one.
+* Navigate to the **Data Import** tab within the **Settings** to view existing data sets or Create a new one.
 * If creating a new Data Set start by setting the Data Set type to **User Data**
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-31 at 3.20.36 PM.png>)

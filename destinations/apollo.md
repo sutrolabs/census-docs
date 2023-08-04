@@ -48,7 +48,7 @@ Finally, copy the code you see under **API Key**. We'll use that in a minute.
 
 Great! Now let's pull it all together.
 
-1. In the [**Destinations**](https://app.getcensus.com/destinations) \*\*\*\* page, click on **New Destination**, and select "Apollo"
+1. In the [**Destinations**](https://app.getcensus.com/destinations) page, click on **New Destination**, and select "Apollo"
 2. You can provide whatever name you like for the connection
 3. Paste your Apollo API Key
 4. Click **Connect**
