@@ -26,8 +26,6 @@ description: This page describes how to use Census with Sendrid.
     * [Snowflake](https://docs.getcensus.com/sources/snowflake)
     * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
-
-
 ### 1. Gather SendGrid API Credentials
 
 To connect Census to SendGrid, you'll need to collect one piece of information:
@@ -56,6 +54,7 @@ Census currently supports syncing to the following SendGrid objects.
 | --------------: | :------------: | ----------- |
 |         Contact |        ✅       | Email       |
 |            List |        ✅       | Email       |
+| Email Templates |        ✅       | Any unique identifier |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for SendGrid.
 
@@ -70,6 +69,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 | **Update or Create** |        ✅       | Contact, List |
 |      **Update Only** |        ✅       |    Contact    |
 |           **Mirror** |        ✅       |      List     |
+|           **Append** |        ✅       | Email Templates |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for SendGrid.
 
