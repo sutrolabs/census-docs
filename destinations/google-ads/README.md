@@ -58,7 +58,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 * [Databricks](../../sources/databricks.md)
 
-After setting up your warehouse, your Census Connections Page should look like this:
+After setting up your warehouse, your Census Destinations page should look like this:
 
 ![](../../.gitbook/assets/screely-1619121030102.png)
 

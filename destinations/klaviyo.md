@@ -50,7 +50,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 * [Redshift](../sources/redshift.md#allowed-ip-addresses)
 * [Snowflake](../sources/snowflake.md)
 
-After setting up your warehouse, your Connections page should look something like this: 👇
+After setting up your warehouse, your Destinations page should look something like this: 👇
 
 ![Destinations page with Klaviyo and source warehouse](../.gitbook/assets/202201\_Klaviyo\_Connection\_2.png)
 

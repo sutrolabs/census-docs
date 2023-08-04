@@ -25,7 +25,7 @@ If you are not already logged in to Slack, you will be redirected to a page to l
 
 ![](<../.gitbook/assets/Screen Shot 2021-09-13 at 9.39.16 AM.png>)
 
-Once you've authorized Census, you'll be redirected back to the Connections page in Census and you should see your Slack connection there.
+Once you've authorized Census, you'll be redirected back to the Destinations page in Census and you should see your Slack connection there.
 
 ## 2️⃣ Connect Census to your data source
 

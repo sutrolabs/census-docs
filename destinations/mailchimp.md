@@ -35,7 +35,7 @@ You will be redirected to a page to log in to Mailchimp to authorize your accoun
 
 ![](<../.gitbook/assets/Screen Shot 2021-04-13 at 10.08.02 AM.png>)
 
-Once you've authorized Census, you'll be redirected back to the Connections page in Census and you should see your Mailchimp connection there.
+Once you've authorized Census, you'll be redirected back to the Destinations page in Census and you should see your Mailchimp connection there.
 
 If you want to see your connections in Mailchimp in the future, simply navigate to the **Profile** page, and scroll down to the **Connections and notifications** section.
 

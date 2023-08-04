@@ -55,7 +55,7 @@ If this is your first Census sync, you'll also need to connect your data warehou
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 * [Databricks](../sources/databricks.md)
 
-After setting up your warehouse, your Census Connections Page should look like this:
+After setting up your warehouse, your Census Destinations page should look like this:
 
 ![](../.gitbook/assets/screely-1622879500415.png)
 

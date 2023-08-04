@@ -52,7 +52,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
-After setting up your warehouse, your Census Connections Page should look like this
+After setting up your warehouse, your Census Destinations page should look like this
 
 ![](../.gitbook/assets/screely-1618112995751.png)
 

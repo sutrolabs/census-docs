@@ -42,7 +42,7 @@ In this guide, we will show you how to connect Tik Tok Ads to Census and create 
 
 ![Select the intended account](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.29.16 PM.png>)
 
-* The TikTok connection will be present and authorized on the Connections page and ready for a sync.
+* The TikTok connection will be present and authorized on the Destinations page and ready for a sync.
 
 ## 🗄 Supported Objects
 

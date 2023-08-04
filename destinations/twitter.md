@@ -38,7 +38,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 * [Redshift](../sources/redshift.md)
 * [Snowflake](../sources/snowflake.md)
 
-After setting up your warehouse, your Connections page should look something like this: 👇
+After setting up your warehouse, your Destinations page should look something like this: 👇
 
 ![Destinations page after setting up a data source](../.gitbook/assets/202110\_Connections\_Generic.png)
 
