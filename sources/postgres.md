@@ -1,31 +1,63 @@
 ---
-description: >-
-  This page describes how to configure PostgreSQL credentials for use by Census
-  and why those permissions are needed.
+description: This page describes how to configure Greenplum as a source for Census.
 ---
 
-# PostgreSQL
+# Greenplum
 
-## 🔐 Required Permissions
+## 🔐 Sync Engines and Permissions
+
+Census reads data from tables and views in Greenplum and syncs it to your desired objects in other systems such as Salesforce. To limit the load on your database as well as destination apps' APIs, Census maintains state tracking tables that enable it to only sync data that has been modified sync the last sync (incremental syncs). When configuring your Greenplum connection, you'll choose a [Sync Engine](overview.md#sync-engines) that determines how state tracking is handled.
+
+The _Basic Sync Engine_ maintains state tracking tables on Census-owned infrastructure and is therefore simpler to configure and requires read access only.
+
+The _Advanced Sync Engine_ delivers enhanced performance by maintaining state tracking tables in a dedicated schema within your own Greenplum instance. Using this feature [requires additional configuration.](postgres.md#advanced-sync-engine)
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-04 at 3.59.40 PM (1).png" alt=""><figcaption><p>Greenplum Connection Setup</p></figcaption></figure>
+
+For either choice, we recommend you create a dedicated database user with a strong, unique password for Census to use to connect to your database.
+
+#### Create a Census User
+
+```sql
+-- Create CENSUS user and set password
+CREATE USER CENSUS WITH PASSWORD '<strong unique password>';
+```
+
+### Basic Sync Engine
+
+#### Grant Read Access to Your Data
+
+The following commands grant read access to your data schema.
 
 {% hint style="info" %}
-These instructions are well-tested to connect Census to PostgreSQL. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
+Replace`<your schema>` with the name of your schema. Run once for each schema that contains data you wish to sync using Census.
 {% endhint %}
 
-Census reads data from one or more tables (possibly across different schemata) in your database and publishes it to the corresponding objects in external systems such as Salesforce. To limit the load on your database as well as to other apps' APIs, Census computes a “diff” to determine changes between each update. In order to compute these diffs, Census creates and writes to a set of tables to a private bookkeeping schema (2 or 3 tables for each sync job configured).
+```sql
+-- Let the census user read all existing tables in this schema
+GRANT SELECT ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 
-We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your PostgreSQL database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
+-- Let the census user read any new tables added to this schema
+ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT SELECT ON TABLES TO CENSUS;
 
-* Skip this step if working in read-only mode. The ability to create the `CENSUS` schema and full admin access to all tables within that schema (including creating tables, deleting tables, and reading and writing to all tables).
-* Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
-* If you are using Census to load service data into your warehouse, read-write access to the schema where Census should load data (note that this is not included in the sample script below).
+-- Let the census user execute any existing functions in this schema
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA "<your schema>" TO CENSUS;
 
-PostgreSQL permissions are complex and there are many ways to configure access for Census. The script below has been tested with recent PostgreSQL versions and is known to work correctly:
-
+-- Let the census user execute any new functions added to this schema
+ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO CENSUS;
 ```
--- Give the census user the ability to sign in with a password
-CREATE USER CENSUS WITH PASSWORD '<strong, unique password>';
 
+### Advanced Sync Engine
+
+The following steps are only required if using the _Advanced Sync Engine._
+
+You must complete the steps [Create a Census User](postgres.md#create-a-census-user) and [Grant Read Access to Your Data](postgres.md#basic-sync-engine) before proceeding with the steps in this section.
+
+#### Create Census Schema and Grant Permissions
+
+If you wish to utilize the Advanced Sync Engine, run the following commands to create the necessary schema and permission grants.
+
+```sql
 -- Create a private bookkeeping schema where Census can store sync state
 -- Skip this step if working in read-only mode
 CREATE SCHEMA CENSUS;
@@ -54,48 +86,16 @@ GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA "<your schema>" TO CENSUS;
 ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO CENSUS;
 ```
 
-## 💡 Notes
-
-{% hint style="danger" %}
-We **strongly recommend against** connecting Census a production PostgreSQL database. Census queries are often very analytical in nature and do not always play nicely with production environments. Unfortunately, PostgreSQL doesn't give you much ability to control performance impacts across users so to avoid issues, please use Census with databases set up for analytic workloads only!
-{% endhint %}
-
-* If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
-* In older versions of PostgreSQL, if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata. In later versions of PostgreSQL this extra read access is not required.
-* If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
-* If you are using an Azure database for PostgreSQL server the **Username** needs to be formatted as `username@hostname`. For AWS the format is `username`
-
 ## 🔑 Encryption
 
-All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). We recommend configuring your PostgreSQL instance to use TLS v1.2 or later for all connections.
+All connections from Census to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). We recommend configuring your Greenplum instance to use TLS v1.2 or later for all connections.
 
 ## 🚦Allowed IP Addresses
 
-With PostgreSQL, you'll need to add Census's IP addresses in your firewall, and/or add rules to your `pg_hba.conf` file to only allow the Census user to connect to your database.
+Depending on your Greenplum architecture (E.G. self-hosted, AWS, etc.) you may need to add Census IP addresses in your firewall allow list or security group inbound rules.
 
-You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+You can find a list of Census IP addresses for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
 
-## 🚇 Connecting via SSH tunnel
-
-Census optionally allows connecting to PostgreSQL warehouses that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
-
-1. Create a new user account for Census on the SSH host. (This account is separate from the database user account and can have a different username.)
-2. On the Census connections page, create a new connection to a PostgreSQL warehouse, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below. Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
-
-![](../.gitbook/assets/redshift\_pg\_1.png)
-
-3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the connections page.
-
-To install the keypair, copy the public key in Census to your clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step. If, for example, this user is named `census`, the file should be located at`/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
-
-Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
-
-![](../.gitbook/assets/redshift\_pg\_2.png)
-
-4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allowlist.
-
-With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
-
-## 🚑 Need help connecting to PostgreSQL?
+## 🚑 Need help connecting to Greenplum?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

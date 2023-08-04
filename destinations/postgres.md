@@ -9,7 +9,7 @@ description: This page walks through how to connect Census with your PostgreSQL 
 This guide will walk you through connecting to PostgreSQL as a destination.&#x20;
 
 {% hint style="info" %}
-If you are trying to use PostgresSQL as a data source (to query data from Postgres and sync to elsewhere), that process is documented separately here: [Postgres Data Source](../sources/postgres.md)
+If you are trying to use PostgresSQL as a data source (to query data from Postgres and sync to elsewhere), that process is documented separately here: [Postgres Data Source](../sources/postgres-1.md)
 {% endhint %}
 
 1. Visit the [Destinations page](https://app.getcensus.com/destinations) and click **+ New Destination**.

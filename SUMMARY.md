@@ -63,10 +63,11 @@
 * [Google BigQuery](sources/google-bigquery.md)
 * [Google Cloud SQL for PostgreSQL](sources/google-cloud-sql-for-postgresql.md)
 * [Google Sheets](sources/google-sheets.md)
+* [Greenplum](sources/postgres.md)
 * [Materialize](sources/materialize.md)
 * [MotherDuck](sources/motherduck.md)
 * [MySQL](sources/mysql.md)
-* [PostgreSQL](sources/postgres.md)
+* [PostgreSQL](sources/postgres-1.md)
 * [Redshift](sources/redshift.md)
 * [Rockset](sources/rockset.md)
 * [SingleStore](sources/singlestore.md)
@@ -75,6 +76,7 @@
 
 ## 🛫 Destinations
 
+* [Overview](destinations/overview.md)
 * [Accredible](destinations/accredible.md)
 * [ActiveCampaign](destinations/activecampaign.md)
 * [Adobe Target](destinations/adobe-target.md)
