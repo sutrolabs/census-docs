@@ -47,7 +47,7 @@ We support syncing data to Tables in PostgreSQL, but they must have a uniqueness
 
 ## 🚦Advanced Network Configuration
 
-Census can successfully connect to SQL Server instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+Census can successfully connect to PostgreSQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
 ## ❗️Common Troubleshooting Issues
 
