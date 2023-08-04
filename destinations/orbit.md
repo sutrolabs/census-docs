@@ -30,7 +30,7 @@ Before you begin, you'll need the following:
 ### Step 1: Connect Orbit
 
 1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
-2. Navigate to the **Destinations** page in Census and click **New Destination**.
+2. Click **New Destination**.
 3. Select **Orbit** from the dropdown list.
 4. Orbit uses API tokens to authorize access to the API, so you will need to provide an **API Key** and **Workspace Slug** to Census.
    1. You can find your API token on the [Account Settings](https://app.orbit.love/user/settings/edit) page, in the API Tokens section. Copy the API token and paste it into the **API Key** field in the Orbit setup in Census.

@@ -30,7 +30,7 @@ Before you begin, you'll need the following:
 ### Step 1: Connect Outreach
 
 1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
-2. Navigate to the **Destinations** page in Census and click **New Destination**.
+2. Click **New Destination**.
 3. Select **Outreach** from the dropdown list.
 4. Follow the Outreach authentication flow, which will ask you to log in with your Outreach username and password.
 

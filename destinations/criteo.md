@@ -30,7 +30,7 @@ This can be done by a Criteo Admin from the page consent.criteo.com
 {% endhint %}
 
 1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
-2. Navigate to the **Destinations** page in Census and click **New Destination**.
+2. Click **New Destination**.
 3. Select **Criteo** from the menu
 4. Follow the Criteo OAuth authentication flow, which will ask you to log in with your Criteo username and password.
 5. Once logged in, select the Portfolio's you want Census to have access to and Approve

@@ -30,7 +30,7 @@ Before you begin, you'll need the following:
 ### Step 1: Connect SFTP
 
 1. Log into Census and navigate to [**Destinations**](https://app.getcensus.com/destinations).
-2. Navigate to the **Destinations** page in Census and click **New Destination**.
+2. Click **New Destination**.
 3. Select **SFTP** from the dropdown list.
 4. Enter a **Name** for your destination. This is only for your reference – it can be anything that makes sense to you.
 5. Enter authentication details for your SFTP server. **Host** and **Username** are always required. If your server requires a password instead of an SSH key, enter the **Password**. If your server uses SSH keys, you can leave the **Password** blank.

@@ -32,9 +32,8 @@ For Production Dynamics instances, the user to authenticate Census needs to have
 {% endhint %}
 
 1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
-2. Navigate to the **Destinations** page in Census and click **New Destination**.
-3. Select **Microsoft Dynamics** from the menu
-4. Follow the Microsoft Dynamics OAuth authentication flow, which will ask you to log in with your Microsoft Dynamics username and password.
+2. Click **New Destination** and select **Microsoft Dynamics** from the menu.
+3. Follow the Microsoft Dynamics OAuth authentication flow, which will ask you to log in with your Microsoft Dynamics username and password.
 
 Once complete, you'll see your new connection in the **Destinations** list. 👇
 

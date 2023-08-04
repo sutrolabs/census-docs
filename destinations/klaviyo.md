@@ -32,9 +32,8 @@ Before you begin, you'll need the following:
 ### Step 1: Connect Klaviyo
 
 1. Log into Census and navigate to [**Destinations**](https://app.getcensus.com/destinations).
-2. Navigate to the **Destinations** page in Census and click **New Destination**.
-3. Select Klaviyo from the dropdown list.
-4. Paste in your Klaviyo API Key. (See [Klaviyo's Help Center](https://help.klaviyo.com/hc/en-us/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys) for details on finding or generating API keys.)
+2. Click **New Destination** and select Klaviyo from the dropdown list.
+3. Paste in your Klaviyo API Key. (See [Klaviyo's Help Center](https://help.klaviyo.com/hc/en-us/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys) for details on finding or generating API keys.)
 
 Your end state should look something like this: 👇
 

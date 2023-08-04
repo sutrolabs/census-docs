@@ -31,7 +31,7 @@ In this guide, we will show you how to connect Zendesk to Census and create your
 ### Step 1: Connect Zendesk
 
 1. Log into Census and navigate to the [**Destinations**](https://app.getcensus.com/destinations) page.
-2. Navigate to the **Destinations** page in Census and click **New Destination**.
+2. Click **New Destination**.
 3. Select **Zendesk** from the dropdown list.
 4. Follow the Zendesk authentication flow.
 
