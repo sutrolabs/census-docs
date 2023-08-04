@@ -43,7 +43,7 @@ To find your Amplitude project's unique API key, follow these steps.
 
 Now that we have the API Key from Amplitude, we can now set up Amplitude as a Destination in Census.
 
-1. In the **Connections** section of Census, create a new Amplitude Service Connection by clicking the Add Service button and searching for "Amplitude" in the search bar.
+1. In the **Destinations** section of Census, create a new Amplitude connection by clicking the New Destination button and searching for "Amplitude" in the search bar.
 
 <div align="center">
 

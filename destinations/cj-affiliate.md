@@ -6,7 +6,7 @@ description: This page describes how to use Census with CJ Affiliate.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **CJ Affiliate** from the menu.
 3. Open CJ's [developer portal](https://developers.cj.com/account/personal-access-tokens) in another browser tab and generate a new **Personal Access Token**.
 4. Return to Census and paste your **Personal Access Token** to connect.

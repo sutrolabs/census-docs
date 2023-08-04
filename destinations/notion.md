@@ -31,8 +31,8 @@ This guide shows you how to use Census to connect your Notion account to your da
 
 ### Step 1: Connect Notion
 
-* Once you're in Census, navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you're in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select **Notion** in the list
 
 You'll be redirected to a page to log in to Notion to authorize access to your account. Once you sign in, you'll see a page like the image below, confirming you want to authorize Census.

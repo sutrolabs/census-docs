@@ -6,7 +6,7 @@ description: This page describes how to use Census with Attio.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Attio** from the menu.
 3. Open the Attio app in another browser tab. Navigate to **Workspace Settings** <figure><img src="../.gitbook/assets/attio-workspace-settings.png" alt=""><figcaption></figcaption></figure>
    1. Select **Developers** from the left hand menu and click the `Create a new integration` button. 

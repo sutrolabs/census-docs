@@ -27,7 +27,7 @@ Copy your **Project API Key**. We'll use that in a minute
 
 Great! Now let's pull it all together.&#x20;
 
-1. In the [**Connections**](https://app.getcensus.com/connections) page, click on **Add Service**, and select "PostHog"
+1. In the [**Destinations**](https://app.getcensus.com/destinations) page, click on **New Destination**, and select "PostHog"
 2. You can provide whatever name you like for the connection
 3. Paste your PostHog Project API Key
 4. Enter your PostHog custom domain if you're using one, otherwise leave it blank.

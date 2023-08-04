@@ -6,7 +6,7 @@ description: This page describes how to use Census with ClickUp.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **ClickUp** from the menu.
 3. Complete the OAuth flow to grant Census access to your ClickUp workspace. Note that you'll have to create a separate Census connection for each workspace you wish to send data to.
 

@@ -6,7 +6,7 @@ description: This page describes how to use Census with Impact.
 
 ## 🏃‍♀️ Getting Started
 
-1. Go to the **Destinations** tab and click **Add Destination**.
+1. Go to the **Destinations** tab and click **New Destination**.
 2. Select **Impact** from the menu.
 3. Enter your Impact **Account SID** and **Auth Token**.
 

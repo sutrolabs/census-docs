@@ -72,7 +72,7 @@ Once created, you'll see your new service in the list of services. Click on **Vi
 
 ### 3. Adding Credentials to Census
 
-With all three pieces of information, return to Census and visit the **Connections** tab. Click on the **Add Service** button and select **Marketo** from the menu. Copy and paste the values into the dialog and hit save. You should be clear to create a new sync!
+With all three pieces of information, return to Census and visit the **Destinations** tab. Click on the **New Destination** button and select **Marketo** from the menu. Copy and paste the values into the dialog and hit save. You should be clear to create a new sync!
 
 ![](../.gitbook/assets/screely-1618889184718.png)
 

@@ -6,7 +6,7 @@ description: This page describes how to use Census with Userflow.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Userflow** from the menu.
 3. Enter your **API Key** (found in the Userflow app) and select your **Userflow Plan**.
 

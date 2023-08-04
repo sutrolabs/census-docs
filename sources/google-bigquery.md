@@ -40,7 +40,7 @@ We definitely recommend you use the three permissions we specify when creating a
 
 Because permissions are a bit unique on BigQuery so the process of creating a new connection to Census requires a few extra steps.
 
-1. Visit the **Connections** section on Census, and press **Add Data Warehouse Connection**, selecting **BigQuery** from the list.
+1. Visit the **Sources** section on Census, and press **New Source**, selecting **BigQuery** from the list.
 2.  Census will ask you to provide the **Google Cloud Project ID** that contains your BigQuery instance. You can find that on the [Google Cloud Console](https://console.cloud.google.com) in the **Project Info** section. If you have multiple Google Cloud projects, you'll need to first select the correct one with the project picker in the top right.
 
     <img src="../.gitbook/assets/bq_setup1.png" alt="" data-size="original">
@@ -66,7 +66,7 @@ The easiest way to execute these commands is within the **Google Cloud Shell** i
 
 BigQuery supports [External Tables](https://cloud.google.com/bigquery/external-data-drive) which allows Google Sheets and tabular data in Google Drive to appear as tables in BigQuery. In order for Census to access these resources, it must be given explicit access to the Google Sheet or Google Drive document.
 
-1. First, you'll need the Census service account's email address for your specific connection. You can see that in the [Connections Tab](https://app.getcensus.com/connections). It's of the form census-\[LONG ID]@sutrolabs-giza-production.iam.gserviceaccount.com
+1. First, you'll need the Census service account's email address for your specific connection. You can see that in the [Sources Tab](https://app.getcensus.com/sources). It's of the form census-\[LONG ID]@sutrolabs-giza-production.iam.gserviceaccount.com
 2. Next, in Google Drive, click Share and give that email address permission to View the contents of the document.
 
 If Census does not have view access to the document, you will see an error indicating that Census does not have permission to access the underlying data for that table.
@@ -76,7 +76,7 @@ If Census does not have view access to the document, you will see an error indic
 It's possible to create views in a BigQuery project that reference the tables and views present in other BigQuery projects. In order for Census to access these types of views within your project, it must also be granted permissions in the other projects that contain the referenced tables and views. If you are using the default IAM policies that Census recommends, you may run the following commands in your **Google Cloud Shell** in the Google Cloud Console, where:
 
 * **\[new-project]** is the name of the project where the referenced tables and views exist.
-* **\[service-account-user]** is the Census service account's email address for the specific connection that contains the view you're trying to access. You can see that in the [Connections Tab](https://app.getcensus.com/connections). It's of the form census-\[LONG ID]@sutrolabs-giza-production.iam.gserviceaccount.com
+* **\[service-account-user]** is the Census service account's email address for the specific connection that contains the view you're trying to access. You can see that in the [Sources Tab](https://app.getcensus.com/sources). It's of the form census-\[LONG ID]@sutrolabs-giza-production.iam.gserviceaccount.com
 
 ```
 gcloud projects add-iam-policy-binding [new-project] \

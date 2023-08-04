@@ -31,14 +31,14 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect Klaviyo
 
-1. Log into Census and navigate to [**Connections**](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and navigate to [**Destinations**](https://app.getcensus.com/destinations).
+2. Navigate to the **Destinations** page in Census and click **New Destination**.
 3. Select Klaviyo from the dropdown list.
 4. Paste in your Klaviyo API Key. (See [Klaviyo's Help Center](https://help.klaviyo.com/hc/en-us/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys) for details on finding or generating API keys.)
 
 Your end state should look something like this: 👇
 
-![Connections page with Klaviyo](<../.gitbook/assets/202201\_Klaviyo\_Connection (1).png>)
+![Destinations page with Klaviyo](<../.gitbook/assets/202201\_Klaviyo\_Connection (1).png>)
 
 ### Step 2: Connect your data warehouse
 
@@ -53,7 +53,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After setting up your warehouse, your Connections page should look something like this: 👇
 
-![Connections page with Klaviyo and source warehouse](../.gitbook/assets/202201\_Klaviyo\_Connection\_2.png)
+![Destinations page with Klaviyo and source warehouse](../.gitbook/assets/202201\_Klaviyo\_Connection\_2.png)
 
 ### Step 3: Create your model
 

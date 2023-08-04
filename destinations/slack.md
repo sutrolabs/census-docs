@@ -19,7 +19,7 @@ description: >-
 
 ## 1️⃣ Connect Census to Slack
 
-In the [**Connections**](https://app.getcensus.com/connections) page in Census, click the **Add Service** button in the top right, and select Slack.
+In the [**Destinations**](https://app.getcensus.com/destinations) page in Census, Click the **New Destination** button in the top right, and select Slack.
 
 If you are not already logged in to Slack, you will be redirected to a page to log in to Slack to authorize your account to use Census. Once you are logged in, you'll see a page like the image below, confirming you want to authorize Census.
 

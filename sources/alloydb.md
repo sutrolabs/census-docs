@@ -17,7 +17,7 @@ Census reads data from one or more tables (possibly across different schemata) i
 We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your AlloyDB database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
 
 * The ability to create the `CENSUS` schema and full admin access to all tables within that schema (including creating tables, deleting tables, and reading and writing to all tables).
-* Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
+* Read-only access to any tables and views in any schemata that you would like Census to publish to your destinations.
 * If you are using Census to load service data into your warehouse, read-write access to the schema where Census should load data (note that this is not included in the sample script below).
 
 AlloyDB permissions are complex and there are many ways to configure access for Census. The script below has been tested with AlloyDB and is known to work correctly:

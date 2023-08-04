@@ -29,8 +29,8 @@ In this guide, we will show you how to connect Intercom to Census and create you
 
 ### 1. Connect Intercom
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select **Intercom** in the dropdown list
 
 ![](../.gitbook/assets/screely-1618112961265.png)

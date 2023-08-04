@@ -49,7 +49,7 @@ Finally, copy the long code you see under **Key**. We'll use that in a minute.
 
 Now let's create your new Census connection to Pendo.
 
-1. In the **Settings** tab, Create a new Pendo Service Connection in Census.\
+1. In the **Settings** tab, Create a new Pendo Destination in Census.\
 
 
 <figure><img src="../.gitbook/assets/CleanShot 2022-12-28 at 15.48.26@2x.png" alt=""><figcaption></figcaption></figure>

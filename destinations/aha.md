@@ -6,7 +6,7 @@ description: This page describes how to use Census with Aha.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Aha** from the menu.
 3. Enter your **API Key** and **Account Domain Name**. The former can be found in the Aha app under **Personal settings** > **Developer** > **Generate API key**. The latter comes from the URL when you are logged into the app (e.g. **yourcompany**.aha.io).
 

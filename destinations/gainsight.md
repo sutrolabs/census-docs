@@ -45,11 +45,11 @@ Copy the Access Key after hitting Edit Connection
 
 ![](<../.gitbook/assets/Gainsight Credentials.png>)
 
-Great, now navigate back to the [Connections](https://app.getcensus.com/connections) page in Census
+Great, now navigate back to the [Destinations](https://app.getcensus.com/destinations) page in Census
 
-### Step 2: Connect Gainsight as a Service Connection
+### Step 2: Connect Gainsight as a Destination
 
-Click Add Service and select Gainsight. Then paste your Access Key for the Gainsight API. Also, paste in the domain for your Gainsight account
+Click New Destination and select Gainsight. Then paste your Access Key for the Gainsight API. Also, paste in the domain for your Gainsight account
 
 ![](<../.gitbook/assets/Gainsight Credentials Census.png>)
 

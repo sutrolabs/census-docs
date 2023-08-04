@@ -94,7 +94,7 @@ Salesforce Marketing Cloud will create the user, which may take a few seconds. C
 
 ### 3. Configure Census with Your Connection Information
 
-Go to [Census Connections](https://app.getcensus.com/connections), click "Add Service" and choose "Salesforce Marketing Cloud".
+Go to [Census Destinations](https://app.getcensus.com/destinations), click "New Destination" and choose "Salesforce Marketing Cloud".
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-01-03 at 10.41.25@2x.png" alt=""><figcaption></figcaption></figure>
 

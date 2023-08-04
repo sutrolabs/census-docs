@@ -6,7 +6,7 @@ description: This page describes how to use Census to update documents in Meilis
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Meilisearch** from the menu.
 3. Enter your **Meilisearch Instance URL** and **Master Key**. These can be found in the Meilisearch app by navigating to the relevant project overview page.
 

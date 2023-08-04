@@ -6,7 +6,7 @@ description: This page describes how to use Census with Brevo.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Brevo** from the menu.
 3. Open the Brevo app in another browser tab. Navigate to the **SMTP & API** page and generate a new API key. Copy it to your clipboard.
 4. Return to Census and enter your **API Key** to connect.

@@ -16,7 +16,7 @@ description: This page describes how to use Census with Vero.
 #### Add destination to Census
 
 1. Open Census
-2. Click **Add Service**
+2. Click **New Destination**
 3. Select **Vero** from the menu
 4. Paste your **Auth Token**
 5. Click **Connect**

@@ -1,6 +1,6 @@
 # Warehouse Writeback
 
-Census can provides row level details on the data you're syncing to service destination. With these logs, you can answer common questions like:
+Census can provides row level details on the data you're syncing to a destination. With these logs, you can answer common questions like:
 
 1. When was my data updated in the destination?
 2. Why did the destination's API reject records that I tried to sync?
@@ -74,7 +74,7 @@ Metadata tables for source objects can be found in the following tables, by ware
 
 ### Destinations Table
 
-Destinations are service connections. These are where you send data during a sync. An example is Salesforce.
+Destinations are where you send data during a sync. An example is Salesforce.
 
 #### Where
 

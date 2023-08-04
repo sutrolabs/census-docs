@@ -34,8 +34,8 @@ In this guide, we will show you how to connect Google Ads to Census.
 
 ### 1. Connect Google Ads
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select Google Ads in the dropdown list.
 
 ![](../../.gitbook/assets/screely-1619113580005.png)

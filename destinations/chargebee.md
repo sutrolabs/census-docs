@@ -36,8 +36,8 @@ Census needs only your Chargebee **API token** and **sub domain** to connect you
 
 ### 2. Connect Chargebee
 
-* Once you are in Census, navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select Chargebee in the list
 * Enter your Chargebee credentials and click **Connect**
 

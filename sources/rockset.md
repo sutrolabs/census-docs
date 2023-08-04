@@ -26,7 +26,7 @@ After creating the key, check which region your Rockset instance is deployed to 
 
 ![Take a mental note of which region you are deployed to in Rockset](<../.gitbook/assets/Rockset Credentials.png>)
 
-Navigate to the [connections tab](https://app.getcensus.com/connections) of your Census account. Click on the "Add Data Source" dropdown button in the top right and select Rockset. Paste your API key in the API key section and copy and paste the deployment url depending on what region you are deployed in.
+Navigate to the [Sources tab](https://app.getcensus.com/sources) of your Census account. Click on the "New Source" dropdown button in the top right and select Rockset. Paste your API key in the API key section and copy and paste the deployment url depending on what region you are deployed in.
 
 ![Click Save Configuration, and](<../.gitbook/assets/Census Rockset Credentials.png>)
 

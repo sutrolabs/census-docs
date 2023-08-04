@@ -26,7 +26,7 @@ To access your API keys, visit the **Settings** by clicking the **⚙ icon** in 
 
 Now that we have your API Key from Courier, we can set up Courier as a Destination Connection.
 
-1.  Inside Census, click on **Connections** in the left navigation, click **Add Service** and then find Courier in the menu.
+1.  Inside Census, click on **Destinations** in the left navigation, click **New Destination** and then find Courier in the menu.
 
     <figure><img src="../.gitbook/assets/screely-1663203741963.png" alt=""><figcaption></figcaption></figure>
 2. You can provide whatever name you like. This is helpful if you're using a test environment to start and want to label your connection to indicate that.

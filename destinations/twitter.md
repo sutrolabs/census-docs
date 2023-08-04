@@ -18,14 +18,14 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect Twitter Ads Account
 
-1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+2. Navigate to the **Destinations** page in Census and click **New Destination**.
 3. Select **Twitter** from the dropdown list.
 4. Follow the Twitter authentication flow.
 
 Your end state should look something like this: 👇
 
-![Connections page after setting up connection to Twitter Ads](../.gitbook/assets/202206\_Twitter\_Connection.png)
+![Destinations page after setting up connection to Twitter Ads](../.gitbook/assets/202206\_Twitter\_Connection.png)
 
 ### Step 2: Connect your data warehouse
 
@@ -40,7 +40,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After setting up your warehouse, your Connections page should look something like this: 👇
 
-![Connections page after setting up a data source](../.gitbook/assets/202110\_Connections\_Generic.png)
+![Destinations page after setting up a data source](../.gitbook/assets/202110\_Connections\_Generic.png)
 
 ### Step 3: Create your model
 

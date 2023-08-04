@@ -6,7 +6,7 @@ description: This page describes how to use Census with Qualtrics.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Qualtrics** from the menu.
 3. Enter your **Datacenter ID**, **Directory ID**, and **API Token**. These can be found in the Qualtrics app under Account Settings > Qualtrics IDs.
 

@@ -12,8 +12,8 @@ In order to sync data from Elasticsearch, Census needs your deployment url, port
 
 ## 🔩 Create an Elasticsearch connection
 
-* In Census, go to **Connections** or click [here to go to the app](https://app.getcensus.com/connections)
-* Under Data Sources, click **Add Data Source** and select **Elasticsearch.**
+* In Census, go to **Sources** or click [here to go to the app](https://app.getcensus.com/sources).
+* Click **New Source** and select **Elasticsearch**.
 
 ![Adding the Elasticsearch Connection](../.gitbook/assets/Elasticsearch.png)
 

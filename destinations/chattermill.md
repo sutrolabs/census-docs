@@ -6,7 +6,7 @@ description: This page describes how to use Census with Chattermill.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Chattermill** from the menu.
 3. Enter your **API Token** and **Project Name**. The former can be found in the Chattermill app under **Settings** > **Integrations**.
 

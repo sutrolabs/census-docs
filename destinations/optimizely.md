@@ -6,7 +6,7 @@ description: This page describes how to use Census with Optimizely.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Optimizely** from the menu.
 3. Open the Optimizely app in another window. Gather your **Account ID** and **Project ID** from the settings pages displayed below.
 4. Return to Census and enter these values to connect.

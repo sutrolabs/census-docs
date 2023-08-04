@@ -25,8 +25,8 @@ description: This page describes how to use Census with Google Cloud Storage.
 
 Our Google Cloud connector behaves a little differently than other Census connectors. Instead of going through an OAuth connection flow, we provide you a Google Identity address to which you grant Storage Object permissions.
 
-* In Census, navigate to [Connections](https://app.getcensus.com/connections)
-* Click the Add Service button, and select Google Cloud Storage
+* In Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the New Destination button, and select Google Cloud Storage
 * Paste the name of the GCS bucket, name the connection, and click the Save Connection button
 
 ![](<../.gitbook/assets/Screen Shot 2021-11-03 at 1.46.43 PM.png>)
@@ -49,7 +49,7 @@ You **will** be able to send a successful sync if the file path variables are un
 {% endhint %}
 
 * Click save to save the permission.
-* Then navigate back to the [Connections](https://app.getcensus.com/connections) page and click "Test" on the service.
+* Then navigate back to the [Destinations](https://app.getcensus.com/destinations) page and click "Test" on the service.
 
 ![You are good to go!](<../.gitbook/assets/Cloud Successful Connection.png>)
 

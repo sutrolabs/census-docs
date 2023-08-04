@@ -6,7 +6,7 @@ description: This page describes how to use Census with Channable.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Channable** from the menu.
 3. Enter your **API Token**, **Company ID**, and **Project ID**. The API Token and Company ID can be found on the Channable API page in the Channable app. The Project ID can be found on your project settings page.
 

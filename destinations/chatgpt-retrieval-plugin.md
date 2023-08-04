@@ -8,7 +8,7 @@ description: This page describes how to use Census with ChatGPT's Retrieval Plug
 
 ### 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **ChatGPT Retrieval Plugin** from the menu.
 3. Enter your **Bearer Token** and **Hostname**. These are configured when you first deploy your plugin instance.
 

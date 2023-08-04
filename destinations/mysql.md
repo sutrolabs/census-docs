@@ -6,7 +6,7 @@ description: This page describes how to sync data to your MySQL database.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **MySQL** from the menu.
 3. Enter the requested database credentials.
 

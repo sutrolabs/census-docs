@@ -6,7 +6,7 @@ description: This page describes how to use Census with Rokt.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Rokt** from the menu.
 3. Open Rokt in another browser tab and navigate to your **Profile Settings** page. Generate new API credentials and copy your **App ID** and **App Secret**. 
 4. Also take note of your **Account ID**, which can be found in the URL (e.g. https://my.rokt.com/accounts/**3144550328709722342**/profile-settings).

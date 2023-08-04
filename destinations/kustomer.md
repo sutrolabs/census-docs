@@ -49,8 +49,8 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 
 ### 2. Connect Kustomer to Census <a href="#2.-connect-planhat-to-census" id="2.-connect-planhat-to-census"></a>
 
-* Head back to Census and navigate to [Connections](https://app.getcensus.com/connections).
-* Click the Add Service button.
+* Head back to Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+* Click the New Destination button.
 * Select Kustomer in the dropdown list.
 * Paste your Kustomer account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
 

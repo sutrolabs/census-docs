@@ -6,7 +6,7 @@ description: This page describes how to use Census with Insightly.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Insightly** from the menu.
 3. Enter your **API Key** and **Instance Pod**. These can both be found on the **User Settings** page in the Insightly app. Note: if your API URL is _https://api.na1.insightly.com_, then your Instance Pod is `na1`.
 

@@ -56,7 +56,7 @@ Copy the resulting key (a string of 32 characters) to add it to Census.
 **C. Create a new Iterable connection in Census**
 
 * Visit the Connections tab in Census
-* Then select Iterable from the Add Service menu
+* Then select Iterable from the New Destination menu
 * Finally, paste in the API Key you just created. You can customize the name of the connection if you plan to connect multiple instances of Iterable.
 
 ![](../.gitbook/assets/iterable\_setup4.png)

@@ -126,4 +126,4 @@ Click the number of invalid or rejected records to see a sample (up to 100), and
 
 ## Wrapping things up
 
-That's it! Now you've got everything you need to know to get the most out of Census, but don't worry, you can still get into the nitty gritty on individual data warehouses or service destinations. And we're always here to help. If you have any questions, just let us know!
+That's it! Now you've got everything you need to know to get the most out of Census, but don't worry, you can still get into the nitty gritty on individual data warehouses or destinations. And we're always here to help. If you have any questions, just let us know!

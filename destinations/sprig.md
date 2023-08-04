@@ -6,7 +6,7 @@ description: This page describes how to use Census with Sprig.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Sprig** from the menu.
 3. Open the Sprig app in another window. Go to the **Connect** page and select **Public API**. Then copy the relevant API key (either production or development).
 4. Return to Census and enter this under **API Key**.

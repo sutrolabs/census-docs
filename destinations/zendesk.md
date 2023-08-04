@@ -30,14 +30,14 @@ In this guide, we will show you how to connect Zendesk to Census and create your
 
 ### Step 1: Connect Zendesk
 
-1. Log into Census and navigate to the [**Connections**](https://app.getcensus.com/connections) page.
-2. Click **Add Service**.
+1. Log into Census and navigate to the [**Destinations**](https://app.getcensus.com/destinations) page.
+2. Navigate to the **Destinations** page in Census and click **New Destination**.
 3. Select **Zendesk** from the dropdown list.
 4. Follow the Zendesk authentication flow.
 
 Your end state should look something like this: 👇
 
-![Connections page with Zendesk](../.gitbook/assets/202110\_Service\_Connection\_Zendesk.png)
+![Destinations page with Zendesk](../.gitbook/assets/202110\_Service\_Connection\_Zendesk.png)
 
 ### Step 2: Connect your data warehouse
 
@@ -50,9 +50,9 @@ The steps for connecting your data warehouse will depend on your technology. See
 * [Redshift](../sources/redshift.md)
 * [Snowflake](../sources/snowflake.md)
 
-After setting up your warehouse, your **Connections** page should look something like this: 👇
+After setting up your warehouse, your **Destinations** page should look something like this: 👇
 
-![Connections page with data warehouse](../.gitbook/assets/202110\_Connections\_Generic.png)
+![Destinations page with data warehouse](../.gitbook/assets/202110\_Connections\_Generic.png)
 
 ### Step 3: Create your model
 

@@ -37,7 +37,7 @@ Census needs only one piece of information to connect you to your Heap.io instan
 
 Now that we have the app ID from Heap.io, we can now set up Heap.io as a Destination in Census.
 
-1. In the **Connections** tab of Census, create a new Heap.io Service Connection.
+1. In the **Destinations** tab of Census, create a new Heap.io Destination.
 2. You can provide whatever name you like.
 3. Provide the app ID from Heap.io.
 4. Save.

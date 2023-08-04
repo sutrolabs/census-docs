@@ -6,7 +6,7 @@ description: This page describes how to use Census with Box.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Box** from the menu.
 3. Complete the OAuth flow to grant Census access to your Box instance.
 

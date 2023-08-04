@@ -31,12 +31,12 @@ This guide shows you how to use Census to connect your Microsoft Dynamics accoun
 For Production Dynamics instances, the user to authenticate Census needs to have "Service Writer" permissions. For the [Default environment](https://docs.microsoft.com/en-us/power-platform/admin/environments-overview#the-default-environment), the user must be an Admin. Read more about this [here](https://docs.microsoft.com/en-us/power-platform/admin/database-security).
 {% endhint %}
 
-1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+2. Navigate to the **Destinations** page in Census and click **New Destination**.
 3. Select **Microsoft Dynamics** from the menu
 4. Follow the Microsoft Dynamics OAuth authentication flow, which will ask you to log in with your Microsoft Dynamics username and password.
 
-Once complete, you'll see your new connection in the **Service Connections** list. 👇
+Once complete, you'll see your new connection in the **Destinations** list. 👇
 
 ![](<../.gitbook/assets/Screen Shot 2022-06-23 at 10.54.40 AM.png>)
 

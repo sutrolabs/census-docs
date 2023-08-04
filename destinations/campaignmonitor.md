@@ -35,8 +35,8 @@ description: This page describes how to use Census with Campaign Monitor.
 
 ### 2. Connect Campaign Monitor
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select Campaign Monitor in the dropdown list
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-28 at 12.13.33 AM.png>)
@@ -47,7 +47,7 @@ description: This page describes how to use Census with Campaign Monitor.
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-28 at 10.52.43 AM.png>)
 
-Once complete, you'll see your new connection in the **Service Connections** list. :point\_down:
+Once complete, you'll see your new connection in the **Destinations** list. :point\_down:
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-28 at 11.44.19 AM.png>)
 

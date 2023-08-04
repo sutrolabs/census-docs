@@ -6,7 +6,7 @@ description: This page describes how to use Census with CleverTap.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **CleverTap** from the menu.
 3. Enter your **Account ID**, **Passcode**, and **Region**. You'll need to generate a passcode from the **Settings** > **Passcodes** screen in the CleverTap app (screenshot below). The account ID and region can be found in the URL: https://**us1**.dashboard.clevertap.com/**K97-K78-1234**/main.
 

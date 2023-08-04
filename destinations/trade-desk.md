@@ -6,7 +6,7 @@ description: This page describes how to use Census with Trade Desk.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Trade Desk** from the menu.
 3. If you plan to sync ad groups and/or campaigns, enter your **API Token**. If you plan to sync conversion events, enter your **Postback URL**. Contact your Trade Desk account manager if you don't know what this is.
 

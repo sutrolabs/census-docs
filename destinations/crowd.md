@@ -6,7 +6,7 @@ description: This page describes how to use Census with Crowd.dev.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Crowd.dev** from the menu.
 3. When prompted, enter the following credentials:
    * **Tenant ID** and **Auth Token** can be found in the Crowd.dev app under **Settings** > **API Keys** ([here](https://app.crowd.dev/settings?activeTab=api-keys)).

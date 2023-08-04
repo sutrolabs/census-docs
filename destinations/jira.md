@@ -29,8 +29,8 @@ description: This page describes how to use Census with Jira
 
 ### 1. Connect to Jira
 
-* Once you are in Census, navigate to [Connections](https://app.getcensus.com/connections)
-* Click the Add Service button
+* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the New Destination button
 * Select Jira in the list, and click Connect
 
 ![](../.gitbook/assets/screely-1660216237814.png)

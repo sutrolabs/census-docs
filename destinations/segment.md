@@ -36,7 +36,7 @@ Segment Documentation on Write Keys are [here](https://segment.com/docs/connecti
 * Create a new HTTP API Source in the Connections page of Segment (found under "Server")
 * Name your connection and optionally label it (We recommend "Census" for ease of debugging)
 * Copy your write key from the saved connection
-* Navigate to the [Connections Page](https://app.getcensus.com/connections) of Census, click on the "Add Service" button and select Segment, and past the created token in the designated field
+* Navigate to the [Destinations Page](https://app.getcensus.com/destinations) of Census, click on the "New Destination" button and select Segment, and past the created token in the designated field
 
 ![](<../.gitbook/assets/Screen Shot 2021-11-12 at 11.16.21 AM.png>)
 

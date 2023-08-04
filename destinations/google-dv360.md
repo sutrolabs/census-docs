@@ -6,7 +6,7 @@ description: This page describes how to use Census with Google Display & Video 3
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Google Display & Video 360** from the menu.
 3. Complete the OAuth flow to grant Census access to DV360. Note that you'll need to create a separate Census connection for each advertiser you wish to send data to.
 

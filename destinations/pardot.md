@@ -29,12 +29,12 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect Pardot
 
-1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+2. Navigate to the **Destinations** page in Census and click **New Destination**.
 3. Select **Pardot** from the menu
 4. Follow the Pardot OAuth authentication flow, which will ask you to log in with your Pardot username and password.
 
-Once complete, you'll see your new connection in the **Service Connections** list. 👇
+Once complete, you'll see your new connection in the **Destinations** list. 👇
 
 ![](../.gitbook/assets/screely-1645633320514.png)
 
@@ -50,7 +50,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 * [Rockset](https://docs.getcensus.com/sources/rockset)
 * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
-After connecting your warehouse, your **Connections** page should have both your data warehouse and your Pardot source listed.
+After connecting your warehouse, your **Destinations** page should have both your data warehouse and your Pardot source listed.
 
 ### Step 3: Create your model
 

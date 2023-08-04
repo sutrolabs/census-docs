@@ -36,8 +36,8 @@ description: This page describes how to use Census with ActiveCampaign.
 
 ### 2. Connect ActiveCampaign
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, Navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select ActiveCampaign in the dropdown list
 
 ![](../.gitbook/assets/screely-1617902052429.png)

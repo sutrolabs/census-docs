@@ -6,7 +6,7 @@ description: This page describes how to use Census with Split.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Split** from the menu.
 3. Enter your **Admin API Token**, **SDK API Token**, and **Workspace Name**. You can find all of these in the Split app under the **API keys** and **Workspaces** pages of your **Admin settings**.
 

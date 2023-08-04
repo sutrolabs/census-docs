@@ -76,7 +76,7 @@ When syncing to Braze Cohorts you need to provide your Data Import key. To find 
 
 Great! Now let's pull it all together.
 
-1. In the [**Connections**](https://app.getcensus.com/connections) \*\*\*\* page, click on Add Service, and select "Braze"
+1. In the [**Destinations**](https://app.getcensus.com/destinations) page, click on New Destination, and select "Braze"
 2. You can provide whatever name you like for the connection
 3. Provide the appropriate Braze Endpoint URL
 4. Copy and paste your new Braze API key

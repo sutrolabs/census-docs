@@ -17,7 +17,7 @@ Census reads data from one or more tables (possibly across different schemata) i
 We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your Redshift warehouse. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
 
 * Skip this step if working in read-only mode. The ability to create the `CENSUS` schema and full admin access to all tables within that schema (including creating tables, deleting tables, and reading and writing to all tables).
-* Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
+* Read-only access to any tables and views in any schemata that you would like Census to publish to your destinations.
 
 Redshift permissions are complex and there are many ways to configure access for Census. The script below has been tested with Redshift and is known to work correctly:
 
