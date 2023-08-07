@@ -6,7 +6,7 @@ description: This page describes how to use Census with GitLab.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **GitLab** from the menu.
 3. Enter the URL for your GitLab instance. If you're using their standard cloud offering, this will be `gitlab.com`. If you have a self-managed instance, this might look like `gitlab.yourcompany.com`.
 
@@ -14,7 +14,7 @@ description: This page describes how to use Census with GitLab.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | ------------- |
 | Issues | ✅ | Internal ID | Update or Create, Update Only, Append |
 

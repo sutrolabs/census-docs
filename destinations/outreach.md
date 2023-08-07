@@ -29,14 +29,14 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect Outreach
 
-1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and navigate to [Destinations](https://app.getcensus.com/destinations).
+2. Click **New Destination**.
 3. Select **Outreach** from the dropdown list.
 4. Follow the Outreach authentication flow, which will ask you to log in with your Outreach username and password.
 
 Your end state should look something like this. 👇
 
-![Connections page with Outreach](../.gitbook/assets/202109\_Service\_Connection\_Outreach.png)
+![Destinations page with Outreach](../.gitbook/assets/202109\_Service\_Connection\_Outreach.png)
 
 ### Step 2: Connect your data warehouse
 
@@ -50,9 +50,9 @@ The steps for connecting your data warehouse will depend on your technology. See
 * [Rockset](https://docs.getcensus.com/sources/rockset)
 * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
-After connecting your warehouse, your **Connections** page will look something like this: 👇
+After connecting your warehouse, your **Destinations** page will look something like this: 👇
 
-![Connections page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Destinations page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ### Step 3: Create your model
 
@@ -108,7 +108,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers**                     |
+| **Object Name** | **Supported?** | **Sync Keys**                     |
 | --------------: | :------------: | ----------------------------------- |
 |         Account |        ✅       | any Text field                      |
 |        Prospect |        ✅       | Email (recommended), any Text field |

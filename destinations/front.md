@@ -29,8 +29,8 @@ In this guide, we will show you how to connect Front to Census and create your f
 
 ### 1. Connect Front
 
-* In Census, navigate to [Connections](https://app.getcensus.com/connections)
-* Click the Add Service button
+* In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the New Destination button
 * Select Front in the dropdown list
 
 ![](../.gitbook/assets/front\_step1.png)
@@ -48,7 +48,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
-After setting up your warehouse, your Census Connections page should look like this:
+After setting up your warehouse, your Census Destinations page should look like this:
 
 ![](../.gitbook/assets/front\_step3.png)
 

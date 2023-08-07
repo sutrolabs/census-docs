@@ -6,7 +6,7 @@ description: This page describes how to use Census with Google Display & Video 3
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Google Display & Video 360** from the menu.
 3. Complete the OAuth flow to grant Census access to DV360. Note that you'll need to create a separate Census connection for each advertiser you wish to send data to.
 
@@ -30,7 +30,7 @@ If you are syncing customer info and you map to an address field (First Name, La
 
 ## 🔀 Supported Objects and Behaviors
 
-<table data-header-hidden><thead><tr><th width="251" align="right"></th><th width="134" align="center"></th><th width="190"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Customer Match Audience</td><td align="center">✅</td><td>Any unique identifier</td><td>Update or Create</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="251" align="right"></th><th width="134" align="center"></th><th width="190"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Customer Match Audience</td><td align="center">✅</td><td>Any unique identifier</td><td>Update or Create</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more DV360 objects and/or behaviors.
 

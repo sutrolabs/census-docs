@@ -29,8 +29,8 @@ In this guide, we will show you how to connect Google Sheets to Census and creat
 
 Our Google Sheets connector behaves a little differently than other Census connectors. Instead of going through an OAuth connection flow, we provide you a Google Identity address you use to share the correct Google Sheets docs. This lets you be very specific about which Google Sheets you give Census access to.
 
-* In Census, navigate to [Connections](https://app.getcensus.com/connections)
-* Click the Add Service button
+* In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the New Destination button
 * Select Google Sheets in the dropdown list
 
 ![](../.gitbook/assets/screely-1622879441941.png)
@@ -55,7 +55,7 @@ If this is your first Census sync, you'll also need to connect your data warehou
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 * [Databricks](../sources/databricks.md)
 
-After setting up your warehouse, your Census Connections Page should look like this:
+After setting up your warehouse, your Census Destinations page should look like this:
 
 ![](../.gitbook/assets/screely-1622879500415.png)
 

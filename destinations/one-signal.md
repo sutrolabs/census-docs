@@ -8,7 +8,7 @@ description: >-
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **OneSignal** from the menu.
 3. Enter your **API Token** and **App ID**. These can be found in the OneSignal app by selecting the relevant app, then going to **Settings** > **Keys & IDs**.
 
@@ -16,7 +16,7 @@ description: >-
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**           | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**           | **Behaviors** |
 | --------------: | :------------: | ------------------------- | ------------- |
 |          Device |        ✅       | Player ID (aka Device ID) | Update Only   |
 

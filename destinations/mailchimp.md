@@ -29,13 +29,13 @@ In this guide, we will show you how to connect Mailchimp to Census and create yo
 
 ### 1. Connect Census to Mailchimp <a href="#1-connect-census-to-braze" id="1-connect-census-to-braze"></a>
 
-In the **Connections** page in Census, click the **Add Service** button under the **Service Connections** section, and select Mailchimp.
+In the **Destinations** page in Census, Click the **New Destination** button under the **Destinations** section, and select Mailchimp.
 
 You will be redirected to a page to log in to Mailchimp to authorize your account to Census. Once you enter your credentials and click the **Log In** button, you'll see a page like the image below, confirming you want to authorize Census.
 
 ![](<../.gitbook/assets/Screen Shot 2021-04-13 at 10.08.02 AM.png>)
 
-Once you've authorized Census, you'll be redirected back to the Connections page in Census and you should see your Mailchimp connection there.
+Once you've authorized Census, you'll be redirected back to the Destinations page in Census and you should see your Mailchimp connection there.
 
 If you want to see your connections in Mailchimp in the future, simply navigate to the **Profile** page, and scroll down to the **Connections and notifications** section.
 

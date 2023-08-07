@@ -42,7 +42,7 @@ Please note that SendGrid will only allow you to view your API key once when ini
 
 ### 3. Adding Credentials to Census
 
-With the SendGrid API key, return to Census and visit the **Connections** tab. Click on the **Add Service** button and select **SendGrid** from the menu. Copy and paste the API Key into the dialog and hit save. You should be clear to create a new sync!
+With the SendGrid API key, return to Census and visit the **Destinations** tab. Click on the **New Destination** button and select **SendGrid** from the menu. Copy and paste the API Key into the dialog and hit save. You should be clear to create a new sync!
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-24 at 5.44.57 PM.png>)
 

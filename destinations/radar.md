@@ -6,7 +6,7 @@ description: This page describes how to use Census with Radar.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Radar** from the menu.
 3. Open the Radar app in another window. Visit the home screen and copy your **Secret Key**.
 4. Return to Census and paste your **Secret Key**.
@@ -15,7 +15,7 @@ description: This page describes how to use Census with Radar.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | ------------- |
 | Geofence | ✅ | External ID and Tag | Update or Create |
 

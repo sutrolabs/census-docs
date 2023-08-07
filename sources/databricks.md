@@ -14,7 +14,7 @@ description: >-
 Census supports Databricks LTS versions: 7.3, 9.1, and 10.4
 {% endhint %}
 
-1\. Visit the **Connections** section on Census, and press **Add Data Warehouse Connection**, selecting **Databricks** from the list.
+1\. Visit the **Sources** section on Census, and press **New Source**, selecting **Databricks** from the list.
 
 2\. Enter the **hostname, port, and HTTP Path** for your cluster. These can be found in the Databricks UI under **Clusters** → **\[Your Cluster]** → **Advanced Options** \_\_ → \_\_ **JDBC/ODBC.** The [Databricks documentation](https://docs.databricks.com/integrations/bi/jdbc-odbc-bi.html#workspace-cluster) covers this in more detail.
 

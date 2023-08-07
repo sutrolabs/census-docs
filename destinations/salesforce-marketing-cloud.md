@@ -94,7 +94,7 @@ Salesforce Marketing Cloud will create the user, which may take a few seconds. C
 
 ### 3. Configure Census with Your Connection Information
 
-Go to [Census Connections](https://app.getcensus.com/connections), click "Add Service" and choose "Salesforce Marketing Cloud".
+Go to [Census Destinations](https://app.getcensus.com/destinations), click "New Destination" and choose "Salesforce Marketing Cloud".
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-01-03 at 10.41.25@2x.png" alt=""><figcaption></figcaption></figure>
 
@@ -155,7 +155,7 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 
 ## 🔀 Supported Objects and Behaviors
 
-<table data-header-hidden><thead><tr><th width="167" align="right"></th><th width="143" align="center"></th><th width="179"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Data Extension</td><td align="center">✅</td><td>Unique Identifier</td><td>Update or Create, Update Only, Mirror</td></tr><tr><td align="right">Contact</td><td align="center">✅</td><td>Contact Key</td><td>Update or Create</td></tr><tr><td align="right">API-Triggered Journey</td><td align="center">✅</td><td>Contact Key</td><td>Update or Create, Mirror</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="167" align="right"></th><th width="143" align="center"></th><th width="179"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Data Extension</td><td align="center">✅</td><td>Unique Identifier</td><td>Update or Create, Update Only, Mirror</td></tr><tr><td align="right">Contact</td><td align="center">✅</td><td>Contact Key</td><td>Update or Create</td></tr><tr><td align="right">API-Triggered Journey</td><td align="center">✅</td><td>Contact Key</td><td>Update or Create, Mirror</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Marketing Cloud objects and/or behaviors.
 

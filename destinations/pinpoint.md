@@ -44,7 +44,7 @@ Now attach the permissions policy `AmazonS3ReadOnlyAccess` to your role (if you�
 
 <figure><img src="../.gitbook/assets/pinpoint-accesskey-secretkey.png" alt=""><figcaption><p>Copy your Access Key ID and Secret Key.</p></figcaption></figure>
 
-5. Open the connections page in Census, click “Add Service”, and find Pinpoint. Now, enter the credentials that you previously noted down (**Access Key ID**, **Secret Key**, **Pinpoint Project ID**, **S3 Staging Bucket Name**, **Importer Role ARN**, **AWS Region**). Click “Connect” and ensure that the credentials test succeeds. You should now be ready to start syncing to Pinpoint!
+5. Open the Destinations page in Census, click “New Destination”, and find Pinpoint. Now, enter the credentials that you previously noted down (**Access Key ID**, **Secret Key**, **Pinpoint Project ID**, **S3 Staging Bucket Name**, **Importer Role ARN**, **AWS Region**). Click “Connect” and ensure that the credentials test succeeds. You should now be ready to start syncing to Pinpoint!
 6. (**Highly recommended**) Adjust your s3 staging bucket settings to expire objects after 7 days, so that s3 cleans up old staging data.
 
 ### Staging bucket cleanup
@@ -64,7 +64,7 @@ Set up your staging bucket expiry policies to clean up old staging data:
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**       | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors** |
 | --------------: | :------------: | --------------------- | ------------- |
 |         Segment |        ✅       | Any unique identifier | Mirror        |
 

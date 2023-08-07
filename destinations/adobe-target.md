@@ -6,7 +6,7 @@ description: This page describes how to use Census with Adobe Target.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Adobe Target** from the menu.
 3. Open the Target app in another window. Navigate to **Administration** > **Implementation** and copy your Client Code to clipboard.
 4. Return to Census and paste it under **Client ID**.
@@ -15,7 +15,7 @@ description: This page describes how to use Census with Adobe Target.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**       |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
 | --------------: | :------------: | ---------------- | ------------------- |
 | Profile | ✅ | Target ID, Third Party ID | Update or Create |
 

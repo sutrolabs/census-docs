@@ -70,7 +70,7 @@ If you already have a system user you can use it by simply generating a new toke
 
 ### Setting Up Connection
 
-You are now ready to set up a connection. Head to the Census Connections page and press **New Destination**. From the list select Facebook Product Catalog.
+You are now ready to set up a connection. Head to the Census Destinations page and press **New Destination**. From the list select Facebook Product Catalog.
 
 You will need to provide the System User Token you generated earlier along with your Business Account Id and the Catalog Id you want associated with this specific connection. You can find those in your Business Settings in **Business Info** and **Data Sources > Catalogs** respectively.
 

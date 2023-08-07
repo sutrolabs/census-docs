@@ -6,7 +6,7 @@ description: This page describes how to use Census with Discord.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Discord** from the menu.
 3. Open the Discord app in another tab and go to the settings for the channel you'd like to post to. Create a new webhook or view an existing one. Copy the Webhook URL.
 4. Return to Census and paste your **Webhook URL**.
@@ -15,7 +15,7 @@ description: This page describes how to use Census with Discord.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**       |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
 | --------------: | :------------: | ---------------- | ------------------- |
 | Webhook | ✅ | N/A | Append |
 

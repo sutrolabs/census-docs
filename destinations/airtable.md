@@ -38,8 +38,8 @@ Note: Census's permissions will be the same as this Airtable user. If you think 
 
 ### 2. Add an Airtable Connection
 
-1. Now back to Census! Navigate to the [Connections page](https://app.getcensus.com/connections).
-2. Click the **Add Service** button.
+1. Now back to Census! Navigate to the [Destinations page](https://app.getcensus.com/destinations).
+2. Click the **New Destination** button.
 3. Select **Airtable** from the list.\
    <img src="../.gitbook/assets/screely-1629998477683.png" alt="" data-size="original">
 4. Add your API key to the modal and give your connection a memorable name. Save once you've got both!\

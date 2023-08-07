@@ -72,7 +72,7 @@ Once created, you'll see your new service in the list of services. Click on **Vi
 
 ### 3. Adding Credentials to Census
 
-With all three pieces of information, return to Census and visit the **Connections** tab. Click on the **Add Service** button and select **Marketo** from the menu. Copy and paste the values into the dialog and hit save. You should be clear to create a new sync!
+With all three pieces of information, return to Census and visit the **Destinations** tab. Click on the **New Destination** button and select **Marketo** from the menu. Copy and paste the values into the dialog and hit save. You should be clear to create a new sync!
 
 ![](../.gitbook/assets/screely-1618889184718.png)
 
@@ -80,7 +80,7 @@ With all three pieces of information, return to Census and visit the **Connectio
 
 Census currently supports syncing to the following Marketo objects.
 
-<table data-header-hidden><thead><tr><th width="236.33333333333331" align="right"></th><th width="214" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td></tr><tr><td align="right">Lead</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Named Account</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Custom Objects</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Static List Membership</td><td align="center">✅</td><td></td></tr><tr><td align="right">Custom Activities</td><td align="center">✅</td><td></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="236.33333333333331" align="right"></th><th width="214" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Lead</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Named Account</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Custom Objects</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Static List Membership</td><td align="center">✅</td><td></td></tr><tr><td align="right">Custom Activities</td><td align="center">✅</td><td></td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Marketo.
 

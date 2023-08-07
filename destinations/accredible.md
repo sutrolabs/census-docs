@@ -6,7 +6,7 @@ description: This page describes how to use Census with Accredible.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Accredible** from the menu.
 3. Open the Accredible app in another browser tab. Navigate to **Settings** > **Manage API Keys** and either copy an existing API key or create a new one.
 4. Return to Census and paste it under **API Token**.
@@ -15,7 +15,7 @@ description: This page describes how to use Census with Accredible.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Credential | ✅ | Credential ID | Create Only |
 

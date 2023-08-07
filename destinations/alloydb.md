@@ -43,7 +43,7 @@ GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 
 We support syncing data to Tables in AlloyDB, but they must have a uniqueness constraint on a column. ​
 
-<table data-header-hidden><thead><tr><th width="157" align="center"></th><th width="133" align="center"></th><th></th><th></th></tr></thead><tbody><tr><td align="center"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><a data-footnote-ref href="#user-content-fn-1"><strong>Identifiers</strong></a></td><td><strong>Behavior</strong></td></tr><tr><td align="center">Table</td><td align="center">✅</td><td>Primary Keys or Columns with Uniqueness Constraints</td><td>Update or Create, Update Only, Append, Mirror</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="157" align="center"></th><th width="133" align="center"></th><th></th><th></th></tr></thead><tbody><tr><td align="center"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><a data-footnote-ref href="#user-content-fn-1"><strong>Sync Keys</strong></a></td><td><strong>Behavior</strong></td></tr><tr><td align="center">Table</td><td align="center">✅</td><td>Primary Keys or Columns with Uniqueness Constraints</td><td>Update or Create, Update Only, Append, Mirror</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for AlloyDB.
 

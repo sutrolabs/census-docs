@@ -6,7 +6,7 @@ description: This page describes how to use Census with Canny.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Canny** from the menu.
 3. Enter your **API Key**, which can be found in the Canny app at **Settings** > **API**.
 
@@ -14,7 +14,7 @@ description: This page describes how to use Census with Canny.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**       |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
 | --------------: | :------------: | ---------------- | ------------------- |
 | User | ✅ | User ID | Update or Create |
 

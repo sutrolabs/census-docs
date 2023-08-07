@@ -83,10 +83,8 @@ Here is a sample IAM policy that specifies the resources:
 ### Create an Amazon Athena connection
 
 1\. Ensure that the AWS IAM policy created in the "Required Permissions" section is attached to the IAM user that Census is impersonating.
-
-2\. In Census, go to **Connections** or click [here to go to the app](https://app.getcensus.com/connections)
-
-3\. Under Data Sources, click **Add Data Source** and select **Amazon Athena**
+2\. In Census, go to **Sources** or click [here to go to the app](https://app.getcensus.com/sources).
+3\. Click **New Source** and select **Amazon Athena**.
 
 ![](../.gitbook/assets/athena\_setup.png)
 

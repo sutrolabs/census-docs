@@ -27,8 +27,8 @@ description: This page describes how to use Census with Asana
 
 ### 1. Connect Asana
 
-* Once you are in Census, navigate to [Connections](https://app.getcensus.com/connections)
-* Click the Add Service button
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the New Destination button
 * Select Asana in the list
 
 You will be redirected to a page to log in to Asana to authorize access to your account. Once you sign in, you'll see a page like the image below, confirming you want to authorize Census.
@@ -39,7 +39,7 @@ You will be redirected to a page to log in to Asana to authorize access to your 
 
 Asana's primary object is a Task, which we support in Census.​
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | :-------------: | :------------: | :-------------: |
 |       Task      |        ✅       |   External ID   |
 

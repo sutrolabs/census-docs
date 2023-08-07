@@ -27,8 +27,8 @@ In this guide, we will show you how to connect webhooks to Census and create you
 
 ### 1. Create a Webhook Destination in Census
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select **Webhook** in the dropdown list
 * Name your Destination (for example, `webhooksite test`) and Input the URL of your endpoint 👇
 * Select whether syncs to this connection use Bulk Upload or not. For more see [#webhook-schema](webhook.md#webhook-schema "mention")
@@ -54,7 +54,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
-After setting up your warehouse, your Census Connections Page should look like this
+After setting up your warehouse, your Census Destinations page should look like this
 
 ![](../.gitbook/assets/screely-1630450333687.png)
 

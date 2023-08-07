@@ -30,7 +30,7 @@ Enrichments is currently supported on Snowflake, Redshift, and Postgres with mor
 
 Enrichments are configured on [entities.md](entities.md "mention"). Every entity now has a Data Enrichment tab that allows configuring enrichment. The data within the entity will act as the source data that is passed to the enrichment service, and Census will automatically store the results in the warehouse as well as add the data you specify to the entities.
 
-Before you start, you'll need to create a service connection to your enrichment service. You can add these in the [Connections tab](https://app.getcensus.com/connections). You'll see a Data Enrichment tag indicating a service can be used for enrichment and you can see the [full set of services we support](enrichment.md#supported-enrichment-services) below.
+Before you start, you'll need to create a connection to your enrichment service. You can add these in the [Destinations tab](https://app.getcensus.com/destinations). You'll see a Data Enrichment tag indicating a service can be used for enrichment and you can see the [full set of services we support](enrichment.md#supported-enrichment-services) below.
 
 With enrichment services enabled, you'll now see the option to turn on enrichment on your entities. Enabling enrichment requires three pieces of configuration:
 

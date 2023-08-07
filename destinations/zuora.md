@@ -32,11 +32,11 @@ Census will need needs the following pieces of information to connect to your Zu
 * Client Secret
 * Rest API Endpoint
 
-### 2. **Create the Census Service Connection**
+### 2. **Add the Destination**
 
 Now that we have the credentials from Zuora, we can now set up Zuora as a Destination in Census.
 
-1. In the **Connections** tab of Census, go to your Service Connections and click the **Add Service** button to create a new Zuora Service Connection.
+1. In the **Destinations** tab of Census, go to your Destinations and click the **New Destination** button to create a new Zuora connection.
 2. You can provide whatever name you like.
 3. Provide your credentials collected from Zuora in Step 1.
 4. Click **Connect**
@@ -99,7 +99,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 
 ## 🗄️ Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers**                      |
+| **Object Name** | **Supported?** | **Sync Keys**                      |
 | --------------- | :------------: | ------------------------------------ |
 | Account         |        ✅       | Account ID, Account Number           |
 | Subscription    |        ✅       | Subscription ID, Subscription Number |

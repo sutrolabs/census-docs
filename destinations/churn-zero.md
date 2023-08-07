@@ -6,7 +6,7 @@ description: Learn how to use Census to sync your Data Warehouse to ChurnZero.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **ChurnZero** from the menu.
 3. Enter your **domain**, and **App Key**. You can find all of these in the ChurnZero app under the **Admin > Application Keys > New App Key**.
 
@@ -15,7 +15,7 @@ description: Learn how to use Census to sync your Data Warehouse to ChurnZero.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Account | ✅ | AccountExternalId | Upsert |
 | Contact | ✅ | ContactExternalId | Upsert |

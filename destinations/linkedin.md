@@ -27,8 +27,8 @@ In this guide, we will show you how to connect LinkedIn to Census.
 
 ### Step 1: Connect LinkedIn
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 
 ![Select LinkedIn in the dropdown list](<../.gitbook/assets/LinkedIn Connection Button.png>)
 
@@ -60,7 +60,7 @@ Census currently supports syncing to the following LinkedIn objects through audi
 It is required to provide a DMP Segment Id for both objects that are supported
 {% endhint %}
 
-| **Object Name** | **Supported?** | **Identifiers**                                                                                |
+| **Object Name** | **Supported?** | **Sync Keys**                                                                                |
 | --------------: | :------------: | ---------------------------------------------------------------------------------------------- |
 |    Company List |        ✅       | Company Email Domain, Company Name, Company Page URL, Company Website Domain, Organization Urn |
 |       User List |        ✅       | Email (unhashed, SHA256/512 hashed), Google Advertising Id, Apple Advertising Id               |

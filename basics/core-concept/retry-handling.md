@@ -20,7 +20,7 @@ In certain destinations, like Salesforce, the batch size can be set at the sync 
 
 ## Rate Limits
 
-Census will respect rate limits where they exist on destination services. Depending on the Destination Service connection, you might notice 429 errors in the [Census API Inspector](../sync-monitoring/#api-inspector), which tracks Census requests to the destination service throughout the process of a sync running. If there is a `Retry-After` header in a rate limit response from a destination type, then Census will respect that parameter, waiting to sync the next batch until this time elapses.
+Census will respect rate limits where they exist on destination services. Depending on the destination, you might notice 429 errors in the [Census API Inspector](../sync-monitoring/#api-inspector), which tracks Census requests to the destination service throughout the process of a sync running. If there is a `Retry-After` header in a rate limit response from a destination type, then Census will respect that parameter, waiting to sync the next batch until this time elapses.
 
 If a batch fails during sync execution, Census will retry that batch based on exponential backoff, although there are certain services that have specific rate limits built-in to make sure that data is able to be sent to the services at the proper cadence.
 

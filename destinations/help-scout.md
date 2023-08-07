@@ -27,8 +27,8 @@ In this guide, we will show you how to connect Help Scout to Census.
 
 ### Step 1: Connect Help Scout
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button and find Help Scout from the dropdown list
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button and find Help Scout from the dropdown list
 
 ![](<../.gitbook/assets/Screen Shot 2022-06-25 at 8.34.07 AM.png>)
 
@@ -92,7 +92,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | --------------: | :------------: | --------------- |
 |        Customer |        ✅       | Primary Email   |
 

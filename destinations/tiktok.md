@@ -27,8 +27,8 @@ In this guide, we will show you how to connect Tik Tok Ads to Census and create 
 
 ### Connect TikTok
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select **TikTok** in the list
 * You will not need to enter credentials in Census. Just click **Connect** and you will be redirected to sign in to your TikTok for Business Account
 
@@ -42,11 +42,11 @@ In this guide, we will show you how to connect Tik Tok Ads to Census and create 
 
 ![Select the intended account](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.29.16 PM.png>)
 
-* The TikTok connection will be present and authorized on the Connections page and ready for a sync.
+* The TikTok connection will be present and authorized on the Destinations page and ready for a sync.
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** |      **Identifiers**      |
+| **Object Name** | **Supported?** |      **Sync Keys**      |
 | --------------: | :------------: | :-----------------------: |
 | Custom Audience |        ✅       | Email, IDFA/GAID, Phone\* |
 

@@ -45,7 +45,7 @@ For Firebase (iOS/Android) applications:
 
 ### Step 2: **Create the Census Connection**
 
-* Navigate to the Census [**Connections**](https://app.getcensus.com/connections) page and click **Add Service**
+* Navigate to the Census [**Destinations**](https://app.getcensus.com/destinations) page and click **New Destination**
 * Select Google Analytics 4 from the drop down list (Not Google Analytics)
 * Configure the three settings:
   * Add the Secret Value in the **API Secret** box of the connection.
@@ -76,7 +76,7 @@ If you need any help configuring Google Analytics, contact the [Census support t
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
-|  **Object Name** | **Supported?** |               **Identifiers**              | **Behavior**                                                                                      |
+|  **Object Name** | **Supported?** |               **Sync Keys**              | **Behavior**                                                                                      |
 | ---------------: | :------------: | :----------------------------------------: | ------------------------------------------------------------------------------------------------- |
 |            Event |        ✅       |               Unique Event ID              | Append                                                                                            |
 | User Properties  |        ✅       | <p>Client ID or </p><p>App Instance ID</p> | <p>Update Only <br><em><mark style="color:orange;">(ID must already exist in GA4)</mark></em></p> |

@@ -16,9 +16,9 @@ description: This page describes how to use Census with Microsoft Teams.
 
 ## 1️⃣ Connect Census to Teams
 
-In the [**Connections**](https://app.getcensus.com/connections) page in Census, click the **Add Service** button in the top right, and select Microsoft Teams.
+In the [**Destinations**](https://app.getcensus.com/destinations) page in Census, Click the **New Destination** button in the top right, and select Microsoft Teams.
 
-If you are not already logged in to Teams, you will be redirected to a page to log in to authorize your account to use Census. Once you've authorized Census, you'll be redirected back to the Connections page in Census where you'll see your Teams connection.
+If you are not already logged in to Teams, you will be redirected to a page to log in to authorize your account to use Census. Once you've authorized Census, you'll be redirected back to the Destinations page in Census where you'll see your Teams connection.
 
 ## 2️⃣ Connect Census to your data source
 

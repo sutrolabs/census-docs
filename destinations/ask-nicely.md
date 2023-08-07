@@ -6,7 +6,7 @@ description: This page describes how to use Census with AskNicely.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **AskNicely** from the menu.
 3. Enter your **API Key** and **Domain**. The former can be found in the AskNicely app under **Settings** > **API** > **API Keys**. The latter comes from the URL when you are logged into the app (e.g. `yourcompany.asknice.ly`).
 
@@ -14,7 +14,7 @@ description: This page describes how to use Census with AskNicely.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Contact | ✅ | Email | Update or Create |
 

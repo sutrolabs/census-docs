@@ -114,7 +114,7 @@ The last bit of information you’ll need is your NetSuite Account ID:
 
 ### 7. Finally, Configure Your Census Connection
 
-1. Now in Census, add a new Service Connection.
+1. Now in Census, add a new Destination.
 
 ![](../.gitbook/assets/netsuite\_step8.png)
 

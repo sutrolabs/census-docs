@@ -6,7 +6,7 @@ description: This page describes how to use Census with Webflow.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Webflow** from the menu.
 3. When prompted, log into your Webflow account to authorize Census.
 
@@ -14,7 +14,7 @@ description: This page describes how to use Census with Webflow.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | --------------: | :------------: | --------------- | ------------- |
 | Collection Item | ✅ | Slug | Update or Create, Update Only, Mirror |
 

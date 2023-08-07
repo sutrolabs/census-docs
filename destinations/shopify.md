@@ -48,7 +48,7 @@ Note: Census will only query Shopify based on the syncs/objects that you configu
 
 Census currently supports syncing to the following Shopify objects ([Contact us](mailto:support@getcensus.com) if you're looking for more!):
 
-| **Object Name** |       **Supported?**      | **Identifiers** |
+| **Object Name** |       **Supported?**      | **Sync Keys** |
 | --------------: | :-----------------------: | --------------- |
 |        Customer |             ✅             | Email           |
 |     Fulfillment |             ✅             |                 |

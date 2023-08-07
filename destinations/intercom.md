@@ -29,8 +29,8 @@ In this guide, we will show you how to connect Intercom to Census and create you
 
 ### 1. Connect Intercom
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select **Intercom** in the dropdown list
 
 ![](../.gitbook/assets/screely-1618112961265.png)
@@ -52,7 +52,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
-After setting up your warehouse, your Census Connections Page should look like this
+After setting up your warehouse, your Census Destinations page should look like this
 
 ![](../.gitbook/assets/screely-1618112995751.png)
 

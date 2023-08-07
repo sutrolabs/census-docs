@@ -6,7 +6,7 @@ description: This page describes how to use Census with Drip.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Drip** from the menu.
 3. Enter your **API Token** and **Account ID**. The former can be found in the Drip app under **User settings**. The latter comes from the URL when you are logged into the app (e.g. https://www.getdrip.com/**1234123**/dashboard).
 
@@ -14,7 +14,7 @@ description: This page describes how to use Census with Drip.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Event | ✅ | Any unique identifier | Append |
 | Person | ✅ | ID, Visitor UUID, Email | Update or Create |

@@ -29,8 +29,8 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect Ortto
 
-1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and navigate to [Destinations](https://app.getcensus.com/destinations).
+2. Click **New Destination**.
 3. Select **Ortto** from the dropdown list.
 4. Ortto uses API keys to authorize access to the API, so you will need to provide an **API Key** to Census.
    1. You can create an API key in Ortto specifically for Census. On the left-hand menu click **More** > **Data Sources.** On the Data Sources page click the **New Data Source** button then select **Custom API (advanced).** Give the source a name of your choosing and click **Create.** The API Key will be shown on the following page. Make sure to save it somewhere secure.
@@ -97,7 +97,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers**    |
+| **Object Name** | **Supported?** | **Sync Keys**    |
 | --------------: | :------------: | ------------------ |
 |    Organization |        ✅       | Name, Website      |
 |          Person |        ✅       | Email, External ID |

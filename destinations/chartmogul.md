@@ -40,8 +40,8 @@ For more details on finding your ChartMogul API keys, you may [follow ChartMogul
 
 ### 2. Connect ChartMogul to Census
 
-* Head back to Census and navigate to [Connections](https://app.getcensus.com/connections).
-* Click the Add Service button.
+* Head back to Census and navigate to [Destinations](https://app.getcensus.com/destinations).
+* Click the New Destination button.
 * Select ChartMogul in the dropdown list
 * Paste your ChartMogul account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
 
@@ -98,7 +98,7 @@ That's it! In 6 steps, you've connected Census and started syncing product data 
 
 Census currently supports syncing to the following ChartMogul objects.
 
-| **Object Name** | **Supported?** | **Identifiers**                                  |
+| **Object Name** | **Supported?** | **Sync Keys**                                  |
 | --------------: | :------------: | ------------------------------------------------ |
 |        Customer |        ✅       | Data Source ID + External ID (both are required) |
 |         Invoice |        ✅       | External ID                                      |

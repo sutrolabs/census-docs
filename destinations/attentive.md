@@ -6,7 +6,7 @@ description: This page describes how to use Census with Attentive.
 
 ## 🏃‍♀️ Getting Started
 
-1. Navigate to the **Destinations** tab in Census and click **Add Destination**.
+1. Navigate to the **Destinations** tab in Census and click **New Destination**.
 2. Select **Attentive** from the menu.
 3. Follow the prompts to grant Census access to your account.
 

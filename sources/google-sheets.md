@@ -14,8 +14,8 @@ This will walk you through creating a new Google Sheets source.
 
 First, you'll need to create a connection to your Google Sheets account.
 
-1. In Census, go to **Connections** or click [here to go to the app](https://app.getcensus.com/connections)
-2. Under Data Sources, click **Add Data Source** and select **Google Sheets**
+1. In Census, go to **Sources** or click [here to go to the app](https://app.getcensus.com/sources).
+2. Click **New Source** and select **Google Sheets**.
 
 ![](<../.gitbook/assets/image (18).png>)
 

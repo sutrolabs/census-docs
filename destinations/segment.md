@@ -36,7 +36,7 @@ Segment Documentation on Write Keys are [here](https://segment.com/docs/connecti
 * Create a new HTTP API Source in the Connections page of Segment (found under "Server")
 * Name your connection and optionally label it (We recommend "Census" for ease of debugging)
 * Copy your write key from the saved connection
-* Navigate to the [Connections Page](https://app.getcensus.com/connections) of Census, click on the "Add Service" button and select Segment, and past the created token in the designated field
+* Navigate to the [Destinations page](https://app.getcensus.com/destinations) of Census, click on the "New Destination" button and select Segment, and paste the created token in the designated field
 
 ![](<../.gitbook/assets/Screen Shot 2021-11-12 at 11.16.21 AM.png>)
 
@@ -82,7 +82,7 @@ In the " **What data do you want to sync?"** section‌
 
 Next up is the **"Where do you want to sync data to?"** section‌
 
-* Pick the name of Segment service from step 1 as **the Connection**, right now the object we can sync to is [limited to **User**](segment.md#supported-objects)\*\*\*\*
+* Pick the name of Segment service from step 1 as **the Connection**, right now the object we can sync to is [limited to **User**](segment.md#supported-objects)
 
 For the " **How should changes to the source be synced?"** section‌
 

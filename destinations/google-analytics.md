@@ -16,7 +16,7 @@ In this guide, we will show you how to connect Google Analytics to Census and cr
 
 ### Step 1: Configure Your Google Analytics Account
 
-Prior to adding Google Analytics as a Service Connection in Census you'll need to:
+Prior to adding Google Analytics as a Destination in Census you'll need to:
 
 * Create a **Custom Dimension** scoped to the **User** ([Google Documentation](https://support.google.com/analytics/answer/2709829#zippy=%2Cin-this-article))
 * Create the **Data Set** ([Google Documentation](https://support.google.com/analytics/answer/4524584?ref\_topic=6015090#zippy=%2Cin-this-article))
@@ -33,7 +33,7 @@ Prior to adding Google Analytics as a Service Connection in Census you'll need t
 
 ### **1B: Create the Data Set**
 
-* Navigate to the **Data Import** tab within the **Settings** to \*\*\*\* view existing data sets or Create a new one.
+* Navigate to the **Data Import** tab within the **Settings** to view existing data sets or Create a new one.
 * If creating a new Data Set start by setting the Data Set type to **User Data**
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-31 at 3.20.36 PM.png>)
@@ -48,7 +48,7 @@ Prior to adding Google Analytics as a Service Connection in Census you'll need t
 
 ### Step 2: **Create the Census Connection**
 
-* Navigate to the Census [**Connections**](https://app.getcensus.com/connections) page and click **Add Service**
+* Navigate to the Census [**Destinations**](https://app.getcensus.com/destinations) page and click **New Destination**
 * Select Google Analytics from the drop down list
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-24 at 3.30.10 PM.png>)

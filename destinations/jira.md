@@ -29,8 +29,8 @@ description: This page describes how to use Census with Jira
 
 ### 1. Connect to Jira
 
-* Once you are in Census, navigate to [Connections](https://app.getcensus.com/connections)
-* Click the Add Service button
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the New Destination button
 * Select Jira in the list, and click Connect
 
 ![](../.gitbook/assets/screely-1660216237814.png)
@@ -94,7 +94,7 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 Jira's primary object is an Issue, which we support in Census.​
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | :-------------: | :------------: | :-------------: |
 |      Issue      |        ✅       |    Unique ID    |
 

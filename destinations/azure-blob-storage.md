@@ -6,7 +6,7 @@ description: This page describes how to sync data to Azure Blob Storage.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Azure Blob Storage** from the menu.
 3. Enter the requested credentials.
 

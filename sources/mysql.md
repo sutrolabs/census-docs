@@ -16,7 +16,7 @@ Census reads data from one or more tables (possibly across different schemata) i
 
 We recommend you create a dedicated `CENSUS` user account with a strong, unique password. Census uses this account to connect to your MySQL database. In order for the Census connection to work correctly, the `CENSUS` account must have these permissions:
 
-* Read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
+* Read-only access to any tables and views in any schemata that you would like Census to publish to your destinations.
 
 MySQL permissions are complex and there are many ways to configure access for Census. The script below has been tested with recent MySQL versions and is known to work correctly:
 

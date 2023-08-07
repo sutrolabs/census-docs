@@ -6,7 +6,7 @@ description: This page describes how to use Census with Constant Contact.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Constant Contact** from the menu.
 3. When prompted, log into your Constant Contact account to authorize Census.
 
@@ -14,7 +14,7 @@ description: This page describes how to use Census with Constant Contact.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | --------------: | :------------: | --------------- | ------------- |
 | Contact | ✅ | Email | Update or Create |
 

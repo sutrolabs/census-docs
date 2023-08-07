@@ -6,7 +6,7 @@ description: This page describes how to use Census with Salesforce Commerce Clou
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Salesforce Commerce Cloud** from the menu.
 3. In another browser tab, open the Commerce Cloud [Account Manager](https://account.demandware.com/) and follow the instructions [here](https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html#create-an-api-client) to create a new API Client. Enter the following under **Allowed Scopes**: `sfcc.customerlists.rw`. Take note of your API Client ID and password—you'll need them in a moment.
 4. Navigate to **Administration** >  **Sites** >  **Manage Sites** and take note of the relevant **Site ID**.
@@ -17,7 +17,7 @@ description: This page describes how to use Census with Salesforce Commerce Clou
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Customer | ✅ | Customer No, Email | Update Only |
 

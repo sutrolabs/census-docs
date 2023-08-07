@@ -29,8 +29,8 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect Sailthru
 
-1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and navigate to [Destinations](https://app.getcensus.com/destinations).
+2. Click **New Destination**.
 3. Select Sailthru from the dropdown list.
 4. Follow the Sailthru authentication flow, see below screenshots where to find your credentials.
 
@@ -96,7 +96,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers** |
+| **Object Name** | **Supported?** | **Sync Keys** |
 | --------------: | :------------: | --------------- |
 |            User |        ✅       | Email           |
 |            List |       🔜       |                 |

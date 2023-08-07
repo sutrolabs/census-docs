@@ -6,7 +6,7 @@ description: This page describes how to use Census with Productboard.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Productboard** from the menu.
 3. Open Productboard in another browser tab and navigate to the **Integrations** page. Scroll down to the **Public API** section and generate a new **Access Token**. (If you don't see this option, reach out to Productboard support to ensure your plan has API access.)
 3. Return to Census and enter your **API Token**.
@@ -15,7 +15,7 @@ description: This page describes how to use Census with Productboard.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
 | Note | ✅ | Any unique ID | Append |
 

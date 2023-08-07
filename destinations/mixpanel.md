@@ -29,8 +29,8 @@ In this guide, we will show you how to connect Mixpanel to Census and create you
 
 ### 1. Connect Mixpanel
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections).
-* Click the Add Service button.
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations).
+* Click the New Destination button.
 * Select Mixpanel in the dropdown list
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603f083b24d2d21e45edbf32/file-gTS0HytG3A.png)
@@ -48,7 +48,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
-After setting up your warehouse, your Census Connections Page should look like this.
+After setting up your warehouse, your Census Destinations page should look like this.
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603f091224d2d21e45edbf37/file-1ApBodTTTO.png)
 

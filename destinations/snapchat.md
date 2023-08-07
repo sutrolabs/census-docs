@@ -25,7 +25,7 @@ description: This page describes how to use Census with Snapchat Ads.
 
 ### Connect Snapchat Ads
 
-1. In Census, click **Add Service**.
+1. In Census, navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Snapchat** from the menu.
 3. Follow the OAuth flow to connect to your Snapchat account.
 

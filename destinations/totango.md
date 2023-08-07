@@ -45,8 +45,8 @@ For additional information on finding Totango credentials you can find instructi
 
 ### 2. Connect Totango
 
-* Once you are in Census, Navigate to [Connections](https://app.getcensus.com/connections)
-* Click the **Add Service** button
+* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the **New Destination** button
 * Select **Totango** in the list
 * Paste your API Key into the **API Token** field
 * Paste your **Service Id** in the Service Id field

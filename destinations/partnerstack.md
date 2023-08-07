@@ -6,7 +6,7 @@ description: This page describes how to use Census with Partnerstack.
 
 ## 🏃‍♀️ Getting Started
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Partnerstack** from the menu.
 3. Open the Partnerstack app in another window. Go to **Settings** > **Integrations** and copy the relevant API keys (either Test or Production).
 4. Return to Census and paste them into the **Public Key** and **Secret Key** fields, respectively.
@@ -15,7 +15,7 @@ description: This page describes how to use Census with Partnerstack.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | --------------: | :------------: | --------------- | ------------- |
 | Customer | ✅ | Customer Key | Update or Create, Update Only |
 | Partnership | 🔜 | N/A | N/A |

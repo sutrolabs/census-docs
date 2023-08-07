@@ -29,8 +29,8 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect SFTP
 
-1. Log into Census and navigate to [**Connections**](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and navigate to [**Destinations**](https://app.getcensus.com/destinations).
+2. Click **New Destination**.
 3. Select **SFTP** from the dropdown list.
 4. Enter a **Name** for your destination. This is only for your reference – it can be anything that makes sense to you.
 5. Enter authentication details for your SFTP server. **Host** and **Username** are always required. If your server requires a password instead of an SSH key, enter the **Password**. If your server uses SSH keys, you can leave the **Password** blank.
@@ -39,7 +39,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this: 👇
 
-![Connections page with SFTP server set up](<../.gitbook/assets/Screen Shot 2021-10-11 at 6.14.04 PM.png>)
+![Destinations page with SFTP server set up](<../.gitbook/assets/Screen Shot 2021-10-11 at 6.14.04 PM.png>)
 
 ### Step 2: Connect your data warehouse
 
@@ -53,9 +53,9 @@ The steps for connecting your data warehouse will depend on your technology. See
 * [Rockset](../sources/rockset.md)
 * [Snowflake](../sources/snowflake.md)
 
-After setting up your warehouse, your **Connections** page should look something like this: 👇
+After setting up your warehouse, your **Destinations** page should look something like this: 👇
 
-![Connections page with data warehouse and SFTP server](<../.gitbook/assets/Screen Shot 2021-10-11 at 6.11.44 PM.png>)
+![Destinations page with data warehouse and SFTP server](<../.gitbook/assets/Screen Shot 2021-10-11 at 6.11.44 PM.png>)
 
 ### Step 3: Create your model
 

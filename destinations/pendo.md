@@ -49,15 +49,12 @@ Finally, copy the long code you see under **Key**. We'll use that in a minute.
 
 Now let's create your new Census connection to Pendo.
 
-1. In the **Settings** tab, Create a new Pendo Service Connection in Census.\
-
+1. In the **Settings** tab, create a new Pendo destination in Census.
 
 <figure><img src="../.gitbook/assets/CleanShot 2022-12-28 at 15.48.26@2x.png" alt=""><figcaption></figcaption></figure>
 
 1. You can provide whatever name you like.
 2.  Copy and paste your new Pendo Integration Key, and optionally, your Track Event Shared Secret.
-
-
 
     <figure><img src="../.gitbook/assets/CleanShot 2022-12-28 at 15.50.30@2x.png" alt=""><figcaption></figcaption></figure>
 
@@ -67,7 +64,7 @@ And you're all set and ready to get syncing! 🎉
 
 Census currently supports syncing to the following Pendo objects.
 
-| **Object Name** | **Supported?** | **Identifiers**                        |
+| **Object Name** | **Supported?** | **Sync Keys**                        |
 | --------------: | :------------: | -------------------------------------- |
 |         Account |        ✅       | Account ID                             |
 |         Visitor |        ✅       | Visitor ID                             |

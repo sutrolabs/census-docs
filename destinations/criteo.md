@@ -29,16 +29,16 @@ Criteo can only be authorized once to any Census instance. In order to create a 
 This can be done by a Criteo Admin from the page consent.criteo.com
 {% endhint %}
 
-1. Log into Census and navigate to [Connections](https://app.getcensus.com/connections).
-2. Click **Add Service**.
+1. Log into Census and navigate to [Destinations](https://app.getcensus.com/destinations).
+2. Click **New Destination**.
 3. Select **Criteo** from the menu
 4. Follow the Criteo OAuth authentication flow, which will ask you to log in with your Criteo username and password.
 5. Once logged in, select the Portfolio's you want Census to have access to and Approve
 6. Finally once back in Census you'll select the Audience
 
-Once complete, you'll see your new connection in the **Service Connections** list. 👇
+Once complete, you'll see your new connection in the **Destinations** list. 👇
 
-![Connections page with Criteo](<../.gitbook/assets/Screen Shot 2022-02-23 at 5.51.59 PM.png>)
+![Destinations page with Criteo](<../.gitbook/assets/Screen Shot 2022-02-23 at 5.51.59 PM.png>)
 
 ### Step 2: Create your model
 
@@ -80,7 +80,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Identifiers**                                            |
+| **Object Name** | **Supported?** | **Sync Keys**                                            |
 | --------------: | :------------: | ---------------------------------------------------------- |
 |        Audience |        ✅       | GUM Cookie ID, Mobile Ad ID, Email, LiveRamp Identity Link |
 

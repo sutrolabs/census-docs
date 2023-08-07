@@ -10,7 +10,7 @@ description: This page describes how to use Census with Pinterest.
 Note: You will need admin rights in your organization's Pinterest Business Account to be able to successfully authenticate the connection.
 {% endhint %}
 
-1. Click **Add Service**.
+1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Pinterest** from the menu.
 3. Follow the Pinterest OAuth authentication flow, which will ask you to log in with your Pinterest username and password.
 
@@ -18,7 +18,7 @@ Note: You will need admin rights in your organization's Pinterest Business Accou
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Identifiers**        |
+| **Object Name** | **Supported?** | **Sync Keys**        |
 | --------------: | :------------: | ---------------------- |
 |   Customer List |        ✅       | Email, IDFA, MAID \*\* |
 
