@@ -29,7 +29,7 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect Pardot
 
-1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+1. Log into Census and navigate to [Destinations](https://app.getcensus.com/destinations).
 2. Click **New Destination**.
 3. Select **Pardot** from the menu
 4. Follow the Pardot OAuth authentication flow, which will ask you to log in with your Pardot username and password.

@@ -29,7 +29,7 @@ Before you begin, you'll need the following:
 
 ### Step 1: Connect Ortto
 
-1. Log into Census and Navigate to [Destinations](https://app.getcensus.com/destinations).
+1. Log into Census and navigate to [Destinations](https://app.getcensus.com/destinations).
 2. Click **New Destination**.
 3. Select **Ortto** from the dropdown list.
 4. Ortto uses API keys to authorize access to the API, so you will need to provide an **API Key** to Census.
