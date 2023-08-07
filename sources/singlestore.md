@@ -33,6 +33,10 @@ GRANT SELECT ON <your schema>.* TO CENSUS;
 * Census supports SingleStoreDB Cloud and SingleStoreDB v7.1+
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 
-## 🚦Allowed IP Addresses <a href="#allowed-ip-addresses" id="allowed-ip-addresses"></a>
+## 🚦Advanced Network Configuration
 
-If you are restricting access by IP addresses, please add Census's IP addresses to the allowlist in your firewall. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+Census can successfully connect to SingleStore instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+
+## 🚑 Need help connecting to SingleStore?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

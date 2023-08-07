@@ -65,9 +65,9 @@ We **strongly recommend against** connecting Census a production PostgreSQL data
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 * If you are using an Azure database for PostgreSQL server the **Username** needs to be formatted as `username@hostname`. For AWS the format is `username`
 
-## 🔑 Encryption
+## 🚦Advanced Network Configuration
 
-All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). We recommend configuring your PostgreSQL instance to use TLS v1.2 or later for all connections.
+Census can successfully connect to Postgres instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
 ## 🚦Allowed IP Addresses
 

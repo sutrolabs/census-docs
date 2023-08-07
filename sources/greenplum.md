@@ -86,15 +86,11 @@ GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA "<your schema>" TO CENSUS;
 ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO CENSUS;
 ```
 
-## 🔑 Encryption
+## 🚦Advanced Network Configuration
 
-All connections from Census to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). We recommend configuring your Greenplum instance to use TLS v1.2 or later for all connections.
+Census can successfully connect to Greenplum instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
-## 🚦Allowed IP Addresses
-
-Depending on your Greenplum architecture (E.G. self-hosted, AWS, etc.) you may need to add Census IP addresses in your firewall allow list or security group inbound rules.
-
-You can find a list of Census IP addresses for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+We recommend configuring your Greenplum instance to use TLS v1.2 or later for all connections.
 
 ## 🚑 Need help connecting to Greenplum?
 

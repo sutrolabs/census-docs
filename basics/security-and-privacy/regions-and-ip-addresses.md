@@ -1,5 +1,9 @@
 # Network Access Controls
 
+## Secure Communication
+
+All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS.&#x20;
+
 ## Regions
 
 Census runs data syncs using Amazon Web Services in the **United States (us-east-1)** and **European Union (eu-central-1)** regions. Census never stores your data, but your selected region determines where data is processed during your Census syncs.

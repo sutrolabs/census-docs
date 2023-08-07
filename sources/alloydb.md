@@ -63,9 +63,9 @@ We **strongly recommend against** connecting Census to a production AlloyDB data
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 
-## 🔑 Encryption
+## 🚦Advanced Network Configuration
 
-All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE). We recommend configuring your AlloyDB instance to use TLS v1.2 or later for all connections.
+Census can successfully connect to AlloyDB instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
 ## 🚦Allowed IP Addresses
 

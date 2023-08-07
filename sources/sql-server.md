@@ -65,3 +65,7 @@ GRANT CREATE TABLE TO CENSUS;
 ## 🚦Advanced Network Configuration
 
 Census can successfully connect to SQL Server instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+
+## 🚑 Need help connecting to SQL Server?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

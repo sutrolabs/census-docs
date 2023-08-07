@@ -114,3 +114,7 @@ Step 4: Open your AWS Console in a separate tab and browse to the IAM service. C
 * Finish setting up your Role. Note that it should have the [required permissions](aws-athena.md#required-permissions) to access the Athena instance and associated S3 buckets you are using as your Census source!
 * When done, click on your role and copy its ARN. Go back to the tab where you're editing the Census Athena source and enter the role ARN.
 * Click 'Connect'. The tester should re-run and succeed.
+
+## 🚑 Need help connecting to Athena?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

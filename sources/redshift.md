@@ -74,9 +74,9 @@ Because this is altering the default behavior of another user, this command must
 * In Redshift if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata.
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 
-## 🔑 Encryption
+## 🚦Advanced Network Configuration
 
-All connections from the Census Data Warehouse Service to your database, as well as connections from your Redshift database to S3, are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS. All Census data stored in S3 is encrypted with AWS Server-Side Encryption (SSE).
+Census can successfully connect to AlloyDB instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
 ## 🚦 Allowed IP Addresses
 
@@ -107,8 +107,8 @@ With these steps complete, you should be able to complete a connection test, ind
 
 Advanced methods of Redshift deployment include deploying Redshift within an AWS VPC or private subnet and limiting direct database access to a separate proxy (typically the SSH Tunnel method described above).
 
-Census uses the `UNLOAD` command to bulk extract data efficiently (you can read more about our architecture in [How Census Works](https://docs.getcensus.com/basics/security-and-privacy#how-it-works)). By default, Redshift-in-VPC deployments do not allow Redshift to talk to S3. So when using this method, you'll need to separately grant permission to Redshift to communicate directly with S3 by adding an S3 VPC Endpoint.\
-\
+Census uses the `UNLOAD` command to bulk extract data efficiently (you can read more about our architecture in [How Census Works](https://docs.getcensus.com/basics/security-and-privacy#how-it-works)). By default, Redshift-in-VPC deployments do not allow Redshift to talk to S3. So when using this method, you'll need to separately grant permission to Redshift to communicate directly with S3 by adding an S3 VPC Endpoint.
+
 This is definitely an obscure feature of AWS but this article does a good job of [explaining S3 VPC endpoints](https://tomgregory.com/when-to-use-an-aws-s3-vpc-endpoint/), why they're needed and how to set one up.
 
 ## 🚑 Need help connecting to Redshift?
