@@ -171,9 +171,13 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for HubSpot.
 
-## 🔑 Require Permissions
+## 🔑 Required Permissions
 
 Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects. If you have limited permissions and still want to connect Census to HubSpot, [contact the Census support team](mailto:support@getcensus.com).
+
+## :electric\_plug: Disconnecting HubSpot
+
+If you need to disconnect HubSpot from Census for any reason, you can delete your connection from the Destinations page in Census and/or uninstall the Census app from your HubSpot account by following [these instructions](https://knowledge.hubspot.com/integrations/connect-apps-to-hubspot#uninstall-an-app). Note that you won't be able to sync new data from Census until the connection is restored, but no previously synced data in HubSpot will be impacted.
 
 ## 🚑 Need help connecting to HubSpot?
 
