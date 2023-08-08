@@ -114,13 +114,14 @@ Due to limitations of the ActiveCampaign API, Account records will sync signific
 
 ## 🗄 Supported Objects
 
-| Object Name | Supported? | Identifiers  |
-| ----------- | :--------: | ------------ |
-| Contact     |      ✅     | Email        |
-| Account     |      ✅     | Account Name |
-| Campaigns   |     🔜     |              |
-| Deals       |     🔜     |              |
-| Lists       |     🔜     |              |
+| Object Name    | Supported? | Identifiers  |
+| -------------- | :--------: | ------------ |
+| Contact        |      ✅     | Email        |
+| Account        |      ✅     | Account Name |
+| Custom Objects |      ✅     | External ID  |
+| Campaigns      |     🔜     |              |
+| Deals          |     🔜     |              |
+| Lists          |     🔜     |              |
 
 ### Updating a Contact's Lists
 
