@@ -12,153 +12,135 @@ In this guide, we will show you how to connect HubSpot to Census and create your
 
 ### Prerequisites
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
+* Have your Census account ready. If you need one, [start a free trial now](https://app.getcensus.com).
 * Have your HubSpot account ready.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
+* Have the proper credentials to access your data source. If you haven't connected a source to Census yet, [start there](broken-reference).
 
 ### 1. Connect HubSpot
 
-* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
-* Click the **New Destination** button
-* Select HubSpot in the Add Destination menu and click **Connect**
+* Once you are in Census, navigate to the [Destinations page](https://app.getcensus.com/destinations).
+* Click the **New Destination** button.
+* Select HubSpot from the menu and click **Connect.**
 
 ![](../.gitbook/assets/screely-1651800460992.png)
 
-Follow HubSpot OAuth flow to connect HubSpot. Your end state should look something like this below.
+Follow the OAuth flow to connect HubSpot. Your end state should look something like this:
 
-![](../.gitbook/assets/screely-1651800471783.png)
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-08 at 15.19.30@2x.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Create your first Sync
 
-Before you create your first sync, you'll also need to connect your data source. Once you've done that, head to the [Sync page](https://app.getcensus.com/syncs) and click the **Add Sync** button
+You'll need to have connected at least one source to Census before creating a sync. Once you've done that, head to the [Sync page](https://app.getcensus.com/syncs) and click the **New Sync** button.
 
-In the " **What data do you want to sync?"** section
+#### **Select a Source**
 
-* For the **Connection**, select the data warehouse you connected in step 2
-* For the **Source,** select the model you created in step 3
+This might be a SQL query you've written in Census or just a table in your warehouse.
 
-Next up is the **"Where do you want to sync data to?"** section
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-08 at 15.38.10@2x.png" alt=""><figcaption></figcaption></figure>
 
-* Pick HubSpot as **the Connection**
-* For Object, pick the one you want to sync data to; Contact or Company.
+#### **Select a Destination**&#x20;
 
-For the " **How should changes to the source be synced?"** section
+Select the HubSpot connection you set up in Step 1, then choose the object that you plan to sync to (e.g. Contact or Company).
 
-* Select your desired Sync Behavior from **Update or Create**, **Update Only, or Mirror**
-* Pick the right mapping key, it could be Email for Contacts, Domain for Companies but we recommend you use your own internal id if possible
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-08 at 15.42.06@2x.png" alt=""><figcaption></figcaption></figure>
 
-Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section
+#### **Select a Sync Behavior**
 
-* Here simply map the field from your HubSpot instance to the column from your model.
+Decide how you want Census to modify records in HubSpot.
 
-The end result should look something like this
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-08 at 15.42.28@2x.png" alt=""><figcaption></figcaption></figure>
 
-![](../.gitbook/assets/screely-1659718450629.png)
+#### **Select a Sync Key**
 
-Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync
+Determine how you'd like Census to match records between your source and HubSpot.
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-08 at 15.44.11@2x.png" alt=""><figcaption></figcaption></figure>
+
+#### **Set Up Field Mappings**
+
+Decide which columns you'd like to sync from your source data and how they map to fields in the destination.
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-08 at 15.46.23@2x.png" alt=""><figcaption></figcaption></figure>
+
+#### **Run a Test Sync**
+
+This step is optional but strongly encouraged. Click **Run Test** to send a test record to HubSpot. This ensures everything is wired up correctly before running a full sync.
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-08 at 15.48.54@2x.png" alt=""><figcaption></figcaption></figure>
+
+Click the **Next** button to review the details of your sync. When you're ready check the box next to **Run a sync now?** and click **Create** to start your sync!
 
 ### 3. Confirm the data is in HubSpot
 
-Now go back to your HubSpot and go view a record type (Contact or Company) that should have been updated. If everything went well, you should see your data in HubSpot
+Once your sync (or test run) completes, return to HubSpot and search for a record that should have been updated. If everything went as planned, you should see your data in HubSpot.
 
 ![](https://s3.amazonaws.com/helpscout.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f656c764cedfd00176363f8/file-aQC3QWxxq7.png)
 
-That's it, in just a few steps, you've connected Census to HubSpot and started syncing data from your warehouse to HubSpot 🎉
+That's it! In just a few steps, you've synced data from your warehouse to HubSpot :tada:
 
 ## 🏎 Sync Speed
 
-Census connects to HubSpot using their "Connected App" model, which are not subject to the daily HubSpot API call limit, only to the burst limit (100 requests/10 sec). Your Census syncs will not impact your HubSpot daily API limits or nor any other HubSpot integrations. For more information, see [HubSpot docs](https://legacydocs.hubspot.com/apps/api\_guidelines).
+Because Census connects to HubSpot via OAuth, you are only subject to a limit of 100 requests every 10 seconds (except for the Search API). For more information, see the [HubSpot documentation](https://developers.hubspot.com/docs/api/usage-details).
 
 {% hint style="warning" %}
-The choice of your sync identifier and behavior can have _**very drastic**_\*\* \*\* performance impacts to your sync.
+Your choice of sync key and behavior can have significant performance implications.
 
-Using a HubSpot Object ID or Contact Email as identifiers in HubSpot is fast, but using all other fields as identifiers is _**very**_ slow. That means that any syncs that create new records in HubSpot (other than Contacts by Email) will be slow. We're working with HubSpot to try and increase the speed of their APIs in order to improve our HubSpot sync speed.
+Using HubSpot Object IDs or Contact emails as identifiers in HubSpot is fast, but using all other fields as identifiers is very slow. That means any syncs that create new records in HubSpot (other than Contacts by email) will be slow. We're working with HubSpot to increase the speed of their APIs in order to improve sync speed.
 {% endhint %}
 
-| **Service**                 | Public API rate limit | **Records sync / Minute** |
-| --------------------------- | --------------------- | ------------------------- |
-| HubSpot (Free & Start Plan) | 600 calls / min       | \~600                     |
-| HubSpot (Pro & Enterprise)  | 900 calls / min       | \~900                     |
-| API Boost Add-on            | 1,200 calls / min     | \~1,200                   |
-
-Please be aware that with Custom Objects require extra API calls and are even slower as a result (about 1/3 the speed).
+Please be aware that Custom Objects require additional API calls and are even slower as a result (\~1/3 the speed).
 
 ## 🗄 Supported Objects
 
 [Contact us](mailto:support@getcensus.com) if you're looking for Census to support other HubSpot objects!
 
-|         **Object Name** | **Supported?** | **Sync Keys**                   |
-| ----------------------: | :------------: | --------------------------------- |
-|                 Company |        ✅       | Object ID, any Text/Number        |
-|                 Contact |        ✅       | Object ID, Email, any Text/Number |
-|   Contact & Static List |        ✅       | Email                             |
-|                    Deal |        ✅       | Object ID, any Text/Number        |
-|                 Product |        ✅       | Object ID, any Text/Number        |
-|               Line Item |        ✅       | Object ID, any Text/Number        |
-|           Custom Object |        ✅       | Object ID, any searchableProperty |
-| Custom Behavioral Event |        ✅       | Unique Event ID                   |
-|                   Email |        ✅       | N/A                               |
+<table data-header-hidden><thead><tr><th width="239" align="right"></th><th width="184.33333333333331" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Company</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Contact</td><td align="center">✅</td><td>Object ID, Email, any Text/Number</td></tr><tr><td align="right">Contact &#x26; Static List</td><td align="center">✅</td><td>Email</td></tr><tr><td align="right">Deal</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Product</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Line Item</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Custom Object</td><td align="center">✅</td><td>Object ID, any searchableProperty</td></tr><tr><td align="right">Custom Behavioral Event</td><td align="center">✅</td><td>Unique Event ID</td></tr><tr><td align="right">Email</td><td align="center">✅</td><td>N/A</td></tr></tbody></table>
 
 ### Custom Objects
 
-Custom Objects are available on HubSpot Enterprise plans.
+Custom Objects are available to customers on HubSpot's Enterprise plans.
 
-As of March 2021, only properties in the searchableProperties set are usable as sync identifiers to HubSpot Custom Objects. This is a bit confusing as this label only appears in the HubSpot API. A searchable property can be added to a Custom Object via HubSpot's API. The calls to make this update can be found in HubSpot's [Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Schema Tab > searchableProperties.
+As of March 2021, only properties in the `searchableProperties` set are usable as sync keys in Census. This is a bit confusing as this label only appears in the HubSpot API. A searchable property can be added to a Custom Object via HubSpot's API. The calls to make this update can be found in HubSpot's [Custom Objects API Docs](https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CXdp3VP16Md1G7ysXW2dykfC1TtC07101?te=W3R5hFj4cm2zwW3H4THp3ZZnXLW49Rd2x4hCWyFW43X00w43T4NTW43P1-Z3zfPd7W3FcKxL3FcKxJW3Fd-wl43T4CBw3C9Ryyb7l2\&si=8000000004039937\&pi=71ef6659-f8eb-4943-8de6-e67c9ea6453c) > Object Schema Tab > searchableProperties.
 
 Additionally, HubSpot has some apps available in their marketplace like [Dotsquares](https://hubspot.dotsquares.com/easy-custom-objects-setup/) that can assist with Custom Object management.
 
-If you need a hand making one of your existing Custom Object fields as searchable, please contact Census's Support team and we can walk you through it!
+If you need a hand making one of your existing Custom Object fields searchable, please [contact the Census support team](mailto:support@getcensus.com) and we can walk you through it!
 
 ### Managing Object Associations
 
-HubSpot supports an advanced method of defining relationships between objects they call [Associations](https://knowledge.hubspot.com/crm-setup/create-and-use-association-labels). Associations have a number of different properties:
+HubSpot supports an advanced method of defining relationships between objects called [Associations](https://knowledge.hubspot.com/crm-setup/create-and-use-association-labels). Associations have a number of different properties:
 
-* They're supported between all HubSpot object pairs, including custom objects.
+* They're supported between all HubSpot object pairs, including Custom Objects.
 * They can represent one-to-many and many-to-many relationships.
 * Associations can be labeled or unlabeled. HubSpot Professional and Enterprise plans also support custom labels.
 
-Many-to-many associations can be updated in Census syncs on either side of the associations, while one-to-many associations can only be set on the child or many side.
+Many-to-many associations can be updated in Census syncs on either side of the associations, while one-to-many associations can only be set on the child or "many" side.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-08-01 at 2.54.52 PM.png" alt=""><figcaption><p>Census Company/Contact Association</p></figcaption></figure>
 
 #### Labeled Associations
 
-Labels in HubSpot are a bit strange and Census provides some advanced configuration to make updating and removing labels a bit more straightforward.
+Labels in HubSpot are a bit strange. Census provides some advanced configurations to make updating and removing labels a bit more straightforward.
 
-When creating a labeled association between two objects in HubSpot, HubSpot will also automatically create an unlabeled association. Additionally, when creating an association from a contact to a company, HubSpot will create another association labeled Primary. That means that adding a labeled association with a Census sync may actually create up to three actual associations.
-
-
+When creating a labeled association between two objects in HubSpot, HubSpot will also automatically create an unlabeled association. Additionally, when creating an association from a Contact to a Company, HubSpot will create another association labeled Primary. That means that adding a labeled association with a Census sync may actually create up to three associations.
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Hubspot Labeled Association</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-08-01 at 2.39.44 PM.png" alt=""><figcaption><p>Census Labeled Association Sync Mapping</p></figcaption></figure>
 
+Unfortunately, HubSpot does not offer a way to remove these default associations when they're no longer necessary after removing the labeled association Census created. These associations may have actually been created intentionally so Census also cannot delete them automatically.
 
-
-Unfortunately, HubSpot does not offer a way to remove these default associations when they're no longer necessary when removing the labeled association Census created. These associations may have actually been created intentionally so Census also cannot delete them automatically.
-
-To navigate this, Census provides an advanced configuration for HubSpot syncs: **Automatically clean up orphaned default associations when removing any associations**.
+To navigate this, Census provides an option to automatically clean up orphaned default associations when removing any associations.
 
 ![](../.gitbook/assets/screely-1659672959589.png)
 
-When this behavior is enabled and a Census sync removes a labeled association, we'll also check to see if the remaining associations are only the unlabeled and Primary labeled associations, if so, we'll automatically remove those associations as well.
+When this behavior is enabled and a Census sync removes a labeled association, we'll also check to see if the remaining associations are only the unlabeled and Primary labeled associations. If so, we'll automatically remove those associations as well.
 
 By default, this feature is not enabled to avoid accidentally deleting associations that were created outside the sync and should still exist.
 
 ### Formatting Data for Hubspot Data Types
 
-**Object references (Associations):** will be mapped to a Hubspot Array of Reference data type. The source data should be formatted in an array.&#x20;
+**Object references (Associations):** will be mapped to a Hubspot Array of Reference data type. The source data should be formatted in an array.
 
 **Example:** `["RecordID_1", "RecordID_2"]`
 
@@ -168,11 +150,11 @@ By default, this feature is not enabled to avoid accidentally deleting associati
 
 ### Custom Behavioral Events
 
-Custom Behavioral Events require a little bit of prep work. You'll first need to jump into HubSpot and create your Custom Behavior Event (see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events)).
+Custom Behavioral Events require a bit of prep work. You'll first need to go into HubSpot and create your event (see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events)).
 
-You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for object, you'll need to provide that to the `Event Name` property during the Census sync.
+You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for the object—you'll need to provide that to the `Event Name` property during the Census sync.
 
-Note: The custom fields you've added will not show inside Census, you'll need to use the `New Custom Field` option to create the matching fields on Census, make sure they're named exactly the same (keep in mind, names are case sensitive!).
+Note: The custom fields you've added will not show inside Census. You'll need to use the **New Custom Field** option to create the matching fields in Census. Make sure they're named exactly the same (names are case-sensitive).
 
 ## 🔄 Supported Sync Behaviors
 
@@ -191,7 +173,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 
 ## 🔑 Require Permissions
 
-Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects. If you have limited permissions and still want to connect Census to HubSpot, contact the [contact the Census support team](mailto:support@getcensus.com).
+Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects. If you have limited permissions and still want to connect Census to HubSpot, [contact the Census support team](mailto:support@getcensus.com).
 
 ## 🚑 Need help connecting to HubSpot?
 
