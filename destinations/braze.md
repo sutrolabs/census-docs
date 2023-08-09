@@ -89,13 +89,13 @@ After the Connection Test is Green, you're all set and ready to get syncing! �
 
 Census currently supports syncing to the following Braze objects.
 
-|               **Object Name** | **Supported?** | **Sync Keys**                                                                                |
+|               **Object Name** | **Supported?** | **Sync Keys**                                                                                  |
 | ----------------------------: | :------------: | ---------------------------------------------------------------------------------------------- |
 |                         Event |        ✅       | Event ID                                                                                       |
 | Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |
 |                          User |        ✅       | External User ID                                                                               |
 |                    User Alias |        ✅       | Alias Name & Label                                                                             |
-|                   User Cohort |        ✅       | External User ID                                                                               |
+|                 User & Cohort |        ✅       | External User ID                                                                               |
 |                       Catalog |        ✅       | Catalog ID                                                                                     |
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-models-and-entities/defining-source-data/structured-data.md) to Braze:
@@ -170,13 +170,13 @@ Please note event properties need to be set up in the Braze preferences before t
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** |                       **Supported?**                      |                 **Objects**                 |
-| -------------------: | :-------------------------------------------------------: | :-----------------------------------------: |
-| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |            User, Cohort, Catalog            |
-|           **Update** |                             ✅                             |                   Catalog                   |
-|           **Append** |                             ✅                             |                Event, Cohort                |
+|        **Behaviors** |                       **Supported?**                      |                      **Objects**                     |
+| -------------------: | :-------------------------------------------------------: | :--------------------------------------------------: |
+| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                 User, Cohort, Catalog                |
+|           **Update** |                             ✅                             |                        Catalog                       |
+|           **Append** |                             ✅                             |                     Event, Cohort                    |
 |           **Mirror** |                             ✅                             | User, Subscription Group Membership, Cohort, Catalog |
-|           **Delete** |                             ✅                             |                     User                    |
+|           **Delete** |                             ✅                             |                         User                         |
 
 ### Mirror Mode Options
 
