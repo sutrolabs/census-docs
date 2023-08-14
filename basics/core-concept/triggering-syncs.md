@@ -3,16 +3,16 @@
 Running a sync manually is not that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in several ways:
 
 * [Schedule](triggering-syncs.md#schedule) (including via [Cron](triggering-syncs.md#cron-custom-schedules))
-* [dbt Cloud](triggering-syncs.md#dbt-cloud)
+* After a [dbt Cloud](triggering-syncs.md#dbt-cloud) or [Fivetran](triggering-syncs.md#fivetran) activity completes
 * After another sync with a [Sequence](triggering-syncs.md#sequences)
+* With Orchestration using [Airflow](triggering-syncs.md#airflow), [Dagster](https://dagster.io/integrations/dagster-census), or [Prefect](https://prefecthq.github.io/prefect-census/)
 * [Programmatically via API](triggering-syncs.md#sync-trigger-api)
-* With Orchestration: [Airflow](triggering-syncs.md#airflow), [Dagster](https://dagster.io/integrations/dagster-census), and [Prefect](https://prefecthq.github.io/prefect-census/)
 
 ## Schedule
 
 Schedules let you specify a time and frequency that Census can use to run your sync automatically. You can choose options from weekly all the way to Continuous, which means Census checks your source roughly every minute for new changes.
 
-![](../../.gitbook/assets/screely-1621265385900.png)
+![](<../../.gitbook/assets/Edit Schedule.png>)
 
 {% hint style="info" %}
 To remove a schedule from a sync, click the edit icon and select **Manual** from the drop down list.
@@ -38,7 +38,7 @@ Hourly during weekdays should be: `0 * * * 1,2,3,4,5` instead of `0 * * * 1-5`
 
 If you're using dbt Cloud to run your dbt project, you can configure Census to automatically run syncs whenever your models have been rebuilt. Simply select your dbt Cloud project's job to monitor and Census will automatically trigger a sync when it completes.
 
-![](../../.gitbook/assets/screely-1641611574815.png)
+![](<../../.gitbook/assets/dbt Cloud Trigger.png>)
 
 {% hint style="info" %}
 Using dbt Cloud to trigger syncs works great with [dbt Models](https://docs.getcensus.com/models/native-dbt-integration) but is not required. Both dbt integrations can be used independently.
@@ -51,19 +51,33 @@ To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https:/
 
 With your token in hand, you can now connect dbt Cloud to your dbt project.
 
-1. Visit the Settings page and select the Integrations tab\
-   ![](../../.gitbook/assets/screely-1641611308263.png)\
+1. Visit [Organizations Settings and select the Integrations tab](https://app.getcensus.com/home/integrations).
+2. Then copy your dbt Cloud API key, **Verify** your key is correct and has the proper permissions, and **Save** your settings.
 
-2. Then copy your dbt Cloud API key, **Verify** your key is correct and has the proper permissions, and **Save** your settings.\
-
+<figure><img src="../../.gitbook/assets/dbt Cloud Key.png" alt=""><figcaption></figcaption></figure>
 
 Now, you'll be able to use a dbt Cloud job to trigger syncs. Visit the **Configuration** tab of any of your syncs.
+
+## Fivetran
+
+If you use Fivetran to load data into your data warehouse, or make use of their data transformations, you can trigger Census syncs to run once that work has completed.
+
+<figure><img src="../../.gitbook/assets/Fivetran Trigger.png" alt=""><figcaption></figcaption></figure>
+
+To connect Census to Fivetran, you'll first need an API key and secret associated with an Account Admin user.&#x20;
+
+1. Visit [Organizations Settings and select the Integrations tab](https://app.getcensus.com/home/integrations).
+2. Copy and paste your Fivetran API Key and Secret. Press **Verify** to confirm they were copied correctly and have the correct permissions. **Save** your settings.
+
+<figure><img src="../../.gitbook/assets/Fivetran Key.png" alt=""><figcaption></figcaption></figure>
+
+Now you'll be able to select a Fivetran Connector or Transformation to trigger syncs. Visit the **Configuration** tab of any of your syncs.
 
 ## Sequences
 
 If your syncs have dependencies and you'd like to organize them to run in order, you can use a Sequence. A Sequence runs a dependent sync whenever its specified parent sync completes successfully. Sequences can be found on the sync configurations page:
 
-<figure><img src="../../.gitbook/assets/CleanShot 2022-11-01 at 12.59.37@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Sequence Trigger.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Sequences do not currently support specifying multiple parent syncs. If you are interested in multi-parent functionality, please email [support@getcensus.com](mailto:support@getcensus.com).
@@ -73,7 +87,7 @@ Sequences do not currently support specifying multiple parent syncs. If you are 
 
 Each sync can also be triggered via API. On the sync configuration page, you can access the trigger API endpoint for the sync.
 
-![](../../.gitbook/assets/screely-1621265332761.png)
+![](<../../.gitbook/assets/API Trigger.png>)
 
 An empty HTTP POST call to this endpoint will trigger the sync (no need to provide any data in the body). You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
 
@@ -143,8 +157,6 @@ curl https://bearer:[API_TOKEN]@app.getcensus.com/api/v1/sync_runs/[SYNC_RUN_ID]
 | records\_failed    | Number of records rejected by the destination.                                                                                                                                                             |
 
 ## Airflow
-
-{% embed url="https://www.loom.com/share/3437c30c24fb44c09aa0d81f79cf99e6" %}
 
 {% hint style="info" %}
 Heads up: Unlike Airflow 2, Airflow 1 doesn't show any non-"core" providers (i.e. Census!) in the connections UI. If you're using Airflow 1, Census should be configured as an "HTTP" Conn Type, [as documented here](https://github.com/sutrolabs/airflow-provider-census#configuration-in-airflow-110).
