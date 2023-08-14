@@ -24,7 +24,11 @@ In this guide, we will show you how to connect HubSpot to Census and create your
 
 ![](../.gitbook/assets/screely-1651800460992.png)
 
-Follow the OAuth flow to connect HubSpot. Your end state should look something like this:
+* Follow the OAuth flow to connect HubSpot.
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-14 at 10.33.29@2x.png" alt=""><figcaption></figcaption></figure>
+
+* Your end state should look something like this:
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-08-08 at 15.19.30@2x.png" alt=""><figcaption></figcaption></figure>
 
