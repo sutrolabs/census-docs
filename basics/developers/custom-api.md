@@ -44,7 +44,7 @@ Once deployed, select Functions from the top menu. You'll see a list that contai
 
 #### Set up the Connection
 
-Now head to Census, specifically the [Destinations page](https://app.getcensus.com/destinations). Click **New Destination** and select **Custom Destination API**. You can give your new connection any name you'll remember, and the URL will be the value you copied from Netlify a moment ago. Save your new connection and you should see Census testing your new connection is responding correctly. You should see ✅ in just a minute.
+Now head to Census, specifically the [Connections page](https://app.getcensus.com/connections). Click **New Destination** and select **Custom Destination API**. You can give your new connection any name you'll remember, and the URL will be the value you copied from Netlify a moment ago. Save your new connection and you should see Census testing your new connection is responding correctly. You should see ✅ in just a minute.
 
 ![](../../.gitbook/assets/screely-1622959628337.png)
 
