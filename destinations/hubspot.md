@@ -8,7 +8,7 @@ description: This page describes how to use Census with HubSpot.
 
 In this guide, we will show you how to connect HubSpot to Census and create your first sync.
 
-{% embed url="https://www.youtube.com/watch?v=pkbmg-TmTiY&feature=emb_title" %}
+{% embed url="https://www.loom.com/share/3b7ed3624e6542b08c8ea4e25907b6ed?sid=c877f144-d635-4e5b-aeef-c42f848f1522" %}
 
 ### Prerequisites
 
