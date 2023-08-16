@@ -26,6 +26,8 @@ Segments are available as a sync source option through the normal [sync creation
 
 <figure><img src="../../.gitbook/assets/screely-1681238384316.png" alt=""><figcaption></figcaption></figure>
 
+Segments and entities have the same capabilities as model based syncs but also enable the syncing of fields from any related source that is joined on a many:1 basis.  For example if syncing contacts you can also sync the company name of the contact. &#x20;
+
 ## Automatically Managing Destination Audiences
 
 Where available, Census also supports automatically creating new audiences in destinations to match your segments. For more information on this special sync type, see [Audience Syncs](../core-concept/audience-syncs.md).
