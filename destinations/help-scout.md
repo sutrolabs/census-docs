@@ -93,8 +93,8 @@ Click the **Next** button to see the final preview, which will have a recap of w
 ## 🗄 Supported Objects
 
 | **Object Name** | **Supported?** | **Sync Keys** |
-| --------------: | :------------: | --------------- |
-|        Customer |        ✅       | Primary Email   |
+| --------------: | :------------: | ------------- |
+|        Customer |        ✅       | Primary Email |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Help Scout.
 
@@ -110,6 +110,12 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 |      Update Only |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Help Scout.
+
+### Syncing to the Customer Object:
+
+**Address:** When updating address fields on a Customer record please note that if one of the below is present in your sync then all have to be included in the sync configuration. This is because all four fields are required by Help Scout to update the address ([Help Scout documentation here](https://developer.helpscout.com/mailbox-api/endpoints/customers/address/create/#request-fields)).
+
+* `City`, `State`, `Postal Code`, `Country`
 
 ## 🚑 Need help connecting to Help Scout?
 
