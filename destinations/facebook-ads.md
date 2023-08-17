@@ -192,6 +192,36 @@ Note: If you're reusing an existing Facebook Audience, Census will not remove an
 Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
+## 🆘 Common Errors
+
+Sometimes error messages can be a little cryptic. Here's some Facebook errors that pop up on occasion and what they mean.
+
+#### Authentication errors when syncing Custom Audiences:
+
+{% code overflow="wrap" %}
+```
+Custom Audience terms have not been accepted: Accept the Custom Audience terms at [url] to create or edit an audience with an uploaded customer list.
+```
+{% endcode %}
+
+In order to get around this error, the user that does the authentication to Census should be the same user that accepts the policy updates. For example, you may have a "Business" account on Facebook, but to authenticate to Census you might use personal Facebook accounts that are "attached" to the business account.  The corresponding personal account would need to accept the policy. \
+\
+If you are unsure if your team has already accepted the terms and conditions, you can make a GET call to see if your account has signed the terms and conditions.\
+\
+The API call is: \
+`GET act_<AD_ACCOUNT_ID>?fields=tos_accepted` \
+\
+A sample response would be something like this:&#x20;
+
+```
+{
+  "tos_accepted": {
+    "custom_audience_tos": 1 // this means the terms were signed
+  },
+  "id": "act_<AD_ACCOUNT>"
+}
+```
+
 ## 🚑 Need help connecting to Facebook?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
