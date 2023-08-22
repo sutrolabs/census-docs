@@ -54,13 +54,13 @@ Within Census, your dbt models will display your model's `description` parameter
 
 <figure><img src="../../../.gitbook/assets/screely-1683048647353.png" alt="Screenshot of a dbt model shown in Census. The &#x22;Description&#x22; is taken directly from the docs string you specify about your dbt model in any schema.yml file."><figcaption><p>The "Description" is taken directly from the docs string you specify about your dbt model in any schema.yml file.</p></figcaption></figure>
 
-## dbt Continuous Integration (CI) Checks
+## dbt Continuous Integration (CI) Checks in GitHub
 
 For dbt models used in Census syncs, Census can check whether you are going to drop, rename, or move a model that will end up breaking an active sync in your account. When a Pull Request (or commit to a Pull Request) is created, dbt CI Checks will help ensure that your dbt development never unexpectedly breaks downstream Census syncs.
 
-### Installing Checks
+### Installing CI Checks in GitHub
 
-To enable these CI checks, navigate to your dbt integration in Census and click "Enable CI/CD Tests in GitHub".
+To enable these CI checks, navigate to your dbt integration in Census and click "Enable CI/CD Tests in GitHub". Note that Census will require the `checks:read` permission to install.
 
 ![You can find dbt Checks in a new section of your dbt integration, under "Automatic tests in dbt".](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 3.43.09 PM.png>)
 
@@ -68,7 +68,7 @@ Once you enable CI checks, Census will automatically run a sample check on a PR.
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 4.38.56 PM.png>)
 
-If any tests do not pass, you can click "Details" to view more information about the results. You'll see a report of any broken models and their dependent syncs, with links to investigate these syncs further in Census.
+If any tests do not pass, you can click **Details** to view more information about the results. You'll see a report of any broken models and their dependent syncs, with links to investigate these syncs further in Census.
 
 ![A detailed view of the test failures.](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 4.39.19 PM.png>)
 
