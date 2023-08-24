@@ -167,6 +167,7 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 |              Item Receipt |        ✅       |
 |             Journal Entry |        ✅       |
 |                  Location |        ✅       |
+|         Other Charge Item |        ✅       |
 |                   Partner |        ✅       |
 |            Purchase Order |        ✅       |
 |               Sales Order |        ✅       |
@@ -205,7 +206,7 @@ Netsuite is one of our most complex destinations, and some objects have behavior
 
 **Invoice**
 
-* If you're syncing to the Item List on the Invoice object your Item List data will need to be formatted in a JSON array like the following example.`[{"amount": 2.5, "item": {"internalId": "13"}, "quantity": 1}]` .&#x20;
+* If you're syncing to the Item List on the Invoice object your Item List data will need to be formatted in a JSON array like the following example.`[{"amount": 2.5, "item": {"internalId": "13"}, "quantity": 1}]` .
 * For more information on the Invoice schema please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/invoice.html)
 
 For more information on all Netsuite Objects and their fields please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/account.html)
