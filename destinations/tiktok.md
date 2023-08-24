@@ -1,73 +1,35 @@
 ---
-description: This page describes how to use Census with Tik Tok Ads.
+description: This page describes how to use Census with TikTok Ads.
 ---
 
 # TikTok
 
 ## 🏃‍♀️ Getting Started
 
-In this guide, we will show you how to connect Tik Tok Ads to Census and create your first sync.
+* Navigate to the **Destinations** page in Census and click **New Destination**.
+* Select **TikTok** from the menu.
+* Click **Connect** and you will be redirected to sign in to your TikTok for Business account.
+* After completing the flow, you'll see your TikTok connection listed on the **Destinations** page.
 
-### Prerequisites
+![Connect to TikTok via the OAuth flow.](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.17.57 PM.png>)
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Tik Tok Ads account ready.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
+## 🔀 Supported Objects and Behaviors
 
-### Connect TikTok
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | -------------- | --------------|
+| Partner Audience | ✅ | Email, IDFA/GAID, Phone | Update or Create, Mirror |
+| Customer File Audience | ✅ | Email, IDFA/GAID, Phone | Update or Create, Mirror |
+| Offline Event Conversions | ✅ | Any unique identifier | Append |
+| Web Event Conversions | ✅ | Any unique identifier | Append |
 
-* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
-* Click the **New Destination** button
-* Select **TikTok** in the list
-* You will not need to enter credentials in Census. Just click **Connect** and you will be redirected to sign in to your TikTok for Business Account
+### Important Notes
 
-![](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.17.57 PM.png>)
+* We recommend using Partner Audiences over Customer File Audiences.
+* All audience identifiers can be provided as either the original value or a hashed value.
 
-* Sign In to your TikTok for Business account and authorize the necessary permission for Census. Click **Confirm** to authorize.
+![Census supports a range of audience identifiers.](<../.gitbook/assets/Screen Shot 2022-02-15 at 12.03.01 PM.png>)
 
-![Authorize the Census Connection](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.22.17 PM.png>)
-
-* Back in the Census user interface select the TikTok Advertiser account to connect
-
-![Select the intended account](<../.gitbook/assets/Screen Shot 2022-02-11 at 4.29.16 PM.png>)
-
-* The TikTok connection will be present and authorized on the Destinations page and ready for a sync.
-
-## 🗄 Supported Objects
-
-| **Object Name** | **Supported?** |      **Sync Keys**      |
-| --------------: | :------------: | :-----------------------: |
-| Custom Audience |        ✅       | Email, IDFA/GAID, Phone\* |
-
-\*Note: All identifiers can be provided as either the original value or a hashed value&#x20;
-
-![](<../.gitbook/assets/Screen Shot 2022-02-15 at 12.03.01 PM.png>)
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for TikTok.
-
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-|        **Behaviors** | **Supported?** |   **Objects**   |
-| -------------------: | :------------: | :-------------: |
-| **Update or Create** |        ✅       | Custom Audience |
-|           **Mirror** |        ✅       | Custom Audience |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for TikTok.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more TikTok objects and/or behaviors.
 
 ## 🚑 Need help connecting to TikTok Ads?
 
