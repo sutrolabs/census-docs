@@ -32,7 +32,6 @@ curl 'https://app.getcensus.com/api/v1/syncs' \
             "paused": false,
             "status": "Ready",
             "lead_union_insert_to": null,
-            "trigger_on_dbt_cloud_rebuild": false,
             "field_behavior": "specific_properties",
             "field_normalization": null,
             "mirror_strategy": null,
@@ -53,6 +52,16 @@ curl 'https://app.getcensus.com/api/v1/syncs' \
             "destination_attributes": {
                 "connection_id": 15,
                 "object": "user"
+            },
+            "triggers": {
+                "dbt_cloud": {
+                    "project_id": "12345",
+                    "job_id": "123456"
+                },
+                "fivetran": {
+                    "job_id": "test_job_id",
+                    "job_name": "test_job_name"
+                }
             },
             "mappings": [
                 {
@@ -96,7 +105,6 @@ curl 'https://app.getcensus.com/api/v1/syncs' \
             "paused": false,
             "status": "Ready",
             "lead_union_insert_to": null,
-            "trigger_on_dbt_cloud_rebuild": false,
             "field_behavior": "specific_properties",
             "field_normalization": null,
             "mirror_strategy": null,
@@ -195,7 +203,6 @@ curl 'https://app.getcensus.com/api/v1/syncs/[ID]' \
         "paused": false,
         "status": "Ready",
         "lead_union_insert_to": null,
-        "trigger_on_dbt_cloud_rebuild": false,
         "field_behavior": "specific_properties",
         "field_normalization": null,
         "mirror_strategy": null,
@@ -216,6 +223,16 @@ curl 'https://app.getcensus.com/api/v1/syncs/[ID]' \
         "destination_attributes": {
             "connection_id": 15,
             "object": "user"
+        },
+        "triggers": {
+            "dbt_cloud": {
+                "project_id": "12345",
+                "job_id": "123456"
+            },
+            "fivetran": {
+                "job_id": "test_job_id",
+                "job_name": "test_job_name"
+            }
         },
         "mappings": [
             {
@@ -337,7 +354,7 @@ curl --location --request POST 'https://app.getcensus.com/api/v1/syncs' \
 | schedule\_minute                                  | What minute of the hour this sync should run. Valid values are integers between 0 and 59 inclusive.                                                                                                                                                                                                                                                     |
 | cron\_expression                                  | If `schedule_frequency` is `"expression"`, specify what cron schedule this sync should run on. Valid value is a string containing a cron expression, such as `"* 1 * * *"`.                                                                                                                                                                             |
 | paused                                            | Whether or not this sync should be paused.                                                                                                                                                                                                                                                                                                              |
-| trigger\_on\_dbt\_cloud\_rebuild                  | Whether or not this sync should trigger on a DBT cloud rebuild.                                                                                                                                                                                                                                                                                         |
+| triggers                                          |  Specify dbt Cloud job id and project id and/or Fivetran job id and job name to trigger Census syncs after dbt Cloud jobs and/or Fivetran syncs/transforms successfully complete.                                                                                                                                                                                                                                                                                          |
 | field\_behavior                                   | Specify `sync_all_properties` to configure this to automatically update mappings when the source changes.                                                                                                                                                                                                                                               |
 | field\_normalization                              | <p>If <code>sync_all_properties</code> is specified, specify how you would like automatic mappings to be named. Valid options are:</p><ul><li><code>start_case</code></li><li><code>lower_case</code></li><li><code>upper_case</code></li><li><code>camel_case</code></li><li><code>snake_case</code></li><li><code>match_source_names</code></li></ul> |
 | high\_water\_mark\_attributes                     | Attributes used to identify the sync type. Only valid for `append` operation and source warehouse `Snowflake`The specific properties are described below.                                                                                                                                                                                               |
@@ -398,7 +415,13 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "label": "Test Sync (edited via API)",
-    "schedule_frequency": "daily"
+    "schedule_frequency": "daily",
+    "triggers": {
+        "dbt_cloud": {
+            "project_id": "12345",
+            "job_id": "123456"
+        }
+    },
     "mappings": [
         {
             "from": {
@@ -450,7 +473,6 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
         "paused": false,
         "status": "Ready",
         "lead_union_insert_to": null,
-        "trigger_on_dbt_cloud_rebuild": false,
         "field_behavior": "specific_properties",
         "field_normalization": null,
         "failed_run_notifications_enabled": true,
