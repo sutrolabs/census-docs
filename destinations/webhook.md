@@ -274,6 +274,60 @@ To send only one record in every request you should uncheck `Use Bulk Upload` on
 }
 </code></pre>
 
+## :wastebasket: Deleting Records
+
+If you select `Mirror` for your operation then the sync will send records that have been deleted from the source. In the schema above the `operation` field will have value `deleted`
+
+and by default the only field in the record will be `unique_id`. This is because most of the time you only need a unique record id to effectively delete a record in the destination. If you would instead like to send the entire record on deletes you can toggle the advanced configuration option in the sync settings page:
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-25 at 9.43.25 AM.png" alt=""><figcaption><p>Advanced configuration for sending full records in delete operations</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-25 at 9.45.04 AM.png" alt=""><figcaption><p>Advanced configuration option on existing sync page</p></figcaption></figure>
+
+**Default Delete Payload**
+
+```
+{
+  api_version: 1,
+  operation: 'deleted',
+  sync_run_at: '...',
+  connection_name: 'Webhook',
+  model_name: ...,
+  schema_name: '...',
+  table_name: '...',
+  sync_configuration_id: ...,
+  sync_configuration_name: ...,
+  data: { unique_id: '3' }
+}
+```
+
+**Delete Payload w/ Full Record**
+
+```
+{
+  api_version: 1,
+  operation: 'deleted',
+  sync_run_at: '...',
+  connection_name: 'Webhook',
+  model_name: ...,
+  schema_name: '...',
+  table_name: '...',
+  sync_configuration_id: ...,
+  sync_configuration_name: ...,
+  data: {
+    unique_id: '2',
+    bfield: false,
+    created_at: '...',
+    email: '...',
+    list: '...'
+  }
+}
+```
+
+
+
+
+
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
