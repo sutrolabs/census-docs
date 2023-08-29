@@ -90,6 +90,29 @@ GRANT USAGE ON ALL FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO ROLE
 GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
 ```
 
+## :nut\_and\_bolt:Configuring a new Snowflake connection
+
+1. Visit the **Sources** section on Census, and press **New Source**, selecting **Snowflake** from the list.
+2. Census will ask you to provide the **following:**
+   *   Snowflake Account Name&#x20;
+
+       This is the URL prefix you use to connect or log into Snowflake. It may include a service region or cloud provider:
+
+       ```
+       https://<account_name>.snowflake-computing.com/
+       ```
+
+       See the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/jdbc-configure.html#connection-parameters) for more information about the supported options.
+   * Query Execution Warehouse - this should match the warehouse you've created in the above instructions - for example`CENSUS_WAREHOUSE`
+   * User - the user you use to log into Snowflake
+   * Database Name (optional) - default database to log into
+   * Schema Name (optional) - default schema to log into
+   * Authentication - choose one of the following
+     * password - recommended.
+     * keypair - After saving the connection, Census will generate a public/private keypair and provide instructions for configuring your Snowflake user account to use it.
+3. Once you provide the required information, click Connect to finish the connection to Snowflake.
+4. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
+
 ## 💸 Managing Snowflake Warehouse Costs
 
 The script above creates a new virtual data warehouse (execution environment) for Census. This allows you to monitor and tune Census queries for the best balance of performance and speed.
