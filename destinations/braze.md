@@ -37,7 +37,9 @@ In this guide, we will show you how to connect Braze to Census and create your f
 
 Braze lets you create a number of API keys, each with their own set of permissions. You'll almost certainly want to create a new API key for Census rather than reusing an existing one.
 
-Within Braze's left navigation bar, scroll down to the very bottom. Under **App Settings** and click **Developer Console**.
+Within Braze's left navigation bar, scroll down to the very bottom. In the **Settings** tabs, under the subheading **Setup And Testing,** click **API Keys**.
+
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-30 at 08.48.51@2x.png" alt=""><figcaption></figcaption></figure>
 
 Then, inside the **API Settings** tab, under **Rest API Keys**, click **+ Create New API Key**.
 
@@ -52,6 +54,8 @@ You must include users.delete if you want to do the [remove option of Mirroring 
 {% endhint %}
 
 * `segments.list`
+* For API-triggered Campaigns: `campaigns.list` and `campaigns.trigger.send`
+* For Catalogs: All Catalogs permissions
 * This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update these permissions in the future.
 
 Scroll down and click **Save API Key**.
