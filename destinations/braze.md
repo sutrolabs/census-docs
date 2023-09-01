@@ -93,14 +93,7 @@ After the Connection Test is Green, you're all set and ready to get syncing! �
 
 Census currently supports syncing to the following Braze objects.
 
-|               **Object Name** | **Supported?** | **Sync Keys**                                                                                  |
-| ----------------------------: | :------------: | ---------------------------------------------------------------------------------------------- |
-|                         Event |        ✅       | Event ID                                                                                       |
-| Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |
-|                          User |        ✅       | External User ID                                                                               |
-|                    User Alias |        ✅       | Alias Name & Label                                                                             |
-|                 User & Cohort |        ✅       | External User ID                                                                               |
-|                       Catalog |        ✅       | Catalog ID                                                                                     |
+<table data-header-hidden><thead><tr><th width="257.3333333333333" align="right"></th><th align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Event</td><td align="center">✅</td><td>Event ID</td></tr><tr><td align="right">Subscription Group Membership</td><td align="center">✅</td><td><a href="https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships">See Here</a></td></tr><tr><td align="right">User</td><td align="center">✅</td><td>External User ID</td></tr><tr><td align="right">User Alias</td><td align="center">✅</td><td>Alias Name &#x26; Label</td></tr><tr><td align="right">User &#x26; Cohort</td><td align="center">✅</td><td>External User ID</td></tr><tr><td align="right">Catalog</td><td align="center">✅</td><td>Catalog ID</td></tr><tr><td align="right">API-Triggered Campaign</td><td align="center">✅</td><td>External User ID</td></tr><tr><td align="right">API-Triggered Canvas Entry</td><td align="center">✅</td><td>External User ID</td></tr></tbody></table>
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-models-and-entities/defining-source-data/structured-data.md) to Braze:
 
@@ -174,13 +167,7 @@ Please note event properties need to be set up in the Braze preferences before t
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** |                       **Supported?**                      |                      **Objects**                     |
-| -------------------: | :-------------------------------------------------------: | :--------------------------------------------------: |
-| **Update or Create** | [✅](https://docs.getcensus.com/basics/alerts#sync-alerts) |                 User, Cohort, Catalog                |
-|           **Update** |                             ✅                             |                        Catalog                       |
-|           **Append** |                             ✅                             |                     Event, Cohort                    |
-|           **Mirror** |                             ✅                             | User, Subscription Group Membership, Cohort, Catalog |
-|           **Delete** |                             ✅                             |                         User                         |
+<table data-header-hidden><thead><tr><th width="187" align="right"></th><th width="169.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center"><a href="https://docs.getcensus.com/basics/alerts#sync-alerts">✅</a></td><td align="center">User, Cohort, Catalog</td></tr><tr><td align="right"><strong>Update</strong></td><td align="center">✅</td><td align="center">Catalog, Cohort</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Event, Cohort, API-Triggered Campaign and Canvas Entry</td></tr><tr><td align="right"><strong>Mirror</strong></td><td align="center">✅</td><td align="center">User, Subscription Group Membership, Cohort, Catalog</td></tr><tr><td align="right"><strong>Delete</strong></td><td align="center">✅</td><td align="center">User</td></tr></tbody></table>
 
 ### Mirror Mode Options
 
