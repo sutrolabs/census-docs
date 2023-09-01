@@ -20,6 +20,7 @@
   * [Models](basics/data-models-and-entities/models/README.md)
     * [SQL Queries](basics/data-models-and-entities/models/census-models.md)
     * [dbt Models](basics/data-models-and-entities/models/native-dbt-integration.md)
+    * [Sigma](basics/data-models-and-entities/models/sigma.md)
     * [Looker](basics/data-models-and-entities/models/looker.md)
     * [Python Models (Snowflake-Only)](basics/data-models-and-entities/models/python-models.md)
   * [Structuring Data](basics/data-models-and-entities/defining-source-data/README.md)
