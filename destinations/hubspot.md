@@ -98,7 +98,7 @@ Please be aware that Custom Objects require additional API calls and are even sl
 
 [Contact us](mailto:support@getcensus.com) if you're looking for Census to support other HubSpot objects!
 
-<table data-header-hidden><thead><tr><th width="239" align="right"></th><th width="184.33333333333331" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Company</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Contact</td><td align="center">✅</td><td>Object ID, Email, any Text/Number</td></tr><tr><td align="right">Contact &#x26; Static List</td><td align="center">✅</td><td>Email</td></tr><tr><td align="right">Deal</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Product</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Line Item</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Custom Object</td><td align="center">✅</td><td>Object ID, any searchableProperty</td></tr><tr><td align="right">Custom Behavioral Event</td><td align="center">✅</td><td>Unique Event ID</td></tr><tr><td align="right">Email</td><td align="center">✅</td><td>N/A</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="239" align="right"></th><th width="184.33333333333331" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Company</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Contact</td><td align="center">✅</td><td>Object ID, Email, any Text/Number</td></tr><tr><td align="right">Contact &#x26; Static List</td><td align="center">✅</td><td>Email</td></tr><tr><td align="right">Deal</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Product</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Line Item</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Custom Object</td><td align="center">✅</td><td>Object ID, any searchableProperty</td></tr><tr><td align="right">Custom Behavioral Event</td><td align="center">✅</td><td>Unique Event ID</td></tr><tr><td align="right">Email</td><td align="center">✅</td><td>N/A</td></tr><tr><td align="right">Ticket</td><td align="center">✅</td><td>Record ID</td></tr></tbody></table>
 
 ### Custom Objects
 
@@ -171,7 +171,7 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 | **Update or Create** |        ✅       | All except Email |
 |      **Update Only** |        ✅       | All except Email |
 |           **Mirror** |        ✅       | All except Email |
-|           **Append** |        ✅       |       Email      |
+|           **Append** |        ✅       |   Email, Ticket  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for HubSpot.
 
