@@ -182,6 +182,7 @@
 * [Planhat](destinations/planhat.md)
 * [PostgreSQL](destinations/postgres.md)
 * [PostHog](destinations/posthog.md)
+* [Postscript](destinations/postscript.md)
 * [Productboard](destinations/productboard.md)
 * [Qualtrics](destinations/qualtrics.md)
 * [Radar](destinations/radar.md)
