@@ -24,11 +24,9 @@ Each Census Workspace has its own API key. You can access it within the **Settin
 
 ## Authenticating API Requests
 
-The Census API uses basic authentication to provide API credentials. When accessing the Census API, provide the following credentials using your client library or preferred tool:
+The Census API uses Bearer authentication to provide API credentials. When accessing the Census API, provide an `Authorization` header with your Workspace API Key as Bearer token value.
 
-| Username | `bearer`        |
-| -------- | --------------- |
-| Password | \<Your API Key> |
+`Authorization: Bearer <workspace-api-key>`
 
 {% hint style="info" %}
 If using a tool to make requests, please make sure to include this in your Headers:
