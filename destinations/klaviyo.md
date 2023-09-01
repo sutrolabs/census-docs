@@ -115,36 +115,34 @@ To update the **List** property, you'll need to provide the list **ID** or **Nam
 
 ## Syncing Updates to Profile
 
-To sync updates to Profiles within Klaviyo there is some set up that will need to be done on the Klaviyo side.&#x20;
+To sync updates to Profiles within Klaviyo there is some set up that will need to be done on the Klaviyo side.
 
-You'll need to set up a Segment within Klaviyo that pulls in all users in your Klaviyo instance and grab the ID of the created Segment.&#x20;
+You'll need to set up a Segment within Klaviyo that pulls in all users in your Klaviyo instance and grab the ID of the created Segment.
 
 ### **Steps:**
 
 * Create a Segment in Klaviyo with all users. This can be accomplished by adding a condition like email is not NULL or something else like that which makes sense for your data. (Example provided [here](https://community.klaviyo.com/lists-segments-and-profiles-35/how-can-i-export-all-profiles-into-one-customer-list-464) within Klaviyo).
-* Once created grab the Segment Id from the url&#x20;
+* Once created grab the Segment Id from the url
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-03-22 at 12.02.38 PM.png" alt=""><figcaption></figcaption></figure>
 
-* Add the Segment ID to the **All Profiles Segment ID** field within your Klaviyo connection in Census (screenshot).&#x20;
+* Add the Segment ID to the **All Profiles Segment ID** field within your Klaviyo connection in Census (screenshot).
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-03-22 at 11.56.52 AM.png" alt=""><figcaption></figcaption></figure>
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Sync Keys**                                |
-| --------------: | :------------: | ---------------------------------------------- |
-|         Profile |        ✅       | External ID (recommended), Email, Phone Number |
-|  Profile & List |        ✅       | External ID (recommended), Email, Phone Number |
+<table data-header-hidden><thead><tr><th width="174" align="right"></th><th width="167.33333333333331" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Profile</td><td align="center">✅</td><td>External ID (recommended), Email, Phone Number</td></tr><tr><td align="right">Profile &#x26; List</td><td align="center">✅</td><td>External ID (recommended), Email, Phone Number</td></tr></tbody></table>
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Klaviyo.
 
 ## 🔄 Supported sync behaviors
 
-|     **Behavior** | **Supported?** | **Objects** |
-| ---------------: | :------------: | :---------: |
-| Update or Create |        ✅       |     All     |
-|      Update Only |        ✅       |   Profile   |
+|     **Behavior** | **Supported?** |   **Objects**  |
+| ---------------: | :------------: | :------------: |
+| Update or Create |        ✅       |       All      |
+|      Update Only |        ✅       |     Profile    |
+|           Mirror |        ✅       | Profile & List |
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
