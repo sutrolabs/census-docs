@@ -163,6 +163,7 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 |                  Employee |        ✅       |
 |                   Invoice |        ✅       |
 |            Inventory Item |        ✅       |
+|      Inventory Adjustment |        ✅       |
 |          Item Fulfillment |        ✅       |
 |              Item Receipt |        ✅       |
 |             Journal Entry |        ✅       |
