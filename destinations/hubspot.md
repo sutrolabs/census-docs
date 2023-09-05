@@ -124,7 +124,7 @@ Many-to-many associations can be updated in Census syncs on either side of the a
 
 #### Labeled Associations
 
-Labels in HubSpot are a bit strange. Census provides some advanced configurations to make updating and removing labels a bit more straightforward.
+Labels in HubSpot can be complex. Census provides some advanced configurations to make updating and removing labels a bit more straightforward.
 
 When creating a labeled association between two objects in HubSpot, HubSpot will also automatically create an unlabeled association. Additionally, when creating an association from a Contact to a Company, HubSpot will create another association labeled Primary. That means that adding a labeled association with a Census sync may actually create up to three associations.
 
