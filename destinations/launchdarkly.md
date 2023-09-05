@@ -10,13 +10,15 @@ description: This page describes how to use Census with LaunchDarkly.
 2. Select **LaunchDarkly** from the menu.
 3. Open the LaunchDarkly app in another window to find the following credentials:
    1. **Service Access Token**: create a new token from **Account settings** > **Authorization**. Select the role `Admin` (not recommended) or add an inline role/custom policy and define granular permissions. You will need to select your desired environment and add the action `importEventData` if you want to sync event data as well as your desired project's metrics and add the `All Actions` action if you want to sync to metrics. Check the box next to **This is a service token**.
-   2. **Client Side ID**: go to **Account settings** > **Projects** and either click on an existing project or create a new one to get this ID.
+   2. **Project Key**: go to **Account settings** > **Projects** and use the **Project Key** as shown in the screenshot below
 
 {% hint style="info" %}
 Your access token needs to have permission to perform the action `importEventData`. If your token is an admin token it will work as well but the recommended approach is to use a custom role or policy. [read more](https://docs.launchdarkly.com/home/members/role-create)
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/LaunchDarkly (1).png" alt=""><figcaption><p>Create a Service Access Token from the LaunchDarkly app.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LaunchDarkly (1).png" alt=""><figcaption><p>1 Create a Service Access Token from the LaunchDarkly app.</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption><p>2 Find the Project Key </p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 
