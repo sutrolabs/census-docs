@@ -33,7 +33,7 @@ To enable Warehouse Writeback on a supported source connection:
 <figure><img src="../../.gitbook/assets/Warehouse Writeback.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Please note Census will only clean up the Warehouse Writeback tables according to the retention period for Active syncs. Census will not make any changes or delete logs for syncs that have been disabled.
+Please note Census will only clean up the Warehouse Writeback tables according to the retention period for Active syncs. Census will not make any changes or delete logs for syncs that have been Disabled or Deleted.
 {% endhint %}
 
 That's it! Logs will start populating for all syncs in this connection on their subsequent runs.
