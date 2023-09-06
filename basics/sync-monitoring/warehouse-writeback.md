@@ -32,6 +32,10 @@ To enable Warehouse Writeback on a supported source connection:
 
 <figure><img src="../../.gitbook/assets/Warehouse Writeback.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+Please note Census will only clean up the Warehouse Writeback tables according to the retention period for Active syncs. Census will not make any changes or delete logs for syncs that have been disabled.
+{% endhint %}
+
 That's it! Logs will start populating for all syncs in this connection on their subsequent runs.
 
 ## 🧮 Log Data
@@ -70,7 +74,7 @@ Metadata tables for source objects can be found in the following tables, by ware
 
 #### Schema
 
-<table><thead><tr><th width="198">Column</th><th width="549.3333333333333">Description</th></tr></thead><tbody><tr><td>id</td><td>Unique identifier for the source object. This joins to the <code>source_object_id</code> column in the <code>sync_log</code>  table.</td></tr><tr><td>type</td><td>Type of data set. The options with their meaning are:<br>- <code>DataWarehouse::FilterSegmentSource</code> -> A segment<br>- <code>DataWarehouse::Query</code> -> A model<br>- <code>DataWarehouse::BusinessObjectSource</code> -> An entity<br>- <code>DataWarehouse::Table</code> -> A table</td></tr><tr><td>name</td><td>Name of the data set.</td></tr><tr><td>model_id</td><td>For a source object with type <code>DataWarehouse::Query</code>, this points to the SQL, Looker, or dbt model associated with it.<br><br>The model is what you see in the Census UI and is what is responsible for storing a SQL query, dbt reference, etc. The <code>DataWarehouse::Query</code> source object lives between the model and your source and is responsible for translating the model definition into rows and columns.</td></tr><tr><td>business_object_id</td><td>For a source object with type <code>DataWarehouse::BusinessObjectSource</code>, this points to the entity associated with it.<br><br>The entity is what you see in the Census UI and is what you configure to fit your business needs. The <code>DataWarehouse::BusinessObjectSource</code> source object lives between the entity and your source and is responsible for translating the entity definition into rows and columns.</td></tr><tr><td>filter_segment_id</td><td>For a source object with type <code>DataWarehouse::FilterSegmentSource</code>, this points to the segment associated with it.<br><br>The segment is what you see in the Census UI and is where you configure conditional logic to segment your data. The <code>DataWarehouse::FilterSegmentSource</code> source object lives between the segment and your source and is responsible for translating the segment definition into rows and columns.</td></tr></tbody></table>
+<table><thead><tr><th width="198">Column</th><th width="549.3333333333333">Description</th></tr></thead><tbody><tr><td>id</td><td>Unique identifier for the source object. This joins to the <code>source_object_id</code> column in the <code>sync_log</code> table.</td></tr><tr><td>type</td><td>Type of data set. The options with their meaning are:<br>- <code>DataWarehouse::FilterSegmentSource</code> -> A segment<br>- <code>DataWarehouse::Query</code> -> A model<br>- <code>DataWarehouse::BusinessObjectSource</code> -> An entity<br>- <code>DataWarehouse::Table</code> -> A table</td></tr><tr><td>name</td><td>Name of the data set.</td></tr><tr><td>model_id</td><td>For a source object with type <code>DataWarehouse::Query</code>, this points to the SQL, Looker, or dbt model associated with it.<br><br>The model is what you see in the Census UI and is what is responsible for storing a SQL query, dbt reference, etc. The <code>DataWarehouse::Query</code> source object lives between the model and your source and is responsible for translating the model definition into rows and columns.</td></tr><tr><td>business_object_id</td><td>For a source object with type <code>DataWarehouse::BusinessObjectSource</code>, this points to the entity associated with it.<br><br>The entity is what you see in the Census UI and is what you configure to fit your business needs. The <code>DataWarehouse::BusinessObjectSource</code> source object lives between the entity and your source and is responsible for translating the entity definition into rows and columns.</td></tr><tr><td>filter_segment_id</td><td>For a source object with type <code>DataWarehouse::FilterSegmentSource</code>, this points to the segment associated with it.<br><br>The segment is what you see in the Census UI and is where you configure conditional logic to segment your data. The <code>DataWarehouse::FilterSegmentSource</code> source object lives between the segment and your source and is responsible for translating the segment definition into rows and columns.</td></tr></tbody></table>
 
 ### Destinations Table
 
@@ -84,7 +88,7 @@ Metadata tables for destinations can be found in the following tables, by wareho
 * **BigQuery:** `census.destinations`
 * **Redshift:** `census.destinations`
 * **PostgreSQL**: `census.destinations`
-* **Databricks**:  not yet supported
+* **Databricks**: not yet supported
 
 #### Schema
 
@@ -102,13 +106,11 @@ Metadata tables for destinations can be found in the following tables, by wareho
 * **BigQuery:** `census.destination_objects`
 * **Redshift:** `census.destination_objects`
 * **PostgreSQL**: `census.destination_objects`
-* **Databricks**:  not yet supported
+* **Databricks**: not yet supported
 
 #### Schema
 
 <table><thead><tr><th width="128">Column</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>Unique identifier for the destination object. This joins to the<code>destination_object_id</code> column in the <code>sync_log</code> table.</td></tr><tr><td>type</td><td>Type of the destination object. This can be any of the various destination objects we support, in the format <code>&#x3C;Destination name>::ObjectTypes::&#x3C;Destination object name></code></td></tr><tr><td>name</td><td>Name of the destination object.</td></tr></tbody></table>
-
-
 
 ## Example SQL Queries
 
