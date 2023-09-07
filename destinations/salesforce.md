@@ -10,23 +10,6 @@ description: This page describes how to use Census with Salesforce.
 
 In this guide, we will show you how to connect Salesforce to Census and create your first sync.
 
-### Prerequisites
-
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
-* Have your Salesforce account ready.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
-
 ## 🔑 Required permissions
 
 Census connects to your Salesforce instance through a standard OAuth connection to an individual user account. We recommend using a stand-alone account specifically for Census (often called a Service Account) so you can see Census updates in your audit history. Census primarily uses the [Salesforce Bulk API](https://developer.salesforce.com/docs/atlas.en-us.api\_asynch.meta/api\_asynch/asynch\_api\_intro.htm) to sync data to Salesforce in the most API quota-efficient way possible.
@@ -49,19 +32,11 @@ If you have an API-Only Salesforce user that is unable to log into the Salesforc
 
 Census supports Salesforce Sandbox instances as well. Note that Sandboxes have their own set of user accounts and you may need to create a new account for Census to replicate permissions. Any time a sandbox is refreshed from production, the account will need to be recreated and the Census link re-authorized.
 
-## Identifiers on Salesforce objects
+## Identifying Salesforce records
 
-Understanding identifiers on your source and destination objects is one of the most important decisions when creating a new sync in Census. Salesforce in particular makes the process very flexible, but all the options can also get confusing. This article will guide you through the process of creating and selecting identifiers on your Salesforce objects.
+Selecting the identifier on the destination object is one of the most important decisions when syncing to Salesforce. Salesforce in particular makes the process very flexible, but all the options can also get confusing. This article will guide you through the process of creating and selecting identifiers on your Salesforce objects.
 
-### Default identifiers on Salesforce objects
-
-By default, every Salesforce object has an ID field. This ID is automatically generated and assigned whenever a new record is created, and can't be changed. This means the ID is completely under Salesforce's control. Census (nor anyone else really!) cannot set or update that ID.
-
-Census can use the Salesforce ID field for **Update Only** syncs, but it cannot be used for Update or Create, or Create Only syncs.
-
-Default Salesforce objects may have other fields available as identifiers for syncs. For example, the Contact object has an Email field that can be used as an identifier as well. Note: The values in the Salesforce Email field are not required to be unique, which means Census may have trouble identifying which Salesforce record to update if two records have the same email. For this reason, we recommend you try to use an Unique External Identifier field whenever possible.
-
-### Creating new External Identifier fields
+### Using External Identifier fields (Recommended)
 
 This is the most reliable choice for identifiers on Salesforce objects, particularly for an **Update or Create** sync. This will ensure no records with duplicate IDs can be created. If you've already got a field like this, you can skip over the setup instructions, but take a look at the advice on reusing existing external ID fields below.
 
@@ -90,15 +65,32 @@ If you're planning to create a Multi-destination sync to both Lead & Contact or 
 
 ![](../.gitbook/assets/sfdc\_setup3.png)
 
-### Reusing existing External Identifier fields
+#### Reusing existing External Identifier fields
 
 If your object already has an identifier field, you're in great shape! One thing to double-check before using it for a sync is to make sure all the Salesforce records that should have an ID in that field actually do. If you've got an external ID field created but very few of the records that have an ID actually do, you'll want to make sure you fill that field first before creating a sync, otherwise Census won't know those records exist and will end up creating duplicates.
 
-If this sounds like your situation, you have a couple of options. You may choose to do all of them!
+If this sounds like your situation, you have a couple of options. You may choose to do all of them.
 
 * Manually go through your Salesforce records and fill in the missing ID values by hand.
 * Create a separate ID population sync in Census. This sync would be **Update Only** and typically requires creating a Census model that uses SQL to do some fuzzy matching on other properties such as the name of Salesforce records to fill the ID field.
 * Create your new sync anyway and let it create duplicates in Salesforce. Then use Salesforce's deduplication workflow to merge the duplicated objects together, making sure to keep the new ID value.
+
+### Using Salesforce IDs
+
+By default, every Salesforce object has an ID field. This ID is automatically generated and assigned whenever a new record is created, and can't be changed. This means the ID is completely under Salesforce's control. Census (nor anyone else really!) cannot set or update that ID.
+
+Census can use the Salesforce ID field for **Update Only** syncs, but it cannot be used for Update or Create, or Create Only syncs.
+
+### Using non-External ID fields as identifiers
+
+Census does allow using non-External ID fields as identifiers in certain situations:
+
+* Any string or numeric field can be used when using Update Only.
+* Default Salesforce objects' other identifier fields. For example, the Contact object has an Email field that can be used as an identifier as well. Note:&#x20;
+
+Note that, because these fields are not forced to be unique in Salesforce, Census will have trouble identifying which Salesforce record to update if duplicates are present. When this happens, Census will update one of the records, but not predictable.&#x20;
+
+For this reason, we recommend you try to use an Unique External Identifier field whenever possible.
 
 ## 🗄 Supported Objects
 
