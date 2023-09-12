@@ -166,12 +166,12 @@ Note: The custom fields you've added will not show inside Census. You'll need to
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |    **Objects**   |
-| -------------------: | :------------: | :--------------: |
-| **Update or Create** |        ✅       | All except Email |
-|      **Update Only** |        ✅       | All except Email |
-|           **Mirror** |        ✅       | All except Email |
-|           **Append** |        ✅       |   Email, Ticket  |
+|        **Behaviors** | **Supported?** |                **Objects**                |
+| -------------------: | :------------: | :---------------------------------------: |
+| **Update or Create** |        ✅       | All except Email, Custom Behavioral Event |
+|      **Update Only** |        ✅       | All except Email, Custom Behavioral Event |
+|           **Mirror** |        ✅       | All except Email, Custom Behavioral Event |
+|           **Append** |        ✅       |   Email, Ticket, Custom Behavioral Event  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for HubSpot.
 
