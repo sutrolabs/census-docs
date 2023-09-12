@@ -34,7 +34,7 @@ Census will try to match a dbt version based on the `require-dbt-version` field,
 * If Census does not support a version of dbt specified by the `require-dbt-version` field, the project will not compile sucessfully.
 * If Census supports multiple dbt versions that match the requirements, the latest version supported by Census will be used.
 
-Our dbt integration currently supports version `1.0.4`, `1.2.1`, `1.3.1`, `1.4.1`, and `1.5.0`. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
+Our dbt integration currently supports version `1.0.4`, `1.2.1`, `1.3.1`, `1.4.1`, `1.5.0` and `1.6.0`. We also post version support in our [changelog](https://whatsnew.getcensus.com/).
 
 ### Unsupported features
 
