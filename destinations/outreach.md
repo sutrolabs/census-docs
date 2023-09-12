@@ -108,7 +108,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Sync Keys**                     |
+| **Object Name** | **Supported?** | **Sync Keys**                       |
 | --------------: | :------------: | ----------------------------------- |
 |         Account |        ✅       | any Text field                      |
 |        Prospect |        ✅       | Email (recommended), any Text field |
@@ -127,6 +127,14 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 | Update or Create |        ✅       | All         |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Outreach.
+
+## Email Identifier Formatting:
+
+If you are using email as an identifier to sync to Prospects or Users Outreach requires the data to be formatted as an array.&#x20;
+
+You'll need to format your email identifiers in your source data to follow the format `["email@example.com"]`
+
+Please also note that your source column should still be typed as a text based column as Census only pulls in text or numeric source columns as available options for sync identifiers.
 
 ## 🔑 Required permissions
 
