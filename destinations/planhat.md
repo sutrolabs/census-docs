@@ -51,10 +51,15 @@ In Planhat, once a token is created, it will appear once and last forever. Make 
 
 Census currently supports syncing to the following Planhat objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**        |
+| **Object Name** | **Supported?** | **Sync Keys**          |
 | --------------: | :------------: | ---------------------- |
 |         Company |        ✅       | Source ID, External ID |
 |        End User |        ✅       | Source ID              |
+|        Activity |        ✅       | Any unique ID          |
+|           Churn |        ✅       | Source ID              |
+|         License |        ✅       | Source ID, External ID |
+|          Metric |        ✅       | External ID            |
+|             NPS |        ✅       | Source ID              |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Planhat. Custom fields for both objects are supported.
 
@@ -64,10 +69,7 @@ Census currently supports syncing to the following Planhat objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |    **Objects**    |
-| -------------------: | :------------: | :---------------: |
-| **Update or Create** |        ✅       | Company, End User |
-|      **Update Only** |        ✅       |      Company      |
+<table data-header-hidden><thead><tr><th width="198" align="right"></th><th width="183.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Company, End User, Churn, License, NPS</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Company</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Activity, Metric</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Planhat.
 
