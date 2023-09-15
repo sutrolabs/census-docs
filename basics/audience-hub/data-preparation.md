@@ -47,6 +47,9 @@ We currently support the following aggregations, more will be released soon.
 * Count
 * Most Frequent
 * Average&#x20;
+* % Change
+* Difference
+* Custom Filtering
 
 ### Enumerated Value Columns
 

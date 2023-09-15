@@ -17,7 +17,7 @@ This opens your data to a whole world of data integration possibilities. A few o
 ## **Set up**
 
 {% hint style="info" %}
-Entity API is available for customers on Census’s Platform Plan
+Entity API is available for customers on the Enterprise Plan.&#x20;
 {% endhint %}
 
 The Entity API can be enabled for each Census workspace individually. Once enabled, all Entities within that workspace will be available via the API.
@@ -45,7 +45,7 @@ The Entity API provides two endpoints:
 
 You can also access these APIs directly with our Postman collection.
 
-{% file src="../../.gitbook/assets/Census Entity API.postman_collection (1).json" %}
+{% file src="../../.gitbook/assets/Census Entity API Postman Collection.zip" %}
 
 ### List Entities
 

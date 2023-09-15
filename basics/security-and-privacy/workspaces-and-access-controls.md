@@ -10,7 +10,7 @@ description: >-
 RBAC provides peace of mind, ensuring only those with appropriate permissions can access sensitive user information or take potentially destructive actions with Census Syncs or Census configuration.
 
 {% hint style="info" %}
-Role-Based Access Controls are available on Platform plans only. Core plans can create up to two Workspaces.
+Role-Based Access Controls are available on Enterprise plans only. Professional plans can create up to two Workspaces.
 {% endhint %}
 
 ### Organization Administrators

@@ -24,7 +24,7 @@ Audience Hub provides a complete suite of tools and capabilities to enable fast 
 * Warehouse Writeback - Track segment performance and membership in your warehouse
 
 {% hint style="info" %}
-Audience Hub is available to all paid plans, with some premium functionality only available in the platform plan.
+Audience Hub is available for Enterprise plans.&#x20;
 {% endhint %}
 
 Interested in learning more about everything possible in Audience Hub? Read on!

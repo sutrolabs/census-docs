@@ -21,7 +21,7 @@ This will also enable a global History view of all resource changes across your 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-03 at 3.40.20 PM.png" alt=""><figcaption><p>A sample set of changes within the new History view.</p></figcaption></figure>
 
 {% hint style="warning" %}
-GitLink is only accessible to Platform Plan accounts. If you would like to enable GitLink and are not on the Platform Plan, please contact us at [support@getcensus.com](mailto:support@getcensus.com).
+GitLink is only accessible for Enterprise Plan accounts. If you would like to enable GitLink and are not on the Enterprise Plan, please contact us at [support@getcensus.com](mailto:support@getcensus.com).
 {% endhint %}
 
 ## Setup
