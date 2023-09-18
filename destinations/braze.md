@@ -174,7 +174,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 Braze's Mirror behavior optionally supports a choice of two actions when a record is removed from the source. This can be configured when setting up the sync initially. The first time the sync is performed, the records will be used as a basis for mirroring behaviour in future syncs:
 
 * **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze.
-* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced will be removed from the destination record (by setting them to Null). The identifier will not be removed from the destination record.
+* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced record will be removed from the destination record (by setting them to Null). The identifier will not be removed from the destination record.
 * **Subscription Group Membership** - This will unsubscribe users from the corresponding subscription group, as described [above](braze.md#braze-subscription-groups).
 
 Regardless of which option is selected, mirror syncs identify deletions of each type by comparing against the data they have already sent -- not the data that might or might not already exist in Braze. This means that the first sync will be an upsert for all records, and the second and following syncs will account for deletions from the source data.
