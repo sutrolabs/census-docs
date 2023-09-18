@@ -8,27 +8,9 @@ description: This page describes how to use Census with Salesforce Marketing Clo
 
 In this guide, we will show you how to connect Salesforce Marketing Cloud to Census and create your first sync.
 
-### Prerequisites
-
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Salesforce Marketing Cloud account ready, with the Administrator role.
-
 {% hint style="warning" %}
 This process involves several steps - please set aside 15-30 minutes to complete it. Note that you may be on an older or newer version of Marketing Cloud which has slightly different screens than the ones pictured below. Marketing Cloud configuration can be complex, so if you have any questions please [contact us](mailto:support@getcensus.com) via support@getcensus.com and we'll help you tailor these instructions to your needs.
 {% endhint %}
-
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### 1. Create and Configure a Server-to-Server Installed Package
 
@@ -94,9 +76,9 @@ Salesforce Marketing Cloud will create the user, which may take a few seconds. C
 
 ### 3. Configure Census with Your Connection Information
 
-Go to [Census Destinations](https://app.getcensus.com/destinations), click "New Destination" and choose "Salesforce Marketing Cloud".
+Go to [Census Destinations](https://app.getcensus.com/destinations), click **New Destination** and choose **Salesforce Marketing Cloud**.
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-01-03 at 10.41.25@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/SFMC - Card.png" alt=""><figcaption></figcaption></figure>
 
 In the dialog, fill out the data you gathered in steps 2 and 3:
 
@@ -112,9 +94,7 @@ In the dialog, fill out the data you gathered in steps 2 and 3:
 
     <figure><img src="../.gitbook/assets/CleanShot 2023-01-03 at 11.12.41@2x.png" alt=""><figcaption></figcaption></figure>
 
-Click "Save Connection".
-
-<figure><img src="../.gitbook/assets/sfmc credentials.png" alt=""><figcaption></figcaption></figure>
+Click **Save Connection**.
 
 Census will show your new Salesforce Marketing Cloud connection in its connections list
 
@@ -124,7 +104,7 @@ The final step is to configure Marketing Cloud to accept Census's SSH public key
 
 Return to Salesforce Marketing Cloud Setup and navigate to "Data Management" > "Key Management". Click "Create".
 
-![](../.gitbook/assets/sfmc\_step11.png)
+![](<../.gitbook/assets/SFMC - Config.png>)
 
 * For "Key Type", choose "SSH"
 * For "Name", type "Census Public Key"
@@ -143,15 +123,7 @@ Click in the "Search SSH Keys" box and find "Census Public Key" and select it. C
 
 ![](../.gitbook/assets/sfmc\_step14.png)
 
-### 5. Starting syncing
-
 You're ready to start using Census to load data from your warehouse to Salesforce Marketing Cloud!
-
-## 🏎 Sync Speed
-
-| **Service**                | **Records sync / Minute** |
-| -------------------------- | ------------------------- |
-| Salesforce Marketing Cloud | \~20,000                  |
 
 ## 🔀 Supported Objects and Behaviors
 
@@ -159,6 +131,43 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Marketing Cloud objects and/or behaviors.
 
-## 🚑 Need help connecting to Salesforce Marketing Cloud?
+## 🏗️ Working With Data Extensions
+
+Data Extensions are a fundamental component of Salesforce Marketing Cloud and are used in various capacities, including email personalization, segmentation, and reporting. They're unique in that they combine the common marketing automation concepts of segmentation and custom/relational data together into a single mechanism.&#x20;
+
+Census allows you to sync data to existing data extensions, create new ones, and add fields to existing ones as well.&#x20;
+
+### Creating a data extension
+
+You can select any existing data extension as a destination for a sync. You can also create a new data extension when setting up a Census sync.&#x20;
+
+<figure><img src="../.gitbook/assets/SFMC - New DE.png" alt=""><figcaption></figcaption></figure>
+
+1. Click New Object&#x20;
+2. Provide a name for your data extension
+3. Optionally, you can provide a different name for the identifier. By default, we'll use **ID**.
+
+{% hint style="info" %}
+You can also have Census create the data extension within a subfolder by providing it in the data extension name. The subfolder must already exist, Census won't automatically create it. The subfolder will be relative to any configured root folder (see below).
+{% endhint %}
+
+### Adding new properties
+
+Whether you're working with a brand new data extension or an existing one, you can always add more properties to a data extension. Within the Mappings section, either the **Add Mapping** or **Generate Mappings** allow you to add new properties to the data extension that will be created next time the sync is run.&#x20;
+
+### Setting a root folder
+
+Some Salesforce Marketing Cloud installations have a very large number of data extensions. Census allows specify a specific folder to use as the root or base folder. Only data extensions within this folder or its subfolders will be shown in Census and new data extensions will be created in this folder.
+
+<figure><img src="../.gitbook/assets/SFMC - Folder Path.png" alt=""><figcaption></figcaption></figure>
+
+1. Visit the Destinations page and find your Salesforce Marketing Cloud connection.
+2. Click **Edit**.
+3. Set the Folder Path value to match your desired folder.
+4. Click **Save Connection**.
+
+## ⚙️ Advanced Configuration
+
+By default, Census uses Salesforce Marketing Cloud's bulk upload mechanism which is powered by SFTP. This is the recommended mechanism for most syncs. However, for small data volumes, it may be preferred to send updates individually via Salesforce Marketing Cloud's SOAP API for faster processing. If your syncs must be processed with as low latency as possible and you have a relatively small number of changes, you can disable the standard SFTP method of syncing.
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
