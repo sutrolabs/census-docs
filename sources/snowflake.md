@@ -26,68 +26,36 @@ CREATE ROLE CENSUS_ROLE;
 -- Ensure the sysadmin role inherits any privileges the census role is granted. Note that this does not grant sysadmin privileges to the census role
 GRANT ROLE CENSUS_ROLE TO ROLE SYSADMIN;
 
--- Create a warehouse for the census user, optimizing for cost over performance
+-- Create a warehouse for the census role, optimizing for cost over performance
 CREATE WAREHOUSE CENSUS_WAREHOUSE WITH WAREHOUSE_SIZE = XSMALL AUTO_SUSPEND = 60 AUTO_RESUME = TRUE INITIALLY_SUSPENDED = FALSE;
-
--- Allow the census user to run queries in the warehouse
 GRANT USAGE ON WAREHOUSE CENSUS_WAREHOUSE TO ROLE CENSUS_ROLE;
-
--- Allow the census user to start and stop the warehouse and abort running queries in the warehouse
 GRANT OPERATE ON WAREHOUSE CENSUS_WAREHOUSE TO ROLE CENSUS_ROLE;
-
--- Allow the census user to see historical query statistics on queries in its warehouse
 GRANT MONITOR ON WAREHOUSE CENSUS_WAREHOUSE TO ROLE CENSUS_ROLE;
 
 -- Create the census user
 -- Do not set DEFAULT_WORKSPACE, this will impact which tables are visible to Census
 CREATE USER CENSUS WITH DEFAULT_ROLE = CENSUS_ROLE DEFAULT_WAREHOUSE = CENSUS_WAREHOUSE PASSWORD = '<strong, unique password>';
-
--- Grant the census role to the census user
 GRANT ROLE CENSUS_ROLE TO USER CENSUS;
 
--- Create a private bookkeeping database where Census can store sync state
--- Skip this step if working in read-only mode
-CREATE DATABASE "CENSUS";
-
--- Give the census user full access to the bookkeeping database
--- Skip this step if working in read-only mode
-GRANT ALL PRIVILEGES ON DATABASE "CENSUS" TO ROLE CENSUS_ROLE;
-
--- Create a private bookkeeping schema where Census can store sync state
--- Skip this step if working in read-only mode
-CREATE SCHEMA "CENSUS"."CENSUS";
-
--- Give the census user full access to the bookkeeping schema
--- Skip this step if working in read-only mode
-GRANT ALL PRIVILEGES ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
-
--- Give the census user the ability to create stages for unloading data
--- Skip this step if working in read-only mode
-GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
-
--- Let the census user see this database
+-- Let the census user read the data you want to sync
 GRANT USAGE ON DATABASE "<your database>" TO ROLE CENSUS_ROLE;
-
--- Let the census user see this schema
 GRANT USAGE ON SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-
--- Let the census user read all existing tables in this schema
 GRANT SELECT ON ALL TABLES IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-
--- Let the census user read any new tables added to this schema
 GRANT SELECT ON FUTURE TABLES IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-
--- Let the census user read all existing views in this schema
 GRANT SELECT ON ALL VIEWS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-
--- Let the census user read any new views added to this schema
 GRANT SELECT ON FUTURE VIEWS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-
--- Let the census user execute any existing functions in this schema
 GRANT USAGE ON ALL FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-
--- Let the census user execute any new functions added to this schema
 GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
+
+-- Required for Advanced Sync Engine, not required for Basic Sync Engine: 
+--  Create a private bookkeeping database where Census can store sync state,
+--  perform faster unloads, and keep Warehouse Writeback logs
+
+CREATE DATABASE "CENSUS";
+GRANT ALL PRIVILEGES ON DATABASE "CENSUS" TO ROLE CENSUS_ROLE;
+CREATE SCHEMA "CENSUS"."CENSUS";
+GRANT ALL PRIVILEGES ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
+GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
 ```
 
 ## :nut\_and\_bolt:Configuring a new Snowflake connection
