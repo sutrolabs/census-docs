@@ -40,6 +40,21 @@ description: This page describes how to use Census with Snapchat Ads.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Snapchat objects.
 
+### Field Normalization
+
+Census does not automatically normalize PII fields sent to Snapchat. When providing values to Census, please apply the normalization specified by Snapchat:
+
+* [Conversion Events](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene)
+* [Customer List](https://marketingapi.snapchat.com/docs/#customer-lists)
+
+Census also supports passing prehashed PII fields directly to Snapchat for increased data security.&#x20;
+
+| Property                            | Normalization                                                                                                                                                                                                                                          | Hash Method          |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
+| Email                               | <ul><li>Trim leading and trailing whitespace</li><li>Lowercase</li></ul>                                                                                                                                                                               | Lowercase Hex SHA256 |
+| Mobile Advertiser ID (IDFA or GAID) | <ul><li>Lowercase</li></ul>                                                                                                                                                                                                                            | Lowercase Hex SHA256 |
+| Phone Number                        | <ul><li>Include country code (remove any double 0 in front of the country code)</li><li>If the number itself begins with a 0 this should be removed</li><li>Exclude any non-numeric characters such as whitespace, parentheses, ‘+’, or ‘-’.</li></ul> | Lowercase Hex SHA256 |
+
 ## 🔄 Supported Sync Behaviors
 
 |     Behaviors    |      Supported?      |      Objects     |
