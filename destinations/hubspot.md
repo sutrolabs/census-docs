@@ -84,7 +84,7 @@ That's it! In just a few steps, you've synced data from your warehouse to HubSpo
 
 ## 🏎 Sync Speed
 
-Because Census connects to HubSpot via OAuth, you are only subject to a limit of 100 requests every 10 seconds (except for the Search API). For more information, see the [HubSpot documentation](https://developers.hubspot.com/docs/api/usage-details).
+Census uses a variety of APIs to achieve the highest possible speed. With the right sync configuration (see below), Census can **update 10,000 contacts per second**. Census connects to HubSpot via OAuth, which is subject to a limit of 100 requests every 10 seconds (except for the Search API). For more information, see the [HubSpot documentation](https://developers.hubspot.com/docs/api/usage-details).
 
 {% hint style="warning" %}
 Your choice of sync key and behavior can have significant performance implications.
