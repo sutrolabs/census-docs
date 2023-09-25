@@ -98,7 +98,7 @@ Here you can write SQL queries that contain the conversion action you want to se
 
 Google Enhanced Conversions require a specific set of properties.&#x20;
 
-#### A. Minimum Event Parameters
+#### A. Minimum Conversion Parameters
 
 We'll want a model that has the following three required fields:
 
@@ -152,7 +152,14 @@ It may take around 3 hours for synced offline conversions to show up in your Goo
 
 ## 🔄 Supported Sync Behaviors
 
-<table data-header-hidden><thead><tr><th align="right"></th><th data-hidden></th><th data-hidden align="center"></th><th data-hidden></th><th data-hidden></th><th data-hidden></th><th data-hidden></th><th data-hidden></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td><strong>Object</strong></td><td align="center"><strong>Supported?</strong></td><td></td><td><strong>Identifier</strong></td><td><strong>Object</strong></td><td><strong>Object</strong></td><td><strong>Identifier</strong></td></tr><tr><td align="right">Update or Create</td><td>Click Conversion</td><td align="center">✅</td><td></td><td>Click ID</td><td>Click Conversion</td><td>Click Conversion</td><td>Click ID</td></tr><tr><td align="right">Update or Create</td><td></td><td align="center"></td><td></td><td>Caller ID</td><td>Call Conversion</td><td>Call Conversion</td><td>Caller ID</td></tr><tr><td align="right">Update or Create</td><td></td><td align="center"></td><td></td><td>Order ID</td><td>Enhanced Conversion</td><td>Enhanced Conversion</td><td>Object ID</td></tr></tbody></table>
+
+
+|                     |                  |                |
+| ------------------- | ---------------- | -------------- |
+| **Object**          | **Behaviors**    | **Identifier** |
+| Click Conversion    | Update or Create | Click ID       |
+| Call Conversion     | Update or Create | Caller ID      |
+| Enhanced Conversion | Update or Create | Order ID       |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
 
