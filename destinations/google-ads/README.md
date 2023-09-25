@@ -40,7 +40,7 @@ In this guide, we will show you how to connect Google Ads to Census.
 
 ![](../../.gitbook/assets/screely-1619113580005.png)
 
-Follow Google OAuth flow to connect your Google Ads account.&#x20;
+Follow Google OAuth flow to connect your Google Ads account.
 
 ![](../../.gitbook/assets/screely-1619118724964.png)
 
@@ -64,16 +64,13 @@ After setting up your warehouse, your Census Destinations page should look like 
 
 ## 🗄 Supported Objects
 
-| Service                                                                                                         | **Object Name** | **Supported?** | Identifiers                                        |
-| --------------------------------------------------------------------------------------------------------------- | --------------: | :------------: | -------------------------------------------------- |
-| [Customer Match Lists (Audiences)](https://docs.getcensus.com/destinations/google-ads/customer-match-audiences) |        Customer |        ✅       | <p>User ID, Mobile ID, Email, <br>Phone Number</p> |
-| [Offline Conversions](https://docs.getcensus.com/destinations/google-ads/offline-conversions)                   |     Click, Call |        ✅       | Click ID, Caller ID                                |
+<table data-header-hidden><thead><tr><th width="178"></th><th width="243" align="right"></th><th width="130" align="center"></th><th></th></tr></thead><tbody><tr><td>Service</td><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td>Identifiers</td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td><td align="center">✅</td><td>User ID, Mobile ID, Email,<br>Phone Number</td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, Call Conversion, Conversion Adjustment, Enhanced Conversion</td><td align="center">✅</td><td><strong>Click</strong> - Click ID<br><strong>Call</strong> - Caller ID<br><strong>Enhanced</strong> - Order ID</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
 
 ## :question:Did my sync work? It says completed but it isn't showing the updated timestamp I expect.
 
-The standard place where bulk files uploading update status doesn't actually update when using Census. Instead, you've gotta hover on a specific card.&#x20;
+The standard place where bulk files uploading update status doesn't actually update when using Census. Instead, you've gotta hover on a specific card.
 
 Steps to get there:
 
