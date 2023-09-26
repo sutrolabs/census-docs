@@ -20,18 +20,7 @@ In this guide, we will show you how to connect Braze to Census and create your f
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Braze account ready, with create access for Braze API keys.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
+* Have the proper credentials to access to your data source.&#x20;
 
 ### 1. Create a Braze API key
 
@@ -147,19 +136,22 @@ Once you have synced to a Braze Cohort you can take advantage of it in Braze by 
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-29 at 3.32.17 PM.png" alt=""><figcaption><p>Census Cohort custom filter in Braze</p></figcaption></figure>
 
-### Braze Catalogs
+### Catalogs
 
-You may need to generate a new API key in Braze that provides write access to catalogs (if you didn’t include this permission when previously connecting Braze to Census). See the screenshot below for what that looks like in the Braze Developer Console:
+To sync to Catalogs, you'll need to do two additional steps:
 
-![](<../.gitbook/assets/image (4).png>)
+* Make sure your API key in Braze provides write access to Catalogs (`catalogs.*`). If you didn't include this permission previously when connecting to Census, you may need to generate a new API Key
+* Create the catalog in Braze first, so that it shows as an option in Census.
 
-Also, you will need to create a catalog before it shows as an option in Census
+### API-Triggered Campaign and Canvas Entry
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Braze.
+API Triggered Campaign and Canvas Entries are useful for triggering transactional actions within Braze. Like Catalogs, you will need to create the Campaign/Canvas Entry in Braze first before it appears as a destination object in Census.&#x20;
 
-### Braze Events
+You can [read more about Braze API-Triggered Campaigns](https://www.braze.com/docs/user\_guide/engagement\_tools/campaigns/building\_campaigns/delivery\_types/api\_triggered\_delivery/) and Canvas Entries in their documentation.
 
-Please note event properties need to be set up in the Braze preferences before they’re available for segmentation.
+<figure><img src="../.gitbook/assets/Braze Options.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## 🔄 Supported Sync Behaviors
 
