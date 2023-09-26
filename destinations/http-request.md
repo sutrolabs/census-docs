@@ -95,6 +95,15 @@ Once you've saved and run your sync, head over to the API Inspector tab in your 
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-09-25 at 18.10.51@2x.png" alt=""><figcaption></figcaption></figure>
 
+## Error Handling
+
+Census will use the HTTP response status code to determine whether records were accepted by the target service. Here is how various response status codes are interpreted:
+
+* 2xx - Success. All records sent in the request were accepted by the destination.
+* 4xx - Client failure in the batch. All records sent in the request were rejected by the destination. The sync will continue, but the records sent in the batch will be marked as rejected and reattempted next time the sync is run.
+  * NOTE: a 429 status code will trigger up to 7 request retries with exponential backoff
+* 5xx - Server failure. The request will be retried up to 7 times with exponential backoff. If the request is unsuccessful within 7 retries, the entire sync will be failed.
+
 ## Need help using HTTP Request?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation via the [in-app](https://app.getcensus.com) chat.
