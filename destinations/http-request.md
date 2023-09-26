@@ -65,7 +65,7 @@ Census supports all major HTTP request methods. In this case, the endpoint we're
 
 ### Choose your payload type
 
-We currently support the two most common payload types—empty and JSON. If you need more (e.g. XML, SOAP), please send us an email at [support@getcensus.com](mailto:support@getcensus.com)!
+We currently support the two most common payload types—empty and JSON. If you need more (e.g. XML, SOAP), please send us an email at support@getcensus.com!
 
 This endpoint expects JSON, so we'll go with that.
 
@@ -92,4 +92,8 @@ Brevo's contact endpoints have a rate limit of 10 requests per second (RPS). We 
 ### Save and run your sync :clap:
 
 Once you've saved and run your sync, head over to the API Inspector tab in your sync configuration to confirm the data was sent as expected. In this case, it was and we can confirm the record made it to our contact list in Brevo!
+
+## Need help using HTTP Request?
+
+[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation via the [in-app](https://app.getcensus.com) chat.
 
