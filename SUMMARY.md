@@ -143,6 +143,7 @@
 * [Google Sheets](destinations/google-sheets.md)
 * [Heap.io](destinations/heap.io.md)
 * [Help Scout](destinations/help-scout.md)
+* [HTTP Request](destinations/http-request.md)
 * [HubSpot](destinations/hubspot.md)
 * [Impact](destinations/impact.md)
 * [Insightly](destinations/insightly.md)
