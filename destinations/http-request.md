@@ -93,6 +93,8 @@ Brevo's contact endpoints have a rate limit of 10 requests per second (RPS). We 
 
 Once you've saved and run your sync, head over to the API Inspector tab in your sync configuration to confirm the data was sent as expected. In this case, it was and we can confirm the record made it to our contact list in Brevo!
 
+<figure><img src="../.gitbook/assets/CleanShot 2023-09-25 at 18.10.51@2x.png" alt=""><figcaption></figcaption></figure>
+
 ## Need help using HTTP Request?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation via the [in-app](https://app.getcensus.com) chat.
