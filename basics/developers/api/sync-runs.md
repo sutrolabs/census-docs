@@ -167,3 +167,25 @@ curl 'https://app.getcensus.com/api/v1/sync_runs/[ID]' \
 | canceled                   | Whether or not this sync run was canceled.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | full\_sync                 | Whether or not this was a full sync.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | sync\_trigger\_reason      | Details on why this sync was run.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+### POST /sync\_runs/\[ID]/cancel
+
+This endpoint cancels a currently running sync.
+
+{% tabs %}
+{% tab title="Request" %}
+```
+curl --request POST 'https://app.getcensus.com/api/v1/sync_runs/[ID]/cancel' \
+--header 'Authorization: Bearer [API_TOKEN]'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```
+{
+    "status": "cancelled",
+    "data": {}
+}
+```
+{% endtab %}
+{% endtabs %}
