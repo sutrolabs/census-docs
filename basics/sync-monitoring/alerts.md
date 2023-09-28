@@ -10,7 +10,7 @@ Each Census sync has its own set of potential alerts and you can configure each 
 {% hint style="info" %}
 **Please note:** Census will send a Sync Failure or Rejected/Invalid Record alert upon the first sync run where the alerting conditions are met.&#x20;
 
-To save you inbox, subsequent sync runs with the same failure or rejection % will not trigger additional alerts.&#x20;
+To save your inbox, subsequent sync runs with the same failure or rejection % will not trigger additional alerts.&#x20;
 
 Once your sync is back to running successfully or the number of rejected/invalid records has fallen below the specified threshold then new alerts will be sent if the alerting conditions are met again.&#x20;
 {% endhint %}
