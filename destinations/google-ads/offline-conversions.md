@@ -36,7 +36,7 @@ Here you can write SQL queries that contain the conversion action you want to se
 
 Google Ads Offline Click and Call Conversions require a specific set of properties. We'll want a model that has the following three required fields:
 
-* The **Google Click ID** (also often known as the `gclid`)
+* One of: the **Google Click ID** (also often known as the `gclid`), **WBRAID**, or **GBRAID** value.&#x20;
 * The **Conversion Name**, spelled exactly as it is found in Google Ads
 * The **Conversion Timestamp**, \_\_ with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
 
@@ -154,12 +154,12 @@ It may take around 3 hours for synced offline conversions to show up in your Goo
 
 
 
-|                     |                  |                |
-| ------------------- | ---------------- | -------------- |
-| **Object**          | **Behaviors**    | **Identifier** |
-| Click Conversion    | Update or Create | Click ID       |
-| Call Conversion     | Update or Create | Caller ID      |
-| Enhanced Conversion | Update or Create | Order ID       |
+|                     |                  |                          |
+| ------------------- | ---------------- | ------------------------ |
+| **Object**          | **Behaviors**    | **Identifier**           |
+| Click Conversion    | Update or Create | Click ID, WBRAID, GBRAID |
+| Call Conversion     | Update or Create | Caller ID                |
+| Enhanced Conversion | Update or Create | Order ID                 |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
 
