@@ -38,7 +38,7 @@ Google Ads Offline Click and Call Conversions require a specific set of properti
 
 * One of: the **Google Click ID** (also often known as the `gclid`), **WBRAID**, or **GBRAID** value.&#x20;
 * The **Conversion Name**, spelled exactly as it is found in Google Ads
-* The **Conversion Timestamp**, \_\_ with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
+* The **Conversion Timestamp**, with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
 
 Optional properties include:
 
