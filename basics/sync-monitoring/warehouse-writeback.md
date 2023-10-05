@@ -1,6 +1,6 @@
 # Warehouse Writeback
 
-Census can provides row level details on the data you're syncing to a destination. With these logs, you can answer common questions like:
+Census can provide row-level details on the data you're syncing to a destination. With these logs, you can answer common questions like:
 
 1. When was my data updated in the destination?
 2. Why did the destination's API reject records that I tried to sync?
