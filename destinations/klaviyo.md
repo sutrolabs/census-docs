@@ -143,6 +143,7 @@ You'll need to set up a Segment within Klaviyo that pulls in all users in your K
 | Update or Create |        ✅       |       All      |
 |      Update Only |        ✅       |     Profile    |
 |           Mirror |        ✅       | Profile & List |
+|           Delete |        ✅       |     Profile    |
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
