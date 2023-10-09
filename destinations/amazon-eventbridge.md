@@ -1,17 +1,58 @@
 # Amazon EventBridge
 
-##
+## 🏃‍♀️ Getting Started
+
+This guide will walk through connecting Census to an Amazon EventBridge instance as a data destination.&#x20;
+
+EventBridge is an Event Stream style destination. Census will send changes in the source data as a series of events that can then be consumed by a number of destinations, typically other applications or microservices in your infrastructure.&#x20;
+
+### Connecting and Authentication
+
+To connect to EventBridge, Census needs to know the **AWS Region** your instance is hosted in and the role to use to connect to it. Census uses AWS's recommended [Cross-account Role-based Access](https://aws.amazon.com/blogs/apn/securely-accessing-customer-aws-accounts-with-cross-account-iam-roles/) for authentication.&#x20;
+
+Creating an IAM Role with the necessary permissions requires a few steps in the AWS Console.
+
+* Open your AWS Console in a separate tab and browse to the **IAM** service. Click **Roles** and **Create role**.
+* When creating the role choose **AWS Account** for **Trusted Entity Type** and the **Another AWS Account** radio button.
+* Ask your Census account representative for the Census AWS account to use.
+* Select the policy&#x20;
+  * For services that write to EventBridge, [AWS recommends](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-identity-based.html#eb-events-iam-roles) the `AmazonEventBridgeFullAccess` and this is the only pre-made policy offering the necessary permissions.&#x20;
+  * You can also use any custom policy that includes the `events:PutEvents` and `events:ListEventBuses` actions.&#x20;
+* Save your new role.&#x20;
+
+When done, click on your role and copy its ARN. Go back to the tab where you're editing the Census EventBridge destination and enter the **Role ARN**. Click **Connect**. Confirm the connection test is successful and you're ready to go.
+
+### (Optional) Configure Global Endpoint
+
+You can provide an optional Endpoint ID if you are using [EventBridge's Global Endpoint](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html) mechanism in order to make your EventBridge instance region-fault tolerant.&#x20;
+
+The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API\_Endpoint.html#eventbridge-Type-Endpoint-EndpointId) is the URL subdomain of your global endpoint. For example, if the URL for your Endpoint is `https://abcde.veo.endpoints.event.amazonaws.com`, then the EndpointId is `abcde.veo`.&#x20;
 
 ## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
 
 <table data-header-hidden><thead><tr><th width="196"></th><th width="156"></th><th width="154"></th><th></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td>Event</td><td>✅</td><td>Event ID</td><td>Append, Upsert, and Mirror</td></tr></tbody></table>
 
-{% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
-{% endhint %}
+### Event Properties and Formatting
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for EventBridge.
+Events in EventBridge are JSON object with a default set of properties, as well as a `details` sub object. You can use Census to set the values of of the default properties, and then add any additional properties you like.&#x20;
 
-## 🚑 Need help connecting to EventBridge?
+* **Sync Key / Event ID** - This field is used to identify unique records but is not by default sent to EventBridge. If you'd like to send it, explicitly include it as an additional custom  mapping.
+* **Detail Type** - This is functionally the event name, and Detail Types of the same type should have the same **Detail** structure.
+* **Source** - Identifies the source that generated the event
+* **Event Bus Name** - The target event bus name. If you're using a global endpoint with a custom bus, you must enter the name, not the ARN, of the event bus.
+
+**Optional System Fields**
+
+* **Resources** (Array) - Amazon Web Services resources, identified by Amazon Resource Name (ARN), which the event primarily concerns or is targeted at.
+* **Time** - The timestamp of the event. If no time stamp is # provided, the time stamp of the PutEvents call is used.
+* **Trace Header** (Object) - An X-Ray trace header, which is an http header (X-Amzn-Trace-Id) that contains the trace-id associated with the event
+
+**Custom Properties**
+
+Any other property mappings you include will be included in the **Detail** nested object. Census will also automatically include an **Operation** property indicating whether the record change was **added**, **updated**, or **removed**. You may modify the names of the operations Census uses in the advanced configuration.&#x20;
+
+You can also override the shape of the **Detail** object by providing an override Census by providing a JSON template using [mustache syntax](https://mustache.github.io/mustache.5.html).
+
+## 🚑 Need Help Connecting to EventBridge?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
