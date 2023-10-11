@@ -44,7 +44,13 @@ Segment Documentation on Write Keys are [here](https://segment.com/docs/connecti
 
 ![Don't worry if the credential here is different!](<../.gitbook/assets/Screen Shot 2021-11-12 at 11.16.53 AM.png>)
 
-Note: Census's permissions will be the same as this Segment token.
+Note: Census's permissions will be the same as this Segment token.&#x20;
+
+{% hint style="info" %}
+Make sure to follow Segment's Documentation on connecting a Production Source [here](https://segment.com/docs/unify/quickstart/#step-3-connect-production-sources).
+{% endhint %}
+
+
 
 ### 2. Connect your data warehouse
 
