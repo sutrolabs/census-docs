@@ -65,9 +65,9 @@ Sync Behaviors tell Census the types of change it should apply to your data when
 Please note that some of these behaviors are only available for certain destinations. Visit our individual integration pages to view what's supported.
 {% endhint %}
 
-### 🔎 Matching Identifiers
+### 🔎 Sync Keys
 
-Matching Identifiers let Census know how to associate data in the source with the destination. Both the source and destination need to provide a single, unique per record, identifying field. Census uses the identifiers to look for matches. When a match is found, or not found, it then can use your selected Sync Behavior to decide what to do.\
+Sync Keys let Census know how to associate data in the source with the destination. Both the source and destination need to provide a single, unique per record, identifying field. Census uses the identifiers to look for matches. When a match is found, or not found, it then can use your selected Sync Behavior to decide what to do.\
 \
 For example, if Census sees your source and destination both have records with the identifier ABCD1234, it knows that it should update that record with data from the source when you've got an Update Only, Update or Create, or Mirror Sync Behavior configured.
 
