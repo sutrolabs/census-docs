@@ -62,6 +62,7 @@ For more detailed instructions on how to configure your sync, please read the do
 ## 💡Note
 
 * You cannot create SQL Models on Google Sheets data
+* Be sure that all line breaks are removed from the header row
 
 ## 🚑 Need help connecting to Google Sheets?
 
