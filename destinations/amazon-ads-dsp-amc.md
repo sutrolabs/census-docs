@@ -1,4 +1,4 @@
-# Amazon Ads
+# Amazon Ads DSP (AMC)
 
 ## 🏃‍♀️ Getting Started
 
@@ -14,7 +14,7 @@ Connecting to your Amazon Ads account is straightforward.
 
 ### Conversion Events
 
-Conversion Events are an [events.md](../basics/data-models-and-entities/defining-source-data/events.md "mention")sync within Census and so operate like most other Event Syncs. They do have some unique terminology and requirements.
+Conversion Events are an [events.md](../basics/data-models-and-entities/defining-source-data/events.md "mention")sync within Census and so operate like most other Event Syncs. They do have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
 
 * Like other event syncs, Amazon requires an **Event Name** and a **Timestamp**.
 * **Conversion Definition ID** - Amazon requires that you define all of your conversions types beforehand as Conversion Definitions.

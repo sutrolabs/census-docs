@@ -85,7 +85,7 @@
 * [Airship](destinations/airship.md)
 * [Airtable](destinations/airtable.md)
 * [Algolia](destinations/algolia.md)
-* [Amazon Ads](destinations/amazon-ads.md)
+* [Amazon Ads DSP (AMC)](destinations/amazon-ads-dsp-amc.md)
 * [Amazon DynamoDB](destinations/dynamo-db.md)
 * [Amazon EventBridge](destinations/amazon-eventbridge.md)
 * [Amazon Pinpoint](destinations/pinpoint.md)
