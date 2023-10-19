@@ -23,7 +23,7 @@ In addition to these certifications:
 
 ### SOC2 Type 2 Audit Report
 
-If you are an existing Census customer, contact your Customer Success Manager or ping us in your dedicated Slack channel and we are more than happy to give you our SOC 2 audit report. If you are currently trialing Census, your point of contact can provide you the SOC 2 audit report under NDA.
+The latest copy of our SOC2 audit report can be requested by existing Census customers via [Conveyor](https://app.conveyor.com/profile/census). If you are currently trialing Census, your point of contact can provide you the SOC 2 audit report under NDA.
 
 ## ℹ️ How it works
 
