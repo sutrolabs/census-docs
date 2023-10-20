@@ -9,15 +9,28 @@ description: This page describes how to use Census with LaunchDarkly.
 1. Click **Add Service** and select **LaunchDarkly** from the menu.
 2. Open the LaunchDarkly app in another window to find the following credentials:
 
-#### **Service Access Token**
+### **Service Access Token**
 
-Create a new token from **Account settings** > **Authorization**. Add an inline role/custom policy and define granular permissions. You will need to select your desired environment and add the action `importEventData` if you want to sync event data as well as your desired project's metrics and add the `All Actions` action if you want to sync to metrics. Check the box next to **This is a service token**.
+You'll need to create a new access token with the appropriate set of permissions. To learn how to create a service token, see [Creating API access tokens](https://docs.launchdarkly.com/home/account-security/api-access-tokens#creating-api-access-tokens) in LaunchDarkly's documentation.
 
-Optionally, you may also use an admin permission token but this is not a recommended option.
+1. Visit **Account settings** > **Authorization** and click **Create token.**&#x20;
+2. For your new access token, give it a memorable name such as `Census LaunchDarkly Integration`.
+3. For role, you can use any existing role or custom policy that has the following permissions. Alternatively, select **Inline policy**. You can add multiple statements, one for each of the types of resources you intend to use with Census
+   * **Synced Segments**
+     * Resource:  `proj/*:env/*:segment/*` will grant access to all segments across all projects.
+     * Action: `createSegments` and `updateIncluded`
+   * **Metric Events**
+     * Resource:  `proj/*:env/*` will grant access to all projects.
+     * Action: `importEventData`&#x20;
+   * **Metrics**
+     * Resource: `proj/*:env/*:metric/*` will grant access to all metrics across all projects.
+     * Action: All Actions ([See Full List](https://docs.launchdarkly.com/home/members/role-actions#metric-actions))
+4. Check the box next to **This is a service token**. You can leave the API version set to the default value.
+5. Click **Save Token**.
 
-<figure><img src="../.gitbook/assets/LaunchDarkly (6).png" alt=""><figcaption><p>1 Create a Service Access Token from the LaunchDarkly app.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LaunchDarkly (7).png" alt=""><figcaption></figcaption></figure>
 
-#### **Project Key, Environment Key, and Environment ID**
+### **Project Key, Environment Key, and Environment ID**
 
 Go to **Account settings** > **Projects** and copy the **Project Key,** **Environment Key,** and **Environment ID** (LaunchDarkly uses Environment ID and Client-side ID interchangeably) as shown in the screenshot below. You will need to create separate Environment Keys for each Environment you wish to sync to.
 
