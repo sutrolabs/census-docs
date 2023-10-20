@@ -4,6 +4,8 @@ description: Maintain audience lists in Google Ads to retarget and re-engage you
 
 # Customer Match Lists (Audiences)
 
+{% embed url="https://youtu.be/COk7s0axxVw" %}
+
 ## Connect your Google Ads Account
 
 Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/google-ads)

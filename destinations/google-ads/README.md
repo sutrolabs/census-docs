@@ -6,69 +6,28 @@ description: This page describes how to use Census with Google Ads.
 
 ## 🏃‍♀️ Getting Started
 
+Connecting to your Google Ads account is straightforward.
+
+1. From the [Destinations](https://app.getcensus.com/destinations) page, click **New Destination** and select Google Ads from the menu.
+2. Complete the OAuth flow. Make sure your are signed into a user account that has permissions to both view all of your accounts, as well as submit data to them (readonly accounts will not work).
+3.  Select the Ads account you wish to use with Census. If you'd like to sync to multiple accounts, you will need to add each as its own destination.\
+
+
+    <figure><img src="../../.gitbook/assets/Google Ads.png" alt=""><figcaption></figcaption></figure>
+
+## 🗄 Supported Objects
+
+<table data-header-hidden><thead><tr><th width="206"></th><th width="216" align="right"></th><th></th></tr></thead><tbody><tr><td><strong>Service</strong></td><td align="right"><strong>Object Name</strong></td><td></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td><td><a data-mention href="customer-match-audiences.md">customer-match-audiences.md</a></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, <br>Call Conversion, <br>Conversion Adjustment, <br>Enhanced Conversion</td><td><a data-mention href="offline-conversions.md">offline-conversions.md</a></td></tr></tbody></table>
+
+[Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
+
 {% hint style="success" %}
 Just a heads up: We use the new [Google Ads API](https://developers.google.com/google-ads/api/docs/start) as opposed to the older AdWords API.
 {% endhint %}
 
-In this guide, we will show you how to connect Google Ads to Census.
+## :warning:Common Issues
 
-{% embed url="https://youtu.be/COk7s0axxVw" %}
-
-### Prerequisites
-
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Google Ads account ready.
-  * To create Customer Match syncs, your Google Ads Account will need access to the Customer Match feature. See [Google's Customer Match policy](https://support.google.com/adspolicy/answer/6299717?hl=en) for more details.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
-
-### 1. Connect Google Ads
-
-* Once you are in Census, navigate to [Destinations](https://app.getcensus.com/destinations)
-* Click the **New Destination** button
-* Select Google Ads in the dropdown list.
-
-![](../../.gitbook/assets/screely-1619113580005.png)
-
-Follow Google OAuth flow to connect your Google Ads account.
-
-![](../../.gitbook/assets/screely-1619118724964.png)
-
-Finally, select the Google Ads account you'd like to sync to
-
-![](../../.gitbook/assets/screely-1619118759931.png)
-
-### 2. Connect your Data Warehouse
-
-Please follow one of our short guides depending on your data warehouse technology
-
-* [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
-* [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
-* [Databricks](../../sources/databricks.md)
-
-After setting up your warehouse, your Census Destinations page should look like this:
-
-![](../../.gitbook/assets/screely-1619121030102.png)
-
-## 🗄 Supported Objects
-
-<table data-header-hidden><thead><tr><th width="178"></th><th width="243" align="right"></th><th width="130" align="center"></th><th></th></tr></thead><tbody><tr><td>Service</td><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td>Identifiers</td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td><td align="center">✅</td><td>User ID, Mobile ID, Email,<br>Phone Number</td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, Call Conversion, Conversion Adjustment, Enhanced Conversion</td><td align="center">✅</td><td><strong>Click</strong> - Click ID, wbraid, gbraid<br><strong>Call</strong> - Caller ID<br><strong>Enhanced</strong> - Order ID</td></tr></tbody></table>
-
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
-
-## :question:Did my sync work? It says completed but it isn't showing the updated timestamp I expect.
+### Did my sync work? It says completed but it isn't showing the updated timestamp I expect.
 
 The standard place where bulk files uploading update status doesn't actually update when using Census. Instead, you've gotta hover on a specific card.
 

@@ -10,6 +10,22 @@ description: Optimize your ad spend to find your best leads and customers.
 
 Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/google-ads)
 
+## 🔄 Supported Objects & Behaviors
+
+|                       |                  |                          |
+| --------------------- | ---------------- | ------------------------ |
+| **Object**            | **Behaviors**    | **Identifier**           |
+| Click Conversion      | Update or Create | Click ID, WBRAID, GBRAID |
+| Call Conversion       | Update or Create | Caller ID                |
+| Enhanced Conversion   | Update or Create | Order ID                 |
+| Conversion Adjustment | Append           |                          |
+
+[Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
+
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 ## Sync Offline Click and Call Conversions with Census
 
 ### 1. Create or find your custom conversion event in Google Ads
@@ -108,6 +124,8 @@ We'll want a model that has the following three required fields:
 * The **Conversion Name**, spelled exactly as it is found in Google Ads
 * The **Conversion Timestamp**, \_\_ with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
 
+
+
 #### B. User Identifiers
 
 You also **must** supply user identifier parameters so that Google can match this conversion to its records of users and ad click.
@@ -150,19 +168,11 @@ Click the **Next** button to see the final preview which will have a recap of wh
 
 It may take around 3 hours for synced offline conversions to show up in your Google Ads account. When they do, they'll appear in reporting on these conversion actions. To learn more about reporting on these conversions, you may wish to visit [this Google Ads help article](https://support.google.com/google-ads/answer/6270625).
 
-## 🔄 Supported Sync Behaviors
+## Conversion Adjustments
 
+Once a conversion has already been reported to Google Ads, you can [adjust the conversion](https://support.google.com/google-ads/answer/7686447) at a later point in time using Census.&#x20;
 
+A conversion adjustment requires exactly one of the following sets of properties in order to identify which conversion to adjust.
 
-|                     |                  |                          |
-| ------------------- | ---------------- | ------------------------ |
-| **Object**          | **Behaviors**    | **Identifier**           |
-| Click Conversion    | Update or Create | Click ID, WBRAID, GBRAID |
-| Call Conversion     | Update or Create | Caller ID                |
-| Enhanced Conversion | Update or Create | Order ID                 |
-
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
-
-{% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
+* **Order ID** or&#x20;
+* **Google Click ID (GCLID) and exact conversion date time**&#x20;
