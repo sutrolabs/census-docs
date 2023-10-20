@@ -23,7 +23,7 @@ You'll need to create a new access token with the appropriate set of permissions
      * Resource:  `proj/*:env/*` will grant access to all projects.
      * Action: `importEventData`&#x20;
    * **Metrics**
-     * Resource: `proj/*:env/*:metric/*` will grant access to all metrics across all projects.
+     * Resource: `proj/*:metric/*` will grant access to all metrics across all projects (Metrics are not specific to an environment).&#x20;
      * Action: All Actions ([See Full List](https://docs.launchdarkly.com/home/members/role-actions#metric-actions))
 4. Check the box next to **This is a service token**. You can leave the API version set to the default value.
 5. Click **Save Token**. Copy store the token generated somewhere safe while you're connecting it to Census. You will not be able to retrieve it again.
