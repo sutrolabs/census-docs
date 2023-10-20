@@ -18,7 +18,7 @@ You'll need to create a new access token with the appropriate set of permissions
 3. For role, you can use any existing role or custom policy that has the following permissions. Alternatively, select **Inline policy**. You can add multiple statements, one for each of the types of resources you intend to use with Census
    * **Synced Segments**
      * Resource:  `proj/*:env/*:segment/*` will grant access to all segments across all projects.
-     * Action: `createSegments` and `updateIncluded`
+     * Action: `createSegment` and `updateIncluded`
    * **Metric Events**
      * Resource:  `proj/*:env/*` will grant access to all projects.
      * Action: `importEventData`&#x20;
@@ -26,9 +26,9 @@ You'll need to create a new access token with the appropriate set of permissions
      * Resource: `proj/*:env/*:metric/*` will grant access to all metrics across all projects.
      * Action: All Actions ([See Full List](https://docs.launchdarkly.com/home/members/role-actions#metric-actions))
 4. Check the box next to **This is a service token**. You can leave the API version set to the default value.
-5. Click **Save Token**.
+5. Click **Save Token**. Copy store the token generated somewhere safe while you're connecting it to Census. You will not be able to retrieve it again.
 
-<figure><img src="../.gitbook/assets/LaunchDarkly (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/LaunchDarkly (8).png" alt=""><figcaption></figcaption></figure>
 
 ### **Project Key, Environment Key, and Environment ID**
 
