@@ -17,7 +17,9 @@ Connecting to your Google Ads account is straightforward.
 
 ## 🗄 Supported Objects
 
-<table data-header-hidden><thead><tr><th width="199"></th><th width="216" align="right"></th><th></th></tr></thead><tbody><tr><td><strong>Service</strong></td><td align="right"><strong>Object Name</strong></td><td></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td><td><a data-mention href="customer-match-audiences.md">customer-match-audiences.md</a></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, <br>Call Conversion, <br>Conversion Adjustment, <br>Enhanced Conversion</td><td><a data-mention href="offline-conversions.md">offline-conversions.md</a></td></tr></tbody></table>
+Click the link for more information on each of the services
+
+<table data-header-hidden><thead><tr><th width="340"></th><th width="216" align="right"></th></tr></thead><tbody><tr><td></td><td align="right"><strong>Types</strong></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, <br>Call Conversion, <br>Conversion Adjustment, <br>Enhanced Conversion</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
 
