@@ -28,7 +28,29 @@ You'll need to create a new access token with the appropriate set of permissions
 4. Check the box next to **This is a service token**. You can leave the API version set to the default value.
 5. Click **Save Token**. Copy store the token generated somewhere safe while you're connecting it to Census. You will not be able to retrieve it again.
 
-<figure><img src="../.gitbook/assets/LaunchDarkly (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/LaunchDarkly (9).png" alt=""><figcaption></figcaption></figure>
+
+The above definition can also be modified using the Advanced Editor
+
+```json
+[
+  {
+    "resources": ["proj/*:env/*:segment/*"],
+    "actions": ["createSegment","updateIncluded"],
+    "effect": "allow"
+  },
+  {
+    "resources": ["proj/*:env/*"],
+    "actions": ["importEventData"],
+    "effect": "allow"
+  },
+  {
+    "resources": ["proj/*:metric/*"],
+    "actions": ["*"],
+    "effect": "allow"
+  }
+]
+```
 
 ### **Project Key, Environment Key, and Environment ID**
 
