@@ -17,31 +17,13 @@ Connecting to your Google Ads account is straightforward.
 
 ## 🗄 Supported Objects
 
-<table data-header-hidden><thead><tr><th width="206"></th><th width="216" align="right"></th><th></th></tr></thead><tbody><tr><td><strong>Service</strong></td><td align="right"><strong>Object Name</strong></td><td></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td><td><a data-mention href="customer-match-audiences.md">customer-match-audiences.md</a></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, <br>Call Conversion, <br>Conversion Adjustment, <br>Enhanced Conversion</td><td><a data-mention href="offline-conversions.md">offline-conversions.md</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="199"></th><th width="216" align="right"></th><th></th></tr></thead><tbody><tr><td><strong>Service</strong></td><td align="right"><strong>Object Name</strong></td><td></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td><td><a data-mention href="customer-match-audiences.md">customer-match-audiences.md</a></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, <br>Call Conversion, <br>Conversion Adjustment, <br>Enhanced Conversion</td><td><a data-mention href="offline-conversions.md">offline-conversions.md</a></td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
 
 {% hint style="success" %}
 Just a heads up: We use the new [Google Ads API](https://developers.google.com/google-ads/api/docs/start) as opposed to the older AdWords API.
 {% endhint %}
-
-## :warning:Common Issues
-
-### Did my sync work? It says completed but it isn't showing the updated timestamp I expect.
-
-The standard place where bulk files uploading update status doesn't actually update when using Census. Instead, you've gotta hover on a specific card.
-
-Steps to get there:
-
-1. Open your google ads account
-2. Navigate to Tools & Settings > Audience Manager
-3. Hover over the name of your desired audience in the list.
-4. Expand the section labeled `Customers based on email, phone, and/or mailing address uploads`
-5. Within that, you'll see a `Last upload` label.
-
-![](<../../.gitbook/assets/Screen Shot 2021-11-16 at 10.34.57 AM.png>)
-
-If that date isn't the same time as the most recent sync completed, please reach out via our in-app chat and we will investigate it with you.
 
 ## 🚑 Need help connecting to Google Ads?
 

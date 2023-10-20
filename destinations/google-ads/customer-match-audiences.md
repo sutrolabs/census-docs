@@ -83,6 +83,20 @@ Please note that the above behaviors will map to what you select in the, "_**Whe
 
 Note: If you're reusing an existing Customer Match List, Census will not remove any users already added to those lists through other means.
 
-{% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
+## :warning:Common Issues
+
+### Did my sync work? It says completed but it isn't showing the updated timestamp I expect.
+
+The standard place where bulk files uploading update status doesn't actually update when using Census. Instead, you've gotta hover on a specific card.
+
+Steps to get there:
+
+1. Open your google ads account
+2. Navigate to Tools & Settings > Audience Manager
+3. Hover over the name of your desired audience in the list.
+4. Expand the section labeled `Customers based on email, phone, and/or mailing address uploads`
+5. Within that, you'll see a `Last upload` label.
+
+![](<../../.gitbook/assets/Screen Shot 2021-11-16 at 10.34.57 AM.png>)
+
+If that date isn't the same time as the most recent sync completed, please reach out via our in-app chat and we will investigate it with you.
