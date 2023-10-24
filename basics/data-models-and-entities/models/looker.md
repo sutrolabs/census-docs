@@ -19,7 +19,9 @@ To connect Looker to your Census instance, you'll need two things:
 
 To create new API3 credentials, you'll need to visit the **Admin** > **Users** page, select the desired user and click the **Edit** button and then the **Edit Keys** button on the user's profile page. You'll need to note both the **Client ID** and **Client Secret** values to provide to Census. The [Looker documentation](https://docs.looker.com/admin-options/settings/users#edit\_api3\_keys) provides more details on how to find and create keys.\
 \
-Finally, you'll also need the subdomain of your Looker instance. You should be able to simply pull that directly from your browser URL bar. For example, if the URL is `https://censususer.looker.com/` then the subdomain is `censususer`.
+You'll also need the URL of your Looker instance. You should be able to simply pull that directly from your browser URL bar. For example, if the URL is `https://censususer.looker.com/` then the subdomain is `censususer`.&#x20;
+
+If you're using a self-hosted instance of Looker, provide the full URL as well as the port number of your API, for example `https://yourlooker.yourcompany.com:443`. The port number may be 443 or 19999 depending on when your Looker instance was created, or it may be another value if you've overridden the default. See [Looker documentation](https://cloud.google.com/looker/docs/admin-panel-platform-api) for more details.
 
 #### Connecting Census to Looker
 
@@ -40,13 +42,15 @@ Note: Looks that are in development mode are not shared in the Looker API so onl
 Census and Looker both maintain their own data warehouse credentials and connections which means each can have different permissions. However, Census requires the same permissions your Looker Looks use within Looker. If Census is missing some permissions that Looker has, you may see a permissions error in Census when attempting to preview the model or use it in a sync.
 
 ## Unsupported features
+
 #### Totals & Row Totals
-![](../../../.gitbook/assets/looker_totals_and_row_totals.png)
+
+![](../../../.gitbook/assets/looker\_totals\_and\_row\_totals.png)
 
 Looker will autogenerate additional SQL queries when `Totals` or `Row Totals` are selected. These features are not supported for syncs from Census, and therefore the related SQL will not be imported to Census.
 
 We will add the following as the last line of your SQL when this occurs.
+
 ```
 -- sql for creating the total and/or determining pivot columns was removed by Census
-```` 
-
+```
