@@ -558,9 +558,13 @@ curl --request PATCH 'https://app.getcensus.com/api/v1/syncs/[ID]' \
 {% endtab %}
 {% endtabs %}
 
-| Request Property | Description                                                                                                                                                                                                       |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Sync parameters  | A list of parameters to update the sync with, similar to the request parameters for `POST /syncs`. The only parameters that cannot be updated are `source_attributes`, `destination_attributes`, and `operation`. |
+
+
+| Request Property | Description                                                                                                                                                                                                                                                                                                                                               |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sync parameters  | A list of parameters to update the sync with, similar to the request parameters for `POST /syncs`. You can update most settings for syncing, just like when you set it up with POST /syncs. However, if you're working with a `delete` operation sync or `braze` destination sync, you can't change the `source`, `destination`, or `operation` settings. |
+
+
 
 | Response Property | Description                                                         |
 | ----------------- | ------------------------------------------------------------------- |
