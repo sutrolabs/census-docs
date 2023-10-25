@@ -75,30 +75,34 @@ For example, if Census sees your source and destination both have records with t
 
 Once you've defined _how_ data is related between your source and destination, the next step is to let Census know _what_ properties should be updated. The field mapping step lets you specify how fields should be mapped from your source model to the destination object's fields. You can automatically add all matching fields, but even if names don't match, you can also provide the matching manually. If you remove fields from your mapping, Census will just stop updating those fields. We will not delete the values.
 
-**Using templates to tranform source data**
+#### **Using templates to tranform source data**
 
 Sometimes the data in your source systems isn't in quite the format or style that the destination expects. If you need to transform records from the source before sending them to the destination, you can use a **Templated Field.**
 
-Census supports templated fields using the [Liquid](https://shopify.github.io/liquid/) templating language. Liquid templates are tiny programs that let you change the format of data using a snippet of easy-to-understand code. For example, this Liquid template lets you combine a customer's city and country into a single piece of text:
+Census supports templated fields using the Liquid template language. As a basic example, this Liquid template lets you combine a customer's city and country into a single piece of text:
 
 ```liquid
 {{ record['city'] }}, {{ record['country'] }}
 ```
 
-You can get data out of one or more source columns using the `record['column_name']` syntax. You can also make templated fields that don't include any source columns if you want to send a simple value or even the current time to the destination system. A few more examples:
+To give you an idea of the capabilities available, here are a few more examples:
 
-* `Customer` - Sends just the word "Customer" to the destination field
-* `Last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}` - add a timestamp to the field
-* `{{ record['first_name'] | rstrip }}` - remove trailing whitespace from a customer's name
+* `Customer` → Sends just the word "Customer" to the destination field
+* `Last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}` → Prepends a timestamp with some initial text
+* `{{ record['first_name'] | rstrip }}` → Removes trailing whitespace from a customer's name
 
-These examples just scratch the surface of what can be done with templated fields - take a look at the [official Liquid documentation for more ideas](https://shopify.github.io/liquid/). Templates can also operate on structured data (arrays and objects) in your source system where supported, using tags like `reverse`, `join`, `map`, and `for`. Templates have a few limitations:
+You can read all about the Liquid template system provided by Census here:
 
-* Templates operate on one record at a time. If you need to bring multiple records together, take a look at [Models](../data-models-and-entities/), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click visual segment builder.
+{% content-ref url="liquid-templates.md" %}
+[liquid-templates.md](liquid-templates.md)
+{% endcontent-ref %}
+
+{% hint style="info" %}
+Templated fields have a few limitations:
+
+* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Models](../data-models-and-entities/), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
 * Not all sources support templates yet; we are always adding support for new sources!
-* Census supports the full standard set of Liquid template features and with the exception of:
-  * The `sum` filter
-  * The `include` and `render` tags
-* Census does not support any Shopify- or Jekyll-specific extensions to Liquid templates
+{% endhint %}
 
 #### Creating new fields on your destination object
 

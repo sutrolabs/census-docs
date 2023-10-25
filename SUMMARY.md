@@ -8,6 +8,7 @@
   * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
   * [Retry Handling](basics/core-concept/retry-handling.md)
   * [Audience Syncs](basics/core-concept/audience-syncs.md)
+  * [Liquid Templates](basics/core-concept/liquid-templates.md)
 * [Audience Hub](basics/audience-hub/README.md)
   * [Creating Segments](basics/audience-hub/getting-started.md)
   * [Syncing Segments](basics/audience-hub/syncing-segments.md)

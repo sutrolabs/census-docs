@@ -37,7 +37,7 @@ Select the **HTTP Request** destination you just created and input the specific 
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-09-25 at 17.14.00@2x.png" alt=""><figcaption></figcaption></figure>
 
-Note: in this example, the endpoint is static (i.e. `/v3/contacts`), but we also support using the Liquid template language to populate values dynamically. For example, if we were sending requests to update existing contacts, we might need to include contact IDs in the endpoint like this: `/v3/contacts/{{ record["id"] }}`.
+Note: in this example, the endpoint is static (i.e. `/v3/contacts`), but we also support using the [Liquid](../basics/core-concept/liquid-templates.md) template language to populate values dynamically. For example, if we were sending requests to update existing contacts, we might need to include contact IDs in the endpoint like this: `/v3/contacts/{{ record["id"] }}`.
 
 ### Choose your request trigger
 
@@ -50,6 +50,25 @@ Choose the trigger that you want Census to monitor in your source data.&#x20;
 Census allows you to either send one record at a time or batch records for better performance when the destination allows for it. In this case, we'll keep things simple and send one record at a time (which is also what this particular endpoint expects).
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-09-25 at 17.27.23@2x.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+If you are using multiple records per request together with a JSON template payload, you will commonly need to use a Liquid `for` [loop](../basics/core-concept/liquid-templates.md#looping) like this using the special `records`:
+
+```liquid
+[
+  {% raw %}
+{% for record in records %}
+  {
+    "id": "{{ record['ID'] }}",
+    "name": "{{ record['NAME'] }}"
+  },
+  {% endfor %}
+{% endraw %}
+]
+```
+
+The `records` will be set to an array containing all of the records to be sent in the current request.
+{% endhint %}
 
 ### Select a sync key
 
@@ -75,7 +94,7 @@ This endpoint expects JSON, so we'll go with that.
 
 Census provides three different ways of defining a payload.
 
-* **Template editor**: using the Liquid template language to define an entirely custom payload. This is the most flexible option but requires a bit of elbow grease. See our guide to Liquid templates for more information.
+* **Template editor**: using the Liquid template language to define an entirely custom payload. This is the most flexible option but requires a bit of elbow grease. See our full documentation to [Liquid templates](../basics/core-concept/liquid-templates.md) for more information.
 * **Single source column**: select a single column from your source data that contains the entire JSON payload you want to send.
 * **Multiple source columns**: select multiple columns from your source data. Census will combine them into a JSON payload with each column represented as a top-level key-value pair.
 
