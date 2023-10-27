@@ -5,8 +5,12 @@
 Connecting to your Amazon Ads account is straightforward.
 
 1. From the [Destinations](https://app.getcensus.com/destinations) page, click **New Destination** and select Amazon Ads from the menu.
-2. Complete the OAuth flow. Make sure your are signed into a user account that has permissions to both view all of your accounts, as well as submit data to them (read only accounts will not work).
-3. Select the Ads account you wish to use with Census. If you'd like to sync to multiple accounts, you will need to add each as its own destination.
+2. You'll first need to specify your desired **Region** by providing one of the following values:
+   * North America: `www.amazon.com`
+   * European Union: `eu.account.amazon.com`
+   * Asian Pacific: `apac.account.amazon.com`
+3. Complete the OAuth flow. Make sure your are signed into a user account that has permissions to both view all of your accounts, as well as submit data to them (read only accounts will not work).
+4. Select the Ads account you wish to use with Census. If you'd like to sync to multiple accounts, you will need to add each as its own destination.
 
 ## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
 
