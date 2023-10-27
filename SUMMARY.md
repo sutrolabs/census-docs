@@ -217,7 +217,7 @@
 * [Totango](destinations/totango.md)
 * [Userflow](destinations/userflow.md)
 * [Userpilot](destinations/userpilot.md)
-* [Vero](destinations/vero.md)
+* [Vero Cloud](destinations/vero.md)
 * [Vitally](destinations/vitally.md)
 * [Webhooks](destinations/webhook.md)
 * [Webflow](destinations/webflow.md)
