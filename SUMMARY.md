@@ -41,16 +41,7 @@
   * [GitLink](basics/developers/gitlink.md)
   * [Entity API](basics/developers/entity-api.md)
   * [Custom Destination API](basics/developers/custom-api.md)
-  * [Management API](basics/developers/api/README.md)
-    * [Syncs](basics/developers/api/syncs.md)
-    * [Sync Runs](basics/developers/api/sync-runs.md)
-    * [Destinations](basics/developers/api/destinations.md)
-    * [Destination Objects](basics/developers/api/destination-objects.md)
-    * [Sources](basics/developers/api/sources/README.md)
-      * [Objects](basics/developers/api/sources/source-objects.md)
-      * [Models](basics/developers/api/sources/source-objects-1.md)
-      * [Tables](basics/developers/api/sources/source-objects-2.md)
-      * [Filter Segments](basics/developers/api/sources/source-objects-3.md)
+  * [Management API](basics/developers/api.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>

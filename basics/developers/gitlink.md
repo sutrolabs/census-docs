@@ -248,7 +248,7 @@ Please refer to this section on the different parameters and their values a sync
 * `service_slice_size` - (Optional, Type: Integer) Denote the size of the data chunks in which data will be uploaded to the destination. Possible values are `1` - `100,000`.
 * `destination` - (Type: Object) The destination to which the sync will upload the data.
   * `connection_identifier` - (Type: String) Resource identifier of the sync destination.
-  * `object_identifier` - (Type: String) Object identifier of the sync destination object to which the records are uploaded. Please refer to the Management API documentation on [Destination Objects](api/destination-objects.md) to find object identifiers for a given destination.
+  * `object_identifier` - (Type: String) Object identifier of the sync destination object to which the records are uploaded. Please refer to the Management API documentation on [Destination Objects](https://developers.getcensus.com/api-reference/destinations/list-destination-objects) to find object identifiers for a given destination.
   * `lead_union_default_object` - (Type: String) Whether to upload records as a 'Lead or Contact' or 'Lead or Account' object. Only applicable if the current sync has a Salesforce destination. Possible values are `converted` (Lead or Contact) or `lead` (Lead or Account).
   * `file_settings` - (Optional, Type: Object) File settings of the sync destination.
     * `file_format` - (Type: String) File format of the sync destination. Possible values are `CSV`, `TSV`, `JSON`, `NDJSON` or `Parquet`.
