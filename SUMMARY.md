@@ -51,6 +51,7 @@
 * [Amazon Redshift](sources/redshift.md)
 * [Amazon S3](sources/s3.md)
 * [Azure Synapse](sources/azure-synapse.md)
+* [ClickHouse](sources/clickhouse.md)
 * [Databricks](sources/databricks.md)
 * [Elasticsearch](sources/elasticsearch.md)
 * [Google AlloyDB](sources/alloydb.md)
