@@ -1,14 +1,14 @@
 ---
-description: This page describes how to use Census with Vero.
+description: This page describes how to use Census with Vero Cloud.
 ---
 
-# Vero
+# Vero Cloud
 
 ## 🏃‍♀️ Getting Started
 
-#### Generate Vero auth token
+#### Generate Vero Cloud auth token
 
-1. Open Vero
+1. Open Vero Cloud
 2. Navigate to **Settings** > **Project Details**
 3. Select **Add API Credentials**
 4. Copy the **Auth Token** value to your clipboard
@@ -17,21 +17,21 @@ description: This page describes how to use Census with Vero.
 
 1. Open Census
 2. Click **New Destination**
-3. Select **Vero** from the menu
+3. Select **Vero** **Cloud** from the menu
 4. Paste your **Auth Token**
 5. Click **Connect**
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-12-30 at 2.36.13 PM.png" alt=""><figcaption><p>Add the auth token you generated in Vero.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2022-12-30 at 2.36.13 PM.png" alt=""><figcaption><p>Add the auth token you generated in Vero Cloud.</p></figcaption></figure>
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**     | **Behaviors**    |
+| **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors**    |
 | --------------: | :------------: | ------------------- | ---------------- |
 |           Event |        ✅       | Event ID (optional) | Append           |
 |            User |        ✅       | Email               | Update or Create |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Vero objects and/or behaviors.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Vero Cloud objects and/or behaviors.
 
-## 🚑 Need help connecting to Vero?
+## 🚑 Need help connecting to Vero Cloud?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
