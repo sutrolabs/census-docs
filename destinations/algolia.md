@@ -15,7 +15,7 @@ Census needs the following information to create an Algolia connection, both of 
 First, ensure your desired application is selected in the Application dropdown menu of the Algolia UI. Then navigate to the **Settings** page then click on the **API Keys** option under **Teams & Access.**
 
 * **Application ID** - The alphanumeric string at the top of the **Your API Keys** tab.
-* **API Key** - Census uses the `listIndexes` and `addObject` permissions. We recommend you create a new API key by navigating to the **All API Keys** tab and pressing **New API Key**. Provide at least those permissions in the ACL section. You can optionally restrict Census to a specific set of indexes as well.&#x20;
+* **API Key** - Census uses the `listIndexes`, `search`, and `addObject` permissions. We recommend you create a new API key by navigating to the **All API Keys** tab and pressing **New API Key**. Provide at least those permissions in the ACL section. You can optionally restrict Census to a specific set of indexes as well.&#x20;
 
 ### 2. Connect Algolia in Census
 
