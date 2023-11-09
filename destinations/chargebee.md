@@ -43,14 +43,22 @@ Census needs only your Chargebee **API token** and **sub domain** to connect you
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-16 at 3.00.06 PM.png>)
 
+## Custom Fields in Chargebee <a href="#supported-objects" id="supported-objects"></a>
+
+Custom fields defined in Chargebee can be added to the sync mapping by manually entering the custom field API Name in the destination field mapping.&#x20;
+
+<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Chargebee Custom Field</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
+
 ## 🗄️ Supported Objects <a href="#supported-objects" id="supported-objects"></a>
 
 Census currently supports syncing to the following Chargebee objects.
 
 | **Object Name** | **Supported?** | **Sync Keys** |
-| :-------------: | :------------: | :-------------: |
-|     Customer    |        ✅       |    ID, Email    |
-|   Subscription  |        ✅       |   ID, Plan ID   |
+| :-------------: | :------------: | :-----------: |
+|     Customer    |        ✅       |   ID, Email   |
+|   Subscription  |        ✅       |  ID, Plan ID  |
 
 ## 🔄 Supported Sync Behaviors
 
@@ -58,7 +66,7 @@ Census currently supports syncing to the following Chargebee objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|   **Behaviors** | **Supported?** |      **Objects**      |
+|   **Behaviors** | **Supported?** |       **Objects**      |
 | --------------: | :------------: | :--------------------: |
 | **Update Only** |        ✅       | Customer, Subscription |
 
