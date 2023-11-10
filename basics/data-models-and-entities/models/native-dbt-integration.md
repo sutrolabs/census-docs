@@ -43,7 +43,7 @@ A few additional notes:
 * If Census does not support a version the matches the conditions in `require-dbt-version` field, the project will not compile successfully.
 * If Census supports multiple dbt versions that match the requirements, the latest version supported by Census will be used.
 
-Alternatively, you can configure your dbt project in Census to use a specific dbt version (this version must _also_ be within the supported version range specified in your `dbt_project.yml`). You can set this by selecting a specific version in the **dbt Version** dropdown menu with in your dbt project's configuration in Census.&#x20;
+Alternatively, you can configure your dbt project in Census to use a specific dbt version (note that this version must be within the supported version range defined in your `dbt_project.yml` if one is specified). You can set this by selecting a specific version in the **dbt Version** dropdown menu with in your dbt project's configuration in Census.&#x20;
 
 <figure><img src="../../../.gitbook/assets/dbt Version (1).png" alt=""><figcaption></figcaption></figure>
 
