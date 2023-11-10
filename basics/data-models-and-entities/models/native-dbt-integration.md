@@ -44,6 +44,10 @@ Note that setting an version override may cause issues if the Census configured 
 
 Census ignores the optional `version` and `config-version` fields in `dbt_project.yml`.
 
+{% hint style="info" %}
+Census aims to add support for new dbt major versions within 30 days of release.
+{% endhint %}
+
 ## Unsupported features
 
 Our dbt integration is designed to pair nicely with your existing dbt runner, whether dbt Cloud or self-hosted. We do this by using the `dbt compile` command rather than the typical `dbt run` and then make use of the compiled output only.
