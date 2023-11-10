@@ -28,25 +28,28 @@ Once you’ve configured your project repository, Census will analyze your proje
 
 ## Managing dbt versions
 
-We currently support the following dbt versions: `1.2`, `1.3`, `1.4`, `1.5`, `1.6`, and `1.7`. We announce new version support in our [changelog](https://whatsnew.getcensus.com/), and we aim to add support for a new dbt version no more than four weeks after it's officially released by dbt labs.
+Census currently support the following dbt versions: `1.2`, `1.3`, `1.4`, `1.5`, `1.6`, and `1.7`. We announce new version support in our [changelog](https://whatsnew.getcensus.com/), and we aim to add support for a new dbt version no more than four weeks after its release by dbt labs.
 
-By default, Census uses the [`require-dbt-version`](https://docs.getdbt.com/reference/project-configs/require-dbt-version) field in your `dbt_project.yml`, if specified, in your project's `dbt_project.yml`.
+To determine your dbt version, Census uses the [`require-dbt-version`](https://docs.getdbt.com/reference/project-configs/require-dbt-version) field (if specified) in your project's `dbt_project.yml`. We recommend you pin your dbt project to the minor version range as dbt recommends. For example, the following configuration would ping your project to version 1.6:
 
-* If this field is not specified, a default version of `1.4` will be used.
+```yaml
+require-dbt-version: ">=1.6.0,<1.7.0"
+```
+
+A few additional notes:
+
+* If this field is not specified, a default version of `1.4` will be used. After Jan 15, 2024, the latest available version will be used.&#x20;
+* We do not recommend you specify a single patch-level dbt version (for example: `require-dbt-version: 1.6.0`)  as this can cause your project to break when newer versions are adopted.
 * If Census does not support a version the matches the conditions in `require-dbt-version` field, the project will not compile successfully.
 * If Census supports multiple dbt versions that match the requirements, the latest version supported by Census will be used.
 
-Alternatively, you can tell Census to use a specific dbt version for your project. This will override any configuration in your `dbt_project.yml`. You can set this by selecting a specific version in the **dbt Version** dropdown menu with in your dbt project's configuration in Census.&#x20;
+Alternatively, you can configure your dbt project in Census to use a specific dbt version. This will override any configuration in your `dbt_project.yml`. You can set this by selecting a specific version in the **dbt Version** dropdown menu with in your dbt project's configuration in Census.&#x20;
 
 <figure><img src="../../../.gitbook/assets/dbt Version (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that setting an version override may cause issues if the Census configured value falls behind your project configuration. We recommend you provide the support values using `require-dbt-version` instead.&#x20;
 
 Census ignores the optional `version` and `config-version` fields in `dbt_project.yml`.
-
-{% hint style="info" %}
-Census aims to add support for new dbt major versions within 30 days of release.
-{% endhint %}
 
 ## Unsupported features
 
