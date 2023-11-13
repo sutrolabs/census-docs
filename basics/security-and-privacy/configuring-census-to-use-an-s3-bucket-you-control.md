@@ -34,7 +34,7 @@ export CENSUS_CUSTOMER_BUCKET_EXTERNAL_ID=<provided by Census>
 
 ### 3. Create and configure the bucket
 
-Create the S3 bucket. Currently, `us-east-1` is the only supported region, as this is where the Census processing infrastructure is located. Note that it's okay if your data warehouse is located in a different region.
+Create the S3 bucket. Currently, `us-east-1` and `eu-central-1` are the only supported regions, as this is where the Census processing infrastructure is located. Note that it's okay if your data warehouse is located in a different region.
 
 ```
 aws s3api create-bucket --acl private --bucket $BUCKET_NAME --region=us-east-1
