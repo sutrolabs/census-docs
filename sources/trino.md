@@ -1,5 +1,5 @@
 ---
-description: This page describes how to use Trino as a source in Census.
+description: This page describes how to use Trino or Starburst as a source in Census.
 ---
 
 # Trino
