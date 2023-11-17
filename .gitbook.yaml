@@ -13,3 +13,5 @@ redirects:
     source-warehouse/rockset: ./sources/rockset.md
     source-warehouse/snowflake: ./sources/snowflake.md
     destinations/custom-api: basics/developers/custom-api.md
+    sources/starburst-enterprise: ./sources/trino.md
+    sources/starburst-galaxy: ./sources/trino.md
