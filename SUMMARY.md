@@ -67,6 +67,7 @@
 * [SingleStore](sources/singlestore.md)
 * [Snowflake](sources/snowflake.md)
 * [SQL Server](sources/sql-server.md)
+* [Trino](sources/trino.md)
 
 ## 🛫 Destinations
 
