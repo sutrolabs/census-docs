@@ -16,7 +16,7 @@ description: This page describes how to use Census with ClickUp.
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
-| Task | ✅ | Any unique identifier | Append |
+| Task | ✅ | Any unique identifier<br>Task ID | Append<br>Update Only |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more ClickUp objects and/or behaviors.
 
