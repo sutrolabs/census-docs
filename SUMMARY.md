@@ -150,6 +150,7 @@
 * [Intercom](destinations/intercom.md)
 * [Iterable](destinations/iterable.md)
 * [Jira](destinations/jira.md)
+* [Kafka](destinations/kafka.md)
 * [Klaviyo](destinations/klaviyo.md)
 * [Kustomer](destinations/kustomer.md)
 * [LaunchDarkly](destinations/launchdarkly.md)
