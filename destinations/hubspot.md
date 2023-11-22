@@ -27,7 +27,7 @@ Follow the OAuth flow to connect HubSpot. Easy!
 [Contact us](mailto:support@getcensus.com) if you're looking for Census to support other HubSpot objects.
 
 {% hint style="info" %}
-HubSpot uses Cloudflare to protect their API, which is quiet sensitive to receiving data that appears to be malicious. In order to prevent HubSpot/Cloudflare from blocking all Census customers, our HubSpot connecter automatically sanitizies strings removing common malicious patterns. If you're seeing data discrepencies that may be related to this, please [contact the Census support team](mailto:support@getcensus.com).
+HubSpot uses Cloudflare to protect their API, which is quiet sensitive to receiving data that appears to be malicious. In order to prevent HubSpot/Cloudflare from blocking all Census customers, the HubSpot connecter may sanitizies string to remove common malicious patterns. If you're seeing data discrepencies that may be related to this, please [contact the Census support team](mailto:support@getcensus.com).
 {% endhint %}
 
 ### Custom Objects
