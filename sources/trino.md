@@ -6,7 +6,7 @@ description: This page describes how to use Trino or Starburst as a source in Ce
 
 ## 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
 
-Census can use Trino (and any supported Trino catalog) as a source. Census has been tested with the open-source Trino as well as Starburst Galaxy and Starburst Enterpriese.
+Census can use Trino (and any supported Trino catalog) as a source. Census has been tested with the open-source Trino as well as Starburst Galaxy and Starburst Enterprise.
 
 * Open Census and navigate to the **Sources** page.
 * Click **New Source** and select Trino from the list.
