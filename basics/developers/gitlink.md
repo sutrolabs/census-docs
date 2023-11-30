@@ -136,11 +136,19 @@ sync:hubspot-contact-sync: ## Unchanging resource identifier for your sync
   # Alerting options and thresholds for your syncs
   operational_settings:
     alerts:
-      failed_run_notifications:
-        enabled: true
-      failed_record_notifications:
-        enabled: true
-        threshold_percent: 75
+    - type: FailureAlertConfiguration
+      send_for: first_time
+      should_send_recovery: true
+      options: {}
+    - type: FullSyncTriggerAlertConfiguration
+      send_for: every_time
+      should_send_recovery: false
+      options: {}
+    - type: InvalidRecordPercentAlertConfiguration
+      send_for: first_time
+      should_send_recovery: true
+      options:
+        threshold: 75
 ```
 
 ### Automatic YAML Spec Versions
@@ -293,9 +301,9 @@ Please refer to this section on the different parameters and their values a sync
   * `operation` - (Optional, Type: String) Array operation indicating how array fields should be updated in the destination. Only applies if `array_field` is set to `true`. Possible values are `overwrite` or `merge`.
 * `advanced_configuration` - (Optional, Type: Object) Any advanced configuration that a sync requires, particularly for notification syncs.
 * `operational_settings` - (Type: Object) Other operational settings.
-  * `alerts` - (Optional, Type: Object) Alerting configuration for the sync.
-    * `failed_run_notifications` - (Optional, Type: Object) Notification settings for sync failures.
-      * `enabled` - (Optional, Type: Boolean) Indicate if notification is sent on run fails.
-    * `failed_record_notifications` - (Optional, Type: Object) Notification settings for when individual records fail in the sync run.
-      * `enabled` - (Optional, Type: Boolean) Enable notifications on record failures.
-      * `threshold_percent` - (Optional, Type: Integer) The percentage of records that need to fail to send a record failing notification. Possible values are `0` - `100`.
+  * `alerts` - (Type: Array) Alerting configuration for the sync.
+    * `type` - (Type: String) Type of alert
+    * `send_for` - (Type: String) Indicate whether you would like to be alerted the first_time or every_time the sync violates the alert condition.
+    * `should_send_recovery` - (Type: Boolean) Indicate if you would like an email when the sync recovers from the alert type.
+    * `options` - (Type: Object) Properties specific to the alert type. One example below, these will differ by type.
+      * `threshold` - (Optional, Type: Integer) The percentage of records that need to fail to send a record failing notification. Possible values are `0` - `100`.
