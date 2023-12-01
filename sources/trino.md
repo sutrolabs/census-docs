@@ -21,6 +21,6 @@ Census can use Trino (and any supported Trino catalog) as a source. Census has b
 
 As of November 2023, Trino only supports our [Basic Sync Engine](overview.md#sync-engines).
 
-## 🚑 Need help connecting to Materialize?
+## 🚑 Need help connecting to Trino?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
