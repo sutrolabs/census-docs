@@ -2,34 +2,43 @@
 
 Our goal is to keep all the data flowing smoothly, but sometimes things don't go as planned. When that happens, Census offers multiple ways to get alerted so you're always the first to know what's going on with your syncs. Read on to learn how to configure them.
 
-Each Census sync has its own set of potential alerts and you can configure each of them to match your needs. There are two types of alerts available and both are turned on by default for each new sync:
+Each Census sync has its own set of potential alerts and you can configure each of them to match your needs. There are six types of alerts available, two of which are turned on by default for each new sync:
 
-1. **Sync Failures** - Alerts when a sync completely fails, usually because the source or destination connection is broken.
-2. **Records Rejected or Invalid** - Alerts when a sync ran successfully but some of the records were invalid or rejected. In this case, you can configure the threshold that should generate alerts. By default, it's 75% of records, but that can be lowered all the way down to alert you if any record is invalid or rejected. [Learn more about invalid and rejected records](../core-concept/#understanding-sync-history).
+1. **Failed Sync** (default) - Alerts when a sync completely fails, usually because the source or destination connection is broken.
+2. **Failed Records** (default) - Alerts when a sync ran successfully but some of the records were invalid in the source or rejected by the destination. In this case, you can configure the threshold that should generate alerts. By default, it's 75% of records, but that can be lowered all the way down to alert you if any record is invalid or rejected. [Learn more about invalid and rejected records](../core-concept/#sync-history).
+3. **Sync Status** - Alerts when a sync starts or successfully completes. 
+4. **Full Sync Triggered** - Alerts when a full sync is triggered on your sync. Your alert will contain the reason(s) why a full sync was run.
+5. **Sync Runtime** - Alerts when a sync has not completed within a configurable length of time since either the scheduled or actual sync start time.
+6. **Record Count Deviation** - Alerts when a variety of record count options have deviated from the "norm", which is determined by the average of a configurable number of previous sync runs.
 
-{% hint style="info" %}
-**Please note:** Census will send a Sync Failure or Rejected/Invalid Record alert upon the first sync run where the alerting conditions are met.&#x20;
+To configure, visit the **Alerts** tab in your Sync to configure which alerts are enabled per sync. By default, you will have 2 alert types enabled.
 
-To save your inbox, subsequent sync runs with the same failure or rejection % will not trigger additional alerts.&#x20;
+![](<../../.gitbook/assets/Screenshot 2023-12-04 at 2.16.50 PM.png>)
 
-Once your sync is back to running successfully or the number of rejected/invalid records has fallen below the specified threshold then new alerts will be sent if the alerting conditions are met again.&#x20;
-{% endhint %}
+The "New Alert" drop-down will open up the list of alert types that you may add to your sync. You can add as many, even multiple of the same type, as you need.
 
+![](<../../.gitbook/assets/Screenshot 2023-12-04 at 2.25.42 PM.png>)
 
+Most of the alert types come with a configurable option for the frequency of the alerts.
 
-To configure, visit to the **Alerts** tab in your Sync to configure which alerts are enabled per sync.
+1. **First Violation** (default) - You will be alerted the first time an alert condition is violated, but not on each consecutive failure. If your alert resolves and then re-opens, you will still get alerted for the new violation.
+2. **Every Violation** - You will be alerted on every single violation of the alert condition. This is off by default to prevent email spam.
 
-![](<../../.gitbook/assets/Screen Shot 2021-10-23 at 9.29.15 AM.png>)
+![](<../../.gitbook/assets/Screenshot 2023-12-04 at 2.20.40 PM.png>)
+
+Lastly, you can configure whether or not you would like recovery emails. By default, Census will notify you when an alert that was in violation of its condition becomes resolved. If you are not interested in these recovery emails, you can disable them from this configuration screen.
+
+![](<../../.gitbook/assets/Screenshot 2023-12-04 at 2.31.12 PM.png>)
 
 ### Configure your personal email subscriptions
 
-By default, all members of your team will be subscribed to all emails. You can choose to personally opt out of certain emails, under **Settings** > **User Settings**.
+By default, all members of your team will be subscribed to all emails. You can choose to personally opt out of certain emails, under **Organization Home** > **User Settings**.
 
 ![](<../../.gitbook/assets/Screen Shot 2021-10-23 at 9.45.37 AM.png>)
 
 ### Email subscriptions for aliases and mailing lists
 
-You can also send sync alerts and weekly sync summaries to any non-user email address such as an email alias or mailing list. Simply go to **Census** > **Settings** and add the desired email address under **General Settings > Email Alerts and Weekly Summaries**.
+You can also send sync alerts and weekly sync summaries to any non-user email address such as an email alias or mailing list. Simply go to **Workspace Settings** > **General** and add the desired email address under **General Settings > Email Alerts and Weekly Summaries**.
 
 ### Slack alerts
 
@@ -39,7 +48,7 @@ You can send sync alerts to your selected channels via Slack's channel email fea
 
 ![](../../.gitbook/assets/get\_slack\_channel\_email.png)
 
-2. Once you have the email address, go to **Census** > **Settings** and paste that channel's email address under **General Settings** > **Slack Alerts**
+2. Once you have the email address, go to **Workspace Settings** > **General** and paste that channel's email address under **General Settings** > **Slack Alerts**
 
 ![](<../../.gitbook/assets/Screenshot 2023-03-30 at 10.27.29 PM.png>)
 
