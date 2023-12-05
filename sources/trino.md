@@ -17,9 +17,28 @@ Census can use Trino (and any supported Trino catalog) as a source. Census has b
   * (Optional) If your Trino instance does not run on port 443, enter the port here. Census requires a TLS connection to Trino.
 * You’re all set! Head over to the **Syncs** page to activate your data.
 
+## :gear: Using the Advanced Sync Engine
+
+Trino supports both of Census' [Sync Engines](overview.md#sync-engines): Basic and Advanced. In order to use the Advanced Sync Engine with Trino, all of the following must be true:
+
+* Your Trino cluster must have a catalog named `CENSUS` containing a schema named `CENSUS`
+* The connector you use for the `CENSUS` catalog must support:
+  * `CREATE TABLE` and `DROP TABLE`
+  * Table writes, including row-level `INSERT`, `DELETE`, and `UPDATE` operations. Tables that support these operations are sometimes called "transactional" tables in Trino connector documentation, although Census does not require true ACID transactions for the Advanced Sync Engine.
+  * The `CREATE OR REPLACE TABLE` statement, which was added to Trino in October 2023 and is available in some Starburst releases (check the release notes for your Starburst Enterprise version or for Starburst Galaxy).
+* The account (service account or user) that Census uses to connect to your Trino cluster must have full permissions for the `CENSUS.CENSUS` schema.
+
+We have successfully tested Census' Advanced Sync Engine with the following configurations - it's possible that other configurations are supported, and we encourage you to use the Census connection tester to obtain diagnostics if needed:
+
+* `CENSUS` catalog using the MySQL, Postgres, and Snowflake connectors in read-write mode
+* `CENSUS` catalog using the Iceberg connector with S3 object storage and the AWS Glue catalog
+* `CENSUS` catalog using the [Starburst Delta Lake](https://docs.starburst.io/latest/connector/delta-lake.html) connector, on both the AWS Glue catalog and the Starburst Galaxy catalog
+
+Census is unable to provide any additional Trino table options (such as location) to the `WITH` clause when creating or managing tables in the `CENSUS` catalog, so please ensure your catalog and schema are configured with any needed default table options.
+
 ## 💡 Notes <a href="#notes" id="notes"></a>
 
-As of November 2023, Trino only supports our [Basic Sync Engine](overview.md#sync-engines).
+As of December 2023, Warehouse Writeback is not yet supported but is coming soon - please reach out to your Census account executive for details.
 
 ## 🚑 Need help connecting to Trino?
 
