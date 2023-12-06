@@ -155,6 +155,7 @@
 * [Kustomer](destinations/kustomer.md)
 * [LaunchDarkly](destinations/launchdarkly.md)
 * [LinkedIn](destinations/linkedin.md)
+* [LiveIntent](destinations/liveintent.md)
 * [Mailchimp](destinations/mailchimp.md)
 * [Mailgun](destinations/mailgun.md)
 * [Marketo](destinations/marketo.md)
