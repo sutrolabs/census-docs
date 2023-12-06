@@ -25,7 +25,7 @@ Census Enrichment makes it drop dead simple to enable data enrichment directly i
 ## Enabling enrichments
 
 {% hint style="info" %}
-Enrichments is currently supported on Snowflake, Redshift, and Postgres with more warehouses coming soon!
+Enrichments is currently supported on Snowflake, Redshift, BigQuery, and Postgres with more warehouses coming soon!
 {% endhint %}
 
 Enrichments are configured on [entities.md](entities.md "mention"). Every entity now has a Data Enrichment tab that allows configuring enrichment. The data within the entity will act as the source data that is passed to the enrichment service, and Census will automatically store the results in the warehouse as well as add the data you specify to the entities.
