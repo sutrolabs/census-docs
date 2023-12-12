@@ -146,6 +146,7 @@
 * [HTTP Request](destinations/http-request.md)
 * [HubSpot](destinations/hubspot.md)
 * [Impact](destinations/impact.md)
+* [Insider](destinations/insider.md)
 * [Insightly](destinations/insightly.md)
 * [Intercom](destinations/intercom.md)
 * [Iterable](destinations/iterable.md)
