@@ -31,6 +31,7 @@ Please create an IAM Policy that includes the following permissions
 "s3:PutObject",
 "s3:GetObject",
 "s3:ListBucket",
+"s3:GetBucketLocation"
 
 "glue:GetDatabase",
 "glue:GetTables",
@@ -62,7 +63,8 @@ Here is a sample IAM policy that specifies the resources:
                 # permissions to get and write query result
                 "s3:PutObject",
                 "s3:GetObject",
-                "s3:ListBucket"
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
             ],
             "Resource": [
                 "arn:aws:glue:<region>:<aws-account-id>:table/<database of tables to sync>/*",
@@ -82,9 +84,7 @@ Here is a sample IAM policy that specifies the resources:
 
 ### Create an Amazon Athena connection
 
-1\. Ensure that the AWS IAM policy created in the "Required Permissions" section is attached to the IAM user that Census is impersonating.
-2\. In Census, go to **Sources** or click [here to go to the app](https://app.getcensus.com/sources).
-3\. Click **New Source** and select **Amazon Athena**.
+1\. Ensure that the AWS IAM policy created in the "Required Permissions" section is attached to the IAM user that Census is impersonating. 2. In Census, go to **Sources** or click [here to go to the app](https://app.getcensus.com/sources). 3. Click **New Source** and select **Amazon Athena**.
 
 ![](../.gitbook/assets/athena\_setup.png)
 
