@@ -87,6 +87,7 @@
 * [Amazon S3](destinations/s3.md)
 * [Amplitude](destinations/amplitude.md)
 * [Anaplan](destinations/anaplan.md)
+* [Antavo](destinations/antavo.md)
 * [Appcues](destinations/appcues.md)
 * [Apollo](destinations/apollo.md)
 * [Asana](destinations/asana.md)
