@@ -46,9 +46,9 @@ Note: The custom fields you've added will not show inside Census. You'll need to
 
 ### Subscription Preferences
 
-Subscription preferences allow you to manage which users are subscribed or unsubscribed from your existing marketing subscriptions (Currently, HubSpot does not allow external services to programmatically create new subscriptions).&#x20;
+Subscription preferences allow you to manage which users are subscribed or unsubscribed from your existing marketing subscriptions (Currently, HubSpot does not allow external services to programmatically create new subscriptions).
 
-HubSpot Subscription Preferences syncs require additional fields when using HubSpot's GDPR portal:&#x20;
+HubSpot Subscription Preferences syncs require additional fields when using HubSpot's GDPR portal:
 
 * **Legal Basis** One of the following values: `LEGITIMATE_INTEREST_PQL`, `LEGITIMATE_INTEREST_CLIENT`, `PERFORMANCE_OF_CONTRACT`, `CONSENT_WITH_NOTICE`, `NON_GDPR`, `PROCESS_AND_STORE`, `LEGITIMATE_INTEREST_OTHER`.
 * **Legal Basis Explanation** A more detailed explanation to go with the legal basis.
@@ -56,7 +56,7 @@ HubSpot Subscription Preferences syncs require additional fields when using HubS
 The same value provided for these fields will be used for both subscribing and unsubscribing a user.
 
 {% hint style="info" %}
-Census can only remove contacts from subscriptions that were originally created by Census.&#x20;
+Census can only remove contacts from subscriptions that were originally created by Census.
 {% endhint %}
 
 ### Managing Object Associations
@@ -115,7 +115,7 @@ Please be aware that Custom Objects require additional API calls and are even sl
 
 ## 🔑 Required Permissions
 
-Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects. If you have limited permissions and still want to connect Census to HubSpot, [contact the Census support team](mailto:support@getcensus.com).
+Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects.&#x20;
 
 ## :electric\_plug: Disconnecting HubSpot
 
