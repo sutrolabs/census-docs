@@ -1,5 +1,5 @@
 ---
-description: This page describes how to use Census with Insider.
+description: This page describes how to use Census with mParticle.
 ---
 
 # mParticle
