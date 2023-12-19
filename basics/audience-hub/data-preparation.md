@@ -57,7 +57,7 @@ In entities you can select the columns that have a finite list of values such as
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-06-20 at 21.24.52@2x.png" alt=""><figcaption></figcaption></figure>
 
-When these columns are used in segmentation they will now display a dropdown of options to choose from.  This helps to avoid issues of using the wrong casing. &#x20;
+When these columns are used in segmentation they will now display a dropdown of options to choose from.  This helps to avoid issues of using the wrong casing.  There is a maximum limit of 100k unique values for an enumerated field.&#x20;
 
 ### Enriching Entities
 
