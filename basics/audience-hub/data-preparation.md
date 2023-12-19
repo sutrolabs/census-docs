@@ -73,4 +73,6 @@ Effective segmentation often also requires third-party data as well, which is da
 
 <figure><img src="../../.gitbook/assets/Documentation.png" alt=""><figcaption></figcaption></figure>
 
-SQL table names are often not enough to fully explain what data should actually be used for. Take advantage of Census's ability to add or automatically import descriptions for models, entities (and also segments) to give marketing users more details on how data should be used.&#x20;
+SQL table names are often not enough to fully explain what data should actually be used for. Take advantage of Census's ability to add or automatically import descriptions for models, entities (and also segments) to give marketing users more details on how data should be used. \
+\
+If you have DBT connected,  the field descriptions are automatically pulled in and displayed in the segment builder when hovering over a particular field.&#x20;

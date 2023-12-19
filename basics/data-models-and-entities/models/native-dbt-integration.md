@@ -69,6 +69,8 @@ Within Census, your dbt models will display your model's `description` parameter
 
 <figure><img src="../../../.gitbook/assets/screely-1683048647353.png" alt="Screenshot of a dbt model shown in Census. The &#x22;Description&#x22; is taken directly from the docs string you specify about your dbt model in any schema.yml file."><figcaption><p>The "Description" is taken directly from the docs string you specify about your dbt model in any schema.yml file.</p></figcaption></figure>
 
+Descriptions for fields are also pulled in and displayed in the segment builder when hovering over a particular field.&#x20;
+
 ## dbt Continuous Integration (CI) Checks in GitHub
 
 For dbt models used in Census syncs, Census can check whether you are going to drop, rename, or move a model that will end up breaking an active sync in your account. When a Pull Request (or commit to a Pull Request) is created, dbt CI Checks will help ensure that your dbt development never unexpectedly breaks downstream Census syncs.
