@@ -79,7 +79,7 @@ If you have DBT connected,  field descriptions are automatically pulled in and d
 
 ### Hiding data
 
-If you have sensitive information this can be marked as Personally Identifiable Information (PII) within models.  If a column has been marked as PII on a model, all entities or segments built off of the model will inherit the configuration and correctly mask its content.&#x20;
+If you have sensitive information this can be marked as Personally Identifiable Information (PII) within models.  If a column has been marked as PII on a model, all entities or segments built off of the model will inherit the configuration and replace the data in the preview with "\*\*\*\*\*\*\*\*".
 
 <div data-full-width="false">
 
