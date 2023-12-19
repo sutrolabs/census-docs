@@ -47,7 +47,7 @@ Click the Create New API key button in the top right.
 
 Select the "Server-side" key type from the subsequent dropdown.
 
-![](<../.gitbook/assets/image (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1).png>)
 
 Copy the resulting key (a string of 32 characters) to add it to Census.
 
@@ -77,12 +77,12 @@ You can map data fields into your existing Iterable audience schema (including i
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Sync Keys** |
-| --------------: | :------------: | --------------- |
-|            User |        ✅       | User ID, Email  |
-|           Event |        ✅       | Event ID        |
-|         Catalog |        ✅       | Key             |
-|     Static List |        ✅       | User ID, Email  |
+| **Object Name** | **Supported?** | **Sync Keys**  |
+| --------------: | :------------: | -------------- |
+|            User |        ✅       | User ID, Email |
+|           Event |        ✅       | Event ID       |
+|         Catalog |        ✅       | Key            |
+|     Static List |        ✅       | User ID, Email |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
 
@@ -124,7 +124,7 @@ Iterable Catalogs let you create custom objects within Iterable that can be asso
 * In practice, even if a field is typed, Iterable will accept and update field values of different types. For instance, if the `age` field is typed as a Long, but we send a value of "25", Iterable will accept and update records to use the string "25" as age.
 * Iterable can take a while to process new Catalog items. In some cases, we see Iterable take as long as 20 minutes before the record appears.
 
-### [**Invalid Email Rejections**](#user-content-fn-1)[^1]
+### **Invalid Email Rejections**
 
 When syncing to the User object Iterable may reject some records with the message `Invalid Email`. This is thrown for in the following cases
 
@@ -149,5 +149,3 @@ Learn more about what all of our sync behaviors on our [Core Concept page](../ba
 ## 🚑 Need help connecting to Iterable?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-
-[^1]: 

@@ -75,4 +75,16 @@ Effective segmentation often also requires third-party data as well, which is da
 
 SQL table names are often not enough to fully explain what data should actually be used for. Take advantage of Census's ability to add or automatically import descriptions for models, entities (and also segments) to give marketing users more details on how data should be used. \
 \
-If you have DBT connected,  the field descriptions are automatically pulled in and displayed in the segment builder when hovering over a particular field.&#x20;
+If you have DBT connected,  field descriptions are automatically pulled in and displayed in the segment builder when hovering over a particular field.&#x20;
+
+### Hiding data
+
+If you have sensitive information this can be marked as Personally Identifiable Information (PII) within models.  If a column has been marked as PII on a model, all entities or segments built off of the model will inherit the configuration and correctly mask its content.&#x20;
+
+<div data-full-width="false">
+
+<figure><img src="../../.gitbook/assets/CleanShot 2023-12-19 at 15.04.08@2x.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+If a model has PII marked data it will no longer be viewable within the API inspector in syncs.&#x20;
