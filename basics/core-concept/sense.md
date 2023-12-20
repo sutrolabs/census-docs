@@ -6,6 +6,7 @@ description: This page describes how to use Census with Sense.
 
 Sense is smart talent engagement and communication platform that helps companies find and recruit. Census can send data to Sense to help you build better relationships with your candidates.
 
+
 {% hint style="warning" %}
 Sense's API is currently write only on a per record basis. This means that sending data to Sense will overwrite any existing data in Sense. As a result, Sense connector should only be used for initial data loading. For questions about this limiation, please reach out to you Sense Account Manager.
 {% endhint %}
