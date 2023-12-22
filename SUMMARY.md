@@ -140,6 +140,7 @@
 * [Google Analytics (UA)](destinations/google-analytics.md)
 * [Google Analytics 4](destinations/google-analytics-four.md)
 * [Google BigQuery](destinations/google-bigquery.md)
+* [Google Campaign Manager 360](destinations/google-campaign-manager-360.md)
 * [Google Cloud Storage](destinations/google-cloud-storage.md)
 * [Google Datastore](destinations/google-datastore.md)
 * [Google Display & Video 360](destinations/google-dv360.md)
