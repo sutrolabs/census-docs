@@ -12,7 +12,7 @@ Your entity is a list or a set of those things, ideally the full set so that oth
 
 Setting up entities in Census gives you the opportunity to define where the data is stored, what it is, how it's related and more, all of which will make Census much more powerful and easier to use.
 
-<figure><img src="../../.gitbook/assets/screely-1670199211607.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-12-21 at 14.03.03.png" alt=""><figcaption><p>example Person entity</p></figcaption></figure>
 
 ## Concepts
 
@@ -26,12 +26,12 @@ An entity is just a pointer to an existing model in your warehouse. You can thin
 
 Letting Census know what "type" of data your entity is will let Census be smarter when segmenting or syncing your entities later on. Census currently supports three specific data types in addition to a Generic type.
 
-| Type    | Description                                                                                                                               |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| User    | Humans that engage with your business in some form. They may be subscribers or free users or email recipients depending on your business. |
-| Company | Organizations that your business engages with. Typically users are a member of these companies in some form.                              |
-| Event   | Analytical events that capture a specific type of action with a moment in time (rather than calendar events)                              |
-| Generic | Any unspecified type of data. **If in doubt**, you can always use Generic for any of your entities.                                       |
+| Type       | Description                                                                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Generic    | Any unspecified type of data. **If in doubt**, you can always use Generic for any of your entities.                                       |
+| Event      | Analytical events that capture a specific type of action with a moment in time (rather than calendar events)                              |
+| Person     | Humans that engage with your business in some form. They may be subscribers or free users or email recipients depending on your business. |
+| Join Table | This can be used to specify a many-to-many relationship.                                                                                  |
 
 ### Schema Columns
 
@@ -54,8 +54,13 @@ Each entity can have many relationships defined and the relationship will appear
 
 The relationship definition includes two pieces of information:
 
-* The type of relationship - Currently Census supports Many-to-One or One-to-Many relationship types. These can be used to indicate when an entity is "owned" or "belongs to" one thing, or when an entity has many "children". The configured relationship should make sense if read out loud. For example, a Users entity almost always has a one-to-many relationship with Events because a "One User Has Many Events".
+* The type of relationship - Specify Many-to-One or One-to-Many relationship types here. These can be used to indicate when an entity is "owned" or "belongs to" one thing, or when an entity has many "children". The configured relationship should make sense if read out loud. For example, a `Person` entity almost always has a one-to-many relationship with Events because a "One Person Has Many Events".
 * The matching identifiers - The columns that contain identifiers that should match (be equivalent) on both sides of the relationship. In database terms, this is the primary key and foreign key that would sit on either side of a JOIN condition.
+
+To specify a Many-to-Many relationship type, use a `Join Table` type:
+
+* Any entity can be used as a join table, not just ones that are typed `Join Table`. All the `Join Table` type does is drop the requirement of specifying a `Unique Id` for that entity since often join tables do not have unique Ids for rows.
+* Aside from the specific many-to-many filtering use case, this change lets you filter on related entities inside filters on related entities. So you can now segment for things like “Pets who belong to users who have 5 purchase events in the last month”
 
 {% hint style="info" %}
 Note that Census does not check or enforce the validity of the data on either side of your relationship. Duplicate values on either side of the relationship can cause issues using the relationships used in segmentation so please make sure the relationship's data remains valid via tools like dbt testing.
@@ -79,9 +84,9 @@ The entities that matter for any given business are always unique so don't worry
 
 When setting up entities for the first time, it's easier to focus on just one or two entities and build from there. A great starting point:
 
-* Users entity
-* Events triggered by those users (if that applies to your business)
-* Companies those users work at (if that applies to your business)
+* Person entity
+* Events triggered by those people (if that applies to your business)
+* Companies those people work at (if that applies to your business)
 
 Setting up two of these entities with a relationship that joins them will let you get a sense of how the process works and how the resulting entities appear in segments and syncs.
 
