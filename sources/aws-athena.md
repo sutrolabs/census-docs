@@ -71,7 +71,7 @@ Here is a sample IAM policy that specifies the resources:
                 "arn:aws:glue:<region>:<aws-account-id>:database/<database of tables to sync>",
                 "arn:aws:glue:<region>:<aws-account-id>:catalog",
                 "arn:aws:athena:<region>:<aws-account-id>:workgroup/<workgroup>", # <---- only necessary if workgroup is not primary
-                "arn:aws:athena:<region>:<aws-account-id>:workgroup/primary", 
+                "arn:aws:athena:<region>:<aws-account-id>:workgroup/primary",
                 "arn:aws:s3:::<query-results-bucket>",
                 "arn:aws:s3:::<query-results-bucket>/*",
                 "arn:aws:s3:::<arn where table lives>",
@@ -109,7 +109,7 @@ Step 3: Click the 'Back' button to return to editing the destination. You should
 Step 4: Open your AWS Console in a separate tab and browse to the IAM service. Click 'Roles' and 'Create role'.
 
 * When creating the role choose 'AWS Account' for Trusted Entity Type and the 'Another AWS Account' radio button.
-* Ask your Census account representative for the Census AWS account to use.
+* Provide Census's AWS Account ID: `341876425553`.
 * Check the 'Require external ID' checkbox and enter the External ID string from Step 3.
 * Finish setting up your Role. Note that it should have the [required permissions](aws-athena.md#required-permissions) to access the Athena instance and associated S3 buckets you are using as your Census source!
 * When done, click on your role and copy its ARN. Go back to the tab where you're editing the Census Athena source and enter the role ARN.

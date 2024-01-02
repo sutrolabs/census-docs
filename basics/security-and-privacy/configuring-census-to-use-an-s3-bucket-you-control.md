@@ -14,7 +14,7 @@ _This feature is not currently available at all Census subscription levels or fo
 
 This guide will take you through the steps to prepare a bucket for use with Census. We will use the `aws` CLI to create and configure your bucket - you should [install this tool and configure it to use your credentials](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) before starting. Similar configuration is also possible using the AWS Console UI but those instructions are not provided here.
 
-In order to proceed, you will also need the Census AWS Account ID and your customer-owned bucket External ID - these will be provided to you by your Census representative.
+In order to proceed, you will also need the Census AWS Account ID (`341876425553`) and your customer-owned bucket External ID - these will be provided to you by your Census representative.
 
 ### 1. Choose a bucket name
 
@@ -71,7 +71,7 @@ First, create an empty role with a policy that allows Census to assume it via AW
 
 ```
 aws iam create-role --role-name census-data-warehouse-client --assume-role-policy-document \
-  '{"Version":"2012-10-17","Statement":{"Effect":"Allow","Action":"sts:AssumeRole","Principal":{"AWS":"'$CENSUS_AWS_ACCOUNT_ID'"},"Condition":{"StringEquals":{"sts:ExternalId":"'$CENSUS_CUSTOMER_BUCKET_EXTERNAL_ID'"}}}}'
+  '{"Version":"2012-10-17","Statement":{"Effect":"Allow","Action":"sts:AssumeRole","Principal":{"AWS":"'341876425553'"},"Condition":{"StringEquals":{"sts:ExternalId":"'$CENSUS_CUSTOMER_BUCKET_EXTERNAL_ID'"}}}}'
 ```
 
 This command should print out a role document that looks something like this:
