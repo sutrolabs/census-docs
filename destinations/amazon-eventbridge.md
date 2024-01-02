@@ -14,7 +14,7 @@ Creating an IAM Role with the necessary permissions requires a few steps in the 
 
 * Open your AWS Console in a separate tab and browse to the **IAM** service. Click **Roles** and **Create role**.
 * When creating the role choose **AWS Account** for **Trusted Entity Type** and the **Another AWS Account** radio button.
-* Ask your Census account representative for the Census AWS account to use.
+* Provide Census's AWS Account ID: `341876425553`.
 * Select the policy&#x20;
   * For services that write to EventBridge, [AWS recommends](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-identity-based.html#eb-events-iam-roles) the `AmazonEventBridgeFullAccess` and this is the only pre-made policy offering the necessary permissions.&#x20;
   * You can also use any custom policy that includes the `events:PutEvents` and `events:ListEventBuses` actions.&#x20;
