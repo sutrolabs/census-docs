@@ -104,6 +104,19 @@ Templated fields have a few limitations:
 * Not all sources support templates yet; we are always adding support for new sources!
 {% endhint %}
 
+#### Conditional field mappings
+
+Where available, Census supports two types of conditional field mappings:
+
+* **Don't Sync Null Values** - By default, Census will sync any Null values from the source to the destination. On some connections, you can disable sending any Null values. When disabled, the particular Null value for the property is ignored, but the rest of the recode is synced. Note that the the destinations may handle Null values differently. For example, Salesforce will convert Null values to empty strings, and Braze will delete the property completely when a Null value is synced.
+
+![Also Sync Null Values in the source field editor](../../.gitbook/assets/conditional_field_mapping_dont_sync_nulls.png)
+
+* **Set If Empty** - By default, Census will sync any values from the source to the destination, even if the destination already has a value. On some connections, you can set a property to only sync if the destination property is empty. This is useful if you want to set a default value for a property, but not overwrite any existing values.
+
+![Set only if destination field is empty](../../.gitbook/assets/conditional_field_mapping_set_if_empty.png)
+
+
 #### Creating new fields on your destination object
 
 For some destinations, such as Braze, Customer.io or Iterable (see full list below), you can create new fields directly from the Census app. This means the next time a sync runs, Census will create new properties or attributes for that object in the destination. This is useful if you want to automatically create new fields based on the columns in your source data.
