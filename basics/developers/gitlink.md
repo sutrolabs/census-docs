@@ -299,11 +299,12 @@ Please refer to this section on the different parameters and their values a sync
   * `generate_field` - (Optional, Type: Boolean) Indicate to Census if the mapping is a user-generated field.
   * `preserve_values` - (Optional, Type: Boolean) Indicate if mapping should overwrite existing values in the destination.
   * `operation` - (Optional, Type: String) Array operation indicating how array fields should be updated in the destination. Only applies if `array_field` is set to `true`. Possible values are `overwrite` or `merge`.
+  * `sync_null_values` - (Optional, Type: Boolean, Default: `true`) Indicate if null values should be included in the request payload. Read more [here](https://docs.getcensus.com/basics/core-concept#conditional-field-mappings).
 * `advanced_configuration` - (Optional, Type: Object) Any advanced configuration that a sync requires, particularly for notification syncs.
 * `operational_settings` - (Type: Object) Other operational settings.
   * `alerts` - (Type: Array) Alerting configuration for the sync.
     * `type` - (Type: String) Type of alert
-    * `send_for` - (Type: String) Indicate whether you would like to be alerted the first_time or every_time the sync violates the alert condition.
+    * `send_for` - (Type: String) Indicate whether you would like to be alerted the first\_time or every\_time the sync violates the alert condition.
     * `should_send_recovery` - (Type: Boolean) Indicate if you would like an email when the sync recovers from the alert type.
     * `options` - (Type: Object) Properties specific to the alert type. One example below, these will differ by type.
       * `threshold` - (Optional, Type: Integer) The percentage of records that need to fail to send a record failing notification. Possible values are `0` - `100`.
