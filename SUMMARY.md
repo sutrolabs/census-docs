@@ -224,4 +224,5 @@
 * [Webflow](destinations/webflow.md)
 * [X Ads (formerly Twitter Ads)](destinations/twitter.md)
 * [Zendesk](destinations/zendesk.md)
+* [Zoho CRM](destinations/zoho-crm.md)
 * [Zuora](destinations/zuora.md)
