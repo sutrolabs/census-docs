@@ -10,7 +10,9 @@ Census can connect to [Confluent Cloud](https://www.confluent.io/confluent-cloud
 
 ### Permissions
 
-The API key Census uses to access your Confluent Cloud cluster requires read permission to the topics you want to use within Census. Census will also create error topics in your cluster for messages that can’t be processed by pipelines. These topics have names beginning with `census_`. Census needs permission to create and write to topics with this naming pattern.
+The API key Census uses to access your Confluent Cloud cluster requires read permission to the topics you want to use within Census.&#x20;
+
+When used as the source for a Live Sync, Census will also create error topics in your cluster for messages that can’t be processed. These topics have names beginning with `census_`. Census needs permission to create and write to topics with this naming pattern.
 
 ## Create a Confluent Cloud Connection
 
