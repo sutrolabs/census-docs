@@ -81,6 +81,10 @@ If you have DBT connected,  field descriptions are automatically pulled in and d
 
 If you have sensitive information this can be marked as Personally Identifiable Information (PII) within models.  If a column has been marked as PII on a model, all entities or segments built off of the model will inherit the configuration and replace the data in the preview with "\*\*\*\*\*\*\*\*".
 
+{% hint style="info" %}
+This is not currently available for connected dbt or Looker models.
+{% endhint %}
+
 <div data-full-width="false">
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-12-19 at 15.04.08@2x.png" alt=""><figcaption></figcaption></figure>
