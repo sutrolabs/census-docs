@@ -14,7 +14,17 @@ Connecting to your Amazon Ads account is straightforward.
 
 ## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="184.6600566572238"></th><th width="137"></th><th width="154"></th><th></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td>Conversion Event</td><td>✅</td><td>Event Unique ID</td><td>Append</td></tr><tr><td>Audiences</td><td>🔜</td><td></td><td></td></tr></tbody></table>
+<table data-header-hidden>
+  <thead>
+    <tr><th width="184.6600566572238"></th><th width="137"></th><th width="154"></th><th></th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr>
+    <tr><td>Conversion Event</td><td>✅</td><td>Event Unique ID</td><td>Append</td></tr>
+    <tr><td>Hashed Records (Part 1)</td><td>✅</td><td>ID</td><td>Update or Create</td></tr>
+    <tr><td>DSP Audience Members (Part 2)<br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a></td><td>✅</td><td>ID</td><td>Update or Create</td></tr>
+  </tbody>
+</table>
 
 ### Conversion Events
 
@@ -23,7 +33,7 @@ Conversion Events are an [events.md](../basics/data-models-and-entities/defining
 * Like other event syncs, Amazon requires an **Event Name** and a **Timestamp**.
 * **Conversion Definition ID** - Amazon requires that you define all of your conversions types beforehand as Conversion Definitions.
 * **Country Code** - Must be the two-letter country code described in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes).
-* **Match Key** - This is the identifier to associate the event with. Amazon Ads currently only supports Email as a match key but may support additional options in the future. If you are going to provide Census with a pre-hashed value, must follow this format:&#x20;
+* **Match Key** - This is the identifier to associate the event with. Amazon Ads currently only supports Email as a match key but may support additional options in the future. If you are going to provide Census with a pre-hashed value, must follow this format:
   * Lowercase
   * Remove all non-alphanumeric characters \[a-zA-Z0-9] and \[.@-]
   * Remove any leading or trailing whitespace
@@ -32,13 +42,25 @@ Conversion Events are an [events.md](../basics/data-models-and-entities/defining
 There are also several optional fields available.
 
 * **Currency Code** - This only applies to Off Amazon Purchase conversion definition type. This is the three letter currency code associated with the value of the event in [ISO-4217 format](https://en.wikipedia.org/wiki/ISO\_4217#List\_of\_ISO\_4217\_currency\_codes). If not provided, the currency setting on the conversion definition will be used.
-* **Data Processing Options** - Currently, the only accepted value is `LIMITED_DATA_USE` which will cause Amazon to ignore this event.&#x20;
+* **Data Processing Options** - Currently, the only accepted value is `LIMITED_DATA_USE` which will cause Amazon to ignore this event.
 * **Units Sold** - This only applies to Off Amazon Purchase conversion definition type and represents the number of items purchased. If not provided on the conversion event, a default of 1 will be applied.
-* **Value** - This has two modes depending on the conversion definition type.&#x20;
-  * For Off Amazon Purchase, this represents a monetary value. Must be a minimum of 0 and must not exceed 2 decimal points. If not provided, the static value provided on the conversion definition will be used.&#x20;
+* **Value** - This has two modes depending on the conversion definition type.
+  * For Off Amazon Purchase, this represents a monetary value. Must be a minimum of 0 and must not exceed 2 decimal points. If not provided, the static value provided on the conversion definition will be used.
   * For any other type, this represents a non-monetary value based on a scale of your choosing. Can be negative and must not exceed 2 decimal points. If not provided, the static value provided on the conversion definition will be used.
 
-Census will send the Sync Key you specify as the unique identifier for your event sync to Amazon using the **Client Dedupe Id** property. This property has no function to Amazon other than giving them a way to ensure a single event is recorded multiple times.&#x20;
+Census will send the Sync Key you specify as the unique identifier for your event sync to Amazon using the **Client Dedupe Id** property. This property has no function to Amazon other than giving them a way to ensure a single event is recorded multiple times.
+
+### DSP Audiences
+
+Amazon DSP Audiences are a pecular object in that they are actually two separate objects that are linked together through the use of a unique ID. Amazon DSP Audiences need to be managed in two phases:
+
+1. First upload the PII about your audience members, where each record is identified by a unique ID you've assigned them. This is the Hashed Records (Part 1) object.
+2. Wait for Amazon to process the data. Amazon's guidance is that this process can take up to 48hrs.
+3. Then "assign" those records to an audience. This is the DSP Audience Members (Part 2) object.
+
+This means using Amazon DSP Audiences requires at least two separate Census syncs. The first sync will upload the PII about your audience members and the second sync will assign those records to an audience. If you plan to create multiple audiences, we recommend that your Hashed Records sync uploads all of the records you plan to use in any of your audiences. Then you can create a separate DSP Audience Members sync for each audience you want to create.
+
+Like Conversion Events, you can optionally provide pre-hashed values for your records. Amazon documents the requirements for this [here](https://advertising.amazon.com/help/GCCXMZYCK4RXWS6C). They are nearly identical to the requirements for Conversion Events, though notice that country and state identifiers are lower case if provided.
 
 ## 🚑 Need help connecting to Amazon Ads DSP?
 

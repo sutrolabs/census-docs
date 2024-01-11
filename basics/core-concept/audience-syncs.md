@@ -16,6 +16,10 @@ Destinations that support audience syncs will allow you to select the specific a
 
 <figure><img src="../../.gitbook/assets/Artboard Copy.png" alt=""><figcaption></figcaption></figure>
 
+#### Census-created Audience Tracking
+
+Note that some services do not provide the ability to list existing audiences (for example, Braze Cohorts and Amazon Ads Audiences). In these cases, Census will keep track of audiences it has created and will attempt to not create duplicates, though duplication will happen if the same account is used across multiple Census organizations. A side effect of this is that Test Syncing is not available for these destinations.
+
 ### When Records Leave the Source Data
 
 You can optionally define what happens when a record leaves your source data set. You have two options in most cases:
