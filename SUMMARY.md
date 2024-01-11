@@ -37,6 +37,7 @@
   * [Workspaces & Access Controls](basics/security-and-privacy/workspaces-and-access-controls.md)
   * [Network Access Controls](basics/security-and-privacy/regions-and-ip-addresses.md)
   * [Using Your Own S3](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
+  * [SIEM Log Forwarding](basics/security-and-privacy/siem-log-forwarding.md)
 * [Developers](basics/developers/README.md)
   * [GitLink](basics/developers/gitlink.md)
   * [Entity API](basics/developers/entity-api.md)
