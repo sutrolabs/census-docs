@@ -18,9 +18,18 @@ Census supports the following SASL authentication mechanisms for Kafka:
 
 ### Permissions
 
-The user Census uses to access your Kafka cluster requires read permission to the topics you want to use within Census.
+To read data from your Kafka cluster, Census needs the following permissions:
 
-When used as the source for a Live Sync, Census will also create error topics in your cluster for messages that can’t be processed. These topics have names beginning with `census_`. Census needs permission to create and write to topics with this naming pattern.
+| Operation | Type  | Resource                             |
+| --------- | ----- | ------------------------------------ |
+| Read      | Topic | Any topic you want to sync data from |
+| Read      | Group | `census_group_*`                     |
+
+When used as the source for a Live Sync, Census will also create error topics in your cluster for messages that can’t be processed. To do so, Census needs the following permissions:
+
+| Operation     | Type  | Resource   |
+| ------------- | ----- | ---------- |
+| Create, Write | Topic | `census_*` |
 
 ## Create a Kafka Connection
 
