@@ -5,6 +5,7 @@
 ## 🧰 Core Concepts <a href="#basics" id="basics"></a>
 
 * [Syncs](basics/core-concept/README.md)
+  * [Live Syncs](basics/core-concept/live-syncs.md)
   * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
   * [Retry Handling](basics/core-concept/retry-handling.md)
   * [Audience Syncs](basics/core-concept/audience-syncs.md)
