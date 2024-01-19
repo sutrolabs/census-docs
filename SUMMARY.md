@@ -14,6 +14,7 @@
   * [Creating Segments](basics/audience-hub/getting-started.md)
   * [Warehouse-Managed Audiences](basics/audience-hub/warehouse-managed-audiences.md)
   * [Activating Segments](basics/audience-hub/syncing-segments.md)
+  * [Audience Match Rates](basics/audience-hub/audience-match-rates.md)
   * [Experiments and Analysis](basics/audience-hub/analyzing-segments.md)
   * [Segment Priorities](basics/audience-hub/segment-priorities.md)
   * [Data Preparation](basics/audience-hub/data-preparation.md)

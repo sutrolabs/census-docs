@@ -14,7 +14,7 @@ Split testing enables a number of marketing efforts:
 * Divide a segment into multiple treatments for different channels and compare relative conversion rates of the same segment across each.
 * Use a treatment and control group to "ramp up" a very large campaign over time. Start with 10% of segment and grow the treatment once you're confident it's performing as expected.
 
-Each cohort can be [synced to their own set of destinations](syncing-segments.md), including back to warehouse, and users appearing in each cohort are available in Warehouse Writeback (see [#analyzing-segment-performance](analyzing-segments.md#analyzing-segment-performance "mention") below).
+Each cohort can be [synced to their own set of destinations](syncing-segments.md), including back to warehouse, and users appearing in each cohort are available in Warehouse Writeback (see [below](analyzing-segments.md#detailed-segment-performance)).
 
 ## Tracking Segment Size
 
