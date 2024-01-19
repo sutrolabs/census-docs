@@ -8,6 +8,10 @@ Census supports connecting to an existing dbt project hosted in GitHub or GitLab
 
 Census compiles your models on the fly whenever a sync is scheduled so your data and your models are always up to date. It also means that Census can confirm that your pull requests for dbt model changes won't accidentally drop or rename a model that is currently in use. Census is designed to work hand-in-hand with dbt Cloud or any other dbt runner.
 
+{% hint style="info" %}
+Census does not currently support dbt regions other than `North America multi-tenant.`Further information about dbt regions in [documentation here](https://docs.getdbt.com/docs/cloud/about-cloud/regions-ip-addresses).
+{% endhint %}
+
 ## Setting it up
 
 Here are the instructions for connecting a dbt project:
@@ -60,6 +64,7 @@ As a result, there's several dbt features that Census does not make use of. Thes
 * Materialization directives. Census doesn’t currently materialize your tables back to your data warehouse. Census will however use materialized tables by your dbt runner to speed up the execution
 * Pre and post hooks
 * Non-public packages
+* Census does not currently support dbt regions other than `North America multi-tenant`. dbt regions described in [documentation here](https://docs.getdbt.com/docs/cloud/about-cloud/regions-ip-addresses).
 
 ## dbt Model descriptions
 
