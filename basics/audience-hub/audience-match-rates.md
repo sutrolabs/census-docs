@@ -6,9 +6,9 @@ description: Monitor and optimize match rates across all your ad platforms in Au
 
 <figure><img src="../../.gitbook/assets/match rates 2.png" alt=""><figcaption><p>Matched audience size and match rate for an audience in Google Ads.</p></figcaption></figure>
 
-When sending audiences to ad platforms like Facebook and Google Ads, the platforms attempt to match as many of the audience members as possible to their own users. The more users they're able to match, the greater the reach for marketers running campaigns against those audiences.
+When you send audiences to ad platforms like Facebook and Google Ads, the platforms attempt to match as many of your audience members as possible to their own users. The more users they're able to match, the greater your reach when running campaigns against those audiences.
 
-The success of this process is often represented via two numbers: **matched audience size** and **match rate**_._ When sending an audience to an ad platform in Audience Hub via our [one-click experience](syncing-segments.md#one-click-experience-for-a-d-platforms), Census reports both.
+The success of this process is often represented via two numbers: **matched audience size** and **match rate**_._ When using our [one-click experience](syncing-segments.md#one-click-experience-for-a-d-platforms) to send audiences to ad platforms, Census reports both.
 
 {% hint style="info" %}
 Some ad platforms take 24-48 hours to process audience uploads, so these numbers may lag slightly.
