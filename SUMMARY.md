@@ -126,6 +126,7 @@
 * [Discord](destinations/discord.md)
 * [Drift](destinations/drift.md)
 * [Drip](destinations/drip.md)
+* [EagleEye](destinations/eagleeye.md)
 * [Emarsys](destinations/emarsys.md)
 * [Facebook Ads](destinations/facebook-ads.md)
 * [Facebook Product Catalog](destinations/facebook-ads-1.md)
