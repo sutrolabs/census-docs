@@ -43,7 +43,7 @@ require-dbt-version: ">=1.6.0,<1.7.0"
 A few additional notes:
 
 * If this field is not specified, a default version of `1.4` will be used. After Jan 15, 2024, the latest available version will be used.
-* We do not recommend you specify a single patch-level dbt version (for example: `require-dbt-version: 1.6.0`)  as this can cause your project to break when newer versions are adopted.
+* We do not recommend you specify a single patch-level dbt version (for example: `require-dbt-version: 1.6.0`) as this can cause your project to break when newer versions are adopted.
 * If Census does not support a version the matches the conditions in `require-dbt-version` field, the project will not compile successfully.
 * If Census supports multiple dbt versions that match the requirements, the latest version supported by Census will be used.
 
@@ -70,12 +70,7 @@ As a result, there's several dbt features that Census does not make use of. Thes
 
 The Census dbt integration takes advantage of any documentation defined on your models. Within Census, your dbt models will automatically display a model's `description` parameter found in any `schema.yml` file to display context about the dataset. Descriptions for fields are also pulled in and displayed in Audience Hub's segment builder when hovering over a particular field.
 
-<div class="image-container" style="display: flex;">
-<figure style="width: 50%; height: auto;"><img src="../../../.gitbook/assets/dbt-project-model-description.png" alt="Screenshot of a dbt model shown in Census. The &#x22;Description&#x22; is taken directly from the docs string you specify about your dbt model in any schema.yml file."><figcaption><p>The "Description" is taken directly from the docs string you specify about your dbt model in any schema.yml file.</p></figcaption></figure>
-<figure style="width: 50%; height: auto;"><img src="../../../.gitbook/assets/dbt-project-field-description.png" alt="Screenshot of a segment builder showing how a field's description"><figcaption><p>Screenshot of a segment builder showing how a field's description</p></figcaption></figure>
-</div>
-
-
+![The "Description" is taken directly from the docs string you specify about your dbt model in any schema.yml file.](../../../.gitbook/assets/dbt-project-model-description.png)![Screenshot of a segment builder showing how a field's description](../../../.gitbook/assets/dbt-project-field-description.png)
 
 ## dbt Continuous Integration (CI) Checks in GitHub
 
