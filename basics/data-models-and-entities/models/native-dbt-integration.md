@@ -70,7 +70,7 @@ As a result, there's several dbt features that Census does not make use of. Thes
 
 The Census dbt integration takes advantage of any documentation defined on your models. Within Census, your dbt models will automatically display a model's `description` parameter found in any `schema.yml` file to display context about the dataset. Descriptions for fields are also pulled in and displayed in Audience Hub's segment builder when hovering over a particular field.
 
-![The "Description" is taken directly from the docs string you specify about your dbt model in any schema.yml file.](../../../.gitbook/assets/dbt-project-model-description.png)![Screenshot of a segment builder showing how a field's description](../../../.gitbook/assets/dbt-project-field-description.png)
+<figure><img src="../../../.gitbook/assets/dbt-project-descriptions.png" alt=""><figcaption></figcaption></figure>
 
 ## dbt Continuous Integration (CI) Checks in GitHub
 
