@@ -42,16 +42,16 @@ require-dbt-version: ">=1.6.0,<1.7.0"
 
 A few additional notes:
 
-* If this field is not specified, a default version of `1.4` will be used. After Jan 15, 2024, the latest available version will be used.&#x20;
+* If this field is not specified, a default version of `1.4` will be used. After Jan 15, 2024, the latest available version will be used.
 * We do not recommend you specify a single patch-level dbt version (for example: `require-dbt-version: 1.6.0`)  as this can cause your project to break when newer versions are adopted.
 * If Census does not support a version the matches the conditions in `require-dbt-version` field, the project will not compile successfully.
 * If Census supports multiple dbt versions that match the requirements, the latest version supported by Census will be used.
 
-Alternatively, you can configure your dbt project in Census to use a specific dbt version (note that this version must be within the supported version range defined in your `dbt_project.yml` if one is specified). You can set this by selecting a specific version in the **dbt Version** dropdown menu with in your dbt project's configuration in Census.&#x20;
+Alternatively, you can configure your dbt project in Census to use a specific dbt version (note that this version must be within the supported version range defined in your `dbt_project.yml` if one is specified). You can set this by selecting a specific version in the **dbt Version** dropdown menu with in your dbt project's configuration in Census.
 
 <figure><img src="../../../.gitbook/assets/dbt Version (1).png" alt=""><figcaption></figcaption></figure>
 
-Note that setting an version override may cause issues if the Census configured value falls behind your project configuration. We recommend you provide the support values using `require-dbt-version` instead.&#x20;
+Note that setting an version override may cause issues if the Census configured value falls behind your project configuration. We recommend you provide the support values using `require-dbt-version` instead.
 
 Census ignores the optional `version` and `config-version` fields in `dbt_project.yml`.
 
@@ -66,15 +66,16 @@ As a result, there's several dbt features that Census does not make use of. Thes
 * Non-public packages
 * Census does not currently support dbt regions other than `North America multi-tenant`. dbt regions described in [documentation here](https://docs.getdbt.com/docs/cloud/about-cloud/regions-ip-addresses).
 
-## dbt Model descriptions
+## dbt Model and Column Descriptions
 
-The Census dbt Models integration re-leverages the investment you've made in your dbt project, including in documentation. Without visiting your dbt docs site, discover whether your available dbt models have the data you need for reverse ETL syncs.
+The Census dbt integration takes advantage of any documentation defined on your models. Within Census, your dbt models will automatically display a model's `description` parameter found in any `schema.yml` file to display context about the dataset. Descriptions for fields are also pulled in and displayed in Audience Hub's segment builder when hovering over a particular field.
 
-Within Census, your dbt models will display your model's `description` parameter found in any `schema.yml` file to display context about the dataset.&#x20;
+<div class="image-container" style="display: flex;">
+<figure style="width: 50%; height: auto;"><img src="../../../.gitbook/assets/dbt-project-model-description.png" alt="Screenshot of a dbt model shown in Census. The &#x22;Description&#x22; is taken directly from the docs string you specify about your dbt model in any schema.yml file."><figcaption><p>The "Description" is taken directly from the docs string you specify about your dbt model in any schema.yml file.</p></figcaption></figure>
+<figure style="width: 50%; height: auto;"><img src="../../../.gitbook/assets/dbt-project-field-description.png" alt="Screenshot of a segment builder showing how a field's description"><figcaption><p>Screenshot of a segment builder showing how a field's description</p></figcaption></figure>
+</div>
 
-<figure><img src="../../../.gitbook/assets/screely-1683048647353.png" alt="Screenshot of a dbt model shown in Census. The &#x22;Description&#x22; is taken directly from the docs string you specify about your dbt model in any schema.yml file."><figcaption><p>The "Description" is taken directly from the docs string you specify about your dbt model in any schema.yml file.</p></figcaption></figure>
 
-Descriptions for fields are also pulled in and displayed in the segment builder when hovering over a particular field.&#x20;
 
 ## dbt Continuous Integration (CI) Checks in GitHub
 
@@ -101,4 +102,3 @@ If you're using dbt Cloud to run your dbt project, our integration goes even fur
 ## Required data warehouse permissions
 
 Census doesn't necessarily require the same permissions your dbt project needs because Census only runs the models you've exposed to Census during set up. Census only requires read access to your selected models and any of their materialized dependencies. That means you can use dbt's materialize configuration flag to create permissions boundaries. Once materialized dependencies are generated by dbt runner, Census will reference the materialized results when accessing your models.
-
