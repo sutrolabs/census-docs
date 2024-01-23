@@ -35,6 +35,21 @@ While we believe these defaults are right for most marketers most of the time, t
 When we launched one-click audiences, we migrated existing all ad platform syncs that matched the assumptions above. We also migrated some that didn't, but in those cases we preserved the original configurations. For example, if we migrated a sync on a weekly schedule, it remained weekly. If you have any questions, please contact [support@getcensus.com](mailto:support@getcensus.com) and we'll be happy to help.
 {% endhint %}
 
+### Supported Destinations
+
+As of January 2024, our one-click experience supports the following ad platforms:
+
+* [Google Ads](../../destinations/google-ads/)
+* [Facebook](../../destinations/facebook-ads.md)
+* [LinkedIn](../../destinations/linkedin.md)
+* [Microsoft](../../destinations/microsoft-advertising.md)
+* [TikTok](../../destinations/tiktok.md)
+* [Snapchat](../../destinations/snapchat.md)
+* [Pinterest](../../destinations/pinterest.md)
+* [X](../../destinations/twitter.md)
+
+We plan to expand this list in the future. If you don't see an ad platform above, it's very likely we support it using our ["classic" sync experience](syncing-segments.md#classic-experience-for-other-destinations). If you still can't find what you're looking for, please contact [support@getcensus.com](mailto:support@getcensus.com).
+
 ## "Classic" Experience for Other Destinations
 
 You'll often need to send a segment somewhere other than an ad platform (e.g. a marketing or sales tool). Or perhaps you need to create an ad platform sync that doesn't fit the [default settings](syncing-segments.md#default-settings) described above. In either case, you can access our "classic" sync creation experience one of two ways:&#x20;
