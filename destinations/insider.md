@@ -22,6 +22,8 @@ You should now be ready to start creating audiences in Insider!
 
 ### Connector Quirks
 
+- Syncing Events may also cause new User records to be created if the provided User ID does not already exist in Insider.
+
 - Insider has a unique approach to handling clearing values in their API. Census takes care of most of this automatically, with one exception: If you are attempting to write `NULL` values to identifiers, Census will not be able to clear the value in Insider.
 
 ## 🚑 Need help connecting to Insider?
