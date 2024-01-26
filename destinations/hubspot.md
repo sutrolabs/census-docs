@@ -40,7 +40,9 @@ If you need a hand making one of your existing Custom Object fields searchable, 
 
 Custom Behavioral Events require a bit of prep work. You'll first need to go into HubSpot and create your event (see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events)).
 
-You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's internal name for the object—you'll need to provide that to the `Event Name` property during the Census sync.
+You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's **internal name** for the object—you'll need to provide that to the `Event Name` property during the Census sync.&#x20;
+
+Hubspot also requires either the contact ID, email or utk of the contact associated with the event.
 
 Note: The custom fields you've added will not show inside Census. You'll need to use the **New Custom Field** option to create the matching fields in Census. Make sure they're named exactly the same (names are case-sensitive).
 
