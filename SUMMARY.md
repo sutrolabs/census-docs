@@ -161,6 +161,7 @@
 * [Iterable](destinations/iterable.md)
 * [Jira](destinations/jira.md)
 * [Kafka](destinations/kafka.md)
+* [Kevel](destinations/kevel.md)
 * [Klaviyo](destinations/klaviyo.md)
 * [Kustomer](destinations/kustomer.md)
 * [LaunchDarkly](destinations/launchdarkly.md)
