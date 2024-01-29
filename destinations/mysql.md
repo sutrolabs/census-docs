@@ -16,11 +16,11 @@ If you are trying to use MySQL as a data source (to query data from MySQL and sy
 2. Select **MySQL** from the menu.
 3. Enter the requested database credentials:
 
-<table><thead><tr><th width="203">Credential</th><th>Description</th></tr></thead><tbody><tr><td>Hostname</td><td>Host name or IP address of database</td></tr><tr><td>Port</td><td>Port of database (3306 by default for MySQL)</td></tr><tr><td>Database Name</td><td>Name of database within MySQL to connect to</td></tr><tr><td>Username</td><td>Username Census will use to connect</td></tr><tr><td>Password</td><td>Password Census will use to connect</td></tr><tr><td>Number of Client Connections</td><td>Value between 1 and 8 (default is 1). This is the maximum number of concurrent connections Census will use to connect to database. The default should be fine in most cases, but increasing this value can increase throughput on very large syncs.</td></tr><tr><td>Use SSH Tunnel</td><td>Default: Off - Toggle on to indicate that Census should connect via an SSH Tunnel. For more information, see <a data-mention href="../basics/security-and-privacy/regions-and-ip-addresses.md">regions-and-ip-addresses.md</a></td></tr><tr><td>SSH Hostname</td><td>Hostname of the Census accessible SSH Tunnel bastion. </td></tr><tr><td>SSH Port</td><td>Port of SSH Tunnel bastion.</td></tr><tr><td>SSH Username</td><td>Username Census will use to connect to bastion.</td></tr></tbody></table>
+<table><thead><tr><th width="203">Credential</th><th>Description</th></tr></thead><tbody><tr><td>Hostname</td><td>Host name or IP address of database</td></tr><tr><td>Port</td><td>Port of database (3306 by default for MySQL)</td></tr><tr><td>Database Name</td><td>Name of database within MySQL to connect to</td></tr><tr><td>Username</td><td>Username Census will use to connect</td></tr><tr><td>Password</td><td>Password Census will use to connect</td></tr><tr><td>Number of Client Connections</td><td>Value between 1 and 8 (default is 1). This is the maximum number of concurrent connections Census will use to connect to database. The default should be fine in most cases, but increasing this value can increase throughput on very large syncs.</td></tr><tr><td>Use SSH Tunnel</td><td>Default: Off - Toggle on to indicate that Census should connect via an SSH Tunnel. For more information, see <a data-mention href="../basics/security-and-privacy/regions-and-ip-addresses.md">regions-and-ip-addresses.md</a></td></tr><tr><td>SSH Hostname</td><td>Hostname of the Census accessible SSH Tunnel bastion.</td></tr><tr><td>SSH Port</td><td>Port of SSH Tunnel bastion.</td></tr><tr><td>SSH Username</td><td>Username Census will use to connect to bastion.</td></tr></tbody></table>
 
 ## 🔑 Permissions
 
-To use MySQL as a destination, Census requires permission to write to the desired destination tables, as well as read metadata about the table and database structures.&#x20;
+To use MySQL as a destination, Census requires permission to write to the desired destination tables, as well as read metadata about the table and database structures.
 
 ```
 -- Note that creating a user may be redundant if you're already configured
@@ -32,6 +32,7 @@ CREATE USER CENSUS IDENTIFIED BY '<strong, unique password>';
 -- GRANT access to which ever schemas you'd like to give access to
 -- Note: this can also be granted to specific tables as well
 GRANT INSERT, UPDATE, SELECT ON <your schema>.* TO CENSUS;
+GRANT CREATE TEMPORARY TABLES ON *.* TO CENSUS
 ```
 
 ## 🔀 Supported Objects and Behaviors
@@ -42,7 +43,7 @@ GRANT INSERT, UPDATE, SELECT ON <your schema>.* TO CENSUS;
 
 ## 🚦Advanced Network Configuration
 
-Census can successfully connect to MySQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+Census can successfully connect to MySQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## 🚑 Need help connecting to MySQL?
 
