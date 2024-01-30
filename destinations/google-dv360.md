@@ -34,6 +34,10 @@ If you are syncing customer info and you map to an address field (First Name, La
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more DV360 objects and/or behaviors.
 
+## Managing User Consent
+
+As of [March 6, 2024](https://ads-developers.googleblog.com/2023/10/updates-to-customer-match-conversion.html), Google requires details of end user consent to be passed along with any Customer Match audience for users in the European Economic Area. Census allows you to provide Consent Details but does not require them. Review [Google's EU user consent policy](https://ads-developers.googleblog.com/2023/10/updates-to-customer-match-conversion.html) to understand your obligations.
+
 ## 🚑 Need help connecting to Google Display & Video 360?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

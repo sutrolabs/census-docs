@@ -27,6 +27,10 @@ Click the link for more information on each of the services
 Just a heads up: We use the new [Google Ads API](https://developers.google.com/google-ads/api/docs/start) as opposed to the older AdWords API.
 {% endhint %}
 
+## Managing User Consent
+
+As of [March 6, 2024](https://ads-developers.googleblog.com/2023/10/updates-to-customer-match-conversion.html), Google requires details of end user consent to be passed along with any Customer Match audience and conversions for users in the European Economic Area. Census allows you to provide Consent Details but does not require them. Review [Google's EU user consent policy](https://ads-developers.googleblog.com/2023/10/updates-to-customer-match-conversion.html) to understand your obligations.
+
 ## 🚑 Need help connecting to Google Ads?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
