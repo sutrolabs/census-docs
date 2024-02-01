@@ -4,15 +4,13 @@ description: Maintain audience lists in Google Ads to retarget and re-engage you
 
 # Customer Match Lists (Audiences)
 
-{% embed url="https://youtu.be/COk7s0axxVw" %}
-
 ## Connect your Google Ads Account
 
 Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/google-ads)
 
 ## Sync a Customer Match List with Census
 
-### 1. Create your Google Ads Customer Match Model <a href="#3-create-your-first-model" id="3-create-your-first-model"></a>
+### 1. Create your Google Ads Customer Match Model <a href="#id-3-create-your-first-model" id="id-3-create-your-first-model"></a>
 
 Navigate to the [Models](https://app.getcensus.com/models) page.​
 
