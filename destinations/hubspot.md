@@ -119,6 +119,13 @@ Please be aware that Custom Objects require additional API calls and are even sl
 
 Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects.&#x20;
 
+## 🆘 Common Errors
+
+There's a few errors which frequently cause skipped records on when syncing data to Hubspot.
+
+* `TypeCastError: Empty input (after ) at line 1, column 1 [parse.c:1060] in 'InternalValue1;`When syncing to a Multiple Checkbox (Enumerated) field, the source data should be formatted as an array instead of adding a semicolon between each value.
+* `Multiple Contacts found with ID 123456`When syncing associations, the `Lookup By` field should be unique. For example, if we have a Company sync with a contact association in the field mapping and the `Lookup By` field is a non-unique ID field, we will reject the Company record if we find multiple Contacts with that ID.&#x20;
+
 ## :electric\_plug: Disconnecting HubSpot
 
 If you need to disconnect HubSpot from Census for any reason, you can delete your connection from the Destinations page in Census and/or uninstall the Census app from your HubSpot account by following [these instructions](https://knowledge.hubspot.com/integrations/connect-apps-to-hubspot#uninstall-an-app). Note that you won't be able to sync new data from Census until the connection is restored, but no previously synced data in HubSpot will be impacted.
