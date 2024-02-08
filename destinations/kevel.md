@@ -12,7 +12,7 @@ Kevel is an API platform that helps you quickly build custom ad platforms for sp
 
 2. You'lll also need a Network ID. You can find this in the top bar menu by clicking on the ℹ️ icon in the top right. Copy the Network ID.
 
-2. Back in Census, navigate to the Destinations page and click **Add Destination**. Select Kevel from the list of destinations. Provide your API Key, Network ID, and click **Save**.
+3. Back in Census, navigate to the Destinations page and click **Add Destination**. Select Kevel from the list of destinations. Provide your API Key, Network ID, and click **Save**.
 
 You should now be ready to start creating audiences in Kevel!
 
@@ -21,6 +21,8 @@ You should now be ready to start creating audiences in Kevel!
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
 | --------------: | :------------: | :------------: | :------------: |
 | Interests <br> [Audience Sync](https://docs.getcensus.com/basics/core-concept/audience-syncs)|        ✅      | User Key | Mirror |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Kevel.
 
 ### Understanding Kevel Interests/Flight Categories
 

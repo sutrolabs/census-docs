@@ -4,85 +4,32 @@ description: This page describes how to use Census with Iterable.
 
 # Iterable
 
+Iterable is a growth marketing platform that enables brands to create, execute, and optimize campaigns to power world-class customer engagement across email, push, SMS, in-app, and more with unparalleled data flexibility.
+
 {% hint style="info" %}
 Please note that for larger syncs, it might take \~10 minutes for you to see the new data in Iterable's UI.
 {% endhint %}
 
 ## 🏃‍♀️ Getting Started
 
-In this guide, we will show you how to connect Iterable to Census and create your first sync.
+The first step is to create a new API key in Iterable. API keys are created within an Iterable Project so ensure you're in the project you want to connect to Census.
+1. Within your Iterable project, click the **Integration** option in the top menu and select **API keys**.
+2. We recommend you create a new API key for Census. Click **+ New API Key** in the top right.
+3. Select the "Server-side" key type from the subsequent dropdown.
+4. Copy the resulting key (a string of 32 characters).
 
-### Prerequisites
+You'll also need to know your Iterable region. This is not currently displayed in the UI, but should be visibile in the URL when you're logged into Iterable.
 
-* Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Iterable account ready.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
+Back in Census, navigate to the Destinations page and click **Add Destination**. Select Iterable from the list of destinations. Provide your API Key and select your region. Finally click **Save**.
 
-### 1. Create a new Iterable API key
+## 🗄 Supported Objects and Behaviors
 
-To connect Census to your Iterable, you'll need to provide Census with an API key so that we can talk to it directly.
-
-**A. Go to your Integration > API keys page**
-
-In the top right, click on your name, and select Account Settings
-
-![](../.gitbook/assets/iterable\_setup1.png)
-
-**B. Create a new key for Census**
-
-Click the Create New API key button in the top right.
-
-![](<../.gitbook/assets/image (8).png>)
-
-Select the "Server-side" key type from the subsequent dropdown.
-
-![](<../.gitbook/assets/image (1) (1) (1) (1).png>)
-
-Copy the resulting key (a string of 32 characters) to add it to Census.
-
-![](<../.gitbook/assets/image (17).png>)
-
-**C. Create a new Iterable connection in Census**
-
-* Visit the Destinations tab in Census
-* Click New Destination and select Iterable from the menu
-* Finally, paste in the API Key you just created. You can customize the name of the connection if you plan to connect multiple instances of Iterable.
-
-![](../.gitbook/assets/iterable\_setup4.png)
-
-Iterable will now appear as a new destination for Census syncs.
-
-### 2. Syncing data into Iterable
-
-Once the service is added, you can sync users from your database into your Iterable audience (and augment existing contacts with new product data).
-
-When creating a sync in Census, you can use _email_ or _userId_ as an identifier.
-
-![](../.gitbook/assets/iterable\_setup5.png)
-
-You can map data fields into your existing Iterable audience schema (including into nested schemas). You can also create new custom fields by clicking "+ Add Custom Field" when editing the mapping.
-
-![](../.gitbook/assets/iterable\_setup6.png)
-
-## 🗄 Supported Objects
-
-| **Object Name** | **Supported?** | **Sync Keys**  |
-| --------------: | :------------: | -------------- |
-|            User |        ✅       | User ID, Email |
-|           Event |        ✅       | Event ID       |
-|         Catalog |        ✅       | Key            |
-|     Static List |        ✅       | User ID, Email |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
+| --------------: | :------------: | -------------- | -------------- |
+|            User |        ✅       | User ID, Email | Update or Create, Update Only |
+|           Event |        ✅       | Event ID       | Append         |
+|         Catalog |        ✅       | Key            | Update or Create, Mirror |
+|     Static List |        ✅       | User ID, Email | Mirror         |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
 
@@ -130,21 +77,6 @@ When syncing to the User object Iterable may reject some records with the messag
 
 * **Invalid Email Formatting:** When an email address is not properly formatted. For more information about the formatting guide used by Iterable please refer to Iterable's documentation [linked here](https://support.iterable.com/hc/en-us/articles/209082806-Email-Validation-in-Iterable).
 * **Forgotten/Deleted Emails**: Iterable will also send reject a record with Invalid Email when a user has been previously forgotten or deleted. For more information regarding this functionality in Iterable please refer to the Iterable documentation [linked here](https://support.iterable.com/hc/en-us/articles/360029174171-Responding-to-GDPR-Requests-#right-to-be-forgotten-requests).
-
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-|        **Behaviors** | **Supported?** |      **Objects**     |
-| -------------------: | :------------: | :------------------: |
-| **Update or Create** |        ✅       |     User, Catalog    |
-|      **Update Only** |        ✅       |         User         |
-|           **Append** |        ✅       |         Event        |
-|           **Mirror** |        ✅       | Catalog, Static List |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Iterable.
 
 ## 🚑 Need help connecting to Iterable?
 
