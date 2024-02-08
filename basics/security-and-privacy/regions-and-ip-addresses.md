@@ -25,8 +25,6 @@ To view your workspace's current region, navigate to the [Settings > General pag
 
 If your data source or self-hosted destinations are behind a firewall, you will need to allowlist [Census's IP Addresses](regions-and-ip-addresses.md#ip-addresses) associated with your region.
 
-Customers who have purchased certain Census Plans may request to use another region by contacting [support@getcensus.com](mailto:support@getcensus.com).
-
 ![This workspace's syncs run in the EU.](<../../.gitbook/assets/screely-1660744037815 (1).png>)
 
 #### During Syncs
