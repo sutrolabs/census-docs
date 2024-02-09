@@ -10,11 +10,11 @@ In this guide, we will show you how to connect Facebook Product Catalog to Censu
 
 ## 🏃‍♀️ Getting Started
 
-This connector relies on a [Facebook System User](https://www.facebook.com/business/help/327596604689624?id=2190812977867143) token for authenticating requests. A regular system user is recommended over an admin system user. You can use an existing system user or create a new one with the following steps:&#x20;
+This connector relies on a [Facebook System User](https://www.facebook.com/business/help/327596604689624?id=2190812977867143) token for authenticating requests. A regular system user is recommended over an admin system user. You can use an existing system user or create a new one with the following steps:
 
 ### Creating a new System User
 
-1.  If you don't have one already the first thing you need to generate a system token is an application
+1.  To generate a system user token, you'll first need an application. If you don't have one already, you can create one with the following steps:
 
     * Open your Business Manager
     * Navigate to **Business Settings > Accounts > Apps**
