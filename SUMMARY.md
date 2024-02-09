@@ -130,7 +130,7 @@
 * [Emarsys](destinations/emarsys.md)
 * [Enterpret](destinations/enterpret.md)
 * [Facebook Ads](destinations/facebook-ads.md)
-* [Facebook Product Catalog](destinations/facebook-ads-1.md)
+* [Facebook Product Catalog](destinations/facebook-product-catalog.md)
 * [Freshdesk](destinations/freshdesk.md)
 * [Freshsales](destinations/freshsales.md)
 * [Front](destinations/front.md)
