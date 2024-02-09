@@ -4,7 +4,7 @@ description: This page describes how to use Census with Google Datastore.
 
 # Google Datastore
 
-### 🏃‍♀️ Getting Started
+## 🏃‍♀️ Getting Started
 
 1. Click **New Destination**.
 2. Select **Google Datastore** from the menu.

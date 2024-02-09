@@ -4,7 +4,7 @@ description: This page describes how to sync data to your Snowflake data warehou
 
 # Snowflake
 
-### 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
+## 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
 
 This guide will walk you through connecting to Snowflake as a destination.
 

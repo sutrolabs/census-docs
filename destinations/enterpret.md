@@ -4,7 +4,7 @@ description: This page describes how to use Census with Enterpret.
 
 # Enterpret
 
-🏃‍♀️ Getting Started
+## 🏃‍♀️ Getting Started
 
 In this guide, we will show you how to connect Enterpret to Census and create your first sync.
 

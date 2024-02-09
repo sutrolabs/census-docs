@@ -4,7 +4,7 @@ description: Learn how to use Census to sync your Data Warehouse to ChurnZero.
 
 # ChurnZero
 
-🏃‍♀️ Getting Started
+## 🏃‍♀️ Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **ChurnZero** from the menu.

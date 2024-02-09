@@ -4,7 +4,7 @@ description: This page describes how to use Census with Zoho CRM.
 
 # Zoho CRM
 
-🏃‍♀️ Getting Started
+## 🏃‍♀️ Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Zoho CRM** from the menu.
