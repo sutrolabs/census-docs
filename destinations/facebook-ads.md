@@ -70,7 +70,7 @@ Select the authentication method you prefer and provide your token or complete t
 ## 🗄 Supported Objects
 
 |                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                           |**Behaviors** |
-| ----------------------------------------------------------------------------------------: | :------------: | --------------------------------------------------------------------------------------------------------- |
+| ----------------------------------------------------------------------------------------: | :------------: | --------------------------------------------------------------------------------------------------------- | :------------: |
 |                                                                                  Audience |        ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/) | Update or Create, Mirror |
 | Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |        ✅       | Any unique ID                                                                                             | Append |
 
