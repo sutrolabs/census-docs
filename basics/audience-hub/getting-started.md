@@ -117,10 +117,6 @@ Setting a dimension limit follows a similar set of steps as segment limits. Enab
 
 <figure><img src="../../.gitbook/assets/dimension_limit_ui.png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
 ## FAQs
 
 **Which string comparison operators are case sensitive and insensitive?**
