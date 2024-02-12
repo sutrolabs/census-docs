@@ -108,12 +108,14 @@ If you want to limit randomly, consider using an ID as the field to order by.&#x
 
 Dimension limits can be placed on a segment to confine the max number of records that share the same value for a specific column. One example is when we want the segment to target no more than 100 people per U.S. state. This can be achieved by setting the dimension limit grouped by on the **state** column.
 
-Setting a dimension limit follows a similar set of steps as segment limits. Enabling the dimension limit is done by clicking the ... menu item in the upper right corner of the segment builger page.
+Setting a dimension limit follows a similar set of steps as segment limits. Enabling the dimension limit is done by clicking the ... menu item in the upper right corner of the segment builder page.
 
 * Enter the number of records to limit by
 * Select the field whose value will be used to limit matching records by. Columns holding enum or non-unique values work best
 * Select the field that will be used to order by
 * Select whether you want to order by ascending or descending. This value will dictate the ordering of records within each dimension groups
+
+_Note: Dimension limits are currently only available for **Snowflake** and **Databricks** warehouses._
 
 <figure><img src="../../.gitbook/assets/dimension_limit_ui.png" alt=""><figcaption></figcaption></figure>
 
