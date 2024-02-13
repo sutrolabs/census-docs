@@ -62,6 +62,8 @@ This means using Amazon DSP Audiences requires at least two separate Census sync
 
 Like Conversion Events, you can optionally provide pre-hashed values for your records. Amazon documents the requirements for this [here](https://advertising.amazon.com/help/GCCXMZYCK4RXWS6C). They are nearly identical to the requirements for Conversion Events, though notice that country and state identifiers are lower case if provided.
 
+Finally, to support upcoming Digital Markets Act (DMA) requirements, Amazon now accepts a Data Source Country field on the DSP Audience Members object. This field is optional and can be a comma separated list of two-letter country code using [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes) format. This list will be used by any segments created from this sync. If it's omitted, the value will be UNKNOWN.
+
 ## 🚑 Need help connecting to Amazon Ads DSP?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
