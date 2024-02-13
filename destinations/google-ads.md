@@ -30,7 +30,7 @@ In this guide, we will show you how to connect Google Ads to Census and create y
 
 ![](../.gitbook/assets/screely-1619113580005.png)
 
-Follow Google OAuth flow to connect your Google Ads account. 
+Follow Google OAuth flow to connect your Google Ads account.
 
 ![](../.gitbook/assets/screely-1619118724964.png)
 
@@ -82,12 +82,12 @@ Next up is the **"Where do you want to sync data to?"** section
 * Pick **Google Ads** as the Connection
 * For Object, pick **Customer**
 
-For the " **How should changes to the source be synced?"** section 
+For the " **How should changes to the source be synced?"** section
 
 * **Update or Create** will be selected by default
 * Pick the right mapping key, in this case, we'll use **Email**
 
-Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the field from your model to the properties of the Customer Match List. 
+Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the field from your model to the properties of the Customer Match List.
 
 The end result should look something like this
 
@@ -97,7 +97,7 @@ Click the **Next** button to see the final preview which will have a recap of wh
 
 ### 3. Confirm the data is in your Customer Match List
 
-Now go back to your Google Ads account and view the list. If everything went well, you should see that the list has been updated with your data. Because this is an Audience Matching mechanism, Google will not tell you the exact number of matches it found, but should tell you that it was updated. 
+Now go back to your Google Ads account and view the list. If everything went well, you should see that the list has been updated with your data. Because this is an Audience Matching mechanism, Google will not tell you the exact number of matches it found, but should tell you that it was updated.
 
 ![](../.gitbook/assets/screely-1619138538677.png)
 
@@ -155,12 +155,12 @@ Next up is the **"Where do you want to sync data to?"** section
 * Pick **Google Ads** as the Connection
 * For Object, pick **Click Conversion** or **Call Conversion**
 
-For the "**How should changes to the source be synced?"** section 
+For the "**How should changes to the source be synced?"** section
 
 * **Append** will be selected by default
 * Pick the right mapping key, the **Google Click ID** in your model
 
-Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the fields from your model to the properties of the Click or Call Conversion. 
+Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the fields from your model to the properties of the Click or Call Conversion.
 
 The end result should look something like this:
 
@@ -172,39 +172,27 @@ Click the **Next** button to see the final preview which will have a recap of wh
 
 It may take around 3 hours for synced offline conversions to show up in your Google Ads account. When they do, they'll appear in reporting on these conversion actions. To learn more about reporting on these conversions, you may wish to visit [this Google Ads help article](https://support.google.com/google-ads/answer/6270625).
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Behaviors
 
-| Service | **Object Name** | **Supported?** | Identifiers |
-| :--- | ---: | :---: | :--- |
-| Customer Match | Customer | ✅ | User ID, Mobile ID, Email,  Phone Number |
-| Offline Conversions | Click, Call | ✅ | Click ID, Caller ID |
+| **Object Name** | **Type** | **Supported?** | **Identifiers** | **Behaviors** |
+| :--- | :---: | :---: | :---: | :---: |
+| Customer Match | Customer | ✅ | User ID, Mobile ID, Email,  Phone Number | Update or Create, Mirror |
+| Offline Conversions | Click, Call | ✅ | Click ID, Caller ID | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
 
-
-
 ### **Google Customer Match behavior**
 
-Google Customer Match, as its name implies, is a matching service rather than the usual direct upload. In order to protect user data, we do not upload the data you provide directly. Instead, records are "matched" against Google's existing user base. To do this, both sides perform a "hash" -- or consistent, but irreversible conversion -- of data so users can be compared without revealing the actual personally identifiable information. Census automatically takes care of this hashing step for you. 
+Google Customer Match, as its name implies, is a matching service rather than the usual direct upload. In order to protect user data, we do not upload the data you provide directly. Instead, records are "matched" against Google's existing user base. To do this, both sides perform a "hash" -- or consistent, but irreversible conversion -- of data so users can be compared without revealing the actual personally identifiable information. Census automatically takes care of this hashing step for you.
 
-We recommend you do not use Google's Customer Match expiration setting. Census-synced records are subject to the same expiration and will not be re-uploaded unless they are changed in your source data. 
+We recommend you do not use Google's Customer Match expiration setting. Census-synced records are subject to the same expiration and will not be re-uploaded unless they are changed in your source data.
 
-## 🔄 Supported Sync Behaviors
+Note: If you're reusing an existing Customer Match Lists, Census will not remove any users already added to those lists through other means.
 
-| **Behaviors** | **Supported?** | **Objects** |
-| ---: | :---: | :---: |
-| **Update or Create** | ✅ | All |
-| **Mirror** | ✅ | Audiences |
+### Digital Markets Act (DMA)
 
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
-
-Note: If you're reusing an existing Customer Match Lists, Census will not remove any users already added to those lists through other means. 
-
-{% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept.md#the-different-sync-behaviors).
-{% endhint %}
+When syncing Customer Match Lists and Conversions to Google Ads, you can include consent information to ensure compatibility with [Google's EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/). Google Ads objects now support two additional fields: `Consent for ad user data` and `Consent for ad personalization`, which can be set to one of the following values: `UNKNOWN`, `UNSPECIFIED`, `GRANTED`, `DENIED`. See Google's [documentation](https://support.google.com/google-ads/answer/14310715) for more information on the behavior of different options.
 
 ## 🚑 Need help connecting to Google Ads?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
-
