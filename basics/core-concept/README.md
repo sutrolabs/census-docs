@@ -1,6 +1,6 @@
 # Syncs
 
-## 🔌 Sources and Destinations
+## Sources and Destinations
 
 Census at its core is about connecting and coordinating across your business's software stack. And so, one of the very first steps to using Census will be connecting your Data Warehouse Sources and Destination Services.
 
@@ -38,13 +38,13 @@ All of the connection steps, the objects, and other details for each service are
 \
 And don't forget, our library of connections grows every week! Keep an eye on our [integrations page](https://www.getcensus.com/integrations) for all of our available destinations and let us know if we're missing something you need!
 
-## 🧮 Creating Syncs
+## Creating Syncs
 
 The most important action in Census is defining Syncs. A Sync defines the rules of how data should be synced, from your selected source to your destination.
 
 Syncs are also what makes Census so unique. Unlike most integration tools that are event-based, Census works to keep your source and destination "in sync" (just like Dropbox or other cloud storage service). The benefit is that you don't have to worry about dropped events or backfills anymore. If you change your data in the model, Census just syncs it, easy as that!
 
-### 🔀 Sync Behaviors
+### Sync Behaviors
 
 {% hint style="success" %}
 All of our syncs are incremental, which means we only sync records that are new or have their data changed since the previous sync.
@@ -65,13 +65,13 @@ Sync Behaviors tell Census the types of change it should apply to your data when
 Please note that some of these behaviors are only available for certain destinations. Visit our individual integration pages to view what's supported.
 {% endhint %}
 
-### 🔎 Sync Keys
+### Sync Keys
 
 Sync Keys let Census know how to associate data in the source with the destination. Both the source and destination need to provide a single, unique per record, identifying field. Census uses the identifiers to look for matches. When a match is found, or not found, it then can use your selected Sync Behavior to decide what to do.\
 \
 For example, if Census sees your source and destination both have records with the identifier ABCD1234, it knows that it should update that record with data from the source when you've got an Update Only, Update or Create, or Mirror Sync Behavior configured.
 
-### 🖇 Field Mappings
+### Field Mappings
 
 Once you've defined _how_ data is related between your source and destination, the next step is to let Census know _what_ properties should be updated. The field mapping step lets you specify how fields should be mapped from your source model to the destination object's fields. You can automatically add all matching fields, but even if names don't match, you can also provide the matching manually. If you remove fields from your mapping, Census will just stop updating those fields. We will not delete the values.
 
@@ -131,11 +131,19 @@ The following destinations currently support automatically adding new properties
 Braze, Custom API, Customer.io, Google Cloud Storage, Google Sheets, Iterable, Klaviyo, Mixpanel, S3, Salesforce Marketing Cloud, Segment, SFTP, Slack, Vitally, Webhook
 {% endhint %}
 
+### Advanced Configuration
+
+Some destination objects have additional configuration options. This options apply to all data synced to that destination. For example, when syncing to SFTP, you can use advanced configuration to provide a custom file name, or to specify the delimiter for a CSV file.
+
+Advanced Configuration options vary by destination object, and even by specific operation. For more details on the advanced configuration options available for a specific destination, see the destination's documentation.
+
+<figure><img src="../../.gitbook/assets/advanced_configuration.png" alt="Salesforce's advanced configuration option enables switching APIs"><figcaption><p>Salesforce's advanced configuration option enables switching APIs</p></figcaption></figure>
+
 ## Running Syncs
 
 Once syncs are created, you'll probably want to run them! That's where the real magic happens. There's a few things you should know about running and maintaining syncs though including how frequently they should run and what sync history tells you about the health of your sync.
 
-### ⏱ Schedules and API
+### Schedules and API
 
 You can happily run a sync manually, but that's not all that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in three ways:
 
