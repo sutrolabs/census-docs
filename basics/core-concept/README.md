@@ -125,12 +125,6 @@ Simply select **"Sync All Properties"** when setting up a sync.
 
 ![Simply select "Sync All Properties"](../../.gitbook/assets/sync\_all\_fields.png)
 
-{% hint style="info" %}
-The following destinations currently support automatically adding new properties:
-
-Braze, Custom API, Customer.io, Google Cloud Storage, Google Sheets, Iterable, Klaviyo, Mixpanel, S3, Salesforce Marketing Cloud, Segment, SFTP, Slack, Vitally, Webhook
-{% endhint %}
-
 ### Advanced Configuration
 
 Some destination objects have additional configuration options. This options apply to all data synced to that destination. For example, when syncing to SFTP, you can use advanced configuration to provide a custom file name, or to specify the delimiter for a CSV file.
