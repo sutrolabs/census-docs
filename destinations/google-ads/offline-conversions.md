@@ -52,7 +52,7 @@ Here you can write SQL queries that contain the conversion action you want to se
 
 Google Ads Offline Click and Call Conversions require a specific set of properties. We'll want a model that has the following three required fields:
 
-* One of: the **Google Click ID** (also often known as the `gclid`), **WBRAID**, or **GBRAID** value.&#x20;
+* One of: the **Google Click ID** (also often known as the `gclid`), **WBRAID**, or **GBRAID** value.
 * The **Conversion Name**, spelled exactly as it is found in Google Ads
 * The **Conversion Timestamp**, with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
 
@@ -112,7 +112,7 @@ Navigate to the [Models](https://app.getcensus.com/models) page.​
 
 Here you can write SQL queries that contain the conversion action you want to send to Google Ads, plus the data Google needs to track the conversion via the Enhanced Conversion mechanism.
 
-Google Enhanced Conversions require a specific set of properties.&#x20;
+Google Enhanced Conversions require a specific set of properties.
 
 #### A. Minimum Conversion Parameters
 
@@ -170,9 +170,13 @@ It may take around 3 hours for synced offline conversions to show up in your Goo
 
 ## Conversion Adjustments
 
-Once a conversion has already been reported to Google Ads, you can [adjust the conversion](https://support.google.com/google-ads/answer/7686447) at a later point in time using Census.&#x20;
+Once a conversion has already been reported to Google Ads, you can [adjust the conversion](https://support.google.com/google-ads/answer/7686447) at a later point in time using Census.
 
 A conversion adjustment requires exactly one of the following sets of properties in order to identify which conversion to adjust.
 
-* **Order ID** or&#x20;
-* **Google Click ID (GCLID) and exact conversion date time**&#x20;
+* **Order ID** or
+* **Google Click ID (GCLID) and exact conversion date time**
+
+### Digital Markets Act (DMA)
+
+When syncing Conversions to Google Ads, you can include consent information to ensure compatibility with [Google's EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/). Google Ads objects now support two additional fields: `Consent for ad user data` and `Consent for ad personalization`, which can be set to one of the following values: `UNKNOWN`, `UNSPECIFIED`, `GRANTED`, `DENIED`. See Google's [documentation](https://support.google.com/google-ads/answer/14310715) for more information on the behavior of different options.

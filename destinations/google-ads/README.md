@@ -23,10 +23,6 @@ Click the link for more information on each of the services
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
 
-{% hint style="success" %}
-Just a heads up: We use the new [Google Ads API](https://developers.google.com/google-ads/api/docs/start) as opposed to the older AdWords API.
-{% endhint %}
-
 ## 🚑 Need help connecting to Google Ads?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

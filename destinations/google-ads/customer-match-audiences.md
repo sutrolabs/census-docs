@@ -81,6 +81,10 @@ Please note that the above behaviors will map to what you select in the, "_**Whe
 
 Note: If you're reusing an existing Customer Match List, Census will not remove any users already added to those lists through other means.
 
+### Digital Markets Act (DMA)
+
+When syncing Customer Match Lists to Google Ads, you can include consent information to ensure compatibility with [Google's EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/). Google Ads objects now support two additional fields: `Consent for ad user data` and `Consent for ad personalization`, which can be set to one of the following values: `UNKNOWN`, `UNSPECIFIED`, `GRANTED`, `DENIED`. See Google's [documentation](https://support.google.com/google-ads/answer/14310715) for more information on the behavior of different options.
+
 ## :warning:Common Issues
 
 ### Did my sync work? It says completed but it isn't showing the updated timestamp I expect.
