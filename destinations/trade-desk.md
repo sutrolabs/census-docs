@@ -31,7 +31,7 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 |                 Campaign |        ✅      | Any unique identifier | Update Only, Append |
 |         Conversion Event |        ✅      | Any unique identifier | Append              |
 |             Tracking Tag |        ✅      | Any unique identifier | Update Only, Append |
-|         CRM Data Segment |        ✅      | Email/Phone           | Mirror              |
+|         CRM Data Segment |        ✅      | Email/Phone           | Update or Create, Mirror |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more The Trade Desk objects and/or behaviors.
 
