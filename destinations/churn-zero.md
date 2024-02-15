@@ -18,9 +18,9 @@ description: Learn how to use Census to sync your Data Warehouse to ChurnZero.
 
 Custom fields defined in ChurnZero can be added to the sync mapping by manually entering the CZ API Name in the destination field mapping
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>ChurnZero Custom Field</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>ChurnZero Custom Field</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Behaviors
 

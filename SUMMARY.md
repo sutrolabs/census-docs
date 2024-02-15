@@ -47,6 +47,7 @@
   * [Entity API](basics/developers/entity-api.md)
   * [Custom Destination API](basics/developers/custom-api.md)
   * [Management API](basics/developers/api.md)
+* [Census Embedded](basics/census-embedded.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
