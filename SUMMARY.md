@@ -171,6 +171,7 @@
 * [LinkedIn](destinations/linkedin.md)
 * [LiveIntent](destinations/liveintent.md)
 * [Mailchimp](destinations/mailchimp.md)
+* [Mailchimp Transactional (Mandrill)](destinations/mailchimp-transactiona-mandrill.md)
 * [Mailgun](destinations/mailgun.md)
 * [Marketo](destinations/marketo.md)
 * [Meilisearch](destinations/meilisearch.md)
