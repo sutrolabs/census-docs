@@ -36,7 +36,7 @@ Hourly during weekdays should be: `0 * * * 1,2,3,4,5` instead of `0 * * * 1-5`
 
 ## dbt Cloud&#x20;
 
-If you're using dbt Cloud to run your dbt project, you can configure Census to automatically run syncs whenever your models have been rebuilt. Simply select your dbt Cloud project's job to monitor and Census will automatically trigger a sync when it completes.
+If you're using dbt Cloud to compile your dbt project, Census can trigger syncs whenever one of your dbt Cloud project runs have completed. Simply select your dbt Cloud project's job to monitor and Census will automatically trigger a sync when it completes.
 
 ![](<../../.gitbook/assets/dbt Cloud Trigger.png>)
 
@@ -49,12 +49,15 @@ To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https:/
 * dbt strongly recommends you use a Service Account token, though User API keys with the correct permissions are accepted. Service Account tokens can be created by users with Account Admin (Enterprise plan) or Owner (Team plan) permissions.
 * The Service Token requires at least the `developer` permission (for Enterprise) or `Member` permission (for Team) in order to configure new webhooks. See [dbt Cloud docs](https://docs.getdbt.com/docs/deploy/webhooks#prerequisites) for more details.
 
-With your token in hand, you can now connect dbt Cloud to your dbt project.
+You'll also need to know your [dbt Cloud account's region URL](https://docs.getdbt.com/docs/cloud/about-cloud/access-regions-ip-addresses). This may be one of the shared regions, or a custom URL specific to your organization. It should be of the form `something.getdbt.com` (you can skip the `https://`).
+
+With your token and your region URL in hand, you can now connect dbt Cloud to your dbt project.
 
 1. Visit [Organizations Settings and select the Integrations tab](https://app.getcensus.com/home/integrations).
-2. Then copy your dbt Cloud API key, **Verify** your key is correct and has the proper permissions, and **Save** your settings.
+2. Provide your region URL and copy your dbt Cloud API key
+3. **Verify** your credentials are correct and have the proper permissions, then **Save** your integration.
 
-<figure><img src="../../.gitbook/assets/dbt Cloud Key.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbt_cloud_key.png" alt=""><figcaption></figcaption></figure>
 
 Now, you'll be able to use a dbt Cloud job to trigger syncs. Visit the **Configuration** tab of any of your syncs.
 
@@ -173,4 +176,3 @@ The Dagster team maintains our Dagster Census integration for triggering syncs. 
 ## Prefect
 
 Similarly, Prefect maintains our Prefect Census integration for triggering syncs. You can read more about [how it works in our blog post](https://www.prefect.io/guide/blog/census-and-prefect-partnership-announcement/#PrefectCensusBettertogether).
-
