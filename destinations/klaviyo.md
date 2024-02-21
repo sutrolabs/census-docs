@@ -48,10 +48,6 @@ You should now be ready to create a new sync to Klaviyo from Census!
 
 ### Klaviyo Profile's List Property
 
-All profiles in Klaviyo belong to at least one list. All syncs must include the **List** property to ensure that profiles in Klaviyo are valid.
-
-We recommend creating a list specifically for syncing. For example, you could use a Klaviyo list called "Census Uploads" that simply includes every profile created or updated by a Census sync. Note that updating through Census sync will only add profiles to additional lists; it cannot remove a profile from a list.
-
 To update the **List** property, you'll need to provide the list **ID** or **Name** values as a JSON array of strings, for example:
 
 ```
@@ -66,7 +62,7 @@ To update the **List** property, you'll need to provide the list **ID** or **Nam
 
 Klaviyo events work like most behavioral event destinations. They require a unique event ID which is used to prevent duplicate events from being created in Klaviyo, as well as a name, timestamp, and custom properties.
 
-One quirk of events in Klaviyo is how events are associated with specific users. After testing, we've found that Klaviyo will associate events with a user based on the email address provided or the Klaviyo User ID (not an external ID), and so Klaviyo event syncs require at least an email address or Klaviyo ID to be captured properly. If you're using an external ID, you'll need to ensure that the email address is also provided in the event payload. As of 2024, using phone numbers as user identifiers did not work reliably in our testing, despite Klaviyo's documentation suggesting that it should.
+One quirk of events in Klaviyo is how events are associated with specific users. Klaviyo will associate events with a user based on the email address provided or the Klaviyo User ID (not an external ID), and so Klaviyo event syncs require at least an email address or Klaviyo ID to be captured properly. If you're using an external ID, you'll need to ensure that the email address is also provided in the event payload. Using [phone numbers as identifiers does not work reliably](https://developers.klaviyo.com/en/reference/update_profile) in some cases depending on how Klaviyo is configured.
 
 ## 🚑 Need help connecting to Klaviyo?
 
