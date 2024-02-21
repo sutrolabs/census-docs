@@ -14,6 +14,8 @@ Census requires two API keys, both a Public and Private key, in order to provide
 1. Within Klaviyo, click your organization name in the bottom left.
 2. Navigate to **Settings** and click **API keys** from the submenu.
 
+We'll cover how to create both below, and [Klaviyo's Help Center](https://help.klaviyo.com/hc/en-us/articles/7423954176283) provides additional details as well.
+
 #### 1. Private API Key
 The Private API Key is used to sync most data to Klaviyo. We recommend creating a new API Key specifically for Census.
 
@@ -23,8 +25,6 @@ Census requires "Full Access" in order to write data to Klaviyo. However, you ma
 The Public API Key is used solely to access the [Klaviyo API](https://developers.klaviyo.com/en/reference/create_client_profile) that powers Profile Update or Create at higher volume.
 
 Klaviyo only allows a single Site ID so in this case, you can reuse your existing public API Key.
-
-[Klaviyo's Help Center](https://help.klaviyo.com/hc/en-us/articles/7423954176283) provides additional details on generating API keys.
 
 #### 3. Configuring Census
 
