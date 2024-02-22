@@ -46,18 +46,6 @@ You should now be ready to create a new sync to Klaviyo from Census!
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Klaviyo.
 
-### Klaviyo Profile's List Property
-
-To update the **List** property, you'll need to provide the list **ID** or **Name** values as a JSON array of strings, for example:
-
-```
-["List A", "List B", "List C"]
-```
-
-```
-["RYkk48", "Xmpet6", "DyreR0"]
-```
-
 ### Klaviyo Events
 
 Klaviyo events work like most behavioral event destinations. They require a unique event ID which is used to prevent duplicate events from being created in Klaviyo, as well as a name, timestamp, and custom properties.
