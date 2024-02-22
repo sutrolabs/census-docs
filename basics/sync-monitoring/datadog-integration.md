@@ -39,17 +39,26 @@ Any data previously sent through the integration will populate these reports.
 
 Census sends the following to Datadog:
 
-#### Metrics
+### Metrics
 
 * **census.syncs.sync\_completed** - the number of syncs that have completed over a time window
 * **census.syncs.rows\_processed** - the volume of rows processed in your syncs, useful for anomaly detection
 
-#### **Events**
+### Events
 
-* **census.syncs.completed** - this event allows for alerting and incident management flows if the sync fails, and includes the sync's failure reason.
+* **census.syncs.triggered** - this event signals that the sync run has been queued&#x20;
+* **census.syncs.started** - this event signals that active work on the sync run has started
+* **census.syncs.completed** - this event signifies that the sync run has completed, and is fired for _both_ successful and failed sync runs.
+  * Successful syncs will have `status: ok`
+  * Failed syncs will have `status: emergency`
+* **census.syncs.success** - this event is fired on a successfully completed sync run
+* **census.syncs.failed** - this event is fired on a failed sync run
 
-#### **Tags**
+### Tags
 
+These will be present for both metrics & events:
+
+* **sync\_run\_id** - your sync run's ID
 * **workspace\_id** - your workspace's immutable ID associated with the metric / event
 * **workspace\_name** - your workspace's name associated with the metric / event
 * **sync\_id** - your sync's immutable ID, also searchable in the [Management API](../developers/api.md) and [Sync Logs ](warehouse-writeback.md)
