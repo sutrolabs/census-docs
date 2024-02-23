@@ -35,11 +35,21 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more The Trade Desk objects and/or behaviors.
 
-### CRM Data Segment PII Normalization
+### CRM Data Segment
+
+#### PII Normalization
 
 Census will automatically normalize email and phone identifiers to the format expected by The Trade Desk. You can optionally provide Census with a pre-hashed email or phone number. If you do, you must ensure that the data is normalized to the format expected by The Trade Desk. Census cannot determine whether a pre-hashed email or phone number is correctly normalized once it is hashed.
 
 For more details on how The Trade Desk expects email and phone numbers to be normalized, see [The Trade Desk's documentation](https://api.thetradedesk.com/v3/portal/data/doc/DataPiiNormalization).
+
+#### Segment Time Left and Refresh Frequency
+
+Census will automatically set the segment time left to the maximum 180 days by using The Trade Desk's Data Retention feature. Census will also automatically refresh a segment as it approaches the 180-day limit.
+
+{% hint style="info" %}
+The Trade Desk's Manage Segments UI is a bit confusing. The "Segment Time Left" field may "Zero days left" or "Expired" even a day or two after a segment is created. This is because it actually shows the number of days left as indicated by the last batch of data sent to the segment, not the segment overall. In order for Census to implement Mirror behavior, we send a batch of users to remove with a 0-day time left. This will cause the segment to appear expired in the UI, but rest assured, it's only indicating the last batch.
+{% endhint %}
 
 ## 🚑 Need help connecting to The Trade Desk?
 
