@@ -12,6 +12,7 @@
   * [Liquid Templates](basics/core-concept/liquid-templates.md)
 * [Audience Hub](basics/audience-hub/README.md)
   * [Creating Segments](basics/audience-hub/getting-started.md)
+  * [Profile Explorer](basics/audience-hub/profile-explorer.md)
   * [Warehouse-Managed Audiences](basics/audience-hub/warehouse-managed-audiences.md)
   * [Activating Segments](basics/audience-hub/syncing-segments.md)
   * [Audience Match Rates](basics/audience-hub/audience-match-rates.md)

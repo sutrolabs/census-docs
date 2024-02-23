@@ -10,9 +10,9 @@ Segments are built on top of entities, the core models set up for a data warehou
 
 ## Using the visual builder
 
-To create your first segment, click on **Audience Hub** in the left-hand navigation of Census and then click **Add a New Segment** in the top right.
+To create your first segment, click on **Segments** in the left-hand navigation of Census and then click **Add a New Segment** in the top right.
 
-To start, you'll need to select the data set you're segmenting in the top left. This will determine the type of records your segment contains, the conditions you'll be able to filter on, and what data will eventually be available to sync to your destination tools.&#x20;
+To start, you'll need to select the data set you're segmenting in the top left. This will determine the type of records your segment contains, the conditions you'll be able to filter on, and what data will eventually be available to sync to your destination tools.
 
 ![Example of a segment with conditions on the User's email and their events](<../../.gitbook/assets/Example Segment (2).png>)
 
@@ -22,14 +22,14 @@ At any point, you can press **Preview Results** to get a look at a sample of the
 
 The basis of any segment is adding new conditions. Clicking **Add Condition** to select an attribute or related data from the **Details List** on the right hand side. It contains all the available attributes for the selected entity, as well as any related entities or segments which can be used for additional conditions as well.
 
-On the left side, you'll see the And / Or condition combination control. You can use this to change how conditions are combined. **And** meaning all the conditions must be met; **Or** meaning any of the conditions can be met. You can also make combinations of ands and ors by adding **Condition Groups** which can have their own conditions and combination control.&#x20;
+On the left side, you'll see the And / Or condition combination control. You can use this to change how conditions are combined. **And** meaning all the conditions must be met; **Or** meaning any of the conditions can be met. You can also make combinations of ands and ors by adding **Condition Groups** which can have their own conditions and combination control.
 
 ### Related Entities and Related Segments
 
 In addition to creating conditions about attributes on the entity you're segmenting, you can also filter based on other data related to this entity.
 
 * **Related Entities** is the list of other entities connected to the entity you're segmenting. You can also create conditions on any related entities and your segment will only include records that are related to entities that meet those conditions. Census will take care of building the association between those data sets.
-* **Inclusions and Exclusions** - Allows _including_ or _excluding_ members from a segment if they appear in some other segment of the same entity data. This enables creating sub segments of common shared definitions like Paid Customers, excluding segments that should never be targeted, as well as creation unions and intersections of of multiple other segments.&#x20;
+* **Inclusions and Exclusions** - Allows _including_ or _excluding_ members from a segment if they appear in some other segment of the same entity data. This enables creating sub segments of common shared definitions like Paid Customers, excluding segments that should never be targeted, as well as creation unions and intersections of of multiple other segments.
 
 <figure><img src="../../.gitbook/assets/Related Segments.png" alt=""><figcaption></figcaption></figure>
 
@@ -94,15 +94,15 @@ Additionally, if you're trying to create a condition that Census doesn't support
 
 ### Segment Limits
 
-A limit can be placed on a segment to confine to a certain number of records. This is accessed when building a segment by clicking the ... menu item in the upper right. The process to add a limit is as follows.&#x20;
+A limit can be placed on a segment to confine to a certain number of records. This is accessed when building a segment by clicking the ... menu item in the upper right. The process to add a limit is as follows.
 
 * Enter the number of records to limit by
 * Select the field that will be used to order by
-* Select whether you want to order by ascending or descending. The top values will be selected so if choosing descending this will be the highest or latest records.&#x20;
+* Select whether you want to order by ascending or descending. The top values will be selected so if choosing descending this will be the highest or latest records.
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-08-03 at 11.53.50.png" alt=""><figcaption></figcaption></figure>
 
-If you want to limit randomly, consider using an ID as the field to order by.&#x20;
+If you want to limit randomly, consider using an ID as the field to order by.
 
 ### Dimension Limits
 
