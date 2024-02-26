@@ -8,7 +8,7 @@ description: This page describes how to provide DMA consent to ad platforms via 
 **If you are using Census to send audiences or conversion events to Google Ads, Google DV360, or Amazon Ads DSP, you’ll need to take the actions described on this page before March 2024 to avoid audience targeting from being affected.**
 {% endhint %}
 
-As you may be aware, many of the large advertising services are in the process of supporting the EU’s Digital Markets Act (DMA). Census now supports syncing DMA-related properties to the following destinations:
+As you may be aware, many of the large advertising services are in the process of supporting the EU’s [Digital Markets Act](https://digital-markets-act.ec.europa.eu/index\_en) (DMA). Census now supports syncing DMA-related properties to the following destinations:
 
 * [Google Ads](dma-consent-for-ad-platforms.md#google-a-ds) (Audiences, Conversions)
 * [Google Display & Video 360](dma-consent-for-ad-platforms.md#google-display-and-video-360) (Customer Match Audiences)
