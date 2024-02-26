@@ -43,6 +43,7 @@
   * [Using Your Own S3](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
   * [SIEM Log Forwarding](basics/security-and-privacy/siem-log-forwarding.md)
   * [Secure Storage of Customer Credentials](basics/security-and-privacy/secure-storage-of-customer-credentials.md)
+  * [Digital Markets Act (DMA) Consent for Ad Platforms](basics/security-and-privacy/dma-consent-for-ad-platforms.md)
 * [Developers](basics/developers/README.md)
   * [GitLink](basics/developers/gitlink.md)
   * [Entity API](basics/developers/entity-api.md)
