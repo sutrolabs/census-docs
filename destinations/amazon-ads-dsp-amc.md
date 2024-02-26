@@ -52,6 +52,10 @@ Census will send the Sync Key you specify as the unique identifier for your even
 
 ### DSP Audiences
 
+| **Advanced Configuration** | **Description**       |
+| -------------------------: | :-------------------: |
+|        Data Source Country | List of countries where user data in audience was collected for DMA support |
+
 Amazon DSP Audiences are a pecular object in that they are actually two separate objects that are linked together through the use of a unique ID. Amazon DSP Audiences need to be managed in two phases:
 
 1. First upload the PII about your audience members, where each record is identified by a unique ID you've assigned them. This is the Hashed Records (Part 1) object.
@@ -61,6 +65,8 @@ Amazon DSP Audiences are a pecular object in that they are actually two separate
 This means using Amazon DSP Audiences requires at least two separate Census syncs. The first sync will upload the PII about your audience members and the second sync will assign those records to an audience. If you plan to create multiple audiences, we recommend that your Hashed Records sync uploads all of the records you plan to use in any of your audiences. Then you can create a separate DSP Audience Members sync for each audience you want to create.
 
 Like Conversion Events, you can optionally provide pre-hashed values for your records. Amazon documents the requirements for this [here](https://advertising.amazon.com/help/GCCXMZYCK4RXWS6C). They are nearly identical to the requirements for Conversion Events, though notice that country and state identifiers are lower case if provided.
+
+### Digital Markets Act (DMA)
 
 Finally, to support upcoming Digital Markets Act (DMA) requirements, Amazon now accepts a Data Source Country field on the DSP Audience Members object. This field is optional and can be a comma separated list of two-letter country code using [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes) format. This list will be used by any segments created from this sync. If it's omitted, the value will be UNKNOWN.
 
