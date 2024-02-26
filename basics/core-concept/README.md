@@ -75,7 +75,15 @@ For example, if Census sees your source and destination both have records with t
 
 Once you've defined _how_ data is related between your source and destination, the next step is to let Census know _what_ properties should be updated. The field mapping step lets you specify how fields should be mapped from your source model to the destination object's fields. You can automatically add all matching fields, but even if names don't match, you can also provide the matching manually. If you remove fields from your mapping, Census will just stop updating those fields. We will not delete the values.
 
-#### **Using templates to tranform source data**
+#### Constant Values
+
+Sometimes you want to send a constant value to a destination field. For example, you might want to send a constant value to a field in your destination to indicate that the record came from Census.
+
+You could do this by adding a new column to your source data, but that's not always possible, and certainly not fast.
+
+Instead, you can simply add a **Constant Value** field mapping to set the value directly in the Census UI. The value you provide will be set for every record in your sync.
+
+#### Using templates to tranform source data
 
 Sometimes the data in your source systems isn't in quite the format or style that the destination expects. If you need to transform records from the source before sending them to the destination, you can use a **Templated Field.**
 
