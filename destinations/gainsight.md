@@ -10,8 +10,6 @@ Gainsight is a customer success platform that helps businesses grow faster by re
 
 This guide shows you how to use Census to connect your Gainsight account to your data warehouse and create your first sync.
 
-### Step 1: Generate Access Token :key:
-
 1. Within Gainsight, open the **Sidebar** and click on **Administration** > **Integrations** > **Connectors 2.0**
 2. Click on the **Create Connection** button in the top right, then select the Gainsight API.
    - Do not select the GS Bulk API, select the Gainsight API
