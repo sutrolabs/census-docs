@@ -18,6 +18,10 @@ Google and Amazon have taken different approaches to supporting DMA metadata for
 
 ## Google Ads
 
+{% hint style="info" %}
+If you’re using our one-click sync experience to send audiences to Google Ads, jump ahead to the [One-Click Audience Syncs](dma-consent-for-ad-platforms.md#one-click-audience-syncs-google-a-ds-only) section below.
+{% endhint %}
+
 When sending Audiences or Conversions to [Google Ads](../../destinations/google-ads/) (using our traditional sync experience) you will now see two optional fields: **Consent for ad personalization** and **Consent for ad user data**. You must provide both of these to assert the user data you are sending was collected in accordance with [Google’s EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/).
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-02-15 at 17.04.01@2x (1).png" alt=""><figcaption><p>Optional fields for providing consent to Google Ads.</p></figcaption></figure>
@@ -33,6 +37,23 @@ There are two ways to populate these fields in Census:
 2. Use the “Constant Value” feature in Census’s field mapper to provide the same value for all records in the audience (warning: only do this if you’re confident the same value will always apply to all members of your audience)
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-02-26 at 12.07.26@2x.png" alt=""><figcaption><p>Provide a constant value in the field mapper.</p></figcaption></figure>
+
+### One-Click Audience Syncs (Google Ads Only)
+
+If you’re sending audiences to Google Ads using our [one-click audience sync](https://docs.getcensus.com/basics/audience-hub/syncing-segments#one-click-experience-for-a-d-platforms) experience, you’ll only need to provide consent status once for each underlying “person” entity.
+
+1. Go to the “Entities” tab in Census.
+2. Click on the “Person” entity powering your one-click syncs. Hint: the numbers shown below are the total count of segments and syncs, respectively, using the entity.
+
+<figure><img src="../../.gitbook/assets/CleanShot 2024-02-27 at 09.22.25@2x.png" alt=""><figcaption><p>Select the "Person" entity powering your one-click syncs.</p></figcaption></figure>
+
+3. Add two additional mappings—1) **Google Ads Consent for Ad Personalization** and 2) **Google Ads Consent for Ad User Data**—and select the relevant fields in your source data. Acceptable values for these fields are: `UNKNOWN`, `UNSPECIFIED`, `GRANTED`, or `DENIED` (see [Google’s documentation](https://support.google.com/google-ads/answer/14310715) for more context).
+
+<figure><img src="../../.gitbook/assets/CleanShot 2024-02-23 at 16.57.23@2x.png" alt=""><figcaption><p>Map the consent fields in your source data.</p></figcaption></figure>
+
+4. Click “Save Entity” in the top right to save your changes.
+5. Repeat this process for any additional “Person” entities powering one-click syncs.
+6. That’s it! We’ll automatically ensure these fields get passed along to Google Ads.
 
 ## Google Display & Video 360
 
