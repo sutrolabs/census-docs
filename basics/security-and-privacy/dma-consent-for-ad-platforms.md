@@ -19,7 +19,7 @@ Google and Amazon have taken different approaches to supporting DMA metadata for
 ## Google Ads
 
 {% hint style="info" %}
-**If you’re using our one-click sync experience to send audiences to Google Ads, jump ahead to the** [**One-Click Audience Syncs**](dma-consent-for-ad-platforms.md#one-click-audience-syncs-google-a-ds-only) **section below.**
+If you’re using our one-click sync experience to send audiences to Google Ads, jump ahead to the [One-Click Audience Syncs](dma-consent-for-ad-platforms.md#one-click-audience-syncs-google-a-ds-only) section below.
 {% endhint %}
 
 When sending Audiences or Conversions to [Google Ads](../../destinations/google-ads/) (using our traditional sync experience) you will now see two optional fields: **Consent for ad personalization** and **Consent for ad user data**. You must provide both of these to assert the user data you are sending was collected in accordance with [Google’s EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/).
