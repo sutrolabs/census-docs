@@ -22,7 +22,7 @@ Census will need four pieces of information to connect to your Bloomreach accoun
 3. Now copy both the API Key and the API Secret, as well as the API Base URL and the Project Token above the API Key.
 
 4. Back within Census, go to the [Destinations](https://app.getcensus.com/destinations) page in Census and click **New Destination**.
-5. Select **Bloomreach** from the menu
+5. Select **Bloomreach** from the menu.
 6. Enter the API Key, API Secret, API Base URL, and Project Token. Hit save and you're done!
 
 You should now be ready to sync your data to Bloomreach.
