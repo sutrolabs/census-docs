@@ -1,4 +1,10 @@
+---
+description: This page describes how to use Census with Amazon Ads DSP.
+---
+
 # Amazon Ads DSP (AMC)
+
+Amazon Ads DSP is a demand-side platform that allows advertisers to programmatically buy display, video, and audio ads. Census can sync your customer data to Amazon Ads DSP to help you create and manage audiences for your ad campaigns.
 
 ## 🏃‍♀️ Getting Started
 

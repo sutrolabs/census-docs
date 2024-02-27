@@ -106,6 +106,7 @@
 * [Attio](destinations/attio.md)
 * [Autopilot Journeys](destinations/autopilot-journeys.md)
 * [Azure Blob Storage](destinations/azure-blob-storage.md)
+* [Bloomreach](destinations/bloomreach.md)
 * [Box](destinations/box.md)
 * [Braze](destinations/braze.md)
 * [Brevo (formerly Sendinblue)](destinations/brevo.md)

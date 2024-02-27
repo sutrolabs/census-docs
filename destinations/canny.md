@@ -4,6 +4,8 @@ description: This page describes how to use Census with Canny.
 
 # Canny
 
+Canny is a customer feedback management tool that helps you collect and organize feedback from your customers. Census can sync your customer data to Canny to help you better understand your customers' needs and prioritize your product roadmap.
+
 ## 🏃‍♀️ Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
