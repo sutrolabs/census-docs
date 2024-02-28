@@ -21,6 +21,10 @@ Members of a Census Organization may be promoted to Administrators, which will g
 
 Census Workspaces allow you to manage permissions granularly for different teams or use-cases. Give your Sales team and your Marketing team their own little slice of Census or keep your staging environment separate from prod. The list of Workspaces in your organization is always visible to all members of your organization, but you can control the level of access for members by assigning them a role.
 
+#### Invite Users to a Workspace
+
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
 #### Workspace Roles
 
 Workspace members each have one of four different roles:

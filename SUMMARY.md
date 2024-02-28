@@ -55,7 +55,7 @@
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
 
 * [Overview](sources/overview.md)
-* Available Sources
+* [Available Sources](sources/available-sources/README.md)
   * [Amazon Athena](sources/aws-athena.md)
   * [Amazon Redshift](sources/redshift.md)
   * [Amazon S3](sources/s3.md)
@@ -83,7 +83,7 @@
 ## 🛫 Destinations
 
 * [Overview](destinations/overview.md)
-* Available Destinations
+* [Available Destinations](destinations/available-destinations/README.md)
   * [Accredible](destinations/accredible.md)
   * [ActiveCampaign](destinations/activecampaign.md)
   * [Adobe Target](destinations/adobe-target.md)
