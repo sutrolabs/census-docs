@@ -32,7 +32,7 @@ You should now be ready to sync your data to Bloomreach.
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
 | --------------: | :------------: | ---------------- | ------------------- |
 | Customer | ✅ | Registered (Hard ID), Cookie (Soft ID) | Update or Create |
-| Event | 🔜 | Event ID | Append |
+| Event  <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) | ✅ | Event ID | Append |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Bloomreach objects and/or behaviors.
 
@@ -41,6 +41,10 @@ You should now be ready to sync your data to Bloomreach.
 There's a few things to note about the customer object in Bloomreach:
 - Bloomreach customers can be identified by two different IDs: Hard ID (aka registered, this is equivalent to external ID but they don't use that terminology) or Soft ID (aka cookie). Census supports both of these identifiers. These are also customizable and might not be present in every Bloomreach instance.
 - Bloomreach does not currently offer an API to retrieve the schema/properties for the customer object. When mapping to customer fields, please use the exact names (case-sensitive) as they appear in the API Permissions > Properties page in Bloomreach.
+
+#### Event quirks
+
+Like Customer objects, Bloomreadh does not currently offer an API to retrieve the schema/properties for the event object either. So again, double check that you're using the exact names (case-sensitive) as they appear in the API Permissions > Properties page in Bloomreach.
 
 ## 🚑 Need help connecting to Bloomreach?
 
