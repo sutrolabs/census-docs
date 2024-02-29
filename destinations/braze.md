@@ -42,7 +42,6 @@ Provide a name you'll recognize ("Census" is a good choice) and select the follo
 You must include users.delete if you want to do the [remove option of Mirroring users](braze.md#mirror-mode-options)
 {% endhint %}
 
-* `segments.list`
 * For API-triggered Campaigns: `campaigns.list` and `campaigns.trigger.send`
 * For Catalogs: All Catalogs permissions
 * This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update these permissions in the future.
