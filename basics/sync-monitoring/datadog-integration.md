@@ -43,6 +43,7 @@ Census sends the following to Datadog:
 
 * **census.syncs.sync\_completed** - the number of syncs that have completed over a time window
 * **census.syncs.rows\_processed** - the volume of rows processed in your syncs, useful for anomaly detection
+* **census.syncs.records\_sent** - the volume of records synced to your destinations, also useful for anomaly detection
 
 ### Events
 
@@ -77,3 +78,9 @@ For the **census.syncs.rows\_processed** metric only:
   * _changed_ - new or updated records that Census will try to sync
   * _deleted_ - the number of removed records that Census will try to delete if the sync behavior is "mirror"
   * _invalid_ - the number of records with a duplicate or NULL identifier in the sync
+
+For the **census.syncs.records\_sent** metric only:
+
+* **type** - containing the following potential values
+  * _accepted_ - the number of records the destination successfully accepted in the sync
+  * _rejected_ - the number of records the destination rejected in the sync
