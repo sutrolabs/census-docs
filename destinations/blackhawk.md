@@ -37,7 +37,7 @@ We currently support two types of fields for submissions
 - Demographic fields - These are all built in fields that can be mapped immediately in a Census sync
 - Submission attributes - These are custom fields that can be added to a submission. These fields names **must** start with a prefix "SA." in order to be loaded correctly, for example: "SA.Installation Date".
 
-The Blackhawk connector does not currently support sending fields for the Additional Demographic (nested object) or Product and Product attributes (nested list objects). If you need to send these fields, please reach out to us at [support@getcensus.com](mailto:support@getcensus.com).
+The Blackhawk connector does not currently support sending fields for the Additional Demographic or Product and Product attributes. If you need to send these fields, please reach out to us at [support@getcensus.com](mailto:support@getcensus.com).
 
 ## 🚑 Need help connecting to Blackhawk Network?
 
