@@ -11,10 +11,10 @@ Blackhawk Network helps you build connections with customers, clients and employ
 Census makes use of Blackhawk's SFTP mechanism to send data and takes care of the complex data formatting in the process. To connect to Blackhawk, you'll need to provide Census with the information used to connect to Blackhawk's SFTP server.
 
 1. Census will need the following information to connect to Blackhawk's SFTP server:
-  - Host
-  - Port
-  - Username
-  - Password
+    - Host
+    - Port
+    - Username
+    - Password
 
 All of these can be obtained from your Blackhawk Network representative.
 
