@@ -81,6 +81,6 @@ For the **census.syncs.rows\_processed** metric only:
 
 For the **census.syncs.records\_sent** metric only:
 
-* **type** - containing the following potential values
+* **destination\_response** - containing the following potential values
   * _accepted_ - the number of records the destination successfully accepted in the sync
   * _rejected_ - the number of records the destination rejected in the sync
