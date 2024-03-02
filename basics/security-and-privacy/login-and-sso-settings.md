@@ -42,7 +42,7 @@ MFA is integrated directly with the client’s SSO provider. Census will not be 
 
 We treat your IdP as the source of truth for who has access to your Census account. To give someone access to your Census account, you'll need to provide access via your IdP.
 
-After being provisioned to Census within your IDP new users can login to Census via your IDP to create their user at the Organization level within the app. Once created after logging in for the first time they will need to be added by an existing user to the appropriate Workspaces. &#x20;
+After being provisioned to Census within your IDP new users can login to Census to create their user within your Census Organization. After logging in for the first time they will need to be added by an existing user to a Workspace. &#x20;
 
 #### What is the user’s default workspace and role if their account is created from a SAML-initiated login?
 
