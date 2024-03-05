@@ -6,7 +6,6 @@ description: >-
 
 # Facebook Ads
 
-
 In this guide, we will show you how to connect Facebook Ads to Census and create your first sync.
 
 ## 🏃‍♀️ Getting Started
@@ -36,6 +35,7 @@ A regular system user is recommended over an admin system user. You can use an e
 
     <figure><img src="../.gitbook/assets/FB New App Details.png" alt="" width="375"><figcaption><p>New app details</p></figcaption></figure>
 2.  Now you can generate a system user for the app. Go to your Business Manager and navigate to **Business Settings > Users > System Users**
+
     <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 8.23.16 AM.png" alt="" width="375"><figcaption><p>Business Manager Navigation Panel</p></figcaption></figure>
 3. Above your list of system users click **Add** to create a new System User
 4. Provide a name and role. Census does **not** need an `Admin` role, `Employee` is sufficient.
@@ -44,10 +44,14 @@ A regular system user is recommended over an admin system user. You can use an e
    * You will need to provide _at least_ the `business_management` and `catalog_management` scopes for Census to sync to your product catalogs
    *   Make sure to select `Never` for token expiration so you do not need to manually reauthorize your Census connection every 60 days.
 
-
-
        <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 8.33.35 AM.png" alt="" width="375"><figcaption><p>Token Expiration &#x26; Scopes Page</p></figcaption></figure>
 7. Once your token is generated be sure to save it in a safe place. This is the token you must provide to Census as a credential for your connection.
+
+{% hint style="info" %}
+To validate that your System User Token is set up correctly and has the necessary scopes you can input your access token in the link below.\
+\
+[https://developers.facebook.com/tools/debug/accesstoken](https://developers.facebook.com/tools/debug/accesstoken)
+{% endhint %}
 
 ### Using an Existing System User
 
@@ -59,20 +63,18 @@ If you'd like to use OAuth, connecting to Facebook Ads is as simple as clicking 
 
 The downside of this method is that authentication will expire every 60 days and require re-authentication. We recommend using a System User for the most reliable connection long term.
 
-
 ### Setting Up Connection
 
 You are now ready to set up a connection. Head to the Census Destinations page and press **New Destination**. From the list, select Facebook Ads.
 
 Select the authentication method you prefer and provide your token or complete the OAuth flow. Once you hit save, you can use your destination to create new syncs.
 
-
 ## 🗄 Supported Objects and Behaviors
 
-|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                           |**Behaviors** |
-| ----------------------------------------------------------------------------------------: | :------------: | --------------------------------------------------------------------------------------------------------- | :------------: |
-|                                                                                  Audience |        ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/) | Update or Create, Mirror |
-| Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |        ✅       | Any unique ID                                                                                             | Append |
+|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                           |       **Behaviors**      |
+| ----------------------------------------------------------------------------------------: | :-----------: | --------------------------------------------------------------------------------------------------------- | :----------------------: |
+|                                                                                  Audience |       ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/) | Update or Create, Mirror |
+| Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                             |          Append          |
 
 {% hint style="info" %}
 Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
@@ -107,9 +109,8 @@ Audiences provide a way to group users together for targeting in Facebook Ads. T
 
 Here's a few things to keep in mind when syncing to Facebook Audiences:
 
-- You can reuse existing audiences or have Census create new ones.
-- **Update or Create** will add or update users to the audience, but will never remove users. **Mirror** will also remove users that have disappeared from the source. Note: If you're reusing an existing Facebook Audience, Census will not remove any users already added to that audience through other means. Census only removes users that it created initially.
-
+* You can reuse existing audiences or have Census create new ones.
+* **Update or Create** will add or update users to the audience, but will never remove users. **Mirror** will also remove users that have disappeared from the source. Note: If you're reusing an existing Facebook Audience, Census will not remove any users already added to that audience through other means. Census only removes users that it created initially.
 
 ### Conversions
 
@@ -171,7 +172,6 @@ For a more complete description of each identifier, please see [Facebook's API d
 | --------- | ---------- | -------------- | ----------------------- | ------------- | --------------- | --------------------------------------------------------------------------------------------------------------------- |
 | 1234      | 1000294785 | website        | 2022-01-01 00:00:00+000 | sample\_event | test@domain.com | [Like the ones listed above](https://docs.getcensus.com/destinations/facebook-ads#c.-customer-information-parameters) |
 
-
 ## 🆘 Common Errors
 
 Sometimes error messages can be a little cryptic. Here's some Facebook errors that pop up on occasion and what they mean.
@@ -184,14 +184,14 @@ Custom Audience terms have not been accepted: Accept the Custom Audience terms a
 ```
 {% endcode %}
 
-In order to get around this error, the user that does the authentication to Census should be the same user that accepts the policy updates. For example, you may have a "Business" account on Facebook, but to authenticate to Census you might use personal Facebook accounts that are "attached" to the business account.  The corresponding personal account would need to accept the policy. \
+In order to get around this error, the user that does the authentication to Census should be the same user that accepts the policy updates. For example, you may have a "Business" account on Facebook, but to authenticate to Census you might use personal Facebook accounts that are "attached" to the business account. The corresponding personal account would need to accept the policy.\
 \
 If you are unsure if your team has already accepted the terms and conditions, you can make a GET call to see if your account has signed the terms and conditions.\
 \
-The API call is: \
-`GET act_<AD_ACCOUNT_ID>?fields=tos_accepted` \
+The API call is:\
+`GET act_<AD_ACCOUNT_ID>?fields=tos_accepted`\
 \
-A sample response would be something like this:&#x20;
+A sample response would be something like this:
 
 ```
 {
