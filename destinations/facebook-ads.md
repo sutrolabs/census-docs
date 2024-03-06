@@ -55,7 +55,7 @@ To validate that your System User Token is set up correctly and has the necessar
 
 ### Using an Existing System User
 
-If you already have a system user you can use it by simply generating a new token with the correct permissions. Census needs the `business_management` and `catalog_management` scopes. Also be sure to assign the catalog asset to your system user so Census can sync to it.
+If you already have a system user you can use it by simply generating a new token with the correct permissions. Census needs the `ads_management` scope. Also be sure to assign the catalog asset to your system user so Census can sync to it.
 
 ### Using OAuth
 
