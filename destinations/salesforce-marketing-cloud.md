@@ -87,6 +87,7 @@ In the dialog, fill out the data you gathered in steps 2 and 3:
 * Client ID and Client Secret: Fill in the **Client ID** and **Client Secret** from Step 1
 * SFTP User: Fill in the **FTP Username** from Step 2
 * (Optional) **Business Unit MID**: If you would like to create a connection for a business unit other than your primary SFMC account, you can provide a Business Unit MID. This can be found in the SFMC top navigation menu:
+* Include Shared Data Extensions?: If you would like Census to access shared data extensions, check this box. This has performance implications (see below for more details).
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-02-02 at 10.01.34@2x.png" alt=""><figcaption></figcaption></figure>
 
@@ -166,8 +167,14 @@ Some Salesforce Marketing Cloud installations have a very large number of data e
 3. Set the Folder Path value to match your desired folder.
 4. Click **Save Connection**.
 
-## ⚙️ Advanced Configuration
+### Shared Data Extensions
+
+In addition to Data Extentions in your specified root folder, you can also have Census look for shared data extensions. For organizations with thousands of data extensions (regardless of whether they're shared or not), this can make the process of scanning for all existing extensions very slow. This slowness will show up when setting up new Census connections or creating a new data extension. If you're experiencing slow performance, you can disable this feature by unchecking the "Include Shared Data Extensions?" checkbox in the Salesforce Marketing Cloud connection settings.
+
+## Advanced Configuration
 
 By default, Census uses Salesforce Marketing Cloud's bulk upload mechanism which is powered by SFTP. This is the recommended mechanism for most syncs. However, for small data volumes, it may be preferred to send updates individually via Salesforce Marketing Cloud's SOAP API for faster processing. If your syncs must be processed with as low latency as possible and you have a relatively small number of changes, you can disable the standard SFTP method of syncing.
+
+## 🚑 Need help connecting to Salesforce Marketing Cloud?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
