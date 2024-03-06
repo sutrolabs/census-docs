@@ -12,28 +12,25 @@ In this guide, we will show you how to connect Zendesk to Census and create your
 
 * Census account: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * Zendesk account
-*   Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-
-    * [Azure Synapse](../sources/azure-synapse.md)
-    * [Databricks](https://docs.getcensus.com/sources/databricks)
-    * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-    * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-    * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-    * [MySQL](https://docs.getcensus.com/sources/mysql)
-    * [Postgres](https://docs.getcensus.com/sources/postgres)
-    * [Redshift](https://docs.getcensus.com/sources/redshift)
-    * [Rockset](https://docs.getcensus.com/sources/rockset)
-    * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-    * [SQL Server](https://docs.getcensus.com/sources/sql-server)
-
-
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [MySQL](https://docs.getcensus.com/sources/mysql)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### Step 1: Connect Zendesk
 
 1. Log into Census and navigate to the [**Destinations**](https://app.getcensus.com/destinations) page.
 2. Click **New Destination**.
 3. Select **Zendesk** from the dropdown list.
-4. Follow the Zendesk authentication flow.
+4. Follow the Zendesk authentication flow and login with the desired account. The Zendesk connection within Census will have the permissions of the connected user account.
 
 Your end state should look something like this: 👇
 
@@ -101,6 +98,14 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 The way that Zendesk updates certain properties is complex.
 
+### Additional permissions required for syncs to the User object
+
+Census utilizes Zendesk's Bulk User Import api endpoints to most efficiently sync your user data to Zendesk.&#x20;
+
+Bulk user imports are not enabled by default in Zendesk accounts. The account owner must contact [Zendesk Customer Support](https://support.zendesk.com/hc/en-us/articles/4408843597850) to enable the imports.&#x20;
+
+If data imports are not enabled a 403 Forbidden error is returned.
+
 ### Setting Organizations on the End User object
 
 In Zendesk, users (records in the **End User** object) can belong to multiple **Organizations**. When syncing the **End User** object, you can provide either a single **External ID** value or a list of values.
@@ -147,7 +152,7 @@ lower(replace(column_name, ' ', '_'))
 
 Census currently supports syncing to the following Zendesk objects:
 
-| **Object Name** | **Supported?** | **Sync Keys**                  |
+| **Object Name** | **Supported?** | **Sync Keys**                    |
 | --------------: | :------------: | -------------------------------- |
 |        End User |        ✅       | External ID (recommended), Email |
 |    Organization |        ✅       | External ID (recommended), Name  |
