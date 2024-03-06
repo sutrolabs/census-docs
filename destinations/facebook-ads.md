@@ -41,7 +41,7 @@ A regular system user is recommended over an admin system user. You can use an e
 4. Provide a name and role. Census does **not** need an `Admin` role, `Employee` is sufficient.
 5. Once the system user is created click on **Add Assets** and assign the relevant Product Catalogs that you want Census to sync to. Make sure to assign _full control_ of the catalog to the system user.
 6. Now generate a token for the System User by pressing **Generate New Token**, select the relevant app you created earlier, select the relevant scopes, and then press **Generate Token**
-   * You will need to provide _at least_ the `business_management` and `catalog_management` scopes for Census to sync to your product catalogs
+   * You will need to provide _at least_ the following scopes for Census to sync to your Facebook Conversions and Custom Audiences: `ads_management`, `business_management` , and `catalog_management`&#x20;
    *   Make sure to select `Never` for token expiration so you do not need to manually reauthorize your Census connection every 60 days.
 
        <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 8.33.35 AM.png" alt="" width="375"><figcaption><p>Token Expiration &#x26; Scopes Page</p></figcaption></figure>
