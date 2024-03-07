@@ -25,27 +25,31 @@ A regular system user is recommended over an admin system user. You can use an e
     * Click **Add** and then **Create New App ID**
     * For use case select **Other**
 
-    <figure><img src="../.gitbook/assets/FB App UseCase.png" alt="Facebook App UseCase Screen" width="375"><figcaption><p>New app usecase screen</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.04.42 PM.png" alt="Facebook App UseCase Screen" width="563"><figcaption><p>New app usecase screen</p></figcaption></figure>
 
     * Then for Type select **Business**
 
-    <figure><img src="../.gitbook/assets/FB New App Type.png" alt="" width="375"><figcaption><p>New app type</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.05.04 PM.png" alt="" width="563"><figcaption><p>New app type</p></figcaption></figure>
 
     * Then fill out the relevant details and press **Create App**
 
-    <figure><img src="../.gitbook/assets/FB New App Details.png" alt="" width="375"><figcaption><p>New app details</p></figcaption></figure>
-2.  Now you can generate a system user for the app. Go to your Business Manager and navigate to **Business Settings > Users > System Users**
+    <figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.05.22 PM.png" alt="" width="563"><figcaption><p>New app details</p></figcaption></figure>
+2. Now you can generate a system user for the app. Go to your Business Manager and navigate to **Business Settings > Users > System Users**
 
-    <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 8.23.16 AM.png" alt="" width="375"><figcaption><p>Business Manager Navigation Panel</p></figcaption></figure>
-3. Above your list of system users click **Add** to create a new System User
-4. Provide a name and role. Census does **not** need an `Admin` role, `Employee` is sufficient.
-5. Once the system user is created click on **Add Assets** and assign the relevant Product Catalogs that you want Census to sync to. Make sure to assign _full control_ of the catalog to the system user.
-6. Now generate a token for the System User by pressing **Generate New Token**, select the relevant app you created earlier, select the relevant scopes, and then press **Generate Token**
+Above your list of system users click **Add** to create a new System User
+
+1. Provide a name and role. Census does **not** need an `Admin` role, `Employee` is sufficient.
+2.  Once the system user is created click on **Add Assets** and add the Application you created in step one. Make sure to assign _full control_ of the app to the system user.
+
+
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.08.15 PM.png" alt=""><figcaption><p>Assign your System User full control to your Application</p></figcaption></figure>
+3. Now generate a token for the System User by pressing **Generate New Token.**
    * You will need to provide the following scope for Census to sync to your Facebook Conversions and Custom Audiences: `ads_management`
    *   Make sure to select `Never` for token expiration so you do not need to manually reauthorize your Census connection every 60 days.
 
-       <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 8.33.35 AM.png" alt="" width="375"><figcaption><p>Token Expiration &#x26; Scopes Page</p></figcaption></figure>
-7. Once your token is generated be sure to save it in a safe place. This is the token you must provide to Census as a credential for your connection.
+       <figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.08.58 PM.png" alt="" width="563"><figcaption><p>Token Expiration &#x26; Scopes Page</p></figcaption></figure>
+4. Once your token is generated be sure to save it in a safe place. This is the token you must provide to Census as a credential for your connection.
 
 {% hint style="info" %}
 To validate that your System User Token is set up correctly and has the necessary scopes you can input your access token in the link below.\
@@ -53,9 +57,11 @@ To validate that your System User Token is set up correctly and has the necessar
 [https://developers.facebook.com/tools/debug/accesstoken](https://developers.facebook.com/tools/debug/accesstoken)
 {% endhint %}
 
+<figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.10.20 PM.png" alt="" width="563"><figcaption><p>Correct scopes shown for Access Token in debugger</p></figcaption></figure>
+
 ### Using an Existing System User
 
-If you already have a system user you can use it by simply generating a new token with the correct permissions. Census needs the `ads_management` scope. Also be sure to assign the catalog asset to your system user so Census can sync to it.
+If you already have a system user you can use it by simply generating a new token with the correct permissions. Be sure to assign the asset for your Application to your System User with full control. Census needs the `ads_management` scope.
 
 ### Using OAuth
 
