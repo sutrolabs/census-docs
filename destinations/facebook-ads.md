@@ -57,7 +57,7 @@ To validate that your System User Token is set up correctly and has the necessar
 [https://developers.facebook.com/tools/debug/accesstoken](https://developers.facebook.com/tools/debug/accesstoken)
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.10.20 PM.png" alt="" width="563"><figcaption><p>Correct scopes shown for Access Token in debugger</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-03-08 at 2.54.09 PM.png" alt=""><figcaption><p>Correct scopes shown for Access Token in debugger</p></figcaption></figure>
 
 ### Using an Existing System User
 
