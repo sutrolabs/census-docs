@@ -6,7 +6,7 @@ description: This page describes how to use Census with Google Analytics 4
 
 Google Analytics 4 is the latest version of Google's web and app analytics platform. It's a significant upgrade from Universal Analytics and is designed to be more flexible and powerful. Census can help you send event and user data to Google Analytics 4 to enrich the data you're already collecting.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Google Analytics 4 to Census and create your first sync.
 
@@ -54,7 +54,7 @@ For Firebase (iOS/Android) applications:
 
 You should now be ready to start sending data to Google Analytics 4!
 
-## 🗄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
@@ -69,7 +69,7 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 
 There's quite a few quirks with Google Analytics 4, particularly with how it handles custom properties. If you need any help configuring Google Analytics, contact the [Census support team](mailto:support@getcensus.com).
 
-#### Custom Properties (Dimensions and Metrics)
+### Custom Properties (Dimensions and Metrics)
 
 Google Analytics supports custom properties they call Dimensions and Metrics, both on the event and the user scope. Their [docs have a lot of detail on this functionality](https://support.google.com/analytics/answer/10075209?visit\_id=638028534254170289-3199207859\&rd=1) but there's a few things to keep in mind for Census:
 
@@ -79,7 +79,7 @@ Google Analytics supports custom properties they call Dimensions and Metrics, bo
 
  To send custom properties as part of a sync, you can add destination fields via the new Custom Field button as well as the [Properties Bundle structured object](../basics/data-models-and-entities/defining-source-data/events.md#using-the-properties-bundle) which can be used to send more complex event data structures.
 
-#### Properties and Data Streams
+### Properties and Data Streams
 
 A Property is the "container" like it was in UA, but now in GA4, the property can span across web and mobile apps traffic. It must be set up as a Google Analytics 4 property. If you haven't yet moved, visit [Google's docs](https://support.google.com/analytics/answer/9744165?hl=en) to learn more about migrating to Google Analytics 4.
 
@@ -92,14 +92,14 @@ Census connects to your GA4 property through a data stream which is uniquely ide
 
 With these two, Census can begin adding event and user data to the data stream.
 
-#### Event Limitations
+### Event Limitations
 
 GA4 has been rebuilt primarily around events. Everything is an event (including adding user properties as discussed below). Census supports syncing to GA4's standard or reserved events, as well as custom events, and user properties can be passed along with events. However, there are some Google Analytics 4 limitations to keep in mind:
 
 - Once events are sent to Google, they cannot be updated. This means that if you send an event with missing data, you'll need to send a new event with the corrected data.
 - Events can be backfilled but only up to 3 days in the past (based on the timezone of the property). [Google's API Docs](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference?client_type=gtag#payload_post_body).
 
-#### Identifying Users
+### Identifying Users
 
 Google Analytics 4 also uses a pair of identifiers to identifier users when syncing user properties and events data.
 
@@ -108,7 +108,7 @@ Google Analytics 4 also uses a pair of identifiers to identifier users when sync
   * An **App Instance ID** for iOS/Android connections. This must be collected from within the app context by calling the equivalent of the `getAppInstanceId()` (the method name varies by language, see [Google's documentation](https://developers.google.com/analytics/devguides/collection/protocol/ga4/sending-events?client\_type=firebase#required\_parameters)).
 * Optionally, an additional **User ID**. This uniquely identifies the user across devices and can associate their activity across multiple. Note that the [property must be configured to use a User ID](https://support.google.com/analytics/answer/9213390#verify\_the\_reporting\_identity).
 
-#### Other Delays
+### Other Delays
 
 One last thing to keep in mind. GA4 now supports a real-time view of events and, once the above custom dimension restrictions are passed, you should see your events in real-time (ish, up to a minute delayed in some cases). However, there are still some additional delays in reporting:
 
