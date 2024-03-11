@@ -15,6 +15,7 @@ Census makes use of Blackhawk's SFTP mechanism to send data and takes care of th
     - Port
     - Username
     - Password
+    - Path - Your folder within the Blackhawk SFTP. Note that this should not start with a `/` in Blackhawk's case.
 
 All of these can be obtained from your Blackhawk Network representative.
 
@@ -30,6 +31,10 @@ You should now be ready to start sending data to Blackhawk Network!
 | Submission      |        ✅      | Any Unique Submission ID | Append |
 
 ### Submission Quirks
+
+| **Advanced Configuration** | **Description**       |
+| -------------------------: | :-------------------: |
+|                    Context | The prefix of the file that is created in your folder |
 
 Each individual submission is a relatively complex data structure. Census takes care of the complex data formatting for you, so you can focus on building the data you want to send to Blackhawk.
 
