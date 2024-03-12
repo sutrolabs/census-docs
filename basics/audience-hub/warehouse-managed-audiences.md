@@ -19,23 +19,19 @@ Warehouse-Managed Audiences enable data teams to manage audiences programmatical
 To get started with Warehouse-Managed Audiences, you'll need to define three models in Census that map to tables in your warehouse:
 
 1. **Audiences**: A list of all audiences you plan to model in your warehouse.
-   1. Required columns: `audience_id` and `audience_name`
+   1. Required columns: `id` and `name`
+   2. Optional columns: `description`
 2. **People**: Also known as contacts, customers, users, etc., this is a list of all people belonging to every audience you plan to model in your warehouse.
-   1. Required columns: `user_id`
+   1. Required columns: `id`
    2. Optional columns: other user attributes (email, phone, first/last name, IDFA, GAID, etc.)
 3. **Audience Memberships**: A join table that tells Census which people are in each audience. Each row must include a unique pair of person and audience identifiers.
-   1. Required columns: `user_id` and `audience_id`
+   1. Required columns: `person_id` and `audience_id`
 
 #### **Example Data**
 
 _Audiences_
 
-| id  | name               |
-| --- | ------------------ |
-| 201 | VIP Customers      |
-| 202 | All Customers (US) |
-| 203 | All Customers (EU) |
-| 204 | Webinar Attendees  |
+<table><thead><tr><th width="108.33333333333331">id</th><th width="232">name</th><th>description</th></tr></thead><tbody><tr><td>201</td><td>VIP Customers</td><td>A list of all VIP customers.</td></tr><tr><td>202</td><td>All Customers (US)</td><td>Customers in the US only.</td></tr><tr><td>203</td><td>All Customers (EU)</td><td>Customers in the EU only.</td></tr><tr><td>204</td><td>Webinar Attendees</td><td>From webinar on Feb 22.</td></tr></tbody></table>
 
 _People_
 
