@@ -32,8 +32,9 @@ BigQuery manages these permissions through their IAM Policy mechanism. Specifica
 
 We definitely recommend you use the three permissions we specify when creating a new BigQuery connection. If you cannot grant these permissions at the project level, you can grant them finer grain. These are the specific permissions the Census service account needs:
 
-* `bigquery.dataViewer` access on the dataset or specific table you'd like Census to read from.
-* `bigquery.dataEditor` access on the `CENSUS` dataset OR `bigquery.dataOwner` access on the `CENSUS` dataset if you would like to additionally grant Census permissions to delete the `CENSUS` dataset. Skip this step if working in read-only mode.&#x20;
+* `bigquery.dataViewer` access on the dataset or specific table you'd like Census to read from.&#x20;
+  * If you are granting the `bigquery.dataViewer` permission at a more granular level than the project level you should still grant the`bigquery.metadataViewer` permission at the project level ([Google Documentation](https://cloud.google.com/bigquery/docs/access-control#bigquery.metadataViewer)). This will enable Census to display your provisioned datasets within the UI for sync creation. Google requires permission to read metadata at the project level in order to list your datasets.&#x20;
+* `bigquery.dataEditor` access on the `CENSUS` dataset OR `bigquery.dataOwner` access on the `CENSUS` dataset if you would like to additionally grant Census permissions to delete the `CENSUS` dataset. Skip this step if working in read-only mode.
 * Finally, Census service account needs project-level access with the `bigquery.JobUser` role or specifically the `bigquery.jobs.create` permission (via a custom role).
 
 ## 🔩 Configuring a new BigQuery connection
