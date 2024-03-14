@@ -8,8 +8,9 @@ Insider is a customer data platform that helps marketers connect customer data a
 
 ## 🏃‍♀️ Getting Started
 
-1. You'll first need to create an API key in Insider. To do this, visit Insider. Navigate to your username (top right) > Settings > InOne Settings > Integration Settings. Census will need an API Key that provides access to the Unified Customer Database. For more information on setting up API Keys in Insider, [see their documentation](https://academy.useinsider.com/docs/api-authentication-tokens).
-2. Back in Census, navigate to the Destinations page and click **Add Destination**. Select Insider from the list of destinations. Provide your API Key and click **Save**.
+1. First, you'll need to create a new External Integration in Insider. Hover over the **Components icon (bottom left)**, expand **Integration Settings**, and click on **External Platform Integration**. Select **Census** from the list of available integrations. Provide a name for the integration and click **Save**. You will be provided with two details you'll need to connect Census to Insider: the **Integration Key** and **Insider Account Name**. We recommend storing both the key and the name in a secure location like a password manager as you won't be able to access them again.
+
+2. Now you can return to Census. Navigate to the [Destinations](https://app.getcensus.com/destinations) page and click **Add Destination**. Select Insider from the list of destinations. Provide your API Key and Partner Name and click **Save**.
 
 You should now be ready to start creating audiences in Insider!
 
