@@ -44,7 +44,8 @@ Census sends the following to Datadog:
 * **census.syncs.sync\_completed** - the number of syncs that have completed over a time window
 * **census.syncs.rows\_processed** - the volume of rows processed in your syncs, useful for anomaly detection
 * **census.syncs.records\_sent** - the volume of records synced to your destinations, also useful for anomaly detection
-* **census.syncs.sync\_duration** - the time in seconds it took for a sync to complete
+* **census.syncs.sync\_duration\_from\_scheduled\_start\_time** - the time in seconds it took for a sync to complete once it was expected to begin, including time spent waiting in our job queue
+* **census.syncs.sync\_duration\_from\_actual\_start\_time** - the time in seconds it took for a sync to complete once it was picked up from the job queue
 
 ### Events
 
@@ -85,8 +86,3 @@ For the **census.syncs.records\_sent** metric only:
 * **destination\_response** - containing the following potential values
   * _accepted_ - the number of records the destination successfully accepted in the sync
   * _rejected_ - the number of records the destination rejected in the sync
-
-For the **census.syncs.sync\_duration** metric only:
-
-* **sync\_duration\_type** - containing the following potential values
-  * _actual_ - the actual amount of time it took for a sync to complete once the sync was picked up from the job queue
