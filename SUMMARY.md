@@ -50,7 +50,6 @@
   * [Custom Destination API](basics/developers/custom-api.md)
   * [Management API](basics/developers/api.md)
 * [Census Embedded](basics/census-embedded.md)
-* [Custom Themes](basics/custom-themes.md)
 * [FAQ & Gotchas](basics/faq-and-gotchas.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
