@@ -219,11 +219,11 @@ And finally, do not hesitate to fail any method calls if your Custom API encount
 
 ### Rate Limiting
 
-By default a Custom API connection has a _connection-wide_ rate limit of 5000 requests per second. This means that if two syncs are running simultaneously against the same custom connection they will both count against that rate limit.
+By default a Custom API connection has a _connection-wide_ rate limit of 50,000 requests per second. This means that if two syncs are running simultaneously against the same custom connection they will both count against that rate limit.
 
 This limit can be overridden by returning a `X-RateLimit-Limit` header in the responses to our calls against your custom API. For example: if you want to cap requests to your custom service at 100 reqs/second then return `X-RateLimit-Limit: 100` as a header in the responses from your service. Whatever value you set here is the limit _per second._
 
-**NOTE**_:_ This is different than our operation to fetch the [sync speed](custom-api.md#get\_sync\_speed). In essence these are two rate limiting mechanisms working in tandem. `get_sync_speed` is designed to indicate how fast and parallel an individual sync can be while this `X-RateLimit_Limit` header is a connection wide limit that acts as a cap to ensure that multiple syncs running simultaneously do not overwhelm the same custom API destination.
+**NOTE**_:_ This is different than our operation to fetch the [sync speed](custom-api.md#get\_sync\_speed). In essence these are two rate limiting mechanisms working in tandem. `get_sync_speed` is designed to indicate how fast and parallel an individual sync can be while this `X-RateLimit-Limit` header is a connection wide limit that acts as a cap to ensure that multiple syncs running simultaneously do not overwhelm the same custom API destination.
 
 ## RPC Details
 
