@@ -1,53 +1,64 @@
 ---
-description: >-
-  This page describes how to setup and start using your own HTTP Request source
-  to power Census syncs.
+description: This page describes how to configure Kafka as a source for Census.
 ---
 
-# HTTP Request
+# Kafka
 
-## Background
+## :globe\_with\_meridians: Connectivity
 
-For certain usecases, the HTTP Request source is the easiest way of getting data to Census for activation. If you have a web application that is generating events or are tracking web events via a service like Segment or Jitsu, you can easily forward them via a webhook to Census and then route them to any [supported destination](broken-reference).
+Census can connect to Kafka clusters over the public internet. Census always connects to your cluster via TLS using [static IP addresses](../../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses) that you can add to an allow list.
 
-## Initial Setup
+### Authentication
 
-Setting up the HTTP Request source is super simple:
+Census supports the following SASL authentication mechanisms for Kafka:
 
-* Open Census and navigate to the **Sources** page.
-* Click **New Source** and select **HTTP Request** from the list.
-* On the next screen hit **Connect** to confirm.
-* That's it! Now you'll just need to create a **Topic** to start syncing data. See [#next-steps](kafka.md#next-steps "mention").
+* Plain
+* SCRAM SHA-256
+* SCRAM SHA-512
 
-## Next Steps
+### Permissions
 
-### Creating a Topic
+To read data from your Kafka cluster, Census needs the following permissions:
 
-Instead of being organized in schemas and tables like a traditional Census source, the HTTP Request source allows you to create **Topics** to keep your unique categories of data separate when pushing data to Census. A Topic could be something like web-events, user-updates,&#x20;
+| Operation | Type  | Resource                             |
+| --------- | ----- | ------------------------------------ |
+| Read      | Topic | Any topic you want to sync data from |
+| Read      | Group | `census_group_*`                     |
 
-1. Navigate to the **Models** page
-2. Select the **HTTP Request** source you just created and hit **New Topic.**
-3. Give your Topic a **Name** and paste in a **sample event** that you'll be sending to Census on this Topic. We'll use this sample event to determine the schema of events. This is important so that we know what properties are available when creating syncs.
-4. Hit **Save Topic.**
+When used as the source for a Live Sync, Census will also create error topics in your cluster for messages that can’t be processed. To do so, Census needs the following permissions:
 
-<figure><img src="../../.gitbook/assets/screenshot 2024-03-19 at 11.26@2x.png" alt="" width="563"><figcaption><p>An example of a Web Event topic configured with a sample message.</p></figcaption></figure>
+| Operation     | Type  | Resource   |
+| ------------- | ----- | ---------- |
+| Create, Write | Topic | `census_*` |
 
-{% hint style="info" %}
-Note that for programmatic usecases HTTP Topics can also be managed via the [Census Management API](https://developers.getcensus.com/api-reference/topics/create-a-new-topic).
+## Create a Kafka Connection
+
+1. In Census, navigate to **Sources**.
+2. Click **New Source** and select **Kafka**.
+3. Enter the hostname and port number of your bootstrap server.
+4. Select the SASL authentication method your brokers are configured to use.
+5. Enter the username and password Census should use to authenticate with your brokers.
+6. Click **Connect**.
+
+After you create a Kafka connection, you need to set up message schemas for your topics.
+
+## Define message schemas
+
+Before you can use a Kafka topic as the source for a sync, you must define the schema of the messages on the topic.
+
+1. In Census, navigate to **Models**.
+2. From the **Source** dropdown, select your Kafka connection.
+3. Census automatically pulls the list of topics from your cluster. You can also click **Refresh topics** to manually refresh the list.
+4. Click on the name of the topic you want to define a schema for.
+5. Select the format of the messages on your topic from the **Format** drop down. The only supported format is JSON.
+6. Click **Import sample message** and enter a sample message. Your sample message should be a JSON object containing any top-level fields you want to use in your pipelines. Make sure the values of the fields in your sample message match the data type of the values in your actual messages.&#x20;
+
+{% hint style="warning" %}
+Census does not handle sample messages as customer data. Do not include real data in a sample message.
 {% endhint %}
 
-### Pushing Data
+Click **Save Topic**. Review the listed properties and types to ensure the sample message you provided was interpreted as intended.
 
-With the [Census API](https://developers.getcensus.com/api-reference/sources/http-request-source-events), you can now `POST` data to the specified Topic via your HTTP Request source. This sample `curl` command demonstrates the basic use of our API. Remember to replace the placeholder values with your actual HTTP Request Source ID, topic name, workspace API token, and event payload. Depending on your event source, you might need to set up a webhook through a web interface or modify your application code to make the request.
-
-```bash
-curl --request POST \
-  --url https://app.getcensus.com/api/v1/sources/{source_id}/topics/{topic_name}/events \
-  --header 'Authorization: Bearer <token>' \
-  --header 'Content-Type: application/json' \
-  --data '{json_event_data}'
-```
-
-## 🚑 Need help using our HTTP Request Source?
+## 🚑 Need help connecting to Kafka?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
