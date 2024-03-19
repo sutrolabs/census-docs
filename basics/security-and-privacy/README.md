@@ -98,7 +98,6 @@ Also, the following data sources _only_ support Basic Sync Engine (as of June 20
 * Azure Synapse
 * ClickHouse
 * Elasticsearch
-* Google Sheets
 * Materialize
 * MotherDuck
 * MySQL
