@@ -46,7 +46,7 @@
   * [Digital Markets Act (DMA) Consent for Ad Platforms](basics/security-and-privacy/dma-consent-for-ad-platforms.md)
 * [Developers](basics/developers/README.md)
   * [GitLink](basics/developers/gitlink.md)
-  * [Entity API](basics/developers/entity-api.md)
+  * [Profile API](basics/developers/entity-api.md)
   * [Custom Destination API](basics/developers/custom-api.md)
   * [Management API](basics/developers/api.md)
 * [Census Embedded](basics/census-embedded.md)
