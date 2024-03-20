@@ -32,7 +32,7 @@ Once you’ve configured your project repository, Census will analyze your proje
 
 ## Managing dbt versions
 
-Census currently supports the following dbt versions: `1.2`, `1.3`, `1.4`, `1.5`, `1.6`, and `1.7`. We announce new version support in our [changelog](https://whatsnew.getcensus.com/), and we aim to add support for a new dbt version no more than four weeks after its release by dbt labs.
+Census currently supports the following dbt versions: `1.4`, `1.5`, `1.6`, and `1.7`. We announce new version support in our [changelog](https://whatsnew.getcensus.com/), and we aim to add support for a new dbt version no more than four weeks after its release by dbt labs.
 
 To determine your dbt version, Census uses the [`require-dbt-version`](https://docs.getdbt.com/reference/project-configs/require-dbt-version) field (if specified) in your project's `dbt_project.yml`. We recommend you pin your dbt project to the minor version range as dbt recommends. For example, the following configuration would ping your project to version 1.6:
 
