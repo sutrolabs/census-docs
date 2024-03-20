@@ -308,3 +308,4 @@ Please refer to this section on the different parameters and their values a sync
     * `should_send_recovery` - (Type: Boolean) Indicate if you would like an email when the sync recovers from the alert type.
     * `options` - (Type: Object) Properties specific to the alert type. One example below, these will differ by type.
       * `threshold` - (Optional, Type: Integer) The percentage of records that need to fail to send a record failing notification. Possible values are `0` - `100`.
+* `sync_behavior_family` - (Type: String) The behavior of how the sync treats records. Either `activateEvents` - Take action in the destination when new data is added to the source dataset, or, `mappedRecords` - Replicate changes from the source dataset to the destination
