@@ -8,9 +8,9 @@ Live Syncs are a type of sync that enable **real-time data activation**. In comp
 
 While a Live Sync is enabled, Census continually monitors the Source connection, ensuring that any new data is instantly captured and activated. Live Syncs guarantee that records are activated in the same order that they arrive.
 
-Live Syncs are available for sources capable of streaming data, such as [Confluent Cloud](../../sources/confluent-cloud.md), [Kafka](../../sources/available-sources/kafka.md), [Materialize](../../sources/materialize.md), HTTP Requests\*, [Snowflake](../../sources/snowflake.md)\*, and [Databricks](../../sources/databricks.md)\*. Please feel free to [request a new integration](https://www.getcensus.com/request-an-integration?hsCtaTracking=a5c60288-2577-4ade-8fc6-e453ba20cd0d%7C5f94cdfe-1f8f-457f-8e34-80e2af1c9fb2) if your streaming infrastructure is not yet supported.
+Live Syncs are available for sources capable of streaming data, such as [Confluent Cloud](../../sources/confluent-cloud.md), [Kafka](../../sources/available-sources/kafka.md), [Materialize](../../sources/materialize.md), [HTTP Requests](../../sources/available-sources/http-request.md), [Snowflake](../../sources/snowflake.md), and [Databricks](../../sources/databricks.md)\*. Please feel free to [request a new integration](https://www.getcensus.com/request-an-integration?hsCtaTracking=a5c60288-2577-4ade-8fc6-e453ba20cd0d%7C5f94cdfe-1f8f-457f-8e34-80e2af1c9fb2) if your streaming infrastructure is not yet supported.
 
-\* These sources are coming soon. Email will@getcensus.com to be added to the private preview.
+\* Coming soon. Email support@getcensus.com to be added to the private preview.
 
 {% hint style="warning" %}
 At this time, a sync's Run Mode (Live vs Triggered) cannot be changed after the sync has been created.
@@ -25,7 +25,7 @@ The following table summarizes the key differences between a Live and Triggered 
 | Census monitors the source 24/7 automatically | Can be run manually, on a schedule, or via external triggers. See [triggering-syncs.md](triggering-syncs.md "mention"). |
 | Only streaming-capable sources are supported  | All Source connections supported                                                                                        |
 | Activates data as it changes                  | Activates records in batches                                                                                            |
-| Single-second latency                         | Minimum latency at least 1 minute                                                                                       |
+| Single-second latency                         | Minimum latency at least a few minutes                                                                                  |
 
 
 
