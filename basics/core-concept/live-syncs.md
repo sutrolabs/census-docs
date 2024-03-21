@@ -4,9 +4,7 @@ description: Activate Streaming Datasets in Real-time with Live Syncs
 
 # Live Syncs
 
-Live Syncs are a type of sync that enable **real-time data activation**. In comparison with traditional "Triggered" syncs, they can provide single-second latency in activating data into a destination. Live syncs are available on our Enterprise plan.
-
-While a Live Sync is enabled, Census continually monitors the Source connection, ensuring that any new data is instantly captured and activated. Live Syncs guarantee that records are activated in the same order that they arrive.
+Live Syncs are a type of sync that enable **real-time data activation**. In comparison with traditional "Triggered" syncs, they can provide single-second latency in activating data into a destination. Live syncs are available on our Enterprise plan. While a Live Sync is enabled, Census continually monitors the Source connection, ensuring that any new data is instantly captured and activated.
 
 Live Syncs are available for sources capable of streaming data, such as [Confluent Cloud](../../sources/confluent-cloud.md), [Kafka](../../sources/available-sources/kafka.md), [Materialize](../../sources/materialize.md), [HTTP Requests](../../sources/available-sources/http-request.md), [Snowflake](../../sources/snowflake.md), and [Databricks](../../sources/databricks.md)\*. Please feel free to [request a new integration](https://www.getcensus.com/request-an-integration?hsCtaTracking=a5c60288-2577-4ade-8fc6-e453ba20cd0d%7C5f94cdfe-1f8f-457f-8e34-80e2af1c9fb2) if your streaming infrastructure is not yet supported.
 
