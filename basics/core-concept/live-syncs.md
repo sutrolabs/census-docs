@@ -20,10 +20,10 @@ The following table summarizes the key differences between a Live and Triggered 
 
 | Live                                          | Triggered                                                                                                               |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Real-time; sub-second latency                 | Minimum latency at least a few minutes                                                                                  |
 | Census monitors the source 24/7 automatically | Can be run manually, on a schedule, or via external triggers. See [triggering-syncs.md](triggering-syncs.md "mention"). |
 | Only streaming-capable sources are supported  | All Source connections supported                                                                                        |
 | Activates data as it changes                  | Activates records in batches                                                                                            |
-| Single-second latency                         | Minimum latency at least a few minutes                                                                                  |
 
 
 
