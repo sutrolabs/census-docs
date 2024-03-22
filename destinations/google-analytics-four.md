@@ -99,14 +99,22 @@ GA4 has been rebuilt primarily around events. Everything is an event (including 
 - Once events are sent to Google, they cannot be updated. This means that if you send an event with missing data, you'll need to send a new event with the corrected data.
 - Events can be backfilled but only up to 3 days in the past (based on the timezone of the property). [Google's API Docs](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference?client_type=gtag#payload_post_body).
 
+When starting to sync events, take advantage of GA4's Realtime Event view (in Reports > Realtime). The "Event Count by Event Name" report will update in nearly real time as Census syncs events. We strongly recommend including User ID in your events where available. If it's excluded, the other User-based reports, realtime or otherwise, may not update.
+
 ### Identifying Users
 
-Google Analytics 4 also uses a pair of identifiers to identifier users when syncing user properties and events data.
+Google Analytics 4 also uses a pair of identifiers to identifier users when syncing events and including user properties:
+- A **Client ID** - Required and should uniquely represent a device
+- A **User ID** - Technically optional but should be provided on every event if you intend to use GA4's User reports. This uniquely identifies the user across devices and can associate their activity across multiple. Note that the [property must be configured to use a User ID](https://support.google.com/analytics/answer/9213390#verify\_the\_reporting\_identity).
 
-* A User Pseudo ID which you can think of as uniquely identifying the user on a single device. It's going to be one of:
-  * A **Client ID** for web/gtag connections. This must be collected from the browser by calling `gtag.js('get')` .
-  * An **App Instance ID** for iOS/Android connections. This must be collected from within the app context by calling the equivalent of the `getAppInstanceId()` (the method name varies by language, see [Google's documentation](https://developers.google.com/analytics/devguides/collection/protocol/ga4/sending-events?client\_type=firebase#required\_parameters)).
-* Optionally, an additional **User ID**. This uniquely identifies the user across devices and can associate their activity across multiple. Note that the [property must be configured to use a User ID](https://support.google.com/analytics/answer/9213390#verify\_the\_reporting\_identity).
+The Client ID is a randomly generated ID that's stored on a device to track activity across sessions. You can capture that from a user session in one of two ways depending on the type of device:
+  * Client ID from web/gtag clients. This is collected in the browser by calling `gtag.js('get')` .
+  * App Instance ID from iOS/Android apps. This is collected from within the app context by calling the equivalent of the `getAppInstanceId()` (the method name varies by language, see [Google's documentation](https://developers.google.com/analytics/devguides/collection/protocol/ga4/sending-events?client\_type=firebase#required\_parameters)).
+
+Note: You may also generate your own IDs. We recommend the at least be unique by user (which means you can also simply use the User ID as a client ID)
+
+Google goes into [more details on both identifiers](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id#getting_the_client_id_from_the_cookie) in their documentation.
+
 
 ### Other Delays
 
