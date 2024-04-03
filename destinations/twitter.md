@@ -16,6 +16,12 @@ Before you begin, you'll need the following:
 * X Ads account
 * Credentials for your data warehouse: For details, see the guide for your [specific data source technology](twitter.md#step-2-connect-your-data-warehouse).
 
+{% hint style="info" %}
+To sync audiences, X requires a manual approval step. Details can be found in [X docs](https://developer.twitter.com/en/docs/twitter-ads-api/audiences/guides/audience-api-integration).
+
+> For access to the Audience endpoint, you will need to be added to an allowlist. Please fill this form and accept the new [Twitter Ads Products and Services Agreement](https://developer.twitter.com/content/developer-twitter/en/docs/ads/general/overview/adsapi-application) if initially accepted prior to 2018-08-01.
+{% endhint %}
+
 ### Step 1: Connect X Ads Account
 
 1. Log into Census and navigate to [Destinations](https://app.getcensus.com/destinations).
