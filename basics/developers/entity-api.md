@@ -29,7 +29,7 @@ Note that this data will be stored on Census infrastructure until the Dataset AP
 
 ## Using Dataset API Endpoints
 
-**Authentication** - Uses the same key as the [Management API](api.md). This means you shouldn’t use it directly in public code such as javascript on your website. You’ll want to access it server side instead so the key doesn’t leak. A given API key is scoped to a single [Census Workspace](../security-and-privacy/workspaces-and-access-controls.md) and all Datasets within that workspace will be accessible.
+**Authentication** - Uses the same key as the [Management API](api.md). This means you shouldn’t use it directly in public code such as javascript on your website. You’ll want to access it server side instead so the key doesn’t leak. A given API key is scoped to a single [Census Workspace](../security-and-privacy/workspaces-and-access-controls.md) and all datasets within that workspace will be accessible.
 
 API requests should include a standard authentication header of the form:
 
