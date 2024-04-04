@@ -80,6 +80,6 @@ In this case, the entity has a dynamic value called **Segment Membership** that 
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-12-13 at 17.38.23@2x.png" alt=""><figcaption><p>Sync "Segment Membership" from the parent entity.</p></figcaption></figure>
 
-You can also sync this field to make segment memberships available via the [Profile API](../developers/entity-api.md).
+You can also sync this field to make segment memberships available via the [Dataset API](../developers/entity-api.md).
 
 Syncing Segment Memberships will recalculate segment membership across all syncs for that entity at sync time so depending on the number of segments created, this can slow down your sync.

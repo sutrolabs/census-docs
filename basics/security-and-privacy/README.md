@@ -105,7 +105,7 @@ Also, the following data sources _only_ support Basic Sync Engine (as of March 2
 * MySQL
 * SingleStore
 
-Finally, enabling the Profile API requires us to store the relevant data on our own infrastructure. Census will remove any data stored on your behalf after 14 days of disabling this feature.
+Finally, enabling the Dataset API requires us to store the relevant data on our own infrastructure. Census will remove any data stored on your behalf after 14 days of disabling this feature.
 
 ## 🤔 Have more questions?
 
