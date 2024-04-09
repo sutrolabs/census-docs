@@ -19,7 +19,7 @@ Census reads data from one or more tables (possibly across different schemata) i
 
 Snowflake permissions are complex and there are many ways to configure access for Census. The script below is known to work correctly and follows [Snowflake's best practices](https://docs.snowflake.com/en/user-guide/security-access-control-configure.html#creating-read-only-roles) for creating read-only roles in a role hierarchy:
 
-```
+```sql
 -- Create a role for the census user
 CREATE ROLE CENSUS_ROLE;
 
@@ -98,6 +98,14 @@ Connecting to a Snowflake instance running on AWS VPS or via PrivateLink require
 ## 🚦 Allowed IP Addresses
 
 If you're using Snowflake's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
+
+## ⚡ Change tracking for Live Syncs
+
+If you are trying to use [live-syncs.md](../basics/core-concept/live-syncs.md "mention") you may need to modify the settings on the source table(s) as follows:
+
+```sql
+ALTER TABLE "<table_name>" SET CHANGE_TRACKING = TRUE;
+```
 
 ## 🚑 Need help connecting to Snowflake?
 
