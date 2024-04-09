@@ -224,6 +224,7 @@
   * [Sense](destinations/sense.md)
   * [SFTP](destinations/sftp.md)
   * [Shopify](destinations/shopify.md)
+  * [Singular](destinations/available-destinations/singular.md)
   * [Slack](destinations/slack.md)
   * [Snapchat](destinations/snapchat.md)
   * [Snowflake](destinations/snowflake.md)
