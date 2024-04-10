@@ -4,6 +4,9 @@ description: Use models to define and refine the data sets in Census.
 
 # Models
 
+Models will be retired shortly, for the new, simpler approach to defining data please see [datasets.md](../datasets.md "mention")
+
+\
 At Census, we refer to each individual data set as a **Model**. A model is just a set rows-and-columns that Census can access in your data warehouse so they can take a lot of different forms:
 
 * Tables or Views already in your data warehouse – This is the most common place to start. Chances are your data warehouse contains many tables and views already that can be reused in Census.

@@ -11,5 +11,5 @@ You can find our comprehensive [Census Embedded documentation here](https://deve
 
 
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 

@@ -4,8 +4,10 @@ description: >-
   most important business data so your teams can get going quickly.
 ---
 
-# Data Models and Entities
+# Data Defining
 
+Models & Entities will be retired shortly, for the new, simpler approach to defining data please see [datasets.md](datasets.md "mention")\
+\
 By design, a data warehouse is meant to store massive amounts of data, and it does so very well. It's one of the reasons it's such a powerful platform for companies to build on top of. But all of that data makes navigating a warehouse a challenge, particularly for the members of your team that don't spend their day thinking about schemas and organizational structures.
 
 There are many different methodologies for organizing a data warehouse. dbt has a [recommended approach](https://docs.getdbt.com/guides/best-practices/how-we-structure/1-guide-overview) and the [Kimball approach](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/) is still common. Census most often deals with data at the end of those pipelines, stored in the final step (often the "publish" step, or data mart if you use that terminology).

@@ -6,6 +6,8 @@ description: >-
 
 # Entities
 
+Entities will be retired shortly, for the new, simpler approach to defining data please see [datasets.md](datasets.md "mention")\
+\
 Entities are a core concept in Census. Entities are the most important [models](models/ "mention") in your data warehouse and typically represent a single "thing" like a person (or a lead or a contact) or a company (or an account or organization) though they can also be other things like invoices, campaigns, events, or devices.
 
 Your entity is a list or a set of those things, ideally the full set so that others can easily use [audience-hub](../audience-hub/ "mention") to create interesting subsets of that thing. That means your entity should include as many columns (also called properties or fields) as possible so others can easily reuse those entities in segments or [core-concept](../core-concept/ "mention").
