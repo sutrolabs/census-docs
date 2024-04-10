@@ -67,7 +67,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 4. Click **Save Model**.
 
 {% hint style="info" %}
-You can also use [dbt](../basics/data-models-and-entities/models/native-dbt-integration.md), [Looker](../basics/data-models-and-entities/models/looker.md), or [Segments](broken-reference/) as other source models. And you can also use a Warehouse Table/View.
+You can also use [dbt](../basics/data-defining/models/native-dbt-integration.md), [Looker](../basics/data-defining/models/looker.md), or [Segments](broken-reference/) as other source models. And you can also use a Warehouse Table/View.
 {% endhint %}
 
 ### Step 4: Create your first sync
@@ -97,9 +97,9 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 ## 🗄 Supported objects
 
 | **Object Name** | **Supported?** | **Sync Keys** |
-| --------------: | :------------: | --------------- |
-|            User |        ✅       | Email           |
-|            List |       🔜       |                 |
+| --------------: | :------------: | ------------- |
+|            User |        ✅       | Email         |
+|            List |       🔜       |               |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Sailthru.
 

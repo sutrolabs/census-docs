@@ -27,7 +27,7 @@ In this guide, we will show you how to connect Mailchimp to Census and create yo
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
   * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
-### 1. Connect Census to Mailchimp <a href="#1-connect-census-to-braze" id="1-connect-census-to-braze"></a>
+### 1. Connect Census to Mailchimp <a href="#id-1-connect-census-to-braze" id="id-1-connect-census-to-braze"></a>
 
 In the **Destinations** page in Census, Click the **New Destination** button under the **Destinations** section, and select Mailchimp.
 
@@ -79,7 +79,7 @@ The Mailchimp `status` field supports one of four values: `subscribed`, `unsubsc
 
 #### Tags
 
-Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/data-models-and-entities/defining-source-data/structured-data.md) using Census.
+Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/data-defining/defining-source-data/structured-data.md) using Census.
 
 ## 🔄⠀Supported Sync Behaviors
 

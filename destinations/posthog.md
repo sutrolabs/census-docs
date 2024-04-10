@@ -25,7 +25,7 @@ Copy your **Project API Key**. We'll use that in a minute
 
 ### 2. Connect Census to PostHog
 
-Great! Now let's pull it all together.&#x20;
+Great! Now let's pull it all together.
 
 1. In the [**Destinations**](https://app.getcensus.com/destinations) page, click on **New Destination**, and select "PostHog"
 2. You can provide whatever name you like for the connection
@@ -62,7 +62,7 @@ In the "**What data do you want to sync?"** section
 
 Next up is the **"Where do you want to sync data to?"** section
 
-* Pick PostHog as the **Connection**&#x20;
+* Pick PostHog as the **Connection**
 * For Object, **Event** will automatically be chosen
 
 For the " **How do you want to update the destination?"** section
@@ -70,7 +70,7 @@ For the " **How do you want to update the destination?"** section
 * **Append** will automatically be chosen
 * Choose the **Unique ID** Column
 * Decide if you'd like to turn on **Use timestamp column to identify new data**.
-  * This can be more efficient for large or frequently changing data sets. More info can be found in this [doc](../basics/data-models-and-entities/defining-source-data/events.md#using-timestamp-to-identify-new-records).
+  * This can be more efficient for large or frequently changing data sets. More info can be found in this [doc](../basics/data-defining/defining-source-data/events.md#using-timestamp-to-identify-new-records).
 
 Finally, select the properties you want to update in the Mapper in the **"Which properties should be updated?"** section
 
@@ -99,10 +99,10 @@ That's it! In 6 steps, you connected Census to PostHog and started syncing event
 Census currently supports syncing to the following PostHog objects.
 
 | **Object Name** | **Supported?** | **Sync Keys** |
-| --------------: | :------------: | --------------- |
-| Event | ✅ | Event ID |
-| Person | ✅ | ID, Email |
-| Page | ✅ | Distinct ID |
+| --------------: | :------------: | ------------- |
+|           Event |        ✅       | Event ID      |
+|          Person |        ✅       | ID, Email     |
+|            Page |        ✅       | Distinct ID   |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for PostHog.
 
@@ -112,11 +112,11 @@ Census currently supports syncing to the following PostHog objects.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects?** |
-| ------------: | :------------: | :----------: |
-| **Update or Create** | ✅ | Person |
-| **Update Only** | ✅ | Person |
-| **Append** | ✅ | Event, Page |
+|        **Behaviors** | **Supported?** | **Objects?** |
+| -------------------: | :------------: | :----------: |
+| **Update or Create** |        ✅       |    Person    |
+|      **Update Only** |        ✅       |    Person    |
+|           **Append** |        ✅       |  Event, Page |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for PostHog.
 

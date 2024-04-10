@@ -24,34 +24,35 @@ Your Kafka instance must be accessable to the public internet in order for Censu
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Message | ✅ | Any unique identifier | Append, Upsert, Mirror |
+| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**          |
+| --------------: | :------------: | --------------------- | ---------------------- |
+|         Message |        ✅       | Any unique identifier | Append, Upsert, Mirror |
 
 ### Message Properties
 
 Sending a Kafka Message involves a number of configuration properties, in addition to the actual message payload. Census allows you to configure these properties in the **Advanced Configuration** section of the destination setup, as well as the **Mappings** section of the sync setup.
 
 Within Advanced Configuration, you can set the following properties:
-- **Preserve message ordering**: If enabled, Census will send messages to Kafka in the same order they were received by Census. Otherwise, Census will send messages to Kafka as fast as possible, which may result in messages being received out of order.
-- **Created/Updated/Deleted record tag**: Census will automatically add an `operation` property to each message sent to Kafka (see below). You can use these properties to change the value of the `operation` property, which can be useful for downstream processing.
-- **Message Template**: You can optionally provide a mustache-formatted template to structure your message. By default with no template provided, Census will send all properties as a single flat JSON object.
+
+* **Preserve message ordering**: If enabled, Census will send messages to Kafka in the same order they were received by Census. Otherwise, Census will send messages to Kafka as fast as possible, which may result in messages being received out of order.
+* **Created/Updated/Deleted record tag**: Census will automatically add an `operation` property to each message sent to Kafka (see below). You can use these properties to change the value of the `operation` property, which can be useful for downstream processing.
+* **Message Template**: You can optionally provide a mustache-formatted template to structure your message. By default with no template provided, Census will send all properties as a single flat JSON object.
 
 Within the Mappings section of the sync setup, you can set the following properties:
-- **Topic** (required): The Kafka topic to send the message to.
-- **Key**: The key to use for the message.
-- **Partition**: The partition to send the message to.
-- **Partition Key**: The partition key to use for the message.
-- **Timestamp**: The timestamp to use for the message.
-- **Headers**: Any headers to include with the message, [structured as an object](../basics/data-models-and-entities/defining-source-data/structured-data.md).
+
+* **Topic** (required): The Kafka topic to send the message to.
+* **Key**: The key to use for the message.
+* **Partition**: The partition to send the message to.
+* **Partition Key**: The partition key to use for the message.
+* **Timestamp**: The timestamp to use for the message.
+* **Headers**: Any headers to include with the message, [structured as an object](../basics/data-defining/defining-source-data/structured-data.md).
 
 ### Message Structure
 
 By default, Census will structure messages as a single flat JSON object. You can optionally provide a Message Template to structure your message in a different way. In addition to the properties you provide, Census will automatically add the following properties to each message:
 
-- **operation**: The operation that triggered the sync.
-- **synced_at**: The time the sync was triggered.
-
+* **operation**: The operation that triggered the sync.
+* **synced\_at**: The time the sync was triggered.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Kafka functionality.
 

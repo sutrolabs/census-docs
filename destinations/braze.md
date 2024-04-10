@@ -20,7 +20,7 @@ In this guide, we will show you how to connect Braze to Census and create your f
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Braze account ready, with create access for Braze API keys.
-* Have the proper credentials to access to your data source.&#x20;
+* Have the proper credentials to access to your data source.
 
 ### 1. Create a Braze API key
 
@@ -83,7 +83,7 @@ Census currently supports syncing to the following Braze objects.
 
 <table data-header-hidden><thead><tr><th width="257.3333333333333" align="right"></th><th align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Event</td><td align="center">✅</td><td>Event ID</td></tr><tr><td align="right">Purchase Event</td><td align="center">✅</td><td>Any Unique Identifier</td></tr><tr><td align="right">Subscription Group Membership</td><td align="center">✅</td><td><a href="https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships">See Here</a></td></tr><tr><td align="right">User</td><td align="center">✅</td><td>External User ID &#x26; User Alias</td></tr><tr><td align="right">User Alias</td><td align="center">✅</td><td>Alias Name &#x26; Label</td></tr><tr><td align="right">User &#x26; Cohort</td><td align="center">✅</td><td>External User ID</td></tr><tr><td align="right">Catalog</td><td align="center">✅</td><td>Catalog ID</td></tr><tr><td align="right">API-Triggered Campaign</td><td align="center">✅</td><td>External User ID</td></tr><tr><td align="right">API-Triggered Canvas Entry</td><td align="center">✅</td><td>External User ID</td></tr></tbody></table>
 
-Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-models-and-entities/defining-source-data/structured-data.md) to Braze:
+Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-defining/defining-source-data/structured-data.md) to Braze:
 
 * [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
 * [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.
@@ -148,13 +148,11 @@ To sync to Catalogs, you'll need to do two additional steps:
 
 ### API-Triggered Campaign and Canvas Entry
 
-API Triggered Campaign and Canvas Entries are useful for triggering transactional actions within Braze. Like Catalogs, you will need to create the Campaign/Canvas Entry in Braze first before it appears as a destination object in Census.&#x20;
+API Triggered Campaign and Canvas Entries are useful for triggering transactional actions within Braze. Like Catalogs, you will need to create the Campaign/Canvas Entry in Braze first before it appears as a destination object in Census.
 
 You can [read more about Braze API-Triggered Campaigns](https://www.braze.com/docs/user\_guide/engagement\_tools/campaigns/building\_campaigns/delivery\_types/api\_triggered\_delivery/) and Canvas Entries in their documentation.
 
 <figure><img src="../.gitbook/assets/Braze Options.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## 🔄 Supported Sync Behaviors
 

@@ -48,21 +48,21 @@ Note: Census will only query Shopify based on the syncs/objects that you configu
 
 Census currently supports syncing to the following Shopify objects ([Contact us](mailto:support@getcensus.com) if you're looking for more!):
 
-| **Object Name** |       **Supported?**      | **Sync Keys** |
-| --------------: | :-----------------------: | --------------- |
-|        Customer |             ✅             | Email           |
-|     Fulfillment |             ✅             |                 |
-| Inventory Level |             ✅             |                 |
-|           Order |             ✅             | Source ID       |
-|         Product |             ✅             | Tag ID, Handle  |
-|   Product Image | <p>✅<br>(via Product)</p> |                 |
-| Product Variant |             ✅             | SKU             |
+| **Object Name** |       **Supported?**      | **Sync Keys**  |
+| --------------: | :-----------------------: | -------------- |
+|        Customer |             ✅             | Email          |
+|     Fulfillment |             ✅             |                |
+| Inventory Level |             ✅             |                |
+|           Order |             ✅             | Source ID      |
+|         Product |             ✅             | Tag ID, Handle |
+|   Product Image | <p>✅<br>(via Product)</p> |                |
+| Product Variant |             ✅             | SKU            |
 
 Census also supports Shopify's Custom Metafields on Customer and Product as well.
 
 #### Updating Product Images
 
-Census supports setting product images by passing a [structured-data.md](../basics/data-models-and-entities/defining-source-data/structured-data.md "mention") Array to the `images` field on the Product. The images array needs to be a set of one more objects that contain URLs to each image you want to upload. It should look something like the following:
+Census supports setting product images by passing a [structured-data.md](../basics/data-defining/defining-source-data/structured-data.md "mention") Array to the `images` field on the Product. The images array needs to be a set of one more objects that contain URLs to each image you want to upload. It should look something like the following:
 
 ```
 [

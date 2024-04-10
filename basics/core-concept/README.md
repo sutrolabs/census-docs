@@ -24,7 +24,7 @@ Either option may be right for you, read more about the differences between [Bas
 
 #### Data source models and segments
 
-Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](../data-models-and-entities/models/native-dbt-integration.md) and [Looker](../data-models-and-entities/models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../audience-hub/getting-started.md) of your models as well.
+Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](../data-defining/models/native-dbt-integration.md) and [Looker](../data-defining/models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../audience-hub/getting-started.md) of your models as well.
 
 ### Destination Services
 
@@ -59,7 +59,7 @@ Sync Behaviors tell Census the types of change it should apply to your data when
 | Create Only                   | Create a new object if it doesn't exist in the destination.                                                                                                                                                                                                                                                                                                                    |
 | Mirror                        | <p>Keep the destination in sync with the source.</p><ul><li>If a row is added or edited in the source, update the destination.</li><li>If a previously synced row no longer is in the source, remove the matching object from the destination. Note: some services such as Braze offer other actions as well. See specific connector documentation for more details.</li></ul> |
 | Append Only                   | <p>Treat the destination as an append only log of data suitable for Event data.</p><p>Read more about <a href="https://docs.getcensus.com/basics/defining-source-data/events">sending event data</a>.</p>                                                                                                                                                                      |
-| Delete                        | <p>Delete syncs takes the list of provided IDs and deletes them from the destination. <br><br>Be careful! Providing an incorrect set of IDs can result in data loss! Census recommends you backup data if you're concerned about accidentally deleting the wrong records.</p>                                                                                                  |
+| Delete                        | <p>Delete syncs takes the list of provided IDs and deletes them from the destination.<br><br>Be careful! Providing an incorrect set of IDs can result in data loss! Census recommends you backup data if you're concerned about accidentally deleting the wrong records.</p>                                                                                                   |
 
 {% hint style="warning" %}
 Please note that some of these behaviors are only available for certain destinations. Visit our individual integration pages to view what's supported.
@@ -108,7 +108,7 @@ You can read all about the Liquid template system provided by Census here:
 {% hint style="info" %}
 Templated fields have a few limitations:
 
-* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Models](../data-models-and-entities/), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
+* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Models](../data-defining/), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
 * Not all sources support templates yet; we are always adding support for new sources!
 {% endhint %}
 
@@ -118,12 +118,11 @@ Where available, Census supports two types of conditional field mappings:
 
 * **Don't Sync Null Values** - By default, Census will sync any Null values from the source to the destination. On some connections, you can disable sending any Null values. When disabled, the particular Null value for the property is ignored, but the rest of the recode is synced. Note that the the destinations may handle Null values differently. For example, Salesforce will convert Null values to empty strings, and Braze will delete the property completely when a Null value is synced.
 
-![Also Sync Null Values in the source field editor](../../.gitbook/assets/conditional_field_mapping_dont_sync_nulls.png)
+![Also Sync Null Values in the source field editor](../../.gitbook/assets/conditional\_field\_mapping\_dont\_sync\_nulls.png)
 
 * **Set If Empty** - By default, Census will sync any values from the source to the destination, even if the destination already has a value. On some connections, you can set a property to only sync if the destination property is empty. This is useful if you want to set a default value for a property, but not overwrite any existing values.
 
-![Set only if destination field is empty](../../.gitbook/assets/conditional_field_mapping_set_if_empty.png)
-
+![Set only if destination field is empty](../../.gitbook/assets/conditional\_field\_mapping\_set\_if\_empty.png)
 
 #### Creating new fields on your destination object
 
@@ -139,7 +138,7 @@ Some destination objects have additional configuration options. This options app
 
 Advanced Configuration options vary by destination object, and even by specific operation. For more details on the advanced configuration options available for a specific destination, see the destination's documentation.
 
-<figure><img src="../../.gitbook/assets/advanced_configuration.png" alt="Salesforce's advanced configuration option enables switching APIs"><figcaption><p>Salesforce's advanced configuration option enables switching APIs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/advanced_configuration.png" alt="Salesforce&#x27;s advanced configuration option enables switching APIs"><figcaption><p>Salesforce's advanced configuration option enables switching APIs</p></figcaption></figure>
 
 ## Running Syncs
 
@@ -151,7 +150,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 * [Schedules](triggering-syncs.md#schedule) including with Cron
 * [Programmatically via API or Orchestration tool](triggering-syncs.md)
-* [Automatically with dbt Cloud](../data-models-and-entities/models/native-dbt-integration.md#integrating-with-dbt-cloud)
+* [Automatically with dbt Cloud](../data-defining/models/native-dbt-integration.md#integrating-with-dbt-cloud)
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 

@@ -20,21 +20,11 @@ Connecting to your Amazon Ads account is straightforward.
 
 ## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
 
-<table data-header-hidden>
-  <thead>
-    <tr><th width="184.6600566572238"></th><th width="137"></th><th width="154"></th><th></th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr>
-    <tr><td>Conversion Event</td><td>✅</td><td>Event Unique ID</td><td>Append</td></tr>
-    <tr><td>Hashed Records (Part 1)</td><td>✅</td><td>ID</td><td>Update or Create</td></tr>
-    <tr><td>DSP Audience Members (Part 2)<br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a></td><td>✅</td><td>ID</td><td>Update or Create</td></tr>
-  </tbody>
-</table>
+<table data-header-hidden><thead><tr><th width="184.6600566572238"></th><th width="137"></th><th width="154"></th><th></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td>Conversion Event</td><td>✅</td><td>Event Unique ID</td><td>Append</td></tr><tr><td>Hashed Records (Part 1)</td><td>✅</td><td>ID</td><td>Update or Create</td></tr><tr><td>DSP Audience Members (Part 2)<br><a href="../basics/core-concept/audience-syncs/">Audience Sync</a></td><td>✅</td><td>ID</td><td>Update or Create</td></tr></tbody></table>
 
 ### Conversion Events
 
-Conversion Events are an [events.md](../basics/data-models-and-entities/defining-source-data/events.md "mention")sync within Census and so operate like most other Event Syncs. They do have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
+Conversion Events are an [events.md](../basics/data-defining/defining-source-data/events.md "mention")sync within Census and so operate like most other Event Syncs. They do have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
 
 * Like other event syncs, Amazon requires an **Event Name** and a **Timestamp**.
 * **Conversion Definition ID** - Amazon requires that you define all of your conversions types beforehand as Conversion Definitions.
@@ -58,8 +48,8 @@ Census will send the Sync Key you specify as the unique identifier for your even
 
 ### DSP Audiences
 
-| **Advanced Configuration** | **Description**       |
-| -------------------------: | :-------------------: |
+| **Advanced Configuration** |                               **Description**                               |
+| -------------------------: | :-------------------------------------------------------------------------: |
 |        Data Source Country | List of countries where user data in audience was collected for DMA support |
 
 Amazon DSP Audiences are a pecular object in that they are actually two separate objects that are linked together through the use of a unique ID. Amazon DSP Audiences need to be managed in two phases:

@@ -125,7 +125,7 @@ Due to limitations of the ActiveCampaign API, Account records will sync signific
 
 ### Updating a Contact's Lists
 
-ActiveCampaign supports adding Contact objects to one or more lists during a sync by providing an array of identifiers by providing a [structured-data.md](../basics/data-models-and-entities/defining-source-data/structured-data.md "mention") column from the source data. Each list can be identified by one of two identifiers:
+ActiveCampaign supports adding Contact objects to one or more lists during a sync by providing an array of identifiers by providing a [structured-data.md](../basics/data-defining/defining-source-data/structured-data.md "mention") column from the source data. Each list can be identified by one of two identifiers:
 
 * **ID** - This is an integer and can be extracted from a list's URL while inside ActiveCampaign.
 * **String Id** - This is a URL-safe string identifier for the list. This is only typically available via the ActiveCampaign API.

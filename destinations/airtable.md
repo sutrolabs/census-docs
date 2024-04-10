@@ -24,8 +24,8 @@ You should now have a connection to Airtable! Let's start syncing data.
 
 Airtable support is pretty straight forward!
 
-| **Object Name** | **Supported?** | **Behaviors**  |
-| --------------: | :------------: | :------------: |
+| **Object Name** | **Supported?** |             **Behaviors**             |
+| --------------: | :------------: | :-----------------------------------: |
 |           Table |        ✅       | Update Only, Update or Create, Mirror |
 
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
@@ -36,13 +36,13 @@ Airtable needs a primary key that is a short text field for Census to be able to
 
 ### Column types
 
-| **Airtable Field Types** | **Source SQL**  |
-| ------------------------ | --------------- |
-| Short Text               | String <br /> Numeric |
-| Single Select            | String <br /> Numeric |
-| Checkbox                 | Boolean <br /> Numeric (nonzero = checked, 0 = unchecked) |
-| Attachments              | A [structured column](../basics/data-models-and-entities/defining-source-data/structured-data.md) of the following structure:<br/> ```[ { "url": "http://path/to/attachment.png" } ]``` |
-| The Rest                 | <p>Census will give an informative error</p><p>message if rejected by Airtable</p>
+| **Airtable Field Types** | **Source SQL**                                                                                                                                                                                      |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Short Text               | <p>String<br>Numeric</p>                                                                                                                                                                            |
+| Single Select            | <p>String<br>Numeric</p>                                                                                                                                                                            |
+| Checkbox                 | <p>Boolean<br>Numeric (nonzero = checked, 0 = unchecked)</p>                                                                                                                                        |
+| Attachments              | <p>A <a href="../basics/data-defining/defining-source-data/structured-data.md">structured column</a> of the following structure:<br><code>[ { "url": "http://path/to/attachment.png" } ]</code></p> |
+| The Rest                 | <p>Census will give an informative error</p><p>message if rejected by Airtable</p>                                                                                                                  |
 
 ## 🚑 Need help connecting to Airtable?
 
