@@ -85,6 +85,7 @@
 ## 🛫 Destinations
 
 * [Overview](destinations/overview.md)
+* [Partner Connectors](destinations/partner-connectors.md)
 * [Available Destinations](destinations/available-destinations/README.md)
   * [Accredible](destinations/accredible.md)
   * [ActiveCampaign](destinations/activecampaign.md)
