@@ -12,4 +12,4 @@ GitLink enables you to leverage best practices of production software developmen
 
 Creating, editing, and deleting resources in the Census UI will all be represented as changes to your YAML configuration files stored in Git. All changes will be represented as commits to those files. When you create and edit the configuration files via commits and pull requests in a Git repository, Census will materialize your changes into your Census workspace.
 
-Please visit our documentation at [**developers.getcensus.com/gitlink**](https://developers.getcensus.com/gitlink).
+Please visit our full developer documentation at [**developers.getcensus.com/gitlink**](https://developers.getcensus.com/gitlink) for more.

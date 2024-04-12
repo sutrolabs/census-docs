@@ -14,4 +14,4 @@ This opens your data to a whole world of data integration possibilities. A few o
 * Personalization - Have your web site personalize pages for the users in session, recommending products or offering promotions to users.
 * Enrichment - Use your data to act as an Enrichment Provider for other services. Use your best first-party data wherever you’ve had to rely on spotty third party data in the past.
 
-Please visit our documentation at [**developers.getcensus.com/dataset-api**](https://developers.getcensus.com/dataset-api).
+Please visit our full developer documentation at [**developers.getcensus.com/dataset-api**](https://developers.getcensus.com/dataset-api) for more.
