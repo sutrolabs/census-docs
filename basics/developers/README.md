@@ -6,7 +6,7 @@ description: Learn more about all the ways to programmatically control Census
 
 Census supports several different APIs for controlling, accessing data, and extending Census. Teams that have the ability to write code can quickly customize Census and make it an even more integrated component of your data infrastructure.
 
-See our full [Developer Hub](https://developers.getcensus.com) for a full view of all the interfaces available.
+See our [Developer Hub](https://developers.getcensus.com) for a full view of all the interfaces available.
 
 * [Dataset API](entity-api.md) - An optional REST API for accessing data stored in your [Datasets](../data-defining/datasets.md) on demand.
 * [Management API](api.md) - A REST API for controlling the Syncs, Models, and Connections configured within Census. This can be used to programmatically read information and perform most actions available in the Census app today.
