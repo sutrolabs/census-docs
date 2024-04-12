@@ -30,13 +30,13 @@ Entities also define the "type" of data stored in each individual dataset. For s
 
 <figure><img src="../../.gitbook/assets/Example Segment (3).png" alt=""><figcaption></figcaption></figure>
 
-### Calculated Fields
+### Calculated Columns
 
-Calculated fields allow marketers to create aggregations from other entities.  For instance, being able to sum a transaction table and calculate the total spend of a customer.  These generated fields can be used in segmentation building or as attributes in syncs.&#x20;
+Calculated columns allow marketers to create aggregations from other entities.  For instance, being able to sum a transaction table and calculate the total spend of a customer.  These generated columns can be used in segmentation building or as attributes in syncs.&#x20;
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-06-09 at 15.54.06.png" alt=""><figcaption></figcaption></figure>
 
-There are 2 ways to create calculated fields within the audience hub.&#x20;
+There are 2 ways to create calculated columns within the audience hub.&#x20;
 
 * In the Audience Hub segments page
 * Directly when creating a segment
@@ -57,7 +57,7 @@ In entities you can select the columns that have a finite list of values such as
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-06-20 at 21.24.52@2x.png" alt=""><figcaption></figcaption></figure>
 
-When these columns are used in segmentation they will now display a dropdown of options to choose from.  This helps to avoid issues of using the wrong casing.  There is a maximum limit of 100k unique values for an enumerated field.&#x20;
+When these columns are used in segmentation they will now display a dropdown of options to choose from.  This helps to avoid issues of using the wrong casing.  There is a maximum limit of 100k unique values for an enumerated column.&#x20;
 
 ### Enriching Entities
 
@@ -75,7 +75,7 @@ Effective segmentation often also requires third-party data as well, which is da
 
 SQL table names are often not enough to fully explain what data should actually be used for. Take advantage of Census's ability to add or automatically import descriptions for models, entities (and also segments) to give marketing users more details on how data should be used. \
 \
-If you have DBT connected,  field descriptions are automatically pulled in and displayed in the segment builder when hovering over a particular field.&#x20;
+If you have DBT connected,  column descriptions are automatically pulled in and displayed in the segment builder when hovering over a particular column.&#x20;
 
 ### Hiding data
 
