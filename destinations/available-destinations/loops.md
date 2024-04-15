@@ -3,7 +3,7 @@ description: This page describes how to use Census with Loops.
 ---
 
 {% hint style="info" %}
-Loops is a Partner-Built Destination. Learn more about PBDs [here](https://www.getcensus.com/blog/announcing-partner-built-destinations).
+Loops is a Partner-Built Destination. See our [PBD announcement](https://www.getcensus.com/blog/announcing-partner-built-destinations) and [docs](https://developers.getcensus.com/custom-destinations/partner-connectors) for more info.
 {% endhint %}
 
 # Loops
