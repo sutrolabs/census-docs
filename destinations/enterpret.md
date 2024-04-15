@@ -2,6 +2,10 @@
 description: This page describes how to use Census with Enterpret.
 ---
 
+{% hint style="info" %}
+Entepret is a Partner-Built Destination. See our [PBD announcement](https://www.getcensus.com/blog/announcing-partner-built-destinations) and [docs](https://developers.getcensus.com/custom-destinations/partner-connectors) for more info.
+{% endhint %}
+
 # Enterpret
 
 ## 🏃‍♀️ Getting Started

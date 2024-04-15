@@ -179,6 +179,7 @@
   * [LaunchDarkly](destinations/launchdarkly.md)
   * [LinkedIn](destinations/linkedin.md)
   * [LiveIntent](destinations/liveintent.md)
+  * [Loops](destinations/available-destinations/loops.md)
   * [Mailchimp](destinations/mailchimp.md)
   * [Mailchimp Transactional (Mandrill)](destinations/mailchimp-transactional-mandrill.md)
   * [Mailgun](destinations/mailgun.md)
