@@ -196,7 +196,7 @@ Custom Audience terms have not been accepted: Accept the Custom Audience terms a
 
 In order to get around this error, the user that does the authentication to Census should be the same user that accepts the policy updates. For example, you may have a "Business" account on Facebook, but to authenticate to Census you might use personal Facebook accounts that are "attached" to the business account. The corresponding personal account would need to accept the policy.
 
-Facebook may require this to be completed when new audiences are created even if already accepted previously.\
+Facebook may require this to be completed when creating new audiences even if already accepted previously on the account.\
 \
 If you are unsure if your team has already accepted the terms and conditions, you can make a GET call to see if your account has signed the terms and conditions.\
 \
