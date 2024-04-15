@@ -75,6 +75,10 @@ You are now ready to set up a connection. Head to the Census Destinations page a
 
 Select the authentication method you prefer and provide your token or complete the OAuth flow. Once you hit save, you can use your destination to create new syncs.
 
+If you are setting up a connection with a System User Token when you input your Ad Account ID manually you will want to prepend the string `act_` to your Ad Account ID. When connecting through Oauth this is automatically prepended, but will need to be done manually if using a System User Token.&#x20;
+
+**Example:** `act_123456789`
+
 ## 🗄 Supported Objects and Behaviors
 
 |                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                           |       **Behaviors**      |
@@ -190,7 +194,9 @@ Custom Audience terms have not been accepted: Accept the Custom Audience terms a
 ```
 {% endcode %}
 
-In order to get around this error, the user that does the authentication to Census should be the same user that accepts the policy updates. For example, you may have a "Business" account on Facebook, but to authenticate to Census you might use personal Facebook accounts that are "attached" to the business account. The corresponding personal account would need to accept the policy.\
+In order to get around this error, the user that does the authentication to Census should be the same user that accepts the policy updates. For example, you may have a "Business" account on Facebook, but to authenticate to Census you might use personal Facebook accounts that are "attached" to the business account. The corresponding personal account would need to accept the policy.
+
+Facebook may require this to be completed when new audiences are created even if already accepted previously.\
 \
 If you are unsure if your team has already accepted the terms and conditions, you can make a GET call to see if your account has signed the terms and conditions.\
 \
