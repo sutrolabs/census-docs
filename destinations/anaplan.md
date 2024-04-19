@@ -58,7 +58,7 @@ The username and password will be the username and password used to authenticate
 
   Navigate to `Administration` -> `Security` -> `OAuth Clients` and click the `New` button in the upper right.
   ![Create an oauth client](<../.gitbook/assets/AnaplanOauthClient.png>)
-  Name the client and set the allowed callback URLs to include `https://app.getcensus.com/anaplan_callback`. Then, click `Create`.
+  Name the client, choose `Authorization code grant` as the type, and set the allowed callback URLs to include `https://app.getcensus.com/anaplan_callback`. Then, click `Create`.
 
   Clicking on the created OAuth client will provide access to the client ID and secret.
   ![Creates oauth client](<../.gitbook/assets/AnaplanOauthClientIDandSecret.png>)
