@@ -13,12 +13,15 @@ In this guide, we will show you how to connect Anaplan to Census and create your
 ### 1. Locate your workspace and model ID
 
 The Workspace ID can be found under `Administration` -> `Workspaces` within the Anaplan dashboard.
+
 ![Locate the workspace ID](<../.gitbook/assets/AnaplanWorkspaceID.png>)
 
 Select the `Models` tab under the selected workspace and click on the desired model. This action will open the model details page.
+
 ![Select the model](<../.gitbook/assets/AnaplanModels.png>)
 
 The model ID can be found on the model details page.
+
 ![Locate the model ID](<../.gitbook/assets/AnaplanModelID.png>)
 
 {% hint style="warning" %}
@@ -57,10 +60,13 @@ The username and password will be the username and password used to authenticate
   **Creating your client ID and secret**
 
   Navigate to `Administration` -> `Security` -> `OAuth Clients` and click the `New` button in the upper right.
+
   ![Create an oauth client](<../.gitbook/assets/AnaplanOauthClient.png>)
+
   Name the client, choose `Authorization code grant` as the type, and set the allowed callback URLs to include `https://app.getcensus.com/anaplan_callback`. Then, click `Create`.
 
   Clicking on the created OAuth client will provide access to the client ID and secret.
+
   ![Creates oauth client](<../.gitbook/assets/AnaplanOauthClientIDandSecret.png>)
 
 
