@@ -96,7 +96,7 @@
   * [Algolia](destinations/algolia.md)
   * [Amazon Ads DSP (AMC)](destinations/amazon-ads-dsp-amc.md)
   * [Amazon DynamoDB](destinations/dynamo-db.md)
-  * [Mongo DB](destinations/available-destinations/dynamo-db-1.md)
+  * [Mongo DB](destinations/available-destinations/mongo-db.md)
   * [Amazon EventBridge](destinations/amazon-eventbridge.md)
   * [Amazon Pinpoint](destinations/pinpoint.md)
   * [Amazon Redshift](destinations/redshift.md)
