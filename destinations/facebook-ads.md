@@ -44,12 +44,15 @@ Above your list of system users click **Add** to create a new System User
 
 
     <figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.08.15 PM.png" alt=""><figcaption><p>Assign your System User full control to your Application</p></figcaption></figure>
-3. Now generate a token for the System User by pressing **Generate New Token.**
+3.  You'll also need to assign your System User _full control_ over any Ad Accounts that own any Custom Audiences you'd like to sync data to.
+
+    <figure><img src="../.gitbook/assets/Screenshot 2024-05-01 at 3.06.32 PM.png" alt=""><figcaption><p>Assign your System User full control to your Ad Accounts</p></figcaption></figure>
+4. Now generate a token for the System User by pressing **Generate New Token.**
    * You will need to provide the following scope for Census to sync to your Facebook Conversions and Custom Audiences: `ads_management`
    *   Make sure to select `Never` for token expiration so you do not need to manually reauthorize your Census connection every 60 days.
 
        <figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.08.58 PM.png" alt="" width="563"><figcaption><p>Token Expiration &#x26; Scopes Page</p></figcaption></figure>
-4. Once your token is generated be sure to save it in a safe place. This is the token you must provide to Census as a credential for your connection.
+5. Once your token is generated be sure to save it in a safe place. This is the token you must provide to Census as a credential for your connection.
 
 {% hint style="info" %}
 To validate that your System User Token is set up correctly and has the necessary scopes you can input your access token in the link below.\
