@@ -191,7 +191,7 @@
   * [Microsoft Teams](destinations/microsoft-teams.md)
   * [Mixpanel](destinations/mixpanel.md)
   * [MoEngage](destinations/moengage.md)
-  * [Mongo DB](destinations/available-destinations/mongo-db.md)
+  * [Mongo DB](destinations/mongo-db.md)
   * [mParticle](destinations/mparticle.md)
   * [MySQL](destinations/mysql.md)
   * [NetSuite](destinations/netsuite.md)
