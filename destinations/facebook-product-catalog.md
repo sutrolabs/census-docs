@@ -32,8 +32,6 @@ This connector relies on a [Facebook System User](https://www.facebook.com/busin
     <figure><img src="../.gitbook/assets/FB New App Details.png" alt="" width="375"><figcaption><p>New app details</p></figcaption></figure>
 2.  Now you can generate a system user for the app. Go to your Business Manager and navigate to **Business Settings > Users > System Users**
 
-
-
     <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 8.23.16 AM.png" alt="" width="375"><figcaption><p>Business Manager Navigation Panel</p></figcaption></figure>
 3. Above your list of system users click **Add** to create a new System User
 4. Provide a name and role. Census does **not** need an `Admin` role, `Employee` is sufficient.
@@ -41,8 +39,6 @@ This connector relies on a [Facebook System User](https://www.facebook.com/busin
 6. Now generate a token for the System User by pressing **Generate New Token**, select the relevant app you created earlier, select the relevant scopes, and then press **Generate Token**
    * You will need to provide _at least_ the `business_management` and `catalog_management` scopes for Census to sync to your product catalogs
    *   Make sure to select `Never` for token expiration so you do not need to manually reauthorize your Census connection every 60 days.
-
-
 
        <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 8.33.35 AM.png" alt="" width="375"><figcaption><p>Token Expiration &#x26; Scopes Page</p></figcaption></figure>
 7. Once your token is generated be sure to save it in a safe place. This is the token you must provide to Census as a credential for your connection.
@@ -63,15 +59,10 @@ You will need to provide the System User Token you generated earlier along with 
 
 Each Facebook Product Catalog supports products for a specific vertical. Each vertical is a variant on the base product object within the Facebook system. Currently we support the following variants with more to come. If there's a variant you would like to sync to please [contact us](facebook-ads-1.md#need-help-connecting-to-facebook) about making it happen.
 
-| **Object Name** | **Supported?** | **Identifiers** | **Behaviors**  |
-| --------------: | :------------: | ----------- | :------------: |
-|    Product Item |        ✅       | Retailer Id | Update or Create, Mirror |
-|           Hotel |        ✅       | Hotel Id    | Update or Create, Mirror |
-|      Hotel Room |       🔜       |             |             |
-|          Flight |       🔜       |             |             |
-|     Destination |       🔜       |             |             |
-|    Home Listing |       🔜       |             |             |
-|         Vehicle |       🔜       |             |             |
+| **Object Name** | **Supported?** | **Identifiers** |       **Behaviors**      |
+| --------------: | :------------: | --------------- | :----------------------: |
+|    Product Item |        ✅       | Retailer Id     | Update or Create, Mirror |
+|           Hotel |        ✅       | Hotel Id        | Update or Create, Mirror |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Facebook Product Catalog.
 
