@@ -210,6 +210,14 @@ Netsuite is one of our most complex destinations, and some objects have behavior
 * If you're syncing to the Item List on the Invoice object your Item List data will need to be formatted in a JSON array like the following example.`[{"amount": 2.5, "item": {"internalId": "13"}, "quantity": 1}]` .
 * For more information on the Invoice schema please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/invoice.html)
 
+**Using TranId as a Sync Key**
+
+* In order to sync to the `TranId` field, Allowed Override will need to be checked for the Document Numbers of the object.&#x20;
+* Example: Setup > Company > Auto-Generated Numbers > Document Numbers > Journal
+* For more information on Auto Generated Numbers please visit the [Netsuite Help Center](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/bridgehead\_4340435273.html)
+
+
+
 For more information on all Netsuite Objects and their fields please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/account.html)
 
 ## 🚑 Need help connecting to NetSuite?
