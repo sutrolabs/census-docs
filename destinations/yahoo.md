@@ -26,7 +26,7 @@ You should now be ready to sync your data to Yahoo Ads.
 
 |  **Object Name** | **Supported?** |  **Sync Keys** |  **Behavior**  |
 | ---------------: | :------------: | :------------: | :------------: |
-|   Audience <br> [Audience Sync](https://docs.getcensus.com/basics/core-concept/audience-syncs)|        ✅       | External ID (recommended), Email | Upsert |
+|   Audience <br> [Audience Sync](https://docs.getcensus.com/basics/core-concept/audience-syncs)|        ✅       | Email | Upsert |
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Yahoo Ads.
 
