@@ -85,7 +85,6 @@
 ## 🛫 Destinations
 
 * [Overview](destinations/overview.md)
-* [Partner Connectors](destinations/partner-connectors.md)
 * [Available Destinations](destinations/available-destinations/README.md)
   * [Accredible](destinations/accredible.md)
   * [ActiveCampaign](destinations/activecampaign.md)
@@ -248,3 +247,4 @@
   * [Zendesk](destinations/zendesk.md)
   * [Zoho CRM](destinations/zoho-crm.md)
   * [Zuora](destinations/zuora.md)
+* [Custom Destinations](destinations/custom-destinations-and-partner.md)
