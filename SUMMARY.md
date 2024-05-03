@@ -244,6 +244,7 @@
   * [Webhooks](destinations/webhook.md)
   * [Webflow](destinations/webflow.md)
   * [X Ads (formerly Twitter Ads)](destinations/twitter.md)
+  * [Yahoo Ads (DSP)](destinations/yahoo.md)
   * [Zendesk](destinations/zendesk.md)
   * [Zoho CRM](destinations/zoho-crm.md)
   * [Zuora](destinations/zuora.md)
