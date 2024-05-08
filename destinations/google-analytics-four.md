@@ -16,7 +16,7 @@ GA4 has some very interesting behaviors with identifiers, custom fields, and del
 
 ### Prerequisites
 
-* Have your Google Analytics account ready, with an existing **Google Analytics 4 property**. For Universal Analytics, read our docs for the [Google Analytics connector](google-analytics.md)).
+* Have your Google Analytics account ready, with an existing **Google Analytics 4 property**. For Universal Analytics, read our docs for the [Google Analytics destination](google-analytics.md).
   * You'll also need admin access to create API credentials.
 
 ### Step 1: Add a Data Stream to your Google Analytics 4 property

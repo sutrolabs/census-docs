@@ -19,7 +19,7 @@ You should now be ready to start syncing data to Antavo!
 | --------------: | :------------: | :------------: | :------------: |
 | Customer Profiles           |        ✅      | Antavo Customer ID | Update Only |
 
-## Connector Quirks
+## Quirks
 
 - Antavo does not provide the ability to create new Customer Profiles via the API, so only the Update operation is supported.
 

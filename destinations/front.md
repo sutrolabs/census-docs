@@ -146,7 +146,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Front
 
-## 💡  Things to know about our Front connector
+## 💡  Things to know about our Front destination
 
 * You can use email as the matching key for a Contact or any "user handle" that Front supports out of the box such as Twitter, Facebook, Phone, Smooch ID, etc. [See Front's doc here](https://dev.frontapp.com/reference/contacts)
 * We support syncing to multiple phone numbers

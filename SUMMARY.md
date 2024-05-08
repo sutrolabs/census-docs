@@ -248,4 +248,4 @@
   * [Zendesk](destinations/zendesk.md)
   * [Zoho CRM](destinations/zoho-crm.md)
   * [Zuora](destinations/zuora.md)
-* [Custom Destinations](destinations/custom-destinations-and-partner.md)
+* [Custom & Partner Destinations](destinations/custom-destinations-and-partner.md)

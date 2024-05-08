@@ -142,7 +142,7 @@ Please note that you can contact your Customer Success Manager at NetSuite to in
 
 ## 🗄️ Supported Objects
 
-This is is the current list of NetSuite[ objects](https://www.netsuite.com/portal/developers/resources/suitetalk-documentation.shtml) supported by our connector. There are many more and we add them on a case by case basis. If you need a different type of object, please contact us to let us know which object do you need, and we will be happy to support it.
+This is is the current list of NetSuite[ objects](https://www.netsuite.com/portal/developers/resources/suitetalk-documentation.shtml) supported by our destination. There are many more and we add them on a case by case basis. If you need a different type of object, please contact us to let us know which object do you need, and we will be happy to support it.
 
 |           **Object Name** | **Supported?** |
 | ------------------------: | :------------: |
