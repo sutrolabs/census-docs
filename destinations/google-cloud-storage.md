@@ -23,7 +23,7 @@ description: This page describes how to use Census with Google Cloud Storage.
 
 ### Step 1: Create a Google Cloud Storage Connection
 
-Our Google Cloud connector behaves a little differently than other Census connectors. Instead of going through an OAuth connection flow, we provide you a Google Identity address to which you grant Storage Object permissions.
+Our Google Cloud destination behaves a little differently than other Census destinations. Instead of going through an OAuth connection flow, we provide you a Google Identity address to which you grant Storage Object permissions.
 
 * In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the New Destination button, and select Google Cloud Storage
@@ -109,7 +109,7 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 
 ## 💡 Things to know
 
-* Currently, the connector only supports syncing for files up to 5GB.
+* Currently, the destination only supports syncing for files up to 5GB.
 * Data arrives in one file to the designated bucket and file path.
 
 [Contact us](mailto:support@getcensus.com) if your use cases don't work with these limitations. We plan on addressing at least a few of these in the future!

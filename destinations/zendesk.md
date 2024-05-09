@@ -77,7 +77,7 @@ The sync will move data from your warehouse to Zendesk. In this step, you'll def
     * **Only If Empty** does not set the value if the field is already populated.
     * For any properties that accept lists of values such as the Organization or Tags property, instead you'll see **Replace**. Replace mappings override any existing values or relationships for the property.
 
-    Note that there are some gotchas with updating Zendesk data. Check out [Things to know about the Zendesk connector](zendesk.md#things-to-know-about-the-zendesk-connector).
+    Note that there are some gotchas with updating Zendesk data. Check out [Things to know about the Zendesk destination](zendesk.md#things-to-know-about-the-zendesk-destination).
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, set the **Run a sync now?** checkbox.
 9. Click **Create Sync**.
@@ -94,7 +94,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
-## 💡 Things to know about the Zendesk connector
+## 💡 Things to know about the Zendesk destination
 
 The way that Zendesk updates certain properties is complex.
 
