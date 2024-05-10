@@ -36,7 +36,7 @@ Once you've collected both keys, you can create a new Klaviyo destination in Cen
 You should now be ready to create a new sync to Klaviyo from Census!
 
 
-## 🗄 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |  **Object Name** | **Supported?** |  **Sync Keys** |             **Behavior**              |
 | ---------------: | :------------: | :------------: |:-------------------------------------:|

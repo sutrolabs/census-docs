@@ -35,7 +35,7 @@ You will be redirected to a page to log in to Asana to authorize access to your 
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-12 at 12.17.40 AM.png>)
 
-## 🗄️ Supported Objects <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Asana's primary object is a Task, which we support in Census.​
 

@@ -12,7 +12,7 @@ description: This page describes how to use Census with Insightly.
 
 <figure><img src="../.gitbook/assets/insightly.png" alt=""><figcaption><p>Get your API key and instance pod from the Insightly app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                                             **Object Name** | **Supported?** | **Sync Keys**  |  **Behaviors**   |
 |------------------------------------------------------------------------------------------------------------:| :------------: | :------------: |:----------------:|

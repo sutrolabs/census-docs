@@ -20,7 +20,7 @@ In this guide, we will show you how to connect HubSpot to Census.
 
 Follow the OAuth flow to connect HubSpot. Easy!
 
-## 🗄 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**                     | **Behaviors**                         |
 |-----------------| :------------: |-----------------------------------|---------------------------------------|

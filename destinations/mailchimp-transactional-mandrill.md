@@ -15,7 +15,7 @@ To connect Census to Mailchimp Transactional (Mandrill), you'll need an API Key.
    - Census requires at least the `Templates > List` and `Messages > Send-Template` permissions.
 3. Now return to Census and visit the [**Destinations**](https://app.getcensus.com/workspaces/10341/destinations) page. Click on the **New Destination** button and select **Mailchimp Transactional (Mandrill)** from the menu. Copy and paste the API Key into the dialog and hit save. You should be ready to create a new sync!
 
-## Supported Objects and Behaviors
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
 | --------------: | :------------: | :-----------: |:-------------:|

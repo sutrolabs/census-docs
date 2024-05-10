@@ -23,7 +23,7 @@ description: This page describes how to use Census with Vero Cloud.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-12-30 at 2.36.13 PM.png" alt=""><figcaption><p>Add the auth token you generated in Vero Cloud.</p></figcaption></figure>
 
-## 🗄 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors**    |
 | --------------: | :------------: | ------------------- |------------------|

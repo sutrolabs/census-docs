@@ -12,7 +12,7 @@ description: This page describes how to use Census with Impact.
 
 <figure><img src="../.gitbook/assets/impact.png" alt=""><figcaption><p>Enter your Impact credentials to connect.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- |---------------|

@@ -10,7 +10,7 @@ description: Learn how to use Census to sync your Data Warehouse to Blueshift.
 2. Select **Blueshift** from the menu.
 3. Enter your **Api Key**.
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**    |
 | --------------: | :------------: | ---------------- |------------------|

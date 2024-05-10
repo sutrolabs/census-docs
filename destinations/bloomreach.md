@@ -25,7 +25,7 @@ Census will need four pieces of information to connect to your Bloomreach accoun
 
 You should now be ready to sync your data to Bloomreach.
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                                                               **Object Name** | **Supported?** | **Sync Keys**                          | **Behaviors**    |
 | ----------------------------------------------------------------------------------------------------------------------------: | :------------: | -------------------------------------- |------------------|

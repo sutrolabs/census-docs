@@ -12,7 +12,7 @@ description: This page describes how to use Census with GitHub.
 
 <figure><img src="../.gitbook/assets/github.png" alt=""><figcaption><p>Grant Census access to your GitHub account.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
 | --------------: | :------------: | ---------------- |------------------|

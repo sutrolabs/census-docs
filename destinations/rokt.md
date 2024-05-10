@@ -15,7 +15,7 @@ description: This page describes how to use Census with Rokt.
 
 <figure><img src="../.gitbook/assets/rokt.png" alt=""><figcaption><p>Generate API credentials in the Rokt app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 s
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
 | --------------: | :------------: | ---------------- |------------------|

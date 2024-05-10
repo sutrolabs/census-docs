@@ -19,7 +19,7 @@ Once you've confirmed permissions, follow these steps to connect Census to Googl
 2. Select **Google Campaign Manager 360** from the menu.
 3. Complete the OAuth flow to grant Census access. Note that you'll need to create a separate Census connection for each advertiser you wish to send data to.
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | :------------: |:-------------:|

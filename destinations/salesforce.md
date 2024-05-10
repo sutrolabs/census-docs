@@ -92,7 +92,7 @@ Note that, because these fields are not forced to be unique in Salesforce, Censu
 
 For this reason, we recommend you try to use an Unique External Identifier field whenever possible.
 
-## 🗄 Supported Objects <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Salesforce support is pretty straight forward!
 

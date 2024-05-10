@@ -22,7 +22,7 @@ You'll also need to know your Iterable region. This is not currently displayed i
 
 Back in Census, navigate to the Destinations page and click **Add Destination**. Select Iterable from the list of destinations. Provide your API Key and select your region. Finally click **Save**.
 
-## 🗄 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                 |
 | --------------: | :------------: | -------------- |-------------------------------|

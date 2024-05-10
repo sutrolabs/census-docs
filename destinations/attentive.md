@@ -12,7 +12,7 @@ description: This page describes how to use Census with Attentive.
 
 <figure><img src="../.gitbook/assets/attentive.png" alt=""><figcaption><p>Connect Attentive via the OAuth flow.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- |---------------|

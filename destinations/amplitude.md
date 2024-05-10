@@ -98,7 +98,7 @@ Finally, select the fields you want to update in the Mapper in the "Which Fields
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
 |-----------------:| :------------: | ---------------- |------------------|

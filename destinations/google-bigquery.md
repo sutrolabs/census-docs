@@ -46,7 +46,7 @@ gcloud projects add-iam-policy-binding cs-sandbox-123456 \
   --role roles/bigquery.jobUser
 ```
 
-## 🗄️ Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                            |
 | --------------: | :------------: | ---------------------- |------------------------------------------|

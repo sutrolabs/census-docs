@@ -114,7 +114,7 @@ Now go back to Chargify, visit Events, Streams, and click on the stream you targ
 
 That's it! In 6 steps, you've connected Census and started syncing product data from your warehouse to Chargify 🎉
 
-## 🗄 Supported Objects <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Chargify objects.
 

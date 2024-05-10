@@ -15,7 +15,7 @@ description: This page describes how to sync data to your BigQuery data warehous
 <figure><img src="../.gitbook/assets/bigquery-destination.png" alt=""><figcaption><p>Enter your BigQuery Project ID.</p></figcaption></figure>
 <figure><img src="../.gitbook/assets/bigquery-destination2.png" alt=""><figcaption><p>Grant the required roles to the Service Account.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**                      |
 | --------------: | :------------: | --------------- |------------------------------------|

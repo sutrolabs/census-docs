@@ -12,7 +12,7 @@ description: This page describes how to use Census with ClickUp.
 
 <figure><img src="../.gitbook/assets/clickup.png" alt=""><figcaption><p>Select the workspace you wish to use with Census.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
 | --------------: | :------------: | ---------------- |------------------|
