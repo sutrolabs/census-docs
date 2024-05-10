@@ -17,10 +17,10 @@ description: This page describes how to use Census with Crowd.dev.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
-| --------------: | :------------: | --------------- | ---------------- |
+| --------------: | :------------: | --------------- |------------------|
 | Activity | ✅ | Source ID | Update or Create |
 | Activity with Member | ✅ | Source ID | Update or Create |
-| Organization | ✅ | Any unique identifier | Update Only, Append |
+| Organization | ✅ | Any unique identifier | Update Only, Add |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Crowd.dev objects and/or behaviors.
 

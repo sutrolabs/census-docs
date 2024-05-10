@@ -15,9 +15,9 @@ You should now be ready to start syncing data to Eagle Eye!
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | :------------: | :------------: |
-| Coupon <br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a>        |        ✅      |   Unique ID   | Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | :------------: |:-------------:|
+| Coupon <br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a>        |        ✅      |   Any unique identifier   |      Add      |
 
 ### Coupons
 

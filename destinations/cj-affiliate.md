@@ -16,8 +16,8 @@ description: This page describes how to use Census with CJ Affiliate.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Order | ✅ | Order ID | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Order | ✅ | Order ID | Send          |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more CJ Affiliate objects and/or behaviors.
 

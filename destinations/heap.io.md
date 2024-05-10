@@ -96,28 +96,20 @@ Finally, select the fields you want to update in the Mapper in the "Which Fields
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects
+## 🗄️ Supported Objects and Sync Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys** |
-| --------------- | :------------: | --------------- |
-| Account         |        ✅       | Account ID      |
-| User            |        ✅       | Identity        |
-| Event           |        ✅       | Insert ID       |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
+| --------------- | :------------: | --------------- |---------------|
+| Account         |        ✅       | Account ID      | Upsert        |
+| User            |        ✅       | Identity        | Upsert        |
+| Event           |        ✅       | Insert ID       | Send          |
 
-🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
-
-## 🔄 Supported Sync Behaviors
+🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects or Sync Behaviors for this destination
 
 {% hint style="info" %}
 Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|    **Behaviors** | **Supported?** |  **Objects**  |
-| ---------------: | :------------: | :-----------: |
-| Update or Create |        ✅       | Account, User |
-|           Append |        ✅       |     Event     |
-
-‌ 🔋 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
 ## 🚑 Need help connecting to Heap.io?
 

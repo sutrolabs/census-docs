@@ -15,8 +15,8 @@ description: This page describes how to use Census with Chattermill.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Response | ✅ | Any unique identifier | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Response | ✅ | Any unique identifier | Send          |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Chattermill objects and/or behaviors.
 

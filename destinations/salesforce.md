@@ -96,12 +96,13 @@ For this reason, we recommend you try to use an Unique External Identifier field
 
 Salesforce support is pretty straight forward!
 
-|           **Object Name**          |      **Supported?**     |
-| :--------------------------------: | :---------------------: |
-|   All Standard and Custom Objects  |            ✅            |
-| Multi-Destination: Lead or Contact |            ✅            |
-| Multi-Destination: Lead or Account |            ✅            |
-|       OpportunityContactRole       | Append Only (See below) |
+|          **Object Name**           |      **Supported?**     |        **Sync Keys**         |                       **Behaviors**                        |
+|:----------------------------------:| :---------------------: |:----------------------------:|:----------------------------------------------------------:|
+|  All Standard and Custom Objects   |            ✅            | Salesforce Object Identifier | Create Only, Update or Create, Update Only, Mirror, Delete |
+| Multi-Destination: Lead or Contact |            ✅            |     Census ID, ID, Email     |                              Update Only, Update and Create, Mirror                               |
+| Multi-Destination: Lead or Account |            ✅            |        Census ID, ID         |           Update Only, Update and Create, Mirror           |
+|      Opportunity Contact Role      |  ✅  |    Any unique identifier     |                            Add                             |
+|       Email Message Relation       |  ✅  |    Any unique identifier     |                            Add                             |
 
 ### **Syncing to OpportunityContactRole**
 

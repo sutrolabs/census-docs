@@ -118,23 +118,12 @@ That's it! In 6 steps, you've connected Census and started syncing product data 
 
 Census currently supports syncing to the following Chargify objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| --------------: | :------------: | ----------- |
-|   Billing Event |        ✅       | Insert ID   |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | :------------: |:-------------:|
+| Billing Event      |        ✅      | Insert ID |     Send      |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Chargify.
 
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-| **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :----------: |
-|    **Append** |        ✅       |     Event    |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Chargify.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors or objects for Chargify.
 
 ## 🚑 Need help connecting to Chargify?
 

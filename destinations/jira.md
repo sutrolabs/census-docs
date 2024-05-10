@@ -90,24 +90,18 @@ Finally, select the fields you want to update in the Mapper in the "Which proper
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects <a href="#supported-objects" id="supported-objects"></a>
+## 🗄️ Supported Objects <a href="#supported-objects" id="supported-objects"></a> and Sync Behaviors
 
 Jira's primary object is an Issue, which we support in Census.​
 
-| **Object Name** | **Supported?** | **Sync Keys** |
-| :-------------: | :------------: | :-------------: |
-|      Issue      |        ✅       |    Unique ID    |
-
-## 🔄 Supported Sync Behaviors
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
+| :-------------: | :------------: | :-------------: |:-------------:|
+|      Issue      |        ✅       |    Unique ID    |      Add      |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :---------: |
-|    **Append** |        ✅       |    Issue    |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Jira.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors or Objects for Jira.
 
 If run into a dead end, start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

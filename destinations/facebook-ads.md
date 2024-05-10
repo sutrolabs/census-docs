@@ -84,10 +84,10 @@ If you are setting up a connection with a System User Token when you input your 
 
 ## 🗄 Supported Objects and Behaviors
 
-|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                           |       **Behaviors**      |
-| ----------------------------------------------------------------------------------------: | :-----------: | --------------------------------------------------------------------------------------------------------- | :----------------------: |
-|                                                                                  Audience |       ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/) | Update or Create, Mirror |
-| Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                             |          Append          |
+|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                                  |      **Behaviors**       |
+|------------------------------------------------------------------------------------------:| :-----------: |------------------------------------------------------------------------------------------------------------------|:------------------------:|
+|                                                                           Custom Audience |       ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/), Email | Update or Create, Mirror |
+| Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                                    |           Send           |
 
 {% hint style="info" %}
 Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).

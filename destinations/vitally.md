@@ -56,13 +56,12 @@ Census makes use of different Vitally APIs for different operations. You're welc
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** |   **Sync Keys**   | **Create Fields** |
-| --------------: | :------------: | :-------------------: | :---------------: |
-|            User |        ✅       |        User ID        |         ✅         |
-|         Account |        ✅       |       Account ID      |         ✅         |
-|    Organization |        ✅       |    Organization ID    |         ✅         |
-|     Track Event |        ✅       | Any unique identifier |         ✅         |
-|             NPS |       🔜       |           -           |         -         |
+| **Object Name** | **Supported?** |   **Sync Keys**   |         **Behavior**          |
+| --------------: | :------------: | :-------------------: |:-----------------------------:|
+|            User |        ✅       |        User ID        | Update or Create, Update Only |
+|         Account |        ✅       |       Account ID      | Update or Create, Update Only |
+|    Organization |        ✅       |    Organization ID    | Update or Create, Update Only |
+|     Track Event |        ✅       | Any unique identifier |             Send              |
 
 Vitally defines User ID and Account ID as the unique identifier for these objects in your system. You are free to use whatever ID you like, but it needs to be unique.
 

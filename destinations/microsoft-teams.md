@@ -72,21 +72,15 @@ You'll need to start by specifying how to identify entries in your data warehous
 Reminder: Census will send records to a Teams channel one at a time.
 {% endhint %}
 
-## 🗄️ Supported Objects
+## 🗄️ Supported Objects and Sync Behaviors
 
-| Object Name | Supported? | Identifiers              |
-| ----------- | :--------: | ------------------------ |
-| Messsage    |     ✅     | Custom message template. |
+| Object Name | Supported? | Identifiers              | **Behaviors** |
+| ----------- | :--------: | ------------------------ |:-------------:|
+| Messsage    |     ✅     | Custom message template. |     Send      |
 
 {% hint style="info" %}
 Census can send data to **all** public channels and any private channels that Census has been explicitly invited to (e.g. `/invite @census`).
 {% endhint %}
-
-## 🔄 Supported Sync Behaviors
-
-| **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :---------: |
-|    **Append** |       ✅       |   channel   |
 
 {% hint style="info" %}
 Census will only write new records to a specific channel when new records appear in your data warehouse.

@@ -30,7 +30,9 @@ The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/AP
 
 ## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="196"></th><th width="156"></th><th width="154"></th><th></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td>Event</td><td>✅</td><td>Event ID</td><td>Append, Upsert, and Mirror</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**        |
+| --------------: | :------------: | ---------------- |----------------------|
+| Event | ✅ | Event ID | Send, Upsert, Mirror |
 
 ### Event Properties and Formatting
 

@@ -17,9 +17,9 @@ description: This page describes how to use Census with Rokt.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Event | ✅ | Any unique ID | Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Event | ✅ | Any unique ID | Send             |
 | Audience | ✅ | Email, MD5 Email, SHA256 Email | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Rokt objects and/or behaviors.

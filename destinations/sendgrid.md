@@ -46,32 +46,21 @@ With the SendGrid API key, return to Census and visit the **Destinations** tab. 
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-24 at 5.44.57 PM.png>)
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors
 
 Census currently supports syncing to the following SendGrid objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| --------------: | :------------: | ----------- |
-|         Contact |        ✅       | Email       |
-|            List |        ✅       | Email       |
-| Email Templates |        ✅       | Any unique identifier |
+| **Object Name** | **Supported?** | Identifiers | **Behaviors**                 |
+| --------------: | :------------: | ----------- |-------------------------------|
+|         Contact |        ✅       | Email       | Update or Create, Update Only |
+|            List |        ✅       | Email       | Update or Create, Mirror      |
+| Email Templates |        ✅       | Any unique identifier | Send                          |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for SendGrid.
-
-## 🔄 Supported Sync Behaviors
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects or Sync Behaviors for SendGrid.
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
-
-|        **Behaviors** | **Supported?** |  **Objects** |
-| -------------------: | :------------: | :-----------: |
-| **Update or Create** |        ✅       | Contact, List |
-|      **Update Only** |        ✅       |    Contact    |
-|           **Mirror** |        ✅       |      List     |
-|           **Append** |        ✅       | Email Templates |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for SendGrid.
 
 ## 🚑 Need help connecting to SendGrid?
 

@@ -13,7 +13,12 @@ description: This page describes how to use Census with TikTok Ads.
 
 ## 🔀 Supported Objects and Behaviors
 
-<table data-header-hidden><thead><tr><th width="245" align="right"></th><th width="127" align="center"></th><th width="192"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Partner Audience</td><td align="center">✅</td><td>Email, IDFA/GAID, Phone</td><td>Update or Create, Mirror</td></tr><tr><td align="right">Customer File Audience</td><td align="center">✅</td><td>Email, IDFA/GAID, Phone</td><td>Update or Create, Mirror</td></tr><tr><td align="right">Offline Event Conversions</td><td align="center">✅</td><td>Any unique identifier</td><td>Append</td></tr><tr><td align="right">Web Event Conversions</td><td align="center">✅</td><td>Any unique identifier</td><td>Append</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**           | **Behaviors**            |
+| --------------: | :------------: |-------------------------|--------------------------|
+| Partner Audience | ✅ | Email, IDFA/GAID, Phone | Update or Create, Mirror |
+| Customer File Audience | ✅ | Email, IDFA/GAID, Phone               | Update or Create, Mirror |
+| Offline Event Conversions | ✅ | Any unique identifier               | Send                     |
+| Web Event Conversions | ✅ | Any unique identifier               | Send                     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more TikTok objects and/or behaviors.
 

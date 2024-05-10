@@ -44,21 +44,24 @@ Note: Census will only query Shopify based on the syncs/objects that you configu
     | write\_third\_party\_fulfillment\_orders      | read\_third\_party\_fulfillment\_orders      |
 2. There is some setup that is needed to do on the Census side to setup Shopify, while this process is under construction :construction\_site:, please [contact us](mailto:support@getcensus.com) via email or start a conversation with us via the [in-app](https://app.getcensus.com) chat with the topic: "Shopify Setup". In your communication please provide your Shopify Store URL so we can get started on your set up!
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors
 
-Census currently supports syncing to the following Shopify objects ([Contact us](mailto:support@getcensus.com) if you're looking for more!):
+Census currently supports syncing to the following Shopify objects and Sync Behaviors ([Contact us](mailto:support@getcensus.com) if you're looking for more!):
 
-| **Object Name** |       **Supported?**      | **Sync Keys**  |
-| --------------: | :-----------------------: | -------------- |
-|        Customer |             ✅             | Email          |
-|     Fulfillment |             ✅             |                |
-| Inventory Level |             ✅             |                |
-|           Order |             ✅             | Source ID      |
-|         Product |             ✅             | Tag ID, Handle |
-|   Product Image | <p>✅<br>(via Product)</p> |                |
-| Product Variant |             ✅             | SKU            |
+| **Object Name** |       **Supported?**      | **Sync Keys**         | **Behaviors**                 |
+| --------------: | :-----------------------: |-----------------------|-------------------------------|
+|        Customer |             ✅             | Email                 | Update or Create              |
+|     Fulfillment |             ✅             | Any unique identifier | Add                           |
+| Inventory Level |             ✅             | N/A                   | Update or Create              |
+|           Order |             ✅             | Source ID             | Update or Create, Update Only |
+|         Product |             ✅             | Tag ID, Handle        | Update or Create              |
+| Product Variant |             ✅             | SKU                   |              Mirror                 |
 
 Census also supports Shopify's Custom Metafields on Customer and Product as well.
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 #### Updating Product Images
 
@@ -77,20 +80,6 @@ Census supports setting product images by passing a [structured-data.md](../basi
 
 Only the `src` field is required. `position`, `width`, and `height` are optional.
 
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-|    **Behaviors** | **Supported?** |                **Objects**                |
-| ---------------: | :------------: | :---------------------------------------: |
-| Update or Create |        ✅       | Customer, Inventory Level, Order, Product |
-|      Update Only |        ✅       |                   Order                   |
-|           Append |        ✅       |                Fulfillment                |
-|           Mirror |        ✅       |              Product Variant              |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Shopify.
 
 ## 🚑 Need help connecting to Shopify?
 

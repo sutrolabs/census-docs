@@ -47,31 +47,25 @@ In Planhat, once a token is created, it will appear once and last forever. Make 
 * Paste your Planhat account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
 * Paste the region in the region box. If your Planhat app url is `app-us3.planhat.com`, paste **us3**. If your Planhat api endpoint is simply`api.planhat.com`, the value of **default** should be used here.
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors
 
 Census currently supports syncing to the following Planhat objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**          |
-| --------------: | :------------: | ---------------------- |
-|         Company |        ✅       | Source ID, External ID |
-|        End User |        ✅       | Source ID              |
-|        Activity |        ✅       | Any unique ID          |
-|           Churn |        ✅       | Source ID              |
-|         License |        ✅       | Source ID, External ID |
-|          Metric |        ✅       | External ID            |
-|             NPS |        ✅       | Source ID              |
+| **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                 |
+| --------------: | :------------: | ---------------------- |-------------------------------|
+|         Company |        ✅       | Source ID, External ID | Update or Create, Update Only |
+|        End User |        ✅       | Source ID              | Update or Create              |
+|        Activity |        ✅       | Any unique ID          | Send                          |
+|           Churn |        ✅       | Source ID              | Update or Create              |
+|         License |        ✅       | Source ID, External ID | Update or Create              |
+|          Metric |        ✅       | External ID            | Send                          |
+|             NPS |        ✅       | Source ID              | Update or Create              |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Planhat. Custom fields for both objects are supported.
-
-## 🔄 Supported Sync Behaviors
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects or Sync Behaviors for Planhat. Custom fields for both objects are supported.
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
-
-<table data-header-hidden><thead><tr><th width="198" align="right"></th><th width="183.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Company, End User, Churn, License, NPS</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Company</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Activity, Metric</td></tr></tbody></table>
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Planhat.
 
 ## 🚑 Need help connecting to Planhat?
 

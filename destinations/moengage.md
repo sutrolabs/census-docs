@@ -17,9 +17,9 @@ description: This page describes how to use Census with MoEngage.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
-| --------------: | :------------: | --------------- | ---------------- |
+| --------------: | :------------: | --------------- |------------------|
 |        Customer |        ✅       | Customer ID     | Update or Create |
-|           Event |        ✅       | Any unique ID   | Append           |
+|           Event |        ✅       | Any unique ID   | Send             |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more MoEngage objects and/or behaviors.
 

@@ -19,7 +19,13 @@ Connecting to your Google Ads account is straightforward.
 
 Click the link for more information on each of the services
 
-<table data-header-hidden><thead><tr><th width="340"></th><th width="216" align="right"></th></tr></thead><tbody><tr><td></td><td align="right"><strong>Types</strong></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, <br>Call Conversion, <br>Conversion Adjustment, <br>Enhanced Conversion</td></tr></tbody></table>
+|       **Object Name** | **Supported?** | **Sync Keys**                                                 | **Behaviors** |
+|----------------------:| :------------: |---------------------------------------------------------------|---------------|
+|       Call Conversion | ✅ | Caller ID                                                     | Upsert        |
+|      Click Conversion | ✅ | Google Click ID, Google wBraid, Google gBraid,                | Upsert        |
+| Conversion Adjustment | ✅ | Any unique identifier                                         | Send          |
+|   <a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a> | ✅ | External ID, MAID, Email, First Name, Last Name, Phone Number | Upsert        |
+|   Enhanced Conversion | ✅ | Census Tracking ID                                            | Upsert        |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
 

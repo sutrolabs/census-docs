@@ -98,21 +98,19 @@ When syncing data to conversion events, the **Use timestamp column to identify n
 
 To use this setting, you'll also need to include a column in your database/data source that tracks the latest sync for each record.
 
-## 🗄 Supported objects
+## 🔄 Supported Objects and Sync Behaviors
 
-<table data-header-hidden><thead><tr><th width="180.33333333333331" align="right"></th><th width="161" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Audience</td><td align="center">✅</td><td>Email, Handle, Device ID</td></tr><tr><td align="right">Mobile Conversion Event</td><td align="center">✅</td><td>App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type</td></tr><tr><td align="right">Web Conversion Event</td><td align="center">✅</td><td>Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number</td></tr></tbody></table>
-
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for X Ads.
-
-## 🔄 Supported sync behaviors
-
-<table data-header-hidden><thead><tr><th width="176.33333333333331" align="right"></th><th width="219" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behavior</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right">Append</td><td align="center">✅</td><td align="center">Mobile Conversion Event, Web Conversion Event</td></tr><tr><td align="right">Mirror</td><td align="center">✅</td><td align="center">Audience</td></tr></tbody></table>
+|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
+| -----------------------: | :------------: | --------------------- |------------------|
+|                 Audience |        ✅      | Email, Handle, Device ID | Mirror |
+|               Mobile Conversion Event |        ✅      | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type | Send             |
+|                 Web Conversion Event |        ✅      | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number | Send             |
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for X Ads.
+[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects or sync behaviors for X Ads.
 
 ## 🚑 Need help connecting to X Ads?
 

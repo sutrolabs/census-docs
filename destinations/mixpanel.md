@@ -104,31 +104,22 @@ That's it! In 5 steps, you connect Census to Mixpanel and started syncing custom
 
 Census currently supports syncing to the following Mixpanel objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| --------------: | :------------: | ----------- |
-|           Event |        ✅       | Insert ID   |
-|   User Profile  |        ✅       | Distinct ID |
-|   Group Profile |        ✅       | Group ID    |
-|    Lookup Table |        ✅       | Join Key    |
+| **Object Name** | **Supported?** | Identifiers |  **Behaviors**   |
+| --------------: | :------------: | ----------- |:----------------:|
+|           Event |        ✅       | Insert ID   |       Send       |
+|   User Profile  |        ✅       | Distinct ID | Update or Create |
+|   Group Profile |        ✅       | Group ID    | Update or Create |
+|    Lookup Table |        ✅       | Join Key    |      Mirror      |
 
 #### Syncing Historical Events
 
 Depending on which plan your Mixpanel is on, you may have limited ability to view historical data. For example, currently Mixpanel's Starter Free plan will only show events from the last 90 days, even though Census can successfully sync older data. If you find some of your event data missing, take a look at [Mixpanel's documentation](https://help.mixpanel.com/hc/en-us/articles/115004511246-Data-History-Access-By-Plan-Type) to understand what limits your plan may have.
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Mixpanel.
-
-## 🔄 Supported Sync Behaviors
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects or sync behaviors for Mixpanel.
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
-
-|        **Behaviors** | **Supported?** |         **Objects**        |
-| -------------------: | :------------: | :-------------------------: |
-| **Update or Create** |        ✅       | User Profile, Group Profile |
-|           **Append** |        ✅       |            Event            |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Mixpanel.
 
 ## 🚑 Need help connecting to Mixpanel?
 

@@ -106,17 +106,17 @@ Now go back to your Intercom and go view a record type (Contact or Company) that
 
 That's it! In 5 steps, you've connected Intercom and started syncing customer & product data from your warehouse 🎉
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors
 
 Census currently supports syncing to the following Intercom objects.
 
-|        **Object Name** | **Supported?** | Identifiers                     |
-| ---------------------: | :------------: | ------------------------------- |
-|                Company |        ✅       | Company ID                      |
-| Contact (Lead or User) |        ✅       | Email, Intercom ID, External ID |
-|                   Lead |        ✅       | Email, Intercom ID, External ID |
-|                   User |        ✅       | Email, Intercom ID, External ID |
-|                  Event |        ✅       | Event ID                        |
+|        **Object Name** | **Supported?** | Identifiers                     | **Behaviors**                         |
+| ---------------------: | :------------: | ------------------------------- |---------------------------------------|
+|                Company |        ✅       | Company ID                      | Update or Create, Delete              |
+| Contact (Lead or User) |        ✅       | Email, Intercom ID, External ID | Update or Create, Update Only, Delete |
+|                   Lead |        ✅       | Email, Intercom ID, External ID | Update or Create, Update Only, Delete |
+|                   User |        ✅       | Email, Intercom ID, External ID | Update or Create, Update Only, Delete |
+|                  Event |        ✅       | Event ID                        | Send                                  |
 
 {% hint style="info" %}
 If you're finding Companies missing in Intercom after a sync, make sure the company also has users associated with them. By default, Intercom hides companies with no associated users.
@@ -124,13 +124,9 @@ If you're finding Companies missing in Intercom after a sync, make sure the comp
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Intercom.
 
-## 🔄 Supported Sync Behaviors
-
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
-
-<table data-header-hidden><thead><tr><th width="196.33333333333331" align="right"></th><th width="184" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Company, Contact, Lead, User</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Contact, Lead, User</td></tr><tr><td align="right"><strong>Delete</strong></td><td align="center">✅</td><td align="center">Contact, Lead, User, Company</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Events</td></tr></tbody></table>
 
 ### :x: Deleting Objects
 

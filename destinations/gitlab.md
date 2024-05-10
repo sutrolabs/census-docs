@@ -14,9 +14,9 @@ description: This page describes how to use Census with GitLab.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | ------------- |
-| Issues | ✅ | Internal ID | Update or Create, Update Only, Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                      |
+| --------------: | :------------: | ---------------- |------------------------------------|
+| Issues | ✅ | Internal ID | Update or Create, Update Only, Add |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more GitLab objects and/or behaviors.
 

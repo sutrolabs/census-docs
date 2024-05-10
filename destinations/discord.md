@@ -15,9 +15,9 @@ description: This page describes how to use Census with Discord.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
-| --------------: | :------------: | ---------------- | ------------------- |
-| Webhook | ✅ | N/A | Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | ---------------- |---------------|
+| Webhook | ✅ | N/A | Send          |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Discord objects and/or behaviors.
 

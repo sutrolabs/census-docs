@@ -15,8 +15,8 @@ description: This page describes how to use Census with Impact.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Conversion | ✅ | Any unique identifier | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Conversion | ✅ | Any unique identifier | Send          |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Impact objects and/or behaviors.
 

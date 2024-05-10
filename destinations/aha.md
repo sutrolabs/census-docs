@@ -14,9 +14,9 @@ description: This page describes how to use Census with Aha.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Product | ✅ | Reference Prefix | Update Only, Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Product | ✅ | Reference Prefix | Update Only, Add |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Aha objects and/or behaviors.
 

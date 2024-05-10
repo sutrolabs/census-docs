@@ -16,9 +16,9 @@ description: This page describes how to use Census with Optimizely.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | ------------- |
-| Event | ✅ | Append | UUID |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
+| --------------: |:--------------:| --------------- |---------------|
+| Event |       ✅        | UUID | Send          |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Optimizely objects and/or behaviors.
 

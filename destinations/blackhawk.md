@@ -26,9 +26,9 @@ You should now be ready to start sending data to Blackhawk Network!
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | :------------: | :------------: |
-| Submission      |        ✅      | Any Unique Submission ID | Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | :------------: |:-------------:|
+| Submission      |        ✅      | Any Unique Submission ID |      Add      |
 
 ### Submission Quirks
 

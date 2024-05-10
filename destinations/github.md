@@ -14,9 +14,9 @@ description: This page describes how to use Census with GitHub.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Issue | ✅ | Issue Number | Update Only, Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Issue | ✅ | Issue Number | Update Only, Add |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more GitHub objects and/or behaviors.
 

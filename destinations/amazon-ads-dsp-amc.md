@@ -20,7 +20,11 @@ Connecting to your Amazon Ads account is straightforward.
 
 ## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="184.6600566572238"></th><th width="137"></th><th width="154"></th><th></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td>Conversion Event</td><td>✅</td><td>Event Unique ID</td><td>Append</td></tr><tr><td>Hashed Records (Part 1)</td><td>✅</td><td>ID</td><td>Update or Create</td></tr><tr><td>DSP Audience Members (Part 2)<br><a href="../basics/core-concept/audience-syncs/">Audience Sync</a></td><td>✅</td><td>ID</td><td>Update or Create</td></tr></tbody></table>
+|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
+|-----------------:| :------------: | ---------------- |----------------|
+| Conversion Event | ✅ | Event Unique ID | Send           |
+|   Hashed Records | ✅ | ID | Update, Create |
+|     DSP Audience | ✅ | ID | Update, Create |
 
 ### Conversion Events
 

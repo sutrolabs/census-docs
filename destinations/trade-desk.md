@@ -24,13 +24,13 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 
 ## 🔀 Supported Objects and Behaviors
 
-|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**       |
-| -----------------------: | :------------: | --------------------- | ------------------- |
-|                 Ad Group |        ✅      | Any unique identifier | Update Only, Append |
-|               Advertiser |        ✅      | Any unique identifier | Update Only, Append |
-|                 Campaign |        ✅      | Any unique identifier | Update Only, Append |
-|         Conversion Event |        ✅      | Any unique identifier | Append              |
-|             Tracking Tag |        ✅      | Any unique identifier | Update Only, Append |
+|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**            |
+| -----------------------: | :------------: | --------------------- |--------------------------|
+|                 Ad Group |        ✅      | Any unique identifier | Update Only, Add         |
+|               Advertiser |        ✅      | Any unique identifier | Update Only, Add         |
+|                 Campaign |        ✅      | Any unique identifier | Update Only, Add         |
+|         Conversion Event |        ✅      | Any unique identifier | Send                     |
+|             Tracking Tag |        ✅      | Any unique identifier | Update Only, Add         |
 |         CRM Data Segment |        ✅      | Email/Phone           | Update or Create, Mirror |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more The Trade Desk objects and/or behaviors.

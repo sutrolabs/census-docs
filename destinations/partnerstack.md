@@ -17,10 +17,10 @@ PartnerStack is a partner relationship management platform that helps you manage
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
-| --------------: | :------------: | --------------- | ------------- |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**                 |
+| --------------: | :------------: | --------------- |-------------------------------|
 | Customer | ✅ | Customer Key | Update or Create, Update Only |
-| Transaction   <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) | ✅ | Unique Identifier | Append |
+| Transaction   <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) | ✅ | Unique Identifier | Send                          |
 
 ### Transactions
 

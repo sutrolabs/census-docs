@@ -15,8 +15,8 @@ description: This page describes how to use Census with Reddit Ads.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Conversion Event | ✅ | Any unique ID | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Conversion Event | ✅ | Any unique ID | Send          |
 
 ### Field details
 

@@ -24,12 +24,12 @@ Back in Census, navigate to the Destinations page and click **Add Destination**.
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | -------------- | -------------- |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                 |
+| --------------: | :------------: | -------------- |-------------------------------|
 |            User |        ✅       | User ID, Email | Update or Create, Update Only |
-|           Event |        ✅       | Event ID       | Append         |
-|         Catalog |        ✅       | Key            | Update or Create, Mirror |
-|     Static List |        ✅       | User ID, Email | Mirror         |
+|           Event |        ✅       | Event ID       | Send                          |
+|         Catalog |        ✅       | Key            | Update or Create, Mirror      |
+|     Static List |        ✅       | User ID, Email | Mirror                        |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
 

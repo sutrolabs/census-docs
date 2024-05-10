@@ -33,7 +33,11 @@ Make sure to follow Segment's Documentation on connecting a Production Source [h
 
 Segment support is pretty straight forward! [Let us know](mailto:support@getcensus.com) if you want Census to support more objects for Segment.
 
-<table data-header-hidden><thead><tr><th align="center"></th><th width="126" align="center"></th><th align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="center"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Sync Keys</strong></td><td align="center"><strong>Behavior</strong></td></tr><tr><td align="center">User</td><td align="center">✅</td><td align="center">User ID or Anonymous ID</td><td align="center">Update or Create</td></tr><tr><td align="center">Group</td><td align="center">✅</td><td align="center">Group ID, or User ID / Anonymous ID</td><td align="center">Update or Create</td></tr><tr><td align="center">Track (Event)</td><td align="center">✅</td><td align="center"></td><td align="center">Append</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| User | ✅ | User ID or Anonymous ID | Update or Create |
+| Group | ✅ | Group ID, or User ID / Anonymous ID | Update or Create |
+| Track (Event) | ✅ | Any unique identifier | Send             |
 
 ### Track events
 

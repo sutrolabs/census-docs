@@ -15,9 +15,9 @@ description: This page describes how to use Census with Attentive.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| User | ✅ | Email, Phone Number | Update Only |
-| User Event | ✅ | Any unique identifier | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| User | ✅ | Email, Phone Number | Update Only   |
+| User Event | ✅ | Any unique identifier | Send          |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Attentive objects and/or behaviors.
 

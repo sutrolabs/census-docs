@@ -14,7 +14,11 @@ description: This page describes how to use Census with Userflow.
 
 ## 🗄 Supported Objects and Behaviors
 
-<table data-header-hidden><thead><tr><th width="152" align="right"></th><th width="152" align="center"></th><th width="150"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Event</td><td align="center">✅</td><td>Unique ID</td><td>Append</td></tr><tr><td align="right">Group</td><td align="center">✅</td><td>Group ID</td><td>Update or Create</td></tr><tr><td align="right">User</td><td align="center">✅</td><td>User ID</td><td>Update or Create, Update Only, Mirror</td></tr></tbody></table>
+|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**                         |
+| -----------------------: | :------------: | --------------------- |---------------------------------------|
+|                 Event |        ✅      | Unique ID | Send                                  |
+|               Group |        ✅      | Group ID | Update or Create                      |
+|                 User |        ✅      | User ID | Update or Create, Update Only, Mirror |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Userflow objects and/or behaviors.
 

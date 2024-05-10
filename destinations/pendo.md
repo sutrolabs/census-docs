@@ -60,30 +60,21 @@ Now let's create your new Census connection to Pendo.
 
 And you're all set and ready to get syncing! 🎉
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors
 
 Census currently supports syncing to the following Pendo objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**                        |
-| --------------: | :------------: | -------------------------------------- |
-|         Account |        ✅       | Account ID                             |
-|         Visitor |        ✅       | Visitor ID                             |
-|     Track Event |        ✅       | N/A (only supports _Append_ operation) |
+| **Object Name** | **Supported?** | **Sync Keys**                        | **Behaviors** |
+| --------------: | :------------: | -------------------------------------- |:-------------:|
+|         Account |        ✅       | Account ID                             |  Update Only  |
+|         Visitor |        ✅       | Visitor ID                             |  Update Only  |
+|     Track Event |        ✅       | N/A (only supports _Append_ operation) |     Send      |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pendo.
-
-## 🔄 Supported Sync Behaviors
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects or Sync Behaviors for Pendo.
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
-
-|   **Behaviors** | **Supported?** |   **Objects**   |
-| --------------: | :------------: | :-------------: |
-| **Update Only** |        ✅       | Account/Visitor |
-|      **Append** |        ✅       |   Track Event   |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pendo.
 
 ## 🚑 Need help connecting to Pendo?
 

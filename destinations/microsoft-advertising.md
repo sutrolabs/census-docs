@@ -68,14 +68,14 @@ After setting up your warehouse, your Census sync should look like this:
 
 
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors
 
-| Service                           | Object Name | Supported? |               Identifiers               |
-| --------------------------------- | ----------: | ---------- | :-------------------------------------: |
-| Customer Match Lists ( Audiences) |    Customer | ✅          | User ID, Mobile ID, Email, Phone Number |
-| Offline Conversions               | Click, Call | ✅          |           Click ID, Caller ID           |
+|    **Object Name** | **Supported?** |   **Identifiers**   | **Behaviors** |
+|-------------------:| ---------- |:-------------------:|---------------|
+|    Custom Audience | ✅          |        Email        | Mirror        |
+| Offline Conversion | ✅          | Any unique identifier | Send          |
 
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Microsoft Ads objects.
+[Contact us](mailto:support@getcensus.com) if you're looking for additional Microsoft Ads objects or behaviors.
 
 
 

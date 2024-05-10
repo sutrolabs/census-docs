@@ -16,8 +16,8 @@ description: This page describes how to use Census with Productboard.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Note | ✅ | Any unique ID | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Note | ✅ | Any unique ID | Add           |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Productboard objects and/or behaviors.
 
