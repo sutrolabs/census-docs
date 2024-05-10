@@ -4,7 +4,7 @@ description: This page describes how to use Census with Freshdesk.
 
 # Freshdesk
 
-## 🗄 Supported Objects and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | Identifiers             | **Behaviors**            |
 | --------------: | :------------: | ----------------------- |--------------------------|

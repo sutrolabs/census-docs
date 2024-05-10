@@ -148,7 +148,7 @@ If the Zendesk API names have not been modified, you can transform the label val
 lower(replace(column_name, ' ', '_'))
 ```
 
-## 🗄 Supported objects and sync behaviors
+## 🗄 Supported objects and sync behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Zendesk objects:
 

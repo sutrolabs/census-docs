@@ -106,7 +106,7 @@ Now go back to your Intercom and go view a record type (Contact or Company) that
 
 That's it! In 5 steps, you've connected Intercom and started syncing customer & product data from your warehouse 🎉
 
-## 🗄 Supported Objects and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Intercom objects.
 

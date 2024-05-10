@@ -98,7 +98,7 @@ When syncing data to conversion events, the **Use timestamp column to identify n
 
 To use this setting, you'll also need to include a column in your database/data source that tracks the latest sync for each record.
 
-## 🔄 Supported Objects and Sync Behaviors
+## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
 | -----------------------: | :------------: | --------------------- |------------------|

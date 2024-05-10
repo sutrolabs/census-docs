@@ -13,7 +13,7 @@ description: This page describes how to use Census with Sprig.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-07 at 2.24.55 PM.png" alt=""><figcaption><p>Get your API key from the Connect page in Sprig.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
 | --------------: | :------------: | ---------------- |------------------|

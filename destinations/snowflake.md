@@ -62,7 +62,7 @@ GRANT USAGE ON SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
 GRANT INSERT, UPDATE, SELECT ON ALL TABLES IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
 ```
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                            |
 | --------------: | :------------: | ---------------------- |------------------------------------------|

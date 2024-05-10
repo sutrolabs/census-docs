@@ -58,7 +58,7 @@ Go to **Account settings** > **Projects** and copy the **Project Key,** **Enviro
 
 <figure><img src="../.gitbook/assets/LaunchDarkly (5).png" alt=""><figcaption></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
 | --------------: | :------------: | --------------------- |------------------|

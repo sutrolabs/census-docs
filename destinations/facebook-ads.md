@@ -82,7 +82,7 @@ If you are setting up a connection with a System User Token when you input your 
 
 **Example:** `act_123456789`
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                                  |      **Behaviors**       |
 |------------------------------------------------------------------------------------------:| :-----------: |------------------------------------------------------------------------------------------------------------------|:------------------------:|

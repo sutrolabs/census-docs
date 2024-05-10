@@ -94,7 +94,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 * You're running an initial sync action that will update many records in Orbit.
 * You have another integration or service that's making API calls to Orbit and using the same API Token.
 
-## 📚 Supported Objects and Sync Behaviors
+## 📚 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |  **Object Name** | **Supported?** | **Sync Keys**              | **Behaviors**    |
 | ---------------: | :------------: | ---------------------------- |------------------|

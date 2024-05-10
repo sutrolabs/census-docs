@@ -12,7 +12,7 @@ description: This page describes how to use Census with Snapchat Ads.
 
 ![Enter your Snapchat credentials to complete the OAuth flow.](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.23.34 PM.png>)
 
-## 🗄 Supported Objects and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name**  |    **Supported?**    | **Identifiers**            | **Behaviors**      |
 |------------------|:--------------------:|----------------------------|--------------------|

@@ -82,7 +82,7 @@ Customer.io is a destination with a fast API that can burst all the way to 600 a
 | ----------- | --------------------- | ------------------------- |
 | Customer.io | 150 / sec             | 7,000                     |
 
-## 🗄️ Supported Objects and Sync Behaviors
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 We currently support all objects of [Customer.io's core API.](https://customer.io/docs/api/#section/Overview)
 

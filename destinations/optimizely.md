@@ -14,7 +14,7 @@ description: This page describes how to use Census with Optimizely.
 <figure><img src="../.gitbook/assets/optimizely1.png" alt=""><figcaption><p>Get your Account ID from the Optimizely app.</p></figcaption></figure>
 <figure><img src="../.gitbook/assets/optimizely2.png" alt=""><figcaption><p>Get your Project ID from the Optimizely app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | --------------: |:--------------:| --------------- |---------------|

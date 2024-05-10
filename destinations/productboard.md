@@ -13,7 +13,7 @@ description: This page describes how to use Census with Productboard.
 
 <figure><img src="../.gitbook/assets/productboard.png" alt=""><figcaption><p>Generate an API token from the Productboard app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- |---------------|

@@ -24,7 +24,7 @@ All of these can be obtained from your Blackhawk Network representative.
 
 You should now be ready to start sending data to Blackhawk Network!
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | :------------: |:-------------:|

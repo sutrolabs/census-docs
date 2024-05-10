@@ -15,7 +15,7 @@ PartnerStack is a partner relationship management platform that helps you manage
 
 <figure><img src="../.gitbook/assets/partnerstack.png" alt=""><figcaption><p>Get your API keys from the PartnerStack app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**                 |
 | --------------: | :------------: | --------------- |-------------------------------|

@@ -31,7 +31,7 @@ In this guide, we will show you how to connect Pipedrive to Census and create yo
 This part of our documentation is still under construction! If you have any questions, please don't hesitate to [contact us](mailto:support@getcensus.com).
 {% endhint %}
 
-## 🗄 Supported Objects <a href="#supported-objects" id="supported-objects"></a> and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | Identifiers                   | **Behaviors**    |
 | --------------: | :------------: | ----------------------------- |------------------|

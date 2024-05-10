@@ -94,7 +94,7 @@ Now go back to your PostHog account and view the event data that should have bee
 
 That's it! In 6 steps, you connected Census to PostHog and started syncing event data from your warehouse to PostHog 🎉
 
-## 🗄 Supported Objects and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following PostHog objects.
 

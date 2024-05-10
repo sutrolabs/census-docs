@@ -85,7 +85,7 @@ The Member ID can be used to mention specific channel members in a Slack message
 
 Example: `<@member_id>`
 
-## 🗄️ Supported Objects and Sync Behaviors
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Identifiers**          | **Behaviors** |
 |-----------------|:--------------:|--------------------------|---------------|

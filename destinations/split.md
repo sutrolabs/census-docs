@@ -13,7 +13,7 @@ description: This page describes how to use Census with Split.
 <figure><img src="../.gitbook/assets/split1.png" alt=""><figcaption><p>Get your admin and SDK API tokens.</p></figcaption></figure>
 <figure><img src="../.gitbook/assets/split2.png" alt=""><figcaption><p>Get the name of your workspace.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- |---------------|

@@ -54,7 +54,7 @@ Census makes use of different Vitally APIs for different operations. You're welc
 * Paste your API Key(s) into the relevant fields
 * Optionally name your new connection and then click **Connect**
 
-## 🗄 Supported Objects and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** |   **Sync Keys**   |         **Behavior**          |
 | --------------: | :------------: | :-------------------: |:-----------------------------:|

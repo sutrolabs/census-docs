@@ -52,7 +52,7 @@ For Firebase (iOS/Android) applications:
 
 You should now be ready to start sending data to Google Analytics 4!
 
-## Supported Objects and Behaviors
+## Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).

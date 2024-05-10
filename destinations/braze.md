@@ -77,7 +77,7 @@ Great! Now let's pull it all together.
 
 After the Connection Test is Green, you're all set and ready to get syncing! 🎉
 
-## 🗄 Supported Objects and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Braze objects.
 

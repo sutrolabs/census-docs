@@ -21,7 +21,7 @@ In order to connect Census to Singular, all that is required is your **SDK Key**
 
 You should now be ready to sync your data to Singular.
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                                                                  **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | -------------------------------------------------------------------------------------------------------------------------------: | :------------: | ------------- |---------------|

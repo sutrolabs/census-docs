@@ -94,7 +94,7 @@ Now go back to ChartMogul, and check that the customer has been updated as expec
 
 That's it! In 6 steps, you've connected Census and started syncing product data from your warehouse to ChartMogul 🎉
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following ChartMogul objects.
 

@@ -76,7 +76,7 @@ With all three pieces of information, return to Census and visit the **Destinati
 
 ![](../.gitbook/assets/screely-1618889184718.png)
 
-## 🔄 Supported Object and Sync Behaviors
+## 🔄 Supported Object and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).

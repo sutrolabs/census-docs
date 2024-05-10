@@ -13,7 +13,7 @@ mParticle is a customer data platform that simplifies how you collect and connec
 
 You should now be ready to start sending data to mParticle!
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors** |
 |----------------:| :------------: | --------------------- |---------------|

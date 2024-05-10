@@ -12,7 +12,7 @@ description: Learn how to use Census to sync your Data Warehouse to Statsig.
 
 <figure><img src="../.gitbook/assets/statsig_api_key.png" alt=""><figcaption><p>Api Key</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
 | --------------: | :------------: | ---------------- |---------------|

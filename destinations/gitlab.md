@@ -12,7 +12,7 @@ description: This page describes how to use Census with GitLab.
 
 <figure><img src="../.gitbook/assets/gitlab.png" alt=""><figcaption><p>Authorize Census to access your GitLab instance.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                      |
 | --------------: | :------------: | ---------------- |------------------------------------|

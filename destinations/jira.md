@@ -90,7 +90,7 @@ Finally, select the fields you want to update in the Mapper in the "Which proper
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects <a href="#supported-objects" id="supported-objects"></a> and Sync Behaviors
+## 🗄️ Supported Objects <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Jira's primary object is an Issue, which we support in Census.​
 

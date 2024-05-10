@@ -68,7 +68,7 @@ After setting up your warehouse, your Census sync should look like this:
 
 
 
-## 🗄 Supported Objects and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |    **Object Name** | **Supported?** |   **Identifiers**   | **Behaviors** |
 |-------------------:| ---------- |:-------------------:|---------------|

@@ -46,7 +46,7 @@ With the SendGrid API key, return to Census and visit the **Destinations** tab. 
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-24 at 5.44.57 PM.png>)
 
-## 🗄 Supported Objects and Sync Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following SendGrid objects.
 

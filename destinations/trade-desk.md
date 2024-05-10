@@ -22,7 +22,7 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 
 <figure><img src="../.gitbook/assets/tradedesk.png" alt=""><figcaption><p>Generate an API Token from the The Trade Desk developer portal.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**            |
 | -----------------------: | :------------: | --------------------- |--------------------------|

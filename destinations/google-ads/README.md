@@ -15,7 +15,7 @@ Connecting to your Google Ads account is straightforward.
 
     <figure><img src="../../.gitbook/assets/Google Ads.png" alt=""><figcaption></figcaption></figure>
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Click the link for more information on each of the services
 

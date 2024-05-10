@@ -11,7 +11,7 @@ description: This page describes how to use Census with TikTok Ads.
 * Click **Connect** and you will be redirected to sign in to your TikTok for Business account.
 * After completing the flow, you'll see your TikTok connection listed on the **Destinations** page.
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**           | **Behaviors**            |
 | --------------: | :------------: |-------------------------|--------------------------|

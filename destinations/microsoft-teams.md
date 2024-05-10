@@ -72,7 +72,7 @@ You'll need to start by specifying how to identify entries in your data warehous
 Reminder: Census will send records to a Teams channel one at a time.
 {% endhint %}
 
-## 🗄️ Supported Objects and Sync Behaviors
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Identifiers**          | **Behaviors** |
 |-----------------|:--------------:|--------------------------|:-------------:|

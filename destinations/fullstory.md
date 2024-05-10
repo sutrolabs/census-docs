@@ -27,24 +27,18 @@ Learn more about FullStory API Keys in their documentation [here](https://help.f
 * Select FullStory in the dropdown list.
 * Paste your FullStory account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | Identifiers                    |
-| --------------: | :------------: | ------------------------------ |
-|            User |        ✅       | uid (FullStory User Unique Id) |
+| **Object Name** | **Supported?** | Identifiers                    |        **Behaviors** |
+| --------------: | :------------: | ------------------------------ | ------------------------------ |
+|            User |        ✅       | uid (FullStory User Unique Id) | Update Only |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for FullStory.
-
-## 🔄 Supported Sync Behaviors
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects and/or sync behaviors for FullStory.
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :---------: |
-|      **Update Only** |        ✅       |     User    |
-| **Update or Create** |       🔜       |     User    |
 
 ## 🚑 Need help connecting to FullStory?
 

@@ -71,7 +71,7 @@ Click the Next button to see a preview of what will happen when you start the sy
 
 You should be able to view your data in Delighted now.
 
-## 🔄 Supported Objects and Sync Behaviors
+## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** |          **Behaviors**           |
 |----------------:| :------------: |:-------------:|:--------------------------------:|

@@ -13,7 +13,7 @@ Eagle Eye is a digital marketing platform that provides a variety of services in
 
 You should now be ready to start syncing data to Eagle Eye!
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | :------------: |:-------------:|

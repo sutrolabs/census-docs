@@ -37,7 +37,7 @@ GRANT USAGE ON SCHEMA "<your schema>" TO CENSUS;
 GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 ```
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                            |
 | --------------: | :------------: | ---------------------- |------------------------------------------|
