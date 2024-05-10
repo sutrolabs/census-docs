@@ -25,7 +25,7 @@ Click the link for more information on each of the services
 |      Click Conversion | ✅ | Google Click ID, Google wBraid, Google gBraid,                | Update or Create |
 | Conversion Adjustment | ✅ | Any unique identifier                                         | Send             |
 |   <a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a> | ✅ | External ID, MAID, Email, First Name, Last Name, Phone Number | Upsert           |
-|   Enhanced Conversion | ✅ | Census Tracking ID                                            | Update or Create |
+|   Enhanced Conversion | ✅ | N/A                                                           | Update or Create |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).

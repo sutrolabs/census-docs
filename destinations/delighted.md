@@ -75,7 +75,7 @@ You should be able to view your data in Delighted now.
 
 | **Object Name** | **Supported?** | **Sync Keys** |          **Behaviors**           |
 |----------------:| :------------: |:-------------:|:--------------------------------:|
-|          Survey |        ✅       |   Unique ID   |               Send               |
+|          Survey |        ✅       |      N/A      |               Send               |
 |       Autopilot |        ✅       |     Email     | Update or Create, Update, Mirror |
 
 {% hint style="info" %}

@@ -90,7 +90,7 @@ We currently support all objects of [Customer.io's core API.](https://customer.i
 | --------------: | :------------: |:------------------------:|:-----------------------------:|
 |          Person |        ✅       |        ID, email         | Update Only, Update or Create |
 |          Device |        ✅       |        Device ID         |       Update or Create        |
-|           Event |        ✅       |    Census Tracking ID    |             Send              |
+|           Event |        ✅       |           N/A            |             Send              |
 |      Collection |        ✅       |           N/A            |            Mirror             |
 |  Manual Segment |        ✅       | ID, Email, CustomerIO ID |   Update or Create, Mirror    |
 
