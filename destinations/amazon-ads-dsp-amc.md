@@ -26,7 +26,7 @@ Connecting to your Amazon Ads account is straightforward.
 |   Hashed Records | ✅ | ID | Update or Create |
 |     DSP Audience | ✅ | ID | Update or Create |
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 

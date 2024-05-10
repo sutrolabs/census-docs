@@ -47,7 +47,7 @@ We support syncing data to Tables in AlloyDB, but they must have a uniqueness co
 | --------------: | :------------: | ---------------------- |--------------------------------------------|
 |         Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add, Mirror |
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 

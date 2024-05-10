@@ -17,7 +17,7 @@ description: Learn how to use Census to sync your Data Warehouse to Blueshift.
 | Customer | ✅ | CustomerId, DeviceId, Cookie, Email | Update or Create |
 | Event | ✅ | CustomerId, EventId, DeviceId, Cookie, Email | Add              |
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 

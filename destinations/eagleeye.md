@@ -19,7 +19,7 @@ You should now be ready to start syncing data to Eagle Eye!
 | --------------: | :------------: | :------------: |:-------------:|
 | Coupon <br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a>        |        ✅      |   Any unique identifier   |      Add      |
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
