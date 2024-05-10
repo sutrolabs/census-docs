@@ -13,12 +13,12 @@ Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/g
 ## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                       |                  |                          |
-| --------------------- |------------------| ------------------------ |
+| --------------------- |------------------|--------------------------|
 | **Object**            | **Behaviors**    | **Identifier**           |
 | Click Conversion      | Update or Create | Click ID, WBRAID, GBRAID |
 | Call Conversion       | Update or Create | Caller ID                |
 | Enhanced Conversion   | Update or Create | Order ID                 |
-| Conversion Adjustment | Send             |                          |
+| Conversion Adjustment | Send             | N/A                      |
 
 {% hint style="info" %}
 Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
