@@ -30,6 +30,10 @@ Custom fields defined in ChurnZero can be added to the sync mapping by manually 
 |         Contact |        ✅       | ContactExternalId     | Update or Create |
 |           Event |        ✅       | Any unique identifier | Send             |
 
+{% hint style="warning" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more ChurnZero objects and/or behaviors.
 
 ## 🚑 Need help connecting to ChurnZero?

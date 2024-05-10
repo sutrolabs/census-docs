@@ -63,6 +63,10 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 |      <p>Event<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event</a></p> |        ✅       |              Unique Event ID              | Send                                                                                             |
 |                                                                                                               User Properties |        ✅       | <p>Client ID or</p><p>App Instance ID</p> | <p>Update Only<br><em><mark style="color:orange;">(ID must already exist in GA4)</mark></em></p> |
 
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Analytics objects and/or behaviors
 
 ## Google Analytics 4 Quirks

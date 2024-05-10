@@ -19,6 +19,10 @@ You should now be ready to start sending data to mParticle!
 |----------------:| :------------: | --------------------- |---------------|
 |   Custom Events |        ✅       | Event Source Message ID | Send          |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more MParticle objects and/or behaviors
 
 ## 🚑 Need help connecting to mParticle?

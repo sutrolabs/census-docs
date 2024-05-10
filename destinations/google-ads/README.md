@@ -27,6 +27,10 @@ Click the link for more information on each of the services
 |   <a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a> | ✅ | External ID, MAID, Email, First Name, Last Name, Phone Number | Upsert           |
 |   Enhanced Conversion | ✅ | Census Tracking ID                                            | Update or Create |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors
 
 ## 🚑 Need help connecting to Google Ads?

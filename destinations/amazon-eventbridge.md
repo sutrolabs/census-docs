@@ -34,6 +34,10 @@ The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/AP
 | --------------: | :------------: | ---------------- |--------------------------------|
 | Event | ✅ | Event ID | Send, Update or Create, Mirror |
 
+{% hint style="warning" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Eventbridge objects and/or behaviors.
 
 ### Event Properties and Formatting

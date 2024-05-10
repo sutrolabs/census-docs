@@ -18,6 +18,10 @@ description: This page describes how to use Census with Impact.
 | --------------: | :------------: | ---------------- |---------------|
 | Conversion | ✅ | Any unique identifier | Send          |
 
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Impact objects and/or behaviors.
 
 ## 🚑 Need help connecting to Impact?

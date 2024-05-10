@@ -30,6 +30,10 @@ You should now be ready to start sending data to Blackhawk Network!
 | --------------: | :------------: | :------------: |:-------------:|
 | Submission      |        ✅      | Any Unique Submission ID |      Add      |
 
+{% hint style="warning" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Blackhawk objects and/or behaviors.
 
 ### Submission Quirks

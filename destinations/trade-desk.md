@@ -33,6 +33,10 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 |             Tracking Tag |        ✅      | Any unique identifier | Update Only, Add         |
 |         CRM Data Segment |        ✅      | Email/Phone           | Update or Create, Mirror |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more The Trade Desk objects and/or behaviors.
 
 ### CRM Data Segment

@@ -39,6 +39,10 @@ Segment support is pretty straight forward! [Let us know](mailto:support@getcens
 | Group | ✅ | Group ID, or User ID / Anonymous ID | Update or Create |
 | Track (Event) | ✅ | Any unique identifier | Send             |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Segment objects and/or behaviors.
 
 ### Track events

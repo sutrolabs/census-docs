@@ -47,6 +47,10 @@ We support syncing data to Tables in AlloyDB, but they must have a uniqueness co
 | --------------: | :------------: | ---------------------- |--------------------------------------------|
 |         Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add, Mirror |
 
+{% hint style="warning" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more AlloyDB objects and/or sync behaviors.
 
 ## 🚦Advanced Network Configuration

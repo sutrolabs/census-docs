@@ -43,6 +43,10 @@ GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 | --------------: | :------------: | ---------------------- |------------------------------------------|
 |         Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Redshift objects and/or behaviors.
 
 ## 🚦Advanced Network Configuration

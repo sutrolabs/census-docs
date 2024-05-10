@@ -18,6 +18,10 @@ description: This page describes how to use Census with Aha.
 | --------------: | :------------: | ---------------- |------------------|
 | Product | ✅ | Reference Prefix | Update Only, Add |
 
+{% hint style="warning" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Aha objects and/or sync behaviors.
 
 ## 🚑 Need help connecting to Aha?

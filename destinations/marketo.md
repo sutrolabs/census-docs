@@ -94,6 +94,10 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 Please be aware that Update Only and Mirror make use of less efficient Marketo APIs and will result in more API usage for the same number of records.
 {% endhint %}
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Marketo objects and/or behaviors
 
 ## 🚑 Need help connecting to Marketo?

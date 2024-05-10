@@ -109,6 +109,10 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User.
 
+{% hint style="warning" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Amplitude objects and/or behaviors.
 
 ### Working with Amplitude's Data Model

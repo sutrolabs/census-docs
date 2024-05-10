@@ -22,6 +22,10 @@ PartnerStack is a partner relationship management platform that helps you manage
 | Customer | ✅ | Customer Key | Update or Create, Update Only |
 | Transaction   <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) | ✅ | Unique Identifier | Send      <br/>                    |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Partner Stack objects and/or behaviors
 
 ### Transactions

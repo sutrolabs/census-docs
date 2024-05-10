@@ -26,6 +26,10 @@ Connecting to your Amazon Ads account is straightforward.
 |   Hashed Records | ✅ | ID | Update or Create |
 |     DSP Audience | ✅ | ID | Update or Create |
 
+{% hint style="warning" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Ads objects and/or behaviors.
 
 ### Conversion Events

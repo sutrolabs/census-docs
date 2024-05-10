@@ -20,6 +20,10 @@ description: This page describes how to use Census with Sprig.
 | Event | ✅ | Any unique identifier | Send             |
 | User | ✅ | User ID | Update or Create |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sprig objects and/or behaviors.
 
 ## 🚑 Need help connecting to Sprig?

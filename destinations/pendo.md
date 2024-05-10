@@ -70,11 +70,11 @@ Census currently supports syncing to the following Pendo objects.
 |         Visitor |        ✅       | Visitor ID                            |  Update Only  |
 |     Track Event |        ✅       | N/A |     Send      |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Pendo objects and/or behaviors
-
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Pendo objects and/or behaviors
 
 ## 🚑 Need help connecting to Pendo?
 

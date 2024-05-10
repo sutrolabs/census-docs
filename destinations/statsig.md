@@ -18,6 +18,10 @@ description: Learn how to use Census to sync your Data Warehouse to Statsig.
 | --------------: | :------------: | ---------------- |---------------|
 | Event | ✅ | Event ID | Add           |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Statsig objects and/or behaviors.
 
 ## 🚑 Need help connecting to Statsig?

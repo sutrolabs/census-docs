@@ -36,6 +36,10 @@ Follow the OAuth flow to connect HubSpot. Easy!
 | Email          |        ✅       | N/A                               | Send                                  |
 | Ticket          |        ✅       | Record ID                         | Send                                  |
 
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Hubspot objects and/or behaviors
 
 ### Custom Objects

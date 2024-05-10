@@ -32,6 +32,10 @@ You should now be ready to sync your data to Bloomreach.
 |                                                                                                                      Customer |        ✅       | Registered (Hard ID), Cookie (Soft ID) | Update or Create |
 | <p>Event<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Event ID                               | Send             |
 
+{% hint style="warning" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Bloomreach objects and/or behaviors.
 
 #### Customer object quirks

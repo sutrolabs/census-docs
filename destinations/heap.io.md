@@ -104,11 +104,11 @@ Click the Next button to see the final preview, which will have a recap of what 
 | User            |        ✅       | Identity        | Update or Create |
 | Event           |        ✅       | Insert ID       | Send             |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Heap.io objects and/or behaviors
-
 {% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Heap.io objects and/or behaviors
 
 
 ## 🚑 Need help connecting to Heap.io?

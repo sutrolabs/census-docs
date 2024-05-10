@@ -19,6 +19,10 @@ description: This page describes how to use Census with Split.
 | --------------: | :------------: | ---------------- |---------------|
 | Event | ✅ | Any unique identifier | Send          |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Split objects and/or behaviors.
 
 ## 🚑 Need help connecting to Split?

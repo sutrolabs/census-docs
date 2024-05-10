@@ -122,11 +122,11 @@ Census currently supports syncing to the following Intercom objects.
 If you're finding Companies missing in Intercom after a sync, make sure the company also has users associated with them. By default, Intercom hides companies with no associated users.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Intercom objects and/or behaviors
-
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Intercom objects and/or behaviors
 
 ### :x: Deleting Objects
 

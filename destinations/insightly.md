@@ -18,6 +18,10 @@ description: This page describes how to use Census with Insightly.
 |------------------------------------------------------------------------------------------------------------:| :------------: | :------------: |:----------------:|
 |                                                                                                   Behaviors |        ✅      | Contact ID, Email | Update Only, Add |
 
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Insightly objects and/or behaviors.
 
 ## 🚑 Need help connecting to Insightly?

@@ -104,6 +104,10 @@ Salesforce support is pretty straight forward!
 |      Opportunity Contact Role      |  ✅  |    Any unique identifier     |                            Add                             |
 |       Email Message Relation       |  ✅  |    Any unique identifier     |                            Add                             |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Salesforce objects and/or behaviors.
 
 ### **Syncing to OpportunityContactRole**

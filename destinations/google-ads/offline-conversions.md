@@ -20,11 +20,11 @@ Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/g
 | Enhanced Conversion   | Update or Create | Order ID                 |
 | Conversion Adjustment | Send             |                          |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors
-
 {% hint style="info" %}
 Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors
 
 ## Sync Offline Click and Call Conversions with Census
 

@@ -30,6 +30,10 @@ description: This page describes how to use Census with Vero Cloud.
 |           Event |        ✅       | Event ID (optional) | Send             |
 |            User |        ✅       | Email               | Update or Create |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Vero Cloud objects and/or behaviors.
 
 ## 🚑 Need help connecting to Vero Cloud?
