@@ -74,9 +74,9 @@ Reminder: Census will send records to a Teams channel one at a time.
 
 ## 🗄️ Supported Objects and Sync Behaviors
 
-| Object Name | Supported? | Identifiers              | **Behaviors** |
-| ----------- | :--------: | ------------------------ |:-------------:|
-| Messsage    |     ✅     | Custom message template. |     Send      |
+| **Object Name** | **Supported?** | **Identifiers**          | **Behaviors** |
+|-----------------|:--------------:|--------------------------|:-------------:|
+| Messsage        |       ✅        | Custom message template. |     Send      |
 
 {% hint style="info" %}
 Census can send data to **all** public channels and any private channels that Census has been explicitly invited to (e.g. `/invite @census`).
