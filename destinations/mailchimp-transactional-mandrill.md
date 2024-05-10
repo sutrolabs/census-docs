@@ -18,8 +18,8 @@ To connect Census to Mailchimp Transactional (Mandrill), you'll need an API Key.
 ## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Identifiers** | **Behaviors** |
-| --------------: | :------------: | :-----------: | :-----------: |
-| Send via Message Template |        ✅       | Unique identifier for each send | Append |
+| --------------: | :------------: | :-----------: |:-------------:|
+| Send via Message Template |        ✅       | Unique identifier for each send |     Send      |
 
 ### Send Emails via Message Templates
 

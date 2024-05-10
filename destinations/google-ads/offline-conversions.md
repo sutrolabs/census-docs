@@ -13,12 +13,12 @@ Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/g
 ## 🔄 Supported Objects & Behaviors
 
 |                       |                  |                          |
-| --------------------- | ---------------- | ------------------------ |
+| --------------------- |------------------| ------------------------ |
 | **Object**            | **Behaviors**    | **Identifier**           |
 | Click Conversion      | Update or Create | Click ID, WBRAID, GBRAID |
 | Call Conversion       | Update or Create | Caller ID                |
 | Enhanced Conversion   | Update or Create | Order ID                 |
-| Conversion Adjustment | Append           |                          |
+| Conversion Adjustment | Send             |                          |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
 
@@ -81,7 +81,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the "**How should changes to the source be synced?"** section
 
-* **Append** will be selected by default
+* **Send** will be selected by default
 * Pick the right mapping key, the **Google Click ID** in your model
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the fields from your model to the properties of the Click or Call Conversion.

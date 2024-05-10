@@ -67,7 +67,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the " **How do you want to update the destination?"** section
 
-* **Append** will automatically be chosen
+* **Send** will automatically be chosen
 * Choose the **Unique ID** Column
 * Decide if you'd like to turn on **Use timestamp column to identify new data**.
   * This can be more efficient for large or frequently changing data sets. More info can be found in this [doc](../basics/data-defining/defining-source-data/events.md#using-timestamp-to-identify-new-records).

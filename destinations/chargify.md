@@ -95,7 +95,7 @@ Next up is the "Where do you want to sync data to?" section.
 
 For the " How should changes to the source be synced?" section.&#x20;
 
-* Select Append
+* Select Send
 * Pick a unique identifier for the billable events.&#x20;
 
 Now we'll start mapping fields. Chargify requires two fields to be mapped, the target Stream API Handle which we retrieved earlier as well as a timestamp for the event.&#x20;

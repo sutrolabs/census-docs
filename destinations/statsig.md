@@ -15,8 +15,8 @@ description: Learn how to use Census to sync your Data Warehouse to Statsig.
 ## 🔀 Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Event | ✅ | Event ID | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Event | ✅ | Event ID | Add           |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Statsig objects and/or behaviors.
 

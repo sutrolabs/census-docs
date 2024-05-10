@@ -77,7 +77,7 @@ Great! Now let's pull it all together.
 
 After the Connection Test is Green, you're all set and ready to get syncing! 🎉
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors
 
 Census currently supports syncing to the following Braze objects.
 
@@ -96,6 +96,10 @@ Census supports custom fields on both Braze User and Event objects. Additionally
 
 * [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
 * [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 ### Working with User Aliases
 
@@ -162,14 +166,6 @@ API Triggered Campaign and Canvas Entries are useful for triggering transactiona
 You can [read more about Braze API-Triggered Campaigns](https://www.braze.com/docs/user\_guide/engagement\_tools/campaigns/building\_campaigns/delivery\_types/api\_triggered\_delivery/) and Canvas Entries in their documentation.
 
 <figure><img src="../.gitbook/assets/Braze Options.png" alt=""><figcaption></figcaption></figure>
-
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-<table data-header-hidden><thead><tr><th width="187" align="right"></th><th width="169.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center"><a href="https://docs.getcensus.com/basics/alerts#sync-alerts">✅</a></td><td align="center">User, Cohort, Catalog</td></tr><tr><td align="right"><strong>Update</strong></td><td align="center">✅</td><td align="center">Catalog, Cohort, User</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Event, Purchase Event, Cohort, API-Triggered Campaign and Canvas Entry</td></tr><tr><td align="right"><strong>Mirror</strong></td><td align="center">✅</td><td align="center">User, Subscription Group Membership, Cohort, Catalog</td></tr><tr><td align="right"><strong>Delete</strong></td><td align="center">✅</td><td align="center">User</td></tr></tbody></table>
 
 ### Mirror Mode Options
 

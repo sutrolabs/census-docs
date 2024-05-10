@@ -106,13 +106,13 @@ Salesforce support is pretty straight forward!
 
 ### **Syncing to OpportunityContactRole**
 
-The OpportunityContactRole in Salesforce is a bit weird. It doesn't actually support External ID fields like every other object in Salesforce, which means that Census cannot support most typical operations. For this, and only this object type Census supports an Append sync with a very specific configuration. This is definitely advanced mode so if you need help with these steps, please get in contact with Census Support.
+The OpportunityContactRole in Salesforce is a bit weird. It doesn't actually support External ID fields like every other object in Salesforce, which means that Census cannot support most typical operations. For this, and only this object type Census supports an Add sync with a very specific configuration. This is definitely advanced mode so if you need help with these steps, please get in contact with Census Support.
 
 1. On your source data model, you'll need to create a unique identifier for each record of the relationship you want to create with OpportunityContactRole. This can simply be `CONCAT(opportunity_id, contact_id)` as part of your data model. Your data model should also still include `opportunity_id`, `contact_id`, and `contact_email`, as well as any other fields you want to eventually pass to Salesforce. **Pro tip:** Your model should exclude any records where either the Opportunity or Contact are `null`.
 2. Inside Salesforce, you'll need to add a new field to the OpportunityContactRole object. The API name of the field **must** be `census_tracking_id__c`, though you can provide whatever label you want.
 3. Now you can set up your sync!
    1. Select your data source and target OpportunityContactRole in your Salesforce connection.
-   2. Your sync will be an [append sync](../basics/core-concept/#sync-behaviors) meaning that Census can create OpportunityContactRole relations, but won't update or remove them.
+   2. Your sync will be an [add sync](../basics/core-concept/#sync-behaviors) meaning that Census can create OpportunityContactRole relations, but won't update or remove them.
    3. For Primary Identifier, you'll select the column you created in Step 1. Behind the scenes, Census will use the Salesforce field you created in Step 2 to make sure we're not creating any duplicate relationships.
    4. In the sync mappings, make sure to set both the Opportunity Lookup with `opportunity_id` as well as Contact lookup either using either Contact `contact_id` or `contact_email`. You can also map any other fields you want on the OpportunityContactRole.
    5. Make sure you press the **Refresh Fields** button one last time to pick up all the new fields you created.

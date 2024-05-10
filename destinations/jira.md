@@ -73,7 +73,7 @@ Next up is the "Where do you want to sync data to?" section.
 
 ![Select which object you want to sync to](../.gitbook/assets/screely-1660216997483.png)
 
-For the "How do you want to update the destination?" section, Append is the only option at this time.
+For the "How do you want to update the destination?" section, Add is the only option at this time.
 
 For the "How are source records identified?" section, there are two options:
 

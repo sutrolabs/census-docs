@@ -64,11 +64,11 @@ And you're all set and ready to get syncing! 🎉
 
 Census currently supports syncing to the following Pendo objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**                        | **Behaviors** |
-| --------------: | :------------: | -------------------------------------- |:-------------:|
-|         Account |        ✅       | Account ID                             |  Update Only  |
-|         Visitor |        ✅       | Visitor ID                             |  Update Only  |
-|     Track Event |        ✅       | N/A (only supports _Append_ operation) |     Send      |
+| **Object Name** | **Supported?** | **Sync Keys**                       | **Behaviors** |
+| --------------: | :------------: | ------------------------------------- |:-------------:|
+|         Account |        ✅       | Account ID                            |  Update Only  |
+|         Visitor |        ✅       | Visitor ID                            |  Update Only  |
+|     Track Event |        ✅       | N/A |     Send      |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects or Sync Behaviors for Pendo.
 

@@ -32,7 +32,6 @@ Learn more about FullStory API Keys in their documentation [here](https://help.f
 | **Object Name** | **Supported?** | Identifiers                    |
 | --------------: | :------------: | ------------------------------ |
 |            User |        ✅       | uid (FullStory User Unique Id) |
-|           Event |       🔜       |                                |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for FullStory.
 
@@ -46,7 +45,6 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 | -------------------: | :------------: | :---------: |
 |      **Update Only** |        ✅       |     User    |
 | **Update or Create** |       🔜       |     User    |
-|           **Append** |       🔜       |    Event    |
 
 ## 🚑 Need help connecting to FullStory?
 

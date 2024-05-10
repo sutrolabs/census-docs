@@ -66,7 +66,7 @@ The sync will move data from your warehouse to X Ads. In this step, you'll defin
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose **X Ads** as the **Connection** and an **Object** in X Ads. Based on the selected object, your sync options will vary. See [Supported Objects](twitter.md#supported-objects)
-4. (When syncing conversion events) Under **How do you want to update the destination?**, choose **Append**. See [Supported sync behaviors](twitter.md#supported-sync-behaviors).
+4. (When syncing conversion events) Under **How do you want to update the destination?**, choose **Send**. See [Supported sync behaviors](twitter.md#supported-sync-behaviors).
 5. (When syncing conversion events) Under **How are source records identified?**, select a column from the model that serves as a unique ID for each record. If needed, turn on the **Use timestamp column** setting and select a property from the model. This setting allows the sync to skip records that have not changed (according to the timestamp) since the last sync.
 6. (When syncing audiences) Under **How should we identify audience members?**, specify how Census should match audience members in X Ads to records in the model.
 7. (When syncing audiences) Under **Audience Sync**, select an existing X Ads audience or create a new audience list in X Ads. If the audience list includes members that don't have matching records in your model, Census will remove those members from the list.

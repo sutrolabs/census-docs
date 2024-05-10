@@ -79,7 +79,7 @@ Next up is the "Where do you want to sync data to?" section.
 
 For the "How should changes to the source be synced?" section.
 
-* For Account and User select Update or Create or select Append for an Event sync
+* For Account and User select Update or Create or select Send for an Event sync
 
 ![](<../.gitbook/assets/Screen Shot 2022-03-31 at 11.46.19 AM.png>)
 
