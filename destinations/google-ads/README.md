@@ -19,13 +19,13 @@ Connecting to your Google Ads account is straightforward.
 
 Click the link for more information on each of the services
 
-|       **Object Name** | **Supported?** | **Sync Keys**                                                 | **Behaviors** |
-|----------------------:| :------------: |---------------------------------------------------------------|---------------|
-|       Call Conversion | ✅ | Caller ID                                                     | Upsert        |
-|      Click Conversion | ✅ | Google Click ID, Google wBraid, Google gBraid,                | Upsert        |
-| Conversion Adjustment | ✅ | Any unique identifier                                         | Send          |
-|   <a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a> | ✅ | External ID, MAID, Email, First Name, Last Name, Phone Number | Upsert        |
-|   Enhanced Conversion | ✅ | Census Tracking ID                                            | Upsert        |
+|       **Object Name** | **Supported?** | **Sync Keys**                                                 | **Behaviors**    |
+|----------------------:| :------------: |---------------------------------------------------------------|------------------|
+|       Call Conversion | ✅ | Caller ID                                                     | Update or Create |
+|      Click Conversion | ✅ | Google Click ID, Google wBraid, Google gBraid,                | Update or Create |
+| Conversion Adjustment | ✅ | Any unique identifier                                         | Send             |
+|   <a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a> | ✅ | External ID, MAID, Email, First Name, Last Name, Phone Number | Upsert           |
+|   Enhanced Conversion | ✅ | Census Tracking ID                                            | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
 

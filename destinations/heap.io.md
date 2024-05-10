@@ -98,11 +98,11 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 ## 🗄️ Supported Objects and Sync Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
-| --------------- | :------------: | --------------- |---------------|
-| Account         |        ✅       | Account ID      | Upsert        |
-| User            |        ✅       | Identity        | Upsert        |
-| Event           |        ✅       | Insert ID       | Send          |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
+| --------------- | :------------: | --------------- |------------------|
+| Account         |        ✅       | Account ID      | Update or Create |
+| User            |        ✅       | Identity        | Update or Create |
+| Event           |        ✅       | Insert ID       | Send             |
 
 🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects or Sync Behaviors for this destination
 

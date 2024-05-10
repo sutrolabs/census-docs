@@ -100,12 +100,12 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 ## 🗄️ Supported Objects
 
-|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-|-----------------:| :------------: | ---------------- |---------------|
-| Devices | ✅ | Device ID | Upsert        |
-|   Users | ✅ | User ID | Upsert        |
-|     Groups | ✅ | Group Value | Upsert        |
-|     Events | ✅ | Insert ID | Send          |
+|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+|-----------------:| :------------: | ---------------- |------------------|
+| Devices | ✅ | Device ID | Update or Create |
+|   Users | ✅ | User ID | Update or Create           |
+|     Groups | ✅ | Group Value | Update or Create           |
+|     Events | ✅ | Insert ID | Send             |
 
 🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
 

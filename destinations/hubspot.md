@@ -22,19 +22,19 @@ Follow the OAuth flow to connect HubSpot. Easy!
 
 ## 🗄 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**                     | **Behaviors**               |
-|-----------------| :------------: |-----------------------------------|-----------------------------|
-| Company         |        ✅       | Object ID, any Text/Number        | Update Only, Upsert, Mirror |
-| Contact            |        ✅       | Object ID, Email, any Text/Number | Update Only, Upsert, Mirror |
-| Contact & Static List           |        ✅       | Email                             | Update Only, Upsert, Mirror |
-| Deal           |        ✅       | Object ID, any Text/Number        | Update Only, Upsert, Mirror |
-| Product           |        ✅       | Object ID, any Text/Number        | Update Only, Upsert, Mirror |
-| Line Item           |        ✅       | Object ID, any Text/Number        | Update Only, Upsert, Mirror |
-| Custom Object           |        ✅       | Object ID, any searchableProperty | Update Only, Upsert, Mirror |
-| Subscription Preferences           |        ✅       | Email                             | Mirror                      |
-| Custom Behavioral Event          |        ✅       | Unique Event ID                   | Send                        |
-| Email          |        ✅       | N/A                               | Send                        |
-| Ticket          |        ✅       | Record ID                         | Send                        |
+| **Object Name** | **Supported?** | **Sync Keys**                     | **Behaviors**                         |
+|-----------------| :------------: |-----------------------------------|---------------------------------------|
+| Company         |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror |
+| Contact            |        ✅       | Object ID, Email, any Text/Number | Update Only, Update or Create, Mirror           |
+| Contact & Static List           |        ✅       | Email                             | Update Only, Update or Create, Mirror           |
+| Deal           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
+| Product           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
+| Line Item           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
+| Custom Object           |        ✅       | Object ID, any searchableProperty | Update Only, Update or Create, Mirror           |
+| Subscription Preferences           |        ✅       | Email                             | Mirror                                |
+| Custom Behavioral Event          |        ✅       | Unique Event ID                   | Send                                  |
+| Email          |        ✅       | N/A                               | Send                                  |
+| Ticket          |        ✅       | Record ID                         | Send                                  |
 
 [Contact us](mailto:support@getcensus.com) if you're looking for Census to support other HubSpot objects or sync behaviors.
 

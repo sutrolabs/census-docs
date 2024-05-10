@@ -24,9 +24,9 @@ Your Kafka instance must be accessable to the public internet in order for Censu
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**        |
-| --------------: | :------------: | --------------------- |----------------------|
-|         Message |        ✅       | Any unique identifier | Send, Upsert, Mirror |
+| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**                  |
+| --------------: | :------------: | --------------------- |--------------------------------|
+|         Message |        ✅       | Any unique identifier | Send, Update or Create, Mirror |
 
 ### Message Properties
 

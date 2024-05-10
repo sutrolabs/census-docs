@@ -39,7 +39,7 @@ GRANT USAGE ON SCHEMA "<your schema>" TO CENSUS;
 GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 ```
 
-## 🗄️ Supported Objects and Behaviors <a href="#supported-objects" id="supported-objects"></a>
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 We support syncing data to Tables in AlloyDB, but they must have a uniqueness constraint on a column. ​
 
@@ -47,7 +47,7 @@ We support syncing data to Tables in AlloyDB, but they must have a uniqueness co
 | --------------: | :------------: | ---------------------- |--------------------------------------------|
 |         Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add, Mirror |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for AlloyDB.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more AlloyDB objects and/or sync behaviors.
 
 ## 🚦Advanced Network Configuration
 

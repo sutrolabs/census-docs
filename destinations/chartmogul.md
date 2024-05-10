@@ -98,11 +98,11 @@ That's it! In 6 steps, you've connected Census and started syncing product data 
 
 Census currently supports syncing to the following ChartMogul objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | :------------: |:--------------:|
-| Customer      |        ✅      | Data Source ID + External ID (both are required) | Upsert, Update |
-| Invoice      |        ✅      | External ID |      Add       |
-| Transaction      |        ✅      | External ID |      Add       |
+| **Object Name** | **Supported?** | **Sync Keys**  |      **Behaviors**       |
+| --------------: | :------------: | :------------: |:------------------------:|
+| Customer      |        ✅      | Data Source ID + External ID (both are required) | Update or Create, Update |
+| Invoice      |        ✅      | External ID |           Add            |
+| Transaction      |        ✅      | External ID |           Add            |
 
 {% hint style="info" %}
 Syncs to the ChartMogul **Customer** object require both the Data Source ID and the External ID to ensure the customer is updated or created as expected. This is necessary because External IDs can be duplicated across Data Sources. You can find the Data Source ID by navigating to [this page](https://t.sidekickopen01.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CX6NGW35QNwB7tCtH0Vs7zDQ8qd1Kwf197v5Y04?te=W3R5hFj4cm2zwW3zfPSj3F7xMPW4fKXXf4hHZdBW43T4MG1LwsHHW3yLX3g3zhrVDW49NLhq3zhrqJF4cNcV-W1v31\&si=8000000017473620\&pi=3d1e4afe-99d8-4b66-b041-de8a431bfb88) in ChartMogul and clicking the gear icon next to the desired Data Source.

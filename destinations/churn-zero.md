@@ -24,11 +24,11 @@ Custom fields defined in ChurnZero can be added to the sync mapping by manually 
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors** |
-| --------------: | :------------: | --------------------- |---------------|
-|         Account |        ✅       | AccountExternalId     | Upsert        |
-|         Contact |        ✅       | ContactExternalId     | Upsert        |
-|           Event |        ✅       | Any unique identifier | Send          |
+| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
+| --------------: | :------------: | --------------------- |------------------|
+|         Account |        ✅       | AccountExternalId     | Update or Create |
+|         Contact |        ✅       | ContactExternalId     | Update or Create |
+|           Event |        ✅       | Any unique identifier | Send             |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more ChurnZero objects and/or behaviors.
 

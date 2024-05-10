@@ -18,13 +18,15 @@ Connecting to your Amazon Ads account is straightforward.
 3. Complete the OAuth flow. Make sure your are signed into a user account that has permissions to both view all of your accounts, as well as submit data to them (read only accounts will not work).
 4. Select the Ads account you wish to use with Census. If you'd like to sync to multiple accounts, you will need to add each as its own destination.
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-|-----------------:| :------------: | ---------------- |----------------|
-| Conversion Event | ✅ | Event Unique ID | Send           |
-|   Hashed Records | ✅ | ID | Update, Create |
-|     DSP Audience | ✅ | ID | Update, Create |
+|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+|-----------------:| :------------: | ---------------- |------------------|
+| Conversion Event | ✅ | Event Unique ID | Send             |
+|   Hashed Records | ✅ | ID | Update or Create |
+|     DSP Audience | ✅ | ID | Update or Create |
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Ads objects and/or behaviors.
 
 ### Conversion Events
 

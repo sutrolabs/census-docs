@@ -73,10 +73,10 @@ You should be able to view your data in Delighted now.
 
 ## 🔄 Supported Objects and Sync Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys** |     **Behaviors**      |
-|----------------:| :------------: |:-------------:|:----------------------:|
-|          Survey |        ✅       |   Unique ID   |          Send          |
-|       Autopilot |        ✅       |     Email     | Upsert, Update, Mirror |
+| **Object Name** | **Supported?** | **Sync Keys** |          **Behaviors**           |
+|----------------:| :------------: |:-------------:|:--------------------------------:|
+|          Survey |        ✅       |   Unique ID   |               Send               |
+|       Autopilot |        ✅       |     Email     | Update or Create, Update, Mirror |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).

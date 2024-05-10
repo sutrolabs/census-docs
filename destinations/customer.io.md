@@ -86,13 +86,13 @@ Customer.io is a destination with a fast API that can burst all the way to 600 a
 
 We currently support all objects of [Customer.io's core API.](https://customer.io/docs/api/#section/Overview)
 
-| **Object Name** | **Supported?** |      **Sync Keys**       |    **Behaviors**    |
-| --------------: | :------------: |:------------------------:|:-------------------:|
-|          Person |        ✅       |        ID, email         | Update Only, Upsert |
-|          Device |        ✅       |        Device ID         |       Upsert        |
-|           Event |        ✅       |    Census Tracking ID    |        Send         |
-|      Collection |        ✅       |           N/A            |       Mirror        |
-|  Manual Segment |        ✅       | ID, Email, CustomerIO ID |   Upsert, Mirror    |
+| **Object Name** | **Supported?** |      **Sync Keys**       |         **Behaviors**         |
+| --------------: | :------------: |:------------------------:|:-----------------------------:|
+|          Person |        ✅       |        ID, email         | Update Only, Update or Create |
+|          Device |        ✅       |        Device ID         |       Update or Create        |
+|           Event |        ✅       |    Census Tracking ID    |             Send              |
+|      Collection |        ✅       |           N/A            |            Mirror             |
+|  Manual Segment |        ✅       | ID, Email, CustomerIO ID |   Update or Create, Mirror    |
 
 {% hint style="warning" %}
 Make sure you know what identifiers are used in your Customer.io Workspace!

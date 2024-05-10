@@ -31,7 +31,7 @@ Census makes use of different Vitally APIs for different operations. You're welc
 
 #### **Analytics API**&#x20;
 
-* Required for Update and Create (a.k.a. "Upsert") and Send syncs
+* Required for Update or Create (a.k.a. "Upsert") and Send syncs
 * Navigate to `https://[your-domain].vitally.io/integrations/api`
 * Select **Integration via HTTPS API**
 * Copy the **API Key**

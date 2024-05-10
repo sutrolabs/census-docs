@@ -81,16 +81,16 @@ After the Connection Test is Green, you're all set and ready to get syncing! �
 
 Census currently supports syncing to the following Braze objects.
 
-|               **Object Name** | **Supported?** |                                               **Sync Keys**                                                |         **Behaviors**          |
-|------------------------------:| :------------: |:----------------------------------------------------------------------------------------------------------:|:------------------------------:|
-|                         Event |        ✅      |                                                  Event ID                                                  |              Send              |
-|                Purchase Event |        ✅      |                                           Any Unique Identifier                                            |              Send              |
-|        API-Triggered Campaign |        ✅      |                                              External User ID                                              |              Send              |
-|    API-Triggered Canvas Entry |        ✅      |                                              External User ID                                              |              Send              |
-|                       Catalog |        ✅      |                                                 Catalog ID                                                 |     Upsert, Update, Mirror     |
-|                        Cohort |        ✅      |                                              External User ID                                              |             Upsert             |
-| Subscription Group Membership |        ✅      | <a href="https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships">See Here</a>  |             Mirror             |
-|                          User |        ✅      |                                              External User ID &#x26; User Alias                                              | Upsert, Update, Delete, Mirror |
+|               **Object Name** | **Supported?** |                                               **Sync Keys**                                                |              **Behaviors**               |
+|------------------------------:| :------------: |:----------------------------------------------------------------------------------------------------------:|:----------------------------------------:|
+|                         Event |        ✅      |                                                  Event ID                                                  |                   Send                   |
+|                Purchase Event |        ✅      |                                           Any Unique Identifier                                            |                   Send                   |
+|        API-Triggered Campaign |        ✅      |                                              External User ID                                              |                   Send                   |
+|    API-Triggered Canvas Entry |        ✅      |                                              External User ID                                              |                   Send                   |
+|                       Catalog |        ✅      |                                                 Catalog ID                                                 |     Update or Create, Update, Mirror     |
+|                        Cohort |        ✅      |                                              External User ID                                              |             Update or Create             |
+| Subscription Group Membership |        ✅      | <a href="https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships">See Here</a>  |                  Mirror                  |
+|                          User |        ✅      |                                              External User ID &#x26; User Alias                                              | Update or Create, Update, Delete, Mirror |
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-defining/defining-source-data/structured-data.md) to Braze:
 

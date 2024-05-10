@@ -14,10 +14,10 @@ description: This page describes how to use Census with Drip.
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- |---------------|
-| Event | ✅ | Any unique identifier | Send          |
-| Person | ✅ | ID, Visitor UUID, Email | Upsert        |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Event | ✅ | Any unique identifier | Send             |
+| Person | ✅ | ID, Visitor UUID, Email | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Drip objects and/or behaviors.
 

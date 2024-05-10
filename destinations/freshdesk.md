@@ -6,11 +6,11 @@ description: This page describes how to use Census with Freshdesk.
 
 ## 🗄 Supported Objects and Sync Behaviors
 
-| **Object Name** | **Supported?** | Identifiers             | **Behaviors**           |
-| --------------: | :------------: | ----------------------- |-------------------------|
-|         Contact |        ✅       | User ID, Email, Twitter | Upsert, Update          |
-|         Company |       ✅       |                         | Upsert, Update |
-|          Ticket |       ✅       |                         | Add                     |
+| **Object Name** | **Supported?** | Identifiers             | **Behaviors**            |
+| --------------: | :------------: | ----------------------- |--------------------------|
+|         Contact |        ✅       | User ID, Email, Twitter | Update or Create, Update |
+|         Company |       ✅       |                         | Update or Create, Update |
+|          Ticket |       ✅       |                         | Add                      |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects or sync behaviors for Freshdesk.
 

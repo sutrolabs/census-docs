@@ -13,13 +13,13 @@ description: This page describes how to use Census with Airship.
 
 <figure><img src="../.gitbook/assets/airship.png" alt=""><figcaption><p>Generate an API key from the Airship app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-|----------------:| :------------: | ---------------- |---------------|
-|     Static List | ✅ | Channel-specific ID | Mirror        |
-|           Event | ✅ | Census Tracking ID | Send          |
-|   Email Channel | ✅ | Email Address | Upsert        |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+|----------------:| :------------: | ---------------- |------------------|
+|     Static List | ✅ | Channel-specific ID | Mirror           |
+|           Event | ✅ | Census Tracking ID | Send             |
+|   Email Channel | ✅ | Email Address | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Airship objects and/or behaviors.
 

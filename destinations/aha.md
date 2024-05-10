@@ -12,13 +12,13 @@ description: This page describes how to use Census with Aha.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-07 at 2.11.03 PM.png" alt=""><figcaption><p>Generate an API key from the Aha app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
 | --------------: | :------------: | ---------------- |------------------|
 | Product | ✅ | Reference Prefix | Update Only, Add |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Aha objects and/or behaviors.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Aha objects and/or sync behaviors.
 
 ## 🚑 Need help connecting to Aha?
 
