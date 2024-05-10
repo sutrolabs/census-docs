@@ -12,11 +12,15 @@ description: Learn how to use Census to sync your Data Warehouse to Statsig.
 
 <figure><img src="../.gitbook/assets/statsig_api_key.png" alt=""><figcaption><p>Api Key</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Event | ✅ | Event ID | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Event | ✅ | Event ID | Add           |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Statsig objects and/or behaviors.
 

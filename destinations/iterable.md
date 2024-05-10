@@ -22,16 +22,20 @@ You'll also need to know your Iterable region. This is not currently displayed i
 
 Back in Census, navigate to the Destinations page and click **Add Destination**. Select Iterable from the list of destinations. Provide your API Key and select your region. Finally click **Save**.
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | -------------- | -------------- |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                 |
+| --------------: | :------------: | -------------- |-------------------------------|
 |            User |        ✅       | User ID, Email | Update or Create, Update Only |
-|           Event |        ✅       | Event ID       | Append         |
-|         Catalog |        ✅       | Key            | Update or Create, Mirror |
-|     Static List |        ✅       | User ID, Email | Mirror         |
+|           Event |        ✅       | Event ID       | Send                          |
+|         Catalog |        ✅       | Key            | Update or Create, Mirror      |
+|     Static List |        ✅       | User ID, Email | Mirror                        |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Iterable objects and/or behaviors
 
 ### Handling Nested Objects
 

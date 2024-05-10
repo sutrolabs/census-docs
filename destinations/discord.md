@@ -13,11 +13,15 @@ description: This page describes how to use Census with Discord.
 
 <figure><img src="../.gitbook/assets/discord.png" alt=""><figcaption><p>Get your webhook URL from the Discord app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
-| --------------: | :------------: | ---------------- | ------------------- |
-| Webhook | ✅ | N/A | Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | ---------------- |---------------|
+| Webhook | ✅ | N/A | Send          |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Discord objects and/or behaviors.
 

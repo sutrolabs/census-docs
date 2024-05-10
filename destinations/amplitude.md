@@ -98,18 +98,22 @@ Finally, select the fields you want to update in the Mapper in the "Which Fields
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| Object Name | Supported? | Identifiers |
-| ----------- | :--------: | ----------- |
-| Devices     |      ✅     | Device ID   |
-| Users       |      ✅     | User ID     |
-| Groups      |      ✅     | Group Value |
-| Events      |      ✅     | Insert ID   |
-
-🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
+|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+|-----------------:| :------------: | ---------------- |------------------|
+| Devices | ✅ | Device ID | Update or Create |
+|   Users | ✅ | User ID | Update or Create           |
+|     Groups | ✅ | Group Value | Update or Create           |
+|     Events | ✅ | Insert ID | Send             |
 
 Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User.
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Amplitude objects and/or behaviors.
 
 ### Working with Amplitude's Data Model
 
@@ -127,17 +131,6 @@ This is Amplitude's intended design: fast, but with some inflexibility. You can 
 #### Working Around Missing User Properties
 
 As a result of this behavior, we often get asked "Why can't I see my user properties?" and we explain that it's likely because the user hasn't had a subsequent event. Some users choose to work around this by creating a sort of `Updated By Census` synthetic Event instead of using the User Identify destination object. If you chose to go this route, you'll likely want to tell Amplitude to consider this an inactive event so that the user doesn't appear as active when this happens. See [Amplitude's documentation](https://help.amplitude.com/hc/en-us/articles/360047138392-Manage-events-and-properties) on the steps to define that and make sure you do this **before running the sync** to avoid accidentally marking your users as active.
-
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-|        **Behaviors** | **Supported?** |     **Objects**     |
-| -------------------: | :------------: | :-----------------: |
-| **Update or Create** |        ✅       | Device, User, Group |
-|           **Append** |        ✅       |        Event        |
 
 ‌ 🔋 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination.
 

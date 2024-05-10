@@ -15,13 +15,23 @@ Connecting to your Google Ads account is straightforward.
 
     <figure><img src="../../.gitbook/assets/Google Ads.png" alt=""><figcaption></figcaption></figure>
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Click the link for more information on each of the services
 
-<table data-header-hidden><thead><tr><th width="340"></th><th width="216" align="right"></th></tr></thead><tbody><tr><td></td><td align="right"><strong>Types</strong></td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a></td><td align="right">Customer</td></tr><tr><td><a href="https://docs.getcensus.com/destinations/google-ads/offline-conversions">Offline Conversions</a></td><td align="right">Click Conversion, <br>Call Conversion, <br>Conversion Adjustment, <br>Enhanced Conversion</td></tr></tbody></table>
+|       **Object Name** | **Supported?** | **Sync Keys**                                                 | **Behaviors**    |
+|----------------------:| :------------: |---------------------------------------------------------------|------------------|
+|       Call Conversion | ✅ | Caller ID                                                     | Update or Create |
+|      Click Conversion | ✅ | Google Click ID, Google wBraid, Google gBraid,                | Update or Create |
+| Conversion Adjustment | ✅ | Any unique identifier                                         | Send             |
+|   <a href="https://docs.getcensus.com/destinations/google-ads/customer-match-audiences">Customer Match Lists (Audiences)</a> | ✅ | External ID, MAID, Email, First Name, Last Name, Phone Number | Upsert           |
+|   Enhanced Conversion | ✅ | N/A                                                           | Update or Create |
 
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Google Ads objects.
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors
 
 ## 🚑 Need help connecting to Google Ads?
 

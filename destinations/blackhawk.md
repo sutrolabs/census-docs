@@ -24,11 +24,17 @@ All of these can be obtained from your Blackhawk Network representative.
 
 You should now be ready to start sending data to Blackhawk Network!
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | :------------: | :------------: |
-| Submission      |        ✅      | Any Unique Submission ID | Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | :------------: |:-------------:|
+| Submission      |        ✅      | Any Unique Submission ID |      Add      |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Blackhawk objects and/or behaviors.
 
 ### Submission Quirks
 

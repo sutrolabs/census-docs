@@ -94,35 +94,25 @@ Now go back to ChartMogul, and check that the customer has been updated as expec
 
 That's it! In 6 steps, you've connected Census and started syncing product data from your warehouse to ChartMogul 🎉
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following ChartMogul objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**                                  |
-| --------------: | :------------: | ------------------------------------------------ |
-|        Customer |        ✅       | Data Source ID + External ID (both are required) |
-|         Invoice |        ✅       | External ID                                      |
-|     Transaction |        ✅       | External ID                                      |
+| **Object Name** | **Supported?** | **Sync Keys**  |      **Behaviors**       |
+| --------------: | :------------: | :------------: |:------------------------:|
+| Customer      |        ✅      | Data Source ID + External ID (both are required) | Update or Create, Update |
+| Invoice      |        ✅      | External ID |           Add            |
+| Transaction      |        ✅      | External ID |           Add            |
 
 {% hint style="info" %}
 Syncs to the ChartMogul **Customer** object require both the Data Source ID and the External ID to ensure the customer is updated or created as expected. This is necessary because External IDs can be duplicated across Data Sources. You can find the Data Source ID by navigating to [this page](https://t.sidekickopen01.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CX6NGW35QNwB7tCtH0Vs7zDQ8qd1Kwf197v5Y04?te=W3R5hFj4cm2zwW3zfPSj3F7xMPW4fKXXf4hHZdBW43T4MG1LwsHHW3yLX3g3zhrVDW49NLhq3zhrqJF4cNcV-W1v31\&si=8000000017473620\&pi=3d1e4afe-99d8-4b66-b041-de8a431bfb88) in ChartMogul and clicking the gear icon next to the desired Data Source.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for ChartMogul.
-
-## 🔄 Supported Sync Behaviors
-
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |     **Objects**     |
-| -------------------: | :------------: | :------------------: |
-| **Update or Create** |        ✅       |       Customer       |
-|           **Update** |        ✅       |       Customer       |
-|           **Append** |        ✅       | Invoice, Transaction |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for ChartMogul.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Chart Mogul objects and/or behaviors
 
 ## :question:FAQ
 

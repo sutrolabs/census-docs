@@ -13,11 +13,17 @@ Eagle Eye is a digital marketing platform that provides a variety of services in
 
 You should now be ready to start syncing data to Eagle Eye!
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | :------------: | :------------: |
-| Coupon <br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a>        |        ✅      |   Unique ID   | Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | :------------: |:-------------:|
+| Coupon <br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a>        |        ✅      |   Any unique identifier   |      Add      |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Eagle Eye objects and/or behaviors
 
 ### Coupons
 

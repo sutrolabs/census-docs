@@ -12,11 +12,15 @@ description: This page describes how to use Census with GitLab.
 
 <figure><img src="../.gitbook/assets/gitlab.png" alt=""><figcaption><p>Authorize Census to access your GitLab instance.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | ------------- |
-| Issues | ✅ | Internal ID | Update or Create, Update Only, Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                      |
+| --------------: | :------------: | ---------------- |------------------------------------|
+| Issues | ✅ | Internal ID | Update or Create, Update Only, Add |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more GitLab objects and/or behaviors.
 

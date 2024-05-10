@@ -79,7 +79,7 @@ Next up is the "Where do you want to sync data to?" section.
 
 For the "How should changes to the source be synced?" section.
 
-* For Account and User select Update or Create or select Append for an Event sync
+* For Account and User select Update or Create or select Send for an Event sync
 
 ![](<../.gitbook/assets/Screen Shot 2022-03-31 at 11.46.19 AM.png>)
 
@@ -96,28 +96,20 @@ Finally, select the fields you want to update in the Mapper in the "Which Fields
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys** |
-| --------------- | :------------: | --------------- |
-| Account         |        ✅       | Account ID      |
-| User            |        ✅       | Identity        |
-| Event           |        ✅       | Insert ID       |
-
-🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
-
-## 🔄 Supported Sync Behaviors
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
+| --------------- | :------------: | --------------- |------------------|
+| Account         |        ✅       | Account ID      | Update or Create |
+| User            |        ✅       | Identity        | Update or Create |
+| Event           |        ✅       | Insert ID       | Send             |
 
 {% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|    **Behaviors** | **Supported?** |  **Objects**  |
-| ---------------: | :------------: | :-----------: |
-| Update or Create |        ✅       | Account, User |
-|           Append |        ✅       |     Event     |
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Heap.io objects and/or behaviors
 
-‌ 🔋 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
 ## 🚑 Need help connecting to Heap.io?
 

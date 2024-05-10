@@ -13,11 +13,15 @@ description: This page describes how to use Census with CJ Affiliate.
 
 <figure><img src="../.gitbook/assets/cj-affiliate.png" alt=""><figcaption><p>Generate a Personal Access Token in CJ's developer portal.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Order | ✅ | Order ID | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Order | ✅ | Order ID | Send          |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more CJ Affiliate objects and/or behaviors.
 

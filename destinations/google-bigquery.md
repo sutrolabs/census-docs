@@ -46,13 +46,17 @@ gcloud projects add-iam-policy-binding cs-sandbox-123456 \
   --role roles/bigquery.jobUser
 ```
 
-## 🗄️ Supported Objects and Behaviors <a href="#supported-objects" id="supported-objects"></a>
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
+| **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                            |
+| --------------: | :------------: | ---------------------- |------------------------------------------|
+|         Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
 
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
-<table data-header-hidden><thead><tr><th width="157" align="center"></th><th width="133" align="center"></th><th></th><th></th></tr></thead><tbody><tr><td align="center"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><a data-footnote-ref href="#user-content-fn-1"><strong>Identifiers</strong></a></td><td><strong>Behavior</strong></td></tr><tr><td align="center">Table</td><td align="center">✅</td><td>Primary Keys or Columns with Uniqueness Constraints</td><td>Update or Create, Update Only, Append</td></tr></tbody></table>
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for BigQuery.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
 
 ## 🚦Network Access Controls
 

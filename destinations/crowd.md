@@ -14,13 +14,17 @@ description: This page describes how to use Census with Crowd.dev.
 
 <figure><img src="../.gitbook/assets/crowd.png" alt=""><figcaption><p>Get your Tenant ID and Auth Token from the Crowd.dev app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
-| --------------: | :------------: | --------------- | ---------------- |
+| --------------: | :------------: | --------------- |------------------|
 | Activity | ✅ | Source ID | Update or Create |
 | Activity with Member | ✅ | Source ID | Update or Create |
-| Organization | ✅ | Any unique identifier | Update Only, Append |
+| Organization | ✅ | Any unique identifier | Update Only, Add |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Crowd.dev objects and/or behaviors.
 

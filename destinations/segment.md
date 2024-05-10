@@ -29,11 +29,21 @@ Note: Census's permissions will be the same as this Segment token.&#x20;
 Make sure to follow Segment's Documentation on connecting a Production Source [here](https://segment.com/docs/unify/quickstart/#step-3-connect-production-sources).
 {% endhint %}
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Segment support is pretty straight forward! [Let us know](mailto:support@getcensus.com) if you want Census to support more objects for Segment.
 
-<table data-header-hidden><thead><tr><th align="center"></th><th width="126" align="center"></th><th align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="center"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Sync Keys</strong></td><td align="center"><strong>Behavior</strong></td></tr><tr><td align="center">User</td><td align="center">✅</td><td align="center">User ID or Anonymous ID</td><td align="center">Update or Create</td></tr><tr><td align="center">Group</td><td align="center">✅</td><td align="center">Group ID, or User ID / Anonymous ID</td><td align="center">Update or Create</td></tr><tr><td align="center">Track (Event)</td><td align="center">✅</td><td align="center"></td><td align="center">Append</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| User | ✅ | User ID or Anonymous ID | Update or Create |
+| Group | ✅ | Group ID, or User ID / Anonymous ID | Update or Create |
+| Track (Event) | ✅ | Any unique identifier | Send             |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Segment objects and/or behaviors.
 
 ### Track events
 

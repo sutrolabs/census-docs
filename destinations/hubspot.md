@@ -20,11 +20,27 @@ In this guide, we will show you how to connect HubSpot to Census.
 
 Follow the OAuth flow to connect HubSpot. Easy!
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="239" align="right"></th><th width="254"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behavior</strong></td></tr><tr><td align="right">Company</td><td>Object ID, any Text/Number</td><td>Update Only, Update or Create, Mirror</td></tr><tr><td align="right">Contact</td><td>Object ID, Email, any Text/Number</td><td>Update Only, Update or Create, Mirror</td></tr><tr><td align="right">Contact &#x26; Static List</td><td>Email</td><td>Update Only, Update or Create, Mirror</td></tr><tr><td align="right">Deal</td><td>Object ID, any Text/Number</td><td>Update Only, Update or Create, Mirror</td></tr><tr><td align="right">Product</td><td>Object ID, any Text/Number</td><td>Update Only, Update or Create, Mirror</td></tr><tr><td align="right">Line Item</td><td>Object ID, any Text/Number</td><td>Update Only, Update or Create, Mirror</td></tr><tr><td align="right">Custom Object</td><td>Object ID, any searchableProperty</td><td>Update Only, Update or Create, Mirror</td></tr><tr><td align="right">Subscription Preferences</td><td>Email</td><td>Mirror</td></tr><tr><td align="right">Custom Behavioral Event</td><td>Unique Event ID</td><td>Append</td></tr><tr><td align="right">Email</td><td>N/A</td><td>Append</td></tr><tr><td align="right">Ticket</td><td>Record ID</td><td>Append</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**                     | **Behaviors**                         |
+|-----------------| :------------: |-----------------------------------|---------------------------------------|
+| Company         |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror |
+| Contact            |        ✅       | Object ID, Email, any Text/Number | Update Only, Update or Create, Mirror           |
+| Contact & Static List           |        ✅       | Email                             | Update Only, Update or Create, Mirror           |
+| Deal           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
+| Product           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
+| Line Item           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
+| Custom Object           |        ✅       | Object ID, any searchableProperty | Update Only, Update or Create, Mirror           |
+| Subscription Preferences           |        ✅       | Email                             | Mirror                                |
+| Custom Behavioral Event          |        ✅       | Unique Event ID                   | Send                                  |
+| Email          |        ✅       | N/A                               | Send                                  |
+| Ticket          |        ✅       | Record ID                         | Send                                  |
 
-[Contact us](mailto:support@getcensus.com) if you're looking for Census to support other HubSpot objects.
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Hubspot objects and/or behaviors
 
 ### Custom Objects
 

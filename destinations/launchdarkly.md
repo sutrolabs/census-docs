@@ -58,9 +58,17 @@ Go to **Account settings** > **Projects** and copy the **Project Key,** **Enviro
 
 <figure><img src="../.gitbook/assets/LaunchDarkly (5).png" alt=""><figcaption></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th align="right"></th><th width="169" align="center"></th><th width="159"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Metric</td><td align="center">✅</td><td>Key</td><td>Update or Create</td></tr><tr><td align="right">Metric Event</td><td align="center">✅</td><td>N/A</td><td>Append</td></tr><tr><td align="right">Synced Segments</td><td align="center">✅</td><td>User ID</td><td>Mirror</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
+| --------------: | :------------: | --------------------- |------------------|
+|         Metric |        ✅       | Key | Update or Create |
+|         Metric Event |        ✅       | N/A | Send             |
+|         Synced Segments |        ✅       | User ID | Mirror             |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more LaunchDarkly objects and/or behaviors.
 

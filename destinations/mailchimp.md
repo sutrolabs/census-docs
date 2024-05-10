@@ -61,11 +61,17 @@ If you do want to update the Status field, you can include that instead. However
 
 For more details, take a look at Mailchimp's [API documentation](https://mailchimp.com/developer/marketing/api/list-members/update-list-member/).
 
-## 🗄⠀Supported Objects
+## 🗄⠀Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |       **Object Name** | **Supported?** | Identifiers                                                    |
 | --------------------: | :------------: | -------------------------------------------------------------- |
 | List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p> |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Mailchimp objects and/or behaviors
 
 #### Prehashed Email Identifiers
 

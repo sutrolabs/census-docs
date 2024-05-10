@@ -31,27 +31,22 @@ In this guide, we will show you how to connect Pipedrive to Census and create yo
 This part of our documentation is still under construction! If you have any questions, please don't hesitate to [contact us](mailto:support@getcensus.com).
 {% endhint %}
 
-## 🗄 Supported Objects <a href="#supported-objects" id="supported-objects"></a>
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | Identifiers                   |
-| --------------: | :------------: | ----------------------------- |
-|    Organization |        ✅       | Object ID, name               |
-|          Person |        ✅       | Object ID, name, email, phone |
-|            Deal |        ✅       | Object ID, title              |
-|            Note |        ✅       | Unique ID                     |
-|        Activity |        ✅       | Unique ID                     |
+| **Object Name** | **Supported?** | Identifiers                   | **Behaviors**    |
+| --------------: | :------------: | ----------------------------- |------------------|
+|    Organization |        ✅       | Object ID, name               | Update or Create |
+|          Person |        ✅       | Object ID, name, email, phone | Update or Create |
+|            Deal |        ✅       | Object ID, title              | Update or Create |
+|            Note |        ✅       | Unique ID                     | Add              |
+|        Activity |        ✅       | Unique ID                     | Send             |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pipedrive.
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
-## 🔄 Supported Sync Behaviors
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Pipedrive objects and/or behaviors
 
-|        **Behaviors** | **Supported?** |        **Objects**        |
-| -------------------: | :------------: | :------------------------: |
-| **Update or Create** |        ✅       | Organization, Person, Deal |
-|      **Update Only** |        ✅       | Organization, Person, Deal |
-|           **Append** |        ✅       | Note, Activity |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pipedrive.
 
 ## 🚑 Need help connecting to Pipedrive?
 

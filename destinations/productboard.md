@@ -13,11 +13,15 @@ description: This page describes how to use Census with Productboard.
 
 <figure><img src="../.gitbook/assets/productboard.png" alt=""><figcaption><p>Generate an API token from the Productboard app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Note | ✅ | Any unique ID | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Note | ✅ | Any unique ID | Add           |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Productboard objects and/or behaviors.
 

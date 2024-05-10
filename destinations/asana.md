@@ -35,25 +35,18 @@ You will be redirected to a page to log in to Asana to authorize access to your 
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-12 at 12.17.40 AM.png>)
 
-## 🗄️ Supported Objects <a href="#supported-objects" id="supported-objects"></a>
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Asana's primary object is a Task, which we support in Census.​
 
-| **Object Name** | **Supported?** | **Sync Keys** |
-| :-------------: | :------------: | :-------------: |
-|       Task      |        ✅       |   External ID   |
-
-## 🔄 Supported Sync Behaviors
+|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**         |
+|-----------------:| :------------: | ---------------- |-----------------------|
+| Task | ✅ | External ID | Add, Update or Create |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :---------: |
-| **Update or Create** |        ✅       |     Task    |
-|           **Append** |        ✅       |     Task    |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Asana.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Asana objects and/or behaviors.
 
 If run into a dead end, start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

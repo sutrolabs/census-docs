@@ -12,11 +12,15 @@ description: This page describes how to use Census with ClickUp.
 
 <figure><img src="../.gitbook/assets/clickup.png" alt=""><figcaption><p>Select the workspace you wish to use with Census.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Task | ✅ | Any unique identifier<br>Task ID | Append<br>Update Only |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Task | ✅ | Any unique identifier<br>Task ID | Add, Update Only |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more ClickUp objects and/or behaviors.
 

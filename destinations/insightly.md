@@ -12,9 +12,15 @@ description: This page describes how to use Census with Insightly.
 
 <figure><img src="../.gitbook/assets/insightly.png" alt=""><figcaption><p>Get your API key and instance pod from the Insightly app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="156" align="right"></th><th width="153" align="center"></th><th width="195"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Contact</td><td align="center">✅</td><td>Contact ID, Email</td><td>Update Only, Append</td></tr></tbody></table>
+|                                                                                             **Object Name** | **Supported?** | **Sync Keys**  |  **Behaviors**   |
+|------------------------------------------------------------------------------------------------------------:| :------------: | :------------: |:----------------:|
+|                                                                                                   Behaviors |        ✅      | Contact ID, Email | Update Only, Add |
+
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Insightly objects and/or behaviors.
 

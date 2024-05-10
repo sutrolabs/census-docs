@@ -77,16 +77,31 @@ Great! Now let's pull it all together.
 
 After the Connection Test is Green, you're all set and ready to get syncing! 🎉
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Braze objects.
 
-<table data-header-hidden><thead><tr><th width="257.3333333333333" align="right"></th><th align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Event</td><td align="center">✅</td><td>Event ID</td></tr><tr><td align="right">Purchase Event</td><td align="center">✅</td><td>Any Unique Identifier</td></tr><tr><td align="right">Subscription Group Membership</td><td align="center">✅</td><td><a href="https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships">See Here</a></td></tr><tr><td align="right">User</td><td align="center">✅</td><td>External User ID &#x26; User Alias</td></tr><tr><td align="right">User Alias</td><td align="center">✅</td><td>Alias Name &#x26; Label</td></tr><tr><td align="right">User &#x26; Cohort</td><td align="center">✅</td><td>External User ID</td></tr><tr><td align="right">Catalog</td><td align="center">✅</td><td>Catalog ID</td></tr><tr><td align="right">API-Triggered Campaign</td><td align="center">✅</td><td>External User ID</td></tr><tr><td align="right">API-Triggered Canvas Entry</td><td align="center">✅</td><td>External User ID</td></tr></tbody></table>
+|               **Object Name** | **Supported?** |                                               **Sync Keys**                                                |              **Behaviors**               |
+|------------------------------:| :------------: |:----------------------------------------------------------------------------------------------------------:|:----------------------------------------:|
+|                         Event |        ✅      |                                                  Event ID                                                  |                   Send                   |
+|                Purchase Event |        ✅      |                                           Any Unique Identifier                                            |                   Send                   |
+|        API-Triggered Campaign |        ✅      |                                              External User ID                                              |                   Send                   |
+|    API-Triggered Canvas Entry |        ✅      |                                              External User ID                                              |                   Send                   |
+|                       Catalog |        ✅      |                                                 Catalog ID                                                 |     Update or Create, Update, Mirror     |
+|                        Cohort |        ✅      |                                              External User ID                                              |             Update or Create             |
+| Subscription Group Membership |        ✅      | <a href="https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships">See Here</a>  |                  Mirror                  |
+|                          User |        ✅      |                                              External User ID &#x26; User Alias                                              | Update or Create, Update, Delete, Mirror |
 
 Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-defining/defining-source-data/structured-data.md) to Braze:
 
 * [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
 * [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Braze objects and/or behaviors.
 
 ### Working with User Aliases
 
@@ -153,14 +168,6 @@ API Triggered Campaign and Canvas Entries are useful for triggering transactiona
 You can [read more about Braze API-Triggered Campaigns](https://www.braze.com/docs/user\_guide/engagement\_tools/campaigns/building\_campaigns/delivery\_types/api\_triggered\_delivery/) and Canvas Entries in their documentation.
 
 <figure><img src="../.gitbook/assets/Braze Options.png" alt=""><figcaption></figcaption></figure>
-
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-<table data-header-hidden><thead><tr><th width="187" align="right"></th><th width="169.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center"><a href="https://docs.getcensus.com/basics/alerts#sync-alerts">✅</a></td><td align="center">User, Cohort, Catalog</td></tr><tr><td align="right"><strong>Update</strong></td><td align="center">✅</td><td align="center">Catalog, Cohort, User</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Event, Purchase Event, Cohort, API-Triggered Campaign and Canvas Entry</td></tr><tr><td align="right"><strong>Mirror</strong></td><td align="center">✅</td><td align="center">User, Subscription Group Membership, Cohort, Catalog</td></tr><tr><td align="right"><strong>Delete</strong></td><td align="center">✅</td><td align="center">User</td></tr></tbody></table>
 
 ### Mirror Mode Options
 

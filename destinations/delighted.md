@@ -71,26 +71,18 @@ Click the Next button to see a preview of what will happen when you start the sy
 
 You should be able to view your data in Delighted now.
 
-## 🗄 Supported Objects
+## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-Delighted supports two objects: Autopilot and Survey
-
-| Object Name |      Supported?      |
-| ----------: | :------------------: |
-|   Autopilot | :white\_check\_mark: |
-|      Survey | :white\_check\_mark: |
-|             |                      |
-
-## 🔄 Supported Sync Behaviors
+| **Object Name** | **Supported?** | **Sync Keys** |          **Behaviors**           |
+|----------------:| :------------: |:-------------:|:--------------------------------:|
+|          Survey |        ✅       |      N/A      |               Send               |
+|       Autopilot |        ✅       |     Email     | Update or Create, Update, Mirror |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|                       Behaviors |      Supported?      |  Objects  |
-| ------------------------------: | :------------------: | :-------: |
-|                          Append | :white\_check\_mark: |   Survey  |
-| Update Only, Upsert, and Mirror | :white\_check\_mark: | Autopilot |
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Delighted objects and/or behaviors
 
 ## 🚑 Need help connecting to Delighted?
 

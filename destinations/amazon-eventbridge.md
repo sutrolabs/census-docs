@@ -28,9 +28,17 @@ You can provide an optional Endpoint ID if you are using [EventBridge's Global E
 
 The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API\_Endpoint.html#eventbridge-Type-Endpoint-EndpointId) is the URL subdomain of your global endpoint. For example, if the URL for your Endpoint is `https://abcde.veo.endpoints.event.amazonaws.com`, then the EndpointId is `abcde.veo`.&#x20;
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="196"></th><th width="156"></th><th width="154"></th><th></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td>Event</td><td>✅</td><td>Event ID</td><td>Append, Upsert, and Mirror</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                  |
+| --------------: | :------------: | ---------------- |--------------------------------|
+| Event | ✅ | Event ID | Send, Update or Create, Mirror |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Eventbridge objects and/or behaviors.
 
 ### Event Properties and Formatting
 

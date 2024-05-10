@@ -31,7 +31,7 @@ Census makes use of different Vitally APIs for different operations. You're welc
 
 #### **Analytics API**&#x20;
 
-* Required for Update and Create (a.k.a. "Upsert") and Append syncs
+* Required for Update or Create (a.k.a. "Upsert") and Send syncs
 * Navigate to `https://[your-domain].vitally.io/integrations/api`
 * Select **Integration via HTTPS API**
 * Copy the **API Key**
@@ -54,17 +54,22 @@ Census makes use of different Vitally APIs for different operations. You're welc
 * Paste your API Key(s) into the relevant fields
 * Optionally name your new connection and then click **Connect**
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** |   **Sync Keys**   | **Create Fields** |
-| --------------: | :------------: | :-------------------: | :---------------: |
-|            User |        ✅       |        User ID        |         ✅         |
-|         Account |        ✅       |       Account ID      |         ✅         |
-|    Organization |        ✅       |    Organization ID    |         ✅         |
-|     Track Event |        ✅       | Any unique identifier |         ✅         |
-|             NPS |       🔜       |           -           |         -         |
+| **Object Name** | **Supported?** |   **Sync Keys**   |         **Behavior**          |
+| --------------: | :------------: | :-------------------: |:-----------------------------:|
+|            User |        ✅       |        User ID        | Update or Create, Update Only |
+|         Account |        ✅       |       Account ID      | Update or Create, Update Only |
+|    Organization |        ✅       |    Organization ID    | Update or Create, Update Only |
+|     Track Event |        ✅       | Any unique identifier |             Send              |
 
 Vitally defines User ID and Account ID as the unique identifier for these objects in your system. You are free to use whatever ID you like, but it needs to be unique.
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Vitally objects and/or behaviors.
 
 ### User Behavior Notes
 
@@ -73,15 +78,6 @@ Vitally defines User ID and Account ID as the unique identifier for these object
 
 ![](<../.gitbook/assets/Screen Shot 2022-06-30 at 6.50.03 PM.png>)
 
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-<table data-header-hidden><thead><tr><th align="right"></th><th width="197.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Account, User, Organization</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Account, User, Organization</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Track Event</td></tr></tbody></table>
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Vitally.
 
 ## 🔍 Additional Service Quirks
 

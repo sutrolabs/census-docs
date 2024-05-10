@@ -22,11 +22,17 @@ In this guide, we will show you how to connect your Kafka destination to Census.
 Your Kafka instance must be accessable to the public internet in order for Census to connection. Consider using [Census' IP addresses](../basics/security-and-privacy/regions-and-ip-addresses.md) to limit access to your Kafka instance.
 {% endhint %}
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**          |
-| --------------: | :------------: | --------------------- | ---------------------- |
-|         Message |        ✅       | Any unique identifier | Append, Upsert, Mirror |
+| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**                  |
+| --------------: | :------------: | --------------------- |--------------------------------|
+|         Message |        ✅       | Any unique identifier | Send, Update or Create, Mirror |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Kafka objects and/or behaviors
 
 ### Message Properties
 

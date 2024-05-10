@@ -67,7 +67,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the " **How do you want to update the destination?"** section
 
-* **Append** will automatically be chosen
+* **Send** will automatically be chosen
 * Choose the **Unique ID** Column
 * Decide if you'd like to turn on **Use timestamp column to identify new data**.
   * This can be more efficient for large or frequently changing data sets. More info can be found in this [doc](../basics/data-defining/defining-source-data/events.md#using-timestamp-to-identify-new-records).
@@ -94,31 +94,21 @@ Now go back to your PostHog account and view the event data that should have bee
 
 That's it! In 6 steps, you connected Census to PostHog and started syncing event data from your warehouse to PostHog 🎉
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following PostHog objects.
 
-| **Object Name** | **Supported?** | **Sync Keys** |
-| --------------: | :------------: | ------------- |
-|           Event |        ✅       | Event ID      |
-|          Person |        ✅       | ID, Email     |
-|            Page |        ✅       | Distinct ID   |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for PostHog.
-
-## 🔄 Supported Sync Behaviors
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**                 |
+| --------------: | :------------: | ------------- |-------------------------------|
+|           Event |        ✅       | Event ID      | Send                          |
+|          Person |        ✅       | ID, Email     | Update or Create, Update Only |
+|            Page |        ✅       | Distinct ID   | Send                          |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** | **Objects?** |
-| -------------------: | :------------: | :----------: |
-| **Update or Create** |        ✅       |    Person    |
-|      **Update Only** |        ✅       |    Person    |
-|           **Append** |        ✅       |  Event, Page |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for PostHog.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Posthog objects and/or behaviors
 
 ## 🚑 Need help connecting to PostHog?
 

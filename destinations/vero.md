@@ -23,12 +23,16 @@ description: This page describes how to use Census with Vero Cloud.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-12-30 at 2.36.13 PM.png" alt=""><figcaption><p>Add the auth token you generated in Vero Cloud.</p></figcaption></figure>
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors**    |
-| --------------: | :------------: | ------------------- | ---------------- |
-|           Event |        ✅       | Event ID (optional) | Append           |
+| --------------: | :------------: | ------------------- |------------------|
+|           Event |        ✅       | Event ID (optional) | Send             |
 |            User |        ✅       | Email               | Update or Create |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Vero Cloud objects and/or behaviors.
 

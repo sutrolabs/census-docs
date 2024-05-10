@@ -14,12 +14,18 @@ Insider is a customer data platform that helps marketers connect customer data a
 
 You should now be ready to start creating audiences in Insider!
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | :------------: | :------------: |
+| **Object Name** | **Supported?** | **Sync Keys**  |         **Behaviors**         |
+| --------------: | :------------: | :------------: |:-----------------------------:|
 | Users           |        ✅      | Email, Phone Number, UUID | Update or Create, Update Only |
-| Events <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs)         |        ✅      | Unique Event ID | Append         |
+| Events <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs)         |        ✅      | Unique Event ID |             Send              |
+
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Insider objects and/or behaviors
 
 ### Quirks
 

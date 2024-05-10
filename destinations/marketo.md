@@ -76,27 +76,29 @@ With all three pieces of information, return to Census and visit the **Destinati
 
 ![](../.gitbook/assets/screely-1618889184718.png)
 
-## 🗄 Supported Objects
-
-Census currently supports syncing to the following Marketo objects.
-
-<table data-header-hidden><thead><tr><th width="236.33333333333331" align="right"></th><th width="214" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Lead</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Named Account</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Custom Objects</td><td align="center">✅</td><td>Object ID, any Text/Number</td></tr><tr><td align="right">Static List Membership</td><td align="center">✅</td><td></td></tr><tr><td align="right">Custom Activities</td><td align="center">✅</td><td></td></tr></tbody></table>
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Marketo.
-
-## 🔄 Supported Sync Behaviors
+## 🔄 Supported Object and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-<table data-header-hidden><thead><tr><th width="182.33333333333331" align="right"></th><th width="146" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Lead, Named Account, Custom Objects</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Lead, Named Account, Custom Objects</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Custom Activities</td></tr><tr><td align="right"><strong>Mirror</strong></td><td align="center">✅</td><td align="center">Lead, Static List Membership, Custom Objects</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**              | **Behaviors**                         |
+|----------------:| :------------: |----------------------------|---------------------------------------|
+|   Lead |        ✅       | Object ID, any Text/Number | Update or Create, Update Only, Mirror |
+|   Named Account |        ✅       | Object ID, any Text/Number | Update or Create, Update Only         |
+|   Custom Objects |        ✅       | Object ID, any Text/Number | Update or Create, Update Only, Mirror       |
+|   Static List Membership |        ✅       | N/A                        | Mirror                                |
+|   Custom Activities |        ✅       | N/A                        | Send                                  |
 
 {% hint style="warning" %}
 Please be aware that Update Only and Mirror make use of less efficient Marketo APIs and will result in more API usage for the same number of records.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Marketo.
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Marketo objects and/or behaviors
 
 ## 🚑 Need help connecting to Marketo?
 

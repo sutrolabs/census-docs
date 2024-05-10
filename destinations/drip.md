@@ -12,12 +12,16 @@ description: This page describes how to use Census with Drip.
 
 <figure><img src="../.gitbook/assets/drip.png" alt=""><figcaption><p>Generate an API Token from the Drip app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Event | ✅ | Any unique identifier | Append |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Event | ✅ | Any unique identifier | Send             |
 | Person | ✅ | ID, Visitor UUID, Email | Update or Create |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Drip objects and/or behaviors.
 

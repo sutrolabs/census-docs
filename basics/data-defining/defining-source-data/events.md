@@ -22,13 +22,13 @@ In your data model, each event should be represented as a single row/record in t
 
 Census supports an ever-growing set of destinations that accept event-style data. Often times these are simply labeled as "Events" but some destination services, such as [delighted.md](../../../destinations/delighted.md "mention") or [webhook.md](../../../destinations/webhook.md "mention") work like events in order to send NPS Surveys and Webhook API messages respectively.&#x20;
 
-To send event data, you'll create a new sync that uses the **Append Only**. Census will treat your event data as an ever-growing append log of data and whenever new rows appear in your data source, will send them over.
+To send event data, you'll create a new sync that uses the **Send** sync behavior. Census will treat your event data as an ever-growing log of data and whenever new rows appear in your data source, will send them over.
 
-The Append Only event sync gives you a few special behaviors to optimize your sync
+The Send event sync gives you a few special behaviors to optimize your sync
 
 #### Backfill or just look forward
 
-When setting up an Append Only sync, Census will ask if you'd like to backfill the events already in the data source or simply sync going forward. This option lets you skip any existing data in the data source and only sync new event rows as they appear.&#x20;
+When setting up a Send behavior sync, Census will ask if you'd like to backfill the events already in the data source or simply sync going forward. This option lets you skip any existing data in the data source and only sync new event rows as they appear.&#x20;
 
 #### Using timestamp to identify new records
 

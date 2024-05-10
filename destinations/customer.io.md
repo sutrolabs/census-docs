@@ -82,17 +82,17 @@ Customer.io is a destination with a fast API that can burst all the way to 600 a
 | ----------- | --------------------- | ------------------------- |
 | Customer.io | 150 / sec             | 7,000                     |
 
-## 🗄️ Supported Objects
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 We currently support all objects of [Customer.io's core API.](https://customer.io/docs/api/#section/Overview)
 
-| **Object Name** | **Supported?** | **Create Fields?** |
-| --------------: | :------------: | :----------------: |
-|          Person |        ✅       |          ✅         |
-|          Device |        ✅       |          ✅         |
-|           Event |        ✅       |          ✅         |
-|      Collection |        ✅       |          ✅         |
-|  Manual Segment |        ✅       |          ✅         |
+| **Object Name** | **Supported?** |      **Sync Keys**       |         **Behaviors**         |
+| --------------: | :------------: |:------------------------:|:-----------------------------:|
+|          Person |        ✅       |        ID, email         | Update Only, Update or Create |
+|          Device |        ✅       |        Device ID         |       Update or Create        |
+|           Event |        ✅       |           N/A            |             Send              |
+|      Collection |        ✅       |           N/A            |            Mirror             |
+|  Manual Segment |        ✅       | ID, Email, CustomerIO ID |   Update or Create, Mirror    |
 
 {% hint style="warning" %}
 Make sure you know what identifiers are used in your Customer.io Workspace!
@@ -100,21 +100,17 @@ Make sure you know what identifiers are used in your Customer.io Workspace!
 
 Customer.io strongly prefers the ID field to be used as the identifier for a Person record and recommends using your internal ID when possible. If you plan to use the email field, make sure your workspace has enabled [Using email as an identifier](https://customer.io/docs/workspaces/#migrate-workspace). You can read more about [Customer.io's identifier guidelines here](https://customer.io/docs/data-mapping-guide#describing-users-with-customer-attributes).
 
-## 🔄 Supported Sync Behaviors
-
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-<table data-header-hidden><thead><tr><th width="212" align="right"></th><th width="151.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Person, Device, Manual Segment</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Person</td></tr><tr><td align="right"><strong>Append</strong></td><td align="center">✅</td><td align="center">Event</td></tr><tr><td align="right"><strong>Mirror</strong></td><td align="center">✅</td><td align="center">Collection, Manual Segment</td></tr></tbody></table>
-
-🔋[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Customer.io objects and/or behaviors
 
 ## 💡 Things to know about Customer.io
 
 There are a few unique features available when syncing to a Customer.io instance.
 
-* **Events** are unique (literally!). Census will only send new database rows to Customer.io and so Events only support the **Append Only** behavior for syncs. In order to make sure an event is only ever published once, each row in your events source needs a globally unique ID.
+* **Events** are unique (literally!). Census will only send new database rows to Customer.io and so Events only support the **Send** behavior for syncs. In order to make sure an event is only ever published once, each row in your events source needs a globally unique ID.
 * All objects support arbitrary custom fields.
   * If you are creating a sync for the first time:
     * Go to the `Which properties should be updated?` section and click **Add Mapping** at the bottom, and then click **Create new field**. Then, type in the name of the custom field as it appears in your Customer.io instance and hit **Save**. After that, you can select the field from your source that you want to send into that the Customer.io custom field.

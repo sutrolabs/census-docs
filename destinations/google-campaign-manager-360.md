@@ -19,13 +19,17 @@ Once you've confirmed permissions, follow these steps to connect Census to Googl
 2. Select **Google Campaign Manager 360** from the menu.
 3. Complete the OAuth flow to grant Census access. Note that you'll need to create a separate Census connection for each advertiser you wish to send data to.
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | :------------: | :------------: |
-| Conversions <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs)         |        ✅      | Unique Event ID | Append         |
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | :------------: |:-------------:|
+| Conversions <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs)         |        ✅      | Unique Event ID |     Send      |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects and/or behaviors.
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Google Campaign Manager objects and/or behaviors.
 
 ### Conversion Identifiers
 

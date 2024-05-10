@@ -46,32 +46,25 @@ With the SendGrid API key, return to Census and visit the **Destinations** tab. 
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-24 at 5.44.57 PM.png>)
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following SendGrid objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| --------------: | :------------: | ----------- |
-|         Contact |        ✅       | Email       |
-|            List |        ✅       | Email       |
-| Email Templates |        ✅       | Any unique identifier |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for SendGrid.
-
-## 🔄 Supported Sync Behaviors
+| **Object Name** | **Supported?** | Identifiers | **Behaviors**                 |
+| --------------: | :------------: | ----------- |-------------------------------|
+|         Contact |        ✅       | Email       | Update or Create, Update Only |
+|            List |        ✅       | Email       | Update or Create, Mirror      |
+| Email Templates |        ✅       | Any unique identifier | Send                          |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-|        **Behaviors** | **Supported?** |  **Objects** |
-| -------------------: | :------------: | :-----------: |
-| **Update or Create** |        ✅       | Contact, List |
-|      **Update Only** |        ✅       |    Contact    |
-|           **Mirror** |        ✅       |      List     |
-|           **Append** |        ✅       | Email Templates |
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sendgrid objects and/or behaviors.
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for SendGrid.
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 ## 🚑 Need help connecting to SendGrid?
 

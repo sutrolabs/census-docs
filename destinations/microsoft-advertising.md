@@ -68,14 +68,18 @@ After setting up your warehouse, your Census sync should look like this:
 
 
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| Service                           | Object Name | Supported? |               Identifiers               |
-| --------------------------------- | ----------: | ---------- | :-------------------------------------: |
-| Customer Match Lists ( Audiences) |    Customer | ✅          | User ID, Mobile ID, Email, Phone Number |
-| Offline Conversions               | Click, Call | ✅          |           Click ID, Caller ID           |
+|    **Object Name** | **Supported?** |   **Identifiers**   | **Behaviors** |
+|-------------------:| ---------- |:-------------------:|---------------|
+|    Custom Audience | ✅          |        Email        | Mirror        |
+| Offline Conversion | ✅          | Any unique identifier | Send          |
 
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Microsoft Ads objects.
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Microsoft Ads objects and/or behaviors
 
 
 

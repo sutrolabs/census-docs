@@ -15,12 +15,18 @@ PartnerStack is a partner relationship management platform that helps you manage
 
 <figure><img src="../.gitbook/assets/partnerstack.png" alt=""><figcaption><p>Get your API keys from the PartnerStack app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
-| --------------: | :------------: | --------------- | ------------- |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**                 |
+| --------------: | :------------: | --------------- |-------------------------------|
 | Customer | ✅ | Customer Key | Update or Create, Update Only |
-| Transaction   <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) | ✅ | Unique Identifier | Append |
+| Transaction   <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) | ✅ | Unique Identifier | Send      <br/>                    |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Partner Stack objects and/or behaviors
 
 ### Transactions
 

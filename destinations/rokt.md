@@ -15,12 +15,16 @@ description: This page describes how to use Census with Rokt.
 
 <figure><img src="../.gitbook/assets/rokt.png" alt=""><figcaption><p>Generate API credentials in the Rokt app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
-
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Event | ✅ | Any unique ID | Append |
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+s
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Event | ✅ | Any unique ID | Send             |
 | Audience | ✅ | Email, MD5 Email, SHA256 Email | Update or Create |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Rokt objects and/or behaviors.
 

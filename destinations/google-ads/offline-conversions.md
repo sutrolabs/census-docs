@@ -10,21 +10,21 @@ description: Optimize your ad spend to find your best leads and customers.
 
 Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/google-ads)
 
-## 🔄 Supported Objects & Behaviors
+## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                       |                  |                          |
-| --------------------- | ---------------- | ------------------------ |
+| --------------------- |------------------| ------------------------ |
 | **Object**            | **Behaviors**    | **Identifier**           |
 | Click Conversion      | Update or Create | Click ID, WBRAID, GBRAID |
 | Call Conversion       | Update or Create | Caller ID                |
 | Enhanced Conversion   | Update or Create | Order ID                 |
-| Conversion Adjustment | Append           |                          |
-
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
+| Conversion Adjustment | Send             |                          |
 
 {% hint style="info" %}
 Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors
 
 ## Sync Offline Click and Call Conversions with Census
 
@@ -81,7 +81,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the "**How should changes to the source be synced?"** section
 
-* **Append** will be selected by default
+* **Send** will be selected by default
 * Pick the right mapping key, the **Google Click ID** in your model
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section. Here simply map the fields from your model to the properties of the Click or Call Conversion.

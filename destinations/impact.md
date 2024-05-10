@@ -12,11 +12,15 @@ description: This page describes how to use Census with Impact.
 
 <figure><img src="../.gitbook/assets/impact.png" alt=""><figcaption><p>Enter your Impact credentials to connect.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Conversion | ✅ | Any unique identifier | Append |
+| --------------: | :------------: | ---------------- |---------------|
+| Conversion | ✅ | Any unique identifier | Send          |
+
+{% hint style="info" %}
+Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Impact objects and/or behaviors.
 

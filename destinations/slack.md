@@ -85,25 +85,25 @@ The Member ID can be used to mention specific channel members in a Slack message
 
 Example: `<@member_id>`
 
-## 🗄️ Supported Objects
+## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| Object Name | Supported? | Identifiers              |
-| ----------- | :--------: | ------------------------ |
-| Message     |      ✅     | Custom message template. |
+| **Object Name** | **Supported?** | **Identifiers**          | **Behaviors** |
+|-----------------|:--------------:|--------------------------|---------------|
+| Message         |       ✅        | Custom message template. | Send          |
 
 {% hint style="info" %}
 Census can send data to **all** public channels and any private channels that Census has been explicitly invited to (e.g. `/invite @census`).
 {% endhint %}
 
-## 🔄 Supported Sync Behaviors
-
-| **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :---------: |
-|    **Append** |        ✅       |   channel   |
-
 {% hint style="info" %}
 Census will only write new records to a specific channel when new records appear in your data warehouse.
 {% endhint %}
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Slack objects and/or behaviors.
 
 ## 🚑 Need help connecting to Slack?
 

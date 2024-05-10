@@ -13,9 +13,16 @@ description: This page describes how to use Census with Sprig.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-07 at 2.24.55 PM.png" alt=""><figcaption><p>Get your API key from the Connect page in Sprig.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="158" align="right"></th><th width="153" align="center"></th><th width="186"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Event</td><td align="center">✅</td><td>N/A</td><td>Append</td></tr><tr><td align="right">User</td><td align="center">✅</td><td>User ID</td><td>Update or Create</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Event | ✅ | Any unique identifier | Send             |
+| User | ✅ | User ID | Update or Create |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sprig objects and/or behaviors.
 

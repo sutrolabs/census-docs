@@ -148,28 +148,19 @@ If the Zendesk API names have not been modified, you can transform the label val
 lower(replace(column_name, ' ', '_'))
 ```
 
-## 🗄 Supported objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Zendesk objects:
 
-| **Object Name** | **Supported?** | **Sync Keys**                    |
-| --------------: | :------------: | -------------------------------- |
-|        End User |        ✅       | External ID (recommended), Email |
-|    Organization |        ✅       | External ID (recommended), Name  |
-|          Ticket |        ✅       | External ID                      |
-|  Custom Objects |        ✅       | External ID                      |
+| **Object Name** | **Supported?** | **Sync Keys**                    | **Behavior**                          |
+|----------------:| :------------: |----------------------------------|---------------------------------------|
+|        End User |        ✅       | External ID (recommended), Email | Update or Create, Update Only, Delete |
+|    Organization |        ✅       | External ID (recommended), Name  | Update or Create, Update Only, Delete |
+|          Ticket |        ✅       | External ID                      | Update or Create, Update Only, Delete |
+|  Custom Objects |        ✅       | External ID                      | Update or Create, Update Only         |
+|  Ticket Comment |        ✅       | Comment ID                       | Add                                   |
 
 Please note that Zendesk requires the `Name` property for the End User object. Feel free to check out Zendesk's documentation [here](https://developer.zendesk.com/api-reference/ticketing/users/users/#json-format).
-
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Zendesk.
-
-## 🔄 Supported sync behaviors
-
-|     **Behavior** | **Supported?** | **Objects**                    |
-| ---------------: | :------------: | ------------------------------ |
-| Update or Create |        ✅       | All                            |
-|      Update Only |        ✅       | All                            |
-|           Delete |        ✅       | End User, Organization, Ticket |
 
 {% hint style="warning" %}
 **Warning**
@@ -181,7 +172,7 @@ Please note that Zendesk requires the `Name` property for the End User object. F
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Zendesk.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Zendesk objects and/or behaviors.
 
 ## 🚑 Need help connecting to Zendesk?
 

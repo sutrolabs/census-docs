@@ -14,12 +14,16 @@ description: This page describes how to use Census with MoEngage.
 
 <figure><img src="../.gitbook/assets/moengage.png" alt=""><figcaption><p>Generate API credentials in the MoEngage app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
-| --------------: | :------------: | --------------- | ---------------- |
+| --------------: | :------------: | --------------- |------------------|
 |        Customer |        ✅       | Customer ID     | Update or Create |
-|           Event |        ✅       | Any unique ID   | Append           |
+|           Event |        ✅       | Any unique ID   | Send             |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more MoEngage objects and/or behaviors.
 

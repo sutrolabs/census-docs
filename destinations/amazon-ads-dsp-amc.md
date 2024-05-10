@@ -18,9 +18,19 @@ Connecting to your Amazon Ads account is straightforward.
 3. Complete the OAuth flow. Make sure your are signed into a user account that has permissions to both view all of your accounts, as well as submit data to them (read only accounts will not work).
 4. Select the Ads account you wish to use with Census. If you'd like to sync to multiple accounts, you will need to add each as its own destination.
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="184.6600566572238"></th><th width="137"></th><th width="154"></th><th></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td>Conversion Event</td><td>✅</td><td>Event Unique ID</td><td>Append</td></tr><tr><td>Hashed Records (Part 1)</td><td>✅</td><td>ID</td><td>Update or Create</td></tr><tr><td>DSP Audience Members (Part 2)<br><a href="../basics/core-concept/audience-syncs/">Audience Sync</a></td><td>✅</td><td>ID</td><td>Update or Create</td></tr></tbody></table>
+|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+|-----------------:| :------------: | ---------------- |------------------|
+| Conversion Event | ✅ | Event Unique ID | Send             |
+|   Hashed Records | ✅ | ID | Update or Create |
+|     DSP Audience | ✅ | ID | Update or Create |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Ads objects and/or behaviors.
 
 ### Conversion Events
 

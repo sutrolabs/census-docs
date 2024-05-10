@@ -10,12 +10,16 @@ description: Learn how to use Census to sync your Data Warehouse to Blueshift.
 2. Select **Blueshift** from the menu.
 3. Enter your **Api Key**.
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| Customer | ✅ | CustomerId, DeviceId, Cookie, Email | Upsert |
-| Event | ✅ | CustomerId, EventId, DeviceId, Cookie, Email | Append |
+| **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**    |
+| --------------: | :------------: | ---------------- |------------------|
+| Customer | ✅ | CustomerId, DeviceId, Cookie, Email | Update or Create |
+| Event | ✅ | CustomerId, EventId, DeviceId, Cookie, Email | Add              |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Blueshift objects and/or behaviors.
 

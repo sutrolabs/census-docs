@@ -66,7 +66,7 @@ The sync will move data from your warehouse to X Ads. In this step, you'll defin
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose **X Ads** as the **Connection** and an **Object** in X Ads. Based on the selected object, your sync options will vary. See [Supported Objects](twitter.md#supported-objects)
-4. (When syncing conversion events) Under **How do you want to update the destination?**, choose **Append**. See [Supported sync behaviors](twitter.md#supported-sync-behaviors).
+4. (When syncing conversion events) Under **How do you want to update the destination?**, choose **Send**. See [Supported sync behaviors](twitter.md#supported-sync-behaviors).
 5. (When syncing conversion events) Under **How are source records identified?**, select a column from the model that serves as a unique ID for each record. If needed, turn on the **Use timestamp column** setting and select a property from the model. This setting allows the sync to skip records that have not changed (according to the timestamp) since the last sync.
 6. (When syncing audiences) Under **How should we identify audience members?**, specify how Census should match audience members in X Ads to records in the model.
 7. (When syncing audiences) Under **Audience Sync**, select an existing X Ads audience or create a new audience list in X Ads. If the audience list includes members that don't have matching records in your model, Census will remove those members from the list.
@@ -98,21 +98,19 @@ When syncing data to conversion events, the **Use timestamp column to identify n
 
 To use this setting, you'll also need to include a column in your database/data source that tracks the latest sync for each record.
 
-## 🗄 Supported objects
+## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="180.33333333333331" align="right"></th><th width="161" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Audience</td><td align="center">✅</td><td>Email, Handle, Device ID</td></tr><tr><td align="right">Mobile Conversion Event</td><td align="center">✅</td><td>App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type</td></tr><tr><td align="right">Web Conversion Event</td><td align="center">✅</td><td>Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number</td></tr></tbody></table>
-
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for X Ads.
-
-## 🔄 Supported sync behaviors
-
-<table data-header-hidden><thead><tr><th width="176.33333333333331" align="right"></th><th width="219" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behavior</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right">Append</td><td align="center">✅</td><td align="center">Mobile Conversion Event, Web Conversion Event</td></tr><tr><td align="right">Mirror</td><td align="center">✅</td><td align="center">Audience</td></tr></tbody></table>
+|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
+| -----------------------: | :------------: | --------------------- |------------------|
+|                 Audience |        ✅      | Email, Handle, Device ID | Mirror |
+|               Mobile Conversion Event |        ✅      | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type | Send             |
+|                 Web Conversion Event |        ✅      | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number | Send             |
 
 {% hint style="info" %}
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for X Ads.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more X Ads objects and/or behaviors.
 
 ## 🚑 Need help connecting to X Ads?
 

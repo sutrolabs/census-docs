@@ -22,16 +22,20 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 
 <figure><img src="../.gitbook/assets/tradedesk.png" alt=""><figcaption><p>Generate an API Token from the The Trade Desk developer portal.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**       |
-| -----------------------: | :------------: | --------------------- | ------------------- |
-|                 Ad Group |        ✅      | Any unique identifier | Update Only, Append |
-|               Advertiser |        ✅      | Any unique identifier | Update Only, Append |
-|                 Campaign |        ✅      | Any unique identifier | Update Only, Append |
-|         Conversion Event |        ✅      | Any unique identifier | Append              |
-|             Tracking Tag |        ✅      | Any unique identifier | Update Only, Append |
+|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**            |
+| -----------------------: | :------------: | --------------------- |--------------------------|
+|                 Ad Group |        ✅      | Any unique identifier | Update Only, Add         |
+|               Advertiser |        ✅      | Any unique identifier | Update Only, Add         |
+|                 Campaign |        ✅      | Any unique identifier | Update Only, Add         |
+|         Conversion Event |        ✅      | Any unique identifier | Send                     |
+|             Tracking Tag |        ✅      | Any unique identifier | Update Only, Add         |
 |         CRM Data Segment |        ✅      | Email/Phone           | Update or Create, Mirror |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more The Trade Desk objects and/or behaviors.
 

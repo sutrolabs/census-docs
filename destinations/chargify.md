@@ -95,7 +95,7 @@ Next up is the "Where do you want to sync data to?" section.
 
 For the " How should changes to the source be synced?" section.&#x20;
 
-* Select Append
+* Select Send
 * Pick a unique identifier for the billable events.&#x20;
 
 Now we'll start mapping fields. Chargify requires two fields to be mapped, the target Stream API Handle which we retrieved earlier as well as a timestamp for the event.&#x20;
@@ -114,27 +114,19 @@ Now go back to Chargify, visit Events, Streams, and click on the stream you targ
 
 That's it! In 6 steps, you've connected Census and started syncing product data from your warehouse to Chargify 🎉
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Chargify objects.
 
-| **Object Name** | **Supported?** | Identifiers |
-| --------------: | :------------: | ----------- |
-|   Billing Event |        ✅       | Insert ID   |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Chargify.
-
-## 🔄 Supported Sync Behaviors
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
+| --------------: | :------------: | :------------: |:-------------:|
+| Billing Event      |        ✅      | Insert ID |     Send      |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-| **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :----------: |
-|    **Append** |        ✅       |     Event    |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Chargify.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Chargify objects and/or behaviors.
 
 ## 🚑 Need help connecting to Chargify?
 

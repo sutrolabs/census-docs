@@ -36,15 +36,19 @@ Once you've collected both keys, you can create a new Klaviyo destination in Cen
 You should now be ready to create a new sync to Klaviyo from Census!
 
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|  **Object Name** | **Supported?** |  **Sync Keys** |  **Behavior**  |
-| ---------------: | :------------: | :------------: | :------------: |
+|  **Object Name** | **Supported?** |  **Sync Keys** |             **Behavior**              |
+| ---------------: | :------------: | :------------: |:-------------------------------------:|
 |          Profile |        ✅       | External ID (recommended), Email, Phone Number | Update or Create, Update Only, Delete |
-|   Profile & List <br> [Audience Sync](https://docs.getcensus.com/basics/core-concept/audience-syncs)|        ✅       | External ID (recommended), Email, Phone Number | Mirror |
-|            Event <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) |        ✅       | Unique Event ID |  Append  |
+|   Profile & List <br> [Audience Sync](https://docs.getcensus.com/basics/core-concept/audience-syncs)|        ✅       | External ID (recommended), Email, Phone Number |                Mirror                 |
+|            Event <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) |        ✅       | Unique Event ID |                 Send                  |
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Klaviyo.
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Klaviyo objects and/or behaviors
 
 ### Klaviyo Events
 

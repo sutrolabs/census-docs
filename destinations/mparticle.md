@@ -13,11 +13,17 @@ mParticle is a customer data platform that simplifies how you collect and connec
 
 You should now be ready to start sending data to mParticle!
 
-## 🗄 Supported Objects and Behaviors
+## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-<table data-header-hidden><thead><tr><th width="200" align="right"></th><th width="126" align="center"></th><th width="221" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Sync Keys</strong></td><td align="center"><strong>Behaviors</strong></td></tr><tr><td align="right">Custom Events</td><td align="center">✅</td><td align="center">Event Source Message ID</td><td align="center">Append</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors** |
+|----------------:| :------------: | --------------------- |---------------|
+|   Custom Events |        ✅       | Event Source Message ID | Send          |
 
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more MParticle objects and/or behaviors
 
 ## 🚑 Need help connecting to mParticle?
 
