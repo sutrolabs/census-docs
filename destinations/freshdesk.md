@@ -12,11 +12,11 @@ description: This page describes how to use Census with Freshdesk.
 |         Company |       ✅       |                         | Update or Create, Update |
 |          Ticket |       ✅       |                         | Add                      |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects or sync behaviors for Freshdesk.
-
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Freshdesk objects and/or behaviors
 
 ## 🚑 Need help connecting to Freshdesk?
 

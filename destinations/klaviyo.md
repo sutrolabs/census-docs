@@ -44,7 +44,7 @@ You should now be ready to create a new sync to Klaviyo from Census!
 |   Profile & List <br> [Audience Sync](https://docs.getcensus.com/basics/core-concept/audience-syncs)|        ✅       | External ID (recommended), Email, Phone Number |                Mirror                 |
 |            Event <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs) |        ✅       | Unique Event ID |                 Send                  |
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Klaviyo.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Klaviyo objects and/or behaviors
 
 ### Klaviyo Events
 

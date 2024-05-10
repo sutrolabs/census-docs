@@ -110,7 +110,7 @@ To use this setting, you'll also need to include a column in your database/data 
 Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects or sync behaviors for X Ads.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more X Ads objects and/or behaviors.
 
 ## 🚑 Need help connecting to X Ads?
 

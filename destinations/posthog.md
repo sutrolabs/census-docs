@@ -104,7 +104,7 @@ Census currently supports syncing to the following PostHog objects.
 |          Person |        ✅       | ID, Email     | Update or Create, Update Only |
 |            Page |        ✅       | Distinct ID   | Send                          |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects or Sync Behaviors for PostHog.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Posthog objects and/or behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).

@@ -19,6 +19,8 @@ You should now be ready to start syncing data to Eagle Eye!
 | --------------: | :------------: | :------------: |:-------------:|
 | Coupon <br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a>        |        ✅      |   Any unique identifier   |      Add      |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Eagle Eye objects and/or behaviors
+
 ### Coupons
 
 Coupons are an [Audience Sync](../basics/core-concept/audience-syncs.md), associating a unique customer (indicated by a Wallet ID) to a Campaign. The Campaign can be selected from a list of existing Campaigns or a Campaign ID can be provided. In addition to the Wallet ID and Campaign ID, Census also needs any unique identifier for a coupon. This isn't required by Eagle Eye but is required by Census to ensure that the same coupon isn't added multiple times. This also allows you to use the same coupon/campaigns multiple times for a single Wallet.

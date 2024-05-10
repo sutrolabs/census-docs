@@ -107,9 +107,9 @@ Click the Next button to see the final preview, which will have a recap of what 
 |     Groups | ✅ | Group Value | Update or Create           |
 |     Events | ✅ | Insert ID | Send             |
 
-🎒 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
-
 Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User.
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Amplitude objects and/or behaviors.
 
 ### Working with Amplitude's Data Model
 

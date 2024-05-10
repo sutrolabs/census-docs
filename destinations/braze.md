@@ -101,6 +101,8 @@ Census supports custom fields on both Braze User and Event objects. Additionally
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Braze objects and/or behaviors.
+
 ### Working with User Aliases
 
 In Braze, users can be alternatively identifier by a user alias. A user alias is a JSON object with two keys: `alias_label` and `alias_name` . For example: `{"alias_label":"instagram_id", "alias_name":"7372382492"}`. When updating users by User Alias, you should pass Census the alias as a string from your warehouse (`TEXT`, `CHAR`, `VARCHAR`, or `STRING`) - do not use your warehouse's `OBJECT`, `JSON`, `STRUCT`, or `RECORD` type.

@@ -30,6 +30,8 @@ You should now be ready to start sending data to Blackhawk Network!
 | --------------: | :------------: | :------------: |:-------------:|
 | Submission      |        ✅      | Any Unique Submission ID |      Add      |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Blackhawk objects and/or behaviors.
+
 ### Submission Quirks
 
 | **Advanced Configuration** | **Description**       |

@@ -99,6 +99,8 @@ Census can send data to **all** public channels and any private channels that Ce
 Census will only write new records to a specific channel when new records appear in your data warehouse.
 {% endhint %}
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Slack objects and/or behaviors.
+
 ## 🚑 Need help connecting to Slack?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -123,7 +123,7 @@ Census currently supports syncing to the following Chargify objects.
 | Billing Event      |        ✅      | Insert ID |     Send      |
 
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors or objects for Chargify.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Chargify objects and/or behaviors.
 
 ## 🚑 Need help connecting to Chargify?
 

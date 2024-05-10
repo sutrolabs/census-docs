@@ -56,7 +56,7 @@ Census currently supports syncing to the following SendGrid objects.
 |            List |        ✅       | Email       | Update or Create, Mirror      |
 | Email Templates |        ✅       | Any unique identifier | Send                          |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects or Sync Behaviors for SendGrid.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sendgrid objects and/or behaviors.
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).

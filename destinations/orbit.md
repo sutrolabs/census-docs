@@ -102,7 +102,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 | Content Activity |        ✅       | N/A                          | Send             |
 |  Custom Activity |        ✅       | Activity Key                 | Send             |
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional Objects or Sync Behaviors for Orbit.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Orbit objects and/or behaviors
 
 {% hint style="warning" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).

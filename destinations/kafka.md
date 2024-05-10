@@ -28,6 +28,8 @@ Your Kafka instance must be accessable to the public internet in order for Censu
 | --------------: | :------------: | --------------------- |--------------------------------|
 |         Message |        ✅       | Any unique identifier | Send, Update or Create, Mirror |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Kafka objects and/or behaviors
+
 ### Message Properties
 
 Sending a Kafka Message involves a number of configuration properties, in addition to the actual message payload. Census allows you to configure these properties in the **Advanced Configuration** section of the destination setup, as well as the **Mappings** section of the sync setup.

@@ -102,6 +102,6 @@ Jira's primary object is an Issue, which we support in Census.​
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors or Objects for Jira.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Jira objects and/or behaviors
 
 If run into a dead end, start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

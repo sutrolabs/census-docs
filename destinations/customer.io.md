@@ -104,7 +104,7 @@ Customer.io strongly prefers the ID field to be used as the identifier for a Per
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-🔋[Contact us](mailto:support@getcensus.com) if you want Census to support more Objects or Sync Behaviors for this destination
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Customer.io objects and/or behaviors
 
 ## 💡 Things to know about Customer.io
 

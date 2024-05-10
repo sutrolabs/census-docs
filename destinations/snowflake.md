@@ -68,7 +68,7 @@ GRANT INSERT, UPDATE, SELECT ON ALL TABLES IN SCHEMA "<your database>"."<your sc
 | --------------: | :------------: | ---------------------- |------------------------------------------|
 |         Table |        ✅       | Primary keys or columns with uniqueness constraints | Update or Create, Update Only, Add |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Snowflake.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Snowflake objects and/or behaviors.
 
 ## 🚦Advanced Network Configuration
 

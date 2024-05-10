@@ -21,6 +21,8 @@ To connect Census to Mailchimp Transactional (Mandrill), you'll need an API Key.
 | --------------: | :------------: | :-----------: |:-------------:|
 | Send via Message Template |        ✅       | Unique identifier for each send |     Send      |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Mailchimp objects and/or behaviors
+
 ### Send Emails via Message Templates
 
 Census takes advantage of Mandrill's templating system to send emails. When configuring a sync to Mandrill, the first step will be selecting the existing message template you'd like Census to use when sending.

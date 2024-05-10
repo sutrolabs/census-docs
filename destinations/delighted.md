@@ -82,6 +82,8 @@ You should be able to view your data in Delighted now.
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Delighted objects and/or behaviors
+
 ## 🚑 Need help connecting to Delighted?
 
 Contact us via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

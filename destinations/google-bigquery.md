@@ -52,7 +52,7 @@ gcloud projects add-iam-policy-binding cs-sandbox-123456 \
 | --------------: | :------------: | ---------------------- |------------------------------------------|
 |         Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for BigQuery.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
 
 ## 🚦Network Access Controls
 

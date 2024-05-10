@@ -104,6 +104,8 @@ Salesforce support is pretty straight forward!
 |      Opportunity Contact Role      |  ✅  |    Any unique identifier     |                            Add                             |
 |       Email Message Relation       |  ✅  |    Any unique identifier     |                            Add                             |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Salesforce objects and/or behaviors.
+
 ### **Syncing to OpportunityContactRole**
 
 The OpportunityContactRole in Salesforce is a bit weird. It doesn't actually support External ID fields like every other object in Salesforce, which means that Census cannot support most typical operations. For this, and only this object type Census supports an Add sync with a very specific configuration. This is definitely advanced mode so if you need help with these steps, please get in contact with Census Support.

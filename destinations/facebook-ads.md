@@ -93,6 +93,8 @@ If you are setting up a connection with a System User Token when you input your 
 Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Facebook Ads objects and/or behaviors
+
 ### Data Normalization
 
 Facebook Audiences and Conversions, like many other ads destinations, don't upload raw data but instead send hashed information for "matching" to protect user PII.

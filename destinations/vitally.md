@@ -69,7 +69,7 @@ Vitally defines User ID and Account ID as the unique identifier for these object
 Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects and sync behaviors for Vitally.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Vitally objects and/or behaviors.
 
 ### User Behavior Notes
 

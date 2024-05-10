@@ -19,7 +19,7 @@ description: This page describes how to use Census with Snapchat Ads.
 | Conversion Event |  ✅ | External ID                | Send               |
 | Customer List    |  ✅ | Mobile Ad ID, Email, Phone | Update or Create, Mirror |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Snapchat objects or Sync Behaviors.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Snapchat objects and/or behaviors.
 
 ### Field Normalization
 

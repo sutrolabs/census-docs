@@ -21,6 +21,8 @@ You should now be ready to start creating audiences in Insider!
 | Users           |        ✅      | Email, Phone Number, UUID | Update or Create, Update Only |
 | Events <br> [Event Sync](/basics/data-models-and-entities/defining-source-data/events#defining-event-syncs)         |        ✅      | Unique Event ID |             Send              |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Insider objects and/or behaviors
+
 ### Quirks
 
 - Syncing Events may also cause new User records to be created if the provided User ID does not already exist in Insider.

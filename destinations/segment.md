@@ -39,6 +39,8 @@ Segment support is pretty straight forward! [Let us know](mailto:support@getcens
 | Group | ✅ | Group ID, or User ID / Anonymous ID | Update or Create |
 | Track (Event) | ✅ | Any unique identifier | Send             |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Segment objects and/or behaviors.
+
 ### Track events
 
 Like most [events.md](../basics/data-defining/defining-source-data/events.md "mention"), Segment Track Events have the standard set of fields. Though the `event` type field is the only required field, you should typically set at least all the standard event fields.

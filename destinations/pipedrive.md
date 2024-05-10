@@ -41,7 +41,7 @@ This part of our documentation is still under construction! If you have any ques
 |            Note |        ✅       | Unique ID                     | Add              |
 |        Activity |        ✅       | Unique ID                     | Send             |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects and Sync Behaviors for Pipedrive.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Pipedrive objects and/or behaviors
 
 
 ## 🚑 Need help connecting to Pipedrive?

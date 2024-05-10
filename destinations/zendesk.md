@@ -162,7 +162,7 @@ Census currently supports syncing to the following Zendesk objects:
 
 Please note that Zendesk requires the `Name` property for the End User object. Feel free to check out Zendesk's documentation [here](https://developer.zendesk.com/api-reference/ticketing/users/users/#json-format).
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects or sync behaviors for Zendesk.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Zendesk objects and/or behaviors.
 
 {% hint style="warning" %}
 **Warning**

@@ -63,6 +63,8 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 |      <p>Event<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event</a></p> |        ✅       |              Unique Event ID              | Send                                                                                             |
 |                                                                                                               User Properties |        ✅       | <p>Client ID or</p><p>App Instance ID</p> | <p>Update Only<br><em><mark style="color:orange;">(ID must already exist in GA4)</mark></em></p> |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Google Analytics objects and/or behaviors
+
 ## Google Analytics 4 Quirks
 
 There's quite a few quirks with Google Analytics 4, particularly with how it handles custom properties. If you need any help configuring Google Analytics, contact the [Census support team](mailto:support@getcensus.com).

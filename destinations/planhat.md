@@ -61,7 +61,7 @@ Census currently supports syncing to the following Planhat objects.
 |          Metric |        ✅       | External ID            | Send                          |
 |             NPS |        ✅       | Source ID              | Update or Create              |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects or Sync Behaviors for Planhat. Custom fields for both objects are supported.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Planhat objects and/or behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).

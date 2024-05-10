@@ -75,7 +75,7 @@ After setting up your warehouse, your Census sync should look like this:
 |    Custom Audience | ✅          |        Email        | Mirror        |
 | Offline Conversion | ✅          | Any unique identifier | Send          |
 
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Microsoft Ads objects or behaviors.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Microsoft Ads objects and/or behaviors
 
 
 

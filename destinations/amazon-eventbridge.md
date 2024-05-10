@@ -34,6 +34,8 @@ The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/AP
 | --------------: | :------------: | ---------------- |--------------------------------|
 | Event | ✅ | Event ID | Send, Update or Create, Mirror |
 
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Eventbridge objects and/or behaviors.
+
 ### Event Properties and Formatting
 
 Events in EventBridge are JSON object with a default set of properties, as well as a `details` sub object. You can use Census to set the values of of the default properties, and then add any additional properties you like.&#x20;

@@ -31,7 +31,7 @@ Back in Census, navigate to the Destinations page and click **Add Destination**.
 |         Catalog |        ✅       | Key            | Update or Create, Mirror      |
 |     Static List |        ✅       | User ID, Email | Mirror                        |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Iterable.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Iterable objects and/or behaviors
 
 ### Handling Nested Objects
 
