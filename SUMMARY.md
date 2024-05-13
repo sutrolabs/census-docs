@@ -197,6 +197,7 @@
   * [Notion](destinations/notion.md)
   * [OneSignal](destinations/one-signal.md)
   * [Optimizely](destinations/optimizely.md)
+  * [Oracle Database](destinations/available-destinations/oracle-database.md)
   * [Oracle Eloqua](destinations/oracle-eloqua.md)
   * [Oracle Responsys](destinations/oracle-responsys.md)
   * [Orbit](destinations/orbit.md)
