@@ -62,7 +62,7 @@ The sync will move data from your warehouse to your GCS bucket. In this step, yo
 3.  Under **Where do you want to sync data to?**, choose the name you assigned in Step 1 (we used GCS) as the **Connection**. Enter the **File Path** for the file where data will sync. The path can accept variables that will populate when the sync runs. See [File Path Variables](google-cloud-storage.md#file-path-variables). Confirm the file path in the **Template Preview** field.
 
     \_\_:bulb: _If the service account only has "Storage Object Creator" permissions, this file path needs to be unique per sync run_
-4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for GCS.
+4. Under **How should changes to the source be synced?**, **Replace** will be automatically selected. This is the only supported sync behavior for GCS.
 5. Under **Which properties should be updated?**, choose whether to sync only **Selected Properties** or **Sync All Properties**. Syncing all properties will automatically add new properties to the sync if the model or database table changes.
 6. To test your sync without actually syncing data, click **Run Test** and verify the results.
 7. Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync.
@@ -98,11 +98,11 @@ Update or Create syncs upload your whole dataset on the first run and only new c
 ## 🔄 Supported sync behaviors
 
 | **Behavior** | **Supported?** | **Objects** |
-| -----------: | :------------: | :---------: |
-|       Mirror |        ✅       |     All     |
+|-------------:| :------------: | :---------: |
+|      Replace |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Cloud Storage.

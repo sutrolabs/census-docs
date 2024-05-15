@@ -84,7 +84,7 @@ Next up is the **"Where do you want to sync data to?"** section
 
 For the " **How should changes to the source be synced?"** section
 
-* **Mirror** will be preselected
+* **Replace** will be preselected
 
 Finally, select the fields you want to update in the Mapper in the **"Which Fields should be updated?"** section
 
@@ -133,13 +133,13 @@ Google Sheets support is pretty straight forward!
 
 ## 🔄 Supported Sync Behaviors
 
+| **Behaviors** | **Supported?** | **Objects** |
+|--------------:| :------------: | :---------: |
+|   **Replace** |        ✅       |  Sheet Tabs |
+
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
-
-| **Behaviors** | **Supported?** | **Objects** |
-| ------------: | :------------: | :---------: |
-|    **Mirror** |        ✅       |  Sheet Tabs |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Google Sheets.
 

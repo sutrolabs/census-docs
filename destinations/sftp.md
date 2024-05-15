@@ -75,7 +75,7 @@ The sync will move data from your warehouse to a new or existing CSV file on you
 1. From inside your Census account, navigate to the [**Syncs**](https://app.getcensus.com/syncs) page and click **Add Sync**.
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose the name you assigned in Step 1 (we used **SFTP**) as the **Connection**. Enter the **File Path** for the CSV file where data will sync. The path can accept variables that will populate when the sync runs. See [File Path Variables](sftp.md#file-path-variables). Confirm the file path in the **Template Preview** field.
-4. Under **How should changes to the source be synced?**, **Mirror** will be automatically selected. This is the only supported sync behavior for SFTP.
+4. Under **How should changes to the source be synced?**, **Replace** will be automatically selected. This is the only supported sync behavior for SFTP.
 5. Under **Which properties should be updated?**, choose whether to sync only **Selected Properties** or **Sync All Properties**. Syncing all properties will add new properties to the sync if the model changes.
 6. To test your sync without actually syncing data, click **Run Test** and verify the results.
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
@@ -122,12 +122,12 @@ Update or Create syncs upload your whole dataset on the first run and only new c
 ## 🔄 Supported sync behaviors
 
 |    **Behaviors** | **Supported?** | **Objects** |
-| ---------------: | :------------: | :---------: |
+|-----------------:| :------------: | :---------: |
 | Update or Create |        ✅       |     All     |
-|           Mirror |        ✅       |     All     |
+|          Replace |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for SFTP server connections.
