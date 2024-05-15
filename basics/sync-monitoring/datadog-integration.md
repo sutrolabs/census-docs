@@ -67,7 +67,9 @@ These will be present for both metrics & events:
 * **sync\_id** - your sync's immutable ID, also searchable in the [Management API](../developers/api.md) and [Sync Logs ](warehouse-writeback.md)
 * **sync\_behavior** - how the sync is updating your destination's records (e.g. upsert, update, mirror)
 * **destination\_type** - the destination you're updating with a sync (e.g. Salesforce, Google Sheets, ...)
+* **destination\_id** - the ID of the destination connection
 * **destination\_object** - the object you're updating within the destination (e.g. Account, User, ...)
+* **destination\_object\_id** - the ID of the object you're updating within the destination
 * **is\_full\_sync** - a boolean flag to indicate whether or not this sync is expected to be a full sync because either a user requested it or the sync is backfilling a newly added column
 
 For the **census.syncs.sync\_completed** metric only:
