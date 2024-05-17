@@ -1,7 +1,7 @@
 ---
 description: >-
-  Unleash your semantic graph and use your data to power apps far beyond your data
-  warehouse.
+  Unleash your semantic graph and use your data to power apps far beyond your
+  data warehouse.
 ---
 
 # Dataset API

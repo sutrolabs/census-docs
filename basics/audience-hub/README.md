@@ -4,7 +4,7 @@ description: >-
   segment builder, directly on top of your data warehouse.
 ---
 
-# Audience Hub
+# Overview
 
 Audience Hub is designed to help customer facing teams build segments for advertising and marketing activation directly on top of a Data Warehouse. In the past, these sorts of tools were only available in siloed martech solutions. Audience Hub makes segmentation a core feature of a business's data stack, enabling Marketing to collaborate with other business teams to create and experiment with the segments that matter most, and keep them in sync across all the marketing, advertising, and other services powering your business.
 

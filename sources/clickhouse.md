@@ -19,7 +19,7 @@ description: This page describes how to use ClickHouse as a source in Census.
 
 You can add Census's IP addresses in your firewall to only allow traffic originating from Census to access your ClickHouse warehouse.
 
-You can find Census's set of IP address for your region in [Regions & IP Addresses](../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
 
 ## 🚇 Connecting via SSH tunnel
 

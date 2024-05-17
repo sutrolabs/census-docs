@@ -10,21 +10,21 @@ Most modern warehouses now support syntax for defining semi-structured data and 
 
 ## Creating structured data
 
-Your traditional database column has a specific type such as `VARCHAR` or `INT` and will only ever contain that type of value. Modern data warehouses have increasingly added support for columns that contain structured data, almost always in the form of [JSON](https://www.json.org/json-en.html). Census takes advantage of these new capabilities to allow sending "nested" data structures where appropriate for each destination.&#x20;
+Your traditional database column has a specific type such as `VARCHAR` or `INT` and will only ever contain that type of value. Modern data warehouses have increasingly added support for columns that contain structured data, almost always in the form of [JSON](https://www.json.org/json-en.html). Census takes advantage of these new capabilities to allow sending "nested" data structures where appropriate for each destination.
 
 For most data warehouses, you can create the appropriate data structure to match the destination through a combination of one or more of the follow functions:
 
 * Creating an array of values by either providing a list of values or aggregating a list of values through a `GROUP BY`.
-* Creating an object made of key-value pairs by providing sets of values, or aggregating a pair of columns through a `GROUP BY`.&#x20;
+* Creating an object made of key-value pairs by providing sets of values, or aggregating a pair of columns through a `GROUP BY`.
 * Parsing a JSON formatted string.
 
-Note: If you need to get really expressive, you can also combine these creating an array of objects, or an object with arrays as well.&#x20;
+Note: If you need to get really expressive, you can also combine these creating an array of objects, or an object with arrays as well.
 
 Each warehouse does this with its own set of functions. We'll go over each of them here:
 
 ### Snowflake
 
-Of all the warehouses, Snowflake provides the richest set of functions to build and manipulate semi-structured data.&#x20;
+Of all the warehouses, Snowflake provides the richest set of functions to build and manipulate semi-structured data.
 
 To create an array, Snowflake provides a number of functions. These two are the most common:
 
@@ -36,7 +36,7 @@ For objects, Snowflake provides several more functions, including the matching s
 * `OBJECT_CONSTRUCT(key1, value1, key2, value2, ...)` - Creates an object out of the provided key and value pairs ([Snowflake docs](https://docs.snowflake.com/en/sql-reference/functions/object\_construct.html))
 * `OBJECT_AGG(key_column, value_column)` - Creates an object out of the `GROUP BY` or window function keys and values for that aggregation ([Snowflake docs](https://docs.snowflake.com/en/sql-reference/functions/object\_agg.html))
 
-Finally, to parse JSON, `PARSE_JSON(json_string)` ([Snowflake docs](https://docs.snowflake.com/en/sql-reference/functions/parse\_json.html)) will take care of that for you.&#x20;
+Finally, to parse JSON, `PARSE_JSON(json_string)` ([Snowflake docs](https://docs.snowflake.com/en/sql-reference/functions/parse\_json.html)) will take care of that for you.
 
 In all of these cases, Snowflake will return a `VARIANT` type which is their data type for semi-structured data.
 
@@ -62,4 +62,3 @@ For example, you may wish to pass the JSON `{'id': '110'}` to a destination that
 ### Redshift
 
 Redshift is late to the game on adding support for storing semi-structured data. They've just recently added the `SUPER` datatype and you can take advantage that with the `JSON_PARSE(json_string)` function ([Redshift docs](https://docs.aws.amazon.com/redshift/latest/dg/JSON\_PARSE.html)). Unfortunately, that's the only native option for Redshift at this point so to perform the same object/array aggregations from Snowflake, take a look at the string-based `LISTAGG()` function ([Redshift docs](https://docs.aws.amazon.com/redshift/latest/dg/r\_LISTAGG.html)).
-

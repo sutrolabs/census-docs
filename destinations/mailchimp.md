@@ -85,7 +85,7 @@ The Mailchimp `status` field supports one of four values: `subscribed`, `unsubsc
 
 #### Tags
 
-Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/defining-source-data/structured-data.md) using Census.
+Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/data-defining/defining-source-data/structured-data.md) using Census.
 
 ## 🔄⠀Supported Sync Behaviors
 

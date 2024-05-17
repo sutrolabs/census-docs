@@ -122,7 +122,7 @@ Learn more about all of our sync behaviors in our [Syncs](broken-reference) docu
 Depending on which plan your Mixpanel is on, you may have limited ability to view historical data. For example, currently Mixpanel's Starter Free plan will only show events from the last 90 days, even though Census can successfully sync older data. If you find some of your event data missing, take a look at [Mixpanel's documentation](https://help.mixpanel.com/hc/en-us/articles/115004511246-Data-History-Access-By-Plan-Type) to understand what limits your plan may have.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 ## 🚑 Need help connecting to Mixpanel?

@@ -67,7 +67,7 @@ Learn more about all of our sync behaviors in our [Syncs](broken-reference) docu
 
 #### Updating Product Images
 
-Census supports setting product images by passing an [Array](../basics/defining-source-data/structured-data.md) to the `images` field on the Product. The images array needs to be a set of one more objects that contain URLs to each image you want to upload. It should look something like the following:
+Census supports setting product images by passing an [Array](../basics/data-defining/defining-source-data/structured-data.md) to the `images` field on the Product. The images array needs to be a set of one more objects that contain URLs to each image you want to upload. It should look something like the following:
 
 ```
 [

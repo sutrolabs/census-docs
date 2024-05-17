@@ -51,7 +51,7 @@ Learn more about all of our sync behaviors in our [Syncs](broken-reference) docu
 
 ## 🚦Advanced Network Configuration
 
-Census can successfully connect to Redshift instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
+Census can successfully connect to Redshift instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## 🚑 Need help connecting to Redshift?
 

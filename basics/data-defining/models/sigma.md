@@ -2,7 +2,7 @@
 description: Connect Sigma to Census and sync data directly from Sigma Workbooks
 ---
 
-# Sigma
+# Sigma Integration
 
 You can connect Census directly to [Sigma](https://sigmacomputing.com/) which allows you to build Workbooks with their powerful visual builder and then sync the data to any of your business apps Census refreshes data from Sigma whenever a sync is run so your data is always up to date.
 

@@ -2,7 +2,7 @@
 description: Connect Looker to Census and sync data directly from Looker Looks.
 ---
 
-# Looker
+# Looker Integration
 
 Census supports connecting to an existing Looker environment, which allows you to build Looker Looks with Looker's powerful visual builder and then sync the data to any of your business apps.
 

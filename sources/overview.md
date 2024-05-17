@@ -36,4 +36,4 @@ If you have any questions about which Sync Engine is right for you, please [reac
 
 Most sources require allowlisting IP Addresses so that Census's systems can unload data from the source. [BigQuery](google-bigquery.md) and [Databricks](databricks.md) are notable exceptions, so do check the source-specific docs if you have any questions.
 
-If your source is protected by a firewall, please add Census's IP addresses to the allowlist. You can find Census's set of IP address for your region in [Regions & IP Addresses](../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+If your source is protected by a firewall, please add Census's IP addresses to the allowlist. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).

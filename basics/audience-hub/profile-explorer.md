@@ -8,7 +8,7 @@ description: >-
 
 ## Before you start
 
-The profile explorer allows you to build and explore your complete customer 360, based on the joining of your key entities.  Typically a member of the data team will need to first set up the entities for your warehouse connection before getting started. Take a look at [Defining Your Data Model](data-preparation-1.md) for details.
+The profile explorer allows you to build and explore your complete customer 360, based on the joining of your key entities.  Typically a member of the data team will need to first set up the entities for your warehouse connection before getting started. Take a look at [Defining Your Data Model](data-preparation.md) for details.
 
 ## Using the Profile Explorer
 
@@ -18,7 +18,7 @@ This data can then be searched using the search box or sorted by clicking on the
 
 Each record can also be explored in more detail by clicking on an individual row,  this will bring up a profile view of that record with all the information known.&#x20;
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 The icon for a person or company will show if the entity has been given the following mappings, in this order of priority:
 

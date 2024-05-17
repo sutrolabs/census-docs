@@ -2,7 +2,7 @@
 
 ## Secure Communication
 
-All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS.&#x20;
+All connections from the Census Data Warehouse Service to your database are protected by TLS encryption - Census will refuse to connect to a warehouse that does not support TLS.
 
 ## Regions
 
@@ -46,7 +46,7 @@ If your organization has strict data residency requirements, we recommend verify
 
 ## IP Addresses
 
-Census syncs data from your data sources to your destinations using a set of static IP addresses. To ensure that Census can connect successfully to your sources or any self-hosted destinations, you must allowlist the following IP addresses in your firewall.&#x20;
+Census syncs data from your data sources to your destinations using a set of static IP addresses. To ensure that Census can connect successfully to your sources or any self-hosted destinations, you must allowlist the following IP addresses in your firewall.
 
 <table><thead><tr><th width="412">Region</th><th>IP Addresses (CIDR)</th></tr></thead><tbody><tr><td>🇺🇸 N. Virginia (us-east-1)</td><td><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p></td></tr><tr><td>🇪🇺 Frankfurt (eu-central-1)</td><td><p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p></td></tr></tbody></table>
 
@@ -55,17 +55,14 @@ Census syncs data from your data sources to your destinations using a set of sta
 Census supports connecting to data warehouse source and destinations that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
 
 1. Create a new user account for Census on the SSH host. This account is separate from the database user account and can have a different username.
-2.  When configuring a warehouse connection, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below. Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.\
-
+2.  When configuring a warehouse connection, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below. Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.\\
 
     <figure><img src="../../.gitbook/assets/SSH Tunnel.png" alt=""><figcaption></figcaption></figure>
-3.  Once the connection is created, Census will generate a key-pair for SSH authentication which is visible on the connect card.\
-
+3.  Once the connection is created, Census will generate a key-pair for SSH authentication which is visible on the connect card.\\
 
     To install the key-pair, copy the public key in Census to your clipboard and add it to the SSH authorized keys file on the SSH host for the user created in the first step. If, for example, this user is named `census`, the file should be located at `/home/census/.ssh/authorized_keys`. You may need to create this file if it doesn't exist.
 
-    Note that the key-pair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.\
-
+    Note that the key-pair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.\\
 
     <figure><img src="../../.gitbook/assets/Connection Card.png" alt=""><figcaption></figcaption></figure>
 4. If the SSH host restricts IP ranges that can connect to it, add the above Census IPs to the allowlist.

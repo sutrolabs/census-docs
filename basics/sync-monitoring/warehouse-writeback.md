@@ -60,7 +60,7 @@ The `destination_id`, `destination_object_id`, `source_id`, and `source_object_i
 
 In addition to row level sync logs, Warehouse Writeback will create metadata tables about source objects and destinations involved in syncs. These tables can be joined to the `sync_log` table on their `id` column in order to add additional context.
 
-For example, imagine you have a mirror sync from a [Segment](../../audience-hub/syncing-segments.md) to an ads destination like Google. The `sync_log` table will log attempts to send new records (i.e. those that entered the segment) to the destination. It will also log attempts to delete records (i.e. those that left the segment) from the destination. If you join those logs with the source objects table (described below) you can get full insight into who is entering and leaving what segments, by name, and when.
+For example, imagine you have a mirror sync from a [Segment](../audience-hub/syncing-segments.md) to an ads destination like Google. The `sync_log` table will log attempts to send new records (i.e. those that entered the segment) to the destination. It will also log attempts to delete records (i.e. those that left the segment) from the destination. If you join those logs with the source objects table (described below) you can get full insight into who is entering and leaving what segments, by name, and when.
 
 {% hint style="info" %}
 Metadata Tables are refreshed every six hours, separate from sync runs history. That means you may see a delay on records appearing in metadata for syncs that are using brand new sources or destinations.&#x20;
@@ -134,7 +134,7 @@ ON log.source_object_id = source.id
 WHERE log.sync_id = 1234;
 ```
 
-The [Sync History](../core-concept.md) page also includes an ID for each sync run which allows you to limit the query to that run. For example, if you'd like to see records that Census deleted on a recent sync run **5678**,
+The [Sync History](../core-concept/) page also includes an ID for each sync run which allows you to limit the query to that run. For example, if you'd like to see records that Census deleted on a recent sync run **5678**,
 
 ```sql
 SELECT * 

@@ -92,7 +92,7 @@ Census currently supports syncing to the following Braze objects.
 | Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |                  Mirror                  |
 |                          User |        ✅       |                                  External User ID & User Alias                                 | Update or Create, Update, Delete, Mirror |
 
-Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/defining-source-data/structured-data.md) to Braze:
+Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-defining/defining-source-data/structured-data.md) to Braze:
 
 * [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
 * [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.

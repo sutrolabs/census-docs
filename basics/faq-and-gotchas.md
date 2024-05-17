@@ -4,7 +4,7 @@ description: >-
   Hopefully this can make your Census UX smoother.
 ---
 
-# FAQ & Gotchas
+# FAQs
 
 We try to provide a list for different categories of issues that we have seen customers run into. Please let us know if there are some other categories that you are curious about.
 

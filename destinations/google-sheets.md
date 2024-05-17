@@ -138,7 +138,7 @@ Google Sheets support is pretty straight forward!
 |   **Replace** |        ✅       |  Sheet Tabs |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Google Sheets.

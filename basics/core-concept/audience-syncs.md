@@ -14,7 +14,7 @@ Audience Sync destinations all have one thing in common, they support the concep
 
 Destinations that support audience syncs will allow you to select the specific audience or list you'd like to sync into. You can also provide Census with a new audience name and Census will automatically create the segment for you. You can also select a column from the data itself and Census will use that value in the data to either create a new audience or update an existing one.
 
-<figure><img src="../.gitbook/assets/Artboard Copy.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Artboard Copy.png" alt=""><figcaption></figcaption></figure>
 
 #### Census-created Audience Tracking
 
@@ -27,6 +27,6 @@ You can optionally define what happens when a record leaves your source data set
 * **Remove Record From Audience** - When the record disappears, also remove it from the destination audience. If the destination represents members with a standalone profile record, this will not be deleted, just removed from the audience.
 * **Do Nothing** - Simply stop updating. This is useful if your audience has a separate automatic expiration configured where stale members are removed automatically.
 
-<figure><img src="../.gitbook/assets/Artboard Copy 2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Artboard Copy 2.png" alt=""><figcaption></figcaption></figure>
 
-The rest of the sync configuration is identical to any other typical sync and the fields that you map will be passed to the destination. For more information see [Syncs in Core Concepts](core-concept.md).
+The rest of the sync configuration is identical to any other typical sync and the fields that you map will be passed to the destination. For more information see [Syncs in Core Concepts](./).

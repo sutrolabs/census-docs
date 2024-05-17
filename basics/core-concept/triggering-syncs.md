@@ -30,11 +30,11 @@ Here's a few examples of common Cron schedules:
 
 **Please note:** If including a range in your CRON schedule you'll want to make sure the values in the range are in a comma separated list.
 
-**Example:**&#x20;
+**Example:**
 
 Hourly during weekdays should be: `0 * * * 1,2,3,4,5` instead of `0 * * * 1-5`
 
-## dbt Cloud&#x20;
+## dbt Cloud
 
 If you're using dbt Cloud to compile your dbt project, Census can trigger syncs whenever one of your dbt Cloud project runs have completed. Simply select your dbt Cloud project's job to monitor and Census will automatically trigger a sync when it completes.
 
@@ -44,7 +44,7 @@ If you're using dbt Cloud to compile your dbt project, Census can trigger syncs 
 Using dbt Cloud to trigger syncs works great with [dbt Models](https://docs.getcensus.com/models/native-dbt-integration) but is not required. Both dbt integrations can be used independently.
 {% endhint %}
 
-To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key. We use this to subscribe to webhooks for each job you specify.&#x20;
+To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key. We use this to subscribe to webhooks for each job you specify.
 
 * dbt strongly recommends you use a Service Account token, though User API keys with the correct permissions are accepted. Service Account tokens can be created by users with Account Admin (Enterprise plan) or Owner (Team plan) permissions.
 * The Service Token requires at least the `developer` permission (for Enterprise) or `Member` permission (for Team) in order to configure new webhooks. See [dbt Cloud docs](https://docs.getdbt.com/docs/deploy/webhooks#prerequisites) for more details.
@@ -67,7 +67,7 @@ If you use Fivetran to load data into your data warehouse, or make use of their 
 
 <figure><img src="../../.gitbook/assets/Fivetran Trigger.png" alt=""><figcaption></figcaption></figure>
 
-To connect Census to Fivetran, you'll first need an API key and secret associated with an Account Admin user.&#x20;
+To connect Census to Fivetran, you'll first need an API key and secret associated with an Account Admin user.
 
 1. Visit [Organizations Settings and select the Integrations tab](https://app.getcensus.com/home/integrations).
 2. Copy and paste your Fivetran API Key and Secret. Press **Verify** to confirm they were copied correctly and have the correct permissions. **Save** your settings.

@@ -35,7 +35,7 @@ GRANT SELECT ON <your schema>.* TO CENSUS;
 
 ## 🚦Advanced Network Configuration
 
-Census can successfully connect to SingleStore instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
+Census can successfully connect to SingleStore instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## 🚑 Need help connecting to SingleStore?
 

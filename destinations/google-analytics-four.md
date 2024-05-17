@@ -55,7 +55,7 @@ You should now be ready to start sending data to Google Analytics 4!
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept.md#sync-behaviors).
+Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
 {% endhint %}
 
 |                                                                                                          **Object Name** | **Supported?** |               **Sync Keys**               | **Behavior**                                                                                     |
@@ -81,7 +81,7 @@ Google Analytics supports custom properties they call Dimensions and Metrics, bo
 * Google limits the number of user and event scoped custom dimensions and metrics. For most GA4 properties, a maximum of 50 custom event dimensions and 25 custom user dimensions are allowed. See [Google's docs for the up to date list of limits](https://support.google.com/analytics/answer/10075209#limits).
 * Avoid syncing "high cardinality" dimensions. [Google defines high cardinality](https://support.google.com/analytics/answer/12226705) dimension as having more than 500 unique values in a single day. So stick to using dimensions that look like categories or tags.
 
-To send custom properties as part of a sync, you can add destination fields via the new Custom Field button as well as the [Properties Bundle structured object](../basics/defining-source-data/events.md#using-the-properties-bundle) which can be used to send more complex event data structures.
+To send custom properties as part of a sync, you can add destination fields via the new Custom Field button as well as the [Properties Bundle structured object](../basics/data-defining/defining-source-data/events.md#using-the-properties-bundle) which can be used to send more complex event data structures.
 
 ### Properties and Data Streams
 

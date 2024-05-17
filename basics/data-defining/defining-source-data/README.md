@@ -11,4 +11,4 @@ Census supports syncing data to a wide variety of destination object types beyon
 Learn more about these particular data types:
 
 * [events.md](events.md "mention") - How to model data to send to event-oriented destinations
-* [structured-data.md](structured-data.md "mention") - When services require semi-structured or nested fields to be passed along in order to represent lists or related objects.&#x20;
+* [structured-data.md](structured-data.md "mention") - When services require semi-structured or nested fields to be passed along in order to represent lists or related objects.

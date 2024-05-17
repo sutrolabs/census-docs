@@ -24,7 +24,7 @@ Choose a name for your bucket that is memorable and clear. For example, if your 
 
 In a shell, set up a few variables we'll use throughout the rest of this guide:
 
-The `CENSUS_AWS_ACCOUNT_ID` and `CENSUS_CUSTOMER_BUCKET_EXTERNAL_ID` will be provided to you by your Census representative. This may be your account contact or you can reach out to support@getcensus.com&#x20;
+The `CENSUS_AWS_ACCOUNT_ID` and `CENSUS_CUSTOMER_BUCKET_EXTERNAL_ID` will be provided to you by your Census representative. This may be your account contact or you can reach out to support@getcensus.com
 
 ```
 export BUCKET_NAME=<your bucket name>
