@@ -2,11 +2,11 @@
 description: This page describes how to sync data to your Redshift data warehouse.
 ---
 
-# Redshift
+# Amazon Redshift
 
 ## 🏃‍♀️ Getting Started
 
-This guide will walk you through connecting to AWS Redshift as a destination.&#x20;
+This guide will walk you through connecting to AWS Redshift as a destination.
 
 {% hint style="info" %}
 If you are trying to use Redshift as a data source (to query data from Redshift and sync to elsewhere), that process is documented separately here: [Redshift Data Source](../sources/redshift.md)
@@ -20,7 +20,7 @@ If you are trying to use Redshift as a data source (to query data from Redshift 
 
 ## 🔑 Permissions
 
-To use Redshift as a destination, Census requires permission to write to the desired destination tables, as well as read metadata about the table and database structures.&#x20;
+To use Redshift as a destination, Census requires permission to write to the desired destination tables, as well as read metadata about the table and database structures.
 
 ```
 -- Note that creating a user may be redundant if you're already configured
@@ -39,19 +39,19 @@ GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 
 ## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                            |
-| --------------: | :------------: | ---------------------- |------------------------------------------|
-|         Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
+| **Object Name** | **Supported?** | **Sync Keys**                                       | **Behaviors**                      |
+| --------------: | :------------: | --------------------------------------------------- | ---------------------------------- |
+|           Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Redshift objects and/or behaviors.
 
 ## 🚦Advanced Network Configuration
 
-Census can successfully connect to Redshift instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+Census can successfully connect to Redshift instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## 🚑 Need help connecting to Redshift?
 

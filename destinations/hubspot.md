@@ -22,22 +22,22 @@ Follow the OAuth flow to connect HubSpot. Easy!
 
 ## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**                     | **Behaviors**                         |
-|-----------------| :------------: |-----------------------------------|---------------------------------------|
-| Company         |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror |
-| Contact            |        ✅       | Object ID, Email, any Text/Number | Update Only, Update or Create, Mirror           |
-| Contact & Static List           |        ✅       | Email                             | Update Only, Update or Create, Mirror           |
-| Deal           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
-| Product           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
-| Line Item           |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror           |
-| Custom Object           |        ✅       | Object ID, any searchableProperty | Update Only, Update or Create, Mirror           |
-| Subscription Preferences           |        ✅       | Email                             | Mirror                                |
-| Custom Behavioral Event          |        ✅       | Unique Event ID                   | Send                                  |
-| Email          |        ✅       | N/A                               | Send                                  |
-| Ticket          |        ✅       | Record ID                         | Send                                  |
+| **Object Name**          | **Supported?** | **Sync Keys**                     | **Behaviors**                         |
+| ------------------------ | :------------: | --------------------------------- | ------------------------------------- |
+| Company                  |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror |
+| Contact                  |        ✅       | Object ID, Email, any Text/Number | Update Only, Update or Create, Mirror |
+| Contact & Static List    |        ✅       | Email                             | Update Only, Update or Create, Mirror |
+| Deal                     |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror |
+| Product                  |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror |
+| Line Item                |        ✅       | Object ID, any Text/Number        | Update Only, Update or Create, Mirror |
+| Custom Object            |        ✅       | Object ID, any searchableProperty | Update Only, Update or Create, Mirror |
+| Subscription Preferences |        ✅       | Email                             | Mirror                                |
+| Custom Behavioral Event  |        ✅       | Unique Event ID                   | Send                                  |
+| Email                    |        ✅       | N/A                               | Send                                  |
+| Ticket                   |        ✅       | Record ID                         | Send                                  |
 
 {% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Hubspot objects and/or behaviors
@@ -56,7 +56,7 @@ If you need a hand making one of your existing Custom Object fields searchable, 
 
 Custom Behavioral Events require a bit of prep work. You'll first need to go into HubSpot and create your event (see [HubSpot's instructions for how to do that](https://knowledge.hubspot.com/analytics-tools/create-custom-behavioral-events)).
 
-You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's **internal name** for the object—you'll need to provide that to the `Event Name` property during the Census sync.&#x20;
+You'll need to both create the event AND add all of the custom properties beforehand. Once you've done so, copy and paste HubSpot's **internal name** for the object—you'll need to provide that to the `Event Name` property during the Census sync.
 
 Hubspot also requires either the contact ID, email or utk of the contact associated with the event.
 
@@ -133,14 +133,14 @@ Please be aware that Custom Objects require additional API calls and are even sl
 
 ## 🔑 Required Permissions
 
-Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects.&#x20;
+Census requires that the connecting HubSpot user have Super Admin permissions in order to access all supported HubSpot objects.
 
 ## 🆘 Common Errors
 
 There's a few errors which frequently cause skipped records on when syncing data to Hubspot.
 
 * `TypeCastError: Empty input (after ) at line 1, column 1 [parse.c:1060] in 'InternalValue1;`When syncing to a Multiple Checkbox (Enumerated) field, the source data should be formatted as an array instead of adding a semicolon between each value.
-* `Multiple Contacts found with ID 123456`When syncing associations, the `Lookup By` field should be unique. For example, if we have a Company sync with a contact association in the field mapping and the `Lookup By` field is a non-unique ID field, we will reject the Company record if we find multiple Contacts with that ID.&#x20;
+* `Multiple Contacts found with ID 123456`When syncing associations, the `Lookup By` field should be unique. For example, if we have a Company sync with a contact association in the field mapping and the `Lookup By` field is a non-unique ID field, we will reject the Company record if we find multiple Contacts with that ID.
 
 ## :electric\_plug: Disconnecting HubSpot
 

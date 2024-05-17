@@ -16,7 +16,7 @@ description: This page describes how to use Materialize as a source in Census.
   * (Optional) Specify a database in your Materialize instance to use as a default database for SQL models. The `materialize` database is selected by default.
 * You’re all set! Head over to the **Syncs** page to activate your data.
 
-## 💡 Notes <a href="#notes" id="notes"></a>
+## 💡Notes
 
 As of June 2023, Materialize only supports our [Basic Sync Engine](overview.md#sync-engines).
 

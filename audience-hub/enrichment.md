@@ -28,7 +28,7 @@ Census Enrichment makes it drop dead simple to enable data enrichment directly i
 Enrichments is currently supported on Snowflake, Redshift, BigQuery, and Postgres with more warehouses coming soon!
 {% endhint %}
 
-Enrichments are configured on [entities.md](entities.md "mention"). Every entity now has a Data Enrichment tab that allows configuring enrichment. The data within the entity will act as the source data that is passed to the enrichment service, and Census will automatically store the results in the warehouse as well as add the data you specify to the entities.
+Enrichments are configured on Entities. Every entity now has a Data Enrichment tab that allows configuring enrichment. The data within the entity will act as the source data that is passed to the enrichment service, and Census will automatically store the results in the warehouse as well as add the data you specify to the entities.
 
 Before you start, you'll need to create a connection to your enrichment service. You can add these in the [Destinations tab](https://app.getcensus.com/destinations). You'll see a Data Enrichment tag indicating a service can be used for enrichment and you can see the [full set of services we support](enrichment.md#supported-enrichment-services) below.
 
@@ -66,7 +66,7 @@ Fill your warehouse with 65+ firmographic fields for scoring, routing, research,
 
 To connect to Apollo.io, you will need to visit the [Apollo developer portal](https://developer.apollo.io/) and create or reuse an existing API key. Keep in mind:
 
-* Apollo.io API keys can be scoped to limit access to particular API endpoints. To enable enrichment, Census will need access to the `/people/match` and `/organizations/enrich` endpoints. The [Apollo sync destination](../../destinations/apollo.md) uses a different set of permissions so you may need to update the API key configuration first to use it with enrichments.
+* Apollo.io API keys can be scoped to limit access to particular API endpoints. To enable enrichment, Census will need access to the `/people/match` and `/organizations/enrich` endpoints. The [Apollo sync destination](../destinations/apollo.md) uses a different set of permissions so you may need to update the API key configuration first to use it with enrichments.
 * Enriching does use Apollo API credits. Please see [Apollo's documentation](https://apolloio.github.io/apollo-api-docs/?shell#bulk-people-enrichment) for details on credit usage.
 
 | Data Category | Identifier(s) | Data Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |

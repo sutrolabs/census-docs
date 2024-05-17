@@ -63,7 +63,7 @@ Here you will have to write SQL queries to select the data you want to see in Mi
 * The date they became active in your product.
 * The number of key activities a user did in your app in the last 7/30 days
 
-Once you have created your model, click save.&#x20;
+Once you have created your model, click save.
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/5f6563834cedfd00173b9a49/file-zg53SxxpoO.png)
 
@@ -81,7 +81,7 @@ Next up is the "Where do you want to sync data to?" section.
 * Pick Mixpanel as the Connection
 * For Object, Select Events or User Profile. We will be using User Profile in this guide.
 
-For the " How should changes to the source be synced?" section.&#x20;
+For the " How should changes to the source be synced?" section.
 
 * Select Update Or Create
 * Pick the right mapping key; Mixpanel only supports Distinct ID.
@@ -104,15 +104,15 @@ That's it! In 5 steps, you connect Census to Mixpanel and started syncing custom
 
 Census currently supports syncing to the following Mixpanel objects.
 
-| **Object Name** | **Supported?** | Identifiers |  **Behaviors**   |
-| --------------: | :------------: | ----------- |:----------------:|
+| **Object Name** | **Supported?** | Identifiers |   **Behaviors**  |
+| --------------: | :------------: | ----------- | :--------------: |
 |           Event |        ✅       | Insert ID   |       Send       |
-|   User Profile  |        ✅       | Distinct ID | Update or Create |
+|    User Profile |        ✅       | Distinct ID | Update or Create |
 |   Group Profile |        ✅       | Group ID    | Update or Create |
 |    Lookup Table |        ✅       | Join Key    |      Mirror      |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mixpanel objects and/or behaviors
@@ -122,7 +122,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 Depending on which plan your Mixpanel is on, you may have limited ability to view historical data. For example, currently Mixpanel's Starter Free plan will only show events from the last 90 days, even though Census can successfully sync older data. If you find some of your event data missing, take a look at [Mixpanel's documentation](https://help.mixpanel.com/hc/en-us/articles/115004511246-Data-History-Access-By-Plan-Type) to understand what limits your plan may have.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
 ## 🚑 Need help connecting to Mixpanel?

@@ -107,13 +107,13 @@ That's it! In 6 steps, you connected Census to Autopilot and started syncing cus
 ## 🗄 Supported Objects
 
 | **Object Name** | **Supported?** | **Sync Keys** |
-| --------------- | :------------: | --------------- |
-| Contact         |        ✅       | Email           |
+| --------------- | :------------: | ------------- |
+| Contact         |        ✅       | Email         |
 
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

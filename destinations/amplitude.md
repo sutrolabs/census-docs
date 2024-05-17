@@ -51,7 +51,7 @@ Now that we have the API Key from Amplitude, we can now set up Amplitude as a De
 
 </div>
 
-2. You can provide whatever name you like.&#x20;
+2. You can provide whatever name you like.
 3. Provide the copied API Key from Amplitude.
 4. Choose the appropriate region
 5. Click Connect
@@ -100,17 +100,17 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 ## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
-|-----------------:| :------------: | ---------------- |------------------|
-| Devices | ✅ | Device ID | Update or Create |
-|   Users | ✅ | User ID | Update or Create           |
-|     Groups | ✅ | Group Value | Update or Create           |
-|     Events | ✅ | Insert ID | Send             |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
+| --------------: | :------------: | ------------- | ---------------- |
+|         Devices |        ✅       | Device ID     | Update or Create |
+|           Users |        ✅       | User ID       | Update or Create |
+|          Groups |        ✅       | Group Value   | Update or Create |
+|          Events |        ✅       | Insert ID     | Send             |
 
 Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Amplitude objects and/or behaviors.

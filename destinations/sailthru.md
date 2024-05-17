@@ -57,18 +57,14 @@ The steps for connecting your data source will depend on your technology. See th
 * [Snowflake](../sources/snowflake.md)
 * [SQL Server](../sources/sql-server.md)
 
-### Step 3: Create your model
+### Step 3: Create your dataset
 
-When defining models, you'll write SQL queries to select the data you want to see in Sailthru. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.
+When defining datasets, you'll write SQL queries to select the data you want to see in Sailthru. This can be as simple as selecting everything in a specific database table or as complex as creating new calculated values.
 
-1. From inside your Census account, navigate to the **Models** page.
-2. Enter a name for your model. You'll use this to select the model later.
+1. From inside your Census account, navigate to the **Dataset** page.
+2. Enter a name for your dataset. You'll use this to select the dataset later.
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
-4. Click **Save Model**.
-
-{% hint style="info" %}
-You can also use [dbt](../basics/data-defining/models/native-dbt-integration.md), [Looker](../basics/data-defining/models/looker.md), or [Segments](broken-reference/) as other source models. And you can also use a Warehouse Table/View.
-{% endhint %}
+4. Click **Save Dataset**.
 
 ### Step 4: Create your first sync
 
@@ -111,7 +107,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 |      Update Only |       `✅`      |     User    |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Sailthru.

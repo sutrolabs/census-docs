@@ -18,7 +18,7 @@ Note: You will need admin rights in your organization's Pinterest Business Accou
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Sync Keys**        |
+| **Object Name** | **Supported?** | **Sync Keys**          |
 | --------------: | :------------: | ---------------------- |
 |   Customer List |        ✅       | Email, IDFA, MAID \*\* |
 
@@ -31,7 +31,7 @@ Note: [Pinterest requires](https://developers.pinterest.com/docs/api/v5/#tag/cus
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** |  **Objects**  |

@@ -99,7 +99,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 
 ## 🗄️ Supported Objects
 
-| **Object Name** | **Supported?** | **Sync Keys**                      |
+| **Object Name** | **Supported?** | **Sync Keys**                        |
 | --------------- | :------------: | ------------------------------------ |
 | Account         |        ✅       | Account ID, Account Number           |
 | Subscription    |        ✅       | Subscription ID, Subscription Number |
@@ -109,7 +109,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 | **Behaviors** | **Supported?** |      **Objects**      |

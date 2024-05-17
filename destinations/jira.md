@@ -95,11 +95,11 @@ Click the Next button to see the final preview, which will have a recap of what 
 Jira's primary object is an Issue, which we support in Census.​
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
-| :-------------: | :------------: | :-------------: |:-------------:|
-|      Issue      |        ✅       |    Unique ID    |      Add      |
+| :-------------: | :------------: | :-----------: | :-----------: |
+|      Issue      |        ✅       |   Unique ID   |      Add      |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Jira objects and/or behaviors

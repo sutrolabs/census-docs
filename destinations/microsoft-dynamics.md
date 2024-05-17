@@ -81,7 +81,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Sync Keys**                       |
+| **Object Name** | **Supported?** | **Sync Keys**                         |
 | --------------: | :------------: | ------------------------------------- |
 |     Entity name |        ✅       | All single-column keys for the entity |
 
@@ -111,7 +111,7 @@ For a string example of a column in Snowflake:
 | Update or Create |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Microsoft Dynamics.

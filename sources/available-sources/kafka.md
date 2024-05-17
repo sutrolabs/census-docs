@@ -6,7 +6,7 @@ description: This page describes how to configure Kafka as a source for Census.
 
 ## :globe\_with\_meridians: Connectivity
 
-Census can connect to Kafka clusters over the public internet. Census always connects to your cluster via TLS using [static IP addresses](../../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses) that you can add to an allow list.
+Census can connect to Kafka clusters over the public internet. Census always connects to your cluster via TLS using [static IP addresses](../../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses) that you can add to an allow list.
 
 ### Authentication
 

@@ -13,6 +13,7 @@ Please note that for larger syncs, it might take \~10 minutes for you to see the
 ## 🏃‍♀️ Getting Started
 
 The first step is to create a new API key in Iterable. API keys are created within an Iterable Project so ensure you're in the project you want to connect to Census.
+
 1. Within your Iterable project, click the **Integration** option in the top menu and select **API keys**.
 2. We recommend you create a new API key for Census. Click **+ New API Key** in the top right.
 3. Select the "Server-side" key type from the subsequent dropdown.
@@ -25,14 +26,14 @@ Back in Census, navigate to the Destinations page and click **Add Destination**.
 ## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                 |
-| --------------: | :------------: | -------------- |-------------------------------|
+| --------------: | :------------: | -------------- | ----------------------------- |
 |            User |        ✅       | User ID, Email | Update or Create, Update Only |
 |           Event |        ✅       | Event ID       | Send                          |
 |         Catalog |        ✅       | Key            | Update or Create, Mirror      |
 |     Static List |        ✅       | User ID, Email | Mirror                        |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Iterable objects and/or behaviors

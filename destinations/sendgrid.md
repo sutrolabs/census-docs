@@ -12,19 +12,18 @@ description: This page describes how to use Census with Sendrid.
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your SendGrid account ready.
-*   Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-
-    * [Azure Synapse](../sources/azure-synapse.md)
-    * [Databricks](https://docs.getcensus.com/sources/databricks)
-    * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-    * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-    * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-    * [MySQL](https://docs.getcensus.com/sources/mysql)
-    * [Postgres](https://docs.getcensus.com/sources/postgres)
-    * [Redshift](https://docs.getcensus.com/sources/redshift)
-    * [Rockset](https://docs.getcensus.com/sources/rockset)
-    * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-    * [SQL Server](https://docs.getcensus.com/sources/sql-server)
+* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [MySQL](https://docs.getcensus.com/sources/mysql)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### 1. Gather SendGrid API Credentials
 
@@ -50,14 +49,14 @@ With the SendGrid API key, return to Census and visit the **Destinations** tab. 
 
 Census currently supports syncing to the following SendGrid objects.
 
-| **Object Name** | **Supported?** | Identifiers | **Behaviors**                 |
-| --------------: | :------------: | ----------- |-------------------------------|
-|         Contact |        ✅       | Email       | Update or Create, Update Only |
-|            List |        ✅       | Email       | Update or Create, Mirror      |
+| **Object Name** | **Supported?** | Identifiers           | **Behaviors**                 |
+| --------------: | :------------: | --------------------- | ----------------------------- |
+|         Contact |        ✅       | Email                 | Update or Create, Update Only |
+|            List |        ✅       | Email                 | Update or Create, Mirror      |
 | Email Templates |        ✅       | Any unique identifier | Send                          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sendgrid objects and/or behaviors.

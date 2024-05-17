@@ -14,12 +14,12 @@ description: This page describes how to use Census with Insightly.
 
 ## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|                                                                                             **Object Name** | **Supported?** | **Sync Keys**  |  **Behaviors**   |
-|------------------------------------------------------------------------------------------------------------:| :------------: | :------------: |:----------------:|
-|                                                                                                   Behaviors |        ✅      | Contact ID, Email | Update Only, Add |
+| **Object Name** | **Supported?** |   **Sync Keys**   |   **Behaviors**  |
+| --------------: | :------------: | :---------------: | :--------------: |
+|       Behaviors |        ✅       | Contact ID, Email | Update Only, Add |
 
 {% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Insightly objects and/or behaviors.

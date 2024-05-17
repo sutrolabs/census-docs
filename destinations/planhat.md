@@ -52,7 +52,7 @@ In Planhat, once a token is created, it will appear once and last forever. Make 
 Census currently supports syncing to the following Planhat objects.
 
 | **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                 |
-| --------------: | :------------: | ---------------------- |-------------------------------|
+| --------------: | :------------: | ---------------------- | ----------------------------- |
 |         Company |        ✅       | Source ID, External ID | Update or Create, Update Only |
 |        End User |        ✅       | Source ID              | Update or Create              |
 |        Activity |        ✅       | Any unique ID          | Send                          |
@@ -62,7 +62,7 @@ Census currently supports syncing to the following Planhat objects.
 |             NPS |        ✅       | Source ID              | Update or Create              |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Planhat objects and/or behaviors

@@ -15,7 +15,7 @@ If you are configuring Google BigQuery as a source (to query data from BigQuery 
 1. Visit the [Destinations page](https://app.getcensus.com/destinations) and click **+ New Destination**.
 2. Enter your Google Cloud Project ID.
 
-## 🔑  Permissions and Service Accounts
+## 🔑 Permissions and Service Accounts
 
 In order to connect to your BigQuery projects, Census uses a service account. This service account can be provided by you or managed by Census (recommended).
 
@@ -31,7 +31,7 @@ Otherwise, one you save your connection, Census will create a dedicated Google C
 
 Click the _Activate Cloud Shell_ (near top right) icon in Google Cloud and execute the following commands.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Replace `cs-sandbox-12345` with your Project ID.
 * Replace `census-12345abcd1234512345abcdabcd@sutrolabs-giza-production.iam.gserviceaccount.com` with the service account provided in the Census UI.
@@ -48,24 +48,22 @@ gcloud projects add-iam-policy-binding cs-sandbox-123456 \
 
 ## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                            |
-| --------------: | :------------: | ---------------------- |------------------------------------------|
-|         Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
+| **Object Name** | **Supported?** | **Sync Keys**                                       | **Behaviors**                      |
+| --------------: | :------------: | --------------------------------------------------- | ---------------------------------- |
+|           Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
 
 {% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
 
 ## 🚦Network Access Controls
 
-While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access. You can find Census's set of IP address for your region in [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention").
+While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access. You can find Census's set of IP address for your region in [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention").
 
 When using VPC Service Controls, you will also need to allow BigQuery unloads to the Census GCP bucket. To do that, you'll need to add [`gs://sutrolabs-giza-unloads-production`](gs://sutrolabs-giza-unloads-production) in the allow list for BigQuery unloads.
 
 ## 🚑 Need help connecting to Google BigQuery?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
-
-[^1]: 

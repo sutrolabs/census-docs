@@ -60,7 +60,7 @@ Census currently supports syncing to the following LinkedIn objects through audi
 It is required to provide a DMP Segment Id for both objects that are supported
 {% endhint %}
 
-| **Object Name** | **Supported?** | **Sync Keys**                                                                                |
+| **Object Name** | **Supported?** | **Sync Keys**                                                                                  |
 | --------------: | :------------: | ---------------------------------------------------------------------------------------------- |
 |    Company List |        ✅       | Company Email Domain, Company Name, Company Page URL, Company Website Domain, Organization Urn |
 |       User List |        ✅       | Email (unhashed, SHA256/512 hashed), Google Advertising Id, Apple Advertising Id               |
@@ -70,13 +70,13 @@ It is required to provide a DMP Segment Id for both objects that are supported
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |    **Behaviors** | **Supported?** | **Objects** |
-| ---------------: | :------------: | :----------: |
-| Update or Create |        ✅       |      All     |
-|           Mirror |        ✅       |      All     |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |     All     |
+|           Mirror |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for LinkedIn.
 

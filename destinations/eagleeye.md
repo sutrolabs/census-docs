@@ -15,19 +15,19 @@ You should now be ready to start syncing data to Eagle Eye!
 
 ## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | :------------: |:-------------:|
-| Coupon <br> <a href="/basics/core-concept/audience-syncs">Audience Sync</a>        |        ✅      |   Any unique identifier   |      Add      |
+|                                                                     **Object Name** | **Supported?** |     **Sync Keys**     | **Behaviors** |
+| ----------------------------------------------------------------------------------: | :------------: | :-------------------: | :-----------: |
+| <p>Coupon<br><a href="../basics/core-concept/audience-syncs/">Audience Sync</a></p> |        ✅       | Any unique identifier |      Add      |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Eagle Eye objects and/or behaviors
 
 ### Coupons
 
-Coupons are an [Audience Sync](../basics/core-concept/audience-syncs.md), associating a unique customer (indicated by a Wallet ID) to a Campaign. The Campaign can be selected from a list of existing Campaigns or a Campaign ID can be provided. In addition to the Wallet ID and Campaign ID, Census also needs any unique identifier for a coupon. This isn't required by Eagle Eye but is required by Census to ensure that the same coupon isn't added multiple times. This also allows you to use the same coupon/campaigns multiple times for a single Wallet.
+Coupons are an [Audience Sync](../basics/audience-syncs.md), associating a unique customer (indicated by a Wallet ID) to a Campaign. The Campaign can be selected from a list of existing Campaigns or a Campaign ID can be provided. In addition to the Wallet ID and Campaign ID, Census also needs any unique identifier for a coupon. This isn't required by Eagle Eye but is required by Census to ensure that the same coupon isn't added multiple times. This also allows you to use the same coupon/campaigns multiple times for a single Wallet.
 
 The Coupon object also supports a number of additional optional fields. For more information, see the [Eagle Eye documentation](https://developer.eagleeye.com/reference/createwalletcampaignaccount) (which may require separate user credentials from Eagle Eye).
 

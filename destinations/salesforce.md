@@ -86,9 +86,9 @@ Census can use the Salesforce ID field for **Update Only** syncs, but it cannot 
 Census does allow using non-External ID fields as identifiers in certain situations:
 
 * Any string or numeric field can be used when using Update Only.
-* Default Salesforce objects' other identifier fields. For example, the Contact object has an Email field that can be used as an identifier as well. Note:&#x20;
+* Default Salesforce objects' other identifier fields. For example, the Contact object has an Email field that can be used as an identifier as well. Note:
 
-Note that, because these fields are not forced to be unique in Salesforce, Census will have trouble identifying which Salesforce record to update if duplicates are present. When this happens, Census will update one of the records, but not predictable.&#x20;
+Note that, because these fields are not forced to be unique in Salesforce, Census will have trouble identifying which Salesforce record to update if duplicates are present. When this happens, Census will update one of the records, but not predictable.
 
 For this reason, we recommend you try to use an Unique External Identifier field whenever possible.
 
@@ -96,16 +96,16 @@ For this reason, we recommend you try to use an Unique External Identifier field
 
 Salesforce support is pretty straight forward!
 
-|          **Object Name**           |      **Supported?**     |        **Sync Keys**         |                       **Behaviors**                        |
-|:----------------------------------:| :---------------------: |:----------------------------:|:----------------------------------------------------------:|
-|  All Standard and Custom Objects   |            ✅            | Salesforce Object Identifier | Create Only, Update or Create, Update Only, Mirror, Delete |
-| Multi-Destination: Lead or Contact |            ✅            |     Census ID, ID, Email     |                              Update Only, Update and Create, Mirror                               |
-| Multi-Destination: Lead or Account |            ✅            |        Census ID, ID         |           Update Only, Update and Create, Mirror           |
-|      Opportunity Contact Role      |  ✅  |    Any unique identifier     |                            Add                             |
-|       Email Message Relation       |  ✅  |    Any unique identifier     |                            Add                             |
+|           **Object Name**          | **Supported?** |         **Sync Keys**        |                        **Behaviors**                       |
+| :--------------------------------: | :------------: | :--------------------------: | :--------------------------------------------------------: |
+|   All Standard and Custom Objects  |        ✅       | Salesforce Object Identifier | Create Only, Update or Create, Update Only, Mirror, Delete |
+| Multi-Destination: Lead or Contact |        ✅       |     Census ID, ID, Email     |           Update Only, Update and Create, Mirror           |
+| Multi-Destination: Lead or Account |        ✅       |         Census ID, ID        |           Update Only, Update and Create, Mirror           |
+|      Opportunity Contact Role      |        ✅       |     Any unique identifier    |                             Add                            |
+|       Email Message Relation       |        ✅       |     Any unique identifier    |                             Add                            |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Salesforce objects and/or behaviors.
@@ -118,7 +118,7 @@ The OpportunityContactRole in Salesforce is a bit weird. It doesn't actually sup
 2. Inside Salesforce, you'll need to add a new field to the OpportunityContactRole object. The API name of the field **must** be `census_tracking_id__c`, though you can provide whatever label you want.
 3. Now you can set up your sync!
    1. Select your data source and target OpportunityContactRole in your Salesforce connection.
-   2. Your sync will be an [add sync](../basics/core-concept/#sync-behaviors) meaning that Census can create OpportunityContactRole relations, but won't update or remove them.
+   2. Your sync will be an [add sync](../basics/core-concept.md#sync-behaviors) meaning that Census can create OpportunityContactRole relations, but won't update or remove them.
    3. For Primary Identifier, you'll select the column you created in Step 1. Behind the scenes, Census will use the Salesforce field you created in Step 2 to make sure we're not creating any duplicate relationships.
    4. In the sync mappings, make sure to set both the Opportunity Lookup with `opportunity_id` as well as Contact lookup either using either Contact `contact_id` or `contact_email`. You can also map any other fields you want on the OpportunityContactRole.
    5. Make sure you press the **Refresh Fields** button one last time to pick up all the new fields you created.

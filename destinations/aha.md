@@ -14,12 +14,12 @@ description: This page describes how to use Census with Aha.
 
 ## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
-| --------------: | :------------: | ---------------- |------------------|
-| Product | ✅ | Reference Prefix | Update Only, Add |
+| **Object Name** | **Supported?** | **Sync Keys**    | **Behaviors**    |
+| --------------: | :------------: | ---------------- | ---------------- |
+|         Product |        ✅       | Reference Prefix | Update Only, Add |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Aha objects and/or sync behaviors.

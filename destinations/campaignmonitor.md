@@ -12,21 +12,18 @@ description: This page describes how to use Census with Campaign Monitor.
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Campaign Monitor account ready, including your List ID.
-*   Have the proper credentials to access your data source. See our docs for each supported data source for further information:
-
-    * [Azure Synapse](../sources/azure-synapse.md)
-    * [Databricks](https://docs.getcensus.com/sources/databricks)
-    * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-    * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-    * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-    * [MySQL](https://docs.getcensus.com/sources/mysql)
-    * [Postgres](https://docs.getcensus.com/sources/postgres)
-    * [Redshift](https://docs.getcensus.com/sources/redshift)
-    * [Rockset](https://docs.getcensus.com/sources/rockset)
-    * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-    * [SQL Server](https://docs.getcensus.com/sources/sql-server)
-
-
+* Have the proper credentials to access your data source. See our docs for each supported data source for further information:
+  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Databricks](https://docs.getcensus.com/sources/databricks)
+  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
+  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
+  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
+  * [MySQL](https://docs.getcensus.com/sources/mysql)
+  * [Postgres](https://docs.getcensus.com/sources/postgres)
+  * [Redshift](https://docs.getcensus.com/sources/redshift)
+  * [Rockset](https://docs.getcensus.com/sources/rockset)
+  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
+  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### 1. Get Campaign Monitor API Key
 
@@ -51,14 +48,12 @@ Once complete, you'll see your new connection in the **Destinations** list. :poi
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-28 at 11.44.19 AM.png>)
 
-
-
-### 3.  Connect to your Data Warehouse
+### 3. Connect to your Data Warehouse
 
 Please follow one of our short guides depending on your data warehouse technology
 
 * [Redshift](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
-* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access) &#x20;
+* [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
 
@@ -83,8 +78,8 @@ The sync will move data from your warehouse to Campaign Monitor. In this step, y
 2. Under **What data do you want to sync?**, choose your data warehouse as the **Connection** and your model as the **Source**.
 3. Under **Where do you want to sync data to?**, choose CampaignMonitor as the **Connection** and the **Subscribe Object** in CampaignMonitor. (See Supported Objects.)
 4. Under **How should changes to the source be synced?**, choose **Update or Create**. (See Supported Sync Behaviors.)
-5. &#x20;Under **How are source and destination records matched?**, select a mapping key. (See Supported Objects for details.)&#x20;
-6. &#x20;Under **Which Properties should be updated?**, select the fields you want to update by mapping a field in CampaignMonitor to a column in your model. Your Campaign Monitor List ID will be needed here to map to the List field(see screenshot below).&#x20;
+5. Under **How are source and destination records matched?**, select a mapping key. (See Supported Objects for details.)
+6. Under **Which Properties should be updated?**, select the fields you want to update by mapping a field in CampaignMonitor to a column in your model. Your Campaign Monitor List ID will be needed here to map to the List field(see screenshot below).
 7. Click **Next**. This will open the **Confirm Details** page where you can see a recap of your setup.
 8. If you want to start a sync immediately, select the **Run a sync now?** checkbox.
 9. Click **Create Sync**.
@@ -97,33 +92,29 @@ When configuring your sync, the page should look something like this: 👇
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-28 at 11.14.44 AM.png>)
 
-### Step 6: Confirm the synced data in Campaign Monitor&#x20;
+### Step 6: Confirm the synced data in Campaign Monitor
 
-Once your sync is complete, it's time to check your data. Open Campaign Monitor and check that the records are updated correctly.&#x20;
+Once your sync is complete, it's time to check your data. Open Campaign Monitor and check that the records are updated correctly.
 
-If everything went well, that's it! You've started syncing data from your warehouse to Campaign Monitor!&#x20;
+If everything went well, that's it! You've started syncing data from your warehouse to Campaign Monitor!
 
 And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
-
-
 
 ## 🗄 Supported Objects
 
 Census currently supports syncing to the following CampaignMonitor objects.
 
-|                 |                |                 |
-| :-------------: | :------------: | :-------------: |
+|                 |                |               |
+| :-------------: | :------------: | :-----------: |
 | **Object Name** | **Supported?** | **Sync Keys** |
-|    Subscriber   |        ✅       |  Email Address  |
+|    Subscriber   |        ✅       | Email Address |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Campaign Monitor.
-
-
 
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |                      |                      |             |
@@ -133,8 +124,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 |      **Mirror**      |           ✅          |  Subscriber |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Campaign Monitor.
-
-
 
 ## 🚑 Need help connecting to Campaign Monitor?
 

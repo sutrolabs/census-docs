@@ -25,7 +25,7 @@ In this guide, we will show you how to connect Kustomer to Census and create you
   * ​[Snowflake](https://docs.getcensus.com/sources/snowflake)​
   * ​[SQL Server](https://docs.getcensus.com/sources/sql-server)​
 
-### 1. Generate a Kustomer API Key <a href="#1.-generate-a-planhat-api-key" id="1.-generate-a-planhat-api-key"></a>
+### 1. Generate a Kustomer API Key <a href="#id-1.-generate-a-planhat-api-key" id="id-1.-generate-a-planhat-api-key"></a>
 
 In your Kustomer account:
 
@@ -47,7 +47,7 @@ In Kustomer, once a token is created, it will be created with those scopes and i
 
 More on Kustomer's API permission scopes [here](https://help.kustomer.com/permissions-for-common-api-requests-HkltTBZbN).
 
-### 2. Connect Kustomer to Census <a href="#2.-connect-planhat-to-census" id="2.-connect-planhat-to-census"></a>
+### 2. Connect Kustomer to Census <a href="#id-2.-connect-planhat-to-census" id="id-2.-connect-planhat-to-census"></a>
 
 * Head back to Census and navigate to [Destinations](https://app.getcensus.com/destinations).
 * Click the New Destination button.
@@ -56,7 +56,7 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 
 ## 🗄 Supported Objects
 
-| **Object Name** | **Supported?** | **Sync Keys**                                    |
+| **Object Name** | **Supported?** | **Sync Keys**                                      |
 | --------------: | :------------: | -------------------------------------------------- |
 |        Customer |        ✅       | External Id, Default Customer Email, Custom Fields |
 |         Company |        ✅       | External Id, Custom Fields                         |
@@ -66,16 +66,15 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |    **Behaviors** | **Supported?** | **Objects** |
-| ---------------: | :------------: | :----------: |
-| Update or Create |        ✅       |      All     |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Kustomer.
 
 ## 🚑 Need help connecting to Kustomer? <a href="#need-help-connecting-to-planhat" id="need-help-connecting-to-planhat"></a>
 
 ​[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.
-

@@ -122,12 +122,12 @@ Update or Create syncs upload your whole dataset on the first run and only new c
 ## 🔄 Supported sync behaviors
 
 |    **Behaviors** | **Supported?** | **Objects** |
-|-----------------:| :------------: | :---------: |
+| ---------------: | :------------: | :---------: |
 | Update or Create |        ✅       |     All     |
 |          Replace |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for SFTP server connections.

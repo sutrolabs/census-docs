@@ -179,13 +179,13 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 |               Vendor Bill |        ✅       |
 
 {% hint style="info" %}
-Please note that NetSuite doesn't support the [creation of fields](../basics/core-concept/#field-creation) via Census and currently we don't support [add all fields ](../basics/core-concept/#add-all-fields)feature for NetSuite
+Please note that NetSuite doesn't support the [creation of fields](../basics/core-concept.md#field-creation) via Census and currently we don't support [add all fields ](../basics/core-concept.md#add-all-fields)feature for NetSuite
 {% endhint %}
 
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
@@ -212,11 +212,9 @@ Netsuite is one of our most complex destinations, and some objects have behavior
 
 **Using TranId as a Sync Key**
 
-* In order to sync to the `TranId` field, Allowed Override will need to be checked for the Document Numbers of the object.&#x20;
+* In order to sync to the `TranId` field, Allowed Override will need to be checked for the Document Numbers of the object.
 * Example: Setup > Company > Auto-Generated Numbers > Document Numbers > Journal
 * For more information on Auto Generated Numbers please visit the [Netsuite Help Center](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/bridgehead\_4340435273.html)
-
-
 
 For more information on all Netsuite Objects and their fields please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/account.html)
 

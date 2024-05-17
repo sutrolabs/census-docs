@@ -119,7 +119,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 ## 🔄 Supported sync behaviors
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |     **Behavior** | **Supported?** | **Objects** |

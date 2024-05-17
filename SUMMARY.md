@@ -2,56 +2,42 @@
 
 * [🦩 Overview](README.md)
 
-## 🧰 Core Concepts <a href="#basics" id="basics"></a>
+## 💾 Datasets
 
-* [Syncs](basics/core-concept/README.md)
-  * [Live Syncs](basics/core-concept/live-syncs.md)
-  * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
-  * [Retry Handling](basics/core-concept/retry-handling.md)
-  * [Audience Syncs](basics/core-concept/audience-syncs.md)
-  * [Liquid Templates](basics/core-concept/liquid-templates.md)
-* [Audience Hub](basics/audience-hub/README.md)
-  * [Creating Segments](basics/audience-hub/getting-started.md)
-  * [Profile Explorer](basics/audience-hub/profile-explorer.md)
-  * [Warehouse-Managed Audiences](basics/audience-hub/warehouse-managed-audiences.md)
-  * [Activating Segments](basics/audience-hub/syncing-segments.md)
-  * [Audience Match Rates](basics/audience-hub/audience-match-rates.md)
-  * [Experiments and Analysis](basics/audience-hub/analyzing-segments.md)
-  * [Segment Priorities](basics/audience-hub/segment-priorities.md)
-  * [Data Preparation](basics/audience-hub/data-preparation.md)
-* [Data Defining](basics/data-defining/README.md)
-  * [🆕 Datasets](basics/data-defining/datasets.md)
-  * [Entities](basics/data-defining/entities.md)
-  * [Enrichment](basics/data-defining/enrichment.md)
-  * [Models](basics/data-defining/models/README.md)
-    * [SQL Queries](basics/data-defining/models/census-models.md)
-    * [dbt Models](basics/data-defining/models/native-dbt-integration.md)
-    * [Sigma](basics/data-defining/models/sigma.md)
-    * [Looker](basics/data-defining/models/looker.md)
-    * [Python Models (Snowflake-Only)](basics/data-defining/models/python-models.md)
-  * [Structuring Data](basics/data-defining/defining-source-data/README.md)
-    * [Events](basics/data-defining/defining-source-data/events.md)
-    * [Arrays and Nested Objects](basics/data-defining/defining-source-data/structured-data.md)
+* [Overview](datasets/overview.md)
+* [Core Concepts](datasets/core-concepts.md)
+* [Version Control](datasets/census-models.md)
+
+## 📫 Syncs <a href="#basics" id="basics"></a>
+
+* [Overview](basics/core-concept.md)
+* [Triggering & Scheduling](basics/triggering-syncs.md)
+* [Retry Handling](basics/retry-handling.md)
+* [Live Syncs](basics/live-syncs.md)
+* [Audience Syncs](basics/audience-syncs.md)
 * [Observability](basics/sync-monitoring/README.md)
   * [Warehouse Writeback](basics/sync-monitoring/warehouse-writeback.md)
   * [Sync Alerts](basics/sync-monitoring/alerts.md)
   * [Sync Dry Runs](basics/sync-monitoring/sync-dry-runs.md)
   * [Datadog Integration](basics/sync-monitoring/datadog-integration.md)
-* [Security & Privacy](basics/security-and-privacy/README.md)
-  * [Login & SSO Settings](basics/security-and-privacy/login-and-sso-settings.md)
-  * [Workspaces & Access Controls](basics/security-and-privacy/workspaces-and-access-controls.md)
-  * [Network Access Controls](basics/security-and-privacy/regions-and-ip-addresses.md)
-  * [Using Your Own S3](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
-  * [SIEM Log Forwarding](basics/security-and-privacy/siem-log-forwarding.md)
-  * [Secure Storage of Customer Credentials](basics/security-and-privacy/secure-storage-of-customer-credentials.md)
-  * [Digital Markets Act (DMA) Consent for Ad Platforms](basics/security-and-privacy/dma-consent-for-ad-platforms.md)
-* [Developers](basics/developers/README.md)
-  * [GitLink](basics/developers/gitlink.md)
-  * [Dataset API](basics/developers/entity-api.md)
-  * [Custom Destination API](basics/developers/custom-api.md)
-  * [Management API](basics/developers/api.md)
-* [Census Embedded](basics/census-embedded.md)
-* [FAQ & Gotchas](basics/faq-and-gotchas.md)
+* [Structuring Data](basics/defining-source-data/README.md)
+  * [Liquid Templates](basics/defining-source-data/liquid-templates.md)
+  * [Event Syncs](basics/defining-source-data/events.md)
+  * [Arrays and Nested Objects](basics/defining-source-data/structured-data.md)
+
+## 👥 Audience Hub
+
+* [Overview](audience-hub/audience-hub.md)
+* [Creating Segments](audience-hub/getting-started.md)
+* [Activating Segments](audience-hub/syncing-segments.md)
+* [Profile Explorer](audience-hub/profile-explorer.md)
+* [Warehouse-Managed Audiences](audience-hub/warehouse-managed-audiences.md)
+* [Audience Match Rates](audience-hub/audience-match-rates.md)
+* [Segment Priorities](audience-hub/segment-priorities.md)
+* [Experiments and Analysis](audience-hub/analyzing-segments.md)
+* [Calculated Columns](audience-hub/data-preparation.md)
+* [Enrichment](audience-hub/enrichment.md)
+* [Data Preparation](audience-hub/data-preparation-1.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
 
@@ -81,6 +67,9 @@
   * [Snowflake](sources/snowflake.md)
   * [SQL Server](sources/sql-server.md)
   * [Trino](sources/trino.md)
+* [DBT Integration](sources/native-dbt-integration.md)
+* [Sigma Integration](sources/sigma.md)
+* [Looker Integration](sources/looker.md)
 
 ## 🛫 Destinations
 
@@ -250,3 +239,21 @@
   * [Zoho CRM](destinations/zoho-crm.md)
   * [Zuora](destinations/zuora.md)
 * [Custom & Partner Destinations](destinations/custom-destinations-and-partner.md)
+
+## 📎 Misc
+
+* [Census Embedded](misc/census-embedded.md)
+* [Developers](misc/developers/README.md)
+  * [GitLink](misc/developers/gitlink.md)
+  * [Dataset API](misc/developers/entity-api.md)
+  * [Custom Destination API](misc/developers/custom-api.md)
+  * [Management API](misc/developers/api.md)
+* [Security & Privacy](misc/security-and-privacy/README.md)
+  * [Login & SSO Settings](misc/security-and-privacy/login-and-sso-settings.md)
+  * [Workspaces & Access Controls](misc/security-and-privacy/workspaces-and-access-controls.md)
+  * [Network Access Controls](misc/security-and-privacy/regions-and-ip-addresses.md)
+  * [Using Your Own S3](misc/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
+  * [SIEM Log Forwarding](misc/security-and-privacy/siem-log-forwarding.md)
+  * [Secure Storage of Customer Credentials](misc/security-and-privacy/secure-storage-of-customer-credentials.md)
+  * [Digital Markets Act (DMA) Consent for Ad Platforms](misc/security-and-privacy/dma-consent-for-ad-platforms.md)
+* [FAQs](misc/faq-and-gotchas.md)

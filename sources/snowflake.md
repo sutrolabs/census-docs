@@ -89,7 +89,7 @@ The script above creates the smallest available virtual warehouse ("X-Small") an
 \
 Alternatively, if cost concerns are an issue, you can also share a warehouse with other batch processing systems (for example Segment, Fivetran, dbt, etc).\
 \
-You may also want to [adjust the schedules](../basics/core-concept/#scheduling-a-sync) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
+You may also want to [adjust the schedules](../basics/core-concept.md#scheduling-a-sync) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
 
 ## 🔗 Connecting to Snowflake on AWS VPS or via PrivateLink
 
@@ -97,11 +97,11 @@ Connecting to a Snowflake instance running on AWS VPS or via PrivateLink require
 
 ## 🚦 Allowed IP Addresses
 
-If you're using Snowflake's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
+If you're using Snowflake's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
 
 ## ⚡ Change tracking for Live Syncs
 
-If you are trying to use [live-syncs.md](../basics/core-concept/live-syncs.md "mention") you may need to modify the settings on the source table(s) as follows:
+If you are trying to use [Live Syncs](../basics/live-syncs.md) you may need to modify the settings on the source table(s) as follows:
 
 ```sql
 ALTER TABLE "<table_name>" SET CHANGE_TRACKING = TRUE;

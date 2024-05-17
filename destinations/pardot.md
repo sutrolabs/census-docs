@@ -107,14 +107,14 @@ On Prospect syncs, we can Lookup from the Prospect Object to a List, which creat
 
 ## 🔄 Supported Sync Behaviors
 
-{% hint style="warning" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% hint style="info" %}
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :----------: |
-|      **Update Only** |        ✅       |   Prospect   |
-| **Update or Create** |        ✅       |   Prospect   |
+| -------------------: | :------------: | :---------: |
+|      **Update Only** |        ✅       |   Prospect  |
+| **Update or Create** |        ✅       |   Prospect  |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pardot.
 

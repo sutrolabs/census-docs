@@ -34,7 +34,7 @@ When defining the file path for a Box sync, you can use variables that will be s
 ## 🔀 Supported Sync Behaviors
 
 | **Behavior** | **Supported?** | **Objects** |
-|-------------:| :------------: | ----------- |
+| -----------: | :------------: | ----------- |
 |      Replace |        ✅       | All         |
 
 {% hint style="info" %}
@@ -42,7 +42,7 @@ Our current Box integration only supports files up to 50MB in size. If you need 
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept.md#the-different-sync-behaviors).
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Box.

@@ -73,13 +73,13 @@ You should be able to view your data in Delighted now.
 
 ## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys** |          **Behaviors**           |
-|----------------:| :------------: |:-------------:|:--------------------------------:|
+| **Object Name** | **Supported?** | **Sync Keys** |           **Behaviors**          |
+| --------------: | :------------: | :-----------: | :------------------------------: |
 |          Survey |        ✅       |      N/A      |               Send               |
 |       Autopilot |        ✅       |     Email     | Update or Create, Update, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Delighted objects and/or behaviors

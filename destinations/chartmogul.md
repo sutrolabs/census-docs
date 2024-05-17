@@ -33,7 +33,7 @@ In your ChartMogul account:
 
 1. Navigate to **Profile > View Profile**
 2. Scroll down to **API Keys**
-3. Click **New API Keys**&#x20;
+3. Click **New API Keys**
 4. Hold onto this API Key for the next section, you'll need it!
 
 For more details on finding your ChartMogul API keys, you may [follow ChartMogul's documentation here.](https://dev.chartmogul.com/docs/authentication)
@@ -60,11 +60,11 @@ Next we'll define the data you'll send to ChartMogul. Navigate to the [Models](h
 
 Here you have the ability to write SQL queries to select the data you want to see in ChartMogul. (If you already have you data available in a table or view, you can skip this step and connect your sync directly to that).
 
-Once you have created your model, click **Save**.&#x20;
+Once you have created your model, click **Save**.
 
 ### 5. Create your first Sync
 
-For our sample sync, we're going to update a ChartMogul **Customer** record.&#x20;
+For our sample sync, we're going to update a ChartMogul **Customer** record.
 
 Head to the [Sync page](https://app.getcensus.com/syncs) and click the Add Sync button
 
@@ -78,13 +78,13 @@ Next up is the "Where do you want to sync data to?" section.
 * Pick ChartMogul as the Connection
 * For Object, we will be using Customer
 
-For the "How should changes to the source be synced?" section.&#x20;
+For the "How should changes to the source be synced?" section.
 
 * Select Update Only
 
 Now we'll start mapping fields. ChartMogul requires two fields to be mapped: the customer's External ID and their Data Source ID. You can find the Data Source ID by navigating to [this page](https://t.sidekickopen01.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CX6NGW35QNwB7tCtH0Vs7zDQ8qd1Kwf197v5Y04?te=W3R5hFj4cm2zwW3zfPSj3F7xMPW4fKXXf4hHZdBW43T4MG1LwsHHW3yLX3g3zhrVDW49NLhq3zhrqJF4cNcV-W1v31\&si=8000000017473620\&pi=3d1e4afe-99d8-4b66-b041-de8a431bfb88) within ChartMogul and clicking the gear icon next to the Data Source.
 
-After the required fields, you can add any further fields you like.&#x20;
+After the required fields, you can add any further fields you like.
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
@@ -98,18 +98,18 @@ That's it! In 6 steps, you've connected Census and started syncing product data 
 
 Census currently supports syncing to the following ChartMogul objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**  |      **Behaviors**       |
-| --------------: | :------------: | :------------: |:------------------------:|
-| Customer      |        ✅      | Data Source ID + External ID (both are required) | Update or Create, Update |
-| Invoice      |        ✅      | External ID |           Add            |
-| Transaction      |        ✅      | External ID |           Add            |
+| **Object Name** | **Supported?** |                   **Sync Keys**                  |       **Behaviors**      |
+| --------------: | :------------: | :----------------------------------------------: | :----------------------: |
+|        Customer |        ✅       | Data Source ID + External ID (both are required) | Update or Create, Update |
+|         Invoice |        ✅       |                    External ID                   |            Add           |
+|     Transaction |        ✅       |                    External ID                   |            Add           |
 
 {% hint style="info" %}
 Syncs to the ChartMogul **Customer** object require both the Data Source ID and the External ID to ensure the customer is updated or created as expected. This is necessary because External IDs can be duplicated across Data Sources. You can find the Data Source ID by navigating to [this page](https://t.sidekickopen01.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CX6NGW35QNwB7tCtH0Vs7zDQ8qd1Kwf197v5Y04?te=W3R5hFj4cm2zwW3zfPSj3F7xMPW4fKXXf4hHZdBW43T4MG1LwsHHW3yLX3g3zhrVDW49NLhq3zhrqJF4cNcV-W1v31\&si=8000000017473620\&pi=3d1e4afe-99d8-4b66-b041-de8a431bfb88) in ChartMogul and clicking the gear icon next to the desired Data Source.
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Chart Mogul objects and/or behaviors

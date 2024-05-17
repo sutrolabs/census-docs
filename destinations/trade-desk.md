@@ -12,29 +12,28 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 2. Select **The Trade Desk** from the menu.
 3. The Trade Desk needs a few different types of credentials depending on which of the destination objects you intend to use. You can optionally decide which credentials to provide:
 
-- For Ad Groups and/or Campaigns, provide the **API Token**. See [The Trade Desk's documentation](https://api.thetradedesk.com/v3/portal/api/doc/Authentication) for more information on how to generate an API Token. We recommend you generate the long-lived token, and keep in mind that you will need to regenerate one whenver it expires.
-- For Conversion Events, provide a **Postback URL**.
-- For CRM Data Segments, provide the following:
-  - **API Token** (as described above)
-  - **Advertiser ID**
-  - **Data Region** - One of: `US`, `EU`, or `APAC`. Census will create new CRM Data Segments in the region you specify here. You can create multiple The Trade Desk destinations in Census to sync to multiple regions.
-
+* For Ad Groups and/or Campaigns, provide the **API Token**. See [The Trade Desk's documentation](https://api.thetradedesk.com/v3/portal/api/doc/Authentication) for more information on how to generate an API Token. We recommend you generate the long-lived token, and keep in mind that you will need to regenerate one whenver it expires.
+* For Conversion Events, provide a **Postback URL**.
+* For CRM Data Segments, provide the following:
+  * **API Token** (as described above)
+  * **Advertiser ID**
+  * **Data Region** - One of: `US`, `EU`, or `APAC`. Census will create new CRM Data Segments in the region you specify here. You can create multiple The Trade Desk destinations in Census to sync to multiple regions.
 
 <figure><img src="../.gitbook/assets/tradedesk.png" alt=""><figcaption><p>Generate an API Token from the The Trade Desk developer portal.</p></figcaption></figure>
 
 ## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**            |
-| -----------------------: | :------------: | --------------------- |--------------------------|
-|                 Ad Group |        ✅      | Any unique identifier | Update Only, Add         |
-|               Advertiser |        ✅      | Any unique identifier | Update Only, Add         |
-|                 Campaign |        ✅      | Any unique identifier | Update Only, Add         |
-|         Conversion Event |        ✅      | Any unique identifier | Send                     |
-|             Tracking Tag |        ✅      | Any unique identifier | Update Only, Add         |
-|         CRM Data Segment |        ✅      | Email/Phone           | Update or Create, Mirror |
+|  **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**            |
+| ---------------: | :------------: | --------------------- | ------------------------ |
+|         Ad Group |        ✅       | Any unique identifier | Update Only, Add         |
+|       Advertiser |        ✅       | Any unique identifier | Update Only, Add         |
+|         Campaign |        ✅       | Any unique identifier | Update Only, Add         |
+| Conversion Event |        ✅       | Any unique identifier | Send                     |
+|     Tracking Tag |        ✅       | Any unique identifier | Update Only, Add         |
+| CRM Data Segment |        ✅       | Email/Phone           | Update or Create, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more The Trade Desk objects and/or behaviors.

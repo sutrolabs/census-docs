@@ -100,9 +100,9 @@ The way that Zendesk updates certain properties is complex.
 
 ### Additional permissions required for syncs to the User object
 
-Census utilizes Zendesk's Bulk User Import api endpoints to most efficiently sync your user data to Zendesk.&#x20;
+Census utilizes Zendesk's Bulk User Import api endpoints to most efficiently sync your user data to Zendesk.
 
-Bulk user imports are not enabled by default in Zendesk accounts. The account owner must contact [Zendesk Customer Support](https://support.zendesk.com/hc/en-us/articles/4408843597850) to enable the imports.&#x20;
+Bulk user imports are not enabled by default in Zendesk accounts. The account owner must contact [Zendesk Customer Support](https://support.zendesk.com/hc/en-us/articles/4408843597850) to enable the imports.
 
 If data imports are not enabled a 403 Forbidden error is returned.
 
@@ -153,7 +153,7 @@ lower(replace(column_name, ' ', '_'))
 Census currently supports syncing to the following Zendesk objects:
 
 | **Object Name** | **Supported?** | **Sync Keys**                    | **Behavior**                          |
-|----------------:| :------------: |----------------------------------|---------------------------------------|
+| --------------: | :------------: | -------------------------------- | ------------------------------------- |
 |        End User |        ✅       | External ID (recommended), Email | Update or Create, Update Only, Delete |
 |    Organization |        ✅       | External ID (recommended), Name  | Update or Create, Update Only, Delete |
 |          Ticket |        ✅       | External ID                      | Update or Create, Update Only, Delete |
@@ -169,7 +169,7 @@ Please note that Zendesk requires the `Name` property for the End User object. F
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Zendesk objects and/or behaviors.

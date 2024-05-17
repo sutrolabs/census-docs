@@ -36,7 +36,7 @@ We have successfully tested Census' Advanced Sync Engine with the following conf
 
 Census is unable to provide any additional Trino table options (such as location) to the `WITH` clause when creating or managing tables in the `CENSUS` catalog, so please ensure your catalog and schema are configured with any needed default table options.
 
-## 💡 Notes <a href="#notes" id="notes"></a>
+## 💡Notes
 
 As of December 2023, Warehouse Writeback is not yet supported but is coming soon - please reach out to your Census account executive for details.
 

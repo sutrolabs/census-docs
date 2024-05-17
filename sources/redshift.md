@@ -4,7 +4,7 @@ description: >-
   and why those permissions are needed.
 ---
 
-# Redshift
+# Amazon Redshift
 
 ## 🔐 Required Permissions
 
@@ -76,11 +76,11 @@ Because this is altering the default behavior of another user, this command must
 
 ## 🚦Advanced Network Configuration
 
-Census can successfully connect to AlloyDB instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+Census can successfully connect to AlloyDB instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## 🚦 Allowed IP Addresses
 
-Redshift by default prevents any external IP address from accessing your data warehouse so you will need to add these IP addresses to your security groups. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). For more information, visit [AWS Redshift Help Center](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html).
+Redshift by default prevents any external IP address from accessing your data warehouse so you will need to add these IP addresses to your security groups. You can find Census's set of IP address for your region in [Regions & IP Addresses](../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). For more information, visit [AWS Redshift Help Center](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html).
 
 ## 🚇 Connecting via SSH tunnel
 

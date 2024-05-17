@@ -50,13 +50,13 @@ When configuring your sync, the page should look something like this 👇
 We support syncing data to Tables in Notion. ​
 
 | **Object Name** | **Supported?** | **Sync Keys** |
-| :-------------: | :------------: | :-------------: |
-|      Table      |        ✅       |      Title      |
+| :-------------: | :------------: | :-----------: |
+|      Table      |        ✅       |     Title     |
 
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

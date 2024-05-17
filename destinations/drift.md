@@ -48,7 +48,7 @@ If you want to see your integrations in Drift in the future, simply navigate to 
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

@@ -34,7 +34,7 @@ This part of our documentation is still under construction! If you have any ques
 ## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | Identifiers                   | **Behaviors**    |
-| --------------: | :------------: | ----------------------------- |------------------|
+| --------------: | :------------: | ----------------------------- | ---------------- |
 |    Organization |        ✅       | Object ID, name               | Update or Create |
 |          Person |        ✅       | Object ID, name, email, phone | Update or Create |
 |            Deal |        ✅       | Object ID, title              | Update or Create |
@@ -42,11 +42,10 @@ This part of our documentation is still under construction! If you have any ques
 |        Activity |        ✅       | Unique ID                     | Send             |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pipedrive objects and/or behaviors
-
 
 ## 🚑 Need help connecting to Pipedrive?
 

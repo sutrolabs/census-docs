@@ -54,7 +54,7 @@ GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA "<your schema>" TO CENSUS;
 ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO CENSUS;
 ```
 
-## 💡 Notes
+## 💡Notes
 
 {% hint style="danger" %}
 We **strongly recommend against** connecting Census to a production Google Cloud SQL for PostgreSQL instance. Census queries are often very analytical in nature and do not always play nicely with production environments. Unfortunately, PostgreSQL doesn't give you much ability to control performance impacts across users so to avoid issues, please use Census with databases set up for analytic workloads only!
@@ -66,7 +66,7 @@ We **strongly recommend against** connecting Census to a production Google Cloud
 
 ## 🚦Advanced Network Configuration
 
-Census can successfully connect to Google Cloud SQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+Census can successfully connect to Google Cloud SQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
 ## 🚑 Need help connecting to Google Cloud SQL for Postgres?
 

@@ -68,7 +68,7 @@ For more details, take a look at Mailchimp's [API documentation](https://mailchi
 | List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p> |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mailchimp objects and/or behaviors
@@ -85,12 +85,12 @@ The Mailchimp `status` field supports one of four values: `subscribed`, `unsubsc
 
 #### Tags
 
-Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/data-defining/defining-source-data/structured-data.md) using Census.
+Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/defining-source-data/structured-data.md) using Census.
 
 ## 🔄⠀Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about what all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

@@ -13,7 +13,7 @@ Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/g
 ## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                       |                  |                          |
-| --------------------- |------------------|--------------------------|
+| --------------------- | ---------------- | ------------------------ |
 | **Object**            | **Behaviors**    | **Identifier**           |
 | Click Conversion      | Update or Create | Click ID, WBRAID, GBRAID |
 | Call Conversion       | Update or Create | Caller ID                |
@@ -21,7 +21,7 @@ Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/g
 | Conversion Adjustment | Send             | N/A                      |
 
 {% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors
@@ -123,8 +123,6 @@ We'll want a model that has the following three required fields:
   * If you are supplementing existing conversion tracking, use the same Order ID that you're already sending to Google Ads
 * The **Conversion Name**, spelled exactly as it is found in Google Ads
 * The **Conversion Timestamp**, \_\_ with timezone specified -- either using your warehouse's "timestamp with timezone" datatype, or hard-coded in a string (e.g. '2021-03-04 09:23:57+0000').
-
-
 
 #### B. User Identifiers
 

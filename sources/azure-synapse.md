@@ -45,9 +45,9 @@ GRANT SELECT, VIEW DEFINITION ON SCHEMA::<your schema> TO CENSUS;
 
 ## 🚦Advanced Network Configuration
 
-Census can successfully connect to Azure Synapse instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+Census can successfully connect to Azure Synapse instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
-Specifically, to ensure Census can connect to your Synapse data warehouse, use the Windows Azure Management Portal or run **sp\_set\_firewall\_rule** on the primary database to create a firewall rule to allow access to Census's IP addresses.&#x20;
+Specifically, to ensure Census can connect to your Synapse data warehouse, use the Windows Azure Management Portal or run **sp\_set\_firewall\_rule** on the primary database to create a firewall rule to allow access to Census's IP addresses.
 
 ## 🚑 Need help connecting to Azure Synapse?
 

@@ -100,14 +100,14 @@ To use this setting, you'll also need to include a column in your database/data 
 
 ## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|          **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
-| -----------------------: | :------------: | --------------------- |------------------|
-|                 Audience |        ✅      | Email, Handle, Device ID | Mirror |
-|               Mobile Conversion Event |        ✅      | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type | Send             |
-|                 Web Conversion Event |        ✅      | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number | Send             |
+|         **Object Name** | **Supported?** | **Sync Keys**                                                       | **Behaviors** |
+| ----------------------: | :------------: | ------------------------------------------------------------------- | ------------- |
+|                Audience |        ✅       | Email, Handle, Device ID                                            | Mirror        |
+| Mobile Conversion Event |        ✅       | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type | Send          |
+|    Web Conversion Event |        ✅       | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number | Send          |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more X Ads objects and/or behaviors.

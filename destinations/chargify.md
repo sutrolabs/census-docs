@@ -30,11 +30,9 @@ In this guide, we will show you how to connect Chargify to Census and create you
 ### 1. Collect your Chargify settings
 
 1. Navigate to your target Chargify site. The URL should be `http://[SUBDOMAIN].chargify.com/dashboard`. Make note of the subdomain, you'll need that in a minute.
-2. Click on **Config** in the left navigation, then select **Integrations**. By default, **API Keys** should already be selected. Press the **New API Key** button and copy and paste the resulting API Key. You won't be able to retrieve it again. Once it's created, feel free to edit it and give it a name like Census Integration so you'll remember.&#x20;
+2. Click on **Config** in the left navigation, then select **Integrations**. By default, **API Keys** should already be selected. Press the **New API Key** button and copy and paste the resulting API Key. You won't be able to retrieve it again. Once it's created, feel free to edit it and give it a name like Census Integration so you'll remember.
 
 <img src="../.gitbook/assets/screely-1637377208093.png" alt="" data-size="original">
-
-
 
 ### 2. Connect Chargify
 
@@ -73,11 +71,11 @@ For your model, let's select some events you want to tie to billing in Chargify.
 * Turning on new features for the first time
 * The number of new document creations.
 
-Once you have created your model, click **Save**.&#x20;
+Once you have created your model, click **Save**.
 
 ### 5. Create your first Sync
 
-For our sample sync, we're going to be syncing to Chargify's Billable Events. In this case, we'll also need one more piece of information, the target Billable Event Stream's API Name. To get that, visit Chargify, click **Events** in the left navigation, and then **Streams**. You'll have to first create a stream if you don't have one. Once you've created it, copy and paste the stream API name.&#x20;
+For our sample sync, we're going to be syncing to Chargify's Billable Events. In this case, we'll also need one more piece of information, the target Billable Event Stream's API Name. To get that, visit Chargify, click **Events** in the left navigation, and then **Streams**. You'll have to first create a stream if you don't have one. Once you've created it, copy and paste the stream API name.
 
 ![](../.gitbook/assets/screely-1637378899558.png)
 
@@ -93,12 +91,12 @@ Next up is the "Where do you want to sync data to?" section.
 * Pick Chargify as the Connection
 * For Object, we will be using Billable Event
 
-For the " How should changes to the source be synced?" section.&#x20;
+For the " How should changes to the source be synced?" section.
 
 * Select Send
-* Pick a unique identifier for the billable events.&#x20;
+* Pick a unique identifier for the billable events.
 
-Now we'll start mapping fields. Chargify requires two fields to be mapped, the target Stream API Handle which we retrieved earlier as well as a timestamp for the event.&#x20;
+Now we'll start mapping fields. Chargify requires two fields to be mapped, the target Stream API Handle which we retrieved earlier as well as a timestamp for the event.
 
 From there, you can add any fields you like. We'll use the "Sync All Properties" setting to automatically send every other column from our data source to the destination.
 
@@ -118,12 +116,12 @@ That's it! In 6 steps, you've connected Census and started syncing product data 
 
 Census currently supports syncing to the following Chargify objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | :------------: |:-------------:|
-| Billing Event      |        ✅      | Insert ID |     Send      |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
+| --------------: | :------------: | :-----------: | :-----------: |
+|   Billing Event |        ✅       |   Insert ID   |      Send     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Chargify objects and/or behaviors.

@@ -41,8 +41,6 @@ Above your list of system users click **Add** to create a new System User
 1. Provide a name and role. Census does **not** need an `Admin` role, `Employee` is sufficient.
 2.  Once the system user is created click on **Add Assets** and add the Application you created in step one. Make sure to assign _full control_ of the app to the system user.
 
-
-
     <figure><img src="../.gitbook/assets/Screenshot 2024-03-06 at 4.08.15 PM.png" alt=""><figcaption><p>Assign your System User full control to your Application</p></figcaption></figure>
 3.  You'll also need to assign your System User _full control_ over any Ad Accounts that own any Custom Audiences you'd like to sync data to.
 
@@ -78,19 +76,19 @@ You are now ready to set up a connection. Head to the Census Destinations page a
 
 Select the authentication method you prefer and provide your token or complete the OAuth flow. Once you hit save, you can use your destination to create new syncs.
 
-If you are setting up a connection with a System User Token when you input your Ad Account ID manually you will want to prepend the string `act_` to your Ad Account ID. When connecting through Oauth this is automatically prepended, but will need to be done manually if using a System User Token.&#x20;
+If you are setting up a connection with a System User Token when you input your Ad Account ID manually you will want to prepend the string `act_` to your Ad Account ID. When connecting through Oauth this is automatically prepended, but will need to be done manually if using a System User Token.
 
 **Example:** `act_123456789`
 
 ## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                                  |      **Behaviors**       |
-|------------------------------------------------------------------------------------------:| :-----------: |------------------------------------------------------------------------------------------------------------------|:------------------------:|
+|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                                  |       **Behaviors**      |
+| ----------------------------------------------------------------------------------------: | :-----------: | ---------------------------------------------------------------------------------------------------------------- | :----------------------: |
 |                                                                           Custom Audience |       ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/), Email | Update or Create, Mirror |
 | Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                                    |           Send           |
 
 {% hint style="info" %}
-Learn more about our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Facebook Ads objects and/or behaviors

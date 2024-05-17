@@ -29,7 +29,7 @@ In this guide, we will show you how to connect Vitally to Census and create your
 
 Census makes use of different Vitally APIs for different operations. You're welcome to only connect one or the other, but we suggest connecting both in case you change your mind down the road:
 
-#### **Analytics API**&#x20;
+#### **Analytics API**
 
 * Required for Update or Create (a.k.a. "Upsert") and Send syncs
 * Navigate to `https://[your-domain].vitally.io/integrations/api`
@@ -56,17 +56,17 @@ Census makes use of different Vitally APIs for different operations. You're welc
 
 ## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** |   **Sync Keys**   |         **Behavior**          |
-| --------------: | :------------: | :-------------------: |:-----------------------------:|
+| **Object Name** | **Supported?** |     **Sync Keys**     |          **Behavior**         |
+| --------------: | :------------: | :-------------------: | :---------------------------: |
 |            User |        ✅       |        User ID        | Update or Create, Update Only |
 |         Account |        ✅       |       Account ID      | Update or Create, Update Only |
 |    Organization |        ✅       |    Organization ID    | Update or Create, Update Only |
-|     Track Event |        ✅       | Any unique identifier |             Send              |
+|     Track Event |        ✅       | Any unique identifier |              Send             |
 
 Vitally defines User ID and Account ID as the unique identifier for these objects in your system. You are free to use whatever ID you like, but it needs to be unique.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Vitally objects and/or behaviors.
@@ -77,7 +77,6 @@ Learn more about all of our sync behaviors on our [Core Concept page](../basics/
 * Any Account ID values that don't already exist in Vitally will be automatically created.
 
 ![](<../.gitbook/assets/Screen Shot 2022-06-30 at 6.50.03 PM.png>)
-
 
 ## 🔍 Additional Service Quirks
 

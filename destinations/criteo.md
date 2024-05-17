@@ -80,7 +80,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ## 🗄 Supported objects
 
-| **Object Name** | **Supported?** | **Sync Keys**                                            |
+| **Object Name** | **Supported?** | **Sync Keys**                                              |
 | --------------: | :------------: | ---------------------------------------------------------- |
 |        Audience |        ✅       | GUM Cookie ID, Mobile Ad ID, Email, LiveRamp Identity Link |
 
@@ -94,7 +94,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 |           Mirror |        ✅       |   Audience  |
 
 {% hint style="info" %}
-Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/#sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Criteo.

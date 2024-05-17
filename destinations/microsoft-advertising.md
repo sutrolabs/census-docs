@@ -6,9 +6,7 @@ description: This page describes how to use Census with Microsoft Advertising(or
 
 ## ​🏃‍♀️ Getting Started
 
-
-
-In this guide, we will show you how to connect Microsoft Ads to Census.&#x20;
+In this guide, we will show you how to connect Microsoft Ads to Census.
 
 ### Prerequisites
 
@@ -40,17 +38,11 @@ Follow Microsoft OAuth flow to connect to your Microsoft Advertising account.
 
 ![](<../.gitbook/assets/Screen Shot 2022-03-11 at 9.54.12 AM.png>)
 
-
-
 ![](<../.gitbook/assets/Screen Shot 2022-03-11 at 9.56.02 AM.png>)
 
 Finally, select the Microsoft Advertising account you'd like to sync to
 
-
-
 ![](<../.gitbook/assets/Screen Shot 2022-03-11 at 10.01.08 AM.png>)
-
-
 
 ### 2. Connect your Data Warehouse
 
@@ -66,22 +58,18 @@ After setting up your warehouse, your Census sync should look like this:
 
 ![](<../.gitbook/assets/Screen Shot 2022-03-11 at 10.08.23 AM.png>)
 
-
-
 ## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|    **Object Name** | **Supported?** |   **Identifiers**   | **Behaviors** |
-|-------------------:| ---------- |:-------------------:|---------------|
-|    Custom Audience | ✅          |        Email        | Mirror        |
-| Offline Conversion | ✅          | Any unique identifier | Send          |
+|    **Object Name** | **Supported?** |    **Identifiers**    | **Behaviors** |
+| -----------------: | -------------- | :-------------------: | ------------- |
+|    Custom Audience | ✅              |         Email         | Mirror        |
+| Offline Conversion | ✅              | Any unique identifier | Send          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Microsoft Ads objects and/or behaviors
-
-
 
 ## 🚑 Need help connecting to Microsoft Ads?
 

@@ -86,13 +86,13 @@ Customer.io is a destination with a fast API that can burst all the way to 600 a
 
 We currently support all objects of [Customer.io's core API.](https://customer.io/docs/api/#section/Overview)
 
-| **Object Name** | **Supported?** |      **Sync Keys**       |         **Behaviors**         |
-| --------------: | :------------: |:------------------------:|:-----------------------------:|
-|          Person |        ✅       |        ID, email         | Update Only, Update or Create |
-|          Device |        ✅       |        Device ID         |       Update or Create        |
-|           Event |        ✅       |           N/A            |             Send              |
-|      Collection |        ✅       |           N/A            |            Mirror             |
-|  Manual Segment |        ✅       | ID, Email, CustomerIO ID |   Update or Create, Mirror    |
+| **Object Name** | **Supported?** |       **Sync Keys**      |         **Behaviors**         |
+| --------------: | :------------: | :----------------------: | :---------------------------: |
+|          Person |        ✅       |         ID, email        | Update Only, Update or Create |
+|          Device |        ✅       |         Device ID        |        Update or Create       |
+|           Event |        ✅       |            N/A           |              Send             |
+|      Collection |        ✅       |            N/A           |             Mirror            |
+|  Manual Segment |        ✅       | ID, Email, CustomerIO ID |    Update or Create, Mirror   |
 
 {% hint style="warning" %}
 Make sure you know what identifiers are used in your Customer.io Workspace!
@@ -101,7 +101,7 @@ Make sure you know what identifiers are used in your Customer.io Workspace!
 Customer.io strongly prefers the ID field to be used as the identifier for a Person record and recommends using your internal ID when possible. If you plan to use the email field, make sure your workspace has enabled [Using email as an identifier](https://customer.io/docs/workspaces/#migrate-workspace). You can read more about [Customer.io's identifier guidelines here](https://customer.io/docs/data-mapping-guide#describing-users-with-customer-attributes).
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concept page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Customer.io objects and/or behaviors

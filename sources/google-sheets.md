@@ -59,7 +59,7 @@ You can now go on to create a sync from your Google Sheet to a destination app.
 
 For more detailed instructions on how to configure your sync, please read the docs page for the destination app you want to sync data to.
 
-## 💡Note
+## 💡Notes
 
 * You cannot create SQL Models on Google Sheets data
 * Be sure that all line breaks are removed from the header row

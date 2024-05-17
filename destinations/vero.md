@@ -26,12 +26,12 @@ description: This page describes how to use Census with Vero Cloud.
 ## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors**    |
-| --------------: | :------------: | ------------------- |------------------|
+| --------------: | :------------: | ------------------- | ---------------- |
 |           Event |        ✅       | Event ID (optional) | Send             |
 |            User |        ✅       | Email               | Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Vero Cloud objects and/or behaviors.

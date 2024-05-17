@@ -20,21 +20,21 @@ Connecting to your Amazon Ads account is straightforward.
 
 ## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|  **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
-|-----------------:| :------------: | ---------------- |------------------|
-| Conversion Event | ✅ | Event Unique ID | Send             |
-|   Hashed Records | ✅ | ID | Update or Create |
-|     DSP Audience | ✅ | ID | Update or Create |
+|  **Object Name** | **Supported?** | **Sync Keys**   | **Behaviors**    |
+| ---------------: | :------------: | --------------- | ---------------- |
+| Conversion Event |        ✅       | Event Unique ID | Send             |
+|   Hashed Records |        ✅       | ID              | Update or Create |
+|     DSP Audience |        ✅       | ID              | Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Ads objects and/or behaviors.
 
 ### Conversion Events
 
-Conversion Events are an [events.md](../basics/data-defining/defining-source-data/events.md "mention")sync within Census and so operate like most other Event Syncs. They do have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
+Conversion Events are an [events.md](../basics/defining-source-data/events.md "mention")sync within Census and so operate like most other Event Syncs. They do have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
 
 * Like other event syncs, Amazon requires an **Event Name** and a **Timestamp**.
 * **Conversion Definition ID** - Amazon requires that you define all of your conversions types beforehand as Conversion Definitions.

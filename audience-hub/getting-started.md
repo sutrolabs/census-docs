@@ -6,7 +6,7 @@ description: How to use the Audience Hub visual builder to create and update seg
 
 ## Before you start
 
-Segments are built on top of entities, the core models set up for a data warehouse connection. Typically a member of the data team will need to first set up the entities for your warehouse connection before getting started. Take a look at [Defining Your Data Model](data-preparation.md) for details.
+Segments are built on top of datasets, the core models set up for a data warehouse connection. Typically a member of the data team will need to first set up the datasets for your warehouse connection before getting started. Take a look at [Defining Your Data Model](data-preparation-1.md) for details.
 
 ## Using the visual builder
 
@@ -14,24 +14,24 @@ To create your first segment, click on **Segments** in the left-hand navigation 
 
 To start, you'll need to select the data set you're segmenting in the top left. This will determine the type of records your segment contains, the conditions you'll be able to filter on, and what data will eventually be available to sync to your destination tools.
 
-![Example of a segment with conditions on the User's email and their events](<../../.gitbook/assets/Example Segment (2).png>)
+![Example of a segment with conditions on the User's email and their events](<../.gitbook/assets/Example Segment (2).png>)
 
 At any point, you can press **Preview Results** to get a look at a sample of the data that will be available in your segment. When you're happy with your segment conditions, give you segment a name and press **Save**.
 
 ### Conditions and Groups
 
-The basis of any segment is adding new conditions. Clicking **Add Condition** to select an attribute or related data from the **Details List** on the right hand side. It contains all the available attributes for the selected entity, as well as any related entities or segments which can be used for additional conditions as well.
+The basis of any segment is adding new conditions. Clicking **Add Condition** to select an attribute or related data from the **Details List** on the right hand side. It contains all the available attributes for the selected dataset, as well as any related datasets or segments which can be used for additional conditions as well.
 
 On the left side, you'll see the And / Or condition combination control. You can use this to change how conditions are combined. **And** meaning all the conditions must be met; **Or** meaning any of the conditions can be met. You can also make combinations of ands and ors by adding **Condition Groups** which can have their own conditions and combination control.
 
-### Related Entities and Related Segments
+### Related Datasets and Related Segments
 
-In addition to creating conditions about attributes on the entity you're segmenting, you can also filter based on other data related to this entity.
+In addition to creating conditions about attributes on the datasets you're segmenting, you can also filter based on other data related to this entity.
 
-* **Related Entities** is the list of other entities connected to the entity you're segmenting. You can also create conditions on any related entities and your segment will only include records that are related to entities that meet those conditions. Census will take care of building the association between those data sets.
-* **Inclusions and Exclusions** - Allows _including_ or _excluding_ members from a segment if they appear in some other segment of the same entity data. This enables creating sub segments of common shared definitions like Paid Customers, excluding segments that should never be targeted, as well as creation unions and intersections of of multiple other segments.
+* **Related Datasets** is the list of other datasets connected to the entity you're segmenting. You can also create conditions on any related entities and your segment will only include records that are related to entities that meet those conditions. Census will take care of building the association between those data sets.
+* **Inclusions and Exclusions** - Allows _including_ or _excluding_ members from a segment if they appear in some other segment of the same dataset data. This enables creating sub segments of common shared definitions like Paid Customers, excluding segments that should never be targeted, as well as creation unions and intersections of of multiple other segments.
 
-<figure><img src="../../.gitbook/assets/Related Segments.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Related Segments.png" alt=""><figcaption></figcaption></figure>
 
 ### Operators
 
@@ -62,29 +62,29 @@ Census supports a wide variety of operations that can be used to filter segments
 
 ### Event Filters
 
-When the Entity you're segmenting has a related events entity, those events have even more conditions available, powered by the schema columns defined on the event entity.
+When the Dataset you're segmenting has a related Events Dataset, those events have even more conditions available, powered by the schema columns defined on the Event Dataset.
 
-<figure><img src="../../.gitbook/assets/Example Segment (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Example Segment (3).png" alt=""><figcaption></figcaption></figure>
 
-| Type        | Operator              | Description                                        |
-| ----------- | --------------------- | -------------------------------------------------- |
-| Event Name  | Any Event             | Entity has any event matching the other conditions |
-|             | No Event              | Entity has no event matching the other conditions  |
-|             | Event Name is         | Entity has an event with the given name            |
-|             | Event Name is one of  | Entity has an event with any of the given names    |
-|             | No Event Named        | Entity has no event with the given name            |
-|             | No Event Named any of | Entity has none of the given events                |
-| Engagement  | At least              | Entity has at least x matching events              |
-|             | At most               | Entity has at most x matching events               |
-|             | Exactly               | Entity has exactly x matching events               |
-|             | Any number            | Entity has any number (> 0) of events              |
-| Time Period | Between               | Events occurred between \_\_\_ and \_\_\_ days ago |
-|             | Prior To              | Events occurred before a date \_\_\_ days ago      |
-|             | Within Last           | Events occurred within the last \_\_\_ days        |
-|             | Between dates         | Events occurred between two fixed dates            |
-|             | After date            | Events occurred after a fixed date in time         |
-|             | Before date           | Events occurred before a fixed date in time        |
-|             | Any time              | Entity has match dates regardless of time          |
+| Type        | Operator              | Description                                         |
+| ----------- | --------------------- | --------------------------------------------------- |
+| Event Name  | Any Event             | Dataset has any event matching the other conditions |
+|             | No Event              | Dataset has no event matching the other conditions  |
+|             | Event Name is         | Dataset has an event with the given name            |
+|             | Event Name is one of  | Dataset has an event with any of the given names    |
+|             | No Event Named        | Dataset has no event with the given name            |
+|             | No Event Named any of | Dataset has none of the given events                |
+| Engagement  | At least              | Dataset has at least x matching events              |
+|             | At most               | Dataset has at most x matching events               |
+|             | Exactly               | Dataset has exactly x matching events               |
+|             | Any number            | Dataset has any number (> 0) of events              |
+| Time Period | Between               | Events occurred between \_\_\_ and \_\_\_ days ago  |
+|             | Prior To              | Events occurred before a date \_\_\_ days ago       |
+|             | Within Last           | Events occurred within the last \_\_\_ days         |
+|             | Between dates         | Events occurred between two fixed dates             |
+|             | After date            | Events occurred after a fixed date in time          |
+|             | Before date           | Events occurred before a fixed date in time         |
+|             | Any time              | Dataset has match dates regardless of time          |
 
 ### SQL Conditions
 
@@ -100,7 +100,7 @@ A limit can be placed on a segment to confine to a certain number of records. Th
 * Select the field that will be used to order by
 * Select whether you want to order by ascending or descending. The top values will be selected so if choosing descending this will be the highest or latest records.
 
-<figure><img src="../../.gitbook/assets/CleanShot 2023-08-03 at 11.53.50.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/CleanShot 2023-08-03 at 11.53.50.png" alt=""><figcaption></figcaption></figure>
 
 If you want to limit randomly, consider using an ID as the field to order by.
 
@@ -117,7 +117,7 @@ Setting a dimension limit follows a similar set of steps as segment limits. Enab
 
 _Note: Dimension limits are currently only available for **Snowflake** and **Databricks** warehouses._
 
-<figure><img src="../../.gitbook/assets/dimension_limit_ui.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dimension_limit_ui.png" alt=""><figcaption></figcaption></figure>
 
 ## FAQs
 
