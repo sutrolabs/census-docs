@@ -77,14 +77,18 @@ You have successfully configured and tested the connection, so you can now sync 
 ## 🗄️ Supported Objects and Behaviors
 
 |        **Object** | **Supported?** | **Behaviors** |
-| ----------------: | :------------: | :-----------: |
-| **Import Action** |        ✅       | **Mirror**    |
+| ----------------: | :------------: |:-------------:|
+| **Import Action** |        ✅       |  **Replace**  |
 
 {% hint style="info" %}
 Import Actions must have the Source Type of File in order for Census to be able to sync to it. Look [here](https://help.anaplan.com/f19cdb3d-385a-4a27-aaa8-7422b240e8bc-Get-started-with-imports) for more details on how to configure this on the Anaplan side
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Anaplan.
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Anaplan objects and/or behaviors.
 
 ## 🚑 Need help connecting to Anaplan?
 

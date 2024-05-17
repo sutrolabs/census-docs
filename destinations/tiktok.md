@@ -46,7 +46,7 @@ To work around this limitation, you have a few options:
 
 - Use a **Partner Audience** instead 
 - Move to a less frequent sync schedule (once per 48 hrs)
-- Use the **Update or Create** sync behavior instead of **Mirror** by setting the `When a record is removed from source data` option to `Do Nothing` on sync set up
+- Use the **Update or Create** sync behavior instead of **Replace** by setting the `When a record is removed from source data` option to `Do Nothing` on sync set up
 
 <figure><img src="../.gitbook/assets/tiktokAudienceUpsert.png" alt=""><figcaption></figcaption></figure>
 
