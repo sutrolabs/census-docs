@@ -13,12 +13,12 @@ description: This page describes how to use Census with TikTok Ads.
 
 ## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|           **Object Name** | **Supported?** | **Sync Keys**           | **Behaviors**            |
-| ------------------------: | :------------: | ----------------------- | ------------------------ |
-|          Partner Audience |        ✅       | Email, IDFA/GAID, Phone | Update or Create, Mirror |
-|    Customer File Audience |        ✅       | Email, IDFA/GAID, Phone | Update or Create, Mirror |
-| Offline Event Conversions |        ✅       | Any unique identifier   | Send                     |
-|     Web Event Conversions |        ✅       | Any unique identifier   | Send                     |
+|           **Object Name** | **Supported?** | **Sync Keys**           | **Behaviors**             |
+| ------------------------: | :------------: | ----------------------- |---------------------------|
+|          Partner Audience |        ✅       | Email, IDFA/GAID, Phone | Update or Create, Mirror  |
+|    Customer File Audience |        ✅       | Email, IDFA/GAID, Phone | Update or Create, Replace |
+| Offline Event Conversions |        ✅       | Any unique identifier   | Send                      |
+|     Web Event Conversions |        ✅       | Any unique identifier   | Send                      |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
@@ -36,7 +36,7 @@ Partner Audiences are easier to manage with Census as they have no limitations o
 
 ### Customer File Audience
 
-Customer File Audience is the older TikTok audience type and can be used with Reach and Frequency campaigns. However, TikTok only allows one **Mirror** operation per 24 hrs (sometimes a bit longer, depends on their processing delays) when using this API. This can present issues. This error will appear as:
+Customer File Audience is the older TikTok audience type and can be used with Reach and Frequency campaigns. However, TikTok only allows one **Replace** operation per 24 hrs (sometimes a bit longer, depends on their processing delays) when using this API. This can present issues. This error will appear as:
 
 ```
 This replace operation is rejected as there is an existing unfinished replace operation for this audience. Please wait until the current operation completes on this audience before re trying. Recommend no more than one replace operation per day.

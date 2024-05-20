@@ -16,8 +16,8 @@ description: This page describes how to use Census with Airship.
 ## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors**    |
-| --------------: | :------------: | ------------------- | ---------------- |
-|     Static List |        ✅       | Channel-specific ID | Mirror           |
+| --------------: | :------------: | ------------------- |------------------|
+|     Static List |        ✅       | Channel-specific ID | Replace          |
 |           Event |        ✅       | Census Tracking ID  | Send             |
 |   Email Channel |        ✅       | Email Address       | Update or Create |
 
