@@ -52,7 +52,7 @@ Census currently supports syncing to the following SendGrid objects.
 | **Object Name** | **Supported?** | Identifiers           | **Behaviors**                 |
 | --------------: | :------------: | --------------------- | ----------------------------- |
 |         Contact |        ✅       | Email                 | Update or Create, Update Only |
-|            List |        ✅       | Email                 | Update or Create, Mirror      |
+|            List |        ✅       | Email                 | Update or Create              |
 | Email Templates |        ✅       | Any unique identifier | Send                          |
 
 {% hint style="info" %}
