@@ -128,7 +128,15 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 
 ## 🔀 Supported Objects and Behaviors
 
-<table data-header-hidden><thead><tr><th width="167" align="right"></th><th width="143" align="center"></th><th width="179"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Data Extension</td><td align="center">✅</td><td>Unique Identifier</td><td>Update or Create, Update Only, Mirror</td></tr><tr><td align="right">Contact</td><td align="center">✅</td><td>Contact Key</td><td>Update or Create</td></tr><tr><td align="right">API-Triggered Journey</td><td align="center">✅</td><td>Contact Key</td><td>Update or Create, Mirror</td></tr></tbody></table>
+| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                          |
+|----------------:| :------------: | ---------------- |----------------------------------------|
+|     Data Extension | ✅ | Unique Identifier | Update or Create, Update Only, Replace |
+|           Contact | ✅ | Contact Key | Update or Create                       |
+|   API-Triggered Journey | ✅ | Contact Key | Update or Create, Mirror               |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Marketing Cloud objects and/or behaviors.
 
