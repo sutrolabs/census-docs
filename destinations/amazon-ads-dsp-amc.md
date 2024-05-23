@@ -74,7 +74,7 @@ Like Conversion Events, you can optionally provide pre-hashed values for your re
 
 ### Digital Markets Act (DMA)
 
-Finally, to support upcoming Digital Markets Act (DMA) requirements, Amazon now accepts a Data Source Country field on the DSP Audience Members object. This field is optional and can be a comma separated list of two-letter country code using [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes) format. This list will be used by any segments created from this sync. If it's omitted, the value will be UNKNOWN.
+Finally, to support upcoming Digital Markets Act (DMA) requirements, Amazon now accepts a Data Source Country field on the DSP Audience Members object. This field should be a comma separated list of two-letter country code using [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes) format. This list will be used by any segments created from this sync. This is required in order to create a new audience.
 
 ## 🚑 Need help connecting to Amazon Ads DSP?
 
