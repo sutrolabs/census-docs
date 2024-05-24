@@ -35,7 +35,13 @@ None of the default Marketo Roles have API access so if this is your first API i
 
 You can view/edit role permissions in **Admin, Users & Roles**, then clicking the **Roles** tab.
 
-Whether you're using an existing role or creating a new one, please make sure it has at least the following permissions: **Read-Write People** and **Read-Write Named Accounts**. To use Custom Objects, we'll also need **Read-Write Custom Object** and **Read-Write Custom Object Type**.
+Whether you're using an existing role or creating a new one, please make sure it has at least the following permissions:&#x20;
+
+* **Read-Write People** &#x20;
+* **Read-Write Named Accounts**.&#x20;
+* **Read-Write Assets**
+
+To use Custom Objects, we'll also need **Read-Write Custom Object** and **Read-Write Custom Object Type**.
 
 {% hint style="warning" %}
 Note: Even though your Marketo instance may support Custom Objects, the Custom Object Metadata API is not an out-of-the-box feature on Select Plans at Marketo and doesn’t automatically come with Custom Objects. If you still don't see Custom Objects in Census, you may need to contact your Marketo Account Manager to make sure you have access to the Custom Object Metadata API.
