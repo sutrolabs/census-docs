@@ -164,6 +164,7 @@
   * [Kevel](destinations/kevel.md)
   * [Klaviyo](destinations/klaviyo.md)
   * [Kustomer](destinations/kustomer.md)
+  * [Labelbox](destinations/available-destinations/labelbox-ga.md)
   * [LaunchDarkly](destinations/launchdarkly.md)
   * [LinkedIn](destinations/linkedin.md)
   * [LiveIntent](destinations/liveintent.md)
