@@ -53,6 +53,10 @@ Offline conversions must also be attributed to a specific user through one of th
 
 When using the Encrypted User ID, Encrypted User ID Candidates, you must specify Encryption Information in the sync's advanced configuration. See [Google's documentation](https://developers.google.com/doubleclick-advertisers/guides/conversions\_upload#specify\_encryption\_info) for more information.
 
+### Digital Markets Act (DMA)
+
+For syncing audiences to Google Campaign Manager 360, you can include consent information to ensure compatibility with [Google's EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/). Google Campaign Manager 360 now supports an additional field `Consent for ad user data`, which can be set to one of the following values: `GRANTED`, `DENIED`. See Google's [documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad\_user\_data\_consent) for more information.
+
 ## 🚑 Need help connecting to Google Campaign Manager 360?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
