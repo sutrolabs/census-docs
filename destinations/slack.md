@@ -83,7 +83,13 @@ Reminder: Census will send records to a Slack channel one at a time.
 
 The Member ID can be used to mention specific channel members in a Slack message.
 
-Example: `<@member_id>`
+Example:&#x20;
+
+<pre><code>select '&#x3C;@U012345>' as USER_MENTION_1
+<strong>        ,'@U012345' as USER_MENTION_2
+</strong></code></pre>
+
+<figure><img src="../.gitbook/assets/Slack User Mention.png" alt=""><figcaption><p>User Mention Example</p></figcaption></figure>
 
 ## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
