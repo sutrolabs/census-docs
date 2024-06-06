@@ -6,7 +6,7 @@ description: >-
 
 # Dataset API
 
-Dataset API is designed to make your Entities even more valuable by making them easily accessible to the wider app ecosystem. In addition to using Census Syncs to push data to destinations, you can now make your data available to be pulled by your applications.
+Dataset API is designed to make your dataset even more valuable by making them easily accessible to the wider app ecosystem. In addition to using Census Syncs to push data to destinations, you can now make your data available to be pulled by your applications.
 
 This opens your data to a whole world of data integration possibilities. A few of the most exciting ones include:
 
