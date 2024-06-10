@@ -69,6 +69,50 @@ To specify a Many-to-Many relationship type, use a `Join Table` type:
 
 Note that Census does not check or enforce the validity of the data on either side of your relationship. Duplicate values on either side of the relationship can cause issues using the relationships used in segmentation so please make sure the relationship's data remains valid via tools like dbt testing.
 
+## Computed Columns
+
+Datasets support the ability to define no-code calculations and aggregation from other datasets as new calculated columns without making changes in your warehouse yet still being fully governed, tracked, and observed by your data stack.
+
+These columns can be then used as any other column in your dataset, as a sync attribute or during segmentation building.
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-06-09 at 5.17.32 AM.png" alt=""><figcaption><p>Census Computed Columns using Formula</p></figcaption></figure>
+
+You can create computed columns, through the "New Computed Column" button in the Properties page of any of your datasets.&#x20;
+
+Computed Columns support following operations
+
+### Rollup Columns&#x20;
+
+Rollup Columns allow you to count the number of related records to understand volume within a certain group.&#x20;
+
+For example:&#x20;
+
+* Count of transactions performed last 30 days
+* Count of payment failures last 90 days
+* Number of current active admin users
+* First time purchased at
+* Last login at
+
+Rollups require you to define three properties. The related dataset which to aggregate/join to, the column from this dataset to display, and the aggregation method to apply to the related values. The current supported aggregation methods are listed below. We will continue to expand this list to allow for richer operations.
+
+| Related dataset column type | Supported aggregation methods  |
+| --------------------------- | ------------------------------ |
+| number                      | most frequent, count, sum, avg |
+| any other type              | most frequent                  |
+
+### Calculated Columns
+
+Calculated Columns allow you to calculate data from recent events or related objects easily.&#x20;
+
+For example:
+
+* Average cart amount in last 12 months
+* Sum of all subscription amounts (Lifetime Value)
+* Weekly growth rates of feature usage
+* Difference month over month of documents shared
+
+The current supported calculations are difference and pecentage change.
+
 ## FAQ
 
 {% hint style="info" %}

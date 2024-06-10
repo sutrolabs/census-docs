@@ -1,4 +1,6 @@
-# Calculated Columns
+# Calculated Columns (Deprecated)
+
+To create calculated fields fields on your datasets, use [Dataset Computed Columns](../)[.](../datasets/core-concepts.md#computed-columns) Note: Starting June 4, 2024, Calculated Columns will be deprecated.
 
 Calculated columns allow marketers to create aggregations from other datasets.  For instance, being able to sum a transaction table and calculate the total spend of a customer.  These generated columns can be used in segmentation building or as attributes in syncs.&#x20;
 
@@ -18,5 +20,4 @@ We currently support the following aggregations, more will be released soon.
 * % Change
 * Difference
 * Custom Filtering
-*
 

@@ -35,7 +35,7 @@
 * [Audience Match Rates](basics/audience-hub/audience-match-rates.md)
 * [Segment Priorities](basics/audience-hub/segment-priorities.md)
 * [Experiments and Analysis](basics/audience-hub/analyzing-segments.md)
-* [Calculated Columns](audience-hub/data-preparation.md)
+* [Calculated Columns (Deprecated)](audience-hub/data-preparation.md)
 * [Enrichment](basics/data-defining/enrichment.md)
 * [Data Preparation](basics/audience-hub/data-preparation.md)
 
