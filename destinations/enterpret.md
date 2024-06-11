@@ -55,7 +55,7 @@ Census currently supports syncing to the following Enterpret objects.
 ### 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 <table data-header-hidden><thead><tr><th width="182.33333333333331" align="right"></th><th width="156.42460567823346" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Create Only</strong></td><td align="center">✅</td><td align="center">Account, Review Records, Survey Response Records, User</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Account, User</td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Account, User</td></tr></tbody></table>

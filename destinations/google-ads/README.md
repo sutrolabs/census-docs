@@ -27,7 +27,7 @@ Click the link for more information on each of the services
 |                                                                                             Enhanced Conversion |        ✅       | N/A                                                           | Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors

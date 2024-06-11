@@ -66,7 +66,7 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 |    **Behaviors** | **Supported?** | **Objects** |

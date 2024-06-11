@@ -109,7 +109,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 | **Behaviors** | **Supported?** |      **Objects**      |

@@ -22,7 +22,7 @@ To connect Census to Mailchimp Transactional (Mandrill), you'll need an API Key.
 | Send via Message Template |        ✅       | Unique identifier for each send |      Send     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mailchimp objects and/or behaviors

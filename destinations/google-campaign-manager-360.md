@@ -27,7 +27,7 @@ Once you've confirmed permissions, follow these steps to connect Census to Googl
 | <p>Conversions<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Unique Event ID |      Send     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Campaign Manager objects and/or behaviors.

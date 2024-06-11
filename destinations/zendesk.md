@@ -169,7 +169,7 @@ Please note that Zendesk requires the `Name` property for the End User object. F
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Zendesk objects and/or behaviors.

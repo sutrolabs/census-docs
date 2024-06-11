@@ -25,7 +25,7 @@ s
 |        Audience |        ✅       | Email, MD5 Email, SHA256 Email | Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Rokt objects and/or behaviors.

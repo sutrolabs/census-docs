@@ -20,7 +20,7 @@ description: This page describes how to use Census with CleverTap.
 |         Profile |        ✅       | Facebook ID, Global Object ID, Google Plus ID, or User Identity | Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more CleverTap objects and/or behaviors.

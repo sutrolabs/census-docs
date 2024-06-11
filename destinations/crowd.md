@@ -23,7 +23,7 @@ description: This page describes how to use Census with Crowd.dev.
 |         Organization |        ✅       | Any unique identifier | Update Only, Add |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Crowd.dev objects and/or behaviors.

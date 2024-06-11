@@ -98,7 +98,7 @@ Census supports custom fields on both Braze User and Event objects. Additionally
 * [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Braze objects and/or behaviors.

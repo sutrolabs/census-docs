@@ -44,7 +44,7 @@ Asana's primary object is a Task, which we support in Census.​
 |            Task |        ✅       | External ID   | Add, Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Asana objects and/or behaviors.

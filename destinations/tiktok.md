@@ -21,7 +21,7 @@ description: This page describes how to use Census with TikTok Ads.
 |     Web Event Conversions |        ✅       | Any unique identifier   | Send                      |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more TikTok objects and/or behaviors.
@@ -44,7 +44,7 @@ This replace operation is rejected as there is an existing unfinished replace op
 
 To work around this limitation, you have a few options:
 
-- Use a **Partner Audience** instead 
+- Use a **Partner Audience** instead
 - Move to a less frequent sync schedule (once per 48 hrs)
 - Use the **Update or Create** sync behavior instead of **Replace** by setting the `When a record is removed from source data` option to `Do Nothing` on sync set up
 

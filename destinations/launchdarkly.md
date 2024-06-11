@@ -67,7 +67,7 @@ Go to **Account settings** > **Projects** and copy the **Project Key,** **Enviro
 | Synced Segments |        ✅       | User ID       | Mirror           |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more LaunchDarkly objects and/or behaviors.

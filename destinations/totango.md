@@ -64,7 +64,7 @@ For additional information on finding Totango credentials you can find instructi
 ## 🔄 Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

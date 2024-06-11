@@ -42,7 +42,7 @@ This part of our documentation is still under construction! If you have any ques
 |        Activity |        ✅       | Unique ID                     | Send             |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pipedrive objects and/or behaviors

@@ -60,7 +60,7 @@ Census currently supports syncing to the following Shopify objects and Sync Beha
 Census also supports Shopify's Custom Metafields on Customer and Product as well.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Shopify objects and/or behaviors.
@@ -71,11 +71,11 @@ Census supports setting product images by passing an [Array](../basics/data-defi
 
 ```
 [
-  { 
-    "position": 1, 
-    "src": "https://via.placeholder.com/300.png?text=iPod%20Nano,%208GB", 
-    "width": 640, 
-    "height": 480 
+  {
+    "position": 1,
+    "src": "https://via.placeholder.com/300.png?text=iPod%20Nano,%208GB",
+    "width": 640,
+    "height": 480
   }
 ]
 ```

@@ -88,7 +88,7 @@ If you are setting up a connection with a System User Token when you input your 
 | Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                                    |           Send           |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Facebook Ads objects and/or behaviors

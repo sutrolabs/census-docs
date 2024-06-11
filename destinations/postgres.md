@@ -46,7 +46,7 @@ We support syncing data to Tables in PostgreSQL, but they must have a uniqueness
 |           Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Postgres objects and/or behaviors

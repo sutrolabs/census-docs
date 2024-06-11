@@ -20,7 +20,7 @@ You should now be ready to start syncing data to Eagle Eye!
 | <p>Coupon<br><a href="../basics/core-concept/audience-syncs/">Audience Sync</a></p> |        ✅       | Any unique identifier |      Add      |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Eagle Eye objects and/or behaviors

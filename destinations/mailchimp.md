@@ -63,12 +63,12 @@ For more details, take a look at Mailchimp's [API documentation](https://mailchi
 
 ## 🗄⠀Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|       **Object Name** | **Supported?** | Identifiers                                                    |
-| --------------------: | :------------: | -------------------------------------------------------------- |
-| List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p> |
+|       **Object Name** | **Supported?** | **Identifiers**                                                | **Behaviors**    |
+| --------------------: | :------------: | -------------------------------------------------------------- | ---------------- |
+| List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p>  Update or Create, Update Only |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mailchimp objects and/or behaviors
@@ -86,17 +86,6 @@ The Mailchimp `status` field supports one of four values: `subscribed`, `unsubsc
 #### Tags
 
 Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/data-defining/defining-source-data/structured-data.md) using Census.
-
-## 🔄⠀Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
-{% endhint %}
-
-|        **Behaviors** | **Supported?** | **Objects** |
-| -------------------: | :------------: | :---------: |
-| **Update or Create** |        ✅       |     All     |
-|      **Update Only** |        ✅       |     All     |
 
 ## 🚑⠀Need help connecting to Mailchimp?
 

@@ -19,7 +19,7 @@ description: This page describes how to use Census with Reddit Ads.
 | Conversion Event |        ✅       | Any unique ID | Send          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Reddit Ads objects and/or behaviors.

@@ -107,7 +107,7 @@ To use this setting, you'll also need to include a column in your database/data 
 |    Web Conversion Event |        ✅       | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number | Send          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more X Ads objects and/or behaviors.
