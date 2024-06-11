@@ -17,11 +17,11 @@ description: This page describes how to use Census with Sprig.
 
 | **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
 | --------------: | :------------: | --------------------- | ---------------- |
-|           Event |        ✅       | Any unique identifier | Send             |
+|           <p>Event<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Any unique identifier | Send             |
 |            User |        ✅       | User ID               | Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sprig objects and/or behaviors.
