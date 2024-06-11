@@ -65,7 +65,7 @@ For more details, take a look at Mailchimp's [API documentation](https://mailchi
 
 |       **Object Name** | **Supported?** | **Identifiers**                                                | **Behaviors**    |
 | --------------------: | :------------: | -------------------------------------------------------------- | ---------------- |
-| List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p>  Update or Create, Update Only |
+| List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p> |  Update or Create, Update Only |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
