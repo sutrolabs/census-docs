@@ -107,8 +107,8 @@ Census determines which people are members of those audiences by querying your A
 Any changes to the Audiences table will be reflected in the respective audiences during the audience refresh:
 
 * **Row was added**: A new audience will be created on the next refresh
-* ⚠️ **Row was removed**: The matching audience will be marked as invalid on the next refresh. All attached syncs will be paused.
-* ⚠️ **Row was updated**: The matching audience will be renamed in Census on the next refresh. This will not impact the name of any audiences in your downstream destinations.
+* **Row was updated**: The matching audience will be renamed in Census on the next refresh. This will not impact the name of any audiences in your downstream destinations.
+* ⚠️ **Row was removed**: The matching audience will be marked as invalid on the next refresh. Any related syncs will begin to fail. You will have the option to manually delete the audience in Census, or re-add the row (if it was removed by mistake).
 
 **What happens if I delete my Person/Audience/Join Table entity?**
 
