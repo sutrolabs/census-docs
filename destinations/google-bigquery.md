@@ -48,12 +48,12 @@ gcloud projects add-iam-policy-binding cs-sandbox-123456 \
 
 ## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**                                       | **Behaviors**                      |
-| --------------: | :------------: | --------------------------------------------------- | ---------------------------------- |
-|           Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
+| **Object Name** | **Supported?** | **Sync Keys**    | **Behaviors**                      |
+| --------------: | :------------: | ---------------- | ---------------------------------- |
+|           Table |        ✅       | Required columns | Update or Create, Update Only, Add |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
