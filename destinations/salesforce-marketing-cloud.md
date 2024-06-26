@@ -68,9 +68,13 @@ For the email address, type in "support@getcensus.com" and give the user a stron
 
 ![](../.gitbook/assets/sfmc\_step7.png)
 
-There's nothing to do yet on the next screen - we'll set up SSH Keys later. Click "Save" to create the user.
+There's nothing to do yet on the next screen - we'll set up SSH Keys later.
 
 ![](../.gitbook/assets/sfmc\_step8.png)
+
+Select the Root folder as the Home Folder for your user. Click "Save" to create the user.
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-06-25 at 5.31.39 PM.png" alt=""><figcaption><p>Select the Root folder as the Home Folder</p></figcaption></figure>
 
 Salesforce Marketing Cloud will create the user, which may take a few seconds. Copy the **FTP Username** that was assigned to the user, which you'll need in Step 3.
 
@@ -128,11 +132,11 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 
 ## 🔀 Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**                          |
-|----------------:| :------------: | ---------------- |----------------------------------------|
-|     Data Extension | ✅ | Unique Identifier | Update or Create, Update Only, Replace |
-|           Contact | ✅ | Contact Key | Update or Create                       |
-|   API-Triggered Journey | ✅ | Contact Key | Update or Create, Mirror               |
+|       **Object Name** | **Supported?** | **Sync Keys**     | **Behaviors**                          |
+| --------------------: | :------------: | ----------------- | -------------------------------------- |
+|        Data Extension |        ✅       | Unique Identifier | Update or Create, Update Only, Replace |
+|               Contact |        ✅       | Contact Key       | Update or Create                       |
+| API-Triggered Journey |        ✅       | Contact Key       | Update or Create, Mirror               |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
@@ -142,17 +146,17 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 ## 🏗️ Working With Data Extensions
 
-Data Extensions are a fundamental component of Salesforce Marketing Cloud and are used in various capacities, including email personalization, segmentation, and reporting. They're unique in that they combine the common marketing automation concepts of segmentation and custom/relational data together into a single mechanism.&#x20;
+Data Extensions are a fundamental component of Salesforce Marketing Cloud and are used in various capacities, including email personalization, segmentation, and reporting. They're unique in that they combine the common marketing automation concepts of segmentation and custom/relational data together into a single mechanism.
 
-Census allows you to sync data to existing data extensions, create new ones, and add fields to existing ones as well.&#x20;
+Census allows you to sync data to existing data extensions, create new ones, and add fields to existing ones as well.
 
 ### Creating a data extension
 
-You can select any existing data extension as a destination for a sync. You can also create a new data extension when setting up a Census sync.&#x20;
+You can select any existing data extension as a destination for a sync. You can also create a new data extension when setting up a Census sync.
 
 <figure><img src="../.gitbook/assets/SFMC - New DE.png" alt=""><figcaption></figcaption></figure>
 
-1. Click New Object&#x20;
+1. Click New Object
 2. Provide a name for your data extension
 3. Optionally, you can provide a different name for the identifier. By default, we'll use **ID**.
 
@@ -162,7 +166,7 @@ You can also have Census create the data extension within a subfolder by providi
 
 ### Adding new properties
 
-Whether you're working with a brand new data extension or an existing one, you can always add more properties to a data extension. Within the Mappings section, either the **Add Mapping** or **Generate Mappings** allow you to add new properties to the data extension that will be created next time the sync is run.&#x20;
+Whether you're working with a brand new data extension or an existing one, you can always add more properties to a data extension. Within the Mappings section, either the **Add Mapping** or **Generate Mappings** allow you to add new properties to the data extension that will be created next time the sync is run.
 
 ### Setting a root folder
 
