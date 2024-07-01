@@ -12,18 +12,7 @@ In this guide, we will show you how to connect LinkedIn to Census.
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your LinkedIn account (associated with your ads) ready, including the username and password.
-* Have your data source properly configured within Census. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](../sources/elasticsearch.md)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](../sources/mysql.md)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](../sources/sql-server.md)
+* Have your data source properly configured within Census. See our docs for [supported data sources](broken-reference) for further information.
 
 ### Step 1: Connect LinkedIn
 
@@ -52,33 +41,23 @@ Here you will have to write SQL queries to select the data you want to send to L
 * Target Companies / Users in your Ideal Customer Profile (ICP)
 * Competitors to exclude from advertising
 
-## 🗄 Supported Objects
+## 🗄 Supported Objects and Sync Behaviors
 
-Census currently supports syncing to the following LinkedIn objects through audience matching (based on [this documentation](https://docs.microsoft.com/en-us/linkedin/marketing/integrations/matched-audiences/matched-audiences)). The more information provided, the match rate will improve.
+Census currently supports syncing to the following LinkedIn objects.
+
+|  **Object Name** |    **Supported?**    | **Sync Keys**                                                                                  | **Behaviors**                     |
+| ---------------: | :------------------: | ---------------------------------------------------------------------------------------------- | --------------------------------- |
+|     Company List |           ✅          | Company Email Domain, Company Name, Company Page URL, Company Website Domain, Organization Urn | <p>Update or Create<br>Mirror</p> |
+|        User List |           ✅          | Email (unhashed, SHA256/512 hashed), Google Advertising Id, Apple Advertising Id               | <p>Update or Create<br>Mirror</p> |
+| Conversion Event | :white\_check\_mark: |                                                                                                | Send                              |
+
+Census currently supports syncing to the Company List and User List LinkedIn objects through audience matching (based on [this documentation](https://docs.microsoft.com/en-us/linkedin/marketing/integrations/matched-audiences/matched-audiences)). The more information provided, the match rate will improve.
 
 {% hint style="warning" %}
-It is required to provide a DMP Segment Id for both objects that are supported
+It is required to provide a DMP Segment Id for both Company List and User List
 {% endhint %}
-
-| **Object Name** | **Supported?** | **Sync Keys**                                                                                  |
-| --------------: | :------------: | ---------------------------------------------------------------------------------------------- |
-|    Company List |        ✅       | Company Email Domain, Company Name, Company Page URL, Company Website Domain, Organization Urn |
-|       User List |        ✅       | Email (unhashed, SHA256/512 hashed), Google Advertising Id, Apple Advertising Id               |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for LinkedIn.
-
-## 🔄 Supported Sync Behaviors
-
-{% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
-{% endhint %}
-
-|    **Behaviors** | **Supported?** | **Objects** |
-| ---------------: | :------------: | :---------: |
-| Update or Create |        ✅       |     All     |
-|           Mirror |        ✅       |     All     |
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for LinkedIn.
 
 ## 🚑 Need help connecting to LinkedIn?
 

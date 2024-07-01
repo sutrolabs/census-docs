@@ -74,9 +74,7 @@ Reminder: Census will send records to a Teams channel one at a time.
 
 ## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Identifiers**          | **Behaviors** |
-| --------------- | :------------: | ------------------------ | :-----------: |
-| Messsage        |        ✅       | Custom message template. |      Send     |
+<table data-header-hidden><thead><tr><th></th><th align="center"></th><th width="173"></th><th align="center"></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td><td align="center"><strong>Behaviors</strong></td></tr><tr><td>Messsage</td><td align="center">✅</td><td>Custom message template.</td><td align="center">Send</td></tr></tbody></table>
 
 {% hint style="info" %}
 Census can send data to **all** public channels and any private channels that Census has been explicitly invited to (e.g. `/invite @census`).
@@ -87,7 +85,7 @@ Census will only write new records to a specific channel when new records appear
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Microsoft Teams objects and/or behaviors
