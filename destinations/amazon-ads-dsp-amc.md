@@ -39,7 +39,7 @@ Conversion Events are an [events.md](../basics/data-defining/defining-source-dat
 * Like other event syncs, Amazon requires an **Event Name** and a **Timestamp**.
 * **Conversion Definition ID** - Amazon requires that you define all of your conversions types beforehand as Conversion Definitions. You can do this within the Amazon DSP UI. Within Campaign Manager, select your desired **Advertiser**, then **Events manager**, then **Conversions** tab, and click **Add conversion**.
 * **Country Code** - Must be the two-letter country code described in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes).
-* **Match Key** - This is the identifier to associate the event with. Census currently only supports Email as a match key but will support additional options in the future. If you are going to provide Census with a pre-hashed value, it must follow this format:
+* **Match Key** - This is the user identifier of the user that triggered the event. Census currently only supports Email as a match key but will support additional options in the future. If you are going to provide Census with a pre-hashed value, it must follow this format:
   * Lowercase
   * Remove all non-alphanumeric characters \[a-zA-Z0-9] and \[.@-]
   * Remove any leading or trailing whitespace
