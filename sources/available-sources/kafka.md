@@ -59,6 +59,6 @@ Census does not handle sample messages as customer data. Do not include real dat
 
 Click **Save Topic**. Review the listed properties and types to ensure the sample message you provided was interpreted as intended.
 
-## 🚑 Need help connecting to Kafka?
+## Need help connecting to Kafka?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

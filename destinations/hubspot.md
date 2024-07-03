@@ -4,7 +4,7 @@ description: This page describes how to use Census with HubSpot.
 
 # HubSpot
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect HubSpot to Census.
 
@@ -20,7 +20,7 @@ In this guide, we will show you how to connect HubSpot to Census.
 
 Follow the OAuth flow to connect HubSpot. Easy!
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name**          | **Supported?** | **Sync Keys**                     | **Behaviors**                         |
 | ------------------------ | :------------: | --------------------------------- | ------------------------------------- |
@@ -119,7 +119,7 @@ By default, this feature is not enabled to avoid accidentally deleting associati
 
 **Example:** `["InternalValue1", "InternalValue2", "InternalValue3"]`
 
-## 🏎 Sync Speed
+## Sync Speed
 
 Census uses a variety of APIs to achieve the highest possible speed. With the right sync configuration (see below), Census can **update 10,000 contacts per second**. Census connects to HubSpot via OAuth, which is subject to a limit of 100 requests every 10 seconds (except for the Search API). For more information, see the [HubSpot documentation](https://developers.hubspot.com/docs/api/usage-details).
 
@@ -146,6 +146,6 @@ There's a few errors which frequently cause skipped records on when syncing data
 
 If you need to disconnect HubSpot from Census for any reason, you can delete your connection from the Destinations page in Census and/or uninstall the Census app from your HubSpot account by following [these instructions](https://knowledge.hubspot.com/integrations/connect-apps-to-hubspot#uninstall-an-app). Note that you won't be able to sync new data from Census until the connection is restored, but no previously synced data in HubSpot will be impacted.
 
-## 🚑 Need help connecting to HubSpot?
+## Need help connecting to HubSpot?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

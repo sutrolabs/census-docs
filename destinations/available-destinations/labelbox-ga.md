@@ -10,6 +10,6 @@ Labelbox is a Partner-Built Destination. See our [PBD announcement](https://www.
 
 Detailed instructions for using Census to sync datasets from your data warehouse are [provided by Labelbox](https://docs.labelbox.com/docs/census-integration).
 
-### 🚑 Need help connecting to Labelbox?
+### Need help connecting to Labelbox?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

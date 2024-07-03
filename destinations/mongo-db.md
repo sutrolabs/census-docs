@@ -4,7 +4,7 @@ description: Use Census to sync data to a MongoDB table from any source we suppo
 
 # Mongo DB
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 MongoDB is a popular NoSQL database known for its flexibility and scalability, using a document-oriented data model that stores data in JSON-like structures called BSON. With Census, you can sync data into MongoDB from any source we support.
 
@@ -32,6 +32,6 @@ Now you're ready to set up your first sync to MongoDB!
 
 Because MongoDB tables have flexible schemas, Census treats every field you map from your source as a "custom field". Other than the key fields discussed above, Census won't know about your table's schema. Instead, you'll use Census's [Field Mapping](../../syncing-data/field-mapping/) feature to map fields from your source to your MongoDB table by explicitly specifying the destination table field name.
 
-## 🚑 Need help connecting to MongoDB?
+## Need help connecting to MongoDB?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

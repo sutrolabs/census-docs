@@ -70,7 +70,7 @@ Each month a workspace can sync up to the number of destination fields specified
 
 Destination fields are unique per destination, so a field (e.g., active\_users\_last\_30d) synced into two different destinations will be counted twice towards the monthly allocation, however if two different syncs send data to that same field within one destination, it will only count once.
 
-## 💡 Ideas About Other Gotchas?
+## Ideas About Other Gotchas?
 
 We are constantly building out this page :construction:
 

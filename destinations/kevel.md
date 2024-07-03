@@ -6,7 +6,7 @@ description: This page describes how to use Census with Kevel.
 
 Kevel is an API platform that helps you quickly build custom ad platforms for sponsored listings, internal promotions, native ads, and more.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Authenticating Kevel is straightforard. Within Kevel's top bar menu, navigate to **Settings > API Keys**. Click the **New API Key** button and give your key a name. Copy the newly created API Key.
 2. You'lll also need a Network ID. You can find this in the top bar menu by clicking on the ℹ️ icon in the top right. Copy the Network ID.
@@ -14,7 +14,7 @@ Kevel is an API platform that helps you quickly build custom ad platforms for sp
 
 You should now be ready to start creating audiences in Kevel!
 
-## 🗄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 |                                                                                               **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | ------------------------------------------------------------------------------------------------------------: | :------------: | :-----------: | :-----------: |
@@ -32,6 +32,6 @@ Syncing Segments from Census to Kevel
 
 You can also use Custom Targeting via Kevel's Zerkel queries by specifying a key-value pair for your targeting condition (E.G. `category = sports`). For more information, see [Kevel's documentation](https://dev.kevel.com/docs/interest-targeting#how-to-target-an-interest-segment).
 
-## 🚑 Need help connecting to Kevel?
+## Need help connecting to Kevel?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

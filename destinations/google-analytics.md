@@ -4,7 +4,7 @@ description: This page describes how to use Census with Google Analytics
 
 # Google Analytics (UA)
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Google Analytics to Census and create your first sync. The Google Analytics connection uses the Universal Analytics API. For support for Google Analytics 4, take a look at the separate [Google Analytics 4 Destination docs](google-analytics-four.md).
 
@@ -76,7 +76,7 @@ The sync will move data from your warehouse to your Google Analytics account. In
 
 If you need any help configuring Google Analytics, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🗄 Supported Objects
+## Supported Objects
 
 {% hint style="info" %}
 The available **Objects** for the Google Analytics destination are the data sets associated with your selected Google Analytics account.
@@ -84,7 +84,7 @@ The available **Objects** for the Google Analytics destination are the data sets
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Google Analytics.
 
-## 🔄 Supported sync behaviors
+## Supported sync behaviors
 
 | **Behavior** | **Supported?** | **Objects** |
 |-------------:| :------------: | :---------: |
@@ -96,7 +96,7 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support more Google Analytics objects and/or behaviors
 
-## 💡 Things to know
+## Things to know
 
 * Google Analytics has limits to how frequently properties are updated per day so you may want to avoid continuous syncs, especially if you’re importing data through other mechanisms
 * For many Google Analytics reports, data imported this way will only shows up if the User ID has been used as a visitor to the property in the last **30 days**.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with Google Ads.
 
 # Google Ads
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 Connecting to your Google Ads account is straightforward.
 
@@ -14,7 +14,7 @@ Connecting to your Google Ads account is straightforward.
 
     <figure><img src="../../.gitbook/assets/Google Ads.png" alt=""><figcaption></figcaption></figure>
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Click the link for more information on each of the services
 
@@ -32,6 +32,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors
 
-## 🚑 Need help connecting to Google Ads?
+## Need help connecting to Google Ads?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

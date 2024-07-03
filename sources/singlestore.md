@@ -28,15 +28,15 @@ CREATE USER CENSUS IDENTIFIED BY '<strong, unique password>';
 GRANT SELECT ON <your schema>.* TO CENSUS;
 ```
 
-## 💡Notes
+## Notes
 
 * Census supports SingleStoreDB Cloud and SingleStoreDB v7.1+
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to SingleStore instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
-## 🚑 Need help connecting to SingleStore?
+## Need help connecting to SingleStore?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

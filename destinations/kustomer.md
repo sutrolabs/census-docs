@@ -4,7 +4,7 @@ description: This page describes how to use Census with Kustomer
 
 # Kustomer
 
-## 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
+## Getting Started <a href="#getting-started" id="getting-started"></a>
 
 In this guide, we will show you how to connect Kustomer to Census and create your first sync.
 
@@ -54,7 +54,7 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 * Select Kustomer in the dropdown list.
 * Paste your Kustomer account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
 
-## 🗄 Supported Objects
+## Supported Objects
 
 | **Object Name** | **Supported?** | **Sync Keys**                                      |
 | --------------: | :------------: | -------------------------------------------------- |
@@ -63,7 +63,7 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Kustomer.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -75,6 +75,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Kustomer.
 
-## 🚑 Need help connecting to Kustomer? <a href="#need-help-connecting-to-planhat" id="need-help-connecting-to-planhat"></a>
+## Need help connecting to Kustomer? <a href="#need-help-connecting-to-planhat" id="need-help-connecting-to-planhat"></a>
 
 ​[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

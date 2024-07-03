@@ -4,7 +4,7 @@ description: This page describes how to use Census with FullStory
 
 # FullStory
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ### 1. Generate a FullStory API Key
 
@@ -27,7 +27,7 @@ Learn more about FullStory API Keys in their documentation [here](https://help.f
 * Select FullStory in the dropdown list.
 * Paste your FullStory account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | Identifiers                    | **Behaviors** |
 | --------------: | :------------: | ------------------------------ | ------------- |
@@ -39,6 +39,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Fullstory objects and/or sync behaviors
 
-## 🚑 Need help connecting to FullStory?
+## Need help connecting to FullStory?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

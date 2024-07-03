@@ -6,7 +6,7 @@ description: >-
 
 # Snowflake
 
-## 🔐 Required Permissions
+## Required Permissions
 
 {% hint style="success" %}
 These instructions are well tested to connect Census to Snowflake. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
@@ -47,7 +47,7 @@ GRANT SELECT ON FUTURE VIEWS IN SCHEMA "<your database>"."<your schema>" TO ROLE
 GRANT USAGE ON ALL FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
 GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
 
--- Required for Advanced Sync Engine, not required for Basic Sync Engine: 
+-- Required for Advanced Sync Engine, not required for Basic Sync Engine:
 --  Create a private bookkeeping database where Census can store sync state,
 --  perform faster unloads, and keep Warehouse Writeback logs
 
@@ -95,7 +95,7 @@ You may also want to [adjust the schedules](../basics/core-concept/#scheduling-a
 
 Connecting to a Snowflake instance running on AWS VPS or via PrivateLink requires a modified connection configuration. Please contact your Census account manager to have this configured for you.
 
-## 🚦 Allowed IP Addresses
+## Allowed IP Addresses
 
 If you're using Snowflake's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
 
@@ -107,6 +107,6 @@ If you are trying to use [Live Syncs](../basics/core-concept/live-syncs.md) you 
 ALTER TABLE "<table_name>" SET CHANGE_TRACKING = TRUE;
 ```
 
-## 🚑 Need help connecting to Snowflake?
+## Need help connecting to Snowflake?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

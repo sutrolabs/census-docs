@@ -4,7 +4,7 @@ description: This page describes how to use Census with Salesforce Marketing Clo
 
 # Salesforce Marketing Cloud
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Salesforce Marketing Cloud to Census and create your first sync.
 
@@ -130,7 +130,7 @@ Click in the "Search SSH Keys" box and find "Census Public Key" and select it. C
 
 You're ready to start using Census to load data from your warehouse to Salesforce Marketing Cloud!
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 |       **Object Name** | **Supported?** | **Sync Keys**     | **Behaviors**                          |
 | --------------------: | :------------: | ----------------- | -------------------------------------- |
@@ -187,6 +187,6 @@ In addition to Data Extentions in your specified root folder, you can also have 
 
 By default, Census uses Salesforce Marketing Cloud's bulk upload mechanism which is powered by SFTP. This is the recommended mechanism for most syncs. However, for small data volumes, it may be preferred to send updates individually via Salesforce Marketing Cloud's SOAP API for faster processing. If your syncs must be processed with as low latency as possible and you have a relatively small number of changes, you can disable the standard SFTP method of syncing.
 
-## 🚑 Need help connecting to Salesforce Marketing Cloud?
+## Need help connecting to Salesforce Marketing Cloud?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

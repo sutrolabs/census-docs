@@ -4,7 +4,7 @@ description: This page describes how to use Census with Accredible.
 
 # Accredible
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Accredible** from the menu.
@@ -13,7 +13,7 @@ description: This page describes how to use Census with Accredible.
 
 <figure><img src="../.gitbook/assets/accredible.png" alt=""><figcaption><p>Generate an API key from the Accredible app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
@@ -21,6 +21,6 @@ description: This page describes how to use Census with Accredible.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Accredible objects and/or behaviors.
 
-## 🚑 Need help connecting to Accredible?
+## Need help connecting to Accredible?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

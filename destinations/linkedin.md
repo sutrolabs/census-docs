@@ -4,7 +4,7 @@ description: This page describes how to use Census with LinkedIn.
 
 # LinkedIn
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect LinkedIn to Census.
 
@@ -41,7 +41,7 @@ Here you will have to write SQL queries to select the data you want to send to L
 * Target Companies / Users in your Ideal Customer Profile (ICP)
 * Competitors to exclude from advertising
 
-## 🗄 Supported Objects and Sync Behaviors
+## Supported Objects and Sync Behaviors
 
 Census currently supports syncing to the following LinkedIn objects.
 
@@ -59,6 +59,6 @@ It is required to provide a DMP Segment Id for both Company List and User List
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for LinkedIn.
 
-## 🚑 Need help connecting to LinkedIn?
+## Need help connecting to LinkedIn?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

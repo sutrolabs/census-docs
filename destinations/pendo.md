@@ -4,7 +4,7 @@ description: This page describes how to use Census with Pendo.
 
 # Pendo
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Pendo to Census and create your first sync.
 
@@ -60,7 +60,7 @@ Now let's create your new Census connection to Pendo.
 
 And you're all set and ready to get syncing! 🎉
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Pendo objects.
 
@@ -76,6 +76,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pendo objects and/or behaviors
 
-## 🚑 Need help connecting to Pendo?
+## Need help connecting to Pendo?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

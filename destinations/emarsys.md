@@ -4,7 +4,7 @@ description: This page describes how to use Census with Emarsys.
 
 # Emarsys
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Emarsys** from the menu.
@@ -16,7 +16,7 @@ description: This page describes how to use Census with Emarsys.
 
 <figure><img src="../.gitbook/assets/emarsys.png" alt=""><figcaption><p>Create an API user in the Emarsys app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
@@ -24,6 +24,6 @@ description: This page describes how to use Census with Emarsys.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Emarsys objects and/or behaviors.
 
-## 🚑 Need help connecting to Emarsys?
+## Need help connecting to Emarsys?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

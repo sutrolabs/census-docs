@@ -4,7 +4,7 @@ description: This page describes how to use ClickHouse as a source in Census.
 
 # ClickHouse
 
-## 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
+## Getting Started <a href="#getting-started" id="getting-started"></a>
 
 * Open Census and navigate to the **Sources** page.
 * Click **New Source** and select ClickHouse from the list.
@@ -15,13 +15,13 @@ description: This page describes how to use ClickHouse as a source in Census.
   * Click **Connect**
 * You’re all set! Head over to the **Syncs** page to activate your data.
 
-## 🚦Allowed IP Addresses
+## Allowed IP Addresses
 
 You can add Census's IP addresses in your firewall to only allow traffic originating from Census to access your ClickHouse warehouse.
 
 You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
 
-## 🚇 Connecting via SSH tunnel
+## Connecting via SSH tunnel
 
 Census optionally allows connecting to ClickHouse warehouses that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
 
@@ -42,10 +42,10 @@ Note that the keypair is unique for each Census Warehouse connection. Even if yo
 
 With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
 
-## 💡 Notes <a href="#notes" id="notes"></a>
+## Notes <a href="#notes" id="notes"></a>
 
 As of November 2023, ClickHouse only supports our [Basic Sync Engine](overview.md#sync-engines).
 
-## 🚑 Need help connecting to ClickHouse?
+## Need help connecting to ClickHouse?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with Autopilot Journeys.
 
 # Autopilot Journeys
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Autopilot Journeys to Census and create your first sync.
 
@@ -104,13 +104,13 @@ Now go back to your Autopilot and go view the record type (Contact) that should 
 
 That's it! In 6 steps, you connected Census to Autopilot and started syncing customer & account data from your warehouse to Autopilot 🎉
 
-## 🗄 Supported Objects
+## Supported Objects
 
 | **Object Name** | **Supported?** | **Sync Keys** |
 | --------------- | :------------: | ------------- |
 | Contact         |        ✅       | Email         |
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with Oracle Responsys.
 
 # Oracle Responsys
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Oracle Responsys** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to use Census with Oracle Responsys.
 
 <figure><img src="../.gitbook/assets/oracle-responsys.png" alt=""><figcaption><p>Enter your Responsys credentials to connect with Census.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
@@ -21,6 +21,6 @@ description: This page describes how to use Census with Oracle Responsys.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Responsys objects and/or behaviors.
 
-## 🚑 Need help connecting to Responsys?
+## Need help connecting to Responsys?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

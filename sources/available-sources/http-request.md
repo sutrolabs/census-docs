@@ -48,6 +48,6 @@ curl --request POST \
   --data '{json_event_data}'
 ```
 
-## 🚑 Need help using our HTTP Request Source?
+## Need help using our HTTP Request Source?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

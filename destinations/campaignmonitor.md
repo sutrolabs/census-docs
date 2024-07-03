@@ -4,7 +4,7 @@ description: This page describes how to use Census with Campaign Monitor.
 
 # Campaign Monitor
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Campaign Monitor to Census and create your first sync.
 
@@ -100,7 +100,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🗄 Supported Objects
+## Supported Objects
 
 Census currently supports syncing to the following CampaignMonitor objects.
 
@@ -111,7 +111,7 @@ Census currently supports syncing to the following CampaignMonitor objects.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Campaign Monitor.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -125,6 +125,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Campaign Monitor.
 
-## 🚑 Need help connecting to Campaign Monitor?
+## Need help connecting to Campaign Monitor?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

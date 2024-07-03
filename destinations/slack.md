@@ -7,7 +7,7 @@ description: >-
 
 # Slack
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Slack to Census.
 
@@ -91,7 +91,7 @@ Example:&#x20;
 
 <figure><img src="../.gitbook/assets/Slack User Mention.png" alt=""><figcaption><p>User Mention Example</p></figcaption></figure>
 
-## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Identifiers**          | **Behaviors** |
 | --------------- | :------------: | ------------------------ | ------------- |
@@ -111,7 +111,7 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Slack objects and/or behaviors.
 
-## 🚑 Need help connecting to Slack?
+## Need help connecting to Slack?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

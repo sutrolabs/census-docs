@@ -4,7 +4,7 @@ description: This page walks through how to connect Census with your PostgreSQL 
 
 # PostgreSQL
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This guide will walk you through connecting to PostgreSQL as a destination.
 
@@ -37,7 +37,7 @@ GRANT USAGE ON SCHEMA "<your schema>" TO CENSUS;
 GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 ```
 
-## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 We support syncing data to Tables in PostgreSQL, but they must have a uniqueness constraint on a column. ​
 
@@ -51,7 +51,7 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Postgres objects and/or behaviors
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to PostgreSQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
@@ -59,6 +59,6 @@ Census can successfully connect to PostgreSQL instances that are using advanced 
 
 You may be trying to sync to a table that does not have a uniqueness constraint. If possible, you need to add one to be able to sync to it. The syntax to do so is [here](https://www.postgresql.org/docs/current/ddl-alter.html#DDL-ALTER-ADDING-A-CONSTRAINT).
 
-## 🚑 Need help connecting to PostgreSQL?
+## Need help connecting to PostgreSQL?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

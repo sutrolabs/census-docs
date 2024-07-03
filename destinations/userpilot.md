@@ -4,7 +4,7 @@ description: This page describes how to use Census with Userpilot.
 
 # Userpilot
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Userpilot** from the menu.
@@ -13,7 +13,7 @@ description: This page describes how to use Census with Userpilot.
 
 <figure><img src="../.gitbook/assets/userpilot.png" alt=""><figcaption><p>Copy your API key from the Userpilot app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
@@ -21,6 +21,6 @@ description: This page describes how to use Census with Userpilot.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Userpilot objects and/or behaviors.
 
-## 🚑 Need help connecting to Userpilot?
+## Need help connecting to Userpilot?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

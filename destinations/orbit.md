@@ -4,7 +4,7 @@ description: This page describes how to use Census with Orbit.
 
 # Orbit
 
-## 🏃‍♀️ Getting started
+## Getting started
 
 This guide shows you how to use Census to connect your Orbit account to your data warehouse and create your first sync.
 
@@ -108,6 +108,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Orbit objects and/or behaviors
 
-## 🚑 Need help connecting to Orbit?
+## Need help connecting to Orbit?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

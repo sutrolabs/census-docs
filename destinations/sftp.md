@@ -4,7 +4,7 @@ description: This page describes how to use Census with SFTP.
 
 # SFTP
 
-## 🏃‍♀️ Getting started
+## Getting started
 
 This guide shows you how to use Census to connect your SFTP server to your data warehouse and create your first sync.
 
@@ -119,7 +119,7 @@ When defining the **File Path** for an S3 sync, you can use variables that will 
 
 Update or Create syncs upload your whole dataset on the first run and only new changes on subsequent runs. Each sync run saves to a different file. The first run saves with "full" at the end of the file name. For example, `filename_12_12_23_full.csv` if it runs on 12/12/2023. Later syncs save with a timestamp at the end, like `filename_12_12_23_1702426195.csv`, so you can see how your data changes over time.
 
-## 🔄 Supported sync behaviors
+## Supported sync behaviors
 
 |    **Behaviors** | **Supported?** | **Objects** |
 | ---------------: | :------------: | :---------: |
@@ -132,12 +132,12 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for SFTP server connections.
 
-## 💡 Things to know
+## Things to know
 
 * If you aren't using a password for your server, Census provides an RSA token with an OpenSSH-formatted public key.
 * Data arrives in one file written to the designated SFTP file path.
 * Files are written as a CSV with headers.
 
-## 🚑 Need help connecting your server?
+## Need help connecting your server?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

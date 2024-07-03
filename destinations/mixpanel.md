@@ -4,7 +4,7 @@ description: This page describes how to use Census with Mixpanel.
 
 # Mixpanel
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Mixpanel to Census and create your first sync.
 
@@ -100,7 +100,7 @@ Now go back to your Mixpanel Instance and view a Contact that should have been u
 
 That's it! In 5 steps, you connect Census to Mixpanel and started syncing customer & product data from your warehouse to Mixpanel 🎉
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Mixpanel objects.
 
@@ -121,6 +121,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 Depending on which plan your Mixpanel is on, you may have limited ability to view historical data. For example, currently Mixpanel's Starter Free plan will only show events from the last 90 days, even though Census can successfully sync older data. If you find some of your event data missing, take a look at [Mixpanel's documentation](https://help.mixpanel.com/hc/en-us/articles/115004511246-Data-History-Access-By-Plan-Type) to understand what limits your plan may have.
 
-## 🚑 Need help connecting to Mixpanel?
+## Need help connecting to Mixpanel?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

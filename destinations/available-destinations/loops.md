@@ -10,6 +10,6 @@ Loops is a Partner-Built Destination. See our [PBD announcement](https://www.get
 
 Detailed instructions for using Census to sync contacts and trigger loops from your data warehouse are [provided by Loops](https://loops.so/docs/integrations/census).
 
-### 🚑 Need help connecting to Loops?
+### Need help connecting to Loops?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

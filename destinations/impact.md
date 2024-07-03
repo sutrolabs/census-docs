@@ -4,7 +4,7 @@ description: This page describes how to use Census with Impact.
 
 # Impact
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Go to the **Destinations** tab and click **New Destination**.
 2. Select **Impact** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to use Census with Impact.
 
 <figure><img src="../.gitbook/assets/impact.png" alt=""><figcaption><p>Enter your Impact credentials to connect.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors** |
 | --------------: | :------------: | --------------------- | ------------- |
@@ -24,6 +24,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Impact objects and/or behaviors.
 
-## 🚑 Need help connecting to Impact?
+## Need help connecting to Impact?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

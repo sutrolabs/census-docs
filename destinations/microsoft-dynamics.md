@@ -4,7 +4,7 @@ description: This page describes how to use Census with Microsoft Dynamics.
 
 # Microsoft Dynamics
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This guide shows you how to use Census to connect your Microsoft Dynamics account to your data warehouse and create your first sync.
 
@@ -79,7 +79,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🗄 Supported objects
+## Supported objects
 
 | **Object Name** | **Supported?** | **Sync Keys**                         |
 | --------------: | :------------: | ------------------------------------- |
@@ -104,7 +104,7 @@ For a string example of a column in Snowflake:
 `IFF(lookup_ref = '', NULL, lookup_ref) as lookup_ref`
 {% endhint %}
 
-## 🔄 Supported sync behaviors
+## Supported sync behaviors
 
 |     **Behavior** | **Supported?** | **Objects** |
 | ---------------: | :------------: | :---------: |
@@ -116,6 +116,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Microsoft Dynamics.
 
-## 🚑 Need help connecting to Microsoft Dynamics?
+## Need help connecting to Microsoft Dynamics?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

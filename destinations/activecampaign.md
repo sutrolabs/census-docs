@@ -4,7 +4,7 @@ description: This page describes how to use Census with ActiveCampaign.
 
 # ActiveCampaign
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect ActiveCampaign to Census and create your first sync.
 
@@ -106,13 +106,13 @@ Now go back to your ActiveCampaign and go view a record type (Contact or Account
 
 That's it! In 6 steps, you connected Census to ActiveCampaign and started syncing customer & account data from your warehouse to ActiveCampaign 🎉
 
-## 🏎 Sync Speed
+## Sync Speed
 
 ActiveCampaign is syncing data at approximately 37,000 contact records per hour.
 
 Due to limitations of the ActiveCampaign API, Account records will sync significantly slower.
 
-## 🗄 Supported Objects
+## Supported Objects
 
 | Object Name    | Supported? | Identifiers  |
 | -------------- | :--------: | ------------ |
@@ -134,7 +134,7 @@ Census will return an error if the list with the matching ID cannot be found. If
 
 ![](../.gitbook/assets/screely-1652234231375.png)
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -151,6 +151,6 @@ Sometimes error messages can be a little cryptic. Here's some ActiveCampaign err
 
 * `Row skipped - It is on exclusion list` The record you're attempting to update appears on your ActiveCampaign instance's [Exclusion List](https://help.activecampaign.com/hc/en-us/articles/207362110-How-to-add-contacts-to-the-Exclusion-List) and can't be updated.
 
-## 🚑 Need help connecting to ActiveCampaign?
+## Need help connecting to ActiveCampaign?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

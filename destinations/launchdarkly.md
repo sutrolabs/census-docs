@@ -4,7 +4,7 @@ description: This page describes how to use Census with LaunchDarkly.
 
 # LaunchDarkly
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Click **Add Service** and select **LaunchDarkly** from the menu.
 2. Open the LaunchDarkly app in another window to find the following credentials:
@@ -58,7 +58,7 @@ Go to **Account settings** > **Projects** and copy the **Project Key,** **Enviro
 
 <figure><img src="../.gitbook/assets/LaunchDarkly (5).png" alt=""><figcaption></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
 | --------------: | :------------: | ------------- | ---------------- |
@@ -87,6 +87,6 @@ Census supports LaunchDarkly's Synced Segments with [audience-syncs.md](../basic
 
 <figure><img src="../.gitbook/assets/LaunchDarkly (2).png" alt=""><figcaption></figcaption></figure>
 
-## 🚑 Need help connecting to LaunchDarkly?
+## Need help connecting to LaunchDarkly?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

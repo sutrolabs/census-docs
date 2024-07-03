@@ -5,7 +5,7 @@ description: >-
 
 # Gladly
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Gladly** from the menu.
@@ -14,7 +14,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/gladly.png" alt=""><figcaption><p>Enter your Gladly credentials into Census.</p></figcaption></figure>
 
-## 🗄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Key** | **Behaviors** |
 | -------: | :---: | ----------- | -------------------------- |
@@ -22,6 +22,6 @@ description: >-
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Gladly objects and/or behaviors.
 
-## 🚑 Need help connecting to Gladly?
+## Need help connecting to Gladly?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

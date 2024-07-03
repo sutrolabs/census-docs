@@ -6,7 +6,7 @@ description: This page describes how to use Census with Amazon Ads DSP.
 
 Amazon Ads DSP is a demand-side platform that allows advertisers to programmatically buy display, video, and audio ads. Census can sync your customer data to Amazon Ads DSP to help you create and manage audiences for your ad campaigns.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 Connecting to your Amazon Ads account is straightforward.
 
@@ -18,7 +18,7 @@ Connecting to your Amazon Ads account is straightforward.
 3. Complete the OAuth flow. Make sure your are signed into a user account that has permissions to both view all of your accounts, as well as submit data to them (read only accounts will not work).
 4. Select the Ads account you wish to use with Census. If you'd like to sync to multiple accounts, you will need to add each as its own destination.
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |  **Object Name** | **Supported?** | **Sync Keys**   | **Behaviors**    |
 | ---------------: | :------------: | --------------- | ---------------- |
@@ -76,6 +76,6 @@ Like Conversion Events, you can optionally provide pre-hashed values for your re
 
 Finally, to support upcoming Digital Markets Act (DMA) requirements, Amazon now accepts a Data Source Country field on the DSP Audience Members object. This field should be a comma separated list of two-letter country code using [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes) format. This list will be used by any segments created from this sync. This is required in order to create a new audience.
 
-## 🚑 Need help connecting to Amazon Ads DSP?
+## Need help connecting to Amazon Ads DSP?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

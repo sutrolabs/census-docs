@@ -4,7 +4,7 @@ description: This page describes how to use Census with Segment.
 
 # Segment
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Segment to Census.
 
@@ -29,7 +29,7 @@ Note: Census's permissions will be the same as this Segment token.
 Make sure to follow Segment's Documentation on connecting a Production Source [here](https://segment.com/docs/unify/quickstart/#step-3-connect-production-sources).
 {% endhint %}
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Segment support is pretty straight forward! [Let us know](mailto:support@getcensus.com) if you want Census to support more objects for Segment.
 
@@ -64,6 +64,6 @@ You can use Group destination object in two different ways:
 * Creating and Updating new Groups - Use the Group ID Sync Key to uniquely identify new groups and add `traits` to them.
 * Associating Users with Groups - Use the User ID (or Anonymous ID) as Sync Key to associate users with the Group they're a member of.
 
-## 🚑 Need help connecting to Segment?
+## Need help connecting to Segment?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

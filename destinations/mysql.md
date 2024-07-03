@@ -4,7 +4,7 @@ description: This page describes how to sync data to your MySQL database.
 
 # MySQL
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This guide will walk you through connecting to MySQL as a destination.
 
@@ -35,16 +35,16 @@ GRANT INSERT, UPDATE, SELECT ON <your schema>.* TO CENSUS;
 GRANT CREATE TEMPORARY TABLES ON *.* TO CENSUS
 ```
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 <table data-header-hidden><thead><tr><th align="right"></th><th width="152" align="center"></th><th width="250"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Table</td><td align="center">✅</td><td>Primary keys or columns with uniqueness constraints</td><td>Update or Create, Update Only</td></tr></tbody></table>
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for MySQL.
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to MySQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
-## 🚑 Need help connecting to MySQL?
+## Need help connecting to MySQL?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

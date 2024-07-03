@@ -4,7 +4,7 @@ description: This page describes how to use Census with Appcues.
 
 # Appcues
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Appcues to Census and create your first sync.
 
@@ -71,7 +71,7 @@ Now go back to Appcues and go view a User record that should have been updated o
 
 That's it! In 4 steps, you've connected Appcues and started syncing customer & product data from your warehouse 🎉
 
-### 🗄 Supported Objects
+### Supported Objects
 
 Census currently supports syncing to the following Appcues objects.
 
@@ -79,7 +79,7 @@ Census currently supports syncing to the following Appcues objects.
 | --------------: | :------------: | ----------- |
 |            User |        ✅       | User ID     |
 
-### 🔄 Supported Sync Behaviors
+### Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -89,6 +89,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 | -------------------: | :------------: | :---------: |
 | **Update or Create** |        ✅       |     User    |
 
-### 🚑 Need help connecting to Appcues?
+### Need help connecting to Appcues?
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects or more sync behaviors for Appcues or just to start a conversation!

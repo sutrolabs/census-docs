@@ -4,7 +4,7 @@ description: Learn how to use Census with Sailthru
 
 # Sailthru
 
-## 🏃‍♂️ Getting started
+## Getting started
 
 This guide shows you how to use Census to connect your Sailthru Account to your data warehouse and create your first sync.
 
@@ -90,7 +90,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🗄 Supported objects
+## Supported objects
 
 | **Object Name** | **Supported?** | **Sync Keys** |
 | --------------: | :------------: | ------------- |
@@ -99,7 +99,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Sailthru.
 
-## 🔄 Supported sync behaviors
+## Supported sync behaviors
 
 |     **Behavior** | **Supported?** | **Objects** |
 | ---------------: | :------------: | :---------: |
@@ -112,6 +112,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Sailthru.
 
-## 🚑 Need help connecting to Sailthru?
+## Need help connecting to Sailthru?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

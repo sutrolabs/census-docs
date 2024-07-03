@@ -6,7 +6,7 @@ description: >-
 
 # Notion
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This guide shows you how to use Census to connect your Notion account to your data warehouse and create your first sync.
 
@@ -45,7 +45,7 @@ When configuring your sync, the page should look something like this 👇
 
 ![](<../.gitbook/assets/Notion sync setup (1920 × 2300 px).png>)
 
-## 🗄️ Supported Objects <a href="#supported-objects" id="supported-objects"></a>
+## ️ Supported Objects <a href="#supported-objects" id="supported-objects"></a>
 
 We support syncing data to Tables in Notion. ​
 
@@ -53,7 +53,7 @@ We support syncing data to Tables in Notion. ​
 | :-------------: | :------------: | :-----------: |
 |      Table      |        ✅       |     Title     |
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -74,6 +74,6 @@ You may have to provide explicit permission (rather than relying on inherited pe
 
 ![Screen Shot 2022-03-08 at 5.39.03 PM.png](https://uploads.linear.app/eb66e31d-15eb-4269-9860-aebf164343bb/4ec654ee-633b-4355-af2a-68ca6ebc80d4/c716ec16-5ac1-41e4-80a0-854d1ed55135) ![Screen Shot 2022-03-08 at 5.41.34 PM.png](https://uploads.linear.app/eb66e31d-15eb-4269-9860-aebf164343bb/6d2b915a-48fd-4523-96be-efb82995ed48/c2bcb696-531e-4d06-9a9e-62ae9b585967)
 
-## 🚑 Need help connecting to Notion?
+## Need help connecting to Notion?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

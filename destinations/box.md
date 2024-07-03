@@ -4,7 +4,7 @@ description: This page describes how to use Census with Box.
 
 # Box
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Box** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to use Census with Box.
 
 <figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>Grant Census access to your Box account.</p></figcaption></figure>
 
-## 🗄️ File Path Variables
+## ️ File Path Variables
 
 When defining the file path for a Box sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new files in the Box folder that reflect the date and time of the sync.
 
@@ -31,7 +31,7 @@ When defining the file path for a Box sync, you can use variables that will be s
 | `%M`         | minute with zero padding     | 04, 56             |
 | `%S`         | second with zero padding     | 06, 54             |
 
-## 🔀 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 | **Behavior** | **Supported?** | **Objects** |
 | -----------: | :------------: | ----------- |
@@ -47,6 +47,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Box.
 
-## 🚑 Need help connecting to Box?
+## Need help connecting to Box?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

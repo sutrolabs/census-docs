@@ -4,7 +4,7 @@ description: This page describes how to use Census with Customer.io.
 
 # Customer.io
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Customer.io to Census and create your first sync.
 
@@ -74,7 +74,7 @@ Finally, provide the Site ID and both API Keys you just created on Customer.io. 
 
 Customer.io will now appear as a new destination for Census syncs. 🎉
 
-## 🏎 Sync Speed
+## Sync Speed
 
 Customer.io is a destination with a fast API that can burst all the way to 600 api calls per second but usually we set a conservative **150 calls per second.**
 
@@ -82,7 +82,7 @@ Customer.io is a destination with a fast API that can burst all the way to 600 a
 | ----------- | --------------------- | ------------------------- |
 | Customer.io | 150 / sec             | 7,000                     |
 
-## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 We currently support all objects of [Customer.io's core API.](https://customer.io/docs/api/#section/Overview)
 
@@ -107,7 +107,7 @@ Learn more about all of our sync behaviors in our [Syncs](broken-reference/) doc
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Customer.io objects and/or behaviors
 
-## 💡 Things to know about Customer.io
+## Things to know about Customer.io
 
 There are a few unique features available when syncing to a Customer.io instance.
 
@@ -118,6 +118,6 @@ There are a few unique features available when syncing to a Customer.io instance
   * If you are editing an existing sync's mapping:
     * Go to the sync's Configuration tab and in the `Mapped Fields` section, click **Edit**, click **Add Mapping** at the bottom, and then click **Create new field**. Then, type in the name of the custom field as it appears in your Customer.io instance and hit **Save**. After that, you can select the field from your source that you want to send into that the Customer.io custom field.
 
-## 🚑 Need help connecting to Customer.io?
+## Need help connecting to Customer.io?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

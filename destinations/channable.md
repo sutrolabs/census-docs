@@ -4,7 +4,7 @@ description: This page describes how to use Census with Channable.
 
 # Channable
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Channable** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to use Census with Channable.
 
 <figure><img src="../.gitbook/assets/channable.png" alt=""><figcaption><p>Get your API Token and Company ID from the Channable app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**       |
 | --------------: | :------------: | ---------------- | ------------------- |
@@ -22,6 +22,6 @@ description: This page describes how to use Census with Channable.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Channable objects and/or behaviors.
 
-## 🚑 Need help connecting to Channable?
+## Need help connecting to Channable?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

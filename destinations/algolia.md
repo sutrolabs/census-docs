@@ -4,7 +4,7 @@ description: This page describes how to use Census with Algolia.
 
 # Algolia
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Algolia to Census and create your first sync.
 
@@ -28,7 +28,7 @@ First, ensure your desired application is selected in the Application dropdown m
 
 That's it! In 2 steps, you connected Census to Algolia. If you have any questions or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or send us an email at support@getcensus.com
 
-## 🔄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 Algolia stores data within collections called Indices. Your Indices in Algolia can be used as objects to sync to from Census.
 
@@ -36,6 +36,6 @@ Algolia stores data within collections called Indices. Your Indices in Algolia c
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Algolia.
 
-## 🚑 Need help connecting to Algolia?
+## Need help connecting to Algolia?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

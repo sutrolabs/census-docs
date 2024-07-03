@@ -4,7 +4,7 @@ description: This page describes how to use Census with Vitally.
 
 # Vitally
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Vitally to Census and create your first sync.
 
@@ -54,7 +54,7 @@ Census makes use of different Vitally APIs for different operations. You're welc
 * Paste your API Key(s) into the relevant fields
 * Optionally name your new connection and then click **Connect**
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** |     **Sync Keys**     |          **Behavior**         |
 | --------------: | :------------: | :-------------------: | :---------------------------: |
@@ -78,11 +78,11 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 ![](<../.gitbook/assets/Screen Shot 2022-06-30 at 6.50.03 PM.png>)
 
-## 🔍 Additional Service Quirks
+## Additional Service Quirks
 
 * Vitally's internal database has a delay between Census completing its upload and having those results reflected in the UI. This delay can be several seconds to several minutes in extreme cases.
 * As with all Census syncs, when you unmap a field in Census, we will stop updating those fields. We do not delete them.
 
-## 🚑 Need help connecting to Vitally?
+## Need help connecting to Vitally?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

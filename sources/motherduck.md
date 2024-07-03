@@ -4,7 +4,7 @@ description: This page describes how to use MotherDuck as a source in Census.
 
 # MotherDuck
 
-## 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
+## Getting Started <a href="#getting-started" id="getting-started"></a>
 
 * If you haven’t already, [sign up for MotherDuck](https://motherduck.com/) and [start a free Census trial](https://app.getcensus.com/)
 * Go to the MotherDuck UI and [copy your service token](https://motherduck.com/docs/authenticating-to-motherduck#authentication-using-a-service-token)
@@ -18,10 +18,10 @@ description: This page describes how to use MotherDuck as a source in Census.
 
 <figure><img src="../.gitbook/assets/motherduck-2.png" alt=""><figcaption><p>Create your first MotherDuck sync.</p></figcaption></figure>
 
-## 💡 Notes <a href="#notes" id="notes"></a>
+## Notes <a href="#notes" id="notes"></a>
 
 As of June 2023, MotherDuck only supports our [Basic Sync Engine](overview.md#sync-engines).
 
-## 🚑 Need help connecting to MotherDuck?
+## Need help connecting to MotherDuck?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

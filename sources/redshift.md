@@ -6,7 +6,7 @@ description: >-
 
 # Amazon Redshift
 
-## 🔐 Required Permissions
+## Required Permissions
 
 {% hint style="danger" %}
 These instructions are well tested to connect Census to Redshift. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
@@ -68,21 +68,21 @@ ALTER DEFAULT PRIVILEGES FOR USER "<your dbt run user> IN SCHEMA "<your dbt targ
 
 Because this is altering the default behavior of another user, this command must be run by a Redshift superuser.
 
-## 💡 Notes
+## Notes
 
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 * In Redshift if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata.
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to AlloyDB instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
-## 🚦 Allowed IP Addresses
+## Allowed IP Addresses
 
 Redshift by default prevents any external IP address from accessing your data warehouse so you will need to add these IP addresses to your security groups. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). For more information, visit [AWS Redshift Help Center](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html).
 
-## 🚇 Connecting via SSH tunnel
+## Connecting via SSH tunnel
 
 Census optionally allows connecting to Redshift that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
 
@@ -111,6 +111,6 @@ Census uses the `UNLOAD` command to bulk extract data efficiently (you can read 
 
 This is definitely an obscure feature of AWS but this article does a good job of [explaining S3 VPC endpoints](https://tomgregory.com/when-to-use-an-aws-s3-vpc-endpoint/), why they're needed and how to set one up.
 
-## 🚑 Need help connecting to Redshift?
+## Need help connecting to Redshift?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

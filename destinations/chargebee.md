@@ -4,7 +4,7 @@ description: This page describes how to use Census with Chargebee
 
 # Chargebee
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Chargebee to Census and create your first sync.
 
@@ -51,7 +51,7 @@ Custom fields defined in Chargebee can be added to the sync mapping by manually 
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
 
-## 🗄️ Supported Objects <a href="#supported-objects" id="supported-objects"></a>
+## ️ Supported Objects <a href="#supported-objects" id="supported-objects"></a>
 
 Census currently supports syncing to the following Chargebee objects.
 
@@ -60,7 +60,7 @@ Census currently supports syncing to the following Chargebee objects.
 |     Customer    |        ✅       |   ID, Email   |
 |   Subscription  |        ✅       |  ID, Plan ID  |
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.

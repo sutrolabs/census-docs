@@ -10,7 +10,7 @@ description: >-
 
 {% embed url="https://www.youtube.com/watch?v=YqBPoFuEGRg" %}
 
-## 🔐 Required permissions
+## Required permissions
 
 {% hint style="danger" %}
 These instructions are well tested to connect Census to BigQuery. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
@@ -37,7 +37,7 @@ We definitely recommend you use the three permissions we specify when creating a
 * `bigquery.dataEditor` access on the `CENSUS` dataset OR `bigquery.dataOwner` access on the `CENSUS` dataset if you would like to additionally grant Census permissions to delete the `CENSUS` dataset. Skip this step if working in read-only mode.
 * Finally, Census service account needs project-level access with the `bigquery.JobUser` role or specifically the `bigquery.jobs.create` permission (via a custom role).
 
-## 🔩 Configuring a new BigQuery connection
+## Configuring a new BigQuery connection
 
 Because permissions are a bit unique on BigQuery so the process of creating a new connection to Census requires a few extra steps.
 
@@ -91,12 +91,12 @@ gcloud projects add-iam-policy-binding [new-project] \
 
 Google BigQuery permissions are recursive. If the referenced view in the new project _also references_ tables and views in other projects, you may need to repeat the above steps for those other projects until Census has the ability to access the ultimate source of a given view.
 
-## 🚦VPC Service Controls and IP Restrictions
+## VPC Service Controls and IP Restrictions
 
 While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access. You can find Census's set of IP address for your region in [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention").
 
 When using VPC Service Controls, you will also need to allow BigQuery unloads to the Census GCP bucket. To do that, you'll need to add [`gs://sutrolabs-giza-unloads-production`](gs://sutrolabs-giza-unloads-production) in the allow list for BigQuery unloads.
 
-## 🚑 Need help connecting to BigQuery?
+## Need help connecting to BigQuery?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with Jira
 
 # Jira
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Jira to Census and create your first sync.
 
@@ -90,7 +90,7 @@ Finally, select the fields you want to update in the Mapper in the "Which proper
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Jira's primary object is an Issue, which we support in Census.​
 

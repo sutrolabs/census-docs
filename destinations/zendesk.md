@@ -4,7 +4,7 @@ description: This page describes how to use Census with Zendesk.
 
 # Zendesk
 
-## 🏃‍♀️ Getting started
+## Getting started
 
 In this guide, we will show you how to connect Zendesk to Census and create your first sync.
 
@@ -94,7 +94,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
-## 💡 Things to know about the Zendesk destination
+## Things to know about the Zendesk destination
 
 The way that Zendesk updates certain properties is complex.
 
@@ -148,7 +148,7 @@ If the Zendesk API names have not been modified, you can transform the label val
 lower(replace(column_name, ' ', '_'))
 ```
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Zendesk objects:
 
@@ -174,6 +174,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Zendesk objects and/or behaviors.
 
-## 🚑 Need help connecting to Zendesk?
+## Need help connecting to Zendesk?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

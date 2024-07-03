@@ -4,7 +4,7 @@ description: This page describes how to use Census with Outreach.
 
 # Outreach
 
-## 🏃‍♀️ Getting started
+## Getting started
 
 This guide shows you how to use Census to connect your Outreach account to your data warehouse and create your first sync.
 
@@ -97,7 +97,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🏎 Sync speed
+## Sync speed
 
 Sync speeds can be affected by API rate limiting from the destination app. Outreach allows an API call rate of up to 10,000 calls per hour, per user. (See [Outreach API Documentation](https://api.outreach.io/api/v2/docs) for details.)
 
@@ -106,7 +106,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 * You're running an initial sync action that will update many records in Outreach.
 * You have another integration or service that's making API calls to Outreach and using the same user account.
 
-## 🗄 Supported objects
+## Supported objects
 
 | **Object Name** | **Supported?** | **Sync Keys**                       |
 | --------------: | :------------: | ----------------------------------- |
@@ -116,7 +116,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Outreach.
 
-## 🔄 Supported sync behaviors
+## Supported sync behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -142,6 +142,6 @@ We recommend authenticating your Outreach connection with an Outreach user that 
 
 If using another profile, the profile must include permissions to view, create, and edit all records for the synced objects. See [Outreach Support](https://support.outreach.io/hc/en-us/articles/219027188-Creating-and-Assigning-Governance-Profiles) for details on user governance settings.
 
-## 🚑 Need help connecting to Outreach?
+## Need help connecting to Outreach?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

@@ -10,13 +10,13 @@ description: >-
 
 This walks you through the step by step of setting this up.
 
-## 🔩 Create a Rockset connection
+## Create a Rockset connection
 
 {% hint style="danger" %}
 These instructions are well tested to connect Census to Rockset. If you're running into connection issues or missing collections, please confirm you've run all of these instructions.
 {% endhint %}
 
-#### 🔐 Required permissions
+## Required permissions
 
 Census needs an API key with at least "member" permissions. Navigate to the [API keys](https://console.rockset.com/apikeys) section of the Rockset console and create an API key with "member" or "admin" permissions. The account you are using in Rockset must have these credentials to be able to correctly create this.
 
@@ -47,6 +47,6 @@ rockset api:workspaces:createWorkspace --body body.yaml
 
 Navigate to the Models tab in Census and query your Rockset collections and views in Census. Now you can sync into your operational tools using Rockset as a source.
 
-## 🚑 Need help connecting to Rockset?
+## Need help connecting to Rockset?
 
 Please [contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat if you're interested in syncing data from Rockset to your business apps.

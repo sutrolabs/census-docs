@@ -4,7 +4,7 @@ description: This page describes how to use Census with Sendrid.
 
 # SendGrid
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect SendGrid to Census and create your first sync.
 
@@ -45,7 +45,7 @@ With the SendGrid API key, return to Census and visit the **Destinations** tab. 
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-24 at 5.44.57 PM.png>)
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following SendGrid objects.
 
@@ -61,6 +61,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sendgrid objects and/or behaviors.
 
-## 🚑 Need help connecting to SendGrid?
+## Need help connecting to SendGrid?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

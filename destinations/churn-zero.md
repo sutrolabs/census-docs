@@ -4,7 +4,7 @@ description: Learn how to use Census to sync your Data Warehouse to ChurnZero.
 
 # ChurnZero
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **ChurnZero** from the menu.
@@ -22,7 +22,7 @@ Custom fields defined in ChurnZero can be added to the sync mapping by manually 
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
 | --------------: | :------------: | --------------------- | ---------------- |
@@ -36,6 +36,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more ChurnZero objects and/or behaviors.
 
-## 🚑 Need help connecting to ChurnZero?
+## Need help connecting to ChurnZero?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

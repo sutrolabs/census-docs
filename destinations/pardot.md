@@ -4,7 +4,7 @@ description: This page describes how to connect and sync your data into Pardot u
 
 # Pardot
 
-## 🏃‍♀️ Getting started
+## Getting started
 
 This guide shows you how to use Census to connect your Pardot account to your data warehouse and create your first sync.
 
@@ -89,7 +89,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🗄 Supported Objects
+## Supported Objects
 
 Census currently supports syncing to the following Pardot objects.
 
@@ -105,7 +105,7 @@ On Prospect syncs, we can Lookup from the Prospect Object to a List, which creat
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pardot.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -118,6 +118,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pardot.
 
-## 🚑 Need help connecting to Pardot?
+## Need help connecting to Pardot?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

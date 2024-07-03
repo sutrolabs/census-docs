@@ -4,7 +4,7 @@ description: This page describes how to use Census with Crowd.dev.
 
 # Crowd.dev
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Crowd.dev** from the menu.
@@ -14,7 +14,7 @@ description: This page describes how to use Census with Crowd.dev.
 
 <figure><img src="../.gitbook/assets/crowd.png" alt=""><figcaption><p>Get your Tenant ID and Auth Token from the Crowd.dev app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |      **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
 | -------------------: | :------------: | --------------------- | ---------------- |
@@ -28,6 +28,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Crowd.dev objects and/or behaviors.
 
-## 🚑 Need help connecting to Crowd.dev?
+## Need help connecting to Crowd.dev?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

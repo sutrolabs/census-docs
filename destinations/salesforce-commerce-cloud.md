@@ -4,7 +4,7 @@ description: This page describes how to use Census with Salesforce Commerce Clou
 
 # Salesforce Commerce Cloud
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Salesforce Commerce Cloud** from the menu.
@@ -15,7 +15,7 @@ description: This page describes how to use Census with Salesforce Commerce Clou
 
 <figure><img src="../.gitbook/assets/salesforce-commerce-cloud.png" alt=""><figcaption><p>Enter your credentials to connect to Commerce Cloud.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
@@ -23,6 +23,6 @@ description: This page describes how to use Census with Salesforce Commerce Clou
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Salesforce Commerce Cloud objects and/or behaviors.
 
-## 🚑 Need help connecting to Salesforce Commerce Cloud?
+## Need help connecting to Salesforce Commerce Cloud?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

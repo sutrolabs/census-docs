@@ -38,17 +38,17 @@ EXEC sp_addrolemember 'db_datareader', CENSUS;
 GRANT SELECT, VIEW DEFINITION ON SCHEMA::<your schema> TO CENSUS;
 ```
 
-## 💡 Notes
+## Notes
 
 * If you have multiple schemata that you would like Census to read from, repeat the steps for "\<your schema>" for each of them
 * We based our connection protocol on SQL Server [SQL JDBC driver](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to Azure Synapse instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 Specifically, to ensure Census can connect to your Synapse data warehouse, use the Windows Azure Management Portal or run **sp\_set\_firewall\_rule** on the primary database to create a firewall rule to allow access to Census's IP addresses.
 
-## 🚑 Need help connecting to Azure Synapse?
+## Need help connecting to Azure Synapse?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

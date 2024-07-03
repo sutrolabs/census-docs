@@ -8,7 +8,7 @@ Facebook Product Catalog allows you to sync your product data to Facebook for us
 
 In this guide, we will show you how to connect Facebook Product Catalog to Census and create your first sync.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This destination relies on a [Facebook System User](https://www.facebook.com/business/help/327596604689624?id=2190812977867143) token for authenticating requests. A regular system user is recommended over an admin system user. You can use an existing system user or create a new one with the following steps:
 
@@ -55,7 +55,7 @@ You will need to provide the System User Token you generated earlier along with 
 
 <figure><img src="../.gitbook/assets/FB New Connection.png" alt=""><figcaption><p>New Facebook Product Catalog connection page</p></figcaption></figure>
 
-## 🗄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 Each Facebook Product Catalog supports products for a specific vertical. Each vertical is a variant on the base product object within the Facebook system. Currently we support the following variants with more to come. If there's a variant you would like to sync to please [contact us](facebook-ads-1.md#need-help-connecting-to-facebook) about making it happen.
 
@@ -66,6 +66,6 @@ Each Facebook Product Catalog supports products for a specific vertical. Each ve
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Facebook Product Catalog.
 
-## 🚑 Need help connecting to Facebook?
+## Need help connecting to Facebook?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

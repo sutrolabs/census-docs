@@ -59,11 +59,11 @@ You can now go on to create a sync from your Google Sheet to a destination app.
 
 For more detailed instructions on how to configure your sync, please read the docs page for the destination app you want to sync data to.
 
-## 💡Notes
+## Notes
 
 * You cannot create SQL Models on Google Sheets data
 * Be sure that all line breaks are removed from the header row
 
-## 🚑 Need help connecting to Google Sheets?
+## Need help connecting to Google Sheets?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

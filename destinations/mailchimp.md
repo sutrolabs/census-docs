@@ -4,7 +4,7 @@ description: This page describes how to use Census with Mailchimp.
 
 # Mailchimp
 
-## 🏃‍♀️⠀Getting Started
+## ⠀Getting Started
 
 In this guide, we will show you how to connect Mailchimp to Census and create your first sync.
 
@@ -39,7 +39,7 @@ Once you've authorized Census, you'll be redirected back to the Destinations pag
 
 If you want to see your connections in Mailchimp in the future, simply navigate to the **Profile** page, and scroll down to the **Connections and notifications** section.
 
-## 💡⠀Mailchimp Field Quirks
+## ⠀Mailchimp Field Quirks
 
 {% hint style="info" %}
 Please note that the mandatory status field only accepts the following values **in lower case**: `"subscribed"`, `"unsubscribed"`, `"cleaned"`, or `"pending"`.
@@ -61,7 +61,7 @@ If you do want to update the Status field, you can include that instead. However
 
 For more details, take a look at Mailchimp's [API documentation](https://mailchimp.com/developer/marketing/api/list-members/update-list-member/).
 
-## 🗄⠀Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ⠀Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |       **Object Name** | **Supported?** | **Identifiers**                                                | **Behaviors**    |
 | --------------------: | :------------: | -------------------------------------------------------------- | ---------------- |

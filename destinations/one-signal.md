@@ -6,7 +6,7 @@ description: >-
 
 # OneSignal
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **OneSignal** from the menu.
@@ -14,7 +14,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-01-09 at 9.16.46 AM.png" alt=""><figcaption><p>Enter your OneSignal credentials into Census.</p></figcaption></figure>
 
-## 🗄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**           | **Behaviors** |
 | --------------: | :------------: | ------------------------- | ------------- |
@@ -22,6 +22,6 @@ description: >-
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more OneSignal objects and/or behaviors.
 
-## 🚑 Need help connecting to OneSignal?
+## Need help connecting to OneSignal?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

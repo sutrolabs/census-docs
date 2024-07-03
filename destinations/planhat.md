@@ -6,7 +6,7 @@ description: >-
 
 # Planhat
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Planhat to Census and create your first sync.
 
@@ -47,7 +47,7 @@ In Planhat, once a token is created, it will appear once and last forever. Make 
 * Paste your Planhat account's **API Key**. Save your connection and if everything is set up correctly, you should see a successful connection test verifying the connection.
 * Paste the region in the region box. If your Planhat app url is `app-us3.planhat.com`, paste **us3**. If your Planhat api endpoint is simply`api.planhat.com`, the value of **default** should be used here.
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Planhat objects.
 
@@ -67,6 +67,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Planhat objects and/or behaviors
 
-## 🚑 Need help connecting to Planhat?
+## Need help connecting to Planhat?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with NetSuite.
 
 # NetSuite
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect NetSuite to Census and create your first sync.
 
@@ -128,7 +128,7 @@ You're ready to start using Census to load data from your warehouse to NetSuite!
 
 >
 
-## 🏎 Sync Speed
+## Sync Speed
 
 NetSuite's API speed and rate limitation are complex and are tied to the plan you are on but you can expect a speed of \~500 records sync / minute on their base plan,
 
@@ -140,7 +140,7 @@ NetSuite's API speed and rate limitation are complex and are tied to the plan yo
 Please note that you can contact your Customer Success Manager at NetSuite to increase your NetSuite[ account API concurrency](https://nlcorp.app.netsuite.com/core/media/media.nl?id=127925362\&c=NLCORP\&h=8742ad8b887aa6881f85&\_xt=.pdf) to increase the records sync speed.
 {% endhint %}
 
-## 🗄️ Supported Objects
+## ️ Supported Objects
 
 This is is the current list of NetSuite[ objects](https://www.netsuite.com/portal/developers/resources/suitetalk-documentation.shtml) supported by our destination. There are many more and we add them on a case by case basis. If you need a different type of object, please contact us to let us know which object do you need, and we will be happy to support it.
 
@@ -182,7 +182,7 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 Please note that NetSuite doesn't support the [creation of fields](../basics/core-concept/#field-creation) via Census and currently we don't support [add all fields ](../basics/core-concept/#add-all-fields)feature for NetSuite
 {% endhint %}
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -218,6 +218,6 @@ Netsuite is one of our most complex destinations, and some objects have behavior
 
 For more information on all Netsuite Objects and their fields please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/account.html)
 
-## 🚑 Need help connecting to NetSuite?
+## Need help connecting to NetSuite?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

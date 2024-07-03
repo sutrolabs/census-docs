@@ -6,7 +6,7 @@ description: This page describes how to use Census with Salesforce.
 
 {% embed url="https://www.youtube.com/watch?v=cxGYb9U9ePk" %}
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Salesforce to Census and create your first sync.
 
@@ -92,7 +92,7 @@ Note that, because these fields are not forced to be unique in Salesforce, Censu
 
 For this reason, we recommend you try to use an Unique External Identifier field whenever possible.
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Salesforce support is pretty straight forward!
 
@@ -187,6 +187,6 @@ This error occurs with highly automated or frequently changing Salesforce deploy
 
 Typically, this is a transient issue and the next run of the sync won't have the same problem. However, if it persists, please contact your Census representative. In some cases, we can help control batch sizes being passed to Census.
 
-## 🚑 Need help connecting to Salesforce?
+## Need help connecting to Salesforce?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with X Ads.
 
 # X Ads (formerly Twitter Ads)
 
-## 🏃‍♂️ Getting started
+## Getting started
 
 This guide shows you how to use Census to connect your X Ads account to your data warehouse and create your first sync.
 
@@ -88,7 +88,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🏎 Sync speed & limits
+## Sync speed & limits
 
 Rate limits affect how many records you can sync in a specific period of time. X Ads API has a rate limit of 1,500 calls per minute. Calls to sync audience data and conversion event data share the same rate limit.
 
@@ -98,7 +98,7 @@ When syncing data to conversion events, the **Use timestamp column to identify n
 
 To use this setting, you'll also need to include a column in your database/data source that tracks the latest sync for each record.
 
-## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |         **Object Name** | **Supported?** | **Sync Keys**                                                       | **Behaviors** |
 | ----------------------: | :------------: | ------------------------------------------------------------------- | ------------- |
@@ -112,6 +112,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more X Ads objects and/or behaviors.
 
-## 🚑 Need help connecting to X Ads?
+## Need help connecting to X Ads?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

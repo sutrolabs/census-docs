@@ -6,7 +6,7 @@ description: This page describes how to use Census with Bloomreach.
 
 Bloomreach is a digital experience platform that helps businesses create personalized experiences for their customers. Census can sync your customer data to Bloomreach to help you better understand your customers' needs and personalize their experiences.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 Census will need four pieces of information to connect to your Bloomreach account, all of which can be found in Bloomreach's API settings.
 
@@ -25,7 +25,7 @@ Census will need four pieces of information to connect to your Bloomreach accoun
 
 You should now be ready to sync your data to Bloomreach.
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                                                               **Object Name** | **Supported?** | **Sync Keys**                          | **Behaviors**    |
 | ----------------------------------------------------------------------------------------------------------------------------: | :------------: | -------------------------------------- | ---------------- |
@@ -49,6 +49,6 @@ There's a few things to note about the customer object in Bloomreach:
 
 Like Customer objects, Bloomreach does not currently offer an API to retrieve the schema/properties for the event object either. So again, double check that you're using the exact names (case-sensitive) as they appear in the API Permissions > Properties page in Bloomreach.
 
-## 🚑 Need help connecting to Bloomreach?
+## Need help connecting to Bloomreach?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

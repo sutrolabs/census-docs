@@ -10,7 +10,7 @@ At Census, we refer to Data Sources as exactly that—the data warehouse or data
 
 The menu to the left lists all of the data sources that Census currently supports. If you don't see your data source listed, please [let us know](mailto:support@getcensus.com)!
 
-## 🏎️ Sync Engines
+## ️ Sync Engines
 
 Census offers two methods of connecting to your data source and keeping track of what's been synced (a.k.a. "state tracking"). We call these Sync Engines. When connecting a data source for the first time, we'll ask you to select either Basic or Advanced Sync Engine.
 
@@ -32,7 +32,7 @@ Some data sources (e.g. Google Sheets and Elasticsearch) only support Basic Sync
 
 If you have any questions about which Sync Engine is right for you, please [reach out to our support team](mailto:support@getcensus.com).
 
-## 🚦Allowed IP Addresses
+## Allowed IP Addresses
 
 Most sources require allowlisting IP Addresses so that Census's systems can unload data from the source. [BigQuery](google-bigquery.md) and [Databricks](databricks.md) are notable exceptions, so do check the source-specific docs if you have any questions.
 

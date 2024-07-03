@@ -10,7 +10,7 @@ Census lets you select an Elasticsearch instance to treat as a source for your s
 
 In order to sync data from Elasticsearch, Census needs your deployment url, port, username, and password. This walks you through the step by step of setting this up.
 
-## 🔩 Create an Elasticsearch connection
+## Create an Elasticsearch connection
 
 * In Census, go to **Sources** or click [here to go to the app](https://app.getcensus.com/sources).
 * Click **New Source** and select **Elasticsearch**.
@@ -31,14 +31,14 @@ You're all set! Click "test connection" and you can query this from the models t
 If you have any questions during setup, or have a use case that is not covered, please write us in-app or [send us an email](mailto:support@getcensus.com) via support@getcensus.com
 {% endhint %}
 
-## 💡 Notes
+## Notes
 
 * We based our connection protocol on Elastic's [SQL JDBC driver](https://www.elastic.co/guide/en/elasticsearch/reference/current/sql-jdbc.html)
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to Elasticsearch instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
-## 🚑 Need help connecting to Elasticsearch?
+## Need help connecting to Elasticsearch?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

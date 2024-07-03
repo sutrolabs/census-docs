@@ -6,7 +6,7 @@ description: >-
 
 # PostgreSQL
 
-## 🔐 Required Permissions
+## Required Permissions
 
 {% hint style="info" %}
 These instructions are well-tested to connect Census to PostgreSQL. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
@@ -54,7 +54,7 @@ GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA "<your schema>" TO CENSUS;
 ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO CENSUS;
 ```
 
-## 💡 Notes
+## Notes
 
 {% hint style="danger" %}
 We **strongly recommend against** connecting Census a production PostgreSQL database. Census queries are often very analytical in nature and do not always play nicely with production environments. Unfortunately, PostgreSQL doesn't give you much ability to control performance impacts across users so to avoid issues, please use Census with databases set up for analytic workloads only!
@@ -65,17 +65,17 @@ We **strongly recommend against** connecting Census a production PostgreSQL data
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 * If you are using an Azure database for PostgreSQL server the **Username** needs to be formatted as `username@hostname`. For AWS the format is `username`
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to Postgres instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
-## 🚦Allowed IP Addresses
+## Allowed IP Addresses
 
 With PostgreSQL, you'll need to add Census's IP addresses in your firewall, and/or add rules to your `pg_hba.conf` file to only allow the Census user to connect to your database.
 
 You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
 
-## 🚇 Connecting via SSH tunnel
+## Connecting via SSH tunnel
 
 Census optionally allows connecting to PostgreSQL warehouses that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
 
@@ -96,6 +96,6 @@ Note that the keypair is unique for each Census Warehouse connection. Even if yo
 
 With these steps complete, you should be able to complete a connection test, indicating that your tunneled connection is ready to be used in syncs.
 
-## 🚑 Need help connecting to PostgreSQL?
+## Need help connecting to PostgreSQL?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

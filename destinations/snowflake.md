@@ -4,7 +4,7 @@ description: This page describes how to sync data to your Snowflake data warehou
 
 # Snowflake
 
-## 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
+## Getting Started <a href="#getting-started" id="getting-started"></a>
 
 This guide will walk you through connecting to Snowflake as a destination.
 
@@ -62,7 +62,7 @@ GRANT USAGE ON SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
 GRANT INSERT, UPDATE, SELECT ON ALL TABLES IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
 ```
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**                                       | **Behaviors**                      |
 | --------------: | :------------: | --------------------------------------------------- | ---------------------------------- |
@@ -74,10 +74,10 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Snowflake objects and/or behaviors.
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to Snowflake instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
-## 🚑 Need help connecting to Snowflake?
+## Need help connecting to Snowflake?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

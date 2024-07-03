@@ -4,7 +4,7 @@ description: This page describes how to use Census with Amazon Pinpoint.
 
 # Pinpoint
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 There are essentially three groups of credentials that Census requires to connect to Pinpoint:
 
@@ -62,7 +62,7 @@ Set up your staging bucket expiry policies to clean up old staging data:
 
 4. Confirm creation of the rule
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors** |
 | --------------: | :------------: | --------------------- |---------------|
@@ -74,6 +74,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pinpoint objects and/or behaviors.
 
-## 🚑 Need help connecting to Pinpoint?
+## Need help connecting to Pinpoint?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

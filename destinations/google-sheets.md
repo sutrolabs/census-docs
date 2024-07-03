@@ -4,7 +4,7 @@ description: This page describes how to use Census with Google Sheets.
 
 # Google Sheets
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Google Sheets to Census and create your first sync.
 
@@ -121,7 +121,7 @@ If Census determines a sync will update over 5M cells the sync will fail with th
 
 This is a runtime error and will not be caught at the time of Sync creation.
 
-## 🗄 Supported Objects
+## Supported Objects
 
 Google Sheets support is pretty straight forward!
 
@@ -131,7 +131,7 @@ Google Sheets support is pretty straight forward!
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Sheets functionality.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 | **Behaviors** | **Supported?** | **Objects** |
 | ------------: | :------------: | :---------: |
@@ -143,6 +143,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Google Sheets.
 
-## 🚑 Need help connecting to Google Sheets?
+## Need help connecting to Google Sheets?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with MoEngage.
 
 # MoEngage
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **MoEngage** from the menu.
@@ -14,7 +14,7 @@ description: This page describes how to use Census with MoEngage.
 
 <figure><img src="../.gitbook/assets/moengage.png" alt=""><figcaption><p>Generate API credentials in the MoEngage app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
 | --------------: | :------------: | ------------- | ---------------- |
@@ -27,6 +27,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more MoEngage objects and/or behaviors.
 
-## 🚑 Need help connecting to MoEngage?
+## Need help connecting to MoEngage?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

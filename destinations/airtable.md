@@ -4,7 +4,7 @@ description: This page describes how to use Census with Airtable.
 
 # Airtable
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Airtable to Census and create your first sync.
 
@@ -20,7 +20,7 @@ Note: Census's permissions will be the same as the Airtable user you used during
 
 You should now have a connection to Airtable! Let's start syncing data.
 
-## 🗄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 Airtable support is pretty straight forward!
 
@@ -44,6 +44,6 @@ Airtable needs a primary key that is a short text field for Census to be able to
 | Attachments              | <p>A <a href="../basics/data-defining/defining-source-data/structured-data.md">structured column</a> of the following structure:<br><code>[ { "url": "http://path/to/attachment.png" } ]</code></p> |
 | The Rest                 | <p>Census will give an informative error</p><p>message if rejected by Airtable</p>                                                                                                                  |
 
-## 🚑 Need help connecting to Airtable?
+## Need help connecting to Airtable?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

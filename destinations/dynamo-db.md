@@ -4,7 +4,7 @@ description: Use Census to sync data to a DynamoDB table from any source we supp
 
 # Amazon DynamoDB
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 [Amazon DynamoDB](https://docs.aws.amazon.com/dynamodb/) is a fully managed NoSQL database service known for its performance and scalability. With Census, you can sync data into DynamoDB tables from any source we support.
 
@@ -40,7 +40,7 @@ When done, click on your role and copy its ARN. Now you can head back to Census 
 
 Now you're ready to set up your first sync to DynamoDB!
 
-## 🔀 Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
+## Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
 
 <table data-header-hidden><thead><tr><th width="168.6600566572238"></th><th width="137"></th><th width="154"></th><th></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td>Table</td><td>✅</td><td>Partition Key</td><td>Update or Create, Mirror</td></tr></tbody></table>
 
@@ -69,6 +69,6 @@ When you set up your sync, you'll select your **Composite Key** in your source d
 
 Because DynamoDB tables have flexible schemas, Census treats every field you map from your source as a "custom field". Other than the key fields discussed above, Census won't know about your table's schema. Instead, you'll use Census's [Field Mapping](../syncing-data/field-mapping/) feature to map fields from your source to your DynamoDB table by explicitly specifying the destination table field name.
 
-## 🚑 Need help connecting to DynamoDB?
+## Need help connecting to DynamoDB?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

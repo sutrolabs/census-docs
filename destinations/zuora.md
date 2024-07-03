@@ -4,7 +4,7 @@ description: This page describes how to use Census with Zuora.
 
 # Zuora
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Zuora to Census and create your first sync.
 
@@ -97,7 +97,7 @@ Finally, select the fields you want to update in the Mapper in the "Which Fields
 
 Click the **Next** button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects
+## ️ Supported Objects
 
 | **Object Name** | **Supported?** | **Sync Keys**                        |
 | --------------- | :------------: | ------------------------------------ |
@@ -106,7 +106,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Objects for this destination
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -118,6 +118,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 ‌ [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for this destination
 
-## 🚑 Need help connecting to Zuora?
+## Need help connecting to Zuora?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

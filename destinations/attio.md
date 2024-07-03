@@ -4,12 +4,12 @@ description: This page describes how to use Census with Attio.
 
 # Attio
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Attio** from the menu.
 3. Open the Attio app in another browser tab. Navigate to **Workspace Settings** <figure><img src="../.gitbook/assets/attio-workspace-settings.png" alt=""><figcaption></figcaption></figure>
-   1. Select **Developers** from the left hand menu and click the `Create a new integration` button. 
+   1. Select **Developers** from the left hand menu and click the `Create a new integration` button.
         <figure><img src="../.gitbook/assets/attio-developers.png" alt=""><figcaption></figcaption></figure>
    2. Once the integration is created, a new access token will be available within your new integration. Copy this value.
         <figure><img src="../.gitbook/assets/attio-access-token.png" alt=""><figcaption></figcaption></figure>
@@ -18,7 +18,7 @@ description: This page describes how to use Census with Attio.
 4. Return to Census and paste the access token under **API Token**.
 
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**      | **Behaviors** |
 |----------------:| :------------: |----------------------|---------------|
@@ -44,6 +44,6 @@ Fields of type `Record Reference` are taken in as an array of objects. Below is 
 ],
 ```
 
-## 🚑 Need help connecting to Attio?
+## Need help connecting to Attio?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

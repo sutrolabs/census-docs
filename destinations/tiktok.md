@@ -4,14 +4,14 @@ description: This page describes how to use Census with TikTok Ads.
 
 # TikTok
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 * Navigate to the **Destinations** page in Census and click **New Destination**.
 * Select **TikTok** from the menu.
 * Click **Connect** and you will be redirected to sign in to your TikTok for Business account.
 * After completing the flow, you'll see your TikTok connection listed on the **Destinations** page.
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |           **Object Name** | **Supported?** | **Sync Keys**           | **Behaviors**             |
 | ------------------------: | :------------: | ----------------------- |---------------------------|
@@ -65,6 +65,6 @@ Prior to hashing, please ensure you are [normalizing your data to TikTok's requi
 
 * All audience identifiers can be provided as either the original value or a hashed value.
 
-## 🚑 Need help connecting to TikTok Ads?
+## Need help connecting to TikTok Ads?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

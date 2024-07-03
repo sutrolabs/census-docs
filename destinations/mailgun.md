@@ -4,7 +4,7 @@ description: This page describes how to use Census with Mailgun.
 
 # Mailgun
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Mailgun** from the menu.
@@ -13,7 +13,7 @@ description: This page describes how to use Census with Mailgun.
 <figure><img src="../.gitbook/assets/mailgun.png" alt=""><figcaption><p>Generate your Private API Key from Mailgun.</p></figcaption></figure>
 <figure><img src="../.gitbook/assets/mailgun2.png" alt=""><figcaption><p>Get your Domain from the Mailgun app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
@@ -21,6 +21,6 @@ description: This page describes how to use Census with Mailgun.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mailgun objects and/or behaviors.
 
-## 🚑 Need help connecting to Mailgun?
+## Need help connecting to Mailgun?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

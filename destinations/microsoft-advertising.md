@@ -4,7 +4,7 @@ description: This page describes how to use Census with Microsoft Advertising(or
 
 # Microsoft Advertising
 
-## ​🏃‍♀️ Getting Started
+## ​Getting Started
 
 In this guide, we will show you how to connect Microsoft Ads to Census.
 
@@ -58,7 +58,7 @@ After setting up your warehouse, your Census sync should look like this:
 
 ![](<../.gitbook/assets/Screen Shot 2022-03-11 at 10.08.23 AM.png>)
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |    **Object Name** | **Supported?** |    **Identifiers**    | **Behaviors** |
 | -----------------: | -------------- | :-------------------: | ------------- |
@@ -71,6 +71,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Microsoft Ads objects and/or behaviors
 
-## 🚑 Need help connecting to Microsoft Ads?
+## Need help connecting to Microsoft Ads?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

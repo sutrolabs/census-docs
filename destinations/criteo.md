@@ -1,6 +1,6 @@
 # Criteo
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This guide shows you how to use Census to connect your Criteo account to your data warehouse and create your first sync.
 
@@ -78,7 +78,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🗄 Supported objects
+## Supported objects
 
 | **Object Name** | **Supported?** | **Sync Keys**                                              |
 | --------------: | :------------: | ---------------------------------------------------------- |
@@ -86,7 +86,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Criteo.
 
-## 🔄 Supported sync behaviors
+## Supported sync behaviors
 
 |     **Behavior** | **Supported?** | **Objects** |
 | ---------------: | :------------: | :---------: |
@@ -99,6 +99,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Criteo.
 
-## 🚑 Need help connecting to Criteo?
+## Need help connecting to Criteo?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

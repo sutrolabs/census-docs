@@ -1,6 +1,6 @@
 # Amazon EventBridge
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This guide will walk through connecting Census to an Amazon EventBridge instance as a data destination.
 
@@ -28,7 +28,7 @@ You can provide an optional Endpoint ID if you are using [EventBridge's Global E
 
 The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API\_Endpoint.html#eventbridge-Type-Endpoint-EndpointId) is the URL subdomain of your global endpoint. For example, if the URL for your Endpoint is `https://abcde.veo.endpoints.event.amazonaws.com`, then the EndpointId is `abcde.veo`.
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**                  |
 | --------------: | :------------: | ------------- | ------------------------------ |
@@ -61,6 +61,6 @@ Any other property mappings you include will be included in the **Detail** neste
 
 You can also override the shape of the **Detail** object by providing an override Census by providing a JSON template using [mustache syntax](https://mustache.github.io/mustache.5.html).
 
-## 🚑 Need Help Connecting to EventBridge?
+## Need Help Connecting to EventBridge?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

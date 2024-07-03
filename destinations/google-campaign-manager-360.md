@@ -6,7 +6,7 @@ description: This page describes how to use Census with Google Campaign Manager 
 
 Google Campaign Manager 360 is a demand-side platform that allows advertisers to manage their digital campaigns across multiple channels.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 Census uses OAuth to connect to Google Campaign Manager 360. Before you start this flow, please make sure the user and accounts have the correct permissions:
 
@@ -20,7 +20,7 @@ Once you've confirmed permissions, follow these steps to connect Census to Googl
 2. Select **Google Campaign Manager 360** from the menu.
 3. Complete the OAuth flow to grant Census access. Note that you'll need to create a separate Census connection for each advertiser you wish to send data to.
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                                                                     **Object Name** | **Supported?** |  **Sync Keys**  | **Behaviors** |
 | ----------------------------------------------------------------------------------------------------------------------------------: | :------------: | :-------------: | :-----------: |
@@ -57,6 +57,6 @@ When using the Encrypted User ID, Encrypted User ID Candidates, you must specify
 
 For syncing audiences to Google Campaign Manager 360, you can include consent information to ensure compatibility with [Google's EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/). Google Campaign Manager 360 now supports an additional field `Consent for ad user data`, which can be set to one of the following values: `GRANTED`, `DENIED`. See Google's [documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad\_user\_data\_consent) for more information.
 
-## 🚑 Need help connecting to Google Campaign Manager 360?
+## Need help connecting to Google Campaign Manager 360?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

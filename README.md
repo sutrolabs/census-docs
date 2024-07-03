@@ -17,6 +17,6 @@ Want to learn more about how our customers use Census in their business today? T
 
 Want to know about the latest features and bug fixes in our product? Check out our [changelog](https://whatsnew.getcensus.com/).
 
-## 🚑 Need help?
+## Need help?
 
 You can always contact us via support@getcensus.com or [in-app](https://app.getcensus.com) via the live chat in the bottom right corner.

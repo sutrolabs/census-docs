@@ -8,7 +8,7 @@ description: >-
 
 In this guide, we will show you how to connect Facebook Ads to Census and create your first sync.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 Facebook Ads support two separate authentication mechanisms: OAuth and System User. We recommend using System User for the most reliable connection long term as it does not require re-authentication every 60 days.
 
@@ -80,7 +80,7 @@ If you are setting up a connection with a System User Token when you input your 
 
 **Example:** `act_123456789`
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                                  |       **Behaviors**      |
 | ----------------------------------------------------------------------------------------: | :-----------: | ---------------------------------------------------------------------------------------------------------------- | :----------------------: |
@@ -217,6 +217,6 @@ A sample response would be something like this:
 }
 ```
 
-## 🚑 Need help connecting to Facebook?
+## Need help connecting to Facebook?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

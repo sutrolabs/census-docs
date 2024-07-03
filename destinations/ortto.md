@@ -4,7 +4,7 @@ description: This page describes how to use Census with Ortto.
 
 # Ortto
 
-## 🏃‍♀️ Getting started
+## Getting started
 
 This guide shows you how to use Census to connect your Ortto account to your data warehouse and create your first sync.
 
@@ -86,7 +86,7 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
 
-## 🏎 Sync Speed
+## Sync Speed
 
 Sync speeds can be affected by API rate limiting from the destination app. Ortto has a number of different rate limiting criteria for their API depending on IP, Ortto tier, responses, and payloads. (See [Ortto API Documentation](https://help.ortto.com/developer/latest/developer-guide/rate-limits.html) for details.)
 
@@ -95,7 +95,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 * You're running an initial sync action that will update many records in Ortto.
 * You have another integration or service that's making API calls to Ortto and using the same API key.
 
-## 🗄 Supported objects
+## Supported objects
 
 | **Object Name** | **Supported?** | **Sync Keys**      |
 | --------------: | :------------: | ------------------ |
@@ -104,7 +104,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Ortto.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="warning" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -117,6 +117,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Ortto.
 
-## 🚑 Need help connecting to Ortto?
+## Need help connecting to Ortto?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

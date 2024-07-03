@@ -4,7 +4,7 @@ description: This page describes how to use Census with Drift.
 
 # Drift
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Drift to Census and create your first sync.
 
@@ -37,7 +37,7 @@ Once you've authorized Census, you'll be redirected back to the **Destinations**
 
 If you want to see your integrations in Drift in the future, simply navigate to the **Settings** page, and click on **Integrations** in the left side navigation (close to the bottom, right above **Help**).
 
-## 🗄 Supported Objects
+## Supported Objects
 
 | **Object Name** | **Supported?** | Identifiers                |
 | --------------: | :------------: | -------------------------- |
@@ -45,7 +45,7 @@ If you want to see your integrations in Drift in the future, simply navigate to 
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more supported objects for Drift.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -57,6 +57,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Drift.
 
-## 🚑 Need help connecting to Drift?
+## Need help connecting to Drift?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

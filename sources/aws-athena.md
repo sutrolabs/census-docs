@@ -6,7 +6,7 @@ description: >-
 
 # Amazon Athena
 
-## 🔐 Required Permissions
+## Required Permissions
 
 Census lets you select Amazon Athena as a source for your syncs. The following resources need to be available:
 
@@ -115,6 +115,6 @@ Step 4: Open your AWS Console in a separate tab and browse to the IAM service. C
 * When done, click on your role and copy its ARN. Go back to the tab where you're editing the Census Athena source and enter the role ARN.
 * Click 'Connect'. The tester should re-run and succeed.
 
-## 🚑 Need help connecting to Athena?
+## Need help connecting to Athena?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

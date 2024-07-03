@@ -4,7 +4,7 @@ description: This page describes how to sync data to Azure Blob Storage.
 
 # Azure Blob Storage
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Azure Blob Storage** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to sync data to Azure Blob Storage.
 
 <figure><img src="../.gitbook/assets/azure-blob-storage.png" alt=""><figcaption><p>Enter your Azure Blob Storage credentials in Census.</p></figcaption></figure>
 
-## 🗄️ File Path Variables
+## ️ File Path Variables
 
 When defining the file path for an Azure Blob Storage sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new files in the S3 bucket that reflect the date and time of the sync.
 
@@ -31,7 +31,7 @@ When defining the file path for an Azure Blob Storage sync, you can use variable
 | `%M`         | minute with zero padding     | 04, 56             |
 | `%S`         | second with zero padding     | 06, 54             |
 
-## 🔀 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 | **Behavior** | **Supported?** | **Objects** |
 | -----------: | :------------: | ----------- |
@@ -43,6 +43,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Azure Blob Storage.
 
-## 🚑 Need help connecting to Azure Blob Storage?
+## Need help connecting to Azure Blob Storage?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

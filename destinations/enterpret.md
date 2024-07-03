@@ -10,7 +10,7 @@ Entepret is a Partner-Built Destination. See our [PBD announcement](https://www.
 
 ## Enterpret
 
-### 🏃‍♀️ Getting Started
+### Getting Started
 
 In this guide, we will show you how to connect Enterpret to Census and create your first sync.
 
@@ -44,7 +44,7 @@ With your API key, return to Census and visit the **Destinations** tab. Click on
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-02-05 at 12.10.36 PM.png" alt=""><figcaption></figcaption></figure>
 
-### 🗄 Supported Objects
+### Supported Objects
 
 Census currently supports syncing to the following Enterpret objects.
 
@@ -52,7 +52,7 @@ Census currently supports syncing to the following Enterpret objects.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Enterpret.
 
-### 🔄 Supported Sync Behaviors
+### Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -62,6 +62,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Enterpret.
 
-### 🚑 Need help connecting to Enterpret?
+### Need help connecting to Enterpret?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -6,7 +6,7 @@ description: >-
 
 # Google AlloyDB
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This guide shows you how to use Census to connect your AlloyDB database to your data warehouse and create your first sync.
 
@@ -39,7 +39,7 @@ GRANT USAGE ON SCHEMA "<your schema>" TO CENSUS;
 GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 ```
 
-## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 We support syncing data to Tables in AlloyDB, but they must have a uniqueness constraint on a column. ​
 
@@ -53,7 +53,7 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more AlloyDB objects and/or sync behaviors.
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to AlloyDB instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
@@ -61,6 +61,6 @@ Census can successfully connect to AlloyDB instances that are using advanced net
 
 You may be trying to sync to a table that does not have a uniqueness constraint. If possible, you need to add one to be able to sync to it. The syntax to do so is [here](https://www.postgresql.org/docs/current/ddl-alter.html#DDL-ALTER-ADDING-A-CONSTRAINT).
 
-## 🚑 Need help connecting to Google AlloyDB?
+## Need help connecting to Google AlloyDB?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -6,7 +6,7 @@ description: This page describes how to use Census with PartnerStack.
 
 PartnerStack is a partner relationship management platform that helps you manage and scale your partnerships. Use Census to send customer attributes and transaction events to PartnerStack automatically.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **PartnerStack** from the menu.
@@ -15,7 +15,7 @@ PartnerStack is a partner relationship management platform that helps you manage
 
 <figure><img src="../.gitbook/assets/partnerstack.png" alt=""><figcaption><p>Get your API keys from the PartnerStack app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                                                                     **Object Name** | **Supported?** | **Sync Keys**     | **Behaviors**                 |
 | ----------------------------------------------------------------------------------------------------------------------------------: | :------------: | ----------------- | ----------------------------- |
@@ -36,6 +36,6 @@ Transactions are sent to PartnerStack as events so each transaction must have a 
 * customer\_external\_key - Your unique identifier for the customer
 * customer\_email - The customer's email address
 
-## 🚑 Need help connecting to Partnerstack?
+## Need help connecting to Partnerstack?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

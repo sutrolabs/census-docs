@@ -4,7 +4,7 @@ description: This page describes how to use Trino or Starburst as a source in Ce
 
 # Trino
 
-## 🏃‍♀️ Getting Started <a href="#getting-started" id="getting-started"></a>
+## Getting Started <a href="#getting-started" id="getting-started"></a>
 
 Census can use Trino (and any supported Trino catalog) as a source. Census has been tested with the open-source Trino as well as Starburst Galaxy and Starburst Enterprise.
 
@@ -36,10 +36,10 @@ We have successfully tested Census' Advanced Sync Engine with the following conf
 
 Census is unable to provide any additional Trino table options (such as location) to the `WITH` clause when creating or managing tables in the `CENSUS` catalog, so please ensure your catalog and schema are configured with any needed default table options.
 
-## 💡Notes
+## Notes
 
 As of December 2023, Warehouse Writeback is not yet supported but is coming soon - please reach out to your Census account executive for details.
 
-## 🚑 Need help connecting to Trino?
+## Need help connecting to Trino?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

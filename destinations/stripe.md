@@ -4,7 +4,7 @@ description: This page describes how to use Census with Stripe.
 
 # Stripe
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Stripe to Census and create your first sync.
 
@@ -100,7 +100,7 @@ That's it, in 5 steps, you connect Census to Stripe and started syncing customer
 
 If you have any question or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or send us an email at support@getcensus.com
 
-## 🗄 Supported Objects
+## Supported Objects
 
 Census currently supports syncing to the following Stripe objects:
 
@@ -110,7 +110,7 @@ Census currently supports syncing to the following Stripe objects:
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Stripe.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -123,6 +123,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Stripe.
 
-## 🚑 Need help connecting to Stripe?
+## Need help connecting to Stripe?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

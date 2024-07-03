@@ -4,7 +4,7 @@ description: This page describes how to use Census with Front.
 
 # Front
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Front to Census and create your first sync.
 
@@ -104,7 +104,7 @@ That's it, in 5 steps, you connected Census to Front and started syncing custome
 
 If you have any questions or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or send us an email at support@getcensus.com
 
-## 🏎 Sync Speed
+## Sync Speed
 
 The Front API is pretty slow with a [default rate limit of 10 calls / minute](https://dev.frontapp.com/docs/core-api-getting-started#limitations). If you are on the Enterprise plan, this can be boosted to 200 calls / minute.
 
@@ -120,7 +120,7 @@ Rest assured that Census will manage that API rate limit for you and ensure that
 Please note that you can contact your Front Customer Success Manager to increase your API rate limit temporarly which will increase the number of records we can sync per minute.
 {% endhint %}
 
-## 🗄️ Supported Objects
+## ️ Supported Objects
 
 Front has [many objects available via their API](https://dev.frontapp.com/reference/introduction), from Contacts, Conversations to Tags. These are the objects we currently support in Census.
 
@@ -133,7 +133,7 @@ Front has [many objects available via their API](https://dev.frontapp.com/refere
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Front
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -146,11 +146,11 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Front
 
-## 💡 Things to know about our Front destination
+## Things to know about our Front destination
 
 * You can use email as the matching key for a Contact or any "user handle" that Front supports out of the box such as Twitter, Facebook, Phone, Smooch ID, etc. [See Front's doc here](https://dev.frontapp.com/reference/contacts)
 * We support syncing to multiple phone numbers
 
-## 🚑 Need help connecting to Front?
+## Need help connecting to Front?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

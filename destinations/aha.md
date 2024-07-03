@@ -4,7 +4,7 @@ description: This page describes how to use Census with Aha.
 
 # Aha
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Aha** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to use Census with Aha.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-07 at 2.11.03 PM.png" alt=""><figcaption><p>Generate an API key from the Aha app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**    | **Behaviors**    |
 | --------------: | :------------: | ---------------- | ---------------- |
@@ -24,6 +24,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Aha objects and/or sync behaviors.
 
-## 🚑 Need help connecting to Aha?
+## Need help connecting to Aha?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -10,7 +10,7 @@ description: Optimize your ad spend to find your best leads and customers.
 
 Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/google-ads)
 
-## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                       |                  |                          |
 | --------------------- | ---------------- | ------------------------ |

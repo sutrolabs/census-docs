@@ -6,7 +6,7 @@ description: >-
 
 # Chargify
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Chargify to Census and create your first sync.
 
@@ -112,7 +112,7 @@ Now go back to Chargify, visit Events, Streams, and click on the stream you targ
 
 That's it! In 6 steps, you've connected Census and started syncing product data from your warehouse to Chargify 🎉
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Chargify objects.
 
@@ -126,6 +126,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Chargify objects and/or behaviors.
 
-## 🚑 Need help connecting to Chargify?
+## Need help connecting to Chargify?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -75,6 +75,6 @@ Unlike many other SQL Databases, Databricks uses [Personal Access Tokens](https:
 
 If you're using Databricks's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Databricks Documentation](https://docs.databricks.com/en/security/network/front-end/ip-access-list.html) for more details on how to specify these IPs as part of your network policy.
 
-## 🚑 Need help connecting to Databricks?
+## Need help connecting to Databricks?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

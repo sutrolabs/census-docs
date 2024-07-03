@@ -95,7 +95,7 @@ When defining the **File Path** for an GCS sync, you can use variables that will
 
 Update or Create syncs upload your whole dataset on the first run and only new changes on subsequent runs. Each sync run saves to a different file. The first run saves with "full" at the end of the file name. For example, `filename_12_12_23_full.csv` if it runs on 12/12/2023. Later syncs save with a timestamp at the end, like `filename_12_12_23_1702426195.csv`, so you can see how your data changes over time.
 
-## 🔄 Supported sync behaviors
+## Supported sync behaviors
 
 | **Behavior** | **Supported?** | **Objects** |
 | -----------: | :------------: | :---------: |
@@ -107,13 +107,13 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Cloud Storage.
 
-## 💡 Things to know
+## Things to know
 
 * Currently, the destination only supports syncing for files up to 5GB.
 * Data arrives in one file to the designated bucket and file path.
 
 [Contact us](mailto:support@getcensus.com) if your use cases don't work with these limitations. We plan on addressing at least a few of these in the future!
 
-## 🚑 Need help connecting to Google Cloud Storage?
+## Need help connecting to Google Cloud Storage?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

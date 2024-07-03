@@ -4,13 +4,13 @@ description: Learn how to use Census to sync your Data Warehouse to Blueshift.
 
 # Blueshift
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Click **Add Service**.
 2. Select **Blueshift** from the menu.
 3. Enter your **Api Key**.
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Identifiers**  | **Behaviors**    |
 | --------------: | :------------: | ---------------- |------------------|
@@ -23,6 +23,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Blueshift objects and/or behaviors.
 
-## 🚑 Need help connecting to Blueshift?
+## Need help connecting to Blueshift?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

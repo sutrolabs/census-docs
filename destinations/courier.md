@@ -4,7 +4,7 @@ description: This page describes how to use Census with Courier.
 
 # Courier
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Courier to Census and create your first sync.
 
@@ -46,7 +46,7 @@ Using Census, you can sync your user data and give Courier super powers. For exa
 
 With live data and programmatic notifications, the possibilities are endless. Let us know what you come up using Census and Courier together!
 
-## 🗄️ Supported Objects
+## ️ Supported Objects
 
 | Object Name       | Supported? | Identifiers  |
 | ----------------- | :--------: | ------------ |
@@ -57,7 +57,7 @@ Like Courier, we use the `recipient_id` as the primary identifier for Profiles. 
 
 Looking for another Courier feature? [Contact us](mailto:support@getcensus.com) and let us know!
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -70,6 +70,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 ‌Not seeing what you're looking for? [Contact us](mailto:support@getcensus.com) about supporting alternative sync behaviors for this destination.
 
-## 🚑 Need help connecting to Courier?
+## Need help connecting to Courier?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

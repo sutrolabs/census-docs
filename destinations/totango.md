@@ -4,7 +4,7 @@ description: This page describes how to use Census with Totango.
 
 # Totango
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Totango to Census and create your first sync.
 
@@ -54,14 +54,14 @@ For additional information on finding Totango credentials you can find instructi
 
 ![Totango Connection Example](<../.gitbook/assets/Screen Shot 2022-10-12 at 5.31.08 PM.png>)
 
-## 🗄 Supported Objects
+## Supported Objects
 
 | **Object Name** | **Supported?** | Identifiers |
 | --------------: | :------------: | ----------- |
 |         Account |        ✅       | Account ID  |
 |            User |        ✅       | User ID     |
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -73,6 +73,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 Contact us if you want Census to support more Sync Behaviors for Totango
 
-## 🚑 Need help connecting to Totango?
+## Need help connecting to Totango?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

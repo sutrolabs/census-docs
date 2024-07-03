@@ -4,7 +4,7 @@ description: This page describes how to configure Greenplum as a source for Cens
 
 # Greenplum
 
-## 🔐 Sync Engines and Permissions
+## Sync Engines and Permissions
 
 Census reads data from tables and views in Greenplum and syncs it to your desired objects in other systems such as Salesforce. To limit the load on your database as well as destination apps' APIs, Census maintains state tracking tables that enable it to only sync data that has been modified sync the last sync (incremental syncs). When configuring your Greenplum connection, you'll choose a [Sync Engine](overview.md#sync-engines) that determines how state tracking is handled.
 
@@ -86,12 +86,12 @@ GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA "<your schema>" TO CENSUS;
 ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO CENSUS;
 ```
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to Greenplum instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
 We recommend configuring your Greenplum instance to use TLS v1.2 or later for all connections.
 
-## 🚑 Need help connecting to Greenplum?
+## Need help connecting to Greenplum?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

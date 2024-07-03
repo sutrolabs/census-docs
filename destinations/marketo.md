@@ -4,7 +4,7 @@ description: This page describes how to use Census with Marketo.
 
 # Marketo
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Marketo to Census and create your first sync.
 
@@ -82,7 +82,7 @@ With all three pieces of information, return to Census and visit the **Destinati
 
 ![](../.gitbook/assets/screely-1618889184718.png)
 
-## 🔄 Supported Object and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Object and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
@@ -106,6 +106,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Marketo objects and/or behaviors
 
-## 🚑 Need help connecting to Marketo?
+## Need help connecting to Marketo?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

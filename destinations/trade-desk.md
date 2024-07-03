@@ -6,7 +6,7 @@ description: This page describes how to use Census with The Trade Desk.
 
 In this guide, we will show you how to connect The Trade Desk to Census.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **The Trade Desk** from the menu.
@@ -21,7 +21,7 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 
 <figure><img src="../.gitbook/assets/tradedesk.png" alt=""><figcaption><p>Generate an API Token from the The Trade Desk developer portal.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |  **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**            |
 | ---------------: | :------------: | --------------------- | ------------------------ |
@@ -54,6 +54,6 @@ Census will automatically set the segment time left to the maximum 180 days by u
 The Trade Desk's Manage Segments UI is a bit confusing. The "Segment Time Left" field may "Zero days left" or "Expired" even a day or two after a segment is created. This is because it actually shows the number of days left as indicated by the last batch of data sent to the segment, not the segment overall. In order for Census to implement Mirror behavior, we send a batch of users to remove with a 0-day time left. This will cause the segment to appear expired in the UI, but rest assured, it's only indicating the last batch.
 {% endhint %}
 
-## 🚑 Need help connecting to The Trade Desk?
+## Need help connecting to The Trade Desk?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

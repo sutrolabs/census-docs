@@ -4,7 +4,7 @@ description: This page describes how to configure Google BigQuery as a Census de
 
 # Google BigQuery
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Census to Google BigQuery as a destination.
 
@@ -46,7 +46,7 @@ gcloud projects add-iam-policy-binding cs-sandbox-123456 \
   --role roles/bigquery.jobUser
 ```
 
-## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**    | **Behaviors**                      |
 | --------------: | :------------: | ---------------- | ---------------------------------- |
@@ -58,12 +58,12 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
 
-## 🚦Network Access Controls
+## Network Access Controls
 
 While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access. You can find Census's set of IP address for your region in [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention").
 
 When using VPC Service Controls, you will also need to allow BigQuery unloads to the Census GCP bucket. To do that, you'll need to add [`gs://sutrolabs-giza-unloads-production`](gs://sutrolabs-giza-unloads-production) in the allow list for BigQuery unloads.
 
-## 🚑 Need help connecting to Google BigQuery?
+## Need help connecting to Google BigQuery?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with Microsoft Teams.
 
 # Microsoft Teams
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Microsoft Teams to Census.
 
@@ -72,7 +72,7 @@ You'll need to start by specifying how to identify entries in your data warehous
 Reminder: Census will send records to a Teams channel one at a time.
 {% endhint %}
 
-## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 <table data-header-hidden><thead><tr><th></th><th align="center"></th><th width="173"></th><th align="center"></th></tr></thead><tbody><tr><td><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Identifiers</strong></td><td align="center"><strong>Behaviors</strong></td></tr><tr><td>Messsage</td><td align="center">✅</td><td>Custom message template.</td><td align="center">Send</td></tr></tbody></table>
 
@@ -90,6 +90,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Microsoft Teams objects and/or behaviors
 
-## 🚑 Need help connecting to Microsoft Teams?
+## Need help connecting to Microsoft Teams?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

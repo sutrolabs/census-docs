@@ -4,7 +4,7 @@ description: This page describes how to use Census with Vero Cloud.
 
 # Vero Cloud
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 #### Generate Vero Cloud auth token
 
@@ -23,7 +23,7 @@ description: This page describes how to use Census with Vero Cloud.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-12-30 at 2.36.13 PM.png" alt=""><figcaption><p>Add the auth token you generated in Vero Cloud.</p></figcaption></figure>
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors**    |
 | --------------: | :------------: | ------------------- | ---------------- |
@@ -36,6 +36,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Vero Cloud objects and/or behaviors.
 
-## 🚑 Need help connecting to Vero Cloud?
+## Need help connecting to Vero Cloud?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

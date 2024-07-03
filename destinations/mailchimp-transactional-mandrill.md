@@ -6,7 +6,7 @@ description: This page describes how to use Census with Mailchimp Transactional 
 
 Mailchimp Transactional, formerly known as Mandrill, is a transactional email API for Mailchimp users. It's a powerful, scalable, and secure delivery API for transactional emails from websites and applications.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 To connect Census to Mailchimp Transactional (Mandrill), you'll need an API Key.
 
@@ -39,6 +39,6 @@ In addition to the template, you can also map a number of other fields to contro
 
 Any additional custom fields provided by the sync configuration will be provided as merge variables to the Mandrill template.
 
-## 🚑 Need help connecting to Mailchimp Transactional (Mandrill)?
+## Need help connecting to Mailchimp Transactional (Mandrill)?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

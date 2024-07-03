@@ -4,7 +4,7 @@ description: This page describes how to use Census with Intercom.
 
 # Intercom
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Intercom to Census and create your first sync.
 
@@ -106,7 +106,7 @@ Now go back to your Intercom and go view a record type (Contact or Company) that
 
 That's it! In 5 steps, you've connected Intercom and started syncing customer & product data from your warehouse 🎉
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Intercom objects.
 
@@ -134,6 +134,6 @@ When deleting objects in Intercom, Census's default mode is to archive those obj
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Intercom.
 
-## 🚑 Need help connecting to Intercom?
+## Need help connecting to Intercom?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

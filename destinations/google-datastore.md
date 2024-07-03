@@ -4,7 +4,7 @@ description: This page describes how to use Census with Google Datastore.
 
 # Google Datastore
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Click **New Destination**.
 2. Select **Google Datastore** from the menu.
@@ -24,12 +24,12 @@ description: This page describes how to use Census with Google Datastore.
 
 ###
 
-### 🔄 Supported Sync Behaviors
+### Supported Sync Behaviors
 
 |    **Behaviors** | **Supported?** |
 | ---------------: | :------------: |
 | Update or Create |        ✅       |
 
-### 🚑 Need help connecting to Google Datastore?
+### Need help connecting to Google Datastore?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

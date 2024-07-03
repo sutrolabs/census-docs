@@ -4,7 +4,7 @@ description: This page describes how to sync data to your BigQuery data warehous
 
 # BigQuery
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **BigQuery** from the menu.
@@ -15,7 +15,7 @@ description: This page describes how to sync data to your BigQuery data warehous
 <figure><img src="../.gitbook/assets/bigquery-destination.png" alt=""><figcaption><p>Enter your BigQuery Project ID.</p></figcaption></figure>
 <figure><img src="../.gitbook/assets/bigquery-destination2.png" alt=""><figcaption><p>Grant the required roles to the Service Account.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**                      |
 | --------------: | :------------: | --------------- |------------------------------------|
@@ -27,6 +27,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors.
 
-## 🚑 Need help connecting to BigQuery?
+## Need help connecting to BigQuery?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

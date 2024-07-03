@@ -10,7 +10,7 @@ description: This page describes how to use Census with Braze.
 Braze prices its API on a per data point update basis. Census ensures that only fields that need to be updated are sent (rather than a copy of the entire record). Please be aware that large datasets, which change often can increase your Braze API usage. [Read More](braze.md#supported-objects-1).
 {% endhint %}
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Braze to Census and create your first sync.
 
@@ -77,7 +77,7 @@ Great! Now let's pull it all together.
 
 After the Connection Test is Green, you're all set and ready to get syncing! 🎉
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following Braze objects.
 
@@ -206,6 +206,6 @@ An example of this is when the Braze Custom Attribute Type that is "Automaticall
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-## 🚑 Need help connecting to Braze?
+## Need help connecting to Braze?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

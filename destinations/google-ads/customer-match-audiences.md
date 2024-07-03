@@ -64,7 +64,7 @@ Google Customer Match, as its name implies, is a matching service rather than th
 
 We recommend you do not use Google's Customer Match expiration setting. Census-synced records are subject to the same expiration and will not be re-uploaded unless they are changed in your source data.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 |        **Behaviors** | **Supported?** |
 | -------------------: | :------------: |

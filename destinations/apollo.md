@@ -4,7 +4,7 @@ description: This page describes how to use Census with Apollo.
 
 # Apollo
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Apollo to Census and create your first sync.
 
@@ -118,7 +118,7 @@ Now go back to your Apollo account and go view a record type (Contact or Account
 
 That's it! In 6 steps, you connected Census to Apollo and started syncing customer & account data from your warehouse to Apollo🎉
 
-## 🗄 Supported Objects
+## Supported Objects
 
 Census currently supports syncing to the following Apollo objects.
 
@@ -129,7 +129,7 @@ Census currently supports syncing to the following Apollo objects.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Apollo.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -142,6 +142,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Apollo.
 
-## 🚑 Need help connecting to Apollo?
+## Need help connecting to Apollo?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

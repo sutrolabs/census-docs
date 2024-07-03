@@ -4,7 +4,7 @@ description: This page describes how to use Census with Constant Contact.
 
 # Constant Contact
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Constant Contact** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to use Census with Constant Contact.
 
 <figure><img src="../.gitbook/assets/constant-contact.png" alt=""><figcaption><p>Log into your Constant Contact account when prompted to do so.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | --------------: | :------------: | --------------- | ------------- |
@@ -22,6 +22,6 @@ description: This page describes how to use Census with Constant Contact.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Constant Contact objects and/or behaviors.
 
-## 🚑 Need help connecting to Constant Contact?
+## Need help connecting to Constant Contact?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with Snapchat Ads.
 
 # Snapchat
 
-## ​🏃‍♀️ Getting Started
+## ​Getting Started
 
 1. In Census, navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Snapchat** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to use Census with Snapchat Ads.
 
 ![Enter your Snapchat credentials to complete the OAuth flow.](<../.gitbook/assets/Screen Shot 2022-04-25 at 4.23.34 PM.png>)
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name**  | **Supported?** | **Identifiers**            | **Behaviors**            |
 | ---------------- | :------------: | -------------------------- | ------------------------ |
@@ -40,6 +40,6 @@ Census also supports passing prehashed PII fields directly to Snapchat for incre
 | Mobile Advertiser ID (IDFA or GAID) | <ul><li>Lowercase</li></ul>                                                                                                                                                                                                                            | Lowercase Hex SHA256 |
 | Phone Number                        | <ul><li>Include country code (remove any double 0 in front of the country code)</li><li>If the number itself begins with a 0 this should be removed</li><li>Exclude any non-numeric characters such as whitespace, parentheses, ‘+’, or ‘-’.</li></ul> | Lowercase Hex SHA256 |
 
-## 🚑 Need help connecting to Snapchat?
+## Need help connecting to Snapchat?
 
 Contact us via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

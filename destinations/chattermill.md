@@ -4,7 +4,7 @@ description: This page describes how to use Census with Chattermill.
 
 # Chattermill
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Chattermill** from the menu.
@@ -12,7 +12,7 @@ description: This page describes how to use Census with Chattermill.
 
 <figure><img src="../.gitbook/assets/chattermill.png" alt=""><figcaption><p>Generate an API key from the Chattermill app.</p></figcaption></figure>
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors** |
 | --------------: | :------------: | --------------------- | ------------- |
@@ -24,6 +24,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Chattermill objects and/or behaviors.
 
-## 🚑 Need help connecting to Chattermill?
+## Need help connecting to Chattermill?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

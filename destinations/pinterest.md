@@ -4,7 +4,7 @@ description: This page describes how to use Census with Pinterest.
 
 # Pinterest
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 {% hint style="info" %}
 Note: You will need admin rights in your organization's Pinterest Business Account to be able to successfully authenticate the connection.
@@ -16,7 +16,7 @@ Note: You will need admin rights in your organization's Pinterest Business Accou
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-12-01 at 9.04.09 PM.png" alt=""><figcaption><p>Connect Census to Pinterest via OAuth.</p></figcaption></figure>
 
-## 🗄 Supported Objects
+## Supported Objects
 
 | **Object Name** | **Supported?** | **Sync Keys**          |
 | --------------: | :------------: | ---------------------- |
@@ -28,7 +28,7 @@ Note: [Pinterest requires](https://developers.pinterest.com/docs/api/v5/#tag/cus
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pinterest objects.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -39,6 +39,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 | **Update or Create** |        ✅       | Customer List |
 |           **Mirror** |        ✅       | Customer List |
 
-## 🚑 Need help connecting to Pinterest?
+## Need help connecting to Pinterest?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -4,7 +4,7 @@ description: This page describes how to sync data to your Redshift data warehous
 
 # Amazon Redshift
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 This guide will walk you through connecting to AWS Redshift as a destination.
 
@@ -37,7 +37,7 @@ GRANT USAGE ON SCHEMA "<your schema>" TO CENSUS;
 GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 ```
 
-## 🔀 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**                                       | **Behaviors**                      |
 | --------------: | :------------: | --------------------------------------------------- | ---------------------------------- |
@@ -49,10 +49,10 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Redshift objects and/or behaviors.
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to Redshift instances that are using advanced networking controls including region constraints and IP address allow lists. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
-## 🚑 Need help connecting to Redshift?
+## Need help connecting to Redshift?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

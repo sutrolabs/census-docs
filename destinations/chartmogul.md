@@ -6,7 +6,7 @@ description: >-
 
 # ChartMogul
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect ChartMogul to Census and create your first sync.
 
@@ -94,7 +94,7 @@ Now go back to ChartMogul, and check that the customer has been updated as expec
 
 That's it! In 6 steps, you've connected Census and started syncing product data from your warehouse to ChartMogul 🎉
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 Census currently supports syncing to the following ChartMogul objects.
 
@@ -120,6 +120,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 Line items must be modelled as a JSON array on the Invoice record itself. This is necessary because Line Items do not have their own endpoint and must be supplied inline on Invoice creation. For an example of how this type of JSON array might look, see the "line\_items" [field here within ChartMogul's documentation](https://dev.chartmogul.com/reference/import-customers-invoices).
 
-## 🚑 Need help connecting to ChartMogul?
+## Need help connecting to ChartMogul?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

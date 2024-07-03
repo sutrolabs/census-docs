@@ -4,7 +4,7 @@ description: This page describes how to use Census with Amplitude.
 
 # Amplitude
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 ‌In this guide, we will show you how to connect Amplitude to Census and create your first sync.
 
@@ -98,7 +98,7 @@ Finally, select the fields you want to update in the Mapper in the "Which Fields
 
 Click the Next button to see the final preview, which will have a recap of what will happen when you start the sync.
 
-## 🗄️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
 | --------------: | :------------: | ------------- | ---------------- |
@@ -136,6 +136,6 @@ As a result of this behavior, we often get asked "Why can't I see my user proper
 
 ‌
 
-## 🚑 Need help connecting to Amplitude?
+## Need help connecting to Amplitude?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

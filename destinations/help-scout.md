@@ -4,7 +4,7 @@ description: This page describes how to use Census with Help Scout
 
 # Help Scout
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Help Scout to Census.
 
@@ -90,7 +90,7 @@ Finally, select the fields you want to update in the Mapper in the "**Which Prop
 
 Click the **Next** button to see the final preview, which will have a recap of what will happen when you start the sync and then click **Create Sync**!
 
-## 🗄 Supported Objects
+## Supported Objects
 
 | **Object Name** | **Supported?** | **Sync Keys** |
 | --------------: | :------------: | ------------- |
@@ -98,7 +98,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Help Scout.
 
-## 🔄 Supported Sync Behaviors
+## Supported Sync Behaviors
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -117,6 +117,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 * `City`, `State`, `Postal Code`, `Country`
 
-## 🚑 Need help connecting to Help Scout?
+## Need help connecting to Help Scout?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

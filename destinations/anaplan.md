@@ -6,7 +6,7 @@ description: >-
 
 # Anaplan
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we will show you how to connect Anaplan to Census and create your first sync.
 
@@ -36,8 +36,8 @@ Navigate to the connections tab in Census. Select Anaplan
 
 1. **User credentials**
 
-   - You'll need to provide your 
-     - Username 
+   - You'll need to provide your
+     - Username
      - Password
      - Anaplan Workspace ID
      - Model ID
@@ -74,7 +74,7 @@ The username and password will be the username and password used to authenticate
 
 You have successfully configured and tested the connection, so you can now sync data into your financial models from your data source! :tada:
 
-## 🗄️ Supported Objects and Behaviors
+## ️ Supported Objects and Behaviors
 
 |        **Object** | **Supported?** | **Behaviors** |
 | ----------------: | :------------: |:-------------:|
@@ -90,6 +90,6 @@ Learn more about all of our sync behaviors on our [Core Concepts page](../basics
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Anaplan objects and/or behaviors.
 
-## 🚑 Need help connecting to Anaplan?
+## Need help connecting to Anaplan?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

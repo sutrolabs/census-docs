@@ -6,7 +6,7 @@ description: This page describes how to use Census with Klaviyo.
 
 Klaviyo is a customer data and marketing platform specializing in marketing for Retail, Ecommerce and D2C businesses. It's a powerful, scalable, and secure platform for sending emails, SMS, and more.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 As always, the first step is connecting Census to your Klaviyo account.
 
@@ -39,7 +39,7 @@ Once you've collected both keys, you can create a new Klaviyo destination in Cen
 
 You should now be ready to create a new sync to Klaviyo from Census!
 
-## 🗄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 |                                                                                                               **Object Name** | **Supported?** |                  **Sync Keys**                 |              **Behavior**             |
 | ----------------------------------------------------------------------------------------------------------------------------: | :------------: | :--------------------------------------------: | :-----------------------------------: |
@@ -59,6 +59,6 @@ Klaviyo events work like most behavioral event destinations. They require a uniq
 
 One quirk of events in Klaviyo is how events are associated with specific users. Klaviyo will associate events with a user based on the email address provided or the Klaviyo User ID (not an external ID), and so Klaviyo event syncs require at least an email address or Klaviyo ID to be captured properly. If you're using an external ID, you'll need to ensure that the email address is also provided in the event payload. Using [phone numbers as identifiers does not work reliably](https://developers.klaviyo.com/en/reference/update\_profile) in some cases depending on how Klaviyo is configured.
 
-## 🚑 Need help connecting to Klaviyo?
+## Need help connecting to Klaviyo?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.

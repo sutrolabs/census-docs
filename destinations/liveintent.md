@@ -6,7 +6,7 @@ description: This page describes how to use Census with LiveIntent.
 
 LiveIntent is a people-based marketing platform that reaches millions of logged-in people through the LiveIntent Identity Graph. You can use Census to connect your first party data to LiveIntent to create custom audiences and target them.
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 1. You'll first need to contact your account team at LiveIntent to get three pieces of information:
   - Access Token
@@ -17,7 +17,7 @@ LiveIntent is a people-based marketing platform that reaches millions of logged-
 
 You should now be ready to start creating audiences in LiveIntent!
 
-## 🗄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 | **Object Name** | **Supported?** | **Behaviors**  |
 | --------------: | :------------: | :------------: |
@@ -39,6 +39,6 @@ When sending emails, LiveIntent supports receiving emails in one of the followin
 
 If you are sending emails to LiveIntent in a hashed format, ensure your emails only contain lowercase letters and numbers. If you are sending emails in a raw format, ensure your emails are all lowercase.
 
-## 🚑 Need help connecting to LiveIntent?
+## Need help connecting to LiveIntent?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -4,7 +4,7 @@ description: This page describes how to use Census with Delighted.
 
 # Delighted
 
-## 🏃‍♀️ Getting Started
+## Getting Started
 
 In this guide, we'll show you how to connect Delighted to Census and create your first sync.
 
@@ -71,7 +71,7 @@ Click the Next button to see a preview of what will happen when you start the sy
 
 You should be able to view your data in Delighted now.
 
-## 🔄 Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys** |           **Behaviors**          |
 | --------------: | :------------: | :-----------: | :------------------------------: |
@@ -84,6 +84,6 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Delighted objects and/or behaviors
 
-## 🚑 Need help connecting to Delighted?
+## Need help connecting to Delighted?
 
 Contact us via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

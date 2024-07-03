@@ -6,7 +6,7 @@ description: >-
 
 # Google Cloud SQL for PostgreSQL
 
-## 🔐 Required Permissions
+## Required Permissions
 
 {% hint style="info" %}
 These instructions are well-tested to connect Census to Google Cloud SQL for PostgreSQL. If you're running into connection issues or missing tables or views, please confirm you've run all of these instructions.
@@ -54,7 +54,7 @@ GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA "<your schema>" TO CENSUS;
 ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO CENSUS;
 ```
 
-## 💡Notes
+## Notes
 
 {% hint style="danger" %}
 We **strongly recommend against** connecting Census to a production Google Cloud SQL for PostgreSQL instance. Census queries are often very analytical in nature and do not always play nicely with production environments. Unfortunately, PostgreSQL doesn't give you much ability to control performance impacts across users so to avoid issues, please use Census with databases set up for analytic workloads only!
@@ -64,10 +64,10 @@ We **strongly recommend against** connecting Census to a production Google Cloud
 * In older versions of PostgreSQL, if there are views in your schema that reference tables in other schemata, you will also need to give Census read access to those other schemata. In later versions of PostgreSQL this extra read access is not required.
 * If you are using Census models to execute stored procedures (this is rare and not recommended for most users) you may also need to give Census access to those procedures
 
-## 🚦Advanced Network Configuration
+## Advanced Network Configuration
 
 Census can successfully connect to Google Cloud SQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
 
-## 🚑 Need help connecting to Google Cloud SQL for Postgres?
+## Need help connecting to Google Cloud SQL for Postgres?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

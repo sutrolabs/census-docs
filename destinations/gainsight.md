@@ -6,7 +6,7 @@ description: This page describes how to use Census with Gainsight.
 
 Gainsight is a customer success platform that helps businesses grow faster by reducing churn, increasing upsell, and driving customer advocacy. Census can sync your customer data to Gainsight provide the full context of your customer data to your customer success team.
 
-## 🏃‍♀️ Getting started
+## Getting started
 
 This guide shows you how to use Census to connect your Gainsight account to your data warehouse and create your first sync.
 
@@ -29,7 +29,7 @@ This guide shows you how to use Census to connect your Gainsight account to your
 
 You should now be ready to sync your data to Gainsight.
 
-## 🗄 Supported Objects and Behaviors
+## Supported Objects and Behaviors
 
 |     **Object Name** | **Supported?** | **Sync Keys**                                                                       | **Behaviors** |
 | ------------------: | :------------: | ----------------------------------------------------------------------------------- | :------------: |
@@ -47,6 +47,6 @@ The Custom Object must be configured like below for Census to be able to edit it
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-01 at 6.47.18 PM.png>)
 
-## 🚑 Need help connecting to Gainsight?
+## Need help connecting to Gainsight?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
