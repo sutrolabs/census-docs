@@ -34,12 +34,12 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 ### Conversion Events
 
-Conversion Events are an [events.md](../basics/data-defining/defining-source-data/events.md "mention")sync within Census and so operate like most other Event Syncs. They do have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
+Conversion Events are an [events.md](../basics/data-defining/defining-source-data/events.md "mention") though they have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
 
 * Like other event syncs, Amazon requires an **Event Name** and a **Timestamp**.
-* **Conversion Definition ID** - Amazon requires that you define all of your conversions types beforehand as Conversion Definitions.
+* **Conversion Definition ID** - Amazon requires that you define all of your conversions types beforehand as Conversion Definitions. You can do this within the Amazon DSP UI. Within Campaign Manager, select your desired **Advertiser**, then **Events manager**, then **Conversions** tab, and click **Add conversion**.
 * **Country Code** - Must be the two-letter country code described in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes).
-* **Match Key** - This is the identifier to associate the event with. Amazon Ads currently only supports Email as a match key but may support additional options in the future. If you are going to provide Census with a pre-hashed value, must follow this format:
+* **Match Key** - This is the identifier to associate the event with. Census currently only supports Email as a match key but will support additional options in the future. If you are going to provide Census with a pre-hashed value, it must follow this format:
   * Lowercase
   * Remove all non-alphanumeric characters \[a-zA-Z0-9] and \[.@-]
   * Remove any leading or trailing whitespace
@@ -48,13 +48,13 @@ Conversion Events are an [events.md](../basics/data-defining/defining-source-dat
 There are also several optional fields available.
 
 * **Currency Code** - This only applies to Off Amazon Purchase conversion definition type. This is the three letter currency code associated with the value of the event in [ISO-4217 format](https://en.wikipedia.org/wiki/ISO\_4217#List\_of\_ISO\_4217\_currency\_codes). If not provided, the currency setting on the conversion definition will be used.
-* **Data Processing Options** - Currently, the only accepted value is `LIMITED_DATA_USE` which will cause Amazon to ignore this event.
+* **Data Processing Options** - Currently, the only accepted value is `LIMITED_DATA_USE` which will cause Amazon to ignore this event. Typically, you can leave this field unmapped.
 * **Units Sold** - This only applies to Off Amazon Purchase conversion definition type and represents the number of items purchased. If not provided on the conversion event, a default of 1 will be applied.
 * **Value** - This has two modes depending on the conversion definition type.
   * For Off Amazon Purchase, this represents a monetary value. Must be a minimum of 0 and must not exceed 2 decimal points. If not provided, the static value provided on the conversion definition will be used.
   * For any other type, this represents a non-monetary value based on a scale of your choosing. Can be negative and must not exceed 2 decimal points. If not provided, the static value provided on the conversion definition will be used.
 
-Census will send the Sync Key you specify as the unique identifier for your event sync to Amazon using the **Client Dedupe Id** property. This property has no function to Amazon other than giving them a way to ensure a single event is recorded multiple times.
+Census will send the Sync Key you specify as the unique identifier for your event sync to Amazon using the **Client Dedupe Id** property which allows Amazon to avoid capturing the same conversion event multiple times. In case of multiple events containing the same value, only the first will be kept.
 
 ### DSP Audiences
 
