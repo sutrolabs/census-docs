@@ -129,7 +129,7 @@ For example, you may want to see all rows that have been synced by a specific sy
 ```sql
 SELECT * 
 FROM CENSUS.CENSUS.SYNC_LOG log
-LEFT JOIN CENSUS.CENSUS.SOURCE_OJBECTS source
+LEFT JOIN CENSUS.CENSUS.SOURCE_OBJECTS source
 ON log.source_object_id = source.id
 WHERE log.sync_id = 1234;
 ```
@@ -139,7 +139,7 @@ The [Sync History](../core-concept/) page also includes an ID for each sync run 
 ```sql
 SELECT * 
 FROM CENSUS.CENSUS.SYNC_LOG log 
-LEFT JOIN CENSUS.CENSUS.SOURCE_OJBECTS source 
+LEFT JOIN CENSUS.CENSUS.SOURCE_OBJECTS source 
 ON log.source_object_id = source.id
 WHERE log.sync_run_id = 5678
   AND log.operation = 'delete';
