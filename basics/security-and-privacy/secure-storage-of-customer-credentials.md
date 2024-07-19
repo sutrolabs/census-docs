@@ -27,3 +27,9 @@ At Census, we prioritize the security and confidentiality of our customers' sens
    * AWS CloudTrail provides audit logs that enable Census to monitor database access and track security-related events or changes, ensuring compliance and accountability.
 
 For more details, go to [getcensus.com/security](http://getcensus.com/security) where you can read about Census' security architecture and request additional information from our data room.
+
+### Credential Usage and Authorization
+
+Census uses the credentials and authorizations you provide to access data and APIs on your behalf and at your request.
+
+Census's use and transfer to any other app of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional\_requirements\_for\_specific\_api\_scopes), including the Limited Use requirements.
