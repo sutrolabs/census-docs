@@ -124,7 +124,7 @@ Census currently supports syncing to the following Apollo objects.
 
 | **Object Name** | **Supported?** | Identifiers |
 | --------------: | :------------: | ----------- |
-|         Account |        ✅       | Name        |
+|         Account |        ✅       | ID, Name    |
 |         Contact |        ✅       | Email       |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Apollo.
@@ -132,7 +132,7 @@ Census currently supports syncing to the following Apollo objects.
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** |                       **Supported?**                      |    **Objects**   |
