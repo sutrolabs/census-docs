@@ -92,10 +92,7 @@ Census currently supports syncing to the following Braze objects.
 | Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |                  Mirror                  |
 |                          User |        ✅       |                                  External User ID & User Alias                                 | Update or Create, Update, Delete, Mirror |
 
-Census supports custom fields on both Braze User and Event objects. Additionally, Census supports [sending structured data](../basics/data-defining/defining-source-data/structured-data.md) to Braze:
-
-* [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
-* [Nested Custom Attributes](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body) - Both objects and arrays are supported.
+Census supports custom fields on both Braze User and Event objects. You can map any field from your data source to a custom field in Braze. Census will automatically create the custom field in Braze if it doesn't already exist.
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
@@ -103,11 +100,30 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Braze objects and/or behaviors.
 
-### Working with User Aliases
+### Arrays, Objects, and Array of Object fields
+
+Census supports [sending structured data](../basics/data-defining/defining-source-data/structured-data.md) such as [Arrays, Objects, and Arrays of Objects to Braze]((https://www.braze.com/docs/user_guide/data_and_analytics/custom_data/custom_attributes/nested_custom_attribute_support#api-request-body)). The behaviors of these fields are a bit different.
+
+* Arrays are really arrays of single values (e.g. `["VIP", "New User Last 30 Days", "Promotion Candidate"]`). If your array contains mixed values including integers and booleans, Braze will convert all of them to strings.
+* Objects are key-value pairs (e.g. `{"key": "value"}`). Census will send the object as a stringified JSON object.
+* Arrays of Objects are arrays of key-value pairs (e.g. `[{"key": "value"}, {"key2": "value2"}]`). These have [special behavior in Braze](https://www.braze.com/docs/user_guide/data_and_analytics/custom_data/custom_attributes/array_of_objects). To limit datapoint writes, Census will do a deep diff of the objects in the array and only send changes. Each object in the array must have an obvious ID field which can be used to calculate the diff. The ID field **must** be unique, and either an integer or a string. Census will look for a field called `"id"` first. If one isn't found, it will attempt to guess by looking for fields that are unique integers/strings.
+* [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) are a special type of Array of Objects - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
+
+### Mirror Mode Options
+
+Braze's Mirror behavior optionally supports a choice of two actions when a record is removed from the source. This can be configured when setting up the sync initially. The first time the sync is performed, the records will be used as a basis for mirroring behaviour in future syncs:
+
+* **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze.
+* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced record will be removed from the destination record (by setting them to Null). The identifier will not be removed from the destination record.
+* **Subscription Group Membership** - This will unsubscribe users from the corresponding subscription group, as described [above](braze.md#braze-subscription-groups).
+
+Regardless of which option is selected, mirror syncs identify deletions of each type by comparing against the data they have already sent -- not the data that might or might not already exist in Braze. This means that the first sync will be an upsert for all records, and the second and following syncs will account for deletions from the source data.
+
+### User Aliases
 
 In Braze, users can be alternatively identifier by a user alias. A user alias is a JSON object with two keys: `alias_label` and `alias_name` . For example: `{"alias_label":"instagram_id", "alias_name":"7372382492"}`. When updating users by User Alias, you should pass Census the alias as a string from your warehouse (`TEXT`, `CHAR`, `VARCHAR`, or `STRING`) - do not use your warehouse's `OBJECT`, `JSON`, `STRUCT`, or `RECORD` type.
 
-### ✉️ Braze Subscription Group Memberships
+### ✉️ Subscription Group Memberships
 
 Census offers a way to manage your Braze Subscription Groups via your data hub. The current behavior is that you are to "Mirror" the subscribed users from your user base. It is required that you have, within the source:
 
@@ -134,7 +150,7 @@ If you have a query that returns the external id, subscription group id, and sta
 
 Only the Braze User External Id and the Subscription Group Id should be mapped fields. This is a special unsubscribing mirror for user/group pairs that no longer appear in the data source.
 
-### Braze Cohorts
+### Cohorts
 
 Braze Cohorts allow users of Census to define and sync user cohorts between Census and Braze. To get started make sure your [data import key](braze.md#3.-add-your-data-import-key-optional) is set on the connection. Then when creating a new sync to Braze select **User & Cohort** as destination object.
 
@@ -169,21 +185,12 @@ You can [read more about Braze API-Triggered Campaigns](https://www.braze.com/do
 
 <figure><img src="../.gitbook/assets/Braze Options.png" alt=""><figcaption></figcaption></figure>
 
-### Mirror Mode Options
-
-Braze's Mirror behavior optionally supports a choice of two actions when a record is removed from the source. This can be configured when setting up the sync initially. The first time the sync is performed, the records will be used as a basis for mirroring behaviour in future syncs:
-
-* **Delete record** - This is the typical behavior for most mirror syncs. When a record is removed from the source, the corresponding record will be deleted from Braze.
-* **Null out fields** - This is a new behavior for mirror syncs in Braze. In this case, when a record is removed from the source, the currently mapped fields of the synced record will be removed from the destination record (by setting them to Null). The identifier will not be removed from the destination record.
-* **Subscription Group Membership** - This will unsubscribe users from the corresponding subscription group, as described [above](braze.md#braze-subscription-groups).
-
-Regardless of which option is selected, mirror syncs identify deletions of each type by comparing against the data they have already sent -- not the data that might or might not already exist in Braze. This means that the first sync will be an upsert for all records, and the second and following syncs will account for deletions from the source data.
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Braze.
 
 ## Data Points
 
-In order to minimize your API usage with Braze to ensure that your organization is only updating the [data points](https://www.braze.com/docs/user\_guide/onboarding\_with\_braze/data\_points/) that have actually changed, Census exports the mapped fields from Braze and scans the data in your data source (including on Full Syncs). If there is a difference, Census will send that data point over from the source. If there is not, Census will not send that data point write over.
+Census uses an internal BrazeDiff mechanism during every sync to minimize Braze [data points](https://www.braze.com/docs/user\_guide/onboarding\_with\_braze/data\_points/) usage.
+
+During every sync (including Full Syncs), Census will automatically compare the data coming from your data source with the data already present in Braze. Census will calculate the diff between the two and only send changed data. If there is no new values in the source, Census will not send any changes to Braze.
 
 {% hint style="warning" %}
 Note that certain built-in fields in Braze, such as Country and Gender, have automatic standardization that happens in Braze. i.e.: "United States" from SQL becomes "US" from Braze's API.
@@ -193,6 +200,8 @@ So when using these type of values, we recommend either:
 * Pre-standardize your fields to match Braze’s format (i.e. "US")
 * Use Custom Attributes to store them instead
 {% endhint %}
+
+When syncing to Arrays of Objects, Census will perform a deep diff of all of the objects in the array. This means that if you have an array of objects, and only one object in the array changes, only that object will be sent to Braze. As mentioned above, make sure that each object in the array has a unique ID field that can be used to calculate the diff.
 
 ### Data Types in Braze
 
