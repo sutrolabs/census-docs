@@ -10,9 +10,10 @@ description: This page describes how to provide DMA consent to ad platforms via 
 
 As you may be aware, many of the large advertising services are in the process of supporting the EU’s [Digital Markets Act](https://digital-markets-act.ec.europa.eu/index\_en) (DMA). Census now supports syncing DMA-related properties to the following destinations:
 
-* [Google Ads](dma-consent-for-ad-platforms.md#google-a-ds) (Audiences, Conversions)
-* [Google Display & Video 360](dma-consent-for-ad-platforms.md#google-display-and-video-360) (Customer Match Audiences)
-* [Amazon Ads DSP](dma-consent-for-ad-platforms.md#amazon-a-ds-dsp) (Audiences)
+* [Google Ads](#google-a-ds) (Audiences, Conversions)
+* [Google Campaign Manager 360](#google-display-and-video-360) (Conversion Events)
+* [Google Display & Video 360](#google-display-and-video-360) (Customer Match Audiences)
+* [Amazon Ads DSP](#amazon-a-ds-dsp) (Audiences)
 
 Google and Amazon have taken different approaches to supporting DMA metadata for their networks. Google asks you to provide consent information on a per-user basis, whereas Amazon requires you to indicate which region a particular audience’s data has been collected in to determine if the DMA applies. Below, we describe how to provide this information via Census.
 
@@ -55,9 +56,13 @@ If you’re sending audiences to Google Ads using our [one-click audience sync](
 5. Repeat this process for any additional “Person” entities powering one-click syncs.
 6. That’s it! We’ll automatically ensure these fields get passed along to Google Ads.
 
+## Google Campaign Manager 360
+
+The process for providing DMA metadata to [Google CM360](../../destinations/google-campaign-manager-360) is nearly identical to Google Ads ([see above](dma-consent-for-ad-platforms.md#google-a-ds)). The only difference is that CM360 requires different values for consent status: `GRANTED` and `DENIED`. For more info, see [Google’s documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad_user_data_consent).
+
 ## Google Display & Video 360
 
-The process for providing DMA metadata to [Google DV360](../../destinations/google-dv360.md) is nearly identical to Google Ads ([see above](dma-consent-for-ad-platforms.md#google-a-ds)). The only difference is that DV360 requires different values for consent status: `CONSENT_STATUS_UNSPECIFIED`, `CONSENT_STATUS_GRANTED`, `CONSENT_STATUS_DENIED`. For more info, see [Google’s documentation](https://developers.google.com/display-video/api/reference/rest/v3/firstAndThirdPartyAudiences#ContactInfoList.FIELDS.consent).
+Similarlly, the process for providing DMA metadata to [Google DV360](../../destinations/google-dv360.md) is also nearly identical. DV360's consent status values are `CONSENT_STATUS_UNSPECIFIED`, `CONSENT_STATUS_GRANTED`, `CONSENT_STATUS_DENIED`. For more info, see [Google’s documentation](https://developers.google.com/display-video/api/reference/rest/v3/firstAndThirdPartyAudiences#ContactInfoList.FIELDS.consent).
 
 ## Amazon Ads DSP
 
