@@ -25,7 +25,7 @@ Setting up the HTTP Request source is super simple:
 
 Instead of being organized in schemas and tables like a traditional Census source, the HTTP Request source allows you to create **Topics** to keep your unique categories of data separate when pushing data to Census. A Topic could be something like web-events, user-updates,&#x20;
 
-1. Navigate to the **Models** page
+1. Navigate to the **Datasets** page
 2. Select the **HTTP Request** source you just created and hit **New Topic.**
 3. Give your Topic a **Name** and paste in a **sample event** that you'll be sending to Census on this Topic. We'll use this sample event to determine the schema of events. This is important so that we know what properties are available when creating syncs.
 4. Hit **Save Topic.**

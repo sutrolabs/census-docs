@@ -46,15 +46,15 @@ After you create a Kafka connection, you need to set up message schemas for your
 
 Before you can use a Kafka topic as the source for a sync, you must define the schema of the messages on the topic.
 
-1. In Census, navigate to **Models**.
+1. In Census, navigate to **Datasets**.
 2. From the **Source** dropdown, select your Kafka connection.
 3. Census automatically pulls the list of topics from your cluster. You can also click **Refresh topics** to manually refresh the list.
 4. Click on the name of the topic you want to define a schema for.
 5. Select the format of the messages on your topic from the **Format** drop down. The only supported format is JSON.
-6. Click **Import sample message** and enter a sample message. Your sample message should be a JSON object containing any top-level fields you want to use in your pipelines. Make sure the values of the fields in your sample message match the data type of the values in your actual messages.&#x20;
+6. Click **Import sample message** and enter a sample message. Your sample message should be a JSON object containing any top-level fields you want to use in your pipelines. Make sure the values of the fields in your sample message match the data type of the values in your actual messages.
 
 {% hint style="warning" %}
-Census does not handle sample messages as customer data. Do not include real data in a sample message.
+Census stores message samples as part of the Dataset definition. Do not include customer PII or otherwise sensitive data in a sample message.
 {% endhint %}
 
 Click **Save Topic**. Review the listed properties and types to ensure the sample message you provided was interpreted as intended.
