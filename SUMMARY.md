@@ -55,7 +55,7 @@
   * [Confluent Cloud](sources/confluent-cloud.md)
   * [Databricks](sources/databricks.md)
   * [Elasticsearch](sources/elasticsearch.md)
-  * [Elasticsearch](sources/kafka.md)
+  * [Kafka](sources/kafka.md)
   * [Google AlloyDB](sources/alloydb.md)
   * [Google BigQuery](sources/google-bigquery.md)
   * [Google Cloud SQL for PostgreSQL](sources/google-cloud-sql-for-postgresql.md)

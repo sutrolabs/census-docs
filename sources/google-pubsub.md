@@ -1,7 +1,3 @@
----
-description: This page describes how to configure Google PubSub as a source for Census.
----
-
 # Google PubSub
 
 PubSub is Google's scalable messaging service that allows applications to send and receive messages between independent components. Census can act as a subscriber to a PubSub topic, allowing you to sync messages from PubSub to your destinations.

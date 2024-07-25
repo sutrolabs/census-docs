@@ -1,7 +1,3 @@
----
-description: This page describes how to configure Kafka as a source for Census.
----
-
 # Kafka
 
 ## :globe\_with\_meridians: Connectivity
