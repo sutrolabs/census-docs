@@ -59,7 +59,7 @@
   * [Google AlloyDB](sources/alloydb.md)
   * [Google BigQuery](sources/google-bigquery.md)
   * [Google Cloud SQL for PostgreSQL](sources/google-cloud-sql-for-postgresql.md)
-  * [Google PubSub](sources/google-pubsub.md)
+  * [Google Pub/Sub](sources/google-pubsub.md)
   * [Google Sheets](sources/google-sheets.md)
   * [Greenplum](sources/greenplum.md)
   * [HTTP Request](sources/http-request.md)
