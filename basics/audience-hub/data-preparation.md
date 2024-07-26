@@ -6,7 +6,7 @@ Working with a warehouse directly can be overwhelming. Census provides a number 
 
 ## Highlighting Datasets For Segmentation
 
-Segments are built on top of your company's [Datasets](broken-reference). Today you are required to set a [unique ID](../../datasets/core-concepts.md) for Dataset to be able to get started segmenting your data. Optionally you can also define [relationships](../../datasets/core-concepts.md) for your dataset which will unlock further functionality.
+Segments are built on top of your company's [Datasets](broken-reference). Today you are required to set a [unique ID](../../datasets/core-concepts/) for Dataset to be able to get started segmenting your data. Optionally you can also define [relationships](../../datasets/core-concepts/) for your dataset which will unlock further functionality.
 
 ### Working Across Relationships
 
@@ -18,7 +18,7 @@ Relationships defined in datasets are one-to-many, but segments can also take ad
 
 ### Segmenting on Event Streams
 
-Datasets also provide the ability to set [Dataset Types](../../datasets/core-concepts.md). For segmentation, one of the most powerful types is the Event type. By highlighting the datasets that contain event data, marketers can create segments that filter on depth of engagement, engagement in certain time periods, specific interactions, as well as filtering on any other data point.
+Datasets also provide the ability to set [Dataset Types](../../datasets/core-concepts/). For segmentation, one of the most powerful types is the Event type. By highlighting the datasets that contain event data, marketers can create segments that filter on depth of engagement, engagement in certain time periods, specific interactions, as well as filtering on any other data point.
 
 <figure><img src="../../.gitbook/assets/Example Segment (3).png" alt=""><figcaption></figcaption></figure>
 

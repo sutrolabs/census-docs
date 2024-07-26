@@ -5,7 +5,11 @@
 ## 💾 Datasets
 
 * [Overview](datasets/overview.md)
-* [Core Concepts](datasets/core-concepts.md)
+* [Core Concepts](datasets/core-concepts/README.md)
+  * [Columns & Annotations](datasets/core-concepts/core-concepts.md)
+  * [Type & Property Mappings](datasets/core-concepts/core-concepts-1.md)
+  * [Relationships](datasets/core-concepts/core-concepts-2.md)
+  * [Computed Columns](datasets/core-concepts/core-concepts-3.md)
 * [Version Control](datasets/census-models.md)
 
 ## 📫 Syncs <a href="#basics" id="basics"></a>
