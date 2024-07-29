@@ -7,10 +7,10 @@ Pub/Sub is Google's scalable messaging service that allows applications to send 
 To read data from your Pub/Sub, Census will automatically generate a new service account. You'll need to grant the **roles/pubsub.editor** role to this service account on the GCP project ID where your Pub/Sub topic is located.
 
 Census uses this role for the following actions:
-- Create a subscription to selected topic(s)
-- Consume messages from selected topic(s)
-- Create an error topic ([Dead Letter Queue](https://aws.amazon.com/what-is/dead-letter-queue/)) and publish errors to the topic
 
+* Create a subscription to selected topic(s)
+* Consume messages from selected topic(s)
+* Create an error topic ([Dead Letter Queue](https://aws.amazon.com/what-is/dead-letter-queue/)) and publish errors to the topic
 
 ## Create a Pub/Sub Connection
 
@@ -20,9 +20,9 @@ Census uses this role for the following actions:
 4. By default, Census will create a new service account to access your Pub/Sub. If you want to use an existing service account, you can provide the service account key JSON.
 5. Click **Connect**.
 6. If you did not provide an existing service account, Census will create a new service account and provide you with the service account email address. You will need to grant the **roles/pubsub.editor** role to this service account on the GCP project ID where your Pub/Sub topic is located.
-7. Once you've granted the necessary permissions, click **Save* to ensure Census can access your Pub/Sub.
+7. Once you've granted the necessary permissions, click \*_Save_ to ensure Census can access your Pub/Sub.
 
-You're now ready to define message schemas for your Pu/Sub topics.
+You're now ready to define message schemas for your Pub/Sub topics.
 
 ## Define message schemas
 
