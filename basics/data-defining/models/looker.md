@@ -25,17 +25,19 @@ If you're using a self-hosted instance of Looker, provide the full URL as well a
 
 #### Connecting Census to Looker
 
-Now back in Census, select **Models** from the left navigation bar and, if you have multiple warehouse connections, make sure the one that matches your Looker instance is currently selected in the top right. Once it is, pick the **Looker** tab just below it. You'll see a **Connect Looker** button to start the process. From here, simply provide your subdomain, the client id and client secret.
+Now back in Census, select **Sources** from the left navigation bar and, if you have multiple warehouse connections, click on the **Projects** button of the one that matches your Looker instance. Once you've clicked on **Projects**, pick the **Looker** tab. You'll see a **Connect Looker** button to start the process. From here, simply provide your subdomain, the client id and client secret.
 
-![](<../../../.gitbook/assets/screely-1639552721507 (1).png>)
+
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-07-31 at 2.32.13 PM.png" alt=""><figcaption><p>Click on the Projects Button</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-07-31 at 2.52.17 PM.png" alt=""><figcaption><p>Enter your Looker credentials</p></figcaption></figure>
 
 Once saved, you should see all of your Looker Looks!
 
 {% hint style="info" %}
 Note: Looks that are in development mode are not shared in the Looker API so only Looks that have been published will appear in Census.
 {% endhint %}
-
-![](../../../.gitbook/assets/screely-1639552770917.png)
 
 ## Required data warehouse permissions
 
