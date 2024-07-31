@@ -37,10 +37,14 @@ Follow the OAuth flow to connect HubSpot. Easy!
 | Ticket                   |        ✅       | Record ID                         | Send                                  |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Hubspot objects and/or behaviors
+
+### Contact Emails
+
+Please note that an email address already associated with a Contact cannot be used for another Contact. If you attempt to update a Contact record with an email address that is already in use, the field will not be updated.
 
 ### Custom Objects
 
