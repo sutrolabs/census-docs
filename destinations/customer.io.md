@@ -94,7 +94,7 @@ We currently support all objects of [Customer.io's core API.](https://customer.i
 |                     Collection |        ✅       |                       N/A                      |            Replace            |
 |                 Manual Segment |        ✅       |            ID, Email, CustomerIO ID            |    Update or Create, Mirror   |
 |                        Objects |        ✅       |                    Object ID                   |    Update or Create, Mirror   |
-| Object ↔️ Person Relationships |        ✅       | Object ID + Person ID, Email, or CustomerIO ID |        Update or Create       |
+| Object ↔️ Person Relationships |        ✅       | Object ID + Person ID, Email, or CustomerIO ID |    Update or Create, Mirror   |
 
 {% hint style="warning" %}
 Make sure you know what identifiers are used in your Customer.io Workspace!
