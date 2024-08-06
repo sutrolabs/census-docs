@@ -266,4 +266,7 @@
   * [SIEM Log Forwarding](basics/security-and-privacy/siem-log-forwarding.md)
   * [Secure Storage of Customer Credentials](basics/security-and-privacy/secure-storage-of-customer-credentials.md)
   * [Digital Markets Act (DMA) Consent for Ad Platforms](basics/security-and-privacy/dma-consent-for-ad-platforms.md)
+* [Health and Usage Reporting](misc/health-and-usage-reporting/README.md)
+  * [Workspace Homepage](misc/health-and-usage-reporting/workspace-homepage.md)
+  * [Product Usage Dashboard](misc/health-and-usage-reporting/product-usage-dashboard.md)
 * [FAQs](basics/faq-and-gotchas.md)

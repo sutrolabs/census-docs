@@ -18,9 +18,9 @@ description: Learn how to use Census to sync your Data Warehouse to ChurnZero.
 
 Custom fields defined in ChurnZero can be added to the sync mapping by manually entering the CZ API Name in the destination field mapping
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>ChurnZero Custom Field</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>ChurnZero Custom Field</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
@@ -31,7 +31,7 @@ Custom fields defined in ChurnZero can be added to the sync mapping by manually 
 |           Event |        ✅       | Any unique identifier | Send             |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more ChurnZero objects and/or behaviors.

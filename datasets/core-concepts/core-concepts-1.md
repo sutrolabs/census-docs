@@ -2,7 +2,7 @@
 
 Your data often times describes standard universal concepts such as people, organizations or time based events. Datasets currently supports several specific dataset types to help you encode this information into Census.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Type
 
@@ -16,7 +16,7 @@ Dataset Types go hand in hand with Dataset Property Mappings. Property Mappings 
 
 <table><thead><tr><th width="222">Property Mapping</th><th>Description</th></tr></thead><tbody><tr><td>Unique Identifier</td><td>A column that can be used to unique identify each row in your dataset. If your dataset doesn't already have one, you can create a column by combining values from other columns into a unique identifier.<br><br>Currently all dataset types aside from Generic require setting a unique identifier.<br><br>Unique Identifiers unlock the use of the Dataset API, and advance Segmentation.</td></tr><tr><td>Email</td><td>A column that contains emails. Only available on the Person dataset, for which it's required.<br><br>Supports the use of columns with hashed emails via the Hashed checkbox.<br><br>Emails unlock the use of One Click Syncs to audience focused destinations.</td></tr><tr><td>Event Timestamp</td><td>A column that contains the timestamp the event occurred (ideally in UTC). Only available on the Event dataset, for which it's required.<br><br>Event timestamp unlocks the use of advanced event specific Segmentation as well as Metric tracking for Segmentation Experiments.</td></tr><tr><td>Event Name</td><td>A column that contains the human readable label for the action the event record refers to. Only available on the Event dataset, for which it's required.<br><br>Event timestamp unlocks the use of advanced event specific Segmentation as well as Metric tracking for Segmentation Experiments.</td></tr><tr><td>Name</td><td>A column that contains the name for a given organization. Only available on the Company dataset, for which it's optional.<br><br>Name will be used as the pinned column when viewing a Dataset via the Dataset Explorer.</td></tr><tr><td>Domain</td><td>A column that contains the domain for a given organization. Only available on the Company dataset, for which it's optional.<br><br>Name will be used to display website logos when viewing a Dataset via the Dataset Explorer.</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Don't worry, all of your dataset's existing columns will be available for syncing and segmenting. Property Mappings just indicate the columns on your entity that have special value for Census.
 

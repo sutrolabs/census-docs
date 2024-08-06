@@ -6,7 +6,7 @@ Datasets require a source to be defined. The source represent the external infra
 
 Different data sources have different behaviors and functionality. We encode these differences through different Dataset Types. You can learn more of the specific requirements, capabilities and limitations for each within each section.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Once a dataset is created you can view the source information through the right sidebar of your Dataset page. Dataset source is not editable after creation, however some sub properties such as Census defined queries are.&#x20;
 
