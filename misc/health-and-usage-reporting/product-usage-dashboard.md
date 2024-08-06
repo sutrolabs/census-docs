@@ -4,7 +4,11 @@ description: Understand and monitor your usage of Census.
 
 # Product Usage Dashboard
 
-As with any app your organization uses, it is important to be able to track your usage over time. The in-app Product Usage Dashboard gives you a view of&#x20;
+As with any app your organization uses, it is important to be able to track your usage over time. This is available in your Organization Billing tab.
+
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+
+The in-app Product Usage Dashboard gives you a view of&#x20;
 
 * Billable Record Usage
 * All Record Usage
