@@ -1,18 +1,23 @@
-# Using Your Own S3
+# Using Your Own Blob Storage
 
-## 💽 How Census Uses Amazon S3
+## 💽 How Census Uses Blob Storage
 
-When syncing data from Amazon Redshift, Snowflake, PostgreSQL, or Panoply, Census uses Amazon S3 as temporary storage for the data that is unloaded from your warehouse before it is sent to the destination service or application.
+All sources configured using the [Advanced Sync Engine](/sources/overview#sync-engines) use Amazon S3 as temporary storage for the data that is unloaded from your warehouse before it is sent to the destination service or application.
 
-Our recommended approach is to let Census manage this S3 bucket for you. This includes managing credentials with narrow permissions and short lifetimes, encrypting data in the bucket at rest and in transit, and automatically removing old data from the bucket once it is no longer in use. This approach is secure and is used by the vast majority of Census customers. If you would like Census to manage your S3 storage automatically, no action is required - this is the default setting for new Census organizations.
+By default, Census manage this storage on your behalf. This includes managing credentials with narrow permissions and short lifetimes, encrypting data in the bucket at rest and in transit, and automatically removing old data from the bucket once it is no longer in use. This approach is secure and is used by the vast majority of Census customers.
 
-If you must manage your own S3 bucket for legal or regulatory reasons, this article will describe how to set that up.
+If you perfer manage your own S3 bucket for legal or regulatory reasons, this article will describe how to set that up.
 
-_This feature is not currently available at all Census subscription levels or for all data warehouses. Please contact your Census account representative for details before proceeding with these steps._
+{% hint style="info" %}
+This feature available to Census Enterprise Plans. Please contact your Census account representative for details before proceeding with these steps.
+{% endhint %}
+
 
 ## 🪛 Initial Setup
 
-This guide will take you through the steps to prepare a bucket for use with Census. We will use the `aws` CLI to create and configure your bucket - you should [install this tool and configure it to use your credentials](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) before starting. Similar configuration is also possible using the AWS Console UI but those instructions are not provided here.
+This guide will take you through the steps to prepare a bucket for use with Census. These instructions only apply to Amazon S3 buckets. If you require support for Google Cloud Storage or Azure Blob Storage, please contact your Census representative.
+
+We will use the `aws` CLI to create and configure your bucket - you should [install this tool and configure it to use your credentials](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) before starting. Similar configuration is also possible using the AWS Console UI but those instructions are not provided here.
 
 In order to proceed, you will also need the Census AWS Account ID (`341876425553`) and your customer-owned bucket External ID - these will be provided to you by your Census representative.
 
@@ -54,11 +59,11 @@ aws s3api put-bucket-encryption --bucket $BUCKET_NAME \
   --server-side-encryption-configuration '{"Rules": [{"ApplyServerSideEncryptionByDefault": {"SSEAlgorithm": "AES256"}}]}'
 ```
 
-Automatically remove data from the bucket that is more than 30 days old:
+(Optional) Choose an automatic retention period to remove stale data from the bucket that is more than X days old. This is a safety measure in case Census fails to remove data from the bucket after processing it. In this example, we set the retention period to 14 days, the same value Census uses by default:
 
 ```
 aws s3api put-bucket-lifecycle-configuration --bucket $BUCKET_NAME --lifecycle-configuration \
-  '{"Rules":[{"Expiration":{"Days":30},"ID":"expire-census-temp-files","Prefix":"","Status":"Enabled","AbortIncompleteMultipartUpload":{"DaysAfterInitiation":30}}]}'
+  '{"Rules":[{"Expiration":{"Days":14},"ID":"expire-census-temp-files","Prefix":"","Status":"Enabled","AbortIncompleteMultipartUpload":{"DaysAfterInitiation":14}}]}'
 ```
 
 ### 4. Create an IAM role granting Census access
@@ -117,8 +122,10 @@ aws iam put-role-policy --role-name census-data-warehouse-client \
 
 Provide the bucket name you chose and your Role ARN (it should look like `arn:aws:iam::12345678:role/census-data-warehouse-client` to your Census representative and they will complete the configuration on your behalf. Once Census is configured to use your S3 bucket, you can verify that it is working correctly in Census by going to Connections, then click "Test" next to your warehouse to run a test sync using your configured S3 bucket.
 
-## 🗑 Ongoing Bucket Maintenance
+## Ongoing Maintenance
 
-No maintenance of your Census data storage bucket is required. Census will use the credentials you provided in the "Initial Setup" step to automatically create and remove files as needed, and the S3 retention policies you defined in the previous step will automatically remove any stale data in the unlikely event that Census fails to do so.
+You shouldn't need to take any further action once you've set up your bucket. Census will automatically create and remove files as needed, and the S3 retention policies you defined in the previous step will automatically remove any stale data in the unlikely event that Census fails to do so.
 
-We strongly recommend that once set up, you do not modify the bucket or any of the keys it contains in any way. Adding, removing, modifying, or renaming data in your Census bucket is not supported and will cause Census syncs to fail. In addition, the Census bucket should not be simultaneously employed for any other purposes. If you need to rename your bucket or the IAM roles you have granted to the bucket, please contact Census Support.
+We strongly recommend that once set up, you do not modify the bucket or any of the keys it contains in any way. Adding, removing, modifying, or renaming data in your Census bucket is not supported and will likely cause Census syncs to fail. In addition, the Census bucket should not be simultaneously employed for any other purposes.
+
+If you need to rename your bucket or the IAM roles you have granted to the bucket, please contact Census Support.

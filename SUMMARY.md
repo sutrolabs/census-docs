@@ -262,7 +262,7 @@
   * [Login & SSO Settings](basics/security-and-privacy/login-and-sso-settings.md)
   * [Workspaces & Access Controls](basics/security-and-privacy/workspaces-and-access-controls.md)
   * [Network Access Controls](basics/security-and-privacy/regions-and-ip-addresses.md)
-  * [Using Your Own S3](basics/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control.md)
+  * [Blob Storage](basics/security-and-privacy/bring-your-own-blob-storage.md)
   * [SIEM Log Forwarding](basics/security-and-privacy/siem-log-forwarding.md)
   * [Secure Storage of Customer Credentials](basics/security-and-privacy/secure-storage-of-customer-credentials.md)
   * [Digital Markets Act (DMA) Consent for Ad Platforms](basics/security-and-privacy/dma-consent-for-ad-platforms.md)
