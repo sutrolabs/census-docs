@@ -1,10 +1,10 @@
 root: ./
 
-​structure:  
-    readme: README.md  
+​structure:
+    readme: README.md
     summary: SUMMARY.md​
-    
-redirects:  
+
+redirects:
     source-warehouse/databricks: ./sources/databricks.md
     source-warehouse/google-bigquery: ./sources/google-bigquery.md
     source-warehouse/google-sheets: ./sources/google-sheets.md
@@ -15,3 +15,4 @@ redirects:
     destinations/custom-api: basics/developers/custom-api.md
     sources/starburst-enterprise: ./sources/trino.md
     sources/starburst-galaxy: ./sources/trino.md
+    misc/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control: .misc/security-and-privacy/bring-your-own-blob-storage.md
