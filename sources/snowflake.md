@@ -19,8 +19,7 @@ Census reads data from one or more tables (possibly across different schemata) i
 
 Snowflake permissions are complex and there are many ways to configure access for Census. The script below is known to work correctly and follows [Snowflake's best practices](https://docs.snowflake.com/en/user-guide/security-access-control-configure.html#creating-read-only-roles) for creating read-only roles in a role hierarchy:
 
-```sql
--- Create a role for the census user
+<pre class="language-sql"><code class="lang-sql">-- Create a role for the census user
 CREATE ROLE CENSUS_ROLE;
 
 -- Ensure the sysadmin role inherits any privileges the census role is granted. Note that this does not grant sysadmin privileges to the census role
@@ -34,18 +33,18 @@ GRANT MONITOR ON WAREHOUSE CENSUS_WAREHOUSE TO ROLE CENSUS_ROLE;
 
 -- Create the census user
 -- Do not set DEFAULT_WORKSPACE, this will impact which tables are visible to Census
-CREATE USER CENSUS WITH DEFAULT_ROLE = CENSUS_ROLE DEFAULT_WAREHOUSE = CENSUS_WAREHOUSE PASSWORD = '<strong, unique password>';
+CREATE USER CENSUS WITH DEFAULT_ROLE = CENSUS_ROLE DEFAULT_WAREHOUSE = CENSUS_WAREHOUSE PASSWORD = '&#x3C;strong, unique password>';
 GRANT ROLE CENSUS_ROLE TO USER CENSUS;
 
 -- Let the census user read the data you want to sync
-GRANT USAGE ON DATABASE "<your database>" TO ROLE CENSUS_ROLE;
-GRANT USAGE ON SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-GRANT SELECT ON ALL TABLES IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-GRANT SELECT ON FUTURE TABLES IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-GRANT SELECT ON ALL VIEWS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-GRANT SELECT ON FUTURE VIEWS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-GRANT USAGE ON ALL FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
-GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO ROLE CENSUS_ROLE;
+GRANT USAGE ON DATABASE "&#x3C;your database>" TO ROLE CENSUS_ROLE;
+GRANT USAGE ON SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
+GRANT SELECT ON ALL TABLES IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
+GRANT SELECT ON FUTURE TABLES IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
+GRANT SELECT ON ALL VIEWS IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
+GRANT SELECT ON FUTURE VIEWS IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
+GRANT USAGE ON ALL FUNCTIONS IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
+GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
 
 -- Required for Advanced Sync Engine, not required for Basic Sync Engine:
 --  Create a private bookkeeping database where Census can store sync state,
@@ -53,16 +52,22 @@ GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "<your database>"."<your schema>" TO R
 
 CREATE DATABASE "CENSUS";
 GRANT ALL PRIVILEGES ON DATABASE "CENSUS" TO ROLE CENSUS_ROLE;
+-- If you want to explicitly grant the required permissions instead of using GRANT ALL you can use the following command
+<strong>--GRANT USAGE, CREATE TABLE, CREATE VIEW,MODIFY, MONITOR ON DATABASE "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE
+</strong>
 CREATE SCHEMA "CENSUS"."CENSUS";
 GRANT ALL PRIVILEGES ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
+-- If you want to explicitly grant the required permissions instead of using GRANT ALL you can use the following command
+<strong>--GRANT CREATE TABLE, CREATE VIEW, MODIFY, MONITOR, CREATE STAGE  ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE
+</strong>
 GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
-```
+</code></pre>
 
 ## :nut\_and\_bolt:Configuring a new Snowflake connection
 
 1. Visit the **Sources** section on Census, and press **New Source**, selecting **Snowflake** from the list.
 2. Census will ask you to provide the **following:**
-   *   Snowflake Account Name&#x20;
+   *   Snowflake Account Name
 
        This is the URL prefix you use to connect or log into Snowflake. It may include a service region or cloud provider:
 
