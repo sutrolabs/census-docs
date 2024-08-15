@@ -42,7 +42,7 @@ Rollups require you to define three properties. The related dataset which to agg
 
 ## Calculated Columns
 
-Calculated Columns allow you to do quick calculations over your dataset columns in a no code enviorment.
+Calculated Columns allow you to do quick calculations over your dataset columns in a no code environment.
 
 For example:
 
@@ -50,4 +50,19 @@ For example:
 * Difference month over month of documents shared
 
 The current supported calculations are difference and percentage change.
+
+## GPT Columns
+
+GPT Column allow you to dynamically generate new content for each row in your dataset using ChatGPT. GPT Columns allow you to define a prompt and use liquid templating reference other column's value which will be used to send a new ChatGPT request per row and write the response back to your GPT column.
+
+For example:
+
+1. Automatically generate personalized email content or messages based on customer data.
+2. Generate insights or recommendations from transactional data, such as suggesting complementary products based on purchase history.
+
+GPT Columns require you to define several properties.&#x20;
+
+* The ChatGPT model to use, you can select from the provided list or manually enter a valid model.&#x20;
+* The expected output type, there are several optional properties to help you guarantee data quality.
+* The prompt to run against each row of your data. Your prompt can leverage liquid templating to reference column values. To learn more about Liquid Templating [click here](../../basics/core-concept/liquid-templates.md).&#x20;
 
