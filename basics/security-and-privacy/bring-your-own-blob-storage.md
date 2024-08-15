@@ -1,17 +1,16 @@
-# Using Your Own Blob Storage
+# Blob Storage
 
 ## 💽 How Census Uses Blob Storage
 
-All sources configured using the [Advanced Sync Engine](/sources/overview#sync-engines) use Amazon S3 as temporary storage for the data that is unloaded from your warehouse before it is sent to the destination service or application.
+All sources configured using the [Advanced Sync Engine](../../sources/overview/#sync-engines) use Amazon S3 as temporary storage for the data that is unloaded from your warehouse before it is sent to the destination service or application. Additionally, we will use this storage to write files containing information about record-level sync tracking, enabling detailed tracking and debugging of syncs. &#x20;
 
 By default, Census manage this storage on your behalf. This includes managing credentials with narrow permissions and short lifetimes, encrypting data in the bucket at rest and in transit, and automatically removing old data from the bucket once it is no longer in use. This approach is secure and is used by the vast majority of Census customers.
 
-If you perfer manage your own S3 bucket for legal or regulatory reasons, this article will describe how to set that up.
+If you prefer to manage your own S3 bucket for legal or regulatory reasons, this article will describe how to set that up.
 
 {% hint style="info" %}
 This feature available to Census Enterprise Plans. Please contact your Census account representative for details before proceeding with these steps.
 {% endhint %}
-
 
 ## 🪛 Initial Setup
 
@@ -23,7 +22,7 @@ In order to proceed, you will also need the Census AWS Account ID (`341876425553
 
 ### 1. Choose a bucket name
 
-Choose a name for your bucket that is memorable and clear. For example, if your company name is "FooCorp", you might call your bucket "foocorp-census-sync-temporary-files".
+Choose a name for your bucket that is memorable and clear. For example, if your company name is "FooCorp", you might call your bucket "foocorp-census-sync-files".
 
 ### 2. Set up shell variables
 
@@ -59,7 +58,7 @@ aws s3api put-bucket-encryption --bucket $BUCKET_NAME \
   --server-side-encryption-configuration '{"Rules": [{"ApplyServerSideEncryptionByDefault": {"SSEAlgorithm": "AES256"}}]}'
 ```
 
-(Optional) Choose an automatic retention period to remove stale data from the bucket that is more than X days old. This is a safety measure in case Census fails to remove data from the bucket after processing it. In this example, we set the retention period to 14 days, the same value Census uses by default:
+Choose an automatic retention period that is longer than your expected longest sync duration and sufficient for how long you want to retain records for detailed tracking and debugging. Avoid setting the retention period too short to prevent premature deletion of important data, and not too long to avoid unnecessary storage costs. A 14-day retention period is recommended, as it balances these needs effectively. In this example, we set the retention period to 14 days, the same value Census uses by default.&#x20;
 
 ```
 aws s3api put-bucket-lifecycle-configuration --bucket $BUCKET_NAME --lifecycle-configuration \
