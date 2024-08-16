@@ -69,3 +69,7 @@ GPT Columns require you to define several properties.&#x20;
 
 The prompt to run against each row of your data. Your prompt can leverage liquid templating to reference column values. To learn more about Liquid Templating [click here](../../basics/core-concept/liquid-templates.md).&#x20;
 
+{% hint style="info" %}
+GPT Columns are currently supported on Snowflake, Redshift, BigQuery, and Postgres with more warehouses coming soon.
+{% endhint %}
+
