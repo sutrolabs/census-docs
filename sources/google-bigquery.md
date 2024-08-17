@@ -6,9 +6,6 @@ description: >-
 
 # Google BigQuery
 
-## 📺 How-To Configure BigQuery Video
-
-{% embed url="https://www.youtube.com/watch?v=YqBPoFuEGRg" %}
 
 ## Required permissions
 
@@ -36,6 +33,13 @@ We definitely recommend you use the three permissions we specify when creating a
   * If you are granting the `bigquery.dataViewer` permission at a more granular level than the project level you should still grant the`bigquery.metadataViewer` permission at the project level ([Google Documentation](https://cloud.google.com/bigquery/docs/access-control#bigquery.metadataViewer)). This will enable Census to display your provisioned datasets within the UI for sync creation. Google requires permission to read metadata at the project level in order to list your datasets.&#x20;
 * `bigquery.dataEditor` access on the `CENSUS` dataset OR `bigquery.dataOwner` access on the `CENSUS` dataset if you would like to additionally grant Census permissions to delete the `CENSUS` dataset. Skip this step if working in read-only mode.
 * Finally, Census service account needs project-level access with the `bigquery.JobUser` role or specifically the `bigquery.jobs.create` permission (via a custom role).
+
+#### Providing a Service Account Key
+
+You may also choose to create your own service account and provide Census with the service account key JSON file. This is useful if you want to manage the lifecycle of the service account yourself. If you choose to provide a service account key, the service account must be granted the same permissions described above.
+
+If you also plan to use Census's dbt integration with BigQuery via a Service Account Key, you'll need to grant an additional role: `roles/iam.serviceAccountTokenCreator`. This permission is used by dbt to authenticate with BigQuery when compiling models. For more details, see [dbt's documentation](https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-setup).
+
 
 ## Configuring a new BigQuery connection
 
