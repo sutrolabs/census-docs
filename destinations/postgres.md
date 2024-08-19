@@ -37,6 +37,31 @@ GRANT USAGE ON SCHEMA "<your schema>" TO CENSUS;
 GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 ```
 
+### Custom Field Permissions
+
+Census allows you to create custom fields in your destination Postgres as a by-product of your sync (see [#creating-new-fields-on-your-destination-object](../basics/core-concept/#creating-new-fields-on-your-destination-object "mention")).&#x20;
+
+To enable this in Postgres, Census needs to have the required permissions to add columns to your Postgres table. Run these commands (in addition to those above).
+
+```
+-- Step 1: Create a role for managing custom field operations, including the ability to alter tables
+CREATE ROLE census_table_manager;
+
+-- Step 2: Allow the census_table_manager role to access the schema
+GRANT USAGE ON SCHEMA "<your schema>" TO census_table_manager;
+
+-- Step 3: Transfer ownership of the relevant table(s) to the census_table_manager role
+-- This allows the role to manage table structures, including adding custom fields.
+-- (Repeat this step for each table that will be managed)
+ALTER TABLE <your_table> OWNER TO census_table_manager;
+
+-- Step 4: Grant the census_table_manager role to the census user
+GRANT census_table_manager TO CENSUS;
+
+-- Step 5: Ensure the census user always uses the census_table_manager role by default
+ALTER USER CENSUS SET ROLE census_table_manager;
+```
+
 ## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 We support syncing data to Tables in PostgreSQL, but they must have a uniqueness constraint on a column. ​
@@ -46,7 +71,7 @@ We support syncing data to Tables in PostgreSQL, but they must have a uniqueness
 |           Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Postgres objects and/or behaviors
