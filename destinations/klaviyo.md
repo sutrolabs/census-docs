@@ -48,10 +48,8 @@ You should now be ready to create a new sync to Klaviyo from Census!
 | <p>Event<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       |                 Unique Event ID                |                  Send                 |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation. [Contact us](mailto:support@getcensus.com) if you want Census to support more Klaviyo objects and/or behaviors.
 {% endhint %}
-
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Klaviyo objects and/or behaviors
 
 ### How profile identifiers work in Klaviyo
 
