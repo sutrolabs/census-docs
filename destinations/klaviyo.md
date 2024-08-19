@@ -53,6 +53,22 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Klaviyo objects and/or behaviors
 
+### How profile identifiers work in Klaviyo
+
+Though Census supports selecting a primary key for profile syncs, it's important to know that Klaviyo has a specific way of handling profile identifiers that Census cannot override.
+
+Klaviyo supports four identifiers for profiles: Email, Phone Number, External ID, and Klaviyo ID.
+
+Klaviyo will always use Klaviyo ID as the primary identifier for profiles when available (only for Update Only syncs). This is the only key that Klaviyo will use to allow updating other identifiers like Email or Phone Number on existing profiles.
+
+When upserting profiles, Klaviyo ID cannot be used but any combination of the other three identifiers can be used as the primary key. However, Klaviyo will verify that the provided identifiers are unique and reference the same profile.
+
+For example:
+If you are syncing a profile with an External ID and Email, Klaviyo will check if the External ID and Email are associated with the same profile.
+- If a profile with a matching External ID and Email is found, Klaviyo will update the profile with the provided data.
+- If a profile with a matching External ID is found but the provided email is different (and not already used by another profile), Klaviyo will update the profile with the provided email.
+- If a profile with a matching External ID is found, and a different profile with a matching email is found, Klaviyo will throw an error indicating a conflict in the provided data.
+
 ### Klaviyo Events
 
 Klaviyo events work like most behavioral event destinations. They require a unique event ID which is used to prevent duplicate events from being created in Klaviyo, as well as a name, timestamp, and custom properties.
