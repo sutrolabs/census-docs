@@ -41,7 +41,13 @@ GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 
 Census allows you to create custom fields in your destination Postgres as a by-product of your sync (see [#creating-new-fields-on-your-destination-object](../basics/core-concept/#creating-new-fields-on-your-destination-object "mention")).&#x20;
 
-To enable this in Postgres, Census needs to have the required permissions to add columns to your Postgres table. Run these commands (in addition to those above).
+To enable this in Postgres, Census needs to have the required permissions to add columns to your Postgres table.&#x20;
+
+{% hint style="info" %}
+The following instructions give you details on how to enable this with a new role, but you may want to reuse a similar existing role instead.
+{% endhint %}
+
+Run these commands to enable custom fields (in addition to those above).
 
 ```
 -- Step 1: Create a role for managing custom field operations, including the ability to alter tables
