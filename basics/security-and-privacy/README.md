@@ -55,7 +55,7 @@ Your warehouse reports back to the Census platform only the number of rows that 
 Once the data differences, or “diffs”, have been calculated, Census instructs your warehouse to copy just those rows to our cloud provider’s “blob storage” bucket (either AWS S3 or Google Cloud Storage).
 
 {% hint style="info" %}
-We support using your own blob storage for an extra layer of security and privacy. [Read more here 👉](bring-your-own-blob-storage.md)
+We support using your own blob storage for an extra layer of security and privacy. [Read more here 👉](../../misc/security-and-privacy/bring-your-own-blob-storage/)
 {% endhint %}
 
 The temporary credentials we provide to your warehouse that are used to copy data are only capable of writing data, not reading it back out, so **this is a one-way data flow**. Diffs are assigned cryptographically unique key paths in the cloud storage bucket, making it impossible for an attacker to guess paths to customer data.

@@ -1,15 +1,7 @@
-# Blob Storage
-
-## 💽 How Census Uses Blob Storage
-
-All sources configured using the [Advanced Sync Engine](../../sources/overview/#sync-engines) use Amazon S3 as temporary storage for the data that is unloaded from your warehouse before it is sent to the destination service or application. Additionally, we will use this storage to write files containing information about record-level sync tracking, enabling detailed tracking and debugging of syncs. &#x20;
-
-By default, Census manage this storage on your behalf. This includes managing credentials with narrow permissions and short lifetimes, encrypting data in the bucket at rest and in transit, and automatically removing old data from the bucket once it is no longer in use. This approach is secure and is used by the vast majority of Census customers.
-
-If you prefer to manage your own S3 bucket for legal or regulatory reasons, this article will describe how to set that up.
+# Bring your own S3 Bucket
 
 {% hint style="info" %}
-This feature available to Census Enterprise Plans. Please contact your Census account representative for details before proceeding with these steps.
+This feature is available to Census Paid Plans. Please contact your Census account representative for details before proceeding with these steps.
 {% endhint %}
 
 ## 🪛 Initial Setup
