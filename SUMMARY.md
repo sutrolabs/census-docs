@@ -10,6 +10,7 @@
   * [Type & Property Mappings](datasets/core-concepts/core-concepts-1.md)
   * [Relationships](datasets/core-concepts/core-concepts-2.md)
   * [Computed Columns](datasets/core-concepts/core-concepts-3.md)
+  * [GPT Columns](datasets/core-concepts/gpt-columns.md)
 * [Version Control](datasets/census-models.md)
 
 ## 📫 Syncs <a href="#basics" id="basics"></a>
