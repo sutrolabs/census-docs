@@ -138,6 +138,7 @@
   * [Eagle Eye](destinations/eagleeye.md)
   * [Emarsys](destinations/emarsys.md)
   * [Enterpret](destinations/enterpret.md)
+  * [Elasticsearch](destinations/available-destinations/elasticsearch.md)
   * [Facebook Ads](destinations/facebook-ads.md)
   * [Facebook Product Catalog](destinations/facebook-product-catalog.md)
   * [Freshdesk](destinations/freshdesk.md)
