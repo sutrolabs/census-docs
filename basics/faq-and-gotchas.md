@@ -42,7 +42,7 @@ In general, Census should take care of these as much as possible so feel free to
 
 > I'm seeing a `4XX` error message on a sync. What should I do?
 
-Check to see if any primary identifiers or string/varchar fields don't have any values that might spook a destination service. Examples that we have seen are: `..` in an email field or an XSS-payload in a name field.
+Check to see if any primary identifiers or string/varchar fields don't have any values that might trigger an error in a destination service. Examples that we have seen are: `..` in an email field or an XSS-payload in a name field.
 
 > I'm seeing a `5XX` error message on a sync. What should I do?
 

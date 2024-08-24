@@ -98,7 +98,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 
 ### Variables
 
-When defining the **File Path** for an S3 sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files in the S3 bucket that reflect the date and time of the sync.
+When defining the **File Path** for an SFTP sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files in the SFTP server that reflect the date and time of the sync.
 
 | **Variable** | **Description**              | **Example Values** |
 | ------------ | ---------------------------- | ------------------ |
