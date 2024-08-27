@@ -67,6 +67,10 @@ If you are syncing a profile with an External ID and Email, Klaviyo will check i
 - If a profile with a matching External ID is found but the provided email is different (and not already used by another profile), Klaviyo will update the profile with the provided email.
 - If a profile with a matching External ID is found, and a different profile with a matching email is found, Klaviyo will throw an error indicating a conflict in the provided data.
 
+{% hint style="info" %}
+Though the API prevents them, duplicate profiles are still possible in Klaviyo. Upserting data when duplicates are present will result in only one of the duplicates being updated (by closest match). We recommend cleaning up duplicates in Klaviyo to avoid confusion caused by updates that appear to be missing.
+{% endhint %}
+
 ### Klaviyo Events
 
 Klaviyo events work like most behavioral event destinations. They require a unique event ID which is used to prevent duplicate events from being created in Klaviyo, as well as a name, timestamp, and custom properties.
