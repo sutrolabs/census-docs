@@ -16,6 +16,7 @@ Census reads data from one or more tables (possibly across different schemata) i
 
 * Full access to the `CENSUS` database and the `CENSUS` schema in that database. Skip this step if working in read-only mode.
 * Read-only access to any tables and views in any schemata from which you want Census to publish
+* The `CENSUS` database and schema are reserved for Census's bookkeeping operations. **Do not** place your source data here, as this database is **inaccessible** inside Census syncs.
 
 Snowflake permissions are complex and there are many ways to configure access for Census. The script below is known to work correctly and follows [Snowflake's best practices](https://docs.snowflake.com/en/user-guide/security-access-control-configure.html#creating-read-only-roles) for creating read-only roles in a role hierarchy:
 
@@ -37,6 +38,7 @@ CREATE USER CENSUS WITH DEFAULT_ROLE = CENSUS_ROLE DEFAULT_WAREHOUSE = CENSUS_WA
 GRANT ROLE CENSUS_ROLE TO USER CENSUS;
 
 -- Let the census user read the data you want to sync
+-- This database and schema must have a different name than CENSUS
 GRANT USAGE ON DATABASE "&#x3C;your database>" TO ROLE CENSUS_ROLE;
 GRANT USAGE ON SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
 GRANT SELECT ON ALL TABLES IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;

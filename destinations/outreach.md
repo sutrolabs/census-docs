@@ -35,7 +35,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this. 👇
 
-![Destinations page with Outreach](../.gitbook/assets/202109\_Service\_Connection\_Outreach.png)
+![Destinations page with Outreach](<../.gitbook/assets/202109\_Service\_Connection\_Outreach (1).png>)
 
 ### Step 2: Connect your data warehouse
 
@@ -50,7 +50,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After connecting your warehouse, your **Destinations** page will look something like this: 👇
 
-![Destinations page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach.png>)
+![Destinations page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach (2).png>)
 
 ### Step 3: Create your model
 
@@ -79,7 +79,7 @@ The sync will move data from your warehouse to Outreach. In this step, you'll de
 
 When configuring your sync, the page should look something like this: 👇
 
-![Sync setup for Outreach](<../.gitbook/assets/202109\_sync\_details.png>)
+![Sync setup for Outreach](<../.gitbook/assets/202109\_sync\_details (1) (2).png>)
 
 #### Custom Fields in Outreach
 
@@ -117,7 +117,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 ## Supported sync behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |     **Behavior** | **Supported?** | **Objects** |
@@ -128,7 +128,7 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 ## Email Identifier Formatting:
 
-If you are using email as an identifier to sync to Prospects or Users Outreach requires the data to be formatted as an array.&#x20;
+If you are using email as an identifier to sync to Prospects or Users Outreach requires the data to be formatted as an array.
 
 You'll need to format your email identifiers in your source data to follow the format `["email@example.com"]`
 

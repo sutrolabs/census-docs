@@ -67,7 +67,7 @@ The sync will move data from your warehouse to Criteo. In this step, you'll defi
 
 When configuring your sync, the page should look something like this: 👇
 
-<figure><img src="../.gitbook/assets/screely-1670609548345.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/screely-1670609548345 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 5: Confirm the synced data is in Criteo
 
@@ -93,7 +93,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 |           Mirror |        ✅       |   Audience  |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Criteo.
