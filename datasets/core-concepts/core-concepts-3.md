@@ -53,5 +53,5 @@ The current supported calculations are difference and percentage change.
 
 ## GPT Columns
 
-Refer to the GPT Columns and how to get started [here](gpt-columns.md).
+Refer to the GPT Columns and how to get started [here](gpt-columns/).
 

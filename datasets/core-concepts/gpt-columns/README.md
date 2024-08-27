@@ -1,6 +1,6 @@
 # GPT Columns
 
-GPT Columns enable you to dynamically generate unique content for each row in your dataset using OpenAI's GPT models. With GPT Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your GPT Column.
+GPT Columns enable you to dynamically generate unique content for each row in your dataset using OpenAI's GPT models. With GPT Columns, you can define a prompt and use [liquid templating](../../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your GPT Column.
 
 #### Example Use Cases
 
@@ -18,7 +18,7 @@ GPT Columns enable you to dynamically generate unique content for each row in yo
 
 
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2024-08-20 at 8.45.36 PM.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/Screenshot 2024-08-20 at 8.45.36 PM.png" alt=""><figcaption></figcaption></figure>
 
 #### How to create a GPT Column
 
@@ -30,17 +30,19 @@ GPT Columns enable you to dynamically generate unique content for each row in yo
 
 **Step 4:** Select `Computed Columns` on your right and choose `GPT Columns`
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-20 at 8.47.44 PM.png" alt=""><figcaption><p>Census Create GPT Column</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-08-20 at 8.47.44 PM.png" alt=""><figcaption><p>Census Create GPT Column</p></figcaption></figure>
 
 **Step 5:** Create a GPT prompt and fill the column name.&#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-20 at 8.50.33 PM.png" alt=""><figcaption><p>Census GPT Column Prompt</p></figcaption></figure>
+Refer to [Sample GPT Prompts](sample-gpt-prompts.md) for inspiration on GPT based prompts
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-08-20 at 8.50.33 PM.png" alt=""><figcaption><p>Census GPT Column Prompt</p></figcaption></figure>
 
 We recommend you refine your prompt outside Census before saving the prompt for the GPT Columns.
 
 * Model Type - you can select from the provided list of GPT based models or manually enter a valid model. [Here's a full list](https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4) of GPT models. We recommend `gpt-4o-mini` model to limit cost associated with the OpenAI tokens.
 * The expected output type - there are several optional properties to help you guarantee data quality.
-* The prompt to run against each row of your data. Your prompt can leverage [Liquid templating](../../basics/core-concept/liquid-templates.md) to reference column values.&#x20;
+* The prompt to run against each row of your data. Your prompt can leverage [Liquid templating](../../../basics/core-concept/liquid-templates.md) to reference column values.&#x20;
 
 **Step 6:** Hit the Create button and that's it. Census will generate a GPT based column into your dataset.&#x20;
 
