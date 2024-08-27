@@ -52,7 +52,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After connecting your warehouse, your **Destinations** page will look something like this: 👇
 
-![Destinations page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Destinations page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach.png>)
 
 ### Step 3: Create your model
 
@@ -81,7 +81,7 @@ The sync will move data from your warehouse to Outreach. In this step, you'll de
 
 When configuring your sync, the page should look something like this: 👇
 
-![Sync setup for Outreach](<../.gitbook/assets/202109\_sync\_details (1).png>)
+![Sync setup for Outreach](<../.gitbook/assets/202109\_sync\_details.png>)
 
 #### Custom Fields in Outreach
 
