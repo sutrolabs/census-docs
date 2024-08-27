@@ -23,7 +23,6 @@ Before you begin, you'll need the following:
   * [MySQL](https://docs.getcensus.com/sources/mysql)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
   * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
@@ -53,7 +52,6 @@ The steps for connecting your data source will depend on your technology. See th
 * [MySQL](../sources/mysql.md)
 * [Postgres](../sources/postgres.md)
 * [Redshift](../sources/redshift.md)
-* [Rockset](../sources/rockset.md)
 * [Snowflake](../sources/snowflake.md)
 * [SQL Server](../sources/sql-server.md)
 

@@ -23,7 +23,6 @@ Before you begin, you'll need the following:
   * [MySQL](https://docs.getcensus.com/sources/mysql)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
   * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
@@ -46,7 +45,6 @@ The steps for connecting your data warehouse will depend on your technology. See
 * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
 * [Postgres](https://docs.getcensus.com/sources/postgres)
 * [Redshift](https://docs.getcensus.com/sources/redshift)
-* [Rockset](https://docs.getcensus.com/sources/rockset)
 * [Snowflake](https://docs.getcensus.com/sources/snowflake)
 
 ### Step 3: Create your model

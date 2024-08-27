@@ -21,7 +21,6 @@ In this guide, we will show you how to connect Help Scout to Census.
   * [MySQL](../sources/mysql.md)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Rockset](https://docs.getcensus.com/sources/rockset)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
   * [SQL Server](../sources/sql-server.md)
 
