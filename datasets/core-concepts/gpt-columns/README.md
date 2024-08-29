@@ -12,13 +12,8 @@ GPT Columns enable you to dynamically generate unique content for each row in yo
 
 #### Pre-requisites
 
-*   Add OpenAI (ChatGPT) as a destination
-
-    * You will need your API key to connect OpenAI (ChatGPT). To create a  new API key, log into OpenAI and navigate to [Dashboard / API keys](https://platform.openai.com/api-keys) and generate a new Project API Key.
-
-
-
-    <figure><img src="../../../.gitbook/assets/Screenshot 2024-08-20 at 8.45.36 PM.png" alt=""><figcaption></figcaption></figure>
+* Dataset should have a Unique ID column
+* You will need your API key to connect OpenAI (ChatGPT). To create a  new API key, log into OpenAI and navigate to [Dashboard / API keys](https://platform.openai.com/api-keys) and generate a new Project API Key.
 
 #### How to create a GPT Column
 
@@ -26,13 +21,17 @@ GPT Columns enable you to dynamically generate unique content for each row in yo
 
 **Step 2:** Navigate to the Datasets tab  by clicking on `Datasets` in the left navigation panel.
 
-**Step 3:** Choose a dataset where you want to add a new AI-based column.
+**Step 3:** Choose a dataset where you want to add a new AI-based column. Make sure the Dataset has a Unique ID column assigned
 
 **Step 4:** Select `Computed Columns` on your right and choose `GPT Columns`
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-08-20 at 8.47.44 PM.png" alt=""><figcaption><p>Census Create GPT Column</p></figcaption></figure>
 
-**Step 5:** Create a GPT prompt and fill the column name.&#x20;
+**Step 5:** Connect to OpenAI using your OpenAI API Key and click Next.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-08-29 at 12.34.53 PM (1).png" alt=""><figcaption><p>GPT Columns Connect</p></figcaption></figure>
+
+**Step 6:** Create a GPT prompt and fill the column name.&#x20;
 
 Refer to [Sample GPT Prompts](sample-gpt-prompts.md) for inspiration on GPT based prompts
 
@@ -44,7 +43,9 @@ We recommend you refine your prompt outside Census before saving the prompt for 
 * The expected output type - there are several optional properties to help you guarantee data quality.
 * The prompt to run against each row of your data. Your prompt can leverage [Liquid templating](../../../basics/core-concept/liquid-templates.md) to reference column values.&#x20;
 
-**Step 6:** Hit the Create button and that's it. Census will generate a GPT based column into your dataset.&#x20;
+**Step 7:** Hit the Create button and that's it. Census will generate a GPT based column into your dataset.&#x20;
+
+This step can take several minutes. Behind the scene Census sets up OpenAI as a destination and runs a sync across all your rows in the selected dataset.&#x20;
 
 
 

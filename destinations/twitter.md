@@ -57,7 +57,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](../.gitbook/assets/202201\_Model\_Page.png)
+![Basic SQL query for a new model](broken-reference)
 
 ### Step 4: Create your first sync
 
@@ -107,7 +107,7 @@ To use this setting, you'll also need to include a column in your database/data 
 |    Web Conversion Event |        ✅       | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number | Send          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more X Ads objects and/or behaviors.

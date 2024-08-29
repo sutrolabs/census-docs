@@ -48,7 +48,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 4. Enter your SQL query. If you want to test the query, use the **Preview** button.
 5. Click **Save Model**.
 
-![Basic SQL query for a new model](../.gitbook/assets/202201\_Model\_Page.png)
+![Basic SQL query for a new model](broken-reference)
 
 ### Step 3: Create your first sync
 
@@ -110,7 +110,7 @@ For a string example of a column in Snowflake:
 | Update or Create |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Microsoft Dynamics.
