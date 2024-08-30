@@ -12,4 +12,6 @@ Observability Lake allows you to store a comprehensive history of your sync data
 
 To set up Observability Lake, follow the steps in our [Bring Your Own Bucket documentation](https://docs.getcensus.com/misc/security-and-privacy/bring-your-own-blob-storage).
 
+Once you configure your own bucket, **Census will automatically use it as storage for all sync run logging going forward.**
+
 By using Observability Lake, you gain the flexibility to manage your sync data retention according to your specific requirements, ensuring you have the historical data needed for comprehensive analysis and compliance.
