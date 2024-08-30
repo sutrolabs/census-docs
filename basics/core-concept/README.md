@@ -1,6 +1,6 @@
 # Overview
 
-## Sources and Destinations
+## 🔌 Sources and Destinations
 
 Census at its core is about connecting and coordinating across your business's software stack. And so, one of the very first steps to using Census will be connecting your Data Warehouse Sources and Destination Services.
 
@@ -8,7 +8,7 @@ Census at its core is about connecting and coordinating across your business's s
 
 Source data for all Census Syncs come from your Data Warehouse. Historically, a data warehouse was the end of the line, where data went to collect dust. But modern cloud data warehouses enable a huge variety of data sources and data size, as well as the flexibility to define how data should be aggregated, joined, and organized specifically for your business. It's this flexibility and scalability that make it the perfect data hub for your operations.
 
-Census allows you to sync any [Datasets](broken-reference). This means census can use anything you grant access to in your data warehouse (as a sync source, whether that is a table, a view, a SQL query, or a dbt model etc) or even outside your warehouse such as streaming sources.
+Census can use anything you grant access to in your data warehouse as a sync source, whether that is a table, a view, a SQL query, or a dbt model. We'll cover the process of building models in the next section.
 
 {% hint style="info" %}
 For instructions on connecting your specific data source, take a look at the Data Sources section on the left.
@@ -22,9 +22,9 @@ If you don't have credentials with write access available, you can connect to yo
 
 Either option may be right for you, read more about the differences between [Basic and Advanced Sync Engines](https://docs.getcensus.com/sources/overview#sync-engines).
 
-#### Datasets and segments
+#### Data source models and segments
 
-Once you have your data source connected, you can also create datasets on top of your data source, or connect data modeling integrations like [DBT](../../sources/native-dbt-integration.md), [Looker](../data-defining/models/looker.md) and [Sigma](../data-defining/models/sigma.md). Datasets are optional in Census, you can also sync data directly from a data source table or view, but datasets give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your datasets, Census makes it easy to quickly select and sync [Segments](../audience-hub/getting-started.md) of your datasets as well.
+Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](broken-reference) and [Looker](../data-defining/models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../audience-hub/getting-started.md) of your models as well.
 
 ### Destination Services
 
@@ -38,13 +38,13 @@ All of the connection steps, the objects, and other details for each service are
 \
 And don't forget, our library of connections grows every week! Keep an eye on our [integrations page](https://www.getcensus.com/integrations) for all of our available destinations and let us know if we're missing something you need!
 
-## Creating Syncs
+## 🧮 Creating Syncs
 
 The most important action in Census is defining Syncs. A Sync defines the rules of how data should be synced, from your selected source to your destination.
 
 Syncs are also what makes Census so unique. Unlike most integration tools that are event-based, Census works to keep your source and destination "in sync" (just like Dropbox or other cloud storage service). The benefit is that you don't have to worry about dropped events or backfills anymore. If you change your data in the model, Census just syncs it, easy as that!
 
-### Sync Behaviors
+### 🔀 Sync Behaviors
 
 {% hint style="success" %}
 All of our syncs are incremental, which means we only sync records that are new or have their data changed since the previous sync.
@@ -52,39 +52,30 @@ All of our syncs are incremental, which means we only sync records that are new 
 
 Sync Behaviors tell Census the types of change it should apply to your data when a sync finds a matching (or not) record in a source and a destination. We support a few different sync behaviors:
 
-|                               |                                                                                                                                                                                                                                                                                                                                                                                  |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Update or Create (aka Upsert) | Update existing destination records when IDs match, otherwise create new ones if they're missing.                                                                                                                                                                                                                                                                                |
-| Update Only                   | Update existing objects in the destination, don't create any new ones.                                                                                                                                                                                                                                                                                                           |
-| Create Only                   | Create a new object if it doesn't exist in the destination.                                                                                                                                                                                                                                                                                                                      |
-| Mirror                        | <p>Keep the destination in sync with the source.</p><ul><li>If a row is added or edited in the source, update the destination.</li><li>If a previously synced row no longer is in the source, remove the matching object from the destination. Note: some services such as Braze offer other actions as well. See specific destination documentation for more details.</li></ul> |
-| Replace                       | Replace all destination data with a snapshot of the source data.                                                                                                                                                                                                                                                                                                                 |
-| Add/Send                      | <p>Add objects, send messages, or perform actions within the destination whenever new data is added to the source.</p><p>Read more about <a href="https://docs.getcensus.com/basics/defining-source-data/events">sending event data</a>.</p>                                                                                                                                     |
-| Delete                        | <p>Delete syncs takes the list of provided IDs and deletes them from the destination.<br><br>Be careful! Providing an incorrect set of IDs can result in data loss! Census recommends you backup data if you're concerned about accidentally deleting the wrong records.</p>                                                                                                     |
+|                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Update or Create (aka Upsert) | Update existing destination records when IDs match, otherwise create new ones if they're missing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Update Only                   | Update existing objects in the destination, don't create any new ones.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Create Only                   | Create a new object if it doesn't exist in the destination.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Mirror                        | <p>Keep the destination in sync with the source.</p><ul><li>If a row is added or edited in the source, update the destination.</li><li>If a previously synced row no longer is in the source, remove the matching object from the destination. Note: some services such as Braze offer other actions as well. See specific connector documentation for more details. </li><li>Mirror syncs identify changes by comparing against the data they have already sent -- not the data that might or might not already exist in the destination. This means that the first sync will be an upsert for all records, and the second and following syncs will account for changes from the source data.</li></ul> |
+| Append Only                   | <p>Treat the destination as an append only log of data suitable for Event data.</p><p>Read more about <a href="https://docs.getcensus.com/basics/defining-source-data/events">sending event data</a>.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Delete                        | <p>Delete syncs takes the list of provided IDs and deletes them from the destination.<br><br>Be careful! Providing an incorrect set of IDs can result in data loss! Census recommends you backup data if you're concerned about accidentally deleting the wrong records.</p>                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 {% hint style="warning" %}
 Please note that some of these behaviors are only available for certain destinations. Visit our individual integration pages to view what's supported.
 {% endhint %}
 
-### Sync Keys
+### 🔎 Sync Keys
 
 Sync Keys let Census know how to associate data in the source with the destination. Both the source and destination need to provide a single, unique per record, identifying field. Census uses the identifiers to look for matches. When a match is found, or not found, it then can use your selected Sync Behavior to decide what to do.\
 \
 For example, if Census sees your source and destination both have records with the identifier ABCD1234, it knows that it should update that record with data from the source when you've got an Update Only, Update or Create, or Mirror Sync Behavior configured.
 
-### Field Mappings
+### 🖇 Field Mappings
 
 Once you've defined _how_ data is related between your source and destination, the next step is to let Census know _what_ properties should be updated. The field mapping step lets you specify how fields should be mapped from your source model to the destination object's fields. You can automatically add all matching fields, but even if names don't match, you can also provide the matching manually. If you remove fields from your mapping, Census will just stop updating those fields. We will not delete the values.
 
-#### Constant Values
-
-Sometimes you want to send a constant value to a destination field. For example, you might want to send a constant value to a field in your destination to indicate that the record came from Census.
-
-You could do this by adding a new column to your source data, but that's not always possible, and certainly not fast.
-
-Instead, you can simply add a **Constant Value** field mapping to set the value directly in the Census UI. The value you provide will be set for every record in your sync.
-
-#### Using templates to tranform source data
+#### **Using templates to tranform source data**
 
 Sometimes the data in your source systems isn't in quite the format or style that the destination expects. If you need to transform records from the source before sending them to the destination, you can use a **Templated Field.**
 
@@ -100,12 +91,16 @@ To give you an idea of the capabilities available, here are a few more examples:
 * `Last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}` → Prepends a timestamp with some initial text
 * `{{ record['first_name'] | rstrip }}` → Removes trailing whitespace from a customer's name
 
-You can read all about the Liquid template system provided by Census in our [documentation](liquid-templates.md).
+You can read all about the Liquid template system provided by Census here:
+
+{% content-ref url="liquid-templates.md" %}
+[liquid-templates.md](liquid-templates.md)
+{% endcontent-ref %}
 
 {% hint style="info" %}
 Templated fields have a few limitations:
 
-* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](broken-reference), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
+* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Models](broken-reference), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
 * Not all sources support templates yet; we are always adding support for new sources!
 {% endhint %}
 
@@ -129,25 +124,23 @@ Simply select **"Sync All Properties"** when setting up a sync.
 
 ![Simply select "Sync All Properties"](../../.gitbook/assets/sync\_all\_fields.png)
 
-### Advanced Configuration
+{% hint style="info" %}
+The following destinations currently support automatically adding new properties:
 
-Some destination objects have additional configuration options. This options apply to all data synced to that destination. For example, when syncing to SFTP, you can use advanced configuration to provide a custom file name, or to specify the delimiter for a CSV file.
-
-Advanced Configuration options vary by destination object, and even by specific operation. For more details on the advanced configuration options available for a specific destination, see the destination's documentation.
-
-<figure><img src="../../.gitbook/assets/advanced_configuration.png" alt="Salesforce&#x27;s advanced configuration option enables switching APIs"><figcaption><p>Salesforce's advanced configuration option enables switching APIs</p></figcaption></figure>
+Braze, Custom API, Customer.io, Google Cloud Storage, Google Sheets, Iterable, Klaviyo, Mixpanel, S3, Salesforce Marketing Cloud, Segment, SFTP, Slack, Vitally, Webhook
+{% endhint %}
 
 ## Running Syncs
 
 Once syncs are created, you'll probably want to run them! That's where the real magic happens. There's a few things you should know about running and maintaining syncs though including how frequently they should run and what sync history tells you about the health of your sync.
 
-### Schedules and API
+### ⏱ Schedules and API
 
 You can happily run a sync manually, but that's not all that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in three ways:
 
 * [Schedules](triggering-syncs.md#schedule) including with Cron
 * [Programmatically via API or Orchestration tool](triggering-syncs.md)
-* [Automatically with dbt Cloud](../../sources/native-dbt-integration.md)
+* [Automatically with dbt Cloud](broken-reference)
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 
