@@ -50,7 +50,7 @@ aws s3api put-bucket-encryption --bucket $BUCKET_NAME \
   --server-side-encryption-configuration '{"Rules": [{"ApplyServerSideEncryptionByDefault": {"SSEAlgorithm": "AES256"}}]}'
 ```
 
-Choose an automatic retention period that is longer than your expected longest sync duration and sufficient for how long you want to retain records for detailed tracking and debugging. Avoid setting the retention period too short to prevent premature deletion of important data, and not too long to avoid unnecessary storage costs. A 14-day retention period is recommended, as it balances these needs effectively. In this example, we set the retention period to 14 days, the same value Census uses by default.&#x20;
+Choose an automatic retention period that is longer than your expected longest sync duration (at least 3 days) and sufficient for how long you want to retain records for detailed tracking and debugging. Avoid setting the retention period too short to prevent premature deletion of important data, and not too long to avoid unnecessary storage costs. A 14-day retention period is recommended, as it balances these needs effectively. In this example, we set the retention period to 14 days, the same value Census uses by default.&#x20;
 
 ```
 aws s3api put-bucket-lifecycle-configuration --bucket $BUCKET_NAME --lifecycle-configuration \
