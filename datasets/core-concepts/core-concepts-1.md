@@ -2,7 +2,7 @@
 
 Your data often times describes standard universal concepts such as people, organizations or time based events. Datasets currently supports several specific dataset types to help you encode this information into Census.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Type
 
