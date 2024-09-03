@@ -1,4 +1,4 @@
-# Entity Resolution
+# Entity Resolution (Invite Only)
 
 Business teams are dependent on trusted data to execute their growth initiatives. However, often the data is messy. One core reason for the messy data is to have duplicate records for various entities - Users, Organizations, Customers, Products or other objects.
 
@@ -60,7 +60,7 @@ When you leave your merge rules empty, Census uses a record with lowest ID as th
 
 
 
-#### Column Overrides (Coming Soon)
+#### Column Overrides
 
 Column Overrides help you override column values on the winning record. You can conditionally choose values for the final / resolved record.
 
