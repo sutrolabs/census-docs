@@ -1,18 +1,19 @@
 root: ./
 
 ​structure:
-    readme: README.md
-    summary: SUMMARY.md​
+  readme: README.md
+  summary: SUMMARY.md​
 
 redirects:
-    source-warehouse/databricks: ./sources/databricks.md
-    source-warehouse/google-bigquery: ./sources/google-bigquery.md
-    source-warehouse/google-sheets: ./sources/google-sheets.md
-    source-warehouse/postgres: ./sources/postgres.md
-    source-warehouse/redshift: ./sources/redshift.md
-    source-warehouse/rockset: ./sources/rockset.md
-    source-warehouse/snowflake: ./sources/snowflake.md
-    destinations/custom-api: basics/developers/custom-api.md
-    sources/starburst-enterprise: ./sources/trino.md
-    sources/starburst-galaxy: ./sources/trino.md
-    misc/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control: basics/security-and-privacy/bring-your-own-blob-storage.md
+  source-warehouse/databricks: ./sources/databricks.md
+  source-warehouse/google-bigquery: ./sources/google-bigquery.md
+  source-warehouse/google-sheets: ./sources/google-sheets.md
+  source-warehouse/postgres: ./sources/postgres.md
+  source-warehouse/redshift: ./sources/redshift.md
+  source-warehouse/rockset: ./sources/rockset.md
+  source-warehouse/snowflake: ./sources/snowflake.md
+  destinations/custom-api: basics/developers/custom-api.md
+  destinations/reddit: ./destinations/reddit-ads.md
+  sources/starburst-enterprise: ./sources/trino.md
+  sources/starburst-galaxy: ./sources/trino.md
+  misc/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control: basics/security-and-privacy/bring-your-own-blob-storage.md
