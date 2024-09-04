@@ -80,3 +80,7 @@ Map Rules help your map columns from your source datasets into your resolved dat
 
 Entity Resolution generates a new dataset that's written back to your source warehouse under the Census Schema.
 
+
+
+Entity Resolution is supported on Snowflake, BigQuery, Redshift and Postgress for now with support for other warehouses and data sources coming soon.
+
