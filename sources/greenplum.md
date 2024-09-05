@@ -6,7 +6,7 @@ description: This page describes how to configure Greenplum as a source for Cens
 
 ## Sync Engines and Permissions
 
-Census reads data from tables and views in Greenplum and syncs it to your desired objects in other systems such as Salesforce. To limit the load on your database as well as destination apps' APIs, Census maintains state tracking tables that enable it to only sync data that has been modified sync the last sync (incremental syncs). When configuring your Greenplum connection, you'll choose a [Sync Engine](overview.md#sync-engines) that determines how state tracking is handled.
+Census reads data from tables and views in Greenplum and syncs it to your desired objects in any supported [destination](broken-reference). To limit the load on your database as well as destination apps' APIs, Census maintains state tracking tables that enable it to only sync data that has been modified sync the last sync (incremental syncs). When configuring your Greenplum connection, you'll choose a [Sync Engine](overview.md#sync-engines) that determines how state tracking is handled.
 
 The _Basic Sync Engine_ maintains state tracking tables on Census-owned infrastructure and is therefore simpler to configure and requires read access only.
 
@@ -88,7 +88,7 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO
 
 ## Advanced Network Configuration
 
-Census can successfully connect to Greenplum instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+Census can successfully connect to Greenplum instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 We recommend configuring your Greenplum instance to use TLS v1.2 or later for all connections.
 
