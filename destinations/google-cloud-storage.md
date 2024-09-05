@@ -69,11 +69,25 @@ The sync will move data from your warehouse to your GCS bucket. In this step, yo
 
 If you need any help configuring GCS, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
+## Supported Sync Behaviors
+
+| **Behavior** | **Supported?** | **Objects** |
+| -----------: | :------------: | :---------: |
+|      Replace |        ✅       |     All     |
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Cloud Storage.
+
 ## File Path
+
+When setting up a sync to GCS, you can provide a file path for the file name Census will create/replace. The file path can include folders. Data arrives in one file to the designated bucket and file path.
 
 ### Variables
 
-When defining the **File Path** for an GCS sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new files in the GCS bucket that reflect the date and time of the sync.
+When defining the **File Path**, you can use variables that will be set when the sync runs. This allows you to create and sync to new files that reflect the date and time of the sync.
 
 | **Variable** | **Description**              | **Example Values** |
 | ------------ | ---------------------------- | ------------------ |
@@ -90,26 +104,24 @@ When defining the **File Path** for an GCS sync, you can use variables that will
 | `%M`         | minute with zero padding     | 04, 56             |
 | `%S`         | second with zero padding     | 06, 54             |
 
-### Update or Create Syncs
+## Advanced Configuration
 
-Update or Create syncs upload your whole dataset on the first run and only new changes on subsequent runs. Each sync run saves to a different file. The first run saves with "full" at the end of the file name. For example, `filename_12_12_23_full.csv` if it runs on 12/12/2023. Later syncs save with a timestamp at the end, like `filename_12_12_23_1702426195.csv`, so you can see how your data changes over time.
+In addition to the file path, you can configure how the data is encoded as it is written. Primarily this is a question of file format:
 
-## Supported sync behaviors
+- CSV - The standard comma separated values file. You can optionally specify an alternative delimeter such as `|`*, and you can enable/disable the header row.
+- TSV - The tab separated values file. You can enable/disable the header row.
+- JSON - A single JSON arraay of objects
+- NDJSON - New line-delimited list of JSON objects
+- Parquet - A columnar storage format that is more efficient for certain types of data.
 
-| **Behavior** | **Supported?** | **Objects** |
-| -----------: | :------------: | :---------: |
-|      Replace |        ✅       |     All     |
+* If your configured delimiter is present in data values, Census will automatically add double quotes around the value.\
+  _Example: `Hello, world` is written as as `"Hello, world"` if the chosen delimiter is a comma._
 
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
+In addition to file format, you can also provide a PGP Public Key to encrypt the data before it is written to the file. This is useful for ensuring that the data is secure in transit and at rest.
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Cloud Storage.
-
-## Things to know
+## Other Things to Know
 
 * Currently, the destination only supports syncing for files up to 5GB.
-* Data arrives in one file to the designated bucket and file path.
 
 [Contact us](mailto:support@getcensus.com) if your use cases don't work with these limitations. We plan on addressing at least a few of these in the future!
 

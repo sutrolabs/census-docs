@@ -1,32 +1,48 @@
 ---
-description: This page describes how to sync data to Azure Blob Storage.
+description: This page describes how to use Census with Google Drive.
 ---
 
-# Azure Blob Storage
+# Google Drive
+
+Google Drive is Google's cloud file storage service. It allows users to store files in the cloud, synchronize files across devices, and share files. With Census, you can sync data from your data warehouse directly into Google Drive.
 
 ## Getting Started
 
-1. Navigate to the **Destinations** page in Census and click **New Destination**.
-2. Select **Azure Blob Storage** from the menu.
-3. Enter the requested credentials.
+In this guide, we will show you how to connect Google Drive to Census.
 
-<figure><img src="../.gitbook/assets/azure-blob-storage.png" alt=""><figcaption><p>Enter your Azure Blob Storage credentials in Census.</p></figcaption></figure>
+### 1. Create a Google Drive connection
+
+Our Google Drive destination behaves a little differently than other Census destinations (but similar to Google Sheets). Instead of going through an OAuth connection flow, we provide you a Google Identity address you use to share the correct Google Drive folder. This lets you be very specific about which Google Drive folders you give Census access to.
+
+* In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
+* Click the New Destination button
+* Select **Google Drive** in the menu
+
+Your new Google Drive connection will include a Google Identity email. This is the email address you'll use to grant Census access to your target Google Drive (or folder within it). Click the copy button (<img src="../.gitbook/assets/copy-solid.svg" alt="" data-size="line">) to save it to your clipboard, will use it in a minute.
+
+### 2. Share your target Google Drive folder
+
+Now head to the Google Drive and navigate to the folder you'd like to sync to. If you don't have one in mind, you can create a new one.
+
+To give Census access to the folder, press the Share button and then add paste the Google Identity email from Census into the share dialog and confirm.
+
+That's it! You should now see your folder as an option when setting up a sync in Census.
 
 ## Supported Sync Behaviors
 
-| **Behavior** | **Supported?** | **Objects** |
-| -----------: | :------------: | ----------- |
-|      Replace |        ✅       | All         |
+| **Object Name** | **Supported?** | **Behaviors** |
+| :--------------: | :------------: | ------------: |
+|       File      |        ✅       |   **Replace** |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Azure Blob Storage.
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Google Drive.
 
 ## File Path
 
-When setting up a sync to Azure, you can provide a file path for the file name Census will create/replace. The file path can include folders. Data arrives in one file to the designated bucket and file path.
+When setting up a sync to Google Drive, you can provide a file path for the file name Census will create/replace. The file path can include folders but note that the folders must already exist in Google Drive and must be unique.
 
 ### Variables
 
@@ -62,7 +78,6 @@ In addition to the file path, you can configure how the data is encoded as it is
 
 In addition to file format, you can also provide a PGP Public Key to encrypt the data before it is written to the file. This is useful for ensuring that the data is secure in transit and at rest.
 
-
-## Need help connecting to Azure Blob Storage?
+## Need help connecting to Google Drive?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

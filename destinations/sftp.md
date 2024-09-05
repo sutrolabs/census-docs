@@ -36,6 +36,9 @@ Before you begin, you'll need the following:
 6. Click **Save Connection**.
 7. If you're using **SSH keys** to authenticate your server, download the **SFTP Public Key** from this screen and upload it to your server. Then, click **Test** to verify that the connection works.
 
+
+* If you aren't using a password for your server, Census provides an RSA token with an OpenSSH-formatted public key.
+
 Your end state should look something like this: 👇
 
 ![Destinations page with SFTP server set up](<../.gitbook/assets/Screen Shot 2021-10-11 at 6.14.04 PM.png>)
@@ -92,11 +95,30 @@ If everything went well, that's it! You've started syncing data from your wareho
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
+## Supported Sync Behaviors
+
+|    **Behaviors** | **Supported?** | **Objects** |
+| ---------------: | :------------: | :---------: |
+| Update or Create |        ✅       |     All     |
+|          Replace |        ✅       |     All     |
+
+### Update or Create Syncs
+
+Update or Create syncs upload your whole dataset on the first run and only new changes on subsequent runs. Each sync run saves to a different file. The first run saves with "full" at the end of the file name. For example, `filename_12_12_23_full.csv` if it runs on 12/12/2023. Later syncs save with a timestamp at the end, like `filename_12_12_23_1702426195.csv`, so you can see how your data changes over time.
+
+{% hint style="info" %}
+Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+{% endhint %}
+
+[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for SFTP server connections.
+
 ## File Path
+
+When setting up a sync to SFTP, you can provide a file path for the file name Census will create/replace. The file path can include folders. Data arrives in one file to the designated server and file path.
 
 ### Variables
 
-When defining the **File Path** for an SFTP sync, you can use variables that will be set when the sync runs. This allows you to create and sync to new CSV files in the SFTP server that reflect the date and time of the sync.
+When defining the **File Path**, you can use variables that will be set when the sync runs. This allows you to create and sync to new files that reflect the date and time of the sync.
 
 | **Variable** | **Description**              | **Example Values** |
 | ------------ | ---------------------------- | ------------------ |
@@ -113,28 +135,20 @@ When defining the **File Path** for an SFTP sync, you can use variables that wil
 | `%M`         | minute with zero padding     | 04, 56             |
 | `%S`         | second with zero padding     | 06, 54             |
 
-### Update or Create Syncs
+## Advanced Configuration
 
-Update or Create syncs upload your whole dataset on the first run and only new changes on subsequent runs. Each sync run saves to a different file. The first run saves with "full" at the end of the file name. For example, `filename_12_12_23_full.csv` if it runs on 12/12/2023. Later syncs save with a timestamp at the end, like `filename_12_12_23_1702426195.csv`, so you can see how your data changes over time.
+In addition to the file path, you can configure how the data is encoded as it is written. Primarily this is a question of file format:
 
-## Supported sync behaviors
+- CSV - The standard comma separated values file. You can optionally specify an alternative delimeter such as `|`*, and you can enable/disable the header row.
+- TSV - The tab separated values file. You can enable/disable the header row.
+- JSON - A single JSON arraay of objects
+- NDJSON - New line-delimited list of JSON objects
+- Parquet - A columnar storage format that is more efficient for certain types of data.
 
-|    **Behaviors** | **Supported?** | **Objects** |
-| ---------------: | :------------: | :---------: |
-| Update or Create |        ✅       |     All     |
-|          Replace |        ✅       |     All     |
+* If your configured delimiter is present in data values, Census will automatically add double quotes around the value.\
+  _Example: `Hello, world` is written as as `"Hello, world"` if the chosen delimiter is a comma._
 
-{% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
-{% endhint %}
-
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for SFTP server connections.
-
-## Things to know
-
-* If you aren't using a password for your server, Census provides an RSA token with an OpenSSH-formatted public key.
-* Data arrives in one file written to the designated SFTP file path.
-* Files are written as a CSV with headers.
+In addition to file format, you can also provide a PGP Public Key to encrypt the data before it is written to the file. This is useful for ensuring that the data is secure in transit and at rest.
 
 ## Need help connecting your server?
 
