@@ -1,8 +1,8 @@
 # Columns & Annotations
 
-The Dataset details view list all columns available through the source along with type metadata.
+The Dataset details view lists all columns available through the source along with type metadata.
 
-You will also find two other columns here, PII and Enumerations.
+You will also find two other columns here, PII and Enumerated.
 
 * PII - Mark a column as PII to prevent this column's values from being displayed anywhere in the Census ecosystem. Only Admins have permissions to toggle this feature. If you use DBT and have PII information encoded in your yaml metadata we will automatically import it and set it in our systems.
 * Enumerated - Mark a column as Enumerated to indicate that your source data contains categorical data, where the options in that column are limited to a finite set of potential values. For example a `country` attribute which has a fixed set of 195+ options, or a `plan` attribute which only has a couple different options. Enumerated columns will then be represented as select or multiselect experiences anywhere in the Census ecosystem where you need to interact with the values for this column, such as segmentation. Enumerated column values are cached in our system on a daily cadence, but we expose a manual refresh option within any selector if you are looking to consume a recent change.

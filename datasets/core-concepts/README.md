@@ -2,9 +2,9 @@
 
 ## Dataset Source <a href="#data-source" id="data-source"></a>
 
-Datasets require a source to be defined. The source represent the external infrastructure from which we will be reading the rows and columns for your dataset. You can learn more on how to connect a source through our [Source Documentation](broken-reference). All connected sources will appear at dataset creation time.
+Datasets require a source to be defined. The source represents the external infrastructure from which we will be reading the rows and columns for your dataset. You can learn more on how to connect a source through our [Source Documentation](broken-reference). All connected sources will appear at dataset creation time.
 
-Different data sources have different behaviors and functionality. We encode these differences through different Dataset Types. You can learn more of the specific requirements, capabilities and limitations for each within each section.&#x20;
+Different data sources have different behaviors and functionality. We encode these differences through different Dataset Types. You can learn more of the specific requirements, capabilities, and limitations for each within each section.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 

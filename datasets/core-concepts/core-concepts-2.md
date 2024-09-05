@@ -1,9 +1,9 @@
 # Relationships
 
-Datasets support the ability to be related to one another. The supported relationships are one-to-one, one-to-many, many-to-one, and many-to-many. Datasets relationships are an optional feature. However, defining relationships between datasets in Census unlocks advance functionality across the product.
+Datasets support the ability to be related to one another. The supported relationships are one-to-one, one-to-many, many-to-one, and many-to-many. Datasets relationships are an optional feature. However, defining relationships between datasets in Census unlocks advanced functionality across the product.
 
-* Enabled advance dataset segmentation and filtering off information that exists in other related datasets.
-* Enabled syncs that send data from other related datasets.
+* Enables advance dataset segmentation and filtering off information that exists in other related datasets.
+* Enables syncs that send data from other related datasets.
 * Enables creating rollup columns for a given dataset.
 
 Datasets can have many relationships defined and the relationship will appear on both related datasets once defined.
@@ -17,7 +17,7 @@ The relationship definition includes two pieces of information:
 
 To specify a Many-to-Many relationship type, use a `Join Table` type:
 
-* Any dataset can be used as a join table, not just ones that are typed `Join Table`. All the `Join Table` type does is drop the requirement of specifying a `Unique Id` for that entity since often join tables do not have unique Ids for rows.
+* Any dataset can be used as a join table, not just ones that are typed `Join Table`. All the `Join Table` type does is drop the requirement of specifying a `Unique Id` for that entity since join tables often do not have unique Ids for rows.
 * Aside from the specific many-to-many filtering use case, this change lets you filter on related datasets inside filters on related datasets. So you can now segment for things like “Pets who belong to users who have 5 purchase events in the last month”
 
 Note that Census does not check or enforce the validity of the data on either side of your relationship. Duplicate values on either side of the relationship can cause issues using the relationships used in segmentation so please make sure the relationship's data remains valid via tools like dbt testing.
