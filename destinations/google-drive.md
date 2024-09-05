@@ -31,8 +31,8 @@ That's it! You should now see your folder as an option when setting up a sync in
 ## Supported Sync Behaviors
 
 | **Object Name** | **Supported?** | **Behaviors** |
-| :--------------: | :------------: | ------------: |
-|       File      |        ✅       |   **Replace** |
+| :--------------: | :------------: | ------------ |
+|       File      |        ✅       |   Replace |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
