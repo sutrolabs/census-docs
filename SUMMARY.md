@@ -164,6 +164,7 @@
   * [Google Cloud Storage](destinations/google-cloud-storage.md)
   * [Google Datastore](destinations/google-datastore.md)
   * [Google Display & Video 360](destinations/google-dv360.md)
+  * [Google Drive](destinations/google-drive.md)
   * [Google Sheets](destinations/google-sheets.md)
   * [Heap.io](destinations/heap.io.md)
   * [Help Scout](destinations/help-scout.md)
