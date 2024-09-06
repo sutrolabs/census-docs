@@ -2,6 +2,10 @@
 
 GPT Columns enable you to dynamically generate unique content for each row in your dataset using OpenAI's GPT models. With GPT Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your GPT Column.
 
+
+
+{% embed url="https://youtu.be/5AxWR1QyCos" %}
+
 #### Example Use Cases
 
 1. Automatically generate personalized email content or messages based on customer data.
@@ -17,7 +21,7 @@ GPT Columns enable you to dynamically generate unique content for each row in yo
 
 #### How to create a GPT Column
 
-If you are a video person, watch [how to create a GPT column](https://youtu.be/Meh09uNa31g). Otherwise, follow the steps below.&#x20;
+If you are a video person, watch [how to create a GPT column](https://youtu.be/5AxWR1QyCos). Otherwise, follow the steps below.&#x20;
 
 **Step 1:** [Log into](https://app.getcensus.com/) your Census account.
 
