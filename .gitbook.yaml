@@ -17,4 +17,4 @@ redirects:
   sources/starburst-enterprise: ./sources/trino.md
   sources/starburst-galaxy: ./sources/trino.md
   misc/security-and-privacy/configuring-census-to-use-an-s3-bucket-you-control: basics/security-and-privacy/bring-your-own-blob-storage.md
-  destinations/heap-io: ./destinations/heap.io.md
+  destinations/available-destinations/heap-io: ./destinations/heap.io.md
