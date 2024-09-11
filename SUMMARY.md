@@ -13,7 +13,7 @@
   * [Quick Start](datasets/entity-resolution-invite-only/quick-start.md)
 * [Computed Columns](datasets/core-concepts-3.md)
 * [GPT Columns](datasets/gpt-columns/README.md)
-  * [Sample GPT Prompts](datasets/gpt-columns/sample-gpt-prompts.md)
+  * [GPT Prompts Recipe Book](datasets/gpt-columns/sample-gpt-prompts.md)
 * [Version Control](datasets/census-models.md)
 
 ## 📫 Syncs <a href="#basics" id="basics"></a>

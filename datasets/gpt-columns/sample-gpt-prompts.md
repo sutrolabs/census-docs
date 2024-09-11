@@ -1,18 +1,22 @@
-# Sample GPT Prompts
+# GPT Prompts Recipe Book
 
-GPT Columns enable you to dynamically generate unique content for each row in your dataset using OpenAI's GPT models. With GPT Columns, you can define a prompt and use [Liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your GPT Column.
+**Why GPT Columns?**
+
+GPT columns allow you to enrich, enhance, clean and classify data using LLMs. The potential is limitless, but we've shared our favorite prompts in this recipe book. Our team uses GPT columns to:
+
+* Enrich records with industry data, persona classifiers, or other personalization drivers.
+* Layer sentiment analysis and other LLM capabilities into our Apollo data to drive automations
+* Process large amounts of product usage data that just wouldn't be cost-effective in Salesforce or other end platforms
+* Get around cumbersome formula fields in Salesforce
+* Avoid writing complex regex to clean and format data
+
+Learn more in our interactive demo below:
+
+{% @arcade/embed flowId="dlpvULqMDw8YEz82e2ia" url="https://app.arcade.software/share/dlpvULqMDw8YEz82e2ia?variable.company_name=INSERT_VALUE_HERE&variable.first_name=INSERT_VALUE_HERE" %}
 
 Learn more about GPT Columns and how to set them up [here](./).
 
-
-
-You can do some pretty amazing stuff using the GPT columns including things like lead scoring, industry assignments, assign personalized promo codes and data clean up. GPT can cover use cases across all industries and verticals.&#x20;
-
-
-
-We will use this page to post some sample GPT prompts you can use as inspiration to create your own GPT columns.&#x20;
-
-
+Not a Census user yet? [Try GPT columns for free](https://login.getcensus.com/u/signup/identifier?state=hKFo2SBVaGhKcUwwcktoTGJRdmxlc19ZRE52aW9hNXFNMDJPYaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDZaOXp2ck9vc190dktVX0RvbjJfZERFTGxHWmFIWnMzo2NpZNkgajFnb29hYnExSEFDb000V3ZmaDJhSk5yTXlFWGZJM0E&\_gl=1\*14swtjj\*\_gcl\_aw\*R0NMLjE3MjU5MTM1NzIuQ2p3S0NBand1ZnEyQmhBbUVpd0FuWnF3OHFjYmFpWkQ5VGh5SVJjdm5uR0t5LVh1RnFUVkxvRGY1cE1HUDVUVmlMUmhORHp4eThlb19Sb0NuaE1RQXZEX0J3RQ..\*\_gcl\_au\*MTQzNDczNzM2LjE3MjIyMjQ2NDg.).
 
 ### Classify and Summarize Data
 
@@ -99,7 +103,7 @@ Activate to: Your marketing automation platforms to power personalized email nur
 
 </details>
 
-###
+
 
 ### Enrich and Enhance Records
 
@@ -130,7 +134,7 @@ Days since last purchase: {{ record['DAYS_SINCE_LAST_PURCHASE']}}
 
 <details>
 
-<summary>Assign a marketing persona based on a job title</summary>
+<summary>Add SIC codes and Industry labels to account records</summary>
 
 ```
 You are tasked with determining the industry classification for a given company based on publicly available information. The industry classification should match the Securities and Exchange Commission's (SEC) list of official standard industrial classifications (SIC).
