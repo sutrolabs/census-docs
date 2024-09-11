@@ -4,7 +4,7 @@ Datasets support the ability to define no-code calculations and aggregation from
 
 These columns can be then used as any other column in your dataset, as a sync attribute or during segmentation building.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-06-09 at 5.17.32 AM.png" alt=""><figcaption><p>Census Computed Columns using Formula</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-06-09 at 5.17.32 AM.png" alt=""><figcaption><p>Census Computed Columns using Formula</p></figcaption></figure>
 
 You can create computed columns, through the "New Computed Column" button in the Properties page of any of your datasets.&#x20;
 
@@ -30,8 +30,6 @@ For example:&#x20;
 * Number of current active admin users
 * Most frequent purchase sku
 * Average order value in the last 30 days
-* First time purchased at
-* Last login at
 
 Rollups require you to define three properties. The related dataset which to aggregate/join to, the column from this dataset to display, and the aggregation method to apply to the related values. You are also able to use our rich filtering editor to narrow down the target rows. The current supported aggregation methods are listed below. We will continue to expand this list to allow for richer operations.
 
