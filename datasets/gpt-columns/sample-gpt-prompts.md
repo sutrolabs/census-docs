@@ -513,8 +513,6 @@ You will be given a review in a non-english language and an AI-generated transla
 
 </details>
 
-
-
 <details>
 
 <summary>Standardize mailing addresses</summary>
@@ -522,6 +520,24 @@ You will be given a review in a non-english language and an AI-generated transla
 ```
 For the following address field, return the outcome in an standardized US address format. 
 Address Field: {{ record['USER_ADDRESS']}}.
+```
+
+</details>
+
+<details>
+
+<summary>Enforce Enum format to analyze data cleanly</summary>
+
+```
+Your task is to sort data into categories.
+1. Consider the data in {{record['INDUSTRIES_GPT']}}
+2. For each record, determine whether each response falls into the category of:
+-Physical product
+-Digital Product
+-Services
+-Other
+
+Sort each row into its closest match. Return only one response for each row, and return only categories that exactly match those listed above.
 ```
 
 </details>
