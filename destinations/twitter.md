@@ -102,7 +102,7 @@ To use this setting, you'll also need to include a column in your database/data 
 
 |         **Object Name** | **Supported?** | **Sync Keys**                                                       | **Behaviors** |
 | ----------------------: | :------------: | ------------------------------------------------------------------- | ------------- |
-|                Audience |        ✅       | Email, Handle, Device ID                                            | Mirror        |
+|                Audience |        ✅       | Hashed or Unhashed Email, Hashed or Unhashed Handle, Hashed or Unhashed Device ID                                            | Mirror        |
 | Mobile Conversion Event |        ✅       | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type | Send          |
 |    Web Conversion Event |        ✅       | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number | Send          |
 
