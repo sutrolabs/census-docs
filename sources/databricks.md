@@ -21,23 +21,46 @@ If you'd like to skip these steps, you can use [Databricks built-in Partner Conn
 
 ## Required Permissions
 
-If using the Advanced Sync Engine and the CENSUS schema has not already been created, please create it by running the following:
+If using the Advanced Sync Engine and the CENSUS schema has not already been created, you'll need to create the schema and grant permissions. Databricks uses a different form of authentation that most databases. When connecting to Databricks, you'll be able to use either a [Personal Access Tokens](https://docs.databricks.com/en/dev-tools/auth/pat.html) or a [Service Principal](https://docs.databricks.com/en/admin/users-groups/service-principals.html). 
+
+For Personal Access Tokens, run: 
 
 ```
 CREATE SCHEMA IF NOT EXISTS CENSUS;
-GRANT ALL PRIVILEGES ON SCHEMA CENSUS TO <USER_YOU_PLAN_CONNECT_TO_CENSUS>;
+GRANT ALL PRIVILEGES ON SCHEMA CENSUS TO `user_you_plan_use_with_pat@yourcompany.com`;
 ```
 
-Unlike many other SQL Databases, Databricks uses [Personal Access Tokens](https://docs.databricks.com/en/dev-tools/auth/pat.html) to grant external services such as Census access. You may want to create a specific user account for Census to use for auditing and access control.
+For Service Principals, run: 
+
+```
+CREATE SCHEMA IF NOT EXISTS CENSUS;
+GRANT ALL PRIVILEGES ON SCHEMA CENSUS TO `service-principal-applicationid-guid`;
+```
 
 
 ## Configuring a new Databricks connection
 
 {% embed url="https://youtu.be/RGtlCpXP-R8" %}
 
-1. In your Databricks Account console, go the [Workspaces page](https://accounts.cloud.databricks.com/workspaces). Select the workspace you'd like Census to connect to and then click **Open workspace** in the top right.
+1. First, you'll need to select which form of access credentials to use: [Service Principal](https://docs.databricks.com/en/admin/users-groups/service-principals.html) (Recommended, but a bit more work) or [Personal Access Tokens](https://docs.databricks.com/en/dev-tools/auth/pat.html).
 
-2. Now within your selected Workspace, select **Compute** from the left menu. Census can connect to a SQL Warehouse or All Purpose Cluster. You can reuse an existing compute resource, or create a new one here. Click on the Compute you've decided to use.
+    - If you're using a Service Principal, within your Databricks Account Console, go to the [User management page and Service Prinipals tab](https://accounts.cloud.databricks.com/users/serviceprincipals/).
+        1. Create a new service principal with the **Add service pricipal** button. Give it a name you'll remember such as Census. You can also reuse an existing one. 
+        2. Once created, click **Generate secret** which will create a new Client ID and Secret pair. Keep this somewhere safe as you won't be able to access it again. 
+        3. Now you'll need to add the service principal as an admin on the specific Workspace you are connecting to. In your Databricks Account console, go the [Workspaces page](https://accounts.cloud.databricks.com/workspaces). Click on the name of your workspace and go to the **Permissions** tab.
+        4. Select your new service principal and mark them as **admin** on the workspace.
+
+    - If you're using **Personal Access Token**, you can create this for yourself. Alternatively, may want to create a new specific user account for Census to use for auditing and access control.
+        1. You'll first need to navigate into the specific Workspace you are connecting to. In your Databricks Account console, go the [Workspaces page](https://accounts.cloud.databricks.com/workspaces). Select the workspace you'd like Census to connect to and then click **Open workspace** in the top right.
+        2. Clicking on your **Profile Icon** in the top right and selecting **Settings**. Then click the **Developer** option in the left settings menu and click on **Manage** next to Access Tokens. We recommend you create a new Access Token:
+            - Name: Census (or some other details)
+            - Lifetime: (clear the box) - This will prevent the token from expiring
+                ![](../.gitbook/assets/screely-1619628186696.png)
+
+
+
+2. If you're not already, go into your target workpace by visiting the [Workspaces page](https://accounts.cloud.databricks.com/workspaces) and clicking the  **Open** link next to it. Now within your selected Workspace, select **Compute** from the left menu. Census can connect to a SQL Warehouse or All Purpose Cluster. You can reuse an existing compute resource, or create a new one here. Click on the Compute you've decided to use.
+- Note: Service Principals cannot be connected to All Purpose Clusters that are in the **Single User Access Mode**.
 
 3. You'll need to collect three credentials to connect to your compute:
     - Hostname
@@ -58,18 +81,14 @@ Unlike many other SQL Databases, Databricks uses [Personal Access Tokens](https:
     spark.hadoop.fs.s3a.impl.disable.cache true
     ```
 
-5. You'll also need to create your **Personal Access Token**. You can find this by clicking on your **Profile Icon** in the top right and selecting **Settings**. Then click the **Developer** option in the left settings menu and click on **Manage** next to Access Tokens. We recommend you create a new Access Token:
-    - Name: Census (or some other details)
-    - Lifetime: (clear the box) - This will prevent the token from expiring
 
-    ![](../.gitbook/assets/screely-1619628186696.png)
-
-6. Now you're ready to add the connection to Census. Visit the [Sources page](https://app.getcensus.com/sources) in Census, and click **New Source**, selecting **Databricks** from the menu.
+5. Now you're ready to add the connection to Census. Visit the [Sources page](https://app.getcensus.com/sources) in Census, and click **New Source**, selecting **Databricks** from the menu.
     - Select the [Sync Engine](/sources/overview#sync-engines) you'd like to use. Note that this cannot be changed once the connection is created.
-    - Provide your four credentials: Hostname, Port, HTTP Path, and Access Token
+    - Provide the connection credentials: Hostname, Port, HTTP Path
+    - Select your credential type (Personal Access Token or Service Prinipcal), and provide the corresponding Access Token, or Client ID & Secret.
     - Optionally, set the Database Allow List. This will filter the SCHEMAS that appear in Census. Note that if you are using unity catalog, this filtering will apply across all catalogs.
 
-6\. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
+6. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
 
 ## Allowed IP Addresses
 
