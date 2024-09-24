@@ -34,13 +34,11 @@ For Service Principals, run:
 
 ```
 CREATE SCHEMA IF NOT EXISTS CENSUS;
-GRANT ALL PRIVILEGES ON SCHEMA CENSUS TO `service-principal-applicationid-guid`;
+GRANT ALL PRIVILEGES ON SCHEMA CENSUS TO `service-principal-clientid-guid`;
 ```
 
 
 ## Configuring a new Databricks connection
-
-{% embed url="https://youtu.be/RGtlCpXP-R8" %}
 
 1. First, you'll need to select which form of access credentials to use: [Service Principal](https://docs.databricks.com/en/admin/users-groups/service-principals.html) (Recommended, but a bit more work) or [Personal Access Tokens](https://docs.databricks.com/en/dev-tools/auth/pat.html).
 
