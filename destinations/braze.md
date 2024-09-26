@@ -44,7 +44,8 @@ You must include users.delete if you want to do the [remove option of Mirroring 
 
 * For API-triggered Campaigns: `campaigns.list` and `campaigns.trigger.send`
 * For Catalogs: All Catalogs permissions
-* This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update these permissions in the future.
+* For Subscription Group Membership: All Subscription permissions
+* This permission set may change as we add support for more Braze objects so you may want to grant more permissions now or plan to update the API key in the future.
 
 Scroll down and click **Save API Key**.
 
@@ -95,18 +96,18 @@ Census currently supports syncing to the following Braze objects.
 Census supports custom fields on both Braze User and Event objects. You can map any field from your data source to a custom field in Braze. Census will automatically create the custom field in Braze if it doesn't already exist.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Braze objects and/or behaviors.
 
 ### Arrays, Objects, and Array of Object fields
 
-Census supports [sending structured data](../basics/data-defining/defining-source-data/structured-data.md) such as [Arrays, Objects, and Arrays of Objects to Braze]((https://www.braze.com/docs/user_guide/data_and_analytics/custom_data/custom_attributes/nested_custom_attribute_support#api-request-body)). The behaviors of these fields are a bit different.
+Census supports [sending structured data](../basics/data-defining/defining-source-data/structured-data.md) such as [Arrays, Objects, and Arrays of Objects to Braze](\(https:/www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/nested\_custom\_attribute\_support/#api-request-body\)). The behaviors of these fields are a bit different.
 
 * Arrays are really arrays of single values (e.g. `["VIP", "New User Last 30 Days", "Promotion Candidate"]`). If your array contains mixed values including integers and booleans, Braze will convert all of them to strings.
 * Objects are key-value pairs (e.g. `{"key": "value"}`). Census will send the object as a stringified JSON object.
-* Arrays of Objects are arrays of key-value pairs (e.g. `[{"key": "value"}, {"key2": "value2"}]`). These have [special behavior in Braze](https://www.braze.com/docs/user_guide/data_and_analytics/custom_data/custom_attributes/array_of_objects). To limit datapoint writes, Census will do a deep diff of the objects in the array and only send changes. Each object in the array must have an obvious ID field which can be used to calculate the diff. The ID field **must** be unique, and either an integer or a string. Census will look for a field called `"id"` first. If one isn't found, it will attempt to guess by looking for fields that are unique integers/strings.
+* Arrays of Objects are arrays of key-value pairs (e.g. `[{"key": "value"}, {"key2": "value2"}]`). These have [special behavior in Braze](https://www.braze.com/docs/user\_guide/data\_and\_analytics/custom\_data/custom\_attributes/array\_of\_objects). To limit datapoint writes, Census will do a deep diff of the objects in the array and only send changes. Each object in the array must have an obvious ID field which can be used to calculate the diff. The ID field **must** be unique, and either an integer or a string. Census will look for a field called `"id"` first. If one isn't found, it will attempt to guess by looking for fields that are unique integers/strings.
 * [User Push Tokens](https://www.braze.com/docs/api/objects\_filters/user\_attributes\_object#push-token-import) are a special type of Array of Objects - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
 
 ### Mirror Mode Options
@@ -184,7 +185,6 @@ API Triggered Campaign and Canvas Entries are useful for triggering transactiona
 You can [read more about Braze API-Triggered Campaigns](https://www.braze.com/docs/user\_guide/engagement\_tools/campaigns/building\_campaigns/delivery\_types/api\_triggered\_delivery/) and Canvas Entries in their documentation.
 
 <figure><img src="../.gitbook/assets/Braze Options.png" alt=""><figcaption></figcaption></figure>
-
 
 ## Data Points
 
