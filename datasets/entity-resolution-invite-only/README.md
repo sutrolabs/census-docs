@@ -40,11 +40,23 @@ You can create complex rules using AND and OR operators across the rules.
 
 #### Fuzzy Match
 
-Fuzzy match uses machine learning to map similar field values. For e.g. two company records with company names as Acme HQ and ACME Europe might be same companies. You can use Fuzzy match to detect these into same companies.
+Fuzzy matching is a technique used to identify and match similar strings that may not be identical. In Census, we want to ensure you always get a predictable & deterministic match. We use [Jaro-Winkler similarity](https://en.wikipedia.org/wiki/Jaro–Winkler_distance).
 
-Census also allows you to select confidence level for the Fuzzy Match. You can choose between low, medium and high confidence levels.
+Jaro-Winkler similarity compares two strings to determine how similar they are, taking into account variations such as typos, order differences, and abbreviations. This algorithm is especially effective in handling messy real-world data and is commonly used in places like the US Census 🙂.
 
+We provide three customizable thresholds for determining similarity:
 
+- Low Confidence (0.6):
+  - Matches strings with significant differences.
+  - Ideal for broad, preliminary matches to capture potential duplicates.
+- Medium Confidence (0.8):
+  - Balances accuracy and inclusivity.
+  - Suitable for identifying likely duplicates while allowing minor variations.
+- High Confidence (0.9):
+  - Requires strict similarity for matches.
+  - Best for high-accuracy scenarios, minimizing false positives.
+
+When building your match rules, you can choose whether what matching method you want to use for each column separately. You can mix exact match and fuzzy match rules in the same configuration.
 
 #### Merge Rules
 
@@ -68,19 +80,8 @@ Column Overrides help you override column values on the winning record. You can 
 
 
 
-#### Map Rules (Coming Soon)
-
-You can choose multiple datasets to merge into a resolved dataset through de-duplication and association.
-
-Map Rules help your map columns from your source datasets into your resolved dataset.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-30 at 10.26.26 AM.png" alt=""><figcaption></figcaption></figure>
-
 #### Materialization
 
-Entity Resolution generates a new dataset that's written back to your source warehouse under the Census Schema.
+Entity Resolution generates a new dataset that is written back to your data warehouse under the Census Schema.
 
-
-
-Entity Resolution is supported on Snowflake, BigQuery, Redshift and Postgress for now with support for other warehouses and data sources coming soon.
-
+Entity Resolution is supported on Snowflake, BigQuery, Redshift and Postgres with support for other warehouses and data sources coming soon.
