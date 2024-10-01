@@ -6,7 +6,7 @@ Sync Tracking provides row-level observability into every sync run, along with t
 * **Search** for a particular record by its by primary identifier
 * **Download** samples of the records
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For each record, Census will display
 
@@ -25,4 +25,4 @@ By default, Census will retain row-level logs and make them available to you for
 
 To use Sync Tracking, navigate to the [sync-history.md](sync-history.md "mention") page on the relevant sync. If a sync run falls within the 14-day retention period, a "View Records" button will be available. Click this button to open up the Sync Tracking modal and access detailed record information.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

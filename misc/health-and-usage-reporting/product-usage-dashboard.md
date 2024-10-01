@@ -21,11 +21,11 @@ With the additional ability to:
 *   Filter the entire dashboard by any of your Workspaces\
 
 
-    <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Slice the All Usage & Billable Usage graphs by either Workspace, Sync Start Reason, Destination Type, or Source Type\
 
 
-    <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   See all of your Active Destinations, Active Sources, and Active Audience Hub Workspaces in both chart and tabular form\
 
 
