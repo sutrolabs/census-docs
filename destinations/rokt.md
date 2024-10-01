@@ -17,8 +17,6 @@ description: This page describes how to use Census with Rokt.
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-s
-
 | **Object Name** | **Supported?** | **Sync Keys**                  | **Behaviors**            |
 | --------------: | :------------: | ------------------------------ | ------------------------ |
 |           Event |        ✅       | Any unique ID                  | Send                     |
