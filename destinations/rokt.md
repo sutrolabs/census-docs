@@ -19,16 +19,22 @@ description: This page describes how to use Census with Rokt.
 
 s
 
-| **Object Name** | **Supported?** | **Sync Keys**                  | **Behaviors**    |
-| --------------: | :------------: | ------------------------------ | ---------------- |
-|           Event |        ✅       | Any unique ID                  | Send             |
-|        Audience |        ✅       | Email, MD5 Email, SHA256 Email | Update or Create |
+| **Object Name** | **Supported?** | **Sync Keys**                  | **Behaviors**            |
+| --------------: | :------------: | ------------------------------ | ------------------------ |
+|           Event |        ✅       | Any unique ID                  | Send                     |
+|        Audience |        ✅       | Email, MD5 Email, SHA256 Email | Update or Create, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Rokt objects and/or behaviors.
+
+### Audiences
+
+To specify the list to which you want to add members, its name has to be mapped to the `List` field in Rokt. This means it should either be available in the source, or set as a Constant Value.
+
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 ## Need help connecting to Rokt?
 
