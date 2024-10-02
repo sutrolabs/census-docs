@@ -16,17 +16,7 @@ This guide shows you how to use Census to connect your Notion account to your da
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Notion account ready.
-* Have the proper credentials to access your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
+* Have the proper credentials to access your data source. See our docs for each supported data source for further information.
 
 ### Step 1: Connect Notion
 
@@ -50,7 +40,7 @@ We support syncing data to Tables in Notion. ​
 
 | **Object Name** | **Supported?** | **Sync Keys** |
 | :-------------: | :------------: | :-----------: |
-|      Table      |        ✅       |     Title     |
+|      Table      |        ✅      |     Title     |
 
 ## Supported Sync Behaviors
 
@@ -60,8 +50,9 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 |        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :---------: |
-|           **Update** |        ✅       |     All     |
-| **Update or Create** |        ✅       |     All     |
+|           **Update** |        ✅      |     All     |
+| **Update or Create** |        ✅      |     All     |
+|           **Mirror** |        ✅      |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Notion.
 
