@@ -10,9 +10,14 @@ Reddit Ads is an advertising platform that allows businesses to engage with Redd
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Reddit Ads** from the menu.
-3. Proceed through the OAuth flow to connect your Reddit Ads account to Census.
 
-<figure><img src="../.gitbook/assets/reddit-ads.png" alt=""><figcaption><p>Connect your Reddit Ads account to Census.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+
+3. Enter your Reddit Ad Account ID if you have one. This should match what you see under Assets > Ad Accounts in your Reddit account. Make sure to include the prefix (e.g., `t2_abc123`). If an ID is not provided, Census will default to the parent account's ID.&#x20;
+
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+
+4. Click Connect and proceed through the OAuth flow to connect your Reddit Ads account to Census.
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
