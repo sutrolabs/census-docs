@@ -20,7 +20,7 @@ description: This page describes how to use Census with Emarsys.
 
 | **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
 | --------------: | :------------: | ---------------- | --------------|
-| Contact | ✅ | Email, ID (Update Only) | Update or Create, Update Only |
+| Contact | ✅ | Email, ID&nbsp;(Update Only) | Update or Create, Update Only |
 | <p>Contact & Contact List<br><a href="../basics/core-concept/audience-syncs/">Audience Sync</a></p> | ✅ | Email | Mirror |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Emarsys objects and/or behaviors.
