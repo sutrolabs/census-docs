@@ -79,7 +79,9 @@ Log into Google Cloud Console and navigate to IAM & Admin -> Service Accounts
    3. Check _Enforce Public Access Prevention_
    4. Access Control: Uniform
    5. Leave versioning, and encryption on defaults.
-   6. Retention: Choose an automatic retention period to remove stale data from the bucket that is more than X days old. Census suggests 14 days. As this bucket is used during sync runs, we strongly recommend your retention remains _at least_ 3 days.
+   6. Lifecycle Policy: Lifecycle rules should be enabled to:
+      1. **Action**: Delete object
+      2. **Object condition**: 14+ days since object was created `Name matches prefix 'sync-unloads/'`.
 5. Once the bucket has been created, navigate to _Permissions_
 6. Grant your Service Account the permissions
    1. Storage Object User
