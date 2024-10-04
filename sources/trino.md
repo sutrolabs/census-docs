@@ -17,6 +17,18 @@ Census can use Trino (and any supported Trino catalog) as a source. Census has b
   * (Optional) If your Trino instance does not run on port 443, enter the port here. Census requires a TLS connection to Trino.
 * You’re all set! Head over to the **Syncs** page to activate your data.
 
+#### **How to find your Hostname in Starburst:**&#x20;
+
+Census utilizes JDBC in order to connect to Trino/Starburst. In order to get the correct hostname to input into your Census connection you will want to follow the instructions [linked here in Starburst's documentation](https://docs.starburst.io/clients/gather-connection-information.html#jdbc-connections) to get your JDBC url for your desired cluster.
+
+Once you have the JDBC url you'll only need to input the subdomain into the Census hostname field.&#x20;
+
+**Example JDBC url:** \
+`jdbc:trino://census-example-cluster.trino.galaxy.starburst.io:443?user=mytestuser@getcensus.com/accountadmin`\
+&#x20;\
+**Hostname value to input into Census**\
+`census-example-cluster.trino.galaxy.starburst.io`
+
 ## :gear: Using the Advanced Sync Engine
 
 Trino supports both of Census' [Sync Engines](overview.md#sync-engines): Basic and Advanced. In order to use the Advanced Sync Engine with Trino, all of the following must be true:
