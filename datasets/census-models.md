@@ -1,6 +1,6 @@
-# Version Control
+# Version control
 
-Datasets provide version control tacking to give you a historical understanding of how your dataset definition has changed. You can view your Dataset versions under the Activity tab. You can track:
+Datasets provide version control tracking to give you a historical understanding of how your dataset definition has changed. You can view your Dataset versions under the **Activity** tab. You can track:
 
 * The user made a change
 * The time when the change was made

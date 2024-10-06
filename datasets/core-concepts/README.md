@@ -1,4 +1,4 @@
-# Core Concepts
+# Core concepts
 
 ## Dataset source <a href="#data-source" id="data-source"></a>
 

@@ -1,4 +1,4 @@
-# Columns & Annotations
+# Columns & annotations
 
 The dataset **Overview** page lists all columns in the source with their type and extra metadata for each column like **PII** and **Enumerated**.
 

@@ -1,4 +1,4 @@
-# Type & Property Mappings
+# Type & property mappings
 
 Your data oftentimes describes standard universal concepts such as people, organizations or time-based events. Datasets currently support several specific dataset types to help you encode this information into Census.
 

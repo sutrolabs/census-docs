@@ -10,7 +10,7 @@ You can create computed columns via the "New Computed Column" button in the Prop
 
 Computed Columns support following operations: Lookup Columns, Rollup Columns, and Equation Columns.
 
-## Lookup Columns&#x20;
+## Lookup Columns
 
 Lookup Columns allow you to pull in a value into your dataset from any other dataset related through a  one-to-one or many-to-one mapping.
 
@@ -54,4 +54,3 @@ For example:
 ## GPT Columns
 
 Refer to the dedicated [documentation for GPT Columns](gpt-columns/) to learn about defining these AI-powered columns for your datasets.
-
