@@ -8,9 +8,10 @@ Microsoft Fabric is an all-in-one analytics platform created for businesses and 
 
 The process of requires a number of steps:
 
-    1. Creating a service principal
-    2. Granting that service principal access to a SQL endpoint resource within Fabric
-    3. Creating a Census connection using that service principal and SQL endpoint
+1. Creating a service principal
+2. Granting that service principal access to your Fabric workspace
+3. Selecting (or provisioning) the data resource within the workspace
+4. Creating a Census connection using that service principal and SQL endpoint
 
 ## Creating a service principal
 
