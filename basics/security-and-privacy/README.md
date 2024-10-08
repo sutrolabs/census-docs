@@ -101,6 +101,7 @@ Also, the following data sources _only_ support Basic Sync Engine (as of March 2
 * HTTP Request
 * Google Sheets
 * Materialize
+* Microsoft Fabric
 * MotherDuck
 * MySQL
 * SingleStore
