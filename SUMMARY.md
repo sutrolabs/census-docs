@@ -73,6 +73,7 @@
   * [Greenplum](sources/greenplum.md)
   * [HTTP Request](sources/http-request.md)
   * [Materialize](sources/materialize.md)
+  * [Microsoft Fabric](sources/microsoft-fabric.md)
   * [MotherDuck](sources/motherduck.md)
   * [MySQL](sources/mysql.md)
   * [PostgreSQL](sources/postgres.md)
