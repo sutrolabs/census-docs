@@ -105,9 +105,9 @@ For a string example of a column in Snowflake:
 
 ## Supported sync behaviors
 
-|     **Behavior** | **Supported?** | **Objects** |
-| ---------------: | :------------: | :---------: |
-| Update or Create |        ✅       |     All     |
+|                  **Behavior** | **Supported?** | **Objects** |
+| ----------------------------: | :------------: | :---------: |
+| Update or Create, Update Only |        ✅       |     All     |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
