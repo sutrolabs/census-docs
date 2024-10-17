@@ -57,9 +57,9 @@ If you are configuring Databricks as a source (to query data from Databricks to 
 
 ## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name** | **Supported?** | **Sync Keys**                                       | **Behaviors**                      |
-| --------------: | :------------: | --------------------------------------------------- | ---------------------------------- |
-|           Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add |
+| **Object Name** | **Supported?** | **Sync Keys**                            | **Behaviors**                      |
+| --------------: | :------------: | ---------------------------------------- | ---------------------------------- |
+|           Table |        ✅       | Any columns that are integers or strings | Update or Create, Update Only, Add |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../../basics/core-concept/#sync-behaviors) documentation.
