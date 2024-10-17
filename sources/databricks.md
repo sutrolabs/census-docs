@@ -28,16 +28,12 @@ For Personal Access Tokens, run:
 
 ```
 CREATE SCHEMA IF NOT EXISTS CENSUS;
-GRANT ALL PRIVILEGES ON SCHEMA CENSUS TO `user_you_plan_use_with_pat@yourcompany.com`;
--- If you want to explicitly grant the required permissions instead of using GRANT ALL PRIVILEGES you can use the following command:
--- GRANT USE SCHEMA, SELECT, CREATE TABLE, MODIFY ON SCHEMA CENSUS.CENSUS TO `user_you_plan_use_with_pat@yourcompany.com`;
-```
 
-For Service Principals, run:
+-- For personal access tokens, use an email address:
+GRANT USE SCHEMA, SELECT, CREATE TABLE, MODIFY ON SCHEMA [your_default_catalog].CENSUS TO `user_you_plan_use_with_pat@yourcompany.com`;
 
-```
-CREATE SCHEMA IF NOT EXISTS CENSUS;
-GRANT ALL PRIVILEGES ON SCHEMA CENSUS TO `service-principal-clientid-guid`;
+-- For service principals, use the client ID:
+GRANT USE SCHEMA, SELECT, CREATE TABLE, MODIFY ON SCHEMA [your_default_catalog].CENSUS TO `service-principal-clientid-guid`;
 ```
 
 ## Configuring a new Databricks connection
