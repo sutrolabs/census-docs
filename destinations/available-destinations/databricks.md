@@ -27,8 +27,8 @@ Census will require the following permissions on the tables you wish to sync to:
 ### Configuring a new Databricks destination
 
 1. First, you'll need to select which form of access credentials to use: [Service Principal](https://docs.databricks.com/en/admin/users-groups/service-principals.html) (recommended, but a bit more work) or [Personal Access Tokens](https://docs.databricks.com/en/dev-tools/auth/pat.html).
-   * If you're using a Service Principal, within your Databricks Account Console, go to the [User management page and Service Prinipals tab](https://accounts.cloud.databricks.com/users/serviceprincipals/).
-     1. Create a new service principal with the **Add service pricipal** button. Give it a name you'll remember such as Census. You can also reuse an existing one.
+   * If you're using a Service Principal, within your Databricks Account Console, go to the [User management page and Service Principals tab](https://accounts.cloud.databricks.com/users/serviceprincipals/).
+     1. Create a new service principal with the **Add service principal** button. Give it a name you'll remember such as Census. You can also reuse an existing one.
      2. Once created, click **Generate secret** which will create a new Client ID and Secret pair. Keep this somewhere safe as you won't be able to access it again.
      3. Now you'll need to add the service principal as an admin on the specific Workspace you are connecting to. In your Databricks Account console, go the [Workspaces page](https://accounts.cloud.databricks.com/workspaces). Click on the name of your workspace and go to the **Permissions** tab.
      4. Select your new service principal and mark them as **admin** on the workspace.
@@ -37,7 +37,7 @@ Census will require the following permissions on the tables you wish to sync to:
      2. Clicking on your **Profile Icon** in the top right and selecting **Settings**. Then click the **Developer** option in the left settings menu and click on **Manage** next to Access Tokens. We recommend you create a new Access Token:
         * Name: Census (or some other details)
         * Lifetime: (clear the box) - This will prevent the token from expiring ![](../../.gitbook/assets/screely-1619628186696.png)
-2. If you're not already, go into your target workpace by visiting the [Workspaces page](https://accounts.cloud.databricks.com/workspaces) and clicking the **Open** link next to it. Now within your selected Workspace, select **Compute** from the left menu. Census can connect to a SQL Warehouse or All Purpose Cluster. You can reuse an existing compute resource, or create a new one here. Click on the Compute you've decided to use.
+2. If you're not already, go into your target workspace by visiting the [Workspaces page](https://accounts.cloud.databricks.com/workspaces) and clicking the **Open** link next to it. Now within your selected Workspace, select **Compute** from the left menu. Census can connect to a SQL Warehouse or All Purpose Cluster. You can reuse an existing compute resource, or create a new one here. Click on the Compute you've decided to use.
 
 * Note: Service Principals cannot be connected to All Purpose Clusters that are in the **Single User Access Mode**.
 
@@ -54,7 +54,7 @@ Census will require the following permissions on the tables you wish to sync to:
     ![](../../.gitbook/assets/screely-1619627622845.png)
 4. Now you're ready to add the connection to Census. Visit the [Destinations](https://app.getcensus.com/destinations) page in Census, and click **New Destination**, selecting **Databricks** from the menu.
    * Provide the connection credentials: Hostname, Port, HTTP Path
-   * Select your credential type (Personal Access Token or Service Prinipcal), and provide the corresponding Access Token, or Client ID & Secret.
+   * Select your credential type (Personal Access Token or Service Principal), and provide the corresponding Access Token, or Client ID & Secret.
    * Optionally, set the Catalog and Schema Allow lists. This will filter what Catalogs and Schemas  appear in Census. Note that if you are using Unity Catalog, this filtering will apply across all catalogs.
 5. Click **Connect**.
 
