@@ -20,6 +20,10 @@ In this guide, we will show you how to connect Census to Databricks as a destina
 If you are configuring Databricks as a source (to query data from Databricks to sync elsewhere), that process is documented separately here: [Databricks as a Source](https://docs.getcensus.com/sources/available-sources/databricks)
 {% endhint %}
 
+### Permissions
+
+Census will require the following permissions on the tables you wish to sync to: `SELECT`, `MODIFY`.
+
 ### Configuring a new Databricks destination
 
 1. First, you'll need to select which form of access credentials to use: [Service Principal](https://docs.databricks.com/en/admin/users-groups/service-principals.html) (recommended, but a bit more work) or [Personal Access Tokens](https://docs.databricks.com/en/dev-tools/auth/pat.html).
@@ -33,7 +37,6 @@ If you are configuring Databricks as a source (to query data from Databricks to 
      2. Clicking on your **Profile Icon** in the top right and selecting **Settings**. Then click the **Developer** option in the left settings menu and click on **Manage** next to Access Tokens. We recommend you create a new Access Token:
         * Name: Census (or some other details)
         * Lifetime: (clear the box) - This will prevent the token from expiring ![](../../.gitbook/assets/screely-1619628186696.png)
-   * Census will require the following permissions on the tables you wish to sync to: `SELECT`, `MODIFY`.
 2. If you're not already, go into your target workpace by visiting the [Workspaces page](https://accounts.cloud.databricks.com/workspaces) and clicking the **Open** link next to it. Now within your selected Workspace, select **Compute** from the left menu. Census can connect to a SQL Warehouse or All Purpose Cluster. You can reuse an existing compute resource, or create a new one here. Click on the Compute you've decided to use.
 
 * Note: Service Principals cannot be connected to All Purpose Clusters that are in the **Single User Access Mode**.
