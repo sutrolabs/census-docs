@@ -62,7 +62,7 @@ Attio supports two syntaxes for [writing name values](https://developers.attio.c
     * Liquid example:
 
     ```liquid
-    "name": "{{ {{ record ['last_name'] }}, record['first_name'] }}"
+    "name": "{{ record ['last_name'] }}, {{ record['first_name'] }}"
     ```
 2.  Object
 
