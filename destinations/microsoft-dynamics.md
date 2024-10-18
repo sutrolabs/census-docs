@@ -4,6 +4,8 @@ description: This page describes how to use Census with Microsoft Dynamics.
 
 # Microsoft Dynamics
 
+Microsoft Dynamics 365 is a cloud-based suite of enterprise resource planning (ERP) and customer relationship management (CRM) applications designed to streamline business processes and improve customer interactions. Census can sync your data to its integrated modules for sales, customer service, finance, operations, marketing, and more, enabling you to make data-driven decisions and enhance overall efficiency.
+
 ## Getting Started
 
 This guide shows you how to use Census to connect your Microsoft Dynamics account to your data warehouse and create your first sync.
@@ -12,17 +14,6 @@ This guide shows you how to use Census to connect your Microsoft Dynamics accoun
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Microsoft Dynamics account ready.
-* Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
-  * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
-  * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](https://docs.getcensus.com/sources/mysql)
-  * [Postgres](https://docs.getcensus.com/sources/postgres)
-  * [Redshift](https://docs.getcensus.com/sources/redshift)
-  * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 ### Step 1: Connect Microsoft Dynamics
 
@@ -114,6 +105,33 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Microsoft Dynamics.
+
+## MS App Approval Flow
+
+To use Census with Dynamics, your Dynamics user must be able to request to request admin approval for apps. The following will walk you through the approval workflow in Microsoft Entra.
+
+1.  \[ADMIN] Configure your Admin settings in [Entra](https://entra.microsoft.com/), so users can request admin consent to apps. This is found after navigating to Enterprise applications > Consent and permissions > Admin content settings.
+
+    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+2.  \[USER] Add Microsoft Dynamics as a destination in Census and go through the OAuth flow. At the end, you will be prompted to enter a justification and request for access.
+
+
+
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+3.  \[ADMIN] Find the approval request in [Entra](https://entra.microsoft.com/). Approval requests can be found after navigating to Enterprise applications > Admin consent requests.
+
+
+
+    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+4.  \[ADMIN] Click on the approval request, then click on Review permissions and consent.
+
+    <figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+5.  \[ADMIN] A popup will prompt you to select a Microsoft Account. After selecting, approve the request.
+
+    <figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+6. \[USER] Re-add the destination and complete the OAuth flow in Census.
 
 ## Need help connecting to Microsoft Dynamics?
 

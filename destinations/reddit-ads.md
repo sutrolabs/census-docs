@@ -49,15 +49,15 @@ Reddit will only accept hashed values for Custom Audience sync keys. Census will
 
 1. Select Custom Audience Users as the destination.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 2. Select your Sync Key.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 3. Select an audience. You can select from existing audiences in the dropdown or create a new one. You cannot create an audience with the same name as an existing one.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Need help connecting to Reddit Ads?
 

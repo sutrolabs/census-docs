@@ -1,4 +1,4 @@
-# Core concepts
+# Core Concepts
 
 ## Dataset source <a href="#data-source" id="data-source"></a>
 
@@ -6,7 +6,7 @@ Datasets require a source to be defined. The source represents the external infr
 
 Different data sources have different behaviors and functionality. We encode these differences through different **Dataset Types**. You can learn more of the specific requirements, capabilities, and limitations for each within each section.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once you've created a dataset, you can see & manage the source information on the **Dataset Overview** page. You cannot change the source after the dataset is created, but some attributes can be (eg. you can edit the queries to the source defined in Census).
 

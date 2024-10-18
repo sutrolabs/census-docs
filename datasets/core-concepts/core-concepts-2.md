@@ -13,7 +13,7 @@ The relationship definition includes two pieces of information:
 * The type of relationship - Specify Many-to-One or One-to-Many relationship types here. These can be used to indicate when an dataset is "owned" or "belongs to" one thing, or when an dataset has many "children".
 * The matching identifiers - The columns that contain identifiers that should match (be equivalent) on both sides of the relationship. In database terms, this is the primary key and foreign key that would sit on either side of a JOIN condition.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To specify a Many-to-Many relationship type, use a `Join Table` type:
 

@@ -32,7 +32,7 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 To specify the list to which you want to add members, its name has to be mapped to the `List` field in Rokt. This means it should either be available in the source, or set as a Constant Value.
 
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Need help connecting to Rokt?
 
