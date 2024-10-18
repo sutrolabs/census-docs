@@ -106,7 +106,7 @@ Then add a policy to the role granting limited access to the S3 bucket:
 ```
 aws iam put-role-policy --role-name census-data-warehouse-client \
   --policy-name census-data-warehouse-client --policy-document \
-  '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":["s3:GetBucketLocation","s3:GetObject","s3:HeadBucket","s3:DeleteObject","s3:ListBucket","s3:PutObject"],"Resource":["arn:aws:s3:::'$BUCKET_NAME'/*","arn:aws:s3:::'$BUCKET_NAME'"]}]}'
+  '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":["s3:GetBucketLocation","s3:GetObject","s3:DeleteObject","s3:ListBucket","s3:PutObject"],"Resource":["arn:aws:s3:::'$BUCKET_NAME'/*","arn:aws:s3:::'$BUCKET_NAME'"]}]}'
 ```
 
 ### 5. Finishing up
