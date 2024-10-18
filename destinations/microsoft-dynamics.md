@@ -13,7 +13,7 @@ This guide shows you how to use Census to connect your Microsoft Dynamics accoun
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Microsoft Dynamics account ready.
+* Have your Microsoft Dynamics account [ready](microsoft-dynamics.md#ms-app-approval-flow).
 
 ### Step 1: Connect Microsoft Dynamics
 
