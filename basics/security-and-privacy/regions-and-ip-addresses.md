@@ -21,11 +21,17 @@ By default, Census will run services with US-based infrastructure. Contact suppo
 
 #### Setting up
 
-To view your workspace's current region, navigate to the [Settings > General page](https://app.getcensus.com/settings/general) in your Census account. You will find your region identified under **"Organization region"**.
+To view your organization's current region, navigate to the [Settings > General page](https://app.getcensus.com/settings/general) in your Census account. You will find your region identified under **"Organization region"**.
 
 If your data source or self-hosted destinations are behind a firewall, you will need to allowlist [Census's IP Addresses](regions-and-ip-addresses.md#ip-addresses) associated with your region.
 
-![This workspace's syncs run in the EU.](<../../.gitbook/assets/screely-1660744037815 (1).png>)
+![This organization's syncs run in the EU.](<../../.gitbook/assets/screely-1660744037815 (1).png>)
+
+Each workspace can have its own region, which defaults to the organization’s region. You can find the workspace region on the [Settings > General page](https://app.getcensus.com/settings/general). Contact support to request to use another region by contacting [support@getcensus.com](mailto:support@getcensus.com).
+
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption><p>The workspace's syncs run in the US</p></figcaption></figure>
+
+Similarly, each sync source can perform syncs in its own designated region.
 
 #### During Syncs
 
