@@ -99,10 +99,10 @@ We currently support all objects of [Customer.io's core API.](https://customer.i
 Make sure you know what identifiers are used in your Customer.io Workspace!
 {% endhint %}
 
-Customer.io strongly prefers the ID field to be used as the identifier for a Person record and recommends using your internal ID when possible. If you plan to use the email field, make sure your workspace has enabled [Using email as an identifier](https://customer.io/docs/workspaces/#migrate-workspace). You can read more about [Customer.io's identifier guidelines here](https://customer.io/docs/data-mapping-guide#describing-users-with-customer-attributes).
+Customer.io strongly prefers the ID field to be used as the identifier for a Person record and recommends using your internal ID when possible. If you plan to use the email field, make sure your workspace has enabled [Using email as an identifier](https://docs.customer.io/accounts-and-workspaces/workspaces/#migrate-workspace).
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](broken-reference/) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Customer.io objects and/or behaviors

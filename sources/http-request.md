@@ -8,7 +8,7 @@ description: >-
 
 ## Background
 
-For certain usecases, the HTTP Request source is the easiest way of getting data to Census for activation. If you have a web application that is generating events or are tracking web events via a service like Segment or Jitsu, you can easily forward them via a webhook to Census and then route them to any [supported destination](available-sources/broken-reference/).
+For certain usecases, the HTTP Request source is the easiest way of getting data to Census for activation. If you have a web application that is generating events or are tracking web events via a service like Segment or Jitsu, you can easily forward them via a webhook to Census and then route them to any [supported destination](../destinations/available-destinations).
 
 ## Initial Setup
 

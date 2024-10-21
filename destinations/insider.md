@@ -18,7 +18,7 @@ You should now be ready to start creating audiences in Insider!
 |                                                                                                                **Object Name** | **Supported?** |       **Sync Keys**       |         **Behaviors**         |
 | -----------------------------------------------------------------------------------------------------------------------------: | :------------: | :-----------------------: | :---------------------------: |
 |                                                                                                                          Users |        ✅       | Email, Phone Number, UUID | Update or Create, Update Only |
-| <p>Events<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       |      Unique Event ID      |              Send             |
+| <p>Events<br><a href=".../basics/defining-source-data/events#defining-event-syncs">Event Sync</a></p> |        ✅       |      Unique Event ID      |              Send             |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.

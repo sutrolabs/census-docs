@@ -40,7 +40,7 @@ Census requires your Totango API key and Service ID to send data. Before we can 
 2. At the bottom of the dropdown copy the Service Id which will be formatted in three parts SP-\<Service Id>-\<Instance>. For example: SP-25001-01
 3. Copy the Service Id portion only into the Census connection (e.g. 25001 rather than the full SP-25001-01)
 
-For additional information on finding Totango credentials you can find instructions in the [Totango documentation](https://support.totango.com/hc/en-us/articles/203036939-Where-can-I-find-my-Totango-Token).
+For additional information on finding Totango credentials you can find instructions in the [Totango documentation](https://support.totango.com/hc/en-us/articles/203036939-Personal-Access-Token-and-Service-ID).
 
 ### 2. Connect Totango
 

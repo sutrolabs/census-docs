@@ -29,8 +29,8 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 
 Census does not automatically normalize PII fields sent to Snapchat. When providing values to Census, please apply the normalization specified by Snapchat:
 
-* [Conversion Events](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene)
-* [Customer List](https://marketingapi.snapchat.com/docs/#customer-lists)
+* [Conversion Events](https://developers.snap.com/api/marketing-api/Conversions-API/BestPractices)
+* [Customer List](https://developers.snap.com/api/marketing-api/Ads-API/customer-lists)
 
 Census also supports passing prehashed PII fields directly to Snapchat for increased data security.
 

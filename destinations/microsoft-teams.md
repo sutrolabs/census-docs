@@ -11,8 +11,8 @@ description: This page describes how to use Census with Microsoft Teams.
 ### 📋 Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Slack account ready.
-* Have the proper credentials to access to your data source. See our [docs](broken-reference/) for each supported data source for further information.
+* Have your Teams account ready.
+* Have the proper credentials to access to your data source. See our [docs](../sources/available-sources) for each supported data source for further information.
 
 ## 1️⃣ Connect Census to Teams
 
@@ -22,7 +22,7 @@ If you are not already logged in to Teams, you will be redirected to a page to l
 
 ## 2️⃣ Connect Census to your data source
 
-See our [docs](broken-reference/) for each supported data source for further information.
+See our [docs](../sources/available-sources) for each supported data source for further information.
 
 ## 3️⃣ Create your first Census model
 

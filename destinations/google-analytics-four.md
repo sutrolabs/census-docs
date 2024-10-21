@@ -60,7 +60,7 @@ Learn about all of our sync behaviors in [Core Concepts](../basics/core-concept/
 
 |                                                                                                          **Object Name** | **Supported?** |               **Sync Keys**               | **Behavior**                                                                                     |
 | -----------------------------------------------------------------------------------------------------------------------: | :------------: | :---------------------------------------: | ------------------------------------------------------------------------------------------------ |
-| <p>Event<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event</a></p> |        ✅       |              Unique Event ID              | Send                                                                                             |
+| [Event](../basics/data-defining/defining-source-data/events#defining-event-syncs) |        ✅       |              Unique Event ID              | Send                                                                                             |
 |                                                                                                          User Properties |        ✅       | <p>Client ID or</p><p>App Instance ID</p> | <p>Update Only<br><em><mark style="color:orange;">(ID must already exist in GA4)</mark></em></p> |
 
 {% hint style="info" %}

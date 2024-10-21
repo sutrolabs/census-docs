@@ -17,7 +17,7 @@ description: This page describes how to use Census with Sprig.
 
 | **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**    |
 | --------------: | :------------: | --------------------- | ---------------- |
-|           <p>Event<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Any unique identifier | Send             |
+|           <p>Event<br><a href="../basics/defining-source-data/events#defining-event-syncs">Event Sync</a></p> |        ✅       | Any unique identifier | Send             |
 |            User |        ✅       | User ID               | Update or Create |
 
 {% hint style="info" %}

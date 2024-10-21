@@ -18,10 +18,10 @@ description: This page describes how to use Census with Emarsys.
 
 ## Supported Objects and Behaviors
 
-|                                                                                          **Object Name** | **Supported?** | **Sync Keys**                                                                                                               | **Behaviors**                 |
-| -------------------------------------------------------------------------------------------------------: | :------------: | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-|                                                                                                  Contact |        ✅       | Any [indexed field](https://dev.emarsys.com/docs/core-api-reference/75f3acc2c94dc-concepts#keya-namekeya), ID (Update Only) | Update or Create, Update Only |
-| <p>Contact &#x26; Contact List<br><a href="../basics/core-concept/audience-syncs/">Audience Sync</a></p> |        ✅       | Email                                                                                                                       | Mirror                        |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
+| --------------: | :------------: | ------------- | ------------- |
+|  Contact        |        ✅      | Any [indexed field](https://dev.emarsys.com/docs/core-api-reference/75f3acc2c94dc-concepts#keya-namekeya), ID (Update Only) | Update or Create, Update Only |
+| <p>Contact &#x26; Contact List<br><a href="../basics/audience-syncs">Audience Sync</a></p> | ✅ | Email | Mirror |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Emarsys objects and/or behaviors.
 

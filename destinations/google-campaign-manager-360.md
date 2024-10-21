@@ -24,7 +24,7 @@ Once you've confirmed permissions, follow these steps to connect Census to Googl
 
 |                                                                                                                     **Object Name** | **Supported?** |  **Sync Keys**  | **Behaviors** |
 | ----------------------------------------------------------------------------------------------------------------------------------: | :------------: | :-------------: | :-----------: |
-| <p>Conversions<br><a href="../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Unique Event ID |      Send     |
+| <p>Conversions<br><a href="../basics/defining-source-data/events#defining-event-syncs">Event Sync</a></p> |        ✅       | Unique Event ID |      Send     |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.

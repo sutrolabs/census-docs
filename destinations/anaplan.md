@@ -81,7 +81,7 @@ You have successfully configured and tested the connection, so you can now sync 
 | **Import Action** |        ✅       |  **Replace**  |
 
 {% hint style="info" %}
-Import Actions must have the Source Type of File in order for Census to be able to sync to it. Look [here](https://help.anaplan.com/f19cdb3d-385a-4a27-aaa8-7422b240e8bc-Get-started-with-imports) for more details on how to configure this on the Anaplan side
+Import Actions must have the Source Type of File in order for Census to be able to sync to it. Look [here](https://help.anaplan.com/import-basics-b9d40f84-d2c0-4003-84e3-47a8068da977) for more details on how to configure this on the Anaplan side
 {% endhint %}
 
 {% hint style="info" %}

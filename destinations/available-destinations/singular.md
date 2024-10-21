@@ -25,11 +25,11 @@ You should now be ready to sync your data to Singular.
 
 |                                                                                                                    **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
 | ---------------------------------------------------------------------------------------------------------------------------------: | :------------: | ------------- | ------------- |
-|   <p>Event<br><a href="../../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Event ID      | Send          |
-| <p>Session<br><a href="../../basics/data-models-and-entities/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Event ID      | Send          |
+|   <p>Event<br><a href="../../basics/data-defining/defining-source-data/events#defining-event-syncs">Event Sync</a></p> |        ✅       | Event ID      | Send          |
+| <p>Session<br><a href="../../basics/data-defining/defining-source-data/events#defining-event-syncs">Event Sync</a></p> |        ✅       | Event ID      | Send          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../../basics/core-concept/README#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Singular objects and/or behaviors.
