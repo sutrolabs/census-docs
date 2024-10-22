@@ -10,10 +10,10 @@ description: This page describes how to provide DMA consent to ad platforms via 
 
 As you may be aware, many of the large advertising services are in the process of supporting the EU’s [Digital Markets Act](https://digital-markets-act.ec.europa.eu/index\_en) (DMA). Census now supports syncing DMA-related properties to the following destinations:
 
-* [Google Ads](#google-a-ds) (Audiences, Conversions)
-* [Google Campaign Manager 360](#google-display-and-video-360) (Conversion Events)
-* [Google Display & Video 360](#google-display-and-video-360) (Customer Match Audiences)
-* [Amazon Ads DSP](#amazon-a-ds-dsp) (Audiences)
+* [Google Ads](dma-consent-for-ad-platforms.md#google-a-ds) (Audiences, Conversions)
+* [Google Campaign Manager 360](dma-consent-for-ad-platforms.md#google-display-and-video-360) (Conversion Events)
+* [Google Display & Video 360](dma-consent-for-ad-platforms.md#google-display-and-video-360) (Customer Match Audiences)
+* [Amazon Ads DSP](dma-consent-for-ad-platforms.md#amazon-a-ds-dsp) (Audiences)
 
 Google and Amazon have taken different approaches to supporting DMA metadata for their networks. Google asks you to provide consent information on a per-user basis, whereas Amazon requires you to indicate which region a particular audience’s data has been collected in to determine if the DMA applies. Below, we describe how to provide this information via Census.
 
@@ -27,7 +27,7 @@ When sending Audiences or Conversions to [Google Ads](../../destinations/google-
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-02-15 at 17.04.01@2x (1).png" alt=""><figcaption><p>Optional fields for providing consent to Google Ads.</p></figcaption></figure>
 
-Google accepts the following values for both fields: `UNKNOWN`, `UNSPECIFIED`, `GRANTED`, `DENIED`. For more info, see [Google’s documentation](https://support.google.com/google-ads/answer/14310715).&#x20;
+Google accepts the following values for both fields: `UNKNOWN`, `UNSPECIFIED`, `GRANTED`, `DENIED`. For more info, see [Google’s documentation](https://support.google.com/google-ads/answer/14310715).
 
 There are two ways to populate these fields in Census:
 
@@ -58,7 +58,7 @@ If you’re sending audiences to Google Ads using our [one-click audience sync](
 
 ## Google Campaign Manager 360
 
-The process for providing DMA metadata to [Google CM360](../../destinations/google-campaign-manager-360) is nearly identical to Google Ads ([see above](dma-consent-for-ad-platforms.md#google-a-ds)). The only difference is that CM360 requires different values for consent status: `GRANTED` and `DENIED`. For more info, see [Google’s documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad_user_data_consent).
+The process for providing DMA metadata to [Google CM360](../../destinations/google-campaign-manager-360.md) is nearly identical to Google Ads ([see above](dma-consent-for-ad-platforms.md#google-a-ds)). The only difference is that CM360 requires different values for consent status: `GRANTED` and `DENIED`. For more info, see [Google’s documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad\_user\_data\_consent).
 
 ## Google Display & Video 360
 
