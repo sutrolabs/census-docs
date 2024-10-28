@@ -38,6 +38,10 @@ If you are syncing customer info and you map to an address field (First Name, La
 
 For syncing audiences to DV360, you can include consent information to ensure compatibility with [Google's EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/). DV360 now supports two additional fields `Consent for ad user data` and `Consent for ad personalization`, which can be set to one of the following values: `CONSENT_STATUS_UNSPECIFIED`, `CONSENT_STATUS_GRANTED`, `CONSENT_STATUS_DENIED`. See Google's [documentation](https://developers.google.com/display-video/api/reference/rest/v3/firstAndThirdPartyAudiences#ContactInfoList.FIELDS.consent) for more information.
 
+{% hint style="info" %}
+If you're seeing low match rates, try adding these consent fields. Match rates can be impacted if consent preferences are not included.
+{% endhint %}
+
 ## Need help connecting to Google Display & Video 360?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
