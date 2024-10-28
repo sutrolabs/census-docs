@@ -46,6 +46,10 @@ gcloud projects add-iam-policy-binding cs-sandbox-123456 \
   --role roles/bigquery.jobUser
 ```
 
+{% hint style="info" %}
+To optimize the time it takes to load your tables within the Census UI when creating and editing syncs, only grant the Census service account permissions to the datasets you want to use within your Census syncs. This will reduce the number of tables Census needs to load and display as well as limit the number of tables to which Census has access.&#x20;
+{% endhint %}
+
 ## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 | **Object Name** | **Supported?** | **Sync Keys**    | **Behaviors**                      |
@@ -57,6 +61,10 @@ Learn more about all of our sync behaviors in our [Syncs](../../basics/core-conc
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
+
+## Optimize UI Performance
+
+To optimize loading time within the Census UI when creating and editing syncs limit the visibility of the Census service account to only the tables and schemas you want to use for syncs within Census. This will reduce the number of tables Census needs to load and display.&#x20;
 
 ## Network Access Controls
 
