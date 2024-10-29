@@ -43,8 +43,8 @@ There are two ways to populate these fields in Census:
 
 If you’re sending audiences to Google Ads using our [one-click audience sync](https://docs.getcensus.com/basics/audience-hub/syncing-segments#one-click-experience-for-a-d-platforms) experience, you’ll only need to provide consent status once for each underlying “person” entity.
 
-1. Go to the “Entities” tab in Census.
-2. Click on the “Person” entity powering your one-click syncs. Hint: the numbers shown below are the total count of segments and syncs, respectively, using the entity.
+1. Go to the “Datasets” tab in Census.
+2. Click on the “Person” dataset powering your one-click syncs. Hint: the numbers shown below are the total count of segments and syncs, respectively, using the entity.
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-02-27 at 09.22.25@2x.png" alt=""><figcaption><p>Select the "Person" entity powering your one-click syncs.</p></figcaption></figure>
 

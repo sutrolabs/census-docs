@@ -63,12 +63,12 @@ In addition to row level sync logs, Warehouse Writeback will create metadata tab
 For example, imagine you have a mirror sync from a [Segment](../audience-hub/syncing-segments.md) to an ads destination like Google. The `sync_log` table will log attempts to send new records (i.e. those that entered the segment) to the destination. It will also log attempts to delete records (i.e. those that left the segment) from the destination. If you join those logs with the source objects table (described below) you can get full insight into who is entering and leaving what segments, by name, and when.
 
 {% hint style="info" %}
-Metadata Tables are refreshed every six hours, separate from sync runs history. That means you may see a delay on records appearing in metadata for syncs that are using brand new sources or destinations.&#x20;
+Metadata Tables are refreshed every six hours, separate from sync runs history. That means you may see a delay on records appearing in metadata for syncs that are using brand new sources or destinations.
 {% endhint %}
 
 ### Source Objects Table
 
-Source objects are tables, models, entities, or segments. These are what you send data from during a sync. Continue reading the [schema section](warehouse-writeback.md#schema) below for more information.
+Source objects are tables, models, datasets, or segments. These are what you send data from during a sync. Continue reading the [schema section](warehouse-writeback.md#schema) below for more information.
 
 #### Where
 
