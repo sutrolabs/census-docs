@@ -27,9 +27,9 @@ If you are a video person, watch [how to create a GPT column](https://youtu.be/5
 
 **Step 3:** Choose a dataset where you want to add a new AI-based column. Make sure the Dataset has a Unique ID column assigned
 
-**Step 4:** Select `Computed Columns` on your right and choose `GPT Columns`
+**Step 4:** Select `Enrich & Enhance` on your top right corner and choose `GPT`
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-20 at 8.47.44 PM.png" alt=""><figcaption><p>Census Create GPT Column</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-10-29 at 2.53.32 PM.png" alt=""><figcaption><p>Census Create GPT Column</p></figcaption></figure>
 
 **Step 5:** Connect to OpenAI using your OpenAI API Key and click Next.
 
