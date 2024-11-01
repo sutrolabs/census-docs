@@ -167,6 +167,7 @@
   * [Google Datastore](destinations/google-datastore.md)
   * [Google Display & Video 360](destinations/google-dv360.md)
   * [Google Drive](destinations/google-drive.md)
+  * [Google Search Ads 360](destinations/available-destinations/google-search-ads-360.md)
   * [Google Sheets](destinations/google-sheets.md)
   * [Heap.io](destinations/heap.io.md)
   * [Help Scout](destinations/help-scout.md)
