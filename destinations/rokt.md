@@ -4,16 +4,17 @@ description: This page describes how to use Census with Rokt.
 
 # Rokt
 
+Rokt is an e-commerce marketing technology company that uses machine learning to help businesses personalize the customer experience and drive revenue. Census can help you sync your data to Rokt, helping you increase order value, acquire new users, and grow revenue.
+
 ## Getting Started
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Rokt** from the menu.
-3. Open Rokt in another browser tab and navigate to your **Profile Settings** page. Generate new API credentials and copy your **App ID** and **App Secret**.
-4. Also take note of your **Account ID**, which can be found in the URL (e.g. https://my.rokt.com/accounts/**3144550328709722342**/profile-settings).
-5. Finally, if you plan to sync Custom Audiences, you'll need to request an API Key from your Rokt account manager.
-6. Return to Census and input these credentials to connect to Rokt.
-
-<figure><img src="../.gitbook/assets/rokt.png" alt=""><figcaption><p>Generate API credentials in the Rokt app.</p></figcaption></figure>
+3. Open Rokt in another browser tab. Take note of your **Account ID**, which can be found in the URL (e.g. https://my.rokt.com/accounts/**123456789**/profile-settings).
+4. You'll need to ask your Rokt account manager for credentials.
+   * Custom Audiences:  request an API Key
+   * Events: request a public/private key pair
+5. Return to Census and input these credentials to connect to Rokt.
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
