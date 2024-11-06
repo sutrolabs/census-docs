@@ -32,6 +32,7 @@ Microsoft's terminology is a bit scattered here. They also refer to a Service Pr
 11. Make a note of the client secret.
 
 ### Configuring Fabric to allow external access via service principals
+
 If you're already using Fabric with other external integrations, you likely have performed these steps already but nonetheless, please confirm your configuration matches these options.
 
 1. Log in to your [Microsoft Fabric account](https://app.fabric.microsoft.com/home).
@@ -62,11 +63,13 @@ The service principal can now access any resource within the workspace given the
 Census can access any resource that exposes a SQL Endpoint. Census recommends using a Warehouse resource or Lakehouse.
 
 If you do not already have a Lakehouse, you can create one:
+
 1. Enter your workspace and click **+ New Item**.
 2. From the various data engineering items, select **Warehouse**.
 3. Enter a unique Name for your lakehouse and click **Create**.
 
 Whether you're creating a new warehouse or using an existing one, the last detail you'll need is its SQL Endpoint
+
 1. Within the top level items list of your workspace, hover over the warehouse, lakehouse, or other resource and click on the **...** to open the menu and then click **Settings**.
 2. Make a note of the **SQL connection string**, this will be the hostname.
 
@@ -80,9 +83,10 @@ Once you've created your credentials, you can create a source connection within 
 * Click **New Source** and select Microsoft Fabric from the list.
 * Provide the four credential details you created in the last step:
   * Hostname (aka SQL endpoint or SQL connection string),
-  * Yenant ID (aka Directory ID),
+  * Lakehouse name (aka table catalog),
+  * Tenant ID (aka Directory ID),
   * Client ID (aka Application ID)
-  * Client secret (aka Client secret value, __not__ Client secret ID)
+  * Client secret (aka Client secret value, **not** Client secret ID)
 * You’re all set! Head over to the **Syncs** page to activate your data.
 
 ## Allowed IP Addresses
