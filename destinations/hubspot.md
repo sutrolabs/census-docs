@@ -22,19 +22,19 @@ Follow the OAuth flow to connect HubSpot. Easy!
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name**          | **Supported?** | **Sync Keys**                                            | **Behaviors**                         |
-| ------------------------ | :------------: | -------------------------------------------------------- | ------------------------------------- |
-| Company                  |        ✅       | Object ID, any custom single-line  text or number        | Update Only, Update or Create, Mirror |
-| Contact                  |        ✅       | Object ID, Email, any custom single-line  text or number | Update Only, Update or Create, Mirror |
-| Contact & Static List    |        ✅       | Email                                                    | Update Only, Update or Create, Mirror |
-| Deal                     |        ✅       | Object ID, any custom single-line  text or number        | Update Only, Update or Create, Mirror |
-| Product                  |        ✅       | Object ID, any custom single-line  text or number        | Update Only, Update or Create, Mirror |
-| Line Item                |        ✅       | Object ID, any custom single-line  text or number        | Update Only, Update or Create, Mirror |
-| Custom Object            |        ✅       | Object ID, any searchableProperty                        | Update Only, Update or Create, Mirror |
-| Subscription Preferences |        ✅       | Email                                                    | Mirror                                |
-| Custom Behavioral Event  |        ✅       | Unique Event ID                                          | Send                                  |
-| Email                    |        ✅       | N/A                                                      | Send                                  |
-| Ticket                   |        ✅       | Record ID                                                | Send                                  |
+| **Object Name**          | **Supported?** | **Sync Keys**                                             | **Behaviors**                         |
+| ------------------------ | :------------: | --------------------------------------------------------- | ------------------------------------- |
+| Company                  |        ✅       | Object ID, Domain, any custom single-line  text or number | Update Only, Update or Create, Mirror |
+| Contact                  |        ✅       | Object ID, Email, any custom single-line  text or number  | Update Only, Update or Create, Mirror |
+| Contact & Static List    |        ✅       | Email                                                     | Update Only, Update or Create, Mirror |
+| Deal                     |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror |
+| Product                  |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror |
+| Line Item                |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror |
+| Custom Object            |        ✅       | Object ID, any searchableProperty                         | Update Only, Update or Create, Mirror |
+| Subscription Preferences |        ✅       | Email                                                     | Mirror                                |
+| Custom Behavioral Event  |        ✅       | Unique Event ID                                           | Send                                  |
+| Email                    |        ✅       | N/A                                                       | Send                                  |
+| Ticket                   |        ✅       | Record ID                                                 | Send                                  |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
