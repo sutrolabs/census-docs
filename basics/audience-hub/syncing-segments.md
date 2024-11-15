@@ -37,13 +37,14 @@ When we launched one-click audiences, we migrated existing all ad platform syncs
 
 ### Supported Destinations
 
-As of January 2024, our one-click experience supports the following ad platforms:
+As of October 2024, our one-click experience supports the following ad platforms:
 
 * [Google Ads](../../destinations/google-ads/)
 * [Facebook](../../destinations/facebook-ads.md)
 * [LinkedIn](../../destinations/linkedin.md)
 * [Microsoft](../../destinations/microsoft-advertising.md)
 * [TikTok](../../destinations/tiktok.md)
+* [Reddit Ads](../../destinations/reddit-ads.md)
 * [Snapchat](../../destinations/snapchat.md)
 * [Pinterest](../../destinations/pinterest.md)
 * [X](../../destinations/twitter.md)
