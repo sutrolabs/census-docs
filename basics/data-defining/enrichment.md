@@ -1,12 +1,6 @@
----
-description: >-
-  Census Enrichment makes it easy to connect third-party data sources to the
-  first-party data you already have in your warehouse
----
+# Enrichment (Moved to Datasets)
 
-# Enrichment
-
-## What is data enrichment?
+Census Enrichment have moved to Datasets. [See here](../../datasets/enrichment/).
 
 A typical data warehouse is filled with all of the data your business generates: order history, user interaction events, an update snapshot of the data in your app database, all of your ETLed SaaS data, and more. This is often called "first party" data, ie data that only you know about.
 

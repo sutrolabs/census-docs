@@ -11,9 +11,11 @@
   * [Relationships](datasets/core-concepts/core-concepts-2.md)
 * [Entity Resolution (Invite Only)](datasets/entity-resolution-invite-only/README.md)
   * [Quick Start](datasets/entity-resolution-invite-only/quick-start.md)
-* [Computed Columns](datasets/core-concepts-3.md)
 * [GPT Columns](datasets/gpt-columns/README.md)
   * [GPT Prompts Recipe Book](datasets/gpt-columns/sample-gpt-prompts.md)
+* [Enrichment Columns](datasets/enrichment/README.md)
+  * [Quick Start](datasets/enrichment/quick-start.md)
+* [Computed Columns](datasets/core-concepts-3.md)
 * [Version Control](datasets/census-models.md)
 
 ## 📫 Syncs <a href="#basics" id="basics"></a>
@@ -49,7 +51,7 @@
 * [Segment Priorities](basics/audience-hub/segment-priorities.md)
 * [Experiments and Analysis](basics/audience-hub/analyzing-segments.md)
 * [Calculated Columns](audience-hub/data-preparation.md)
-* [Enrichment](basics/data-defining/enrichment.md)
+* [Enrichment (Moved to Datasets)](basics/data-defining/enrichment.md)
 * [Data Preparation](basics/audience-hub/data-preparation.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
