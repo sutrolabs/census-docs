@@ -186,6 +186,12 @@ You can [read more about Braze API-Triggered Campaigns](https://www.braze.com/do
 
 <figure><img src="../.gitbook/assets/Braze Options.png" alt=""><figcaption></figcaption></figure>
 
+### User Data Protections
+
+Census supports Braze's user properties related to user data protections: `email_open_tracking_disabled` and `email_click_tracking_disabled`.\
+\
+These are boolean properties. Set them to true to disable open or click tracking in future emails sent to the user.
+
 ## Data Points
 
 Census uses an internal BrazeDiff mechanism during every sync to minimize Braze [data points](https://www.braze.com/docs/user\_guide/onboarding\_with\_braze/data\_points/) usage.
