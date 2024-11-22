@@ -100,7 +100,7 @@ You can read all about the Liquid template system provided by Census here:
 {% hint style="info" %}
 Templated fields have a few limitations:
 
-* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](datasets/overview.md), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
+* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](/datasets/overview.md), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
 * Not all sources support templates yet; we are always adding support for new sources!
 {% endhint %}
 

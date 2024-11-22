@@ -84,7 +84,7 @@
   * [Snowflake](sources/snowflake.md)
   * [SQL Server](sources/sql-server.md)
   * [Trino](sources/trino.md)
-* [DBT Integration](sources/native-dbt-integration.md)
+* [dbt Integration](sources/native-dbt-integration.md)
 * [Sigma Integration](basics/data-defining/models/sigma.md)
 * [Looker Integration](basics/data-defining/models/looker.md)
 
