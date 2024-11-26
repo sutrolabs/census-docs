@@ -83,13 +83,28 @@ Reminder: Census will send records to a Slack channel one at a time.
 
 The Member ID can be used to mention specific channel members in a Slack message.
 
-Example:&#x20;
+Example:
 
 <pre><code>select '&#x3C;@U012345>' as USER_MENTION_1
 <strong>        ,'@U012345' as USER_MENTION_2
 </strong></code></pre>
 
 <figure><img src="../.gitbook/assets/Slack User Mention.png" alt=""><figcaption><p>User Mention Example</p></figcaption></figure>
+
+## Hyperlinks <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
+
+To add hyperlinks there are a couple of ways to include them based on your goal.&#x20;
+
+* If you have a static list that won't be changing from record to record the template editor supports highlighting the text you want linked and copy and pasting the link to automatically hyperlink.&#x20;
+* If you want dynamic hyperlinks that vary based on the record you can create a column within your source data formatted like the below and reference the hyperlink column in your message template. &#x20;
+
+```
+SELECT '<http://example.com/test | Text to display>' as hyperlink
+```
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-11-26 at 2.22.46 PM.png" alt=""><figcaption><p>View in message template editor</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-11-26 at 2.22.26 PM.png" alt=""><figcaption><p>Slack message output</p></figcaption></figure>
 
 ## ️ Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
@@ -106,7 +121,7 @@ Census will only write new records to a specific channel when new records appear
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Slack objects and/or behaviors.

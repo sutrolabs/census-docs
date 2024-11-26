@@ -31,8 +31,8 @@ That's it! You should now see your folder as an option when setting up a sync in
 ## Supported Sync Behaviors
 
 | **Object Name** | **Supported?** | **Behaviors** |
-| :--------------: | :------------: | ------------ |
-|       File      |        ✅       |   Replace |
+| :-------------: | :------------: | ------------- |
+|       File      |        ✅       | Replace       |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
@@ -67,14 +67,13 @@ When defining the **File Path**, you can use variables that will be set when the
 
 In addition to the file path, you can configure how the data is encoded as it is written. Primarily this is a question of file format:
 
-- CSV - The standard comma separated values file. You can optionally specify an alternative delimeter such as `|`*, and you can enable/disable the header row.
-- TSV - The tab separated values file. You can enable/disable the header row.
-- JSON - A single JSON arraay of objects
-- NDJSON - New line-delimited list of JSON objects
-- Parquet - A columnar storage format that is more efficient for certain types of data.
-
+* CSV - The standard comma separated values file. You can optionally specify an alternative delimeter such as `|`\*, and you can enable/disable the header row.
+* TSV - The tab separated values file. You can enable/disable the header row.
+* JSON - A single JSON arraay of objects
+* NDJSON - New line-delimited list of JSON objects
+* Parquet - A columnar storage format that is more efficient for certain types of data.
 * If your configured delimiter is present in data values, Census will automatically add double quotes around the value.\
-  _Example: `Hello, world` is written as as `"Hello, world"` if the chosen delimiter is a comma._
+  &#xNAN;_&#x45;xample: `Hello, world` is written as as `"Hello, world"` if the chosen delimiter is a comma._
 
 In addition to file format, you can also provide a PGP Public Key to encrypt the data before it is written to the file. This is useful for ensuring that the data is secure in transit and at rest.
 

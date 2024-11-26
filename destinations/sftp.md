@@ -36,7 +36,6 @@ Before you begin, you'll need the following:
 6. Click **Save Connection**.
 7. If you're using **SSH keys** to authenticate your server, download the **SFTP Public Key** from this screen and upload it to your server. Then, click **Test** to verify that the connection works.
 
-
 * If you aren't using a password for your server, Census provides an RSA token with an OpenSSH-formatted public key.
 
 Your end state should look something like this: 👇
@@ -67,7 +66,7 @@ When defining models, you'll write SQL queries to select the data you want to sy
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](../.gitbook/assets/202109\_Outreach\_Basic\_Model.png)
+![Basic SQL query for a new model](../.gitbook/assets/202109_Outreach_Basic_Model.png)
 
 ### Step 4: Create your first sync
 
@@ -91,7 +90,7 @@ When configuring your sync, the page should look something like this: 👇
 
 Once your sync is complete, it's time to check your data. Go to the specified path on your SFTP server and check that the file updated correctly.
 
-If everything went well, that's it! You've started syncing data from your warehouse to your SFTP server! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F?utm\_source=extlink)
+If everything went well, that's it! You've started syncing data from your warehouse to your SFTP server! [🥳️](https://emojikeyboard.org/copy/Partying_Face_Emoji_%F0%9F%A5%B3%EF%B8%8F?utm_source=extlink)
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
@@ -139,14 +138,13 @@ When defining the **File Path**, you can use variables that will be set when the
 
 In addition to the file path, you can configure how the data is encoded as it is written. Primarily this is a question of file format:
 
-- CSV - The standard comma separated values file. You can optionally specify an alternative delimeter such as `|`*, and you can enable/disable the header row.
-- TSV - The tab separated values file. You can enable/disable the header row.
-- JSON - A single JSON arraay of objects
-- NDJSON - New line-delimited list of JSON objects
-- Parquet - A columnar storage format that is more efficient for certain types of data.
-
+* CSV - The standard comma separated values file. You can optionally specify an alternative delimeter such as `|`\*, and you can enable/disable the header row.
+* TSV - The tab separated values file. You can enable/disable the header row.
+* JSON - A single JSON arraay of objects
+* NDJSON - New line-delimited list of JSON objects
+* Parquet - A columnar storage format that is more efficient for certain types of data.
 * If your configured delimiter is present in data values, Census will automatically add double quotes around the value.\
-  _Example: `Hello, world` is written as as `"Hello, world"` if the chosen delimiter is a comma._
+  &#xNAN;_&#x45;xample: `Hello, world` is written as as `"Hello, world"` if the chosen delimiter is a comma._
 
 In addition to file format, you can also provide a PGP Public Key to encrypt the data before it is written to the file. This is useful for ensuring that the data is secure in transit and at rest.
 
