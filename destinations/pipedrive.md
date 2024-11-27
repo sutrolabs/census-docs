@@ -36,12 +36,13 @@ This part of our documentation is still under construction! If you have any ques
 | --------------: | :------------: | ----------------------------- | ---------------- |
 |    Organization |        ✅       | Object ID, name               | Update or Create |
 |          Person |        ✅       | Object ID, name, email, phone | Update or Create |
+|            Lead |        ✅       | Object ID, name, email, phone | Update or Create |
 |            Deal |        ✅       | Object ID, title              | Update or Create |
 |            Note |        ✅       | Unique ID                     | Add              |
 |        Activity |        ✅       | Unique ID                     | Send             |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pipedrive objects and/or behaviors
