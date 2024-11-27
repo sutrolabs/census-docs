@@ -4,7 +4,7 @@ description: Send data anywhere that accepts standard HTTP requests.
 
 # HTTP Request
 
-## Overview
+Overview
 
 Our HTTP Request destination is a Swiss Army knife. It allows you to send data to any service that accepts standard HTTP requests—including standard SaaS APIs and internal systems—and only takes a few minutes to set up via our no-code interface.
 
@@ -80,7 +80,7 @@ This helps Census identify unique records in your source data.
 
 Census supports all major HTTP request methods. In this case, the endpoint we're syncing to expects a POST request.
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-09-25 at 17.32.02@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
 ### Choose your payload type
 
