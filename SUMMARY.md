@@ -264,6 +264,7 @@
 
 ## 📎 Misc
 
+* [Credits](misc/credits.md)
 * [Census Embedded](basics/census-embedded.md)
 * [Developers](basics/developers/README.md)
   * [GitLink](basics/developers/gitlink.md)

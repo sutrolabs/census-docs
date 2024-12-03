@@ -2,6 +2,10 @@
 
 GPT Columns enable you to dynamically generate unique content for each row in your dataset using OpenAI's GPT models. With GPT Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your GPT Column.
 
+{% hint style="info" %}
+GPT Columns can now use [credits](../../misc/credits.md)! This lets you skip setting up your own API key.&#x20;
+{% endhint %}
+
 {% embed url="https://youtu.be/5AxWR1QyCos" %}
 
 #### Example Use Cases
