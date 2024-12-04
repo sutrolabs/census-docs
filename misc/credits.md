@@ -1,23 +1,16 @@
----
-description: >-
-  Your organization now includes credits that you can use to easily try out
-  these exciting new Census features:
----
-
 # Credits
 
-* [GPT Columns](../datasets/gpt-columns/)
-* [Enrichment Columns](../datasets/enrichment/) (coming soon)
+Credits make it easy to explore exciting new transformation features like [GPT Columns](../datasets/gpt-columns/). Census offers free trial credits to eligible organizations.&#x20;
 
 
 
-When using credits, you do not need to set up any new connections. If you run out of credits (or at any other time), will also have the option to enter your own credentials instead of using the connection provided by Census.
+While using Credits, you don't need your own API key to connect to OpenAI or other LLM and Enrichment providers. If you run out of credits or would like to use your own OpenAI account, you can bring your own API key.&#x20;
 
-You can always review your current credits balance by logging into Census and navigating to "Organization Home / Credits".
+To monitor your Credits usage, log into Census and navigateto "Organization Home / Credits".
 
 ## Rates
 
-Every Census sync that runs using enrichments will use up a fixed amount of credits based on the actino and the number of records processed:
+Every Census sync that runs using GPT or Enrichments will use up a fixed amount of credits based on the action and the number of records processed:
 
 | Action                                 | Cost per record |
 | -------------------------------------- | --------------- |
@@ -27,3 +20,4 @@ Every Census sync that runs using enrichments will use up a fixed amount of cred
 | Generate values with Claude 3.5 Haiku  | 150             |
 | Generate values with Claude 3 Opus     | 1,500           |
 
+Additional credits are not available for purchase; in order to continue using enrichments, you can provide your own API key

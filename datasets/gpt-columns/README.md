@@ -3,7 +3,7 @@
 GPT Columns enable you to dynamically generate unique content for each row in your dataset using OpenAI's GPT models. With GPT Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your GPT Column.
 
 {% hint style="info" %}
-GPT Columns can now use [credits](../../misc/credits.md)! This lets you skip setting up your own API key.&#x20;
+Try GPT Columns for free using trial [credits](../../misc/credits.md)! No need for an API key until your trial credits run out.&#x20;
 {% endhint %}
 
 {% embed url="https://youtu.be/5AxWR1QyCos" %}
@@ -35,7 +35,7 @@ If you are a video person, watch [how to create a GPT column](https://youtu.be/5
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-10-29 at 2.53.32 PM.png" alt=""><figcaption><p>Census Create GPT Column</p></figcaption></figure>
 
-**Step 5:** Connect to OpenAI using your OpenAI API Key and click Next.
+**Step 5:** Skip this step if you have trial [credits](../../misc/credits.md). Connect to OpenAI using your OpenAI API Key and click Next.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-08-29 at 12.34.53 PM (1).png" alt=""><figcaption><p>GPT Columns Connect</p></figcaption></figure>
 
