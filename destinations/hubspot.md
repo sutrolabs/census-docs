@@ -130,7 +130,7 @@ Census uses a variety of APIs to achieve the highest possible speed. With the ri
 {% hint style="warning" %}
 Your choice of sync key and behavior can have significant performance implications.
 
-Using HubSpot Object IDs or Contact emails as identifiers in HubSpot is fast, but using all other fields as identifiers is very slow. That means any syncs that create new records in HubSpot (other than Contacts by email) will be slow. We're working with HubSpot to increase the speed of their APIs in order to improve sync speed.
+Using HubSpot Object IDs or Contact emails as identifiers in HubSpot is fast, but using all other fields as identifiers is very slow. That means any syncs that create new records in HubSpot (other than Contacts by email) will be slow. However, if a custom field is unique, it will significantly improve performance compared to non-unique custom fields. We're working with HubSpot to increase the speed of their APIs in order to improve sync speed.
 {% endhint %}
 
 Please be aware that Custom Objects require additional API calls and are even slower as a result (\~1/3 the speed).
