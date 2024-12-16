@@ -1,8 +1,8 @@
-# GPT Prompts Recipe Book
+# AI Prompts Recipe Book
 
-**Why GPT Columns?**
+**Why AI Columns?**
 
-GPT columns allow you to enrich, enhance, clean and classify data using LLMs. The potential is limitless, but we've shared our favorite prompts in this recipe book. Our team uses GPT columns to:
+AI columns allow you to enrich, enhance, clean and classify data using LLMs. The potential is limitless, but we've shared our favorite prompts in this recipe book. Our team uses AI columns to:
 
 * Enrich records with industry data, persona classifiers, or other personalization drivers.
 * Layer sentiment analysis and other LLM capabilities into our Apollo data to drive automations
@@ -14,9 +14,9 @@ Learn more in our interactive demo below:
 
 {% @arcade/embed flowId="dlpvULqMDw8YEz82e2ia" url="https://app.arcade.software/share/dlpvULqMDw8YEz82e2ia?variable.company_name=INSERT_VALUE_HERE&variable.first_name=INSERT_VALUE_HERE" %}
 
-Learn more about GPT Columns and how to set them up [here](./).
+Learn more about AI Columns and how to set them up [here](./).
 
-Not a Census user yet? [Try GPT columns for free](https://login.getcensus.com/u/signup/identifier?state=hKFo2SBVaGhKcUwwcktoTGJRdmxlc19ZRE52aW9hNXFNMDJPYaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDZaOXp2ck9vc190dktVX0RvbjJfZERFTGxHWmFIWnMzo2NpZNkgajFnb29hYnExSEFDb000V3ZmaDJhSk5yTXlFWGZJM0E&\_gl=1\*14swtjj\*\_gcl\_aw\*R0NMLjE3MjU5MTM1NzIuQ2p3S0NBand1ZnEyQmhBbUVpd0FuWnF3OHFjYmFpWkQ5VGh5SVJjdm5uR0t5LVh1RnFUVkxvRGY1cE1HUDVUVmlMUmhORHp4eThlb19Sb0NuaE1RQXZEX0J3RQ..\*\_gcl\_au\*MTQzNDczNzM2LjE3MjIyMjQ2NDg.).
+Not a Census user yet? [Try GPT columns for free](https://login.getcensus.com/u/signup/identifier?state=hKFo2SBVaGhKcUwwcktoTGJRdmxlc19ZRE52aW9hNXFNMDJPYaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDZaOXp2ck9vc190dktVX0RvbjJfZERFTGxHWmFIWnMzo2NpZNkgajFnb29hYnExSEFDb000V3ZmaDJhSk5yTXlFWGZJM0E&_gl=1*14swtjj*_gcl_aw*R0NMLjE3MjU5MTM1NzIuQ2p3S0NBand1ZnEyQmhBbUVpd0FuWnF3OHFjYmFpWkQ5VGh5SVJjdm5uR0t5LVh1RnFUVkxvRGY1cE1HUDVUVmlMUmhORHp4eThlb19Sb0NuaE1RQXZEX0J3RQ..*_gcl_au*MTQzNDczNzM2LjE3MjIyMjQ2NDg.).
 
 ### Classify and Summarize Data
 
@@ -303,6 +303,107 @@ Columns Needed: Customer Traits\
 
 
 Best response type: Enum or Numbers
+
+</details>
+
+<details>
+
+<summary>Analyze Traits: Identify High Value Customers</summary>
+
+````
+
+You are a data analyst. Using the customer data from the highest plan  plan and the lowest plan , create a trait-by-trait analysis showing the likelihood of being a high-value customer.
+
+
+For each trait in the data:
+1. List each possible value within that trait
+2. Calculate the ratio of that value appearing in the high-tier vs low-tier plan
+3. Sort traits by their predictive strength (strongest correlation to weakest)
+
+
+Format your output as:
+
+
+TRAIT: [Name of Trait]
+- VALUE: [Specific Value]
+ - High Plan: [%]
+ - Low Plan: [%]
+ - LIKELIHOOD RATIO: [X]x more likely to be high-value
+ Only include traits where there is at least a 10% difference between plans.
+Sort values within each trait by likelihood ratio (highest to lowest).
+```
+
+
+This should generate output like:
+
+
+```
+TRAIT: Age Range
+- VALUE: 18-25
+ - High Plan: 40%
+ - Low Plan: 28%
+ - LIKELIHOOD RATIO: 1.43x more likely to be high-value
+
+
+TRAIT: Visit Frequency
+- VALUE: Daily
+ - High Plan: 38%
+ - Low Plan: 24%
+ - LIKELIHOOD RATIO: 1.58x more likely to be high-value
+```
+
+````
+
+
+
+</details>
+
+<details>
+
+<summary>Customer Upsell Score / Potential</summary>
+
+```
+Using only the following benchmark data, calculate the customer's upsell score by adding the likelihood ratios of their matching traits found in this analysis:
+
+
+Using the traits:
+AGE: 
+AGE_RANGE: 
+FITNESS_GOAL: 
+GENDER: 
+LOCATION: 
+LOYALTY_STATUS: 
+MEMBERSHIP_PLAN: 
+MEMBERSHIP_PRICE: 
+PERSONAL_TRAINING_USAGE: 
+PREFERRED_WORKOUT_TYPE: 
+SIGNUP_DATE: 
+USER_ID: 
+VISIT_FREQUENCY: 
+	1.	Sum the exact likelihood ratios for each matching trait.
+	2.	Identify the top matching trait from the list based on the highest likelihood ratio.
+
+Then output only the following:
+	•	Upsell Score: one word: High, Medium, or Low
+	•	Top Trait: the name of the top matching trait. The complete list is:
+	1.	Visit Frequency
+	2.	Personal Training Usage
+	3.	Loyalty Status
+	4.	Gender
+	5.	Fitness Goal
+	6.	Age Range
+	7.	Location
+
+Output format:
+
+Upsell Score: [High/Medium/Low]  
+Top Trait: [Top_Trait_Name] 
+
+        
+
+```
+
+
 
 </details>
 
