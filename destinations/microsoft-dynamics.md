@@ -65,7 +65,7 @@ When configuring your sync, the page should look something like this: 👇
 
 Once your sync is complete, it's time to check your data. Open Microsoft Dynamics and check that the entity that you sent data to has updated entries.
 
-If everything went well, that's it! You've started syncing data from your warehouse to Microsoft Dynamics! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F?utm\_source=extlink)
+If everything went well, that's it! You've started syncing data from your warehouse to Microsoft Dynamics! [🥳️](https://emojikeyboard.org/copy/Partying_Face_Emoji_%F0%9F%A5%B3%EF%B8%8F?utm_source=extlink)
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
@@ -74,6 +74,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 | **Object Name** | **Supported?** | **Sync Keys**                         |
 | --------------: | :------------: | ------------------------------------- |
 |     Entity name |        ✅       | All single-column keys for the entity |
+| Marketing Lists |        ✅       | All single-column keys for the entity |
 
 All Microsoft Dynamic [entities](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/introduction-entities?view=op-9-1) are supported as objects to sync to in Census. Here is some documentation on defining keys for entities in Microsoft Dynamics:
 
