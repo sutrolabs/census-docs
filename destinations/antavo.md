@@ -15,13 +15,14 @@ You should now be ready to start syncing data to Antavo!
 
 ## Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**  |
-| --------------: | :------------: | :------------: | :------------: |
-| Customer Profiles           |        ✅      | Antavo Customer ID | Update Only |
+|   **Object Name** | **Supported?** |    **Sync Keys**   | **Behaviors** |
+| ----------------: | :------------: | :----------------: | :-----------: |
+| Customer Profiles |        ✅       | Antavo Customer ID |  Update Only  |
+|         Audiences |        ✅       | Antavo Customer ID |  Update Only  |
 
 ## Quirks
 
-- Antavo does not provide the ability to create new Customer Profiles via the API, so only the Update operation is supported.
+* Antavo does not provide the ability to create new Customer Profiles via the API, so only the Update operation is supported.
 
 ## Need help connecting to Antavo?
 
