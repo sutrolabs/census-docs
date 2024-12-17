@@ -226,7 +226,7 @@
   * [Productboard](destinations/productboard.md)
   * [Qualtrics](destinations/qualtrics.md)
   * [Radar](destinations/radar.md)
-  * [Reddit Ads](destinations/reddit-ads.md)
+  * [Reddit Ads](destinations/available-destinations/reddit.md)
   * [Rokt](destinations/rokt.md)
   * [RollWorks](destinations/rollworks.md)
   * [Sailthru](destinations/sailthru.md)

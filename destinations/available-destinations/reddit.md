@@ -12,9 +12,9 @@ Reddit Ads is an advertising platform that allows businesses to engage with Redd
 2. Select **Reddit Ads** from the menu.
 3. Enter your Reddit Ad Account ID if you have one. This should match what you see under Assets > Ad Accounts in your Reddit account. Make sure to include the prefix (e.g., `t2_abc123`). If an ID is not provided, Census will default to the parent account's ID.&#x20;
 
-<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 4. Click Connect and proceed through the OAuth flow to connect your Reddit Ads account to Census.
 
@@ -23,7 +23,7 @@ Reddit Ads is an advertising platform that allows businesses to engage with Redd
 <table data-header-hidden><thead><tr><th align="right"></th><th width="123" align="center"></th><th></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Conversion Event</td><td align="center">✅</td><td>Any unique ID</td><td>Send</td></tr><tr><td align="right">Custom Audiences</td><td align="center">✅</td><td>Email, Mobile Advertising ID (MAID)</td><td>Mirror</td></tr></tbody></table>
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Reddit Ads objects and/or behaviors.
@@ -33,7 +33,7 @@ Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept
 #### Field details
 
 * `event_at`: The RFC3339 timestamp when the conversion event occurred
-* `tracking_type`: Must be one of the following according to [Reddit's API documentation](https://ads-api.reddit.com/docs/#tag/Conversions/paths/\~1api\~1v2.0\~1conversions\~1events\~1{account\_id}/post): `PageVisit`, `ViewContent`, `Search`, `AddToCart`, `AddToWishlist`, `Purchase`, `Lead`, `SignUp`, `Custom`
+* `tracking_type`: Must be one of the following according to [Reddit's API documentation](https://ads-api.reddit.com/docs/#tag/Conversions/paths/~1api~1v2.0~1conversions~1events~1{account_id}/post): `PageVisit`, `ViewContent`, `Search`, `AddToCart`, `AddToWishlist`, `Purchase`, `Lead`, `SignUp`, `Custom`
 
 ### Custom Audiences
 
@@ -49,15 +49,15 @@ Reddit will only accept hashed values for Custom Audience sync keys. Census will
 
 1. Select Custom Audience Users as the destination.
 
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 2. Select your Sync Key.
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 3. Select an audience. You can select from existing audiences in the dropdown or create a new one. You cannot create an audience with the same name as an existing one.
 
-<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Need help connecting to Reddit Ads?
 

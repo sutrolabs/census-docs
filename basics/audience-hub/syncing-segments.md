@@ -44,7 +44,7 @@ As of October 2024, our one-click experience supports the following ad platforms
 * [LinkedIn](../../destinations/linkedin.md)
 * [Microsoft](../../destinations/microsoft-advertising.md)
 * [TikTok](../../destinations/tiktok.md)
-* [Reddit Ads](../../destinations/reddit-ads.md)
+* [Reddit Ads](../../destinations/available-destinations/reddit.md)
 * [Snapchat](../../destinations/snapchat.md)
 * [Pinterest](../../destinations/pinterest.md)
 * [X](../../destinations/twitter.md)
