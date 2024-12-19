@@ -44,7 +44,7 @@ If you are a video person, watch [how to create a GPT column](https://youtu.be/5
 
 **Step 6:** Create a GPT prompt and fill the column name.
 
-Refer to [Sample GPT Prompts](sample-gpt-prompts.md) for inspiration on GPT based prompts
+Refer to [Sample GPT Prompts](prompts-recipe-book.md) for inspiration on GPT based prompts
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-08-20 at 8.50.33 PM.png" alt=""><figcaption><p>Census AI Column Prompt</p></figcaption></figure>
 

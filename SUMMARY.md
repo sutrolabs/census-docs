@@ -12,7 +12,7 @@
 * [Entity Resolution (Invite Only)](datasets/entity-resolution-invite-only/README.md)
   * [Quick Start](datasets/entity-resolution-invite-only/quick-start.md)
 * [AI Columns](datasets/ai-columns/README.md)
-  * [AI Prompts Recipe Book](datasets/ai-columns/sample-gpt-prompts.md)
+  * [AI Prompts Recipe Book](datasets/ai-columns/prompts-recipe-book.md)
 * [Enrichment Columns](datasets/enrichment/README.md)
   * [Quick Start](datasets/enrichment/quick-start.md)
 * [Computed Columns](datasets/core-concepts-3.md)
