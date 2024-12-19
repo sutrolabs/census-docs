@@ -6,24 +6,24 @@ These columns can be then used as any other column in your dataset, as a sync at
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-06-09 at 5.17.32 AM.png" alt=""><figcaption><p>Census Computed Columns using Formula</p></figcaption></figure>
 
-You can create computed columns via the "New Computed Column" button in the Properties page of any of your datasets.&#x20;
+You can create computed columns via the "New Computed Column" button in the Properties page of any of your datasets.
 
 Computed Columns support following operations: Lookup Columns, Rollup Columns, and Equation Columns.
 
 ## Lookup Columns
 
-Lookup Columns allow you to pull in a value into your dataset from any other dataset related through a  one-to-one or many-to-one mapping.
+Lookup Columns allow you to pull in a value into your dataset from any other dataset related through a one-to-one or many-to-one mapping.
 
 For example:
 
 * User team name
-* User organization sign up date&#x20;
+* User organization sign up date
 
-## Rollup Columns&#x20;
+## Rollup Columns
 
 Rollup Columns allow you to create an aggregate value over your datasets relationships to help you obtain insights into your data. You are also able to filter down the related datasets over which you want to aggregate.
 
-For example:&#x20;
+For example:
 
 * Number of transactions performed last 30 days
 * Number of payment failures last 90 days
@@ -53,4 +53,4 @@ For example:
 
 ## GPT Columns
 
-Refer to the dedicated [documentation for GPT Columns](gpt-columns/) to learn about defining these AI-powered columns for your datasets.
+Refer to the dedicated [documentation for GPT Columns](ai-columns/) to learn about defining these AI-powered columns for your datasets.
