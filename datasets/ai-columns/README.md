@@ -1,6 +1,6 @@
 # AI Columns
 
-AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like OpenAI, Anthropic Claude and Google Gemini (coming soon). With AI Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your AI Column.
+AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like OpenAI, Anthropic Claude and Google Gemini (coming soon). With AI Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well.&#x20;
 
 {% hint style="info" %}
 Try AI Columns for free using trial [credits](../../misc/credits.md)! No need for an API key until your trial credits run out.&#x20;
@@ -16,13 +16,16 @@ Try AI Columns for free using trial [credits](../../misc/credits.md)! No need fo
 4. Summarize product usage among specific features by “high” or “low” to identify upsell fits and run PLG playbooks
 5. Clean up data by removing special characters from a column
 
+checkout our [Recipe Book](prompts-recipe-book.md) for more examples and sample prompts.&#x20;
+
 #### Pre-requisites
 
 * Dataset should have a Unique ID column
 
 Note : You will need your API key to connect OpenAI (ChatGPT) or Claude once you run out of Census [credits](../../misc/credits.md).&#x20;
 
-* To create a new API key, log into OpenAI and navigate to [Dashboard / API keys](https://platform.openai.com/api-keys) and generate a new Project API Key.
+* To create a new OpenAI API key, log into OpenAI and navigate to [Dashboard / API keys](https://platform.openai.com/api-keys) and generate a new Project API Key.
+* To create a new Anthropic API Key, navigate to [Anthropic Console](../../) > Settings > API Keys and generate a new Key.
 
 #### How to create a AI Column
 
@@ -34,11 +37,11 @@ If you are a video person, watch [how to create a GPT column](https://youtu.be/5
 
 **Step 3:** Choose a dataset where you want to add a new AI-based column. Make sure the Dataset has a Unique ID column assigned
 
-**Step 4:** Select `Enrich & Enhance` on your top right corner and choose `AI`
+**Step 4:** Select `Enrich & Enhance` on your top right corner, choose `AI`  and your preferred LLM provider.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-10-29 at 2.53.32 PM.png" alt=""><figcaption><p>Census Create AI Column</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-12-26 at 2.02.19 PM.png" alt=""><figcaption><p>Census Create AI Column</p></figcaption></figure>
 
-**Step 5:** Skip this step if you have trial [credits](../../misc/credits.md). Connect to OpenAI using your OpenAI API Key and click Next.
+**Step 5:** Skip this step if you have trial [credits](../../misc/credits.md). Connect to selected platform (OpenAI, Anthropic, Google) using your API Key and click Next.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-08-29 at 12.34.53 PM (1).png" alt=""><figcaption><p>AI Columns Connect</p></figcaption></figure>
 
@@ -46,17 +49,15 @@ If you are a video person, watch [how to create a GPT column](https://youtu.be/5
 
 Refer to [Sample GPT Prompts](prompts-recipe-book.md) for inspiration on GPT based prompts
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-20 at 8.50.33 PM.png" alt=""><figcaption><p>Census AI Column Prompt</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-12-26 at 2.12.01 PM.png" alt=""><figcaption><p>Census AI Column Prompt</p></figcaption></figure>
 
-We recommend you refine your prompt outside Census before saving the prompt for the AI Columns.
-
-* Model Type - you can select from the provided list of GPT based models or manually enter a valid model. [Here's a full list](https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4) of GPT models. We recommend `gpt-4o-mini` model to limit cost associated with the OpenAI tokens.
+* Model Type - you can select from the provided list of GPT based models. We recommend `gpt-4o-mini` model to limit cost associated with the OpenAI tokens.
 * The expected output type - there are several optional properties to help you guarantee data quality.
 * The prompt to run against each row of your data. Your prompt can leverage [Liquid templating](../../basics/core-concept/liquid-templates.md) to reference column values.
 
-**Step 7:** Hit the Create button and that's it. Census will generate a GPT based column into your dataset.
+**Step 7:** Hit the Create button and that's it. Census will generate a AI based column into your dataset.
 
-This step can take several minutes. Behind the scene Census sets up OpenAI as a destination and runs a sync across all your rows in the selected dataset.
+This step can take several minutes. Behind the scene Census sets up OpenAI/Anthropic/Google as a destination and runs a sync across all your rows in the selected dataset.
 
 The AI columns refresh every 6 hours and only process new rows.
 
