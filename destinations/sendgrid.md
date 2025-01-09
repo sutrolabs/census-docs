@@ -55,10 +55,14 @@ Census currently supports syncing to the following SendGrid objects.
 | Email Templates |        ✅       | Any unique identifier | Send                          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sendgrid objects and/or behaviors.
+
+## Syncing to Subject Field
+
+To sync to the email subject line, first update the email subject in the Sendgrid dynamic template to be `{{{subject}}}`. Then, when creating a sync in Census, add a custom destination field called `subject` in the sync mapper and map it to the corresponding source field containing the subject line data.
 
 ## Need help connecting to SendGrid?
 
