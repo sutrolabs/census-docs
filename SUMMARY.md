@@ -161,7 +161,6 @@
     * [Customer Match Lists (Audiences)](destinations/google-ads/customer-match-audiences.md)
     * [Offline Conversions](destinations/google-ads/offline-conversions.md)
   * [Google AlloyDB](destinations/alloydb.md)
-  * [Google Analytics (UA)](destinations/google-analytics.md)
   * [Google Analytics 4](destinations/google-analytics-four.md)
   * [Google BigQuery](destinations/available-destinations/google-bigquery.md)
   * [Google Campaign Manager 360](destinations/google-campaign-manager-360.md)
