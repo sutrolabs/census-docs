@@ -21,7 +21,7 @@ Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/g
 | Conversion Adjustment | Send             | N/A                      |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Ads objects and/or behaviors
@@ -36,9 +36,10 @@ Google Ads has extensive documentation on [creating offline conversion events](h
 2. Select the data source for this conversion action as **Import**.
 3. Select **Other data sources or CRMs**.
 4. Select **Track conversions from clicks** or **Track conversions from calls**.
-5. Enter a name for the conversion action that you're creating. Hold onto this name exactly as entered -- spelling and capitalization will be important when syncing these conversions via Census!
-6. Choose your [counting option](https://support.google.com/google-ads/answer/3438531?hl=en-GB) for the conversion action, either **One conversion** or **Every conversion**. Many offline conversions occur only once (e.g. "Reached onboarding milestone X"). In this case, select the counting option **One conversion** to protect yourself from accidentally syncing duplicate conversions.
-7. Complete the set-up for this conversion event, selecting your desired conversion window (we recommend using the maximum 90-days) and ads attribution model.
+5. Under the **Data Source** section you can select **Skip this step and set up a data source later**
+6. Enter a name for the conversion action that you're creating. Hold onto this name exactly as entered -- spelling and capitalization will be important when syncing these conversions via Census!
+7. Choose your [counting option](https://support.google.com/google-ads/answer/3438531?hl=en-GB) for the conversion action, either **One conversion** or **Every conversion**. Many offline conversions occur only once (e.g. "Reached onboarding milestone X"). In this case, select the counting option **One conversion** to protect yourself from accidentally syncing duplicate conversions.
+8. Complete the set-up for this conversion event, selecting your desired conversion window (we recommend using the maximum 90-days) and ads attribution model.
 
 {% hint style="danger" %}
 **Important**: After creating a new conversion action, Google recommends waiting 6 hours before syncing conversions for that conversion action. If you sync conversions during the first 6 hours, it can take two days for those conversions to appear on your reports.
