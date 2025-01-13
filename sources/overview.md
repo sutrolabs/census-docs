@@ -40,7 +40,7 @@ If your source is protected by a firewall, please add Census's IP addresses to t
 
 ## Data Warehouse Usage
 
-Census performs automated processes and queries on your data warehouse, even when a sync isn't running. This activity may appear in your internal reporting but is essential to ensure Census operates efficiently and effectively.
+Census performs automated processes and queries on your data warehouse, even when a sync isn't running. This activity may appear in your internal reporting but is essential to ensure Census operates efficiently and effectively on your behalf. Census generally has a very minor impact on data warehouse usage.
 
 These processes and queries include and are not limited to:
 
