@@ -37,3 +37,17 @@ If you have any questions about which Sync Engine is right for you, please [reac
 Most sources require allowlisting IP Addresses so that Census's systems can unload data from the source. [BigQuery](google-bigquery.md) and [Databricks](databricks.md) are notable exceptions, so do check the source-specific docs if you have any questions.
 
 If your source is protected by a firewall, please add Census's IP addresses to the allowlist. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+
+## Data Warehouse Usage
+
+Census performs automated processes and queries on your data warehouse, even when a sync isn't running. This activity may appear in your internal reporting but is essential to ensure Census operates efficiently and effectively.
+
+These processes and queries include and are not limited to:
+
+* Reading Metadata from the warehouse
+* Regular health check queries
+* Clicking into a Dataset
+* Clicking into a Segment
+* Adding or removing a filter in a Segment
+* Segment size refresh
+* Previewing a Dataset
