@@ -56,6 +56,8 @@ Census syncs data from your data sources to your destinations using a set of sta
 
 <table><thead><tr><th width="412">Region</th><th>IP Addresses (CIDR)</th></tr></thead><tbody><tr><td>🇺🇸 N. Virginia (us-east-1)</td><td><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p></td></tr><tr><td>🇪🇺 Frankfurt (eu-central-1)</td><td><p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p></td></tr></tbody></table>
 
+Note: Some destinations, such as Oracle Eloqua, use IP whitelisting for both their authentication APIs and standard APIs. In that case, if you're in Europe, you'll need to whitelist both EU and US IPs.
+
 ## Connecting via SSH tunnel
 
 Census supports connecting to data warehouse source and destinations that are only accessible on private/internal networks via SSH tunneling. To do so, you'll need to provide an SSH host server that is visible on the public internet and can connect to the private warehouse, and you'll also need to be able to perform some basic admin actions on that server.
