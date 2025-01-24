@@ -39,7 +39,14 @@ Census will require the following permissions on the tables you wish to sync to:
         * Lifetime: (clear the box) - This will prevent the token from expiring ![](../../.gitbook/assets/screely-1619628186696.png)
 2. If you're not already, go into your target workspace by visiting the [Workspaces page](https://accounts.cloud.databricks.com/workspaces) and clicking the **Open** link next to it. Now within your selected Workspace, select **Compute** from the left menu. Census can connect to a SQL Warehouse or All Purpose Cluster. You can reuse an existing compute resource, or create a new one here. Click on the Compute you've decided to use.
 
-* Note: Service Principals cannot be connected to All Purpose Clusters that are in the **Single User Access Mode**.
+Note: Service Principals cannot be connected to All Purpose Clusters that are in the **Single User Access Mode**.
+
+{% hint style="warning" %}
+If you're connecting to an **All Purpose Compute Cluster**:
+
+* Service Principals cannot be connected to an All Purpose Cluster that is in the **Single User Access Mode**.
+* All Purpose Clusters on a **single node** cannot be moved off Single User Access Mode without [losing Unity Catalog access](https://docs.databricks.com/en/compute/configure.html#access-modes).
+{% endhint %}
 
 3.  You'll need to collect three credentials to connect to your compute:
 
