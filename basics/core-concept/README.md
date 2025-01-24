@@ -16,7 +16,7 @@ For instructions on connecting your specific data source, take a look at the Dat
 
 #### Data Source Permissions and Read-only Access
 
-Census provides a powerful and customizable Advanced Sync Engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema.
+Census provides a powerful and customizable Advanced Sync Engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema. This schema will not be selectable as a source within the Census sync configuration UI.&#x20;
 
 If you don't have credentials with write access available, you can connect to your warehouse using our Basic Sync Engine which instead stores this state outside the warehouse.
 
@@ -52,14 +52,14 @@ All of our syncs are incremental, which means we only sync records that are new 
 
 Sync Behaviors tell Census the types of change it should apply to your data when a sync finds a matching (or not) record in a source and a destination. We support a few different sync behaviors:
 
-|                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Update or Create (aka Upsert) | Update existing destination records when IDs match, otherwise create new ones if they're missing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Update Only                   | Update existing objects in the destination, don't create any new ones.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Create Only                   | Create a new object if it doesn't exist in the destination.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Mirror                        | <p>Keep the destination in sync with the source.</p><ul><li>If a row is added or edited in the source, update the destination.</li><li>If a previously synced row no longer is in the source, remove the matching object from the destination. Note: some services such as Braze offer other actions as well. See specific connector documentation for more details. </li><li>Mirror syncs identify changes by comparing against the data they have already sent -- not the data that might or might not already exist in the destination. This means that the first sync will be an upsert for all records, and the second and following syncs will account for changes from the source data.</li></ul> |
-| Append Only                   | <p>Treat the destination as an append only log of data suitable for Event data.</p><p>Read more about <a href="https://docs.getcensus.com/basics/defining-source-data/events">sending event data</a>.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Delete                        | <p>Delete syncs takes the list of provided IDs and deletes them from the destination.<br><br>Be careful! Providing an incorrect set of IDs can result in data loss! Census recommends you backup data if you're concerned about accidentally deleting the wrong records.</p>                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Update or Create (aka Upsert) | Update existing destination records when IDs match, otherwise create new ones if they're missing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Update Only                   | Update existing objects in the destination, don't create any new ones.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Create Only                   | Create a new object if it doesn't exist in the destination.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Mirror                        | <p>Keep the destination in sync with the source.</p><ul><li>If a row is added or edited in the source, update the destination.</li><li>If a previously synced row no longer is in the source, remove the matching object from the destination. Note: some services such as Braze offer other actions as well. See specific connector documentation for more details.</li><li>Mirror syncs identify changes by comparing against the data they have already sent -- not the data that might or might not already exist in the destination. This means that the first sync will be an upsert for all records, and the second and following syncs will account for changes from the source data.</li></ul> |
+| Append Only                   | <p>Treat the destination as an append only log of data suitable for Event data.</p><p>Read more about <a href="https://docs.getcensus.com/basics/defining-source-data/events">sending event data</a>.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Delete                        | <p>Delete syncs takes the list of provided IDs and deletes them from the destination.<br><br>Be careful! Providing an incorrect set of IDs can result in data loss! Census recommends you backup data if you're concerned about accidentally deleting the wrong records.</p>                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 {% hint style="warning" %}
 Please note that some of these behaviors are only available for certain destinations. Visit our individual integration pages to view what's supported.
@@ -100,7 +100,7 @@ You can read all about the Liquid template system provided by Census here:
 {% hint style="info" %}
 Templated fields have a few limitations:
 
-* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](/datasets/overview.md), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
+* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](../../datasets/overview.md), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../audience-hub/getting-started.md#using-the-visual-builder) and [calculated fields](../audience-hub/data-preparation.md#calculated-fields).
 * Not all sources support templates yet; we are always adding support for new sources!
 {% endhint %}
 
@@ -110,11 +110,11 @@ Where available, Census supports two types of conditional field mappings:
 
 * **Don't Sync Null Values** - By default, Census will sync any Null values from the source to the destination. On some connections, you can disable sending any Null values. When disabled, the particular Null value for the property is ignored, but the rest of the recode is synced. Note that the the destinations may handle Null values differently. For example, Salesforce will convert Null values to empty strings, and Braze will delete the property completely when a Null value is synced.
 
-![Also Sync Null Values in the source field editor](../../.gitbook/assets/conditional\_field\_mapping\_dont\_sync\_nulls.png)
+![Also Sync Null Values in the source field editor](../../.gitbook/assets/conditional_field_mapping_dont_sync_nulls.png)
 
 * **Set If Empty** - By default, Census will sync any values from the source to the destination, even if the destination already has a value. On some connections, you can set a property to only sync if the destination property is empty. This is useful if you want to set a default value for a property, but not overwrite any existing values.
 
-![Set only if destination field is empty](../../.gitbook/assets/conditional\_field\_mapping\_set\_if\_empty.png)
+![Set only if destination field is empty](../../.gitbook/assets/conditional_field_mapping_set_if_empty.png)
 
 #### Creating new fields on your destination object
 
@@ -122,7 +122,7 @@ For some destinations, such as Braze, Customer.io or Iterable (see full list bel
 
 Simply select **"Sync All Properties"** when setting up a sync.
 
-![Simply select "Sync All Properties"](../../.gitbook/assets/sync\_all\_fields.png)
+![Simply select "Sync All Properties"](../../.gitbook/assets/sync_all_fields.png)
 
 {% hint style="info" %}
 The following destinations currently support automatically adding new properties:
@@ -140,7 +140,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 * [Schedules](triggering-syncs.md#schedule) including with Cron
 * [Programmatically via API or Orchestration tool](triggering-syncs.md)
-* [Automatically with dbt Cloud](broken-reference)
+* [Automatically with dbt Cloud](broken-reference/)
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 
@@ -151,7 +151,7 @@ You can dive deeper into why syncs failed, or what records were invalid from the
 **Failed Syncs**\
 Hover over the status label to see a detailed error.
 
-![](../../.gitbook/assets/census\_sync\_history\_failed\_sync.png)
+![](../../.gitbook/assets/census_sync_history_failed_sync.png)
 
 **Invalid or rejected records**\
 Click the number of invalid or rejected records to see a sample (up to 100), and the reason why they were invalid or rejected.
@@ -161,9 +161,9 @@ Click the number of invalid or rejected records to see a sample (up to 100), and
 * **Invalid** records are flagged and filtered by Census _prior_ to syncing to your destination. Census will check the source data for records with NULL identifiers and duplicates.
 * **Rejected** records are records that were sent to the destination, but the destination did not accept them. The sample of rejected records will provide the specified reasons received from the destination.
 
-![](../../.gitbook/assets/census\_sync\_invalid\_rejected\_records.png)
+![](../../.gitbook/assets/census_sync_invalid_rejected_records.png)
 
-![Output of invalid records diagnostic log](../../.gitbook/assets/census\_invalid\_records.png)
+![Output of invalid records diagnostic log](../../.gitbook/assets/census_invalid_records.png)
 
 ## Wrapping things up
 
