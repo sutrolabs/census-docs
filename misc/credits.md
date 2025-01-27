@@ -8,14 +8,16 @@ To monitor your Credits usage, log into Census and navigate to "Organization Hom
 
 ## Rates
 
-Every Census sync that runs using GPT or Enrichments will use up a fixed amount of credits based on the action and the number of records processed:
+Every Census sync that runs using GPT or Enrichments will use up a fixed amount of credits based on the action and the number of records processed. To generate values with:
 
-| Action                                 | Cost per record |
-| -------------------------------------- | --------------- |
-| Generate values with GPT-4o            | 300             |
-| Generate values with GPT-4o mini       | 20              |
-| Generate values with Claude 3.5 Sonnet | 500             |
-| Generate values with Claude 3.5 Haiku  | 150             |
-| Generate values with Claude 3 Opus     | 1,500           |
+| Action            | Cost per record |
+| ----------------- | --------------- |
+| GPT-4o            | 300             |
+| GPT-4o mini       | 20              |
+| Claude 3.5 Sonnet | 500             |
+| Claude 3.5 Haiku  | 150             |
+| Claude 3 Opus     | 1,500           |
+| Gemini 1.5 Flash  | 10              |
+| Gemini 1.5 Pro    | 150             |
 
 Additional credits are not available for purchase; in order to continue using enrichments, you can provide your own API key.
