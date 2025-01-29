@@ -139,6 +139,7 @@ You may choose to use a pre-hashed value (if you have one), or for Census to per
 
 #### C. Optional Parameters
 
+* **Google Click ID** (recommended)
 * **Conversion Value**, positive non-zero decimal values accepted (e.g. 1.00 USD = 1.00)
 * **Currency Code**, the[ ISO 4217 3-character currency code](https://developers.google.com/adwords/api/docs/appendix/codes-formats#expandable-18) (e.g. 'USD')
 
@@ -159,7 +160,7 @@ Finally, select the fields you want to update in the Mapper in the **"Set Up Fie
 
 The end result should look something like this:
 
-<figure><img src="../../.gitbook/assets/screely-1695656460930.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync.
 
