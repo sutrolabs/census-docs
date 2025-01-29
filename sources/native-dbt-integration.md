@@ -2,11 +2,11 @@
 description: Use Census directly with dbt through the native dbt integration.
 ---
 
-# Integration with dbt
+# dbt Integration
 
 Census supports connecting to an existing dbt project hosted in GitHub or GitLab, which allows you keep all your source code & transforms in a single repository while leveraging Census' functionality. Census is designed to work hand-in-hand with dbt Cloud or any other dbt runner.
 
-To connect your dbt project you'll first need a source connection within Census. Once you have a source configured you can connect to up dbt from the Projects button.&#x20;
+To connect your dbt project you'll first need a source connection within Census. Once you have a source configured you can connect to up dbt from the Projects button.
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-07-31 at 2.32.13 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -30,7 +30,7 @@ Once you’ve configured your project repository, Census will analyze your proje
 
 ## Managing dbt versions
 
-Census currently supports the following dbt versions: `1.4`, `1.5`, `1.6`, `1.7`, `1.8`, and `1.9`. We announce new version support in our [changelog](https://whatsnew.getcensus.com/), and we aim to add support for a new dbt version no more than four weeks after its release by dbt Labs.
+Census currently supports the following dbt versions: `1.7`, `1.8`, and `1.9`. We announce new version support in our [changelog](https://whatsnew.getcensus.com/), and we aim to add support for a new dbt version no more than four weeks after its release by dbt Labs.
 
 To determine your dbt version, Census uses the [`require-dbt-version`](https://docs.getdbt.com/reference/project-configs/require-dbt-version) field (if specified) in your project's `dbt_project.yml`. We recommend you pin your dbt project to the minor version range as dbt recommends. For example, the following configuration would ping your project to version 1.6:
 
