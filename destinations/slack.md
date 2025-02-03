@@ -31,13 +31,13 @@ Once you've authorized Census, you'll be redirected back to the Destinations pag
 
 See our [docs](broken-reference/) for each supported data source for further information.
 
-## 3️⃣ Create your first Census model
+## 3️⃣ Create your first Census dataset
 
-Navigate to the **Models** page in Census and click the **Add Model** button.
+Navigate to the **Dataset** page in Census and click the **Add Dataset** button.
 
 Here you can a write SQL query to select the data you want to send to Slack.
 
-Once you have created your model, give it a useful name, and click **Save Model**.
+Once you have created your dataset, give it a useful name, and click **Save Dataset**.
 
 ## 4️⃣ Create your Census Sync
 
@@ -48,7 +48,7 @@ Navigate to the [**Syncs**](https://app.getcensus.com/syncs) page in Census and 
 You'll need to start by specifying how to identify entries in your data warehouse that should trigger a Sync:
 
 * For Source > **Connection**, select the data warehouse you connected in step 2.
-* For Source > **Source**, select the model you created in step 3.
+* For Source > **Source**, select the dataset you created in step 3.
 * For Destination > **Connection**, select Slack
 * For Destination > **Object**, Message should be auto-selected
 * Next, pick the column that uniquely identifies each record in your data source. Census will use this to identify new records that need to be used to send messages to Slack.
