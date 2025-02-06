@@ -123,6 +123,21 @@ Census will use the HTTP response status code to determine whether records were 
   * NOTE: a 429 status code will trigger up to 7 request retries with exponential backoff
 * 5xx - Server failure. The request will be retried up to 7 times with exponential backoff. If the request is unsuccessful within 7 retries, the entire sync will be failed.
 
+## FAQs
+
+How do I configure a HTTP Destination to use basic auth?
+
+Some destinations may use basic authorization instead of an API key.
+
+This can be done by base64 encoding the username and password with the following format:
+
+`<username>:<password>`
+
+Then adding that as a header to the HTTP Request destination which should look like this:\
+`Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=`
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-04 at 16.55.33.png" alt=""><figcaption></figcaption></figure>
+
 ## Need help using HTTP Request?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation via the [in-app](https://app.getcensus.com) chat.
