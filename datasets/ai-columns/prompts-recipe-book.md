@@ -16,7 +16,7 @@ Learn more in our interactive demo below:
 
 Learn more about AI Columns and how to set them up [here](./).
 
-Not a Census user yet? [Try GPT columns for free](https://login.getcensus.com/u/signup/identifier?state=hKFo2SBVaGhKcUwwcktoTGJRdmxlc19ZRE52aW9hNXFNMDJPYaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDZaOXp2ck9vc190dktVX0RvbjJfZERFTGxHWmFIWnMzo2NpZNkgajFnb29hYnExSEFDb000V3ZmaDJhSk5yTXlFWGZJM0E&_gl=1*14swtjj*_gcl_aw*R0NMLjE3MjU5MTM1NzIuQ2p3S0NBand1ZnEyQmhBbUVpd0FuWnF3OHFjYmFpWkQ5VGh5SVJjdm5uR0t5LVh1RnFUVkxvRGY1cE1HUDVUVmlMUmhORHp4eThlb19Sb0NuaE1RQXZEX0J3RQ..*_gcl_au*MTQzNDczNzM2LjE3MjIyMjQ2NDg.).
+Not a Census user yet? [Try AI columns for free](https://login.getcensus.com/u/signup/identifier?state=hKFo2SBVaGhKcUwwcktoTGJRdmxlc19ZRE52aW9hNXFNMDJPYaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDZaOXp2ck9vc190dktVX0RvbjJfZERFTGxHWmFIWnMzo2NpZNkgajFnb29hYnExSEFDb000V3ZmaDJhSk5yTXlFWGZJM0E&_gl=1*14swtjj*_gcl_aw*R0NMLjE3MjU5MTM1NzIuQ2p3S0NBand1ZnEyQmhBbUVpd0FuWnF3OHFjYmFpWkQ5VGh5SVJjdm5uR0t5LVh1RnFUVkxvRGY1cE1HUDVUVmlMUmhORHp4eThlb19Sb0NuaE1RQXZEX0J3RQ..*_gcl_au*MTQzNDczNzM2LjE3MjIyMjQ2NDg.).
 
 ### Classify and Summarize Data
 

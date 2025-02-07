@@ -1,13 +1,13 @@
 ---
 description: >-
-  Census Enrichment makes it easy to enrich Person and Company data with
-  third-party data and sync them to any business apps. The outcome also
-  materializes in your data warehouse.
+  Census Enrichment makes it easy to enrich your dataset with third-party data
+  and sync them to any business apps. The outcome also materializes in your data
+  warehouse.
 ---
 
 # Enrichment Columns
 
-Census connects with third party data providers like Clearbit (Now Hubspot Breeze), Apollo and others
+Census connects with third-party data providers like Clearbit (Now Hubspot Breeze) and Apollo. You can also connect with any generic HTTP service using [HTTP Request Enrichments.](http-request-enrichments.md)
 
 ### Challenges with Enrichments CRM-based Enrichments
 
@@ -18,9 +18,9 @@ Enriching first party data, in your data warehouse or CRM systems, with third pa
 * A single enrichment provider is not sufficient because no single solution has all the correct data
 * You still have to dance around combining first party data, third party data, and manual edits to make these enrichments useful for personalized campaigns
 
-Historical, enrichment flow includes hitting an API directly on top of a CRM tool, storing it in the CRM tool, sending it to your warehouse, run sql to combine the company or person data, then sync this data back to CRM or marketing automation destinations.  Along the way, this leads to race conditions, duplicated records and unnecessary enrichment cost.
+Historically, an enrichment flow includes hitting an API directly on top of a CRM tool, storing it in the CRM tool, sending it to your warehouse, run sql to combine the company or person data, then sync this data back to CRM or marketing automation destinations.  Along the way, this leads to race conditions, duplicated records and unnecessary enrichment cost.
 
-**Census Enrichment simplifies this entire workflow. With just a few clicks, you can enrich your warehouse (and CRM ) data, combine it seamlessly with your existing datasets, and sync enriched insights to any business app—all in minutes.**
+**Census Enrichment simplifies this entire workflow. With just a few clicks, you can enrich your warehouse (and CRM) data, combine it seamlessly with your existing datasets, and sync enriched insights to any business app—all in minutes.**
 
 ### Setup Enrichments
 

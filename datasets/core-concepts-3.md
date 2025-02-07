@@ -53,4 +53,4 @@ For example:
 
 ## GPT Columns
 
-Refer to the dedicated [documentation for GPT Columns](ai-columns/) to learn about defining these AI-powered columns for your datasets.
+Refer to the dedicated [documentation for AI Columns](ai-columns/) to learn about defining these AI-powered columns for your datasets.

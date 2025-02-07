@@ -15,6 +15,7 @@
   * [AI Prompts Recipe Book](datasets/ai-columns/prompts-recipe-book.md)
 * [Enrichment Columns](datasets/enrichment/README.md)
   * [Quick Start](datasets/enrichment/quick-start.md)
+  * [HTTP Request Enrichments](datasets/enrichment/http-request-enrichments.md)
 * [Computed Columns](datasets/core-concepts-3.md)
 * [Version Control](datasets/census-models.md)
 

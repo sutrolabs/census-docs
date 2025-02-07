@@ -113,22 +113,22 @@ To use Census with Dynamics, your Dynamics user must be able to request to reque
 
 1.  \[ADMIN] Configure your Admin settings in [Entra](https://entra.microsoft.com/), so users can request admin consent to apps. This is found after navigating to Enterprise applications > Consent and permissions > Admin content settings.
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 2.  \[USER] Add Microsoft Dynamics as a destination in Census and go through the OAuth flow. At the end, you will be prompted to enter a justification and request for access.
 
 
 
-    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 3.  \[ADMIN] Find the approval request in [Entra](https://entra.microsoft.com/). Approval requests can be found after navigating to Enterprise applications > Admin consent requests.
 
 
 
-    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 4.  \[ADMIN] Click on the approval request, then click on Review permissions and consent.
 
-    <figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 5.  \[ADMIN] A popup will prompt you to select a Microsoft Account. After selecting, approve the request.
 
     <figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>

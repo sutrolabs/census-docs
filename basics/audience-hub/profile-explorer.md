@@ -18,7 +18,7 @@ This data can then be searched using the search box or sorted by clicking on the
 
 Each record can also be explored in more detail by clicking on an individual row,  this will bring up a profile view of that record with all the information known.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The icon for a person or company will show if the entity has been given the following mappings, in this order of priority:
 
