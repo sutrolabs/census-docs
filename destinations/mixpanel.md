@@ -34,7 +34,7 @@ In this guide, we will show you how to connect Mixpanel to Census and create you
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603f083b24d2d21e45edbf32/file-gTS0HytG3A.png)
 
-* Copy your Mixpanel Projects's **Project Token** and **API secret**, which you can find in your Mixpanel **Project Settings** (for more details on where these values are located, check out [Mixpanel's official documentation](https://help.mixpanel.com/hc/en-us/articles/115004502806-Find-Project-Token-)). Your end state should look something like this 👇
+* Copy your Mixpanel Projects's **Project ID**, **Project Token**, **Service Account** **Username** and **Service Account Secret**, which you can find in your Mixpanel **Project Settings** (for more details on where these values are located, check out [Mixpanel's official documentation](https://help.mixpanel.com/hc/en-us/articles/115004502806-Find-Project-Token-)). Your end state should look something like this 👇
 
 ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5bb7d5d0042863158cc71f7e/images/603f08e0661b720174a72af8/file-KkhC5ZcfGo.png)
 
@@ -108,10 +108,10 @@ Census currently supports syncing to the following Mixpanel objects.
 |           Event |        ✅       | Insert ID   |       Send       |
 |    User Profile |        ✅       | Distinct ID | Update or Create |
 |   Group Profile |        ✅       | Group ID    | Update or Create |
-|    Lookup Table |        ✅       | Join Key    |     Replace      |
+|    Lookup Table |        ✅       | Join Key    |      Replace     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mixpanel objects and/or behaviors
