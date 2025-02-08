@@ -45,7 +45,7 @@ For this example, we will use [MaxMind](https://www.maxmind.com/en/geoip-api-web
 3. On the top right corner, navigate to Enrich & Enhance > Enrichments > HTTP Request
 4. Create a new HTTP Request Connection, or select an existing connection that you want to use
    1. For MaxMind, we will use their GeoLite API: _https://geolite.info/geoip/v2.1/country_
-   2. You will need to&#x20;
+   2. You will need to add an Authorization Header in the form `Bearer <API KEY>`
 
 {% hint style="info" %}
 When creating a new HTTP Request Connection, you will be asked to input the `Base URL`  and any other `Headers` required for your request. Note that  the `Base URL` does not include the endpoint, this will be configured in the next step
