@@ -48,7 +48,13 @@ For this example, we will use [MaxMind](https://www.maxmind.com/en/geoip-api-web
    2. You will need to add an Authorization Header in the form `Bearer <API KEY>`
 
 {% hint style="info" %}
-When creating a new HTTP Request Connection, you will be asked to input the `Base URL`  and any other `Headers` required for your request. Note that  the `Base URL` does not include the endpoint, this will be configured in the next step
+When creating a new HTTP Request Connection, you will be asked to input the static `Base URL`  and any other `Headers` required for your request. Note that  the static `Base URL` does not include the `endpoint`, as this may be a dynamic value that will be configured in the next step
+
+***
+
+Example:
+
+Say you want to query from `https://geolite.info/geoip/v2.1/country/192.168.123.132`. In this case, the `Base URL` is `https://geolite.info/geoip/v2.1/country` and the `endpoint` is `192.168.123.132`&#x20;
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
