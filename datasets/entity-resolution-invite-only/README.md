@@ -1,4 +1,4 @@
-# Entity Resolution (Invite Only)
+# Entity Resolution
 
 Business teams are dependent on trusted data to execute their growth initiatives. However, often the data is messy. One core reason for the messy data is to have duplicate records for various entities - Users, Organizations, Customers, Products or other objects.
 
@@ -36,7 +36,7 @@ You can create complex rules using AND and OR operators across the rules.
 
 #### Fuzzy Match
 
-Fuzzy matching is a technique used to identify and match similar strings that may not be identical. In Census, we want to ensure you always get a predictable & deterministic match. We use [Jaro-Winkler similarity](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler\_distance).
+Fuzzy matching is a technique used to identify and match similar strings that may not be identical. In Census, we want to ensure you always get a predictable & deterministic match. We use [Jaro-Winkler similarity](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance).
 
 Jaro-Winkler similarity compares two strings to determine how similar they are, taking into account variations such as typos, order differences, and abbreviations. This algorithm is especially effective in handling messy real-world data and is commonly used in places like the US Census 🙂.
 
@@ -44,9 +44,9 @@ We provide three customizable thresholds for determining similarity:
 
 | Confidence Level | Matched                                                                                                                                       | Not Matched                                                                                                               | Explanation                                                                                                |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Low (0.6)        | <p>John Smith vs. Jonathon Smythe, </p><p><br>ABC Technologies Inc. vs. ACB Tech</p>                                                          | <p>John Smith vs. Johnathan Smithson, </p><p><br>ABC Technologies Inc. vs. XYZ Tech</p>                                   | The names have some phonetic similarity, but the spelling and length differences result in low confidence. |
-| Medium (0.8)     | <p>Acme Corporation vs. Acme Corp,</p><p><br>The Baker’s Delight vs. Baker’s Delight</p>                                                      | <p>Acme Corporation vs. Apex Corp,</p><p><br>The Baker’s Delight vs. The Delight</p>                                      | The names are similar, but abbreviations and structural differences lower the match confidence to medium.  |
-| High (0.9)       | <p>Census Data Inc. vs. Census Data,</p><p></p><p>Incorporated<br>International Business Machines vs. IBM International Business Machines</p> | <p>Census Data Inc. vs. Census Analytics Inc.,</p><p><br>International Business Machines vs. Global Business Machines</p> | The strings are nearly identical, with minor differences, leading to a high confidence match.              |
+| Low (0.85)       | <p>John Smith vs. Jonathon Smythe, </p><p><br>ABC Technologies Inc. vs. ACB Tech</p>                                                          | <p>John Smith vs. Johnathan Smithson, </p><p><br>ABC Technologies Inc. vs. XYZ Tech</p>                                   | The names have some phonetic similarity, but the spelling and length differences result in low confidence. |
+| Medium (0.9)     | <p>Acme Corporation vs. Acme Corp,</p><p><br>The Baker’s Delight vs. Baker’s Delight</p>                                                      | <p>Acme Corporation vs. Apex Corp,</p><p><br>The Baker’s Delight vs. The Delight</p>                                      | The names are similar, but abbreviations and structural differences lower the match confidence to medium.  |
+| High (0.95)      | <p>Census Data Inc. vs. Census Data,</p><p></p><p>Incorporated<br>International Business Machines vs. IBM International Business Machines</p> | <p>Census Data Inc. vs. Census Analytics Inc.,</p><p><br>International Business Machines vs. Global Business Machines</p> | The strings are nearly identical, with minor differences, leading to a high confidence match.              |
 
 
 

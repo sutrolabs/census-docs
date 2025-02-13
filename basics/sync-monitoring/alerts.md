@@ -2,6 +2,8 @@
 
 Our goal is to keep all the data flowing smoothly, but sometimes things don't go as planned. When that happens, Census offers multiple ways to get alerted so you're always the first to know what's going on with your syncs. Read on to learn how to configure them.
 
+## Alert Types
+
 Each Census sync has its own set of potential alerts and you can configure each of them to match your needs. There are six types of alerts available, two of which are turned on by default for each new sync:
 
 1. **Failed Sync** (default) - Alerts when a sync completely fails, usually because the source or destination connection is broken.
@@ -30,13 +32,29 @@ Lastly, you can configure whether or not you would like recovery emails. By defa
 
 ![](<../../.gitbook/assets/Screenshot 2023-12-04 at 2.31.12 PM.png>)
 
-### Configure your personal email subscriptions
+## Personal Alert Settings
 
-By default, all members of your team will be subscribed to all emails. You can choose to personally opt out of certain emails, under **Organization Home** > **User Settings**.
+You can choose to opt out of certain emails under **Organization Home** > **User Settings**. By default, you will receive sync alert and weekly summary emails for every workspace to which you belong.
 
-![](<../../.gitbook/assets/Screen Shot 2021-10-23 at 9.45.37 AM.png>)
+The 2 primary alert types are **Sync Alerts** and **Weekly Summary Email**. For the **Sync Alert** type, you can subscribe/unsubscribe to individual syncs. By default, you will be subscribed to every new sync that is created. You can change this behavior via the **Automatically subscribe to alerts for new syncs** setting shown below.
 
-### Email subscriptions for aliases and mailing lists
+For more details on per-sync subscriptions, see [#sync-subscriptions](alerts.md#sync-subscriptions "mention").
+
+<figure><img src="../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+
+## Sync Subscriptions
+
+Each user can manage their own subscriptions to syncs. By default, you will be automatically subscribed to each sync in your workspaces. This behavior can be changed in your [#personal-alert-settings](alerts.md#personal-alert-settings "mention").
+
+Subscriptions can be managed via the Alerts tab of a sync. Those users with permissions to manage subscriptions can add & remove other members of the workspace/organization. Those users with basic permissions will only be permitted to edit their own.
+
+<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+
+The subscriptions can also be managed via the Sync List page.
+
+<figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+
+## Aliases & Mailing Lists
 
 You can also send sync alerts and weekly sync summaries to any non-user email address such as an email alias or mailing list. Simply go to **Workspace Settings** > **General** and add the desired email address under **General Settings > Email Alerts and Weekly Summaries**.
 
@@ -46,7 +64,7 @@ You can send sync alerts to your selected channels via Slack's channel email fea
 
 1. In Slack, find the email address for the channel you want to send alerts to. To do this click the **channel name > Integrations**
 
-![](../../.gitbook/assets/get\_slack\_channel\_email.png)
+![](../../.gitbook/assets/get_slack_channel_email.png)
 
 2. Once you have the email address, go to **Workspace Settings** > **General** and paste that channel's email address under **General Settings** > **Slack Alerts**
 
