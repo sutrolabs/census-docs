@@ -24,6 +24,7 @@ Not a Census user yet? [Try AI columns for free](https://login.getcensus.com/u/s
 
 <summary>Classify outbound responses by sentiment </summary>
 
+{% code overflow="wrap" %}
 ```
 Your role is to determine the sentiment of a response to a request for a demo.
 
@@ -34,6 +35,7 @@ Not interested
 Enthusiastic
 Snarky or Annoyed
 ```
+{% endcode %}
 
 Columns Needed: Email responses uploaded from your outbound platform
 
@@ -47,11 +49,13 @@ Activation Strategy: Use these to improve prioritization and reporting on the qu
 
 <summary>Mark a new lead as a B2B or a B2C company</summary>
 
+{% code overflow="wrap" %}
 ```
 For the following company, return company type based on the company name
 COMPANY NAME: {{ record['COMPANY_NAME']}}
 
 ```
+{% endcode %}
 
 Use Enum as the response type and include in potential values such as B2B, B2C, Both.
 
@@ -61,8 +65,9 @@ Use Enum as the response type and include in potential values such as B2B, B2C, 
 
 <summary>Analyze product usage trends to provide personalized support</summary>
 
+{% code overflow="wrap" %}
 ````
-Summarize the company’s product usage trends over the last 30 days, focusing on key feature activity and highlighting any significant changes compared to the previous 30 days. Use a conversational style with bullet points to highlight key observations for sales talking points. Prioritize the following metrics for analysis:
+Summarize the company's product usage trends over the last 30 days, focusing on key feature activity and highlighting any significant changes compared to the previous 30 days. Use a conversational style with bullet points to highlight key observations for sales talking points. Prioritize the following metrics for analysis:
 
 - Sync Creation Attempts
 - Model Creation
@@ -103,7 +108,7 @@ And the feature usage JSON:
 Structure:
 
 1. Overview of that data:
-   - Summarize the company’s product activity over the time period provided, focusing on key features such as sync creation, model creation, and new sync configurations.
+   - Summarize the company's product activity over the time period provided, focusing on key features such as sync creation, model creation, and new sync configurations.
    - Highlight any significant differences between the current and previous 30 days.
    - Highlight any significant increases or decrease in `records_updated`, `records_failed` or `reocrds_invalid`
    
@@ -123,11 +128,12 @@ Structure:
 
 5. Suggested Next Steps:
    - Suggest personalized actions for the Customer Success team, such as offering more resources, providing troubleshooting support for invalid records, or scheduling check-ins to resolve sync issues.
-   - Encourage deeper engagement with underutilized features, particularly if certain features haven’t been used in the last 15 days.
+   - Encourage deeper engagement with underutilized features, particularly if certain features haven't been used in the last 15 days.
 
 ```
 
 ````
+{% endcode %}
 
 Columns needed: We use a JSON formatted column to pass the activity details and their meanings to the LLM.&#x20;
 
@@ -139,6 +145,7 @@ Best response type: String
 
 <summary>Assign sales territory based on company address</summary>
 
+{% code overflow="wrap" %}
 ```
 Your task is to determine what sales territory a given account falls into based on its location relative to the Mississippi river. 
 
@@ -149,6 +156,7 @@ If the address is in the United States and east of the Mississippi River, return
 If the address is in the United States and West of the Mississippi River, return [US West]
 If the address is in Canada, return [Canada]
 ```
+{% endcode %}
 
 Columns Needed: An address including a state or zip code, shown here as ADDRESS
 
@@ -160,6 +168,7 @@ Best response type: Enum or string
 
 <summary>Assign a marketing persona based on a job title</summary>
 
+{% code overflow="wrap" %}
 ```
 Your task is to assign personas to the listed job titles.
 
@@ -170,6 +179,7 @@ If the person is a senior leader, return [Executive]. Look for titles including 
 If the person has a sales or marketing title, return [Go to market]
 If the person has a title in growth or ops, return [Ops]
 ```
+{% endcode %}
 
 Update the categories as needed.
 
@@ -185,6 +195,7 @@ Activate to: Your marketing automation platforms to power personalized email nur
 
 <summary>Summarize reviews to prioritize areas for improvement</summary>
 
+{% code overflow="wrap" %}
 ```
 Your task is to determine the reasons behind our five star reviews. 
 
@@ -197,6 +208,7 @@ Your task is to determine the reasons behind our five star reviews.
 
 If multiple answers are relevant, select the one that appears first. Provide only the summarized reason for the review and no other context. 
 ```
+{% endcode %}
 
 Update the categories as needed.
 
@@ -210,6 +222,7 @@ Best Response type: Enum or string
 
 <summary>Customer Sentiment Analysis for B2B and B2C Businesses</summary>
 
+{% code overflow="wrap" %}
 ```
 You are a customer support quality analyst reviewing support requests submitted to a B2B SaaS company. Please assign a sentiment category for each customer request based on the following criteria:
 
@@ -251,6 +264,7 @@ Sentiment: Positive - Upgrade
 
 Explanation: The message reflects interest in an upgrade and shows a positive outlook toward exploring premium options.
 ```
+{% endcode %}
 
 Update the categories as needed.
 
@@ -265,6 +279,7 @@ Best response type: Enum
 
 <summary>Account Fit Scoring / Lead Scoring</summary>
 
+{% code overflow="wrap" %}
 ```
 Using {{ record['CUSTOMER_TRAITS'] }}, perform an Ideal Customer Profile (ICP) analysis using regression. List positive and negative traits with their correlation strengths (strong, moderate, weak), noting data gaps without assuming negatives. Identify valuable traits exclusively based on regression analysis, with category weights summing to 100% for LLM scoring.
 
@@ -296,6 +311,7 @@ Categories (with weights)
 Final Output: Structure findings with headings, correlation strengths, and category weights. Note data gaps and additional traits from regression analysis for scoring and lead comparison.
 
 ```
+{% endcode %}
 
 Update the categories as needed.
 
@@ -310,9 +326,10 @@ Best response type: Enum or Numbers
 
 <summary>Analyze Traits: Identify High Value Customers</summary>
 
+{% code overflow="wrap" %}
 ````
 
-You are a data analyst. Using the customer data from the highest plan  plan and the lowest plan , create a trait-by-trait analysis showing the likelihood of being a high-value customer.
+You are a data analyst. Using the customer data from the highest plan and the lowest plan, create a trait-by-trait analysis showing the likelihood of being a high-value customer.
 
 
 For each trait in the data:
@@ -353,6 +370,7 @@ TRAIT: Visit Frequency
 ```
 
 ````
+{% endcode %}
 
 
 
@@ -362,6 +380,7 @@ TRAIT: Visit Frequency
 
 <summary>Customer Upsell Score / Potential</summary>
 
+{% code overflow="wrap" %}
 ```
 Using only the following benchmark data, calculate the customer's upsell score by adding the likelihood ratios of their matching traits found in this analysis:
 
@@ -402,6 +421,7 @@ Top Trait: [Top_Trait_Name]
         
 
 ```
+{% endcode %}
 
 
 
@@ -415,17 +435,18 @@ Top Trait: [Top_Trait_Name]
 
 <summary>Enrich and enhance account recommendations in Salesforce</summary>
 
+{% code overflow="wrap" %}
 ````
 If the {{ record['DOMAIN_PAGE_DETAILS_JSON'] }} equals "Not enough activity to provide a summary," display the following message:  
 **Not enough activity to provide a summary.**  
 
-Otherwise, summarize the company’s engagement and interest trends based on their web page interactions over the past 90 days.
+Otherwise, summarize the company's engagement and interest trends based on their web page interactions over the past 90 days.
 
 ```html
 {{ record['DOMAIN_PAGE_DETAILS_JSON'] }}
 ```
 
-Summarize the company’s engagement using a conversational style with bullet points, focusing on the following prioritized pages and blog posts. If there are visits to non-prioritized pages (e.g., career, about) without visits to key pages, include them; otherwise, ignore. For customers with a `{{ record['SALES_STATUS'] }}` set to “Customer,” remember they are already paying for our product. It’s still valuable to engage their team to explore potential future needs or improvements. For those marked as “Aware” or “Unaware,” they are in the early stages of the buying journey. Prospects with a `{{ record['SALES_STATUS'] }}` of “Ready to Engage” or “Engaged” are already in conversation with our sales team and likely evaluating specific solutions.
+Summarize the company's engagement using a conversational style with bullet points, focusing on the following prioritized pages and blog posts. If there are visits to non-prioritized pages (e.g., career, about) without visits to key pages, include them; otherwise, ignore. For customers with a `{{ record['SALES_STATUS'] }}` set to “Customer,” remember they are already paying for our product. It's still valuable to engage their team to explore potential future needs or improvements. For those marked as “Aware” or “Unaware,” they are in the early stages of the buying journey. Prospects with a `{{ record['SALES_STATUS'] }}` of “Ready to Engage” or “Engaged” are already in conversation with our sales team and likely evaluating specific solutions.
 
 We also have `{{ record['INDUSTRY'] }}` for context. The higher the `{{ record['HEX_FIT_SCORE'] }}`, the more we want to pursue them, so prioritize accordingly.
 
@@ -480,7 +501,7 @@ The following JSON includes fields that provide further insights into each page 
     - Summarizes key takeaways or advantages, such as product benefits like scalability, security, or efficiency.
 
 4. persona_classification:
-    - Identifies the target audience (e.g., “Data Persona” or “Both”), reflecting the content’s relevance to different user types.
+    - Identifies the target audience (e.g., “Data Persona” or “Both”), reflecting the content's relevance to different user types.
 
 5. reader_intent:
     - Highlights what the reader aims to understand, like learning processes, evaluating pricing, or exploring features.
@@ -499,7 +520,7 @@ Use the information from the provided JSON:
 Structure:
 
 1. Overview of Last 90 Days:
-    - Summarize the company’s web activity over the last 90 days, focusing on the prioritized pages and blog posts.
+    - Summarize the company's web activity over the last 90 days, focusing on the prioritized pages and blog posts.
     - Highlight key areas of interest such as product features, pricing, integrations, and comparisons.
 
 2. Buying Signals & Potential Questions:
@@ -509,7 +530,7 @@ Structure:
 3. Page Engagement:
     - For each prioritized page or blog post visited, provide details about the content and its relevance:
         - Page Purpose: What does the page cover? (e.g., pricing, product features)
-        - User’s Interest: Why does this page matter to them? (e.g., cost evaluation, competitive comparison)
+        - User's Interest: Why does this page matter to them? (e.g., cost evaluation, competitive comparison)
 
 4. Suggested Next Steps:
     - Suggest personalized actions for the sales team, such as offering more resources, scheduling demos, or providing case studies.
@@ -528,7 +549,7 @@ Sample Output:
 
 <p><b>Buying Signals & Potential Questions:</b></p>
 <ul>
-    <li>🟢 The company appears to be in the "Consider" stage, as they’ve been reviewing product pages and pricing options multiple times.</li>
+    <li>🟢 The company appears to be in the "Consider" stage, as they've been reviewing product pages and pricing options multiple times.</li>
     <li>💡 Possible Questions: What integrations are available for their specific tech stack? What are the pricing options for large data syncs?</li>
 </ul>
 
@@ -565,6 +586,7 @@ Customer's Lifetime Value (LTV): {{ record['CUSTOMER_LTV']}}
 Days since last purchase: {{ record['DAYS_SINCE_LAST_PURCHASE']}}
 
 ````
+{% endcode %}
 
 </details>
 
@@ -576,6 +598,7 @@ We will use customer's life time value as an input column. If you don't have LTV
 
 You can also use [Computed Columns](../core-concepts-3.md) to calculate days since last purchase.
 
+{% code overflow="wrap" %}
 ```
 Build a customer promo formula (from 10% to 30%) based on these examples:
 
@@ -590,6 +613,7 @@ Customer's Lifetime Value (LTV): {{ record['CUSTOMER_LTV']}}
 Days since last purchase: {{ record['DAYS_SINCE_LAST_PURCHASE']}}
 
 ```
+{% endcode %}
 
 </details>
 
@@ -597,6 +621,7 @@ Days since last purchase: {{ record['DAYS_SINCE_LAST_PURCHASE']}}
 
 <summary>Create Personalized emails based on account info</summary>
 
+{% code overflow="wrap" %}
 ```
 The data activation company Census links its customer case studies on this page. https://www.getcensus.com/customers
 
@@ -617,6 +642,7 @@ I'd like you to help me prepare a sales email to a prospect with job title {{rec
 4. Remember to keep your output brief and consider all of the instructions. Provide no explanation beyond the email text.
 
 ```
+{% endcode %}
 
 </details>
 
@@ -624,6 +650,7 @@ I'd like you to help me prepare a sales email to a prospect with job title {{rec
 
 <summary>Add SIC codes and Industry labels to account records</summary>
 
+{% code overflow="wrap" %}
 ```
 You are tasked with determining the industry classification for a given company based on publicly available information. The industry classification should match the Securities and Exchange Commission's (SEC) list of official standard industrial classifications (SIC).
 You will be given a company name: {{record['COMPANY']}}
@@ -640,6 +667,7 @@ Unable to determine. Insufficient information available.
 Begin your research and classification now. Provide no explanation.
 Before answering, think carefully about the instructions.
 ```
+{% endcode %}
 
 Columns Needed: Company name, shown here as COMPANY.  The data could be improved by including a URL to the company website, but this is not necessary.
 
@@ -653,12 +681,14 @@ Best Response type: String
 
 <summary>Standardize email field values</summary>
 
+{% code overflow="wrap" %}
 ```
 For the following field, return a single value as an email address. Remove all unwanted text. If the field does not have any email address, return empty string.
 Field: {{ record['USER_EMAIL']}}
 
 You will not provide any explanation or description. 
 ```
+{% endcode %}
 
 </details>
 
@@ -666,12 +696,14 @@ You will not provide any explanation or description.
 
 <summary>Clean up leading and trailing spaces</summary>
 
+{% code overflow="wrap" %}
 ```
 For the following field, return the text with leading and trailing spaces removed. Don't remove space in-between words.
 Field: {{ record['TEXT_FIELD']}}
 
 You will not provide any explanation or description. 
 ```
+{% endcode %}
 
 </details>
 
@@ -679,10 +711,12 @@ You will not provide any explanation or description.
 
 <summary>Remove Special Characters from a name</summary>
 
+{% code overflow="wrap" %}
 ```
 For the following name field, return the name with special characters and numeric digits removed
 Name Field: {{ record['CUSTOMER_NAME']}}
 ```
+{% endcode %}
 
 </details>
 
@@ -690,11 +724,13 @@ Name Field: {{ record['CUSTOMER_NAME']}}
 
 <summary>Translate text</summary>
 
+{% code overflow="wrap" %}
 ```
 Your task is to determine the reasons behind our five star reviews.
 
 1. Translate the text in {{record['REVIEW']}} into English
 ```
+{% endcode %}
 
 </details>
 
@@ -702,6 +738,7 @@ Your task is to determine the reasons behind our five star reviews.
 
 <summary>Review a Translation for Quality</summary>
 
+{% code overflow="wrap" %}
 ```
 You will be given a review in a non-english language and an AI-generated translation of that review. Your task is to determine the quality of the translation.
 1. First, consider the original review in {{record['REVIEW']}}. Consider both the meaning of the individual words and the meanings of the sentences as a whole.
@@ -711,6 +748,7 @@ You will be given a review in a non-english language and an AI-generated transla
 5. Return your answer in the format:
 [Confidence Score], [Explanation]
 ```
+{% endcode %}
 
 </details>
 
@@ -718,10 +756,12 @@ You will be given a review in a non-english language and an AI-generated transla
 
 <summary>Standardize mailing addresses</summary>
 
+{% code overflow="wrap" %}
 ```
 For the following address field, return the outcome in an standardized US address format. 
 Address Field: {{ record['USER_ADDRESS']}}.
 ```
+{% endcode %}
 
 </details>
 
@@ -729,6 +769,7 @@ Address Field: {{ record['USER_ADDRESS']}}.
 
 <summary>Enforce Enum format to analyze data cleanly</summary>
 
+{% code overflow="wrap" %}
 ```
 Your task is to sort data into categories.
 1. Consider the data in {{record['INDUSTRIES_GPT']}}
@@ -740,6 +781,7 @@ Your task is to sort data into categories.
 
 Sort each row into its closest match. Return only one response for each row, and return only categories that exactly match those listed above.
 ```
+{% endcode %}
 
 </details>
 
