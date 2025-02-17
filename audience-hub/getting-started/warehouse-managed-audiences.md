@@ -40,7 +40,7 @@ _Audience Membership (Join Table)_
 | 102        | 201          |
 | 103        | 204          |
 
-### Entity Definitions
+### Dataset Definitions
 
 {% hint style="info" %}
 This process should be done with the help of your Census representative, who can talk through any questions during setup.
@@ -48,37 +48,37 @@ This process should be done with the help of your Census representative, who can
 
 #### **Part 1**: Entities
 
-Next, create an entity for each of the three models. This will allow you to provide some additional metadata to help Census understand the shape of your data and how its related.
+Next, create a dataset for each of the three models. This will allow you to provide some additional metadata to help Census understand the shape of your data and how its related.
 
-Audiences model -> Create an **Audience** type entity:
+Audiences model -> Create an **Audience** type dataset:
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.30.25@2x.png" alt=""><figcaption></figcaption></figure>
 
-Person model -> Create a **Person** type entity:
+Person model -> Create a **Person** type dataset:
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.29.45@2x.png" alt=""><figcaption></figcaption></figure>
 
-Audience Membership model -> Create a **Join Table** type entity:
+Audience Membership model -> Create a **Join Table** type dataset:
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.30.14@2x.png" alt=""><figcaption></figcaption></figure>
 
-#### **Part 2**: Entity relationships
+#### **Part 2**: Dataset relationships
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.33.42@2x.png" alt=""><figcaption></figcaption></figure>
 
 Finally, specify how these entities relate to each other by setting up relationships between them.
 
-Connect the **Person** entity to the **Audience Membership** entity with a **One-to-Many** relationship:
+Connect the **Person** dataset to the **Audience Membership** dataset with a **One-to-Many** relationship:
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.30.52@2x.png" alt=""><figcaption></figcaption></figure>
 
-Connect the **Audience** entity to the **Audience Membership** entity with a **One-to-Many** relationship:
+Connect the **Audience** dataset to the **Audience Membership** dataset with a **One-to-Many** relationship:
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.35.00@2x.png" alt=""><figcaption></figcaption></figure>
 
 ### Finalize Setup
 
-Once your entity definitions are set up, your Census representative can finalize your configuration. You should see your imported audience segments populate in Census. You can distinguish them from audiences defined in the UI based on the "Managed" tag that appears next to the segment name.
+Once your datasets are set up, your Census representative can finalize your configuration. You should see your imported audience segments populate in Census. You can distinguish them from audiences defined in the UI based on the "Managed" tag that appears next to the segment name.
 
 <figure><img src="../../.gitbook/assets/audience-list (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -104,7 +104,7 @@ Any changes to the Audiences table will be reflected in the respective audiences
 * **Row was updated**: The matching audience will be renamed in Census on the next refresh. This will not impact the name of any audiences in your downstream destinations.
 * ⚠️ **Row was removed**: The matching audience will be marked as invalid on the next refresh. Any related syncs will begin to fail. You will have the option to manually delete the audience in Census, or re-add the row (if it was removed by mistake).
 
-**What happens if I delete my Person/Audience/Join Table entity?**
+**What happens if I delete my Person/Audience/Join Table dataset?**
 
 Any audience segments managed by the Warehouse-Managed Audience feature will no longer be considered valid. Refreshes may not work properly.
 
