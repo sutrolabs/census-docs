@@ -8,7 +8,7 @@ description: >-
 
 ## Before you start
 
-The profile explorer allows you to build and explore your complete customer 360, based on the joining of your key entities.  Typically a member of the data team will need to first set up the entities for your warehouse connection before getting started. Take a look at [Defining Your Data Model](data-preparation.md) for details.
+The profile explorer allows you to build and explore your complete customer 360, based on the joining of your key entities.  Typically a member of the data team will need to first set up the entities for your warehouse connection before getting started. Take a look at [Defining Your Data Model](./) for details.
 
 ## Using the Profile Explorer
 

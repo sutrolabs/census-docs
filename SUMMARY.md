@@ -44,16 +44,14 @@
 ## 👥 Audience Hub
 
 * [Overview](basics/audience-hub/README.md)
-* [Creating Segments](basics/audience-hub/getting-started.md)
+* [Data Preparation](audience-hub/data-preparation/README.md)
+  * [Profile Explorer](audience-hub/data-preparation/profile-explorer.md)
+* [Creating Segments](audience-hub/getting-started/README.md)
+  * [Segment Priorities](audience-hub/getting-started/segment-priorities.md)
+  * [Warehouse-Managed Audiences](audience-hub/getting-started/warehouse-managed-audiences.md)
+* [Experiments and Analysis](audience-hub/analyzing-segments/README.md)
+  * [Audience Match Rates](audience-hub/analyzing-segments/audience-match-rates.md)
 * [Activating Segments](basics/audience-hub/syncing-segments.md)
-* [Profile Explorer](basics/audience-hub/profile-explorer.md)
-* [Warehouse-Managed Audiences](basics/audience-hub/warehouse-managed-audiences.md)
-* [Audience Match Rates](basics/audience-hub/audience-match-rates.md)
-* [Segment Priorities](basics/audience-hub/segment-priorities.md)
-* [Experiments and Analysis](basics/audience-hub/analyzing-segments.md)
-* [Calculated Columns](audience-hub/data-preparation.md)
-* [Enrichment (Moved to Datasets)](basics/data-defining/enrichment.md)
-* [Data Preparation](basics/audience-hub/data-preparation.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
 

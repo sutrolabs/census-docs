@@ -17,11 +17,10 @@ Audience Hub is designed from the ground up for marketing and other customer-fac
 
 Audience Hub provides a complete suite of tools and capabilities to enable fast and complete audience targeting including:
 
-* Full-featured visual Segment Builder&#x20;
+* Full-featured visual segment builder&#x20;
 * Cross-entity and cross-segment conditions
 * Segment size tracking&#x20;
 * Segment comparison tools
-* Warehouse Writeback - Track segment performance and membership in your warehouse
 
 {% hint style="info" %}
 Audience Hub is available for Enterprise plans.&#x20;

@@ -6,7 +6,7 @@ description: >-
 
 # Activating Segments
 
-Creating segments is valuable on its own (for example, take a look at how Census lets you [analyze your segments](analyzing-segments.md) regardless of their destination). But the real value of Census is in publishing those segments to ad platforms and marketing tools and automatically keeping them fresh as your data changes.
+Creating segments is valuable on its own (for example, take a look at how Census lets you [analyze your segments](../../audience-hub/analyzing-segments/) regardless of their destination). But the real value of Census is in publishing those segments to ad platforms and marketing tools and automatically keeping them fresh as your data changes.
 
 There are two ways to publish a segment, depending on where (and how) you want to send it.
 
@@ -31,9 +31,9 @@ If you've synced to other types of destinations in Census, you'll recognize we m
 
 While we believe these defaults are right for most marketers most of the time, there may be times you need to do things differently. While you can't modify the settings for an existing one-click sync, you can still create a "classic" Census sync as described below.
 
-{% hint style="info" %}
-When we launched one-click audiences, we migrated existing all ad platform syncs that matched the assumptions above. We also migrated some that didn't, but in those cases we preserved the original configurations. For example, if we migrated a sync on a weekly schedule, it remained weekly. If you have any questions, please contact [support@getcensus.com](mailto:support@getcensus.com) and we'll be happy to help.
-{% endhint %}
+### Audience Match Rates
+
+Census will automatically import match rates from one-click sync destinations that provide this information. For more information on this feature, see [audience match rates](../../audience-hub/analyzing-segments/audience-match-rates.md).
 
 ### Supported Destinations
 

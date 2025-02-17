@@ -4,9 +4,7 @@ description: How to use the Audience Hub visual builder to create and update seg
 
 # Creating Segments
 
-## Before you start
-
-Segments are built on top of datasets, the core models set up for a data warehouse connection. Typically a member of the data team will need to first set up the datasets for your warehouse connection before getting started. Take a look at [Defining Your Data Model](data-preparation.md) for details.
+Segments are built on top of datasets, the core models set up for a data warehouse connection. Typically a member of the data team will need to first set up the datasets for your warehouse connection before getting started. Take a look at [Defining Your Data Model](../data-preparation/) for details.
 
 ## Using the visual builder
 
@@ -92,6 +90,12 @@ Though Census's visual segment creator is designed to be used without knowing an
 
 Additionally, if you're trying to create a condition that Census doesn't support, you can still add conditions to your segment by selecting the **SQL Condition** in the Attribute menu. The SQL you provide will be added as an additional condition alongside any other conditions you've added to your segment. Think of it like formulas in Excel: it's a powerful tool in your toolbelt that can let you express very complex concepts, but it can break the segment so use with care!
 
+## Previewing Members
+
+At any point, you can also view a sample of the members of a particular segment by pressing the **Preview Results** button in the top right of the segment view. This will show the first 25 members of your segment as currently defined.
+
+<figure><img src="../../.gitbook/assets/Artboard.png" alt=""><figcaption></figcaption></figure>
+
 ### Segment Limits
 
 A limit can be placed on a segment to confine to a certain number of records. This is accessed when building a segment by clicking the ... menu item in the upper right. The process to add a limit is as follows.
@@ -118,6 +122,14 @@ Setting a dimension limit follows a similar set of steps as segment limits. Enab
 _Note: Dimension limits are currently only available for **Snowflake** and **Databricks** warehouses._
 
 <figure><img src="../../.gitbook/assets/dimension_limit_ui.png" alt=""><figcaption></figcaption></figure>
+
+## Managing Many Segments
+
+Census customers often need to manage hundreds of segments. Defining these segments and managing memberships across so many segments often requires defining rules that span across many segments, rather than individual sets of segment rules. Census provides a few different tools to support companies managing large sets of segments.
+
+* [Inclusion/Exclusion rules](./#related-datasets-and-related-segments) can be used to specify the other segments that should be considered when defining a segment.
+* [Segment Priorities](segment-priorities.md) allow defining a "waterfall"-style set of priorities across segments in situations where members may appear in multiple at once. Priorities enforces that a particular contact member will only appear in the highest priority segment they qualify for at any given time.
+* [Warehouse-Managed Audiences](warehouse-managed-audiences.md) allow data teams to bulk define segments using SQL and have them automatically imported into Census Audience Hub.
 
 ## FAQs
 

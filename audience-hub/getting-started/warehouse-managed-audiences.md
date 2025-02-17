@@ -4,13 +4,7 @@ description: Manage audiences programmatically from your data warehouse.
 
 # Warehouse-Managed Audiences
 
-## Overview
-
 Warehouse-Managed Audiences enable data teams to manage audiences programmatically from the warehouse, while taking full advantage of all the features that come with Audience Hub.
-
-<figure><img src="https://lh7-us.googleusercontent.com/smS4-HvqtEVkJLnZvj_HTLhIdbUUV28Uqlv6TZf_P_7mWnC6P42G83XGksDcmnl3r4vuQNhYrJQ7zbTVebbkE92VZH91vCJdYHQtUqj9FUGWBcuL_rsKCcBoR9McXDMVIsuDAjDHKTznkhwMYdOuVEk" alt=""><figcaption></figcaption></figure>
-
-## Getting Started
 
 ### Data Models
 
