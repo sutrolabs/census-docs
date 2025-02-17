@@ -46,6 +46,7 @@
 * [Overview](basics/audience-hub/README.md)
 * [Data Preparation](audience-hub/data-preparation/README.md)
   * [Profile Explorer](audience-hub/data-preparation/profile-explorer.md)
+  * [Exclusion Lists](audience-hub/data-preparation/exclusion-lists.md)
 * [Creating Segments](audience-hub/getting-started/README.md)
   * [Segment Priorities](audience-hub/getting-started/segment-priorities.md)
   * [Warehouse-Managed Audiences](audience-hub/getting-started/warehouse-managed-audiences.md)
