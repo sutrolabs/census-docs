@@ -8,7 +8,7 @@ Census at its core is about connecting and coordinating across your business's s
 
 Source data for all Census Syncs come from your Data Warehouse. Historically, a data warehouse was the end of the line, where data went to collect dust. But modern cloud data warehouses enable a huge variety of data sources and data size, as well as the flexibility to define how data should be aggregated, joined, and organized specifically for your business. It's this flexibility and scalability that make it the perfect data hub for your operations.
 
-Census can use anything you grant access to in your data warehouse as a sync source, whether that is a table, a view, a SQL query, or a dbt model. We'll cover the process of building models in the next section.
+Census can use anything you grant access to in your data warehouse as a sync source, whether that is a table, a view, a SQL query, or a dbt model. We'll cover the process of building datasets in the next section.
 
 {% hint style="info" %}
 For instructions on connecting your specific data source, take a look at the Data Sources section on the left.
@@ -22,9 +22,9 @@ If you don't have credentials with write access available, you can connect to yo
 
 Either option may be right for you, read more about the differences between [Basic and Advanced Sync Engines](https://docs.getcensus.com/sources/overview#sync-engines).
 
-#### Data source models and segments
+#### Datasets and segments
 
-Once you have your data source connected, you can also create models on top of your data source, or connect data modeling integrations like [dbt](../../sources/native-dbt-integration.md) and [Looker](../data-defining/models/looker.md). Models are optional in Census, you can also sync data directly from a data source table or view, but models give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your models, Census makes it easy to quickly select and sync [Segments](../../audience-hub/getting-started/) of your models as well.
+Once you have your data source connected, you can also create datasets on top of your data source, or connect dataset integrations like [dbt](../../sources/native-dbt-integration.md) and [Looker](../data-defining/models/looker.md). Datasets are optional in Census, you can also sync data directly from a data source table or view, but datasets give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your datasets, Census makes it easy to quickly select and sync [Segments](../../audience-hub/getting-started/) as well.
 
 ### Destination Services
 
@@ -100,7 +100,7 @@ You can read all about the Liquid template system provided by Census here:
 {% hint style="info" %}
 Templated fields have a few limitations:
 
-* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](../../datasets/overview.md), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../../audience-hub/getting-started/#using-the-visual-builder) and [calculated fields](../../audience-hub/data-preparation/#calculated-fields).
+* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](../../datasets/overview.md), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../../audience-hub/getting-started/#using-the-visual-builder) and [calculated fields](../../audience-hub/data-preparation-1/#calculated-fields).
 * Not all sources support templates yet; we are always adding support for new sources!
 {% endhint %}
 

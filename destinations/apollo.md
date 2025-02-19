@@ -27,15 +27,15 @@ In this guide, we will show you how to connect Apollo to Census and create your 
 
 Apollo lets you create a number of API keys, each with their own set of permissions. You'll almost certainly want to create a new API key for Census rather than reusing an existing one.
 
-In Apollo's top navigation bar, click **Enrich > API Enrichment**.
+Launch Apollo and click **Settings > Integrations**.
 
-Then, inside **API Management**, click **API Keys**.
+Then, find the **API** option and click **Connect**.
 
-Next, click **Create New Key**.
+Next,  **API keys** to view or create new API keys. Then, click **Create New Key**.
 
-![](<../.gitbook/assets/image (20).png>)
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
-Provide a name you'll recognize ("Census" is a good choice) and select the **Set as Master Key**.
+Name your API Key and add a description  ("Census" is a good choice). To scope your key appropriately, click the checkbox for each Apollo API endpoint you need to access.  Select **Set as Master Key**.
 
 Click **Create API Key**.
 

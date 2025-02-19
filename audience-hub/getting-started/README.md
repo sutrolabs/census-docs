@@ -4,7 +4,7 @@ description: How to use the Audience Hub visual builder to create and update seg
 
 # Creating Segments
 
-Segments are built on top of datasets, the core models set up for a data warehouse connection. Typically a member of the data team will need to first set up the datasets for your warehouse connection before getting started. Take a look at [Defining Your Data Model](../data-preparation/) for details.
+Segments are built on top of datasets, the core models set up for a data warehouse connection. Typically a member of the data team will need to first set up the datasets for your warehouse connection before getting started. Take a look at [Defining Your Data Model](../data-preparation-1/) for details.
 
 ## Using the visual builder
 

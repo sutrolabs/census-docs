@@ -44,15 +44,16 @@
 ## 👥 Audience Hub
 
 * [Overview](basics/audience-hub/README.md)
-* [Data Preparation](audience-hub/data-preparation/README.md)
-  * [Profile Explorer](audience-hub/data-preparation/profile-explorer.md)
-  * [Exclusion Lists](audience-hub/data-preparation/exclusion-lists.md)
 * [Creating Segments](audience-hub/getting-started/README.md)
   * [Segment Priorities](audience-hub/getting-started/segment-priorities.md)
   * [Warehouse-Managed Audiences](audience-hub/getting-started/warehouse-managed-audiences.md)
 * [Experiments and Analysis](audience-hub/analyzing-segments/README.md)
   * [Audience Match Rates](audience-hub/analyzing-segments/audience-match-rates.md)
 * [Activating Segments](basics/audience-hub/syncing-segments.md)
+* [Calculated Columns](audience-hub/data-preparation.md)
+* [Data Preparation](audience-hub/data-preparation-1/README.md)
+  * [Profile Explorer](audience-hub/data-preparation-1/profile-explorer.md)
+  * [Exclusion Lists](audience-hub/data-preparation-1/exclusion-lists.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
 
