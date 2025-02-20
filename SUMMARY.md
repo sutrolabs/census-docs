@@ -275,7 +275,7 @@
   * [Login & SSO Settings](basics/security-and-privacy/login-and-sso-settings.md)
   * [Workspaces & Access Controls](basics/security-and-privacy/workspaces-and-access-controls.md)
   * [Network Access Controls](basics/security-and-privacy/regions-and-ip-addresses.md)
-  * [Blob Storage](misc/security-and-privacy/bring-your-own-blob-storage/README.md)
+  * [Object Storage Providers](misc/security-and-privacy/bring-your-own-blob-storage/README.md)
     * [Bring your own S3 Bucket](misc/security-and-privacy/bring-your-own-blob-storage/bring-your-own-s3-bucket.md)
     * [Bring your own GCS Bucket](misc/security-and-privacy/bring-your-own-blob-storage/bring-your-own-gcs-bucket.md)
     * [Bring your own Azure Bucket](misc/security-and-privacy/bring-your-own-blob-storage/bring-your-own-azure-bucket.md)

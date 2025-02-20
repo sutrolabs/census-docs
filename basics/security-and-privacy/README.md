@@ -50,12 +50,12 @@ Your warehouse reports back to the Census platform only the number of rows that 
 
 ### Step 2: Unload “Diffs” to Cloud Storage
 
-![](../../.gitbook/assets/security\_step\_2.png)
+![](../../.gitbook/assets/security_step_2.png)
 
-Once the data differences, or “diffs”, have been calculated, Census instructs your warehouse to copy just those rows to our cloud provider’s “blob storage” bucket (either AWS S3 or Google Cloud Storage).
+Once the data differences, or “diffs”, have been calculated, Census instructs your warehouse to copy just those rows to our cloud provider’s object storage bucket (either AWS S3 or Google Cloud Storage).
 
 {% hint style="info" %}
-We support using your own blob storage for an extra layer of security and privacy. [Read more here 👉](../../misc/security-and-privacy/bring-your-own-blob-storage/)
+We also support the ability to use your own object storage provider for an extra layer of security and privacy. [Read more here 👉](../../misc/security-and-privacy/bring-your-own-blob-storage/)
 {% endhint %}
 
 The temporary credentials we provide to your warehouse that are used to copy data are only capable of writing data, not reading it back out, so **this is a one-way data flow**. Diffs are assigned cryptographically unique key paths in the cloud storage bucket, making it impossible for an attacker to guess paths to customer data.
@@ -67,7 +67,7 @@ The cloud storage buckets used by Census are configured with two additional secu
 
 ### Step 3: Prepare Data for Loading into SaaS Applications
 
-![](../../.gitbook/assets/security\_step\_3.png)
+![](../../.gitbook/assets/security_step_3.png)
 
 In most cases, the data from the warehouse cannot be loaded directly to the SaaS application without changes.
 
@@ -75,11 +75,11 @@ Census needs to adjust data types and formats, apply your mapping rules to trans
 
 Instead of bringing the data into the core Census platform, Census starts up a fleet of stateless, ephemeral mappers (similar to “Lambdas” or “Cloud Functions”) that each pull in one batch of diffs and apply it to the service.
 
-Mappers use separate temporary credentials that are only capable of reading data from blob storage for least-privilege isolation. Once a mapper finishes its work, **it deletes the diff batch** from cloud storage and reports its results (see step 4).
+Mappers use separate temporary credentials that are only capable of reading data from object storage for least-privilege isolation. Once a mapper finishes its work, **it deletes the diff batch** from cloud storage and reports its results (see step 4).
 
 ### Step 4: Report Skipped Records and Feedback to Warehouse
 
-![](../../.gitbook/assets/security\_step\_4.png)
+![](../../.gitbook/assets/security_step_4.png)
 
 When a mapper finishes its work, it has two lists of records - those that were successfully loaded to the SaaS application, and those that failed, either because of validation issues in the data or transient errors (SaaS outages or errors, networking issues, etc).
 
