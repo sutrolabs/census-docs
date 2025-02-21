@@ -8,4 +8,4 @@ Once created, exclusions lists are automatically applied to every sync and segme
 
 Exclusions lists can be enabled or disabled. Disabled exclusion lists will no longer filter segments and syncs, though they will still appear in the list of exclusion lists.&#x20;
 
-Exclusion Lists can only be created, modified, and enabled/disabled by owners and admins in Census. For more information on access controls, see [Workspaces & Access Controls](../../basics/security-and-privacy/workspaces-and-access-controls.md).
+Exclusion Lists can only be created, modified, and enabled/disabled by owners and admins in Census. For more information on access controls, see [Workspaces & Access Controls](../../misc/security-and-privacy/workspaces.md).
