@@ -22,19 +22,19 @@ Follow the OAuth flow to connect HubSpot. Easy!
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name**          | **Supported?** | **Sync Keys**                                             | **Behaviors**                         |
-| ------------------------ | :------------: | --------------------------------------------------------- | ------------------------------------- |
-| Company                  |        ✅       | Object ID, Domain, any custom single-line  text or number | Update Only, Update or Create, Mirror |
-| Contact                  |        ✅       | Object ID, Email, any custom single-line  text or number  | Update Only, Update or Create, Mirror |
-| Contact & Static List    |        ✅       | Email                                                     | Update Only, Update or Create, Mirror |
-| Deal                     |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror |
-| Product                  |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror |
-| Line Item                |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror |
-| Custom Object            |        ✅       | Object ID, any searchableProperty                         | Update Only, Update or Create, Mirror |
-| Subscription Preferences |        ✅       | Email                                                     | Mirror                                |
-| Custom Behavioral Event  |        ✅       | Unique Event ID                                           | Send                                  |
-| Email                    |        ✅       | N/A                                                       | Send                                  |
-| Ticket                   |        ✅       | Record ID                                                 | Send                                  |
+| **Object Name**          | **Supported?** | **Sync Keys**                                             | **Behaviors**                                 |
+| ------------------------ | :------------: | --------------------------------------------------------- | --------------------------------------------- |
+| Company                  |        ✅       | Object ID, Domain, any custom single-line  text or number | Update Only, Update or Create, Mirror         |
+| Contact                  |        ✅       | Object ID, Email, any custom single-line  text or number  | Update Only, Update or Create, Mirror, Delete |
+| Contact & Static List    |        ✅       | Email                                                     | Update Only, Update or Create, Mirror         |
+| Deal                     |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror         |
+| Product                  |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror         |
+| Line Item                |        ✅       | Object ID, any custom single-line  text or number         | Update Only, Update or Create, Mirror         |
+| Custom Object            |        ✅       | Object ID, any searchableProperty                         | Update Only, Update or Create, Mirror         |
+| Subscription Preferences |        ✅       | Email                                                     | Mirror                                        |
+| Custom Behavioral Event  |        ✅       | Unique Event ID                                           | Send                                          |
+| Email                    |        ✅       | N/A                                                       | Send                                          |
+| Ticket                   |        ✅       | Record ID                                                 | Send                                          |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
@@ -122,6 +122,14 @@ By default, this feature is not enabled to avoid accidentally deleting associati
 **Multiple Checkboxes (Enumerated fields):** will be mapped to a Hubspot Array of Enumeration. The source data should also be formatted as an array. Additionally, HubSpot expects the options provided to be the Internal Value as given by Hubspot's property settings page.
 
 **Example:** `["InternalValue1", "InternalValue2", "InternalValue3"]`
+
+### Delete Behaviour
+
+In Mirror syncs, Census will perform a "soft delete" and archive records instead of permanently deleting them.&#x20;
+
+We also support HubSpot's "GDPR Delete", which is a permanent deletion. This sync behaviour is available on the Contact object: set the GDPR Delete endpoint toggle to `TRUE`.&#x20;
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Sync Speed
 
