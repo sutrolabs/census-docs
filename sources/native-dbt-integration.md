@@ -6,7 +6,7 @@ description: Use Census directly with dbt through the native dbt integration.
 
 Census supports connecting to an existing dbt project hosted in GitHub or GitLab, which allows you keep all your source code & transforms in a single repository while leveraging Census' functionality. Census is designed to work hand-in-hand with dbt Cloud or any other dbt runner.
 
-To connect your dbt project you'll first need a source connection within Census. Once you have a source configured you can connect to up dbt from the Projects button.
+To connect your dbt project you'll first need a source connection within Census. Once you have a source configured you can connect your dbt instance from the Projects button.
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-07-31 at 2.32.13 PM.png" alt=""><figcaption></figcaption></figure>
 
