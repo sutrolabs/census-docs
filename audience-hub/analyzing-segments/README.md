@@ -50,6 +50,9 @@ Census will capture and report the audience match rates for segments synced to v
 
 The Performance tab allows you to track and analyze the results of your experiments over time. You can create customized metrics to compare performance across your control and treatment cohorts.
 
+<figure><img src="../../.gitbook/assets/Snag_2f5839b5.png" alt=""><figcaption></figcaption></figure>
+
+
 ### Setting Up Metrics
 
 To measure experiment performance, you first need to define the metrics that Census should measure. Each metric consists of:
