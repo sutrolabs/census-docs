@@ -52,7 +52,6 @@ The Performance tab allows you to track and analyze the results of your experime
 
 <figure><img src="../../.gitbook/assets/Snag_2f5839b5.png" alt=""><figcaption></figcaption></figure>
 
-
 ### Setting Up Metrics
 
 To measure experiment performance, you first need to define the metrics that Census should measure. Each metric consists of:
@@ -99,6 +98,8 @@ The Activity tab provides two key pieces of information:
 2. A history log of all changes made to the segment, including who made each change
 
 This tab is particularly useful for monitoring segment health and auditing changes to segment definitions.
+
+<figure><img src="../../.gitbook/assets/unnamed.png" alt=""><figcaption></figcaption></figure>
 
 ## Comparison Tab
 
