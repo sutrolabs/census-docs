@@ -15,7 +15,7 @@ Before you begin, you'll need the following:
 * **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **Outreach account**: We recommend using a dedicated service account with Admin user profile privileges. (See [Required Permissions](outreach.md#required-permissions).)
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -35,7 +35,7 @@ Before you begin, you'll need the following:
 
 Your end state should look something like this. 👇
 
-![Destinations page with Outreach](<../.gitbook/assets/202109\_Service\_Connection\_Outreach (1).png>)
+![Destinations page with Outreach](<../.gitbook/assets/202109_Service_Connection_Outreach (1).png>)
 
 ### Step 2: Connect your data warehouse
 
@@ -50,7 +50,7 @@ The steps for connecting your data warehouse will depend on your technology. See
 
 After connecting your warehouse, your **Destinations** page will look something like this: 👇
 
-![Destinations page with data warehouse and Outreach](<../.gitbook/assets/202109\_Connections\_Outreach (2).png>)
+![Destinations page with data warehouse and Outreach](<../.gitbook/assets/202109_Connections_Outreach (2).png>)
 
 ### Step 3: Create your model
 
@@ -61,7 +61,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](../.gitbook/assets/202109\_Outreach\_Basic\_Model.png)
+![Basic SQL query for a new model](../.gitbook/assets/202109_Outreach_Basic_Model.png)
 
 ### Step 4: Create your first sync <a href="#step-4-create-your-first-sync" id="step-4-create-your-first-sync"></a>
 
@@ -79,13 +79,13 @@ The sync will move data from your warehouse to Outreach. In this step, you'll de
 
 When configuring your sync, the page should look something like this: 👇
 
-![Sync setup for Outreach](<../.gitbook/assets/202109\_sync\_details (1) (2).png>)
+![Sync setup for Outreach](<../.gitbook/assets/202109_sync_details (1) (2).png>)
 
 #### Custom Fields in Outreach
 
 Although the sync can update custom fields in Outreach, these fields will show up as _Custom#_ rather than using the custom field name. You may need to visit the custom field configuration in Outreach settings to check the field number.
 
-![Sync setup displays custom fields without the custom field name](../.gitbook/assets/202110\_Custom\_Fields\_Outreach.png)
+![Sync setup displays custom fields without the custom field name](../.gitbook/assets/202110_Custom_Fields_Outreach.png)
 
 ### Step 5: Confirm the synced data in Outreach
 
@@ -117,7 +117,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 ## Supported sync behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |     **Behavior** | **Supported?** | **Objects** |

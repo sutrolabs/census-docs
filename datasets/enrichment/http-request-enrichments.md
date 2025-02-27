@@ -64,8 +64,8 @@ Say you want to query from `https://geolite.info/geoip/v2.1/country/192.168.123.
 5. Once you have your HTTP Request Connection selected, you can begin setting up your HTTP request&#x20;
    1. Name your enrichment
    2. Choose an HTTP method, ex. `GET`&#x20;
-   3. Configure your endpoint. This could be a constant value, or use [Liquid Templates](../../basics/core-concept/liquid-templates.md) to encode record values in your endpoint. Note that the`url_encode` [Liquid Filter ](https://shopify.github.io/liquid/filters/url_encode/)should be used to ensure that any special characters in your data will be parsed properly to be used in the URL
-   4. If your chosen HTTP method supports defining a request body (ex. `POST`), you can also use [Liquid Templates](../../basics/core-concept/liquid-templates.md) to reference column values for each row.&#x20;
+   3. Configure your endpoint. This could be a constant value, or use [Liquid Templates](../../syncs/structuring-data/liquid-templates.md) to encode record values in your endpoint. Note that the`url_encode` [Liquid Filter ](https://shopify.github.io/liquid/filters/url_encode/)should be used to ensure that any special characters in your data will be parsed properly to be used in the URL
+   4. If your chosen HTTP method supports defining a request body (ex. `POST`), you can also use [Liquid Templates](../../syncs/structuring-data/liquid-templates.md) to reference column values for each row.&#x20;
 
 {% hint style="warning" %}
 The request body should be a valid JSON object.

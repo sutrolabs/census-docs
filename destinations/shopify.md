@@ -13,7 +13,7 @@ In this guide, we will show you how to connect Shopify to Census.
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Shopify account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -59,14 +59,14 @@ Census currently supports syncing to the following Shopify objects and Sync Beha
 Census also supports Shopify's Custom Metafields on Customer and Product as well.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Shopify objects and/or behaviors.
 
 #### Updating Product Images
 
-Census supports setting product images by passing an [Array](../basics/data-defining/defining-source-data/structured-data.md) to the `images` field on the Product. The images array needs to be a set of one more objects that contain URLs to each image you want to upload. It should look something like the following:
+Census supports setting product images by passing an [Array](../syncs/structuring-data/structured-data.md) to the `images` field on the Product. The images array needs to be a set of one more objects that contain URLs to each image you want to upload. It should look something like the following:
 
 ```
 [

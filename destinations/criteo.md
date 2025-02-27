@@ -27,13 +27,12 @@ Once complete, you'll see your new connection in the **Destinations** list.
 
 ## Supported Objects and Sync Behaviors
 
-|  **Object Name** | **Supported?** | **Sync Keys**                                              |              **Behavior**             |
-| ---------------: | :------------: | ---------------------------------------------------------- | :-----------------------------------: |
+|                                                                                                      **Object Name** | **Supported?** | **Sync Keys**                                              |       **Behavior**       |
+| -------------------------------------------------------------------------------------------------------------------: | :------------: | ---------------------------------------------------------- | :----------------------: |
 | <p>Audience Segment<br><a href="https://docs.getcensus.com/basics/core-concept/audience-syncs">Audience Sync</a></p> |        ✅       | GUM Cookie ID, Mobile Ad ID, Email, LiveRamp Identity Link | Mirror, Update or Create |
 
-
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 ## Need help connecting to Criteo?

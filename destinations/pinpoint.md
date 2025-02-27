@@ -2,7 +2,7 @@
 description: This page describes how to use Census with Amazon Pinpoint.
 ---
 
-# Pinpoint
+# Amazon Pinpoint
 
 ## Getting Started
 
@@ -40,7 +40,7 @@ Now attach the permissions policy `AmazonS3ReadOnlyAccess` to your role (if youâ
 
 <figure><img src="../.gitbook/assets/pinpoint-arn.png" alt=""><figcaption><p>Copy your role's ARN.</p></figcaption></figure>
 
-4. Using a user in your AWS account with read/write access to the newly created S3 bucket and read/write access to your Pinpoint instance, go into AWS security credentials and [create a new access key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_access-keys.html#Using\_CreateAccessKey). Note the **Access Key ID** and **Secret Key**.
+4. Using a user in your AWS account with read/write access to the newly created S3 bucket and read/write access to your Pinpoint instance, go into AWS security credentials and [create a new access key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey). Note the **Access Key ID** and **Secret Key**.
 
 <figure><img src="../.gitbook/assets/pinpoint-accesskey-secretkey.png" alt=""><figcaption><p>Copy your Access Key ID and Secret Key.</p></figcaption></figure>
 
@@ -64,12 +64,12 @@ Set up your staging bucket expiry policies to clean up old staging data:
 
 ## Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**       | **Behaviors** |
-| --------------: | :------------: | --------------------- |---------------|
+| **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors** |
+| --------------: | :------------: | --------------------- | ------------- |
 |         Segment |        âœ…       | Any unique identifier | Replace       |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pinpoint objects and/or behaviors.

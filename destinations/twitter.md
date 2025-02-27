@@ -31,22 +31,22 @@ To sync audiences, X requires a manual approval step. Details can be found in [X
 
 Your end state should look something like this: 👇
 
-![Destinations page after setting up connection to X Ads](../.gitbook/assets/202206\_Twitter\_Connection.png)
+![Destinations page after setting up connection to X Ads](../.gitbook/assets/202206_Twitter_Connection.png)
 
 ### Step 2: Connect your data warehouse
 
 The steps for connecting your data warehouse will depend on your technology. See the following guides:
 
-* [Databricks](../sources/databricks.md)
-* [Google BigQuery](../sources/google-bigquery.md)
+* [Databricks](../sources/available-sources/databricks.md)
+* [Google BigQuery](../sources/available-sources/google-bigquery.md)
 * [Google Sheets](google-sheets.md)
-* [Postgres](../sources/postgres.md)
-* [Redshift](../sources/redshift.md)
-* [Snowflake](../sources/snowflake.md)
+* [Postgres](../sources/available-sources/postgres.md)
+* [Redshift](../sources/available-sources/redshift.md)
+* [Snowflake](../sources/available-sources/snowflake.md)
 
 After setting up your warehouse, your Destinations page should look something like this: 👇
 
-![Destinations page after setting up a data source](../.gitbook/assets/202110\_Connections\_Generic.png)
+![Destinations page after setting up a data source](../.gitbook/assets/202110_Connections_Generic.png)
 
 ### Step 3: Create your model
 
@@ -78,13 +78,13 @@ The sync will move data from your warehouse to X Ads. In this step, you'll defin
 
 When configuring your sync, the page should look something like this: 👇
 
-![Setting up a X Ads sync with a new audience list](../.gitbook/assets/202206\_Twitter\_Sync\_Details.png)
+![Setting up a X Ads sync with a new audience list](../.gitbook/assets/202206_Twitter_Sync_Details.png)
 
 ### Step 5: Confirm the synced data in X Ads
 
 Once your sync is complete, it's time to check your data. Open X Ads and check that the records updated correctly.
 
-If everything went well, that's it! You've started syncing data from your warehouse to X Ads! [🥳️](https://emojikeyboard.org/copy/Partying\_Face\_Emoji\_%F0%9F%A5%B3%EF%B8%8F?utm\_source=extlink)
+If everything went well, that's it! You've started syncing data from your warehouse to X Ads! [🥳️](https://emojikeyboard.org/copy/Partying_Face_Emoji_%F0%9F%A5%B3%EF%B8%8F?utm_source=extlink)
 
 And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
 
@@ -100,14 +100,14 @@ To use this setting, you'll also need to include a column in your database/data 
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|         **Object Name** | **Supported?** | **Sync Keys**                                                       | **Behaviors** |
-| ----------------------: | :------------: | ------------------------------------------------------------------- | ------------- |
-|                Audience |        ✅       | Hashed or Unhashed Email, Hashed or Unhashed Handle, Hashed or Unhashed Device ID                                            | Mirror        |
-| Mobile Conversion Event |        ✅       | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type | Send          |
-|    Web Conversion Event |        ✅       | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number | Send          |
+|         **Object Name** | **Supported?** | **Sync Keys**                                                                     | **Behaviors** |
+| ----------------------: | :------------: | --------------------------------------------------------------------------------- | ------------- |
+|                Audience |        ✅       | Hashed or Unhashed Email, Hashed or Unhashed Handle, Hashed or Unhashed Device ID | Mirror        |
+| Mobile Conversion Event |        ✅       | App ID, Conversion Time, Conversion Type, Hashed Device ID, OS Type               | Send          |
+|    Web Conversion Event |        ✅       | Click ID, Hashed or Unhashed Email, Hashed or Unhashed Phone Number               | Send          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more X Ads objects and/or behaviors.

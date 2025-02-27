@@ -19,7 +19,7 @@ In this guide, we will show you how to connect your Kafka destination to Census.
 * **Password**: The password of your Kafka instance. Called API Secret by Confluent.
 
 {% hint style="info" %}
-Your Kafka instance must be accessable to the public internet in order for Census to connection. Consider using [Census' IP addresses](../basics/security-and-privacy/regions-and-ip-addresses.md) to limit access to your Kafka instance.
+Your Kafka instance must be accessable to the public internet in order for Census to connection. Consider using [Census' IP addresses](../misc/security-and-privacy/regions-and-ip-addresses.md) to limit access to your Kafka instance.
 {% endhint %}
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
@@ -29,7 +29,7 @@ Your Kafka instance must be accessable to the public internet in order for Censu
 |         Message |        ✅       | Any unique identifier | Send, Update or Create, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Kafka objects and/or behaviors
@@ -51,7 +51,7 @@ Within the Mappings section of the sync setup, you can set the following propert
 * **Partition**: The partition to send the message to.
 * **Partition Key**: The partition key to use for the message.
 * **Timestamp**: The timestamp to use for the message.
-* **Headers**: Any headers to include with the message, [structured as an object](../basics/data-defining/defining-source-data/structured-data.md).
+* **Headers**: Any headers to include with the message, [structured as an object](../syncs/structuring-data/structured-data.md).
 
 ### Message Structure
 

@@ -19,7 +19,7 @@ Google Search Ads 360 is a comprehensive search management platform designed for
 | Conversion Events |        ✅       | Conversion ID | Send, Create Only |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Search Ads objects and/or behaviors.

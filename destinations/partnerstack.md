@@ -17,13 +17,13 @@ PartnerStack is a partner relationship management platform that helps you manage
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|                                                                                                                     **Object Name** | **Supported?** | **Sync Keys**     | **Behaviors**                 |
-| ----------------------------------------------------------------------------------------------------------------------------------: | :------------: | ----------------- | ----------------------------- |
-|                                                                                                                            Customer |        ✅       | Customer Key      | Update or Create, Update Only |
-| <p>Transaction<br><a href="../basics/defining-source-data/events#defining-event-syncs">Event Sync</a></p> |        ✅       | Unique Identifier | <p>Send<br></p>               |
+|                                                                                            **Object Name** | **Supported?** | **Sync Keys**     | **Behaviors**                 |
+| ---------------------------------------------------------------------------------------------------------: | :------------: | ----------------- | ----------------------------- |
+|                                                                                                   Customer |        ✅       | Customer Key      | Update or Create, Update Only |
+| <p>Transaction<br><a href="../basics/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Unique Identifier | <p>Send<br></p>               |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Partner Stack objects and/or behaviors

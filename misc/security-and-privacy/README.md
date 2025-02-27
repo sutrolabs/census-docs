@@ -41,7 +41,7 @@ Instead of storing this data in our platform, we keep it in your data warehouse 
 In addition, Census will access your data warehouse through a dedicated gateway, which always uses an encrypted connection and originates from a set of well-known static IP addresses that you can add to the allowlist for your warehouse for additional control.
 
 {% hint style="info" %}
-The Census user account that accesses your warehouse is not a `superuser` - it is a least-privilege account that can only read from the schemas that you choose and can only write to the `Census` bookkeeping schema. Read more [in our data sources documentation](../../sources/snowflake.md#required-permissions).
+The Census user account that accesses your warehouse is not a `superuser` - it is a least-privilege account that can only read from the schemas that you choose and can only write to the `Census` bookkeeping schema. Read more [in our data sources documentation](../../sources/available-sources/snowflake.md#required-permissions).
 {% endhint %}
 
 It’s impossible for Census to read data from your warehouse that you don’t explicitly opt-in, and if you choose you can even set up fine-grained table-level access for the Census user. When a new sync starts, Census looks for rows of data that have been added or changed since the last sync, and records a temporary snapshot of those rows in the `Census` schema.
@@ -55,7 +55,7 @@ Your warehouse reports back to the Census platform only the number of rows that 
 Once the data differences, or “diffs”, have been calculated, Census instructs your warehouse to copy just those rows to our cloud provider’s object storage bucket (either AWS S3 or Google Cloud Storage).
 
 {% hint style="info" %}
-We also support the ability to use your own object storage provider for an extra layer of security and privacy. [Read more here 👉](../../misc/security-and-privacy/bring-your-own-blob-storage/)
+We also support the ability to use your own object storage provider for an extra layer of security and privacy. [Read more here 👉](bring-your-own-blob-storage/)
 {% endhint %}
 
 The temporary credentials we provide to your warehouse that are used to copy data are only capable of writing data, not reading it back out, so **this is a one-way data flow**. Diffs are assigned cryptographically unique key paths in the cloud storage bucket, making it impossible for an attacker to guess paths to customer data.

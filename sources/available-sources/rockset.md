@@ -20,15 +20,15 @@ These instructions are well tested to connect Census to Rockset. If you're runni
 
 Census needs an API key with at least "member" permissions. Navigate to the [API keys](https://console.rockset.com/apikeys) section of the Rockset console and create an API key with "member" or "admin" permissions. The account you are using in Rockset must have these credentials to be able to correctly create this.
 
-![Make sure to have no spaces in the API key name](<../.gitbook/assets/Screen Shot 2021-11-14 at 4.56.39 PM.png>)
+![Make sure to have no spaces in the API key name](<../../.gitbook/assets/Screen Shot 2021-11-14 at 4.56.39 PM.png>)
 
 After creating the key, check which region your Rockset instance is deployed to and copy the API key.
 
-![Take a mental note of which region you are deployed to in Rockset](<../.gitbook/assets/Rockset Credentials.png>)
+![Take a mental note of which region you are deployed to in Rockset](<../../.gitbook/assets/Rockset Credentials.png>)
 
 Navigate to the [Sources tab](https://app.getcensus.com/sources) of your Census account. Click on the "New Source" dropdown button in the top right and select Rockset. Paste your API key in the API key section and copy and paste the deployment url depending on what region you are deployed in.
 
-![Click Save Configuration, and](<../.gitbook/assets/Census Rockset Credentials.png>)
+![Click Save Configuration, and](<../../.gitbook/assets/Census Rockset Credentials.png>)
 
 Skip this step if working in read-only mode. Please create a workspace with the name "CENSUS" either in [console](https://rockset.com/docs/workspaces/) or [CLI](https://rockset.com/docs/rest-api/#createworkspace).
 

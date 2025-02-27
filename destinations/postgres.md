@@ -9,14 +9,14 @@ description: This page walks through how to connect Census with your PostgreSQL 
 This guide will walk you through connecting to PostgreSQL as a destination.
 
 {% hint style="info" %}
-If you are trying to use PostgresSQL as a data source (to query data from Postgres and sync to elsewhere), that process is documented separately here: [Postgres Data Source](../sources/postgres.md)
+If you are trying to use PostgresSQL as a data source (to query data from Postgres and sync to elsewhere), that process is documented separately here: [Postgres Data Source](../sources/available-sources/postgres.md)
 {% endhint %}
 
 1. Visit the [Destinations page](https://app.getcensus.com/destinations) and click **+ New Destination**.
 2. Select **PostgreSQL** from the menu.
 3. Enter the requested database credentials:
 
-<table><thead><tr><th width="203">Credential</th><th>Description</th></tr></thead><tbody><tr><td>Hostname</td><td>Host name or IP address of database</td></tr><tr><td>Port</td><td>Port of database (5432 by default for Postgres)</td></tr><tr><td>Database Name</td><td>Name of database within Postgres to connect to</td></tr><tr><td>Username</td><td>Username Census will use to connect</td></tr><tr><td>Password</td><td>Password Census will use to connect</td></tr><tr><td>Number of Client Connections</td><td>Value between 1 and 8 (default is 1). This is the maximum number of concurrent connections Census will use to connect to database. The default should be fine in most cases, but increasing this value can increase throughput on very large syncs.</td></tr><tr><td>Use SSH Tunnel</td><td>Default: Off - Toggle on to indicate that Census should connect via an SSH Tunnel. For more information, see <a data-mention href="../basics/security-and-privacy/regions-and-ip-addresses.md">regions-and-ip-addresses.md</a></td></tr><tr><td>SSH Hostname</td><td>Hostname of the Census accessible SSH Tunnel bastion.</td></tr><tr><td>SSH Port</td><td>Port of SSH Tunnel bastion.</td></tr><tr><td>SSH Username</td><td>Username Census will use to connect to bastion.</td></tr></tbody></table>
+<table><thead><tr><th width="203">Credential</th><th>Description</th></tr></thead><tbody><tr><td>Hostname</td><td>Host name or IP address of database</td></tr><tr><td>Port</td><td>Port of database (5432 by default for Postgres)</td></tr><tr><td>Database Name</td><td>Name of database within Postgres to connect to</td></tr><tr><td>Username</td><td>Username Census will use to connect</td></tr><tr><td>Password</td><td>Password Census will use to connect</td></tr><tr><td>Number of Client Connections</td><td>Value between 1 and 8 (default is 1). This is the maximum number of concurrent connections Census will use to connect to database. The default should be fine in most cases, but increasing this value can increase throughput on very large syncs.</td></tr><tr><td>Use SSH Tunnel</td><td>Default: Off - Toggle on to indicate that Census should connect via an SSH Tunnel. For more information, see <a data-mention href="../misc/security-and-privacy/regions-and-ip-addresses.md">regions-and-ip-addresses.md</a></td></tr><tr><td>SSH Hostname</td><td>Hostname of the Census accessible SSH Tunnel bastion.</td></tr><tr><td>SSH Port</td><td>Port of SSH Tunnel bastion.</td></tr><tr><td>SSH Username</td><td>Username Census will use to connect to bastion.</td></tr></tbody></table>
 
 ## 🔑 Permissions
 
@@ -39,7 +39,7 @@ GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 
 ### Custom Field Permissions
 
-Census allows you to create custom fields in your destination Postgres as a by-product of your sync (see [#creating-new-fields-on-your-destination-object](../basics/core-concept/#creating-new-fields-on-your-destination-object "mention")).&#x20;
+Census allows you to create custom fields in your destination Postgres as a by-product of your sync (see [#creating-new-fields-on-your-destination-object](../syncs/core-concept/#creating-new-fields-on-your-destination-object "mention")).&#x20;
 
 To enable this in Postgres, Census needs to have the required permissions to add columns to your Postgres table.&#x20;
 
@@ -77,14 +77,14 @@ We support syncing data to Tables in PostgreSQL, but they must have a uniqueness
 |           Table |        ✅       | Primary Keys or Columns with Uniqueness Constraints | Update or Create, Update Only, Add, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Postgres objects and/or behaviors
 
 ## Advanced Network Configuration
 
-Census can successfully connect to PostgreSQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
+Census can successfully connect to PostgreSQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## ❗️Common Troubleshooting Issues
 

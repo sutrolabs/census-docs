@@ -6,13 +6,13 @@ description: This page describes how to configure Greenplum as a source for Cens
 
 ## Sync Engines and Permissions
 
-Census reads data from tables and views in Greenplum and syncs it to your desired objects in any supported [destination](broken-reference). To limit the load on your database as well as destination apps' APIs, Census maintains state tracking tables that enable it to only sync data that has been modified sync the last sync (incremental syncs). When configuring your Greenplum connection, you'll choose a [Sync Engine](overview.md#sync-engines) that determines how state tracking is handled.
+Census reads data from tables and views in Greenplum and syncs it to your desired objects in any supported [destination](broken-reference). To limit the load on your database as well as destination apps' APIs, Census maintains state tracking tables that enable it to only sync data that has been modified sync the last sync (incremental syncs). When configuring your Greenplum connection, you'll choose a [Sync Engine](../overview.md#sync-engines) that determines how state tracking is handled.
 
 The _Basic Sync Engine_ maintains state tracking tables on Census-owned infrastructure and is therefore simpler to configure and requires read access only.
 
 The _Advanced Sync Engine_ delivers enhanced performance by maintaining state tracking tables in a dedicated schema within your own Greenplum instance. Using this feature [requires additional configuration.](greenplum.md#advanced-sync-engine)
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-08-04 at 3.59.40 PM (1).png" alt=""><figcaption><p>Greenplum Connection Setup</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 3.59.40 PM (1).png" alt=""><figcaption><p>Greenplum Connection Setup</p></figcaption></figure>
 
 For either choice, we recommend you create a dedicated database user with a strong, unique password for Census to use to connect to your database.
 
@@ -88,7 +88,7 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA "<your schema>" GRANT EXECUTE ON FUNCTIONS TO
 
 ## Advanced Network Configuration
 
-Census can successfully connect to Greenplum instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
+Census can successfully connect to Greenplum instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 We recommend configuring your Greenplum instance to use TLS v1.2 or later for all connections.
 

@@ -24,7 +24,7 @@ Either option may be right for you, read more about the differences between [Bas
 
 #### Datasets and segments
 
-Once you have your data source connected, you can also create datasets on top of your data source, or connect dataset integrations like [dbt](../../sources/native-dbt-integration.md) and [Looker](../data-defining/models/looker.md). Datasets are optional in Census, you can also sync data directly from a data source table or view, but datasets give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your datasets, Census makes it easy to quickly select and sync [Segments](../../audience-hub/getting-started/) as well.
+Once you have your data source connected, you can also create datasets on top of your data source, or connect dataset integrations like [dbt](../../sources/integrations/native-dbt-integration.md) and [Looker](../../sources/integrations/looker.md). Datasets are optional in Census, you can also sync data directly from a data source table or view, but datasets give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your datasets, Census makes it easy to quickly select and sync [Segments](../../audience-hub/getting-started/) as well.
 
 ### Destination Services
 
@@ -93,14 +93,14 @@ To give you an idea of the capabilities available, here are a few more examples:
 
 You can read all about the Liquid template system provided by Census here:
 
-{% content-ref url="liquid-templates.md" %}
-[liquid-templates.md](liquid-templates.md)
+{% content-ref url="../structuring-data/liquid-templates.md" %}
+[liquid-templates.md](../structuring-data/liquid-templates.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
 Templated fields have a few limitations:
 
-* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](../../datasets/overview.md), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../audience-hub/), which includes a powerful point-and-click [visual segment builder](../../audience-hub/getting-started/#using-the-visual-builder) and [calculated fields](../../audience-hub/data-preparation-1/#calculated-fields).
+* Templated fields operate on one record at a time. If you need to bring multiple records together, take a look at [Datasets](../../datasets/overview.md), which allow you to use SQL to prepare your source data for syncing, or at the Census [Audience Hub](../../audience-hub/), which includes a powerful point-and-click [visual segment builder](../../audience-hub/getting-started/#using-the-visual-builder) and [calculated fields](../../audience-hub/data-preparation-1/#calculated-fields).
 * Not all sources support templates yet; we are always adding support for new sources!
 {% endhint %}
 
@@ -140,7 +140,7 @@ You can happily run a sync manually, but that's not all that useful on its own. 
 
 * [Schedules](triggering-syncs.md#schedule) including with Cron
 * [Programmatically via API or Orchestration tool](triggering-syncs.md)
-* [Automatically with dbt Cloud](broken-reference/)
+* [Automatically with dbt Cloud](../../basics/core-concept/broken-reference/)
 
 Pick the sync execution trigger that makes for your connection and Census will keep the data flowing to your schedule.
 

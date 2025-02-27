@@ -9,7 +9,7 @@ description: This page describes how to use Census with Google Cloud Storage.
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Google Cloud Storage Account in the [Browser tab](https://console.cloud.google.com/storage/browser/) on the bucket that you want to sync to.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -76,7 +76,7 @@ If you need any help configuring GCS, contact the [Census support team](mailto:s
 |      Replace |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Cloud Storage.

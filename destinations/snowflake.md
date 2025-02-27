@@ -9,14 +9,14 @@ description: This page describes how to sync data to your Snowflake data warehou
 This guide will walk you through connecting to Snowflake as a destination.
 
 {% hint style="info" %}
-If you are trying to use Snowflake as a data source (to query data from Snowflake and sync to elsewhere), that process is documented separately here: [Snowflake Data Source](../sources/snowflake.md)
+If you are trying to use Snowflake as a data source (to query data from Snowflake and sync to elsewhere), that process is documented separately here: [Snowflake Data Source](../sources/available-sources/snowflake.md)
 {% endhint %}
 
 1. Visit the [Destinations page](https://app.getcensus.com/destinations) and click **+ New Destination**.
 2. Select **Snowflake** from the menu.
 3. Enter the requested database credentials:
 
-<table><thead><tr><th width="203">Credential</th><th>Description</th></tr></thead><tbody><tr><td>Account</td><td>Should be in the form <code>iq18923.us-east-1</code></td></tr><tr><td>User</td><td>User Census will use to connect</td></tr><tr><td>Password</td><td>Password Census will use to connect</td></tr><tr><td>Warehouse</td><td>The Snowflake compute warehouse Census will use</td></tr><tr><td>Database</td><td>The database within the Snowflake account Census will connect to</td></tr><tr><td>Schema</td><td>[Optional] This can be enforced or left empty. If empty, you'll have the option to select this when creating a sync.</td></tr><tr><td>Number of Client Connections</td><td>Value between 1 and 8 (default is 1). This is the maximum number of concurrent connections Census will use to connect to database. The default should be fine in most cases, but increasing this value can increase throughput on very large syncs.</td></tr><tr><td>Use SSH Tunnel</td><td>Default: Off - Toggle on to indicate that Census should connect via an SSH Tunnel. For more information, see <a data-mention href="../basics/security-and-privacy/regions-and-ip-addresses.md">regions-and-ip-addresses.md</a></td></tr><tr><td>SSH Hostname</td><td>Hostname of the Census accessible SSH Tunnel bastion.</td></tr><tr><td>SSH Port</td><td>Port of SSH Tunnel bastion.</td></tr><tr><td>SSH Username</td><td>Username Census will use to connect to bastion.</td></tr></tbody></table>
+<table><thead><tr><th width="203">Credential</th><th>Description</th></tr></thead><tbody><tr><td>Account</td><td>Should be in the form <code>iq18923.us-east-1</code></td></tr><tr><td>User</td><td>User Census will use to connect</td></tr><tr><td>Password</td><td>Password Census will use to connect</td></tr><tr><td>Warehouse</td><td>The Snowflake compute warehouse Census will use</td></tr><tr><td>Database</td><td>The database within the Snowflake account Census will connect to</td></tr><tr><td>Schema</td><td>[Optional] This can be enforced or left empty. If empty, you'll have the option to select this when creating a sync.</td></tr><tr><td>Number of Client Connections</td><td>Value between 1 and 8 (default is 1). This is the maximum number of concurrent connections Census will use to connect to database. The default should be fine in most cases, but increasing this value can increase throughput on very large syncs.</td></tr><tr><td>Use SSH Tunnel</td><td>Default: Off - Toggle on to indicate that Census should connect via an SSH Tunnel. For more information, see <a data-mention href="../misc/security-and-privacy/regions-and-ip-addresses.md">regions-and-ip-addresses.md</a></td></tr><tr><td>SSH Hostname</td><td>Hostname of the Census accessible SSH Tunnel bastion.</td></tr><tr><td>SSH Port</td><td>Port of SSH Tunnel bastion.</td></tr><tr><td>SSH Username</td><td>Username Census will use to connect to bastion.</td></tr></tbody></table>
 
 ## 🔑 Permissions
 
@@ -69,14 +69,14 @@ GRANT INSERT, UPDATE, SELECT ON ALL TABLES IN SCHEMA "<your database>"."<your sc
 |           Table |        ✅       | Primary keys or columns with uniqueness constraints | Mirror, Update or Create, Update Only, Add |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Snowflake objects and/or behaviors.
 
 ## Advanced Network Configuration
 
-Census can successfully connect to Snowflake instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
+Census can successfully connect to Snowflake instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## Need help connecting to Snowflake?
 

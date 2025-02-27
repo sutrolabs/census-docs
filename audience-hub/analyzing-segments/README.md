@@ -14,7 +14,7 @@ Split testing enables a number of marketing efforts:
 * Divide a segment into multiple treatments for different channels and compare relative conversion rates of the same segment across each.
 * Use a treatment and control group to "ramp up" a very large campaign over time. Start with 10% of segment and grow the treatment once you're confident it's performing as expected.
 
-Each cohort can be [synced to their own set of destinations](../../basics/audience-hub/syncing-segments.md), including back to warehouse, and users appearing in each cohort are available in Warehouse Writeback (see [below](./#detailed-segment-performance)).
+Each cohort can be [synced to their own set of destinations](../syncing-segments.md), including back to warehouse, and users appearing in each cohort are available in Warehouse Writeback (see [below](./#detailed-segment-performance)).
 
 ## Tracking Segment Size
 
@@ -60,6 +60,6 @@ Note that these metrics should be created before starting campaigns as they will
 
 ## Warehouse Writeback
 
-For the deepest level of analysis, you can take advantage of [Warehouse Writeback](../../basics/sync-monitoring/warehouse-writeback.md), which logs all sync activity back to your data source. You can use this data to determine when users were added and removed from segments in each of the destinations your segment is synced to or the relative conversion performance of users across cohorts.&#x20;
+For the deepest level of analysis, you can take advantage of [Warehouse Writeback](../../syncs/sync-monitoring/warehouse-writeback.md), which logs all sync activity back to your data source. You can use this data to determine when users were added and removed from segments in each of the destinations your segment is synced to or the relative conversion performance of users across cohorts.&#x20;
 
 To take advantage of Warehouse Writeback for your analysis, ensure it is enabled on your warehouse connection.

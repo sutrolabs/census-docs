@@ -13,11 +13,11 @@ description: This page describes how to use Census with Jira
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Jira account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Amazon Athena](../sources/aws-athena.md)
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Amazon Athena](../sources/available-sources/aws-athena.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
-  * [Google AlloyDB](../sources/alloydb.md)
+  * [Google AlloyDB](../sources/available-sources/alloydb.md)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
   * [MySQL](https://docs.getcensus.com/sources/mysql)
@@ -98,7 +98,7 @@ Jira's primary object is an Issue, which we support in Census.​
 |      Issue      |        ✅       |   Unique ID   |      Add      |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Jira objects and/or behaviors

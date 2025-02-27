@@ -11,16 +11,16 @@ description: This page describes how to use MotherDuck as a source in Census.
 * Open Census and navigate to the **Sources** page
 * Click **New Source** and select MotherDuck from the list:
 
-<figure><img src="../.gitbook/assets/motherduck-1.png" alt=""><figcaption><p>Select the MotherDuck source.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/motherduck-1.png" alt=""><figcaption><p>Select the MotherDuck source.</p></figcaption></figure>
 
 * Enter your service token and click **Connect**
 * You’re all set! Head over to the **Syncs** page to activate your data:
 
-<figure><img src="../.gitbook/assets/motherduck-2.png" alt=""><figcaption><p>Create your first MotherDuck sync.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/motherduck-2.png" alt=""><figcaption><p>Create your first MotherDuck sync.</p></figcaption></figure>
 
 ## Notes <a href="#notes" id="notes"></a>
 
-As of June 2023, MotherDuck only supports our [Basic Sync Engine](overview.md#sync-engines).
+As of June 2023, MotherDuck only supports our [Basic Sync Engine](../overview.md#sync-engines).
 
 ## Need help connecting to MotherDuck?
 

@@ -14,8 +14,6 @@ At this time, a sync's Run Mode (Live vs Triggered) cannot be changed after the 
 
 The following table summarizes the key differences between a Live and Triggered sync.
 
-
-
 | Live                                          | Triggered                                                                                                               |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Real-time; sub-second latency                 | Minimum latency at least a few minutes                                                                                  |
@@ -25,7 +23,7 @@ The following table summarizes the key differences between a Live and Triggered 
 
 ### Supported Sources
 
-Live Syncs are available for sources capable of streaming data, such as [Confluent Cloud](../../sources/confluent-cloud.md), [Kafka](../../sources/kafka.md), [Google PubSub](../../sources/google-pubsub.md), [Materialize](../../sources/materialize.md), [HTTP Requests](../../sources/http-request.md), [Snowflake](../../sources/snowflake.md), and [Databricks](../../sources/databricks.md)\*. Please feel free to [request a new integration](https://www.getcensus.com/request-an-integration?hsCtaTracking=a5c60288-2577-4ade-8fc6-e453ba20cd0d%7C5f94cdfe-1f8f-457f-8e34-80e2af1c9fb2) if your streaming infrastructure is not yet supported.
+Live Syncs are available for sources capable of streaming data, such as [Confluent Cloud](../../sources/available-sources/confluent-cloud.md), [Kafka](../../sources/available-sources/kafka.md), [Google PubSub](../../sources/available-sources/google-pubsub.md), [Materialize](../../sources/available-sources/materialize.md), [HTTP Requests](../../sources/available-sources/http-request.md), [Snowflake](../../sources/available-sources/snowflake.md), and [Databricks](../../sources/available-sources/databricks.md)\*. Please feel free to [request a new integration](https://www.getcensus.com/request-an-integration?hsCtaTracking=a5c60288-2577-4ade-8fc6-e453ba20cd0d%7C5f94cdfe-1f8f-457f-8e34-80e2af1c9fb2) if your streaming infrastructure is not yet supported.
 
 \* Coming soon. Email support@getcensus.com to be added to the private preview.
 

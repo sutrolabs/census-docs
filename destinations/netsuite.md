@@ -20,7 +20,7 @@ This process involves several steps - please set aside 15-30 minutes to complete
 {% endhint %}
 
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -35,7 +35,7 @@ This process involves several steps - please set aside 15-30 minutes to complete
 
 1. Visit the integrations page or use the global search to look for and navigate to: **page: Manage Integrations**
 
-![](../.gitbook/assets/netsuite\_step1.png)
+![](../.gitbook/assets/netsuite_step1.png)
 
 1. Create a new integration with the follow properties:
    * Give it a name that you'll recognize, such as **Census**
@@ -46,7 +46,7 @@ This process involves several steps - please set aside 15-30 minutes to complete
 2. Click Save when finished.
 3. Copy and paste the **CONSUMER KEY / CLIENT ID** and **CONSUMER SECRET / CLIENT SECRET** to a password manager. You'll need those later to paste into Census.
 
-![](../.gitbook/assets/netsuite\_step2.png)
+![](../.gitbook/assets/netsuite_step2.png)
 
 ### 2. Enable Token Based Authentication
 
@@ -55,7 +55,7 @@ This process involves several steps - please set aside 15-30 minutes to complete
 3. Make sure **Token Based Authentication is checked**
 4. Save
 
-![](../.gitbook/assets/netsuite\_step3.png)
+![](../.gitbook/assets/netsuite_step3.png)
 
 ### 3. Create a Token Role
 
@@ -77,13 +77,13 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
    * REST Web Services: **Full**
    * User Access Token: **Full**
 
-![](<../.gitbook/assets/netsuite\_step4 (1).png>)
+![](<../.gitbook/assets/netsuite_step4 (1).png>)
 
 ![](<../.gitbook/assets/Image 2021-05-03 at 4.42.55 PM.jpg>)
 
 7\. Under **Permissions > Lists**, Give your Role the appropriate permissions for the NetSuite objects you'll be updating. For example, to update Customers, you'll want to give this role the Lists > Customers (Full) permission.
 
-![](../.gitbook/assets/netsuite\_step5.png)
+![](../.gitbook/assets/netsuite_step5.png)
 
 ### 4. Add Token Management Permissions
 
@@ -91,7 +91,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 2. Edit the employee record of the Admin user you will be using Census with.
 3. Navigate to **Access > Roles** and add the Token Role you just created above.
 
-![](../.gitbook/assets/netsuite\_step6.png)
+![](../.gitbook/assets/netsuite_step6.png)
 
 ### 5. Create Access Tokens
 
@@ -100,7 +100,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 3. Select the application and role we created above, then press Save
 4. Copy and paste the new Token ID and Token Secret to your password manager or file. We'll use it below.
 
-![](../.gitbook/assets/netsuite\_step7.png)
+![](../.gitbook/assets/netsuite_step7.png)
 
 > **Note:** Netsuite permission changes to a role or user **do not occur immediately**. These changes typically take anywhere from a few minutes to a few hours, and they can even take up to 24 hours to go into effect. If you are confident that you have given Census the correct permissions above and experience an error setting up the connection, we recommend waiting for these changes to go into effect before testing the connection again.
 
@@ -115,11 +115,11 @@ The last bit of information you’ll need is your NetSuite Account ID:
 
 1. Now in Census, add a new Destination.
 
-![](../.gitbook/assets/netsuite\_step8.png)
+![](../.gitbook/assets/netsuite_step8.png)
 
 1. Paste the Account ID of your NetSuite Account, as well as the Consumer Key, Consumer Secret, Token ID and Token Secret created above.
 
-![](https://paper-attachments.dropbox.com/s\_ACE57C63B405EBF6B9657B58E87579C023CBACD5A7F5017A55D85276839F3265\_1608658256016\_Screen+Shot+2020-12-22+at+11.17.39+AM.png)
+![](https://paper-attachments.dropbox.com/s_ACE57C63B405EBF6B9657B58E87579C023CBACD5A7F5017A55D85276839F3265_1608658256016_Screen+Shot+2020-12-22+at+11.17.39+AM.png)
 
 1. Click Save Connection, and click Test to double check your connection information.
 
@@ -136,7 +136,7 @@ NetSuite's API speed and rate limitation are complex and are tied to the plan yo
 | NetSuite    | 500                       |
 
 {% hint style="info" %}
-Please note that you can contact your Customer Success Manager at NetSuite to increase your NetSuite[ account API concurrency](https://nlcorp.app.netsuite.com/core/media/media.nl?id=127925362\&c=NLCORP\&h=8742ad8b887aa6881f85&\_xt=.pdf) to increase the records sync speed.
+Please note that you can contact your Customer Success Manager at NetSuite to increase your NetSuite[ account API concurrency](https://nlcorp.app.netsuite.com/core/media/media.nl?id=127925362\&c=NLCORP\&h=8742ad8b887aa6881f85&_xt=.pdf) to increase the records sync speed.
 {% endhint %}
 
 ## ️ Supported Objects
@@ -178,13 +178,13 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 |               Vendor Bill |        ✅       |
 
 {% hint style="info" %}
-Please note that NetSuite doesn't support the [creation of fields](../basics/core-concept/#field-creation) via Census and currently we don't support [add all fields ](../basics/core-concept/#add-all-fields)feature for NetSuite
+Please note that NetSuite doesn't support the [creation of fields](../syncs/core-concept/#field-creation) via Census and currently we don't support [add all fields ](../syncs/core-concept/#add-all-fields)feature for NetSuite
 {% endhint %}
 
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
@@ -207,15 +207,15 @@ Netsuite is one of our most complex destinations, and some objects have behavior
 **Invoice**
 
 * If you're syncing to the Item List on the Invoice object your Item List data will need to be formatted in a JSON array like the following example.`[{"amount": 2.5, "item": {"internalId": "13"}, "quantity": 1}]` .
-* For more information on the Invoice schema please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/invoice.html)
+* For more information on the Invoice schema please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en_US/srbrowser/Browser2016_1/schema/record/invoice.html)
 
 **Using TranId as a Sync Key**
 
 * In order to sync to the `TranId` field, Allowed Override will need to be checked for the Document Numbers of the object.
 * Example: Setup > Company > Auto-Generated Numbers > Document Numbers > Journal
-* For more information on Auto Generated Numbers please visit the [Netsuite Help Center](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/bridgehead\_4340435273.html)
+* For more information on Auto Generated Numbers please visit the [Netsuite Help Center](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/bridgehead_4340435273.html)
 
-For more information on all Netsuite Objects and their fields please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en\_US/srbrowser/Browser2016\_1/schema/record/account.html)
+For more information on all Netsuite Objects and their fields please visit [Netsuite's Schema Browser](https://www.netsuite.com/help/helpcenter/en_US/srbrowser/Browser2016_1/schema/record/account.html)
 
 ## Need help connecting to NetSuite?
 

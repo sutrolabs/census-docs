@@ -15,7 +15,7 @@ Before you begin, you'll need the following:
 * **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **Pardot account**: No free trials in Pardot land, unfortunately. You'll need your actual account here.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -106,7 +106,7 @@ On Prospect syncs, we can Lookup from the Prospect Object to a List, which creat
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

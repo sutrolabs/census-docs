@@ -31,7 +31,7 @@ Once you have the JDBC url you'll only need to input the subdomain into the Cens
 
 ## :gear: Using the Advanced Sync Engine
 
-Trino supports both of Census' [Sync Engines](overview.md#sync-engines): Basic and Advanced. In order to use the Advanced Sync Engine with Trino, all of the following must be true:
+Trino supports both of Census' [Sync Engines](../overview.md#sync-engines): Basic and Advanced. In order to use the Advanced Sync Engine with Trino, all of the following must be true:
 
 * Your Trino cluster must have a catalog named `CENSUS` containing a schema named `CENSUS`
 * The connector you use for the `CENSUS` catalog must support:

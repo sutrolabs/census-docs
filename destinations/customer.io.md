@@ -15,7 +15,7 @@ In this guide, we will show you how to connect Customer.io to Census and create 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Customer.io account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -34,15 +34,15 @@ To connect Census to your Customer.io, you'll need to provide Census with a few 
 
 In the top right, click on your name, and select **Account Settings**
 
-![](../.gitbook/assets/cio\_step1.png)
+![](../.gitbook/assets/cio_step1.png)
 
 Then select **API Credentials**
 
-![](../.gitbook/assets/cio\_step2.png)
+![](../.gitbook/assets/cio_step2.png)
 
 ### **3. Create a new set of Tracking API & App API credentials for Census**
 
-Click the **Create New API Credentials** button in the top right.![](../.gitbook/assets/cio\_step3.png)
+Click the **Create New API Credentials** button in the top right.![](../.gitbook/assets/cio_step3.png)
 
 It's important to note that there are two types of API keys here: Track API Keys and App API Keys. Track API Keys are used to send behavioral tracking activity. App API Keys are used for triggering messages and broadcasts, as well as retrieving data from your workspace. For a more in-depth explanation, check out Customer.io's [docs here](https://customer.io/docs/managing-credentials/#track-api-keys-vs-app-api-keys). \\
 
@@ -56,16 +56,16 @@ Then, give the new credentials a name. It can be whatever you like, but give it 
 
 When you hit save, you'll return to the list of credentials. Make a note of the **Site ID** and **API Key**. You'll need to provide them to Census.
 
-![](../.gitbook/assets/cio\_step4.png)
+![](../.gitbook/assets/cio_step4.png)
 
-![](../.gitbook/assets/cio\_step5.png)
+![](../.gitbook/assets/cio_step5.png)
 
 ### **4. Create a new Customer.io connection in Census**
 
 * Visit the **Destinations** tab in Census and click **New Destination**
 * Then select **Customer.io** from the menu
 
-![](../.gitbook/assets/cio\_step6.png)
+![](../.gitbook/assets/cio_step6.png)
 
 ![](<../.gitbook/assets/Screen Shot 2022-04-08 at 5.50.05 PM.png>)
 
@@ -93,7 +93,7 @@ We currently support all objects of [Customer.io's core API.](https://customer.i
 |                     Collection |        ✅       |                       N/A                      |            Replace            |
 |                 Manual Segment |        ✅       |            ID, Email, CustomerIO ID            |    Update or Create, Mirror   |
 |                        Objects |        ✅       |                    Object ID                   |    Update or Create, Mirror   |
-| Object ↔️ Person Relationships |        ✅       | Object ID + Person ID, Email, or CustomerIO ID |    Update or Create, Mirror   |
+| Object ↔️ Person Relationships |        ✅       | Object ID + Person ID, Email, or CustomerIO ID |    Update or Create, Mirror   |
 
 {% hint style="warning" %}
 Make sure you know what identifiers are used in your Customer.io Workspace!
@@ -102,7 +102,7 @@ Make sure you know what identifiers are used in your Customer.io Workspace!
 Customer.io strongly prefers the ID field to be used as the identifier for a Person record and recommends using your internal ID when possible. If you plan to use the email field, make sure your workspace has enabled [Using email as an identifier](https://docs.customer.io/accounts-and-workspaces/workspaces/#migrate-workspace).
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Customer.io objects and/or behaviors

@@ -14,7 +14,7 @@ In this guide, we will show you how to connect Microsoft Ads to Census.
 * Have your Microsoft Ads account ready.
   * To create Customer Match syncs, your Microsoft Ads Account will need access to the Customer Match feature. See [Microsoft's Customer Match policy](https://about.ads.microsoft.com/en-us/solutions/audience-targeting/customer-match) for more details.
 * Have the proper credentials to access your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -51,7 +51,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 * [Postgres](https://help.getcensus.com/article/10-configuring-redshift-postgresql-access)
 * [BigQuery](https://help.getcensus.com/article/21-configuring-bigquery-access)
 * [Snowflake](https://help.getcensus.com/article/8-configuring-snowflake-access)
-* [Databricks](../sources/databricks.md)
+* [Databricks](../sources/available-sources/databricks.md)
 
 After setting up your warehouse, your Census sync should look like this:
 
@@ -65,7 +65,7 @@ After setting up your warehouse, your Census sync should look like this:
 | Offline Conversion | ✅              | Any unique identifier | Send          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Microsoft Ads objects and/or behaviors

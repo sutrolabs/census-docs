@@ -12,7 +12,7 @@ Census uses OAuth to connect to Google Campaign Manager 360. Before you start th
 
 * Your user will need access to the advertiser account you want to connect to
 * The Campaign Manager 360 account is enabled for API Access
-* Your User Profile permissions also have access to the API. For more information, see Google's [documentation](https://developers.google.com/doubleclick-advertisers/getting\_started).
+* Your User Profile permissions also have access to the API. For more information, see Google's [documentation](https://developers.google.com/doubleclick-advertisers/getting_started).
 
 Once you've confirmed permissions, follow these steps to connect Census to Google Campaign Manager 360:
 
@@ -22,12 +22,12 @@ Once you've confirmed permissions, follow these steps to connect Census to Googl
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|                                                                                                                     **Object Name** | **Supported?** |  **Sync Keys**  | **Behaviors** |
-| ----------------------------------------------------------------------------------------------------------------------------------: | :------------: | :-------------: | :-----------: |
-| <p>Conversions<br><a href="../basics/defining-source-data/events#defining-event-syncs">Event Sync</a></p> |        ✅       | Unique Event ID |      Send     |
+|                                                                                            **Object Name** | **Supported?** |  **Sync Keys**  | **Behaviors** |
+| ---------------------------------------------------------------------------------------------------------: | :------------: | :-------------: | :-----------: |
+| <p>Conversions<br><a href="../basics/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       | Unique Event ID |      Send     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Google Campaign Manager objects and/or behaviors.
@@ -40,9 +40,9 @@ Each conversion record will need three things:
 * Conversion activity identifers
 * Exactly one attribution identifier.
 
-All conversions must be matched to existing activities by specifying the **floodlightActvityId** and **floodlightConfigurationId** values ([Google documentation](https://developers.google.com/doubleclick-advertisers/guides/conversions\_overview#match\_conversions\_to\_activities)). These will appear as required mappings.
+All conversions must be matched to existing activities by specifying the **floodlightActvityId** and **floodlightConfigurationId** values ([Google documentation](https://developers.google.com/doubleclick-advertisers/guides/conversions_overview#match_conversions_to_activities)). These will appear as required mappings.
 
-Offline conversions must also be attributed to a specific user through one of the [supported methods](https://developers.google.com/doubleclick-advertisers/guides/conversions\_overview#match\_conversions\_to\_activities), so you must add a mapping to exactly one of the following fields:
+Offline conversions must also be attributed to a specific user through one of the [supported methods](https://developers.google.com/doubleclick-advertisers/guides/conversions_overview#match_conversions_to_activities), so you must add a mapping to exactly one of the following fields:
 
 * Encrypted User ID
 * Encrypted User ID Candidates
@@ -51,11 +51,11 @@ Offline conversions must also be attributed to a specific user through one of th
 * Match ID
 * Display Click ID
 
-When using the Encrypted User ID, Encrypted User ID Candidates, you must specify Encryption Information in the sync's advanced configuration. See [Google's documentation](https://developers.google.com/doubleclick-advertisers/guides/conversions\_upload#specify\_encryption\_info) for more information.
+When using the Encrypted User ID, Encrypted User ID Candidates, you must specify Encryption Information in the sync's advanced configuration. See [Google's documentation](https://developers.google.com/doubleclick-advertisers/guides/conversions_upload#specify_encryption_info) for more information.
 
 ### Digital Markets Act (DMA)
 
-For syncing audiences to Google Campaign Manager 360, you can include consent information to ensure compatibility with [Google's EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/). Google Campaign Manager 360 now supports an additional field `Consent for ad user data`, which can be set to one of the following values: `GRANTED`, `DENIED`. See Google's [documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad\_user\_data\_consent) for more information.
+For syncing audiences to Google Campaign Manager 360, you can include consent information to ensure compatibility with [Google's EU User Consent Policy](https://www.google.com/about/company/user-consent-policy/). Google Campaign Manager 360 now supports an additional field `Consent for ad user data`, which can be set to one of the following values: `GRANTED`, `DENIED`. See Google's [documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad_user_data_consent) for more information.
 
 ## Need help connecting to Google Campaign Manager 360?
 

@@ -93,11 +93,11 @@ Once you've created your credentials, you can create a source connection within 
 
 You can add Census's IP addresses in your firewall to only allow traffic originating from Census to access your Microsoft Fabric account. You can specify IP addresses to allow as part of [Microsoft Entra's conditional access](https://learn.microsoft.com/en-us/fabric/security/protect-inbound-traffic#entra-conditional-access).
 
-You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+You can find Census's set of IP address for your region in [Regions & IP Addresses](../../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
 
 ## Notes
 
-As of October 2024, Microsoft Fabric only supports our [Basic Sync Engine](overview.md#sync-engines).
+As of October 2024, Microsoft Fabric only supports our [Basic Sync Engine](../overview.md#sync-engines).
 
 ## Need help connecting to Microsoft Fabric?
 

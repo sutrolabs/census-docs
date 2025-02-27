@@ -12,7 +12,7 @@ description: This page describes how to use Census with Microsoft Teams.
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Teams account ready.
-* Have the proper credentials to access to your data source. See our [docs](../sources/available-sources) for each supported data source for further information.
+* Have the proper credentials to access to your data source. See our [docs](../sources/) for each supported data source for further information.
 
 ## 1️⃣ Connect Census to Teams
 
@@ -22,7 +22,7 @@ If you are not already logged in to Teams, you will be redirected to a page to l
 
 ## 2️⃣ Connect Census to your data source
 
-See our [docs](../sources/available-sources) for each supported data source for further information.
+See our [docs](../sources/) for each supported data source for further information.
 
 ## 3️⃣ Create your first Census model
 
@@ -85,7 +85,7 @@ Census will only write new records to a specific channel when new records appear
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Microsoft Teams objects and/or behaviors

@@ -27,22 +27,24 @@ Connecting to your Amazon Ads account is straightforward.
 |     DSP Audience |        ✅       | ID              | Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Ads objects and/or behaviors.
 
 ### Conversion Events
 
-Conversion Events are an [events.md](../basics/data-defining/defining-source-data/events.md "mention") though they have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
+Conversion Events are an [events.md](../syncs/structuring-data/events.md "mention") though they have some unique terminology and requirements. Visit [their documentation](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Conversion-Event-Data/operation/dspAmazonIngestConversionData) for more details.
 
 Before you can sync conversion events, you need to first define them within the Amazon DSP Ui.
-- Within Campaign Manager, select your desired **Advertiser**, then **Events manager**, then **Conversions** tab, and click Next under **Conversion API**.
-- Once you've created your conversion, you'll need to copy the **Conversion Definition ID** to provide to Census.
+
+* Within Campaign Manager, select your desired **Advertiser**, then **Events manager**, then **Conversions** tab, and click Next under **Conversion API**.
+* Once you've created your conversion, you'll need to copy the **Conversion Definition ID** to provide to Census.
 
 Other than the Conversion Definition ID, you'll need a few more fields:
+
 * Like other event syncs, Amazon requires an **Event Name** and a **Timestamp**.
-* **Country Code** - Must be the two-letter country code described in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes).
+* **Country Code** - Must be the two-letter country code described in [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 * **Match Key** - This is the user identifier of the user that triggered the event. Census currently only supports Email as a match key but will support additional options in the future. If you are going to provide Census with a pre-hashed value, it must follow this format:
   * Lowercase
   * Remove all non-alphanumeric characters \[a-zA-Z0-9] and \[.@-]
@@ -51,7 +53,7 @@ Other than the Conversion Definition ID, you'll need a few more fields:
 
 There are also several optional fields available.
 
-* **Currency Code** - This only applies to Off Amazon Purchase conversion definition type. This is the three letter currency code associated with the value of the event in [ISO-4217 format](https://en.wikipedia.org/wiki/ISO\_4217#List\_of\_ISO\_4217\_currency\_codes). If not provided, the currency setting on the conversion definition will be used.
+* **Currency Code** - This only applies to Off Amazon Purchase conversion definition type. This is the three letter currency code associated with the value of the event in [ISO-4217 format](https://en.wikipedia.org/wiki/ISO_4217#List_of_ISO_4217_currency_codes). If not provided, the currency setting on the conversion definition will be used.
 * **Data Processing Options** - Currently, the only accepted value is `LIMITED_DATA_USE` which will cause Amazon to ignore this event. Typically, you can leave this field unmapped.
 * **Units Sold** - This only applies to Off Amazon Purchase conversion definition type and represents the number of items purchased. If not provided on the conversion event, a default of 1 will be applied.
 * **Value** - This has two modes depending on the conversion definition type.
@@ -78,7 +80,7 @@ Like Conversion Events, you can optionally provide pre-hashed values for your re
 
 ### Digital Markets Act (DMA)
 
-Finally, to support upcoming Digital Markets Act (DMA) requirements, Amazon now accepts a Data Source Country field on the DSP Audience Members object. This field should be a comma separated list of two-letter country code using [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes) format. This list will be used by any segments created from this sync. This is required in order to create a new audience.
+Finally, to support upcoming Digital Markets Act (DMA) requirements, Amazon now accepts a Data Source Country field on the DSP Audience Members object. This field should be a comma separated list of two-letter country code using [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) format. This list will be used by any segments created from this sync. This is required in order to create a new audience.
 
 ## Need help connecting to Amazon Ads DSP?
 

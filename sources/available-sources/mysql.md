@@ -36,7 +36,7 @@ GRANT SELECT ON <your schema>.* TO CENSUS;
 
 ## Advanced Network Configuration
 
-Census can successfully connect to MySQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
+Census can successfully connect to MySQL instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 Census supports MySQL with versions TLSv1.2 and greater.
 

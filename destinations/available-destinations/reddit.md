@@ -23,7 +23,7 @@ Reddit Ads is an advertising platform that allows businesses to engage with Redd
 <table data-header-hidden><thead><tr><th align="right"></th><th width="123" align="center"></th><th></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Conversion Event</td><td align="center">✅</td><td>Any unique ID</td><td>Send</td></tr><tr><td align="right">Custom Audiences</td><td align="center">✅</td><td>Email, Mobile Advertising ID (MAID)</td><td>Mirror</td></tr></tbody></table>
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Reddit Ads objects and/or behaviors.

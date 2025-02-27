@@ -1,6 +1,6 @@
 # AI Columns
 
-AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like ChatGPT (OpenAI), Claude (Anthropic) and Gemini (Google). With AI Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well.&#x20;
+AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like ChatGPT (OpenAI), Claude (Anthropic) and Gemini (Google). With AI Columns, you can define a prompt and use [liquid templating](../../syncs/structuring-data/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well.&#x20;
 
 {% hint style="info" %}
 Try AI Columns for free using trial [credits](../../misc/credits.md)! No need for an API key until your trial credits run out.&#x20;
@@ -53,7 +53,7 @@ Refer to our [AI Prompts Recipe Book](prompts-recipe-book.md) for some inspirati
 
 * Model Type - you can select from the provided list of models for the selected LLM provider.
 * The expected output type - there are several optional properties to help you guarantee data quality.
-* The prompt to run against each row of your data. Your prompt can leverage [Liquid templating](../../basics/core-concept/liquid-templates.md) to reference column values.
+* The prompt to run against each row of your data. Your prompt can leverage [Liquid templating](../../syncs/structuring-data/liquid-templates.md) to reference column values.
 
 **Step 7:** Hit the Create button and that's it. Census will generate a AI based column into your dataset.
 

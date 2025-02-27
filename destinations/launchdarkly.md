@@ -67,7 +67,7 @@ Go to **Account settings** > **Projects** and copy the **Project Key,** **Enviro
 | Synced Segments |        ✅       | User ID       | Mirror           |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more LaunchDarkly objects and/or behaviors.
@@ -80,7 +80,7 @@ You can use Census to both Create or Update Metric definitions, or also send Met
 
 ### Synced Segments
 
-Census supports LaunchDarkly's Synced Segments with [audience syncs](../basics/core-concept/audience-syncs.md). You can use Census to send any of your segments to LaunchDarkly. Synced Segments are very straightforward, with only two details you need to consider:
+Census supports LaunchDarkly's Synced Segments with [audience syncs](../syncs/core-concept/audience-syncs.md). You can use Census to send any of your segments to LaunchDarkly. Synced Segments are very straightforward, with only two details you need to consider:
 
 * **ID** - This whatever Identifier you use with LaunchDarkly to identify those context types. This could be your internal ID for a user or their email address. LaunchDarkly will happily accept whatever value you send here but in order for the segment to be useful, it must match the ID you are using with LaunchDarkly.
 * **Context** - This is the "type" of things in your segment. It can be the standard LaunchDarkly contexts such as Users or Companies, or any custom context you have created.

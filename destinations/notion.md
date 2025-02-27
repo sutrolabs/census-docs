@@ -40,19 +40,19 @@ We support syncing data to Tables in Notion. ​
 
 | **Object Name** | **Supported?** | **Sync Keys** |
 | :-------------: | :------------: | :-----------: |
-|      Table      |        ✅      |     Title     |
+|      Table      |        ✅       |     Title     |
 
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |
 | -------------------: | :------------: | :---------: |
-|           **Update** |        ✅      |     All     |
-| **Update or Create** |        ✅      |     All     |
-|           **Mirror** |        ✅      |     All     |
+|           **Update** |        ✅       |     All     |
+| **Update or Create** |        ✅       |     All     |
+|           **Mirror** |        ✅       |     All     |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Notion.
 

@@ -12,13 +12,13 @@ In this guide, we will show you how to connect Salesforce to Census and create y
 
 ## 🔑 Required permissions
 
-Census connects to your Salesforce instance through a standard OAuth connection to an individual user account. We recommend using a stand-alone account specifically for Census (often called a Service Account) so you can see Census updates in your audit history. Census primarily uses the [Salesforce Bulk API](https://developer.salesforce.com/docs/atlas.en-us.api\_asynch.meta/api\_asynch/asynch\_api\_intro.htm) to sync data to Salesforce in the most API quota-efficient way possible.
+Census connects to your Salesforce instance through a standard OAuth connection to an individual user account. We recommend using a stand-alone account specifically for Census (often called a Service Account) so you can see Census updates in your audit history. Census primarily uses the [Salesforce Bulk API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm) to sync data to Salesforce in the most API quota-efficient way possible.
 
 The Census Service Account will need at least these permissions in order to connect successfully:
 
 * "API Enabled" must be checked
 * "Session Security Level Required at Login" must be "None"
-  * Further details: [Salesforce blocks some API access](https://help.salesforce.com/s/articleView?id=sf.security\_require\_2fa\_api.htm\&type=5) when the **High Assurance on Session security level required at login** setting is used on user Profiles. This will prevent Census from accessing your Salesforce instance. [See Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.security\_require\_two-factor\_authentication.htm\&type=5) on how to disable this for your Profile (Strangely, this can be enabled/disabled per user and seems to have no effect on the API. Only the profile-level setting causes issues).
+  * Further details: [Salesforce blocks some API access](https://help.salesforce.com/s/articleView?id=sf.security_require_2fa_api.htm\&type=5) when the **High Assurance on Session security level required at login** setting is used on user Profiles. This will prevent Census from accessing your Salesforce instance. [See Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.security_require_two-factor_authentication.htm\&type=5) on how to disable this for your Profile (Strangely, this can be enabled/disabled per user and seems to have no effect on the API. Only the profile-level setting causes issues).
 
 The objects and fields accessible to Census are all determined by the user account you use when connecting Census to your Salesforce instance. Census will have the same access as the user, so if fields are read-only or hidden for that user, they will be to Census. In general, you should give Census "Read", "Create", "Edit", and "Delete" access to all the objects you'd like to manage via Census.
 
@@ -63,7 +63,7 @@ If you're planning to create a Multi-destination sync to both Lead & Contact or 
 1. First, make sure you've created the same External ID on both the Lead and the Contact or Account.
 2. Then, return to **Lead** in the **Object Manager**. Once again in **Fields & Relationships** and press the **Map Lead Fields** button in the top right. This UI will let you associate fields across a converted Lead. Create a mapping between your two external IDs and you're done!
 
-![](../.gitbook/assets/sfdc\_setup3.png)
+![](../.gitbook/assets/sfdc_setup3.png)
 
 #### Reusing existing External Identifier fields
 
@@ -105,7 +105,7 @@ Salesforce support is pretty straight forward!
 |       Email Message Relation       |        ✅       |     Any unique identifier    |                             Add                            |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Salesforce objects and/or behaviors.
@@ -118,7 +118,7 @@ The OpportunityContactRole in Salesforce is a bit weird. It doesn't actually sup
 2. Inside Salesforce, you'll need to add a new field to the OpportunityContactRole object. The API name of the field **must** be `census_tracking_id__c`, though you can provide whatever label you want.
 3. Now you can set up your sync!
    1. Select your data source and target OpportunityContactRole in your Salesforce connection.
-   2. Your sync will be an [add sync](../basics/core-concept/#sync-behaviors) meaning that Census can create OpportunityContactRole relations, but won't update or remove them.
+   2. Your sync will be an [add sync](../syncs/core-concept/#sync-behaviors) meaning that Census can create OpportunityContactRole relations, but won't update or remove them.
    3. For Primary Identifier, you'll select the column you created in Step 1. Behind the scenes, Census will use the Salesforce field you created in Step 2 to make sure we're not creating any duplicate relationships.
    4. In the sync mappings, make sure to set both the Opportunity Lookup with `opportunity_id` as well as Contact lookup either using either Contact `contact_id` or `contact_email`. You can also map any other fields you want on the OpportunityContactRole.
    5. Make sure you press the **Refresh Fields** button one last time to pick up all the new fields you created.
@@ -153,7 +153,7 @@ Keep in mind, Census will always retry syncing any records that are rejected by 
 
 This error is caused when attempting to insert a new Account, Contact, or Lead record that Salesforce thinks is a duplicate of a record already in Salesforce. That "Use one of these records?" message is actually the title of a message you'd see if you were trying to do this manually in Salesforce. Unfortunately, it's not that helpful as an error message!
 
-Though Leads are separate objects from Contacts and Accounts, Salesforce has predefined duplication rules that check for duplicates between Lead and Contact/Account. You can [see the rules that define duplicates](https://help.salesforce.com/articleView?id=duplicate\_rules\_standard\_rules.htm\&type=5) and even define custom ones in Setup. Usually preventing duplicates is a great thing. The best way around this is to use Census's **Multi-destination Syncs** to sync to both Lead & Contact or Lead & Account at the same time.\
+Though Leads are separate objects from Contacts and Accounts, Salesforce has predefined duplication rules that check for duplicates between Lead and Contact/Account. You can [see the rules that define duplicates](https://help.salesforce.com/articleView?id=duplicate_rules_standard_rules.htm\&type=5) and even define custom ones in Setup. Usually preventing duplicates is a great thing. The best way around this is to use Census's **Multi-destination Syncs** to sync to both Lead & Contact or Lead & Account at the same time.\
 \
 In extreme cases, you can choose to turn off duplicate rules either only for the Census account, or entirely for your org. This is probably a bad idea, so proceed with caution!
 
@@ -163,7 +163,7 @@ Salesforce limits the number of SOQL queries that can be executed in an individu
 
 The primary cause of this problem is doing SOQL queries within a loop. The fix for this is straightforward, raise the SOQL queries outside the loop! Look for any other causes where you can get by with reusing the results of one query rather than requesting multiple times.
 
-In some cases though, it can be hard to avoid many SOQL queries (Salesforce CPQ is built within the Salesforce platform for example and frequently runs into this error when handling batches). In this case, you'll need to use Apex's [System.scheduleBatch()](https://developer.salesforce.com/docs/atlas.en-us.226.0.apexcode.meta/apexcode/apex\_batch\_interface.htm#apex\_batch\_scheduleBatch\_section) functionality to handle the trigger logic asynchronously. This gives you the flexibility to handle the changes in whatever batch size as appropriate to support your required number of SOQL queries.
+In some cases though, it can be hard to avoid many SOQL queries (Salesforce CPQ is built within the Salesforce platform for example and frequently runs into this error when handling batches). In this case, you'll need to use Apex's [System.scheduleBatch()](https://developer.salesforce.com/docs/atlas.en-us.226.0.apexcode.meta/apexcode/apex_batch_interface.htm#apex_batch_scheduleBatch_section) functionality to handle the trigger logic asynchronously. This gives you the flexibility to handle the changes in whatever batch size as appropriate to support your required number of SOQL queries.
 
 **`CANNOT_EXECUTE_FLOW_TRIGGER: Apex CPU time limit exceeded`**
 

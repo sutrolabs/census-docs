@@ -14,13 +14,13 @@ description: This page describes how to use Census with RollWorks.
 
 ## Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
-| --------------: | :------------: | --------------- |---------------|
-| CRM Audience | ✅ | Email | Replace       |
-| Target Account List | 🔜 | - | -             |
+|     **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
+| ------------------: | :------------: | ------------- | ------------- |
+|        CRM Audience |        ✅       | Email         | Replace       |
+| Target Account List |       🔜       | -             | -             |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more RollWorks objects and/or behaviors.

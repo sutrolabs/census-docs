@@ -88,7 +88,7 @@ If you are setting up a connection with a System User Token when you input your 
 | Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                                    |           Send           |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Facebook Ads objects and/or behaviors
@@ -133,7 +133,7 @@ When sending conversions, you'll need to do a bit more work to ensure that the d
 
 #### 1. Choose or create a conversion event in Facebook, Collect the Pixel ID
 
-To view all your Facebook Ads accounts' Pixel IDs go to the [Events Manager](https://www.facebook.com/business/help/898185560232180): [https://business.facebook.com/events\_manager2/list/](https://business.facebook.com/events\_manager2/list/).
+To view all your Facebook Ads accounts' Pixel IDs go to the [Events Manager](https://www.facebook.com/business/help/898185560232180): [https://business.facebook.com/events\_manager2/list/](https://business.facebook.com/events_manager2/list/).
 
 Be sure to select the specific ads account you want to work on. You can switch ad accounts in the navigation bar on the left side of the screen.
 

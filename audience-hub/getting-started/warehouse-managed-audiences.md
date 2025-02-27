@@ -10,7 +10,7 @@ Warehouse-Managed Audiences enable data teams to manage audiences programmatical
 
 <figure><img src="../../.gitbook/assets/erd.png" alt=""><figcaption></figcaption></figure>
 
-To get started with Warehouse-Managed Audiences, you'll need to define three models in Census that map to tables in your warehouse:
+To get started with Warehouse-Managed Audiences, you'll need to define three datasets in Census that map to tables in your warehouse:
 
 1. **Audiences**: A list of all audiences you plan to model in your warehouse.
    1. Required columns: `id` and `name`
@@ -46,47 +46,45 @@ _Audience Membership (Join Table)_
 This process should be done with the help of your Census representative, who can talk through any questions during setup.
 {% endhint %}
 
-#### **Part 1**: Entities
+#### **Part 1**: Datasets
 
-Next, create a dataset for each of the three models. This will allow you to provide some additional metadata to help Census understand the shape of your data and how its related.
+Next, create a dataset for each of the three tables. This will allow you to provide some additional metadata to help Census understand the shape of your data and how its related.
 
 Audiences model -> Create an **Audience** type dataset:
 
-<figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.30.25@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-27 at 12.34.49.png" alt=""><figcaption></figcaption></figure>
 
 Person model -> Create a **Person** type dataset:
 
-<figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.29.45@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-27 at 12.34.36 (1).png" alt=""><figcaption></figcaption></figure>
 
 Audience Membership model -> Create a **Join Table** type dataset:
 
-<figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.30.14@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-27 at 12.35.03.png" alt=""><figcaption></figcaption></figure>
 
 #### **Part 2**: Dataset relationships
 
-<figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.33.42@2x.png" alt=""><figcaption></figcaption></figure>
-
-Finally, specify how these entities relate to each other by setting up relationships between them.
+Finally, specify how these datasets relate to each other by setting up relationships between them.
 
 Connect the **Person** dataset to the **Audience Membership** dataset with a **One-to-Many** relationship:
 
-<figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.30.52@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-20 at 13.06.43.png" alt=""><figcaption></figcaption></figure>
 
 Connect the **Audience** dataset to the **Audience Membership** dataset with a **One-to-Many** relationship:
 
-<figure><img src="../../.gitbook/assets/CleanShot 2024-01-11 at 16.35.00@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-20 at 13.07.01.png" alt=""><figcaption></figcaption></figure>
 
 ### Finalize Setup
 
 Once your datasets are set up, your Census representative can finalize your configuration. You should see your imported audience segments populate in Census. You can distinguish them from audiences defined in the UI based on the "Managed" tag that appears next to the segment name.
 
-<figure><img src="../../.gitbook/assets/audience-list (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-27 at 12.23.46.png" alt=""><figcaption></figcaption></figure>
 
 ## FAQ
 
 **How do I update the membership of an audience?**
 
-Audience membership information lives in the audience membership model (join table). Any time a Warehouse-Managed Audience is queried in Census, we make a just-in-time query to this table. Thus, adding and removing rows from the audience membership model will update the membership of an audience.
+Audience membership information lives in the audience membership dataset (join table). Any time a Warehouse-Managed Audience is queried in Census, we make a just-in-time query to this table. Thus, adding and removing rows from the audience membership dataset will update the membership of an audience.
 
 **How often are audiences refreshed by Census?**
 

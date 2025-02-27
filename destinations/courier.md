@@ -33,7 +33,7 @@ Now that we have your API Key from Courier, we can set up Courier as a Destinati
 3. Copy in your API Key from Courier
 4. Save
 
-And that's it! If this is your very first sync with Census, jump back to our guide on [Creating Syncs](../basics/core-concept/#creating-syncs). Otherwise, read on to learn more about how to get the most out of syncing data from your warehouse to Courier!
+And that's it! If this is your very first sync with Census, jump back to our guide on [Creating Syncs](../syncs/core-concept/#creating-syncs). Otherwise, read on to learn more about how to get the most out of syncing data from your warehouse to Courier!
 
 ## Use Cases
 
@@ -60,7 +60,7 @@ Looking for another Courier feature? [Contact us](mailto:support@getcensus.com) 
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** |    **Objects**    |

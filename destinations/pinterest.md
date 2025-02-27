@@ -23,7 +23,7 @@ Note: You will need admin rights in your organization's Pinterest Business Accou
 |   Customer List |        ✅       | Email, IDFA, MAID \*\* |
 
 {% hint style="info" %}
-Note: [Pinterest requires](https://developers.pinterest.com/docs/api/v5/#tag/customer\_lists) emails to be lowercase and can be plain text or hashed using SHA1, SHA256, or MD5. MAIDs and IDFAs must be hashed with SHA1, SHA256, or MD5. You have the option to provide plain-text versions of any of these to Census and we will automatically hash the values before passing them along to Pinterest.
+Note: [Pinterest requires](https://developers.pinterest.com/docs/api/v5/#tag/customer_lists) emails to be lowercase and can be plain text or hashed using SHA1, SHA256, or MD5. MAIDs and IDFAs must be hashed with SHA1, SHA256, or MD5. You have the option to provide plain-text versions of any of these to Census and we will automatically hash the values before passing them along to Pinterest.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pinterest objects.
@@ -31,7 +31,7 @@ Note: [Pinterest requires](https://developers.pinterest.com/docs/api/v5/#tag/cus
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** |  **Objects**  |

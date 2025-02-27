@@ -64,7 +64,7 @@ These will be present for both metrics & events:
 * **sync\_run\_id** - your sync run's ID
 * **workspace\_id** - your workspace's immutable ID associated with the metric / event
 * **workspace\_name** - your workspace's name associated with the metric / event
-* **sync\_id** - your sync's immutable ID, also searchable in the [Management API](../developers/api.md) and [Sync Logs](warehouse-writeback.md)
+* **sync\_id** - your sync's immutable ID, also searchable in the [Management API](../../misc/developers/api.md) and [Sync Logs](warehouse-writeback.md)
 * **sync\_behavior** - how the sync is updating your destination's records (e.g. upsert, update, mirror)
 * **destination\_type** - the destination you're updating with a sync (e.g. Salesforce, Google Sheets, ...)
 * **destination\_id** - the ID of the destination connection

@@ -13,7 +13,7 @@ description: This page describes how to use Census with Amplitude.
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Amplitude account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -44,11 +44,7 @@ Now that we have the API Key from Amplitude, we can now set up Amplitude as a De
 
 1. In the **Destinations** section of Census, create a new Amplitude connection by clicking the New Destination button and searching for "Amplitude" in the search bar.
 
-<div align="center">
-
-<figure><img src="../.gitbook/assets/Screenshot 2023-03-17 at 13.57.14.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../.gitbook/assets/Screenshot 2023-03-17 at 13.57.14.png" alt=""><figcaption></figcaption></figure></div>
 
 2. You can provide whatever name you like.
 3. Provide the copied API Key from Amplitude.
@@ -109,7 +105,7 @@ Click the Next button to see the final preview, which will have a recap of what 
 Both User and Device objects will resolve to a single User Profile in Amplitude. If Devices can be associated with Users, then select Device and map the User field to an appropriate value in your model. If no Device information is collected, select User.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Amplitude objects and/or behaviors.
@@ -125,7 +121,7 @@ But these events are immutable, meaning once they're written, they're never upda
 * If user properties are updated by Census, those user properties will only apply to any _**future**_ _**ingested**_ events at the time of their ingestion. So if User A's properties are updated by Census today, but they never again generate an event, the Amplitude UI will never show the updated user properties because none of the previous events' snapshots can be changed to reflect the updated properties.
 * This also means that historical event imports are limited. Historical events can be imported with updated user and group properties, but again, those properties _**will only be reflected on events ingested after the historical sync**_ in real world time\*\*,\*\* not just in the future according to the timestamp of the events. This is because all events already ingested are immutable.
 
-This is Amplitude's intended design: fast, but with some inflexibility. You can read more about it in [Amplitude's documentation](https://help.amplitude.com/hc/en-us/articles/115002380567-User-properties-and-event-properties#h\_856d23e3-10ea-4398-a50d-4982a42d1f3f).
+This is Amplitude's intended design: fast, but with some inflexibility. You can read more about it in [Amplitude's documentation](https://help.amplitude.com/hc/en-us/articles/115002380567-User-properties-and-event-properties#h_856d23e3-10ea-4398-a50d-4982a42d1f3f).
 
 #### Working Around Missing User Properties
 

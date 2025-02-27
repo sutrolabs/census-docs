@@ -18,7 +18,7 @@ description: This page describes how to use Materialize as a source in Census.
 
 ## Notes
 
-As of June 2023, Materialize only supports our [Basic Sync Engine](overview.md#sync-engines).
+As of June 2023, Materialize only supports our [Basic Sync Engine](../overview.md#sync-engines).
 
 ## Need help connecting to Materialize?
 

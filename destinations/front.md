@@ -15,7 +15,7 @@ In this guide, we will show you how to connect Front to Census and create your f
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Front account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -32,11 +32,11 @@ In this guide, we will show you how to connect Front to Census and create your f
 * Click the New Destination button
 * Select Front in the dropdown list
 
-![](../.gitbook/assets/front\_step1.png)
+![](../.gitbook/assets/front_step1.png)
 
 Follow the OAuth flow to connect Front. Your end state should look something like this 👇
 
-![](../.gitbook/assets/front\_step2.png)
+![](../.gitbook/assets/front_step2.png)
 
 ### 2. Connect your Data Warehouse
 
@@ -49,7 +49,7 @@ Please follow one of our short guides depending on your data warehouse technolog
 
 After setting up your warehouse, your Census Destinations page should look like this:
 
-![](../.gitbook/assets/front\_step3.png)
+![](../.gitbook/assets/front_step3.png)
 
 ### 3. Create your first Model
 
@@ -64,7 +64,7 @@ Here you can write SQL queries or select dbt models that contain the data you wa
 
 Once you have created your model, click save.
 
-![](../.gitbook/assets/front\_step4.png)
+![](../.gitbook/assets/front_step4.png)
 
 ### 4. Create your first Sync
 
@@ -89,7 +89,7 @@ Finally, select the fields you want to update in the mapper in the "Which Fields
 
 * For each field in your Front instance, you can choose a column from your model.
 
-![](../.gitbook/assets/front\_step5.png)
+![](../.gitbook/assets/front_step5.png)
 
 Click the Next button to see a preview of what will happen when you start the sync. You can check the "Run Sync Now" checkbox to kick off an initial sync and pick a schedule afterwards.
 
@@ -99,7 +99,7 @@ Now go back to Front and go view a Contact that should have been updated. If eve
 
 That's it, in 5 steps, you connected Census to Front and started syncing customer & product data from your warehouse to Front 🎉
 
-![](../.gitbook/assets/front\_step6.png)
+![](../.gitbook/assets/front_step6.png)
 
 If you have any questions or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or send us an email at support@getcensus.com
 
@@ -135,7 +135,7 @@ Front has [many objects available via their API](https://dev.frontapp.com/refere
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** |  **Objects** |

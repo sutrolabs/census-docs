@@ -67,13 +67,13 @@ We **strongly recommend against** connecting Census a production PostgreSQL data
 
 ## Advanced Network Configuration
 
-Census can successfully connect to Postgres instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
+Census can successfully connect to Postgres instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## Allowed IP Addresses
 
 With PostgreSQL, you'll need to add Census's IP addresses in your firewall, and/or add rules to your `pg_hba.conf` file to only allow the Census user to connect to your database.
 
-You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+You can find Census's set of IP address for your region in [Regions & IP Addresses](../../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
 
 ## Connecting via SSH tunnel
 
@@ -82,7 +82,7 @@ Census optionally allows connecting to PostgreSQL warehouses that are only acces
 1. Create a new user account for Census on the SSH host. (This account is separate from the database user account and can have a different username.)
 2. On the Census Sources page, create a new connection to a PostgreSQL warehouse, enter the warehouse connection details, and then check the 'Use SSH Tunnel' option as shown below. Fill in the host and port of the SSH host machine along with the name of the user created in the previous step.
 
-![](../.gitbook/assets/redshift\_pg\_1.png)
+![](../../.gitbook/assets/redshift_pg_1.png)
 
 3\. Once the connection is created, Census will generate a keypair for SSH authentication which can be accessed from the Sources page.
 
@@ -90,7 +90,7 @@ To install the keypair, copy the public key in Census to your clipboard and add 
 
 Note that the keypair is unique for each Census Warehouse connection. Even if you're reusing the same credentials, you'll need to add the new public keys.
 
-![](../.gitbook/assets/redshift\_pg\_2.png)
+![](../../.gitbook/assets/redshift_pg_2.png)
 
 4\. If the SSH host restricts IP ranges that can connect to it, add the Census IPs to the allowlist.
 

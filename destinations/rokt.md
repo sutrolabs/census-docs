@@ -24,7 +24,7 @@ Rokt is an e-commerce marketing technology company that uses machine learning to
 |        Audience |        ✅       | Email, MD5 Email, SHA256 Email | Update or Create, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Rokt objects and/or behaviors.

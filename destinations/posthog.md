@@ -70,7 +70,7 @@ For the " **How do you want to update the destination?"** section
 * **Send** will automatically be chosen
 * Choose the **Unique ID** Column
 * Decide if you'd like to turn on **Use timestamp column to identify new data**.
-  * This can be more efficient for large or frequently changing data sets. More info can be found in this [doc](../basics/data-defining/defining-source-data/events.md#using-timestamp-to-identify-new-records).
+  * This can be more efficient for large or frequently changing data sets. More info can be found in this [doc](../syncs/structuring-data/events.md#using-timestamp-to-identify-new-records).
 
 Finally, select the properties you want to update in the Mapper in the **"Which properties should be updated?"** section
 
@@ -105,7 +105,7 @@ Census currently supports syncing to the following PostHog objects.
 |            Page |        ✅       | Distinct ID   | Send                          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Posthog objects and/or behaviors

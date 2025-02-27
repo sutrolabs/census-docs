@@ -86,11 +86,11 @@ Here is a sample IAM policy that specifies the resources:
 
 1\. Ensure that the AWS IAM policy created in the "Required Permissions" section is attached to the IAM user that Census is impersonating. 2. In Census, go to **Sources** or click [here to go to the app](https://app.getcensus.com/sources). 3. Click **New Source** and select **Amazon Athena**.
 
-![](../.gitbook/assets/athena\_setup.png)
+![](../../.gitbook/assets/athena_setup.png)
 
 4\. Please specify the AWS access key and secret key associated with the user Census will be impersonating, the S3 query result bucket url, S3 region, and Athena workgroup.
 
-![](../.gitbook/assets/athena\_setup\_properties.png)
+![](../../.gitbook/assets/athena_setup_properties.png)
 
 ### Using Role-Based Permissions
 
@@ -98,13 +98,13 @@ As an alternative to using keys you may opt to grant Census access to a role in 
 
 Step 1: When configuring the Athena source click the "Use role" checkbox. Provide your region, S3 output location, and workgroup, but leave access and secret key blank. Click Connect:
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-02-14 at 14.13.06@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-02-14 at 14.13.06@2x.png" alt=""><figcaption></figcaption></figure>
 
 Step 2: The automated connection check will run at this point and fail, this is expected.
 
 Step 3: Click the 'Back' button to return to editing the destination. You should now see an 'External ID' input box with a string in it. You will use this string in the following step.
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-02-14 at 14.15.14@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2023-02-14 at 14.15.14@2x.png" alt=""><figcaption></figcaption></figure>
 
 Step 4: Open your AWS Console in a separate tab and browse to the IAM service. Click 'Roles' and 'Create role'.
 

@@ -18,7 +18,7 @@ We recommend you create a dedicated `CENSUS` user account with a strong, unique 
 
 ### Required Permissions
 
-These permissions are required for both [Basic and Advanced sync engines](overview.md#sync-engines). They give Census read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.&#x20;
+These permissions are required for both [Basic and Advanced sync engines](../overview.md#sync-engines). They give Census read-only access to any tables and views in any schemata that you would like Census to publish to your service destinations.
 
 SQL Server permissions are complex and there are many ways to configure access for Census. The script below has been tested with recent SQL Server versions and is known to work correctly:
 
@@ -64,7 +64,7 @@ GRANT CREATE TABLE TO CENSUS;
 
 ## Advanced Network Configuration
 
-Census can successfully connect to SQL Server instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../basics/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.&#x20;
+Census can successfully connect to SQL Server instances that are using advanced networking controls including region constraints, IP address allow lists, or SSH Tunneling. For more information, see our [regions-and-ip-addresses.md](../../misc/security-and-privacy/regions-and-ip-addresses.md "mention") documentation.
 
 ## Need help connecting to SQL Server?
 

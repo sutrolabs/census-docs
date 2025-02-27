@@ -33,7 +33,7 @@ Back in Census, navigate to the Destinations page and click **Add Destination**.
 |     Static List |        ✅       | User ID, Email | Mirror                        |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Iterable objects and/or behaviors
@@ -56,7 +56,7 @@ As an example, valid JSON for a field named "subscription" could have the follow
 }
 ```
 
-We recommend testing your JSON fields in Redshift by using Redshift's [`IS_VALID_JSON`](https://docs.amazonaws.cn/en\_us/redshift/latest/dg/IS\_VALID\_JSON.html) and [`IS_VALID_JSON_ARRAY`](https://docs.amazonaws.cn/en\_us/redshift/latest/dg/IS\_VALID\_JSON\_ARRAY.html) functions, especially before creating new fields in Iterable via Census's field mapper.
+We recommend testing your JSON fields in Redshift by using Redshift's [`IS_VALID_JSON`](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON.html) and [`IS_VALID_JSON_ARRAY`](https://docs.amazonaws.cn/en_us/redshift/latest/dg/IS_VALID_JSON_ARRAY.html) functions, especially before creating new fields in Iterable via Census's field mapper.
 
 ### Syncing to GeoLocation Fields
 

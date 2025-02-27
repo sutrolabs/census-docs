@@ -13,7 +13,7 @@ description: This page describes how to use Census with Chargebee
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Chargebee account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -44,7 +44,7 @@ Census needs only your Chargebee **API token** and **sub domain** to connect you
 
 ## Custom Fields in Chargebee <a href="#supported-objects" id="supported-objects"></a>
 
-Custom fields defined in Chargebee can be added to the sync mapping by manually entering the custom field API Name in the destination field mapping.&#x20;
+Custom fields defined in Chargebee can be added to the sync mapping by manually entering the custom field API Name in the destination field mapping.
 
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Chargebee Custom Field</p></figcaption></figure>
 
@@ -62,7 +62,7 @@ Census currently supports syncing to the following Chargebee objects.
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |   **Behaviors** | **Supported?** |       **Objects**      |

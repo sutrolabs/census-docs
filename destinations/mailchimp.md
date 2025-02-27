@@ -15,7 +15,7 @@ In this guide, we will show you how to connect Mailchimp to Census and create yo
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com) now.
 * Have your Mailchimp account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -62,12 +62,12 @@ For more details, take a look at Mailchimp's [API documentation](https://mailchi
 
 ## ⠀Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|       **Object Name** | **Supported?** | **Identifiers**                                                | **Behaviors**    |
-| --------------------: | :------------: | -------------------------------------------------------------- | ---------------- |
-| List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p> |  Update or Create, Update Only |
+|       **Object Name** | **Supported?** | **Identifiers**                                                | **Behaviors**                 |
+| --------------------: | :------------: | -------------------------------------------------------------- | ----------------------------- |
+| List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p> | Update or Create, Update Only |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mailchimp objects and/or behaviors
@@ -84,7 +84,7 @@ The Mailchimp `status` field supports one of four values: `subscribed`, `unsubsc
 
 #### Tags
 
-Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../basics/data-defining/defining-source-data/structured-data.md) using Census.
+Mailchimp `tags` field can be set by providing an array of string values as structured data. [Read more about syncing Structured Data](../syncs/structuring-data/structured-data.md) using Census.
 
 ## 🚑⠀Need help connecting to Mailchimp?
 

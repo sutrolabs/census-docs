@@ -13,7 +13,7 @@ See our [Developer Hub](https://developers.getcensus.com) for a full view of all
 * Custom Destinations
   * [HTTP Request Destination](../../destinations/http-request.md) - An easy way to send data to a custom destination, without having to build a full destination.
   * [Custom Destination API](custom-api.md) - A rich JSON-RPC API for implementing your own custom destination for Census Syncs. This API supports batching and schemas just like other Census connections.
-* [Sync Trigger API](../core-concept/triggering-syncs.md#sync-trigger-api) - Use the sync trigger API to programmatically trigger Census syncs and read their status. We use this API to power our Airflow, Prefect, and Dagster integrations.
+* [Sync Trigger API](../../syncs/core-concept/triggering-syncs.md#sync-trigger-api) - Use the sync trigger API to programmatically trigger Census syncs and read their status. We use this API to power our Airflow, Prefect, and Dagster integrations.
 * [GitLink](gitlink.md) - An integration that allows you to manage Census SQL models and syncs via YAML files in your Git repository.
 
 We're always adding more capabilities to our APIs. If you have questions about how to use our existing APIs or are looking for even more functionality, please send us your feedback to [support@getcensus.com](mailto:support@getcensus.com).

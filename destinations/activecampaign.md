@@ -15,7 +15,7 @@ description: This page describes how to use Census with ActiveCampaign.
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your ActiveCampaign account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -124,7 +124,7 @@ Due to limitations of the ActiveCampaign API, Account records will sync signific
 
 ### Updating a Contact's Lists
 
-ActiveCampaign supports adding Contact objects to one or more lists during a sync by providing an array of identifiers by providing a [structured-data.md](../basics/data-defining/defining-source-data/structured-data.md "mention") column from the source data. Each list can be identified by one of two identifiers:
+ActiveCampaign supports adding Contact objects to one or more lists during a sync by providing an array of identifiers by providing a [structured-data.md](../syncs/structuring-data/structured-data.md "mention") column from the source data. Each list can be identified by one of two identifiers:
 
 * **ID** - This is an integer and can be extracted from a list's URL while inside ActiveCampaign.
 * **String Id** - This is a URL-safe string identifier for the list. This is only typically available via the ActiveCampaign API.
@@ -136,7 +136,7 @@ Census will return an error if the list with the matching ID cannot be found. If
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

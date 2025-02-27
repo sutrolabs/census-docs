@@ -25,7 +25,7 @@ Census requires "Full Access" in order to write data to Klaviyo. However, you ma
 
 #### 2. Public API Key / Site ID
 
-The Public API Key is used solely to access the [Klaviyo API](https://developers.klaviyo.com/en/reference/create\_client\_profile) that powers Profile Update or Create at higher volume.
+The Public API Key is used solely to access the [Klaviyo API](https://developers.klaviyo.com/en/reference/create_client_profile) that powers Profile Update or Create at higher volume.
 
 Klaviyo only allows a single Site ID so in this case, you can reuse your existing public API Key.
 
@@ -48,7 +48,7 @@ You should now be ready to create a new sync to Klaviyo from Census!
 |                    <p>Event<br><a href="../basics/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       |                 Unique Event ID                |                  Send                 |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation. [Contact us](mailto:support@getcensus.com) if you want Census to support more Klaviyo objects and/or behaviors.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation. [Contact us](mailto:support@getcensus.com) if you want Census to support more Klaviyo objects and/or behaviors.
 {% endhint %}
 
 ### How profile identifiers work in Klaviyo
@@ -75,7 +75,7 @@ Though the API prevents them, duplicate profiles are still possible in Klaviyo. 
 
 Klaviyo events work like most behavioral event destinations. They require a unique event ID which is used to prevent duplicate events from being created in Klaviyo, as well as a name, timestamp, and custom properties.
 
-One quirk of events in Klaviyo is how events are associated with specific users. Klaviyo will associate events with a user based on the email address provided, the Klaviyo User ID, or an external ID. Due to this Klaviyo event syncs require at least an email address, Klaviyo ID, or external ID to be captured properly. Using [phone numbers as identifiers does not work reliably](https://developers.klaviyo.com/en/reference/update\_profile) in some cases depending on how Klaviyo is configured.
+One quirk of events in Klaviyo is how events are associated with specific users. Klaviyo will associate events with a user based on the email address provided, the Klaviyo User ID, or an external ID. Due to this Klaviyo event syncs require at least an email address, Klaviyo ID, or external ID to be captured properly. Using [phone numbers as identifiers does not work reliably](https://developers.klaviyo.com/en/reference/update_profile) in some cases depending on how Klaviyo is configured.
 
 ## Need help connecting to Klaviyo?
 

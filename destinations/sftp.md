@@ -15,7 +15,7 @@ Before you begin, you'll need the following:
 * **Census account**: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * **SFTP server**: You'll need the host address, username, and password or private key.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -46,12 +46,12 @@ Your end state should look something like this: 👇
 
 The steps for connecting your data warehouse will depend on your technology. See the following guides:
 
-* [Databricks](../sources/databricks.md)
-* [Google BigQuery](../sources/google-bigquery.md)
+* [Databricks](../sources/available-sources/databricks.md)
+* [Google BigQuery](../sources/available-sources/google-bigquery.md)
 * [Google Sheets](google-sheets.md)
-* [Postgres](../sources/postgres.md)
-* [Redshift](../sources/redshift.md)
-* [Snowflake](../sources/snowflake.md)
+* [Postgres](../sources/available-sources/postgres.md)
+* [Redshift](../sources/available-sources/redshift.md)
+* [Snowflake](../sources/available-sources/snowflake.md)
 
 After setting up your warehouse, your **Destinations** page should look something like this: 👇
 
@@ -106,7 +106,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 Update or Create syncs upload your whole dataset on the first run and only new changes on subsequent runs. Each sync run saves to a different file. The first run saves with "full" at the end of the file name. For example, `filename_12_12_23_full.csv` if it runs on 12/12/2023. Later syncs save with a timestamp at the end, like `filename_12_12_23_1702426195.csv`, so you can see how your data changes over time.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for SFTP server connections.

@@ -26,7 +26,7 @@ When done, click on your role and copy its ARN. Go back to the tab where you're 
 
 You can provide an optional Endpoint ID if you are using [EventBridge's Global Endpoint](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html) mechanism in order to make your EventBridge instance region-fault tolerant.
 
-The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API\_Endpoint.html#eventbridge-Type-Endpoint-EndpointId) is the URL subdomain of your global endpoint. For example, if the URL for your Endpoint is `https://abcde.veo.endpoints.event.amazonaws.com`, then the EndpointId is `abcde.veo`.
+The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Endpoint.html#eventbridge-Type-Endpoint-EndpointId) is the URL subdomain of your global endpoint. For example, if the URL for your Endpoint is `https://abcde.veo.endpoints.event.amazonaws.com`, then the EndpointId is `abcde.veo`.
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
@@ -35,7 +35,7 @@ The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/AP
 |           Event |        ✅       | Event ID      | Send, Update or Create, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Eventbridge objects and/or behaviors.

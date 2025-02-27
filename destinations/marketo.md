@@ -13,7 +13,7 @@ In this guide, we will show you how to connect Marketo to Census and create your
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Marketo account ready, with admin access to create API-only users and API credentials.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -34,10 +34,10 @@ None of the default Marketo Roles have API access so if this is your first API i
 
 You can view/edit role permissions in **Admin, Users & Roles**, then clicking the **Roles** tab.
 
-Whether you're using an existing role or creating a new one, please make sure it has at least the following permissions:&#x20;
+Whether you're using an existing role or creating a new one, please make sure it has at least the following permissions:
 
-* **Read-Write People** &#x20;
-* **Read-Write Named Accounts**.&#x20;
+* **Read-Write People**
+* **Read-Write Named Accounts**.
 * **Read-Write Assets**
 
 To use Custom Objects, we'll also need **Read-Write Custom Object** and **Read-Write Custom Object Type**.
@@ -84,7 +84,7 @@ With all three pieces of information, return to Census and visit the **Destinati
 ## Supported Object and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../basics/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
 {% endhint %}
 
 |        **Object Name** | **Supported?** | **Sync Keys**              | **Behaviors**                         |
@@ -100,7 +100,7 @@ Please be aware that Update Only and Mirror make use of less efficient Marketo A
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Marketo objects and/or behaviors

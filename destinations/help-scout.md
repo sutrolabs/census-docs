@@ -11,18 +11,18 @@ In this guide, we will show you how to connect Help Scout to Census.
 ### Prerequisites
 
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
-* Have your Help Scout account ready. If you need one, create a [free trial with Help Scout](https://www.helpscout.com/?utm\_source=partner\&utm\_campaign=partner-integration-marketplace-listing\&utm\_content=census) now.
+* Have your Help Scout account ready. If you need one, create a [free trial with Help Scout](https://www.helpscout.com/?utm_source=partner\&utm_campaign=partner-integration-marketplace-listing\&utm_content=census) now.
 * Have your data source properly configured within Census. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
-  * [Elasticsearch](../sources/elasticsearch.md)
+  * [Elasticsearch](../sources/available-sources/elasticsearch.md)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
   * [Google Sheets](https://docs.getcensus.com/sources/google-sheets)
-  * [MySQL](../sources/mysql.md)
+  * [MySQL](../sources/available-sources/mysql.md)
   * [Postgres](https://docs.getcensus.com/sources/postgres)
   * [Redshift](https://docs.getcensus.com/sources/redshift)
   * [Snowflake](https://docs.getcensus.com/sources/snowflake)
-  * [SQL Server](../sources/sql-server.md)
+  * [SQL Server](../sources/available-sources/sql-server.md)
 
 ### Step 1: Connect Help Scout
 
@@ -100,7 +100,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |    **Behaviors** | **Supported?** | **Objects** |

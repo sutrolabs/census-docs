@@ -15,7 +15,7 @@ In this guide, we will show you how to connect ChartMogul to Census and create y
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your ChartMogul account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -81,7 +81,7 @@ For the "How should changes to the source be synced?" section.
 
 * Select Update Only
 
-Now we'll start mapping fields. ChartMogul requires two fields to be mapped: the customer's External ID and their Data Source ID. You can find the Data Source ID by navigating to [this page](https://t.sidekickopen01.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CX6NGW35QNwB7tCtH0Vs7zDQ8qd1Kwf197v5Y04?te=W3R5hFj4cm2zwW3zfPSj3F7xMPW4fKXXf4hHZdBW43T4MG1LwsHHW3yLX3g3zhrVDW49NLhq3zhrqJF4cNcV-W1v31\&si=8000000017473620\&pi=3d1e4afe-99d8-4b66-b041-de8a431bfb88) within ChartMogul and clicking the gear icon next to the Data Source.
+Now we'll start mapping fields. ChartMogul requires two fields to be mapped: the customer's External ID and their Data Source ID. You can find the Data Source ID by navigating to [this page](https://t.sidekickopen01.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7_k2841CX6NGW35QNwB7tCtH0Vs7zDQ8qd1Kwf197v5Y04?te=W3R5hFj4cm2zwW3zfPSj3F7xMPW4fKXXf4hHZdBW43T4MG1LwsHHW3yLX3g3zhrVDW49NLhq3zhrqJF4cNcV-W1v31\&si=8000000017473620\&pi=3d1e4afe-99d8-4b66-b041-de8a431bfb88) within ChartMogul and clicking the gear icon next to the Data Source.
 
 After the required fields, you can add any further fields you like.
 
@@ -104,11 +104,11 @@ Census currently supports syncing to the following ChartMogul objects.
 |     Transaction |        ✅       |                    External ID                   |            Add           |
 
 {% hint style="info" %}
-Syncs to the ChartMogul **Customer** object require both the Data Source ID and the External ID to ensure the customer is updated or created as expected. This is necessary because External IDs can be duplicated across Data Sources. You can find the Data Source ID by navigating to [this page](https://t.sidekickopen01.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7\_k2841CX6NGW35QNwB7tCtH0Vs7zDQ8qd1Kwf197v5Y04?te=W3R5hFj4cm2zwW3zfPSj3F7xMPW4fKXXf4hHZdBW43T4MG1LwsHHW3yLX3g3zhrVDW49NLhq3zhrqJF4cNcV-W1v31\&si=8000000017473620\&pi=3d1e4afe-99d8-4b66-b041-de8a431bfb88) in ChartMogul and clicking the gear icon next to the desired Data Source.
+Syncs to the ChartMogul **Customer** object require both the Data Source ID and the External ID to ensure the customer is updated or created as expected. This is necessary because External IDs can be duplicated across Data Sources. You can find the Data Source ID by navigating to [this page](https://t.sidekickopen01.com/s3t/c/5/f18dQhb0S7kF8cFC2RW1K7Z1759hl3kW7_k2841CX6NGW35QNwB7tCtH0Vs7zDQ8qd1Kwf197v5Y04?te=W3R5hFj4cm2zwW3zfPSj3F7xMPW4fKXXf4hHZdBW43T4MG1LwsHHW3yLX3g3zhrVDW49NLhq3zhrqJF4cNcV-W1v31\&si=8000000017473620\&pi=3d1e4afe-99d8-4b66-b041-de8a431bfb88) in ChartMogul and clicking the gear icon next to the desired Data Source.
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Chart Mogul objects and/or behaviors

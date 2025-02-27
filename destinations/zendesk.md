@@ -13,7 +13,7 @@ In this guide, we will show you how to connect Zendesk to Census and create your
 * Census account: If you don't have this already, [start with a free trial](https://app.getcensus.com/).
 * Zendesk account
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -33,22 +33,22 @@ In this guide, we will show you how to connect Zendesk to Census and create your
 
 Your end state should look something like this: 👇
 
-![Destinations page with Zendesk](../.gitbook/assets/202110\_Service\_Connection\_Zendesk.png)
+![Destinations page with Zendesk](../.gitbook/assets/202110_Service_Connection_Zendesk.png)
 
 ### Step 2: Connect your data warehouse
 
 The steps for connecting your data warehouse will depend on your technology. See the following guides:
 
-* [Databricks](../sources/databricks.md)
-* [Google BigQuery](../sources/google-bigquery.md)
+* [Databricks](../sources/available-sources/databricks.md)
+* [Google BigQuery](../sources/available-sources/google-bigquery.md)
 * [Google Sheets](google-sheets.md)
-* [Postgres](../sources/postgres.md)
-* [Redshift](../sources/redshift.md)
-* [Snowflake](../sources/snowflake.md)
+* [Postgres](../sources/available-sources/postgres.md)
+* [Redshift](../sources/available-sources/redshift.md)
+* [Snowflake](../sources/available-sources/snowflake.md)
 
 After setting up your warehouse, your **Destinations** page should look something like this: 👇
 
-![Destinations page with data warehouse](../.gitbook/assets/202110\_Connections\_Generic.png)
+![Destinations page with data warehouse](../.gitbook/assets/202110_Connections_Generic.png)
 
 ### Step 3: Create your model
 
@@ -59,7 +59,7 @@ When defining models, you'll write SQL queries to select the data you want to se
 3. Enter your SQL query. If you want to test the query, use the **Preview** button.
 4. Click **Save Model**.
 
-![Basic SQL query for a new model](../.gitbook/assets/202109\_Outreach\_Basic\_Model.png)
+![Basic SQL query for a new model](../.gitbook/assets/202109_Outreach_Basic_Model.png)
 
 ### Step 4: Create your first sync
 
@@ -83,7 +83,7 @@ The sync will move data from your warehouse to Zendesk. In this step, you'll def
 
 When configuring your sync, the page should look something like this: 👇
 
-![Sync setup for Zendesk](../.gitbook/assets/202110\_Zendesk\_Sync.png)
+![Sync setup for Zendesk](../.gitbook/assets/202110_Zendesk_Sync.png)
 
 ### Step 5: Confirm the synced data in Zendesk
 
@@ -168,7 +168,7 @@ Please note that Zendesk requires the `Name` property for the End User object. F
 {% endhint %}
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Zendesk objects and/or behaviors.

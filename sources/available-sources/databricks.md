@@ -14,7 +14,7 @@ Census supports a wide set of Databricks deployments including
 * SQL Warehouses (including Serverless)
 * All Databricks LTS versions up to and including 14.3, and new versions typically work without issue.
 
-Census supports both [Basic and Advanced Sync Engines](overview/#sync-engines) on Databricks.
+Census supports both [Basic and Advanced Sync Engines](../overview/#sync-engines) on Databricks.
 
 {% hint style="success" %}
 If you'd like to skip these steps, you can use [Databricks built-in Partner Connect](https://docs.databricks.com/en/partners/reverse-etl/census.html) to set up a new connection to Census.
@@ -48,7 +48,7 @@ GRANT USE SCHEMA, SELECT, CREATE TABLE, MODIFY ON SCHEMA [your_default_catalog].
      1. You'll first need to navigate into the specific Workspace you are connecting to. In your Databricks Account console, go the [Workspaces page](https://accounts.cloud.databricks.com/workspaces). Select the workspace you'd like Census to connect to and then click **Open workspace** in the top right.
      2. Clicking on your **Profile Icon** in the top right and selecting **Settings**. Then click the **Developer** option in the left settings menu and click on **Manage** next to Access Tokens. We recommend you create a new Access Token:
         * Name: Census (or some other details)
-        * Lifetime: (clear the box) - This will prevent the token from expiring ![](../.gitbook/assets/screely-1619628186696.png)
+        * Lifetime: (clear the box) - This will prevent the token from expiring ![](../../.gitbook/assets/screely-1619628186696.png)
 2. If you're not already, go into your target workspace by visiting the [Workspaces page](https://accounts.cloud.databricks.com/workspaces) and clicking the **Open** link next to it. Now within your selected Workspace, select **Compute** from the left menu. Census can connect to a SQL Warehouse or All Purpose Cluster. You can reuse an existing compute resource, or create a new one here. Click on the Compute you've decided to use.
 
 * Note: Service Principals cannot be connected to All Purpose Clusters that are in the **Single User Access Mode**.
@@ -63,7 +63,7 @@ GRANT USE SCHEMA, SELECT, CREATE TABLE, MODIFY ON SCHEMA [your_default_catalog].
 
     For All Purpose Clusters, in the **Configuration** tab, open the **Advanced Options** section at the bottom, then select the **JDBC/ODBC** section.
 
-    ![](../.gitbook/assets/screely-1619627622845.png)
+    ![](../../.gitbook/assets/screely-1619627622845.png)
 4.  **All Purpose Clusters only** - Add the following configuration parameters to your cluster. These are also in **Advanced Options** section at the bottom under the **Spark** section.
 
     ```
@@ -72,7 +72,7 @@ GRANT USE SCHEMA, SELECT, CREATE TABLE, MODIFY ON SCHEMA [your_default_catalog].
     spark.hadoop.fs.s3a.impl.disable.cache true
     ```
 5. Now you're ready to add the connection to Census. Visit the [Sources page](https://app.getcensus.com/sources) in Census, and click **New Source**, selecting **Databricks** from the menu.
-   * Select the [Sync Engine](overview/#sync-engines) you'd like to use. Note that this cannot be changed once the connection is created.
+   * Select the [Sync Engine](../overview/#sync-engines) you'd like to use. Note that this cannot be changed once the connection is created.
    * Provide the connection credentials: Hostname, Port, HTTP Path
    * Select your credential type (Personal Access Token or Service Principal), and provide the corresponding Access Token, or Client ID & Secret.
    * Optionally, set the Database Allow List. This will filter the SCHEMAS that appear in Census. Note that if you are using unity catalog, this filtering will apply across all catalogs.
@@ -80,7 +80,7 @@ GRANT USE SCHEMA, SELECT, CREATE TABLE, MODIFY ON SCHEMA [your_default_catalog].
 
 ## Allowed IP Addresses
 
-If you're using Databricks's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../basics/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Databricks Documentation](https://docs.databricks.com/en/security/network/front-end/ip-access-list.html) for more details on how to specify these IPs as part of your network policy.
+If you're using Databricks's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Databricks Documentation](https://docs.databricks.com/en/security/network/front-end/ip-access-list.html) for more details on how to specify these IPs as part of your network policy.
 
 ## Need help connecting to Databricks?
 

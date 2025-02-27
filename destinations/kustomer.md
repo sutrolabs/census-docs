@@ -13,7 +13,7 @@ In this guide, we will show you how to connect Kustomer to Census and create you
 * Have your Census account ready. If you need one, [create a Free Trial Census account](https://app.getcensus.com/) now.
 * Have your Planhat account ready.
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/azure-synapse.md)
+  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
   * ​[Databricks](https://docs.getcensus.com/sources/databricks)​
   * ​[Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)​
   * ​[Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)​
@@ -65,7 +65,7 @@ More on Kustomer's API permission scopes [here](https://help.kustomer.com/permis
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 |    **Behaviors** | **Supported?** | **Objects** |

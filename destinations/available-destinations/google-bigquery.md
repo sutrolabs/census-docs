@@ -9,7 +9,7 @@ description: This page describes how to configure Google BigQuery as a Census de
 In this guide, we will show you how to connect Census to Google BigQuery as a destination.
 
 {% hint style="info" %}
-If you are configuring Google BigQuery as a source (to query data from BigQuery to sync elsewhere), that process is documented separately here: [Google BigQuery as a Source](../../sources/google-bigquery.md)
+If you are configuring Google BigQuery as a source (to query data from BigQuery to sync elsewhere), that process is documented separately here: [Google BigQuery as a Source](../../sources/available-sources/google-bigquery.md)
 {% endhint %}
 
 1. Visit the [Destinations page](https://app.getcensus.com/destinations) and click **+ New Destination**.
@@ -57,7 +57,7 @@ To optimize the time it takes to load your tables within the Census UI when crea
 |           Table |        ✅       | Required columns | Update or Create, Update Only, Add |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../../basics/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../../syncs/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
@@ -68,7 +68,7 @@ To optimize loading time within the Census UI when creating and editing syncs li
 
 ## Network Access Controls
 
-While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access. You can find Census's set of IP address for your region in [regions-and-ip-addresses.md](../../basics/security-and-privacy/regions-and-ip-addresses.md "mention").
+While BigQuery itself doesn't support IP allow lists, you can use [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview) to wrap your BigQuery instance and limit access. You can find Census's set of IP address for your region in [regions-and-ip-addresses.md](../../misc/security-and-privacy/regions-and-ip-addresses.md "mention").
 
 When using VPC Service Controls, you will also need to allow BigQuery unloads to the Census GCP bucket. To do that, you'll need to add [`gs://sutrolabs-giza-unloads-production`](gs://sutrolabs-giza-unloads-production) in the allow list for BigQuery unloads.
 
