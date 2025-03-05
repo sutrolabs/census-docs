@@ -2,6 +2,16 @@
 
 Warehouse datasets are the foundation of Census's data activation capabilities. They allow you to leverage your existing data warehouse infrastructure to power your business operations by connecting your warehouse data directly to your business applications.
 
+## Getting Started
+
+To create a new warehouse dataset:
+
+1. Navigate to the Datasets section in Census
+2. Click "New Dataset" and select "Basic Dataset"
+3. Choose your connection and enter your SQL query or select a table
+4. Test your dataset to ensure it returns the expected data
+5. Save and use your dataset in syncs
+
 ## Connecting to Your Data Warehouse
 
 Census provides multiple ways to define and access data in your warehouse:
@@ -77,7 +87,7 @@ Benefits of the dbt integration:
 
 ### Looker Integration
 
-The [Looker integration](../sources/integrations/looker.md) allows you to use your Looker Explores and Looks as datasets in Census. This is particularly valuable for organizations that have invested heavily in Looker as their business intelligence platform.
+The [Looker integration](../../sources/integrations/looker.md) allows you to use your Looker Explores and Looks as datasets in Census. This is particularly valuable for organizations that have invested heavily in Looker as their business intelligence platform.
 
 Benefits of the Looker integration:
 - Reuse existing business logic defined in LookML
@@ -86,7 +96,7 @@ Benefits of the Looker integration:
 
 ### Sigma Integration
 
-For teams using Sigma as their analytics platform, Census's [Sigma integration](../sources/integrations/sigma.md) allows you to use Sigma workbooks as datasets. This enables business users who are building in Sigma to directly activate their insights without requiring data team intervention.
+For teams using Sigma as their analytics platform, Census's [Sigma integration](../../sources/integrations/sigma.md) allows you to use Sigma workbooks as datasets. This enables business users who are building in Sigma to directly activate their insights without requiring data team intervention.
 
 Benefits of the Sigma integration:
 - Empower business users to create operational datasets
@@ -106,15 +116,3 @@ Getting the most out of your warehouse datasets requires some thoughtful plannin
 - **Use version control** to track changes to your dataset definitions and make it easy to roll back if needed
 - **Validate data types** and formats before syncing to avoid errors in destination systems
 - **Create test syncs** to validate new datasets before using them in production workflows
-
-Remember that well-designed warehouse datasets can be reused across multiple syncs and destinations, so it's worth investing time in creating clean, well-documented datasets that serve multiple purposes.
-
-## Getting Started
-
-To create a new warehouse dataset:
-
-1. Navigate to the Datasets section in Census
-2. Click "New Dataset" and select "Basic Dataset"
-3. Choose your connection and enter your SQL query or select a table
-4. Test your dataset to ensure it returns the expected data
-5. Save and use your dataset in syncs

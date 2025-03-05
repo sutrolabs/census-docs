@@ -10,6 +10,16 @@ CSV datasets allow you to upload and use CSV (Comma-Separated Values) files dire
 - **Simple Collaboration** - Share and collaborate on datasets using familiar CSV files
 - **Easy Migration Path** - Start with CSV files and seamlessly transition to warehouse datasets as you scale
 
+## Getting Started
+
+To create your first CSV dataset:
+
+1. Prepare your CSV file with clean, well-structured data
+2. Navigate to the Datasets section in Census
+3. Click "New Dataset" and select "CSV Dataset"
+4. Upload your file and configure as needed
+5. Click "Create Dataset" to finalize
+
 ## Creating CSV Datasets
 
 ### File Requirements
@@ -30,18 +40,6 @@ id,first_name,last_name,email,company,title,created_at
 2,Jane,Smith,jane.smith@example.com,XYZ Corp,CTO,2023-02-20
 3,Robert,Johnson,robert.j@example.com,123 Industries,VP Sales,2023-03-05
 ```
-
-### Upload Process
-
-To create a CSV dataset:
-
-1. Navigate to the Datasets section in Census
-2. Click "New Dataset" and select "CSV Dataset"
-3. Upload your CSV file by dragging and dropping or using the file browser
-4. Review the preview to ensure your data is parsed correctly
-5. Configure column data types if needed
-6. Name your dataset and add a description
-7. Click "Create Dataset" to finalize
 
 ## Working with CSV Datasets
 
@@ -118,15 +116,5 @@ Remember that CSV datasets are best for relatively static data or one-time impor
 - Not suitable for real-time data that changes frequently
 - Manual refresh process required for updates
 - Limited to tabular data formats
-
-## Getting Started
-
-To create your first CSV dataset:
-
-1. Prepare your CSV file with clean, well-structured data
-2. Navigate to the Datasets section in Census
-3. Click "New Dataset" and select "CSV Dataset"
-4. Upload your file and configure as needed
-5. Start using your CSV dataset in syncs
 
 For more information on working with datasets in Census, see our [core concepts documentation](../core-concepts/datasets.md).
