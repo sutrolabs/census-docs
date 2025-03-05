@@ -9,6 +9,10 @@
   * [Columns & Annotations](datasets/core-concepts/core-concepts.md)
   * [Type & Property Mappings](datasets/core-concepts/core-concepts-1.md)
   * [Relationships](datasets/core-concepts/core-concepts-2.md)
+* [Warehouse Datasets](datasets/warehouse-datasets/README.md)
+* [SaaS Datasets](datasets/saas-datasets/README.md)
+* [CSV Datasets](datasets/csv-datasets/README.md)
+* [Streaming Datasets](datasets/streaming-datasets/README.md)
 * [Entity Resolution](datasets/entity-resolution/README.md)
   * [Quick Start](datasets/entity-resolution/quick-start.md)
 * [AI Columns](datasets/ai-columns/README.md)
@@ -16,10 +20,8 @@
 * [Enrichment Columns](datasets/enrichment/README.md)
   * [Quick Start](datasets/enrichment/quick-start.md)
   * [HTTP Request Enrichments](datasets/enrichment/http-request-enrichments.md)
-* [SaaS Datasets](datasets/saas-datasets/README.md)
-* [Streaming Datasets](datasets/streaming-datasets.md)
-* [Computed Columns](datasets/core-concepts-3.md)
-* [Version Control](datasets/census-models.md)
+* [Computed Columns](datasets/computed-columns.md)
+* [Version Control](datasets/version-control.md)
 
 ## 📫 Syncs <a href="#basics" id="basics"></a>
 
