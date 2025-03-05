@@ -10,7 +10,7 @@ The data stored in Census Store includes:
 
 * SaaS datasets
 * CSV datasets
-* [entity-resolution-invite-only](../../../datasets/entity-resolution-invite-only/ "mention") datasets
+* [entity-resolution](../../../datasets/entity-resolution/ "mention") datasets
 * ...plus [ai-columns](../../../datasets/ai-columns/ "mention"), [enrichment](../../../datasets/enrichment/ "mention"), and [warehouse-writeback.md](../../../syncs/sync-monitoring/warehouse-writeback.md "mention") logs for all of these datasets
 
 Your workspace’s Census Store catalog is created for you the first time you create one of these resources.

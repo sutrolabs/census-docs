@@ -42,7 +42,7 @@ Census never stores your customer data, but during a sync, data will flow tempor
 3. Preparing Data and Loading into your Destination
 4. Reporting Skipped Records and Feedback to your Data Source
 
-Census will perform steps 2 and 3 using infrastructure in the region you've specified. For customers in need of finer-grained security, you may also [provide your own blob storage](../data-storage/customer-provided-object-storage.md) where Census will unload the changed records (the "diffs") for each sync. The diagram below showcases which steps in the Census sync process occur in the region of your choice.
+Census will perform steps 2 and 3 using infrastructure in the region you've specified. For customers in need of finer-grained security, you may also [provide your own blob storage](../data-storage/general-object-storage.md) where Census will unload the changed records (the "diffs") for each sync. The diagram below showcases which steps in the Census sync process occur in the region of your choice.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-08-24 at 4.59.03 PM.png" alt=""><figcaption></figcaption></figure>
 

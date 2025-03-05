@@ -5,11 +5,11 @@
 We store the data you sync using Census, sometimes for the lifetime of your Census workspace, including:
 
 * [census-store](census-store/ "mention")
-  * SaaS datasets
+  * [SaaS datasets](../../datasets/saas-datasets/README.md)
   * CSV datasets
-  * [entity-resolution-invite-only](../../datasets/entity-resolution-invite-only/ "mention") datasets
+  * [entity-resolution](../../datasets/entity-resolution/ "mention") datasets
   * ...plus [ai-columns](../../datasets/ai-columns/ "mention"), [enrichment](../../datasets/enrichment/ "mention"), and [warehouse-writeback.md](../../syncs/sync-monitoring/warehouse-writeback.md "mention") logs for all of these datasets
-* [customer-provided-object-storage.md](customer-provided-object-storage.md "mention")
+* [general-object-storage.md](general-object-storage.md "mention")
   * Snapshots of the data you sync using Basic Sync Engine
   * [sync-tracking.md](../../syncs/sync-monitoring/sync-tracking.md "mention") logs of the data you sync
   * Temporary files used to load and unload data
@@ -22,6 +22,6 @@ New Census organizations are configured to use Census-provided object storage by
 
 ### Customer-provided object storage
 
-You can also add your own object storage locations and configure Census to default to these locations on a per-organization, per-workspace, or per-connection basis. Note that some data warehouses are only compatible with specific object storage providers. If a compatible customer-provided storage location is not available, Census will default to using compatible Census-provided storage.
+You can also [add your own object storage locations](../data-storage/bring-your-own-bucket/README.md) and configure Census to default to these locations on a per-organization, per-workspace, or per-connection basis. Note that some data warehouses are only compatible with specific object storage providers. If a compatible customer-provided storage location is not available, Census will default to using compatible Census-provided storage.
 
 When you bring your own object storage, you are responsible for managing the retention of data in the object storage location, and for ensuring the object storage is located in an appropriate region for your requirements.

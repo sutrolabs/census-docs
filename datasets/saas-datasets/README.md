@@ -16,14 +16,14 @@ SaaS Datasets allow you to:
 
 ### Data Storage and Access
 
-When you create a SaaS Dataset, Census imports your selected CRM objects into [Census Store](../Census Store.md), our managed storage solution. Here's what happens:
+When you create a SaaS Dataset, Census imports your selected CRM objects into [Census Store](../../misc/data-storage/census-store/README.md), our managed storage solution. Here's what happens:
 
 1. Your data is imported using your CRM's API credentials
 2. The data is stored in Apache Iceberg format in Census Store
 3. Census provides an Iceberg catalog that makes this data queryable from your data warehouse
 4. Data is automatically refreshed based on your specified schedule
 
-By default, data is stored in Census's secure infrastructure, but you can also [use your own storage infrastructure](../Census Store.md#bring-your-own-object-storage-provider) for additional control.
+By default, data is stored in Census's secure infrastructure, but you can also [use your own storage infrastructure](../../misc/data-storage/census-store/README.md#using-an-alternative-object-storage-provider) for additional control.
 
 ### Querying Your Data
 
@@ -34,7 +34,7 @@ For example, if you're using Snowflake, you can query your SaaS Dataset tables j
 SELECT * FROM CENSUS_CATALOG.YOUR_WORKSPACE.HUBSPOT_CONTACTS;
 ```
 
-See the [Census Store documentation](../Census Store.md#federated-query-access-via-iceberg) for detailed instructions on setting up and using federated queries for your specific warehouse.
+See the [Census Store documentation](../../misc/data-storage/census-store/README.md#iceberg-catalog) for detailed instructions on setting up and using federated queries for your specific warehouse.
 
 ### Data Lifecycle
 
@@ -58,11 +58,11 @@ To create your first SaaS Dataset:
 
 SaaS Datasets can be used with all Census features:
 
-- Add [Smart Columns](https://docs.getcensus.com/datasets/ai-columns) for AI-powered data enrichment
-- Apply third-party enrichments
-- Perform deduplication
-- Create segments for targeted marketing
-- Build syncs to other destinations
+- Add [AI Columns](../ai-columns/README.md) for AI-powered data enrichment
+- Apply [third-party enrichments](../enrichment/README.md)
+- Perform [deduplication](../entity-resolution/README.md)
+- Create [segments](../../audience-hub/README.md) for targeted marketing
+- Build [syncs](../../syncs/core-concept/README.md) to other destinations
 
 ## Data Access Methods
 
