@@ -29,8 +29,6 @@ Census accepts CSV files with the following specifications:
 - File format: `.csv` (comma-separated values)
 - Maximum file size: 100MB
 - First row must contain column headers
-- UTF-8 encoding recommended
-- Common delimiters supported (comma, tab, semicolon)
 
 Example of a valid CSV file:
 
@@ -45,13 +43,16 @@ id,first_name,last_name,email,company,title,created_at
 
 ### Data Types
 
-Census automatically detects data types for your CSV columns, but you can manually adjust them if needed:
+During the upload process, you can manually set the data type for each column in your CSV dataset:
 
 - **Text** - For string values
-- **Number** - For numeric values (integers or decimals)
+- **Integer** - For whole numbers without decimals
+- **Float** - For decimal numbers
+- **Date** - For calendar dates (e.g., 2023-01-15)
+- **Timestamp** - For specific points in time (e.g., 2023-01-15 12:00:00)
 - **Boolean** - For true/false values
-- **Date/Time** - For date and timestamp values
-- **JSON** - For structured data in JSON format
+
+Setting the correct data type for each column ensures proper handling of your data when using it in syncs and helps Census validate the data during import.
 
 ### Refreshing Data
 
@@ -59,16 +60,10 @@ CSV datasets are static by default, but you can update them by:
 
 1. Navigating to the dataset details page
 2. Clicking "Update Dataset"
-3. Uploading a new CSV file with the same schema
+3. Uploading a new CSV file
 4. Confirming the update
 
-### Schema Changes
-
-When updating a CSV dataset, Census handles schema changes as follows:
-
-- **New columns** - Added to the dataset
-- **Removed columns** - Preserved in the dataset but marked as deprecated
-- **Data type changes** - Detected and may require confirmation
+This action completely replaces the existing dataset with the new file.
 
 ## Use Cases for CSV Datasets
 
