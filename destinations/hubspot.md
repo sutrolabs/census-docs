@@ -57,11 +57,60 @@ Please note that an email address already associated with a Contact cannot be us
 
 Custom Objects are available to customers on HubSpot's Enterprise plans.
 
-As of March 2021, only properties in the `searchableProperties` set are usable as sync keys in Census. This is a bit confusing as this label only appears in the HubSpot API. A searchable property can be added to a Custom Object via HubSpot's API. The calls to make this update can be found in HubSpot's [Custom Objects API Docs](https://developers.hubspot.com/docs/api/crm/crm-custom-objects) > Object Schema Tab > searchableProperties.
+To ensure a Hubspot Custom Object property can be used as a **Sync Key** within Census the object must be updated to include the property as a `searchableProperties`.
 
-Additionally, HubSpot has some apps available in their marketplace like [Dotsquares](https://hubspot.dotsquares.com/easy-custom-objects-setup/) that can assist with Custom Object management.
+Hubspot currently restricts users to updating this property via the Hubspot API.&#x20;
 
-If you need a hand making one of your existing Custom Object fields searchable, please [contact the Census support team](mailto:support@getcensus.com) and we can walk you through it.
+{% hint style="warning" %}
+This is not the same as configuring a property to 'Show in global search results' within the HubSpot UI
+{% endhint %}
+
+The calls to make this update can be found in HubSpot's [Custom Objects API Docs](https://developers.hubspot.com/docs/api/crm/crm-custom-objects) > Object Schema Tab > searchableProperties.
+
+HubSpot offers some third party apps, available in their marketplace that can also assist with Custom Object management.
+
+#### API How To
+
+* Retrieve (or create) [a private app access token](https://developers.hubspot.com/docs/guides/apps/private-apps/overview#make-api-calls-with-your-app-s-access-token) to make API calls to Hubspot.
+* Perform a GET request to the `/crm/v3/schemas` endpoint. Then, search the response to identify the `objectTypeId` of the custom object you wish to update, as well as the `name` of the field you want to modify.
+
+Here is an example request:
+
+```url
+curl --location 'https://api.hubapi.com/crm/v3/schemas' \
+--header 'Authorization: Bearer {YourPrivateToken}' \
+--header 'Content-Type: application/json' \
+```
+
+The values will look something like this:
+
+```json
+"objectTypeId": "2-41250440",
+"name": "property_name_example",
+```
+
+* Complete a PATCH request to the `/crm/v3/schemas/{objectTypeId}` endpoint. Ensure you use the `objectTypeId` you identified in the previous step and include the following request body:
+
+```json
+{
+  "searchableProperties": [
+    "property_name_example"
+  ]
+}
+```
+
+Here is an example request with the `objectTypeId` as `2-41250440`:
+
+```
+curl --location --request PATCH 'https://api.hubapi.com/crm/v3/schemas/2-41250440'
+--header 'Content-Type: application/json'
+--header 'Authorization: Bearer {YourPrivateToken}'
+--data '{ "searchableProperties": [ "property_name_example" ] }'
+```
+
+* Refresh the Object within a Census Sync, it should now display the new field in the Sync Key options.&#x20;
+
+For additional support, please [contact the Census support team](mailto:support@getcensus.com) and we can walk you through it.
 
 ### Custom Behavioral Events
 
