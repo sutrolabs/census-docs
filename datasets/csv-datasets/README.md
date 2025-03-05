@@ -100,24 +100,17 @@ When updating a CSV dataset, Census handles schema changes as follows:
 
 ## Best Practices for CSV Datasets
 
-### Data Preparation
+CSV files are a simple but powerful way to bring data into Census. Here are some tips to help you work effectively with CSV datasets:
 
-- Clean and validate your data before uploading
-- Ensure consistent formatting for dates and numbers
-- Remove duplicate records
-- Include a unique identifier column when possible
+- **Include a unique identifier column** whenever possible to make updates and syncs more reliable
+- **Set types for your columns** to ensure proper parsing and avoid errors
+- **Use consistent date formats** (we require YYYY-MM-DD) to ensure proper date parsing
+- **Document the source and purpose** of each CSV dataset for your team
+- **Keep backups of your uploaded files** in case you need to reference or restore them
+- **Check your column headers** to ensure they're clear, consistent, and don't contain special characters
+- **Preview your data** after upload to verify it was parsed correctly
 
-### File Management
-
-- Document the source and purpose of each CSV dataset
-- Keep a backup of uploaded files
-- Consider version control for frequently updated datasets
-
-### Security Considerations
-
-- Be mindful of sensitive data in CSV files
-- Follow your organization's data handling policies
-- Remove unnecessary sensitive columns before uploading
+Remember that CSV datasets are best for relatively static data or one-time imports. For data that changes frequently, consider setting up a warehouse dataset with automated refreshes instead.
 
 ## Limitations
 

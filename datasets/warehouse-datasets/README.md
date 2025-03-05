@@ -95,38 +95,26 @@ Benefits of the Sigma integration:
 
 ## Best Practices for Warehouse Datasets
 
-### Performance Optimization
+Getting the most out of your warehouse datasets requires some thoughtful planning. Here are some tips we've gathered from working with hundreds of data teams:
 
-When creating and using warehouse datasets, consider these performance best practices:
+- **Use incremental syncs** whenever possible to reduce load on your warehouse and speed up sync times
+- **Add appropriate filters** to your queries to limit the data being processed to just what you need
+- **Create indexes** on frequently queried columns in your warehouse to improve query performance
+- **Consider materialized views** for complex queries that are used frequently to reduce computation time
+- **Add clear descriptions** to your datasets to help business users understand what data is available
+- **Set up appropriate access controls** in your warehouse to maintain data security
+- **Use version control** to track changes to your dataset definitions and make it easy to roll back if needed
+- **Validate data types** and formats before syncing to avoid errors in destination systems
+- **Create test syncs** to validate new datasets before using them in production workflows
 
-1. **Use incremental syncs** when possible to reduce load on your warehouse
-2. **Add appropriate filters** to limit the data being processed
-3. **Create appropriate indexes** on frequently queried columns
-4. **Consider materialized views** for complex queries that are used frequently
-
-### Data Governance
-
-Maintain good data governance practices with your warehouse datasets:
-
-1. **Add clear descriptions** to your datasets to help business users understand the data
-2. **Document transformations** applied to the data
-3. **Set up appropriate access controls** in your warehouse
-4. **Use version control** to track changes to your dataset definitions
-
-### Testing and Validation
-
-Ensure data quality with proper testing:
-
-1. **Validate data types** and formats before syncing
-2. **Set up alerts** for unexpected changes in data volume or composition
-3. **Create test syncs** to validate new datasets before using them in production
+Remember that well-designed warehouse datasets can be reused across multiple syncs and destinations, so it's worth investing time in creating clean, well-documented datasets that serve multiple purposes.
 
 ## Getting Started
 
 To create a new warehouse dataset:
 
 1. Navigate to the Datasets section in Census
-2. Click "New Dataset" and select "Warehouse Dataset"
+2. Click "New Dataset" and select "Basic Dataset"
 3. Choose your connection and enter your SQL query or select a table
 4. Test your dataset to ensure it returns the expected data
 5. Save and use your dataset in syncs
