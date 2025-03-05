@@ -1,8 +1,6 @@
 # Overview
 
-By design, a data warehouse is meant to store massive amounts of data, and it does so very well. It's one of the reasons it's such a powerful platform for companies to build on top of. But all of that data makes navigating a warehouse a challenge, particularly for the members of your team that don't spend their day thinking about schemas and organizational structures.&#x20;
-
-Datasets are the way to model all your customer data in Census. Datasets expose your best data to business teams so they can explore and self serve data.  At its core datasets represent the set of rows-and-columns that Census has access, so they can take a lot of different forms:
+Datasets are the way to model all your customer data in Census. Datasets expose your best data to business teams so they can explore and self serve data. At its core datasets represent the set of rows-and-columns that Census has access to, so they can take a lot of different forms:
 
 * [Warehouse Datasets](./warehouse-datasets/README.md) - These are datasets that exist in your warehouse or can be generated on top of it. It includes:
   * Tables or Views already in your data warehouse – This is the most common place to start. Chances are your data warehouse contains many tables and views already that can be reused in Census.
@@ -13,10 +11,6 @@ Datasets are the way to model all your customer data in Census. Datasets expose 
 * [Streaming Datasets](./streaming-datasets/README.md) - These are datasets that model event based data and enable our real-time usecases.
 
 Datasets provide a complete interface to govern data across all sources, transform and enrich data, and activate your data from a trusted data layer.
-
-{% hint style="info" %}
-Need a hand getting a handle on your data warehouse? [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat to let us know what questions we can help with!
-{% endhint %}
 
 ## Lore
 
