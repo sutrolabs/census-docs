@@ -9,7 +9,10 @@
   * [Columns & Annotations](datasets/core-concepts/core-concepts.md)
   * [Type & Property Mappings](datasets/core-concepts/core-concepts-1.md)
   * [Relationships](datasets/core-concepts/core-concepts-2.md)
-* [Warehouse Datasets](datasets/warehouse-datasets/README.md)
+* [Basic Datasets](datasets/basic-datasets/README.md)
+  * [dbt Integration](datasets/basic-datasets/dbt-integration.md)
+  * [Sigma Integration](datasets/basic-datasets/sigma-integration.md)
+  * [Looker Integration](datasets/basic-datasets/looker-integration.md)
 * [SaaS Datasets](datasets/saas-datasets/README.md)
 * [CSV Datasets](datasets/csv-datasets/README.md)
 * [Streaming Datasets](datasets/streaming-datasets/README.md)
@@ -89,9 +92,6 @@
   * [Snowflake](sources/available-sources/snowflake.md)
   * [SQL Server](sources/available-sources/sql-server.md)
   * [Trino](sources/available-sources/trino.md)
-* [dbt Integration](sources/integrations/native-dbt-integration.md)
-* [Sigma Integration](sources/integrations/sigma.md)
-* [Looker Integration](sources/integrations/looker.md)
 
 ## 🛫 Destinations
 

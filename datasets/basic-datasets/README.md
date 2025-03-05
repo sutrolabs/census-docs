@@ -1,6 +1,6 @@
-# Warehouse Datasets
+# Basic Datasets
 
-Warehouse datasets are the foundation of Census's data activation capabilities. They allow you to leverage your existing data warehouse infrastructure to power your business operations by connecting your warehouse data directly to your business applications.
+Basic datasets are the foundation of Census's data activation capabilities. They allow you to leverage your existing data warehouse infrastructure to power your business operations by connecting your warehouse data directly to your business applications.
 
 {% hint style="info" %}
 Need a hand getting a handle on your data warehouse? [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat to let us know what questions we can help with!
@@ -8,13 +8,16 @@ Need a hand getting a handle on your data warehouse? [Contact us](mailto:support
 
 ## Getting Started
 
-To create a new warehouse dataset:
+To create a new basic dataset:
 
 1. Navigate to the Datasets section in Census
 2. Click "New Dataset" and select "Basic Dataset"
-3. Choose your connection and enter your SQL query or select a table
-4. Test your dataset to ensure it returns the expected data
-5. Save and use your dataset in syncs
+3. Choose your connection
+4. Select one of the following options:
+   - **Select a table** - Choose a specific table or view directly from your data warehouse
+   - **SQL** - Write a custom SQL query to define your dataset with more flexibility
+5. Test your dataset to ensure it returns the expected data
+6. Save and use your dataset in syncs
 
 ## Connecting to Your Data Warehouse
 
@@ -22,16 +25,11 @@ Census provides multiple ways to define and access data in your warehouse:
 
 ### Direct Table and View Access
 
-The simplest way to get started with Census is to use existing tables and views in your data warehouse. Census can directly access these objects, making it easy to sync data that's already well-structured and ready for use.
-
-```sql
--- Example: Using an existing customers table
-SELECT * FROM customers WHERE status = 'active'
-```
+The simplest way to get started with Census is to use the "Select a table" option to access existing tables and views in your data warehouse. Census can directly access these objects, making it easy to sync data that's already well-structured and ready for use.
 
 ### Custom SQL Queries
 
-When you need more flexibility, Census allows you to define custom SQL queries directly in the platform. This approach is ideal when you need to:
+When you need more flexibility, Census allows you to use the "SQL" option to define custom SQL queries directly in the platform. This approach is ideal when you need to:
 
 - Join multiple tables together
 - Apply complex transformations
@@ -81,7 +79,7 @@ Census seamlessly integrates with popular data transformation tools, allowing yo
 
 ### dbt Integration
 
-Census's [native dbt integration](../sources/integrations/native-dbt-integration.md) allows you to directly access your dbt models without having to redefine them in Census. This ensures consistency between your analytics models and operational data, creating a single source of truth.
+Census's [native dbt integration](./dbt-integration.md) allows you to directly access your dbt models without having to redefine them in Census. This ensures consistency between your analytics models and operational data, creating a single source of truth.
 
 Benefits of the dbt integration:
 - Automatically discover and use dbt models
@@ -91,7 +89,7 @@ Benefits of the dbt integration:
 
 ### Looker Integration
 
-The [Looker integration](../../sources/integrations/looker.md) allows you to use your Looker Explores and Looks as datasets in Census. This is particularly valuable for organizations that have invested heavily in Looker as their business intelligence platform.
+The [Looker integration](./looker-integration.md) allows you to use your Looker Explores and Looks as datasets in Census. This is particularly valuable for organizations that have invested heavily in Looker as their business intelligence platform.
 
 Benefits of the Looker integration:
 - Reuse existing business logic defined in LookML
@@ -100,16 +98,16 @@ Benefits of the Looker integration:
 
 ### Sigma Integration
 
-For teams using Sigma as their analytics platform, Census's [Sigma integration](../../sources/integrations/sigma.md) allows you to use Sigma workbooks as datasets. This enables business users who are building in Sigma to directly activate their insights without requiring data team intervention.
+For teams using Sigma as their analytics platform, Census's [Sigma integration](./sigma-integration.md) allows you to use Sigma workbooks as datasets. This enables business users who are building in Sigma to directly activate their insights without requiring data team intervention.
 
 Benefits of the Sigma integration:
 - Empower business users to create operational datasets
 - Maintain consistency between analytics and operations
 - Leverage Sigma's visual modeling capabilities
 
-## Best Practices for Warehouse Datasets
+## Best Practices for Basic Datasets
 
-Getting the most out of your warehouse datasets requires some thoughtful planning. Here are some tips we've gathered from working with hundreds of data teams:
+Getting the most out of your basic datasets requires some thoughtful planning. Here are some tips we've gathered from working with hundreds of data teams:
 
 - **Use incremental syncs** whenever possible to reduce load on your warehouse and speed up sync times
 - **Add appropriate filters** to your queries to limit the data being processed to just what you need

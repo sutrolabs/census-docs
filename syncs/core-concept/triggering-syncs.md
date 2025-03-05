@@ -41,7 +41,7 @@ If you're using dbt Cloud to compile your dbt project, Census can trigger syncs 
 ![](<../../.gitbook/assets/dbt Cloud Trigger.png>)
 
 {% hint style="info" %}
-Using dbt Cloud to trigger syncs works great with [dbt Models](https://docs.getcensus.com/models/native-dbt-integration) but is not required. Both dbt integrations can be used independently.
+Using dbt Cloud to trigger syncs works great with [dbt Models](../../datasets/basic-datasets/dbt-integration.md) but is not required. Both dbt integrations can be used independently.
 {% endhint %}
 
 To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key. We use this to subscribe to webhooks for each job you specify.

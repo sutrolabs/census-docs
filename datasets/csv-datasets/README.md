@@ -8,7 +8,7 @@ CSV datasets allow you to upload and use CSV (Comma-Separated Values) files dire
 - **Quick Testing** - Rapidly prototype and test syncs before implementing in production
 - **Supplemental Data** - Add data that may not exist in your primary data sources
 - **Simple Collaboration** - Share and collaborate on datasets using familiar CSV files
-- **Easy Migration Path** - Start with CSV files and seamlessly transition to warehouse datasets as you scale
+- **Easy Migration Path** - Start with CSV files and seamlessly transition to basic datasets as you scale
 
 ## Getting Started
 
@@ -130,7 +130,7 @@ CSV files are a simple but powerful way to bring data into Census. Here are some
 - **Check your column headers** to ensure they're clear, consistent, and don't contain special characters
 - **Preview your data** after upload to verify it was parsed correctly
 
-Remember that CSV datasets are best for relatively static data or one-time imports. For data that changes frequently, consider setting up a warehouse dataset with automated refreshes instead.
+Remember that CSV datasets are best for relatively static data or one-time imports. For data that changes frequently, consider setting up a basic dataset with automated refreshes instead.
 
 ## Limitations
 
