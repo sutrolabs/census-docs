@@ -16,14 +16,14 @@ SaaS Datasets allow you to:
 
 ### Data Storage and Access
 
-When you create a SaaS Dataset, Census imports your selected CRM objects into [CensusStore](../censusstore.md), our managed storage solution. Here's what happens:
+When you create a SaaS Dataset, Census imports your selected CRM objects into [Census Store](../Census Store.md), our managed storage solution. Here's what happens:
 
 1. Your data is imported using your CRM's API credentials
-2. The data is stored in Apache Iceberg format in CensusStore
+2. The data is stored in Apache Iceberg format in Census Store
 3. Census provides an Iceberg catalog that makes this data queryable from your data warehouse
 4. Data is automatically refreshed based on your specified schedule
 
-By default, data is stored in Census's secure infrastructure, but you can also [use your own storage infrastructure](../censusstore.md#bring-your-own-object-storage-provider) for additional control.
+By default, data is stored in Census's secure infrastructure, but you can also [use your own storage infrastructure](../Census Store.md#bring-your-own-object-storage-provider) for additional control.
 
 ### Querying Your Data
 
@@ -34,7 +34,7 @@ For example, if you're using Snowflake, you can query your SaaS Dataset tables j
 SELECT * FROM CENSUS_CATALOG.YOUR_WORKSPACE.HUBSPOT_CONTACTS;
 ```
 
-See the [CensusStore documentation](../censusstore.md#federated-query-access-via-iceberg) for detailed instructions on setting up and using federated queries for your specific warehouse.
+See the [Census Store documentation](../Census Store.md#federated-query-access-via-iceberg) for detailed instructions on setting up and using federated queries for your specific warehouse.
 
 ### Data Lifecycle
 
@@ -85,4 +85,4 @@ Your SaaS Dataset data is accessible through:
 - Data storage follows Census's security and compliance standards
 - Option to use your own storage infrastructure for additional control
 
-For more details about data storage, security, and querying options, see our [CensusStore documentation](../censusstore.md). 
+For more details about data storage, security, and querying options, see our [Census Store documentation](../Census Store.md). 
