@@ -85,4 +85,4 @@ Your SaaS Dataset data is accessible through:
 - Data storage follows Census's security and compliance standards
 - Option to use your own storage infrastructure for additional control
 
-For more details about data storage, security, and querying options, see our [Census Store documentation](../Census Store.md). 
+For more details about data storage, security, and querying options, see our [Census Store documentation](../../misc/data-storage/census-store/README.md). 
