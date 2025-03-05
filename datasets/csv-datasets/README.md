@@ -67,29 +67,56 @@ This action completely replaces the existing dataset with the new file.
 
 ## Use Cases for CSV Datasets
 
-### Quick Prototyping
+<details>
+<summary>Quick Prototyping</summary>
 
-- Test new sync configurations without modifying your warehouse
-- Validate mappings and transformations with sample data
-- Experiment with different data structures
+CSV datasets provide an excellent way to test and prototype your data workflows without making changes to your production data warehouse:
 
-### One-time Data Loads
+- Test new sync configurations with sample data before implementing in your warehouse
+- Validate field mappings and transformations with controlled test data
+- Experiment with different data structures and formats to find the optimal approach
+- Create proof-of-concept syncs to demonstrate value before investing in full implementation
 
-- Upload lists of customers for one-time campaigns
-- Import event attendees for specific marketing activities
-- Load historical data for backfilling systems
+</details>
 
-### Supplemental Reference Data
+<details>
+<summary>One-time Data Loads</summary>
 
-- Upload product catalogs or price lists
-- Import geographic or demographic reference data
-- Add mapping tables for code translations
+For data that doesn't need regular updates, CSV datasets offer a straightforward solution:
 
-### Data Enrichment
+- Upload customer lists for one-time marketing campaigns or outreach
+- Import event attendees or webinar registrants for specific follow-up activities
+- Load historical data for backfilling systems or analytics
+- Import lead lists from trade shows or other offline events
+- Upload contest or promotion participants for special communications
+
+</details>
+
+<details>
+<summary>Supplemental Reference Data</summary>
+
+CSV datasets are perfect for reference data that complements your warehouse data:
+
+- Upload product catalogs or price lists that change infrequently
+- Import geographic or demographic reference data for segmentation
+- Add mapping tables for code translations or categorizations
+- Import industry benchmarks or standards for comparison
+- Upload postal code or region mappings for territory management
+
+</details>
+
+<details>
+<summary>Data Enrichment</summary>
+
+Enhance your existing data with additional information from external sources:
 
 - Combine CSV data with warehouse data using Census's data enrichment features
 - Upload third-party data that isn't available in your warehouse
-- Add manual classifications or segments to existing data
+- Add manual classifications or segments created by business teams
+- Import scoring data or rankings from external systems
+- Add supplemental attributes for more precise targeting
+
+</details>
 
 ## Best Practices for CSV Datasets
 
