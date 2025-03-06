@@ -1,48 +1,18 @@
-# Overview
+# Syncs Overview
 
-## 🔌 Sources and Destinations
+## What is a Sync?
 
-Census at its core is about connecting and coordinating across your business's software stack. And so, one of the very first steps to using Census will be connecting your Data Warehouse Sources and Destination Services.
+A Sync is the core operation in Census that defines how data should flow from your selected source to your destination. Syncs are what make Census unique - unlike most integration tools that are event-based, Census works to keep your source and destination "in sync" (similar to how Dropbox or other cloud storage services work). This means you don't have to worry about dropped events or backfills. If you change your data in the source, Census automatically syncs it to your destination.
 
-### Data Warehouse Sources
+## Creating Syncs
 
-Source data for all Census Syncs come from your Data Warehouse. Historically, a data warehouse was the end of the line, where data went to collect dust. But modern cloud data warehouses enable a huge variety of data sources and data size, as well as the flexibility to define how data should be aggregated, joined, and organized specifically for your business. It's this flexibility and scalability that make it the perfect data hub for your operations.
+To create a sync, you'll need to define:
 
-Census can use anything you grant access to in your data warehouse as a sync source, whether that is a table, a view, a SQL query, or a dbt model. We'll cover the process of building datasets in the next section.
-
-{% hint style="info" %}
-For instructions on connecting your specific data source, take a look at the Data Sources section on the left.
-{% endhint %}
-
-#### Data Source Permissions and Read-only Access
-
-Census provides a powerful and customizable Advanced Sync Engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema. This schema will not be selectable as a source within the Census sync configuration UI.&#x20;
-
-If you don't have credentials with write access available, you can connect to your warehouse using our Basic Sync Engine which instead stores this state outside the warehouse.
-
-Either option may be right for you, read more about the differences between [Basic and Advanced Sync Engines](https://docs.getcensus.com/sources/overview#sync-engines).
-
-#### Datasets and segments
-
-Once you have your data source connected, you can also create datasets on top of your data source, or connect dataset integrations like [dbt](../../datasets/basic-datasets/dbt-integration.md), [Looker](../../datasets/basic-datasets/looker-integration.md), or [Sigma](../../datasets/basic-datasets/sigma-integration.md). Datasets are optional in Census, you can also sync data directly from a data source table or view, but datasets give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your datasets, Census makes it easy to quickly select and sync [Segments](../../audience-hub/getting-started/) as well.
-
-### Destination Services
-
-Census helps you keep your data in sync across all the business apps you use to engage with your customers, from advertising and marketing, through sales, all the way to finance. The goal is to keep all of those apps in sync, powered by the exact same set of data.
-
-The process of connecting a service is a little different for each. Sometimes, it's as simple as an OAuth confirmation flow or a straightforward API key. Other times, a few more steps are required.
-
-Once you've connected a source, we'll be able to access a set of objects that service makes available. Typically this is a Contact or a Company, but there are often others and in some cases, even custom defined objects are supported.\
-\
-All of the connection steps, the objects, and other details for each service are covered here in the docs.\
-\
-And don't forget, our library of connections grows every week! Keep an eye on our [integrations page](https://www.getcensus.com/integrations) for all of our available destinations and let us know if we're missing something you need!
-
-## 🧮 Creating Syncs
-
-The most important action in Census is defining Syncs. A Sync defines the rules of how data should be synced, from your selected source to your destination.
-
-Syncs are also what makes Census so unique. Unlike most integration tools that are event-based, Census works to keep your source and destination "in sync" (just like Dropbox or other cloud storage service). The benefit is that you don't have to worry about dropped events or backfills anymore. If you change your data in the model, Census just syncs it, easy as that!
+1. A **source** - Where your data is coming from (Basic Dataset, Streaming Dataset, SaaS Dataset, CSV Dataset, or direct warehouse access)
+2. A **destination** - Where your data is going (CRM, marketing platform, etc.)
+3. A **sync behavior** - How Census should handle the data (update, create, mirror, etc.)
+4. **Sync keys** - How to match records between source and destination
+5. **Field mappings** - Which fields to sync and how they map between systems
 
 ### 🔀 Sync Behaviors
 
@@ -67,15 +37,15 @@ Please note that some of these behaviors are only available for certain destinat
 
 ### 🔎 Sync Keys
 
-Sync Keys let Census know how to associate data in the source with the destination. Both the source and destination need to provide a single, unique per record, identifying field. Census uses the identifiers to look for matches. When a match is found, or not found, it then can use your selected Sync Behavior to decide what to do.\
-\
+Sync Keys let Census know how to associate data in the source with the destination. Both the source and destination need to provide a single, unique per record, identifying field. Census uses the identifiers to look for matches. When a match is found, or not found, it then can use your selected Sync Behavior to decide what to do.
+
 For example, if Census sees your source and destination both have records with the identifier ABCD1234, it knows that it should update that record with data from the source when you've got an Update Only, Update or Create, or Mirror Sync Behavior configured.
 
 ### 🖇 Field Mappings
 
 Once you've defined _how_ data is related between your source and destination, the next step is to let Census know _what_ properties should be updated. The field mapping step lets you specify how fields should be mapped from your source model to the destination object's fields. You can automatically add all matching fields, but even if names don't match, you can also provide the matching manually. If you remove fields from your mapping, Census will just stop updating those fields. We will not delete the values.
 
-#### **Using templates to tranform source data**
+#### **Using templates to transform source data**
 
 Sometimes the data in your source systems isn't in quite the format or style that the destination expects. If you need to transform records from the source before sending them to the destination, you can use a **Templated Field.**
 
@@ -165,6 +135,59 @@ Click the number of invalid or rejected records to see a sample (up to 100), and
 
 ![Output of invalid records diagnostic log](../../.gitbook/assets/census_invalid_records.png)
 
-## Wrapping things up
+## 🔌 Sources and Destinations
 
-That's it! Now you've got everything you need to know to get the most out of Census, but don't worry, you can still get into the nitty gritty on individual data warehouses or destinations. And we're always here to help. If you have any questions, just let us know!
+To create a sync, you'll need to connect both a source and a destination.
+
+### Data Sources
+
+Census supports a variety of data sources for your syncs:
+
+- **Basic Datasets** - Connect directly to your data warehouse tables, views, or custom SQL queries
+- **Streaming Datasets** - Process real-time events from Kafka, Confluent Cloud, and other streaming sources
+- **SaaS Datasets** - Use data directly from your CRM systems like Salesforce or HubSpot
+- **CSV Datasets** - Upload and use CSV files for quick testing or one-time syncs
+- **Direct Warehouse Access** - Sync directly from warehouse tables without creating a dataset
+
+This flexibility allows you to use the right data source for each use case, whether you need batch processing, real-time streaming, or direct access to your SaaS applications.
+
+{% hint style="info" %}
+For instructions on connecting your specific data source, take a look at the Data Sources section on the left.
+{% endhint %}
+
+#### Data Source Permissions and Read-only Access
+
+Census provides a powerful and customizable Advanced Sync Engine on top of your data sources. To enable all of this without storing your customer data outside your infrastructure, we create a scratch or bookkeeping schema in your data warehouse that we use to cache sync states. This requires write permission to this schema and only this schema. This schema will not be selectable as a source within the Census sync configuration UI.&#x20;
+
+If you don't have credentials with write access available, you can connect to your warehouse using our Basic Sync Engine which instead stores this state outside the warehouse.
+
+Either option may be right for you, read more about the differences between [Basic and Advanced Sync Engines](https://docs.getcensus.com/sources/overview#sync-engines).
+
+#### Datasets and segments
+
+Datasets in Census provide a flexible way to organize and prepare your data for syncing. You can create datasets from various sources:
+
+- **Basic Datasets** from your data warehouse using SQL or table selection
+- **Streaming Datasets** for real-time data activation
+- **SaaS Datasets** from your connected business applications
+- **CSV Datasets** for simple file uploads
+
+You can also connect dataset integrations like [dbt](../../datasets/basic-datasets/dbt-integration.md), [Looker](../../datasets/basic-datasets/looker-integration.md), or [Sigma](../../datasets/basic-datasets/sigma-integration.md). 
+
+Datasets are optional in Census—you can also sync data directly from a data source table or view—but datasets give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your datasets, Census makes it easy to quickly select and sync [Segments](../../audience-hub/getting-started/) as well.
+
+### Destination Services
+
+Census helps you keep your data in sync across all the business apps you use to engage with your customers, from advertising and marketing, through sales, all the way to finance. The goal is to keep all of those apps in sync, powered by the exact same set of data.
+
+The process of connecting a service is a little different for each. Sometimes, it's as simple as an OAuth confirmation flow or a straightforward API key. Other times, a few more steps are required.
+
+Once you've connected a source, we'll be able to access a set of objects that service makes available. Typically this is a Contact or a Company, but there are often others and in some cases, even custom defined objects are supported.
+
+All of the connection steps, the objects, and other details for each service are covered here in the docs.
+
+And don't forget, our library of connections grows every week! Keep an eye on our [integrations page](https://www.getcensus.com/integrations) for all of our available destinations and let us know if we're missing something you need!
+
+## Need Help?
+
+That's it! Now you've got everything you need to know to get the most out of Census syncs, but don't worry, you can still get into the nitty gritty on individual data sources or destinations. And we're always here to help. If you have any questions, just let us know!
