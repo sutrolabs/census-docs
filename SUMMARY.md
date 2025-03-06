@@ -17,6 +17,7 @@
   * [Quick Start](datasets/enrichment/quick-start.md)
   * [HTTP Request Enrichments](datasets/enrichment/http-request-enrichments.md)
 * [SaaS Datasets](datasets/saas-datasets/README.md)
+* [Streaming Datasets](datasets/streaming-datasets.md)
 * [Computed Columns](datasets/core-concepts-3.md)
 * [Version Control](datasets/census-models.md)
 
