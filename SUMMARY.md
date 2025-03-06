@@ -6,9 +6,9 @@
 
 * [Overview](datasets/overview.md)
 * [Core Concepts](datasets/core-concepts/README.md)
-  * [Columns & Annotations](datasets/core-concepts/core-concepts.md)
-  * [Type & Property Mappings](datasets/core-concepts/core-concepts-1.md)
-  * [Relationships](datasets/core-concepts/core-concepts-2.md)
+  * [Columns & Annotations](datasets/core-concepts/columns-and-annotations.md)
+  * [Type & Property Mappings](datasets/core-concepts/type-and-property-mappings.md)
+  * [Relationships](datasets/core-concepts/relationships.md)
 * [Basic Datasets](datasets/basic-datasets/README.md)
   * [dbt Integration](datasets/basic-datasets/dbt-integration.md)
   * [Sigma Integration](datasets/basic-datasets/sigma-integration.md)
@@ -26,13 +26,13 @@
 * [Computed Columns](datasets/computed-columns.md)
 * [Version Control](datasets/version-control.md)
 
-## 📫 Syncs <a href="#basics" id="basics"></a>
+## 📫 Syncs
 
-* [Overview](syncs/core-concept/README.md)
-* [Triggering & Scheduling](syncs/core-concept/triggering-syncs.md)
-* [Retry Handling](syncs/core-concept/retry-handling.md)
-* [Live Syncs](syncs/core-concept/live-syncs.md)
-* [Audience Syncs](syncs/core-concept/audience-syncs.md)
+* [Overview](syncs/overview.md)
+* [Triggering & Scheduling](syncs/triggering-syncs.md)
+* [Retry Handling](syncs/retry-handling.md)
+* [Live Syncs](syncs/live-syncs.md)
+* [Audience Syncs](syncs/audience-syncs.md)
 * [Observability Toolkit](syncs/sync-monitoring/README.md)
   * [Current Sync Run Overview](syncs/sync-monitoring/current-sync-run-overview.md)
   * [Sync History](syncs/sync-monitoring/sync-history.md)
