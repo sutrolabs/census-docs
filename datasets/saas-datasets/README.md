@@ -12,6 +12,18 @@ SaaS Datasets allow you to:
 - Create segments and syncs using your CRM data
 - Query the data from your existing data warehouse using Census's Iceberg catalog
 
+## Getting Started
+
+To create your first SaaS Dataset:
+
+1. Navigate to the `Datasets` tab in Census
+2. Click `+ New Dataset` in the top-right corner
+3. Select `Import Dataset from App`
+4. Choose your CRM system (HubSpot or Salesforce)
+5. Select the objects and fields you want to import
+6. Configure your refresh schedule
+7. Save your dataset
+
 ## How It Works
 
 ### Data Storage and Access
@@ -41,18 +53,6 @@ See the [Census Store documentation](../../misc/data-storage/census-store/README
 - Data is automatically refreshed based on your configured schedule
 - When you delete a dataset, all associated data is permanently removed from storage
 - You maintain full control over which objects and fields are imported
-
-## Getting Started
-
-To create your first SaaS Dataset:
-
-1. Navigate to the `Datasets` tab in Census
-2. Click `+ New Dataset` in the top-right corner
-3. Select `Import Dataset from App`
-4. Choose your CRM system (HubSpot or Salesforce)
-5. Select the objects and fields you want to import
-6. Configure your refresh schedule
-7. Save your dataset
 
 ## Features and Capabilities
 

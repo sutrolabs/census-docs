@@ -24,7 +24,7 @@ Either option may be right for you, read more about the differences between [Bas
 
 #### Datasets and segments
 
-Once you have your data source connected, you can also create datasets on top of your data source, or connect dataset integrations like [dbt](../../sources/integrations/native-dbt-integration.md) and [Looker](../../sources/integrations/looker.md). Datasets are optional in Census, you can also sync data directly from a data source table or view, but datasets give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your datasets, Census makes it easy to quickly select and sync [Segments](../../audience-hub/getting-started/) as well.
+Once you have your data source connected, you can also create datasets on top of your data source, or connect dataset integrations like [dbt](../../datasets/basic-datasets/dbt-integration.md), [Looker](../../datasets/basic-datasets/looker-integration.md), or [Sigma](../../datasets/basic-datasets/sigma-integration.md). Datasets are optional in Census, you can also sync data directly from a data source table or view, but datasets give you a simple way to create authoritative locations for the full set of all of your paying customers, invoices, or whatever other reusable data concept matters for your business. And once you've built your datasets, Census makes it easy to quickly select and sync [Segments](../../audience-hub/getting-started/) as well.
 
 ### Destination Services
 
