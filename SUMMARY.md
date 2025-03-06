@@ -28,7 +28,7 @@
 
 ## 📫 Syncs
 
-* [Overview](syncs/README.md)
+* [Overview](syncs/overview.md)
 * [Triggering & Scheduling](syncs/triggering-syncs.md)
 * [Retry Handling](syncs/retry-handling.md)
 * [Live Syncs](syncs/live-syncs.md)
