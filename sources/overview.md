@@ -4,17 +4,40 @@ description: Use data sources to connect to the data that matters most for your 
 
 # Overview
 
-Source data for all Census Syncs come from your data warehouse. Historically, a data warehouse was the end of the line, where data went to collect dust. But modern cloud data warehouses enable a huge variety of data sources and data size, as well as the flexibility to define how data should be aggregated, joined, and organized specifically for your business. It's this flexibility and scalability that make it the perfect data hub for your operations.
+Census connects to a variety of data sources to power your syncs and data activation workflows. These sources include:
 
-At Census, we refer to Data Sources as exactly that—the data warehouse or database that is used as the single source of truth within your organization.
+- **Data Warehouses & Databases**: Snowflake, BigQuery, Redshift, PostgreSQL, and more
+- **SaaS Platforms**: Salesforce, HubSpot, and other business applications
+- **Streaming Sources**: Kafka, Confluent Cloud, Google Pub/Sub
+- **File Uploads**: CSV files for ad-hoc or one-time data needs
+
+This flexibility allows you to use Census as a Universal Data Platform, unifying data from multiple sources and activating it across your business tools.
 
 The menu to the left lists all of the data sources that Census currently supports. If you don't see your data source listed, please [let us know](mailto:support@getcensus.com)!
 
-## ️ Sync Engines
+## Source Types
 
-Census offers two methods of connecting to your data source and keeping track of what's been synced (a.k.a. "state tracking"). We call these Sync Engines. When connecting a data source for the first time, we'll ask you to select either Basic or Advanced Sync Engine.
+### Data Warehouses & Databases
+Data warehouses and databases serve as powerful central repositories for your business data. Census connects directly to these sources to leverage your existing data models and transformations.
 
-<figure><img src="../.gitbook/assets/sync-engines.png" alt=""><figcaption><p>Select your preferred Sync Engine when connecting a data source.</p></figcaption></figure>
+### SaaS Platforms
+SaaS platforms like Salesforce and HubSpot contain valuable business data. Census can create [SaaS Datasets](../datasets/saas-datasets/README.md) directly from these sources, making it easy to work with your CRM data alongside your warehouse data.
+
+### Streaming Sources
+For real-time use cases, Census connects to streaming sources like Kafka and Confluent Cloud. These connections power [Streaming Datasets](../datasets/streaming-datasets/README.md) that enable low-latency data activation.
+
+### File Uploads
+For ad-hoc or one-time data needs, Census supports [CSV Datasets](../datasets/csv-datasets/README.md) that can be uploaded directly through the UI.
+
+## Data Warehouse-Specific Features
+
+The following sections apply specifically to data warehouse and database connections (Snowflake, BigQuery, Redshift, PostgreSQL, etc.). SaaS, streaming, and file upload sources have different connection methods and considerations, which are detailed in their respective documentation pages.
+
+### ️ Sync Engines for Data Warehouses
+
+When connecting a data warehouse source, Census offers two methods of connecting and keeping track of what's been synced (a.k.a. "state tracking"). We call these Sync Engines. When connecting a data warehouse for the first time, we'll ask you to select either Basic or Advanced Sync Engine.
+
+<figure><img src="../.gitbook/assets/sync-engines.png" alt=""><figcaption><p>Select your preferred Sync Engine when connecting a data warehouse.</p></figcaption></figure>
 
 While **your experience of the Census product will be identical either way**, there are some important differences between these two options:
 
@@ -26,25 +49,26 @@ While **your experience of the Census product will be identical either way**, th
 | **Warehouse permissions**   | Read-only access                             | Read/write access                  |
 | **Ability to switch**       | Ability to upgrade to advanced (coming soon) | Not possible to downgrade to basic |
 
-{% hint style="info" %}
-Some data sources (e.g. Google Sheets and Elasticsearch) only support Basic Sync Engine since writing state back to them is either challenging or impossible.
-{% endhint %}
 
 If you have any questions about which Sync Engine is right for you, please [reach out to our support team](mailto:support@getcensus.com).
 
-## Allowed IP Addresses
+### Allowed IP Addresses for Data Warehouses
 
-Most sources require allowlisting IP Addresses so that Census's systems can unload data from the source. [BigQuery](available-sources/google-bigquery.md) and [Databricks](available-sources/databricks.md) are notable exceptions, so do check the source-specific docs if you have any questions.
+Most data warehouse sources require allowlisting IP Addresses so that Census's systems can access data from the source. [BigQuery](available-sources/google-bigquery.md) and [Databricks](available-sources/databricks.md) are notable exceptions, so do check the source-specific docs if you have any questions.
 
-If your source is protected by a firewall, please add Census's IP addresses to the allowlist. You can find Census's set of IP address for your region in [Regions & IP Addresses](../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
+If your data warehouse is protected by a firewall, please add Census's IP addresses to the allowlist. You can find Census's set of IP address for your region in [Regions & IP Addresses](../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
 
-## Data Warehouse Usage
+{% hint style="info" %}
+For SaaS sources like Salesforce and HubSpot, IP allowlisting is typically not required as Census connects through their APIs using OAuth authentication.
+{% endhint %}
+
+### Data Warehouse Usage
 
 Census performs automated processes and queries on your data warehouse, even when a sync isn't running. This activity may appear in your internal reporting but is essential to ensure Census operates efficiently and effectively on your behalf. Census generally has a very minor impact on data warehouse usage.
 
 These processes and queries include and are not limited to:
 
-* Reading Metadata from the warehouse
+* Reading metadata from the warehouse
 * Regular health check queries
 * Clicking into a Dataset
 * Clicking into a Segment
