@@ -104,7 +104,7 @@ Click the Next button to see the final preview, which will have a recap of what 
 | Event           |        ✅       | Insert ID     | Send             |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Heap.io objects and/or behaviors

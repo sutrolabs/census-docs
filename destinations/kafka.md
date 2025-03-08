@@ -29,7 +29,7 @@ Your Kafka instance must be accessable to the public internet in order for Censu
 |         Message |        ✅       | Any unique identifier | Send, Update or Create, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Kafka objects and/or behaviors

@@ -32,7 +32,7 @@ Once complete, you'll see your new connection in the **Destinations** list.
 | <p>Audience Segment<br><a href="https://docs.getcensus.com/basics/core-concept/audience-syncs">Audience Sync</a></p> |        ✅       | GUM Cookie ID, Mobile Ad ID, Email, LiveRamp Identity Link | Mirror, Update or Create |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 ## Need help connecting to Criteo?

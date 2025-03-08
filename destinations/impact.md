@@ -19,7 +19,7 @@ description: This page describes how to use Census with Impact.
 |      Conversion |        ✅       | Any unique identifier | Send          |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Impact objects and/or behaviors.

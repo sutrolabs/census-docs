@@ -96,7 +96,7 @@ Census currently supports syncing to the following Braze objects.
 Census supports custom fields on both Braze User and Event objects. You can map any field from your data source to a custom field in Braze. Census will automatically create the custom field in Braze if it doesn't already exist.
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Braze objects and/or behaviors.

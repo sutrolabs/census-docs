@@ -21,7 +21,7 @@ You should now be ready to start creating audiences in Insider!
 | <p>Events<br><a href=".../basics/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       |      Unique Event ID      |              Send             |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Insider objects and/or behaviors

@@ -67,7 +67,7 @@ For more details, take a look at Mailchimp's [API documentation](https://mailchi
 | List/Audience Members |        ✅       | <p>Email Address,<br>Prehashed Email Address (update-only)</p> | Update or Create, Update Only |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mailchimp objects and/or behaviors

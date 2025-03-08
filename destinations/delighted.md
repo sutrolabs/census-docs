@@ -78,7 +78,7 @@ You should be able to view your data in Delighted now.
 |       Autopilot |        ✅       |     Email     | Update or Create, Update, Mirror |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Delighted objects and/or behaviors

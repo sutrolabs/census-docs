@@ -105,7 +105,7 @@ And if anything went wrong, contact the [Census support team](mailto:support@get
 |      Update Only |       `✅`      |     User    |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Sailthru.

@@ -31,7 +31,7 @@ Note: [Pinterest requires](https://developers.pinterest.com/docs/api/v5/#tag/cus
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** |  **Objects**  |
