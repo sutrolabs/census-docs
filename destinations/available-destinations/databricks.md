@@ -70,7 +70,7 @@ If you're connecting to an **All Purpose Compute Cluster**:
 |           Table |        ✅       | Any columns that are integers or strings | Update or Create, Update Only, Add |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Databricks objects and/or behaviors.

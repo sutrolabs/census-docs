@@ -57,7 +57,7 @@ To optimize the time it takes to load your tables within the Census UI when crea
 |           Table |        ✅       | Required columns | Update or Create, Update Only, Add |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../../syncs/core-concept/#sync-behaviors) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../../syncs/overview.md) documentation.
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
