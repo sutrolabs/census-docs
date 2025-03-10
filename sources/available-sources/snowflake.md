@@ -55,7 +55,7 @@ GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "&#x3C;your database>"."&#x3C;your sch
 CREATE DATABASE "CENSUS";
 GRANT ALL PRIVILEGES ON DATABASE "CENSUS" TO ROLE CENSUS_ROLE;
 -- If you want to explicitly grant the required permissions instead of using GRANT ALL you can use the following command
-<strong>--GRANT USAGE, CREATE TABLE, CREATE VIEW,MODIFY, MONITOR ON DATABASE "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE
+<strong>--GRANT CREATE SCHEMA, USAGE, MODIFY, MONITOR ON DATABASE "CENSUS" TO ROLE CENSUS_ROLE
 </strong>
 CREATE SCHEMA "CENSUS"."CENSUS";
 GRANT ALL PRIVILEGES ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
@@ -96,7 +96,7 @@ The script above creates the smallest available virtual warehouse ("X-Small") an
 \
 Alternatively, if cost concerns are an issue, you can also share a warehouse with other batch processing systems (for example Segment, Fivetran, dbt, etc).\
 \
-You may also want to [adjust the schedules](../../syncs/core-concept/#scheduling-a-sync) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
+You may also want to [adjust the schedules](broken-reference) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
 
 ## 🔗 Connecting to Snowflake on AWS VPS or via PrivateLink
 
@@ -108,7 +108,7 @@ If you're using Snowflake's Allowed IPs network policy, you'll need to add these
 
 ## ⚡ Change tracking for Live Syncs
 
-If you are trying to use [Live Syncs](../../syncs/core-concept/live-syncs.md) you may need to modify the settings on the source table(s) as follows:
+If you are trying to use [Live Syncs](../../syncs/live-syncs.md) you may need to modify the settings on the source table(s) as follows:
 
 ```sql
 ALTER TABLE "<table_name>" SET CHANGE_TRACKING = TRUE;
