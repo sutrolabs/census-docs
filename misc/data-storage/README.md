@@ -4,7 +4,7 @@
 
 We store the data you sync using Census, sometimes for the lifetime of your Census workspace, including:
 
-* In your source warehouse
+* For [basic-datasets](../../datasets/basic-datasets/ "mention"), in your source warehouse
   * [ai-columns](../../datasets/ai-columns/ "mention")
   * [enrichment](../../datasets/enrichment/ "mention")
   * [warehouse-writeback.md](../../syncs/sync-monitoring/warehouse-writeback.md "mention")
