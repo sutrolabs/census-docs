@@ -140,10 +140,13 @@ You may choose to use a pre-hashed value (if you have one), or for Census to per
 #### C. Optional Parameters
 
 * **Google Click ID** (recommended)
-* **Conversion Value**, positive non-zero decimal values accepted (e.g. 1.00 USD = 1.00)
 * **Currency Code**, the[ ISO 4217 3-character currency code](https://developers.google.com/adwords/api/docs/appendix/codes-formats#expandable-18) (e.g. 'USD')
 
 Once you have created your model, click **save**.
+
+{% hint style="danger" %}
+**Important**: Any **Conversion Value** mapped here will be ignored by Google. If you want to adjust these values, create a separate sync with [**Conversion Adjustments**](offline-conversions.md#conversion-adjustments) as the object.&#x20;
+{% endhint %}
 
 ### 3. Create your Sync
 
