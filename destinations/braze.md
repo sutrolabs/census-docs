@@ -129,7 +129,7 @@ In Braze, users can be alternatively identifier by a user alias. A user alias is
 Census offers a way to manage your Braze Subscription Groups via your data hub. The current behavior is that you are to "Mirror" the subscribed users from your user base. It is required that you have, within the source:
 
 * The Subscription Group Id in Braze
-* Braze User External Id
+* Braze User External ID OR email
 
 This source model should be all of your Subscribed users for their Subscription groups. If a previously-synced **subscription group / user pair** no longer appears in your data source, Census will **unsubscribe** that user from that subscription group.
 
@@ -149,7 +149,7 @@ If you have a query that returns the external id, subscription group id, and sta
 `status = 'subscribed'`
 {% endhint %}
 
-Only the Braze User External Id and the Subscription Group Id should be mapped fields. This is a special unsubscribing mirror for user/group pairs that no longer appear in the data source.
+Only an identifier (Braze User External Id or email) and the Subscription Group Id should be mapped fields. This is a special unsubscribing mirror for user/group pairs that no longer appear in the data source.
 
 ### Cohorts
 
