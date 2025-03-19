@@ -36,7 +36,7 @@ In the AWS account where the S3 bucket containing your Census Store catalog is l
                 "s3:GetObject",
                 "s3:GetObjectVersion"
             ],
-            "Resource": "arn:aws:s3:::<bucket name>/census_managed_iceberg/<catalog name>"
+            "Resource": "arn:aws:s3:::<bucket name>/census_managed_iceberg/<catalog name>/*"
         },
         {
             "Effect": "Allow",
