@@ -83,7 +83,7 @@ GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
    * **Database Name** (optional) - default database to log into
    * **Schema Name** (optional) - default schema to log into
    * **Authentication** - choose one of the following
-     * **Key-pair** (recommended) - After saving the connection, Census will generate a public/private keypair and provide instructions for configuring your Snowflake user account to use it.
+     * **Key-pair** (recommended) - Once the connection is saved, Census will generate a new key-pair you can apply to your Snowflake user. Note that Snowflake limits users to two active key-pairs. We recommend giving Census a dedicated user account so that our key-pair does not clash with key-pairs generated for other services.&#x20;
      * **Password** (deprecated) - User / Password authentication on Snowflake [will be blocked November 2025](https://www.snowflake.com/en/blog/blocking-single-factor-password-authentification/). If you intend to use this authentication mechanism, see the section below. &#x20;
 3. Once you provide the required information, click Connect to finish the connection to Snowflake.
 4. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
