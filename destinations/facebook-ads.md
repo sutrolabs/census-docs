@@ -82,10 +82,10 @@ If you are setting up a connection with a System User Token when you input your 
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                                  |       **Behaviors**      |
-| ----------------------------------------------------------------------------------------: | :-----------: | ---------------------------------------------------------------------------------------------------------------- | :----------------------: |
-|                                                                           Custom Audience |       ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/), Email | Update or Create, Mirror |
-| Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                                    |           Send           |
+|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                                                |       **Behaviors**      |
+| ----------------------------------------------------------------------------------------: | :-----------: | ------------------------------------------------------------------------------------------------------------------------------ | :----------------------: |
+|                                                                           Custom Audience |       ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/), Email, Phone Number | Update or Create, Mirror |
+| Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                                                  |           Send           |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
