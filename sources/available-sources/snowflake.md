@@ -65,11 +65,11 @@ GRANT ALL PRIVILEGES ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
 GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
 </code></pre>
 
-## :nut\_and\_bolt:Configuring a new Snowflake connection
+## Configuring a new Snowflake connection
 
 1. Visit the **Sources** section on Census, and press **New Source**, selecting **Snowflake** from the list.
 2. Census will ask you to provide the **following:**
-   *   Snowflake Account Name
+   *   **Snowflake Account Name**
 
        This is the URL prefix you use to connect or log into Snowflake. It may include a service region or cloud provider:
 
@@ -78,17 +78,32 @@ GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
        ```
 
        See the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/jdbc-configure.html#connection-parameters) for more information about the supported options.
-   * Query Execution Warehouse - this should match the warehouse you've created in the above instructions - for example`CENSUS_WAREHOUSE`
-   * User - the user you use to log into Snowflake
-   * Database Name (optional) - default database to log into
-   * Schema Name (optional) - default schema to log into
-   * Authentication - choose one of the following
-     * password - recommended.
-     * keypair - After saving the connection, Census will generate a public/private keypair and provide instructions for configuring your Snowflake user account to use it.
+   * **Query Execution Warehouse** - this should match the warehouse you've created in the above instructions - for example`CENSUS_WAREHOUSE`
+   * **User** - the user you use to log into Snowflake
+   * **Database Name** (optional) - default database to log into
+   * **Schema Name** (optional) - default schema to log into
+   * **Authentication** - choose one of the following
+     * **Key-pair** (recommended) - After saving the connection, Census will generate a public/private keypair and provide instructions for configuring your Snowflake user account to use it.
+     * **Password** (deprecated) - User / Password authentication on Snowflake [will be blocked November 2025](https://www.snowflake.com/en/blog/blocking-single-factor-password-authentification/). If you intend to use this authentication mechanism, see the section below. &#x20;
 3. Once you provide the required information, click Connect to finish the connection to Snowflake.
 4. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
 
-## 💸 Managing Snowflake Warehouse Costs
+### Using User/Password Authentication (between now and Nov 2025)
+
+Snowflake has announced that they will block User/Password authentication w/o MFA starting April 1, 2025 and completing November 2025. Requiring MFA makes this authentication form impractical for automated use cases like Census. If you are currently using User/Password, you have a few options:
+
+1. Switch to using Key-pair authentication (recommended)
+2. You can temporarily opt an account of this constraint by indicating they are a service account. Note that this will only allow continued access until November 2025.
+
+```sql
+ALTER USER CENSUS SET TYPE = LEGACY_SERVICE;
+```
+
+## Allowed IP Addresses
+
+If you're using Snowflake's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
+
+## Managing Snowflake Warehouse Costs
 
 The script above creates a new virtual data warehouse (execution environment) for Census. This allows you to monitor and tune Census queries for the best balance of performance and speed.
 
@@ -98,15 +113,11 @@ Alternatively, if cost concerns are an issue, you can also share a warehouse wit
 \
 You may also want to [adjust the schedules](broken-reference) of your Census syncs. Using Hourly and Daily syncs that are scheduled at the same time, rather than Continuous or every 15 minutes will give the largest continuous idle periods and save on account credits.
 
-## 🔗 Connecting to Snowflake on AWS VPS or via PrivateLink
+## Using AWS VPS or via PrivateLink
 
 Connecting to a Snowflake instance running on AWS VPS or via PrivateLink requires a modified connection configuration. Please contact your Census account manager to have this configured for you.
 
-## Allowed IP Addresses
-
-If you're using Snowflake's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
-
-## ⚡ Change tracking for Live Syncs
+## Change tracking for Live Syncs
 
 If you are trying to use [Live Syncs](../../syncs/live-syncs.md) you may need to modify the settings on the source table(s) as follows:
 
