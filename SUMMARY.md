@@ -216,6 +216,7 @@
   * [Optimizely](destinations/optimizely.md)
   * [Oracle Database](destinations/available-destinations/oracle-database.md)
   * [Oracle Eloqua](destinations/oracle-eloqua.md)
+  * [Oracle Fusion](destinations/available-destinations/oracle-fusion.md)
   * [Oracle Responsys](destinations/oracle-responsys.md)
   * [Orbit](destinations/orbit.md)
   * [Ortto](destinations/ortto.md)
