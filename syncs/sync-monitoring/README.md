@@ -19,5 +19,6 @@ Additionally, you don't have to hang out looking at syncs all day to be sure the
 * [Observability Lake](observability-lake.md) for long-term retention of sync logs, on your cloud storage.
 * [Datadog Integration](datadog-integration.md) for hooking Census up to all your internal monitoring systems.&#x20;
 * [Warehouse Writeback](warehouse-writeback.md) for keeping track of what your syncs have done historically.
+* [Webhooks](webhooks.md) for notifying you when events happen in Census.&#x20;
 
 Finally, if you're not ready to run your sync quite yet, you can always do a [Sync Dry Run](sync-dry-runs.md) to get a report of what changes it will make, before it makes them.

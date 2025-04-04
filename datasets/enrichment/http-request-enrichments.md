@@ -41,7 +41,7 @@ For this example, we will use [MaxMind](https://www.maxmind.com/en/geoip-api-web
 #### Defining a HTTP Request Connection
 
 1. Login to Census and select a Dataset you want to enrich on the Datasets tab
-2. Ensure that your dataset has a Unique ID Column. You can configure this by setting the [Type and Property Mappings](../core-concepts/core-concepts-1.md) on the Dataset
+2. Ensure that your dataset has a Unique ID Column. You can configure this by setting the [Type and Property Mappings](../core-concepts/type-and-property-mappings.md) on the Dataset
 3. On the top right corner, navigate to Enrich & Enhance > Enrichments > HTTP Request
 4. Create a new HTTP Request Connection, or select an existing connection that you want to use
    1. For MaxMind, we will use their GeoLite API: _https://geolite.info/geoip/v2.1/country_

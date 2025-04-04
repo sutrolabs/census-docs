@@ -25,7 +25,7 @@ Sync Tracking data is updated in batches while a sync is in progress. Census's s
 
 By default, Census will retain row-level logs and make them available to you for 14 days. If you would like to retain for longer, see the details on Observability Lake below.
 
-Sync Tracking is not currently available for [Live Syncs](../core-concept/live-syncs.md) or [Sync Dry Runs](sync-dry-runs.md).
+Sync Tracking is not currently available for [Live Syncs](../live-syncs.md) or [Sync Dry Runs](sync-dry-runs.md).
 
 ## Observability Lake Data Schema
 
@@ -47,16 +47,16 @@ The files within this path will look like `[batch_type].[batch_number].parquet`,
 
 All files share the same schema so that they can be combined and queried. Sync tracking data includes the following columns:
 
-| Column Name                          | Description                                                                                                                                                                                                                                                                      |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| census\_sync\_tracking\_internal\_id | An internal Census ID that is used to uniquely identify each row                                                                                                                                                                                                                 |
-| identifier                           | The value of the sync key for this particular record                                                                                                                                                                                                                             |
-| record\_payload                      | The full record payload extracted from the source as a JSON blob. This is not 1:1 with the data sent to the destination as this data can be conditional applied to the destination                                                                                               |
-| operation                            | In most cases, this is the [sync's behavior](../core-concept/#sync-behaviors) (`update`, `upsert`, `delete`, `append`). Mirror syncs in most cases will be separated into `upsert` vs `delete` operations, though file system and Sheets will continue to use `mirror` operator. |
-| status                               | `succeeded`, `rejected`, `NULL`, or `DUPLICATE` (the latter two are invalid data checks automatically performed by Census before attempting to sync)                                                                                                                             |
-| status\_message                      | the error message if it was rejected                                                                                                                                                                                                                                             |
-| batch\_started\_at                   | Timestamp when Census started sending the batch of records                                                                                                                                                                                                                       |
-| batch\_ended\_at                     | Timestamp finished sending the batch of records                                                                                                                                                                                                                                  |
+| Column Name                          | Description                                                                                                                                                                                                                                                       |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| census\_sync\_tracking\_internal\_id | An internal Census ID that is used to uniquely identify each row                                                                                                                                                                                                  |
+| identifier                           | The value of the sync key for this particular record                                                                                                                                                                                                              |
+| record\_payload                      | The full record payload extracted from the source as a JSON blob. This is not 1:1 with the data sent to the destination as this data can be conditional applied to the destination                                                                                |
+| operation                            | In most cases, this is the [sync's behavior](broken-reference) (`update`, `upsert`, `delete`, `append`). Mirror syncs in most cases will be separated into `upsert` vs `delete` operations, though file system and Sheets will continue to use `mirror` operator. |
+| status                               | `succeeded`, `rejected`, `NULL`, or `DUPLICATE` (the latter two are invalid data checks automatically performed by Census before attempting to sync)                                                                                                              |
+| status\_message                      | the error message if it was rejected                                                                                                                                                                                                                              |
+| batch\_started\_at                   | Timestamp when Census started sending the batch of records                                                                                                                                                                                                        |
+| batch\_ended\_at                     | Timestamp finished sending the batch of records                                                                                                                                                                                                                   |
 
 ### Querying
 

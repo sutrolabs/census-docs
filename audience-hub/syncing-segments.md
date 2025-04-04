@@ -63,7 +63,7 @@ You'll often need to send a segment somewhere other than an ad platform (e.g. a 
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-12-13 at 17.27.44@2x.png" alt=""><figcaption><p>Create a new sync from the Syncs page.</p></figcaption></figure>
 
-Regardless of whether you choose option 1 or 2 above, you'll enter the normal [sync creation workflow](../syncs/core-concept/). If you choose option 1, the current segment will be selected as your source. If you choose option 2, you'll need to select the relevant entity, and then choose the segment you want to sync.
+Regardless of whether you choose option 1 or 2 above, you'll enter the normal [sync creation workflow](broken-reference). If you choose option 1, the current segment will be selected as your source. If you choose option 2, you'll need to select the relevant entity, and then choose the segment you want to sync.
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-12-13 at 17.35.47@2x.png" alt=""><figcaption><p>Select the segment you'd like to sync.</p></figcaption></figure>
 
@@ -71,7 +71,7 @@ Segments and entities have the same capabilities as model-based syncs but also e
 
 ### Automatically Managing Destination Audiences
 
-Where available, Census also supports automatically creating new audiences in destinations to match your segments. For more information on this special sync type, see [Audience Syncs](../syncs/core-concept/audience-syncs.md).
+Where available, Census also supports automatically creating new audiences in destinations to match your segments. For more information on this special sync type, see [Audience Syncs](../syncs/audience-syncs.md).
 
 ### Syncing All Segment Membership Lists
 

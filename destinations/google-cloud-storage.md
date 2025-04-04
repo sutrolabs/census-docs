@@ -76,7 +76,7 @@ If you need any help configuring GCS, contact the [Census support team](mailto:s
 |      Replace |        ✅       |     All     |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
 [Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Cloud Storage.

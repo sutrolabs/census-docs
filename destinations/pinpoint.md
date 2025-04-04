@@ -69,7 +69,7 @@ Set up your staging bucket expiry policies to clean up old staging data:
 |         Segment |        ✅       | Any unique identifier | Replace       |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Pinpoint objects and/or behaviors.

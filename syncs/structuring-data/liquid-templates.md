@@ -601,7 +601,7 @@ Notes:
 
 ### JSON mode
 
-One special use for Liquid templates is to build JSON documents. This can be great for advanced API usage with [templated fields](../core-concept/#using-templates-to-tranform-source-data) or even building custom integrations with the [HTTP Request](../../destinations/http-request.md) destination.
+One special use for Liquid templates is to build JSON documents. This can be great for advanced API usage with [templated fields](broken-reference) or even building custom integrations with the [HTTP Request](../../destinations/http-request.md) destination.
 
 Two special features get activated when in JSON mode:
 

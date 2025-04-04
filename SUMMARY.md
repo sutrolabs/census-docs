@@ -43,6 +43,7 @@
   * [Datadog Integration](syncs/sync-monitoring/datadog-integration.md)
   * [Warehouse Writeback](syncs/sync-monitoring/warehouse-writeback.md)
   * [Sync Dry Runs](syncs/sync-monitoring/sync-dry-runs.md)
+  * [Webhooks](syncs/sync-monitoring/webhooks.md)
 * [Structuring Data](syncs/structuring-data/README.md)
   * [Liquid Templates](syncs/structuring-data/liquid-templates.md)
   * [Event Syncs](syncs/structuring-data/events.md)

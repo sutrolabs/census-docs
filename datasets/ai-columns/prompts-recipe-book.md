@@ -594,9 +594,9 @@ Days since last purchase: {{ record['DAYS_SINCE_LAST_PURCHASE']}}
 
 <summary>Create personalized discount based on customer's LTV</summary>
 
-We will use customer's life time value as an input column. If you don't have LTV yet in your dataset, you can easily calculate that for each user using [Computed Columns](../core-concepts-3.md).&#x20;
+We will use customer's life time value as an input column. If you don't have LTV yet in your dataset, you can easily calculate that for each user using [Computed Columns](../computed-columns.md).&#x20;
 
-You can also use [Computed Columns](../core-concepts-3.md) to calculate days since last purchase.
+You can also use [Computed Columns](../computed-columns.md) to calculate days since last purchase.
 
 {% code overflow="wrap" %}
 ```

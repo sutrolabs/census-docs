@@ -51,7 +51,7 @@ This is a runtime error and will not be caught at the time of Sync creation.
 |    Sheet Tabs   |        ✅       | Replace       |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Google Sheets.

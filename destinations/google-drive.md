@@ -35,7 +35,7 @@ That's it! You should now see your folder as an option when setting up a sync in
 |       File      |        ✅       | Replace       |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](../syncs/core-concept/#the-different-sync-behaviors).
+Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Google Drive.
