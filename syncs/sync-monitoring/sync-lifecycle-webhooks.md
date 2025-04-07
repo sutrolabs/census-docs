@@ -1,6 +1,6 @@
 # Sync Lifecycle Webhooks
 
-Sync Lifecycle Webhooks provide a way to connect external systems to CEnsus to listen for events related to a sync lifecycle, including [Sync Alerts](alerts.md).  Webhooks can be configured in Workspace settings under the **Webhooks** tab.&#x20;
+Sync Lifecycle Webhooks provide a way to connect external systems to Census to listen for events related to a sync lifecycle, including [Sync Alerts](alerts.md).  Webhooks can be configured in Workspace settings under the **Webhooks** tab.&#x20;
 
 ## Creating a Webhook
 
@@ -58,6 +58,20 @@ def compute_hmac_signature(data, secret):
     return base64.b64encode(digest).decode()
 
 ```
+
+## Retries
+
+If your server does not respond with a 2xx status, Census will retry sending the payload up to 5 times. It will wait 4 seconds before retrying the first time, and increasing the wait time before the next retry. The chart below shows the delay between each retry.
+
+| Retry | Delay Before Retry (in seconds) |
+| ----- | ------------------------------- |
+| 1     | 4.0                             |
+| 2     | 8.0                             |
+| 3     | 16.0                            |
+| 4     | 32.0                            |
+| 5     | 64.0                            |
+
+&#x20;Additionally, each payload delivery has a timeout of 10 seconds. If the server does not respond within this time, it will be considered as a failed delivery.&#x20;
 
 ## Webhooks via API
 
