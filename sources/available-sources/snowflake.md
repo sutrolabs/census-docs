@@ -82,15 +82,17 @@ GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
    * **User** - the user you use to log into Snowflake
    * **Database Name** (optional) - default database to log into
    * **Schema Name** (optional) - default schema to log into
-   * **Authentication** - choose one of the following
-     * **Key-pair** (recommended) - Once the connection is saved, Census will generate a new key-pair you can apply to your Snowflake user. Note that Snowflake limits users to two active key-pairs. We recommend giving Census a dedicated user account so that our key-pair does not clash with key-pairs generated for other services.&#x20;
+   * **Authentication** - choose one of the following:
+     * **Key-pair** (recommended) - Provide the private key details for the credentials you've generated and configured. [Snowflake provides detailed documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth#configuring-key-pair-authentication) on how to generate the public and private key pair. You will need to configure the public key on your Snowflake user. Then within Census, provide:
+       * **Private Key** - Snowflake's instructions will generate a .p8 file. Copy and paste the contents of this file exactly into Census including the header and footer.&#x20;
+       * **Passphrase** - (optional) If you choose to make your private key encrypted, you'll also need to include the passphrase you used to encrypt it.
      * **Password** (deprecated) - User / Password authentication on Snowflake [will be blocked November 2025](https://www.snowflake.com/en/blog/blocking-single-factor-password-authentification/). If you intend to use this authentication mechanism, see the section below. &#x20;
 3. Once you provide the required information, click Connect to finish the connection to Snowflake.
 4. After the connection is saved, go ahead and press the **Test** button. This will validate that you've completed the above steps correctly. Once you've got a checkmark for all four steps, you're good to go!
 
 ### Using User/Password Authentication (between now and Nov 2025)
 
-Snowflake has announced that they will block User/Password authentication w/o MFA starting April 1, 2025 and completing November 2025. Requiring MFA makes this authentication form impractical for automated use cases like Census. If you are currently using User/Password, you have a few options:
+Snowflake has announced that they will block User / Password authentication w/o MFA starting April 1, 2025 and completing November 2025. Requiring MFA makes this authentication form impractical for automated use cases like Census. If you are currently using User/Password, you have a few options:
 
 1. Switch to using Key-pair authentication (recommended)
 2. You can temporarily opt an account of this constraint by indicating they are a service account. Note that this will only allow continued access until November 2025.
@@ -99,7 +101,7 @@ Snowflake has announced that they will block User/Password authentication w/o MF
 ALTER USER CENSUS SET TYPE = LEGACY_SERVICE;
 ```
 
-## Allowed IP Addresses
+### Allowed IP Addresses
 
 If you're using Snowflake's Allowed IPs network policy, you'll need to add these Census IP addresses to your list. You can find Census's set of IP address for your region in [Regions & IP Addresses](../../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses). Visit the [Snowflake Help Center](https://docs.snowflake.net/manuals/user-guide/network-policies.html) for more details on how to specify these IPs as part of your network policy.
 
