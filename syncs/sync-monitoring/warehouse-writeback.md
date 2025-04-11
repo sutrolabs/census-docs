@@ -18,7 +18,6 @@ Census can provide detailed logging for all data warehouse sources using the [Ad
 * Snowflake
 * BigQuery
 * Redshift
-* PostgreSQL (version 13 or later is required)
 * Databricks
 
 ## 🖥️ Configuring Warehouse Writeback
@@ -45,7 +44,6 @@ Census exposes detailed logging information in a view called `sync_log` in your 
 * **Snowflake**: `CENSUS.CENSUS.SYNC_LOG`
 * **BigQuery:** `census.sync_log`
 * **Redshift:** `census.sync_log`
-* **PostgreSQL**: `census.sync_log`
 * **Databricks**: `census.census.sync_log`
 
 #### `sync_log` View Schema
@@ -77,7 +75,6 @@ Metadata tables for source objects can be found in the following tables, by ware
 * **Snowflake**: `CENSUS.CENSUS.SOURCE_OBJECTS`
 * **BigQuery:** `census.source_objects`
 * **Redshift:** `census.source_objects`
-* **PostgreSQL**: `census.source_objects`
 * **Databricks**: not yet supported
 
 #### Schema
@@ -95,7 +92,6 @@ Metadata tables for destinations can be found in the following tables, by wareho
 * **Snowflake**: `CENSUS.CENSUS.DESTINATIONS`
 * **BigQuery:** `census.destinations`
 * **Redshift:** `census.destinations`
-* **PostgreSQL**: `census.destinations`
 * **Databricks**: not yet supported
 
 #### Schema
@@ -113,7 +109,6 @@ Metadata tables for destinations can be found in the following tables, by wareho
 * **Snowflake**: `CENSUS.CENSUS.DESTINATION_OBJECTS`
 * **BigQuery:** `census.destination_objects`
 * **Redshift:** `census.destination_objects`
-* **PostgreSQL**: `census.destination_objects`
 * **Databricks**: not yet supported
 
 #### Schema
