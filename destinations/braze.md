@@ -86,8 +86,8 @@ Census currently supports syncing to the following Braze objects.
 | ----------------------------: | :------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------: |
 |                         Event |        ✅       |                                            Event ID                                            |                   Send                   |
 |                Purchase Event |        ✅       |                                      Any Unique Identifier                                     |                   Send                   |
-|        API-Triggered Campaign |        ✅       |                                        External User ID                                        |                   Send                   |
-|    API-Triggered Canvas Entry |        ✅       |                                        External User ID                                        |                   Send                   |
+|        API-Triggered Campaign |        ✅       |                              External User ID, Census Tracking ID                              |                   Send                   |
+|    API-Triggered Canvas Entry |        ✅       |                              External User ID, Census Tracking ID                              |                   Send                   |
 |                       Catalog |        ✅       |                                           Catalog ID                                           |     Update or Create, Update, Mirror     |
 |                        Cohort |        ✅       |                                        External User ID                                        |             Update or Create             |
 | Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |                  Mirror                  |
@@ -181,6 +181,8 @@ To sync to Catalogs, you'll need to do two additional steps:
 ### API-Triggered Campaign and Canvas Entry
 
 API Triggered Campaign and Canvas Entries are useful for triggering transactional actions within Braze. Like Catalogs, you will need to create the Campaign/Canvas Entry in Braze first before it appears as a destination object in Census.
+
+If your users can be entered into the same Canvas or Campaign multiple times, use Census Tracking ID as the sync key. External ID will still need to be mapped as a required field.
 
 You can [read more about Braze API-Triggered Campaigns](https://www.braze.com/docs/user_guide/engagement_tools/campaigns/building_campaigns/delivery_types/api_triggered_delivery/) and Canvas Entries in their documentation.
 
