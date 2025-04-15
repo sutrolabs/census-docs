@@ -62,7 +62,7 @@ SaaS Datasets can be used with all Census features:
 
 * Add [AI Columns](../ai-columns/) for AI-powered data enrichment
 * Apply [third-party enrichments](../enrichment/)
-* Perform [deduplication](../entity-resolution/)
+* Perform [deduplication](../entity-resolution.md)
 * Create [segments](../../audience-hub/) for targeted marketing
 * Build [syncs](broken-reference) to other destinations
 

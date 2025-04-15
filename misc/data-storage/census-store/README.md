@@ -10,7 +10,7 @@ The data stored in Census Store includes:
 
 * SaaS datasets
 * CSV datasets
-* [entity-resolution](../../../datasets/entity-resolution/ "mention") datasets
+* [entity-resolution.md](../../../datasets/entity-resolution.md "mention") datasets
 * ...plus [ai-columns](../../../datasets/ai-columns/ "mention"), [enrichment](../../../datasets/enrichment/ "mention"), and [warehouse-writeback.md](../../../syncs/sync-monitoring/warehouse-writeback.md "mention") logs for all of these datasets
 
 Your workspace’s Census Store catalog is created for you the first time you create one of these resources.
@@ -86,4 +86,3 @@ You can use Census Store's Iceberg catalog to integrate the data in Census Store
 
 * [**Query Census Store from Snowflake**](query-census-store-from-snowflake.md)\
   Integrate Census Store with your Snowflake warehouse using Apache Iceberg for Zero-ETL access to SaaS and CSV datasets
-
