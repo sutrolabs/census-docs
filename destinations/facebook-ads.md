@@ -195,7 +195,7 @@ Let's take a look at an example to see how it would behave:
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-`custom_data` above is: `{"city": "New York", "custom_data_field_1": "value_3"}`
+The Custom Data mapping above is: `{"city": "New York", "custom_data_field_1": "value_3"}` .
 
 The following would get sent to Facebook:
 
