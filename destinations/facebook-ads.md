@@ -187,7 +187,7 @@ For a more complete description of each identifier, please see [Facebook's API d
 
 ### Custom Data as JSON (Advanced)
 
-The Facebook API accepts two JSON objects for data: `user_data` and `custom_data` . Behind the scenes, Census already done the hard work of determining which parameters go in which object.
+The Facebook API accepts two JSON objects for data: `user_data` and `custom_data` . Behind the scenes, Census has already done the hard work of determining which parameters go in which object.
 
 However, in cases where you want more control over which parameters are sent, we allow you to configure the `custom_data` object as JSON.&#x20;
 
