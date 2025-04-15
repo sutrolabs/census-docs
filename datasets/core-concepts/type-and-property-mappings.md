@@ -2,7 +2,7 @@
 
 Your data oftentimes describes standard universal concepts such as people, organizations or time-based events. Datasets currently support several specific dataset types to help you encode this information into Census.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Type
 
@@ -30,6 +30,6 @@ Dataset Types go hand in hand with Dataset Property Mappings. Property Mappings 
 | Name              | A column that contains the name for a given organization. Only available on the Company dataset, for which it's optional. Name will be used as the pinned column when viewing a Dataset via the Dataset Explorer.                                                                                                                                                             |
 | Domain            | A column that contains the domain for a given organization. Only available on the Company dataset, for which it's optional. Domain will be used to display website logos when viewing a Dataset via the Dataset Explorer.                                                                                                                                                     |
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Don't worry, all of your dataset's existing columns will be available for syncing and segmenting. Property Mappings just indicate the columns on your entity that have special value for Census.

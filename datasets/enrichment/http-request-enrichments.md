@@ -57,7 +57,7 @@ Example:
 Say you want to query from `https://geolite.info/geoip/v2.1/country/192.168.123.132`. In this case, the `Base URL` is `https://geolite.info/geoip/v2.1/country` and the `endpoint` is `192.168.123.132`&#x20;
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Defining the Request
 
@@ -71,7 +71,7 @@ Say you want to query from `https://geolite.info/geoip/v2.1/country/192.168.123.
 The request body should be a valid JSON object.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Defining the Response
 

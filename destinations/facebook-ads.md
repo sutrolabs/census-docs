@@ -185,6 +185,29 @@ For a more complete description of each identifier, please see [Facebook's API d
 | --------- | ---------- | -------------- | ----------------------- | ------------- | --------------- | --------------------------------------------------------------------------------------------------------------------- |
 | 1234      | 1000294785 | website        | 2022-01-01 00:00:00+000 | sample\_event | test@domain.com | [Like the ones listed above](https://docs.getcensus.com/destinations/facebook-ads#c.-customer-information-parameters) |
 
+### Custom Data as JSON (Advanced)
+
+The Facebook API accepts two JSON objects for data: `user_data` and `custom_data` . Behind the scenes, Census already done the hard work of determining which parameters go in which object.
+
+However, in cases where you want more control over which parameters are sent, we allow you to configure the `custom_data` object as JSON.&#x20;
+
+Let's take a look at an example to see how it would behave:
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+`custom_data` above is: `{"city": "New York", "custom_data_field_1": "value_3"}`
+
+The following would get sent to Facebook:
+
+* "user\_data": {"city":"San Francisco"}&#x20;
+* "custom\_data": {\
+  "city": "New York", \
+  "custom\_data\_field\_1": "value\_3", \
+  "custom\_data\_field\_2": "value\_2"\
+  }
+
+In other words, Census will merge the Custom Data JSON object with any other fields that are also in `custom_data` . For duplicate field names, the ones in the JSON object will be used.
+
 ## 🆘 Common Errors
 
 Sometimes error messages can be a little cryptic. Here's some Facebook errors that pop up on occasion and what they mean.

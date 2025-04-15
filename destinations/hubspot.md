@@ -185,7 +185,7 @@ In Mirror syncs, Census will perform a "soft delete" and archive records instead
 
 We also support HubSpot's "GDPR Delete", which is a permanent deletion. This sync behaviour is available on the Contact object: set the GDPR Delete endpoint toggle to `TRUE`.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ## Sync Speed
 

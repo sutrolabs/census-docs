@@ -17,6 +17,6 @@ Your default Census landing page is the in-app homepage, also available at the t
 * Group by destination or by status
 * Pick a single source or destination as a filter
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Your workspace’s Open Alerts are also highlighted, so you can click into any syncs that may need immediate attention. [Learn more about alerting](https://docs.getcensus.com/basics/sync-monitoring/alerts).
