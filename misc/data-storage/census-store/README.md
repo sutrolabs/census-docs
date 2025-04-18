@@ -19,7 +19,9 @@ You can find Census Store settings by clicking **Settings** in the Census left n
 
 ## Where data is stored
 
-By default, data in Census Store, along with sync metadata like snapshots, [Sync Tracking](https://docs.getcensus.com/basics/sync-monitoring/sync-tracking) and [API Inspector](https://docs.getcensus.com/basics/sync-monitoring/api-inspector) logs for datasets stored in Census Store, is stored in Census-provided object storage in your workspace’s region. You may also choose to have Census Store use your own object storage provider. This allows Census to manage data on your behalf, while also maintaining strong guarantees that your data at rest is stored within your cloud.
+By default, data in Census Store, along with sync metadata like snapshots, [Sync Tracking](https://docs.getcensus.com/basics/sync-monitoring/sync-tracking) and [API Inspector](https://docs.getcensus.com/basics/sync-monitoring/api-inspector) logs for datasets stored in Census Store, is stored in Census-provided object storage in your workspace’s region.&#x20;
+
+**You may also choose to have Census Store use your own object storage provider.** This allows Census to manage data on your behalf, while also maintaining strong guarantees that your data at rest is stored within your cloud.
 
 {% hint style="info" %}
 Census Store is only compatible with AWS S3-based storage at this time.
