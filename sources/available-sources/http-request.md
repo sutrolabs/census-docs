@@ -26,11 +26,14 @@ Setting up the HTTP Request source is super simple:
 Instead of being organized in schemas and tables like a traditional Census source, the HTTP Request source allows you to create **Topics** to keep your unique categories of data separate when pushing data to Census. A Topic could be something like web-events, user-updates,
 
 1. Navigate to the **Datasets** page
-2. Select the **HTTP Request** source you just created and hit **New Topic.**
+2. Select **New Dataset** in the upper right of the page.
+3. Select **Streaming Dataset** and click Next
+2. Select the **HTTP Request** source you just created from the **Data Source** drop down
 3. Give your Topic a **Name** and paste in a **sample event** that you'll be sending to Census on this Topic. We'll use this sample event to determine the schema of events. This is important so that we know what properties are available when creating syncs.
-4. Hit **Save Topic.**
+4. Hit **Create Dataset.**
 
-<figure><img src="../../.gitbook/assets/screenshot 2024-03-19 at 11.26@2x.png" alt="" width="563"><figcaption><p>An example of a Web Event topic configured with a sample message.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/HttpSourceStreamingSelection.png" alt="" width="563"><figcaption><p>Select the Streaming Dataset option</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/HttpSourceTopicSetup.png" alt="" width="563"><figcaption><p>An example of a Web Event topic configured with a sample message.</p></figcaption></figure>
 
 {% hint style="info" %}
 Note that for programmatic usecases HTTP Topics can also be managed via the [Census Management API](https://developers.getcensus.com/api-reference/topics/create-a-new-topic).
