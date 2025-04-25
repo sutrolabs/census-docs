@@ -14,7 +14,11 @@ The profile explorer allows you to build and explore your complete customer 360,
 
 To explore your first dataset, click on **Explorer** in the left-hand navigation of Census and then choose your dataset in the top dropdown.  A sample of the data will be shown in the explorer.&#x20;
 
-This data can then be searched using the search box or sorted by clicking on the sort button.  By selecting each column header you can also sort or hide each property.  To show a property that has been hidden use the 'show properties' button.&#x20;
+This data can then be searched using the search box. The following fields are searchable for each [dataset type](../../datasets/core-concepts/type-and-property-mappings.md#type):
+
+<table><thead><tr><th>Entity Type</th><th>Searchable fields</th><th data-hidden></th></tr></thead><tbody><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f464">👤</span> Person</td><td>Unique ID, Email</td><td></td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f3e2">🏢</span> Company</td><td>Unique ID, Name, Domain</td><td></td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="2753">❓</span>Other</td><td>Unique ID</td><td></td></tr></tbody></table>
+
+Results can be sorted by clicking on the sort button.  By selecting each column header you can also sort or hide each property.  To show a property that has been hidden use the 'show properties' button.&#x20;
 
 Each record can also be explored in more detail by clicking on an individual row,  this will bring up a profile view of that record with all the information known.&#x20;
 
