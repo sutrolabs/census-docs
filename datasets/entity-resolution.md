@@ -4,6 +4,15 @@ Business teams are dependent on trusted data to execute their growth initiatives
 
 These duplicate entities lead to chaos in CRM tools, inefficient marketing campaigns, incorrect analysis and wasted resources.
 
+### Quickstart — Using Entity Resolution
+
+The Entity Resolution flow can be kicked off from 2 places.
+
+1. From the Datasets tab, select the dataset you would like to deduplicate from the list, and click the "Deduplicate" button on top of the list.
+2. From a given Dataset, click "Deduplicate" in the top header to kick off the flow for that dataset.
+
+{% @arcade/embed flowId="8nKaVuFmfhlp5sQ31qxF" url="https://app.arcade.software/share/8nKaVuFmfhlp5sQ31qxF" %}
+
 ### Entity Resolution
 
 Entity Resolution helps you de-duplicate and associate records across all your data sources. Some key users cases include:
