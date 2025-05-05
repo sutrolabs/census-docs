@@ -19,7 +19,7 @@ To create your first SaaS Dataset:
 
 1. Navigate to the `Datasets` tab in Census
 2. Click `+ New Dataset` in the top-right corner
-3. Select `Import Dataset from App`
+3. Select `Import Dataset from SaaS App`
 4. Choose your CRM system (HubSpot or Salesforce)
 5. Select the objects and fields you want to import
 6. Configure your refresh schedule
