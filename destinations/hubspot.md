@@ -22,19 +22,19 @@ Follow the OAuth flow to connect HubSpot. Easy!
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-| **Object Name**          | **Supported?** | **Sync Keys**                                         | **Behaviors**                                 |
-| ------------------------ | :------------: | ----------------------------------------------------- | --------------------------------------------- |
-| Company                  |        ✅       | Object ID, Domain, and qualifying custom properties\* | Update Only, Update or Create, Mirror         |
-| Contact                  |        ✅       | Object ID, Email, and qualifying custom properties\*  | Update Only, Update or Create, Mirror, Delete |
-| Contact & Static List    |        ✅       | Email                                                 | Update Only, Update or Create, Mirror         |
-| Deal                     |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror         |
-| Product                  |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror         |
-| Line Item                |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror         |
-| Custom Object            |        ✅       | Object ID, any searchableProperty                     | Update Only, Update or Create, Mirror         |
-| Subscription Preferences |        ✅       | Email                                                 | Mirror                                        |
-| Custom Behavioral Event  |        ✅       | Unique Event ID                                       | Send                                          |
-| Email                    |        ✅       | N/A                                                   | Send                                          |
-| Ticket                   |        ✅       | Record ID                                             | Send                                          |
+| **Object Name**          | **Supported?** | **Sync Keys**                                         | **Behaviors**                                              |
+| ------------------------ | :------------: | ----------------------------------------------------- | ---------------------------------------------------------- |
+| Company                  |        ✅       | Object ID, Domain, and qualifying custom properties\* | Update Only, Update or Create, Mirror                      |
+| Contact                  |        ✅       | Object ID, Email, and qualifying custom properties\*  | Create Only, Update Only, Update or Create, Mirror, Delete |
+| Contact & Static List    |        ✅       | Email                                                 | Update Only, Update or Create, Mirror                      |
+| Deal                     |        ✅       | Object ID, and qualifying custom properties\*         | Create Only, Update Only, Update or Create, Mirror         |
+| Product                  |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror                      |
+| Line Item                |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror                      |
+| Custom Object            |        ✅       | Object ID, any searchableProperty                     | Update Only, Update or Create, Mirror                      |
+| Subscription Preferences |        ✅       | Email                                                 | Mirror                                                     |
+| Custom Behavioral Event  |        ✅       | Unique Event ID                                       | Send                                                       |
+| Email                    |        ✅       | N/A                                                   | Send                                                       |
+| Ticket                   |        ✅       | Record ID                                             | Send                                                       |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Hubspot objects and/or behaviors
 
