@@ -276,6 +276,7 @@
 * [Data Storage](misc/data-storage/README.md)
   * [Census Store](misc/data-storage/census-store/README.md)
     * [Query Census Store from Snowflake](misc/data-storage/census-store/query-census-store-from-snowflake.md)
+    * [Query Census Store locally using DuckDB](misc/data-storage/census-store/query-census-store-from-snowflake-1.md)
   * [General Object Storage](misc/data-storage/general-object-storage.md)
   * [Bring Your Own Bucket](misc/data-storage/bring-your-own-bucket/README.md)
     * [Bring your own S3 Bucket](misc/data-storage/bring-your-own-bucket/bring-your-own-s3-bucket.md)
