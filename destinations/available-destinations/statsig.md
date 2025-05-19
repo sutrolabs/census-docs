@@ -20,7 +20,7 @@ For instructions more specifically on syncing to Events there is additional docu
 
 With your API key, return to Census and visit the **Destinations** tab. Click on the **New Destination** button and select **Statsig** from the menu. Copy and paste the value into the dialog and hit save. You should be clear to create a new sync!
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 at 4.18.27 PM.png" alt=""><figcaption><p>A sync key is required to uniquely identify each event.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 at 4.18.27 PM.png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Configure your Sync <a href="#sync-configuration" id="sync-configuration"></a>
 
