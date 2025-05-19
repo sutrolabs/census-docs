@@ -252,6 +252,7 @@
   * [Snowflake](destinations/snowflake.md)
   * [Split](destinations/split.md)
   * [Sprig](destinations/sprig.md)
+  * [Statsig](destinations/available-destinations/statsig.md)
   * [Stripe](destinations/stripe.md)
   * [The Trade Desk](destinations/trade-desk.md)
   * [TikTok](destinations/tiktok.md)
