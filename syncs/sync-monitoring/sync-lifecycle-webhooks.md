@@ -55,7 +55,7 @@ There are two main categories of events a webhook can subscribed to: sync alert 
 ### Payload Examples by Event
 
 {% hint style="info" %}
-Please note the ids and messages in the examples below are merely examples and the values will vary based on your individual workspace and configured sync alerts
+Please note the ids and messages in the below payloads are merely examples and the values will vary based on your individual workspace and configured sync alerts
 {% endhint %}
 
 **sync.alert.raised**
