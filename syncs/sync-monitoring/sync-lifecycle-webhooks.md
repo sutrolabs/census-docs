@@ -32,6 +32,131 @@ There are two main categories of events a webhook can subscribed to: sync alert 
 4. **sync.success** - when a sync run is completed successfully
 5. **sync.failed** - when a sync run has failed
 
+## Payload Fields and Examples
+
+### Fields always present in the payload:
+
+* workspace\_id
+* sync\_id
+* sync\_run\_id
+* event
+
+### Additional fields present by event type:
+
+* **sync.completed**
+  * status
+* **sync.alert.raised** & **sync.alert.resolved**
+  * alert\_instance\_id
+  * alert\_type
+  * message
+  * details
+  * followup\_url
+
+### Payload Examples by Event
+
+{% hint style="info" %}
+Please note the ids and messages in the examples below are merely examples and the values will vary based on your individual workspace and configured sync alerts
+{% endhint %}
+
+**sync.alert.raised**
+
+```
+{
+    "workspace_id": 3167,
+    "sync_id": 3167956,
+    "sync_run_id": 324402082,
+    "alert_instance_id": 626248,
+    "alert_type": "FailureAlertConfiguration",
+    "message": "Sync Failed",
+    "details": "Sync has failed with error: A mapped source column has been del
+    eted: email",
+    "followup_url": "https://app.getcensus.com/workspaces/3167/syncs/316795
+    6/sync-history",
+    "event": "sync.alert.raised"
+}
+```
+
+**sync.alert.resolved**
+
+<pre><code>{
+    "workspace_id": 3167,
+    "sync_id": 3167956,
+    "sync_run_id": 324403394,
+<strong>    "alert_instance_id": 626248,
+</strong>    "alert_type": "FailureAlertConfiguration",
+<strong>    "message": "Sync Recovered",
+</strong>    "details": "Sync has recovered",
+<strong>    "followup_url": "https://app.getcensus.com/workspaces/3167/syncs/316795
+</strong>    6/sync-history",
+    "event": "sync.alert.resolved"
+}
+</code></pre>
+
+**sync.triggered**&#x20;
+
+<pre><code>{
+<strong>    "workspace_id": 3167,
+</strong>    "sync_id": 3167956,
+    "sync_run_id": 324399613,
+    "event": "sync.triggered"
+}
+</code></pre>
+
+**sync.started**
+
+```
+{
+    "workspace_id": 3167,
+    "sync_id": 3167956,
+    "sync_run_id": 324399613,
+    "event": "sync.started"
+}
+```
+
+**sync.completed**
+
+```
+{
+    "workspace_id": 3167,
+    "sync_id": 3167956,
+    "sync_run_id": 324399613,
+    "event": "sync.completed",
+    "status": "ok"
+}
+
+If the sync run fails the status will be "emergency"
+
+{
+    "workspace_id": 3167,
+    "sync_id": 3167956,
+    "sync_run_id": 324402082,
+    "event": "sync.completed",
+    "status": "emergency"
+}
+```
+
+**sync.success**
+
+```
+{
+    "workspace_id": 3167,
+    "sync_id": 3167956,
+    "sync_run_id": 324399613,
+    "event": "sync.success"
+}
+```
+
+**sync.failed**&#x20;
+
+```
+{
+    "workspace_id": 3167,
+    "sync_id": 3167956,
+    "sync_run_id": 324402082,
+    "event": "sync.failed"
+}
+```
+
 ## Validating Webhook Payloads
 
 To verify the webhook payloads your server receives are actually coming from Census, use the secret from the creation flow to validate each payload. Each payload will include a HMAC-SHA256 `X-Signature` header calculated using the payload and secret token.&#x20;
