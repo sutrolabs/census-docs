@@ -1,6 +1,9 @@
 # 🦩 Overview
 
-Census is the leading [Universal Data Platform](https://www.getcensus.com/blog/toward-a-universal-data-platform) that brings data unification, transformation, and activation together in one collaborative workspace. As pioneers in [Data Activation](https://www.getcensus.com/blog/what-is-data-activation) and [Reverse ETL](https://www.getcensus.com/blog/what-is-reverse-etl), we make it easy to sync data from various sources into sales, marketing, and other customer-facing tools that drive your business.
+Census brings data unification, transformation, and activation together in one collaborative workspace. As pioneers in [Data Activation](https://www.getcensus.com/blog/what-is-data-activation) and [Reverse ETL](https://www.getcensus.com/blog/what-is-reverse-etl), we make it easy to sync data from various sources into sales, marketing, and other customer-facing tools that drive your business.
+
+> **Census has joined forces with Fivetran!** \
+> [Learn more](https://www.getcensus.com/blog/census-joins-forces-with-fivetran) about what this means for the future of data management and activation.
 
 |                                                                                                                                                                                   |                                                                                                                                                                      |                                                                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
