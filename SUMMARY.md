@@ -257,6 +257,7 @@
   * [The Trade Desk](destinations/trade-desk.md)
   * [TikTok](destinations/tiktok.md)
   * [Totango](destinations/totango.md)
+  * [Unify](destinations/available-destinations/unify.md)
   * [Userflow](destinations/userflow.md)
   * [Userpilot](destinations/userpilot.md)
   * [Vero Cloud](destinations/vero.md)
