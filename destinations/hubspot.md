@@ -28,12 +28,13 @@ Follow the OAuth flow to connect HubSpot. Easy!
 | Contact                  |        ✅       | Object ID, Email, and qualifying custom properties\*  | Create Only, Update Only, Update or Create, Mirror, Delete |
 | Contact & Static List    |        ✅       | Email                                                 | Update Only, Update or Create, Mirror                      |
 | Deal                     |        ✅       | Object ID, and qualifying custom properties\*         | Create Only, Update Only, Update or Create, Mirror         |
-| Product                  |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror                      |
-| Line Item                |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror                      |
-| Custom Object            |        ✅       | Object ID, any searchableProperty                     | Update Only, Update or Create, Mirror                      |
-| Subscription Preferences |        ✅       | Email                                                 | Mirror                                                     |
 | Custom Behavioral Event  |        ✅       | Unique Event ID                                       | Send                                                       |
+| Custom Object            |        ✅       | Object ID, any searchableProperty                     | Update Only, Update or Create, Mirror                      |
 | Email                    |        ✅       | N/A                                                   | Send                                                       |
+| Lead                     |        ✅       | Lead Name                                             | Create Only, Update Only, Update or Create, Mirror         |
+| Line Item                |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror                      |
+| Product                  |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror                      |
+| Subscription Preferences |        ✅       | Email                                                 | Mirror                                                     |
 | Ticket                   |        ✅       | Record ID                                             | Send                                                       |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Hubspot objects and/or behaviors
