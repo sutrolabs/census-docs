@@ -67,7 +67,7 @@ Census allows you to either merge duplicate records into one or mark them as dup
 
 If your source dataset looks like below, examples of how your deduplicated dataset will look like is shown below.&#x20;
 
-Source Dataset:&#x20;
+**Source Dataset:**&#x20;
 
 | ID | EMAIL              | FULL\_NAME   | PHONE        |
 | -- | ------------------ | ------------ | ------------ |
@@ -77,18 +77,24 @@ Source Dataset:&#x20;
 
 
 
-Merged Dataset: Fuzzy Match on Full Name with Medium Similarity, Resolve to Longest Email
+**Merged Dataset:** Fuzzy Match on Full Name with Medium Similarity, Resolve to Longest Email
 
-| ID | EMAIL              | FULL\_NAME   | PHONE        |
-| -- | ------------------ | ------------ | ------------ |
-| 1  | john@example.com   | John Doe     | 123-356-6891 |
-| 3  | jannet@example.com | Jannet Smith | 245-891-9012 |
+| ID | \_census\_id                  | EMAIL              | FULL\_NAME   | PHONE        |
+| -- | ----------------------------- | ------------------ | ------------ | ------------ |
+| 1  | cid\_a209634ab08e48eeab7fd79f | john@example.com   | John Doe     | 123-356-6891 |
+| 3  | cid\_b6447e18e2954750a369bb16 | jannet@example.com | Jannet Smith | 245-891-9012 |
 
 
 
-Marked as Duplicate Dataset: Fuzzy Match on Full Name with Medium Similarity, Resolve to Longest Email
+**Marked as Duplicate Dataset:** Fuzzy Match on Full Name with Medium Similarity, Resolve to Longest Email
 
-<table><thead><tr><th width="62.59765625">ID</th><th width="155.49609375" data-type="number">_census_parent_id</th><th width="284.76171875">_census_email_similarity_with_parent</th><th width="194.90625">_census_has_duplicates</th><th width="205.1953125">EMAIL</th><th width="181.34765625">FULL_NAME</th><th>PHONE</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>1.0</td><td>true</td><td>john@example.com</td><td>John Doe</td><td>123-356-6891</td></tr><tr><td>2</td><td>1</td><td>0.96</td><td>true</td><td>john@gmail.com</td><td>Johnny Doe</td><td>123-356-6891</td></tr><tr><td>3</td><td>3</td><td>1.0</td><td>false</td><td>jannet@example.com</td><td>Jannet Smith</td><td>245-891-9012</td></tr></tbody></table>
+<table><thead><tr><th width="62.59765625">ID</th><th>_census_id</th><th width="155.49609375" data-type="number">_census_parent_id</th><th width="284.76171875">_census_email_similarity_with_parent</th><th width="194.90625">_census_has_duplicates</th><th width="205.1953125">EMAIL</th><th width="181.34765625">FULL_NAME</th><th>PHONE</th></tr></thead><tbody><tr><td>1</td><td>cid_a209634ab08e48eeab7fd79f</td><td>1</td><td>1.0</td><td>true</td><td>john@example.com</td><td>John Doe</td><td>123-356-6891</td></tr><tr><td>2</td><td>cid_a209634ab08e48eeab7fd79f</td><td>1</td><td>0.96</td><td>true</td><td>john@gmail.com</td><td>Johnny Doe</td><td>123-356-6891</td></tr><tr><td>3</td><td>cid_b6447e18e2954750a369bb16</td><td>3</td><td>1.0</td><td>false</td><td>jannet@example.com</td><td>Jannet Smith</td><td>245-891-9012</td></tr></tbody></table>
+
+#### Census IDs
+
+All records in a resolved dataset will automatically be assigned a unique ID called the "Census ID" (`_census_id`). This is a Census-generated ID that represents a single resolved entity in your dataset. For instance, if 2 records in the base dataset get resolved into a single entity, they will both have the same `_census_id` value.
+
+Census IDs will remain "stable" as your dataset changes. For instance, if a group of records make up the "John Smith" entity in your resolved dataset, that entity will retain the same Census ID even as individual records that contribute to the entity enter or leave your base dataset.
 
 #### Merge Rules
 
