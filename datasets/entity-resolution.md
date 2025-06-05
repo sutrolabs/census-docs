@@ -129,3 +129,19 @@ Entity Resolution generates a new dataset that is written back to [Census Store]
 Entity resolution is performed by internal Census syncs that you can view the statuses of on the dataset page. You can also change the frequency at which these syncs run and manually trigger refreshes.&#x20;
 
 <figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+
+### FAQ
+
+#### How does Census handle NULLs for fields that are used in matching and column overrides?
+
+For matching, records with NULL values for that match rule will be ignored. For instance, if you have a rule to match records when they have the exact same email, we will not match 2 records that have NULL emails.
+
+For merging and column overrides, you can be explicit about how you want NULLs to be treated in your configuration. For instance, you can set a column override on the winning record to select non-NULL values for specific columns:
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-06-05 at 2.33.37 PM.png" alt=""><figcaption></figcaption></figure>
+
+#### Can I be alerted when an Entity Resolution refresh fails?
+
+Yes, you can be notified if a refresh fails by subscribing to [Sync Alerts](https://docs.getcensus.com/syncs/sync-monitoring/alerts) for the syncs powering Entity Resolution, which are linked to from the Deduplicate dataset status bar:
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-06-05 at 2.38.47 PM.png" alt=""><figcaption></figcaption></figure>
