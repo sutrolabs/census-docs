@@ -23,7 +23,7 @@ In addition to these certifications:
 
 ### SOC2 Type 2 Audit Report
 
-The latest copy of our SOC2 audit report can be requested by existing Census customers via [Conveyor](https://app.conveyor.com/profile/census). If you are currently trialing Census, your point of contact can provide you the SOC 2 audit report under NDA.
+The latest copy of our SOC2 audit report can be requested by existing Census customers [here](https://trust.fivetran.com/product/census/soc-2-type-2). If you are currently trialing Census, your point of contact can provide you the SOC 2 audit report under NDA.
 
 ## ℹ️ How it works
 
