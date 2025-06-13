@@ -185,7 +185,9 @@ This error happens when Census is installed in Salesforce, but needs to be unblo
 
 This error occurs with highly automated or frequently changing Salesforce deployments. When Census is updating, it submits a batch of records to Salesforce. Salesforce splits up this batch into smaller sub batches and attempts to update them in a transaction. In this case, Salesforce was unable to create a transaction to update the specified records.
 
-Typically, this is a transient issue and the next run of the sync won't have the same problem. However, if it persists, please contact your Census representative. In some cases, we can help control batch sizes being passed to Census.
+Typically, this is a transient issue and the next run of the sync won't have the same problem. However, if it persists, you can adjust the batch size of the sync using Advanced Configuration setting on the sync Overview Page. Please note this setting is only available for Salesforce syncs at present.
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-06-13 at 4.35.59 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Need help connecting to Salesforce?
 
