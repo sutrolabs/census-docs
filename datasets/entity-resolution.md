@@ -39,9 +39,9 @@ Some of the most common rules include
 * Matching users based on email address, mailing address or customer IDs
 * Matching companies based on their domain, company name or location
 
-You can create complex rules using AND and OR operators across the rules.
+You can create complex rules using composite AND and OR operators across the rules.
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **Fuzzy Match**
 
