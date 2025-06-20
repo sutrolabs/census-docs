@@ -34,6 +34,7 @@ Follow the OAuth flow to connect HubSpot. Easy!
 | Lead                     |        ✅       | Lead Name                                             | Create Only, Update Only, Update or Create, Mirror         |
 | Line Item                |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror                      |
 | Product                  |        ✅       | Object ID, and qualifying custom properties\*         | Update Only, Update or Create, Mirror                      |
+| Static List Membership   |        ✅       | Record ID                                             | Update or Create, Mirror                                   |
 | Subscription Preferences |        ✅       | Email                                                 | Mirror                                                     |
 | Ticket                   |        ✅       | Record ID                                             | Send                                                       |
 
