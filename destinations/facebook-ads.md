@@ -82,10 +82,7 @@ If you are setting up a connection with a System User Token when you input your 
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-|                                                                           **Object Name** | **Supported** | **Identifiers**                                                                                                                |       **Behaviors**      |
-| ----------------------------------------------------------------------------------------: | :-----------: | ------------------------------------------------------------------------------------------------------------------------------ | :----------------------: |
-|                                                                           Custom Audience |       ✅       | [External ID](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/), Email, Phone Number | Update or Create, Mirror |
-| Conversions ([CAPI](https://developers.facebook.com/docs/marketing-api/conversions-api/)) |       ✅       | Any unique ID                                                                                                                  |           Send           |
+<table data-header-hidden><thead><tr><th width="213.296875" align="right"></th><th align="center"></th><th></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported</strong></td><td><strong>Identifiers</strong></td><td align="center"><strong>Behaviors</strong></td></tr><tr><td align="right">Custom Audience</td><td align="center">✅</td><td><a href="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/external-id/">External ID</a>, Email, Phone Number</td><td align="center">Update or Create, Mirror</td></tr><tr><td align="right">Conversions (<a href="https://developers.facebook.com/docs/marketing-api/conversions-api/">CAPI</a>, includes app events, offline conversions, and web events)</td><td align="center">✅</td><td>Any unique ID</td><td align="center">Send</td></tr></tbody></table>
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
