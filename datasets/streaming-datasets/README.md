@@ -12,6 +12,7 @@ Streaming datasets enable real-time data activation in Census, allowing you to s
 ## Getting Started
 
 ### Connect a Streaming Source
+
 Before you create a Streaming Dataset, you’ll need to connect a streaming source. See individual source documentation:
 
 * [Kafka](../sources/available-sources/kafka.md)
@@ -40,16 +41,15 @@ Census does not treat sample messages as customer data, and they are stored with
 
 When you are finished configuring your new Streaming Dataset, click **Create Dataset**.
 
-
 ## Key Features of Streaming Datasets
 
 ### Real-time Processing
 
 Streaming datasets process data continuously as it arrives, enabling:
 
-- Ultra-low latency from data creation to activation
-- Immediate reactions to customer behavior or system events
-- Real-time personalization and engagement opportunities
+* Ultra-low latency from data creation to activation
+* Immediate reactions to customer behavior or system events
+* Real-time personalization and engagement opportunities
 
 ### Event-based Architecture
 
@@ -73,22 +73,27 @@ Unlike traditional datasets that operate on tables or views, streaming datasets 
 
 When activating streaming datasets through syncs, you can apply real-time transformations using Liquid Templates. This powerful feature allows you to:
 
-- Transform data structure and format on-the-fly without modifying the source
-- Apply conditional logic to determine what data gets sent to destinations
-- Format dates, numbers, and strings to match destination requirements
-- Combine multiple fields or extract specific parts of fields
-- Create dynamic content based on event properties
+* Transform data structure and format on-the-fly without modifying the source
+* Apply conditional logic to determine what data gets sent to destinations
+* Format dates, numbers, and strings to match destination requirements
+* Combine multiple fields or extract specific parts of fields
+* Create dynamic content based on event properties
 
 For example, you can use a Liquid Template to create a personalized message from a streaming event:
 
 ```liquid
-{% if event.event_type == "cart_abandon" %}
+
+<div data-gb-custom-block data-tag="if" data-0='cart_abandon' data-1='cart_abandon'>
+
   Hi {{ event.user_name }}, we noticed you left some items in your cart. 
   Use code COMEBACK15 for 15% off your purchase of {{ event.product_name }}.
-{% elsif event.event_type == "product_view" %}
+
+<div data-gb-custom-block data-tag="elsif" data-0='product_view' data-1='product_view'></div>
+
   Hi {{ event.user_name }}, interested in {{ event.product_name }}? 
   Check out our latest collection!
-{% endif %}
+
+</div>
 ```
 
 These transformations happen in real-time as events flow through Census, allowing you to customize and enrich your data without adding latency to your streaming pipeline.
@@ -96,58 +101,62 @@ These transformations happen in real-time as events flow through Census, allowin
 ## Use Cases for Streaming Datasets
 
 <details>
+
 <summary>Real-time Customer Engagement</summary>
 
 Streaming datasets enable you to respond to customer actions the moment they happen:
 
-- Trigger immediate follow-up messages when a customer abandons a cart
-- Send personalized product recommendations based on browsing behavior
-- Update customer segments in real-time based on website or app interactions
-- Personalize website experiences based on just-observed actions
-- Deliver timely notifications when customers meet specific criteria
-- Initiate onboarding sequences the moment a user signs up
+* Trigger immediate follow-up messages when a customer abandons a cart
+* Send personalized product recommendations based on browsing behavior
+* Update customer segments in real-time based on website or app interactions
+* Personalize website experiences based on just-observed actions
+* Deliver timely notifications when customers meet specific criteria
+* Initiate onboarding sequences the moment a user signs up
 
 </details>
 
 <details>
+
 <summary>Operational Alerting</summary>
 
 Keep your teams informed about critical events as they happen:
 
-- Send notifications to sales teams when high-value prospects take specific actions
-- Alert customer success teams when users encounter errors or get stuck
-- Notify support teams about potential service disruptions
-- Update dashboards in real-time with system performance metrics
-- Trigger escalations when SLA thresholds are approached
-- Monitor security events and respond to potential threats immediately
+* Send notifications to sales teams when high-value prospects take specific actions
+* Alert customer success teams when users encounter errors or get stuck
+* Notify support teams about potential service disruptions
+* Update dashboards in real-time with system performance metrics
+* Trigger escalations when SLA thresholds are approached
+* Monitor security events and respond to potential threats immediately
 
 </details>
 
 <details>
+
 <summary>Time-sensitive Data Updates</summary>
 
 Ensure your systems stay in sync with minimal delay:
 
-- Keep inventory systems updated across platforms to prevent overselling
-- Update pricing information across multiple channels simultaneously
-- Propagate user preference changes immediately across all systems
-- Sync subscription status changes to prevent access issues
-- Update account balances or usage metrics in near real-time
-- Reflect order status changes across customer-facing applications
+* Keep inventory systems updated across platforms to prevent overselling
+* Update pricing information across multiple channels simultaneously
+* Propagate user preference changes immediately across all systems
+* Sync subscription status changes to prevent access issues
+* Update account balances or usage metrics in near real-time
+* Reflect order status changes across customer-facing applications
 
 </details>
 
 <details>
+
 <summary>Event-driven Workflows</summary>
 
 Build sophisticated workflows that respond to events as they occur:
 
-- Trigger fulfillment processes when orders are placed
-- Initiate verification steps when suspicious activity is detected
-- Start onboarding workflows when new accounts are created
-- Launch re-engagement campaigns when usage drops below thresholds
-- Activate loyalty rewards when qualifying actions are completed
-- Coordinate cross-channel marketing based on customer interactions
+* Trigger fulfillment processes when orders are placed
+* Initiate verification steps when suspicious activity is detected
+* Start onboarding workflows when new accounts are created
+* Launch re-engagement campaigns when usage drops below thresholds
+* Activate loyalty rewards when qualifying actions are completed
+* Coordinate cross-channel marketing based on customer interactions
 
 </details>
 
@@ -155,22 +164,22 @@ Build sophisticated workflows that respond to events as they occur:
 
 Streaming datasets are designed to work with Census Live Syncs, which provide continuous data activation:
 
-- **Always On** - Census monitors your streaming source 24/7
-- **Immediate Processing** - Data is processed and synced as soon as it arrives
-- **Efficient Resource Usage** - Only changed data is processed and synced
+* **Always On** - Census monitors your streaming source 24/7
+* **Immediate Processing** - Data is processed and synced as soon as it arrives
+* **Efficient Resource Usage** - Only changed data is processed and synced
 
 ## Best Practices for Streaming Datasets
 
 Working with streaming data is different from batch processing. Here are some tips to help you get the most out of your streaming datasets:
 
-- **Include timestamps in your events** to ensure proper ordering and enable time-based processing
-- **Add unique identifiers** to each event to prevent duplicate processing and enable idempotent operations
-- **Filter events at the source** when possible to reduce unnecessary data transfer and processing
-- **Keep your events focused** by including only the data you need for your use cases
-- **Set up monitoring** for stream lag and processing delays to catch issues early
-- **Create alerts** within Census to detect anomalies
-- **Plan for schema evolution** by designing flexible event structures that can accommodate new fields
-- **Use Liquid Templates** for on-the-fly transformations rather than modifying your event sources
+* **Include timestamps in your events** to ensure proper ordering and enable time-based processing
+* **Add unique identifiers** to each event to prevent duplicate processing and enable idempotent operations
+* **Filter events at the source** when possible to reduce unnecessary data transfer and processing
+* **Keep your events focused** by including only the data you need for your use cases
+* **Set up monitoring** for stream lag and processing delays to catch issues early
+* **Create alerts** within Census to detect anomalies
+* **Plan for schema evolution** by designing flexible event structures that can accommodate new fields
+* **Use Liquid Templates** for on-the-fly transformations rather than modifying your event sources
 
 Remember that streaming datasets are designed for real-time use cases. If you don't need sub-minute latency, consider using basic datasets with scheduled syncs instead, which may be more cost-effective for your use case.
 

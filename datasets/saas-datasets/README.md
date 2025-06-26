@@ -60,8 +60,8 @@ See the [Census Store documentation](../../misc/data-storage/census-store/#icebe
 
 SaaS Datasets can be used with all Census features:
 
-* Add [AI Columns](../ai-columns/) for AI-powered data enrichment
-* Apply [third-party enrichments](../enrichment/)
+* Add [AI Columns](../smart-columns/ai-columns/) for AI-powered data enrichment
+* Apply [third-party enrichments](../smart-columns/enrichment/)
 * Perform [deduplication](../entity-resolution.md)
 * Create [segments](../../audience-hub/) for targeted marketing
 * Build [syncs](broken-reference) to other destinations

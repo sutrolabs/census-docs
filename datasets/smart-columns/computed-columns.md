@@ -4,7 +4,7 @@ Datasets support the ability to define no-code calculations and aggregation from
 
 These columns can be then used as any other column in your dataset, as a sync attribute or during segmentation building.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-06-09 at 5.17.32 AM.png" alt=""><figcaption><p>Census Computed Columns using Formula</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-06-09 at 5.17.32 AM.png" alt=""><figcaption><p>Census Computed Columns using Formula</p></figcaption></figure>
 
 You can create computed columns via the "New Computed Column" button in the Properties page of any of your datasets.
 

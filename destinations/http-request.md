@@ -56,14 +56,12 @@ If you are using multiple records per request together with a JSON template payl
 
 ```liquid
 [
-  {% raw %}
-{% for record in records %}
+  {% for record in records %}
   {
     "id": "{{ record['ID'] }}",
     "name": "{{ record['NAME'] }}"
   },
   {% endfor %}
-{% endraw %}
 ]
 ```
 

@@ -41,7 +41,7 @@ For this example, we will use [MaxMind](https://www.maxmind.com/en/geoip-api-web
 #### Defining a HTTP Request Connection
 
 1. Login to Census and select a Dataset you want to enrich on the Datasets tab
-2. Ensure that your dataset has a Unique ID Column. You can configure this by setting the [Type and Property Mappings](../core-concepts/type-and-property-mappings.md) on the Dataset
+2. Ensure that your dataset has a Unique ID Column. You can configure this by setting the [Type and Property Mappings](../../core-concepts/type-and-property-mappings.md) on the Dataset
 3. On the top right corner, navigate to Enrich & Enhance > Enrichments > HTTP Request
 4. Create a new HTTP Request Connection, or select an existing connection that you want to use
    1. For MaxMind, we will use their GeoLite API: _https://geolite.info/geoip/v2.1/country_
@@ -57,21 +57,21 @@ Example:
 Say you want to query from `https://geolite.info/geoip/v2.1/country/192.168.123.132`. In this case, the `Base URL` is `https://geolite.info/geoip/v2.1/country` and the `endpoint` is `192.168.123.132`&#x20;
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Defining the Request
 
 5. Once you have your HTTP Request Connection selected, you can begin setting up your HTTP request&#x20;
    1. Name your enrichment
    2. Choose an HTTP method, ex. `GET`&#x20;
-   3. Configure your endpoint. This could be a constant value, or use [Liquid Templates](../../syncs/structuring-data/liquid-templates.md) to encode record values in your endpoint. Note that the`url_encode` [Liquid Filter ](https://shopify.github.io/liquid/filters/url_encode/)should be used to ensure that any special characters in your data will be parsed properly to be used in the URL
-   4. If your chosen HTTP method supports defining a request body (ex. `POST`), you can also use [Liquid Templates](../../syncs/structuring-data/liquid-templates.md) to reference column values for each row.&#x20;
+   3. Configure your endpoint. This could be a constant value, or use [Liquid Templates](../../../syncs/structuring-data/liquid-templates.md) to encode record values in your endpoint. Note that the`url_encode` [Liquid Filter ](https://shopify.github.io/liquid/filters/url_encode/)should be used to ensure that any special characters in your data will be parsed properly to be used in the URL
+   4. If your chosen HTTP method supports defining a request body (ex. `POST`), you can also use [Liquid Templates](../../../syncs/structuring-data/liquid-templates.md) to reference column values for each row.&#x20;
 
 {% hint style="warning" %}
 The request body should be a valid JSON object.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Defining the Response
 
@@ -114,7 +114,7 @@ Then here are the values you would get back for each out output name:
 
 </details>
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 #### Final Steps
 

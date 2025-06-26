@@ -489,9 +489,7 @@ If you're writing advanced expression and want to store an intermediate result, 
 Make a new variable from a value:
 
 ```liquid
-{% raw %}
 {% assign name = record['NAME'] | upcase %}
-{% endraw %}
 ```
 
 #### [capture](https://shopify.github.io/liquid/tags/variable/#capture)
@@ -499,11 +497,9 @@ Make a new variable from a value:
 Make a new variable from captured text:
 
 ```liquid
-{% raw %}
 {% capture full_name -%}
   {{ record['FNAME'] }} {{ record['LNAME'] }}
 {%- endcapture %}
-{% endraw %}
 ```
 
 {% hint style="info" %}
@@ -519,7 +515,6 @@ You can build advanced conditional code with Liquid, for example, to use one var
 Construct a condition using boolean [operators](https://shopify.github.io/liquid/basics/operators/):
 
 ```liquid
-{% raw %}
 {% if record['LTV'] > 1000 -%}
   diamond
 {%- elsif record['LTV'] > 100 -%}
@@ -527,7 +522,6 @@ Construct a condition using boolean [operators](https://shopify.github.io/liquid
 {%- else -%}
   N/A
 {%- endif %}
-{% endraw %}
 ```
 
 #### [case/when](https://shopify.github.io/liquid/tags/control-flow/#casewhen)
@@ -535,7 +529,6 @@ Construct a condition using boolean [operators](https://shopify.github.io/liquid
 Construct conditions based on matching values:
 
 ```liquid
-{% raw %}
 {% case record['TYPE'] -%}
   {%- when "customer" -%}
      {{ record['CNAME'] }}
@@ -544,7 +537,6 @@ Construct conditions based on matching values:
   {%- else -%}
      anon
 {%- endcase %}
-{% endraw %}
 ```
 
 ### Looping
@@ -557,11 +549,9 @@ Generate text for each item:
 
 ```liquid
 [
-  {% raw %}
-{% for tag in record %}
+  {% for tag in record %}
   "{{ tag | upcase }}",
   {% endfor %}
-{% endraw %}
 ]
 ```
 
@@ -681,14 +671,12 @@ When generating JSON data using for [loops](liquid-templates.md#looping), this p
 ```liquid
 {
   "products": [
-    {% raw %}
-{% for product in record["PRODUCTS"] %}
+    {% for product in record["PRODUCTS"] %}
     {
       "id": {{ product.id }},
       "name": "{{ product.name }}"
     },
     {% endfor %}
-{% endraw %}
   ]
 }
 ```
@@ -749,12 +737,10 @@ If you want, you're free to use any other YAML features, like block-style collec
 
 ```liquid
 products:
-  {% raw %}
-{% for product in record["PRODUCTS"] %}
+  {% for product in record["PRODUCTS"] %}
   - id: {{ product.id }}
     name: "{{ product.name }}"
   {% endfor %}
-{% endraw %}
 ```
 
 <details>
