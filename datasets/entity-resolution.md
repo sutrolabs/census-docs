@@ -63,7 +63,7 @@ When building your match rules, you can choose what matching method you want to 
 
 **Output Type**
 
-Census allows you to either merge duplicate records into one or mark them as duplicates. If marked as duplicate, Census will add additional columns to note its parent ID and if it's a duplicate. In addition, for marked as duplicate mode, when fuzzy match rules are applied,  a similarity score column against the parent, is added for every fuzzy match rule.&#x20;
+Census allows you to either merge duplicate records into one or mark them as duplicates. If marked as duplicate, Census will add additional columns to note its parent ID and if it's a duplicate. In addition, for marked as duplicate mode, when fuzzy match rules are applied,  a similarity score column against the parent, is added for every fuzzy match rule (ie, `_census_email_similarity_with_parent`).&#x20;
 
 If your source dataset looks like below, examples of how your deduplicated dataset will look like is shown below.&#x20;
 
@@ -79,10 +79,7 @@ If your source dataset looks like below, examples of how your deduplicated datas
 
 **Merged Dataset:** Fuzzy Match on Full Name with Medium Similarity, Resolve to Longest Email
 
-| ID | \_census\_id                  | EMAIL              | FULL\_NAME   | PHONE        |
-| -- | ----------------------------- | ------------------ | ------------ | ------------ |
-| 1  | cid\_a209634ab08e48eeab7fd79f | john@example.com   | John Doe     | 123-356-6891 |
-| 3  | cid\_b6447e18e2954750a369bb16 | jannet@example.com | Jannet Smith | 245-891-9012 |
+<table><thead><tr><th>ID</th><th width="149">_census_id</th><th>_census_entity_resolution_lineage</th><th>EMAIL</th><th>FULL_NAME</th><th>PHONE</th></tr></thead><tbody><tr><td>1</td><td>cid_a209634ab08e48eeab7fd79f</td><td>[1, 2]</td><td>john@example.com</td><td>John Doe</td><td>123-356-6891</td></tr><tr><td>3</td><td>cid_b6447e18e2954750a369bb16</td><td>[3]</td><td>jannet@example.com</td><td>Jannet Smith</td><td>245-891-9012</td></tr></tbody></table>
 
 
 
@@ -95,6 +92,10 @@ If your source dataset looks like below, examples of how your deduplicated datas
 All records in a resolved dataset will automatically be assigned a unique ID called the "Census ID" (`_census_id`). This is a Census-generated ID that represents a single resolved entity in your dataset. For instance, if 2 records in the base dataset get resolved into a single entity, they will both have the same `_census_id` value.
 
 Census IDs will remain "stable" as your dataset changes. For instance, if a group of records make up the "John Smith" entity in your resolved dataset, that entity will retain the same Census ID even as individual records that contribute to the entity enter or leave your base dataset.
+
+#### Census Lineage column
+
+In Merged Entity Resolution Datasets, the `_census_entity_resolution_lineage` column is an array of the source dataset record IDs that contribute to the given golden record.
 
 #### Merge Rules
 
