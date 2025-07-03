@@ -64,6 +64,19 @@ Google Customer Match, as its name implies, is a matching service rather than th
 
 We recommend you do not use Google's Customer Match expiration setting. Census-synced records are subject to the same expiration and will not be re-uploaded unless they are changed in your source data.
 
+When syncing to a customer list manually created in Google Ads—such as one using Mobile Advertising ID as the upload key—you may notice "Unknown" listed under the Segment Type column. This indicates that the list’s upload key type has not yet been defined. Census uses the upload key type to ensure we are uploading data properly to existing Customer Lists.\
+To resolve this, you’ll need to define the upload key type directly in Google Ads:
+
+1. Open your customer list in Google Ads.
+2. Click List Members → Modify List → Data Source: Upload File Manually.
+3. Select the appropriate Data Type, such as:
+   * Upload Emails, Phones, and/or Mailing Addresses
+   * Upload User IDs
+   * Upload Mobile Device IDs
+4. Upload a CSV file with at least one valid record.
+
+Once this is done, the list’s upload key type will be set, and Census will be able to sync to it successfully.
+
 ## Supported Sync Behaviors
 
 |        **Behaviors** | **Supported?** |
