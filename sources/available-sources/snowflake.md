@@ -47,6 +47,8 @@ GRANT SELECT ON ALL VIEWS IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" 
 GRANT SELECT ON FUTURE VIEWS IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
 GRANT USAGE ON ALL FUNCTIONS IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
 GRANT USAGE ON FUTURE FUNCTIONS IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
+GRANT SELECT ON ALL DYNAMIC TABLES IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
+GRANT SELECT ON FUTURE DYNAMIC TABLES IN SCHEMA "&#x3C;your database>"."&#x3C;your schema>" TO ROLE CENSUS_ROLE;
 
 -- Required for Advanced Sync Engine, not required for Basic Sync Engine:
 --  Create a private bookkeeping database where Census can store sync state,
