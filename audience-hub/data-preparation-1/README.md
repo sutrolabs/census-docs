@@ -6,7 +6,7 @@ Working with a warehouse directly can be overwhelming. Census provides a number 
 
 ## Creating Datasets For Segmentation
 
-Segments are built on top of your company's [Datasets](../../datasets/overview.md). Each Dataset requires a [unique ID](../../datasets/core-concepts/) to be able to get started segmenting your data. Optionally, you can also define [relationships](../../datasets/core-concepts/) for your dataset which will unlock further functionality.
+Segments are built on top of your company's [Datasets](../../datasets/overview/). Each Dataset requires a [unique ID](../../datasets/core-concepts/) to be able to get started segmenting your data. Optionally, you can also define [relationships](../../datasets/core-concepts/) for your dataset which will unlock further functionality.
 
 ### Working Across Relationships
 

@@ -8,7 +8,7 @@ Census supports connecting to an existing dbt project hosted in GitHub or GitLab
 
 To connect your dbt project you'll first need a source connection within Census. Once you have a source configured you can connect your dbt project from the Projects button.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-07-31 at 2.32.13 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-07-31 at 2.32.13 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Setting it up
 
@@ -47,7 +47,7 @@ A few additional notes:
 
 Alternatively, you can configure your dbt project in Census to use a specific dbt version (note that this version must be within the supported version range defined in your `dbt_project.yml` if one is specified). You can set this by selecting a specific version in the **dbt Version** dropdown menu with in your dbt project's configuration in Census.
 
-<figure><img src="../../.gitbook/assets/dbt Version (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbt Version (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that setting an version override may cause issues if the Census configured value falls behind your project configuration. We recommend you provide the support values using `require-dbt-version` instead.
 
@@ -76,19 +76,19 @@ For dbt models used in Census syncs, Census can check whether you are going to d
 
 To enable these CI checks, navigate to your dbt integration in Census and click "Enable CI/CD Tests in GitHub". Note that Census will require the `checks:read` permission to install.
 
-![You can find dbt Checks in a new section of your dbt integration, under "Automatic tests in dbt".](<../../.gitbook/assets/Screen Shot 2022-08-10 at 3.43.09 PM.png>)
+![You can find dbt Checks in a new section of your dbt integration, under "Automatic tests in dbt".](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 3.43.09 PM.png>)
 
 Once you enable CI checks, Census will automatically run a sample check on a PR. You can then view the PR to see the results of the check.
 
-![](<../../.gitbook/assets/Screen Shot 2022-08-10 at 4.38.56 PM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 4.38.56 PM.png>)
 
 If any tests do not pass, you can click **Details** to view more information about the results. You'll see a report of any broken models and their dependent syncs, with links to investigate these syncs further in Census.
 
-![A detailed view of the test failures.](<../../.gitbook/assets/Screen Shot 2022-08-10 at 4.39.19 PM.png>)
+![A detailed view of the test failures.](<../../../.gitbook/assets/Screen Shot 2022-08-10 at 4.39.19 PM.png>)
 
 ## Coordinating with dbt Cloud
 
-If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt. See our documentation on [connecting and configuring dbt Cloud](../../syncs/triggering-syncs.md#dbt-cloud-integration).
+If you're using dbt Cloud to run your dbt project, our integration goes even further. You can configure Census to automatically run syncs whenever your models have been rebuilt. See our documentation on [connecting and configuring dbt Cloud](../../../syncs/triggering-syncs.md#dbt-cloud-integration).
 
 ## Required data warehouse permissions
 

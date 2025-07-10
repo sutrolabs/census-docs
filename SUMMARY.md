@@ -2,20 +2,22 @@
 
 * [🦩 Overview](README.md)
 
-## 💾 Datasets
+## 💾 Workbench <a href="#datasets" id="datasets"></a>
 
-* [Overview](datasets/overview.md)
-* [Core Concepts](datasets/core-concepts/README.md)
+* [Datasets](datasets/overview/README.md)
+  * [Basic Datasets](datasets/overview/basic-datasets.md)
+  * [🆕 Mesh Datasets](datasets/overview/mesh-datasets.md)
+  * [SaaS Datasets](datasets/overview/saas-datasets.md)
+  * [CSV Datasets](datasets/overview/csv-datasets.md)
+  * [Streaming Datasets](datasets/overview/streaming-datasets.md)
+  * [External Dataset Repositories](datasets/overview/external-dataset-repositories/README.md)
+    * [dbt Integration](datasets/overview/external-dataset-repositories/dbt-integration.md)
+    * [Looker Integration](datasets/overview/external-dataset-repositories/looker-integration.md)
+    * [Sigma Integration](datasets/overview/external-dataset-repositories/sigma-integration.md)
+* [Semantic Layer](datasets/core-concepts/README.md)
   * [Columns & Annotations](datasets/core-concepts/columns-and-annotations.md)
   * [Type & Property Mappings](datasets/core-concepts/type-and-property-mappings.md)
   * [Relationships](datasets/core-concepts/relationships.md)
-* [Basic Datasets](datasets/basic-datasets/README.md)
-  * [dbt Integration](datasets/basic-datasets/dbt-integration.md)
-  * [Sigma Integration](datasets/basic-datasets/sigma-integration.md)
-  * [Looker Integration](datasets/basic-datasets/looker-integration.md)
-* [SaaS Datasets](datasets/saas-datasets/README.md)
-* [CSV Datasets](datasets/csv-datasets/README.md)
-* [Streaming Datasets](datasets/streaming-datasets/README.md)
 * [Entity Resolution](datasets/entity-resolution.md)
 * [Smart Columns](datasets/smart-columns/README.md)
   * [AI Columns](datasets/smart-columns/ai-columns/README.md)
@@ -274,7 +276,7 @@
 
 ## 📎 Misc
 
-* [Credits](misc/credits.md)
+* [AI Model Integrations](misc/ai-model-integrations.md)
 * [Census Embedded](misc/census-embedded.md)
 * [Data Storage](misc/data-storage/README.md)
   * [Census Store](misc/data-storage/census-store/README.md)

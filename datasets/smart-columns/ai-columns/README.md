@@ -3,7 +3,7 @@
 AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like ChatGPT (OpenAI), Claude (Anthropic) and Gemini (Google). With AI Columns, you can define a prompt and use [liquid templating](../../../syncs/structuring-data/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well.&#x20;
 
 {% hint style="info" %}
-Try AI Columns for free using trial [credits](../../../misc/credits.md)! No need for an API key until your trial credits run out.&#x20;
+Try AI Columns for free using trial [credits](broken-reference)! No need for an API key until your trial credits run out.&#x20;
 {% endhint %}
 
 {% embed url="https://youtu.be/5AxWR1QyCos" %}
@@ -22,7 +22,7 @@ Checkout our [Recipe Book](prompts-recipe-book.md) for more examples and sample 
 
 * Dataset should have a Unique ID column
 
-Note : You will need your API key to connect a LLM Provider (OpenAI, Claude, Gemini) once you run out of Census [credits](../../../misc/credits.md).&#x20;
+Note : You will need your API key to connect a LLM Provider (OpenAI, Claude, Gemini) once you run out of Census [credits](broken-reference).&#x20;
 
 * To create a new OpenAI API key, log into OpenAI and navigate to [Dashboard / API keys](https://platform.openai.com/api-keys) and generate a new Project API Key.
 * To create a new Anthropic API Key, navigate to [Anthropic Console](../../../) > Settings > API Keys and generate a new Key.
@@ -41,7 +41,7 @@ If you are a video person, watch [how to create a GPT column](https://youtu.be/5
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-12-26 at 2.02.19 PM.png" alt=""><figcaption><p>Census Create AI Column</p></figcaption></figure>
 
-**Step 5:** Skip this step if you have trial [credits](../../../misc/credits.md). Connect to selected platform (OpenAI, Anthropic, Google) using your API Key and click Next.
+**Step 5:** Skip this step if you have trial [credits](broken-reference). Connect to selected platform (OpenAI, Anthropic, Google) using your API Key and click Next.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-08-29 at 12.34.53 PM (1).png" alt=""><figcaption><p>AI Columns Connect</p></figcaption></figure>
 

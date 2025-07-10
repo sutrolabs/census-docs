@@ -6,10 +6,10 @@ description: Use data sources to connect to the data that matters most for your 
 
 Census connects to a variety of data sources to power your syncs and data activation workflows. These sources include:
 
-- **Data Warehouses & Databases**: Snowflake, BigQuery, Redshift, PostgreSQL, and more
-- **SaaS Platforms**: Salesforce, HubSpot, and other business applications
-- **Streaming Sources**: Kafka, Confluent Cloud, Google Pub/Sub
-- **File Uploads**: CSV files for ad-hoc or one-time data needs
+* **Data Warehouses & Databases**: Snowflake, BigQuery, Redshift, PostgreSQL, and more
+* **SaaS Platforms**: Salesforce, HubSpot, and other business applications
+* **Streaming Sources**: Kafka, Confluent Cloud, Google Pub/Sub
+* **File Uploads**: CSV files for ad-hoc or one-time data needs
 
 This flexibility allows you to use Census as a Universal Data Platform, unifying data from multiple sources and activating it across your business tools.
 
@@ -18,16 +18,20 @@ The menu to the left lists all of the data sources that Census currently support
 ## Source Types
 
 ### Data Warehouses & Databases
+
 Data warehouses and databases serve as powerful central repositories for your business data. Census connects directly to these sources to leverage your existing data models and transformations.
 
 ### SaaS Platforms
-SaaS platforms like Salesforce and HubSpot contain valuable business data. Census can create [SaaS Datasets](../datasets/saas-datasets/README.md) directly from these sources, making it easy to work with your CRM data alongside your warehouse data.
+
+SaaS platforms like Salesforce and HubSpot contain valuable business data. Census can create [SaaS Datasets](../datasets/overview/saas-datasets.md) directly from these sources, making it easy to work with your CRM data alongside your warehouse data.
 
 ### Streaming Sources
-For real-time use cases, Census connects to streaming sources like Kafka and Confluent Cloud. These connections power [Streaming Datasets](../datasets/streaming-datasets/README.md) that enable low-latency data activation.
+
+For real-time use cases, Census connects to streaming sources like Kafka and Confluent Cloud. These connections power [Streaming Datasets](../datasets/overview/streaming-datasets.md) that enable low-latency data activation.
 
 ### File Uploads
-For ad-hoc or one-time data needs, Census supports [CSV Datasets](../datasets/csv-datasets/README.md) that can be uploaded directly through the UI.
+
+For ad-hoc or one-time data needs, Census supports [CSV Datasets](../datasets/overview/csv-datasets.md) that can be uploaded directly through the UI.
 
 ## Data Warehouse-Specific Features
 
@@ -48,7 +52,6 @@ While **your experience of the Census product will be identical either way**, th
 | **Ease of setup**           | Very easy                                    | Slightly more involved             |
 | **Warehouse permissions**   | Read-only access                             | Read/write access                  |
 | **Ability to switch**       | Ability to upgrade to advanced (coming soon) | Not possible to downgrade to basic |
-
 
 If you have any questions about which Sync Engine is right for you, please [reach out to our support team](mailto:support@getcensus.com).
 

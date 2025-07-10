@@ -14,8 +14,8 @@ To create a new basic dataset:
 2. Click "New Dataset" and select "Basic Dataset"
 3. Choose your connection
 4. Select one of the following options:
-   - **Select a table** - Choose a specific table or view directly from your data warehouse
-   - **SQL** - Write a custom SQL query to define your dataset with more flexibility
+   * **Select a table** - Choose a specific table or view directly from your data warehouse
+   * **SQL** - Write a custom SQL query to define your dataset with more flexibility
 5. Test your dataset to ensure it returns the expected data
 6. Save and use your dataset in syncs
 
@@ -31,10 +31,10 @@ The simplest way to get started with Census is to use the "Select a table" optio
 
 When you need more flexibility, Census allows you to use the "SQL" option to define custom SQL queries directly in the platform. This approach is ideal when you need to:
 
-- Join multiple tables together
-- Apply complex transformations
-- Filter data to include only what's relevant for a specific destination
-- Create aggregations or calculations
+* Join multiple tables together
+* Apply complex transformations
+* Filter data to include only what's relevant for a specific destination
+* Create aggregations or calculations
 
 ```sql
 -- Example: Creating a customer 360 view with SQL
@@ -79,42 +79,45 @@ Census seamlessly integrates with popular data transformation tools, allowing yo
 
 ### dbt Integration
 
-Census's [native dbt integration](./dbt-integration.md) allows you to directly access your dbt models without having to redefine them in Census. This ensures consistency between your analytics models and operational data, creating a single source of truth.
+Census's [native dbt integration](external-dataset-repositories/dbt-integration.md) allows you to directly access your dbt models without having to redefine them in Census. This ensures consistency between your analytics models and operational data, creating a single source of truth.
 
 Benefits of the dbt integration:
-- Automatically discover and use dbt models
-- Maintain consistent business logic across analytics and operations
-- Leverage dbt's testing and documentation capabilities
-- Sync data as soon as dbt models are refreshed
+
+* Automatically discover and use dbt models
+* Maintain consistent business logic across analytics and operations
+* Leverage dbt's testing and documentation capabilities
+* Sync data as soon as dbt models are refreshed
 
 ### Looker Integration
 
-The [Looker integration](./looker-integration.md) allows you to use your Looker Explores and Looks as datasets in Census. This is particularly valuable for organizations that have invested heavily in Looker as their business intelligence platform.
+The [Looker integration](external-dataset-repositories/looker-integration.md) allows you to use your Looker Explores and Looks as datasets in Census. This is particularly valuable for organizations that have invested heavily in Looker as their business intelligence platform.
 
 Benefits of the Looker integration:
-- Reuse existing business logic defined in LookML
-- Maintain consistent definitions between reporting and operational systems
-- Leverage Looker's governance and access controls
+
+* Reuse existing business logic defined in LookML
+* Maintain consistent definitions between reporting and operational systems
+* Leverage Looker's governance and access controls
 
 ### Sigma Integration
 
-For teams using Sigma as their analytics platform, Census's [Sigma integration](./sigma-integration.md) allows you to use Sigma workbooks as datasets. This enables business users who are building in Sigma to directly activate their insights without requiring data team intervention.
+For teams using Sigma as their analytics platform, Census's [Sigma integration](external-dataset-repositories/sigma-integration.md) allows you to use Sigma workbooks as datasets. This enables business users who are building in Sigma to directly activate their insights without requiring data team intervention.
 
 Benefits of the Sigma integration:
-- Empower business users to create operational datasets
-- Maintain consistency between analytics and operations
-- Leverage Sigma's visual modeling capabilities
+
+* Empower business users to create operational datasets
+* Maintain consistency between analytics and operations
+* Leverage Sigma's visual modeling capabilities
 
 ## Best Practices for Basic Datasets
 
 Getting the most out of your basic datasets requires some thoughtful planning. Here are some tips we've gathered from working with hundreds of data teams:
 
-- **Use incremental syncs** whenever possible to reduce load on your warehouse and speed up sync times
-- **Add appropriate filters** to your queries to limit the data being processed to just what you need
-- **Create indexes** on frequently queried columns in your warehouse to improve query performance
-- **Consider materialized views** for complex queries that are used frequently to reduce computation time
-- **Add clear descriptions** to your datasets to help business users understand what data is available
-- **Set up appropriate access controls** in your warehouse to maintain data security
-- **Use version control** to track changes to your dataset definitions and make it easy to roll back if needed
-- **Validate data types** and formats before syncing to avoid errors in destination systems
-- **Create test syncs** to validate new datasets before using them in production workflows
+* **Use incremental syncs** whenever possible to reduce load on your warehouse and speed up sync times
+* **Add appropriate filters** to your queries to limit the data being processed to just what you need
+* **Create indexes** on frequently queried columns in your warehouse to improve query performance
+* **Consider materialized views** for complex queries that are used frequently to reduce computation time
+* **Add clear descriptions** to your datasets to help business users understand what data is available
+* **Set up appropriate access controls** in your warehouse to maintain data security
+* **Use version control** to track changes to your dataset definitions and make it easy to roll back if needed
+* **Validate data types** and formats before syncing to avoid errors in destination systems
+* **Create test syncs** to validate new datasets before using them in production workflows

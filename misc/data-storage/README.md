@@ -4,13 +4,13 @@
 
 We store the data you sync using Census, sometimes for the lifetime of your Census workspace, in three ways:&#x20;
 
-* **Your connected warehouse**: for [basic-datasets](../../datasets/basic-datasets/ "mention") shared from your warehouse, we write transformations and advanced sync engine logs back to the warehouse itself. This data includes:
+* **Your connected warehouse**: for [basic-datasets.md](../../datasets/overview/basic-datasets.md "mention") shared from your warehouse, we write transformations and advanced sync engine logs back to the warehouse itself. This data includes:
   * [ai-columns](../../datasets/smart-columns/ai-columns/ "mention")
   * [enrichment](../../datasets/smart-columns/enrichment/ "mention")
   * [warehouse-writeback.md](../../syncs/sync-monitoring/warehouse-writeback.md "mention")
 * [census-store](census-store/ "mention"): this is an Iceberg-based managed storage. Items stored in Census Store can be accessed by external compute, including warehouses. This data includes:
-  * [saas-datasets](../../datasets/saas-datasets/ "mention")
-  * [csv-datasets](../../datasets/csv-datasets/ "mention")
+  * [saas-datasets.md](../../datasets/overview/saas-datasets.md "mention")
+  * [csv-datasets.md](../../datasets/overview/csv-datasets.md "mention")
   * [entity-resolution.md](../../datasets/entity-resolution.md "mention") datasets
   * Census store is also the storage location for [ai-columns](../../datasets/smart-columns/ai-columns/ "mention"), [enrichment](../../datasets/smart-columns/enrichment/ "mention"), and [warehouse-writeback.md](../../syncs/sync-monitoring/warehouse-writeback.md "mention") logs for any of these dataset types.
 * [general-object-storage.md](general-object-storage.md "mention"): this is used to house data related to sync execution. This data includes:

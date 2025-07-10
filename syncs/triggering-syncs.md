@@ -12,7 +12,7 @@ Running a sync manually is not that useful on its own. The real power of Census 
 
 Schedules let you specify a time and frequency that Census can use to run your sync automatically. You can choose options from weekly all the way to Continuous, which means Census checks your source roughly every minute for new changes.
 
-![](<../../.gitbook/assets/Edit Schedule.png>)
+![](<../.gitbook/assets/Edit Schedule.png>)
 
 {% hint style="info" %}
 To remove a schedule from a sync, click the edit icon and select **Manual** from the drop down list.
@@ -38,10 +38,10 @@ Hourly during weekdays should be: `0 * * * 1,2,3,4,5` instead of `0 * * * 1-5`
 
 If you're using dbt Cloud to compile your dbt project, Census can trigger syncs whenever one of your dbt Cloud project runs have completed. Simply select your dbt Cloud project's job to monitor and Census will automatically trigger a sync when it completes.
 
-![](<../../.gitbook/assets/dbt Cloud Trigger.png>)
+![](<../.gitbook/assets/dbt Cloud Trigger.png>)
 
 {% hint style="info" %}
-Using dbt Cloud to trigger syncs works great with [dbt Models](../../datasets/basic-datasets/dbt-integration.md) but is not required. Both dbt integrations can be used independently.
+Using dbt Cloud to trigger syncs works great with [dbt Models](../datasets/overview/external-dataset-repositories/dbt-integration.md) but is not required. Both dbt integrations can be used independently.
 {% endhint %}
 
 To connect Census to your dbt Cloud, you'll first need a [dbt Cloud API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens) key. We use this to subscribe to webhooks for each job you specify.
@@ -57,7 +57,7 @@ With your token and your region URL in hand, you can now connect dbt Cloud to yo
 2. Provide your region URL and copy your dbt Cloud API key
 3. **Verify** your credentials are correct and have the proper permissions, then **Save** your integration.
 
-<figure><img src="../../.gitbook/assets/dbt_cloud_key.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dbt_cloud_key.png" alt=""><figcaption></figcaption></figure>
 
 Now, you'll be able to use a dbt Cloud job to trigger syncs. Visit the **Configuration** tab of any of your syncs.
 
@@ -65,14 +65,14 @@ Now, you'll be able to use a dbt Cloud job to trigger syncs. Visit the **Configu
 
 If you use Fivetran to load data into your data warehouse, or make use of their data transformations, you can trigger Census syncs to run once that work has completed.
 
-<figure><img src="../../.gitbook/assets/Fivetran Trigger.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Fivetran Trigger.png" alt=""><figcaption></figcaption></figure>
 
 To connect Census to Fivetran, you'll first need an API key and secret associated with an Account Admin user.
 
 1. Visit [Organizations Settings and select the Integrations tab](https://app.getcensus.com/home/integrations).
 2. Copy and paste your Fivetran API Key and Secret. Press **Verify** to confirm they were copied correctly and have the correct permissions. **Save** your settings.
 
-<figure><img src="../../.gitbook/assets/Fivetran Key.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Fivetran Key.png" alt=""><figcaption></figcaption></figure>
 
 Now you'll be able to select a Fivetran Connector or Transformation to trigger syncs. Visit the **Configuration** tab of any of your syncs.
 
@@ -80,7 +80,7 @@ Now you'll be able to select a Fivetran Connector or Transformation to trigger s
 
 If your syncs have dependencies and you'd like to organize them to run in order, you can use a Sequence. A Sequence runs a dependent sync whenever its specified parent sync completes successfully. Sequences can be found on the sync configurations page:
 
-<figure><img src="../../.gitbook/assets/Sequence Trigger.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Sequence Trigger.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Sequences do not currently support specifying multiple parent syncs. If you are interested in multi-parent functionality, please email [support@getcensus.com](mailto:support@getcensus.com).
@@ -90,7 +90,7 @@ Sequences do not currently support specifying multiple parent syncs. If you are 
 
 Each sync can also be triggered via API. On the sync configuration page, you can access the trigger API endpoint for the sync.
 
-![](<../../.gitbook/assets/API Trigger.png>)
+![](<../.gitbook/assets/API Trigger.png>)
 
 An empty HTTP POST call to this endpoint will trigger the sync (no need to provide any data in the body). You can use this API to automatically trigger Census syncs as part of your data pipeline, running syncs once the models they depend on have been rebuilt.
 
