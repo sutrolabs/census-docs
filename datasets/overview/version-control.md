@@ -12,9 +12,9 @@ Datasets provide version control tracking to give you a historical understanding
   * Dataset Property Mappings delete, adds or change
   * Dataset Relationships delete, adds or change
 
-<figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Clicking the **Restore** button will restore the state of your Dataset query immediately prior to the selected change. This enables you to update your datasets with confidence, knowing you can always revert your changes if they accidentally break something downstream.
 

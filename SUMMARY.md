@@ -8,12 +8,13 @@
   * [Basic Datasets](datasets/overview/basic-datasets.md)
   * [🆕 Mesh Datasets](datasets/overview/mesh-datasets.md)
   * [SaaS Datasets](datasets/overview/saas-datasets.md)
-  * [CSV Datasets](datasets/overview/csv-datasets.md)
+  * [CSV Upload Datasets](datasets/overview/csv-datasets.md)
   * [Streaming Datasets](datasets/overview/streaming-datasets.md)
   * [External Dataset Repositories](datasets/overview/external-dataset-repositories/README.md)
     * [dbt Integration](datasets/overview/external-dataset-repositories/dbt-integration.md)
     * [Looker Integration](datasets/overview/external-dataset-repositories/looker-integration.md)
     * [Sigma Integration](datasets/overview/external-dataset-repositories/sigma-integration.md)
+  * [Version Control](datasets/overview/version-control.md)
 * [Semantic Layer](datasets/core-concepts/README.md)
   * [Columns & Annotations](datasets/core-concepts/columns-and-annotations.md)
   * [Type & Property Mappings](datasets/core-concepts/type-and-property-mappings.md)
@@ -26,7 +27,6 @@
     * [Quick Start](datasets/smart-columns/enrichment/quick-start.md)
     * [HTTP Request Enrichments](datasets/smart-columns/enrichment/http-request-enrichments.md)
   * [Computed Columns](datasets/smart-columns/computed-columns.md)
-* [Version Control](datasets/version-control.md)
 
 ## 📫 Syncs
 
