@@ -91,7 +91,7 @@ Census currently supports syncing to the following Braze objects.
 |                       Catalog |        ✅       |                                           Catalog ID                                           |     Update or Create, Update, Mirror     |
 |                        Cohort |        ✅       |                                        External User ID                                        |             Update or Create             |
 | Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |                  Mirror                  |
-|                          User |        ✅       |                                  External User ID & User Alias                                 | Update or Create, Update, Delete, Mirror |
+|                          User |        ✅       |                               Email, External User ID, User Alias                              | Update or Create, Update, Delete, Mirror |
 
 Census supports custom fields on both Braze User and Event objects. You can map any field from your data source to a custom field in Braze. Census will automatically create the custom field in Braze if it doesn't already exist.
 
