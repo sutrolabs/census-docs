@@ -26,6 +26,6 @@ For more information on how we work with LLM providers, see our privacy docs on 
 
 ### Supported Sources
 
-All SQL Sources including Snowflake, BigQuery, Databricks, and Redshift are supported and can be joined in Mesh Datasets.&#x20;
+All SQL Sources including Snowflake, BigQuery, Databricks, Redshift, as well as [Census Store](../../misc/data-storage/census-store/) are supported and can be joined in Mesh Datasets.&#x20;
 
 Streaming Sources such as Kafka and HTTP are not supported. Google Sheets, S3, and file Sources are also not supported. &#x20;
