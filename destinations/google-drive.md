@@ -12,17 +12,17 @@ In this guide, we will show you how to connect Google Drive to Census.
 
 ### 1. Create a Google Drive connection
 
-Our Google Drive destination behaves a little differently than other Census destinations (but similar to Google Sheets). Instead of going through an OAuth connection flow, we provide you a Google Identity address you use to share the correct Google Drive folder. This lets you be very specific about which Google Drive folders you give Census access to.
+Our Google Drive destination behaves a little differently than other Census destinations (but similar to Google Sheets). Instead of going through an OAuth connection flow, we provide you a Google Identity address you use to share the correct Google Shared Drive folder. This lets you be very specific about which Google Drive folders you give Census access to.
 
 * In Census, navigate to [Destinations](https://app.getcensus.com/destinations)
 * Click the New Destination button
 * Select **Google Drive** in the menu
 
-Your new Google Drive connection will include a Google Identity email. This is the email address you'll use to grant Census access to your target Google Drive (or folder within it). Click the copy button (<img src="../.gitbook/assets/copy-solid.svg" alt="" data-size="line">) to save it to your clipboard, will use it in a minute.
+Your new Google Drive connection will include a Google Identity email. This is the email address you'll use to grant Census access to your target Google Shared Drive (or folder within it). Click the copy button (<img src="../.gitbook/assets/copy-solid.svg" alt="" data-size="line">) to save it to your clipboard, will use it in a minute.
 
 ### 2. Share your target Google Drive folder
 
-Now head to the Google Drive and navigate to the folder you'd like to sync to. If you don't have one in mind, you can create a new one.
+Now head to the Google Shared Drive and navigate to the folder you'd like to sync to. If you don't have one in mind, you can create a new one.
 
 To give Census access to the folder, press the Share button and then add paste the Google Identity email from Census into the share dialog and confirm.
 
@@ -42,7 +42,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](broken-re
 
 ## File Path
 
-When setting up a sync to Google Drive, you can provide a file path for the file name Census will create/replace. The file path can include folders but note that the folders must already exist in Google Drive and must be unique.
+When setting up a sync to Google Shared Drive, you can provide a file path for the file name Census will create/replace. The file path can include folders but note that the folders must already exist in Google Drive and must be unique.
 
 ### Variables
 
