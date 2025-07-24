@@ -151,14 +151,14 @@ lower(replace(column_name, ' ', '_'))
 
 Census currently supports syncing to the following Zendesk objects:
 
-|   **Object Name** | **Supported?** | **Sync Keys**                    | **Behavior**                          |
-| ----------------: | :------------: | -------------------------------- | ------------------------------------- |
-|          End User |        ✅       | External ID (recommended), Email | Update or Create, Update Only, Delete |
-|      Organization |        ✅       | External ID (recommended), Name  | Update or Create, Update Only, Delete |
-|            Ticket |        ✅       | External ID                      | Update or Create, Update Only, Delete |
-|    Custom Objects |        ✅       | External ID                      | Update or Create, Update Only         |
-| v2 Custom Objects |        ❌       | Coming soon                      | Coming soon                           |
-|    Ticket Comment |        ✅       | Comment ID                       | Add                                   |
+|       **Object Name** | **Supported?** | **Sync Keys**                    | **Behavior**                          |
+| --------------------: | :------------: | -------------------------------- | ------------------------------------- |
+|              End User |        ✅       | External ID (recommended), Email | Update or Create, Update Only, Delete |
+|          Organization |        ✅       | External ID (recommended), Name  | Update or Create, Update Only, Delete |
+|                Ticket |        ✅       | External ID                      | Update or Create, Update Only, Delete |
+| Legacy Custom Objects |        ✅       | External ID                      | Update or Create, Update Only         |
+|     v2 Custom Objects |        ❌       | Coming soon                      | Coming soon                           |
+|        Ticket Comment |        ✅       | Comment ID                       | Add                                   |
 
 Please note that Zendesk requires the `Name` property for the End User object. Feel free to check out Zendesk's documentation [here](https://developer.zendesk.com/api-reference/ticketing/users/users/#json-format).\
 \
