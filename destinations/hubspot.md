@@ -24,6 +24,7 @@ Follow the OAuth flow to connect HubSpot. Easy!
 
 | **Object Name**          | **Supported?** | **Sync Keys**                                         | **Behaviors**                                              |
 | ------------------------ | :------------: | ----------------------------------------------------- | ---------------------------------------------------------- |
+| Appointment              |        ✅       | Object ID, qualifying custom properties\*             | Update Only, Update or Create, Mirror                      |
 | Company                  |        ✅       | Object ID, Domain, and qualifying custom properties\* | Update Only, Update or Create, Mirror                      |
 | Contact                  |        ✅       | Object ID, Email, and qualifying custom properties\*  | Create Only, Update Only, Update or Create, Mirror, Delete |
 | Contact & Static List    |        ✅       | Email                                                 | Update Only, Update or Create, Mirror                      |
