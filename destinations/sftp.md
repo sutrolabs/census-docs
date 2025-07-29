@@ -148,6 +148,14 @@ In addition to the file path, you can configure how the data is encoded as it is
 
 In addition to file format, you can also provide a PGP Public Key to encrypt the data before it is written to the file. This is useful for ensuring that the data is secure in transit and at rest.
 
+Make sure the key includes the full block, including the following headers and footers:
+
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+<your-public-key-here>
+-----END PGP PUBLIC KEY BLOCK-----
+```
+
 ## Need help connecting your server?
 
 You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
