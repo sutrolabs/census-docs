@@ -91,7 +91,6 @@
   * [MotherDuck](sources/available-sources/motherduck.md)
   * [MySQL](sources/available-sources/mysql.md)
   * [PostgreSQL](sources/available-sources/postgres.md)
-  * [Rockset](sources/available-sources/rockset.md)
   * [Salesforce](sources/available-sources/salesforce.md)
   * [SingleStore](sources/available-sources/singlestore.md)
   * [Snowflake](sources/available-sources/snowflake.md)
