@@ -62,7 +62,6 @@
 * [Activating Segments](audience-hub/syncing-segments.md)
 * [Calculated Columns](audience-hub/data-preparation.md)
 * [Data Preparation](audience-hub/data-preparation-1/README.md)
-  * [Profile Explorer](audience-hub/data-preparation-1/profile-explorer.md)
   * [Exclusion Lists](audience-hub/data-preparation-1/exclusion-lists.md)
 
 ## 🧮 Data Sources <a href="#sources" id="sources"></a>
