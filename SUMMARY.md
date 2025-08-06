@@ -259,7 +259,7 @@
   * [TikTok](destinations/tiktok.md)
   * [Totango](destinations/totango.md)
   * [Unify](destinations/available-destinations/unify.md)
-  * [User Interviews](destinations/available-destinations/accredible-1.md)
+  * [User Interviews](destinations/available-destinations/user-interviews.md)
   * [Userflow](destinations/userflow.md)
   * [Userpilot](destinations/userpilot.md)
   * [Vero Cloud](destinations/vero.md)
