@@ -1,6 +1,6 @@
 # AI Columns
 
-AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like ChatGPT (OpenAI), Claude (Anthropic) and Gemini (Google). With AI Columns, you can define a prompt and use [liquid templating](../../../syncs/structuring-data/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well.&#x20;
+AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like ChatGPT (OpenAI), Claude (Anthropic) and Gemini (Google). With AI Columns, you can define a prompt and use [liquid templating](../../../syncs/structuring-data/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well. OpenAI's latest GPT-5 family models (GPT-5, GPT-5 Mini, and GPT-5 Nano) are now available, with GPT-5 Mini set as the default model for new AI Columns.&#x20;
 
 {% hint style="info" %}
 Try AI Columns for free using trial [credits](broken-reference)! No need for an API key until your trial credits run out.&#x20;
