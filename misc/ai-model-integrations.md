@@ -43,8 +43,8 @@ Every Census sync that runs using AI or Enrichments will use up a fixed amount o
 | Claude Sonnet 4.0 | 450             |
 | Claude 3.5 Sonnet | 500             |
 | Claude 3.5 Haiku  | 150             |
-| Claude Opus 4.1   | 1,500           |
-| Claude Opus 4     | 1,500           |
+| Claude Opus 4.1   | 2,250           |
+| Claude Opus 4     | 2,250           |
 | Claude 3 Opus     | 1,500           |
 | Gemini 1.5 Flash  | 10              |
 | Gemini 1.5 Pro    | 150             |
