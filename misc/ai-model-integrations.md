@@ -35,6 +35,9 @@ Every Census sync that runs using AI or Enrichments will use up a fixed amount o
 
 | Action            | Cost per record |
 | ----------------- | --------------- |
+| GPT-5             | 300             |
+| GPT-5 Mini        | 60              |
+| GPT-5 Nano        | 15              |
 | GPT-4o            | 300             |
 | GPT-4o mini       | 20              |
 | Claude 3.5 Sonnet | 500             |
