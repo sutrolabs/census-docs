@@ -33,22 +33,34 @@ To monitor your Credits usage, log into Census and navigate to "Organization Hom
 
 Every Census sync that runs using AI or Enrichments will use up a fixed amount of credits based on the action and the number of records processed. To generate values with:
 
-| Action            | Cost per record |
+#### OpenAI
+
+| Model             | Cost per record |
 | ----------------- | --------------- |
 | GPT-5             | 300             |
 | GPT-5 Mini        | 60              |
 | GPT-5 Nano        | 15              |
 | GPT-4o            | 300             |
 | GPT-4o mini       | 20              |
+
+#### Anthropic
+
+| Model             | Cost per record |
+| ----------------- | --------------- |
 | Claude 3.5 Sonnet | 500             |
 | Claude 3.5 Haiku  | 150             |
 | Claude 3 Opus     | 1,500           |
-| Gemini 1.5 Flash  | 10              |
-| Gemini 1.5 Pro    | 150             |
-| Gemini 2.0 Flash  | 20              |
-| Gemini 2.5 Flash-Lite | 15          |
-| Gemini 2.5 Flash  | 75              |
+
+#### Google Gemini
+
+| Model             | Cost per record |
+| ----------------- | --------------- |
 | Gemini 2.5 Pro    | 450             |
+| Gemini 2.5 Flash  | 75              |
+| Gemini 2.5 Flash-Lite | 15          |
+| Gemini 2.0 Flash  | 20              |
+| Gemini 1.5 Pro    | 150             |
+| Gemini 1.5 Flash  | 10              |
 
 Additional credits are not available for purchase; in order to continue using enrichments, you can provide your own API key.
 
