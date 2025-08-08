@@ -47,6 +47,9 @@ Every Census sync that runs using AI or Enrichments will use up a fixed amount o
 
 | Model             | Cost per record |
 | ----------------- | --------------- |
+| Claude Opus 4.1   | 2,250           |
+| Claude Opus 4     | 2,250           |
+| Claude Sonnet 4.0 | 450             |
 | Claude 3.5 Sonnet | 500             |
 | Claude 3.5 Haiku  | 150             |
 | Claude 3 Opus     | 1,500           |
