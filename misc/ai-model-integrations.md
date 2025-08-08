@@ -45,6 +45,10 @@ Every Census sync that runs using AI or Enrichments will use up a fixed amount o
 | Claude 3 Opus     | 1,500           |
 | Gemini 1.5 Flash  | 10              |
 | Gemini 1.5 Pro    | 150             |
+| Gemini 2.0 Flash  | 20              |
+| Gemini 2.5 Flash-Lite | 10          |
+| Gemini 2.5 Flash  | 20              |
+| Gemini 2.5 Pro    | 200             |
 
 Additional credits are not available for purchase; in order to continue using enrichments, you can provide your own API key.
 
