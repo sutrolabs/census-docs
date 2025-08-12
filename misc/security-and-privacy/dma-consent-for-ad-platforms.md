@@ -8,7 +8,7 @@ description: This page describes how to provide DMA consent to ad platforms via 
 **If you are using Census to send audiences or conversion events to Google Ads, Google DV360, or Amazon Ads DSP, you’ll need to take the actions described on this page before March 2024 to avoid audience targeting from being affected.**
 {% endhint %}
 
-As you may be aware, many of the large advertising services are in the process of supporting the EU’s [Digital Markets Act](https://digital-markets-act.ec.europa.eu/index\_en) (DMA). Census now supports syncing DMA-related properties to the following destinations:
+As you may be aware, many of the large advertising services are in the process of supporting the EU’s [Digital Markets Act](https://digital-markets-act.ec.europa.eu/index_en) (DMA). Census now supports syncing DMA-related properties to the following destinations:
 
 * [Google Ads](dma-consent-for-ad-platforms.md#google-a-ds) (Audiences, Conversions)
 * [Google Campaign Manager 360](dma-consent-for-ad-platforms.md#google-display-and-video-360) (Conversion Events)
@@ -41,24 +41,24 @@ There are two ways to populate these fields in Census:
 
 ### One-Click Audience Syncs (Google Ads Only)
 
-If you’re sending audiences to Google Ads using our [one-click audience sync](https://docs.getcensus.com/basics/audience-hub/syncing-segments#one-click-experience-for-a-d-platforms) experience, you’ll only need to provide consent status once for each underlying “person” entity.
+If you’re sending audiences to Google Ads using our [one-click audience sync](https://docs.getcensus.com/basics/audience-hub/syncing-segments#one-click-experience-for-a-d-platforms) experience, you’ll only need to provide consent status once for each underlying “person” dataset.
 
 1. Go to the “Datasets” tab in Census.
-2. Click on the “Person” dataset powering your one-click syncs. Hint: the numbers shown below are the total count of segments and syncs, respectively, using the entity.
+2. Click on the “Person” dataset powering your one-click syncs. Look for the “Type” properties in the “Overview” tab and click “Edit”
 
-<figure><img src="../../.gitbook/assets/CleanShot 2024-02-27 at 09.22.25@2x.png" alt=""><figcaption><p>Select the "Person" entity powering your one-click syncs.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (80).png" alt=""><figcaption><p>Look for the "Type" properties in the "Overview" tab</p></figcaption></figure>
 
 3. Add two additional mappings—1) **Google Ads Consent for Ad Personalization** and 2) **Google Ads Consent for Ad User Data**—and select the relevant fields in your source data. Acceptable values for these fields are: `UNKNOWN`, `UNSPECIFIED`, `GRANTED`, or `DENIED` (see [Google’s documentation](https://support.google.com/google-ads/answer/14310715) for more context).
 
-<figure><img src="../../.gitbook/assets/CleanShot 2024-02-23 at 16.57.23@2x.png" alt=""><figcaption><p>Map the consent fields in your source data.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption><p>Add additional mappings to your "Person" dataset</p></figcaption></figure>
 
-4. Click “Save Entity” in the top right to save your changes.
-5. Repeat this process for any additional “Person” entities powering one-click syncs.
+4. Click “Save” in the bottom right to save your changes.
+5. Repeat this process for any additional “Person” datasets powering one-click syncs.
 6. That’s it! We’ll automatically ensure these fields get passed along to Google Ads.
 
 ## Google Campaign Manager 360
 
-The process for providing DMA metadata to [Google CM360](../../destinations/google-campaign-manager-360.md) is nearly identical to Google Ads ([see above](dma-consent-for-ad-platforms.md#google-a-ds)). The only difference is that CM360 requires different values for consent status: `GRANTED` and `DENIED`. For more info, see [Google’s documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad\_user\_data\_consent).
+The process for providing DMA metadata to [Google CM360](../../destinations/google-campaign-manager-360.md) is nearly identical to Google Ads ([see above](dma-consent-for-ad-platforms.md#google-a-ds)). The only difference is that CM360 requires different values for consent status: `GRANTED` and `DENIED`. For more info, see [Google’s documentation](https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion#FIELDS.ad_user_data_consent).
 
 ## Google Display & Video 360
 
