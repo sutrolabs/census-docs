@@ -97,19 +97,19 @@ Census IDs will remain "stable" as your dataset changes. For instance, if a grou
 
 In Merged Entity Resolution Datasets, the `_census_entity_resolution_lineage` column is an array of the source dataset record IDs that contribute to the given golden record.
 
-#### Merge Rules
+#### Survivorship Rules
 
-Merge rules help you identify the winning record amongst the duplicates. The ID of the winning record becomes either the primary ID (aka the column configured as the unique ID on your source dataset) when merged, or the `_census_parent_id` when unmerged, and is useful while syncing back to your business applications.
+Survivorship rules help you identify the winning record amongst the duplicates. The ID of the winning record becomes either the primary ID (aka the column configured as the unique ID on your source dataset) when merged, or the `_census_parent_id` when unmerged, and is useful while syncing back to your business applications.
 
 Census supports waterfall structure rules. So, the first rule is evaluated first and then the next until a record becomes a winning record.
 
 <figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
-#### Column Overrides
+#### Field-Specific Survivorship Rules
 
-Column Overrides help you override column values on the winning record. You can conditionally choose values for the final / resolved record.
+Field-specific survivorship rules help you override column values on the winning record. You can conditionally choose values for the final / resolved record.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-08-30 at 10.23.50 AM.png" alt=""><figcaption><p>Census Entity Resolution - Column Overrides</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-08-30 at 10.23.50 AM.png" alalt=""><figcaption><p>Census Entity Resolution - Field-Specific Survivorship Rules</p></figcaption></figure>
 
 #### Default Internal Variables
 
@@ -133,11 +133,11 @@ Entity resolution is performed by internal Census syncs that you can view the st
 
 ### FAQ
 
-#### How does Census handle NULLs for fields that are used in matching and column overrides?
+#### How does Census handle NULLs for fields that are used in matching and survivorship rules?
 
 For matching, records with NULL values for that match rule will be ignored. For instance, if you have a rule to match records when they have the exact same email, we will not match 2 records that have NULL emails.
 
-For merging and column overrides, you can be explicit about how you want NULLs to be treated in your configuration. For instance, you can set a column override on the winning record to select non-NULL values for specific columns:
+For survivorship rules, you can be explicit about how you want NULLs to be treated in your configuration. For instance, you can set a field-specific survivorship rule on the winning record to select non-NULL values for specific columns:
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-06-05 at 2.33.37 PM.png" alt=""><figcaption></figcaption></figure>
 
