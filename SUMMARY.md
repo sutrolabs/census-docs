@@ -110,7 +110,6 @@
   * [Amazon Ads DSP (AMC)](destinations/amazon-ads-dsp-amc.md)
   * [Amazon DynamoDB](destinations/dynamo-db.md)
   * [Amazon EventBridge](destinations/amazon-eventbridge.md)
-  * [Amazon Pinpoint](destinations/pinpoint.md)
   * [Amazon Redshift](destinations/redshift.md)
   * [Amazon S3](destinations/s3.md)
   * [Amplitude](destinations/amplitude.md)
