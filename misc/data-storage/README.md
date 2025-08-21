@@ -9,7 +9,7 @@ We store the data you sync using Census, sometimes for the lifetime of your Cens
   * [enrichment](../../datasets/smart-columns/enrichment/ "mention")
   * [warehouse-writeback.md](../../syncs/sync-monitoring/warehouse-writeback.md "mention")
 * [census-store](census-store/ "mention"): this is an Iceberg-based managed storage. Items stored in Census Store can be accessed by external compute, including warehouses. This data includes:
-  * [saas-datasets.md](../../datasets/overview/saas-datasets.md "mention")
+  * [Broken link](broken-reference "mention")
   * [csv-datasets.md](../../datasets/overview/csv-datasets.md "mention")
   * [entity-resolution.md](../../datasets/entity-resolution.md "mention") datasets
   * Census store is also the storage location for [ai-columns](../../datasets/smart-columns/ai-columns/ "mention"), [enrichment](../../datasets/smart-columns/enrichment/ "mention"), and [warehouse-writeback.md](../../syncs/sync-monitoring/warehouse-writeback.md "mention") logs for any of these dataset types.

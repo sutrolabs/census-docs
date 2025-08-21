@@ -5,7 +5,6 @@ Datasets are the way to model all your customer data in Census. Datasets expose 
 * [Basic Datasets](basic-datasets.md) - These are datasets that exist in your warehouse or can be generated on top of it. It includes:
   * Tables or Views already in your data warehouse – This is the most common place to start. Chances are your data warehouse contains many tables and views already that can be reused in Census.
   * Census defined queries – You can also just use SQL or Python to model your data inside Census. It's a fast way to get started syncing the exact set of data you need for a particular destination.
-* [SaaS Datasets](saas-datasets.md) - These are datasets created directly from your CRM systems (like HubSpot and Salesforce). They allow you to work with your business data alongside your warehouse data, with automatic refreshes and full access to Census features like AI columns and enrichments.
 * [CSV Datasets](csv-datasets.md) - These are datasets created by uploading CSV files.
 * [Streaming Datasets](streaming-datasets.md) - These are datasets that model event based data and enable our real-time usecases.
 

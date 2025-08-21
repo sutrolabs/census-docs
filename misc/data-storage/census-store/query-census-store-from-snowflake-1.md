@@ -1,7 +1,7 @@
 ---
 description: >-
   Query Census Store locally using DuckDB Apache Iceberg integration for
-  Zero-ETL access to SaaS and CSV datasets.
+  Zero-ETL access to Entity Resolution and CSV datasets.
 ---
 
 # Query Census Store locally using DuckDB
@@ -11,7 +11,7 @@ description: >-
 To query Census Store from DuckDB, you will need:
 
 * [Download](https://duckdb.org/docs/installation/?version=main\&environment=cli\&platform=macos\&download_method=direct) DuckDB version ≥ 1.3.0
-* A Census workspace with one or more SaaS or CSV datasets materialized in Census Store
+* A Census workspace with one or more Entity Resolution or CSV datasets materialized in Census Store
 
 ## Step 1: Create Census Store Iceberg REST Catalog Credentials
 

@@ -7,7 +7,6 @@ description: Use data sources to connect to the data that matters most for your 
 Census connects to a variety of data sources to power your syncs and data activation workflows. These sources include:
 
 * **Data Warehouses & Databases**: Snowflake, BigQuery, Redshift, PostgreSQL, and more
-* **SaaS Platforms**: Salesforce, HubSpot, and other business applications
 * **Streaming Sources**: Kafka, Confluent Cloud, Google Pub/Sub
 * **File Uploads**: CSV files for ad-hoc or one-time data needs
 
@@ -21,10 +20,6 @@ The menu to the left lists all of the data sources that Census currently support
 
 Data warehouses and databases serve as powerful central repositories for your business data. Census connects directly to these sources to leverage your existing data models and transformations.
 
-### SaaS Platforms
-
-SaaS platforms like Salesforce and HubSpot contain valuable business data. Census can create [SaaS Datasets](../datasets/overview/saas-datasets.md) directly from these sources, making it easy to work with your CRM data alongside your warehouse data.
-
 ### Streaming Sources
 
 For real-time use cases, Census connects to streaming sources like Kafka and Confluent Cloud. These connections power [Streaming Datasets](../datasets/overview/streaming-datasets.md) that enable low-latency data activation.
@@ -35,7 +30,7 @@ For ad-hoc or one-time data needs, Census supports [CSV Datasets](../datasets/ov
 
 ## Data Warehouse-Specific Features
 
-The following sections apply specifically to data warehouse and database connections (Snowflake, BigQuery, Redshift, PostgreSQL, etc.). SaaS, streaming, and file upload sources have different connection methods and considerations, which are detailed in their respective documentation pages.
+The following sections apply specifically to data warehouse and database connections (Snowflake, BigQuery, Redshift, PostgreSQL, etc.). Streaming and file upload sources have different connection methods and considerations, which are detailed in their respective documentation pages.
 
 ### ️ Sync Engines for Data Warehouses
 
@@ -60,10 +55,6 @@ If you have any questions about which Sync Engine is right for you, please [reac
 Most data warehouse sources require allowlisting IP Addresses so that Census's systems can access data from the source. [BigQuery](available-sources/google-bigquery.md) and [Databricks](available-sources/databricks.md) are notable exceptions, so do check the source-specific docs if you have any questions.
 
 If your data warehouse is protected by a firewall, please add Census's IP addresses to the allowlist. You can find Census's set of IP address for your region in [Regions & IP Addresses](../misc/security-and-privacy/regions-and-ip-addresses.md#ip-addresses).
-
-{% hint style="info" %}
-For SaaS sources like Salesforce and HubSpot, IP allowlisting is typically not required as Census connects through their APIs using OAuth authentication.
-{% endhint %}
 
 ### Data Warehouse Usage
 
