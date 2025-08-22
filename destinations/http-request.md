@@ -82,11 +82,9 @@ Census supports all major HTTP request methods. In this case, the endpoint we're
 
 ### Choose your payload type
 
-We currently support the two most common payload types—empty and JSON. If you need more (e.g. XML, SOAP), please send us an email at support@getcensus.com!
+We currently support the following payload types: empty, JSON, and URL encoded. If you need more (e.g. XML, SOAP), please send us an email at support@getcensus.com!
 
 This endpoint expects JSON, so we'll go with that.
-
-<figure><img src="../.gitbook/assets/CleanShot 2023-09-25 at 17.32.57@2x.png" alt=""><figcaption></figcaption></figure>
 
 ### Define your payload
 
