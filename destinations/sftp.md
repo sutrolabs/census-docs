@@ -34,7 +34,7 @@ Before you begin, you'll need the following:
 4. Enter a **Name** for your destination. This is only for your reference – it can be anything that makes sense to you.
 5. Enter authentication details for your SFTP server. **Host** and **Username** are always required. If your server requires a password instead of an SSH key, enter the **Password**. If your server uses SSH keys, you can leave the **Password** blank.
 6. Click **Save Connection**.
-7. If you're using **SSH keys** to authenticate your server, download the **SFTP Public Key** from this screen and upload it to your server. Then, click **Test** to verify that the connection works.
+7. If you're using **SSH keys** to authenticate your server, you can provide your own or have Census generate a pair for you. For Census-generated keys, download the **SFTP Public Key** from this screen and upload it to your server. Then, click **Test** to verify that the connection works.
 
 * If you aren't using a password for your server, Census provides an RSA token with an OpenSSH-formatted public key.
 
