@@ -108,6 +108,7 @@ Census supports [sending structured data](../syncs/structuring-data/structured-d
 * Arrays are really arrays of single values (e.g. `["VIP", "New User Last 30 Days", "Promotion Candidate"]`). If your array contains mixed values including integers and booleans, Braze will convert all of them to strings.
 * Objects are key-value pairs (e.g. `{"key": "value"}`). Census will send the object as a stringified JSON object.
 * Arrays of Objects are arrays of key-value pairs (e.g. `[{"key": "value"}, {"key2": "value2"}]`). These have [special behavior in Braze](https://www.braze.com/docs/user_guide/data_and_analytics/custom_data/custom_attributes/array_of_objects). To limit datapoint writes, Census will do a deep diff of the objects in the array and only send changes. Each object in the array must have an obvious ID field which can be used to calculate the diff. The ID field **must** be unique, and either an integer or a string. Census will look for a field called `"id"` first. If one isn't found, it will attempt to guess by looking for fields that are unique integers/strings.
+* Arrays of Objects require timestamp fields to be formatted as `$time` rather than strings (e.g. `[{"start_date": {"$time": "1900-01-01T00:00:25Z"}}]` )
 * [User Push Tokens](https://www.braze.com/docs/api/objects_filters/user_attributes_object#push-token-import) are a special type of Array of Objects - To send push tokens, your data should be structured as an array of objects with 2-3 values: `app_id`, `token`, and an optional `device_id`.
 
 ### Mirror Mode Options
