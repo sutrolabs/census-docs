@@ -6,18 +6,17 @@ description: This page describes how to use Census with Mailgun.
 
 ## Getting Started
 
-1. Navigate to the **Destinations** page in Census and click **New Destination**.
-2. Select **Mailgun** from the menu.
-3. Enter your **Private API Key** and **Mailgun Domain**. The former can be found in the Mailgun app under **Account Settings** > **API Keys**. The latter can be found in **Sending** > **Domains**.
-
-<figure><img src="../.gitbook/assets/mailgun.png" alt=""><figcaption><p>Generate your Private API Key from Mailgun.</p></figcaption></figure>
-<figure><img src="../.gitbook/assets/mailgun2.png" alt=""><figcaption><p>Get your Domain from the Mailgun app.</p></figcaption></figure>
+1. Navigate to the **Destinations** page in Census and click **New Destination**, and select **Mailgun** from the menu.
+2. Census needs two pieces of information to communicate with Mailgun
+   1. **API Key** - Under **Account Settings** > **API Keys**, select **Add new key**. In the description, mention Census. The new key should only need the **Developer** permission.
+   2. **Mailgun Domain** - Found under the **Send** left hand navigation section, go to **Sending** > **Domains**.
+3. Enter the provided credentials.
 
 ## Supported Objects and Behaviors
 
-| **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors** |
-| --------------: | :------------: | ---------------- | --------------|
-| List Member | ✅ | Email Address | Update or Create |
+| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
+| --------------: | :------------: | ------------- | ---------------- |
+|     List Member |        ✅       | Email Address | Update or Create |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Mailgun objects and/or behaviors.
 
