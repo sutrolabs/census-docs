@@ -8,4 +8,4 @@ We recently launched an [http-request.md](http-request.md "mention") destination
 
 As a result, **we've deprecated our Webhooks destination**. This means that any existing Webhook syncs will continue to run, but you won't be able to create new ones.
 
-Please reach out to our support team if you have any questions!
+Please reach out to the support team if you have any questions!

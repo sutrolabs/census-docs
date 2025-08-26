@@ -16,7 +16,7 @@ In this guide, we will show you how to connect NetSuite to Census and create you
 * Have your NetSuite account ready, with the Administrator role.
 
 {% hint style="warning" %}
-This process involves several steps - please set aside 15-30 minutes to complete it. NetSuite configuration can be complex, so if you have any questions please contact our support team and we'll help you tailor these instructions to your needs.
+This process involves several steps - please set aside 15-30 minutes to complete it. NetSuite configuration can be complex, so if you have any questions please contact the support team and we'll help you tailor these instructions to your needs.
 {% endhint %}
 
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
@@ -123,7 +123,7 @@ The last bit of information you’ll need is your NetSuite Account ID:
 
 1. Click Save Connection, and click Test to double check your connection information.
 
-You're ready to start using Census to load data from your warehouse to NetSuite! If you have any trouble with these steps, please don't hesitate to reach out to our support team and we'll help get this setup.
+You're ready to start using Census to load data from your warehouse to NetSuite! If you have any trouble with these steps, please don't hesitate to reach out to the support team and we'll help get this setup.
 
 >
 
@@ -193,7 +193,7 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 |      **Update Only** |        ✅       |     All     |
 |      **Create Only** |        ✅       |     All     |
 
-:mailbox: Contact our support team if you want Census to support more Sync Behaviors for this destination
+:mailbox: Contact the support team if you want Census to support more Sync Behaviors for this destination
 
 ## ❓Netsuite Quirks
 
@@ -219,4 +219,4 @@ For more information on all Netsuite Objects and their fields please visit [Nets
 
 ## Need help connecting to NetSuite?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

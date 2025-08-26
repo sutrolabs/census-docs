@@ -20,8 +20,8 @@ description: This page describes how to use Census with Constant Contact.
 
 **Note**: when syncing contacts from Census, **List Ids** is a required field. This needs to be an array of strings, each of which is the ID (not name) of an *existing* contact list in Constant Contact.
 
-Contact our support team if you want Census to support more Constant Contact objects and/or behaviors.
+Contact the support team if you want Census to support more Constant Contact objects and/or behaviors.
 
 ## Need help connecting to Constant Contact?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

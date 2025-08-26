@@ -82,7 +82,7 @@ Census supports all major HTTP request methods. In this case, the endpoint we're
 
 ### Choose your payload type
 
-We currently support the following payload types: empty, JSON, and URL encoded. If you need more (e.g. XML, SOAP), please contact our support team!
+We currently support the following payload types: empty, JSON, and URL encoded. If you need more (e.g. XML, SOAP), please contact the support team!
 
 This endpoint expects JSON, so we'll go with that.
 
@@ -136,5 +136,5 @@ Then adding that as a header to the HTTP Request destination which should look l
 
 ## Need help using HTTP Request?
 
-Contact our support team or start a conversation via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation via the [in-app](https://app.getcensus.com) chat.
 

@@ -20,7 +20,7 @@ You should now be ready to start creating audiences in Kevel!
 | ------------------------------------------------------------------------------------------------------------: | :------------: | :-----------: | :-----------: |
 | <p>Interests<br><a href="https://docs.getcensus.com/basics/core-concept/audience-syncs">Audience Sync</a></p> |        ✅       |    User Key   |     Mirror    |
 
-Contact our support team if you want Census to support more objects for Kevel.
+Contact the support team if you want Census to support more objects for Kevel.
 
 ### Understanding Kevel Interests/Flight Categories
 
@@ -34,4 +34,4 @@ You can also use Custom Targeting via Kevel's Zerkel queries by specifying a key
 
 ## Need help connecting to Kevel?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

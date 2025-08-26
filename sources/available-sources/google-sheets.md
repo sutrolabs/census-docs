@@ -66,4 +66,4 @@ For more detailed instructions on how to configure your sync, please read the do
 
 ## Need help connecting to Google Sheets?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

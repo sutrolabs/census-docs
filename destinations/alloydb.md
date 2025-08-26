@@ -11,7 +11,7 @@ description: >-
 This guide shows you how to use Census to connect your AlloyDB database to your data warehouse and create your first sync.
 
 {% hint style="info" %}
-In order for a third party application (like Census) to query your AlloyDB, Google Cloud requires that you [set up an Auth proxy as detailed in their documentation](https://cloud.google.com/alloydb/docs/auth-proxy/overview). If you have any questions at all setting up this Auth proxy, please contact our support team.
+In order for a third party application (like Census) to query your AlloyDB, Google Cloud requires that you [set up an Auth proxy as detailed in their documentation](https://cloud.google.com/alloydb/docs/auth-proxy/overview). If you have any questions at all setting up this Auth proxy, please contact the support team.
 {% endhint %}
 
 1. Visit the [Destinations page](https://app.getcensus.com/destinations) and click **+ New Destination**.
@@ -51,7 +51,7 @@ We support syncing data to Tables in AlloyDB, but they must have a uniqueness co
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more AlloyDB objects and/or sync behaviors.
+Contact the support team if you want Census to support more AlloyDB objects and/or sync behaviors.
 
 ## Advanced Network Configuration
 
@@ -63,4 +63,4 @@ You may be trying to sync to a table that does not have a uniqueness constraint.
 
 ## Need help connecting to Google AlloyDB?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

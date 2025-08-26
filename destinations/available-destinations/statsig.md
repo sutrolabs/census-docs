@@ -52,4 +52,4 @@ Learn more about all of our sync behaviors in our [Syncs](https://app.gitbook.co
 
 #### Need help connecting to Statsig? <a href="#need-help-connecting-to-enterpret" id="need-help-connecting-to-enterpret"></a>
 
-​Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.
+​Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com/) chat.

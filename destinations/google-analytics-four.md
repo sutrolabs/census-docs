@@ -67,11 +67,11 @@ Learn about all of our sync behaviors in [Core Concepts](../syncs/core-concept/#
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Google Analytics objects and/or behaviors
+Contact the support team if you want Census to support more Google Analytics objects and/or behaviors
 
 ## Google Analytics 4 Quirks
 
-There's quite a few quirks with Google Analytics 4, particularly with how it handles custom properties. If you need any help configuring Google Analytics, contact our support team.
+There's quite a few quirks with Google Analytics 4, particularly with how it handles custom properties. If you need any help configuring Google Analytics, contact the support team.
 
 ### Custom Properties (Dimensions and Metrics)
 
@@ -128,4 +128,4 @@ One last thing to keep in mind. GA4 now supports a real-time view of events and,
 * For many Google Analytics reports, data imported this way will only shows up if the User ID has been used as a visitor to the property in the last **30 days**.
 * Data takes up to **24 hours** to be fully indexed by google
 
-Contact our support team if your use cases don't work with these limitations. We'd love to hear how we can make this connection better in the future!
+Contact the support team if your use cases don't work with these limitations. We'd love to hear how we can make this connection better in the future!

@@ -48,4 +48,4 @@ In this case, ignoring invalid records decreases the size of the denominator (i.
 
 ## Need Help?
 
-If you have questions or feedback on how we can improve this feature, please contact our support team via our in-app chat.
+If you have questions or feedback on how we can improve this feature, please contact the support team via our in-app chat.

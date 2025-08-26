@@ -67,7 +67,7 @@ The sync will move data from your warehouse to your GCS bucket. In this step, yo
 7. Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync.
 8. Confirm the data arrives in the GCS bucket!
 
-If you need any help configuring GCS, contact our support team to get some help.
+If you need any help configuring GCS, contact the support team to get some help.
 
 ## Supported Sync Behaviors
 
@@ -126,4 +126,4 @@ Contact us if your use cases don't work with these limitations. We plan on addre
 
 ## Need help connecting to Google Cloud Storage?
 
-You can contact our support team or start a conversation from the in-app chat.
+You can contact the support team or start a conversation from the in-app chat.

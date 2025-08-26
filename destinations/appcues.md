@@ -90,4 +90,4 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 
 ### Need help connecting to Appcues?
 
-Contact our support team if you want Census to support more objects or more sync behaviors for Appcues or just to start a conversation!
+Contact the support team if you want Census to support more objects or more sync behaviors for Appcues or just to start a conversation!

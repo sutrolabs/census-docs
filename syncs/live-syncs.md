@@ -29,7 +29,7 @@ Live Syncs are available for sources capable of streaming data, such as [Conflue
 
 &#x20;Please feel free to [request a new integration](https://www.getcensus.com/request-an-integration?hsCtaTracking=a5c60288-2577-4ade-8fc6-e453ba20cd0d%7C5f94cdfe-1f8f-457f-8e34-80e2af1c9fb2) if your streaming infrastructure is not yet supported.
 
-\* Coming soon. Contact our support team to be added to the private preview.
+\* Coming soon. Contact the support team to be added to the private preview.
 
 ### Supported Destinations
 

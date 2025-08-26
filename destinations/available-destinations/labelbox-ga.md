@@ -12,4 +12,4 @@ Detailed instructions for using Census to sync datasets from your data warehouse
 
 ### Need help connecting to Labelbox?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

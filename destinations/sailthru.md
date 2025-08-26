@@ -86,7 +86,7 @@ Once your sync is complete, it's time to check your data. Open Sailthru and chec
 
 If everything went well, that's it! You've started syncing data from your warehouse to Sailthru! [🥳️](https://emojikeyboard.org/copy/Partying_Face_Emoji_%F0%9F%A5%B3%EF%B8%8F?utm_source=extlink)
 
-And if anything went wrong, contact our support team to get some help.
+And if anything went wrong, contact the support team to get some help.
 
 ## Supported objects
 
@@ -112,4 +112,4 @@ Let us know if you want Census to support additional sync behaviors for Sailthru
 
 ## Need help connecting to Sailthru?
 
-You can contact our support team or start a conversation from the in-app chat.
+You can contact the support team or start a conversation from the in-app chat.

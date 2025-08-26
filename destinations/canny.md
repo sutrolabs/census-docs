@@ -20,8 +20,8 @@ Canny is a customer feedback management tool that helps you collect and organize
 | --------------: | :------------: | ---------------- | ------------------- |
 | User | ✅ | User ID | Update or Create |
 
-Contact our support team if you want Census to support more Canny objects and/or behaviors.
+Contact the support team if you want Census to support more Canny objects and/or behaviors.
 
 ## Need help connecting to Canny?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

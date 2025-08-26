@@ -25,7 +25,7 @@ The objects and fields accessible to Census are all determined by the user accou
 {% hint style="info" %}
 **Require a connection via an API-Only user?**
 
-If you have an API-Only Salesforce user that is unable to log into the Salesforce UI, please contact our support team. We'd be happy to set up this connection with you.
+If you have an API-Only Salesforce user that is unable to log into the Salesforce UI, please contact the support team. We'd be happy to set up this connection with you.
 {% endhint %}
 
 ### Using a Salesforce Sandbox
@@ -108,7 +108,7 @@ Salesforce support is pretty straight forward!
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Salesforce objects and/or behaviors.
+Contact the support team if you want Census to support more Salesforce objects and/or behaviors.
 
 ### **Syncing to OpportunityContactRole**
 
@@ -125,7 +125,7 @@ The OpportunityContactRole in Salesforce is a bit weird. It doesn't actually sup
 4. At this point, you can use the Sync Tester to verify or save and run your sync. Even if you save and run your sync, we recommend limiting your data model to no more than 10 records just to verify relationships are being created as expected.
 5. Once your test or first sync has run, sign into Salesforce and verify that the OpportunityContactRole relationships were created the way you expected!
 
-That should be it! OpportunityContactRole is one of the weirdest parts of the Salesforce platform so if you're still confused, not to worry. Reach out and let our support team get you going!
+That should be it! OpportunityContactRole is one of the weirdest parts of the Salesforce platform so if you're still confused, not to worry. Reach out and let the support team get you going!
 
 ## **🗃 Supported Data Types**
 
@@ -191,4 +191,4 @@ Typically, this is a transient issue and the next run of the sync won't have the
 
 ## Need help connecting to Salesforce?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

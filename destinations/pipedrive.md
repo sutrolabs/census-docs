@@ -27,7 +27,7 @@ In this guide, we will show you how to connect Pipedrive to Census and create yo
   * [SQL Server](https://docs.getcensus.com/sources/sql-server)
 
 {% hint style="info" %}
-This part of our documentation is still under construction! If you have any questions, please don't hesitate to contact our support team.
+This part of our documentation is still under construction! If you have any questions, please don't hesitate to contact the support team.
 {% endhint %}
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
@@ -45,8 +45,8 @@ This part of our documentation is still under construction! If you have any ques
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Pipedrive objects and/or behaviors
+Contact the support team if you want Census to support more Pipedrive objects and/or behaviors
 
 ## Need help connecting to Pipedrive?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

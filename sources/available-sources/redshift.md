@@ -113,4 +113,4 @@ This is definitely an obscure feature of AWS but this article does a good job of
 
 ## Need help connecting to Redshift?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

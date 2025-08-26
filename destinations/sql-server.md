@@ -50,7 +50,7 @@ GRANT INSERT, UPDATE ON SCHEMA::<schema> TO CENSUS;
 
 <table data-header-hidden><thead><tr><th width="155" align="right"></th><th width="147" align="center"></th><th width="243"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Table</td><td align="center">✅</td><td>Primary keys or columns with uniqueness constraints (should not be of the type <code>uniqueidentifier</code>)</td><td>Update or Create, Update Only</td></tr></tbody></table>
 
-Contact our support team if you want Census to support more sync behaviors for SQL Server.
+Contact the support team if you want Census to support more sync behaviors for SQL Server.
 
 ## Advanced Network Configuration
 
@@ -58,4 +58,4 @@ Census can successfully connect to SQL Server instances that are using advanced 
 
 ## Need help connecting to SQL Server?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

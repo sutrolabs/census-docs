@@ -68,4 +68,4 @@ Census can successfully connect to SQL Server instances that are using advanced 
 
 ## Need help connecting to SQL Server?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

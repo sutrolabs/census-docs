@@ -101,4 +101,4 @@ As of October 2024, Microsoft Fabric only supports our [Basic Sync Engine](../ov
 
 ## Need help connecting to Microsoft Fabric?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

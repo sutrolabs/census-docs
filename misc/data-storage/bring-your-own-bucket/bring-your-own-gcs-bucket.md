@@ -17,7 +17,7 @@ If you bring your own GCS bucket:
 2. It will be used as the record-level sync tracking storage for every sync run, regardless of source or destination.
 
 {% hint style="info" %}
-After following the steps below, you must provide your Census support representative with details. Please contact our support team via your established channels.\
+After following the steps below, you must provide your Census support representative with details. Please contact the support team via your established channels.\
 \
 Your Census rep will require
 

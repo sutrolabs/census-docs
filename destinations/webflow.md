@@ -18,8 +18,8 @@ description: This page describes how to use Census with Webflow.
 | --------------: | :------------: | --------------- | ------------- |
 | Collection Item | ✅ | Slug | Update or Create, Update Only, Mirror |
 
-Contact our support team if you want Census to support more Webflow objects and/or behaviors.
+Contact the support team if you want Census to support more Webflow objects and/or behaviors.
 
 ## Need help connecting to Webflow?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

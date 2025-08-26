@@ -101,4 +101,4 @@ When using VPC Service Controls, you will also need to allow BigQuery unloads to
 
 ## Need help connecting to BigQuery?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

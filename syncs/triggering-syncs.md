@@ -83,7 +83,7 @@ If your syncs have dependencies and you'd like to organize them to run in order,
 <figure><img src="../.gitbook/assets/Sequence Trigger.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-Sequences do not currently support specifying multiple parent syncs. If you are interested in multi-parent functionality, please contact our support team.
+Sequences do not currently support specifying multiple parent syncs. If you are interested in multi-parent functionality, please contact the support team.
 {% endhint %}
 
 ## **Sync Trigger API**

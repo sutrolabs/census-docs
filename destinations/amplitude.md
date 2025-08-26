@@ -108,7 +108,7 @@ Both User and Device objects will resolve to a single User Profile in Amplitude.
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Amplitude objects and/or behaviors.
+Contact the support team if you want Census to support more Amplitude objects and/or behaviors.
 
 ### Working with Amplitude's Data Model
 
@@ -127,10 +127,10 @@ This is Amplitude's intended design: fast, but with some inflexibility. You can 
 
 As a result of this behavior, we often get asked "Why can't I see my user properties?" and we explain that it's likely because the user hasn't had a subsequent event. Some users choose to work around this by creating a sort of `Updated By Census` synthetic Event instead of using the User Identify destination object. If you chose to go this route, you'll likely want to tell Amplitude to consider this an inactive event so that the user doesn't appear as active when this happens. See [Amplitude's documentation](https://help.amplitude.com/hc/en-us/articles/360047138392-Manage-events-and-properties) on the steps to define that and make sure you do this **before running the sync** to avoid accidentally marking your users as active.
 
-‌ 🔋 Contact our support team if you want Census to support more Sync Behaviors for this destination.
+‌ 🔋 Contact the support team if you want Census to support more Sync Behaviors for this destination.
 
 ‌
 
 ## Need help connecting to Amplitude?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -47,7 +47,7 @@ GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA "<your schema>" TO CENSUS;
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Redshift objects and/or behaviors.
+Contact the support team if you want Census to support more Redshift objects and/or behaviors.
 
 ## Advanced Network Configuration
 
@@ -55,4 +55,4 @@ Census can successfully connect to Redshift instances that are using advanced ne
 
 ## Need help connecting to Redshift?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

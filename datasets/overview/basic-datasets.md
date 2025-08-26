@@ -3,7 +3,7 @@
 Basic datasets are the foundation of Census's data activation capabilities. They allow you to leverage your existing data warehouse infrastructure to power your business operations by connecting your warehouse data directly to your business applications.
 
 {% hint style="info" %}
-Need a hand getting a handle on your data warehouse? Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat to let us know what questions we can help with!
+Need a hand getting a handle on your data warehouse? Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat to let us know what questions we can help with!
 {% endhint %}
 
 ## Getting Started

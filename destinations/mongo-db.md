@@ -38,4 +38,4 @@ Because MongoDB tables have flexible schemas, Census treats every field you map 
 
 ## Need help connecting to MongoDB?
 
-You can contact our support team or start a conversation from the in-app chat.
+You can contact the support team or start a conversation from the in-app chat.

@@ -22,8 +22,8 @@ description: This page describes how to use Census with Aha.
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Aha objects and/or sync behaviors.
+Contact the support team if you want Census to support more Aha objects and/or sync behaviors.
 
 ## Need help connecting to Aha?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

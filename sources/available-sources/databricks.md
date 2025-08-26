@@ -84,4 +84,4 @@ If you're using Databricks's Allowed IPs network policy, you'll need to add thes
 
 ## Need help connecting to Databricks?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -93,7 +93,7 @@ Once your sync is complete, it's time to check your data. Open Outreach and chec
 
 If everything went well, that's it! You've started syncing data from your warehouse to Outreach! 🎉
 
-And if anything went wrong, contact our support team to get some help.
+And if anything went wrong, contact the support team to get some help.
 
 ## Sync speed
 
@@ -142,4 +142,4 @@ If using another profile, the profile must include permissions to view, create, 
 
 ## Need help connecting to Outreach?
 
-You can contact our support team or start a conversation from the in-app chat.
+You can contact the support team or start a conversation from the in-app chat.

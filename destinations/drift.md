@@ -42,7 +42,7 @@ If you want to see your integrations in Drift in the future, simply navigate to 
 | --------------: | :------------: | -------------------------- |
 |         Contact |        ✅       | Object ID, any Text/Number |
 
-Contact our support team if you want Census to support more supported objects for Drift.
+Contact the support team if you want Census to support more supported objects for Drift.
 
 ## Supported Sync Behaviors
 
@@ -54,8 +54,8 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | -------------------: | :------------: | :---------: |
 | **Update or Create** |        ✅       |     All     |
 
-Contact our support team if you want Census to support more Sync Behaviors for Drift.
+Contact the support team if you want Census to support more Sync Behaviors for Drift.
 
 ## Need help connecting to Drift?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

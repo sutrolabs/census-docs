@@ -82,7 +82,7 @@ Once your sync is complete, it's time to check your data. Open Ortto and check t
 
 If everything went well, that's it! You've started syncing data from your warehouse to Ortto! 🎉
 
-And if anything went wrong, contact our support team to get some help.
+And if anything went wrong, contact the support team to get some help.
 
 ## Sync Speed
 
@@ -117,4 +117,4 @@ Contact us if you want Census to support more Sync Behaviors for Ortto.
 
 ## Need help connecting to Ortto?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

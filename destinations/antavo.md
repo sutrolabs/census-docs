@@ -26,4 +26,4 @@ You should now be ready to start syncing data to Antavo!
 
 ## Need help connecting to Antavo?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

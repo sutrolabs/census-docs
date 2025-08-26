@@ -20,7 +20,7 @@ Choose a name for your bucket that is memorable and clear. For example, if your 
 
 In a shell, set up a few variables we'll use throughout the rest of this guide:
 
-The `CENSUS_AWS_ACCOUNT_ID` and `CENSUS_CUSTOMER_BUCKET_EXTERNAL_ID` will be provided to you by your Census representative. This may be your account contact or you can contact our support team
+The `CENSUS_AWS_ACCOUNT_ID` and `CENSUS_CUSTOMER_BUCKET_EXTERNAL_ID` will be provided to you by your Census representative. This may be your account contact or you can contact the support team
 
 ```
 export BUCKET_NAME=<your bucket name>
@@ -119,4 +119,4 @@ You shouldn't need to take any further action once you've set up your bucket. Ce
 
 We strongly recommend that once set up, you do not modify the bucket or any of the keys it contains in any way. Adding, removing, modifying, or renaming data in your Census bucket is not supported and will likely cause Census syncs to fail. In addition, the Census bucket should not be simultaneously employed for any other purposes.
 
-If you need to rename your bucket or the IAM roles you have granted to the bucket, please contact our support team.
+If you need to rename your bucket or the IAM roles you have granted to the bucket, please contact the support team.

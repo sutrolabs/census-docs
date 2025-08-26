@@ -81,7 +81,7 @@ Once your sync is complete, it's time to check your data. Open Orbit and check t
 
 If everything went well, that's it! You've started syncing data from your warehouse to Orbit! 🎉
 
-And if anything went wrong, contact our support team to get some help.
+And if anything went wrong, contact the support team to get some help.
 
 ## 🐎 Sync Speed
 
@@ -104,8 +104,8 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Orbit objects and/or behaviors
+Contact the support team if you want Census to support more Orbit objects and/or behaviors
 
 ## Need help connecting to Orbit?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -27,7 +27,7 @@ Rokt is an e-commerce marketing technology company that uses machine learning to
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Rokt objects and/or behaviors.
+Contact the support team if you want Census to support more Rokt objects and/or behaviors.
 
 ### Audiences
 
@@ -37,4 +37,4 @@ To specify the list to which you want to add members, its name has to be mapped 
 
 ## Need help connecting to Rokt?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

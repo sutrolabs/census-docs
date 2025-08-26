@@ -39,4 +39,4 @@ Census can successfully connect to SingleStore instances that are using advanced
 
 ## Need help connecting to SingleStore?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

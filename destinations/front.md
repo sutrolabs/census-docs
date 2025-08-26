@@ -101,7 +101,7 @@ That's it, in 5 steps, you connected Census to Front and started syncing custome
 
 ![](../.gitbook/assets/front_step6.png)
 
-If you have any questions or if you have any issues getting started, please contact our support team via the in-app live chat in the bottom right corner
+If you have any questions or if you have any issues getting started, please contact the support team via the in-app live chat in the bottom right corner
 
 ## Sync Speed
 
@@ -130,7 +130,7 @@ Front has [many objects available via their API](https://dev.frontapp.com/refere
 |            Tags |       🔜       |
 |           Teams |       🔜       |
 
-Contact our support team if you want Census to support more objects for Front
+Contact the support team if you want Census to support more objects for Front
 
 ## Supported Sync Behaviors
 
@@ -143,7 +143,7 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | **Update or Create** |        ✅       | Contact Only |
 |      **Update Only** |       🔜       |              |
 
-Contact our support team if you want Census to support more Sync behaviors for Front
+Contact the support team if you want Census to support more Sync behaviors for Front
 
 ## Things to know about our Front destination
 
@@ -152,4 +152,4 @@ Contact our support team if you want Census to support more Sync behaviors for F
 
 ## Need help connecting to Front?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

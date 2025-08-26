@@ -24,4 +24,4 @@ As of June 2023, MotherDuck only supports our [Basic Sync Engine](../overview.md
 
 ## Need help connecting to MotherDuck?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

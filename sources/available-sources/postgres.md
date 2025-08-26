@@ -98,4 +98,4 @@ With these steps complete, you should be able to complete a connection test, ind
 
 ## Need help connecting to PostgreSQL?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

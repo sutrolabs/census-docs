@@ -103,7 +103,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 | Account         |        ✅       | Account ID, Account Number           |
 | Subscription    |        ✅       | Subscription ID, Subscription Number |
 
-Contact our support team if you want Census to support more Objects for this destination
+Contact the support team if you want Census to support more Objects for this destination
 
 ## Supported Sync Behaviors
 
@@ -115,8 +115,8 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | ------------: | :------------: | :-------------------: |
 |   Update Only |        ✅       | Account, Subscription |
 
-‌ Contact our support team if you want Census to support more Sync Behaviors for this destination
+‌ Contact the support team if you want Census to support more Sync Behaviors for this destination
 
 ## Need help connecting to Zuora?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

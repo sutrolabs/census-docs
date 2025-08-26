@@ -24,7 +24,7 @@ Follow the [set-up instructions here!](https://docs.getcensus.com/destinations/g
 Learn more about all of our sync behaviors in our [Syncs](../basics/core-concept/#sync-behaviors) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Google Ads objects and/or behaviors
+Contact the support team if you want Census to support more Google Ads objects and/or behaviors
 
 ## Sync Offline Click and Call Conversions with Census
 

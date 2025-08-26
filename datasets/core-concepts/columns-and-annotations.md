@@ -14,7 +14,7 @@ Census caches and refreshes this metadata regularly to optimize performance. If 
 {% hint style="info" %}
 **What happened with my models and entities?**
 
-All the data you had encoded in your models and entities is still available and now has a new representation through Datasets. If you need help navigating this change contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+All the data you had encoded in your models and entities is still available and now has a new representation through Datasets. If you need help navigating this change contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 {% endhint %}
 
 {% hint style="info" %}

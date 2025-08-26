@@ -31,9 +31,9 @@ Census currently supports syncing to the following Oracle Fusion objects.
 Learn more about all of our sync behaviors in our [Syncs](../../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Oracle Fusion objects and/or behaviors
+Contact the support team if you want Census to support more Oracle Fusion objects and/or behaviors
 
 ## Need help connecting to Oracle Fusion?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
 

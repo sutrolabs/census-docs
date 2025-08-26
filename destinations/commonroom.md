@@ -17,8 +17,8 @@ description: Learn how to use Census to sync your Data Warehouse to Common Room.
 | MembersInformation | ✅ | Email | Upsert |
 | OrganizationsInformation | ✅ | Domain | Upsert |
 
-Contact our support team if you want Census to support more Common Room objects and/or behaviors.
+Contact the support team if you want Census to support more Common Room objects and/or behaviors.
 
 ## Need help connecting to Common Room?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -120,4 +120,4 @@ Any feature that is available for audiences built in the Census UI is available 
 
 **How can I turn off Warehouse-Managed Audiences and opt back out of this feature?**
 
-Reach out to your Census account manager, or contact our support team.
+Reach out to your Census account manager, or contact the support team.

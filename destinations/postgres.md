@@ -80,7 +80,7 @@ We support syncing data to Tables in PostgreSQL, but they must have a uniqueness
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Postgres objects and/or behaviors
+Contact the support team if you want Census to support more Postgres objects and/or behaviors
 
 ## Advanced Network Configuration
 
@@ -92,4 +92,4 @@ You may be trying to sync to a table that does not have a uniqueness constraint.
 
 ## Need help connecting to PostgreSQL?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

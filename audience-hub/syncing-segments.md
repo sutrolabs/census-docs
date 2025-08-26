@@ -49,7 +49,7 @@ As of October 2024, our one-click experience supports the following ad platforms
 * [Pinterest](../destinations/pinterest.md)
 * [X](../destinations/twitter.md)
 
-We plan to expand this list in the future. If you don't see an ad platform above, it's very likely we support it using our ["classic" sync experience](syncing-segments.md#classic-experience-for-other-destinations). If you still can't find what you're looking for, please contact our support team.
+We plan to expand this list in the future. If you don't see an ad platform above, it's very likely we support it using our ["classic" sync experience](syncing-segments.md#classic-experience-for-other-destinations). If you still can't find what you're looking for, please contact the support team.
 
 ## "Classic" Experience for Other Destinations
 
@@ -67,7 +67,7 @@ Regardless of whether you choose option 1 or 2 above, you'll enter the normal [s
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-12-13 at 17.35.47@2x.png" alt=""><figcaption><p>Select the segment you'd like to sync.</p></figcaption></figure>
 
-Segments and entities have the same capabilities as model-based syncs but also enable the syncing of fields from any related source that is joined on a many-to-one basis. For example, if syncing contacts you can also sync the company name of each contact. Don't hesitate to reach out to our support team if you need help navigating this.
+Segments and entities have the same capabilities as model-based syncs but also enable the syncing of fields from any related source that is joined on a many-to-one basis. For example, if syncing contacts you can also sync the company name of each contact. Don't hesitate to reach out to the support team if you need help navigating this.
 
 ### Automatically Managing Destination Audiences
 

@@ -74,4 +74,4 @@ Destination fields are unique per destination, so a field (e.g., active\_users\_
 
 We are constantly building out this page :construction:
 
-Please contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat to let us know what questions we can help with, or something you found out through using Census.
+Please contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat to let us know what questions we can help with, or something you found out through using Census.

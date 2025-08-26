@@ -41,4 +41,4 @@ If you are sending emails to LiveIntent in a hashed format, ensure your emails o
 
 ## Need help connecting to LiveIntent?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

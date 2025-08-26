@@ -23,7 +23,7 @@ You should now be ready to start syncing data to Eagle Eye!
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Eagle Eye objects and/or behaviors
+Contact the support team if you want Census to support more Eagle Eye objects and/or behaviors
 
 ### Coupons
 
@@ -33,4 +33,4 @@ The Coupon object also supports a number of additional optional fields. For more
 
 ## Need help connecting to Eagle Eye?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

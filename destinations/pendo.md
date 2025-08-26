@@ -73,8 +73,8 @@ Census currently supports syncing to the following Pendo objects.
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Pendo objects and/or behaviors
+Contact the support team if you want Census to support more Pendo objects and/or behaviors
 
 ## Need help connecting to Pendo?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

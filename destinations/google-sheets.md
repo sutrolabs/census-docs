@@ -54,8 +54,8 @@ This is a runtime error and will not be caught at the time of Sync creation.
 Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
-Contact our support team if you want Census to support more Sync behaviors for Google Sheets.
+Contact the support team if you want Census to support more Sync behaviors for Google Sheets.
 
 ## Need help connecting to Google Sheets?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

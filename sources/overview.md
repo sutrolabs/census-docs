@@ -12,7 +12,7 @@ Census connects to a variety of data sources to power your syncs and data activa
 
 This flexibility allows you to use Census as a Universal Data Platform, unifying data from multiple sources and activating it across your business tools.
 
-The menu to the left lists all of the data sources that Census currently supports. If you don't see your data source listed, please contact our support team!
+The menu to the left lists all of the data sources that Census currently supports. If you don't see your data source listed, please contact the support team!
 
 ## Source Types
 
@@ -48,7 +48,7 @@ While **your experience of the Census product will be identical either way**, th
 | **Warehouse permissions**   | Read-only access                             | Read/write access                  |
 | **Ability to switch**       | Ability to upgrade to advanced (coming soon) | Not possible to downgrade to basic |
 
-If you have any questions about which Sync Engine is right for you, please reach out to our support team.
+If you have any questions about which Sync Engine is right for you, please reach out to the support team.
 
 ### Allowed IP Addresses for Data Warehouses
 

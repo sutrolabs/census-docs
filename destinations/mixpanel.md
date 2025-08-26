@@ -114,7 +114,7 @@ Census currently supports syncing to the following Mixpanel objects.
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Mixpanel objects and/or behaviors
+Contact the support team if you want Census to support more Mixpanel objects and/or behaviors
 
 #### Syncing Historical Events
 
@@ -122,4 +122,4 @@ Depending on which plan your Mixpanel is on, you may have limited ability to vie
 
 ## Need help connecting to Mixpanel?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

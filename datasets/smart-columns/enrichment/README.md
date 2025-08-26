@@ -76,4 +76,4 @@ Keep in mind:
 
 ### Need help with data enrichment?
 
-having issues with Enrichments or have feedback for us? Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+having issues with Enrichments or have feedback for us? Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

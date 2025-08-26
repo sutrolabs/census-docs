@@ -9,7 +9,7 @@ All connections from the Census Data Warehouse Service to your database are prot
 Census runs data syncs using Amazon Web Services in the **United States (us-east-1)** and **European Union (eu-central-1)** regions. Census never stores your data, but your selected region determines where data is processed during your Census syncs.
 
 {% hint style="info" %}
-By default, Census will run services with US-based infrastructure. Contact our support team to request to use another region.
+By default, Census will run services with US-based infrastructure. Contact the support team to request to use another region.
 {% endhint %}
 
 #### Supported Regions
@@ -27,7 +27,7 @@ If your data source or self-hosted destinations are behind a firewall, you will 
 
 ![This organization's syncs run in the EU.](<../../.gitbook/assets/screely-1660744037815 (1).png>)
 
-Each workspace can have its own region, which defaults to the organization's region. You can find the workspace region on the [Settings > General page](https://app.getcensus.com/settings/general). Contact our support team to request to use another region.).
+Each workspace can have its own region, which defaults to the organization's region. You can find the workspace region on the [Settings > General page](https://app.getcensus.com/settings/general). Contact the support team to request to use another region.).
 
 <figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption><p>The workspace's syncs run in the US</p></figcaption></figure>
 

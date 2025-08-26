@@ -39,7 +39,7 @@ Follow the OAuth flow to connect HubSpot. Easy!
 | Subscription Preferences |        ✅       | Email                                                 | Mirror                                                     |
 | Ticket                   |        ✅       | Record ID                                             | Send                                                       |
 
-Contact our support team if you want Census to support more Hubspot objects and/or behaviors
+Contact the support team if you want Census to support more Hubspot objects and/or behaviors
 
 #### Qualified Custom Properties for Sync Keys
 
@@ -113,7 +113,7 @@ curl --location --request PATCH 'https://api.hubapi.com/crm/v3/schemas/2-4125044
 
 * Refresh the Object within a Census Sync, it should now display the new field in the Sync Key options.&#x20;
 
-For additional support, please contact our support team and we can walk you through it.
+For additional support, please contact the support team and we can walk you through it.
 
 ### Custom Behavioral Events
 
@@ -219,4 +219,4 @@ If you need to disconnect HubSpot from Census for any reason, you can delete you
 
 ## Need help connecting to HubSpot?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

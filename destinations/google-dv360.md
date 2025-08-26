@@ -16,7 +16,7 @@ description: This page describes how to use Census with Google Display & Video 3
 
 <table data-header-hidden><thead><tr><th width="251" align="right"></th><th width="134" align="center"></th><th width="190"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Customer Match Audience</td><td align="center">✅</td><td>Any unique identifier</td><td>Update or Create, Mirror</td></tr></tbody></table>
 
-Contact our support team if you want Census to support more DV360 objects and/or behaviors.
+Contact the support team if you want Census to support more DV360 objects and/or behaviors.
 
 ### Syncing Audiences
 
@@ -44,4 +44,4 @@ If you're seeing low match rates, try adding these consent fields. Match rates c
 
 ## Need help connecting to Google Display & Video 360?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

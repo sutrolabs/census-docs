@@ -42,4 +42,4 @@ Census supports MySQL with versions TLSv1.2 and greater.
 
 ## Need help connecting to MySQL?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

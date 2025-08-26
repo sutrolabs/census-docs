@@ -67,7 +67,7 @@ Once your sync is complete, it's time to check your data. Open Microsoft Dynamic
 
 If everything went well, that's it! You've started syncing data from your warehouse to Microsoft Dynamics! [🥳️](https://emojikeyboard.org/copy/Partying_Face_Emoji_%F0%9F%A5%B3%EF%B8%8F?utm_source=extlink)
 
-And if anything went wrong, contact our support team to get some help.
+And if anything went wrong, contact the support team to get some help.
 
 ## Supported objects
 
@@ -136,4 +136,4 @@ To use Census with Dynamics, your Dynamics user must be able to request to reque
 
 ## Need help connecting to Microsoft Dynamics?
 
-You can contact our support team or start a conversation from the in-app chat.
+You can contact the support team or start a conversation from the in-app chat.

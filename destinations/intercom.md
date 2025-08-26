@@ -125,14 +125,14 @@ If you're finding Companies missing in Intercom after a sync, make sure the comp
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Intercom objects and/or behaviors
+Contact the support team if you want Census to support more Intercom objects and/or behaviors
 
 ### :x: Deleting Objects
 
 When deleting objects in Intercom, Census's default mode is to archive those objects (except in the case of Companies, which don't allow archiving). Intercom will permanently delete those objects 30 days after they've been archived. In some instances, you may opt to have Census permanently delete objects. This could lead to irreversible data loss and is not recommended unless you are confident you don't need those records.
 
-Contact our support team if you want Census to support more Sync behaviors for Intercom.
+Contact the support team if you want Census to support more Sync behaviors for Intercom.
 
 ## Need help connecting to Intercom?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

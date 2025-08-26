@@ -92,7 +92,7 @@ Once your sync is complete, it's time to check your data. Go to the specified pa
 
 If everything went well, that's it! You've started syncing data from your warehouse to your SFTP server! [🥳️](https://emojikeyboard.org/copy/Partying_Face_Emoji_%F0%9F%A5%B3%EF%B8%8F?utm_source=extlink)
 
-And if anything went wrong, contact our support team to get some help.
+And if anything went wrong, contact the support team to get some help.
 
 ## Supported Sync Behaviors
 
@@ -158,4 +158,4 @@ Make sure the key includes the full block, including the following headers and f
 
 ## Need help connecting your server?
 
-You can contact our support team or start a conversation from the in-app chat.
+You can contact the support team or start a conversation from the in-app chat.

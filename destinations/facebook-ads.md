@@ -88,7 +88,7 @@ If you are setting up a connection with a System User Token when you input your 
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Facebook Ads objects and/or behaviors
+Contact the support team if you want Census to support more Facebook Ads objects and/or behaviors
 
 ### Data Normalization
 
@@ -111,7 +111,7 @@ Additionally, certain fields require removing whitespaces and punctuation. For e
 * City changing from 'San Antonio' => 'sanantonio' using `replace( ,' ','')`
 * Date of birth changing from '1983-12-24' => '19831224' using `replace( ,'-','')`
 
-See the [Facebook documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters) for more information on the specific requirements for each field. And please contact our support team if you have any issues with this normalization.
+See the [Facebook documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters) for more information on the specific requirements for each field. And please contact the support team if you have any issues with this normalization.
 
 ### Audiences
 
@@ -239,4 +239,4 @@ A sample response would be something like this:
 
 ## Need help connecting to Facebook?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

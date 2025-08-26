@@ -91,7 +91,7 @@ Once your sync is complete, it's time to check your data. Open Zendesk and check
 
 If everything went well, that's it! You've started syncing data from your warehouse to Zendesk! 🥳️
 
-And if anything went wrong, contact our support team to get some help.
+And if anything went wrong, contact the support team to get some help.
 
 ## Things to know about the Zendesk destination
 
@@ -174,8 +174,8 @@ v2 Custom Objects that use the `/api/v2/custom_objects` endpoint are not current
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Zendesk objects and/or behaviors.
+Contact the support team if you want Census to support more Zendesk objects and/or behaviors.
 
 ## Need help connecting to Zendesk?
 
-You can contact our support team or start a conversation from the in-app chat.
+You can contact the support team or start a conversation from the in-app chat.

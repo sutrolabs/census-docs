@@ -57,4 +57,4 @@ Click **Save Topic**. Review the listed properties and types to ensure the sampl
 
 ## Need help connecting to Kafka?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -17,5 +17,5 @@ Please visit our full developer documentation at [**developers.getcensus.com/git
 You can also view this [video](https://www.loom.com/share/53e5a08688e246c2a36c5e915b659a0d?sid=b50a009c-7a93-4c67-89a7-b20d2248d38f) for a step by step guide on setting up GitLink in minutes.
 
 {% hint style="info" %}
-The GitLink feature is currently in private beta. If you are interested please reach out to your Census representative or contact our support team
+The GitLink feature is currently in private beta. If you are interested please reach out to your Census representative or contact the support team
 {% endhint %}

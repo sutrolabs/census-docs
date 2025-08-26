@@ -70,7 +70,7 @@ For more details, take a look at Mailchimp's [API documentation](https://mailchi
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Mailchimp objects and/or behaviors
+Contact the support team if you want Census to support more Mailchimp objects and/or behaviors
 
 #### Prehashed Email Identifiers
 
@@ -88,4 +88,4 @@ Mailchimp `tags` field can be set by providing an array of string values as stru
 
 ## 🚑⠀Need help connecting to Mailchimp?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

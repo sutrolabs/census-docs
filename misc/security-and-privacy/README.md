@@ -18,7 +18,7 @@ We are compliant with SOC 2 Type 2, HIPAA, GDPR, CCPA and, Privacy Shield.
 
 In addition to these certifications:
 
-* We have regular third-party penetration testing (contact our support team for the latest report)
+* We have regular third-party penetration testing (contact the support team for the latest report)
 * Have automated vulnerability scanning in our platform
 
 ### SOC2 Type 2 Audit Report

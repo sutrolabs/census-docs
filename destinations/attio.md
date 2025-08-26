@@ -33,7 +33,7 @@ description: This page describes how to use Census with Attio.
 
 Attio supports [Don't Sync Nulls](broken-reference). Syncs created prior to August 20, 2024 will need to be updated to sync nulls.
 
-Contact our support team if you want Census to support more Attio objects and/or behaviors.
+Contact the support team if you want Census to support more Attio objects and/or behaviors.
 
 ## Record References
 
@@ -81,4 +81,4 @@ Census will recognize an object is being sent by the opening `{` in the second e
 
 ## Need help connecting to Attio?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

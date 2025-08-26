@@ -99,7 +99,7 @@ Census supports custom fields on both Braze User and Event objects. You can map 
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-Contact our support team if you want Census to support more Braze objects and/or behaviors.
+Contact the support team if you want Census to support more Braze objects and/or behaviors.
 
 ### Arrays, Objects, and Array of Object fields
 
@@ -226,4 +226,4 @@ An example of this is when the Braze Custom Attribute Type that is "Automaticall
 
 ## Need help connecting to Braze?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

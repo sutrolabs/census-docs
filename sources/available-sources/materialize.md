@@ -22,4 +22,4 @@ As of June 2023, Materialize only supports our [Basic Sync Engine](../overview.m
 
 ## Need help connecting to Materialize?
 
-Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact the support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

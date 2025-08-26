@@ -69,6 +69,6 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | --------------: | :------------: | :--------------------: |
 | **Update Only** |        ✅       | Customer, Subscription |
 
-Contact our support team if you want Census to support more Sync behaviors for Chargebee.
+Contact the support team if you want Census to support more Sync behaviors for Chargebee.
 
 If run into a dead end, start a conversation with us via the [in-app](https://app.getcensus.com/) chat.
