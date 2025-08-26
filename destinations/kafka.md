@@ -32,7 +32,7 @@ Your Kafka instance must be accessable to the public internet in order for Censu
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Kafka objects and/or behaviors
+Contact our support team if you want Census to support more Kafka objects and/or behaviors
 
 ### Message Properties
 
@@ -60,8 +60,8 @@ By default, Census will structure messages as a single flat JSON object. You can
 * **operation**: The operation that triggered the sync.
 * **synced\_at**: The time the sync was triggered.
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Kafka functionality.
+Contact our support team if you want Census to support more Kafka functionality.
 
 ## Need help connecting to Kafka?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

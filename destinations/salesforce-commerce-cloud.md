@@ -21,8 +21,8 @@ description: This page describes how to use Census with Salesforce Commerce Clou
 | --------------: | :------------: | ---------------- | --------------|
 | Customer | ✅ | Customer No, Email | Update Only |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Salesforce Commerce Cloud objects and/or behaviors.
+Contact our support team if you want Census to support more Salesforce Commerce Cloud objects and/or behaviors.
 
 ## Need help connecting to Salesforce Commerce Cloud?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

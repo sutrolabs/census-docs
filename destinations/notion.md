@@ -54,7 +54,7 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | **Update or Create** |        ✅       |     All     |
 |           **Mirror** |        ✅       |     All     |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Notion.
+Contact our support team if you want Census to support more Sync behaviors for Notion.
 
 ## ❗️Common troubleshooting issues
 
@@ -66,4 +66,4 @@ You may have to provide explicit permission (rather than relying on inherited pe
 
 ## Need help connecting to Notion?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -57,8 +57,8 @@ Census currently supports syncing to the Company List and User List LinkedIn obj
 It is required to provide a DMP Segment Id for both Company List and User List
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for LinkedIn.
+Contact our support team if you want Census to support more objects for LinkedIn.
 
 ## Need help connecting to LinkedIn?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

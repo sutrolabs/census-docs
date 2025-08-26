@@ -64,8 +64,8 @@ Each Facebook Product Catalog supports products for a specific vertical. Each ve
 |    Product Item |        ✅       | Retailer Id     | Update or Create, Mirror |
 |           Hotel |        ✅       | Hotel Id        | Update or Create, Mirror |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Facebook Product Catalog.
+Contact our support team if you want Census to support more objects for Facebook Product Catalog.
 
 ## Need help connecting to Facebook?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

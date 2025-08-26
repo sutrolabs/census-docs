@@ -37,4 +37,4 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 
 ## Need help connecting to Criteo?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

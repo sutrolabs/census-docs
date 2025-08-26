@@ -41,11 +41,11 @@ Note: Census will only query Shopify based on the syncs/objects that you configu
     | write\_assigned\_fulfillment\_orders          | read\_assigned\_fulfillment\_orders          |
     | write\_merchant\_managed\_fulfillment\_orders | read\_merchant\_managed\_fulfillment\_orders |
     | write\_third\_party\_fulfillment\_orders      | read\_third\_party\_fulfillment\_orders      |
-2. There is some setup that is needed to do on the Census side to setup Shopify, while this process is under construction :construction\_site:, please [contact us](mailto:support@getcensus.com) via email or start a conversation with us via the [in-app](https://app.getcensus.com) chat with the topic: "Shopify Setup". In your communication please provide your Shopify Store URL so we can get started on your set up!
+2. There is some setup that is needed to do on the Census side to setup Shopify, while this process is under construction :construction\_site:, please contact our support team via email or start a conversation with us via the [in-app](https://app.getcensus.com) chat with the topic: "Shopify Setup". In your communication please provide your Shopify Store URL so we can get started on your set up!
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-Census currently supports syncing to the following Shopify objects and Sync Behaviors ([Contact us](mailto:support@getcensus.com) if you're looking for more!):
+Census currently supports syncing to the following Shopify objects and Sync Behaviors (contact our support team if you're looking for more!):
 
 | **Object Name** | **Supported?** | **Sync Keys**         | **Behaviors**                 |
 | --------------: | :------------: | --------------------- | ----------------------------- |
@@ -62,7 +62,7 @@ Census also supports Shopify's Custom Metafields on Customer and Product as well
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Shopify objects and/or behaviors.
+Contact our support team if you want Census to support more Shopify objects and/or behaviors.
 
 #### Updating Product Images
 
@@ -83,4 +83,4 @@ Only the `src` field is required. `position`, `width`, and `height` are optional
 
 ## Need help connecting to Shopify?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

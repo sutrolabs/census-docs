@@ -55,7 +55,7 @@ With live data and programmatic notifications, the possibilities are endless. Le
 
 Like Courier, we use the `recipient_id` as the primary identifier for Profiles. A `recipient_id` is a unique identifier for a recipient. This can be any string of your choosing. Be sure to choose a value that does not change. This prevents duplicate entries in the event that a recipient changes their email or some other identifying value. Typically, user ID values from your system make for good recipient\_id's.
 
-Looking for another Courier feature? [Contact us](mailto:support@getcensus.com) and let us know!
+Looking for another Courier feature? Contact our support team and let us know!
 
 ## Supported Sync Behaviors
 
@@ -68,8 +68,8 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | **Update or Create** |        ✅       |        All        |
 |           **Mirror** |        ✅       | Profile with List |
 
-‌Not seeing what you're looking for? [Contact us](mailto:support@getcensus.com) about supporting alternative sync behaviors for this destination.
+‌Not seeing what you're looking for? Contact our support team about supporting alternative sync behaviors for this destination.
 
 ## Need help connecting to Courier?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

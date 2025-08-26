@@ -95,7 +95,7 @@ Click the **Next** button to see the final preview, which will have a recap of w
 | --------------: | :------------: | ------------- |
 |        Customer |        ✅       | Primary Email |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Help Scout.
+Contact our support team if you want Census to support more objects for Help Scout.
 
 ## Supported Sync Behaviors
 
@@ -108,7 +108,7 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | Update or Create |        ✅       |     All     |
 |      Update Only |        ✅       |     All     |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Help Scout.
+Contact our support team if you want Census to support more Sync behaviors for Help Scout.
 
 ### Syncing to the Customer Object:
 
@@ -118,4 +118,4 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 
 ## Need help connecting to Help Scout?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

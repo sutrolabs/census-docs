@@ -68,7 +68,7 @@ Vitally defines User ID and Account ID as the unique identifier for these object
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Vitally objects and/or behaviors.
+Contact our support team if you want Census to support more Vitally objects and/or behaviors.
 
 ### User Behavior Notes
 
@@ -84,4 +84,4 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 
 ## Need help connecting to Vitally?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

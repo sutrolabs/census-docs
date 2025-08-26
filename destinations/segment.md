@@ -31,7 +31,7 @@ Make sure to follow Segment's Documentation on connecting a Production Source [h
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
-Segment support is pretty straight forward! [Let us know](mailto:support@getcensus.com) if you want Census to support more objects for Segment.
+Segment support is pretty straight forward! Let us know if you want Census to support more objects for Segment.
 
 | **Object Name** | **Supported?** | **Sync Keys**                       | **Behaviors**    |
 | --------------: | :------------: | ----------------------------------- | ---------------- |
@@ -43,7 +43,7 @@ Segment support is pretty straight forward! [Let us know](mailto:support@getcens
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Segment objects and/or behaviors.
+Contact us if you want Census to support more Segment objects and/or behaviors.
 
 ### Track events
 
@@ -67,4 +67,4 @@ You can use Group destination object in two different ways:
 
 ## Need help connecting to Segment?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

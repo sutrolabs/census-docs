@@ -74,4 +74,4 @@ Contact us if you want Census to support more Sync Behaviors for Totango
 
 ## Need help connecting to Totango?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -82,7 +82,7 @@ Once your sync is complete, it's time to check your data. Open Ortto and check t
 
 If everything went well, that's it! You've started syncing data from your warehouse to Ortto! 🎉
 
-And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
+And if anything went wrong, contact our support team to get some help.
 
 ## Sync Speed
 
@@ -100,7 +100,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 |    Organization |        ✅       | Name, Website      |
 |          Person |        ✅       | Email, External ID |
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Ortto.
+Let us know if you want Census to support additional objects for Ortto.
 
 ## Supported Sync Behaviors
 
@@ -113,8 +113,8 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | **Update or Create** |        ✅       | Organization, Person |
 |      **Update Only** |        ✅       |        Person        |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Ortto.
+Contact us if you want Census to support more Sync Behaviors for Ortto.
 
 ## Need help connecting to Ortto?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

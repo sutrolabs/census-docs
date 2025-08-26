@@ -67,7 +67,7 @@ Once your sync is complete, it's time to check your data. Open Microsoft Dynamic
 
 If everything went well, that's it! You've started syncing data from your warehouse to Microsoft Dynamics! [🥳️](https://emojikeyboard.org/copy/Partying_Face_Emoji_%F0%9F%A5%B3%EF%B8%8F?utm_source=extlink)
 
-And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
+And if anything went wrong, contact our support team to get some help.
 
 ## Supported objects
 
@@ -105,7 +105,7 @@ For a string example of a column in Snowflake:
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Microsoft Dynamics.
+Let us know if you want Census to support additional sync behaviors for Microsoft Dynamics.
 
 ## MS App Approval Flow
 
@@ -136,4 +136,4 @@ To use Census with Dynamics, your Dynamics user must be able to request to reque
 
 ## Need help connecting to Microsoft Dynamics?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

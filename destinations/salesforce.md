@@ -25,7 +25,7 @@ The objects and fields accessible to Census are all determined by the user accou
 {% hint style="info" %}
 **Require a connection via an API-Only user?**
 
-If you have an API-Only Salesforce user that is unable to log into the Salesforce UI, please [contact us](mailto:support@getcensus.com) via support@getcensus.com. We'd be happy to set up this connection with you.
+If you have an API-Only Salesforce user that is unable to log into the Salesforce UI, please contact our support team. We'd be happy to set up this connection with you.
 {% endhint %}
 
 ### Using a Salesforce Sandbox
@@ -108,7 +108,7 @@ Salesforce support is pretty straight forward!
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Salesforce objects and/or behaviors.
+Contact our support team if you want Census to support more Salesforce objects and/or behaviors.
 
 ### **Syncing to OpportunityContactRole**
 
@@ -191,4 +191,4 @@ Typically, this is a transient issue and the next run of the sync won't have the
 
 ## Need help connecting to Salesforce?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

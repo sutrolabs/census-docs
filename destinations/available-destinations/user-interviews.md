@@ -29,8 +29,8 @@ If you need to generate a new API key follow the steps for obtaining an API key 
 | --------------: | :------------: | ------------- | ---------------- |
 |     Participant |        ✅       | Email         | Update or Create |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more User Interviews objects and/or behaviors.
+Contact our support team if you want Census to support more User Interviews objects and/or behaviors.
 
 ## Need help connecting to User Interviews?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

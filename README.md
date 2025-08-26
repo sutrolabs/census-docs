@@ -20,4 +20,4 @@ Want to know about the latest features and bug fixes in our product? Check out o
 
 ## Need help?
 
-You can always contact us via support@getcensus.com or [in-app](https://app.getcensus.com) via the live chat in the bottom right corner.
+You can always contact our support team or [in-app](https://app.getcensus.com) via the live chat in the bottom right corner.

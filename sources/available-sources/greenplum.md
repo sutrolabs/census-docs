@@ -94,4 +94,4 @@ We recommend configuring your Greenplum instance to use TLS v1.2 or later for al
 
 ## Need help connecting to Greenplum?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

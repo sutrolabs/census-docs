@@ -39,7 +39,7 @@ You should now be ready to sync your data to Gainsight.
 | Relationship Person |        ✅       | UniqueId for Census. Company Name, Person Email, and Relationship Name are required | Update or Create |
 |       Custom Object |        ✅       | Available Update Keys that are not a lookup                                         | Update or Create, Update Only |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Gainsight.
+Contact our support team if you want Census to support more objects for Gainsight.
 
 #### Custom Objects Quirks
 
@@ -49,4 +49,4 @@ The Custom Object must be configured like below for Census to be able to edit it
 
 ## Need help connecting to Gainsight?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

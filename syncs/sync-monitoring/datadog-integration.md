@@ -7,7 +7,7 @@ description: Monitor your syncs in Datadog
 With Census's Datadog integration, you can centralize your monitoring and alerting within one tool. Census will emit metrics and events that help you understand the health of your data pipelines, alert on anomalies, and manage incidents.
 
 {% hint style="warning" %}
-The Datadog integration is accessible for Enterprise Plan accounts. If you would like to enable this integration and are not on the Enterprise Plan, please contact us at [support@getcensus.com](mailto:support@getcensus.com).
+The Datadog integration is accessible for Enterprise Plan accounts. If you would like to enable this integration and are not on the Enterprise Plan, please contact our support team.
 {% endhint %}
 
 ## Set up

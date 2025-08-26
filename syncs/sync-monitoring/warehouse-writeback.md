@@ -8,7 +8,7 @@ Census can provide row-level details on the data you're syncing to a destination
 4. Which users were a member of this segment at this time?
 
 {% hint style="info" %}
-Warehouse Writeback is available for Enterprise Plan accounts. If you would like logging enabled please contact our team at [support@getcensus.com](mailto:support@getcensus.com).
+Warehouse Writeback is available for Enterprise Plan accounts. If you would like logging enabled please contact our support team.
 {% endhint %}
 
 ## :ballot\_box: Supported data sources

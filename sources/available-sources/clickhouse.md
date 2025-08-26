@@ -48,4 +48,4 @@ As of November 2023, ClickHouse only supports our [Basic Sync Engine](../overvie
 
 ## Need help connecting to ClickHouse?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

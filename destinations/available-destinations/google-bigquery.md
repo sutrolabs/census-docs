@@ -60,7 +60,7 @@ To optimize the time it takes to load your tables within the Census UI when crea
 Learn more about all of our sync behaviors in our [Syncs](../../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more BigQuery objects and/or behaviors
+Contact our support team if you want Census to support more BigQuery objects and/or behaviors
 
 ## Optimize UI Performance
 
@@ -74,4 +74,4 @@ When using VPC Service Controls, you will also need to allow BigQuery unloads to
 
 ## Need help connecting to Google BigQuery?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

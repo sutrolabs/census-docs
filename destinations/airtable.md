@@ -46,4 +46,4 @@ Airtable needs a primary key that is a short text field for Census to be able to
 
 ## Need help connecting to Airtable?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

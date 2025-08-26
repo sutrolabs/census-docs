@@ -26,7 +26,7 @@ Reddit Ads is an advertising platform that allows businesses to engage with Redd
 Learn more about all of our sync behaviors in our [Syncs](../../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Reddit Ads objects and/or behaviors.
+Contact our support team if you want Census to support more Reddit Ads objects and/or behaviors.
 
 ### Conversion Events
 
@@ -61,4 +61,4 @@ Reddit will only accept hashed values for Custom Audience sync keys. Census will
 
 ## Need help connecting to Reddit Ads?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

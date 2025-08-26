@@ -30,4 +30,4 @@ Again, though the sync behavior is **Update or Create**, the functional result i
 
 ### Need help connecting to Sense?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -7,7 +7,7 @@ description: >-
 # Sync Dry Runs
 
 {% hint style="success" %}
-This feature is not available for every destination object. If you'd like it somewhere it's not currently supported, please [let us know](mailto:support@getcensus.com)!
+This feature is not available for every destination object. If you'd like it somewhere it's not currently supported, please contact our support team!
 {% endhint %}
 
 Sometimes it's helpful to know the impact of a sync before actually running it.
@@ -58,4 +58,4 @@ As a result, we've built an enhanced version of dry runs specifically for Braze 
 
 ## Need something? We're here to help
 
-If you have questions about dry runs or need help understanding the impact of a sync, reach out to our support team via [email](mailto:support@getcensus.com) or in-app chat.
+If you have questions about dry runs or need help understanding the impact of a sync, reach out to our support team via in-app chat.

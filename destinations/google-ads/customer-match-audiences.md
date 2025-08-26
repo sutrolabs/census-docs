@@ -90,7 +90,7 @@ Please note that the above behaviors will map to what you select in the, "_**Whe
 
 ![Operations mapping to Sync behaviors](<../../.gitbook/assets/Screen Shot 2022-04-14 at 10.46.18 AM.png>)
 
-[Contact us](mailto:support@getcensus.com) if you're looking for additional Sync Behaviors!
+Contact our support team if you're looking for additional Sync Behaviors!
 
 Note: If you're reusing an existing Customer Match List, Census will not remove any users already added to those lists through other means.
 

@@ -22,8 +22,8 @@ Google Search Ads 360 is a comprehensive search management platform designed for
 Learn more about all of our sync behaviors in our [Syncs](../../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Google Search Ads objects and/or behaviors.
+Contact our support team if you want Census to support more Google Search Ads objects and/or behaviors.
 
 ## Need help connecting to Google Search Ads 360?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

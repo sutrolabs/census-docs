@@ -71,4 +71,4 @@ Because DynamoDB tables have flexible schemas, Census treats every field you map
 
 ## Need help connecting to DynamoDB?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

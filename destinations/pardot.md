@@ -85,7 +85,7 @@ Once your sync is complete, it's time to check your data. Open Pardot and check 
 
 If everything went well, that's it! You've started syncing data from your warehouse to Pardot! 🎉
 
-And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
+And if anything went wrong, contact our support team to get some help.
 
 ## Supported Objects
 
@@ -101,7 +101,7 @@ On Prospect syncs, we can Lookup from the Prospect Object to a List, which creat
 
 ![Lookup by List ID](<../.gitbook/assets/Pardot List ID.png>) ![Lookup by List Name](<../.gitbook/assets/Pardot List Name.png>)
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pardot.
+Contact our support team if you want Census to support more objects for Pardot.
 
 ## Supported Sync Behaviors
 
@@ -114,8 +114,8 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 |      **Update Only** |        ✅       |   Prospect  |
 | **Update or Create** |        ✅       |   Prospect  |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync Behaviors for Pardot.
+Contact our support team if you want Census to support more Sync Behaviors for Pardot.
 
 ## Need help connecting to Pardot?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

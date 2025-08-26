@@ -67,7 +67,7 @@ The sync will move data from your warehouse to your GCS bucket. In this step, yo
 7. Click the **Next** button to see the final preview which will have a recap of what will happen when you start the sync. If you're happy, check the Sync Now checkbox and save the sync.
 8. Confirm the data arrives in the GCS bucket!
 
-If you need any help configuring GCS, contact the [Census support team](mailto:support@getcensus.com) to get some help.
+If you need any help configuring GCS, contact our support team to get some help.
 
 ## Supported Sync Behaviors
 
@@ -79,7 +79,7 @@ If you need any help configuring GCS, contact the [Census support team](mailto:s
 Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Google Cloud Storage.
+Let us know if you want Census to support additional sync behaviors for Google Cloud Storage.
 
 ## File Path
 
@@ -122,8 +122,8 @@ In addition to file format, you can also provide a PGP Public Key to encrypt the
 
 * Currently, the destination only supports syncing for files up to 5GB.
 
-[Contact us](mailto:support@getcensus.com) if your use cases don't work with these limitations. We plan on addressing at least a few of these in the future!
+Contact us if your use cases don't work with these limitations. We plan on addressing at least a few of these in the future!
 
 ## Need help connecting to Google Cloud Storage?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

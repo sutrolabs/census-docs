@@ -93,7 +93,7 @@ Once your sync is complete, it's time to check your data. Open Outreach and chec
 
 If everything went well, that's it! You've started syncing data from your warehouse to Outreach! 🎉
 
-And if anything went wrong, [contact the Census support team](mailto:support@getcensus.com) to get some help.
+And if anything went wrong, contact our support team to get some help.
 
 ## Sync speed
 
@@ -112,7 +112,7 @@ In most cases, you won't run into any issue with sync speed based on rate limiti
 |        Prospect |        ✅       | Email (recommended), any Text field |
 |            User |        ✅       | Email (recommended), any Text field |
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Outreach.
+Let us know if you want Census to support additional objects for Outreach.
 
 ## Supported sync behaviors
 
@@ -124,7 +124,7 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 | ---------------: | :------------: | ----------- |
 | Update or Create |        ✅       | All         |
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for Outreach.
+Let us know if you want Census to support additional sync behaviors for Outreach.
 
 ## Email Identifier Formatting:
 
@@ -142,4 +142,4 @@ If using another profile, the profile must include permissions to view, create, 
 
 ## Need help connecting to Outreach?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

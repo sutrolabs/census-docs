@@ -18,7 +18,7 @@ Users can of course sign up with a simple email & password, but we offer some mo
 
 ## Single Sign On
 
-Census also supports login via SSO with SAML 2.0, including Okta on our Enterprise Plan. Setting this up is easy but requires a manual step from our support team. Please contact [support@getcensus.com](mailto:support@getcensus.com) if you'd like to set up SSO in your organization. Below is a useful set of Frequently Asked Questions regarding Census' SSO capabilities.
+Census also supports login via SSO with SAML 2.0, including Okta on our Enterprise Plan. Setting this up is easy but requires a manual step from our support team. Please contact our support team if you'd like to set up SSO in your organization. Below is a useful set of Frequently Asked Questions regarding Census' SSO capabilities.
 
 ### FAQs for Single Sign On
 

@@ -41,7 +41,7 @@ TO CENSUS;
 
 <table data-header-hidden><thead><tr><th width="155" align="right"></th><th width="147" align="center"></th><th width="243"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Table</td><td align="center">✅</td><td>Primary keys or columns with uniqueness constraints</td><td>Update or Create, Update Only, Mirror</td></tr></tbody></table>
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Oracle Database.
+Contact our support team if you want Census to support more sync behaviors for Oracle Database.
 
 ## Advanced Network Configuration
 
@@ -49,4 +49,4 @@ Census can successfully connect to Oracle Database instances that are using adva
 
 ## Need help connecting to Oracle Database?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

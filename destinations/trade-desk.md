@@ -36,7 +36,7 @@ In this guide, we will show you how to connect The Trade Desk to Census.
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more The Trade Desk objects and/or behaviors.
+Contact our support team if you want Census to support more The Trade Desk objects and/or behaviors.
 
 ### CRM Data Segment
 
@@ -56,4 +56,4 @@ The Trade Desk's Manage Segments UI is a bit confusing. The "Segment Time Left" 
 
 ## Need help connecting to The Trade Desk?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

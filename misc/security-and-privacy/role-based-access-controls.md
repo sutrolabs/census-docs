@@ -63,4 +63,4 @@ Census provides sample data when working with models, segments, and syncs to hel
 
 <figure><img src="../../.gitbook/assets/Disable Data Previews (2).png" alt=""><figcaption></figcaption></figure>
 
-In this case, you can choose to disable the ability to preview data in Census on a per workspace basis. To disable data previews in Census, reach out to your success manager or send an email to [Census Support](mailto:support@getcensus.com).
+In this case, you can choose to disable the ability to preview data in Census on a per workspace basis. To disable data previews in Census, reach out to your success manager or contact our support team.

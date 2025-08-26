@@ -44,7 +44,7 @@ The outcome of Enrichment Columns materializes in your data warehouse under Cens
 
 ### Supported Enrichment Services
 
-Here are the list of services Census currently integrations to provide data enrichment and this list is constantly growing. Looking for a particular service, [let us know](mailto:support@getcensus.com)!
+Here are the list of services Census currently integrations to provide data enrichment and this list is constantly growing. Looking for a particular service, let us know!
 
 ### Apollo.io
 
@@ -76,4 +76,4 @@ Keep in mind:
 
 ### Need help with data enrichment?
 
-having issues with Enrichments or have feedback for us? [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+having issues with Enrichments or have feedback for us? Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

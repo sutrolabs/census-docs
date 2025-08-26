@@ -26,7 +26,7 @@ Note: You will need admin rights in your organization's Pinterest Business Accou
 Note: [Pinterest requires](https://developers.pinterest.com/docs/api/v5/#tag/customer_lists) emails to be lowercase and can be plain text or hashed using SHA1, SHA256, or MD5. MAIDs and IDFAs must be hashed with SHA1, SHA256, or MD5. You have the option to provide plain-text versions of any of these to Census and we will automatically hash the values before passing them along to Pinterest.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Pinterest objects.
+Contact our support team if you want Census to support more Pinterest objects.
 
 ## Supported Sync Behaviors
 
@@ -41,4 +41,4 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 
 ## Need help connecting to Pinterest?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

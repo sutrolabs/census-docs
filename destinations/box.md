@@ -45,8 +45,8 @@ Our current Box integration only supports files up to 50MB in size. If you need 
 Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more sync behaviors for Box.
+Contact our support team if you want Census to support more sync behaviors for Box.
 
 ## Need help connecting to Box?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

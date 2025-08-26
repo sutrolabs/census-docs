@@ -54,4 +54,4 @@ As of December 2023, Warehouse Writeback is not yet supported but is coming soon
 
 ## Need help connecting to Trino?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

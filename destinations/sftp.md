@@ -92,7 +92,7 @@ Once your sync is complete, it's time to check your data. Go to the specified pa
 
 If everything went well, that's it! You've started syncing data from your warehouse to your SFTP server! [🥳️](https://emojikeyboard.org/copy/Partying_Face_Emoji_%F0%9F%A5%B3%EF%B8%8F?utm_source=extlink)
 
-And if anything went wrong, contact the [Census support team](mailto:support@getcensus.com) to get some help.
+And if anything went wrong, contact our support team to get some help.
 
 ## Supported Sync Behaviors
 
@@ -109,7 +109,7 @@ Update or Create syncs upload your whole dataset on the first run and only new c
 Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional sync behaviors for SFTP server connections.
+Let us know if you want Census to support additional sync behaviors for SFTP server connections.
 
 ## File Path
 
@@ -158,4 +158,4 @@ Make sure the key includes the full block, including the following headers and f
 
 ## Need help connecting your server?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

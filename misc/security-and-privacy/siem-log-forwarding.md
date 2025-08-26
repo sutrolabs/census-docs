@@ -12,7 +12,7 @@ Census' Enterprise plan offers a robust SIEM (Security Information and Event Man
 
 ### Requesting SIEM Log Forwarding Setup
 
-To initiate the SIEM log forwarding setup, please reach out to our [support team](mailto:support@getcensus.com). During this process, you will need to provide an HTTP endpoint to which we will forward the events. We can support a variety of authentication mechanisms. Our team will guide you through the setup process to ensure seamless integration with your chosen SIEM system.
+To initiate the SIEM log forwarding setup, please reach out to our support team. During this process, you will need to provide an HTTP endpoint to which we will forward the events. We can support a variety of authentication mechanisms. Our team will guide you through the setup process to ensure seamless integration with your chosen SIEM system.
 
 ### Log Forwarding Schedule
 

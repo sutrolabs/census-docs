@@ -111,7 +111,7 @@ Syncs to the ChartMogul **Customer** object require both the Data Source ID and 
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Chart Mogul objects and/or behaviors
+Contact our support team if you want Census to support more Chart Mogul objects and/or behaviors
 
 ## :question:FAQ
 
@@ -121,4 +121,4 @@ Line items must be modelled as a JSON array on the Invoice record itself. This i
 
 ## Need help connecting to ChartMogul?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

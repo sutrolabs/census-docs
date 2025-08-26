@@ -38,7 +38,7 @@ The [Endpoint ID](https://docs.aws.amazon.com/eventbridge/latest/APIReference/AP
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Amazon Eventbridge objects and/or behaviors.
+Contact our support team if you want Census to support more Amazon Eventbridge objects and/or behaviors.
 
 ### Event Properties and Formatting
 
@@ -63,4 +63,4 @@ You can also override the shape of the **Detail** object by providing an overrid
 
 ## Need Help Connecting to EventBridge?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

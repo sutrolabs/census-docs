@@ -49,7 +49,7 @@ Census currently supports syncing to the following Enterpret objects.
 
 <table data-header-hidden><thead><tr><th width="236.33333333333331" align="right"></th><th width="214" align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td></tr><tr><td align="right">Account</td><td align="center">✅</td><td>Id</td></tr><tr><td align="right">Review Records</td><td align="center">✅</td><td>Id</td></tr><tr><td align="right">Survey Response Records</td><td align="center">✅</td><td>Id</td></tr><tr><td align="right">User</td><td align="center">✅</td><td>Id</td></tr></tbody></table>
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Enterpret.
+Contact our support team if you want Census to support more objects for Enterpret.
 
 ### Supported Sync Behaviors
 
@@ -59,8 +59,8 @@ Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) 
 
 <table data-header-hidden><thead><tr><th width="182.33333333333331" align="right"></th><th width="156.42460567823346" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="right"><strong>Behaviors</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Objects</strong></td></tr><tr><td align="right"><strong>Create Only</strong></td><td align="center">✅</td><td align="center">Account, Review Records, Survey Response Records, User</td></tr><tr><td align="right"><strong>Update Only</strong></td><td align="center">✅</td><td align="center">Account, User</td></tr><tr><td align="right"><strong>Update or Create</strong></td><td align="center">✅</td><td align="center">Account, User</td></tr></tbody></table>
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Sync behaviors for Enterpret.
+Contact our support team if you want Census to support more Sync behaviors for Enterpret.
 
 ### Need help connecting to Enterpret?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

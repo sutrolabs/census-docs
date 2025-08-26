@@ -74,4 +74,4 @@ When syncing to Amazon Ads DSP Audiences with Census, you can now provide the li
 
 ## Have Questions?
 
-If you have any questions or need assistance, contact [support@getcensus.com](mailto:support@getcensus.com).
+If you have any questions or need assistance, contact our support team.

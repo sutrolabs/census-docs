@@ -28,7 +28,7 @@ You should now be ready to sync your data to Yahoo Ads.
 | ---------------: | :------------: | :------------: | :------------: |
 |   Audience <br> [Audience Sync](https://docs.getcensus.com/basics/core-concept/audience-syncs)|        ✅       | Email | Upsert |
 
-[Let us know](mailto:support@getcensus.com) if you want Census to support additional objects for Yahoo Ads.
+Let us know if you want Census to support additional objects for Yahoo Ads.
 
 ### Yahoo Ads Audiences
 
@@ -36,4 +36,4 @@ Census uses the [Email Address Audience](https://developer.yahooinc.com/dsp/api/
 
 ## Need help connecting to Yahoo Ads?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

@@ -9,7 +9,7 @@ description: This page describes how to use Census with Salesforce Marketing Clo
 In this guide, we will show you how to connect Salesforce Marketing Cloud to Census and create your first sync.
 
 {% hint style="warning" %}
-This process involves several steps - please set aside 15-30 minutes to complete it. Note that you may be on an older or newer version of Marketing Cloud which has slightly different screens than the ones pictured below. Marketing Cloud configuration can be complex, so if you have any questions please [contact us](mailto:support@getcensus.com) via support@getcensus.com and we'll help you tailor these instructions to your needs.
+This process involves several steps - please set aside 15-30 minutes to complete it. Note that you may be on an older or newer version of Marketing Cloud which has slightly different screens than the ones pictured below. Marketing Cloud configuration can be complex, so if you have any questions please contact our support team and we'll help you tailor these instructions to your needs.
 {% endhint %}
 
 ### 1. Create and Configure a Server-to-Server Installed Package
@@ -64,7 +64,7 @@ Still in Salesforce Marketing Cloud Setup, navigate to "Data Management > FTP Ac
 
 ![](../.gitbook/assets/sfmc_step6.png)
 
-For the email address, type in "support@getcensus.com" and give the user a strong, random password. You do not need to write down or memorize this password - Census does not require it, and in step 4 we will replace it with an SSH key. Make sure to give the Census user "Full" access, and do not specify any IPs in the "Allowlist IPs" list. Click Next.
+For the email address, type in "census@example.com" and give the user a strong, random password. You do not need to write down or memorize this password - Census does not require it, and in step 4 we will replace it with an SSH key. Make sure to give the Census user "Full" access, and do not specify any IPs in the "Allowlist IPs" list. Click Next.
 
 ![](../.gitbook/assets/sfmc_step7.png)
 
@@ -118,7 +118,7 @@ Return to Salesforce Marketing Cloud Setup and navigate to "Data Management" > "
 * Click "Browse" next to the "Key (required)" field and find the "census.pub" file you previously downloaded.
 * Click "Save"
 
-Now we'll associate the key with the Census user. Navigate to "Data Management" > "FTP Accounts". Choose the "support@getcensus.com" user and click the small arrow next to their name (you may need to scroll to the right. Choose "SSH Keys" from the drop-down menu.
+Now we'll associate the key with the Census user. Navigate to "Data Management" > "FTP Accounts". Choose the "census@example.com" user and click the small arrow next to their name (you may need to scroll to the right. Choose "SSH Keys" from the drop-down menu.
 
 ![](../.gitbook/assets/sfmc_step12.png)
 
@@ -142,7 +142,7 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
 {% endhint %}
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Marketing Cloud objects and/or behaviors.
+Contact our support team if you want Census to support more Marketing Cloud objects and/or behaviors.
 
 ## 🏗️ Working With Data Extensions
 
@@ -189,4 +189,4 @@ By default, Census uses Salesforce Marketing Cloud's bulk upload mechanism which
 
 ## Need help connecting to Salesforce Marketing Cloud?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

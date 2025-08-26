@@ -28,7 +28,7 @@ In order to sync data from Elasticsearch, Census needs your deployment url, port
 You're all set! Click "test connection" and you can query this from the models tab and use it as a source for syncing data to our library of destinations.
 
 {% hint style="info" %}
-If you have any questions during setup, or have a use case that is not covered, please write us in-app or [send us an email](mailto:support@getcensus.com) via support@getcensus.com
+If you have any questions during setup, or have a use case that is not covered, please write us in-app or contact our support team
 {% endhint %}
 
 ## Notes
@@ -41,4 +41,4 @@ Census can successfully connect to Elasticsearch instances that are using advanc
 
 ## Need help connecting to Elasticsearch?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

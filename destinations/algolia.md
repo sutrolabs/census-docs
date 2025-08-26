@@ -26,7 +26,7 @@ First, ensure your desired application is selected in the Application dropdown m
 
 ![](<../.gitbook/assets/Screen Shot 2022-04-01 at 2.42.38 PM.png>)
 
-That's it! In 2 steps, you connected Census to Algolia. If you have any questions or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or send us an email at support@getcensus.com
+That's it! In 2 steps, you connected Census to Algolia. If you have any questions or if you have any issues getting started, please contact us via the in-app live chat in the bottom right corner or contact our support team
 
 ## Supported Objects and Behaviors
 
@@ -34,8 +34,8 @@ Algolia stores data within collections called Indices. Your Indices in Algolia c
 
 <table data-header-hidden><thead><tr><th align="right"></th><th width="132" align="center"></th><th align="center"></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td align="center"><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Index</td><td align="center">✅</td><td align="center">Object ID</td><td>Update or Create</td></tr></tbody></table>
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Algolia.
+Contact our support team if you want Census to support more objects for Algolia.
 
 ## Need help connecting to Algolia?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

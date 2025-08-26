@@ -70,4 +70,4 @@ Census can successfully connect to Google Cloud SQL instances that are using adv
 
 ## Need help connecting to Google Cloud SQL for Postgres?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.

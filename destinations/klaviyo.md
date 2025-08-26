@@ -48,7 +48,7 @@ You should now be ready to create a new sync to Klaviyo from Census!
 |                    <p>Event<br><a href="../basics/defining-source-data/events/#defining-event-syncs">Event Sync</a></p> |        ✅       |                 Unique Event ID                |                  Send                 |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation. [Contact us](mailto:support@getcensus.com) if you want Census to support more Klaviyo objects and/or behaviors.
+Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation. Contact our support team if you want Census to support more Klaviyo objects and/or behaviors.
 {% endhint %}
 
 ### How profile identifiers work in Klaviyo
@@ -79,4 +79,4 @@ One quirk of events in Klaviyo is how events are associated with specific users.
 
 ## Need help connecting to Klaviyo?
 
-You can send our [support team an email](mailto:support@getcensus.com) at support@getcensus.com or start a conversation from the in-app chat.
+You can contact our support team or start a conversation from the in-app chat.

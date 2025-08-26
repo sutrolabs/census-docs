@@ -56,7 +56,7 @@ You're all set!&#x20;
 </div>
 
 {% hint style="info" %}
-If you have any questions during setup, or have a use case that is not covered, please write us in-app or [send us an email](mailto:support@getcensus.com) via support@getcensus.com
+If you have any questions during setup, or have a use case that is not covered, please contact our support team in-app
 {% endhint %}
 
 ## Supported Objects and Behaviors <a href="#supported-objects-and-behaviors" id="supported-objects-and-behaviors"></a>
@@ -67,9 +67,9 @@ Elasticsearch stores data within collections called Models. Your Models in Elast
 | --------------- | -------------- | ------------- | --------------------------------- |
 | Index           | ✅              | Document ID   | <p>Update or Create<br>Mirror</p> |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Elasticsearch.\
+Contact our support team if you want Census to support more objects for Elasticsearch.\
 
 
 ## Need help connecting to Elasticsearch?
 
-[Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
+Contact our support team or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
