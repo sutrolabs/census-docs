@@ -86,7 +86,10 @@ GRANT CREATE STAGE ON SCHEMA "CENSUS"."CENSUS" TO ROLE CENSUS_ROLE;
    * **Schema Name** (optional) - default schema to log into
    * **Authentication** - choose one of the following:
      * **Key-pair** (recommended) - Provide the private key details for the credentials you've generated and configured. [Snowflake provides detailed documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth#configuring-key-pair-authentication) on how to generate the public and private key pair. You will need to configure the public key on your Snowflake user. Then within Census, provide:
-       * **Private Key** - Snowflake's instructions will generate a .p8 file. Copy and paste the contents of this file exactly into Census including the header and footer.&#x20;
+       * **Private Key** - Snowflake's instructions will generate a .p8 file. Copy and paste the contents of this file exactly into Census including the header and footer. \
+         `-----BEGIN PRIVATE KEY-----`\
+         `<private_key>`\
+         `-----END PRIVATE KEY-----`
        * **Passphrase** - (optional) If you choose to make your private key encrypted, you'll also need to include the passphrase you used to encrypt it.
      * **Password** (deprecated) - User / Password authentication on Snowflake [will be blocked November 2025](https://www.snowflake.com/en/blog/blocking-single-factor-password-authentification/). If you intend to use this authentication mechanism, see the section below. &#x20;
 3. Once you provide the required information, click Connect to finish the connection to Snowflake.
