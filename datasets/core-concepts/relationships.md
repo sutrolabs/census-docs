@@ -2,7 +2,7 @@
 
 Datasets support the ability to be related to one another. The supported relationships are one-to-one, one-to-many, many-to-one, and many-to-many. Datasets relationships are an optional feature. However, defining relationships between datasets in Census unlocks advanced functionality across the product.
 
-* Enables advance dataset segmentation and filtering off information that exists in other related datasets.
+* Enables advanced dataset segmentation and filtering of information that exists in other related datasets.
 * Enables syncs that send data from other related datasets.
 * Enables creating rollup columns for a given dataset.
 
