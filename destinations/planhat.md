@@ -52,10 +52,11 @@ Census currently supports syncing to the following Planhat objects.
 
 | **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                 |
 | --------------: | :------------: | ---------------------- | ----------------------------- |
-|         Company |        ✅       | Source ID, External ID | Update or Create, Update Only |
-|        End User |        ✅       | Source ID              | Update or Create              |
 |        Activity |        ✅       | Any unique ID          | Send                          |
 |           Churn |        ✅       | Source ID              | Update or Create              |
+|         Company |        ✅       | Source ID, External ID | Update or Create, Update Only |
+|        End User |        ✅       | Source ID              | Update or Create              |
+|        Invoices |        ✅       | External ID, Source ID | Update or Create              |
 |         License |        ✅       | Source ID, External ID | Update or Create              |
 |          Metric |        ✅       | External ID            | Send                          |
 |             NPS |        ✅       | Source ID              | Update or Create              |
