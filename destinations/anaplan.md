@@ -89,6 +89,14 @@ Learn more about all of our sync behaviors on our [Core Concepts page](broken-re
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Anaplan objects and/or behaviors.
 
+## Replace Behavior in Anaplan
+
+When using the Replace sync behavior with Anaplan, data is not deleted as it might be in other destinations. Rows are not removed. In certain cases, individual columns within existing rows can be cleared, but this depends on how the original import action was set up in Anaplan.
+
+Clearing applies only to Module imports, not List imports. For clearing to occur, the import action must have been created with specific options enabled when the file was first uploaded manually in Anaplan. When importing data initially into the module, the `Clear target prior to import` option must be set in the import mapping, and the settings for both the underlying list and the module’s line items must specify that `All Items` should be cleared prior to import.
+
+If these configurations were in place, a Replace sync will clear column values for records not included in the source data. If they were not set, no column clearing will happen during the Replace sync.
+
 ## Need help connecting to Anaplan?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
