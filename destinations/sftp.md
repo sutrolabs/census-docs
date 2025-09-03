@@ -113,7 +113,7 @@ Learn more about all of our sync behaviors on our [Core Concepts page](broken-re
 
 ## File Path
 
-When setting up a sync to SFTP, you can provide a file path for the file name Census will create/replace. The file path can include folders. Data arrives in one file to the designated server and file path.
+When setting up a sync to SFTP, you can provide a file path for the file name Census will create/replace. The file path can include folders. Data arrives in one file to the designated server and file path. As part of the file path, you can use a file extension that is not one of the [standard formats](sftp.md#advanced-configuration).
 
 ### Variables
 
