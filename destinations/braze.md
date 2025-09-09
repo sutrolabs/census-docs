@@ -89,7 +89,7 @@ Census currently supports syncing to the following Braze objects.
 |        API-Triggered Campaign |        ✅       |                              External User ID, Census Tracking ID                              |                   Send                   |
 |    API-Triggered Canvas Entry |        ✅       |                              External User ID, Census Tracking ID                              |                   Send                   |
 |                       Catalog |        ✅       |                                           Catalog ID                                           |     Update or Create, Update, Mirror     |
-|                        Cohort |        ✅       |                                        External User ID                                        |             Update or Create             |
+|                        Cohort |        ✅       |                                  External User ID, User Alias                                  |             Update or Create             |
 | Subscription Group Membership |        ✅       | [See Here](https://docs.getcensus.com/destinations/braze#braze-subscription-group-memberships) |                  Mirror                  |
 |                          User |        ✅       |                               Email, External User ID, User Alias                              | Update or Create, Update, Delete, Mirror |
 
