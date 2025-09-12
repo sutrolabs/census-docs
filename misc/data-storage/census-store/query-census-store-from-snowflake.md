@@ -11,7 +11,7 @@ description: >-
 To query Census Store from Snowflake, you will need:
 
 * A Snowflake account
-* A Census workspace with one or more Entity Resolution or CSV datasets materialized in Census Store
+* A Census workspace with one or more CSV datasets materialized in Census Store
 
 ## Step 1: Create Census Store Iceberg REST Catalog Credentials
 

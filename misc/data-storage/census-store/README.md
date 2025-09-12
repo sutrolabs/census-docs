@@ -9,8 +9,7 @@ description: >-
 The data stored in Census Store includes:
 
 * CSV datasets
-* [entity-resolution.md](../../../datasets/entity-resolution.md "mention") datasets
-* ...plus [ai-columns](../../../datasets/smart-columns/ai-columns/ "mention"), [enrichment](../../../datasets/smart-columns/enrichment/ "mention"), and [warehouse-writeback.md](../../../syncs/sync-monitoring/warehouse-writeback.md "mention") logs for all of these datasets
+* ...plus [ai-columns](../../../datasets/smart-columns/ai-columns/ "mention"), [enrichment](../../../datasets/smart-columns/enrichment/ "mention"), and [warehouse-writeback.md](../../../syncs/sync-monitoring/warehouse-writeback.md "mention") logs for CSV  datasets
 
 Your workspace’s Census Store catalog is created for you the first time you create one of these resources.
 
@@ -86,4 +85,4 @@ To revoke an existing client credential:
 You can use Census Store's Iceberg catalog to integrate the data in Census Store with third-party tools and systems:
 
 * [**Query Census Store from Snowflake**](query-census-store-from-snowflake.md)\
-  Integrate Census Store with your Snowflake warehouse using Apache Iceberg for Zero-ETL access to Entity Resolution and CSV datasets
+  Integrate Census Store with your Snowflake warehouse using Apache Iceberg for Zero-ETL access to CSV datasets

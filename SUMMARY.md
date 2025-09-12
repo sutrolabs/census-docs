@@ -18,7 +18,6 @@
   * [Columns & Annotations](datasets/core-concepts/columns-and-annotations.md)
   * [Type & Property Mappings](datasets/core-concepts/type-and-property-mappings.md)
   * [Relationships](datasets/core-concepts/relationships.md)
-* [Entity Resolution](datasets/entity-resolution.md)
 * [Smart Columns](datasets/smart-columns/README.md)
   * [AI Columns](datasets/smart-columns/ai-columns/README.md)
     * [AI Prompts Recipe Book](datasets/smart-columns/ai-columns/prompts-recipe-book.md)

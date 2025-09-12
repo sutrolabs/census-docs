@@ -1,7 +1,7 @@
 ---
 description: >-
   Query Census Store locally using DuckDB Apache Iceberg integration for
-  Zero-ETL access to Entity Resolution and CSV datasets.
+  Zero-ETL access to CSV datasets.
 ---
 
 # Query Census Store locally using DuckDB
