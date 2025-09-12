@@ -284,8 +284,6 @@
     * [Bring your own GCS Bucket](misc/data-storage/bring-your-own-bucket/bring-your-own-gcs-bucket.md)
     * [Bring your own Azure Bucket](misc/data-storage/bring-your-own-bucket/bring-your-own-azure-bucket.md)
 * [Developers](misc/developers/README.md)
-  * [GitLink](misc/developers/gitlink.md)
-  * [Dataset API](misc/developers/entity-api.md)
   * [Custom Destination API](misc/developers/custom-api.md)
   * [Management API](misc/developers/api.md)
 * [Security & Privacy](misc/security-and-privacy/README.md)
