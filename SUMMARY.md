@@ -22,7 +22,6 @@
   * [AI Columns](datasets/smart-columns/ai-columns/README.md)
     * [AI Prompts Recipe Book](datasets/smart-columns/ai-columns/prompts-recipe-book.md)
   * [Enrichment Columns](datasets/smart-columns/enrichment/README.md)
-    * [Quick Start](datasets/smart-columns/enrichment/quick-start.md)
     * [HTTP Request Enrichments](datasets/smart-columns/enrichment/http-request-enrichments.md)
   * [Computed Columns](datasets/smart-columns/computed-columns.md)
 
