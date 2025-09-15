@@ -184,20 +184,6 @@ def compute_hmac_signature(data, secret):
 
 ```
 
-## Retries
-
-If your server does not respond with a 2xx status, Census will retry sending the payload up to 5 times. It will wait 4 seconds before retrying the first time, and increasing the wait time before the next retry. The chart below shows the delay between each retry.
-
-| Retry | Delay Before Retry (in seconds) |
-| ----- | ------------------------------- |
-| 1     | 4.0                             |
-| 2     | 8.0                             |
-| 3     | 16.0                            |
-| 4     | 32.0                            |
-| 5     | 64.0                            |
-
-&#x20;Additionally, each payload delivery has a timeout of 10 seconds. If the server does not respond within this time, it will be considered as a failed delivery.&#x20;
-
 ## Webhooks via API
 
 See our [developer docs on managing webhooks through the API](https://developers.getcensus.com/api-reference/webhooks/list-webhooks).
