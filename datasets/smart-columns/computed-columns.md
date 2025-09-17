@@ -38,19 +38,6 @@ Rollups require you to define three properties: the related dataset which to agg
 | number                      | most frequent, count, sum, average |
 | any other type              | most frequent                      |
 
-## Equation Columns
-
-Equation Columns allow you to do quick calculations with your dataset columns in a no code environment.
-
-For example:
-
-* Weekly growth rates of feature usage
-* Difference month over month of documents shared
-
-| Dataset column type | Supported aggregation methods |
-| ------------------- | ----------------------------- |
-| number              | difference, percentage change |
-
 ## GPT Columns
 
 Refer to the dedicated [documentation for AI Columns](ai-columns/) to learn about defining these AI-powered columns for your datasets.
