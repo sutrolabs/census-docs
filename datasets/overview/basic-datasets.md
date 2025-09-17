@@ -51,28 +51,6 @@ LEFT JOIN orders o ON c.customer_id = o.customer_id
 GROUP BY 1, 2, 3, 4
 ```
 
-### Python Transformations
-
-For even more advanced use cases, Census supports Python transformations that let you apply complex business logic, machine learning models, or data processing that goes beyond what SQL can easily accomplish.
-
-```python
-# Example: Python transformation for customer segmentation
-def transform(df):
-    # Calculate recency, frequency, monetary value
-    df['recency'] = (datetime.now() - df['last_order_date']).dt.days
-    
-    # Apply segmentation logic
-    conditions = [
-        (df['lifetime_value'] > 1000) & (df['recency'] < 30),
-        (df['lifetime_value'] > 500) & (df['recency'] < 60),
-        (df['lifetime_value'] > 0)
-    ]
-    choices = ['VIP', 'Regular', 'Occasional']
-    df['segment'] = np.select(conditions, choices, default='Inactive')
-    
-    return df
-```
-
 ## Integration with Data Transformation Tools
 
 Census seamlessly integrates with popular data transformation tools, allowing you to leverage your existing data modeling investments.
