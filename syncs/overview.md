@@ -78,7 +78,7 @@ Templated fields have a few limitations:
 
 Where available, Census supports two types of conditional field mappings:
 
-* **Don't Sync Null Values** - By default, Census will sync any Null values from the source to the destination. On some connections, you can disable sending any Null values. When disabled, the particular Null value for the property is ignored, but the rest of the recode is synced. Note that the the destinations may handle Null values differently. For example, Salesforce will convert Null values to empty strings, and Braze will delete the property completely when a Null value is synced.
+* **Don't Sync Null Values** - By default, Census will sync any Null values from the source to the destination. On some connections, you can disable sending any Null values. When disabled, the particular Null value for the property is ignored, but the rest of the record is synced. Note that destinations may handle Null values differently. For example, Salesforce will convert Null values to empty strings, and Braze will delete the property completely when a Null value is synced.
 
 ![Also Sync Null Values in the source field editor](../.gitbook/assets/conditional_field_mapping_dont_sync_nulls.png)
 
