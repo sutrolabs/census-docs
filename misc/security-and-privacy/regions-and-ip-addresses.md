@@ -6,7 +6,7 @@ All connections from the Census Data Warehouse Service to your database are prot
 
 ## Regions
 
-Census runs data syncs using Amazon Web Services in the **United States (us-east-1)** and **European Union (eu-central-1)** regions. Census never stores your data, but your selected region determines where data is processed during your Census syncs.
+Census runs data syncs using Amazon Web Services in the **United States (us-east-1)**, **European Union (eu-central-1),** and **Australia (ap-southeast-2)** regions. Census never stores your data, but your selected region determines where data is processed during your Census syncs.
 
 {% hint style="info" %}
 By default, Census will run services with US-based infrastructure. Contact support to request to use another region by contacting [support@getcensus.com](mailto:support@getcensus.com).
@@ -18,6 +18,7 @@ By default, Census will run services with US-based infrastructure. Contact suppo
 | ------------------- | ------------------------ |
 | 🇺🇸 United States  | us-east-1 (N. Virginia)  |
 | 🇪🇺 European Union | eu-central-1 (Frankfurt) |
+| 🇦🇺 Australia      | ap-southeast-2 (Sydney)  |
 
 #### Setting up
 
@@ -54,9 +55,9 @@ If your organization has strict data residency requirements, we recommend verify
 
 Census syncs data from your data sources to your destinations using a set of static IP addresses. To ensure that Census can connect successfully to your sources or any self-hosted destinations, you must allowlist the following IP addresses in your firewall.
 
-<table><thead><tr><th width="412">Region</th><th>IP Addresses (CIDR)</th></tr></thead><tbody><tr><td>🇺🇸 N. Virginia (us-east-1)</td><td><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p></td></tr><tr><td>🇪🇺 Frankfurt (eu-central-1)</td><td><p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p></td></tr></tbody></table>
+<table><thead><tr><th width="412">Region</th><th>IP Addresses (CIDR)</th></tr></thead><tbody><tr><td>🇺🇸 N. Virginia (us-east-1)</td><td><p><code>3.220.140.57</code></p><p><code>54.81.195.173</code></p></td></tr><tr><td>🇪🇺 Frankfurt (eu-central-1)</td><td><p><code>3.73.223.175</code></p><p><code>18.195.84.64</code></p><p><code>3.74.27.151</code></p></td></tr><tr><td>🇦🇺 Sydney (ap-southeast-2)</td><td><p><code>52.64.222.172</code></p><p><code>52.62.68.139</code> </p></td></tr></tbody></table>
 
-Note: Some destinations, such as Oracle Eloqua, use IP whitelisting for both their authentication APIs and standard APIs. In that case, if you're in Europe, you'll need to whitelist both EU and US IPs.
+Note: Some destinations, such as Oracle Eloqua, use IP whitelisting for both their authentication APIs and standard APIs. In that case, if you're in Europe, you'll need to whitelist both EU/AUS and US IPs.
 
 ## Connecting via SSH tunnel
 
