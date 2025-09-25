@@ -132,6 +132,33 @@ If you are trying to use [Live Syncs](../../syncs/live-syncs.md) you may need to
 ALTER TABLE "<table_name>" SET CHANGE_TRACKING = TRUE;
 ```
 
+## Troubleshooting Common Errors:&#x20;
+
+**No Active Warehouse**
+
+`No active warehouse selected in the current session. Select an active warehouse with the 'use warehouse' command.`&#x20;
+
+This error can be due to a couple of different causes.&#x20;
+
+1. To resolve you can first try setting a default warehouse for your Snowflake user.
+
+```sql
+-- Set a default warehouse for your Snowflake user
+ALTER USER <USER> SET DEFAULT_WAREHOUSE = <WAREHOUSE>;
+
+--For example if you follow the naming conventions of the instructions provided in this documentation you would run the below
+ALTER USER CENSUS SET DEFAULT_WAREHOUSE = CENSUS_WAREHOUSE;
+```
+
+2. If this error persists after attempting to set a default warehouse you'll want to make sure that your Snowflake user has been granted USAGE on the warehouse. &#x20;
+
+```sql
+-- Please re-run the following GRANT commands in Snowflake
+GRANT USAGE ON WAREHOUSE CENSUS_WAREHOUSE TO ROLE CENSUS_ROLE;
+GRANT OPERATE ON WAREHOUSE CENSUS_WAREHOUSE TO ROLE CENSUS_ROLE;
+GRANT MONITOR ON WAREHOUSE CENSUS_WAREHOUSE TO ROLE CENSUS_ROLE;
+```
+
 ## Need help connecting to Snowflake?
 
 [Contact us](mailto:support@getcensus.com) via support@getcensus.com or start a conversation with us via the [in-app](https://app.getcensus.com) chat.
