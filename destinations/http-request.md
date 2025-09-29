@@ -14,12 +14,23 @@ To demonstrate how it works, let's look at a real-world example of [creating con
 
 * Navigate to the **Destinations** page in Census.
 * Click **New Destination** and select **HTTP Request** from the menu.
-* Name your destination and enter the **Base URL** for the Brevo API (https://api.brevo.com).
+* Name your destination, choose a mode of authentication (**Manual** in this case) and enter the **Base URL** for the Brevo API (https://api.brevo.com).
 * [Generate a new API key in Brevo](https://app.brevo.com/settings/keys/api) and copy it to your clipboard.
 * Click **Add Header**, name the header `api-key` (per Brevo's docs), paste your API key under **Value**, and check the box indicating it's a secret (this will hide it in our UI if you or anyone else attempts to edit this connection later on).
 * Click **Connect** to continue.
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-09-25 at 17.00.14@2x (1).png" alt=""><figcaption><p>Create your HTTP Request destination.</p></figcaption></figure>
+
+## Authentication&#x20;
+
+For any requests we make to the third-party service, you can choose to send authentication information using two ways:&#x20;
+
+* With **Manual** mode, you only need to specify headers and/or URL parameters to authenticate your requests, if any
+* With **OAuth** mode, you can provide the service's authorization and access token endpoints to be redirected to the service. Census will retrieve the access token and use that for any requests you make
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Create a sync
 
