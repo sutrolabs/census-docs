@@ -10,6 +10,41 @@ Our HTTP Request destination is a Swiss Army knife. It allows you to send data t
 
 To demonstrate how it works, let's look at a real-world example of [creating contacts in Brevo](https://developers.brevo.com/reference/createcontact) when new rows appear in your source data. If you want to follow along, you can create a new Brevo account [here](https://www.brevo.com/).
 
+## Authentication&#x20;
+
+For any requests we make to the third-party service, you can choose to send authentication information using two ways:&#x20;
+
+* With **Manual** mode, you only need to specify headers and/or URL parameters to authenticate your requests, if any
+* With **OAuth** mode, you can provide the service's authorization and access token endpoints to be redirected to the service. Census will retrieve the access token and use that for any requests you make
+
+### OAuth
+
+We have implemented support for the most common implementations, but OAuth can vary between providers. Please reach out to support@getcensus.com if you don't see a configuration option that you need.
+
+When setting up OAuth, you'll need to provide the following information:
+
+* Authorization header prefix (optional): Specify the prefix for the Authorization header
+  * for example, "Bearer"
+* Authorization URL: The URL used to get the authorization code.
+* Access token URL: The URL used to get an access token.
+* Client ID: The client identifier issued during the registration process.
+* Client Secret: The client secret issued during the registration process.
+* Scopes (optional): If your OAuth provider requires specific scopes.
+* Where to send authorization data: Choose to include the credentials as a header or in the request body.
+
+This information can all be found in your destination's docs.
+
+To complete the OAuth setup, make sure to add the following `Callback URL` to your OAuth app:
+
+### Advanced
+
+There are additional configuration options for both the Authorization Request and the Token Request. Toggle the sliders to access:
+
+* Authorization Request Query String
+* Custom Headers for Token Request
+* Request Body Options for Token Request
+* Request Body Options for Refresh Token Request
+
 ## Create a destination
 
 * Navigate to the **Destinations** page in Census.
@@ -20,17 +55,6 @@ To demonstrate how it works, let's look at a real-world example of [creating con
 * Click **Connect** to continue.
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-09-25 at 17.00.14@2x (1).png" alt=""><figcaption><p>Create your HTTP Request destination.</p></figcaption></figure>
-
-## Authentication&#x20;
-
-For any requests we make to the third-party service, you can choose to send authentication information using two ways:&#x20;
-
-* With **Manual** mode, you only need to specify headers and/or URL parameters to authenticate your requests, if any
-* With **OAuth** mode, you can provide the service's authorization and access token endpoints to be redirected to the service. Census will retrieve the access token and use that for any requests you make
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Create a sync
 
