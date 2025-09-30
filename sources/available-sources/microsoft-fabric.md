@@ -6,7 +6,7 @@ description: This page describes how to use Microsoft Fabric as a source in Cens
 
 Microsoft Fabric is an all-in-one analytics platform created for businesses and data professionals. It unifies several Microsoft and Azure data products together under one operating console. Because it includes many different data products, it can be configured in a number of different ways. We'll cover the most common deployment model of Census and Microsoft Fabric together but other approaches may make more sense for your particular environment.
 
-The process of requires a number of steps:
+The process of connecting to Microsoft Fabric as a source requires a number of steps:
 
 1. Creating a service principal
 2. Granting that service principal access to your Fabric workspace
