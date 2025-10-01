@@ -7,7 +7,7 @@ description: >-
 
 # Streaming Datasets
 
-Streaming datasets enable real-time data activation in Census, allowing you to sync data with low latency to your business applications. Unlike traditional batch-based datasets, streaming datasets continuously process data as it arrives, making them ideal for time-sensitive use cases.
+Streaming datasets enable [real-time data activation](https://docs.getcensus.com/syncs/live-syncs#supported-sources) in Census, allowing you to sync data with low latency to your business applications. Unlike traditional batch-based datasets, streaming datasets continuously process data as it arrives, making them ideal for time-sensitive use cases.
 
 ## Getting Started
 
