@@ -19,6 +19,7 @@ The Census Service Account will need at least these permissions in order to conn
 * "API Enabled" must be checked
 * "Session Security Level Required at Login" must be "None"
   * Further details: [Salesforce blocks some API access](https://help.salesforce.com/s/articleView?id=sf.security_require_2fa_api.htm\&type=5) when the **High Assurance on Session security level required at login** setting is used on user Profiles. This will prevent Census from accessing your Salesforce instance. [See Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.security_require_two-factor_authentication.htm\&type=5) on how to disable this for your Profile (Strangely, this can be enabled/disabled per user and seems to have no effect on the API. Only the profile-level setting causes issues).
+* If API Access Control is enabled, the user must have the "Use any API Client" permission. If API Access Control is not enabled, the user should instead have the "Approve uninstalled connected apps" permission.
 
 The objects and fields accessible to Census are all determined by the user account you use when connecting Census to your Salesforce instance. Census will have the same access as the user, so if fields are read-only or hidden for that user, they will be to Census. In general, you should give Census "Read", "Create", "Edit", and "Delete" access to all the objects you'd like to manage via Census.
 
