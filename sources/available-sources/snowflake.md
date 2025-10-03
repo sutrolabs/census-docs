@@ -124,14 +124,6 @@ You may also want to [adjust the schedules](broken-reference) of your Census syn
 
 Connecting to a Snowflake instance running on AWS VPS or via PrivateLink requires a modified connection configuration. Please contact your Census account manager to have this configured for you.
 
-## Change tracking for Live Syncs
-
-If you are trying to use [Live Syncs](../../syncs/live-syncs.md) you may need to modify the settings on the source table(s) as follows:
-
-```sql
-ALTER TABLE "<table_name>" SET CHANGE_TRACKING = TRUE;
-```
-
 ## Troubleshooting Common Errors:&#x20;
 
 **No Active Warehouse**
