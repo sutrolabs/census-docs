@@ -2,10 +2,6 @@
 
 AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like ChatGPT (OpenAI), Claude (Anthropic) and Gemini (Google). With AI Columns, you can define a prompt and use [liquid templating](../../../syncs/structuring-data/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well.
 
-{% hint style="info" %}
-Try AI Columns for free using trial [credits](broken-reference)! No need for an API key until your trial credits run out.&#x20;
-{% endhint %}
-
 {% embed url="https://youtu.be/5AxWR1QyCos" %}
 
 #### Example Use Cases
@@ -16,14 +12,12 @@ Try AI Columns for free using trial [credits](broken-reference)! No need for an 
 4. Summarize product usage among specific features by “high” or “low” to identify upsell fits and run PLG playbooks
 5. Clean up data by removing special characters from a column
 
-Checkout our [Recipe Book](prompts-recipe-book.md) for more examples and sample prompts.&#x20;
+Checkout our [Recipe Book](prompts-recipe-book.md) for more examples and sample prompts.
 
 #### Pre-requisites
 
 * Dataset should have a Unique ID column
-
-Note : You will need your API key to connect a LLM Provider (OpenAI, Claude, Gemini) once you run out of Census [credits](broken-reference).&#x20;
-
+* An API key to connect a LLM Provider (OpenAI, Claude, Gemini)
 * To create a new OpenAI API key, log into OpenAI and navigate to [Dashboard / API keys](https://platform.openai.com/api-keys) and generate a new Project API Key.
 * To create a new Anthropic API Key, navigate to [Anthropic Console](../../../) > Settings > API Keys and generate a new Key.
 
@@ -41,13 +35,13 @@ If you are a video person, watch [how to create a GPT column](https://youtu.be/5
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-12-26 at 2.02.19 PM.png" alt=""><figcaption><p>Census Create AI Column</p></figcaption></figure>
 
-**Step 5:** Skip this step if you have trial [credits](broken-reference). Connect to selected platform (OpenAI, Anthropic, Google) using your API Key and click Next.
+**Step 5:** Connect to selected platform (OpenAI, Anthropic, Google) using your API Key and click Next.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-08-29 at 12.34.53 PM (1).png" alt=""><figcaption><p>AI Columns Connect</p></figcaption></figure>
 
 **Step 6:** Create a prompt and fill out the column name.
 
-Refer to our [AI Prompts Recipe Book](prompts-recipe-book.md) for some inspiration!&#x20;
+Refer to our [AI Prompts Recipe Book](prompts-recipe-book.md) for some inspiration!
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-12-26 at 2.12.01 PM.png" alt=""><figcaption><p>Census AI Column Prompt</p></figcaption></figure>
 
@@ -71,10 +65,10 @@ This allows you to not only sync these AI-generated columns to your destination 
 AI Columns are currently supported on Snowflake, Redshift, BigQuery, Databricks, and Postgres with more warehouses coming soon.
 {% endhint %}
 
-#### Rate Limits&#x20;
+#### Rate Limits
 
 {% hint style="info" %}
-Requests made by Census to the LLM provider  (ex. OpenAI) are subject to daily rate limits, which may cause the underlying sync to stall. Rate limits can typically be increased by upgrading the tier of your organization with the LLM provider.&#x20;
+Requests made by Census to the LLM provider (ex. OpenAI) are subject to daily rate limits, which may cause the underlying sync to stall. Rate limits can typically be increased by upgrading the tier of your organization with the LLM provider.
 {% endhint %}
 
 For more information, please see the rate limit policies for your specific LLM provider.
