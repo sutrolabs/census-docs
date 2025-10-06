@@ -290,6 +290,7 @@
   * [Workspaces](misc/security-and-privacy/workspaces.md)
   * [Role-based Access Controls](misc/security-and-privacy/role-based-access-controls.md)
   * [Network Access Controls](misc/security-and-privacy/regions-and-ip-addresses.md)
+  * [SIEM Log Forwarding](misc/security-and-privacy/siem-log-forwarding.md)
   * [Secure Storage of Customer Credentials](misc/security-and-privacy/secure-storage-of-customer-credentials.md)
   * [Digital Markets Act (DMA) Consent for Ad Platforms](misc/security-and-privacy/dma-consent-for-ad-platforms.md)
 * [Health and Usage Reporting](misc/health-and-usage-reporting/README.md)
