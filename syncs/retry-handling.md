@@ -8,7 +8,7 @@ description: >-
 
 Whenever a sync runs, Census automatically retries any records that are rejected by the destination. The retries happen in two ways:
 
-* **Within the current Sync run:** When a sync is in progress, any rejected records will automatically be retried following an exponential backoff strategy. This method is in place to give transient issues time to resolve themselves before the next attempt. If Census' integration to the destination uses batch endpoints, the retries will automatically utilize our [split batch upload](retry-handling.md#split-batch-uploads) methodology. [Live Syncs](live-syncs.md) also retry failed records with an exponential backoff.
+* **Within the current Sync run:** When a sync is in progress, any rejected records will automatically be retried following an exponential backoff strategy. This method is in place to give transient issues time to resolve themselves before the next attempt. If Census' integration to the destination uses batch endpoints, the retries will automatically utilize our [split batch upload](retry-handling.md#split-batch-uploads) methodology. [Live Syncs](broken-reference) also retry failed records with an exponential backoff.
 * **On subsequent Sync runs:** Any record that still has not been accepted by the destination after a sync run completes will be retried on the next sync run until it succeeds.&#x20;
 
 ## Rejected Records
