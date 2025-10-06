@@ -6,7 +6,7 @@ Datasets are the way to model all your customer data in Census. Datasets expose 
   * Tables or Views already in your data warehouse – This is the most common place to start. Chances are your data warehouse contains many tables and views already that can be reused in Census.
   * Census defined queries – You can also just use SQL to model your data inside Census. It's a fast way to get started syncing the exact set of data you need for a particular destination.
 * [CSV Datasets](csv-datasets.md) - These are datasets created by uploading CSV files.
-* [Streaming Datasets](broken-reference) - These are datasets that model event based data and enable our real-time usecases.
+* [Streaming Datasets](streaming-datasets.md) - These are datasets that model event based data and enable our real-time usecases.
 
 External repositories – Census also supports directly connecting to existing repositories such as [dbt Models](external-dataset-repositories/dbt-integration.md), [Sigma](external-dataset-repositories/sigma-integration.md), and [Looker](external-dataset-repositories/looker-integration.md). These tools make it easy to build and maintain sophisticated data transforms that keep your models up to date. Census connects with these tools to enable singular business logic to be sent to downstream business applications.
 

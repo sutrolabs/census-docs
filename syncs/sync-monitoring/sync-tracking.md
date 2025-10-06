@@ -25,7 +25,7 @@ Sync Tracking data is updated in batches while a sync is in progress. Census's s
 
 By default, Census will retain row-level logs and make them available to you for 14 days. If you would like to retain for longer, see the details on Observability Lake below.
 
-Sync Tracking is not currently available for [Live Syncs](broken-reference) or [Sync Dry Runs](sync-dry-runs.md).
+Sync Tracking is not currently available for [Live Syncs](../live-syncs.md) or [Sync Dry Runs](sync-dry-runs.md).
 
 ## Observability Lake Data Schema
 

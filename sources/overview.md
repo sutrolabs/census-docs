@@ -20,6 +20,10 @@ The menu to the left lists all of the data sources that Census currently support
 
 Data warehouses and databases serve as powerful central repositories for your business data. Census connects directly to these sources to leverage your existing data models and transformations.
 
+### Streaming Sources
+
+For real-time use cases, Census connects to streaming sources like Kafka and Confluent Cloud. These connections power [Streaming Datasets](../datasets/overview/streaming-datasets.md) that enable low-latency data activation.
+
 ### File Uploads
 
 For ad-hoc or one-time data needs, Census supports [CSV Datasets](../datasets/overview/csv-datasets.md) that can be uploaded directly through the UI.
