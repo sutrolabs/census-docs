@@ -17,7 +17,7 @@ For each record, Census will display
 * The error reason, if applicable
 * The source record payload that was processed
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Availability
 

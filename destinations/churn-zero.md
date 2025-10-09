@@ -20,7 +20,7 @@ Custom fields defined in ChurnZero can be added to the sync mapping by manually 
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption><p>ChurnZero Custom Field</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption><p>Sync Mapping</p></figcaption></figure>
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
 
