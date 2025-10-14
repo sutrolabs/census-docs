@@ -214,7 +214,7 @@
   * [Oracle Fusion](destinations/available-destinations/oracle-fusion.md)
   * [Oracle Responsys](destinations/oracle-responsys.md)
   * [Orbit](destinations/orbit.md)
-  * [Ortto](destinations/ortto.md)
+  * [Coorto](destinations/coorto.md)
   * [Outreach](destinations/outreach.md)
   * [Pardot](destinations/pardot.md)
   * [Partnerstack](destinations/partnerstack.md)
