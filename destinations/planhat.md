@@ -60,6 +60,7 @@ Census currently supports syncing to the following Planhat objects.
 |         License |        ✅       | Source ID, External ID | Update or Create              |
 |          Metric |        ✅       | External ID            | Send                          |
 |             NPS |        ✅       | Source ID              | Update or Create              |
+|     Opportunity |        ✅       | Source ID, External ID | Update or Create, Update Only |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
