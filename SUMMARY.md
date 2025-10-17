@@ -253,7 +253,7 @@
   * [The Trade Desk](destinations/trade-desk.md)
   * [TikTok](destinations/tiktok.md)
   * [Totango](destinations/totango.md)
-  * [Tubopuffer](destinations/available-destinations/tubopuffer.md)
+  * [Turbopuffer](destinations/available-destinations/turbopuffer.md)
   * [Unify](destinations/available-destinations/unify.md)
   * [User Interviews](destinations/available-destinations/user-interviews.md)
   * [Userflow](destinations/userflow.md)
