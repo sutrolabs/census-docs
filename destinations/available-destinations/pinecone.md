@@ -39,8 +39,13 @@ Pinecone stores data within Indexes. Your Indexes in Pinecone can be used as obj
 | --------------- | -------------- | ------------- | --------------------------------- |
 | Index           | ✅              | ID            | <p>Update or Create<br>Mirror</p> |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pinecone.\
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Pinecone.
 
+#### Syncing Vector Values
+
+Pinecone supports generating vector values for your data, or [bringing your own vectors](https://docs.pinecone.io/guides/get-started/overview#bring-your-own-vectors) via external embedding models. Census supports enriching your dataset with vector embeddings via [Embedding Columns](../../datasets/smart-columns/embedding-columns.md). Use OpenAI to generate vector embeddings for your dataset, then sync your Embedding Column to the Pincone Index Vector Values field.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-17 at 2.37.37 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Need help connecting to Pinecone?
 
