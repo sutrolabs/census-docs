@@ -300,7 +300,3 @@
   * [Observability Toolkit](misc/health-and-usage-reporting/observability-toolkit.md)
   * [Alerts](misc/health-and-usage-reporting/alerts.md)
 * [FAQs](misc/faq-and-gotchas.md)
-
-***
-
-* [pinecone](pinecone.md)
