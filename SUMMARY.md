@@ -220,6 +220,7 @@
   * [Pardot](destinations/pardot.md)
   * [Partnerstack](destinations/partnerstack.md)
   * [Pendo](destinations/pendo.md)
+  * [Pinecone](destinations/available-destinations/pinecone.md)
   * [Pinterest](destinations/pinterest.md)
   * [Pipedrive](destinations/pipedrive.md)
   * [Planhat](destinations/planhat.md)
@@ -299,3 +300,7 @@
   * [Observability Toolkit](misc/health-and-usage-reporting/observability-toolkit.md)
   * [Alerts](misc/health-and-usage-reporting/alerts.md)
 * [FAQs](misc/faq-and-gotchas.md)
+
+***
+
+* [pinecone](pinecone.md)
