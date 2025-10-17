@@ -14,7 +14,7 @@ At this time, Census only supports generating Embedding Columns using OpenAI. Re
 
 #### Example Use Cases for Embedding Columns
 
-Once you've created Embedding Columns, use Census to sync the results into vector database destinations like [Pinecone](../../destinations/available-destinations/turbopuffer.md) or [tubopuffer](../../destinations/available-destinations/turbopuffer.md) to unlock:
+Once you've created Embedding Columns, use Census to sync the results into vector database destinations like [Pinecone](../../destinations/available-destinations/turbopuffer.md) or [turbopuffer](../../destinations/available-destinations/turbopuffer.md) to unlock:
 
 1. **Semantic search** - Find documents or products based on meaning rather than exact keyword matches, so searching "comfortable shoes for running" surfaces relevant results even if they don't contain those exact words.
 2. **Recommendation systems** - Suggest similar items by finding products, movies, or content with nearby embeddings in vector space, enabling "customers who liked this also liked" features.

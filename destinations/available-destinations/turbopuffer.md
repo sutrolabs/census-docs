@@ -2,7 +2,11 @@
 description: This page describes how to use Census with turbopuffer.
 ---
 
-# Tubopuffer
+# Turbopuffer
+
+{% hint style="info" %}
+The Census turbopuffer destination is in beta. Please reach out to [support](mailto:support@getcensus.com) if you have requests or questions about this destination.
+{% endhint %}
 
 ### Getting Started <a href="#getting-started" id="getting-started"></a>
 
