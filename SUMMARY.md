@@ -219,6 +219,7 @@
   * [Pardot](destinations/pardot.md)
   * [Partnerstack](destinations/partnerstack.md)
   * [Pendo](destinations/pendo.md)
+  * [Pinecone](destinations/available-destinations/pinecone.md)
   * [Pinterest](destinations/pinterest.md)
   * [Pipedrive](destinations/pipedrive.md)
   * [Planhat](destinations/planhat.md)
