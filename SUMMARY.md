@@ -23,6 +23,7 @@
   * [Enrichment Columns](datasets/smart-columns/enrichment/README.md)
     * [HTTP Request Enrichments](datasets/smart-columns/enrichment/http-request-enrichments.md)
   * [Computed Columns](datasets/smart-columns/computed-columns.md)
+  * [Embedding Columns](datasets/smart-columns/embedding-columns.md)
 
 ## 📫 Syncs
 
