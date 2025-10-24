@@ -19,7 +19,7 @@ In this guide, we will show you how to connect your Kafka destination to Census.
 * **Password**: The password of your Kafka instance. Called API Secret by Confluent.
 
 {% hint style="info" %}
-Your Kafka instance must be accessable to the public internet in order for Census to connect. Consider using [Census' IP addresses](../misc/security-and-privacy/regions-and-ip-addresses.md) to limit access to your Kafka instance.
+Your Kafka instance must be accessible to the public internet in order for Census to connect. Consider using [Census' IP addresses](../misc/security-and-privacy/regions-and-ip-addresses.md) to limit access to your Kafka instance.
 {% endhint %}
 
 ## Supported Objects and Sync Behaviors <a href="#supported-objects-and-sync-behaviors" id="supported-objects-and-sync-behaviors"></a>
