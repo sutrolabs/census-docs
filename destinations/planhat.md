@@ -50,18 +50,7 @@ In Planhat, once a token is created, it will appear once and last forever. Make 
 
 Census currently supports syncing to the following Planhat objects.
 
-| **Object Name** | **Supported?** | **Sync Keys**          | **Behaviors**                 |
-| --------------: | :------------: | ---------------------- | ----------------------------- |
-|        Activity |        ✅       | Any unique ID          | Send                          |
-|           Churn |        ✅       | Source ID              | Update or Create              |
-|         Company |        ✅       | Source ID, External ID | Update or Create, Update Only |
-|        End User |        ✅       | Source ID              | Update or Create              |
-|        Invoices |        ✅       | External ID, Source ID | Update or Create              |
-|         License |        ✅       | Source ID, External ID | Update or Create              |
-|          Metric |        ✅       | External ID            | Send                          |
-|             NPS |        ✅       | Source ID              | Update or Create              |
-|     Opportunity |        ✅       | Source ID, External ID | Update or Create, Update Only |
-|           Sales |        ✅       | Source ID, External ID | Update or Create, Update Only |
+<table data-header-hidden><thead><tr><th width="177.08984375" align="right"></th><th align="center"></th><th></th><th></th></tr></thead><tbody><tr><td align="right"><strong>Object Name</strong></td><td align="center"><strong>Supported?</strong></td><td><strong>Sync Keys</strong></td><td><strong>Behaviors</strong></td></tr><tr><td align="right">Activity</td><td align="center">✅</td><td>Any unique ID</td><td>Send</td></tr><tr><td align="right">Asset</td><td align="center">✅</td><td>Source ID, External ID</td><td>Update or Create, Update Only</td></tr><tr><td align="right">Churn</td><td align="center">✅</td><td>Source ID</td><td>Update or Create</td></tr><tr><td align="right">Company</td><td align="center">✅</td><td>Source ID, External ID</td><td>Update or Create, Update Only</td></tr><tr><td align="right">End User</td><td align="center">✅</td><td>Source ID</td><td>Update or Create</td></tr><tr><td align="right">Invoices</td><td align="center">✅</td><td>External ID, Source ID</td><td>Update or Create</td></tr><tr><td align="right">License</td><td align="center">✅</td><td>Source ID, External ID</td><td>Update or Create</td></tr><tr><td align="right">Metric</td><td align="center">✅</td><td>External ID</td><td>Send</td></tr><tr><td align="right">NPS</td><td align="center">✅</td><td>Source ID</td><td>Update or Create</td></tr><tr><td align="right">Opportunity</td><td align="center">✅</td><td>Source ID, External ID</td><td>Update or Create, Update Only</td></tr><tr><td align="right">Sale</td><td align="center">✅</td><td>Source ID, External ID</td><td>Update or Create, Update Only</td></tr></tbody></table>
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
