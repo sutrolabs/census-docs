@@ -39,7 +39,21 @@ Follow the OAuth flow to connect HubSpot. Easy!
 | Subscription Preferences |        ✅       | Email                                                 | Mirror                                                     |
 | Ticket                   |        ✅       | Record ID                                             | Send                                                       |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more Hubspot objects and/or behaviors
+[Contact us](mailto:support@getcensus.com) if you want Census to support more Hubspot objects and/or behaviors. Additionally, you can make generic HTTP requests to endpoints of your choice, as outlined below.
+
+#### Generic HTTP Requests
+
+If you wish to send data to a HubSpot API endpoint that is currently not supported via our existing connector, you can manually configure a generic HTTP request of your choosing.&#x20;
+
+* Select `HTTP Request` in the object selector
+
+<figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+
+* Put in your URL. Your endpoints must be part of `api.hubapi.com`, if you wish to send data to a different endpoint, please reach out to support@getcensus.com.
+
+<figure><img src="../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+
+* Configure the rest of the sync as you would for a general [HTTP Request](http-request.md#create-a-sync) destination, and we'll use your existing HubSpot credentials under the hood.&#x20;
 
 #### Qualified Custom Properties for Sync Keys
 
