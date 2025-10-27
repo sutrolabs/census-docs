@@ -65,7 +65,7 @@ The distance metric to create the new Namespace with, or the distance metric of 
 
 ### Syncing Vector Values
 
-turbopuffer requires bringing your own vector embeddings via external embedding models. Census supports enriching your dataset with vector embeddings via [Embedding Columns](../../datasets/smart-columns/embedding-columns.md). Use OpenAI to generate vector embeddings for your dataset, then sync your Embedding Column to the turbopuffer Namespace Vector Values field.
+turbopuffer requires bringing your own vector embeddings via external embedding models. Census supports enriching your dataset with vector embeddings via [Embedding Columns](../../datasets/smart-columns/embedding-columns.md). Use an embedding model to generate vector embeddings for your dataset, then sync your Embedding Column to the turbopuffer Namespace Vector Values field.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-10-17 at 3.10.20 PM.png" alt=""><figcaption></figcaption></figure>
 

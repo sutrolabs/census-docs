@@ -1,15 +1,15 @@
 ---
 description: >-
-  Use LLMs to enrich your dataset with vector embeddings, unlocking use cases
-  like semantic search and recommendations
+  Use embedding models to enrich your dataset with vector embeddings, unlocking
+  use cases like semantic search and recommendations
 ---
 
 # Embedding Columns
 
-Embedding Columns enable you to generate vector embeddings for each row in your dataset using [ChatGPT (OpenAI)](https://platform.openai.com/docs/guides/embeddings). Select the column in your dataset you'd like to generate embeddings for, or use [liquid templating](../../syncs/structuring-data/liquid-templates.md) to combine columns together. This setup allows you to generate text input for each row, with the embedding automatically written back to your Embedding Column.
+Embedding Columns enable you to generate vector embeddings for each row in your dataset using [ChatGPT (OpenAI)](https://platform.openai.com/docs/guides/embeddings) or [Gemini (Google)](https://ai.google.dev/gemini-api/docs/embeddings). Select the column in your dataset you'd like to generate embeddings for, or use [liquid templating](../../syncs/structuring-data/liquid-templates.md) to combine columns together. This setup allows you to generate text input for each row, with the embedding automatically written back to your Embedding Column.
 
 {% hint style="info" %}
-At this time, Census only supports generating Embedding Columns using OpenAI. Reach out to us if you'd like to use other LLM providers, or check out our [HTTP Request Enrichments](enrichment/http-request-enrichments.md) to enrich your dataset with embeddings from any provider you have access to.
+At this time, Census only supports generating Embedding Columns using OpenAI and Gemini. Reach out to us if you'd like to use other embedding model providers, or check out our [HTTP Request Enrichments](enrichment/http-request-enrichments.md) to enrich your dataset with embeddings from any provider you have access to.
 {% endhint %}
 
 #### Example Use Cases for Embedding Columns
@@ -28,8 +28,7 @@ Once you've created Embedding Columns, use Census to sync the results into vecto
 #### Pre-requisites
 
 * Dataset should have a Unique ID column
-* An API key to connect a LLM Provider (OpenAI)
-* To create a new OpenAI API key, log into OpenAI and navigate to [Dashboard / API keys](https://platform.openai.com/api-keys) and generate a new Project API Key.
+* An API key to connect a embedding model provider (OpenAI or Gemini)
 
 #### How to create an Embedding Column
 
@@ -39,11 +38,11 @@ Once you've created Embedding Columns, use Census to sync the results into vecto
 
 **Step 3:** Choose a dataset where you want to add a new AI-based column. Make sure the Dataset has a Unique ID column assigned
 
-**Step 4:** Select `Enrich & Enhance` on your top right corner, choose `Embedding` and your preferred LLM provider.
+**Step 4:** Select `Enrich & Enhance` on your top right corner, choose `Embedding` and your preferred embedding model provider.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-10-17 at 2.00.02 PM.png" alt=""><figcaption></figcaption></figure>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/Screenshot 2025-10-27 at 3.35.44 PM.png" alt=""><figcaption></figcaption></figure></div>
 
-**Step 5:** Connect to OpenAI using your API Key and click Next.
+**Step 5:** Connect to OpenAI or Gemini using your API Key and click Next.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-10-17 at 2.01.10 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -53,14 +52,14 @@ Once you've created Embedding Columns, use Census to sync the results into vecto
 
 **Step 7:** Configure your Embedding parameters in the Advanced Options section
 
-* Model Type - you can select from the provided list of models for the selected LLM provider.
+* Model Type - you can select from the provided list of models for the selected embedding model provider.
 *   Dimensions - The number of dimensions the resulting output embeddings should have, if the chosen model supports configuring dimensions value.
 
     <figure><img src="../../.gitbook/assets/Screenshot 2025-10-17 at 2.05.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Step 8:** Hit the Create button and that's it! Census will generate an Embedding Column in your dataset.
 
-This step can take several minutes. Behind the scene, Census sets up OpenAI as a destination and runs a sync across all your rows in the selected dataset.
+This step can take several minutes. Behind the scene, Census sets up OpenAI or Gemini as a destination and runs a sync across all your rows in the selected dataset.
 
 Embedding Columns refresh every 6 hours and only process new rows.
 
@@ -77,17 +76,18 @@ Embedding Columns are currently supported on Snowflake, Redshift, BigQuery, Data
 #### Rate Limits
 
 {% hint style="info" %}
-Requests made by Census to the LLM provider (ex. OpenAI) are subject to daily rate limits, which may cause the underlying sync to stall. Rate limits can typically be increased by upgrading the tier of your organization with the LLM provider.
+Requests made by Census to the embedding model provider (ex. OpenAI) are subject to daily rate limits, which may cause the underlying sync to stall. Rate limits can typically be increased by upgrading the tier of your organization with the embedding model provider.
 {% endhint %}
 
-For more information, please see the rate limit policies for your specific LLM provider.
+For more information, please see the rate limit policies for your specific embedding model provider.
 
 * [Open AI Rate Limits](https://platform.openai.com/docs/guides/rate-limits#usage-tiers)
+* [Google Gemini Rate Limits](https://cloud.google.com/vertex-ai/generative-ai/docs/quotas#rate-limits)
 
 #### Privacy and Security
 
-Census only sends your prompt to the LLM provider. If your prompt includes specific dataset columns via liquid templates, these columns will be included as part of the prompt sent to the LLM provider. No other data is shared with the LLM.
+Census only sends your input prompt to the embedding model provider. If your input includes specific dataset columns via liquid templates, these columns will be included as part of the input sent to the embedding model provider. No other data is shared with the embedding model.
 
-Data sent via Census to the LLM provider is not used for training models. For [more information](https://community.openai.com/t/does-the-openai-api-get-access-to-the-data-i-send-it-or-store-the-data/599538), please refer each LLM provider's data usage policies.
+Data sent via Census to the embedding model provider is not used for training models. For [more information](https://community.openai.com/t/does-the-openai-api-get-access-to-the-data-i-send-it-or-store-the-data/599538), please refer each embedding model provider's data usage policies.
 
-All requests made to the LLM provider are made through secure HTTPS channels, and only successful responses are saved to your dataset.
+All requests made to the embedding model provider are made through secure HTTPS channels, and only successful responses are saved to your dataset.
