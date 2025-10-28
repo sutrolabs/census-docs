@@ -287,6 +287,7 @@
 * [Developers](misc/developers/README.md)
   * [Custom Destination API](misc/developers/custom-api.md)
   * [Management API](misc/developers/api.md)
+  * [Terraform Provider](misc/developers/terraform.md)
 * [Security & Privacy](misc/security-and-privacy/README.md)
   * [Login & SSO Settings](misc/security-and-privacy/login-and-sso-settings.md)
   * [Workspaces](misc/security-and-privacy/workspaces.md)
