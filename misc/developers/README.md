@@ -10,6 +10,7 @@ See our [Developer Hub](https://developers.getcensus.com) for a full view of all
 
 * [Dataset API](broken-reference) - An optional REST API for accessing data stored in your [Datasets](broken-reference) on demand.
 * [Management API](api.md) - A REST API for controlling the Syncs, Models, and Connections configured within Census. This can be used to programmatically read information and perform most actions available in the Census app today.
+* [Terraform Provider](terraform.md) - Manage Census resources as infrastructure as code using Terraform. Version control your Census configuration and deploy it reproducibly across environments.
 * Custom Destinations
   * [HTTP Request Destination](../../destinations/http-request.md) - An easy way to send data to a custom destination, without having to build a full destination.
   * [Custom Destination API](custom-api.md) - A rich JSON-RPC API for implementing your own custom destination for Census Syncs. This API supports batching and schemas just like other Census connections.
