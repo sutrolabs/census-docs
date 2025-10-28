@@ -28,6 +28,7 @@ Census accepts CSV files with the following specifications:
 
 - File format: `.csv` (comma-separated values)
 - Maximum file size: 100MB
+- Character encoding: UTF-8
 - First row must contain column headers
 
 Example of a valid CSV file:
