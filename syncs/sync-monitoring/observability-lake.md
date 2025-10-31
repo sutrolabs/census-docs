@@ -2,7 +2,7 @@
 
 Observability Lake allows you to store a comprehensive history of your sync data in your own cloud storage environment, providing extended retention and flexibility beyond the default 14-day period.
 
-You can:
+You receive:
 
 * **Customizable Retention**: Extend your data retention beyond the default 14 days to meet your business needs.
 * **Bring Your Own Bucket (BYOB)**: Use your own Amazon S3, Google Cloud Storage, or Azure Blob Storage to store sync data, giving you full control over your storage environment.
