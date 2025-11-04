@@ -54,14 +54,14 @@ Census exposes detailed logging information in a view called `sync_log` in your 
 The `destination_id`, `destination_object_id`, `source_id`, and `source_object_id` columns are not yet supported when using Warehouse Writeback with Databricks.
 {% endhint %}
 
-## Metadata Tables
+## Fact Tables
 
-In addition to row level sync logs, Warehouse Writeback will create metadata tables about source objects and destinations involved in syncs. These tables can be joined to the `sync_log` table on their `id` column in order to add additional context.
+In addition to row level sync logs, Warehouse Writeback will create fact tables about source objects and destinations involved in syncs. These tables can be joined to the `sync_log` table on their `id` column in order to add additional context.
 
 For example, imagine you have a mirror sync from a [Segment](../../audience-hub/syncing-segments.md) to an ads destination like Google. The `sync_log` table will log attempts to send new records (i.e. those that entered the segment) to the destination. It will also log attempts to delete records (i.e. those that left the segment) from the destination. If you join those logs with the source objects table (described below) you can get full insight into who is entering and leaving what segments, by name, and when.
 
 {% hint style="info" %}
-Metadata Tables are refreshed every six hours, separate from sync runs history. That means you may see a delay on records appearing in metadata for syncs that are using brand new sources or destinations.
+Fact Tables are refreshed every six hours, separate from sync runs history. That means you may see a delay on records appearing in metadata for syncs that are using brand new sources or destinations.
 {% endhint %}
 
 ### Source Objects Table

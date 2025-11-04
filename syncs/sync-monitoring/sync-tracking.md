@@ -19,15 +19,7 @@ For each record, Census will display
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Availability
-
-Sync Tracking data is updated in batches while a sync is in progress. Census's sync engine processes records in batches of 10-100k. Sync Tracking data will update as each batch is finished processing.
-
-By default, Census will retain row-level logs and make them available to you for 14 days. If you would like to retain for longer, see the details on Observability Lake below.
-
-Sync Tracking is not currently available for [Live Syncs](broken-reference) or [Sync Dry Runs](sync-dry-runs.md).
-
-## Sync Tracking Reporting and Analysis
+## Reporting and Analysis
 
 Enabling [Observability Lake](observability-lake.md) gives you to direct access to your sync tracking data, enabling custom analysis from your  (and also allows you to retain sync tracking data for longer periods of time.&#x20;
 
@@ -35,7 +27,11 @@ Enabling [Observability Lake](observability-lake.md) gives you to direct access 
 Note that this data structure format applies to data written today but may change in the future.
 {% endhint %}
 
-### Folder Structure
+Sync Tracking data is updated in batches while a sync is in progress. Census's sync engine processes records in batches of 10-100k. Sync Tracking data will update as each batch is finished processing.
+
+Sync Tracking is not currently available for [Sync Dry Runs](sync-dry-runs.md).
+
+### Sync Run Folder Structure
 
 Sync Tracking data is organized into folders representing each individual sync runs within a hierarchical path.
 
@@ -46,7 +42,7 @@ Each sync run contains several files:
 1. One or more parquet files logging each individual row.
 2. A metadata file describing the configuration of the sync itself.
 
-### Synced Records data&#x20;
+#### Synced Records Logs&#x20;
 
 Sync record data is stored in one or more parquet files of the format  `[batch_type].[batch_number].parquet`, for example `records_updated.0.parquet`. Though there are different batch type prefixes, all files will have the same set of columns and can be joined together.
 
@@ -62,7 +58,7 @@ All files share the same schema so that they can be combined and queried. Sync t
 | batch\_started\_at | Timestamp when Census started sending the batch of records                                                                                                                                                                                                        |
 | batch\_ended\_at   | Timestamp finished sending the batch of records                                                                                                                                                                                                                   |
 
-### Metadata
+#### Metadata
 
 In addition to the parquet files containing row-level sync tracking data, Census writes a `metadata.json` file in the same path. This file includes sync run metadata:&#x20;
 
@@ -75,6 +71,34 @@ In addition to the parquet files containing row-level sync tracking data, Census
 * Record Payload Schema which maps field names in the record\_payload column of the data to their JSON types (string, number, boolean, array)
 
 Use this metadata alongside your sync tracking parquet files to understand the schema and configuration details for each sync run, similar to the metadata tables available in [Warehouse Writeback](warehouse-writeback.md).
+
+### Fact Tables
+
+In addition to row level sync logs, Sync Tracking will create fact tables about source objects and destinations involved in syncs. These tables will appear in the following path as individual parquet files:
+
+`s3://[your_bucket]/metadata/[ORG_ID]/`
+
+{% hint style="info" %}
+Fact Tables are refreshed every six hours, separate from sync runs history. That means you may see a delay on records appearing in metadata for syncs that are using brand new sources or destinations.
+{% endhint %}
+
+#### Source Objects Table
+
+Source objects are tables, models, datasets, or segments. These are what you send data from during a sync. Continue reading the [schema section](sync-tracking.md#schema) below for more information.
+
+<table><thead><tr><th width="198">Column</th><th width="549.3333333333333">Description</th></tr></thead><tbody><tr><td>id</td><td>Unique identifier for the source object. This joins to the <code>source_object_id</code> column in the <code>sync_log</code> table.</td></tr><tr><td>type</td><td>Type of data set. The options with their meaning are:<br>- <code>DataWarehouse::FilterSegmentSource</code> -> A segment<br>- <code>DataWarehouse::CohortSource</code> -> A cohort<br>- <code>DataWarehouse::Query</code> -> A model<br>- <code>DataWarehouse::BusinessObjectSource</code> -> An entity<br>- <code>DataWarehouse::Table</code> -> A table</td></tr><tr><td>name</td><td>Name of the data set.</td></tr><tr><td>model_id</td><td>For a source object with type <code>DataWarehouse::Query</code>, this points to the SQL, Looker, or dbt model associated with it.<br><br>The model is what you see in the Census UI and is what is responsible for storing a SQL query, dbt reference, etc. The <code>DataWarehouse::Query</code> source object lives between the model and your source and is responsible for translating the model definition into rows and columns.</td></tr><tr><td>business_object_id</td><td>For a source object with type <code>DataWarehouse::BusinessObjectSource</code>, this points to the Dataset associated with it. The Dataset (which is called a businessObject internally) </td></tr><tr><td>filter_segment_id</td><td>For a source object with type <code>DataWarehouse::FilterSegmentSource</code>, this points to the segment associated with it. The segment is what you see in the Census UI and is where you configure conditional logic to segment your data. </td></tr><tr><td>cohort_id</td><td>For a source object with type <code>DataWarehouse::CohortSource</code>, this points to the segment experiment cohort associated with the sync. The cohort is the subset of a segment created when running an experiment.</td></tr></tbody></table>
+
+#### Destinations Table
+
+Destinations are where you send data during a sync. An example is Salesforce.
+
+<table><thead><tr><th width="108">Column</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>Unique identifier for the destination. This joins to the <code>destination_id</code> column in the <code>sync_log</code> table.</td></tr><tr><td>type</td><td>Type of the destination. This can be any of the various destinations we support, in the format <code>&#x3C;Destination name>::Connection</code></td></tr><tr><td>name</td><td>Name of the destination.</td></tr></tbody></table>
+
+#### Destination Objects Table
+
+Destination objects are the specific objects within a destination that you send data to during a sync. An example is a Salesforce Contact.
+
+<table><thead><tr><th width="128">Column</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>Unique identifier for the destination object. This joins to the<code>destination_object_id</code> column in the <code>sync_log</code> table.</td></tr><tr><td>type</td><td>Type of the destination object. This can be any of the various destination objects we support, in the format <code>&#x3C;Destination name>::ObjectTypes::&#x3C;Destination object name></code></td></tr><tr><td>name</td><td>Name of the destination object.</td></tr></tbody></table>
 
 ### Querying
 
