@@ -27,23 +27,28 @@ By default, Census will retain row-level logs and make them available to you for
 
 Sync Tracking is not currently available for [Live Syncs](broken-reference) or [Sync Dry Runs](sync-dry-runs.md).
 
-## Observability Lake Data Schema
+## Sync Tracking Reporting and Analysis
 
-Enabling [Observability Lake](observability-lake.md) allows you to customize retention for your sync tracking data. You can also query the Sync Tracking directly from your preferred compute environment.
+Enabling [Observability Lake](observability-lake.md) gives you to direct access to your sync tracking data, enabling custom analysis from your  (and also allows you to retain sync tracking data for longer periods of time.&#x20;
 
 {% hint style="info" %}
 Note that this data structure format applies to data written today but may change in the future.
 {% endhint %}
 
-### File structure
+### Folder Structure
 
-Sync Tracking data for each sync run is stored across 1 or more parquet files within a hierarchical path.
+Sync Tracking data is organized into folders representing each individual sync runs within a hierarchical path.
 
-`s3://[your_bucket]/sync_tracking_datasets/[ORG_ID]/[SYNC_ID]/[SYNC_ID]/`
+`s3://[your_bucket]/sync_tracking_datasets/[ORG_ID]/[SYNC_ID]/[SYNC_RUN_ID]/`
 
-The files within this path will look like `[batch_type].[batch_number].parquet`, for example `records_updated.parquet`. Though there are different batch type prefixes, all files will have the same set of columns and can be joined together.
+Each sync run contains several files:
 
-### Data structure
+1. One or more parquet files logging each individual row.
+2. A metadata file describing the configuration of the sync itself.
+
+### Synced Records data&#x20;
+
+Sync record data is stored in one or more parquet files of the format  `[batch_type].[batch_number].parquet`, for example `records_updated.0.parquet`. Though there are different batch type prefixes, all files will have the same set of columns and can be joined together.
 
 All files share the same schema so that they can be combined and queried. Sync tracking data includes the following columns:
 
@@ -57,9 +62,23 @@ All files share the same schema so that they can be combined and queried. Sync t
 | batch\_started\_at | Timestamp when Census started sending the batch of records                                                                                                                                                                                                        |
 | batch\_ended\_at   | Timestamp finished sending the batch of records                                                                                                                                                                                                                   |
 
+### Metadata
+
+In addition to the parquet files containing row-level sync tracking data, Census writes a `metadata.json` file in the same path. This file includes sync run metadata:&#x20;
+
+* Organization ID
+* Workspace ID
+* Sync Configuration ID
+* Sync Run ID
+* Source and Destination type and IDs
+* Sync Run start time
+* Record Payload Schema which maps field names in the record\_payload column of the data to their JSON types (string, number, boolean, array)
+
+Use this metadata alongside your sync tracking parquet files to understand the schema and configuration details for each sync run, similar to the metadata tables available in [Warehouse Writeback](warehouse-writeback.md).
+
 ### Querying
 
-Because Sync Tracking data is stored as simple parquet files in your Observability Lake, you can query them in groups. For example, you can use duckdb to find all records that have failed and group by error message (Note: you'll need to grant access duckdb access to your object storage separately)
+Because Sync Tracking data is stored as simple parquet files in your Observability Lake, you can query them in groups. For example, you can use `duckdb` to find all records that have failed and group by error message (Note: you'll need to grant access `duckdb` access to your object storage separately)
 
 ```
 SELECT status_message, ARRAY_AGG(identifier) AS rejected_records
