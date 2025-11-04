@@ -69,9 +69,7 @@ CREATE DATABASE <catalog-database-name>
   LINKED_CATALOG = ( CATALOG = '<catalog-integration-name>' ); 
 ```
 
-Now all the tables in Census Store should be available for querying under t
-
-
+Now all the tables in Census Store should be available for querying under the database you specified.
 
 ## Alternative Step 3: Mount individual tables
 
