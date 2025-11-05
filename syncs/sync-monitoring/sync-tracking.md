@@ -104,7 +104,7 @@ Destination objects are the specific objects within a destination that you send 
 
 ### Querying
 
-Because Sync Tracking data is stored as simple parquet files in your Observability Lake, you can query them in groups. For example, you can use `duckdb` to find all records that have failed and group by error message (Note: you'll need to grant access `duckdb` access to your object storage separately)
+Because Sync Tracking data is stored as simple parquet files, you can query them in groups. For example, you can use `duckdb` to find all records that have failed and group by error message (Note: you'll need to grant access `duckdb` access to your object storage separately)
 
 ```
 SELECT status_message, ARRAY_AGG(identifier) AS rejected_records
