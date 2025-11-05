@@ -77,6 +77,16 @@ To resolve this, you’ll need to define the upload key type directly in Google 
 
 Once this is done, the list’s upload key type will be set, and Census will be able to sync to it successfully.
 
+#### If you're getting an error like "upload data is not compatible with the upload key type of the associated user list"
+
+This error occurs when the field mappings in your sync are not compatible with the defined upload key type of your list (types listed above). When an upload key type is set for a list it cannot be updated and based on the type Google expects only compatible fields to be sent to the list.&#x20;
+
+For example, if you've set a contact information field like email or phone as the upload key Google will throw an error if you attempt to send user ids or mobile device ids in your sync.
+
+To resolve the field mappings that are incompatible with your upload key type will need to be removed from the sync configuration.&#x20;
+
+For some additional information on the Google list upload key types [here is a link to Google's documentation](https://developers.google.com/google-ads/api/reference/rpc/v21/CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyType).
+
 ## Supported Sync Behaviors
 
 |        **Behaviors** | **Supported?** |
@@ -115,3 +125,4 @@ Steps to get there:
 ![](<../../.gitbook/assets/Screen Shot 2021-11-16 at 10.34.57 AM.png>)
 
 If that date isn't the same time as the most recent sync completed, please reach out via our in-app chat and we will investigate it with you.
+
