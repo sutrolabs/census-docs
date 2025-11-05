@@ -21,7 +21,9 @@ For each record, Census will display
 
 ## Reporting and Analysis
 
-Enabling [Observability Lake](observability-lake.md) gives you to direct access to your sync tracking data, enabling custom analysis from your  (and also allows you to retain sync tracking data for longer periods of time.&#x20;
+You can also choose to store Sync Tracking data yourself. This gives you to direct access to your sync tracking data, enabling custom analysis from your  (and also allows you to retain sync tracking data for longer periods of time).&#x20;
+
+To access sync tracking data, follow the instructions in the [Bring Your Own Bucket documentation](https://docs.getcensus.com/misc/security-and-privacy/bring-your-own-blob-storage). Once you configure your own bucket, **Census will automatically use it as storage for all sync run logging going forward.** This data will be maintained permanently in your bucket unless you've specified your own retention policy.
 
 {% hint style="info" %}
 Note that this data structure format applies to data written today but may change in the future.

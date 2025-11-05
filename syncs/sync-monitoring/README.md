@@ -18,7 +18,6 @@ Each sync you set up has several different views into its status, recent activit
 Additionally, you don't have to hang out looking at syncs all day to be sure they're healthy. Census also provides several features to keep an eye on the health of your syncs:
 
 * [Sync Alerts](alerts.md) for when things need your attention.
-* [Observability Lake](observability-lake.md) for long-term retention of sync logs, on your cloud storage.
 * [Datadog Integration](datadog-integration.md) for hooking Census up to all your internal monitoring systems.&#x20;
 * [Warehouse Writeback](warehouse-writeback.md) for keeping track of what your syncs have done historically.
 * [Webhooks](sync-lifecycle-webhooks.md) for notifying you when events happen to syncs.&#x20;
