@@ -1,14 +1,8 @@
 # Computed Columns
 
-Datasets support the ability to define no-code calculations and aggregation from other datasets as new calculated columns without making changes in your warehouse yet still being fully governed, tracked, and observed by your data stack.
+Datasets support the ability to define no-code calculations and aggregation from other datasets as new calculated columns without making changes in your warehouse. These columns can be then used as any other column in your dataset, as a sync attribute or during segmentation building.
 
-These columns can be then used as any other column in your dataset, as a sync attribute or during segmentation building.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2024-06-09 at 5.17.32 AM.png" alt=""><figcaption><p>Census Computed Columns using Formula</p></figcaption></figure>
-
-You can create computed columns via the "New Computed Column" button in the Properties page of any of your datasets.
-
-Computed Columns support following operations: Lookup Columns, Rollup Columns, and Equation Columns.
+You can create computed columns via the "New Computed Column" button in the Properties page of any of your datasets. Computed Columns support two operations: Lookup Columns and Rollup Columns
 
 ## Lookup Columns
 
@@ -37,7 +31,3 @@ Rollups require you to define three properties: the related dataset which to agg
 | --------------------------- | ---------------------------------- |
 | number                      | most frequent, count, sum, average |
 | any other type              | most frequent                      |
-
-## GPT Columns
-
-Refer to the dedicated [documentation for AI Columns](ai-columns/) to learn about defining these AI-powered columns for your datasets.
