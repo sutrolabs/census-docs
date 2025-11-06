@@ -87,7 +87,7 @@ Census can use the Salesforce ID field for **Update Only** syncs, but it cannot 
 Census does allow using non-External ID fields as identifiers in certain situations:
 
 * Any string or numeric field can be used when using Update Only.
-* Default Salesforce objects' other identifier fields. For example, the Contact object has an Email field that can be used as an identifier as well. Note:
+* Default Salesforce objects' other identifier fields. For example, the Contact object has an Email field that can be used as an identifier as well.
 
 Note that, because these fields are not forced to be unique in Salesforce, Census will have trouble identifying which Salesforce record to update if duplicates are present. When this happens, Census will update one of the records, but not predictable.
 
