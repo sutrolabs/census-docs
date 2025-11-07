@@ -93,9 +93,9 @@ Click the Next button to see the final preview, which will have a recap of what 
 
 Jira's primary object is an Issue, which we support in Census.​
 
-| **Object Name** | **Supported?** | **Sync Keys** | **Behaviors** |
-| :-------------: | :------------: | :-----------: | :-----------: |
-|      Issue      |        ✅       |   Unique ID   |      Add      |
+| **Object Name** | **Supported?** |     **Sync Keys**    | **Behaviors** |
+| :-------------: | :------------: | :------------------: | :-----------: |
+|      Issue      |        ✅       | Issue Key, Unique ID |  Add, Update  |
 
 {% hint style="info" %}
 Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
