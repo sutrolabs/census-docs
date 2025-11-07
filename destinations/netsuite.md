@@ -181,6 +181,20 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 Please note that NetSuite doesn't support the [creation of fields](../syncs/core-concept/#field-creation) via Census and currently we don't support [add all fields ](../syncs/core-concept/#add-all-fields)feature for NetSuite
 {% endhint %}
 
+### Generic HTTP Requests
+
+If you wish to make a request to any NetSuite REST API endpoint that is currently not supported via one of our existing objects, you can manually configure a generic HTTP request of your choosing.
+
+* Select `HTTP Request` in the object selector
+
+<figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+
+* Put in your URL. Your endpoints must be part of `https://<account_id>.suitetalk.api.netsuite.com/services/rest/record/v1`, if you wish to send data to a different endpoint, please reach out to support@getcensus.com.
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-11-07 at 1.27.46 PM.png" alt=""><figcaption></figcaption></figure>
+
+* Configure the rest of the sync as you would for a general [HTTP Request](https://docs.getcensus.com/destinations/available-destinations/http-request#create-a-sync) destination, and we'll use your existing NetSuite credentials under the hood.
+
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
