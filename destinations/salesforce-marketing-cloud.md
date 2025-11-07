@@ -60,7 +60,7 @@ In Salesforce Marketing Cloud Setup, navigate to "Data Management > File Locatio
 
 **FTP User**
 
-Still in Salesforce Marketing Cloud Setup, navigate to "Data Management > FTP Accounts" and click "Add FTP User".
+Still in Salesforce Marketing Cloud Setup, navigate to "Data Management > FTP Accounts" and click "Add FTP User". Existing FTP Accounts cannot be reused.
 
 ![](../.gitbook/assets/sfmc_step6.png)
 
