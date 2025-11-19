@@ -8,7 +8,7 @@ A Sync is the core operation in Census that defines how data should flow from yo
 
 To create a sync, you'll need to define:
 
-1. A **source** - Where your data is coming from (Basic Dataset, Streaming Dataset, SaaS Dataset, CSV Dataset, or direct warehouse access)
+1. A **source** - Where your data is coming from (Basic Dataset, CSV Dataset, or direct warehouse access)
 2. A **destination** - Where your data is going (CRM, marketing platform, etc.)
 3. A **sync behavior** - How Census should handle the data (update, create, mirror, etc.)
 4. **Sync keys** - How to match records between source and destination
@@ -144,12 +144,8 @@ To create a sync, you'll need to connect both a source and a destination.
 Census supports a variety of data sources for your syncs:
 
 * **Basic Datasets** - Connect directly to your data warehouse tables, views, or custom SQL queries
-* **Streaming Datasets** - Process real-time events from Kafka, Confluent Cloud, and other streaming sources
-* **SaaS Datasets** - Use data directly from your CRM systems like Salesforce or HubSpot
 * **CSV Datasets** - Upload and use CSV files for quick testing or one-time syncs
 * **Direct Warehouse Access** - Sync directly from warehouse tables without creating a dataset
-
-This flexibility allows you to use the right data source for each use case, whether you need batch processing, real-time streaming, or direct access to your SaaS applications.
 
 {% hint style="info" %}
 For instructions on connecting your specific data source, take a look at the Data Sources section on the left.
@@ -168,8 +164,6 @@ Either option may be right for you, read more about the differences between [Bas
 Datasets in Census provide a flexible way to organize and prepare your data for syncing. You can create datasets from various sources:
 
 * **Basic Datasets** from your data warehouse using SQL or table selection
-* **Streaming Datasets** for real-time data activation
-* **SaaS Datasets** from your connected business applications
 * **CSV Datasets** for simple file uploads
 
 You can also connect dataset integrations like [dbt](../datasets/overview/external-dataset-repositories/dbt-integration.md), [Looker](../datasets/overview/external-dataset-repositories/looker-integration.md), or [Sigma](../datasets/overview/external-dataset-repositories/sigma-integration.md).

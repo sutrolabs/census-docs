@@ -7,7 +7,6 @@ description: Use data sources to connect to the data that matters most for your 
 Census connects to a variety of data sources to power your syncs and data activation workflows. These sources include:
 
 * **Data Warehouses & Databases**: Snowflake, BigQuery, Redshift, PostgreSQL, and more
-* **Streaming Sources**: Kafka, Confluent Cloud, Google Pub/Sub
 * **File Uploads**: CSV files for ad-hoc or one-time data needs
 
 This flexibility allows you to use Census as a Universal Data Platform, unifying data from multiple sources and activating it across your business tools.
@@ -26,7 +25,7 @@ For ad-hoc or one-time data needs, Census supports [CSV Datasets](../datasets/ov
 
 ## Data Warehouse-Specific Features
 
-The following sections apply specifically to data warehouse and database connections (Snowflake, BigQuery, Redshift, PostgreSQL, etc.). Streaming and file upload sources have different connection methods and considerations, which are detailed in their respective documentation pages.
+The following sections apply specifically to data warehouse and database connections (Snowflake, BigQuery, Redshift, PostgreSQL, etc.). File upload sources have different connection methods and considerations, which are detailed in their respective documentation pages.
 
 ### ️ Sync Engines for Data Warehouses
 
