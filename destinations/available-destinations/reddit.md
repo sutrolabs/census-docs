@@ -10,7 +10,7 @@ Reddit Ads is an advertising platform that allows businesses to engage with Redd
 
 1. Navigate to the **Destinations** page in Census and click **New Destination**.
 2. Select **Reddit Ads** from the menu.
-3. Enter your Reddit Ad Account ID if you have one. This should match what you see under Assets > Ad Accounts in your Reddit account. Make sure to include the prefix (e.g., `t2_abc123`). If an ID is not provided, Census will default to the parent account's ID.&#x20;
+3. Enter your Reddit Ad Account ID if you have one. This should match what you see under Assets > Ad Accounts in your Reddit account. Make sure to include the prefix (e.g., `t2_abc123`). If an ID is not provided, Census will default to the parent account's ID.
 
 <figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
@@ -29,6 +29,8 @@ Learn more about all of our sync behaviors in our [Syncs](../../syncs/overview.m
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Reddit Ads objects and/or behaviors.
 
 ### Conversion Events
+
+The Conversion Events API is available only for managed accounts. API requests from non-managed accounts will return a 403 error. To sync to Reddit Conversion Events, please ensure your account is set to Managed. If you need assistance updating your account type, contact your Reddit account representative.
 
 #### Field details
 
