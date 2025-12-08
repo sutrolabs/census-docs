@@ -63,7 +63,7 @@ You'll often need to send a segment somewhere other than an ad platform (e.g. a 
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-12-13 at 17.27.44@2x.png" alt=""><figcaption><p>Create a new sync from the Syncs page.</p></figcaption></figure>
 
-Regardless of whether you choose option 1 or 2 above, you'll enter the normal [sync creation workflow](broken-reference). If you choose option 1, the current segment will be selected as your source. If you choose option 2, you'll need to select the relevant entity, and then choose the segment you want to sync.
+Regardless of whether you choose option 1 or 2 above, you'll enter the normal [sync creation workflow](/broken/pages/-MV8ovxVCiy1fEjc0SO-). If you choose option 1, the current segment will be selected as your source. If you choose option 2, you'll need to select the relevant entity, and then choose the segment you want to sync.
 
 <figure><img src="../.gitbook/assets/CleanShot 2023-12-13 at 17.35.47@2x.png" alt=""><figcaption><p>Select the segment you'd like to sync.</p></figcaption></figure>
 
@@ -75,7 +75,7 @@ Where available, Census also supports automatically creating new audiences in de
 
 ### Syncing All Segment Membership Lists
 
-It's common to have many segments created from the same entity, and many of the users or other records may appear in multiple segments. In some cases, it's helpful to be able to access a list of all of the segments each record appears in so that they can be worked with in combination (for example, combining potential offers in a single email) or just-in-time decisions can be made about most important segment.
+It's common to have many segments created from the same entity, and many of the users or other records may appear in multiple segments. In some cases, it's helpful to be able to access a list of all of the segments each record appears in so that they can be worked with in combination (for example, combining potential offers in a single email) or just-in-time decisions can be made about the most important segment.
 
 In this case, the entity has a dynamic value called **Segment Membership** that will return a list of all of the segments each record is a member of. This value is available when syncing the entity rather than any individual segment, so it will include all records of the entity, even if the list of segments they are currently a member of is empty.
 
