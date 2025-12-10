@@ -9,20 +9,18 @@ We store the data you sync using Census, sometimes for the lifetime of your Cens
   * [enrichment](../../datasets/smart-columns/enrichment/ "mention")
   * [warehouse-writeback.md](../../syncs/sync-monitoring/warehouse-writeback.md "mention")
 * [census-store](census-store/ "mention"): this is an Iceberg-based managed storage. Items stored in Census Store can be accessed by external compute, including warehouses. This data includes:
-  * [Broken link](broken-reference "mention")
   * [csv-datasets.md](../../datasets/overview/csv-datasets.md "mention")
-  * [Broken link](broken-reference "mention") datasets
   * Census store is also the storage location for [ai-columns](../../datasets/smart-columns/ai-columns/ "mention"), [enrichment](../../datasets/smart-columns/enrichment/ "mention"), and [warehouse-writeback.md](../../syncs/sync-monitoring/warehouse-writeback.md "mention") logs for any of these dataset types.
 * [general-object-storage.md](general-object-storage.md "mention"): this is used to house data related to sync execution. This data includes:
   * Snapshots of the data you sync using Basic Sync Engine
   * [sync-tracking.md](../../syncs/sync-monitoring/sync-tracking.md "mention") logs of the data you sync
   * Temporary files used to load and unload data
 
-Census Store & General Object Storage data is stored in cloud-based object storage providers. Census provides object storage locations in multiple clouds in the US and the EU that you can use to store this data, and your Census organization is configured to use these locations by default. You can also add your own object storage locations to Census.
+Census Store & General Object Storage data is stored in cloud-based object storage providers. Census provides object storage locations in multiple clouds in the US, the EU and Asia Pacific that you can use to store this data, and your Census organization is configured to use these locations by default. You can also add your own object storage locations to Census.
 
 ### Census-provided object storage
 
-New Census organizations are configured to use Census-provided object storage by default. Census manages object storage locations in multiple public clouds, including AWS (S3), GCP (GCS), and Azure (Blob Storage). This includes managing credentials with narrow permissions and short lifetimes, encrypting data at rest and in transit, automatically removing old data once it is no longer in use, and ensuring your workspace is always storing data in the correct region (US or EU). This approach is secure and is used by the vast majority of Census customers.
+New Census organizations are configured to use Census-provided object storage by default. Census manages object storage locations in multiple public clouds, including AWS (S3), GCP (GCS), and Azure (Blob Storage). This includes managing credentials with narrow permissions and short lifetimes, encrypting data at rest and in transit, automatically removing old data once it is no longer in use, and ensuring your workspace is always storing data in the correct region (US, EU or AP). This approach is secure and is used by the vast majority of Census customers.
 
 ### Customer-provided object storage
 
