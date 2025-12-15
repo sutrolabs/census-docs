@@ -194,6 +194,7 @@
   * [Microsoft Dynamics](destinations/microsoft-dynamics.md)
   * [Microsoft SQL Server](destinations/sql-server.md)
   * [Microsoft Teams](destinations/microsoft-teams.md)
+  * [Microsoft SharePoint](destinations/microsoft-sharepoint.md)
   * [Mixpanel](destinations/mixpanel.md)
   * [MoEngage](destinations/moengage.md)
   * [MongoDB](destinations/mongo-db.md)
