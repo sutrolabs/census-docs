@@ -15,10 +15,10 @@ description: This page describes how to use Census with Brevo.
 
 ## Supported Objects and Behaviors
 
-|   **Object Name** | **Supported?** | **Sync Keys** | **Behaviors**    |
-| ----------------: | :------------: | ------------- | ---------------- |
-|           Contact |        ✅       | Email         | Update or Create |
-| Contact With List |        ✅       | Email         | Mirror           |
+|   **Object Name** | **Supported?** | **Sync Keys**  | **Behaviors**    |
+| ----------------: | :------------: | -------------- | ---------------- |
+|           Contact |        ✅       | Email, ext\_id | Update or Create |
+| Contact With List |        ✅       | Email, ext\_id | Mirror           |
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Brevo objects and/or behaviors.
 
