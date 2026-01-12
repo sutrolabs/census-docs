@@ -8,10 +8,6 @@ description: >-
 
 RBAC provides peace of mind, ensuring only those with appropriate permissions can access sensitive user information or take potentially destructive actions with Census Syncs or Census configuration.
 
-{% hint style="info" %}
-Role-Based Access Controls are available on Enterprise plans only. Professional plans can create up to two Workspaces.
-{% endhint %}
-
 ## Organization Administrators
 
 Members of a Census organization may be promoted to Administrators, which will give them Owner permissions in all [Workspaces](workspaces.md) and the ability to manage billing, and Organization level settings.
@@ -34,7 +30,10 @@ Each member of a workspace has a role within each (and their roles can vary acro
 You can also create custom roles by combining the required set of fine-grained permissions into a role that is then assignable to users in any workspace. Custom roles give you the ability to create narrow roles for specific use cases such as connection administration or data definition.
 
 {% hint style="info" %}
-Note: Custom Roles do not yet give access to Organization-level management permissions such as billing managements.
+Custom Roles are available on Enterprise plans only.&#x20;
+
+\
+Custom Roles do not yet give access to Organization-level management permissions such as billing managements.
 {% endhint %}
 
 To create a new custom role,
