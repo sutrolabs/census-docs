@@ -197,6 +197,7 @@
   * [Microsoft SharePoint](destinations/microsoft-sharepoint.md)
   * [Mixpanel](destinations/mixpanel.md)
   * [MoEngage](destinations/moengage.md)
+  * [Monday](destinations/available-destinations/monday.md)
   * [MongoDB](destinations/mongo-db.md)
   * [mParticle](destinations/mparticle.md)
   * [MySQL](destinations/mysql.md)
