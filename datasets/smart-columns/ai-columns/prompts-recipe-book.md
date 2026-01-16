@@ -268,8 +268,7 @@ Explanation: The message reflects interest in an upgrade and shows a positive ou
 
 Update the categories as needed.
 
-Columns Needed: Email Subject and Body\
-
+Columns Needed: Email Subject and Body<br>
 
 Best response type: Enum
 
@@ -315,8 +314,7 @@ Final Output: Structure findings with headings, correlation strengths, and categ
 
 Update the categories as needed.
 
-Columns Needed: Customer Traits\
-
+Columns Needed: Customer Traits<br>
 
 Best response type: Enum or Numbers
 

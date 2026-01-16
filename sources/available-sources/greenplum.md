@@ -6,7 +6,7 @@ description: This page describes how to configure Greenplum as a source for Cens
 
 ## Sync Engines and Permissions
 
-Census reads data from tables and views in Greenplum and syncs it to your desired objects in any supported [destination](broken-reference). To limit the load on your database as well as destination apps' APIs, Census maintains state tracking tables that enable it to only sync data that has been modified sync the last sync (incremental syncs). When configuring your Greenplum connection, you'll choose a [Sync Engine](../overview.md#sync-engines) that determines how state tracking is handled.
+Census reads data from tables and views in Greenplum and syncs it to your desired objects in any supported [destination](/broken/pages/-MV8j2YLe9LvlEk-bbaB). To limit the load on your database as well as destination apps' APIs, Census maintains state tracking tables that enable it to only sync data that has been modified sync the last sync (incremental syncs). When configuring your Greenplum connection, you'll choose a [Sync Engine](../overview.md#sync-engines) that determines how state tracking is handled.
 
 The _Basic Sync Engine_ maintains state tracking tables on Census-owned infrastructure and is therefore simpler to configure and requires read access only.
 

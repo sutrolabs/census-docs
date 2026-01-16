@@ -28,7 +28,7 @@ Airtable support is pretty straight forward!
 | --------------: | :------------: | :-----------------------------------: |
 |           Table |        ✅       | Update Only, Update or Create, Mirror |
 
-Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
+Learn more about all of our sync behaviors on our [Core Concepts page](/broken/pages/-MV8ovxVCiy1fEjc0SO-#the-different-sync-behaviors).
 
 {% hint style="info" %}
 Airtable needs a primary key that is a short text field for Census to be able to join from a source table (though the source can be a numerical type).

@@ -20,7 +20,7 @@ This process involves several steps - please set aside 15-30 minutes to complete
 {% endhint %}
 
 * Have the proper credentials to access to your data source. See our docs for each supported data source for further information:
-  * [Azure Synapse](../sources/available-sources/azure-synapse.md)
+  * [Azure Synapse](../../../sources/available-sources/azure-synapse.md)
   * [Databricks](https://docs.getcensus.com/sources/databricks)
   * [Elasticsearch](https://docs.getcensus.com/sources/elasticsearch)
   * [Google BigQuery](https://docs.getcensus.com/sources/google-bigquery)
@@ -35,7 +35,7 @@ This process involves several steps - please set aside 15-30 minutes to complete
 
 1. Visit the integrations page or use the global search to look for and navigate to: **page: Manage Integrations**
 
-![](../.gitbook/assets/netsuite_step1.png)
+![](../../../.gitbook/assets/netsuite_step1.png)
 
 1. Create a new integration with the follow properties:
    * Give it a name that you'll recognize, such as **Census**
@@ -46,7 +46,7 @@ This process involves several steps - please set aside 15-30 minutes to complete
 2. Click Save when finished.
 3. Copy and paste the **CONSUMER KEY / CLIENT ID** and **CONSUMER SECRET / CLIENT SECRET** to a password manager. You'll need those later to paste into Census.
 
-![](../.gitbook/assets/netsuite_step2.png)
+![](../../../.gitbook/assets/netsuite_step2.png)
 
 ### 2. Enable Token Based Authentication
 
@@ -55,7 +55,7 @@ This process involves several steps - please set aside 15-30 minutes to complete
 3. Make sure **Token Based Authentication is checked**
 4. Save
 
-![](../.gitbook/assets/netsuite_step3.png)
+![](../../../.gitbook/assets/netsuite_step3.png)
 
 ### 3. Create a Token Role
 
@@ -77,13 +77,13 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
    * REST Web Services: **Full**
    * User Access Token: **Full**
 
-![](<../.gitbook/assets/netsuite_step4 (1).png>)
+![](<../../../.gitbook/assets/netsuite_step4 (1).png>)
 
-![](<../.gitbook/assets/Image 2021-05-03 at 4.42.55 PM.jpg>)
+![](<../../../.gitbook/assets/Image 2021-05-03 at 4.42.55 PM.jpg>)
 
 7\. Under **Permissions > Lists**, Give your Role the appropriate permissions for the NetSuite objects you'll be updating. For example, to update Customers, you'll want to give this role the Lists > Customers (Full) permission.
 
-![](../.gitbook/assets/netsuite_step5.png)
+![](../../../.gitbook/assets/netsuite_step5.png)
 
 ### 4. Add Token Management Permissions
 
@@ -91,7 +91,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 2. Edit the employee record of the Admin user you will be using Census with.
 3. Navigate to **Access > Roles** and add the Token Role you just created above.
 
-![](../.gitbook/assets/netsuite_step6.png)
+![](../../../.gitbook/assets/netsuite_step6.png)
 
 ### 5. Create Access Tokens
 
@@ -100,7 +100,7 @@ The Administrator user you're using with NetSuite and Census also needs "Token R
 3. Select the application and role we created above, then press Save
 4. Copy and paste the new Token ID and Token Secret to your password manager or file. We'll use it below.
 
-![](../.gitbook/assets/netsuite_step7.png)
+![](../../../.gitbook/assets/netsuite_step7.png)
 
 > **Note:** Netsuite permission changes to a role or user **do not occur immediately**. These changes typically take anywhere from a few minutes to a few hours, and they can even take up to 24 hours to go into effect. If you are confident that you have given Census the correct permissions above and experience an error setting up the connection, we recommend waiting for these changes to go into effect before testing the connection again.
 
@@ -115,7 +115,7 @@ The last bit of information you’ll need is your NetSuite Account ID:
 
 1. Now in Census, add a new Destination.
 
-![](../.gitbook/assets/netsuite_step8.png)
+![](../../../.gitbook/assets/netsuite_step8.png)
 
 1. Paste the Account ID of your NetSuite Account, as well as the Consumer Key, Consumer Secret, Token ID and Token Secret created above.
 
@@ -178,7 +178,7 @@ This is is the current list of NetSuite[ objects](https://www.netsuite.com/porta
 |               Vendor Bill |        ✅       |
 
 {% hint style="info" %}
-Please note that NetSuite doesn't support the [creation of fields](../syncs/core-concept/#field-creation) via Census and currently we don't support [add all fields ](../syncs/core-concept/#add-all-fields)feature for NetSuite
+Please note that NetSuite doesn't support the [creation of fields](../../../syncs/core-concept/#field-creation) via Census and currently we don't support [add all fields ](../../../syncs/core-concept/#add-all-fields)feature for NetSuite
 {% endhint %}
 
 ### Generic HTTP Requests
@@ -187,18 +187,18 @@ If you wish to make a request to any NetSuite REST API endpoint that is currentl
 
 * Select `HTTP Request` in the object selector
 
-<figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
 * Put in your URL. Your endpoints must be part of `https://<account_id>.suitetalk.api.netsuite.com/services/rest/record/v1`, if you wish to send data to a different endpoint, please reach out to support@getcensus.com.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-11-07 at 1.27.46 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-11-07 at 1.27.46 PM.png" alt=""><figcaption></figcaption></figure>
 
 * Configure the rest of the sync as you would for a general [HTTP Request](https://docs.getcensus.com/destinations/available-destinations/http-request#create-a-sync) destination, and we'll use your existing NetSuite credentials under the hood.
 
 ## Supported Sync Behaviors
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors in our [Syncs](../syncs/overview.md) documentation.
+Learn more about all of our sync behaviors in our [Syncs](../../../syncs/overview.md) documentation.
 {% endhint %}
 
 |        **Behaviors** | **Supported?** | **Objects** |

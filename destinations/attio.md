@@ -31,7 +31,7 @@ description: This page describes how to use Census with Attio.
 |          People |        ✅       | Any unique attribute | Update or Create |
 |  Custom Objects |        ✅       | Any unique attribute | Update or Create |
 
-Attio supports [Don't Sync Nulls](broken-reference). Syncs created prior to August 20, 2024 will need to be updated to sync nulls.
+Attio supports [Don't Sync Nulls](/broken/pages/-MV8ovxVCiy1fEjc0SO-#conditional-field-mappings). Syncs created prior to August 20, 2024 will need to be updated to sync nulls.
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Attio objects and/or behaviors.
 

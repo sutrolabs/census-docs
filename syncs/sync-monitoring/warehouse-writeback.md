@@ -129,7 +129,7 @@ ON log.source_object_id = source.id
 WHERE log.sync_id = 1234;
 ```
 
-The [Sync History](broken-reference) page also includes an ID for each sync run which allows you to limit the query to that run. For example, if you'd like to see records that Census deleted on a recent sync run **5678**,
+The [Sync History](/broken/pages/-MV8ovxVCiy1fEjc0SO-) page also includes an ID for each sync run which allows you to limit the query to that run. For example, if you'd like to see records that Census deleted on a recent sync run **5678**,
 
 ```sql
 SELECT * 

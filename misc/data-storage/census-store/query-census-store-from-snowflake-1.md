@@ -25,8 +25,7 @@ In Census, create OAuth2 client credentials that Snowflake will use to access yo
 ## Step 2: Install Iceberg Extension
 
 1. Open DuckDB.
-2.  Install Iceberg Extension and load it\
-
+2.  Install Iceberg Extension and load it<br>
 
     ```sql
     FORCE INSTALL iceberg FROM core_nightly;

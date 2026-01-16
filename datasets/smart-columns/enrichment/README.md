@@ -24,7 +24,7 @@ Historically, an enrichment flow includes hitting an API directly on top of a CR
 
 ### Setup Enrichments
 
-To set up enrichments, you can follow our [quick start guide](broken-reference).&#x20;
+To set up enrichments, you can follow our [quick start guide](/broken/pages/cGEIVfMl9G8ejPK7gPYP).&#x20;
 
 Once your enrichment is configured, Census will start querying your enrichment service and populating results.
 

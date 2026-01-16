@@ -139,7 +139,7 @@ You're ready to start using Census to load data from your warehouse to Salesforc
 | API-Triggered Journey |        ✅       | Contact Key       | Update or Create, Mirror               |
 
 {% hint style="info" %}
-Learn more about all of our sync behaviors on our [Core Concepts page](broken-reference).
+Learn more about all of our sync behaviors on our [Core Concepts page](/broken/pages/-MV8ovxVCiy1fEjc0SO-#the-different-sync-behaviors).
 {% endhint %}
 
 [Contact us](mailto:support@getcensus.com) if you want Census to support more Marketing Cloud objects and/or behaviors.

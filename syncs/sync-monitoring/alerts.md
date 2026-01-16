@@ -7,7 +7,7 @@ Our goal is to keep all the data flowing smoothly, but sometimes things don't go
 Each Census sync has its own set of potential alerts and you can configure each of them to match your needs. There are six types of alerts available, two of which are turned on by default for each new sync:
 
 1. **Failed Sync** (default) - Alerts when a sync completely fails, usually because the source or destination connection is broken.
-2. **Failed Records** (default) - Alerts when a sync ran successfully but some of the records were invalid in the source or rejected by the destination. In this case, you can configure the threshold that should generate alerts. By default, it's 75% of records, but that can be lowered all the way down to alert you if any record is invalid or rejected. [Learn more about invalid and rejected records](broken-reference).
+2. **Failed Records** (default) - Alerts when a sync ran successfully but some of the records were invalid in the source or rejected by the destination. In this case, you can configure the threshold that should generate alerts. By default, it's 75% of records, but that can be lowered all the way down to alert you if any record is invalid or rejected. [Learn more about invalid and rejected records](/broken/pages/-MV8ovxVCiy1fEjc0SO-#sync-history).
 3. **Sync Status** - Alerts when a sync starts or successfully completes.
 4. **Full Sync Triggered** - Alerts when a full sync is triggered on your sync. Your alert will contain the reason(s) why a full sync was run.
 5. **Sync Runtime** - Alerts when a sync has not completed within a configurable length of time since either the scheduled or actual sync start time.

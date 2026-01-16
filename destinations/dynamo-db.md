@@ -67,7 +67,7 @@ When you set up your sync, you'll select your **Composite Key** in your source d
 
 ### Table schemas
 
-Because DynamoDB tables have flexible schemas, Census treats every field you map from your source as a "custom field". Other than the key fields discussed above, Census won't know about your table's schema. Instead, you'll use Census's [Field Mapping](broken-reference) feature to map fields from your source to your DynamoDB table by explicitly specifying the destination table field name.
+Because DynamoDB tables have flexible schemas, Census treats every field you map from your source as a "custom field". Other than the key fields discussed above, Census won't know about your table's schema. Instead, you'll use Census's [Field Mapping](/broken/pages/-MV8ovxVCiy1fEjc0SO-#field-mappings) feature to map fields from your source to your DynamoDB table by explicitly specifying the destination table field name.
 
 ## Need help connecting to DynamoDB?
 

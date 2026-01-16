@@ -29,4 +29,4 @@ You can optionally define what happens when a record leaves your source data set
 
 <figure><img src="../.gitbook/assets/Artboard Copy 2.png" alt=""><figcaption></figcaption></figure>
 
-The rest of the sync configuration is identical to any other typical sync and the fields that you map will be passed to the destination. For more information see [Syncs in Core Concepts](broken-reference).
+The rest of the sync configuration is identical to any other typical sync and the fields that you map will be passed to the destination. For more information see [Syncs in Core Concepts](/broken/pages/-MV8ovxVCiy1fEjc0SO-).

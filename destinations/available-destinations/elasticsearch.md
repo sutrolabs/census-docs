@@ -45,15 +45,7 @@ Other authentication options are available:
 
 You're all set!&#x20;
 
-<div>
-
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-14 at 13.57.36.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/Screenshot 2024-08-14 at 13.57.50.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/Screenshot 2024-08-14 at 13.57.36.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2024-08-14 at 13.57.50.png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 If you have any questions during setup, or have a use case that is not covered, please write us in-app or [send us an email](mailto:support@getcensus.com) via support@getcensus.com
@@ -67,8 +59,7 @@ Elasticsearch stores data within collections called Models. Your Models in Elast
 | --------------- | -------------- | ------------- | --------------------------------- |
 | Index           | ✅              | Document ID   | <p>Update or Create<br>Mirror</p> |
 
-[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Elasticsearch.\
-
+[Contact us](mailto:support@getcensus.com) if you want Census to support more objects for Elasticsearch.<br>
 
 ## Need help connecting to Elasticsearch?
 
