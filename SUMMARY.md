@@ -7,7 +7,7 @@
 * [Datasets](datasets/overview/README.md)
   * [Basic Datasets](datasets/overview/basic-datasets.md)
   * [🆕 Mesh Datasets](datasets/overview/mesh-datasets.md)
-  * [CSV Upload Datasets](datasets/overview/csv-datasets.md)
+  * [CSV Datasets](datasets/overview/csv-datasets.md)
   * [External Dataset Repositories](datasets/overview/external-dataset-repositories/README.md)
     * [dbt Integration](datasets/overview/external-dataset-repositories/dbt-integration.md)
     * [Looker Integration](datasets/overview/external-dataset-repositories/looker-integration.md)

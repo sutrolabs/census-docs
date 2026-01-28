@@ -8,6 +8,15 @@ description: >-
 
 Census makes it it easy to connect or create Datasets from many different sources. Any SQL source can easily join data _within_ that source. But what about joining across sources? Now you can use Mesh Datasets to write SQL that spans datasets built on any SQL source together.
 
+{% hint style="warning" %}
+Mesh Datasets have been deprecated and are no longer available in new Census accounts.&#x20;
+
+* **July 1, 2026**: Existing datasets become read-only; no new datasets can be created.
+* **August 1, 2026**: Datasets will be deleted.
+
+Customers can work with support to migrate the sources of their mesh datasets to Fivetran connections, and potentially dbt models.
+{% endhint %}
+
 ### Writing Mesh SQL&#x20;
 
 To support querying across SQL sources, Census provides a virtual query engine that has access to a magic `datasets.*` schema. Every SQL dataset you've created in Census Workbench is automatically available as a virtual table in the schema. For example, if you have a dataset called VIP Users, you'll find that `datasets.vip_users` is now queryable when writing the SQL for your Mesh Dataset.

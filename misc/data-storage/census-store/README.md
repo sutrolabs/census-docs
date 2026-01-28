@@ -6,6 +6,16 @@ description: >-
 
 # Census Store
 
+{% hint style="warning" %}
+Census Store has been deprecated and is no longer available in new Census accounts.&#x20;
+
+* **July 1, 2026**: Existing datasets become read-only; no new datasets can be created.
+* **August 1, 2026**: Census Store shutting down and data on Census-managed S3\
+  buckets will be deleted.
+
+Customers can work with support to migrate their data and datasets to [Fivetran Managed Data Lake](https://fivetran.com/docs/destinations/managed-data-lake-service) or another data warehouse.
+{% endhint %}
+
 The data stored in Census Store includes:
 
 * CSV datasets
